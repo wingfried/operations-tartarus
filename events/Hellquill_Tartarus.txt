@@ -4,7 +4,7 @@ add_namespace = news_tartarus_hellquill
 country_event = { # Lushi targeted for Anschluss (Lushi's Event)
 	id = tartarus_hellquill.1
 	title = tartarus_hellquill.1.t
-	desc = tartarus_hellquill.1.desc
+	desc = tartarus_hellquill.1.d
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.1"}
 	is_triggered_only = yes
 	option = { # Accept Demands
@@ -51,7 +51,7 @@ country_event = { # Lushi targeted for Anschluss (Lushi's Event)
 country_event = { # Lushi Anschlussed!
 	id = tartarus_hellquill.2
 	title = tartarus_hellquill.2.t
-	desc = tartarus_hellquill.2.desc
+	desc = tartarus_hellquill.2.d
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.2"}
 	is_triggered_only = yes
 	option = {
@@ -65,7 +65,7 @@ country_event = { # Lushi Anschlussed!
 country_event = { # Lushi Refused Anschluss!
 	id = tartarus_hellquill.3
 	title = tartarus_hellquill.3.t
-	desc = tartarus_hellquill.3.desc
+	desc = tartarus_hellquill.3.d
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.3"}
 	is_triggered_only = yes
 	option = {
@@ -92,7 +92,7 @@ country_event = { # Lushi Refused Anschluss!
 country_event = { # Hellquill offers... protection? GRY event
 	id = tartarus_hellquill.4
 	title = tartarus_hellquill.4.t
-	desc = tartarus_hellquill.4.desc
+	desc = tartarus_hellquill.4.d
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.4"}
 	is_triggered_only = yes
 	option = { # They are better fit to protect our country than we are.
@@ -101,11 +101,11 @@ country_event = { # Hellquill offers... protection? GRY event
 			base = 99
 			modifier = {
 				add = -79
-				is_in_faction = yes
+				is_in_faction = HLQ
 			}
 			modifier = {
-				add = -10000
-				has_war = yes
+				add = -100
+				has_war_with = HLQ
 			}
 		}
 		HLQ = {
@@ -121,11 +121,11 @@ country_event = { # Hellquill offers... protection? GRY event
 			base = 1
 			modifier = {
 				add = 79
-				is_in_faction = yes
+				is_in_faction_with = HLQ
 			}
 			modifier = {
-				add = 10000
-				has_war = yes
+				add = 100
+				has_war_with = HLQ
 			}
 		}
 		HLQ = {
@@ -139,7 +139,7 @@ country_event = { # Hellquill offers... protection? GRY event
 country_event = { # Host Annexed!
 	id = tartarus_hellquill.5
 	title = tartarus_hellquill.5.t
-	desc = tartarus_hellquill.5.desc
+	desc = tartarus_hellquill.5.d
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.5"}
 	is_triggered_only = yes
 	option = {
@@ -153,7 +153,8 @@ country_event = { # Host Annexed!
 country_event = { # Host Refused Protection!
 	id = tartarus_hellquill.6
 	title = tartarus_hellquill.6.t
-	desc = tartarus_hellquill.6.desc
+	desc = tartarus_hellquill.6.d
+	#picture = GFX_ #Remember that Cossack response thing to the Ottoman Sultan? Yeah. Put that here. 
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.6"}
 	is_triggered_only = yes
 	option = {
@@ -178,10 +179,10 @@ country_event = { # Host Refused Protection!
 	}
 }
 
-country_event = { # Send Marrage Offer
+country_event = { # Send Marriage Offer
 	id = tartarus_hellquill.7
 	title = tartarus_hellquill.7.t
-	desc = tartarus_hellquill.7.desc
+	desc = tartarus_hellquill.7.d
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.7"}
 	is_triggered_only = yes
 	option = {
@@ -198,7 +199,7 @@ country_event = { # Send Marrage Offer
 country_event = { # Cyanolisia Marrage Offer
 	id = tartarus_hellquill.8
 	title = tartarus_hellquill.8.t
-	desc = tartarus_hellquill.8.desc
+	desc = tartarus_hellquill.8.d
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.8"}
 	is_triggered_only = yes
 
@@ -232,7 +233,7 @@ country_event = { # Cyanolisia Marrage Offer
 country_event = { # Cyanolisia Accepts
 	id = tartarus_hellquill.9
 	title = tartarus_hellquill.9.t
-	desc = tartarus_hellquill.9.desc
+	desc = tartarus_hellquill.9.d
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.9"}
 	is_triggered_only = yes
 
@@ -250,7 +251,7 @@ country_event = { # Cyanolisia Accepts
 country_event = { # Cyanolisia Declines
 	id = tartarus_hellquill.10
 	title = tartarus_hellquill.10.t
-	desc = tartarus_hellquill.10.desc
+	desc = tartarus_hellquill.10.d
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.9"}
 	is_triggered_only = yes
 

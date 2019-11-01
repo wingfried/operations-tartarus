@@ -4,7 +4,52 @@ HLQ_morgend_longpaw:0 "Morgend Longpaw"
 HLQ_river_breeze:0 "River Breeze"
 HLQ_vanance_lodernd:0 "Vanance Lodernd"
 
-#National Focuses
+### Events ###
+
+tartarus_hellquill.1.t:0 "[From.Getname]'s offer" #LUS
+tartarus_hellquill.1.d:0 "Describe things about Lushi being threatened or offered with annexation here."
+tartarus_hellquill.1.a:0 "We submit."
+tartarus_hellquill.1.b:0 "Lushi shall remain free!"
+
+tartarus_hellquill.2.t:0 "[From.Getname] Accepts Annexation!" #LUS
+tartarus_hellquill.2.d:0 "Something something [From.Getname] is now part of our realm"
+tartarus_hellquill.2.a:0 "Hooray!"
+
+tartarus_hellquill.3.t:0 "[From.Getname] Refuses Annexation!" #LUS
+tartarus_hellquill.3.d:0 "Oh no they refused..."
+tartarus_hellquill.3.a:0 "War it is!"
+
+tartarus_hellquill.4.t:0 "Hellquill offers protection" #GRY
+tartarus_hellquill.4.d:0 "Lol small shithole wants to protect us, the mighty cossacks of [Root.Getname]." #Describe something about Cossacks..
+tartarus_hellquill.4.a:0 "Yea sure"
+tartarus_hellquill.4.b:0 "Nah" #Good chance to make a cossack response
+
+tartarus_hellquill.5.t:0 "[From.Getname] Accepts annexation!" #GRY
+tartarus_hellquill.5.d:0 "Yay"
+tartarus_hellquill.5.a:0 "Yay"
+
+tartarus_hellquill.6.t:0 "[From.Getname] Declines Annexation!" #GRY
+tartarus_hellquill.6.d:0 "Boo"
+tartarus_hellquill.6.a:0 "War"
+
+tartarus_hellquill.7.t:0 "Cyanolisia Marriage?"
+tartarus_hellquill.7.d:0 "Yay bird union proposal"
+tartarus_hellquill.7.a:0 "Yay"
+tartarus_hellquill.7.b:0 "Nay"
+
+tartarus_hellquill.8.t:0 "A Marriage offer from Hellquill"
+tartarus_hellquill.8.d:0 "Bird Marriage?"
+tartarus_hellquill.8.a:0 "Accept"
+tartarus_hellquill.8.b:0 "Decline"
+
+tartarus_hellquill.9.t:0 "[From.Getname] Accepts!"
+tartarus_hellquill.9.d:0 "Cyanolosia Accepts Marriage"
+tartarus_hellquill.9.a:0 "Hooray"
+
+tartarus_hellquill.10.t:0 "[From.Getname] Declines!"
+tartarus_hellquill.10.d:0 "Cyanolisia Declines Marriage"
+tartarus_hellquill.10.a:0 "Boo"
+### National Focuses ###
 
   #Integralist Tree
     HLQ_made_mighty:0 "Made Mighty"
