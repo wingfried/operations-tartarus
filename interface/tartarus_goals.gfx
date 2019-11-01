@@ -1,0 +1,28 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_goal_lushi_anschluss"
+		texturefile = "gfx/interface/goals/goal_lushi_anschluss.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_marry_countess"
+		texturefile = "gfx/interface/goals/goal_marry_countess.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_protect_cyan"
+		texturefile = "gfx/interface/goals/goal_protect_cyan.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_redmenace_knife"
+		texturefile = "gfx/interface/goals/goal_redmenace_knife.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_HLQ_integralist_focus"
+		texturefile = "gfx/interface/goals/goal_HLQ_integralist_focus.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_HLQ_eagle"
+		texturefile = "gfx/interface/goals/goal_HLQ_eagle.dds"
+	}
+
+}

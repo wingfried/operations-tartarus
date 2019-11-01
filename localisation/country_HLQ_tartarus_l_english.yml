@@ -1,0 +1,158 @@
+﻿l_english:
+### Advisors ###
+HLQ_morgend_longpaw:0 "Morgend Longpaw"
+HLQ_river_breeze:0 "River Breeze"
+HLQ_vanance_lodernd:0 "Vanance Lodernd"
+
+#National Focuses
+
+  #Integralist Tree
+    HLQ_made_mighty:0 "Made Mighty"
+    HLQ_made_mighty_desc:0 "Given time and dedication, anyone has the potential to learn the true way of life- that is our way, the Griffons' way! It is so superior that all must be shown down the path... even ponies. As such, we must destroy their weak culture to preserve stability and unity in our lands!"
+    HLQ_made_mighty_2:0 "Made Mighty"
+    HLQ_made_mighty_2_desc:0 "Given time and dedication, anyone has the potential to learn the true way of life- that is our way, the Griffons' way! It is so superior that all must be shown down the path... even ponies. As such, we must destroy their weak culture to preserve stability and unity in our lands!"
+    HLQ_born_mighty:0 "Born Mighty"
+    HLQ_born_mighty_desc:0 "This continent is named Griffonia for a reason. We shall ensure that this name is held as accurate and no longer sullied by the continued presence of undesirables like ponies, who corrupt and degrade the prestige of the land of Griffons!"
+    HLQ_black_cloaks_in_council:0 "The Reformisten in the Council"
+    HLQ_black_cloaks_in_council_desc:0 "With his newly gained power, Wingfried has arranged many high-ranking members of his movement to be put into the Council. They are unlikely to oppose his policies now, leaving him free to do whatever he has in mind for our nation."
+    HLQ_militarize_police:0 "Militarise the Police"
+    HLQ_militarize_police_desc:0 "Our police force has begun recruiting ponies who have forfeited their weak culture for the superior Griffon Way. This will allow us to secure a stronger grip on the dissidents and shut down any hardliners in the process. Wingfried has proposed to militarise them by turning them into paramilitary groups in which any fanatic teen can apply. This will not only show the youth the strength of the Reformisten ideology and the New Hellquill, but will also keep pressure on our domestic enemies."
+    HLQ_geheimdienst:0 "Organise the Geheimdienst"
+    HLQ_geheimdienst_desc:0 "In order to keep a watchful eye on our citizens and our neighbours, our Secret Service shall provide us with valuable information. You have to be on the lookout, these days, after all..."
+    HLQ_sturmpferde:0 "Create the Sturmpferde"
+    HLQ_sturmpferde_desc:0 "Ponies have begun to utterly denounce the very essence of their weak culture and have flocked to the true might of the Griffon Way. Those who are truly dedicated to our cause have been recruited into our newest military organization, and they shall be the perfect example of what the perfect pony should be. They shall be known as the Sturmpferde, or SP for short."
+    HLQ_cultural_unity:0 "Cultural Unity"
+    HLQ_cultural_unity_desc:0 "Our efforts in showing the pony elements of Hellquill the Griffon Way have been an absolute success, as ponies throughout Hellquill have renounced their fragile and weak Pony Way for the mighty Griffon Way. We can credit this success to our extensive propaganda campaigns and re-education efforts, and it can be proudly said that these ponies are now properly Griffonian."
+    HLQ_a_bullet_for_the_hardliners:0 "A Bullet for the Traitors"
+    HLQ_a_bullet_for_the_hardliners_desc:0 "Some members of the Reformisten seem to actually believe that non-griffons cannot be taught the Griffon Way and by extension cannot be made into mighty Griffonians. Very well, then; we shall give them the same treatment they proposed for the non-griffons. Firing squads should do nicely."
+    HLQ_get_new_generals:0 "A New Generation of Officers"
+    HLQ_get_new_generals_desc:0 "Our movement has inspired many veterans and upstarters alike to take up arms. These brave Griffons will lead our troops bravely into battle, no matter the cost."
+    HLQ_old_traditions:0 "Outdated Traditions"
+    HLQ_old_traditions_desc:0 "Our knightly traditions are, sadly, very much outdated and useless, nowadays. It's time we rid ourselves of them and institute a real, professional army."
+    HLQ_remove_old_guard:0 "Deal with the Old Guard"
+    HLQ_remove_old_guard_desc:0 "While some members of the old guard have jumped onto our movement's policies, many believe that we are simply too radical. Their opposition is a hurdle for us and Hellquill overall, and we must get rid of these troublemakers as soon as possible."
+    HLQ_stormgriffons:0 "Create the Sturmgreifen"
+    HLQ_stormgriffons_desc:0 "A new elite formation of troops called the Sturmgreifen, or SG for short, will be formed. These brave and fanatic Griffons will be on the forefront of our struggle, and they will be our bravest and most valiant heroes."
+    HLQ_destroy_longsword:0 "Longsword Must Submit!"
+    HLQ_destroy_longsword_desc:0 "Longsword has long been an ally to us, though they fail to take a more aggressive stance towards the East, like us. It's about time we absorbed them into the Hellquillian nation, so that we can fight our enemy together."
+    HLQ_neuland_project:0 "The Neuland Act"
+    HLQ_neuland_project_desc:0 "Some parts of our country remain relatively unpopulated. As such, we must kickstart a grand campaign of resettlement and migration, so as to populate even the most desolate of places."
+    HLQ_integralist_education:0 "Education and Indoctrination"
+    HLQ_integralist_education_desc:0 "Our Citizens, young and old alike, must be taught the truths of life. This shall reach from basic mathematics and writing, all the way to the weakness of pony culture and the supremacy of the Griffon Way."
+    HLQ_pave_way:0 "Pave the Way"
+    HLQ_pave_way_desc:0 "Our Nation must prepare to fight the enemy, and as such, our Industry must grow. More factories, more weapons, more troops to slaughter this dangerous foe."
+    HLQ_new_frontier:0 "The Brave New Frontier"
+    HLQ_new_frontier_desc:0 "New industrial Frontiers must be set up in the more undeveloped provinces of our Country. That way, we can assure industrial production is spread all throughout the country."
+    HLQ_industrial_revolution_integralist:0 "The Industrial Revolution"
+    HLQ_industrial_revolution_integralist_desc:0 "Our Industry must further grow if we wish to combat anything but rats. We shall spare no expenses!"
+    HLQ_declare_kingdom_of_hellquill:0 "Proclaim the Kingdom"
+    HLQ_declare_kingdom_of_hellquill_desc:0 "The time has come to proclaim ourselves something greater! King Wingfried will lead us towards a bright future! He will rid us of the weakness of pony culture, and grant us a thousand years of prosperity!"
+    HLQ_calibrate_economy:0 "Calibrate the Economy"
+    HLQ_calibrate_economy_desc:0 "It is time to adjust our economy and prepare for war. Military production henceforth has a much greater importance than the individual's needs. To win our struggle, every Griffon must make sacrifices, after all."
+    HLQ_ostwall_building:0 "Construct the Ostwall"
+    HLQ_ostwall_building_desc:0 "It is time to improve existing fortifications and expand them for the defence against our greatest foes. Should the degenerate Riverlanders wish to come, they'll bleed on our walls."
+    HLQ_prep_longsword:0 "The Longsword Border Wall"
+    HLQ_prep_longsword_desc:0 "The conquered territories of Longsword must be prepared for what is to come. They, too, will remain valiant in the face of danger! A vast, unbroken border wall shall deter the Riverlanders."
+    HLQ_prep_the_crusade:0 "The Grand Crusade"
+    HLQ_prep_the_crusade_desc:0 "It's time. Wingfried has announced to his people and the world that there is only one option for peace in Griffonia. We must rid our beloved continent of the River Coalition on our beloved continent and finally put an end to their continued spread of their weak and pathetic culture. We will show their misled people the true might of the Griffon Way! The Power is Ours!"
+    HLQ_group_936:0 "Group 936"
+    HLQ_group_936_desc:0 "After the successful integration of ponies into Griffonian culture, we- and especially our scientists- have come to realize that there is much to gain by experimenting with the natural magic of ponykind. Coupled with the technology available to us, the technomagical advancements available to us seem to be nigh endless."
+    HLQ_kulturkampf:0 "Kulturkampf"
+    HLQ_kulturkampf_desc:0 "The conquest of eastern lands means that we will occupy great swaths of land crippled by pony culture. Obviously, the lands will be remaining predominately pony, but first we must conduct a grand campaign to spread the Griffon Way to the Riverlands. Those who cannot adapt will be forced to work, and those who do will happily enjoy the benefits of joining with the superiority of the Griffon Way."
+    HLQ_role_of_sturmtruppen:0 "The Role of the Sturmtruppen"
+    HLQ_role_of_sturmtruppen_desc:0 "There have been discussions surrounding the combat role of our Sturm brigades. We should decide on what role they play in the armed forces, an active or supportive one."
+    HLQ_prep_the_people:0 "Prepare the People"
+    HLQ_prep_the_people_desc:0 "The people of Hellquill must be called to arms. No able-bodied griffon or pony should shy away from the glorious battle that is to come! Every citizen who takes arms will be invaluable in the fight against the Riverlanders."
+    HLQ_junkerschulen:0 "Junkerschulen"
+    HLQ_junkerschulen_desc:0 "The Sturm brigades are the most elite part of our troops, and yet they lack specialised training. The newly established "Junkerschulen" will provide them with the perfect places to conduct military training and ideological exercise. With these real centers of military education and training in place, our elite troops will become even more elite!"
+    HLQ_complete_industry:0 "Finish the Revolution"
+    HLQ_complete_industry_desc:0 "Our industrial revolution comes to an end, and our industry has never looked better! There is still room for improvement, but at least we are now able to put up a fight."
+    HLQ_expand_settlements:0 "Expand Neuland Settlements"
+    HLQ_expand_settlements_desc:0 "The Neuland Campaign has been a resounding success. As such, we should expand these new settlements and bring in even more Griffon settlers. There is a home for every Griffon in Hellquill!"
+    HLQ_the_war_industry:0 "The War Industry"
+    HLQ_the_war_industry_desc:0 "Our industry, now relatively well-developed, must be further expanded to suit our growing needs. Every aspect of our production must go towards fighting the Riverlanders."
+
+  
+
+  #Annex Tree
+    HLQ_lushi_anchluss:0 "The Lushian Anchluss"
+    HLQ_lushi_anchluss_desc:0 "The Principality of Lushi is backwards nation that has been stagnating since the fall of the Empire, with little to no sign of life there for the common people of ever improving. Fortunately, we can take advantage of this and, by making friends with the right people and applying a not-to subtle amount of pressure, we can convince the Prince to join us and allow Lushi to be integrated into our nation."
+
+    HLQ_blackrock_attack:0 "Pacify The Bandit Mountains"
+    HLQ_blackrock_attack_desc:0 "The former County of Blackhollow has become a degenerate hive of scum under the leadership of the bandit known as Blackrock, these bandits raid and exploit the weak, while believing themselves to be strong, but they are nothing more than parasites who take the fruits of labor from others and provide nothing in return. If they are content to act like parasites, then we'll play the part of the exterminator."
+
+    HLQ_host_attack:0 "Stabilize The Hosts"
+    HLQ_host_attack_desc:0 "The Cossack Griffons are known to be excellent warriors, but this talent for warfare seems to be wasted on petty things like raiding and minor disputes. The lords of the Host are always engaged in a vicious cycle of pillaging their neighbors and fighting amongst themselves, not having any ambitions or purpose beyond this cycle. It is time for us to give them a greater purpose, whether they like it or not."
+
+    HLQ_freetowns_demand:0 "Demand The Free Town's Submission"
+    HLQ_freetowns_demand_desc:0 ""
+
+    HLQ_gla_attack:0 "Secure Prywhen"
+    HLQ_gla_attack_desc:0 "The Illness known as Communism has taken the region of Prywhen into its bloody grip. Under the tyrannical Comrade-General, who drove the nation into a civil war lasting over 4 years, the people's suffering has been ignored by the Reds, refusing to see flaws in their ideology and their attempts in making the rotten thing 'pure'. If Communism is an illness, then we will be the cure."
+
+    HLQ_gla_core:0 "Integrate Prywhen"
+    HLQ_gla_core_desc:0 ""
+
+    HLQ_protect_cyan:0 "Protect Cyanolisia"
+    HLQ_protect_cyan_desc:0 "Cyanolisia and her Countess are to be admired. Even when support from the Empire ended and their struggle began, they have defended their lands against the aggressive Minotaurs both within their borders and abroad. Still, they cannot stand alone, not when the Minotaurs plot and prepare to invade and take back land they deem 'theirs'. Let us extend our claw towards the County and face their enemies together."
+
+    HLQ_marry_countess:0 "An Offer To The Countess"
+    HLQ_marry_countess_desc:0 "Countess Taillow Sumpfkiel, the fiercest and most defiant griffoness on the contient; and after her victory in the war agaisnt Asterion she and Wingfried have began to grow closer to one another it seems, it is time to make official the feelings and respect they both have for one another, she shall become the Queen of Hellquill, may she be worthy of the name which... we know she will"
+
+    HLQ_one_empire:0 "One Empire"
+    HLQ_one_empire_desc:0 ""
+
+    HLQ_two_empires:0 "Two Empires"
+    HLQ_two_empires_desc:0 ""
+
+  #Integralist Tree
+    HLQ_black_cloaks_in_council:0 "The Reformisten in the Council"
+    HLQ_black_cloaks_in_council_desc:0 "With his newly gained power, Wingfried has arranged many high-ranking members of his movement to be put into the Council. They are unlikely to oppose his policies now, leaving him free to do whatever he has in mind for our nation."
+    
+    HLQ_militarize_police:0 "Militarise the Police"
+    HLQ_militarize_police_desc:0 "Our police force has begun recruiting ponies who have forfeited their weak culture for the superior Griffon Way. This will allow us to secure a stronger grip on the dissidents and shut down any hardliners in the process. Wingfried has proposed to militarise them by turning them into paramilitary groups in which any fanatic teen can apply. This will not only show the youth the strength of the Reformisten ideology and the New Hellquill, but will also keep pressure on our domestic enemies."
+    
+    HLQ_geheimdienst:0 "Organise the Geheimdienst"
+    HLQ_geheimdienst_desc:0 "In order to keep a watchful eye on our citizens and our neighbours, our Secret Service shall provide us with valuable information. You have to be on the lookout, these days, after all..."
+
+    HLQ_sturmpferde:0 "Create the Sturmpferde"
+    HLQ_sturmpferde_desc:0 "Ponies have begun to utterly denounce the very essence of their weak culture and have flocked to the true might of the Griffon Way. Those who are truly dedicated to our cause have been recruited into our newest military organization, and they shall be the perfect example of what the perfect pony should be. They shall be known as the Sturmpferde, or SP for short."
+
+    HLQ_cultural_unity:0 "Cultural Unity"
+    HLQ_cultural_unity_desc:0 "Our efforts in showing the pony elements of Hellquill the Griffon Way have been an absolute success, as ponies throughout Hellquill have renounced their fragile and weak Pony Way for the mighty Griffon Way. We can credit this success to our extensive propaganda campaigns and re-education efforts, and it can be proudly said that these ponies are now properly Griffonian."
+
+    HLQ_a_bullet_for_the_hardliners:0 "A Bullet for the Traitors"
+    HLQ_a_bullet_for_the_hardliners_desc:0 "Some members of the Reformisten seem to actually believe that non-griffons cannot be taught the Griffon Way and by extension cannot be made into mighty Griffonians. Very well, then; we shall give them the same treatment they proposed for the non-griffons. Firing squads should do nicely."
+
+    HLQ_int_new_generals:0 "A New Generation of Officers"
+    HLQ_int_new_generals_desc:0 "Our movement has inspired many veterans and upstarters alike to take up arms. These brave Griffons will lead our troops bravely into battle, no matter the cost."
+
+    HLQ_int_outdated_traditions:0 "Outdated Traditions"
+    HLQ_int_outdated_traditions_desc:0 "Our knightly traditions are, sadly, very much outdated and useless, nowadays. It's time we rid ourselves of them and institute a real, professional army."
+    
+    HLQ_int_remove_the_old_guard:0 "Deal with the Old Guard"
+    HLQ_int_remove_the_old_guard_desc:0 "While some members of the old guard have jumped onto our movement's policies, many believe that we are simply too radical. Their opposition is a hurdle for us and Hellquill overall, and we must get rid of these troublemakers as soon as possible."
+
+    HLQ_int_the_stormgriffons:0 "Create the Sturmgreifen"
+    HLQ_int_the_stormgriffons_desc:0 "A new elite formation of troops called the Sturmgreifen, or SG for short, will be formed. These brave and fanatic Griffons will be on the forefront of our struggle, and they will be our bravest and most valiant heroes."
+    
+    HLQ_int_longsword_destroy:0 "Longsword Must Submit!"
+    HLQ_int_longsword_destroy_desc:0 "Longsword has long been an ally to us, though they fail to take a more aggressive stance towards the East, like us. It's about time we absorbed them into the Hellquillian nation, so that we can fight our enemy together."
+
+    HLQ_int_neuseland_project:0 "The Neuland Act"
+    HLQ_int_neuseland_project_desc:0 "Some parts of our country remain relatively unpopulated. As such, we must kickstart a grand campaign of resettlement and migration, so as to populate even the most desolate of places."
+
+    HLQ_integralist_education:0 "Education and Indoctrination"
+    HLQ_integralist_education_desc:0 "Our Citizens, young and old alike, must be taught the truths of life. This shall reach from basic mathematics and writing, all the way to the weakness of pony culture and the supremacy of the Griffon Way."
+
+    HLQ_int_make_way:0 "Pave the Way"
+    HLQ_int_make_way_desc:0 "Our Nation must prepare to fight the enemy, and as such, our Industry must grow. More factories, more weapons, more troops to slaughter this dangerous foe."
+    
+    HLQ_int_the_new_frontier:0 "The Brave New Frontier"
+    HLQ_int_the_new_frontier_desc:0 "New industrial Frontiers must be set up in the more undeveloped provinces of our Country. That way, we can assure industrial production is spread all throughout the country."
+    
+    HLQ_int_the_industrial_revolution:0 "The Industrial Revolution"
+    HLQ_int_the_industrial_revolution_desc:0 "Our Industry must further grow if we wish to combat anything but rats. We shall spare no expenses!"
+    
+    HLQ_int_the_kingdom_of_hellquill:0 "Proclaim the Kingdom"
+    HLQ_int_the_kingdom_of_hellquill_desc:0 "The time has come to proclaim ourselves something greater! King Wingfried will lead us towards a bright future! He will rid us of ponykind, and grant us a thousand years of prosperity!"

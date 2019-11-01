@@ -1,0 +1,1131 @@
+focus_tree = {
+	id = hellquill_harmonist_focus
+
+	country = {
+		factor = 0
+	}
+	default = no
+
+	continuous_focus_position = { x = 600 y = 750 }
+
+	shared_focus = HLQ_industry_1
+	shared_focus = HLQ_wehrmacht
+
+	### Reconciliation ###
+
+	focus = {
+		id = HLQ_griffon_colonists
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -3
+		y = 1
+		cost = 7.00
+
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			553 = { is_owned_and_controlled_by = ROOT }
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_griffon_colonists"
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			if = {
+				limit = { has_country_flag = HLQ_the_industrial_sector }
+				553 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				else = {
+					553 = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				553 = {
+					add_manpower = 150000
+				}
+				else = {
+					553 = {
+						add_manpower = 75000
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_completed_focus = HLQ_open_dialogue } }
+					country_event = { id = hellquill.4 days = 10 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HLQ_education_effort
+		icon = GFX_goal_KTG_Bookstack
+		x = -4
+		y = 2
+		cost = 7.00
+		prerequisite = { focus = HLQ_griffon_colonists }
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_education_effort"
+			decrease_illiteracy = yes
+			hidden_effect = {
+				country_event = { id = hellquill.5 days = 10 }
+			}
+		}
+	}
+
+	focus = {
+		id = HLQ_ost_griffenheimer_identity
+		icon = GFX_goal_generic_demand_territory
+		x = -2
+		y = 2
+		cost = 7.00
+		prerequisite = { focus = HLQ_griffon_colonists }
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_ost_griffenheimer_identity"
+			add_stability = 0.05
+			add_political_power = 50
+			add_popularity = { ideology = democratic popularity = 0.05 }
+		}
+	}
+
+	focus = {
+		id = HLQ_further_colonization
+		icon = GFX_goal_generic_construction
+		x = -3
+		y = 3
+		cost = 7.00
+		prerequisite = { focus = HLQ_ost_griffenheimer_identity }
+		prerequisite = { focus = HLQ_education_effort }
+
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			537 = { is_owned_and_controlled_by = ROOT }
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_further_colonization"
+			if = {
+				limit = { has_country_flag = HLQ_the_industrial_sector }
+				537 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				else = {
+					537 = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				537 = {
+					add_manpower = 250000
+				}
+				else = {
+					537 = {
+						add_manpower = 125000
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HLQ_enter_industrial_age
+		icon = GFX_goal_generic_production2
+		x = -2
+		y = 4
+		cost = 7.00
+		prerequisite = { focus = HLQ_further_colonization }
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_enter_industrial_age"
+			increase_society_development = yes
+			if = {
+				limit = { has_country_flag = HLQ_the_industrial_sector }
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HLQ_open_dialogue
+		icon = GFX_goal_molotov_ribbentrop_pact_pony_griffon
+		x = -1
+		y = 1
+		cost = 5.00
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_open_dialogue"
+			add_political_power = 30
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = HLQ_build_relations
+		icon = GFX_goal_anschluss
+		x = 1
+		y = 1
+		cost = 5.00
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_build_relations"
+			add_political_power = 30
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = HLQ_support_pony_towns
+		icon = GFX_goal_industrial_pony
+		x = 0
+		y = 2
+		cost = 7.00
+		prerequisite = { focus = HLQ_open_dialogue focus = HLQ_build_relations }
+
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			537 = { is_owned_and_controlled_by = ROOT }
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_support_pony_towns"
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_stability = 0.03
+			if = {
+				limit = { has_country_flag = HLQ_the_industrial_sector }
+				537 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				else = {
+					537 = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = HLQ_army_stuff }
+				add_manpower = 5000
+			}
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_completed_focus = HLQ_dealing_with_the_black_cloaks } }
+					country_event = { id = hellquill.6 days = 10 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HLQ_cultural_revival
+		icon = GFX_goal_agriculture
+		x = -1
+		y = 3
+		cost = 5.00
+		prerequisite = { focus = HLQ_support_pony_towns }
+		prerequisite = { focus = HLQ_open_dialogue }
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_cultural_revival"
+			country_event = { id = hellquill.7 days = 10 }
+		}
+	}
+
+	focus = {
+		id = HLQ_pony_knights
+		icon = GFX_goal_conscription
+		x = 1
+		y = 3
+		cost = 7.00
+		prerequisite = { focus = HLQ_support_pony_towns }
+		prerequisite = { focus = HLQ_build_relations }
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_pony_knights"
+			if = {
+				limit = { has_country_flag = HLQ_army_stuff }
+				add_manpower = 20000
+				else = {
+					add_manpower = 10000
+				}
+			}
+			if = {
+				limit = { has_country_flag = HLQ_army_stuff }
+				custom_effect_tooltip = HLQ_2_knight_tp
+				else = {
+					custom_effect_tooltip = HLQ_1_knight_tp
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_country_flag = HLQ_army_stuff }
+					load_oob = "HLQ_pony_knights_2"
+					else = {
+						load_oob = "HLQ_pony_knights_1"
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HLQ_pony_rights
+		icon = GFX_goal_constitutional_guarantees
+		x = 0
+		y = 4
+		cost = 7.00
+		prerequisite = { focus = HLQ_pony_knights }
+		prerequisite = { focus = HLQ_cultural_revival }
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_pony_rights"
+			swap_ideas = {
+				remove_idea = HLQ_pony_minorities
+				add_idea = HLQ_equals
+			}
+			every_other_country = {
+				limit = {
+					is_riverlands_country = yes
+				}
+				remove_opinion_modifier = { target = ROOT modifier = mortal_enemies }
+				remove_opinion_modifier = { target = ROOT modifier = CHN_Embargo }
+				ROOT = {
+					remove_opinion_modifier = { target = PREV modifier = mortal_enemies }
+					remove_opinion_modifier = { target = PREV modifier = CHN_Embargo }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HLQ_dealing_with_the_black_cloaks
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 3
+		y = 1
+		cost = 7.00
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_dealing_with_the_black_cloaks"
+			country_event = { id = hellquill.8 days = 1 }
+		}
+	}
+
+	focus = {
+		id = HLQ_trial_for_katerinburg
+		icon = GFX_goal_government_icon
+		x = 2
+		y = 2
+		cost = 7.00
+		prerequisite = { focus = HLQ_dealing_with_the_black_cloaks }
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_trial_for_katerinburg"
+			country_event = { id = hellquill.9 days = 1 }
+		}
+	}
+
+	focus = {
+		id = HLQ_free_press
+		icon = GFX_goal_press_barons
+		x = 4
+		y = 2
+		cost = 5.00
+		prerequisite = { focus = HLQ_dealing_with_the_black_cloaks }
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_free_press"
+			add_ideas = HLQ_free_press_idea
+		}
+	}
+
+	focus = {
+		id = HLQ_deal_with_the_rest
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 3
+		y = 3
+		cost = 7.00
+		prerequisite = { focus = HLQ_free_press }
+		prerequisite = { focus = HLQ_trial_for_katerinburg }
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_deal_with_the_rest"
+			add_political_power = -50
+			add_stability = 0.03
+			add_popularity = { ideology = fascism popularity = -0.05 }
+		}
+	}
+
+	focus = {
+		id = HLQ_memorial_for_victims
+		icon = GFX_goal_graveyard
+		x = 2
+		y = 4
+		cost = 5.00
+		prerequisite = { focus = HLQ_deal_with_the_rest }
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_memorial_for_victims"
+			add_popularity = { ideology = democratic popularity = 0.03 }
+			add_ideas = HLQ_victim_memorial
+		}
+	}
+
+	focus = {
+		id = HLQ_two_races_under_one_flag
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 0
+		y = 5
+		cost = 5.00
+		prerequisite = { focus = HLQ_memorial_for_victims }
+		prerequisite = { focus = HLQ_pony_rights }
+		prerequisite = { focus = HLQ_enter_industrial_age }
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_two_races_under_one_flag"
+			country_event = { id = hellquill.10 days = 1 }
+		}
+	}
+
+	focus = {
+		id = HLQ_republic
+		icon = GFX_goal_government_icon
+		x = -1
+		y = 1
+		relative_position_id = HLQ_two_races_under_one_flag
+		cost = 4.00
+		prerequisite = { focus = HLQ_two_races_under_one_flag }
+		mutually_exclusive = { focus = HLQ_duchy }
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_republic"
+			country_event = { id = hellquill.12 days = 1 }
+		}
+	}
+
+	focus = {
+		id = HLQ_duchy
+		icon = GFX_focus_generic_home_defense
+		x = 1
+		y = 1
+		relative_position_id = HLQ_two_races_under_one_flag
+		cost = 4.00
+		prerequisite = { focus = HLQ_two_races_under_one_flag }
+		mutually_exclusive = { focus = HLQ_republic }
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_duchy"
+			country_event = { id = hellquill.11 days = 1 }
+		}
+	}
+
+	focus = {
+		id = HLQ_further_industrial_development
+		icon = GFX_goal_generic_production
+		x = -2
+		y = 2
+		relative_position_id = HLQ_two_races_under_one_flag
+		cost = 7.00
+		prerequisite = { focus = HLQ_duchy focus = HLQ_republic }
+		available = {
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_further_industrial_development"
+			increase_society_development = yes
+			if = {
+				limit = { has_country_flag = HLQ_the_industrial_sector }
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HLQ_pony_farmer_support
+		icon = GFX_goal_agrarian_reform
+		x = -3
+		y = 3
+		relative_position_id = HLQ_two_races_under_one_flag
+		cost = 7.00
+		prerequisite = { focus = HLQ_further_industrial_development }
+
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				553 = { is_owned_and_controlled_by = ROOT }
+				537 = { is_owned_and_controlled_by = ROOT }
+				633 = { is_owned_and_controlled_by = ROOT }
+				634 = { is_owned_and_controlled_by = ROOT }
+			}
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_pony_farmer_support"
+			add_ideas = HLQ_helping_farmers
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				553 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				537 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				633 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				634 = {
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HLQ_more_colonists
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -1
+		y = 3
+		relative_position_id = HLQ_two_races_under_one_flag
+		cost = 7.00
+		prerequisite = { focus = HLQ_further_industrial_development }
+
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				537 = { is_owned_and_controlled_by = ROOT }
+				553 = { is_owned_and_controlled_by = ROOT }
+				634 = { is_owned_and_controlled_by = ROOT }
+			}
+			else = {
+				553 = { is_owned_and_controlled_by = ROOT }
+			}
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_more_colonists"
+			if = {
+				limit = { has_country_flag = HLQ_the_industrial_sector }
+				553 = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				else = {
+					553 = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				553 = {
+					add_manpower = 100000
+				}
+				else = {
+					553 = {
+						add_manpower = 50000
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				537 = {
+					add_manpower = 200000
+				}
+				else = {
+					537 = {
+						add_manpower = 100000
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				634 = {
+					add_manpower = 100000
+				}
+				else = {
+					634 = {
+						add_manpower = 50000
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HLQ_invite_longsword
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 0
+		y = 2
+		relative_position_id = HLQ_two_races_under_one_flag
+		cost = 7.00
+		prerequisite = { focus = HLQ_duchy focus = HLQ_republic }
+		bypass  = {
+			event_target:longsword = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+					has_war_with = ROOT
+				}
+			}
+			hidden_trigger = {
+				LNS = {
+					OR = {
+						exists = no
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+						has_war_with = ROOT
+					}
+				}
+				LSM = {
+					OR = {
+						exists = no
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+						has_war_with = ROOT
+					}
+				}
+				LSC = {
+					OR = {
+						exists = no
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		available = {
+			has_global_flag = LNS_civil_war_end_flag
+			OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+		will_lead_to_war_with = LNS
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+					tag = event_target:longsword
+					ratio < 0.8
+				}
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_invite_longsword"
+			if = {
+				limit = {
+					NOT = { event_target:longsword = { has_country_flag = LNS_bandit_takeover } }
+				}
+				country_event = { days = 1 id = hellquill.15 }
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = event_target:longsword
+				}
+				every_state = {
+					limit = { is_core_of = event_target:longsword }
+					add_core_of = ROOT
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HLQ_between_giants
+		icon = GFX_goal_molotov_ribbentrop_pact_pony_griffon
+		x = 0
+		y = 4
+		relative_position_id = HLQ_two_races_under_one_flag
+		cost = 5.00
+		prerequisite = { focus = HLQ_invite_longsword }
+		available = {
+		    OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_between_giants"
+			add_ideas = HLQ_between_giants_idea
+		}
+	}
+
+	focus = {
+		id = HLQ_the_empire
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = -1
+		y = 5
+		relative_position_id = HLQ_two_races_under_one_flag
+		cost = 5.00
+		prerequisite = { focus = HLQ_between_giants }
+		available = {
+		    OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_the_empire"
+			unlock_decision_category_tooltip = HLQ_diplomacy_category
+			event_target:griffonian_empire = {
+				add_opinion_modifier = {
+					target = ROOT modifier = HLQ_diplomacy
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HLQ_the_feds
+		icon = GFX_goal_improve_relations_pony_griffon
+		x = 1
+		y = 5
+		relative_position_id = HLQ_two_races_under_one_flag
+		cost = 5.00
+		prerequisite = { focus = HLQ_between_giants }
+		available = {
+		    OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_the_feds"
+			unlock_decision_category_tooltip = HLQ_diplomacy_category
+			random_other_country = {
+				limit = {
+					is_faction_leader = yes
+					is_river_fed_member = yes
+				}
+				add_opinion_modifier = {
+					target = ROOT modifier = HLQ_diplomacy
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HLQ_reform_the_knights
+		icon = GFX_goal_conscription
+		x = 2
+		y = 2
+		relative_position_id = HLQ_two_races_under_one_flag
+		cost = 7.00
+		prerequisite = { focus = HLQ_duchy focus = HLQ_republic }
+		available = {
+		    OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_reform_the_knights"
+			swap_ideas = {
+				remove_idea = HLQ_knights_1
+				add_idea = HLQ_proper_army
+			}
+			hidden_effect = {
+				country_event = { id = hellquill.14 days = 10 }
+			}
+		}
+	}
+
+	focus = {
+		id = HLQ_armouries
+		icon = GFX_goal_military_academy
+		x = 1
+		y = 3
+		relative_position_id = HLQ_two_races_under_one_flag
+		cost = 7.00
+		prerequisite = { focus = HLQ_reform_the_knights }
+		available = {
+		    OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_armouries"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_country_flag = HLQ_army_stuff }
+				add_manpower = 10000
+				else = { add_manpower = 5000 }
+			}
+		}
+	}
+
+	focus = {
+		id = HLQ_cadets
+		icon = GFX_goal_KTG_Bookstack
+		x = 3
+		y = 3
+		relative_position_id = HLQ_two_races_under_one_flag
+		cost = 7.00
+		prerequisite = { focus = HLQ_reform_the_knights }
+		available = {
+		    OR = {
+			   has_government = neutrality
+			   has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_cadets"
+			decrease_illiteracy = yes
+			add_ideas = HLQ_junker_school
+			add_research_slot = 1
+		}
+	}
+}
