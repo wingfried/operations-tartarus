@@ -1,0 +1,554 @@
+	#Forces CHN Upgrades to Medium tanks:
+	Update_to_improvedMT = {
+		Enable = {
+			AND = { 
+				original_tag = CHN
+				has_war_with  = EQS
+				has_tech = improved_medium_tank 
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = update_med_armor 
+				}
+				}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = medium_tank_equipment
+			value = -100000 
+			}
+			}
+			
+	Update_to_advancedMT = {
+		Enable = {
+			AND = { 				
+				original_tag = CHN
+				has_tech = advanced_medium_tank 
+				has_war_with  = EQS
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = update_med_armor2 
+				}
+				}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = medium_tank_equipment
+			value = -100000 
+			}
+			}
+
+
+
+	#Infantry updates for CHN
+							
+				Update_to_advanced_infantry = {
+		Enable = {
+			AND = { 				
+				original_tag = CHN
+				has_tech = advanced_infantry_weapons 
+				has_war_with  = EQS
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = update_infantry 
+				}
+				}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = infantry_equipment
+			value = -100000 
+			}
+			}
+			
+			Update_to_advanced_infantry2 = {
+		Enable = {
+			AND = { 				
+				original_tag = CHN
+				has_tech = advanced_infantry_weapons_b 
+				has_war_with  = EQS
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = update_infantry2 
+				}
+				}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = infantry_equipment
+			value = -100000 
+			}
+			}
+			
+			Update_to_advanced_infantry3 = {
+		Enable = {
+			AND = { 				
+				original_tag = CHN
+				has_tech = advanced_infantry_weapons_e 
+				has_war_with  = EQS
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = update_infantry3 
+				}
+				}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = infantry_equipment
+			value = -100000 
+			}
+			}
+			
+			Update_to_advanced_infantry0 = {
+		Enable = {
+			AND = { 				
+				original_tag = CHN
+				has_tech = improved_infantry_weapons 
+				has_war_with  = EQS
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = update_infantry0 
+				}
+				}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = infantry_equipment
+			value = -100000 
+			}
+			}
+	#Forces upgrades to Arty:
+	
+	Update_to_advanced_arty = {
+		Enable = {
+			AND = { 				
+				original_tag = CHN
+				has_tech = artillery1 
+				has_war_with  = EQS
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = update_arty1
+				}
+				}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = artillery_equipment
+			value = -100000 
+			}
+			}
+			
+				
+	Update_to_postwar_arty = {
+		Enable = {
+			AND = { 				
+				original_tag = CHN
+				has_tech = artillery4 
+				has_war_with  = EQS
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = update_arty2 
+				}
+				}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = artillery_equipment
+			value = -100000 
+			}
+			}
+			
+	Update_to_modern_arty = {
+		Enable = {
+			AND = { 				
+				original_tag = CHN
+				has_tech = artillery_b 
+				has_war_with  = EQS
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = update_arty3 
+				}
+				}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = artillery_equipment
+			value = -100000 
+			}
+			}
+	#Anti-tank:
+	
+	Update_to_improved_antitank = {
+		Enable = {
+			AND = { 				
+				original_tag = CHN
+				has_tech = antitank1 
+				has_war_with  = EQS
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = update_antitank1
+				}
+				}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = anti_tank_equipment
+			value = -100000 
+			}
+			}
+			
+	Update_to_advanced_antitank = {
+		Enable = {
+			AND = { 				
+				original_tag = CHN
+				has_tech = antitank2 
+				has_war_with  = EQS
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = update_antitank2
+				}
+				}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = anti_tank_equipment
+			value = -100000 
+			}
+			}
+			
+	Update_to_postwar_antitank = {
+		Enable = {
+			AND = { 				
+				original_tag = CHN
+				has_tech = antitank5 
+				has_war_with  = EQS
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = update_antitank3
+				}
+				}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = infantry_equipment
+			value = -100000 
+			}
+			}
+			
+			
+	Update_to_modern_antitank = {
+		Enable = {
+			AND = { 				
+				original_tag = CHN
+				has_tech = antitank_c 
+				has_war_with  = EQS
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = update_antitank4
+				}
+				}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = anti_tank_equipment
+			value = -100000 
+			}
+			
+			
+			
+			
+	#Forces upgrades to Light Tanks:
+	
+	Update_to_improvedLT = {
+	Enable = {
+	AND = { has_offensive_war  = yes
+			has_equipment = {light_tank_equipment > 750}
+			surrender_progress < .5
+			has_tech = improved_light_tank }}
+			abort = {
+			OR = { 
+					has_equipment = {light_tank_equipment > 400}
+					surrender_progress > .3
+					has_war = no
+					has_tech = update_light_armor }}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = light_tank_equipment
+			value = -100000 }}
+	
+	Update_to_advancedLT = {
+	Enable = {
+	AND = { has_offensive_war  = yes
+			has_equipment = {light_tank_equipment > 750}
+			surrender_progress < .5
+			has_tech = advanced_light_tank}}
+			abort = {
+			OR = { 
+					has_equipment = {light_tank_equipment > 400}
+					surrender_progress > .3
+					has_war = no
+					has_tech = update_light_armor2 }}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = light_tank_equipment
+			value = -100000 }}
+			
+			
+	Update_to_postwarLT = {
+	Enable = {
+	AND = { has_offensive_war  = yes
+			has_equipment = {light_tank_equipment > 750}
+			surrender_progress < .5
+			has_tech = advanced_light_tank_a }}
+			abort = {
+			OR = { 
+					has_equipment = {light_tank_equipment > 400}
+					surrender_progress > .3
+					has_war = no
+					has_tech = update_light_armor3 }}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = light_tank_equipment
+			value = -100000 }}
+			
+			
+	Update_to_modernLT = {
+	Enable = {
+	AND = { has_offensive_war  = yes
+			has_equipment = {light_tank_equipment > 750}
+			surrender_progress < .5
+			has_tech = advanced_light_tank_b }}
+			abort = {
+			OR = { 
+					has_equipment = {light_tank_equipment > 400}
+					surrender_progress > .3
+					has_war = no
+					has_tech = update_light_armor4 }}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = light_tank_equipment
+			value = -10000 }}
+			
+
+	#Scripts from main doc:
+	
+	Outwithold = {
+		Enable = { 
+			AND = { 
+				origional_tag = CHN
+				has_tech = basic_medium_tank 
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = improved_medium_tank
+				has_tech = advanced_light_tank
+				}
+				}
+				   
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = light_tank_equipment
+			value = -25 
+			}
+			}
+	
+	
+	Inwithnew = {
+		Enable = {
+			AND = { 
+			origional_tag = CHN
+			has_tech = improved_medium_tank 
+			}
+			}
+		abort = { 
+			OR = { 
+				has_tech = advanced_light_tank
+				has_tech = improved_heavy_tank
+				has_tech = advanced_medium_tank
+				}
+				}
+				   
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = light_tank_equipment
+			value = -75
+			}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = heavy_tank_equipment
+			value = -100
+			}
+			}
+
+	Aheadtime = {
+		Enable = {
+			AND = {
+				has_tech = improved_medium_tank 
+				origional_tag = CHN
+				}
+				}
+			abort = { 
+				OR = { 
+					date > 1013.6.6 
+					}
+					}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id   = medium_tank_equipment
+			value = 50 
+			}
+			
+			ai_strategy = {
+			type = role_ratio
+			id = medium_armor
+			value = 10
+			}
+			}
+
+	Volkssturm = {
+		Enable = {
+			AND = { 
+			surrender_progress > .1 
+			has_manpower > 100000 
+			origional_tag = CHN
+			}
+			}
+		abort = {
+			OR ={ 
+				has_manpower < 10000
+				any_war_score > 24 
+				}
+				}
+				
+		ai_strategy = {
+			type = equipment_variant_production_factor 
+			id = infantry_equipment
+			value = 100 
+			}
+		
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = support_equipment
+			value = 50 
+			}
+		
+		ai_strategy = {
+			type = role_ratio
+			id = infantry
+			value = 50 
+			}
+			}
+	
+	Less_Ships_for_all = {
+		enable = {
+			OR = {
+				origional_tag = CHN
+				}
+				}
+		Abort = {
+			OR = {
+				always = no 
+				}
+				}
+			
+		ai_strategy = {
+			type = unit_ratio
+			id = capital_ship
+			value = -50
+			}
+
+		ai_strategy = {
+			type = unit_ratio
+			id = submarine
+			value = -50
+			}
+
+		ai_strategy = {
+			type = unit_ratio
+			id = screen_ship
+			value = -30
+			}
+
+		ai_strategy = {
+			type = unit_ratio
+			id = convoy
+			value = -50
+			}
+		ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = -45	
+			}
+			}
+			
+	The_Great_Landwar = {
+	enable = {
+			OR = {
+				origional_tag = CHN
+				has_war_with = EQS
+				}
+				}
+		Abort = {
+			OR = {
+				has_war = no
+				}
+				}
+						ai_strategy = {
+			type = unit_ratio
+			id = capital_ship
+			value = -100
+			}
+
+		ai_strategy = {
+			type = unit_ratio
+			id = submarine
+			value = -100
+			}
+
+		ai_strategy = {
+			type = unit_ratio
+			id = screen_ship
+			value = -100
+			}
+
+		ai_strategy = {
+			type = unit_ratio
+			id = convoy
+			value = -100
+			}
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = -85	
+		}
+		}

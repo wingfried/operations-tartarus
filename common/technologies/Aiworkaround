@@ -1,0 +1,391 @@
+technologies = { 
+#These technologies are there to stop a script that forces Ai to upgrade tanks, if you change them the script might break and AI will stop producing the tank type.
+#Med Tanks
+
+	update_med_armor = {
+
+		dependencies = {improved_medium_tank = 1}
+		path = {
+			leads_to_tech = update_med_armor2
+			research_cost_coeff = 1}
+
+		research_cost = 0.1
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = {  x = 1 y = 0 }}
+		categories = {AI_Script}
+		
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+
+
+
+
+	update_med_armor2 = {
+
+		dependencies = {advanced_medium_tank = 1}
+		research_cost = 0.1
+		start_year = 1007
+		folder = { 
+			name = infantry_folder
+			position = {  x = 1 y = 2 }}
+		
+		categories = {AI_Script}
+		
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+#Arty
+update_arty1 = {
+	
+		dependencies = {artillery1 = 1}
+		
+
+		research_cost = 0.1
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = {  x = 2 y = 0 }}
+
+		categories = {AI_Script}
+
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+
+update_arty2 = {
+	
+		dependencies = {artillery4 = 1}
+		
+
+		research_cost = 0.1
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = {  x = 2 y = 0 }}
+
+		categories = {AI_Script}
+
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+
+update_arty3 = {
+	
+		dependencies = {artillery_b = 1}
+		
+
+		research_cost = 0.1
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = {  x = 2 y = 0 }}
+
+		categories = {AI_Script}
+
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+
+	#Anti_tank:
+
+		update_antitank1 = {
+	
+		dependencies = {antitank1 = 1}
+		
+
+		research_cost = 0.1
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = {  x = 2 y = 0 }}
+
+		categories = {AI_Script}
+
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+
+		update_antitank2 = {
+	
+		dependencies = {antitank2 = 1}
+		
+
+		research_cost = 0.1
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = {  x = 2 y = 0 }}
+
+		categories = {AI_Script}
+
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+
+		update_antitank3 = {
+	
+		dependencies = {antitank5 = 1}
+		
+
+		research_cost = 0.1
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = {  x = 2 y = 0 }}
+
+		categories = {AI_Script}
+
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+
+		update_antitank4 = {
+	
+		dependencies = {antitank_c = 1}
+		
+
+		research_cost = 0.1
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = {  x = 2 y = 0 }}
+
+		categories = {AI_Script}
+
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+#Infantry
+		update_infantry0 = {
+	
+		dependencies = {improved_infantry_weapons = 1}
+		
+
+		research_cost = 0.1
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = {  x = 2 y = 0 }}
+
+		categories = {AI_Script}
+
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+			
+
+		
+		update_infantry = {
+	
+		dependencies = {advanced_infantry_weapons = 1}
+		
+		research_cost = 0.1
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = {  x = 2 y = 0 }}
+
+		categories = {AI_Script}
+
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+			
+			
+			update_infantry2 = {
+	
+		dependencies = {advanced_infantry_weapons_b = 1}
+		
+		research_cost = 0.1
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = {  x = 2 y = 0 }}
+
+		categories = {AI_Script}
+		
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+		
+		
+				update_infantry3 = {
+	
+		dependencies = {advanced_infantry_weapons_e = 1}
+		
+		research_cost = 0.1
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = {  x = 2 y = 0 }}
+
+		categories = {AI_Script}
+
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+			
+			
+			
+			
+			update_light_armor = {
+	
+		dependencies = {improved_light_tank = 1}
+		
+		path = {
+			leads_to_tech = update_light_armor2
+			research_cost_coeff = 1}
+
+		research_cost = 0.1
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = {  x = 2 y = 0 }}
+
+		categories = {AI_Script}
+
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+			
+			
+			
+		
+	update_light_armor2 = {
+	
+		dependencies = {advanced_light_tank = 1}
+		
+		path = {
+			leads_to_tech = update_light_armor3
+			research_cost_coeff = 1}
+
+		research_cost = 0.1
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = {  x = 2 y = 2 }}
+
+		categories = {AI_Script}
+
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+		
+		
+		
+	update_light_armor3 = {
+	
+		dependencies = {advanced_light_tank_a = 1}
+				path = {
+			leads_to_tech = update_light_armor4
+			research_cost_coeff = 1}
+		research_cost = 0.1
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = {  x = 2 y = 6 }}
+		   categories = {AI_Script}
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+		
+		
+		update_light_armor4 = {
+	
+		dependencies = {advanced_light_tank_b = 1}
+		
+		research_cost = 0.1
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = {  x = 2 y = 4 }}
+     		categories = {AI_Script}
+
+			ai_will_do = {factor = 0
+				modifier = {
+				origional_tag = CHN
+				add = 10000
+			}
+			}
+			}
+		
+
