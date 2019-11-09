@@ -1,4 +1,4 @@
-name="operation_tartarus"
+﻿name="Operation Tartarus"
 path="mod/operation_tartarus/"
 tags={
 	"Alternative History"
