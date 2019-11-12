@@ -10,7 +10,7 @@ light_armor_CHN = {
 	}
 
 	upgrade_prio = {
-		factor = 1.5
+		factor = 2.17
 
 		modifier = {
 			factor = 1
@@ -30,7 +30,7 @@ light_armor_CHN = {
 			factor = 1
 		}
 
-		target_width = 18.0
+		target_width = 16.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 
@@ -39,8 +39,8 @@ light_armor_CHN = {
 			1.10 #-- defense
 			1.10 #-- breakthrough
 			0.60 #-- hardness
-			2.00 #-- soft_attack
-			1.00 #-- hard_attack
+			1.00 #-- soft_attack
+			0.00 #-- hard_attack
 			0.10 #-- recon
 			0.01 #-- entrenchment
 			0.10 #-- initiative
@@ -55,12 +55,12 @@ light_armor_CHN = {
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
-			20.00 #-- max_organisation
+			30.00 #-- max_organisation
 			0.80 #-- max_strength
-			3.0 #-- maximum_speed
+			2.0 #-- maximum_speed
 			0.20 #-- armor_value
 			0.05 #-- ap_attack
-			0.25 #-- reliability
+			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
 			0.00 #-- fuel_consumption
@@ -84,12 +84,13 @@ light_armor_CHN = {
 			}
 
 			regiments = {
-				light_armor = 5
+				light_armor = 4
 				motorized = 4
 			}
 		}
 
 		replace_at_match = 0.4
+		replace_with = medium_armor_default_CHN
 		target_min_match = 0.5
 
 		allowed_types = {
@@ -108,231 +109,6 @@ light_armor_CHN = {
 	}
 
 }
-
-mechanized_CHN = {
-
-	available_for = {
-		CHN
-		CCN
-	}
-
-	roles = {
-		mechanized
-	}
-
-	upgrade_prio = {
-		factor = 1
-
-		modifier = {
-			factor = 1
-		}
-	}
-
-	match_to_count = 0.5
-
-
-	Mechanized_default_CHN = {
-
-		upgrade_prio = {
-			factor = 1
-		}
-
-		production_prio = {
-			factor = 1
-		}
-
-		target_width = 16.0
-		width_weight = 3.0
-		column_swap_factor = 0.1
-
-		stat_weights = {
-			0.00 #-- default_morale
-			4.00 #-- defense
-			1.00 #-- breakthrough
-			0.60 #-- hardness
-			3.00 #-- soft_attack
-			1.00 #-- hard_attack
-			0.10 #-- recon
-			0.01 #-- entrenchment
-			0.10 #-- initiative
-			0.01 #-- casualty_trickleback
-			-0.05 #-- supply_consumption_factor
-			-0.01 #-- supply_consumption
-			0.00 #-- suppression
-			0.00 #-- suppression_factor
-			0.01 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
-			0.00 #-- fuel_capacity
-			#-- Air Values
-			0.02 #-- air_attack
-			#-- Common Values
-			20.00 #-- max_organisation
-			1.00 #-- max_strength
-			2.0 #-- maximum_speed
-			0.20 #-- armor_value
-			0.05 #-- ap_attack
-			0.25 #-- reliability
-			0.10 #-- reliability_factor
-			0.00 #-- weight
-			0.00 #-- fuel_consumption
-			0.00 #-- fuel_consumption_factor
-			0.00 #-- strat_attack
-			0.00 #-- carrier_size
-			0.00 #-- acc_hot_gain
-			0.00 #-- acc_cold_gain
-			0.00 #-- build_cost_ic
-		}
-
-		target_template = {
-			weight = 0.9
-			match_value = 4000.0
-
-			support = {
-				engineer = 1
-				artillery = 1
-				infiltrator_company = 1
-				signal_company = 1
-			}
-
-			regiments = {
-				mechanized = 8
-			}
-		}
-
-		replace_at_match = 0.4
-		replace_with = Motorized_default_CHN
-		target_min_match = 0.7
-
-		allowed_types = {
-			light_sp_artillery_brigade
-			light_tank_destroyer_brigade
-			light_sp_anti_air_brigade
-			mot_artillery_brigade
-			engineer
-			recon
-			artillery
-			infiltrator_company
-			signal_company
-		}
-	}
-
-}
-
-
-Motorized_HN = {
-
-	available_for = {
-		CHN
-		CCN
-	}
-
-	roles = {
-		motorized
-	}
-
-	upgrade_prio = {
-		factor = 1
-
-		modifier = {
-			factor = 1
-		}
-	}
-
-	match_to_count = 0.5
-
-
-	Motorized_default_CHN = {
-
-		upgrade_prio = {
-			factor = 1
-		}
-
-		production_prio = {
-			factor = 1
-		}
-
-		target_width = 16.0
-		width_weight = 3.0
-		column_swap_factor = 0.1
-
-		stat_weights = {
-			0.00 #-- default_morale
-			3.00 #-- defense
-			0.50 #-- breakthrough
-			0.00 #-- hardness
-			3.00 #-- soft_attack
-			0.10 #-- hard_attack
-			0.10 #-- recon
-			0.50 #-- entrenchment
-			0.10 #-- initiative
-			0.01 #-- casualty_trickleback
-			-0.05 #-- supply_consumption_factor
-			-0.01 #-- supply_consumption
-			0.00 #-- suppression
-			0.00 #-- suppression_factor
-			0.01 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
-			0.00 #-- fuel_capacity
-			#-- Air Values
-			0.02 #-- air_attack
-			#-- Common Values
-			20.00 #-- max_organisation
-			1.00 #-- max_strength
-			5.0 #-- maximum_speed
-			0.20 #-- armor_value
-			0.05 #-- ap_attack
-			0.25 #-- reliability
-			0.10 #-- reliability_factor
-			0.00 #-- weight
-			0.00 #-- fuel_consumption
-			0.00 #-- fuel_consumption_factor
-			0.00 #-- strat_attack
-			0.00 #-- carrier_size
-			0.00 #-- acc_hot_gain
-			0.00 #-- acc_cold_gain
-			0.00 #-- build_cost_ic
-		}
-
-		target_template = {
-			weight = 0.9
-			match_value = 4000.0
-
-			support = {
-				recon = 1
-				artillery = 1
-				infiltrator_company = 1
-				signal_company = 1
-			}
-
-			regiments = {
-				motorized= 6
-				artillery_brigade = 1
-			}
-		}
-
-		replace_at_match = 0.4
-		target_min_match = 0.5
-
-		allowed_types = {
-			motorized
-			light_sp_artillery_brigade
-			light_tank_destroyer_brigade
-			light_sp_anti_air_brigade
-			mot_artillery_brigade
-			engineer
-			recon
-			artillery
-			infiltrator_company
-			signal_company
-		}
-	}
-
-}
-
-
-
-
-
 
 medium_armor_CHN = {
 
@@ -353,27 +129,27 @@ medium_armor_CHN = {
 		}
 	}
 
-	match_to_count = 0.5
+	match_to_count = 0.3
 
-	medium_armor_motor_CHN = {
+	medium_armor_default_CHN = {
 
 		upgrade_prio = {
 			factor = 3
 		}
 
 		production_prio = {
-			factor = 1
+			factor = 2
 		}
 
-		target_width = 16.0
+		target_width = 20.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 
-	stat_weights = {
+		stat_weights = {
 			0.00 #-- default_morale
 			1.10 #-- defense
 			2.10 #-- breakthrough
-			2.30 #-- hardness
+			3.00 #-- hardness
 			1.00 #-- soft_attack
 			2.00 #-- hard_attack
 			0.10 #-- recon
@@ -392,8 +168,8 @@ medium_armor_CHN = {
 			#-- Common Values
 			5.00 #-- max_organisation
 			0.80 #-- max_strength
-			0.5 #-- maximum_speed
-			10.0 #-- armor_value
+			0.25 #-- maximum_speed
+			11.0 #-- armor_value
 			0.05 #-- ap_attack
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
@@ -421,106 +197,7 @@ medium_armor_CHN = {
 
 			regiments = {
 				medium_armor = 5
-				motorized = 3
-			}
-		}
-
-		replace_at_match = 0.4
-		replace_with = medium_armor_mecha_CHN
-		target_min_match = 0.5
-
-		allowed_types = {
-			medium_armor
-			medium_sp_artillery_brigade
-			medium_tank_destroyer_brigade
-			medium_sp_anti_air_brigade
-			motorized
-			mechanized
-			infiltrator_company
-
-			motorized_rocket_brigade
-
-			engineer
-			recon
-			signal_company
-			maintenance_company
-			logistics_company
-
-			anti_tank
-			military_police
-			artillery
-			anti_air
-			rocket_artillery
-		}
-	}
-	
-	medium_armor_mecha_CHN = {
-
-		upgrade_prio = {
-			factor = 3
-		}
-
-		production_prio = {
-			factor = 2
-		}
-
-		target_width = 20.0
-		width_weight = 3.0
-		column_swap_factor = 0.1
-
-		stat_weights = {
-			0.00 #-- default_morale
-			1.10 #-- defense
-			2.50 #-- breakthrough
-			1.10 #-- hardness
-			1.20 #-- soft_attack
-			2.50 #-- hard_attack
-			0.10 #-- recon
-			0.01 #-- entrenchment
-			0.10 #-- initiative
-			0.01 #-- casualty_trickleback
-			-0.05 #-- supply_consumption_factor
-			-0.01 #-- supply_consumption
-			0.00 #-- suppression
-			0.00 #-- suppression_factor
-			0.01 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
-			0.00 #-- fuel_capacity
-			#-- Air Values
-			0.02 #-- air_attack
-			#-- Common Values
-			5.00 #-- max_organisation
-			0.80 #-- max_strength
-			0.75 #-- maximum_speed
-			11.0 #-- armor_value
-			0.10 #-- ap_attack
-			0.10 #-- reliability
-			0.10 #-- reliability_factor
-			0.00 #-- weight
-			0.00 #-- fuel_consumption
-			0.00 #-- fuel_consumption_factor
-			0.00 #-- strat_attack
-			0.00 #-- carrier_size
-			0.00 #-- acc_hot_gain
-			0.00 #-- acc_cold_gain
-			0.00 #-- build_cost_ic
-		}
-
-		target_template = {
-			weight = 0.9
-			match_value = 6000.0
-
-			support = {
-				infiltrator_company = 1
-				maintenance_company = 1
-				logistics_company = 1
-				signal_company = 1
-				artillery = 1
-			}
-
-			regiments = {
-				medium_armor = 6
-				mechanized = 4
+				mechanized = 5
 			}
 		}
 
@@ -552,12 +229,6 @@ medium_armor_CHN = {
 			rocket_artillery
 		}
 	}
-	
-	
-	
-	
-	
-	
 }
 
 modern_armor_CHN = {
@@ -585,101 +256,6 @@ modern_armor_CHN = {
 
 	match_to_count = 0.5
 
-	modern_armor_default_2_CHN = {
-
-		upgrade_prio = {
-			factor = 0.01
-		}
-
-		production_prio = {
-			factor = 1
-		}
-
-		target_width = 24.0
-		width_weight = 3.0
-		column_swap_factor = 0.1
-
-		stat_weights = {
-			0.00 #-- default_morale
-			1.10 #-- defense
-			2.10 #-- breakthrough
-			2.60 #-- hardness
-			1.00 #-- soft_attack
-			2.00 #-- hard_attack
-			0.10 #-- recon
-			0.01 #-- entrenchment
-			0.10 #-- initiative
-			0.01 #-- casualty_trickleback
-			-0.05 #-- supply_consumption_factor
-			-0.01 #-- supply_consumption
-			0.00 #-- suppression
-			0.00 #-- suppression_factor
-			0.01 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
-			0.00 #-- fuel_capacity
-			#-- Air Values
-			0.02 #-- air_attack
-			#-- Common Values
-			5.00 #-- max_organisation
-			0.80 #-- max_strength
-			0.5 #-- maximum_speed
-			10.0 #-- armor_value
-			0.05 #-- ap_attack
-			0.10 #-- reliability
-			0.10 #-- reliability_factor
-			0.00 #-- weight
-			0.00 #-- fuel_consumption
-			0.00 #-- fuel_consumption_factor
-			0.00 #-- strat_attack
-			0.00 #-- carrier_size
-			0.00 #-- acc_hot_gain
-			0.00 #-- acc_cold_gain
-			0.00 #-- build_cost_ic
-		}
-
-		target_template = {
-			weight = 0.9
-			match_value = 7000.0
-
-			support = {
-				engineer = 1
-				maintenance_company = 1
-				logistics_company = 1
-				signal_company = 1
-				artillery = 1
-			}
-
-			regiments = {
-				modern_armor = 6
-				motorized = 5
-			}
-		}
-
-		allowed_types = {
-			modern_armor
-			modern_sp_artillery_brigade
-			modern_tank_destroyer_brigade
-			modern_sp_anti_air_brigade
-			motorized
-			mechanized
-			infiltrator_company
-
-			motorized_rocket_brigade
-
-			engineer
-			recon
-			signal_company
-			maintenance_company
-			logistics_company
-
-			anti_tank
-			military_police
-			artillery
-			anti_air
-			rocket_artillery
-		}
-	}
-
 	modern_armor_default_CHN = {
 
 		upgrade_prio = {
@@ -697,7 +273,7 @@ modern_armor_CHN = {
 			factor = 2
 		}
 
-		target_width = 30.0
+		target_width = 20.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 
@@ -752,7 +328,7 @@ modern_armor_CHN = {
 			}
 
 			regiments = {
-				modern_armor = 10
+				modern_armor = 5
 				mechanized = 5
 			}
 		}
@@ -829,7 +405,7 @@ garrison_CHN = {
 			0.00 #-- defense
 			0.00 #-- breakthrough
 			0.00 #-- hardness
-			4.00 #-- soft_attack
+			2.00 #-- soft_attack
 			0.00 #-- hard_attack
 			0.00 #-- recon
 			3.00 #-- entrenchment
@@ -837,7 +413,7 @@ garrison_CHN = {
 			0.00 #-- casualty_trickleback
 			0.00 #-- supply_consumption_factor
 			0.00 #-- supply_consumption
-			0.00 #-- suppression
+			4.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
 			#-- Air Values
@@ -916,17 +492,17 @@ infantry_CHN = {
 
 		stat_weights = {
 			0.00 #-- default_morale
-			0.00 #-- defense
+			1.00 #-- defense
 			1.00 #-- breakthrough
 			0.00 #-- hardness
 			4.00 #-- soft_attack
-			0.00 #-- hard_attack
+			0.20 #-- hard_attack
 			0.00 #-- recon
 			1.00 #-- entrenchment
 			0.00 #-- initiative
 			0.00 #-- casualty_trickleback
-			0.00 #-- supply_consumption_factor
-			0.00 #-- supply_consumption
+			-0.20 #-- supply_consumption_factor
+			-0.05 #-- supply_consumption
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
@@ -1004,17 +580,17 @@ magical_infantry_CHN = {
 			factor = 2
 		}
 
-		target_width = 20.0
+		target_width = 22.0
 		width_weight = 0.7
 		column_swap_factor = 0.5
 
 		stat_weights = {
 			0.00 #-- default_morale
-			0.00 #-- defense
-			2.00 #-- breakthrough
+			1.00 #-- defense
+			0.50 #-- breakthrough
 			0.00 #-- hardness
 			4.00 #-- soft_attack
-			0.50 #-- hard_attack
+			1.50 #-- hard_attack
 			0.00 #-- recon
 			0.00 #-- entrenchment
 			0.00 #-- initiative
@@ -1027,12 +603,12 @@ magical_infantry_CHN = {
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
-			0.60 #-- max_organisation
-			0.40 #-- max_strength
+			0.50 #-- max_organisation
+			0.50 #-- max_strength
 			0.00 #-- build_cost_ic
 			0.00 #-- maximum_speed
 			0.00 #-- armor_value
-			0.20 #-- ap_attack
+			0.50 #-- ap_attack
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			0.00 #-- weight
@@ -1045,19 +621,21 @@ magical_infantry_CHN = {
 			support = {
 				engineer = 1
 				recon = 1
-				field_hospital = 1
+				maintenance_company = 1
 				artillery = 1
 				infiltrator_company = 1
 			}
 
 			regiments = {
-				magical_infantry = 6
-				artillery_brigade = 1
+				magical_infantry = 5
+				artillery_brigade = 2
+				infantry = 2
 			}
 		}
 
 		allowed_types = {
 			magical_infantry
+			infantry
 			engineer
 			recon
 			signal_company
@@ -1103,12 +681,12 @@ jager_CHN = {
 
 		stat_weights = {
 			0.00 #-- default_morale
-			0.00 #-- defense
+			0.25 #-- defense
 			1.00 #-- breakthrough
 			0.00 #-- hardness
-			4.00 #-- soft_attack
+			1.00 #-- soft_attack
 			0.00 #-- hard_attack
-			0.20 #-- recon
+			0.50 #-- recon
 			0.00 #-- entrenchment
 			0.00 #-- initiative
 			0.00 #-- casualty_trickleback
@@ -1120,13 +698,13 @@ jager_CHN = {
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
-			0.60 #-- max_organisation
+			1.0 #-- max_organisation
 			0.40 #-- max_strength
 			0.00 #-- build_cost_ic
-			0.00 #-- maximum_speed
+			0.75 #-- maximum_speed
 			0.00 #-- armor_value
 			0.00 #-- ap_attack
-			0.00 #-- reliability
+			0.20 #-- reliability
 			0.00 #-- reliability_factor
 			0.00 #-- weight
 		}
@@ -1140,7 +718,7 @@ jager_CHN = {
 				recon = 1
 				artillery = 1
 				infiltrator_company = 1
-				signal_company = 1
+				field_hospital = 1
 			}
 
 			regiments = {

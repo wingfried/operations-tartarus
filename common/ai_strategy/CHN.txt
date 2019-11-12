@@ -128,7 +128,7 @@ CHN_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = motorized
-		value = 2 #because doctrine this = 2
+		value = 0 #because doctrine this = 2
 	}
 
 	ai_strategy = {
@@ -140,19 +140,19 @@ CHN_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = light_armor
-		value = 15 #because doctrine this = 10
+		value = 7
 	}
 	
 		ai_strategy = {
-		type = role_ratio
-		id = medium_armor
-		value = 20 #because doctrine this = 10
+	type = role_ratio
+	id = medium_armor
+	value = 30
 	}
-	
+			
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 70 #88 to 70
+		value = 60 #88 to 70
 	}
 
 	ai_strategy = {
@@ -183,7 +183,7 @@ CHN_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = tactical_bomber
-		value = 5
+		value = 15
 	}
 
 	ai_strategy = {
@@ -249,30 +249,7 @@ CHN_unit_production = {
 	}
 }
 
-CHN_armored_production = {
-	enable = {
-		date > 1010.1.1
-		OR = { original_tag = CHN original_tag = CCN }
-		ai_wants_divisions > 24 #Decreasing the amount of tanks the AI wants
-	}
-	abort = {
-		ai_wants_divisions < 25 #Decreasing the amount of tanks the AI wants
-	}
 
-	ai_strategy = {
-		type = role_ratio
-		id = light_armor
-		value = 10
-	}
-	
-	ai_strategy = {
-		type = role_ratio
-		id = medium_armor
-		value = 10
-	}
-	
-	
-}
 
 CHN_highered_armored_production = {
 	enable = {
@@ -286,7 +263,7 @@ CHN_highered_armored_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = medium_armor
-		value = 10
+		value = 5
 	}
 }
 
@@ -309,70 +286,6 @@ CHN_dont_waste_xp_until_medium_armor = {
 		type = template_prio
 		id = mountaineers
 		value = -100
-	}
-}
-
-CHN_super_boost_light_for_med_armor = {
-
-	enable = {
-		OR = { original_tag = CHN original_tag = CCN }
-		has_tech = basic_medium_tank
-		NOT = { has_template_ai_majority_unit = medium_armor }
-	}
-
-	abort = {
-		has_template_ai_majority_unit = medium_armor
-	}
-
-	# lets do changes more often during this period too
-	ai_strategy = {
-		type = template_xp_reserve
-		value = -125
-	}
-
-	# this is gateway
-	ai_strategy = {
-		type = template_prio
-		id = light_armor
-		value = 100
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = medium_armor
-		value = 150
-	}
-}
-
-CHN_super_boost_light_for_modern_armor = {
-
-	enable = {
-		OR = { original_tag = CHN original_tag = CCN }
-		has_tech = main_battle_tank
-		NOT = { has_template_ai_majority_unit = modern_armor }
-	}
-
-	abort = {
-		has_template_ai_majority_unit = modern_armor
-	}
-
-	# lets do changes more often during this period too
-	ai_strategy = {
-		type = template_xp_reserve
-		value = -125
-	}
-
-	# this is gateway
-	ai_strategy = {
-		type = template_prio
-		id = medium_armor
-		value = 100
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = modern_armor
-		value = 150
 	}
 }
 
