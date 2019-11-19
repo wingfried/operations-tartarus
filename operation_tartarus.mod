@@ -1,5 +1,5 @@
 ﻿name="EaW - Operation Tartarus"
-path="mod/operation_tartarus/"
+path="mod/operations-tartarus/"
 dependencies = { "Equestria at War" }
 tags={
 	"Alternative History"
