@@ -9,18 +9,31 @@ focus_tree = {
 	continuous_focus_position = { x = 600 y = 750 }
 
 	shared_focus = HLQ_lushi_anchluss
+	shared_focus = HLQ_born_mighty_2
 
-	shared_focus = HLQ_industry_1
+	shared_focus = HLQ_regular_economics
+	shared_focus = HLQ_fascist_economics
 	shared_focus = HLQ_wehrmacht
-
+}
 	### Black Cloaks ###
 
-	focus = {
+	shared_focus = {
+    	id =  HLQ_born_mighty_2
+    	icon = GFX_goal_skull_treaty2
+    	x = 15
+    	y = 0
+    	cost = 0.142
+    	bypass = { always = yes }
+    }
+
+	shared_focus = {
 		id = HLQ_black_cloaks_in_government
 		icon = GFX_goal_ideology_national_populist
 		x = -3
 		y = 1
+		relative_position_id = HLQ_born_mighty_2
 		cost = 7.00
+		prerequisite = { focus = HLQ_born_mighty_2 }
 		available = {
 			has_government = fascism
 		}
@@ -43,11 +56,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_paramilitaries_in_the_streets
-		icon = GFX_goal_conscription
+		icon = GFX_goal_HOL_amend_wapenwet
 		x = -4
 		y = 2
+		relative_position_id = HLQ_born_mighty_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_black_cloaks_in_government }
 		available = {
@@ -65,11 +79,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_not_safe_at_home
-		icon = GFX_goal_skull_treaty
+		icon = GFX_goal_secret_agents
 		x = -2
 		y = 2
+		relative_position_id = HLQ_born_mighty_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_black_cloaks_in_government }
 		available = {
@@ -87,11 +102,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_reign_of_terror
 		icon = GFX_goal_guillotine
 		x = -3
 		y = 3
+		relative_position_id = HLQ_born_mighty_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_not_safe_at_home }
 		prerequisite = { focus = HLQ_paramilitaries_in_the_streets }
@@ -111,11 +127,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_what_minorities
-		icon = GFX_goal_generic_secret_weapon
+		icon = GFX_goal_skull_treaty
 		x = -2
 		y = 4
+		relative_position_id = HLQ_born_mighty_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_reign_of_terror }
 		available = {
@@ -131,12 +148,14 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_a_bullet_for_the_traitors
-		icon = GFX_goal_secret_agents
+		icon = GFX_goal_No_Half_Measures
 		x = -1
 		y = 1
+		relative_position_id = HLQ_born_mighty_2
 		cost = 7.00
+		prerequisite = { focus = HLQ_born_mighty_2 }
 
 		ai_will_do = {
 			factor = 100
@@ -169,11 +188,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_new_generals
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_focus_HOL_deal_with_right
 		x = -1
 		y = 3
+		relative_position_id = HLQ_born_mighty_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_a_bullet_for_the_traitors }
 		prerequisite = { focus = HLQ_outdated_traditions }
@@ -188,8 +208,8 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_new_generals"
 			create_corps_commander = {
 				name = "Edler von Wingenberg"
-				portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_9.dds"
-				traits = { harsh_leader infantry_officer }
+				picture = "Edler_Wingenburg.tga"
+				traits = { harsh_leader infantry_officer trait_reformist }
 				skill = 2
 				attack_skill = 3
 				defense_skill = 2
@@ -210,8 +230,8 @@ focus_tree = {
 			custom_effect_tooltip = HLQ_rudgier_stats_tp
 			create_corps_commander = {
 				name = "Alfred Aschenkampff"
-				portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_10.dds"
-				traits = { trickster }
+				picture = "Alfred_Kampf.tga"
+				traits = { trickster trait_reformist }
 				skill = 1
 				attack_skill = 2
 				defense_skill = 1
@@ -219,14 +239,37 @@ focus_tree = {
 				logistics_skill = 1
 			}
 			custom_effect_tooltip = HLQ_alfred_stats_tp
+			create_corps_commander = {
+			name = "Alina Hochmeister"
+			    picture = "Alina_Hochmeister.tga"
+			    traits = { commando camouflage_expert winter_specialist }
+			    skill = 2
+			    attack_skill = 2
+			    defense_skill = 3
+			    planning_skill = 2
+			    logistics_skill = 1
+		    }
+			custom_effect_tooltip = HLQ_alina_stats_tp
+			create_corps_commander = {
+			name = "Erika"
+			    picture = "Erika.tga"
+			    traits = { panzer_leader winter_specialist trait_reckless }
+			    skill = 2
+			    attack_skill = 2
+			    defense_skill = 1
+			    planning_skill = 1
+			    logistics_skill = 2
+		    }
+			custom_effect_tooltip = HLQ_erika_stats_tp
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_outdated_traditions
-		icon = GFX_focus_generic_strike_at_democracy1
+		icon = GFX_goal_skull_treaty2
 		x = 0
 		y = 2
+		relative_position_id = HLQ_born_mighty_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_a_bullet_for_the_traitors focus = HLQ_remove_the_old_guard }
 		available = {
@@ -251,12 +294,14 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_remove_the_old_guard
-		icon = GFX_goal_LEC_monkey
+		icon = GFX_goal_split_helmet
 		x = 1
 		y = 1
+		relative_position_id = HLQ_born_mighty_2
 		cost = 7.00
+		prerequisite = { focus = HLQ_born_mighty_2 }
 
 		ai_will_do = {
 			factor = 100
@@ -289,11 +334,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_the_stormgriffons
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_MAF_African_Pilots
 		x = 1
 		y = 3
+		relative_position_id = HLQ_born_mighty_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_outdated_traditions }
 		prerequisite = { focus = HLQ_remove_the_old_guard }
@@ -344,11 +390,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_longsword_destroy
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_generic_eagle
 		x = 0
 		y = 4
+		relative_position_id = HLQ_born_mighty_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_new_generals }
 		prerequisite = { focus = HLQ_the_stormgriffons }
@@ -436,12 +483,14 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_neuseland_project
 		icon = GFX_goal_tfv_saf_support_ossebrandwag
 		x = 3
 		y = 1
+		relative_position_id = HLQ_born_mighty_2
 		cost = 7.00
+		prerequisite = { focus = HLQ_born_mighty_2 }
 
 		ai_will_do = {
 			factor = 100
@@ -489,11 +538,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_education_and_indocrination
 		icon = GFX_goal_KTG_Bookstack
 		x = 2
 		y = 2
+		relative_position_id = HLQ_born_mighty_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_neuseland_project }
 		available = {
@@ -519,11 +569,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_make_way
 		icon = GFX_focus_generic_industry_2
 		x = 4
 		y = 2
+		relative_position_id = HLQ_born_mighty_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_neuseland_project }
 
@@ -593,11 +644,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_the_new_frontier
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_factory_complex
 		x = 3
 		y = 3
+		relative_position_id = HLQ_born_mighty_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_make_way }
 		prerequisite = { focus = HLQ_education_and_indocrination }
@@ -606,7 +658,14 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			553 = { is_owned_and_controlled_by = ROOT }
+			553 = { 
+			    is_owned_and_controlled_by = ROOT 
+				free_building_slots = {
+				    building = industrial_complex
+				    size > 0
+				    include_locked = yes
+			    }
+			}
 			has_government = fascism
 		}
 		completion_reward = {
@@ -656,15 +715,24 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_the_industrial_revolution
 		icon = GFX_goal_generic_production2
 		x = 2
 		y = 4
+		relative_position_id = HLQ_born_mighty_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_the_new_frontier }
-		available = {
-		    has_government = fascism
+        available = {
+			has_government = fascism
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = arms_factory
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
 		}
 
 		ai_will_do = {
@@ -709,11 +777,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_the_kingdom_of_hellquill
-		icon = GFX_focus_generic_strike_at_democracy2
+		icon = GFX_goal_POR_royal_edicts
 		x = 0
 		y = 5
+		relative_position_id = HLQ_born_mighty_2
 		cost = 5.00
 		prerequisite = { focus = HLQ_what_minorities }
 		prerequisite = { focus = HLQ_longsword_destroy }
@@ -731,9 +800,9 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_the_war_economy
-		icon = GFX_goal_economic_control
+		icon = GFX_goal_Focus_Military_Mobilisation
 		x = -1
 		y = 1
 		relative_position_id = HLQ_the_kingdom_of_hellquill
@@ -752,9 +821,9 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_the_ostwall_building
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_goal_nested_fortifications
 		x = 1
 		y = 1
 		relative_position_id = HLQ_the_kingdom_of_hellquill
@@ -895,9 +964,9 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_prepare_longsword
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_goal_forced_con
 		x = 0
 		y = 2
 		relative_position_id = HLQ_the_kingdom_of_hellquill
@@ -996,11 +1065,11 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_prepare_the_crusade
 		icon = GFX_focus_generic_strike_at_democracy1
 		x = 0
-		y = 4
+		y = 3
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 7.00
 		prerequisite = { focus = HLQ_prepare_longsword }
@@ -1018,11 +1087,11 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_test_subjects
 		icon = GFX_goal_supremacy_of_will
 		x = -1
-		y = 5
+		y = 4
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 7.00
 		prerequisite = { focus = HLQ_prepare_the_crusade }
@@ -1039,11 +1108,11 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_beasts_of_labour
 		icon = GFX_goal_ideology_national_populist
 		x = 1
-		y = 5
+		y = 4
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 7.00
 		prerequisite = { focus = HLQ_prepare_the_crusade }
@@ -1060,7 +1129,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_role_of_stormgriffons
 		icon = GFX_goal_conscription
 		x = -2
@@ -1081,11 +1150,11 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_prepare_the_people
 		icon = GFX_goal_national_arsenal
 		x = -3
-		y = 3
+		y = 4
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 7.00
 		prerequisite = { focus = HLQ_role_of_stormgriffons }
@@ -1109,10 +1178,10 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_proper_cadets
 		icon = GFX_focus_generic_military_mission
-		x = -1
+		x = -2
 		y = 3
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 7.00
@@ -1132,16 +1201,24 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_finish_industry
-		icon = GFX_goal_generic_construction
+		icon = GFX_goal_improve_industry
 		x = 2
 		y = 2
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 7.00
 		prerequisite = { focus = HLQ_the_war_economy focus = HLQ_the_ostwall_building }
 		available = {
-		    has_government = fascism
+			has_government = fascism
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = arms_factory
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
 		}
 
 		ai_will_do = {
@@ -1149,7 +1226,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_finish_industry"
-			increase_society_development = yes
+			increase_science_base = yes
 			if = {
 				limit = { has_country_flag = HLQ_the_industrial_sector }
 				random_owned_controlled_state = {
@@ -1186,11 +1263,11 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_bring_settlers
 		icon = GFX_goal_generic_position_armies
 		x = 3
-		y = 3
+		y = 4
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 7.00
 		prerequisite = { focus = HLQ_finish_industry }
@@ -1281,16 +1358,32 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_war_industry
-		icon = GFX_focus_generic_industry_2
-		x = 1
+		icon = GFX_r56_goal_FRA_alliance_with_industrialists
+		x = 2
 		y = 3
 		relative_position_id = HLQ_the_kingdom_of_hellquill
 		cost = 7.00
 		prerequisite = { focus = HLQ_finish_industry }
 		available = {
-		    has_government = fascism
+			has_government = fascism
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = arms_factory
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = industrial_complex
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
 		}
 
 		ai_will_do = {
@@ -1360,4 +1453,3 @@ focus_tree = {
 			}
 		}
 	}
-}

@@ -8,7 +8,8 @@ focus_tree = {
 
 	continuous_focus_position = { x = 600 y = 750 }
 
-	shared_focus = HLQ_industry_1
+	shared_focus = HLQ_regular_economics
+	shared_focus = HLQ_fascist_economics
 	shared_focus = HLQ_wehrmacht
 
 	### Reconciliation ###

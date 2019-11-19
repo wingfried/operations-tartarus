@@ -6,10 +6,18 @@ focus_tree = {
 		default = no
     }
     continuous_focus_position = { x = 290 y = 4000 }
+
+    shared_focus = HLQ_lushi_anchluss
+
+    shared_focus = HLQ_regular_economics
+	shared_focus = HLQ_fascist_economics
+	shared_focus = HLQ_wehrmacht
+
+
     focus = {
     	id =  HLQ_made_mighty_2
     	icon = GFX_goal_HLQ_integralist_focus
-    	x = 5
+    	x = 15
     	y = 0
     	cost = 0.142
     	bypass = { always = yes }
