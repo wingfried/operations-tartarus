@@ -93,7 +93,38 @@ tartarus_hellquill.20.t:0 "The Proposal"
 tartarus_hellquill.20.d:0 "“My Lady,” he began, taking her attention from the victory parade. “These past few months we have stood side by side, I have felt you rise with me as no other has. You are incredibly brave, determined and idealistic, just like me. But you are also compassionate, insightful and very beautiful.”\n\nShe blinked, incredibly taken aback but saying nothing to stop him. He pressed on.\n\n“I know I am not the easiest griff to get to understand, or to cooperate with. Yet, believe me when I say the things my emotions will not allow me to express. You have taken root in my heart, My Lady. And I fear you shall never leave it.” He took her claw in his, kneeling down and producing the small box, flicking it open. “But you have opened a certain part of me, and without you, I feel I shall never be whole again. Marry me, My Lady. So I never lose you.”\n\nThe box within held a ring set with a diamond, a diamond from the mountains of Brantbeak that he had spared no expense or effort to acquire. Rare as her beauty was.  He offered it out to her, feeling his iron will peel back for a shred of a moment as he awaited her answer, that brief thrill of dread and excitement he hadn’t felt in some time.\n\nHe practically fainted as she slowly reached out and took the ring, smiling down at him. He had never felt such relief.\n\n“Well, when you put it that way, Your Highness,” She said, sliding the ring onto one finger, because of course she did things her own way. It was one of the reasons he loved her so.\n\nWingfried stood, taking her claws in his. The whole affair had been so quick and quiet, so personal up here that even her generals and ministers hadn’t seen what had happened.  But the crowd had. The people knew.\n\nWingfried has come south for ideology. But he had found so much more to fight for. Now, Cyanolisia would always be a part of him. So long as she stood by his side."
 tartarus_hellquill.20.a:0 "Wonderful!"
 
+tartarus_hellquill.21.t:0 "The Fate of Brodfeld"
+tartarus_hellquill.21.desc:0 "Griffon Liberation Army is broken and Brodfeld is saved from red menace. Now it is time to decide about fate of Brodfeld and start reconstruction of country devastated by civil war. With Brodfeld army severely weakened after years of brutal fighting and Reformisten military in control of large part of Brodfeld no one seems to be willing to oppose us… Actually, we were contacted by several influential members of Golden Guard, that are willing to join our cause and help us in governing Brodfeld. King himself sent his regards and suggested formal alliance between Brodfeld and Hellquil to create “bulwark against communism”. We will of course accept this proposition, but question remains – what will be nature of our relation with Brodfeld? We could accept alliance proposition, or pursue deeper integration with Hellquil – maybe even as autonomus province within Hellquil, with king Kloseu as vassal of our state. It is up to Wingfried to decide the future of Brodfeld."
+tartarus_hellquill.21.a:0 "They would make for good allies."
+tartarus_hellquill.21.b:0 "The King could use some... help, in ruling Brodfeld."
+tartarus_hellquill.21.c:0 "The King's failings are clear. We shall integrate the nation."
+tartarus_hellquill.21.d:0 "Brodfeld has suffered enough. Leave them be."
 
+tartarus_hellquill.22.t:0 "Fall Rot"
+tartarus_hellquill.22.desc:0 "Prywhen communist have risen in Brodfeld like tumor on healthy body of Griffonia. Now they threaten rest of Evi Valley and will surely try to spread their wicked ideology. King Kloseu and his supporters were unable to defeat communists and have fallen, valiantly fighting till their bitter end. It is now our duty to avenge them and eradicate threat of communism, before it will infest rest of Griffonia. Wingfried has accepted plans of invading Prywhen – Fall Rot and we are ready to cross border and destroy the red monster."
+tartarus_hellquill.22.a:0 "Griffonia shall never be red!"
+
+tartarus_hellquill.23.t:0 "Invitation from Hellquill"
+tartarus_hellquill.23.a:0 "A reasonable offer."
+tartarus_hellquill.23.b:0 "We must mend our wounds, not wage more wars."
+
+tartarus_hellquill.24.t:0 "An Offer from Hellquill"
+tartarus_hellquill.24.a:0 "We're in no position to refuse."
+tartarus_hellquill.24.b:0 "We'll fight them, too!"
+
+tartarus_hellquill.25.t:0 "The Demands of Hellquill"
+tartarus_hellquill.25.a:0 "We have fought too long to fend them off."
+tartarus_hellquill.25.b:0 "We will fight forevermore!"
+
+### News Events ###
+
+news_tartarus_hellquill.1.t:0 "Hellquill Intervenes in Brodfeld"
+news_tartarus_hellquill.1.desc:0 "Kingdom of Brodfeld was once the most powerful state in Evi Valley region, and thanks to it fields of rice it was “breadbasket of Griffonia”. Now however it is bitterly divided between communist rebels and king Kloseu loyalists that continued to fight for many years, turning country into desolate wasteland. Until now, none of the sides of this conflict was able to achieve decisive victory… Until now.  Wingfried von Katerinburg announced today, that Hellquil will support rightful king of Brodfeld. First units of Hellquil military are already crossing northern border. Unless brodfeldian communist will be supported by other foreign power it is unlikely then can survive upcoming offensive. Grandmaster Wingfreid have already announced in radio speech, that he will “make Brodfeld red… with communist blood.”"
+news_tartarus_hellquill.1.a:0 "For Griffonia!"
+news_tartarus_hellquill.1.b:0 "Help is finally here!"
+news_tartarus_hellquill.1.c:0 "Man the barricades!"
+news_tartarus_hellquill.1.d:0 "Damn those Reformisten!"
+news_tartarus_hellquill.1.e:0 "And so the Revolution ends..."
 
 ### National Focuses ###
 
@@ -104,8 +135,6 @@ tartarus_hellquill.20.a:0 "Wonderful!"
     HLQ_made_mighty_2_desc:0 "Given time and dedication, anyone has the potential to learn the true way of life- that is our way, the Griffons' way! It is so superior that all must be shown down the path... even ponies. As such, we must destroy their weak culture to preserve stability and unity in our lands!"
     HLQ_born_mighty:0 "Born Mighty"
     HLQ_born_mighty_desc:0 "This continent is named Griffonia for a reason. We shall ensure that this name is held as accurate and no longer sullied by the continued presence of undesirables like ponies, who corrupt and degrade the prestige of the land of Griffons!"
-    HLQ_born_mighty_2:0 "Born Mighty"
-    HLQ_born_mighty_2_desc:0 "This continent is named Griffonia for a reason. We shall ensure that this name is held as accurate and no longer sullied by the continued presence of undesirables like ponies, who corrupt and degrade the prestige of the land of Griffons!"
     HLQ_black_cloaks_in_council:0 "The Reformisten in the Council"
     HLQ_black_cloaks_in_council_desc:0 "With his newly gained power, Wingfried has arranged many high-ranking members of his movement to be put into the Council. They are unlikely to oppose his policies now, leaving him free to do whatever he has in mind for our nation."
     HLQ_militarize_police:0 "Militarise the Police"
@@ -165,12 +194,7 @@ tartarus_hellquill.20.a:0 "Wonderful!"
     HLQ_the_war_industry:0 "The War Industry"
     HLQ_the_war_industry_desc:0 "Our industry, now relatively well-developed, must be further expanded to suit our growing needs. Every aspect of our production must go towards fighting the Riverlanders."
 
-    HLQ_siegfrieds_retirement_2:0 "Siegfried's Retirement"
-    HLQ_siegfrieds_retirement_2_desc:0 "Siegfried's long reign has been successful and good for Hellquill. Under him, we continued to hold back the eastern invaders. And yet, his will to lead has faded over these long, trying years. He has now uttered the wish to resign and step down as Grandmaster of the Hellquillian Order. He will continue to support our cause, but this leaves us with a great power vacuum, one that many within the nation are eager to exploit..."
-
-    HLQ_status_quo_2:0 "Status Quo"
-    HLQ_status_quo_2_desc:0 "The Council has chosen Urlach as Siegfried's successor. As a veteran Knight, Urlach will take over the office of Grandmaster and ensure that our nation and society remains stable and ready to fight."
-
+  
 
   #Annex Tree
     HLQ_lushi_anchluss:0 "The Lushian Anchluss"
@@ -254,3 +278,6 @@ tartarus_hellquill.20.a:0 "Wonderful!"
     
     HLQ_int_the_kingdom_of_hellquill:0 "Proclaim the Kingdom"
     HLQ_int_the_kingdom_of_hellquill_desc:0 "The time has come to proclaim ourselves something greater! King Wingfried will lead us towards a bright future! He will rid us of ponykind, and grant us a thousand years of prosperity!"
+
+### Flavor Loc ###
+HLQ_erich_von_katerinburg_desc:0 "Erich Ahmić, a Deponyan unicorn who was raised in a small village near the Hellquill – Deponyan border. During a raid of the village, Erich took refuge with his family in their house, until it was shelled by an artillery barrage. Miraculously, he survived, and remained hidden, until he saw Wingfried Von Katerinburg, leader of the raid, pass through an alleyway beside his house, wielding a decorated blade of the veteran knights. Erich emerged from the wreckage of his home, and with the little magic he had, swept the sword right from his claw.\n\n Wingfried looked around for the magic that had taken his sword, only to find a child before him, wielding the sword towards him courageously, yet also with fear. He approached Erich, his own sword being used against him, and with such intent, surprised him. A child using magic to wield his weapon against him like that took courage, yet hiding that fear would tire him. Despite the child’s efforts, he took back his blade and took the child under his wing, as he saw a spark within the child, a promising knight, an opportunity and a weapon to use against his enemies.\n\nTo the surprise of the raiding party, he did not order the young pony to be left to die or killed outright, but instead, Wingfried became a father figure to him, raising the unicorn under his ideals of strength and chivalry. He taught the boy the ways of the knights of Hellquill under firm, yet stern teachings, moulding the Deponyan Unicorn into a being that resembled Hellquill’s prestige and bravery in combat.\n\nErich Von Katerinburg, as he became known as, soon became a loyal and intermediate unicorn, learning much from the teachings of Wingfried. When he came of age, he joined the military academy and passed with flying colours, soon being appointed a much earned and respected spot in the knights of Hellquill.\n\nWhen the Reformisten formed, Erich soon became a figurehead, championing Integralism, showing that the Ponies and Griffons can work claw and hoof to achieve their ideals. The Reformisten’s main ideal would be to reform the Griffonian Empire, but one out of the ashes of the vile filth known as the Riverlands.\n\nHe would still carry a fond yet fading memory of his parents and the Deponyan village, often fantasizing about being back with them, or seeing them one last time, but thanking the heavens that his life is more fortunate under Wingfried’s wing\n\n"
