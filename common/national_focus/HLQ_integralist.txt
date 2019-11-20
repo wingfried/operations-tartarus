@@ -12,7 +12,7 @@ focus_tree = {
     shared_focus = HLQ_regular_economics
 	shared_focus = HLQ_fascist_economics
 	shared_focus = HLQ_wehrmacht
-
+}
 
     shared_focus = {
     	id =  HLQ_made_mighty_2
