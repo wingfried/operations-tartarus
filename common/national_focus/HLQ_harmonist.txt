@@ -12,14 +12,27 @@ focus_tree = {
 	shared_focus = HLQ_fascist_economics
 	shared_focus = HLQ_wehrmacht
 
-	### Reconciliation ###
+	shared_focus = HLQ_reconciliation_2
 
-	focus = {
+}	
+	
+	shared_focus = {
+    	id =  HLQ_reconciliation_2
+    	icon = GFX_goal_liberty
+    	x = 15
+    	y = 0
+    	cost = 0.142
+    	bypass = { always = yes }
+    }
+
+	shared_focus = {
 		id = HLQ_griffon_colonists
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_planning_bonus
 		x = -3
 		y = 1
+		relative_position_id = HLQ_reconciliation_2
 		cost = 7.00
+		prerequisite = { focus = HLQ_reconciliation_2 }
 
 		ai_will_do = {
 			factor = 100
@@ -80,11 +93,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_education_effort
 		icon = GFX_goal_KTG_Bookstack
 		x = -4
 		y = 2
+		relative_position_id = HLQ_reconciliation_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_griffon_colonists }
 		available = {
@@ -105,11 +119,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_ost_griffenheimer_identity
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_ger_revive_kaiserreich
 		x = -2
 		y = 2
+		relative_position_id = HLQ_reconciliation_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_griffon_colonists }
 		available = {
@@ -130,11 +145,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_further_colonization
-		icon = GFX_goal_generic_construction
+		icon = GFX_goal_plantation_grants
 		x = -3
 		y = 3
+		relative_position_id = HLQ_reconciliation_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_ost_griffenheimer_identity }
 		prerequisite = { focus = HLQ_education_effort }
@@ -191,18 +207,27 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_enter_industrial_age
 		icon = GFX_goal_generic_production2
 		x = -2
 		y = 4
+		relative_position_id = HLQ_reconciliation_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_further_colonization }
 		available = {
-			OR = {
-			   has_government = neutrality
-			   has_government = democratic
+		    OR = {
+			    has_government = democratic
+				has_government = neutrality
 			}
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = industrial_complex
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
 		}
 
 		ai_will_do = {
@@ -247,12 +272,14 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_open_dialogue
 		icon = GFX_goal_molotov_ribbentrop_pact_pony_griffon
 		x = -1
 		y = 1
+		relative_position_id = HLQ_reconciliation_2
 		cost = 5.00
+		prerequisite = { focus = HLQ_reconciliation_2 }
 		available = {
 			OR = {
 			   has_government = neutrality
@@ -270,12 +297,14 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_build_relations
-		icon = GFX_goal_anschluss
+		icon = GFX_goal_pony_passport
 		x = 1
 		y = 1
+		relative_position_id = HLQ_reconciliation_2
 		cost = 5.00
+		prerequisite = { focus = HLQ_reconciliation_2 }
 		available = {
 			OR = {
 			   has_government = neutrality
@@ -293,11 +322,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_support_pony_towns
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_agricultural_aid
 		x = 0
 		y = 2
+		relative_position_id = HLQ_reconciliation_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_open_dialogue focus = HLQ_build_relations }
 
@@ -354,11 +384,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_cultural_revival
-		icon = GFX_goal_agriculture
+		icon = GFX_goal_industrial_pony
 		x = -1
 		y = 3
+		relative_position_id = HLQ_reconciliation_2
 		cost = 5.00
 		prerequisite = { focus = HLQ_support_pony_towns }
 		prerequisite = { focus = HLQ_open_dialogue }
@@ -378,11 +409,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_pony_knights
-		icon = GFX_goal_conscription
+		icon = GFX_goal_unicorn_soldier
 		x = 1
 		y = 3
+		relative_position_id = HLQ_reconciliation_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_support_pony_towns }
 		prerequisite = { focus = HLQ_build_relations }
@@ -414,6 +446,10 @@ focus_tree = {
 			}
 			hidden_effect = {
 				if = {
+					limit = { NOT = { has_tech = tech_knights } }
+					set_technology = { tech_knights = 1 }
+				}
+				if = {
 					limit = { has_country_flag = HLQ_army_stuff }
 					load_oob = "HLQ_pony_knights_2"
 					else = {
@@ -424,11 +460,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_pony_rights
 		icon = GFX_goal_constitutional_guarantees
 		x = 0
 		y = 4
+		relative_position_id = HLQ_reconciliation_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_pony_knights }
 		prerequisite = { focus = HLQ_cultural_revival }
@@ -462,12 +499,14 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_dealing_with_the_black_cloaks
-		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		icon = GFX_goal_generic_investigation
 		x = 3
 		y = 1
+		relative_position_id = HLQ_reconciliation_2
 		cost = 7.00
+		prerequisite = { focus = HLQ_reconciliation_2 }
 		available = {
 			OR = {
 			   has_government = neutrality
@@ -484,11 +523,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_trial_for_katerinburg
-		icon = GFX_goal_government_icon
+		icon = GFX_goal_DOM_The_Trial
 		x = 2
 		y = 2
+		relative_position_id = HLQ_reconciliation_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_dealing_with_the_black_cloaks }
 		available = {
@@ -507,11 +547,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_free_press
-		icon = GFX_goal_press_barons
+		icon = GFX_goal_big_news
 		x = 4
 		y = 2
+		relative_position_id = HLQ_reconciliation_2
 		cost = 5.00
 		prerequisite = { focus = HLQ_dealing_with_the_black_cloaks }
 		available = {
@@ -530,11 +571,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_deal_with_the_rest
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_HOL_crackdown_natpop
 		x = 3
 		y = 3
+		relative_position_id = HLQ_reconciliation_2
 		cost = 7.00
 		prerequisite = { focus = HLQ_free_press }
 		prerequisite = { focus = HLQ_trial_for_katerinburg }
@@ -556,11 +598,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_memorial_for_victims
 		icon = GFX_goal_graveyard
 		x = 2
 		y = 4
+		relative_position_id = HLQ_reconciliation_2
 		cost = 5.00
 		prerequisite = { focus = HLQ_deal_with_the_rest }
 		available = {
@@ -580,11 +623,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_two_races_under_one_flag
-		icon = GFX_focus_generic_the_giant_wakes
+		icon = GFX_goal_DOM_End_Judicial_Corruption
 		x = 0
 		y = 5
+		relative_position_id = HLQ_reconciliation_2
 		cost = 5.00
 		prerequisite = { focus = HLQ_memorial_for_victims }
 		prerequisite = { focus = HLQ_pony_rights }
@@ -605,9 +649,9 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_republic
-		icon = GFX_goal_government_icon
+		icon = GFX_goal_ideology_social_liberal
 		x = -1
 		y = 1
 		relative_position_id = HLQ_two_races_under_one_flag
@@ -630,9 +674,9 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_duchy
-		icon = GFX_focus_generic_home_defense
+		icon = GFX_goal_ideology_social_conservative
 		x = 1
 		y = 1
 		relative_position_id = HLQ_two_races_under_one_flag
@@ -655,9 +699,9 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_further_industrial_development
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_factory_complex
 		x = -2
 		y = 2
 		relative_position_id = HLQ_two_races_under_one_flag
@@ -668,6 +712,14 @@ focus_tree = {
 			   has_government = neutrality
 			   has_government = democratic
 			}
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = arms_factory
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
 		}
 
 		ai_will_do = {
@@ -675,7 +727,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_further_industrial_development"
-			increase_society_development = yes
+			increase_science_base = yes
 			if = {
 				limit = { has_country_flag = HLQ_the_industrial_sector }
 				random_owned_controlled_state = {
@@ -712,11 +764,11 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_pony_farmer_support
-		icon = GFX_goal_agrarian_reform
+		icon = GFX_focus_AUS_agriculture
 		x = -3
-		y = 3
+		y = 4
 		relative_position_id = HLQ_two_races_under_one_flag
 		cost = 7.00
 		prerequisite = { focus = HLQ_further_industrial_development }
@@ -758,10 +810,10 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_more_colonists
-		icon = GFX_goal_generic_construct_civ_factory
-		x = -1
+		icon = GFX_goal_ITA_urban
+		x = -2
 		y = 3
 		relative_position_id = HLQ_two_races_under_one_flag
 		cost = 7.00
@@ -847,7 +899,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_invite_longsword
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 0
@@ -930,11 +982,11 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_between_giants
 		icon = GFX_goal_molotov_ribbentrop_pact_pony_griffon
 		x = 0
-		y = 4
+		y = 3
 		relative_position_id = HLQ_two_races_under_one_flag
 		cost = 5.00
 		prerequisite = { focus = HLQ_invite_longsword }
@@ -954,11 +1006,11 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_the_empire
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = -1
-		y = 5
+		y = 4
 		relative_position_id = HLQ_two_races_under_one_flag
 		cost = 5.00
 		prerequisite = { focus = HLQ_between_giants }
@@ -983,11 +1035,11 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_the_feds
 		icon = GFX_goal_improve_relations_pony_griffon
 		x = 1
-		y = 5
+		y = 4
 		relative_position_id = HLQ_two_races_under_one_flag
 		cost = 5.00
 		prerequisite = { focus = HLQ_between_giants }
@@ -1016,7 +1068,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_reform_the_knights
 		icon = GFX_goal_conscription
 		x = 2
@@ -1046,19 +1098,27 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_armouries
 		icon = GFX_goal_military_academy
-		x = 1
+		x = 2
 		y = 3
 		relative_position_id = HLQ_two_races_under_one_flag
 		cost = 7.00
 		prerequisite = { focus = HLQ_reform_the_knights }
 		available = {
 		    OR = {
-			   has_government = neutrality
-			   has_government = democratic
+			    has_government = democratic
+				has_government = neutrality
 			}
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = arms_factory
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
 		}
 
 		ai_will_do = {
@@ -1104,11 +1164,11 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_cadets
 		icon = GFX_goal_KTG_Bookstack
 		x = 3
-		y = 3
+		y = 4
 		relative_position_id = HLQ_two_races_under_one_flag
 		cost = 7.00
 		prerequisite = { focus = HLQ_reform_the_knights }
@@ -1129,4 +1189,3 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-}

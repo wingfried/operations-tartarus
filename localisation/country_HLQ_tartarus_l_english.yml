@@ -104,6 +104,8 @@ tartarus_hellquill.20.a:0 "Wonderful!"
     HLQ_made_mighty_2_desc:0 "Given time and dedication, anyone has the potential to learn the true way of life- that is our way, the Griffons' way! It is so superior that all must be shown down the path... even ponies. As such, we must destroy their weak culture to preserve stability and unity in our lands!"
     HLQ_born_mighty:0 "Born Mighty"
     HLQ_born_mighty_desc:0 "This continent is named Griffonia for a reason. We shall ensure that this name is held as accurate and no longer sullied by the continued presence of undesirables like ponies, who corrupt and degrade the prestige of the land of Griffons!"
+    HLQ_born_mighty_2:0 "Born Mighty"
+    HLQ_born_mighty_2_desc:0 "This continent is named Griffonia for a reason. We shall ensure that this name is held as accurate and no longer sullied by the continued presence of undesirables like ponies, who corrupt and degrade the prestige of the land of Griffons!"
     HLQ_black_cloaks_in_council:0 "The Reformisten in the Council"
     HLQ_black_cloaks_in_council_desc:0 "With his newly gained power, Wingfried has arranged many high-ranking members of his movement to be put into the Council. They are unlikely to oppose his policies now, leaving him free to do whatever he has in mind for our nation."
     HLQ_militarize_police:0 "Militarise the Police"
@@ -163,7 +165,12 @@ tartarus_hellquill.20.a:0 "Wonderful!"
     HLQ_the_war_industry:0 "The War Industry"
     HLQ_the_war_industry_desc:0 "Our industry, now relatively well-developed, must be further expanded to suit our growing needs. Every aspect of our production must go towards fighting the Riverlanders."
 
-  
+    HLQ_siegfrieds_retirement_2:0 "Siegfried's Retirement"
+    HLQ_siegfrieds_retirement_2_desc:0 "Siegfried's long reign has been successful and good for Hellquill. Under him, we continued to hold back the eastern invaders. And yet, his will to lead has faded over these long, trying years. He has now uttered the wish to resign and step down as Grandmaster of the Hellquillian Order. He will continue to support our cause, but this leaves us with a great power vacuum, one that many within the nation are eager to exploit..."
+
+    HLQ_status_quo_2:0 "Status Quo"
+    HLQ_status_quo_2_desc:0 "The Council has chosen Urlach as Siegfried's successor. As a veteran Knight, Urlach will take over the office of Grandmaster and ensure that our nation and society remains stable and ready to fight."
+
 
   #Annex Tree
     HLQ_lushi_anchluss:0 "The Lushian Anchluss"

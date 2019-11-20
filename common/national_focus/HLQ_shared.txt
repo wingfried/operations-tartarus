@@ -37,6 +37,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_reconciliation"
 			country_event = { days = 1 id = hellquill.3 }
+			load_focus_tree = { tree = hellquill_harmonist_focus keep_completed = yes }
 			hidden_effect = {
 			    complete_national_focus = HLQ_wehrmacht
 			}
@@ -62,6 +63,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_status_quo"
 			country_event = { days = 1 id = hellquill.19 }
+			load_focus_tree = { tree = hellquill_neutrality_focus keep_completed = yes }
 			hidden_effect = {
 			    complete_national_focus = HLQ_wehrmacht
 			}
