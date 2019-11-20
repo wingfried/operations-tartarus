@@ -3,7 +3,6 @@ focus_tree = {
 
 	country = {
 		factor = 0
-		default = no
     }
     continuous_focus_position = { x = 290 y = 4000 }
 
@@ -335,20 +334,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_get_new_generals"
 			create_corps_commander = {
-				name = "Edler von Wingenberg"
-				portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_9.dds"
-				traits = { harsh_leader infantry_officer }
-				skill = 2
-				attack_skill = 3
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 2
-			}
-            custom_effect_tooltip = HLQ_edler_stats_tp
-			create_corps_commander = {
-				name = "Rüdiger Geltz"
-				portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_4.dds"
-				traits = { politically_connected career_officer }
+				name = "Vanance Lodernd"
+				portrait_path = "vanance_flaming.tga"
+				traits = { air_force_commander career_officer }
 				skill = 2
 				attack_skill = 2
 				defense_skill = 3
@@ -357,14 +345,14 @@ focus_tree = {
 			}
 			custom_effect_tooltip = HLQ_rudgier_stats_tp
 			create_corps_commander = {
-				name = "Alfred Aschenkampff"
-				portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_10.dds"
-				traits = { trickster }
-				skill = 1
+				name = "Sascha Erlinger"
+				picture = "sascha_erlinger.tga"
+				traits = { trickster trait_reformist }
+				skill = 2
 				attack_skill = 2
-				defense_skill = 1
+				defense_skill = 2
 				planning_skill = 2
-				logistics_skill = 1
+				logistics_skill = 2
 			}
 			custom_effect_tooltip = HLQ_alfred_stats_tp
 			create_corps_commander = {
@@ -464,7 +452,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_stormgriffons"
 			add_ideas = HLQ_stormgriff
-			create_field_marshal = {
+			create_corps_commander = {
 			name = "Eisen Silberkrone"
 			    picture = "Eisen.tga"
 			    desc = HLQ_eisen_desc
@@ -476,6 +464,17 @@ focus_tree = {
 			    logistics_skill = 3
 		    }
 			custom_effect_tooltip = HLQ_eisen_stats_tp
+			create_corps_commander = {
+				name = "Endrike Beekyarov"
+				picture = "beaky.tga"
+				traits = { harsh_leader infantry_officer trait_reformist }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+            custom_effect_tooltip = HLQ_edler_stats_tp
 			if = {
 				limit = { has_country_flag = HLQ_army_stuff }
 				custom_effect_tooltip = HLQ_stormgriff_2_tp
