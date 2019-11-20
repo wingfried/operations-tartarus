@@ -117,15 +117,15 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_sturmpferde"
 			create_corps_commander = {
-             name = "Erich Von Katerinburg"
-            portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_7.dds"
-           traits = { trait_Ranger }
-           skill = 3
-           attack_skill = 3
-           defense_skill = 2
-           planning_skill = 3
-           logistics_skill = 4
-       }
+            	name = "Erich Von Katerinburg"
+            	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_7.dds"
+        	    traits = { trait_Ranger }
+        	   	skill = 3
+        	   	attack_skill = 3
+        	   	defense_skill = 2
+        	   	planning_skill = 3
+        	   	logistics_skill = 4
+       		}
 		    custom_effect_tooltip = HLQ_eisen_stats_tp
 			if = {
 				limit = { has_country_flag = HLQ_army_stuff }
