@@ -7,14 +7,15 @@ focus_tree = {
     }
     continuous_focus_position = { x = 290 y = 4000 }
 
+    shared_focus = HLQ_made_mighty_2
     shared_focus = HLQ_lushi_anchluss
 
     shared_focus = HLQ_regular_economics
 	shared_focus = HLQ_fascist_economics
 	shared_focus = HLQ_wehrmacht
 
-
-    focus = {
+}
+    shared_focus = {
     	id =  HLQ_made_mighty_2
     	icon = GFX_goal_HLQ_integralist_focus
     	x = 15
@@ -22,7 +23,7 @@ focus_tree = {
     	cost = 0.142
     	bypass = { always = yes }
     }
-    focus = {
+    shared_focus = {
 		id = HLQ_black_cloaks_in_council
 		icon = GFX_goal_ideology_national_populist
 		relative_position_id = HLQ_made_mighty_2
@@ -52,7 +53,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_militarize_police
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_goal_conscription
@@ -75,7 +76,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_geheimdienst
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_goal_skull_treaty
@@ -98,7 +99,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_sturmpferde
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_goal_conscription_pony
@@ -153,7 +154,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_cultural_unity
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_goal_generic_secret_weapon
@@ -174,7 +175,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_a_bullet_for_the_hardliners
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_goal_secret_agents
@@ -213,7 +214,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_get_new_generals
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_focus_generic_military_mission
@@ -267,7 +268,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_old_traditions
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_focus_generic_strike_at_democracy1
@@ -297,7 +298,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_remove_old_guard
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_goal_LEC_monkey
@@ -336,7 +337,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_stormgriffons
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_goal_generic_small_arms
@@ -392,7 +393,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_destroy_longsword
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_goal_generic_political_pressure
@@ -485,7 +486,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_neuland_project
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_goal_tfv_saf_support_ossebrandwag
@@ -539,7 +540,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_integralist_education
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_goal_KTG_Bookstack
@@ -570,7 +571,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_pave_way
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_focus_generic_industry_2
@@ -645,7 +646,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_new_frontier
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_goal_generic_construct_civ_factory
@@ -709,7 +710,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_industrial_revolution_integralist
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_goal_generic_production2
@@ -763,7 +764,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_declare_kingdom_of_hellquill
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_goal_HLQ_eagle
@@ -785,7 +786,7 @@ focus_tree = {
 			country_event = { id = hellquill.31 days = 1 }
 		}
 	}
-	focus = {
+	shared_focus = {
 		id = HLQ_calibrate_economy
 		icon = GFX_goal_economic_control
 		x = -1
@@ -806,7 +807,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_ostwall_building
 		icon = GFX_goal_generic_construct_military
 		x = 1
@@ -949,7 +950,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_prep_longsword
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 0
@@ -1050,7 +1051,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_prep_the_crusade
 		icon = GFX_focus_generic_strike_at_democracy1
 		x = 0
@@ -1072,7 +1073,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_group_936
 		icon = GFX_goal_supremacy_of_will
 		x = -1
@@ -1093,7 +1094,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_kulturkampf
 		icon = GFX_goal_ideology_national_populist
 		x = 1
@@ -1114,7 +1115,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_role_of_sturmtruppen
 		icon = GFX_goal_conscription
 		x = -2
@@ -1135,7 +1136,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_prep_the_people
 		icon = GFX_goal_national_arsenal
 		x = -3
@@ -1163,7 +1164,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_junkerschulen
 		icon = GFX_focus_generic_military_mission
 		x = -1
@@ -1186,7 +1187,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_complete_industry
 		icon = GFX_goal_generic_construction
 		x = 2
@@ -1240,7 +1241,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_expand_settlements
 		icon = GFX_goal_generic_position_armies
 		x = 3
@@ -1335,7 +1336,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = HLQ_the_war_industry
 		icon = GFX_focus_generic_industry_2
 		x = 1
