@@ -24,5 +24,16 @@ spriteTypes = {
 		name = "GFX_goal_HLQ_eagle"
 		texturefile = "gfx/interface/goals/goal_HLQ_eagle.dds"
 	}
-
+	SpriteType = { 
+		name = "GFX_goal_HLQ_hellquill_kingdom"
+		texturefile = "gfx/interface/goals/goal_HLQ_hellquill_kingdom.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_HLQ_create_sturmpferde"
+		texturefile = "gfx/interface/goals/goal_HLQ_create_sturmpferde.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_HLQ_black_knights"
+		texturefile = "gfx/interface/goals/goal_HLQ_black_knights.dds"
+	}
 }
