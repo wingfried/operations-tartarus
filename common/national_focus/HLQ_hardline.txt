@@ -353,7 +353,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_the_stormgriffons"
 			add_ideas = HLQ_stormgriff
-			create_field_marshal = {
+			create_corps_commander = {
 			name = "Eisen Silberkrone"
 			    picture = "Eisen.tga"
 			    desc = HLQ_eisen_desc
@@ -374,9 +374,9 @@ focus_tree = {
 			}
 			hidden_effect = {
 				if = {
-					limit = { NOT = { has_tech = tech_military_police } }
+					limit = { NOT = { has_tech = tech_field_hospital } }
 					set_technology = {
-						tech_military_police = 1
+						tech_field_hospital = 1
 					}
 				}
 				if = {
