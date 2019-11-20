@@ -31,6 +31,8 @@ focus_tree = {
 		y = 1
 		cost = 7.00
 		prerequisite = { focus = HLQ_black_cloaks_in_council }
+		prerequisite = { focus = HLQ_one_culture }
+		prerequisite = { focus = HLQ_find_ceo_of_racism }
 		available = {
 			has_government = fascism
 		}
@@ -335,7 +337,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_get_new_generals"
 			create_corps_commander = {
 				name = "Vanance Lodernd"
-				portrait_path = "vanance_flaming.tga"
+				portrait_path = "vanance.tga"
 				traits = { air_force_commander career_officer }
 				skill = 2
 				attack_skill = 2
@@ -620,6 +622,8 @@ focus_tree = {
 		y = 1
 		cost = 7.00
 		prerequisite = { focus = HLQ_black_cloaks_in_council }
+		prerequisite = { focus = HLQ_one_culture }
+		prerequisite = { focus = HLQ_find_ceo_of_racism }
 		ai_will_do = {
 			factor = 100
 		}

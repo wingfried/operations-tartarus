@@ -82,6 +82,7 @@ ideas = {
 
 			allowed = {
 				original_tag = HLQ
+				
 			}
 
 			visible = {
