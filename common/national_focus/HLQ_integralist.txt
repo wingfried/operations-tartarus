@@ -7,14 +7,13 @@ focus_tree = {
     }
     continuous_focus_position = { x = 290 y = 4000 }
 
-    shared_focus = HLQ_made_mighty_2
     shared_focus = HLQ_lushi_anchluss
-
+    shared_focus = HLQ_made_mighty_2
     shared_focus = HLQ_regular_economics
 	shared_focus = HLQ_fascist_economics
 	shared_focus = HLQ_wehrmacht
 
-}
+
     shared_focus = {
     	id =  HLQ_made_mighty_2
     	icon = GFX_goal_HLQ_integralist_focus
@@ -102,7 +101,7 @@ focus_tree = {
 	shared_focus = {
 		id = HLQ_sturmpferde
 		relative_position_id = HLQ_made_mighty_2
-		icon = GFX_goal_conscription_pony
+		icon = GFX_goal_HLQ_create_sturmpferde
 		x = -3
 		y = 3
 		cost = 7.00
@@ -118,15 +117,16 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_sturmpferde"
 			create_corps_commander = {
-            	name = "Erich Von Katerinburg"
-            	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_7.dds"
-        	    traits = { trait_Ranger }
-        	   	skill = 3
-        	   	attack_skill = 3
-        	   	defense_skill = 2
-        	   	planning_skill = 3
-        	   	logistics_skill = 4
-       		}
+             name = "Erich Von Katerinburg"
+            portrait_path = "gfx/leaders/HLQ/Erich_von_Katerinburg.dds"
+           desc = HLQ_erich_von_katerinburg_desc
+           traits = { ranger promising_general }
+           skill = 3
+           attack_skill = 3
+           defense_skill = 2
+           planning_skill = 3
+           logistics_skill = 4
+       }
 		    custom_effect_tooltip = HLQ_eisen_stats_tp
 			if = {
 				limit = { has_country_flag = HLQ_army_stuff }
@@ -767,7 +767,7 @@ focus_tree = {
 	shared_focus = {
 		id = HLQ_declare_kingdom_of_hellquill
 		relative_position_id = HLQ_made_mighty_2
-		icon = GFX_goal_HLQ_eagle
+		icon = GFX_goal_HLQ_hellquill_kingdom
 		x = 0
 		y = 5
 		cost = 5.00
