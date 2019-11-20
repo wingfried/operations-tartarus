@@ -126,6 +126,26 @@ focus_tree = {
 	}
 
 	shared_focus = {
+		id = HLQ_special_sturmp
+		icon = GFX_goal_HLQ_create_sturmpferde
+		relative_position_id = HLQ_sturmpferde
+		x = 0
+		y = 1
+		cost = 7.00
+		prerequisite = { focus = HLQ_sturmpferde }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_special_sturmp"
+		}
+	}
+
+	shared_focus = {
 		id = HLQ_cultural_unity
 		relative_position_id = HLQ_militarize_police
 		icon = GFX_goal_generic_secret_weapon
@@ -225,6 +245,27 @@ focus_tree = {
 	}
 
 	shared_focus = {
+		id = HLQ_find_ceo_of_racism
+		icon = GFX_goal_gunpoint_diplomacy
+		relative_position_id = HLQ_a_bullet_for_the_hardliners
+		x = -1
+		y = 1
+		cost = 7.00
+		prerequisite = { focus = HLQ_remove_old_guard }
+		prerequisite = { focus = HLQ_a_bullet_for_the_hardliners }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_find_ceo_of_racism"
+		}
+	}
+
+	shared_focus = {
 		id = HLQ_black_cloaks_in_council
 		icon = GFX_goal_ideology_national_populist
 		relative_position_id = HLQ_a_bullet_for_the_hardliners
@@ -252,6 +293,27 @@ focus_tree = {
 					country_event = { days = 10 id = hellquill.26 }
 				}
 			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_one_culture
+		icon = GFX_goal_generic_dangerous_deal_pony_griffon
+		relative_position_id = HLQ_a_bullet_for_the_hardliners
+		x = 3
+		y = 1
+		cost = 7.00
+		prerequisite = { focus = HLQ_remove_old_guard }
+		prerequisite = { focus = HLQ_a_bullet_for_the_hardliners }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_one_culture"
 		}
 	}
 
@@ -305,12 +367,34 @@ focus_tree = {
 				logistics_skill = 1
 			}
 			custom_effect_tooltip = HLQ_alfred_stats_tp
+			create_corps_commander = {
+			name = "Alina Hochmeister"
+			    picture = "Alina_Hochmeister.tga"
+			    traits = { commando camouflage_expert winter_specialist }
+			    skill = 2
+			    attack_skill = 2
+			    defense_skill = 3
+			    planning_skill = 2
+			    logistics_skill = 1
+		    }
+			custom_effect_tooltip = HLQ_alina_stats_tp
+			create_corps_commander = {
+			name = "Erika"
+			    picture = "Erika.tga"
+			    traits = { panzer_leader winter_specialist trait_reckless }
+			    skill = 2
+			    attack_skill = 2
+			    defense_skill = 1
+			    planning_skill = 1
+			    logistics_skill = 2
+		    }
+			custom_effect_tooltip = HLQ_erika_stats_tp
 		}
 	}
 
 	shared_focus = {
 		id = HLQ_black_knights
-		icon = GFX_goal_ideology_national_populist
+		icon = GFX_goal_HLQ_black_knights
 		relative_position_id = HLQ_get_new_generals
 		x = 0
 		y = 1
@@ -325,16 +409,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_black_cloaks_in_council"
-			swap_ideas = {
-				remove_idea = HLQ_reformists
-				add_idea = HLQ_reformists_2
-			}
-			hidden_effect = {
-				if = {
-					limit = { NOT = { has_completed_focus = HLQ_remove_the_old_guard } }
-					country_event = { days = 10 id = hellquill.26 }
-				}
-			}
 		}
 	}
 
@@ -346,6 +420,8 @@ focus_tree = {
 		y = 1
 		cost = 7.00
 		prerequisite = { focus = HLQ_black_cloaks_in_council }
+		prerequisite = { focus = HLQ_one_culture }
+		prerequisite = { focus = HLQ_find_ceo_of_racism }
 		available = {
 			has_government = fascism
 		}
@@ -422,6 +498,26 @@ focus_tree = {
 					}
 				}
 			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_secret_police
+		icon = GFX_goal_secret_agents
+		relative_position_id = HLQ_stormgriffons
+		x = 0
+		y = 1
+		cost = 7.00
+		prerequisite = { focus = HLQ_stormgriffons }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_special_sturmp"
 		}
 	}
 
@@ -801,9 +897,7 @@ focus_tree = {
 		x = 0
 		y = 8
 		cost = 5.00
-		prerequisite = { focus = HLQ_cultural_unity }
 		prerequisite = { focus = HLQ_destroy_longsword }
-		prerequisite = { focus = HLQ_industrial_revolution_integralist }
 		available = {
 		    has_government = fascism
 		}
