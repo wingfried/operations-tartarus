@@ -117,10 +117,40 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_sturmpferde"
-			#country_event = { days = 1 id = hellquill.27 }
-			#hidden_effect = {
-			#	DEP = { country_event = { days = 10 id = hellquill.28 } }
-			#}
+			create_corps_commander = {
+            	name = "Erich Von Katerinburg"
+            	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_7.dds"
+        	    traits = { trait_Ranger }
+        	   	skill = 3
+        	   	attack_skill = 3
+        	   	defense_skill = 2
+        	   	planning_skill = 3
+        	   	logistics_skill = 4
+       		}
+		    custom_effect_tooltip = HLQ_eisen_stats_tp
+			if = {
+				limit = { has_country_flag = HLQ_army_stuff }
+				custom_effect_tooltip = HLQ_sturmpferde_2_tp
+				else = {
+					custom_effect_tooltip = HLQ_sturmpferde_1_tp
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_tech = tech_field_hospital } }
+					set_technology = {
+						tech_field_hospital = 1
+					}
+					}						
+				if = {
+					limit = { has_country_flag = HLQ_army_stuff }
+					load_oob = "HLQ_sturmpferde_2"
+					else = {
+						load_oob = "HLQ_sturmpferde_1"
+					}
+				}
+			}
 		}
 	}
 
