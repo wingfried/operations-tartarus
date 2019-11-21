@@ -377,9 +377,9 @@ focus_tree = {
 			}
 			hidden_effect = {
 				if = {
-					limit = { NOT = { has_tech = tech_military_police } }
+					limit = { NOT = { has_tech = tech_field_hospital } }
 					set_technology = {
-						tech_military_police = 1
+						tech_field_hospital = 1
 					}
 				}
 				if = {
@@ -472,6 +472,12 @@ focus_tree = {
 					event_target:longsword = { has_government = fascism }
 				}
 				event_target:longsword = { country_event = { id = hellquill.23 days = 10 } }
+			}
+			else_if = {
+				limit = {
+					event_target:longsword = { has_government = neutrality }
+				}
+				event_target:longsword = { country_event = { id = tartarus_hellquill.26 days = 10 } }
 			}
 			else = {
 				create_wargoal = {
@@ -783,7 +789,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_declare_kingdom_of_hellquill"
-			country_event = { id = hellquill.31 days = 1 }
+			country_event = { id = tartarus_hellquill.27 days = 1 }
 		}
 	}
 	shared_focus = {
