@@ -111,7 +111,7 @@ country_event = { # Hellquill offers... protection? GRY event
 			base = 15
 			modifier = {
 				add = -8
-				is_in_faction = HLQ
+				is_in_faction_with = HLQ
 			}
 			modifier = {
 				add = -20
@@ -486,3 +486,358 @@ country_event = { # Asterion War Won 2
 	}
 }
 
+news_event = { # Hellquill Intervenes in Brodfeld CW
+	id = news_tartarus_hellquill.1
+	title = news_tartarus_hellquill.1.t
+	desc = news_tartarus_hellquill.1.desc
+	is_triggered_only = yes
+	major = yes
+	immediate = {log = "[GetDateText]: [Root.GetName]: event news_tartarus_hellquill.1"}
+	option = {
+		name = news_tartarus_hellquill.1.a
+		trigger = {
+			original_tag = HLQ
+		}
+	}
+	option = {
+		name = news_tartarus_hellquill.1.b
+		trigger = {
+			original_tag = BRF
+		}
+	}
+	option = {
+		name = news_tartarus_hellquill.1.c
+		trigger = {
+			original_tag = GRW
+		}
+	}
+	option = {
+		name = news_tartarus_hellquill.1.d
+		trigger = {
+			has_government = communism
+			NOT = {
+				original_tag = GRW
+			}
+		}
+	}
+	option = {
+		name = news_tartarus_hellquill.1.e
+		trigger = {
+			NOT = {
+				OR = {
+					has_government = communism
+					original_tag = GRW
+					original_tag = BRF
+					original_tag = HLQ
+				}
+			}
+		}
+	}
+}
+country_event = { # Fate of Brodfeld
+	id = tartarus_hellquill.21
+	title = tartarus_hellquill.21.t
+	desc = tartarus_hellquill.21.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.21"}
+	fire_only_once = yes
+	trigger = {
+		original_tag = HLQ
+		has_completed_focus = HLQ_gla_attack
+		country_exists = BRF
+		NOT = {
+			has_war_with = GRW
+			country_exists = GRW
+		}
+	}
+	option = { # Ally with them
+		name = tartarus_hellquill.21.a
+		trigger = {
+			is_faction_leader = yes
+		}
+		BRF = {
+			country_event = { id = tartarus_hellquill.23 hours = 12 }
+		}
+	}
+	option = { # Puppet them
+		name = tartarus_hellquill.21.b
+		BRF = {
+			country_event = { id = tartarus_hellquill.24 hours = 12 }
+		}
+	}
+	option = { # Integrate them
+		name = tartarus_hellquill.21.c
+		BRF = {
+			country_event = { id = tartarus_hellquill.25 hours = 12 }
+		}
+	}
+	option = { # Leave them alone
+		name = tartarus_hellquill.21.d
+		trigger = {
+			is_faction_leader = no
+		}
+	}
+}
+country_event = { # War on Prywhen!
+	id = tartarus_hellquill.22
+	title = tartarus_hellquill.22.t
+	desc = tartarus_hellquill.22.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.22"}
+	is_triggered_only = yes
+	option = { # Commies suck
+		name = tartarus_hellquill.22.a
+	}
+}
+country_event = { # Invitation to Hellquill's Faction
+	id = tartarus_hellquill.23
+	title = tartarus_hellquill.23.t
+	desc = tartarus_hellquill.23.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.23"}
+	is_triggered_only = yes
+	option = { # Sure
+		name = tartarus_hellquill.23.a
+		ai_chance = {
+			base = 100
+		}
+		HLQ = {
+			add_to_faction = BRF
+		}
+	}
+	option = { # Nah
+		name = tartarus_hellquill.23.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = { # Hellquill offers "governmental assistance"
+	id = tartarus_hellquill.24
+	title = tartarus_hellquill.24.t
+	desc = tartarus_hellquill.24.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.24"}
+	is_triggered_only = yes
+	option = { # We can't really refuse...
+		name = tartarus_hellquill.24.a
+		ai_chance = {
+			base = 80
+		}
+		HLQ = {
+			puppet = BRF
+		}
+	}
+	option = { # We'll fight them, too!
+		name = tartarus_hellquill.24.b
+		ai_chance = {
+			base = 20
+		}
+		HLQ = {
+			create_wargoal = {
+				type = puppet_focus
+				target = BRF
+			}
+		}
+	}
+}
+country_event = { # Hellquill pressures for integration
+	id = tartarus_hellquill.25
+	title = tartarus_hellquill.25.t
+	desc = tartarus_hellquill.25.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.25"}
+	is_triggered_only = yes
+	option = { # We cannot fight any longer...
+		name = tartarus_hellquill.25.a
+		ai_chance = {
+			base = 10
+		}
+		HLQ = {
+			annex_country = {
+				target = BRF
+				transfer_troops = yes
+			}
+		}
+	}
+	option = { # We will fight for a thousand years more!
+		name = tartarus_hellquill.25.b
+		ai_chance = {
+			base = 90
+		}
+		HLQ = {
+			create_wargoal = {
+				target = BRF
+				type = annex_everything
+			}
+		}
+	}
+}
+country_event = { # Wingfried's Invitation
+	id = tartarus_hellquill.26
+	title = tartarus_hellquill.26.t
+	desc = tartarus_hellquill.26.desc
+	is_triggered_only = yes
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.26"}
+	option = { # A meeting between leaders...
+		name = tartarus_hellquill.26.a
+		ai_chance = {
+			factor = 70
+		}
+		country_event = { id = tartarus_hellquill.29 days = 2 }
+		#custom_effect_tooltip = GAME_OVER_TT
+		#hidden_effect = {
+		#	FROM = { country_event = { id = hellquill.17 days = 6 } }
+		#	every_state = {
+		#		limit = { is_core_of = ROOT }
+		#		add_core_of = FROM
+		#	}
+		#}
+	}
+	#option = { # Refuse
+		#ai_chance = {
+		#	factor = 30
+		#}
+		#name = tartarus_hellquill.26.b
+		#add_political_power = 50
+		#add_stability = 0.05
+		#add_war_support = 0.05
+		#hidden_effect = {
+		#	FROM = { country_event = { id = hellquill.24 days = 6 } }
+		#}
+	#}
+}
+country_event = { # Tartarus' Kingdom of Hellquill Event
+	id = tartarus_hellquill.27
+	title = tartarus_hellquill.27.t
+	desc = tartarus_hellquill.27.desc
+	is_triggered_only = yes
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.27"}
+	option = {
+		name = tartarus_hellquill.27.a
+		add_political_power = 100
+		add_popularity = { ideology = fascism popularity = 0.05 }
+		create_country_leader = {
+			name = "King Wingfried I"
+			desc = "griffon_hitler_desc"
+			picture = "Wingfried_von_Smirkerinburg.tga"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = { moderniser }
+		}
+		set_cosmetic_tag = HLQ_kingdom
+		hidden_effect = {
+			country_event = {
+				id = tartarus_hellquill.28
+				days = 1
+			}
+		}
+	}
+}
+country_event = { # Wingfried's New Direction
+	id = tartarus_hellquill.28
+	title = tartarus_hellquill.28.t
+	desc = tartarus_hellquill.28.desc
+	is_triggered_only = yes
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.28"}
+	option = { # Wingfried must maintain his focus on modernization.
+		name = tartarus_hellquill.28.a
+		add_political_power = 50
+	}
+	option = { # Wingfried is now a King and must act the part.
+		name = tartarus_hellquill.28.b
+		remove_country_leader_trait = moderniser
+		add_country_leader_trait = integralist_king
+	}
+}
+country_event = { # Silvertalon Arrives
+	id = tartarus_hellquill.29
+	title = tartarus_hellquill.29.t
+	desc = tartarus_hellquill.29.desc
+	is_triggered_only = yes
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.29"}
+	option = { # Puzzling...
+		name = tartarus_hellquill.29.a
+		country_event = { id = tartarus_hellquill.30 }
+	}
+}
+country_event = { # The Meeting
+	id = tartarus_hellquill.30
+	title = tartarus_hellquill.30.t
+	desc = tartarus_hellquill.30.desc
+	is_triggered_only = yes
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.30"}
+	option = { # You might just be right.
+		name = tartarus_hellquill.30.a
+		ai_chance = {
+			factor = 90
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+		hidden_effect = {
+			HLQ = { country_event = { id = tartarus_hellquill.31 days = 2 } }
+			every_state = {
+				limit = { is_core_of = ROOT }
+				add_core_of = HLQ
+			}
+		}
+	}
+	option = { # I won't be tricked by some Reformisten scum!
+		ai_chance = {
+			factor = 10
+		}
+		name = tartarus_hellquill.30.b
+		add_political_power = 50
+		add_stability = 0.05
+		add_war_support = 0.05
+		hidden_effect = {
+			HLQ = { country_event = { id = hellquill.24 days = 2 } }
+		}
+	}
+}
+country_event = {
+	id = tartarus_hellquill.31
+	title = tartarus_hellquill.31.t
+	desc = tartarus_hellquill.31.desc
+	is_triggered_only = yes
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.31"}
+	option = {
+		name = tartarus_hellquill.31.a
+		every_state = {
+			limit = { is_core_of = FROM }
+			add_core_of = ROOT
+		}
+		FROM = {
+			every_unit_leader = {
+				limit = {
+					has_id = 11285
+				}
+				set_nationality = ROOT
+				add_unit_leader_trait = war_hero
+				remove_unit_leader_trait = old_guard
+			}
+		}
+		annex_country = { target = FROM transfer_troops = yes }
+		add_political_power = 50
+		add_stability = 0.05
+		hidden_effect = {
+			news_event = { id = news_tartarus_hellquill.2 days = 1 }
+		}
+	}
+}
+news_event = {
+	id = news_tartarus_hellquill.2
+	title = news_tartarus_hellquill.2.t
+	desc = news_tartarus_hellquill.2.desc
+	is_triggered_only = yes
+	major = yes
+	immediate = {log = "[GetDateText]: [Root.GetName]: event news_tartarus_hellquill.2"}
+	option = {
+		name = news_tartarus_hellquill.2.a
+		trigger = {
+			original_tag = HLQ
+		}
+	}
+	option = {
+		name = news_tartarus_hellquill.2.b
+		trigger = {
+			NOT = {
+				original_tag = HLQ
+			}
+		}
+	}
+}

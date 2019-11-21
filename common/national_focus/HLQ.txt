@@ -40,7 +40,10 @@ shared_focus = {
 		owns_state = 608
 	}
 	available = {
-		has_completed_focus = HLQ_longsword_destroy
+		OR = {
+			has_completed_focus = HLQ_longsword_destroy
+			has_completed_focus = HLQ_destroy_longsword
+		}
 		has_government = fascism
 	}
 	ai_will_do = {
@@ -156,11 +159,20 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLQ_gla_attack"
 		if = {
 			limit = { GRW = { exists = yes NOT = { is_subject_of = ROOT } } }
-			create_wargoal = { type = annex_everything target = GRW }
+			declare_war_on = { type = annex_everything target = GRW }
+			if = {
+				limit = {
+					BRF = { exists = yes has_war_with = GRW }
+				}
+				hidden_effect = { news_event = { id = news_tartarus_hellquill.1 days = 1 } }
+				else = {
+					hidden_effect = { country_event = { id = tartarus_hellquill.22 } }
+				}
+			}
 		}
 		else_if = {
 			limit = { BRF = { exists = yes NOT = { is_subject_of = ROOT } } }
-			create_wargoal = { type = annex_everything target = BRF }
+			country_event = { id = tartarus_hellquill.21 }
 		}
 	}
 }

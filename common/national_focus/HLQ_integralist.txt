@@ -1045,7 +1045,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_declare_kingdom_of_hellquill"
-			country_event = { id = hellquill.31 days = 1 }
+			country_event = { id = tartarus_hellquill.27 days = 1 }
 		}
 	}
 	shared_focus = {

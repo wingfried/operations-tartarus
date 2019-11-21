@@ -1,0 +1,14 @@
+leader_traits = {
+	moderniser = {
+		random = no
+		army_org_factor = 0.05
+		production_speed_buildings_factor = 0.05
+		research_speed_factor = 0.025
+	}
+	integralist_king = {
+		random = no
+		army_morale_factor = 0.05
+		conscription_factor = 0.05
+		stability_factor = 0.05
+	}
+}
