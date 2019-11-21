@@ -259,10 +259,10 @@ create_corps_commander = {
 	traits = { trickster  }
 	skill = 2
 	attack_skill = 1
-	defense_skill = 3
+	defense_skill = 4
 	planning_skill = 2
-	logistics_skill = 3
-	id = 6969
+	logistics_skill = 2
+	id = 696969
 }
 create_corps_commander = {
 	name = "Pon Sanyć"

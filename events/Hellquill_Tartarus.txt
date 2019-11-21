@@ -841,3 +841,49 @@ news_event = {
 		}
 	}
 }
+
+country_event = { #HLQ Gain Sunrise
+	id = tartarus_hellquill.32
+	title = tartarus_hellquill.32.t
+	desc = tartarus_hellquill.32.desc
+	is_triggered_only = yes
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.32"}
+	trigger = {
+		has_country_flag = HLQ_integralsits_choosen
+		has_war_with = LCT
+		AND = {
+			controls_state = 541
+			controls_state = 560
+		}
+	}
+	option = {
+		name = tartarus_hellquill.32.a
+		add_manpower = 27
+		LCT = {
+			add_manpower = -27
+			every_unit_leader = {
+				limit = {
+					has_id = 696969
+				}
+				set_nationality = ROOT
+			}
+		}
+		hidden_effect = {
+			LCT = {
+				country_event = { id = tartarus_hellquill.33 days = 1 }
+			}
+		}
+	}
+}
+
+country_event = { #LCT Lost Sunrise
+	id = tartarus_hellquill.33
+	title = tartarus_hellquill.33.t
+	desc = tartarus_hellquill.33.desc
+	is_triggered_only = yes
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.33"}
+	option = {
+		name = tartarus_hellquill.33.a
+		add_stability = -0.01
+	}
+}

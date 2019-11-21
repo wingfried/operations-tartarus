@@ -1,3 +1,14 @@
+HLQ_volkshalle_category = {
+	icon = generic_economy
+	picture = GFX_cat_hlq_volkshalle
+
+	allowed = {
+		original_tag = HLQ
+	}
+	priority = {
+		base = 95
+	}
+}
 
 HLQ_diplomacy_category = {
 	icon = griffon
