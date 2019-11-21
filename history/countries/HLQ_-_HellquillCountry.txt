@@ -49,7 +49,7 @@ generic_DD_template = yes
 generic_CL_template = yes
 
 set_convoys = 70
-add_manpower = 20000
+add_manpower = 70000
 set_popularities = {
 	democratic = 10
 	fascism = 35
@@ -103,7 +103,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = falangism
 	traits = {
-
+		moderniser
 	}
 }
 
