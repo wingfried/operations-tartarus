@@ -4,6 +4,11 @@ HLQ_morgend_longpaw:0 "Morgend Longpaw"
 HLQ_river_breeze:0 "River Breeze"
 HLQ_vanance_lodernd:0 "Vanance Lodernd"
 
+### Misc Loc ###
+
+moderniser:0 "Modernizer"
+integralist_king:0 "King of the Integralists"
+
 ### Events ###
 
 tartarus_hellquill.11.t:0 "Southern Opportunity" #HLQ
@@ -116,6 +121,34 @@ tartarus_hellquill.25.t:0 "The Demands of Hellquill"
 tartarus_hellquill.25.a:0 "We have fought too long to fend them off."
 tartarus_hellquill.25.b:0 "We will fight forevermore!"
 
+tartarus_hellquill.26.t:0 "Wingfried's Invitation"
+tartarus_hellquill.26.desc:0 "!!! PLACEHOLDER TEXT !!! The Reformisten Grandmaster of Hellquill has invited Silvertalon to a meeting."
+tartarus_hellquill.26.a:0 "Let's see what he has to say."
+
+tartarus_hellquill.27.t:0 "The Kingdom of Hellquill"
+tartarus_hellquill.27.desc:0 "Our great leader Wingfried has decided that today is time. This very afternoon, he assembled the government, military and the press to announce whole-heartedly to them all that Hellquill's new order will bring greatness to us and all Griffons. He proclaimed himself King of Hellquill, claiming that his crown shall remain an instrument of power for a thousand years! His legitimacy derives from his old bloodline and his relationship to the Princess of Katerin. Never before has a von Katerinburg worn a kingly crown on his head, but Wingfried sees himself as exceptional in many ways. His subjects rejoice, and the military is eager for what is to come."
+tartarus_hellquill.27.a:0 "This Kingdom shall last a thousand years!"
+
+tartarus_hellquill.28.t:0 "Wingfried's New Direction"
+tartarus_hellquill.28.desc:0 "King Wingfried, now crowned King of Hellquill, has found himself at a crossroads: the very fact that his nation could be considered a Kingdom is a testament to his efforts at modernization, and this has led him to realize that it may be time to focus his leadership on a new direction. Wingfried believes that Hellquill may carry its industrial momentum into the modern era without his careful leadership and management, and that it may be time for him to present himself as a true King to be a symbol to Hellquill. Perhaps, he thinks, it may be time to not just be the leader of the Reformisten, but to be a King to all Integralists of Hellquill and beyond."
+tartarus_hellquill.28.a:0 "Wingfried will continue preparing Hellquill for Tartarus."
+tartarus_hellquill.28.b:0 "Wingfried will be a true leader to Hellquill!"
+
+tartarus_hellquill.29.t:0 "Arrival"
+tartarus_hellquill.29.desc:0 "Silvertalon had visited Hellquil several times in a past. City, built during eastern crusades always seemed to him like fitting symbol of these events – filled with monumental building, that seemed rather than to praise glory of the past, to provide inhabitants with feeling of safety in hostile pony lands. Building that were slowly rotting and succumbing to destructive time – like did ideals of griffonian knights, who arrived east. Today however city seemed… different… reinvigorated. Many old building were renovated, and unlike earlier, there was much more ponies on the streets – and they were not sneaking in shadows.\n\nWhen Silvertalon's car arrived to Grandmaster's Palace,  guards were already awaiting him – group of reformisten griffons lead by dark coated… unicorn. That was at least… unexpected. Surprised Silvertalon did not paid attention to saluting guards, wondering who for Boreas’ sake, this pony was.\n\n“It is a great honor to host famed general Silvertalon, hero of Longsword.” Said pony. “Grandmaster von Katerinburg is awaiting. Please, follow me.”"
+tartarus_hellquill.29.a:0 "Puzzling..."
+
+tartarus_hellquill.30.t:0 "The Meeting"
+tartarus_hellquill.30.desc:0 "“Dusktalon was an idiot… What was worse, he was idiot in charge of a country. He not only twisted the whole idea that Reformisten are built upon, but also managed to ruin his own country. It never really was about ponies themselves.”\n\n“I would say it always seemed *about ponies* to me.”  Mockery in Silvertalons voice was rather clear, but von Katerinburg decided not to catch a bait and continued.\n\n“It is simple interpretation… Good for such fool like Dusktalon. It was always about griffons… What makes us griffons. Are we griffons, because we have wings and claws, and so on? No. We are griffons, because we follow our traditions. Because we follow griffon way and shape world in image of it. Ponies are not our enemies per se… What they represent, what they believe in and what they follow – it is the true bane of griffonkind. Ideas that can poison all Griffonia, that would make us weak. You fought followers of these ideas in Longsword, general. Communism… Is just one of many wicked ideologies ponies have created. But what if we could.. change them? Revert the process, make ponies understood the truth… Understood the griffon way of life.”\n\nSilvertalon lost in tought, did no answered. He was thinking of years of fighting for Longsword, for honor of himself, his country and his family name. About soldiers, both griffons and ponies that united to fight for Longsword and beated both communist rebels and Dusktalons madgriffs. For last few hours von Katerinburg explained his motifs and plans… Altough initially general was rather wary… However, maybe it was the way? With Griffonia plunged into chaos and old ways being mocked and forgotten… "
+tartarus_hellquill.30.a:0 "You may be right, Wingfried."
+tartarus_hellquill.30.b:0 "As if I'd let a maniac like you sway me."
+
+tartarus_hellquill.31.t:0 "Silvertalon Agrees"
+tartarus_hellquill.31.desc:0 "!!! PLACEHOLDER TEXT !!! After meeting with Grandmaster Wingfried, Conrad Silvertalon has agreed to join Longsword with Hellquill. Hurrah for our new union!"
+tartarus_hellquill.31.a:0 "Silvertalon is a good griff."
+
+
+
 ### News Events ###
 
 news_tartarus_hellquill.1.t:0 "Hellquill Intervenes in Brodfeld"
@@ -125,6 +158,11 @@ news_tartarus_hellquill.1.b:0 "Help is finally here!"
 news_tartarus_hellquill.1.c:0 "Man the barricades!"
 news_tartarus_hellquill.1.d:0 "Damn those Reformisten!"
 news_tartarus_hellquill.1.e:0 "And so the Revolution ends..."
+
+news_tartarus_hellquill.2.t:0 "Brothers in Arms"
+news_tartarus_hellquill.2.desc:0 "When news reached foreign officials, most common reaction was disbelief. General Conrad Silvertalon declared that Longsword will join Reformisten cause and be integrated into Hellquil, as will its army. As he said “Longsword and Hellquil will once again stand together, as firm bulwark of Griffonkind in the east and embodiment of Griffon spirit.” Soon after large scale celebrations were organized in Hellquil, with joint parade of longswordian and hellquilian military. General Silvertalon was personally decorated with Iron Swords medal by Grandmaster von Katerinburg, and declared “Hero of Longsword”. Count Dusktalon and his cronies were publically declared traitors to Reformisten cause. Altough some Longswordians, both civilans and soldiers – especially ponies are cautious about this sudden alliance with dreaded Reformisten, general Silvertalons authority let him to appease his subordinates and ensure swift unification with Hellquil."
+news_tartarus_hellquill.2.a:0 "Forwards together!"
+news_tartarus_hellquill.2.b:0 "An unexpected development."
 
 ### National Focuses ###
 
