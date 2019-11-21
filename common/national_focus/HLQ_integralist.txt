@@ -72,6 +72,111 @@ focus_tree = {
 	}
 
 	shared_focus = {
+		id = HLQ_cultural_unity
+		relative_position_id = HLQ_militarize_police
+		icon = GFX_goal_generic_secret_weapon
+		x = 0
+		y = 1
+		cost = 7.00
+		prerequisite = { focus = HLQ_militarize_police }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_cultural_unity"
+			remove_ideas = HLQ_pony_minorities
+		}
+	}
+
+
+	shared_focus = {
+		id = HLQ_desegregated_schools
+		icon = GFX_goal_griffon_schools
+		relative_position_id = HLQ_militarize_police
+		x = 2
+		y = 1
+		cost = 7.00
+		prerequisite = { focus = HLQ_militarize_police }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_desegregated_schools"
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_summer_camps
+		icon = GFX_goal_sunshine
+		relative_position_id = HLQ_geheimdienst
+		x = 1
+		y = 1
+		cost = 7.00
+		prerequisite = { focus = HLQ_geheimdienst }
+		prerequisite = { focus = HLQ_cultural_unity }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_summer_camps"
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_secure_future
+		icon = GFX_goal_ces_future
+		relative_position_id = HLQ_desegregated_schools
+		x = -1
+		y = 1
+		cost = 7.00
+		prerequisite = { focus = HLQ_desegregated_schools }
+		prerequisite = { focus = HLQ_cultural_unity }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_secure_future"
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_military_youth
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = HLQ_secure_future
+		x = -1
+		y = 1
+		cost = 7.00
+		prerequisite = { focus = HLQ_secure_future }
+		prerequisite = { focus = HLQ_summer_camps }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_secure_future"
+		}
+	}
+
+	shared_focus = {
 		id = HLQ_sturmpferde
 		relative_position_id = HLQ_old_traditions
 		icon = GFX_goal_HLQ_create_sturmpferde
@@ -143,27 +248,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_special_sturmp"
-		}
-	}
-
-	shared_focus = {
-		id = HLQ_cultural_unity
-		relative_position_id = HLQ_militarize_police
-		icon = GFX_goal_generic_secret_weapon
-		x = 0
-		y = 1
-		cost = 7.00
-		prerequisite = { focus = HLQ_militarize_police }
-		available = {
-			has_government = fascism
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HLQ_cultural_unity"
-			remove_ideas = HLQ_pony_minorities
 		}
 	}
 
@@ -527,9 +611,11 @@ focus_tree = {
 		relative_position_id = HLQ_old_traditions
 		icon = GFX_goal_generic_political_pressure
 		x = 0
-		y = 4
+		y = 3
 		cost = 7.00
-		prerequisite = { focus = HLQ_get_new_generals }
+		prerequisite = { focus = HLQ_secret_police }
+		prerequisite = { focus = HLQ_black_knights }
+		prerequisite = { focus = HLQ_special_sturmp }
 		bypass  = {
 			event_target:longsword = {
 				OR = {
@@ -840,13 +926,56 @@ focus_tree = {
 	}
 
 	shared_focus = {
+		id = HLQ_sonder_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = HLQ_new_frontier
+		x = 1
+		y = 1
+		cost = 7.00
+		prerequisite = { focus = HLQ_new_frontier }
+		prerequisite = { focus = HLQ_pave_way }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_sonder_factories"
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_volkshalle
+		icon = GFX_goal_government_icon
+		relative_position_id = HLQ_pave_way
+		x = 1
+		y = 1
+		cost = 7.00
+		prerequisite = { focus = HLQ_pave_way }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_sonder_factories"
+		}
+	}
+
+	shared_focus = {
 		id = HLQ_industrial_revolution_integralist
 		relative_position_id = HLQ_neuland_project
 		icon = GFX_goal_generic_production2
 		x = 0
-		y = 4
+		y = 3
 		cost = 7.00
-		prerequisite = { focus = HLQ_new_frontier }
+		prerequisite = { focus = HLQ_integralist_education }
+		prerequisite = { focus = HLQ_sonder_factories }
+		prerequisite = { focus = HLQ_volkshalle }
 		available = {
 		    has_government = fascism
 		}
@@ -898,7 +1027,7 @@ focus_tree = {
 		relative_position_id = HLQ_made_mighty_2
 		icon = GFX_goal_HLQ_hellquill_kingdom
 		x = 0
-		y = 8
+		y = 7
 		cost = 5.00
 		prerequisite = { focus = HLQ_destroy_longsword }
 		available = {
