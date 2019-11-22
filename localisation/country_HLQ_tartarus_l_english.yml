@@ -3,6 +3,11 @@
 HLQ_morgend_longpaw:0 "Morgend Longpaw"
 HLQ_river_breeze:0 "River Breeze"
 HLQ_vanance_lodernd:0 "Vanance Lodernd"
+HLQ_ferrous_adler:0 "Ferrous Adler"
+ferrous_trait:0 "Zealous Press Chief"
+HLQ_eisen_silberkrone:0 "Eisen Silberkrone"
+HLQ_beakyarov:0 "Beakyarov"
+HLQ_alina_hochmeister:0 "Alina Hochmeister"
 
 ### Misc Loc ###
 
@@ -12,21 +17,21 @@ integralist_king:0 "King of the Integralists"
 ### Events ###
 
 tartarus_hellquill.11.t:0 "Southern Opportunity" #HLQ
-tartarus_hellquill.11.d:0 "Lushi is backward, poor nation still deeply in past of feudalism in serfdom. However in comparision to their neighbours they are at least relatively stable (not that it is an achievement if we compare them to bandit infested mountains, bandit infested plains and commies infested ricefields…). Still, they are in state permanent danger of being attacked and in desperate need for an ally, and nobles can be swayed to our cause by either bribery or blackmailing them, while propaganda action can sway commoners to our cause. Hopefully our sympathisers in princely court will keep him unaware of our plot until it is too late… And until we will be ready to send him proposition he could not reject."
+tartarus_hellquill.11.d:0 "Lushi is a backwards, poor nation still deeply in past of feudalism in serfdom. However in comparision to their neighbours they are at least relatively stable (not that it is an achievement if we compare them to bandit infested mountains, bandit infested plains and commies infested ricefields…). Still, they are in state permanent danger of being attacked and in desperate need for an ally, and nobles can be swayed to our cause by either bribery or blackmailing them, while propaganda action can sway commoners to our cause. Hopefully our sympathisers in princely court will keep him unaware of our plot until it is too late… And until we will be ready to send him proposition he could not reject."
 tartarus_hellquill.11.a:0 "Initiate Fall Grun."
 
 tartarus_hellquill.1.t:0 "A Proposition" #LUS
-tartarus_hellquill.1.d:0 "Somethings been wrong for last days – apparently some reports seemed to be missing, and courtiers were kind of… nervous. Now, problem revealed itself – group of nobles approached the prince praising Wingfried von Katerinburg and his Reformisten ideology and suggesting forming an alliance with them – surely they could assist us with modernizing state and defend us from numerous enemies. Not long after this, we received letter from Wingfried with proposition of “creating stronger ties” between our states and invitation to Hellquil to discuss future relations between Lushi and Hellquil. It seems like an obvious trap… But are we really in position to refuse?"
+tartarus_hellquill.1.d:0 "Something's been wrong for last days – apparently some reports seemed to be missing, and courtiers were kind of… nervous. Now, problem revealed itself – group of nobles approached the prince praising Wingfried von Katerinburg and his Reformisten ideology and suggesting forming an alliance with them – surely they could assist us with modernizing state and defend us from numerous enemies. Not long after this, we received letter from Wingfried with proposition of “creating stronger ties” between our states and invitation to Hellquil to discuss future relations between Lushi and Hellquil. It seems like an obvious trap… But are we really in position to refuse?"
 tartarus_hellquill.1.a:0 "We are not..."
 tartarus_hellquill.1.b:0 "WE ARE! Call the knights!"
 
 tartarus_hellquill.2.t:0 "Fate of Lushi" #LUS
-tartarus_hellquill.2.d:0 "Prince of Lushi arrived to Hellquil and is now in our claws. It is now to us, to decide fate of him, and his country. We have gained enough support among nobility and commoners alike to swiftly take power in Lushi and integrate it in Hellquil – however it may be more beneficial to leave prince in charge of country as our “ally” – as griffons surely will be more willing to follow him, than some foreigners. Of course we will send advisors that will help prince in governing country in a way that will benefit both Hellquil and Lushi."
+tartarus_hellquill.2.d:0 "The Prince of Lushi arrived to Hellquil and is now in our claws. It is now to us, to decide fate of him, and his country. We have gained enough support among nobility and commoners alike to swiftly take power in Lushi and integrate it in Hellquil – however it may be more beneficial to leave prince in charge of country as our “ally” – as griffons surely will be more willing to follow him, than some foreigners. Of course we will send advisors that will help prince in governing country in a way that will benefit both Hellquil and Lushi."
 tartarus_hellquill.2.a:0 "Bring Lushi into the fold."
 tartarus_hellquill.2.b:0 "An “Alliance” with Lushi will suffice."
 
 tartarus_hellquill.3.t:0 "Brave or Stupid?" #LUS
-tartarus_hellquill.3.d:0 "The Prince of Lushi foolishly rejected our generous proposition of alliance. Griffons of Lushi cannot be aloud to stay under power of such reckless ruler... They will surely happily welcome our soldiers and later join Reformisten cause. We can only mourn that we are forced to spill fellow griffon's blood."
+tartarus_hellquill.3.d:0 "The Prince of Lushi has foolishly rejected our generous proposition of alliance. Griffons of Lushi cannot be aloud to stay under power of such reckless ruler... They will surely happily welcome our soldiers and later join Reformisten cause. We can only mourn that we are forced to spill fellow griffon's blood."
 tartarus_hellquill.3.a:0 "War it is, then."
 tartarus_hellquill.3.b:0 "We'll deal with them in a moment."
 
@@ -181,7 +186,7 @@ news_tartarus_hellquill.2.b:0 "An unexpected development."
     HLQ_geheimdienst_desc:0 "In order to keep a watchful eye on our citizens and our neighbours, our Secret Service shall provide us with valuable information. You have to be on the lookout, these days, after all..."
     HLQ_sturmpferde:0 "Create the Sturmpferde"
     HLQ_sturmpferde_desc:0 "Ponies have begun to utterly denounce the very essence of their weak culture and have flocked to the true might of the Griffon Way. Those who are truly dedicated to our cause have been recruited into our newest military organization, and they shall be the perfect example of what the perfect pony should be. They shall be known as the Sturmpferde, or SP for short."
-    HLQ_cultural_unity:0 "Cultural Unity"
+    HLQ_cultural_unity:0 "What Minorities?"
     HLQ_cultural_unity_desc:0 "Our efforts in showing the pony elements of Hellquill the Griffon Way have been an absolute success, as ponies throughout Hellquill have renounced their fragile and weak Pony Way for the mighty Griffon Way. We can credit this success to our extensive propaganda campaigns and re-education efforts, and it can be proudly said that these ponies are now properly Griffonian."
     HLQ_a_bullet_for_the_hardliners:0 "A Bullet for the Traitors"
     HLQ_a_bullet_for_the_hardliners_desc:0 "Some members of the Reformisten seem to actually believe that non-griffons cannot be taught the Griffon Way and by extension cannot be made into mighty Griffonians. Very well, then; we shall give them the same treatment they proposed for the non-griffons. Firing squads should do nicely."
@@ -320,7 +325,9 @@ news_tartarus_hellquill.2.b:0 "An unexpected development."
 ### Ideas ###
 
 HLQ_idea_group_936:0 "Group 936"
-HLQ_kulturkampf_idea:0 "Kulturkampf"
+HLQ_idea_group_936_desc:0 "Group 936 is the offical government designation for a collection of laboratories, universities, and workshops. Created and funded by the government, Group 936 is an attempt to bridge the practical, theoretical, and uproot the cultural divide between the scientific advancements made by Ponykind and Griffonkind in their combination. Even initial research has proven many breakthroughs, such as artifical wings for all beings and adopting Earth Pony magic to inhabit the less hospitable parts of the kingdom, and further progress is almost guaranteed."
+HLQ_kulturkampf_idea:0 "PoW Labor"
+HLQ_kulturkampf_idea_desc:0 "The King has signed several bills allowing Prisoners of War to be used in manual labor to fuel the war machine against the Riverlanders. However, in addition to this, the bills also protect the PoW's from unsafe, debilitating, or cruel work ethics or enviroments, and provides them with sustinance and a proper place to work from. Despite the immorality of it all, it does appear the ones involved are quite content for not being in a worse situation..."
 
 ### Flavor Loc ###
 
