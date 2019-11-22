@@ -84,6 +84,10 @@ ideas = {
 				original_tag = HLQ
 			}
 
+			available = {
+				has_completed_focus = HLQ_cultural_unity
+			}
+
 			visible = {
 				OR = {
 					has_government = neutrality
@@ -94,18 +98,22 @@ ideas = {
 			traits = { popular_figurehead }
 		}
 
-		HLQ_PA_Press = {
-			picture = unknown_advisor
+		HLQ_ferrous_adler = {
+			picture = HLQ_ferrous_adler
 
 			allowed = {
 				original_tag = HLQ
+			}
+
+			available = {
+				has_completed_focus = HLQ_cultural_unity
 			}
 
 			visible = {
 				has_government = fascism
 			}
 
-			traits = { collaborating_press_chief }
+			traits = { ferrous_trait }
 		}
 
 		HLQ_PA_Terror = {
@@ -246,6 +254,10 @@ ideas = {
 				original_tag = HLQ
 			}
 
+			available = {
+				has_completed_focus = HLQ_cultural_unity
+			}
+
 			traits = { air_chief_safety_1 air_chief_ground_support_2 }
 
 			ai_will_do = {
@@ -269,21 +281,25 @@ ideas = {
 	}
 
 	high_command = {
-		HLQ_HC_commando = {
-			picture = unknown_advisor
+		HLQ_beakyarov = {
+			picture = HLQ_beakyarov
 
 			allowed = {
 				original_tag = HLQ
 			}
 
-			traits = { army_commando_2 }
+			available = {
+				has_government = fascism
+			}
+
+			traits = { army_infantry_3 }
 
 			ai_will_do = {
 				factor = 2
 			}
 		}
 
-		HLQ_HC_regroup = {
+		HLQ_alina_hochmeister = {
 			picture = unknown_advisor
 
 			allowed = {
@@ -341,11 +357,15 @@ ideas = {
 	}
 
 	theorist = {
-		HLQ_T_land = {
-			picture = unknown_advisor
+		HLQ_eisen_silberkrone = {
+			picture = HLQ_eisen_silberkrone
 
 			allowed = {
 				original_tag = HLQ
+			}
+
+			available = {
+				has_government = fascism
 			}
 
 			research_bonus = {
