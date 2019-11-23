@@ -157,7 +157,7 @@ focus_tree = {
 	shared_focus = {
 		id = HLQ_cultural_unity
 		relative_position_id = HLQ_made_mighty_2
-		icon = GFX_goal_generic_secret_weapon
+		icon = GFX_goal_molotov_ribbentrop_pact_pony_griffon
 		x = -2
 		y = 4
 		cost = 7.00
@@ -233,9 +233,20 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_get_new_generals"
 			create_corps_commander = {
-				name = "Vanance Lodernd"
-				portrait_path = "vanance.tga"
-				traits = { air_force_commander career_officer }
+				name = "Edler von Wingenberg"
+				portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_9.dds"
+				traits = { harsh_leader infantry_officer }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+            custom_effect_tooltip = HLQ_edler_stats_tp
+			create_corps_commander = {
+				name = "Rüdiger Geltz"
+				portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_4.dds"
+				traits = { politically_connected career_officer }
 				skill = 2
 				attack_skill = 2
 				defense_skill = 3
@@ -244,38 +255,16 @@ focus_tree = {
 			}
 			custom_effect_tooltip = HLQ_rudgier_stats_tp
 			create_corps_commander = {
-				name = "Sascha Erlinger"
-				picture = "sascha_erlinger.tga"
-				traits = { trickster trait_reformist }
-				skill = 2
+				name = "Alfred Aschenkampff"
+				portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_10.dds"
+				traits = { trickster }
+				skill = 1
 				attack_skill = 2
-				defense_skill = 2
+				defense_skill = 1
 				planning_skill = 2
-				logistics_skill = 2
+				logistics_skill = 1
 			}
 			custom_effect_tooltip = HLQ_alfred_stats_tp
-			create_corps_commander = {
-			name = "Alina Hochmeister"
-			    picture = "Alina_Hochmeister.tga"
-			    traits = { commando camouflage_expert winter_specialist }
-			    skill = 2
-			    attack_skill = 2
-			    defense_skill = 3
-			    planning_skill = 2
-			    logistics_skill = 1
-		    }
-			custom_effect_tooltip = HLQ_alina_stats_tp
-			create_corps_commander = {
-			name = "Erika"
-			    picture = "Erika.tga"
-			    traits = { panzer_leader winter_specialist trait_reckless }
-			    skill = 2
-			    attack_skill = 2
-			    defense_skill = 1
-			    planning_skill = 1
-			    logistics_skill = 2
-		    }
-			custom_effect_tooltip = HLQ_erika_stats_tp
 		}
 	}
 
@@ -367,7 +356,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_stormgriffons"
 			add_ideas = HLQ_stormgriff
-			create_field_marshal = {
+			create_corps_commander = {
 			name = "Eisen Silberkrone"
 			    picture = "Eisen.tga"
 			    desc = HLQ_eisen_desc
@@ -379,6 +368,17 @@ focus_tree = {
 			    logistics_skill = 3
 		    }
 			custom_effect_tooltip = HLQ_eisen_stats_tp
+			create_corps_commander = {
+				name = "Endrike Beakyarov"
+				picture = "beaky.tga"
+				traits = { harsh_leader infantry_officer trait_reformist }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+            custom_effect_tooltip = HLQ_edler_stats_tp
 			if = {
 				limit = { has_country_flag = HLQ_army_stuff }
 				custom_effect_tooltip = HLQ_stormgriff_2_tp
