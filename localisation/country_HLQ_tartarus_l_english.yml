@@ -44,22 +44,22 @@ tartarus_hellquill.3.d:0 "The Prince of Lushi has foolishly rejected our generou
 tartarus_hellquill.3.a:0 "War it is, then."
 tartarus_hellquill.3.b:0 "We'll deal with them in a moment."
 
-tartarus_hellquill.12.t:0 "Offer To “Protect” The Hosts" #GRY
-tartarus_hellquill.12.d:0 "Gib more land"
-tartarus_hellquill.12.a:0 "send"
+tartarus_hellquill.12.t:0 "Eastward Movement" #GRY
+tartarus_hellquill.12.d:0 "After Lushi would be under Hellquill, looking to the East would seem like an opportunity. Although they were comprised of tribes, the Gryphian Host were still far more stable than any bandit country. However, despite this, Prywhen’s influence to them would put them in a state of conflict against each other. With what Nobles were there, we could potentially get them to be “convinced” and therefore use them to convert others to our ideals."
+tartarus_hellquill.12.a:0 "Onwards, then."
 
-tartarus_hellquill.4.t:0 "Hellquill offers protection" #GRY
-tartarus_hellquill.4.d:0 "Lol small shithole wants to protect us, the mighty cossacks of [Root.Getname]." #Describe something about Cossacks..
-tartarus_hellquill.4.a:0 "Yea sure"
-tartarus_hellquill.4.b:0 "Nah" #Good chance to make a cossack response
+tartarus_hellquill.4.t:0 "More Problems..." #GRY
+tartarus_hellquill.4.d:0 "Unrest has become common throughout, however the source of it seems to start from the tribes. The Nobles have come up with a few ideas on what to do, and how to treat the situation, some spouting about “an alliance.” Hell, some have even convinced some tribes to such the idea of such Alliance, but with who? That answer would come soon, as a message from a Noble came bearing praise to that of Wingfriend and this “ideology” of Hellquill. We could follow what the Nobles are saying, or we could refuse and send the Nobles away."
+tartarus_hellquill.4.a:0 "Perhaps this is for the best..."
+tartarus_hellquill.4.b:0 "O king, Hellquillian demon and damned Maar's kith and kin..."
 
-tartarus_hellquill.5.t:0 "[From.Getname] Accepts annexation!" #GRY
-tartarus_hellquill.5.d:0 "Yay"
-tartarus_hellquill.5.a:0 "Yay"
+tartarus_hellquill.5.t:0 "Fate of Gryphian Hosts" #GRY
+tartarus_hellquill.5.d:0 "With the acceptance of our alliance, we can now decide if we wish to fully integrate the lands, or take them in as an ally, as it may prove beneficial to us. If we decide to keep them as an ally, we shall place an advisor there to help govern the lands in a way to benefit each other properly."
+tartarus_hellquill.5.a:0 "Integrate them."
 
-tartarus_hellquill.6.t:0 "[From.Getname] Declines Annexation!" #GRY
-tartarus_hellquill.6.d:0 "Boo"
-tartarus_hellquill.6.a:0 "War"
+tartarus_hellquill.6.t:0 "A Bold Move." #GRY
+tartarus_hellquill.6.d:0 "We have recieved a letter in response from the Gryphian Cossack, which will not be repeated aloud due to the intense severity of its contents. Suffice it to say, the Cossacks have refused our generous offer while simultaneously causing any civil griffon to cry from the sheer rudeness contained in the letter. This insult cannot go unpunished, and stability will be brought to Gryphia."
+tartarus_hellquill.6.a:0 "Time for War."
 
 tartarus_hellquill.7.t:0 "They come."
 tartarus_hellquill.7.d:0 "The hall is quiet. In the center stands a large table, and on it is pinned a map. On one side, officers dressed in County Defense Force uniforms, either too young or too old, nervous in apprehension but firm in their resolve. On the other, griffins in the black of the Reformisten, stoic and grim-faced.  On one end of the table is King Wingfried, a mysterious black Unicorn and a brown griffon with glasses a scarred beak at his side.  At the other, having just spoken, the Countess.\n\n"The bulls are coming. They're either upon our shores already, or sailing across as we speak."\n\n"You think they can make landfall that easy?" Wingfried asks quietly. The officers remain silent. Monarchs are speaking.\n\n"We've done our best to suppress the indogenes," Sumpfkiel responds, studying the map of Cyanolisia and her neighbor Asterion. "Regardless, they will have supporters. Some will slip through, signal them to safe beaches. Shelter them in the night."\n\n"Then we are at war," Wingfried stated plainly, examining the map himself.\n\n"We always knew it would come."\n\n"At least we are prepared. My troops stand beside yours, ready to meet the enemy on the beach."\n\n"Until the end?" She asked, a small smile on her beak.\n\nAcross from her, Wingfried remained stoic. Unmoving. But, to the careful observer, his face twitched around his mouth.\n\n"Until the end," he agreed.\n\nIt was time to see to the defense. The best laid plans had been prepared. Their soldiers and knights were as ready as could be.\n\nIt was time to decide Cyanolisia's fate."
