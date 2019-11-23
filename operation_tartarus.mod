@@ -6,4 +6,5 @@ tags={
 	"Gameplay"
 	"Events"
 }
+picture="operation_tartarus.jpg"
 supported_version="1.8.*"
