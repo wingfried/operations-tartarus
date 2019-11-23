@@ -9,8 +9,17 @@ HLQ_eisen_silberkrone:0 "Eisen Silberkrone"
 HLQ_beakyarov:0 "Beakyarov"
 HLQ_alina_hochmeister:0 "Alina Hochmeister"
 
+### Decisions###
+
+HLQ_936_category:0 "Group 936's Projects"
+HLQ_edelstahlflugel_beginning:0 "The Edelstahlflugel Project"
+HLQ_edelstahlflugel_distribution:0 "Edelstahlflugel Distribution"
+HLQ_edelstahlflugel_start_cost_300:0 "£pol_power  §Y300§!"
+HLQ_edelstahlflugel_start_cost_270:0 "£pol_power  §Y270§!"
+
 ### Misc Loc ###
 
+HLQ_edelstahlflugel_tech:0 "Edelstahlflugel"
 moderniser:0 "Modernizer"
 integralist_king:0 "King of the Integralists"
 
@@ -283,7 +292,7 @@ news_tartarus_hellquill.2.b:0 "An unexpected development."
     HLQ_sturmpferde:0 "Create the Sturmpferde"
     HLQ_sturmpferde_desc:0 "Ponies have begun to utterly denounce the very essence of their weak culture and have flocked to the true might of the Griffon Way. Those who are truly dedicated to our cause have been recruited into our newest military organization, and they shall be the perfect example of what the perfect pony should be. They shall be known as the Sturmpferde, or SP for short."
 
-    HLQ_cultural_unity:0 "Cultural Unity"
+    HLQ_cultural_unity:0 "What Minorities?"
     HLQ_cultural_unity_desc:0 "Our efforts in showing the pony elements of Hellquill the Griffon Way have been an absolute success, as ponies throughout Hellquill have renounced their fragile and weak Pony Way for the mighty Griffon Way. We can credit this success to our extensive propaganda campaigns and re-education efforts, and it can be proudly said that these ponies are now properly Griffonian."
 
     HLQ_a_bullet_for_the_hardliners:0 "A Bullet for the Traitors"
