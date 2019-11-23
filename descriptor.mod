@@ -1,4 +1,4 @@
-﻿name="Operation Tartarus"
+﻿name="EaW - Operation Tartarus"
 dependencies = { "Equestria at War" }
 tags={
 	"Alternative History"
