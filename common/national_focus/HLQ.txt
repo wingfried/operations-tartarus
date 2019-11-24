@@ -300,7 +300,15 @@ shared_focus = {
 	relative_position_id = HLQ_freetowns_demand
 	x = 0
 	y = 1
-	cost = 7.00
+	cost = 5
+	available = {
+		MIT = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+			}
+		}
+	}
 	bypass  = {
 		CYA = {
 			exists = no
@@ -315,7 +323,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLQ_marry_countess"
 
 		country_event = {
-			id = tartarus_hellquill.8
+			id = tartarus_hellquill.19
 		}
 	}
 }

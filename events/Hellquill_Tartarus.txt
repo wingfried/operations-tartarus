@@ -418,6 +418,20 @@ country_event = { # Protect Cyan
 	is_triggered_only = yes
 	option = {
 		name = tartarus_hellquill.17.a
+		hidden_effect = {
+			CYA = {
+				country_event = {
+					id = tartarus_hellquill.8
+					hours = 6
+				}
+			}
+			HLQ = {
+				country_event = {
+					id = tartarus_hellquill.8
+					hours = 6
+				}
+			}
+		}
 	}
 }
 
@@ -433,7 +447,7 @@ country_event = { # Asters Landing Taken
 			tag = HLQ
 			tag = CYA
 		}
-		CYA = {
+		ROOT = {
 			has_war_with = MIT
 		}
 		MIT = {
@@ -483,6 +497,9 @@ country_event = { # Asterion War Won 2
 	fire_only_once = yes
 	option = {
 		name = tartarus_hellquill.20.a
+		CYA = {
+			give_guarantee = HLQ
+		}
 	}
 }
 

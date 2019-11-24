@@ -135,8 +135,8 @@
 				has_government = neutrality
 			}
 			OR = {
-			    has_completed_focus = HLQ_reconciliation2
-				has_completed_focus = HLQ_status_quo2
+			    has_completed_focus = HLQ_reconciliation_2
+				has_completed_focus = HLQ_status_quo_2
 			}
 		}
 		mutually_exclusive = {
@@ -617,8 +617,8 @@
 		available = {
 		    has_government = fascism
 		    OR = {
-				has_completed_focus = HLQ_made_mighty2
-				has_completed_focus = HLQ_born_mighty2
+				has_completed_focus = HLQ_made_mighty_2
+				has_completed_focus = HLQ_born_mighty_2
 			}
 		}
 		mutually_exclusive = {
