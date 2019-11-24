@@ -390,9 +390,9 @@ focus_tree = {
 			    picture = "Eisen.tga"
 			    desc = HLQ_eisen_desc
 			    traits = { trait_cautious logistics_wizard trait_reformist }
-			    skill = 2
+			    skill = 3
 			    attack_skill = 2
-			    defense_skill = 2
+			    defense_skill = 3
 			    planning_skill = 1
 			    logistics_skill = 3
 		    }
