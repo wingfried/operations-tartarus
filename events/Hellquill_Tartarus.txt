@@ -427,7 +427,7 @@ country_event = { # Asters Landing Taken
 	desc = tartarus_hellquill.18.d
 	picture = GFX_event_HLQ_lushi
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.18"}
-	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		OR = {
 			tag = HLQ
@@ -453,7 +453,7 @@ country_event = { # Asterion War Won
 	desc = tartarus_hellquill.19.d
 	picture = GFX_event_HLQ_lushi
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.19"}
-	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		tag = HLQ
 		MIT = {
@@ -480,7 +480,7 @@ country_event = { # Asterion War Won 2
 	desc = tartarus_hellquill.20.d
 	picture = GFX_event_HLQ_lushi
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.20"}
-	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = tartarus_hellquill.20.a
 	}
@@ -846,11 +846,12 @@ country_event = { #HLQ Gain Sunrise
 	id = tartarus_hellquill.32
 	title = tartarus_hellquill.32.t
 	desc = tartarus_hellquill.32.desc
-	is_triggered_only = yes
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.32"}
+	fire_only_once = yes
 	trigger = {
-		has_country_flag = HLQ_integralsits_choosen
-		has_war_with = LCT
+		#has_country_flag = HLQ_integralsits_choosen
+		original_tag = HLQ
+		has_war = yes
 		AND = {
 			controls_state = 541
 			controls_state = 560

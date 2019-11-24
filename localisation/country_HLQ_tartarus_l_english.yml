@@ -1,4 +1,5 @@
 ﻿l_english:
+    
 ### Advisors ###
 HLQ_morgend_longpaw:0 "Morgend Longpaw"
 HLQ_river_breeze:0 "River Breeze"
@@ -160,6 +161,14 @@ tartarus_hellquill.30.b:0 "As if I'd let a maniac like you sway me."
 tartarus_hellquill.31.t:0 "Silvertalon Agrees"
 tartarus_hellquill.31.desc:0 "!!! PLACEHOLDER TEXT !!! After meeting with Grandmaster Wingfried, Conrad Silvertalon has agreed to join Longsword with Hellquill. Hurrah for our new union!"
 tartarus_hellquill.31.a:0 "Silvertalon is a good griff."
+
+tartarus_hellquill.32.t:0 "The Siege of Crveno"
+tartarus_hellquill.32.desc:0 "For 31 days an entire battalion has laid siege to the ancient Crveno Fortress in our push into Lakeish territory. The fortress has been surrounded, shelled, firebombed, and endured six separate mass assaults, but the defenders still hold the fortress, and our tanks are focused on the front line where they should be, rather than busting a smattering of defenders in a now ruined castle. Casualties are mounting on our side and every soldier focused on taking this strategically unimportant castle is another soldier that could be reinforcing the front line. This stalemate must be broken.\n\n----------\n\nA single pony leaves the shelter of the fortress in the dead of night, carrying a white banner; The soldiers on watch easily notice her and take aim.\n\n“Don’t shoot! I’ve come to parley!” she yells.\n\n----------\n\nOur commander stares stoically at the orange unicorn across from him for a few moments before he speaks.\n\n“Unconditional surrender.” he says.\n\n! You think I’m here to surrender,” the mare laughs, “No, no, no, no, I’m here to discuss my payment. My name is Sunrise Sky, a mercenary hired to keep Lake City’s army in shape, and, believe me when I tell you, in my line of work you don’t live long if you can’t tell when the wind changes.”\n\n“And just what makes you think we’d accept you?” the commander quips.\n\n“Because I’ve held a dilapidated ruin for 31 days with only 27 ponies, not including myself.” \n\nShe had a point. Not even to mention that the troops here were badly needed at the front and this siege needed to end."
+tartarus_hellquill.32.a:0 "“You’ve got a deal.”"
+
+tartarus_hellquill.33.t:0 "Sunrise Switches Sides!"
+tartarus_hellquill.33.desc:0 "The mercenary Sunrise Sky, who was still under contract, has switched sides after being surrounded."
+tartarus_hellquill.33.a:0 "Damned mercenaries!"
 
 
 
