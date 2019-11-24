@@ -135,8 +135,8 @@
 				has_government = neutrality
 			}
 			OR = {
-			    has_completed_focus = HLQ_reconciliation
-				has_completed_focus = HLQ_status_quo
+			    has_completed_focus = HLQ_reconciliation2
+				has_completed_focus = HLQ_status_quo2
 			}
 		}
 		mutually_exclusive = {
@@ -616,7 +616,10 @@
 	    icon = GFX_r56_goal_FRA_alliance_with_industrialists
 		available = {
 		    has_government = fascism
-			has_completed_focus = HLQ_black_cloaks
+		    OR = {
+				has_completed_focus = HLQ_made_mighty2
+				has_completed_focus = HLQ_born_mighty2
+			}
 		}
 		mutually_exclusive = {
 		    focus = HLQ_regular_economics
