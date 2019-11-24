@@ -11,7 +11,9 @@ HLQ_alina_hochmeister:0 "Alina Hochmeister"
 
 ### Traits ###
 trait_reformisten_boss:0 "Leader Of The Reformisten"
+trait_reformisten_boss_desc:0 "The founder of the reformisten must be a shining example to his soldiers and as such he is always on the frontlines leading by example"
 trait_reformisten_erich:0 "Like Father, Like Son"
+trait_reformisten_erich_desc:0 ""I taught the boy well." -Wingfried"
 ferrous_trait:0 "Zealous Press Chief"
 moderniser:0 "Modernizer"
 integralist_king:0 "King of the Integralists"
