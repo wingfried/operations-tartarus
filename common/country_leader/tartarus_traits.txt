@@ -19,4 +19,9 @@ leader_traits = {
 		trade_laws_cost_factor = -0.1
 		mobilization_laws_cost_factor = -0.1
 	}
+	sturmgriefen_commander = {
+		random = no
+		experience_gain_army = 0.05
+		enemy_partisan_effect = -0.25
+	}
 }

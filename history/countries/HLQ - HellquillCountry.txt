@@ -130,11 +130,11 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Wingfried von Katerinburg"
 	picture = "Wingfried_von_Smirkerinburg.tga"
-	traits = { ranger trait_engineer }
-	skill = 3
+	traits = { ranger trickster }
+	skill = 4
 	attack_skill = 4
 	defense_skill = 3
-	planning_skill = 2
+	planning_skill = 3
 	logistics_skill = 2
 }
 
