@@ -49,6 +49,7 @@ shared_focus = {
 	ai_will_do = {
 		factor = 50
 	}
+	will_lead_to_war_with = LUS
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLQ_lushi_anchluss"
 
@@ -132,6 +133,7 @@ shared_focus = {
 	ai_will_do = {
 		factor = 50
 	}
+	will_lead_to_war_with = GRU
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLQ_host_attack"
 
@@ -198,7 +200,6 @@ shared_focus = {
 	ai_will_do = {
 		factor = 50
 	}
-	will_lead_to_war_with = GRW
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLQ_begin_tartarus"
 		591 = {
