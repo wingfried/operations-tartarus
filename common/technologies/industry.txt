@@ -69,32 +69,32 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 5
+			factor = 2
 	
 	
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 10
 			}	
 			
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 20
 			}
 			
 			
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 30
 			}
 			
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 40
 			}
 		
 		modifier = {
-			factor = 10
+			factor = 3
 			num_of_military_factories > 50
 			}
 
@@ -126,31 +126,31 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 5
+			factor = 2
 
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 10
 			}	
 			
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 20
 			}
 			
 			
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 30
 			}
 			
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 40
 			}
 		
 		modifier = {
-			factor = 10
+			factor = 3
 			num_of_military_factories > 50
 			}
 			}
@@ -184,31 +184,31 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 5
+			factor = 2
 
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 50
 			}	
 			
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 60
 			}
 			
 			
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 70
 			}
 			
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 80
 			}
 		
 		modifier = {
-			factor = 10
+			factor = 2
 			num_of_military_factories > 100
 			}
 			}
@@ -243,31 +243,31 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 5
+			factor = 2
 			
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 100
 			}	
 			
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 110
 			}
 			
 			
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 120
 			}
 			
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 130
 			}
 		
 		modifier = {
-			factor = 10
+			factor = 2
 			num_of_military_factories > 150
 			}
 
@@ -301,31 +301,31 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 5
+			factor = 2
 
 				modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 100
 			}	
 			
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 110
 			}
 			
 			
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 120
 			}
 			
 		modifier = {
-			factor = 5
+			factor = 1.5
 			num_of_military_factories > 130
 			}
 		
 		modifier = {
-			factor = 10
+			factor = 2
 			num_of_military_factories > 150
 			}
 
@@ -713,8 +713,8 @@ technologies = {
 			factor = 20
 
 			modifier = {
-				factor = 10
-				date > "1008.1.1"
+				factor = 20
+				num_of_factories > 35
 			}
 		}
 
@@ -754,8 +754,8 @@ technologies = {
 			factor = 20
 
 			modifier = {
-				factor = 10
-				date > "1010.1.1"
+				factor = 20
+				num_of_factories > 35
 			}
 		}
 
@@ -796,8 +796,8 @@ technologies = {
 			factor = 20
 
 			modifier = {
-				factor = 10
-				date > "1012.1.1"
+				factor = 20
+				num_of_factories > 35
 			}
 		}
 
@@ -841,8 +841,8 @@ technologies = {
 
 
 			modifier = {
-				factor = 10
-				date > "1014.1.1"
+				factor = 20
+				num_of_factories > 35
 			}
 		}
 
@@ -893,58 +893,73 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
 			modifier = {
-				factor = 2
+				factor = 0.2
+				NOT = {
+				has_tech = motorised_infantry
+				}
+				}
+				
+			modifier = {
+				factor = 0
+				NOT = {
+				has_tech = motorised_infantry
+				}
+				}
+				
+			modifier = {
+				factor = 1.5
 				oil > 10
 			}
 			modifier = {
-				factor = 3
+				factor = 1.5
 				oil > 20
 			}	
 			modifier = {
-				factor = 4
+				factor = 1.5
 				oil > 30
 			}	
 			
 			modifier = {
-				factor = 2
+				factor = 1.5
 				num_of_military_factories > 10
 			}	
 			modifier = {
-				factor = 3
+				factor = 1.5
 				num_of_military_factories > 20
 			}	
 			modifier = {
-				factor = 4
+				factor = 1.5
 				num_of_military_factories > 30
 			}	
 			modifier = {
-				factor = 4
+				factor = 1.5
 				num_of_military_factories > 40
 			}	
 			modifier = {
-				factor = 4
+				factor = 1.5
 				num_of_military_factories > 50
 			}	
 
 			modifier = {
-				factor = 2
+				factor = 1.5
 				num_of_naval_factories > 10
 			}	
 			modifier = {
-				factor = 3
+				factor = 1.5
 				num_of_naval_factories > 20
 			}	
 			modifier = {
-				factor = 4
+				factor = 1.5
 				num_of_naval_factories > 30
 			}	
 			modifier = {
-				factor = 4
+				factor = 1.5
 				num_of_naval_factories > 40
 			}
 			modifier = {
-				factor = 4
+				factor = 1.5
 				num_of_naval_factories > 50
 			}
 		}
@@ -974,14 +989,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 2
 			modifier = {
 				has_war = yes
-				factor = 5
+				factor = 2
 			}
 			
 			modifier = {
-				factor = 1.5
+				factor = 3
 				num_of_military_factories > 50
 			}	
 			
@@ -994,13 +1009,19 @@ technologies = {
 				factor = 0
 				oil > 50
 			}	
-	
+		
+			modifier = {
+				factor = 0
+				NOT = {
+				has_tech = motorised_infantry
+				}
 	
 			}	
 			modifier = {
-				factor = 1.5
+				factor = 3
 				num_of_naval_factories > 50
 			}
+		}
 		}
 		
 	
@@ -1029,7 +1050,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 2
 			
 			modifier = {
 				has_war = yes
@@ -1079,7 +1100,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 2
 
 			modifier = {
 				has_war = yes
@@ -1208,7 +1229,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 5
+			factor = 2
 			modifier = {
 				factor = 0.5
 				oil > 10
@@ -1221,6 +1242,15 @@ technologies = {
 				factor = 0.5
 				oil > 30
 			}
+			
+			modifier = {
+				factor = 0
+				NOT = {
+				has_tech = motorised_infantry
+				}
+				}
+			
+			
 		}
 
 		ai_research_weights = {
@@ -1266,6 +1296,11 @@ technologies = {
 				factor = 0.5
 				oil > 30
 			}
+			modifier = {
+				factor = 5
+				synthetic_refinery > 6
+			}
+		
 		}
 
 		ai_research_weights = {
@@ -1312,6 +1347,13 @@ technologies = {
 				factor = 0.5
 				oil > 30
 			}
+		
+			modifier = {
+				factor = 5
+				synthetic_refinery > 8
+			}	
+		
+		
 		}
 
 		ai_research_weights = {
@@ -1348,15 +1390,15 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 0.5
-				rubber > 10
+				oil > 10
 			}
 			modifier = {
 				factor = 0.5
-				rubber > 20
+				oil > 20
 			}
 			modifier = {
 				factor = 0.5
-				rubber > 30
+				oil > 30
 			}
 		}
 
@@ -1451,7 +1493,11 @@ technologies = {
 				factor = 2
 				rubber < 30
 			}
-		}
+			modifier = {
+				factor = 5
+				synthetic_refinery > 4
+			}		
+			}
 
 		ai_research_weights = {
 			rubber = -2.0
@@ -1502,8 +1548,13 @@ technologies = {
 				factor = 1.5
 				rubber < 30
 			}
-		}
-
+		modifier = {
+				factor = 5
+				synthetic_refinery > 6
+			
+			}			
+			}
+	
 		ai_research_weights = {
 			rubber = -2.0
 		}
@@ -1553,6 +1604,11 @@ technologies = {
 				factor = 1.25
 				rubber < 30
 			}
+			modifier = {
+				factor = 5
+				synthetic_refinery > 8
+			}
+		
 		}
 
 		ai_research_weights = {
@@ -1599,6 +1655,11 @@ technologies = {
 				factor = 0.5
 				rubber > 60
 			}
+			modifier = {
+				factor = 5
+				synthetic_refinery > 10
+			}
+		
 		}
 
 		ai_research_weights = {
@@ -1673,10 +1734,10 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 5
+			factor = 3
 
 			modifier = {
-				factor = 5.0
+				factor = 2
 				OR = {
 					oil > 10
 					aluminium > 10
@@ -1688,7 +1749,7 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 1.5
+				factor = 3
 				OR = {
 					oil > 30
 					aluminium > 30
@@ -1697,7 +1758,22 @@ technologies = {
 					steel > 30
 					chromium > 30
 				}
+				}
+				
+			modifier = {
+				factor = 0.5
+					arms_factory < 15
 			}
+			modifier = {
+				factor = 0.5
+					arms_factory < 10
+			}
+			modifier = {
+				factor = 0
+					arms_factory < 5
+			}	
+				
+				
 		}
 	}
 
@@ -1733,9 +1809,20 @@ technologies = {
 
 			modifier = {
 				factor = 3
-				date > "1008.9.9"
+				date > "1008.9.9"							
 			}
-		}
+		
+		modifier = {
+				factor = 0.5
+				industrial_complex < 15						
+			}
+		modifier = {
+				factor = 0.5
+				industrial_complex < 25						
+			}
+		
+		
+		}		
 	}
 
 	excavation2 = {
@@ -1764,7 +1851,7 @@ technologies = {
 			factor = 3
 
 			modifier = {
-				factor = 5.0
+				factor = 2
 				OR = {
 					oil > 10
 					aluminium > 10
@@ -1776,7 +1863,7 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 1.5
+				factor = 3
 				OR = {
 					oil > 30
 					aluminium > 30
@@ -1785,9 +1872,25 @@ technologies = {
 					steel > 30
 					chromium > 30
 				}
+				}
+				
+			modifier = {
+				factor = 0.5
+					arms_factory < 15
 			}
+			modifier = {
+				factor = 0.5
+					arms_factory < 10
+			}
+			modifier = {
+				factor = 0
+					arms_factory < 5
+			}	
+				
+				
 		}
-	}
+		}
+	
 
 	construction3 = {
 
@@ -1830,11 +1933,15 @@ technologies = {
 				num_of_military_factories > 150
 			}
 
-
-			modifier = {
-				factor = 3
-				date > "1011.1.1"
+		modifier = {
+				factor = 0.5
+				industrial_complex < 15						
 			}
+		modifier = {
+				factor = 0.5
+				industrial_complex < 25						
+			}
+		
 		}
 	}
 
@@ -1865,28 +1972,43 @@ technologies = {
 			factor = 2
 
 			modifier = {
-				factor = 5.0
+				factor = 2
 				OR = {
-					oil > 50
-					aluminium > 50
-					rubber > 50
-					tungsten > 50
-					steel > 50
-					chromium > 50
+					oil > 25
+					aluminium > 25
+					rubber > 25
+					tungsten > 25
+					steel > 25
+					chromium > 25
 				}
 			}
 
 			modifier = {
 				factor = 3
 				OR = {
-					oil > 100
-					aluminium > 100
-					rubber > 100
-					tungsten > 100
-					steel > 100
-					chromium > 100
+					oil > 40
+					aluminium > 40
+					rubber > 40
+					tungsten > 40
+					steel > 40
+					chromium > 40
 				}
+				}
+				
+			modifier = {
+				factor = 0.5
+					arms_factory < 20
 			}
+			modifier = {
+				factor = 0.5
+					arms_factory < 15
+			}
+			modifier = {
+				factor = 0
+					arms_factory < 10
+			}	
+				
+				
 		}
 	}
 
@@ -1929,12 +2051,15 @@ technologies = {
 				factor = 0.1
 				num_of_military_factories > 150
 			}
-						
-
-			modifier = {
-				factor = 3
-				date > "1012.9.9"
+		modifier = {
+				factor = 0.5
+				industrial_complex < 25						
 			}
+		modifier = {
+				factor = 0.5
+				industrial_complex < 35					
+			}
+				
 		}
 	}
 
@@ -1964,7 +2089,19 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 5.0
+				factor = 2
+				OR = {
+					oil > 30
+					aluminium > 30
+					rubber > 10
+					tungsten > 30
+					steel > 30
+					chromium > 30
+				}
+			}
+
+			modifier = {
+				factor = 3
 				OR = {
 					oil > 50
 					aluminium > 50
@@ -1973,21 +2110,27 @@ technologies = {
 					steel > 50
 					chromium > 50
 				}
-			}
-
-			modifier = {
-				factor = 3
-				OR = {
-					oil > 100
-					aluminium > 100
-					rubber > 100
-					tungsten > 100
-					steel > 100
-					chromium > 100
 				}
+				
+			modifier = {
+				factor = 0.5
+					arms_factory < 30
 			}
+			modifier = {
+				factor = 0.5
+					arms_factory < 25
+			}
+			modifier = {
+				factor = 0
+					arms_factory < 15
+			}	
+				
+				
+				
+				
 		}
 		}
+		
 	
 
 	###------> Old Construction <><> <><> <><> <><> <><>
@@ -2032,12 +2175,26 @@ technologies = {
 			factor = 0.1
 			num_of_military_factories > 150
 			}
-
-
-			modifier = {
-				factor = 3
-				date > "1015.1.1"
+		
+		modifier = {
+			factor = 2
+			num_of_military_factories < 75
 			}
+			
+		modifier = {
+			factor = 2
+			num_of_military_factories < 100
+			}
+
+		modifier = {
+				factor = 0.5
+				industrial_complex < 25						
+			}
+		modifier = {
+				factor = 0.5
+				industrial_complex < 35					
+			}
+				
 		}
 	}
 
@@ -2069,14 +2226,14 @@ technologies = {
 			factor = 2
 			
 			modifier = {
-				factor = 5.0
+				factor = 2
 				OR = {
 					oil > 50
 					aluminium > 50
 					rubber > 50
 					tungsten > 50
-					steel > 50
-					chromium > 50
+					steel > 10
+					chromium > 10
 				}
 			}
 
@@ -2090,9 +2247,21 @@ technologies = {
 					steel > 100
 					chromium > 100
 				}
+				}
+				
+			modifier = {
+				factor = 0.5
+					arms_factory < 45
 			}
+			modifier = {
+				factor = 0.5
+					arms_factory < 50
+			}
+			modifier = {
+				factor = 0
+					arms_factory < 70
+			}									
 		}
-
 		}
 	
 
@@ -2128,6 +2297,34 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
+				modifier = {
+			factor = 0.5
+			num_of_military_factories > 100
+			}
+			
+		modifier = {
+			factor = 0.1
+			num_of_military_factories > 150
+			}
+		
+		modifier = {
+			factor = 2
+			num_of_military_factories < 75
+			}
+			
+		modifier = {
+			factor = 2
+			num_of_military_factories < 100
+			}
+
+		modifier = {
+				factor = 0.5
+				industrial_complex < 25						
+			}
+		modifier = {
+				factor = 0.5
+				industrial_complex < 35					
+			}				
 		}
 	}
 
@@ -2176,6 +2373,20 @@ technologies = {
 					chromium > 100
 				}
 			}
+			
+							
+			modifier = {
+				factor = 0.5
+					arms_factory < 45
+			}
+			modifier = {
+				factor = 0.5
+					arms_factory < 50
+			}
+			modifier = {
+				factor = 0
+					arms_factory < 70
+			}	
 		}
 		}
 	
@@ -2210,6 +2421,34 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
+		modifier = {
+			factor = 0.5
+			num_of_military_factories > 100
+			}
+			
+		modifier = {
+			factor = 0.1
+			num_of_military_factories > 150
+			}
+		
+		modifier = {
+			factor = 2
+			num_of_military_factories < 75
+			}
+			
+		modifier = {
+			factor = 2
+			num_of_military_factories < 100
+			}
+
+		modifier = {
+				factor = 0.5
+				industrial_complex < 25						
+			}
+		modifier = {
+				factor = 0.5
+				industrial_complex < 35					
+			}		
 		}
 	}
 
@@ -2256,9 +2495,22 @@ technologies = {
 					steel > 100
 					chromium > 100
 				}
+					}
+							
+			modifier = {
+				factor = 0.5
+					arms_factory < 45
 			}
-		}
-		}
+			modifier = {
+				factor = 0.5
+					arms_factory < 50
+			}
+			modifier = {
+				factor = 0
+					arms_factory < 70
+			}								
+			}						
+			}
 	
 
 	construction_c = {
@@ -2291,6 +2543,35 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
+			
+		modifier = {
+			factor = 0.5
+			num_of_military_factories > 100
+			}
+			
+		modifier = {
+			factor = 0.1
+			num_of_military_factories > 150
+			}
+		
+		modifier = {
+			factor = 2
+			num_of_military_factories < 75
+			}
+			
+		modifier = {
+			factor = 2
+			num_of_military_factories < 100
+			}
+
+		modifier = {
+				factor = 0.5
+				industrial_complex < 25						
+			}
+		modifier = {
+				factor = 0.5
+				industrial_complex < 35					
+			}
 		}
 	}
 
@@ -2338,8 +2619,21 @@ technologies = {
 					chromium > 100
 				}
 			}
-		}
-		}
+							
+			modifier = {
+				factor = 0.5
+					arms_factory < 45
+			}
+			modifier = {
+				factor = 0.5
+					arms_factory < 50
+			}
+			modifier = {
+				factor = 0
+					arms_factory < 70
+			}	
+			}
+			}
 	
 
 	construction_d = {
@@ -2367,6 +2661,34 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
+		modifier = {
+			factor = 0.5
+			num_of_military_factories > 100
+			}
+			
+		modifier = {
+			factor = 0.1
+			num_of_military_factories > 150
+			}
+		
+		modifier = {
+			factor = 2
+			num_of_military_factories < 75
+			}
+			
+		modifier = {
+			factor = 2
+			num_of_military_factories < 100
+			}
+
+		modifier = {
+				factor = 0.5
+				industrial_complex < 25						
+			}
+		modifier = {
+				factor = 0.5
+				industrial_complex < 35					
+			}
 		}
 	}
 
@@ -2414,8 +2736,21 @@ technologies = {
 					chromium > 100
 				}
 			}
-		}
-		}
+							
+			modifier = {
+				factor = 0.5
+					arms_factory < 80
+			}
+			modifier = {
+				factor = 0.5
+					arms_factory < 90
+			}
+			modifier = {
+				factor = 0
+					arms_factory < 100
+			}				
+			}
+			}
 
 	###------> X <><> <><> <><> <><> <><>
 
