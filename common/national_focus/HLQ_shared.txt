@@ -104,6 +104,9 @@
 		cost = 0.142
 		prerequisite = { focus = HLQ_black_cloaks }
 		mutually_exclusive = { focus = HLQ_born_mighty }
+		ai_will_do = {
+			factor = 1000
+		}
 		completion_reward = {
 			load_focus_tree = { tree = hellquill_integralist_focus keep_completed = yes }
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_made_mighty"
@@ -122,6 +125,9 @@
 		cost = 0.142
 		prerequisite = { focus = HLQ_black_cloaks }
 		mutually_exclusive = { focus = HLQ_made_mighty }
+		ai_will_do = {
+			factor = 100
+		}
 		completion_reward = {
 			load_focus_tree = { tree = hellquill_hardline_focus keep_completed = yes }
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_born_mighty"

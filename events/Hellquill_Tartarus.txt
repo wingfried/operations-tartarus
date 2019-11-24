@@ -467,19 +467,7 @@ country_event = { # Asterion War Won
 	desc = tartarus_hellquill.19.d
 	picture = GFX_event_HLQ_lushi
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.19"}
-	fire_only_once = yes
-	trigger = {
-		tag = HLQ
-		MIT = {
-			OR = {
-				exists = no
-				OR = {
-					is_subject_of = HLQ
-					is_subject_of = CYA
-				}
-			}
-		}
-	}
+	is_triggered_only = yes
 	option = {
 		name = tartarus_hellquill.19.a
 		country_event = {
