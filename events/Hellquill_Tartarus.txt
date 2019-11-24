@@ -867,7 +867,7 @@ country_event = { #HLQ Gain Sunrise
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.32"}
 	fire_only_once = yes
 	trigger = {
-		#has_country_flag = HLQ_integralsits_choosen
+		has_country_flag = HLQ_integralsits_choosen
 		original_tag = HLQ
 		has_war = yes
 		AND = {

@@ -107,6 +107,9 @@
 		completion_reward = {
 			load_focus_tree = { tree = hellquill_integralist_focus keep_completed = yes }
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_made_mighty"
+			hidden_effect = {
+				set_country_flag = HLQ_integralsits_choosen
+			}
 		}
 	}
 
@@ -122,6 +125,9 @@
 		completion_reward = {
 			load_focus_tree = { tree = hellquill_hardline_focus keep_completed = yes }
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_born_mighty"
+			hidden_effect = {
+				set_country_flag = HLQ_hardliners_choosen
+			}
 		}
 	}
 	
