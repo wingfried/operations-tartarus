@@ -791,6 +791,7 @@ country_event = { # The Meeting
 				limit = { is_core_of = ROOT }
 				add_core_of = HLQ
 			}
+			country_event = { id = tartarus_hellquill.34 hours = 8 }
 		}
 	}
 	option = { # I won't be tricked by some Reformisten scum!
@@ -903,5 +904,16 @@ country_event = { #LCT Lost Sunrise
 	option = {
 		name = tartarus_hellquill.33.a
 		add_stability = -0.01
+	}
+}
+
+country_event = { #Silvertalon sees Dadfried
+	id = tartarus_hellquill.34
+	title = tartarus_hellquill.34.t
+	desc = tartarus_hellquill.34.desc
+	is_triggered_only = yes
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.33"}
+	option = {
+		name = tartarus_hellquill.34.a
 	}
 }

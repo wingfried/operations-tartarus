@@ -159,6 +159,7 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 2
+	id = 696970
 }
 
 create_corps_commander = {
@@ -170,6 +171,7 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 2
+	id = 696971
 }
 
 create_corps_commander = {
@@ -181,6 +183,7 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 2
+	id = 696972
 }
 
 set_rule = {

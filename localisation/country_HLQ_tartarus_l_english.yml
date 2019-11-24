@@ -1,5 +1,5 @@
 ﻿l_english:
-    
+
 ### Advisors ###
 HLQ_morgend_longpaw:0 "Morgend Longpaw"
 HLQ_river_breeze:0 "River Breeze"
@@ -170,7 +170,9 @@ tartarus_hellquill.33.t:0 "Sunrise Switches Sides!"
 tartarus_hellquill.33.desc:0 "The mercenary Sunrise Sky, who was still under contract, has switched sides after being surrounded."
 tartarus_hellquill.33.a:0 "Damned mercenaries!"
 
-
+tartarus_hellquill.34.t:0 "United in Spirit"
+tartarus_hellquill.34.desc:0 "This was not the end of Silvertalon’s surprises in Hellquill. Just as he finished his meeting with von Katerinburg, the griffon saw another scene that shocked him… in a good way? If it could be said. He was outside the Grandmaster’s Palace, awaiting the arrival of his car, that would lead him to one of Hellquill’s finest hotels. He needed a good rest after all the stress of fighting for and rebuilding Longsword for the past months, after all.\n\nHe was taking in the scenery of Hellquill at dusk, with the orange light of the waning sun reflecting on the Griffking River, when he caught some movement just outside the Grandmaster’s Palace. Focusing on it with his good eye, he saw something that was frankly astonishing. The same dark coated unicorn that he saw early in the morning was with no other than von Katerinburg himself. However, he could see no hostility or hate in the griffon’s expressions or posture, but quite the opposite, it was… paternal? Loving?\n\nIndeed. From where he was he could not hear what the two were talking about, but Silvertalon saw that the interaction between the pony and von Katerinburg was like that of father and son. Could it be? He asked himself… logically, it wouldn’t be possible; but despite what his brain said the scene was in front of him, in plain sight. The resemblance turned more striking when he saw the two hugging when their conversation finished.\n\nMaybe it is true..."
+tartarus_hellquill.34.a:0 "It is the way..."
 
 ### News Events ###
 

@@ -299,6 +299,24 @@ focus_tree = {
 			remove_ideas = HLQ_knights_1
 			add_stability = 0.05
 			add_war_support = 0.05
+			random_unit_leader = {
+				limit = {
+					has_id = 696970
+				}
+				retire = yes
+			}
+			random_unit_leader = {
+				limit = {
+					has_id = 696971
+				}
+				retire = yes
+			}
+			random_unit_leader = {
+				limit = {
+					has_id = 696972
+				}
+				retire = yes
+			}
 			if = {
 				limit = { has_country_flag = HLQ_army_stuff }
 				add_manpower = 30000
