@@ -60,7 +60,7 @@ country_event = { # Lushi Anschlussed!
 		name = tartarus_hellquill.2.a
 		annex_country = {
 			target = LUS
-			transfer_troops = no
+			transfer_troops = yes
 		}
 	}
 	option = {
@@ -418,6 +418,20 @@ country_event = { # Protect Cyan
 	is_triggered_only = yes
 	option = {
 		name = tartarus_hellquill.17.a
+		hidden_effect = {
+			CYA = {
+				country_event = {
+					id = tartarus_hellquill.8
+					hours = 6
+				}
+			}
+			HLQ = {
+				country_event = {
+					id = tartarus_hellquill.8
+					hours = 6
+				}
+			}
+		}
 	}
 }
 
@@ -427,13 +441,13 @@ country_event = { # Asters Landing Taken
 	desc = tartarus_hellquill.18.d
 	picture = GFX_event_HLQ_lushi
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.18"}
-	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		OR = {
 			tag = HLQ
 			tag = CYA
 		}
-		CYA = {
+		ROOT = {
 			has_war_with = MIT
 		}
 		MIT = {
@@ -454,18 +468,6 @@ country_event = { # Asterion War Won
 	picture = GFX_event_HLQ_lushi
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.19"}
 	is_triggered_only = yes
-	trigger = {
-		tag = HLQ
-		MIT = {
-			OR = {
-				exists = no
-				OR = {
-					is_subject_of = HLQ
-					is_subject_of = CYA
-				}
-			}
-		}
-	}
 	option = {
 		name = tartarus_hellquill.19.a
 		country_event = {
@@ -480,9 +482,12 @@ country_event = { # Asterion War Won 2
 	desc = tartarus_hellquill.20.d
 	picture = GFX_event_HLQ_lushi
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.20"}
-	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = tartarus_hellquill.20.a
+		CYA = {
+			give_guarantee = HLQ
+		}
 	}
 }
 
@@ -774,6 +779,7 @@ country_event = { # The Meeting
 				limit = { is_core_of = ROOT }
 				add_core_of = HLQ
 			}
+			country_event = { id = tartarus_hellquill.34 hours = 8 }
 		}
 	}
 	option = { # I won't be tricked by some Reformisten scum!
@@ -839,5 +845,63 @@ news_event = {
 				original_tag = HLQ
 			}
 		}
+	}
+}
+
+country_event = { #HLQ Gain Sunrise
+	id = tartarus_hellquill.32
+	title = tartarus_hellquill.32.t
+	desc = tartarus_hellquill.32.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.32"}
+	fire_only_once = yes
+	trigger = {
+		has_country_flag = HLQ_integralsits_choosen
+		original_tag = HLQ
+		has_war = yes
+		AND = {
+			controls_state = 541
+			controls_state = 560
+		}
+	}
+	option = {
+		name = tartarus_hellquill.32.a
+		add_manpower = 27
+		LCT = {
+			add_manpower = -27
+			every_unit_leader = {
+				limit = {
+					has_id = 696969
+				}
+				set_nationality = ROOT
+			}
+		}
+		hidden_effect = {
+			LCT = {
+				country_event = { id = tartarus_hellquill.33 days = 1 }
+			}
+		}
+	}
+}
+
+country_event = { #LCT Lost Sunrise
+	id = tartarus_hellquill.33
+	title = tartarus_hellquill.33.t
+	desc = tartarus_hellquill.33.desc
+	is_triggered_only = yes
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.33"}
+	option = {
+		name = tartarus_hellquill.33.a
+		add_stability = -0.01
+	}
+}
+
+country_event = { #Silvertalon sees Dadfried
+	id = tartarus_hellquill.34
+	title = tartarus_hellquill.34.t
+	desc = tartarus_hellquill.34.desc
+	is_triggered_only = yes
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.33"}
+	option = {
+		name = tartarus_hellquill.34.a
 	}
 }

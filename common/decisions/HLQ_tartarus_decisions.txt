@@ -1,0 +1,72 @@
+HLQ_936_category = {
+	
+	HLQ_edelstahlflugel_beginning = {
+		icon = griffon
+
+		visible = {
+			has_completed_focus = HLQ_group_936
+			NOT = {
+				has_country_flag = HLQ_edelstahlflugel_stuff
+			}
+		}
+		custom_cost_trigger = {
+			OR = {
+				has_political_power > 299
+				AND = {
+					has_idea = HLQ_ferrous_adler
+					has_political_power > 269
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_idea = HLQ_ferrous_adler
+			}
+			custom_cost_text = HLQ_edelstahlflugel_start_cost_270
+			else = {
+				custom_cost_text = HLQ_edelstahlflugel_start_cost_300
+			}
+		}
+		days_remove = 180
+		modifier = {
+			consumer_goods_factor = 0.15
+			industrial_capacity_factory = -0.15
+			production_speed_buildings_factor = -0.15
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_idea = HLQ_ferrous_adler
+				}
+				add_political_power = -270
+				else = {
+					add_political_power = -300
+				}
+			}
+		}
+		remove_effect = {
+			activate_decision = HLQ_edelstahlflugel_distribution
+			hidden_effect = {
+				set_country_flag = HLQ_edelstahlflugel_stuff
+			}
+		}
+	}
+	HLQ_edelstahlflugel_distribution = {
+		icon = griffon
+		visible = {
+			has_country_flag = HLQ_edelstahlflugel_stuff
+		}
+		days_remove = 180
+		modifier = {
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.05
+			production_speed_buildings_factor = -0.05
+			stability_factor = -0.2
+		}
+		remove_effect = {
+			set_technology = {
+				HLQ_edelstahlflugel_tech = 1
+			}
+		}
+	}
+}

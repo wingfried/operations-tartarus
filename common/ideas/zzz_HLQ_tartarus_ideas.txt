@@ -1,0 +1,180 @@
+ideas = {
+
+	political_advisor = {
+		HLQ_morgend_longpaw = {
+			picture = HLQ_morgend_longpaw
+
+			allowed = {
+				original_tag = HLQ
+			}
+
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+
+			traits = { war_industrialist captain_of_industry }
+		}
+
+		HLQ_river_breeze = {
+			picture = HLQ_river_breeze
+
+			allowed = {
+				original_tag = HLQ
+			}
+
+			available = {
+				has_completed_focus = HLQ_cultural_unity
+			}
+
+			visible = {
+				has_country_flag = HLQ_integralsits_choosen
+				has_government = fascism
+			}
+
+			traits = { popular_figurehead }
+		}
+
+		HLQ_ferrous_adler = {
+			picture = HLQ_ferrous_adler
+
+			allowed = {
+				original_tag = HLQ
+			}
+
+			available = {
+				has_completed_focus = HLQ_cultural_unity
+			}
+
+			visible = {
+				has_country_flag = HLQ_integralsits_choosen
+				has_government = fascism
+			}
+
+			traits = { ferrous_trait }
+		}
+	}
+
+
+	air_chief = {
+		HLQ_vanance_lodernd = {
+			picture = HLQ_vanance_lodernd
+
+			allowed = {
+				original_tag = HLQ
+			}
+
+			visible = {
+				has_country_flag = HLQ_integralsits_choosen
+				has_government = fascism
+			}
+
+			available = {
+				has_completed_focus = HLQ_cultural_unity
+			}
+
+			traits = { air_chief_safety_1 air_chief_ground_support_2 }
+
+			ai_will_do = {
+				factor = 3
+			}
+		}
+	}
+
+	high_command = {
+		HLQ_beakyarov = {
+			picture = HLQ_beakyarov
+
+			allowed = {
+				original_tag = HLQ
+			}
+
+			available = {
+				has_government = fascism
+			}
+
+			traits = { army_infantry_3 }
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+
+		HLQ_alina_hochmeister = {
+			picture = unknown_advisor
+
+			allowed = {
+				original_tag = HLQ
+			}
+
+			traits = { army_regrouping_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	theorist = {
+		HLQ_eisen_silberkrone = {
+			picture = HLQ_eisen_silberkrone
+
+			allowed = {
+				original_tag = HLQ
+			}
+
+			available = {
+				has_government = fascism
+			}
+
+			traits = { sturmgriefen_commander }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	country = {
+		HLQ_idea_group_936 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = -0.15
+			}
+		}
+	}
+
+	country = {
+		HLQ_kulturkampf_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				political_power_factor = -0.10
+			}
+		}
+	}
+}

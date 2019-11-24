@@ -22,7 +22,7 @@ spriteTypes = {
 	}
 	SpriteType = { 
 		name = "GFX_goal_HLQ_eagle"
-		texturefile = "gfx/interface/goals/goal_HLQ_eagle.dds"
+		texturefile = "gfx/interface/goals/GFX_goal_HLQ_eagle.dds"
 	}
 	SpriteType = { 
 		name = "GFX_goal_HLQ_hellquill_kingdom"

@@ -1,0 +1,15 @@
+technologies = {
+	HLQ_edelstahlflugel_tech = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		category_all_infantry = {
+			air_attack = 0.1
+			hardness = 100
+			casualty_trickleback = -0.05
+			experience_loss_factor = -0.20
+			maximum_speed = 0.15
+		}
+	}
+}

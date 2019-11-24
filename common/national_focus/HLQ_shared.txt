@@ -104,9 +104,15 @@
 		cost = 0.142
 		prerequisite = { focus = HLQ_black_cloaks }
 		mutually_exclusive = { focus = HLQ_born_mighty }
+		ai_will_do = {
+			factor = 1000
+		}
 		completion_reward = {
 			load_focus_tree = { tree = hellquill_integralist_focus keep_completed = yes }
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_made_mighty"
+			hidden_effect = {
+				set_country_flag = HLQ_integralsits_choosen
+			}
 		}
 	}
 
@@ -119,9 +125,15 @@
 		cost = 0.142
 		prerequisite = { focus = HLQ_black_cloaks }
 		mutually_exclusive = { focus = HLQ_made_mighty }
+		ai_will_do = {
+			factor = 100
+		}
 		completion_reward = {
 			load_focus_tree = { tree = hellquill_hardline_focus keep_completed = yes }
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_born_mighty"
+			hidden_effect = {
+				set_country_flag = HLQ_hardliners_choosen
+			}
 		}
 	}
 	
@@ -135,8 +147,8 @@
 				has_government = neutrality
 			}
 			OR = {
-			    has_completed_focus = HLQ_reconciliation
-				has_completed_focus = HLQ_status_quo
+			    has_completed_focus = HLQ_reconciliation_2
+				has_completed_focus = HLQ_status_quo_2
 			}
 		}
 		mutually_exclusive = {
@@ -616,7 +628,10 @@
 	    icon = GFX_r56_goal_FRA_alliance_with_industrialists
 		available = {
 		    has_government = fascism
-			has_completed_focus = HLQ_black_cloaks
+		    OR = {
+				has_completed_focus = HLQ_made_mighty_2
+				has_completed_focus = HLQ_born_mighty_2
+			}
 		}
 		mutually_exclusive = {
 		    focus = HLQ_regular_economics

@@ -117,16 +117,16 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_sturmpferde"
 			create_corps_commander = {
-             name = "Erich Von Katerinburg"
-            portrait_path = "gfx/leaders/HLQ/Erich_von_Katerinburg.dds"
-           desc = HLQ_erich_von_katerinburg_desc
-           traits = { ranger promising_general }
-           skill = 3
-           attack_skill = 3
-           defense_skill = 2
-           planning_skill = 3
-           logistics_skill = 4
-       }
+            	name = "Erich Von Katerinburg"
+            	portrait_path = "gfx/leaders/HLQ/Erich_von_Katerinburg.dds"
+           		desc = HLQ_erich_von_katerinburg_desc
+           		traits = { ranger promising_general trait_reformisten_erich }
+           		skill = 3
+           		attack_skill = 3
+           		defense_skill = 2
+           		planning_skill = 3
+           		logistics_skill = 2
+       		}
 		    custom_effect_tooltip = HLQ_eisen_stats_tp
 			if = {
 				limit = { has_country_flag = HLQ_army_stuff }
@@ -157,7 +157,7 @@ focus_tree = {
 	shared_focus = {
 		id = HLQ_cultural_unity
 		relative_position_id = HLQ_made_mighty_2
-		icon = GFX_goal_generic_secret_weapon
+		icon = GFX_goal_molotov_ribbentrop_pact_pony_griffon
 		x = -2
 		y = 4
 		cost = 7.00
@@ -299,6 +299,24 @@ focus_tree = {
 			remove_ideas = HLQ_knights_1
 			add_stability = 0.05
 			add_war_support = 0.05
+			random_unit_leader = {
+				limit = {
+					has_id = 696970
+				}
+				retire = yes
+			}
+			random_unit_leader = {
+				limit = {
+					has_id = 696971
+				}
+				retire = yes
+			}
+			random_unit_leader = {
+				limit = {
+					has_id = 696972
+				}
+				retire = yes
+			}
 			if = {
 				limit = { has_country_flag = HLQ_army_stuff }
 				add_manpower = 30000
@@ -367,18 +385,29 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_stormgriffons"
 			add_ideas = HLQ_stormgriff
-			create_field_marshal = {
+			create_corps_commander = {
 			name = "Eisen Silberkrone"
 			    picture = "Eisen.tga"
 			    desc = HLQ_eisen_desc
-			    traits = { trait_cautious logistics_wizard trait_reformist }
-			    skill = 2
+			    traits = { trait_cautious organizer engineer trait_reformist }
+			    skill = 3
 			    attack_skill = 2
-			    defense_skill = 2
-			    planning_skill = 1
+			    defense_skill = 3
+			    planning_skill = 2
 			    logistics_skill = 3
 		    }
 			custom_effect_tooltip = HLQ_eisen_stats_tp
+			create_corps_commander = {
+				name = "Endrike Beakyarov"
+				picture = "beaky.tga"
+				traits = { harsh_leader infantry_officer trait_reformist }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+            custom_effect_tooltip = HLQ_edler_stats_tp
 			if = {
 				limit = { has_country_flag = HLQ_army_stuff }
 				custom_effect_tooltip = HLQ_stormgriff_2_tp
