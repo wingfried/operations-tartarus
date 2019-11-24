@@ -60,7 +60,7 @@ country_event = { # Lushi Anschlussed!
 		name = tartarus_hellquill.2.a
 		annex_country = {
 			target = LUS
-			transfer_troops = no
+			transfer_troops = yes
 		}
 	}
 	option = {
