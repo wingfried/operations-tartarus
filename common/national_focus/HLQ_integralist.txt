@@ -46,7 +46,6 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = { NOT = { has_completed_focus = HLQ_remove_the_old_guard } }
-					country_event = { days = 10 id = hellquill.26 }
 				}
 			}
 		}
