@@ -81,6 +81,7 @@ war_cooperation = {
 		value = 200
 	}
 }
+
 CHN_unit_production = {
 	enable = {
 		OR = { original_tag = CHN original_tag = CCN }
@@ -128,33 +129,34 @@ CHN_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = motorized
-		value = 0 #because doctrine this = 2
+		value = 1 
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = mechanized
-		value = 0 #because doctrine this = 5?
+		value = 0 
 	}
-
+	
 	ai_strategy = {
 		type = role_ratio
 		id = light_armor
-		value = 7
+		value = 10
 	}
 	
 		ai_strategy = {
-	type = role_ratio
-	id = medium_armor
-	value = 30
-	}
+		type = role_ratio
+		id = main_armor
+		value = 25
+	}	
 			
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 60 #88 to 70
+		value = 65 
 	}
-
+	
+	
 	ai_strategy = {
 		type = role_ratio
 		id = magical_infantry
@@ -171,13 +173,13 @@ CHN_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
-		value = 50
+		value = 30
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = cas
-		value = -30 #because doctrine this = 20
+		value = 5 
 	}
 
 	ai_strategy = {
@@ -209,7 +211,7 @@ CHN_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = submarine
-		value = -150 #because doctrine this = 50
+		value = -150 
 	}
 
 	ai_strategy = {
@@ -233,7 +235,7 @@ CHN_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = infantry
-		value = 50 #30 to 50
+		value = 40 #30 to 50
 	}
 
 	ai_strategy = {
@@ -245,10 +247,12 @@ CHN_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = armor
-		value = 20
+		value = 25
 	}
 }
-
+			
+			
+			
 
 
 CHN_highered_armored_production = {
@@ -262,7 +266,7 @@ CHN_highered_armored_production = {
 
 	ai_strategy = {
 		type = role_ratio
-		id = medium_armor
+		id = main_armor
 		value = 5
 	}
 }

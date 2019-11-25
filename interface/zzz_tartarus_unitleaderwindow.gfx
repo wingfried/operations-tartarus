@@ -1,7 +1,11 @@
 spriteTypes = {
 	#### Leader trait icons ####
 	spriteType = {
-		name = "GFX_trait_reformisten_boss"
+		name = "GFX_trait_trait_reformisten_boss"
+		texturefile = "gfx/interface/traits/personal/trait_reformisten_boss.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_reformisten_erich"
 		texturefile = "gfx/interface/traits/personal/trait_reformisten_boss.dds"
 	}
 	

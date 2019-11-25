@@ -65,34 +65,54 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 5
 
-			modifier = {
-				factor = 4
-				is_major = yes
-			}
 
-			modifier = {
-				factor = 2
-				date > "1008.1.1"
-			}
-
-			modifier = {
-				factor = 2.5
-				date > "1009.1.1"
-			}
-
-			modifier = {
-				factor = 3
-				date > "1010.1.1"
-			}
+		modifier = {
+				factor = 0
+				steel < 10
 		}
-
+		
+		modifier = {
+				factor = 0
+				arms_factory < 10
+		}
+		modifier = {
+				factor = 0.5
+				arms_factory < 10
+		}
+		
+		modifier = {
+				factor = 2
+				arms_factory > 15
+		}
+	
+		modifier = {
+				factor = 2
+				steel > 25
+		}
+		
+		modifier = {
+				factor = 2
+				steel > 45
+		}
+		
+		modifier = {
+				factor = 2
+				arms_factory > 35
+		}
+		
+		modifier = {
+				factor = 2
+				steel > 70
+		}
+		}
+		
 		categories = {
 			armor
 			cat_light_armor
+		}		
 		}
-	}
 
 	basic_light_tank = { #Panzer I
 
@@ -145,38 +165,55 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
 
 			modifier = {
-				factor = 3
-				is_major = yes
-			}
-			modifier = {
-				factor = 40
-				tag = STG
-			}
-			modifier = {
-				factor = 1.2
-				date > "1008.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1009.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1010.1.1"
-			}
+				factor = 2
+				arms_factory > 10
 		}
-
+		
+		modifier = {
+				factor = 2
+				arms_factory > 25
+		}
+		
+		modifier = {
+				factor = 1.5
+				arms_factory > 50
+		}
+		
+		modifier = {
+				factor = 1.5
+				arms_factory > 35
+		}
+		
+		modifier = {
+				factor = 1.5
+				arms_factory > 45
+		}
+		
+		modifier = {
+				factor = 2
+				steel > 50
+		}
+		
+		modifier = {
+				factor = 1.5
+				steel > 75
+		}
+		
+		modifier = {
+				factor = 0
+				arms_factory < 10
+		}
+		}
+		
 		categories = {
 			armor
-			cat_light_armor
-		}
+			cat_light_armor			
 	}
-
+	}
+	
 	basic_light_td = {
 
 		enable_equipments = {
@@ -314,30 +351,56 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
+
 
 			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				factor = 20
+				factor = 3
 				tag = STG
 			}
 			modifier = {
-				factor = 1.2
-				date > "1008.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1009.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1010.1.1"
-			}
+				factor = 2
+				arms_factory > 10
+		}
+		
+		modifier = {
+				factor = 2
+				arms_factory > 25
+		}
+		
+		modifier = {
+				factor = 1.5
+				arms_factory > 50
+		}
+		
+		modifier = {
+				factor = 1.5
+				arms_factory > 35
+		}
+		
+		modifier = {
+				factor = 1.5
+				arms_factory > 45
+		}
+		
+		modifier = {
+				factor = 2
+				steel > 50
+		}
+		
+		modifier = {
+				factor = 1.5
+				steel > 75
+		}
+		
+		modifier = {
+				factor = 0
+				arms_factory < 10
+		}
+		modifier = {
+				factor = 0.5
+				NOT = { has_tech = motorised_infantry }
+			}		
 		}
 
 		categories = {
@@ -504,6 +567,7 @@ technologies = {
 				factor = 2
 				is_major = yes
 			}
+			
 			modifier = {
 				any_controlled_state_is_coastal = no
 				factor = 0
@@ -546,27 +610,63 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				has_tech = advanced_medium_tank
-				factor = 5
+			
+		modifier = {
+					has_tech = advanced_medium_tank
+					factor = 5
 			}
 
-			modifier = {
-				factor = 1.2
-				date > "1013.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1014.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1015.1.1"
-			}
+		modifier = {
+				has_tech = large_front_operations
+				factor = 10
+		}
+		
+		modifier = {
+				factor = 3
+				tungsten < 10 
 		}
 
+		modifier = {
+				factor = 2
+				arms_factory > 10
+		}
+		
+		modifier = {
+				factor = 1.5
+				arms_factory > 25
+		}
+		
+		modifier = {
+				factor = 1.2
+				arms_factory > 50
+		}
+		
+		modifier = {
+				factor = 1.2
+				arms_factory > 35
+		}
+		
+		modifier = {
+				factor = 1.2
+				arms_factory > 45
+		}
+		
+		modifier = {
+				factor = 1.5
+				steel > 50
+		}
+		
+	modifier = {
+				factor = 1.2
+				steel > 75
+		}
+		
+	modifier = {
+				factor = 0
+				arms_factory < 10
+		}
+		}
+		
 		categories = {
 			armor
 			cat_light_armor
@@ -690,33 +790,50 @@ technologies = {
 			factor = 3
 
 			modifier = {
-				factor = 0
+				factor = 0.5
 				NOT = { has_tech = motorised_infantry }
 			}
-
+			
 			modifier = {
-				factor = 2
-				is_major = yes
-				date > "1009.1.1"
+				factor = 0.5
+				has_tech = 		has_tech = mass_assault
+				}
+
+
+		modifier = {
+			factor = 1.5
+			arms_factory > 35 
 			}
-
-			modifier = {
-				factor = 1.2
-				date > "1011.1.1"
+		modifier = {
+			factor = 1.5
+			arms_factory > 50
 			}
-
-			modifier = {
-				factor = 1.2
-				date > "1012.1.1"
+		modifier = {
+			factor = 1.5
+			arms_factory > 75		
 			}
-
-			modifier = {
-				factor = 1.2
-				date > "1013.1.1"
+		modifier = {
+			factor = 0.5
+			tungsten < 10
 			}
-
-		}
-
+		modifier = {
+			factor = 0.5
+			tungsten < 5
+			}
+		modifier = {
+			factor = 1.5
+			tungsten > 15
+			}
+		modifier = {
+			factor = 1.5
+			tungsten > 30
+			}
+		modifier = {
+			factor = 1.5
+			tungsten > 40
+			}
+			}
+			
 		categories = {
 			armor
 			cat_medium_armor
@@ -868,23 +985,47 @@ technologies = {
 			factor = 3
 
 			modifier = {
-				factor = 2
-				is_major = yes
+				factor = 0.5
+				NOT = { has_tech = motorised_infantry }
 			}
-
+			
 			modifier = {
-				factor = 1.2
-				date > "1013.1.1"
+				factor = 0.5
+				has_tech = 		has_tech = mass_assault
+				}
+
+
+		modifier = {
+			factor = 1.5
+			arms_factory > 35 
 			}
-
-			modifier = {
-				factor = 1.2
-				date > "1014.1.1"
+		modifier = {
+			factor = 1.5
+			arms_factory > 50
 			}
-
-			modifier = {
-				factor = 1.2
-				date > "1015.1.1"
+		modifier = {
+			factor = 1.5
+			arms_factory > 75		
+			}
+		modifier = {
+			factor = 0.5
+			tungsten < 10
+			}
+		modifier = {
+			factor = 0.5
+			tungsten < 5
+			}
+		modifier = {
+			factor = 1.5
+			tungsten > 15
+			}
+		modifier = {
+			factor = 1.5
+			tungsten > 30
+			}
+		modifier = {
+			factor = 1.5
+			tungsten > 40
 			}
 		}
 
@@ -1047,19 +1188,33 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 
-			modifier = {
-				factor = 1.2
-				date > "1015.1.1"
+				modifier = {
+				factor = 0.5
+				has_tech = has_tech = mass_assault
+				}
+		modifier = {
+			factor = 1.5
+			arms_factory > 35 
 			}
-
-			modifier = {
-				factor = 1.2
-				date > "1016.1.1"
+		modifier = {
+			factor = 1.5
+			arms_factory > 50
 			}
-
-			modifier = {
-				factor = 1.2
-				date > "1017.1.1"
+		modifier = {
+			factor = 1.5
+			arms_factory > 75		
+			}
+		modifier = {
+			factor = 0.5
+			tungsten < 10
+			}
+		modifier = {
+			factor = 0.5
+			tungsten < 5
+			}
+		modifier = {
+			factor = 0
+			tungsten < 10
 			}
 		}
 
@@ -1231,24 +1386,38 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 
-			modifier = {
-				factor = 0
-				NOT = { has_tech = motorised_infantry }
-			}
 
-			modifier = {
-				factor = 2
-				date > "1017.1.1"
+		modifier = {
+			factor = 0.5
+			has_tech = 		has_tech = mass_assault
+				}
+		modifier = {
+			factor = 1.5
+			arms_factory > 50 
 			}
-
-			modifier = {
-				factor = 2
-				date > "1018.1.1"
+		modifier = {
+			factor = 1.5
+			arms_factory > 75
 			}
-
-			modifier = {
-				factor = 2
-				date > "1019.1.1"
+		modifier = {
+			factor = 1.5
+			arms_factory > 100		
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 20
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 15
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 10
+			}
+		modifier = {
+			factor = 0
+			chromium < 5
 			}
 		}
 
@@ -2136,18 +2305,41 @@ technologies = {
 			factor = 2
 			
 		modifier = {
-				has_tech = main_battle_tank
-				factor = 10
+			factor = 2
+			NOT = {
+			has_tech = {
+			basic_medium_tank 
+			}
+			}
 			}
 
-			modifier = {
-				factor = 1.2
-				date > "1018.1.1"
+		modifier = {
+			factor = 1.5
+			arms_factory > 25
 			}
-
-			modifier = {
-				factor = 1.2
-				date > "1020.1.1"
+		modifier = {
+			factor = 1.5
+			arms_factory > 35
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 50		
+			}
+		modifier = {
+			factor = 0.5
+			tungsten < 10
+			}
+		modifier = {
+			factor = 0.5
+			tungsten < 8
+			}
+		modifier = {
+			factor = 0.5
+			tungsten < 5
+			}
+		modifier = {
+			factor = 0
+			tungsten < 3
 			}
 			
 		}
@@ -2238,7 +2430,38 @@ technologies = {
 		}
 
 		ai_will_do = {
+			factor = 1
+			
+		modifier = {
+			factor = 1.5
+			arms_factory > 35
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 45
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 60		
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 10
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 8
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 5
+			}
+		modifier = {
 			factor = 0
+			chromium < 3
+			}
+			
+			
 		}
 
 		categories = {
@@ -2331,6 +2554,42 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1.5
+			
+				modifier = {
+			factor = 0.5
+			has_tech = 		has_tech = mass_assault
+				}
+		modifier = {
+			factor = 1.5
+			arms_factory > 50 
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 75
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 100		
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 25
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 18
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 13
+			}
+		modifier = {
+			factor = 0
+			chromium < 8
+			}
+			
+			
+			
 		}
 
 		categories = {
@@ -2420,6 +2679,40 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1.5
+			
+				modifier = {
+			factor = 0.5
+			has_tech = 		has_tech = mass_assault
+				}
+		modifier = {
+			factor = 1.5
+			arms_factory > 50 
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 75
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 100		
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 25
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 20
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 15
+			}
+		modifier = {
+			factor = 0
+			chromium < 10
+			}
+			
 		}
 
 		categories = {
@@ -2509,6 +2802,39 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1.5
+			
+				modifier = {
+			factor = 0.5
+			has_tech = 		has_tech = mass_assault
+				}
+		modifier = {
+			factor = 1.5
+			arms_factory > 50 
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 75
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 100		
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 25
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 20
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 15
+			}
+		modifier = {
+			factor = 0
+			chromium < 10
+			}
 		}
 
 		categories = {
@@ -2616,7 +2942,42 @@ technologies = {
 		start_year = 1024
 
 		ai_will_do = {
+			factor = 1
+		
+			modifier = {
+			factor = 0.5
+			has_tech = 		has_tech = mass_assault
+				}
+		modifier = {
+			factor = 1.5
+			arms_factory > 100
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 125
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 200		
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 50
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 30
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 25
+			}
+		modifier = {
 			factor = 0
+			chromium < 15
+			}
+		
+		
 		}
 
 		categories = {
