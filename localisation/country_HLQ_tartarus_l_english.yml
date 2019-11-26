@@ -11,7 +11,9 @@ HLQ_alina_hochmeister:0 "Alina Hochmeister"
 
 ### Traits ###
 trait_reformisten_boss:0 "Leader Of The Reformisten"
+trait_reformisten_boss_desc:0 "The founder of the reformisten must be a shining example to his soldiers and as such he is always on the frontlines leading by example"
 trait_reformisten_erich:0 "Like Father, Like Son"
+trait_reformisten_erich_desc:0 ""I taught the boy well." -Wingfried"
 ferrous_trait:0 "Zealous Press Chief"
 moderniser:0 "Modernizer"
 integralist_king:0 "King of the Integralists"
@@ -32,7 +34,7 @@ HLQ_edelstahlflugel_tech:0 "Edelstahlflugel"
 ### Events ###
 
 tartarus_hellquill.11.t:0 "Southern Opportunity" #HLQ
-tartarus_hellquill.11.d:0 "Lushi is a backwards, poor nation still deeply in past of feudalism in serfdom. However in comparision to their neighbours they are at least relatively stable (not that it is an achievement if we compare them to bandit infested mountains, bandit infested plains and commies infested ricefields…). Still, they are in state permanent danger of being attacked and in desperate need for an ally, and nobles can be swayed to our cause by either bribery or blackmailing them, while propaganda action can sway commoners to our cause. Hopefully our sympathisers in princely court will keep him unaware of our plot until it is too late… And until we will be ready to send him proposition he could not reject."
+tartarus_hellquill.11.d:0 "Lushi is a backwards, poor nation still deeply in past of feudalism in serfdom. However in comparision to their neighbours they are at least relatively stable (not that it is an achievement if we compare them to bandit infested mountains, bandit infested plains and commie infested ricefields…). Still, they are in a state of permanent danger of being attacked and in desperate need for an ally, and nobles can be swayed to our cause by either bribery or blackmailing them, while propaganda action can sway commoners to our cause. Hopefully our sympathisers in princely court will keep him unaware of our plot until it is too late… And until we will be ready to send him proposition he could not reject."
 tartarus_hellquill.11.a:0 "Initiate Fall Grun."
 
 tartarus_hellquill.1.t:0 "A Proposition" #LUS
@@ -41,7 +43,7 @@ tartarus_hellquill.1.a:0 "We are not..."
 tartarus_hellquill.1.b:0 "WE ARE! Call the knights!"
 
 tartarus_hellquill.2.t:0 "Fate of Lushi" #LUS
-tartarus_hellquill.2.d:0 "The Prince of Lushi arrived to Hellquil and is now in our claws. It is now to us, to decide fate of him, and his country. We have gained enough support among nobility and commoners alike to swiftly take power in Lushi and integrate it in Hellquil – however it may be more beneficial to leave prince in charge of country as our “ally” – as griffons surely will be more willing to follow him, than some foreigners. Of course we will send advisors that will help prince in governing country in a way that will benefit both Hellquil and Lushi."
+tartarus_hellquill.2.d:0 "The Prince of Lushi arrived to Hellquil and is now in our claws. It is now up to us, to decide fate of him, and his country. We have gained enough support among nobility and commoners alike to swiftly take power in Lushi and integrate into Hellquil – however it may be more beneficial to leave prince in charge of country as our “ally” – as griffons surely will be more willing to follow him, than some foreigners. Of course we will send advisors that will help prince in governing country in a way that will benefit both Hellquil and Lushi."
 tartarus_hellquill.2.a:0 "Bring Lushi into the fold."
 tartarus_hellquill.2.b:0 "An “Alliance” with Lushi will suffice."
 
