@@ -77,7 +77,7 @@ focus_tree = {
 	shared_focus = {
 		id = HLQ_geheimdienst
 		relative_position_id = HLQ_made_mighty_2
-		icon = GFX_goal_skull_treaty
+		icon = GFX_goal_tart_secret_police
 		x = -2
 		y = 2
 		cost = 7.00
@@ -94,6 +94,17 @@ focus_tree = {
 			add_stability = 0.03
 			add_war_support = 0.03
 			add_ideas = HLQ_secret_service
+			create_corps_commander = {
+				name = "Sascha Erlinger"
+				picture = "sascha_erlinger.tga"
+				traits = { trait_erlinger trickster trait_reformist }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			custom_effect_tooltip = HLQ_erlinger_stats_tp
 		}
 	}
 
@@ -242,17 +253,6 @@ focus_tree = {
 				logistics_skill = 1
 			}
 			custom_effect_tooltip = HLQ_rudgier_stats_tp
-			create_corps_commander = {
-				name = "Sascha Erlinger"
-				picture = "sascha_erlinger.tga"
-				traits = { trickster trait_reformist }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
-			}
-			custom_effect_tooltip = HLQ_alfred_stats_tp
 			create_corps_commander = {
 			name = "Alina Hochmeister"
 			    picture = "Alina_Hochmeister.tga"
@@ -1250,6 +1250,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_complete_industry"
 			increase_society_development = yes
+			increase_science_base = yes
 			if = {
 				limit = { has_country_flag = HLQ_the_industrial_sector }
 				random_owned_controlled_state = {

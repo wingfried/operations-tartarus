@@ -36,4 +36,8 @@ spriteTypes = {
 		name = "GFX_goal_HLQ_black_knights"
 		texturefile = "gfx/interface/goals/goal_HLQ_black_knights.dds"
 	}
+	SpriteType = { 
+		name = "GFX_goal_tart_secret_police"
+		texturefile = "gfx/interface/goals/goal_tart_secret_police.dds"
+	}
 }

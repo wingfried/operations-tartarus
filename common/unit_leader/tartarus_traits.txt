@@ -34,4 +34,37 @@ leader_traits = {
 		}
 	}
 
+	trait_erlinger = {
+		type = corps_commander
+		trait_type = personality_trait
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			enemy_partisan_effect = -0.25
+			special_forces_defence_factor = 0.15
+			recon_factor = 0.1
+		}
+	}
+
+	trait_countess = {
+		type = corps_commander
+		trait_type = personality_trait
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			#casualty_trickleback = 0.1
+			experience_loss_factor = -0.1
+			land_reinforce_rate = 0.25
+			dig_in_speed_factor = 0.25
+		}
+	}
+
 }

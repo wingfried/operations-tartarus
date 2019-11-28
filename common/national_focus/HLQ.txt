@@ -61,7 +61,7 @@ shared_focus = {
 	id = HLQ_blackrock_attack
 	icon = GFX_goal_ban_blackrock
 	relative_position_id = HLQ_lushi_anchluss
-	x = -2
+	x = 0
 	y = 1
 	cost = 7.00
 	bypass  = {
@@ -89,7 +89,7 @@ shared_focus = {
 	id = HLQ_host_attack
 	icon = GFX_goal_GRY_shield
 	relative_position_id = HLQ_lushi_anchluss
-	x = 0
+	x = -2
 	y = 1
 	cost = 7.00
 	bypass  = {
@@ -291,14 +291,17 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLQ_protect_cyan"
 
 		give_guarantee = CYA
-		CYA = { country_event = { id = tartarus_hellquill.17 } }
+		CYA = { 
+			transfer_state = 446
+			country_event = { id = tartarus_hellquill.17 } 
+		}
 	}
 }
 
 shared_focus = {
 	id = HLQ_marry_countess
 	icon = GFX_goal_marry_countess
-	relative_position_id = HLQ_freetowns_demand
+	relative_position_id = HLQ_protect_cyan
 	x = 0
 	y = 1
 	cost = 5
@@ -316,7 +319,6 @@ shared_focus = {
 		}
 	}
 	prerequisite = { focus = HLQ_protect_cyan }
-	prerequisite = { focus = HLQ_begin_tartarus }
 	ai_will_do = {
 		factor = 50
 	}
