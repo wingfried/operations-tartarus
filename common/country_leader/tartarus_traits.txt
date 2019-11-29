@@ -24,4 +24,11 @@ leader_traits = {
 		experience_gain_army = 0.05
 		enemy_partisan_effect = -0.25
 	}
+	protector_cyan = {
+		random = no
+		targeted_modifier = { tag = MIT defense_bonus_against = 0.1 }
+		max_dig_in = 1.5
+		stability_factor = 0.10
+		defensive_war_stability_factor = 0.4
+	}
 }

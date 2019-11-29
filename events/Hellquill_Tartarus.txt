@@ -485,8 +485,16 @@ country_event = { # Asterion War Won 2
 	fire_only_once = yes
 	option = {
 		name = tartarus_hellquill.20.a
+		create_faction = Grenzstaaten
+		HLQ = { add_to_faction = CYA }
 		CYA = {
 			give_guarantee = HLQ
+		}
+		hidden_effect = {
+			set_country_flag = wingfried_got_hitched
+			CYA = {
+				set_country_flag = countess_got_hitched
+			}
 		}
 	}
 }

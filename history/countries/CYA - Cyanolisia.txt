@@ -70,6 +70,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
+		protector_cyan
 	}
 }
 
@@ -80,7 +81,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
-
+		protector_cyan
 	}
 }
 
@@ -91,7 +92,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-
+		protector_cyan
 	}
 }
 

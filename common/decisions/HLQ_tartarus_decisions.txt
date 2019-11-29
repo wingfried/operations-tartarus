@@ -70,3 +70,23 @@ HLQ_936_category = {
 		}
 	}
 }
+
+HLQ_diplomacy_category = {
+	HLQ_cyanolisia_focus_load = {
+		icon = griffon
+		visible = {
+			has_country_flag = wingfried_got_hitched
+		}
+		cost = 5
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision HLQ_seek_imperial_gurantee target: [From.GetName]"
+			CYA = {
+				load_focus_tree = { tree = cyan_secret }
+				complete_national_focus = CYA_the_free_city
+			}	
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}

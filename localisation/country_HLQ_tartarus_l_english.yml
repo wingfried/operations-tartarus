@@ -1,5 +1,8 @@
 ﻿l_english:
 
+### Leader Desc ###
+wingfried_desc:0 "Most griffons you'd ask wouldn't know how Wingfried von Katerinburg became so characteristically hateful of ponies. Some say it was a traumatic event early in his lifetime, others say it is a result of fighting on the borders for so long. A few even whisper it is nothing more than inherited madness that is shared by his cousin, Diellza von Katerinburg. Nevertheless, Wingfried made the complete and total ruination of the eastern Riverpony nations the key policy in the new Hellquill. With Hellquill united behind him, von Katerinburg will fight to the last breath in order to achieve his goal."
+
 ### Advisors ###
 HLQ_morgend_longpaw:0 "Morgend Longpaw"
 HLQ_river_breeze:0 "River Breeze"
@@ -20,6 +23,7 @@ trait_countess:0 "Shining Pearl of Cyanolisia"
 trait_countess_desc:0 "May she be worthy of the name"
 ferrous_trait:0 "Zealous Press Chief"
 moderniser:0 "Modernizer"
+protector_cyan:0 "Protector of Cyanolisia"
 integralist_king:0 "King of the Integralists"
 sturmgriefen_commander:0 "Sturmtruppen Commander"
 
@@ -30,6 +34,11 @@ HLQ_edelstahlflugel_beginning:0 "The Edelstahlflugel Project"
 HLQ_edelstahlflugel_distribution:0 "Edelstahlflugel Distribution"
 HLQ_edelstahlflugel_start_cost_300:0 "£pol_power  §Y300§!"
 HLQ_edelstahlflugel_start_cost_270:0 "£pol_power  §Y270§!"
+
+HLQ_cyanolisia_focus_load:0 "Load Cyanolisia's Freistaat Focus Tree"
+
+CYA_diplomacy_category:0 "Diplomacy"
+CYA_bring_colonists:0 "Settle the Outback"
 
 ### Misc Loc ###
 

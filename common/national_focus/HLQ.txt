@@ -293,6 +293,16 @@ shared_focus = {
 		give_guarantee = CYA
 		CYA = { 
 			transfer_state = 446
+			create_corps_commander = {
+			name = "Lucien Van Der Stolz"
+			    picture = "derstolz.tga"
+			    traits = { war_hero trait_reckless naval_invader trait_reformist }
+			    skill = 2
+			    attack_skill = 3
+			    defense_skill = 3
+			    planning_skill = 2
+			    logistics_skill = 1
+		    }
 			country_event = { id = tartarus_hellquill.17 } 
 		}
 	}
