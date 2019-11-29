@@ -62,7 +62,7 @@ leader_traits = {
 		modifier = {
 			#casualty_trickleback = 0.1
 			experience_loss_factor = -0.1
-			land_reinforce_rate = 0.25
+			land_reinforce_rate = 0.05
 			dig_in_speed_factor = 0.25
 		}
 	}

@@ -233,8 +233,8 @@ news_tartarus_hellquill.2.b:0 "An unexpected development."
     HLQ_a_bullet_for_the_hardliners_desc:0 "Some members of the Reformisten seem to actually believe that non-griffons cannot be taught the Griffon Way and by extension cannot be made into mighty Griffonians. Very well, then; we shall give them the same treatment they proposed for the non-griffons. Firing squads should do nicely."
     HLQ_get_new_generals:0 "A New Generation of Officers"
     HLQ_get_new_generals_desc:0 "Our movement has inspired many veterans and upstarters alike to take up arms. These brave Griffons will lead our troops bravely into battle, no matter the cost."
-    HLQ_old_traditions:0 "Outdated Traditions"
-    HLQ_old_traditions_desc:0 "Our knightly traditions are, sadly, very much outdated and useless, nowadays. It's time we rid ourselves of them and institute a real, professional army."
+    HLQ_old_traditions:0 "Staying True to Our Name"
+    HLQ_old_traditions_desc:0 "Our knightly traditions are unfortunately not suitable for today's age of war. It is time we reform the order into a force to be actually reckoned with in these new times, the Black Knights of the Reformisten shall be established amd they shall bring glory to our ancestors of old"
     HLQ_remove_old_guard:0 "Deal with the Old Guard"
     HLQ_remove_old_guard_desc:0 "While some members of the old guard have jumped onto our movement's policies, many believe that we are simply too radical. Their opposition is a hurdle for us and Hellquill overall, and we must get rid of these troublemakers as soon as possible."
     HLQ_stormgriffons:0 "Create the Sturmtruppen"
@@ -369,6 +369,9 @@ HLQ_idea_group_936:0 "Group 936"
 HLQ_idea_group_936_desc:0 "Group 936 is the offical government designation for a collection of laboratories, universities, and workshops. Created and funded by the government, Group 936 is an attempt to bridge the practical, theoretical, and uproot the cultural divide between the scientific advancements made by Ponykind and Griffonkind in their combination. Even initial research has proven many breakthroughs, such as artifical wings for all beings and adopting Earth Pony magic to inhabit the less hospitable parts of the kingdom, and further progress is almost guaranteed."
 HLQ_kulturkampf_idea:0 "PoW Labor"
 HLQ_kulturkampf_idea_desc:0 "The King has signed several bills allowing Prisoners of War to be used in manual labor to fuel the war machine against the Riverlanders. However, in addition to this, the bills also protect the PoW's from unsafe, debilitating, or cruel work ethics or enviroments, and provides them with sustinance and a proper place to work from. Despite the immorality of it all, it does appear the ones involved are quite content for not being in a worse situation..."
+HLQ_black_knights:0 "Black Knights of Hellquill"
+HLQ_black_knights_desc:0 "Offically the Order of Brothers of the Griffon House of Prelate Aloysious in Cloudbury the Knights of Hellquill have had a storied and bloody past.\n\nHaving been granted the ancient Frontier lands around Hellquill by Emperor Grover II himself, the Knights have continually proven themselves to be a bulwark of Griffonkind against the savage ponies of the East, even if said ponies claim otherwise..."
+
 
 ### Flavor Loc ###
 

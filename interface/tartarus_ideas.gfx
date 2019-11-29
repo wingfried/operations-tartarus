@@ -24,4 +24,8 @@ spriteTypes = {
 		name = "GFX_idea_HLQ_beakyarov"
 		texturefile = "gfx/interface/ideas/idea_HLQ_beakyarov.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_HLQ_black_knights"
+		texturefile = "gfx/interface/ideas/idea_HLQ_black_knights.dds"
+	}
 }

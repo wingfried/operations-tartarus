@@ -281,7 +281,7 @@ focus_tree = {
 	shared_focus = {
 		id = HLQ_old_traditions
 		relative_position_id = HLQ_made_mighty_2
-		icon = GFX_focus_generic_strike_at_democracy1
+		icon = GFX_goal_HLQ_black_knights
 		x = 0
 		y = 2
 		cost = 7.00
@@ -295,7 +295,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_old_traditions"
-			remove_ideas = HLQ_knights_1
+			swap_ideas = {
+				remove_idea = HLQ_knights_1
+				add_idea = HLQ_black_knights
+			}
 			add_stability = 0.05
 			add_war_support = 0.05
 			random_unit_leader = {
