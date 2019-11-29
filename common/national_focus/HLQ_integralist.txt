@@ -244,13 +244,24 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_get_new_generals"
 			create_corps_commander = {
 				name = "Vanance Lodernd"
-				portrait_path = "vanance.tga"
+				picture = "vanance.tga"
 				traits = { air_force_commander career_officer bearer_of_artillery }
 				skill = 2
 				attack_skill = 2
 				defense_skill = 3
 				planning_skill = 2
 				logistics_skill = 1
+			}
+			custom_effect_tooltip = HLQ_rudgier_stats_tp
+			create_corps_commander = {
+				name = "Sofie Rösler"
+				picture = "sofie_rosler.tga"
+				traits = { brilliant_strategist trait_mountaineer }
+				skill = 3
+				attack_skill = 1
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 3
 			}
 			custom_effect_tooltip = HLQ_rudgier_stats_tp
 			create_corps_commander = {
