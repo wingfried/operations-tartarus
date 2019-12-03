@@ -294,7 +294,7 @@ shared_focus = {
 		CYA = { 
 			transfer_state = 446
 			create_corps_commander = {
-			name = "Lucien Van Der Stolz"
+			name = "Lucienne Van Der Stolz"
 			    picture = "derstolz.tga"
 			    traits = { war_hero trait_reckless naval_invader trait_reformist }
 			    skill = 2
@@ -340,3 +340,4 @@ shared_focus = {
 		}
 	}
 }
+
