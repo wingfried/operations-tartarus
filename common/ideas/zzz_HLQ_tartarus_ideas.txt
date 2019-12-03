@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 
 	political_advisor = {
 		HLQ_morgend_longpaw = {

@@ -28,4 +28,16 @@ spriteTypes = {
 		name = "GFX_idea_HLQ_black_knights"
 		texturefile = "gfx/interface/ideas/idea_HLQ_black_knights.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_HLQ_sturmtruppen"
+		texturefile = "gfx/interface/ideas/idea_HLQ_sturmtruppen.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HLQ_sturmtruppen_1"
+		texturefile = "gfx/interface/ideas/idea_HLQ_sturmtruppen.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HLQ_sturmtruppen_2"
+		texturefile = "gfx/interface/ideas/idea_HLQ_sturmtruppen.dds"
+	}
 }
