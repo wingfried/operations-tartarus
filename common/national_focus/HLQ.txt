@@ -137,7 +137,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLQ_host_attack"
 
-		country_event = { id = tartarus_hellquill.14 }
+		country_event = { id = tartarus_hellquill.13 }
 	}
 }
 
