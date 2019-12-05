@@ -397,7 +397,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_stormgriffons"
-			add_ideas = HLQ_sturmtruppen
+			add_ideas = HLQ_stormgriff
 			create_corps_commander = {
 			name = "Eisen Silberkrone"
 			    picture = "Eisen.tga"
