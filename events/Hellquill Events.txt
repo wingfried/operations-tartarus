@@ -12,7 +12,7 @@ country_event = { #What do to with the treasure
 
 	option = {
 		ai_chance = {
-			factor = 34
+			factor = 0
 		}
 		name = hellquill.1.a
 		custom_effect_tooltip = HLQ_the_industrial_sector_tp
@@ -23,7 +23,7 @@ country_event = { #What do to with the treasure
 
 	option = {
 		ai_chance = {
-			factor = 33
+			factor = 0
 		}
 		name = hellquill.1.b
 		custom_effect_tooltip = HLQ_the_people_tp
@@ -34,7 +34,7 @@ country_event = { #What do to with the treasure
 
 	option = {
 		ai_chance = {
-			factor = 33
+			factor = 100
 		}
 		name = hellquill.1.c
 		custom_effect_tooltip = HLQ_army_stuff_tp
