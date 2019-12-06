@@ -194,7 +194,7 @@ focus_tree = {
 		cost = 7.00
 		prerequisite = { focus = HLQ_made_mighty_2 }
 		ai_will_do = {
-			factor = 100
+			factor = 200
 		}
 		available = {
 			537 = { is_owned_and_controlled_by = ROOT }
@@ -238,7 +238,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 100
+			factor = 200
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_get_new_generals"
@@ -302,7 +302,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 100
+			factor = 200
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_old_traditions"
@@ -349,7 +349,7 @@ focus_tree = {
 		cost = 7.00
 		prerequisite = { focus = HLQ_made_mighty_2 }
 		ai_will_do = {
-			factor = 100
+			factor = 200
 		}
 		available = {
 			537 = { is_owned_and_controlled_by = ROOT }
@@ -393,7 +393,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 100
+			factor = 200
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_stormgriffons"
@@ -496,7 +496,7 @@ focus_tree = {
 			has_government = fascism
 		}
 		ai_will_do = {
-			factor = 50
+			factor = 200
 			modifier = {
 				factor = 0.5
 				strength_ratio = {
