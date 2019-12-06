@@ -852,7 +852,12 @@ country_event = { # The Meeting
 		ai_chance = {
 			factor = 90
 		}
-		custom_effect_tooltip = GAME_OVER_TT
+		if = {
+			limit = {
+				is_ai = no
+			}
+			HLQ = { change_tag_from = ROOT }
+		}
 		hidden_effect = {
 			HLQ = { country_event = { id = tartarus_hellquill.31 days = 2 } }
 			every_state = {
