@@ -534,19 +534,24 @@ country_event = { # Asters Landing Taken
 }
 
 country_event = { # Asterion War Won
-	id = tartarus_hellquill.19
-	title = tartarus_hellquill.19.t
-	desc = tartarus_hellquill.19.d
+ 	id = tartarus_hellquill.19
+ 	title = tartarus_hellquill.19.t
+ 	desc = tartarus_hellquill.19.d
 	picture = GFX_event_HLQ_lushi
-	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.19"}
 	is_triggered_only = yes
-	option = {
-		name = tartarus_hellquill.19.a
-		country_event = {
-			id = tartarus_hellquill.20
-		}
-	}
-}
+ 	fire_only_once = no
+
+ 	option = {
+ 		name = tartarus_hellquill.19.a
+ 			
+ 			hidden_effect = {
+ 				HLQ = {
+ 					country_event = {
+					id = tartarus_hellquill.20
+					}
+				}
+ 			}
+ 	}
 
 country_event = { # Asterion War Won 2
 	id = tartarus_hellquill.20
