@@ -283,6 +283,14 @@ shared_focus = {
 			exists = no
 		}
 	}
+	available = {
+		NOT = {
+			has_war_with = CYA
+		}
+		owns_state = 446
+		controls_state = 446
+	}
+	cancel_if_invalid = yes
 	prerequisite = { focus = HLQ_blackrock_attack }
 	ai_will_do = {
 		factor = 50
