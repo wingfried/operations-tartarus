@@ -1,0 +1,36 @@
+CRY_ideas_plan = {
+	name = "Crystal Empire"
+	desc = "My dudes"
+
+	enable = {
+		original_tag = CRY
+	}
+	abort = {
+		has_war = yes
+	}
+	focus_factors = {
+	}
+	research = {
+	}
+
+	ideas = {
+	spike = 10
+	flurryheart_idea = 20
+	CRY_mistmane = 25
+	the_crystal_factory = 25
+	sunburst = 50
+	shining_armour = 20
+	flash_sentry = 15
+	Damiyan = 10
+	CRY_cloudy = 10
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

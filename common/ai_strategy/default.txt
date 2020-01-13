@@ -51,19 +51,25 @@ default_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = light_armor
-		value = 15
+		value = 25
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = main_armor
-		value = 5
+		value = 10
 		}
+		
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 5
+	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 65
+		value = 60
 	}
 
 	ai_strategy = {
@@ -76,13 +82,13 @@ default_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
-		value = 30
+		value = 35
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = cas
-		value = 10
+		value = 20
 	}
 
 	ai_strategy = {

@@ -140,9 +140,11 @@ technologies = {
 				}
 			
 			modifier = {
-				factor = 2
-				has_template_majority_unit = infantry 
-				}									
+					factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}									
 					
 
 			modifier = {
@@ -168,7 +170,12 @@ technologies = {
 			modifier = {
 					factor = 1.5
 					num_divisions	> 100
-					}				
+					}
+					
+			modifier = {
+				factor = 0
+				aluminium < 2
+						}				
 					}
 					}
 
@@ -203,10 +210,18 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1.5
+			
 			modifier = {
-				factor = 3
-				has_template_majority_unit = infantry 
-				}
+				factor = 0
+				aluminium < 2
+						}				
+						
+			modifier = {
+				factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}
 				
 		modifier = {
 			factor = 2
@@ -264,10 +279,13 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
+			
 			modifier = {
-				factor = 3
-				has_template_majority_unit = infantry 
-				}
+				factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}
 				
 		modifier = {
 			factor = 3
@@ -326,10 +344,13 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
+			
 			modifier = {
-				factor = 3
-				has_template_majority_unit = infantry 
-				}
+				factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}
 				
 		modifier = {
 			factor = 1.5
@@ -387,9 +408,11 @@ technologies = {
 			factor = 3
 
 			modifier = {
-				factor = 3
-				has_template_majority_unit = infantry 
-				}
+				factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}
 				
 		modifier = {
 			factor = 3
@@ -450,10 +473,12 @@ technologies = {
 			factor = 2
 			
 			
-		modifier = {
+			modifier = {
 				factor = 2
-				has_template_majority_unit = infantry 
-				}
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}
 				
 		modifier = {
 			factor = 2
@@ -509,8 +534,10 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				has_template_majority_unit = infantry 
-				}
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}
 				
 		modifier = {
 			factor = 2
@@ -569,8 +596,10 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				has_template_majority_unit = infantry 
-				}
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}
 				
 		modifier = {
 			factor = 2
@@ -1217,10 +1246,10 @@ modifier = {
 				
 			modifier = {
 				factor = 0
-				NOT = {
-				has_template_majority_unit = infantry														
-		}
-		}
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage < 0.5 }
+					}
 		}
 		}
 	tech_field_hospital2 = {
@@ -1291,12 +1320,12 @@ modifier = {
 				num_divisions > 100
 				}
 				
-			modifier = {
+				modifier = {
 				factor = 0
-				NOT = {
-				has_template_majority_unit = infantry														
-		}
-		}
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage < 0.5 }
+					}
 		}
 		}
 	tech_field_hospital3 = {
@@ -1366,12 +1395,12 @@ modifier = {
 				num_divisions > 100
 				}
 				
-			modifier = {
+				modifier = {
 				factor = 0
-				NOT = {
-				has_template_majority_unit = infantry														
-		}
-		}
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage < 0.5 }
+					}
 		}
 		}
 	###------> Old Field Hospital <><> <><> <><> <><> <><>
@@ -1444,12 +1473,12 @@ modifier = {
 				num_divisions > 100
 				}
 				
-			modifier = {
+				modifier = {
 				factor = 0
-				NOT = {
-				has_template_majority_unit = infantry														
-				}
-				}
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage < 0.5 }
+					}
 				}
 				}
 	###------> X <><> <><> <><> <><> <><>
@@ -2131,10 +2160,13 @@ modifier = {
 
 		ai_will_do = {
 			factor = 1
+			
 			modifier = {
-						factor = 3
-						has_template_majority_unit = infantry 
-						}
+				factor = 3
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}
 				
 			modifier = {
 						factor = 2
@@ -2193,9 +2225,12 @@ modifier = {
 
 		ai_will_do = {
 			factor = 1
+			
 			modifier = {
-					factor = 3
-					has_template_majority_unit = infantry 
+				factor = 3
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
 					}
 				
 			modifier = {
@@ -2252,8 +2287,10 @@ modifier = {
 			
 			
 			modifier = {
-					factor = 3
-					has_template_majority_unit = infantry 
+				factor = 3
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
 					}
 				
 			modifier = {
@@ -2314,8 +2351,10 @@ modifier = {
 			factor = 1
 			
 			modifier = {
-					factor = 3
-					has_template_majority_unit = infantry 
+				factor = 3
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
 					}
 				
 		modifier = {
@@ -2378,10 +2417,12 @@ modifier = {
 		ai_will_do = {
 			factor = 1
 			
-				modifier = {
+			modifier = {
 				factor = 3
-				has_template_majority_unit = infantry 
-				}
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}
 				
 		modifier = {
 			factor = 2
@@ -2434,8 +2475,10 @@ modifier = {
 		
 			modifier = {
 				factor = 3
-				has_template_majority_unit = infantry 
-				}
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}
 				
 		modifier = {
 			factor = 5
@@ -2887,10 +2930,10 @@ modifier = {
 				
 			modifier = {
 				factor = 0
-				NOT = {
-				has_template_majority_unit = infantry														
-		}
-		}				
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage < 0.5 }
+					}			
 		}
 		}
 
@@ -2960,10 +3003,10 @@ modifier = {
 				
 			modifier = {
 				factor = 0
-				NOT = {
-				has_template_majority_unit = infantry														
-		}
-		}	
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage < 0.5 }
+					}	
 		}
 		}
 

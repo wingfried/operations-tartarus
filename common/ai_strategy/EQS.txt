@@ -60,7 +60,7 @@ EQS_template_design_1 = {
 		id = main_armor
 		value = 10
 	}
-
+	
 	ai_strategy = {
 		type = template_prio
 		id = heavy_armor
@@ -172,6 +172,12 @@ EQS_unit_production = {
 		id = mountaineers
 		value = 6
 	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 5
+	}
 
 	ai_strategy = {
 		type = role_ratio
@@ -188,13 +194,13 @@ EQS_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = light_armor
-		value = 10
+		value = 15
 	}
 	
 	ai_strategy = {
 		type = role_ratio
 		id = main_armor
-		value = 10
+		value = 20
 	}
 
 	ai_strategy = {
@@ -206,7 +212,7 @@ EQS_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 80
+		value = 70
 	}
 
 	#Air unit factors
@@ -219,7 +225,7 @@ EQS_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = cas
-		value = 10
+		value = 15
 	}
 
 	ai_strategy = {

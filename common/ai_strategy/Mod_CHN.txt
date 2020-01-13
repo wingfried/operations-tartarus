@@ -1,10 +1,6 @@
-		
-							
-			
-			
+															
 	#Construction scripts:
-	#Ai refueses to take commands to build civ factories, so going to nudge it for now.
-		
+	
 	Prep_for_great_war = {
 		enable = {
 			AND = {
@@ -190,13 +186,7 @@
 			}
 		abort = {
 		OR = {
-			304 = {
-			free_building_slots = {
-			building = synthetic_refinery
-			Size < 1
-			include_locked = no				
-			}
-			}
+			always = no
 			}
 			}
 			ai_strategy = {

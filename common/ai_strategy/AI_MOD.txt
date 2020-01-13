@@ -1,7 +1,25 @@
 
 	
 	#Adjust military focus of countries based on their military industrial scale.:		
-
+	
+	Long_term_industry = {
+		enable = {
+			AND = {
+				always = yes
+				}
+				}
+		Abort = {
+			OR = {
+				has_war = yes							
+				}
+				}
+		
+		ai_strategy = {
+			type = added_military_to_civilian_factory_ratio
+			value = -20
+		}
+		}
+		
 	High_industry_country = {
 			enable = {
 				OR = {
@@ -18,12 +36,16 @@
 		type = role_ratio
 		id = main_armor
 		value = 10
-		
+		}
 	ai_strategy = {
 		type = role_ratio
 		id = light_armor
 		value = 8
 		}
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 3
 		}
 		}
 		
@@ -43,12 +65,17 @@
 		type = role_ratio
 		id = main_armor
 		value = 20
-		
+		}
 		ai_strategy = {
 		type = role_ratio
 		id = light_armor
 		value = 12
 		}
+		
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 3
 		}
 		}
 		
@@ -67,12 +94,16 @@
 		type = role_ratio
 		id = main_armor
 		value = 40
-	
+	}
 		ai_strategy = {
 		type = role_ratio
 		id = light_armor
 		value = 20
 		}
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 20
 		}
 		}
 		
@@ -89,17 +120,11 @@
 				num_of_military_factories > 15
 				}
 				}
-			
-		ai_strategy = {
-			type = equipment_variant_production_factor
-			id = infantry_equipment
-			value = 45 
-			}
 		
 		ai_strategy = {
 			type = role_ratio
 			id = infantry
-			value = 50 
+			value = 25 
 			}
 		
 	
@@ -131,12 +156,6 @@
 			type = equipment_production_factor
 			id = strategic_bomber
 			value = -200
-			}
-		
-		ai_strategy = {
-			type = equipment_variant_production_factor
-			id = mechanized_equipment
-			value = -50 
 			}		
 		
 		ai_strategy = {
@@ -176,13 +195,13 @@
 		ai_strategy = {
 			type = equipment_variant_production_factor
 			id = infantry_equipment
-			value = 75 
+			value = 50
 			}
 			
 		ai_strategy = {
 			type = role_ratio
 			id = infantry
-			value = 80 
+			value = 30 
 			}
 			
 		ai_strategy = {
@@ -283,14 +302,14 @@
 			Abort = {
 				OR = {
 				aluminium > 2 
-				has_equipment = { support_equipment < 0 }
+				has_equipment = { support_equipment < 1 }
 				}
 				}
 		
 		ai_strategy = {
 			type = equipment_variant_production_factor
 			id = support_equipment
-			value = -1000 
+			value = -10000 
 			}
 			}
 	
@@ -298,13 +317,15 @@
 		Enable = {
 			AND = {
 				rubber < 1 
-				has_equipment = { motorized_equipment > 20 }
+				has_equipment = { motorized_equipment > 50 }
+				arms_factories < 20
 				}
 				}
 			Abort = {
 				OR = {
 				rubber > 2 
-				has_equipment = { motorized_equipment < 0 }
+				has_equipment = { motorized_equipment < 1 }
+				arms_factories > 20
 				}
 				}
 		
@@ -314,7 +335,7 @@
 			value = -1000
 			}
 			}
-			
+
 	CHF_Artillery = {
 		Enable = {
 			AND = {
@@ -325,7 +346,7 @@
 			Abort = {
 				OR = {
 				tungsten > 2 
-				has_equipment = { artillery_equipment < 0 }
+				has_equipment = { artillery_equipment < 1 }
 				}
 				}
 		
@@ -367,42 +388,19 @@
 		Enable = {
 			AND = {
 				rubber < 3 
+				check_variable = { resource_consumed@rubber < 1 }
 				}
 				}
 			Abort = {
 				OR = {
-				rubber > 4 
+				rubber > 3 
+				check_variable = { resource_consumed@rubber > 1 }
 				}
 				}
 		
 	ai_strategy = {
-		type = unit_ratio
-		id = fighter
-		value = -100
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = cas
-		value = -100
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = tactical_bomber
-		value = -100
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = strategic_bomber
-		value = -100
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = naval_bomber
-		value = -100
+		type = air_factory_balance
+		value = -1000
 	}
 	}
 			
@@ -770,39 +768,35 @@ In_with_new_MT = {
 	
 	Less_Ships_for_all = {
 		enable = {
-			OR = {
-				always = yes
-				}
-				}
-		Abort = {
-			OR = {
-				always = no 
+			not = {
+			has_dlc = "Man the Guns"
 				}
 				}
 			
 		ai_strategy = {
 			type = unit_ratio
 			id = capital_ship
-			value = -50
+			value = -10
 			}
 
 		ai_strategy = {
 			type = unit_ratio
 			id = submarine
-			value = -50
+			value = -20
 			}
 
 		ai_strategy = {
 			type = unit_ratio
 			id = screen_ship
-			value = -30
+			value = -10
 			}
 
 		ai_strategy = {
 			type = unit_ratio
 			id = convoy
-			value = -50
+			value = -20
 			}
+			
 		ai_strategy = {
 		type = dockyard_to_military_factory_ratio
 		value = -45	
@@ -843,12 +837,14 @@ In_with_new_MT = {
 	
  	Dont_infantry = {
  		Enable = { 
+			AND = {
  			OR = {
  				has_manpower < 10000
  				has_equipment = {infantry_equipment < 250}
  				}
- 			AND = {
+ 			OR = {
  				has_war = yes 
+ 				}
  				}
  				}
  		abort = {
@@ -872,17 +868,19 @@ In_with_new_MT = {
  		
  	Dont_light_tanks = {
  		Enable = {
+ 		AND = {
  			Or = {
- 				has_equipment = {light_tank_equipment < 200}
+ 				has_equipment = {light_tank_equipment < 100}
  				has_manpower < 10000 
 				}
- 			AND = {
+ 			OR = {
  				has_war = yes 
+ 				}
  				}
  				}
  		abort = {
  			AND = {
- 				has_equipment = {light_tank_equipment > 500}
+ 				has_equipment = {light_tank_equipment > 150}
  				has_manpower > 25000
  				}
  				}
@@ -890,23 +888,25 @@ In_with_new_MT = {
  		ai_strategy = {
  			type = save_equipment
  			id = light_tank_equipment
- 			value = 500 
+ 			value = 100 
  			}
  			}
  	
  	Dont_med_tanks = {
  		Enable = {
+			AND = {
  			Or = {
- 				has_equipment = {medium_tank_equipment < 200}
+ 				has_equipment = {medium_tank_equipment < 100}
  				has_manpower < 10000 
  				}
-  		AND = {
+  		OR = {
  				has_war = yes 
+ 				}
  				}
  				}
  		abort = {
  			AND = {
- 				has_equipment = {medium_tank_equipment > 500}
+ 				has_equipment = {medium_tank_equipment > 150}
  				has_manpower > 25000
  				}
  				}
@@ -914,23 +914,25 @@ In_with_new_MT = {
  		ai_strategy = {
  			type = save_equipment
  			id = medium_tank_equipment
- 			value = 500 
+ 			value = 100 
  			}
  			}
  	
  	Dont_heavy_tanks = {
  		Enable = {
+			AND = {
  			Or = {
-				has_equipment = {heavy_tank_equipment < 200}
+				has_equipment = {heavy_tank_equipment < 100}
 				has_manpower < 10000 
 				}
-			AND = {
+			OR = {
 				has_war = yes 
+				}
 				}
 				}
  		abort = {
  			AND = {
-				has_equipment = {heavy_tank_equipment > 500}
+				has_equipment = {heavy_tank_equipment > 150}
 				has_manpower > 25000
 				}
 				}
@@ -938,23 +940,25 @@ In_with_new_MT = {
  		ai_strategy = {
  			type = save_equipment
  			id = heavy_tank_equipment
- 			value = 500 
+ 			value = 100 
  			}
  			}
  	
  	Dont_modern_tanks = {
  		Enable = {
+			AND = {
 				Or = {
-					has_equipment = {modern_tank_equipment < 200}
+					has_equipment = {modern_tank_equipment < 100}
 					has_manpower < 10000 
 					}
- 			AND = {
+ 			OR = {
 					has_war = yes 
+					}
 					}
 					}
  		abort = {
  			AND = {
-					has_equipment = {modern_tank_equipment > 500}
+					has_equipment = {modern_tank_equipment > 150}
 					has_manpower > 25000
 					}
 					}
@@ -962,7 +966,7 @@ In_with_new_MT = {
  		ai_strategy = {
  			type = save_equipment
  			id = modern_tank_equipment
- 			value = 500 
+ 			value = 100 
 				}
 				}
 				
@@ -1041,3 +1045,5 @@ In_with_new_MT = {
  			value = -10000
 				}
 				}
+				
+
