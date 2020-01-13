@@ -345,19 +345,10 @@ guiTypes = {
 				###------> X <><> <><> <><> <><> <><>
 
 			}
-			
-					gridboxtype = {
-				name = "update_med_armor_tree"
-				position = { x = 140 y = 610 }
-				#size = { width = 420 height = 500 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			
 
 			gridboxtype = {
 				name = "melee_weapons_tree"
-				position = { x = 10000 y = 10000 }
+				position = { x = 140 y = 610 }
 				#size = { width = 420 height = 500 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1035,7 +1026,7 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 				}
 			}
-	
+
 
 			gridboxtype = {
 				name = "gwtank_tree"
