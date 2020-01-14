@@ -343,8 +343,10 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HLQ_marry_countess"
 
-		country_event = {
-			id = tartarus_hellquill.19
+		CYA = {
+			country_event = {
+				id = tartarus_hellquill.19
+			}
 		}
 	}
 }

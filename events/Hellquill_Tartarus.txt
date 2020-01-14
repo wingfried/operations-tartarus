@@ -530,6 +530,22 @@ country_event = { # Asters Landing Taken
 	}
 	option = {
 		name = tartarus_hellquill.18.a
+		country_event = {
+			id = tartarus_hellquill.39
+		}
+	}
+}
+
+country_event = { # Asters Landing Taken 2
+	id = tartarus_hellquill.39
+	title = tartarus_hellquill.39.t
+	desc = tartarus_hellquill.39.d
+	picture = GFX_event_HLQ_lushi
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.39"}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = tartarus_hellquill.39.a
 	}
 }
 
@@ -544,14 +560,15 @@ country_event = { # Asterion War Won
  	option = {
  		name = tartarus_hellquill.19.a
  			
- 			hidden_effect = {
- 				HLQ = {
- 					country_event = {
-					id = tartarus_hellquill.20
-					}
+ 		hidden_effect = {
+ 			HLQ = {
+ 				country_event = {
+				id = tartarus_hellquill.20
 				}
- 			}
+			}
+ 		}
  	}
+}
 
 country_event = { # Asterion War Won 2
 	id = tartarus_hellquill.20
@@ -819,6 +836,7 @@ country_event = { # Tartarus' Kingdom of Hellquill Event
 		}
 	}
 }
+
 country_event = { # Wingfried's New Direction
 	id = tartarus_hellquill.28
 	title = tartarus_hellquill.28.t
