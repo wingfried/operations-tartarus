@@ -570,7 +570,7 @@ country_event = { # Asterion War Won
  			hidden_effect = {
  				HLQ = {
  					country_event = {
-					id = tartarus_hellquill.20
+					id = t_hellquill.1
 					}
 				}
  			}
@@ -588,7 +588,7 @@ country_event = {
  	
  	#
 	option = {
-		name = tartarus_hellquill.20.a
+		name = t_hellquill.1.a
 		create_faction = Grenzstaaten
 		HLQ = { add_to_faction = CYA }
 		CYA = {
