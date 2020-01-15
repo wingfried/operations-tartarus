@@ -62,6 +62,12 @@ country_event = { # Lushi Anschlussed!
 			target = LUS
 			transfer_troops = yes
 		}
+		every_state = {
+			limit = { 
+				is_core_of = LUS 
+			}
+			add_core_of = ROOT
+		}
 	}
 	option = {
 		name = tartarus_hellquill.2.b
@@ -156,7 +162,7 @@ country_event = { # Host Annexed!
 		name = tartarus_hellquill.5.a
 		annex_country = {
 			target = GRY
-			transfer_troops = no
+			transfer_troops = yes
 		}
 	}
 }
