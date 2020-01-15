@@ -446,7 +446,7 @@ country_event = { # GRU Anschlussed!
 		name = tartarus_hellquill.15.a
 		annex_country = {
 			target = GRU
-			transfer_troops = no
+			transfer_troops = yes
 		}
 	}
 	option = {
