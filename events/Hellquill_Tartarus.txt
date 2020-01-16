@@ -62,12 +62,6 @@ country_event = { # Lushi Anschlussed!
 			target = LUS
 			transfer_troops = yes
 		}
-		every_state = {
-			limit = { 
-				is_core_of = LUS 
-			}
-			add_core_of = ROOT
-		}
 	}
 	option = {
 		name = tartarus_hellquill.2.b
@@ -162,7 +156,7 @@ country_event = { # Host Annexed!
 		name = tartarus_hellquill.5.a
 		annex_country = {
 			target = GRY
-			transfer_troops = yes
+			transfer_troops = no
 		}
 	}
 }
@@ -446,7 +440,7 @@ country_event = { # GRU Anschlussed!
 		name = tartarus_hellquill.15.a
 		annex_country = {
 			target = GRU
-			transfer_troops = yes
+			transfer_troops = no
 		}
 	}
 	option = {
@@ -570,7 +564,7 @@ country_event = { # Asterion War Won
  			hidden_effect = {
  				HLQ = {
  					country_event = {
-					id = t_hellquill.1
+					id = tartarus_hellquill.20
 					}
 				}
  			}
@@ -588,7 +582,7 @@ country_event = {
  	
  	#
 	option = {
-		name = t_hellquill.1.a
+		name = tartarus_hellquill.20.a
 		create_faction = Grenzstaaten
 		HLQ = { add_to_faction = CYA }
 		CYA = {
@@ -1018,8 +1012,66 @@ country_event = { #Silvertalon sees Dadfried
 	title = tartarus_hellquill.34.t
 	desc = tartarus_hellquill.34.desc
 	is_triggered_only = yes
-	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.33"}
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.34"}
 	option = {
 		name = tartarus_hellquill.34.a
 	}
 }
+
+country_event = { #save Grover VI or not
+	id = tartarus_hellquill.40
+	title = tartarus_hellquill.40.t
+	desc = tartarus_hellquill.40.desc
+	is_triggered_only = yes
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.40"}
+	picture = Wingfried_von_Smirkerinburg.tga
+	
+	option = {
+		name = tartarus_hellquill.40.a #did save
+		hidden_effect = {
+				country_event = { id = tartarus_hellquill.41 days = 3 }
+			}
+		GRI = {
+			hidden_effect = {
+				country_event = { id = imperial.155 days = 3 }
+			}
+		}
+	}
+	option = {
+		name = tartarus_hellquill.40.b #didnt save
+		GRI = {
+			hidden_effect = {
+				country_event = { id = imperial.75 days = 3 }
+			}
+		}
+	}
+}
+country_event = { #Annex GRI. This is the Hellquill variant of the "Save Grover" event.
+	id = tartarus_hellquill.41
+	title = tartarus_hellquill.41.t
+	desc = tartarus_hellquill.41.desc
+	is_triggered_only = yes
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.41"}
+	picture = Wingfried_von_Smirkerinburg.tga
+	option = {
+		name = tartarus_hellquill.41.a
+		annex_country = { target = GRI transfer_troops = yes }
+		set_cosmetic_tag = NGR
+	}
+}
+#country_event = { #unused event, intended to be a workaround but it turns out this is not necessary. May be converted later.
+#	id = tartarus_hellquill.42
+#	title = tartarus_hellquill.42.t
+#	desc = tartarus_hellquill.42.desc
+#	is_triggered_only = yes
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.41"}
+#	picture = Wingfried_von_Smirkerinburg.tga
+#	option = {
+#		hidden_effect = {
+#			set_country_flag = HLQ_integ
+#				GRI = {
+#					set_country_flag = HLQ_integ
+#				}
+#			}
+#	}
+#}
