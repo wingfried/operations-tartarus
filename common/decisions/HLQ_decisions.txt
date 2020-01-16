@@ -306,7 +306,10 @@ HLQ_crusade_category = {
 				all_enemy_country = {
 					is_original_riv_fed_country = no
 				}
-			}
+				}
+			NOT = {
+				has_completed_focus = HLQ_made_mighty_2
+				}		
 		}
 		available = {
 			is_subject = no
@@ -451,6 +454,9 @@ HLQ_crusade_category = {
 			any_enemy_country = {
 				is_original_riv_fed_country = yes
 			}
+			NOT = {
+				has_completed_focus = HLQ_made_mighty_2
+				}
 		}
 		available = {
 			is_subject = no

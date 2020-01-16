@@ -17,8 +17,8 @@ country_event = { # Lushi targeted for Anschluss (Lushi's Event)
 				is_in_faction = yes
 			}
 			modifier = {
-				add = -10000
-				has_war = yes
+				factor = 0
+				has_war_with  = HLQ
 			}
 		}
 		HLQ = {
@@ -38,9 +38,16 @@ country_event = { # Lushi targeted for Anschluss (Lushi's Event)
 			}
 			modifier = {
 				add = 10000
-				has_war = yes
+				has_war_with  = HLQ
 			}
 		}
+	hidden_effect = { 
+		every_state = {
+			limit = { is_core_of = ROOT }
+			add_core_of = FROM
+			}
+		}
+		
 		HLQ = {
 			country_event = {
 				id = tartarus_hellquill.3
@@ -56,11 +63,12 @@ country_event = { # Lushi Anschlussed!
 	picture = GFX_event_HLQ_lushi
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.2"}
 	is_triggered_only = yes
+	
 	option = {
 		name = tartarus_hellquill.2.a
 		annex_country = {
 			target = LUS
-			transfer_troops = yes
+			transfer_troops = yes			
 		}
 		every_state = {
 			limit = { 
@@ -77,6 +85,7 @@ country_event = { # Lushi Anschlussed!
 		}
 	}
 }
+
 country_event = { # Lushi Refused Anschluss!
 	id = tartarus_hellquill.3
 	title = tartarus_hellquill.3.t
@@ -92,8 +101,9 @@ country_event = { # Lushi Refused Anschluss!
 		declare_war_on = {
 			target = LUS
 			type = annex_everything
-		}
+		}		
 	}
+	
 	option = {
 		name = tartarus_hellquill.3.b
 		trigger = {
@@ -102,9 +112,10 @@ country_event = { # Lushi Refused Anschluss!
 		create_wargoal = {
 			target = LUS
 			type = annex_everything
-		}
-	}
-}
+		}		
+			}
+			}
+			
 country_event = { # Hellquill offers... protection? GRY event
 	id = tartarus_hellquill.4
 	title = tartarus_hellquill.4.t

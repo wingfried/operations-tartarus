@@ -33,6 +33,8 @@ HLQ_936_category = {
 			industrial_capacity_factory = -0.15
 			production_speed_buildings_factor = -0.15
 		}
+		
+		
 		complete_effect = {
 			if = {
 				limit = {
@@ -51,10 +53,12 @@ HLQ_936_category = {
 			}
 		}
 	}
+	
 	HLQ_edelstahlflugel_distribution = {
 		icon = griffon
 		visible = {
 			has_country_flag = HLQ_edelstahlflugel_stuff
+			NOT = { has_tech = HLQ_edelstahlflugel_tech
 		}
 		days_remove = 180
 		modifier = {
@@ -70,12 +74,14 @@ HLQ_936_category = {
 		}
 	}
 }
+}
 
 HLQ_diplomacy_category = {
 	HLQ_cyanolisia_focus_load = {
 		icon = griffon
 		visible = {
 			has_country_flag = wingfried_got_hitched
+			NOT = { has_country_flag = CYA_Tree_Loaded }
 		}
 		cost = 5
 		complete_effect = {
@@ -84,9 +90,11 @@ HLQ_diplomacy_category = {
 				load_focus_tree = { tree = cyan_secret }
 				complete_national_focus = CYA_the_free_city
 			}	
+			set_country_flag = CYA_Tree_Loaded
 		}
 		
 		ai_will_do = {
 			factor = 100
 		}
+	}
 	}
