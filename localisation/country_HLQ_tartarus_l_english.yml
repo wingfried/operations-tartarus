@@ -216,6 +216,19 @@ tartarus_hellquill.34.t:0 "United in Spirit"
 tartarus_hellquill.34.desc:0 "This was not the end of Silvertalon’s surprises in Hellquill. Just as he finished his meeting with von Katerinburg, the griffon saw another scene that shocked him… in a good way? If it could be said. He was outside the Grandmaster’s Palace, awaiting the arrival of his car, that would lead him to one of Hellquill’s finest hotels. He needed a good rest after all the stress of fighting for and rebuilding Longsword for the past months, after all.\n\nHe was taking in the scenery of Hellquill at dusk, with the orange light of the waning sun reflecting on the Griffking River, when he caught some movement just outside the Grandmaster’s Palace. Focusing on it with his good eye, he saw something that was frankly astonishing. The same dark coated unicorn that he saw early in the morning was with no other than von Katerinburg himself. However, he could see no hostility or hate in the griffon’s expressions or posture, but quite the opposite, it was… paternal? Loving?\n\nIndeed. From where he was he could not hear what the two were talking about, but Silvertalon saw that the interaction between the pony and von Katerinburg was like that of father and son. Could it be? He asked himself… logically, it wouldn’t be possible; but despite what his brain said the scene was in front of him, in plain sight. The resemblance turned more striking when he saw the two hugging when their conversation finished.\n\nMaybe it is true..."
 tartarus_hellquill.34.a:0 "It is the way..."
 
+tartarus_hellquill.40.t:0 "Renewing our Oaths"
+tartarus_hellquill.40.desc:0 "Wingfried von Katerinburg stood in his office in the Grandmaster’s House, thinking. Some griffons had criticized his decision to renew the Hellquill Knight’s oaths to an Empire that assured to finally meet its end at any moment, especially after the Emperor’s death, but he dismissed those griffons. After all, the knights of Hellquill and the Reformisten movement owed its very existence to the Empire. Any griffon who denied that fact was a fool, so why not renew the oaths? Wingfried was also more optimistic about the fate of the Empire than most. If one trusted in and had confidence in the Gods, then they would reward one for their faith.\n\nThus he decided to renew the Order’s oath with the Empire.\n\nBut also, another issue arose: would he go to Griffenheim personally, or send a diplomat to negotiate the knight’s renewal?\n\nWingfried going personally to the Imperial City would send a stronger message, but there was also the matter of organizing the security of his entourage and the day-to-day administration of Hellquill while he was on leave. Sending a diplomat would be the ‘safer’ option, along with a clawful of knights as bodyguards, and he would go to Griffenheim after the oaths were renewed.\n\nIn the end, what would he do?"
+tartarus_hellquill.40.a:0 "I’ll go to Griffenheim personally. It’ll send a stronger message to the Imperials."
+tartarus_hellquill.40.b:0 "A diplomat will handle the negotiations better."
+
+tartarus_hellquill.41.t:0 "A Visit to Griffenheim"
+tartarus_hellquill.41.desc:0 "Negotiations in the Griffonian Royal Palace had been going well...too well, apparently, as gunshots suddenly rang from within its walls. Both Imperial and Reformisten advisors alike either fleed or took cover from this internal threat. All except King Wingfried, whose knightly instincts kicked in as he pursued the source of this sudden attack.\n\nAs he neared the corner of the gunshots' origin, he pulled out and loaded his Luger. Peeking around it, the Reformisten leader saw two Diamond Dog guards' bullet-ridden corpses bleeding on the floor in front of the young Emperor's room. Fearing the worst, and praying he wasn't too late, he charged into the room to see the Lord Protector holding a gun to his weeping charge's head, betraying the trust his people had placed in him. The traitor, distracted at this unforseen intrusion of his plans, temporarily aimed his gun away from his target. Wingfried didn't hesitate to leap on that mistake, and with a swift flourish of his arm shot three times: two going wild and the third striking true into the Lord Protector's head.\n\nAs the would-be assassin's body fell to the floor, the young Emperor rushed to his savior's side and wailed, thankful for his life not coming to an early end. After Wingfried brought the child to safety, Hellquill was guaranteed Imperial support. Word of the Reformisten King's heroic actions would spread far across not just the Empire, but the whole of Griffonia. As Wingfried once more brought honor to knights of Hellquill, the Kingdom would gain further stability and support."
+tartarus_hellquill.41.a:0 "Glory to Wingfried, Glory to the Reformisten!"
+
+#tartarus_hellquill.42.t:0 "This is a workaround! Please ignore."
+#tartarus_hellquill.42.desc:0 "A simple workaround for a coding problem. You saw nothing!"
+#tartarus_hellquill.42.a:0 "Okay"
+
 ### News Events ###
 
 news_tartarus_hellquill.1.t:0 "Hellquill Intervenes in Brodfeld"
@@ -397,3 +410,21 @@ HLQ_black_knights_desc:0 "Offically the Order of Brothers of the Griffon House o
 ### Flavor Loc ###
 
 HLQ_erich_von_katerinburg_desc:0 "Erich Ahmić, a Deponyan unicorn who was raised in a small village near the Hellquill – Deponyan border. During a raid of the village, Erich took refuge with his family in their house, until it was shelled by an artillery barrage. Miraculously, he survived, and remained hidden, until he saw Wingfried Von Katerinburg, leader of the raid, pass through an alleyway beside his house, wielding a decorated blade of the veteran knights. Erich emerged from the wreckage of his home, and with the little magic he had, swept the sword right from his claw.\n\n Wingfried looked around for the magic that had taken his sword, only to find a child before him, wielding the sword towards him courageously, yet also with fear. He approached Erich, his own sword being used against him, and with such intent, surprised him. A child using magic to wield his weapon against him like that took courage, yet hiding that fear would tire him. Despite the child’s efforts, he took back his blade and took the child under his wing, as he saw a spark within the child, a promising knight, an opportunity and a weapon to use against his enemies.\n\nTo the surprise of the raiding party, he did not order the young pony to be left to die or killed outright, but instead, Wingfried became a father figure to him, raising the unicorn under his ideals of strength and chivalry. He taught the boy the ways of the knights of Hellquill under firm, yet stern teachings, moulding the Deponyan Unicorn into a being that resembled Hellquill’s prestige and bravery in combat.\n\nErich Von Katerinburg, as he became known as, soon became a loyal and intermediate unicorn, learning much from the teachings of Wingfried. When he came of age, he joined the military academy and passed with flying colours, soon being appointed a much earned and respected spot in the knights of Hellquill.\n\nWhen the Reformisten formed, Erich soon became a figurehead, championing Integralism, showing that the Ponies and Griffons can work claw and hoof to achieve their ideals. The Reformisten’s main ideal would be to reform the Griffonian Empire, but one out of the ashes of the vile filth known as the Riverlands.\n\nHe would still carry a fond yet fading memory of his parents and the Deponyan village, often fantasizing about being back with them, or seeing them one last time, but thanking the heavens that his life is more fortunate under Wingfried’s wing.\n\n"
+
+###Cosmetic Tag Stuff###
+
+ NGR_fascism:0 "Neu Griffonischess Reich"
+ NGR_fascism_ADJ:0 "Imperial"
+ NGR_fascism_DEF:0 "Neu Griffonischess Reich"
+ 
+ NGR_neutrality:0 "Alt Grifonnishchess Reich"
+ NGR_neutrality_ADJ:0 "Imperial"
+ NGR_neutrality_DEF:0 "Alt Grifonnishchess Reich"
+ 
+ NGR_democratic:0 "Heiliges Demokratisches Reich"
+ NGR_democratic_ADJ:0 "Imperial"
+ NGR_democratic_DEF:0 "Heiliges Demokratisches Reich"
+ 
+ NGR_fascism:0 "Volksreich"
+ NGR_fascism_ADJ:0 "Imperial"
+ NGR_fascism_DEF:0 "Volksreich"

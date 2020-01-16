@@ -21,6 +21,9 @@ focus_tree = {
     	y = 0
     	cost = 0.142
     	bypass = { always = yes }
+		log = "[GetDateText]: [Root.GetName]: Focus HLQ_made_might_2"
+		completion_reward = {
+		}
     }
     shared_focus = {
 		id = HLQ_black_cloaks_in_council

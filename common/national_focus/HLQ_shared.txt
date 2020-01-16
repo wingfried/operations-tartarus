@@ -112,6 +112,9 @@
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_made_mighty"
 			hidden_effect = {
 				set_country_flag = HLQ_integralsits_choosen
+				GRI = {
+					set_country_flag = HLQ_integralsits_choosen
+				}
 			}
 		}
 	}
