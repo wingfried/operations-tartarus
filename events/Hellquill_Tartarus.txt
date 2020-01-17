@@ -1,5 +1,6 @@
 ﻿add_namespace = tartarus_hellquill
 add_namespace = news_tartarus_hellquill
+add_namespace = t_hellquill
 
 country_event = { # Lushi targeted for Anschluss (Lushi's Event)
 	id = tartarus_hellquill.1
@@ -578,7 +579,7 @@ country_event = { # Asterion War Won
  	option = {
  		name = tartarus_hellquill.19.a
  			
- 			hidden_effect = {
+ 			hidden_effect = { 
  				HLQ = {
  					country_event = {
 					id = t_hellquill.1
@@ -590,14 +591,13 @@ country_event = { # Asterion War Won
 
 country_event = {
  	id = t_hellquill.1
- 	title = t_hellquill.1
- 	desc = t_hellquill.1
+ 	title = t_hellquill.1.t
+ 	desc = t_hellquill.1.d
 	picture = GFX_event_HLQ_lushi
 	immediate = {log = "[GetDateText]: [Root.GetName]: event t_hellquill.1"}
 	is_triggered_only = yes
  	fire_only_once = no
  	
- 	#
 	option = {
 		name = t_hellquill.1.a
 		create_faction = Grenzstaaten
