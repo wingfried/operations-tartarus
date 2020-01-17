@@ -257,7 +257,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = HLQ_rudgier_stats_tp
 			create_corps_commander = {
-				name = "Sofie Rösler"
+				name = "Sofie 'Nakoi' Rölsner"
 				picture = "sofie_rosler.tga"
 				traits = { brilliant_strategist trait_mountaineer }
 				skill = 2
