@@ -585,6 +585,11 @@ country_event = { # Asterion War Won
 					id = t_hellquill.1
 					}
 				}
+				CYA = {
+ 					country_event = {
+					id = t_hellquill.2
+					}
+				}
  			}
  	}
 }
@@ -611,6 +616,20 @@ country_event = {
 				set_country_flag = countess_got_hitched
 			}
 		}
+	}
+}
+
+country_event = {
+ 	id = t_hellquill.2
+ 	title = t_hellquill.2.t
+ 	desc = t_hellquill.2.d
+	picture = GFX_event_HLQ_lushi
+	immediate = {log = "[GetDateText]: [Root.GetName]: event t_hellquill.2"}
+	is_triggered_only = yes
+ 	fire_only_once = no
+ 	
+	option = {
+		name = t_hellquill.2.a
 	}
 }
 
