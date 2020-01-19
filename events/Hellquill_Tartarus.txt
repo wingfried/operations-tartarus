@@ -903,12 +903,21 @@ country_event = { # The Meeting
 			HLQ = { change_tag_from = ROOT }
 		}
 		hidden_effect = {
-			HLQ = { country_event = { id = tartarus_hellquill.31 days = 2 } }
+			HLQ = { 
+				country_event = { 
+					id = tartarus_hellquill.31 
+					days = 2 
+				}
+				country_event = {
+					id = tartarus_hellquill.34
+					hours = 8 
+				}
+			}
+
 			every_state = {
 				limit = { is_core_of = ROOT }
 				add_core_of = HLQ
 			}
-			country_event = { id = tartarus_hellquill.34 hours = 8 }
 		}
 	}
 	option = { # I won't be tricked by some Reformisten scum!
