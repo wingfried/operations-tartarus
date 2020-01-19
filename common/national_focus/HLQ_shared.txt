@@ -115,6 +115,18 @@
 				GRI = {
 					set_country_flag = HLQ_integralsits_choosen
 				}
+
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Wingfried von Katerinburg"
+					desc = "griffon_hitler_desc"
+					picture = "Wingfried_von_Smirkerinburg.tga"
+					expire = "1965.1.1"
+					ideology = falangism
+					traits = {
+						moderniser
+					}
+				}
 			}
 		}
 	}
