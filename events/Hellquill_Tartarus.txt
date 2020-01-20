@@ -725,6 +725,7 @@ country_event = { # Fate of Brodfeld
 		}
 	}
 }
+
 country_event = { # War on Prywhen!
 	id = tartarus_hellquill.22
 	title = tartarus_hellquill.22.t
@@ -765,17 +766,55 @@ country_event = { # Hellquill offers "governmental assistance"
 	is_triggered_only = yes
 	option = { # We can't really refuse...
 		name = tartarus_hellquill.24.a
-		ai_chance = {
-			base = 80
+		
+	ai_chance = {
+			factor = 200
+			
+		modifier = {
+				factor = 10
+			NOT = {
+				strength_ratio = {
+				tag = FROM
+				ratio = 0.1
+				}
+				}
+				}
+				
+			modifier = {
+				factor = 0
+				strength_ratio = {
+				tag = FROM
+				ratio = 1
+				}
+				}
+			
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+				tag = FROM
+				ratio = 0.5
+				}
+				}
+				
+		modifier = {
+				factor = 0.5
+				strength_ratio = {
+				tag = FROM
+				ratio = 0.25
+				}
+			}
 		}
+		
+		
 		HLQ = {
 			puppet = BRF
 		}
 	}
+	
 	option = { # We'll fight them, too!
 		name = tartarus_hellquill.24.b
 		ai_chance = {
-			base = 20
+			base = 10
 		}
 		HLQ = {
 			create_wargoal = {
@@ -785,6 +824,7 @@ country_event = { # Hellquill offers "governmental assistance"
 		}
 	}
 }
+
 country_event = { # Hellquill pressures for integration
 	id = tartarus_hellquill.25
 	title = tartarus_hellquill.25.t
@@ -793,9 +833,45 @@ country_event = { # Hellquill pressures for integration
 	is_triggered_only = yes
 	option = { # We cannot fight any longer...
 		name = tartarus_hellquill.25.a
-		ai_chance = {
-			base = 10
+	
+	ai_chance = {
+			factor = 150
+			
+		modifier = {
+				factor = 10
+			NOT = {
+				strength_ratio = {
+				tag = FROM
+				ratio = 0.1
+				}
+				}
+				}
+				
+			modifier = {
+				factor = 0
+				strength_ratio = {
+				tag = FROM
+				ratio = 1
+				}
+				}
+			
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+				tag = FROM
+				ratio = 0.5
+				}
+				}
+				
+		modifier = {
+				factor = 0.5
+				strength_ratio = {
+				tag = FROM
+				ratio = 0.25
+				}
+			}
 		}
+		
 		HLQ = {
 			annex_country = {
 				target = BRF
@@ -803,10 +879,11 @@ country_event = { # Hellquill pressures for integration
 			}
 		}
 	}
+	
 	option = { # We will fight for a thousand years more!
 		name = tartarus_hellquill.25.b
 		ai_chance = {
-			base = 90
+			base = 100
 		}
 		HLQ = {
 			create_wargoal = {
