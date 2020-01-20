@@ -444,3 +444,7 @@ HLQ_erich_von_katerinburg_desc:0 "Erich Ahmić, a Deponyan unicorn who was raise
  GRIF_NGR_fascism:0 "Volksreich"
  GRIF_NGR_fascism_ADJ:0 "Imperial"
  GRIF_NGR_fascism_DEF:0 "Volksreich"
+ 
+ CYA_queen:0 "Queendom of Cyanolisia"
+ CYA_queen_ADJ:0 "Cyanolisian"
+ CYA_queen_DEF:0 "Queendom of Cyanolisia"

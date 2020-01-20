@@ -127,6 +127,25 @@
 						moderniser
 					}
 				}
+
+				every_unit_leader = {
+					limit = {
+						has_id = 696969
+					}
+					retire = yes
+				}
+				create_corps_commander = {
+					name = "Wingfried von Katerinburg"
+					picture = "Wingfried_von_Smirkerinburg.tga"
+					desc = "wingfried_desc"
+					traits = { trait_reformisten_boss ranger trickster }
+					skill = 4
+					attack_skill = 4
+					defense_skill = 3
+					planning_skill = 3
+					logistics_skill = 3
+					id = 991287
+				}
 			}
 		}
 	}

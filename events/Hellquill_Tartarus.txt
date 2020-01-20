@@ -1,6 +1,7 @@
 ﻿add_namespace = tartarus_hellquill
 add_namespace = news_tartarus_hellquill
 add_namespace = t_hellquill
+add_namespace = tartarus_cyanolisa
 
 country_event = { # Lushi targeted for Anschluss (Lushi's Event)
 	id = tartarus_hellquill.1
@@ -1158,6 +1159,59 @@ country_event = { #Role of the Stormgriffons
 		swap_ideas = {
 			remove_idea = HLQ_stormtroops
 			add_idea = HLQ_stormtroops_2
+		}
+	}
+}
+
+country_event = {
+	id = tartarus_cyanolisa.1 #
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_cyanolisa.1"}
+	title = tartarus_cyanolisa.1.t
+	desc = tartarus_cyanolisa.1.d
+	picture = GFX_event_griffon_royal_guard
+	is_triggered_only = yes
+
+	option = { 
+		name = tartarus_cyanolisa.1.a
+		set_party_name = { 
+			ideology = neutrality
+			long_name = "Haus Liváni"
+			name = "House of Liváni"
+		}
+		set_cosmetic_tag = CYA_queen
+		set_province_name = { id = 7342 name = "Neu Thymíau"}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = mit_executed_nobility
+				}
+			}
+			create_country_leader = {
+				name = "Lady Taillow von Liváni"
+				desc = "thatcher_bird_in_direct_control_desc"
+				picture = "redbirb.tga"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = { dictator protector_cyan }
+			}
+			hidden_effect = {
+				create_country_leader = {
+				name = "Lady Taillow von Liváni"
+				desc = "thatcher_bird_in_direct_control_desc"
+				picture = "redbirb.tga"
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = { dictator protector_cyan }
+				}
+				create_country_leader = {
+				name = "Lady Taillow von Liváni"
+				desc = "thatcher_bird_in_direct_control_desc"
+				picture = "redbirb.tga"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = { dictator protector_cyan }
+				}
+			}
 		}
 	}
 }

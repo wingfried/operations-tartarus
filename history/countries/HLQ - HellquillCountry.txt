@@ -129,7 +129,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Wingfried von Katerinburg"
-	picture = "Wingfried_von_Smirkerinburg.tga"
+	picture = "Wingfried_von_Katerinburg.tga"
 	desc = "wingfried_desc"
 	traits = { trait_reformisten_boss ranger trickster }
 	skill = 4
@@ -137,6 +137,7 @@ create_field_marshal = {
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 3
+	id = 991286
 }
 
 create_field_marshal = {
