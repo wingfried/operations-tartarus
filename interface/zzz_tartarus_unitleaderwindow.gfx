@@ -16,5 +16,9 @@ spriteTypes = {
 		name = "GFX_trait_trait_countess"
 		texturefile = "gfx/interface/traits/personal/trait_countess.dds"
 	}
+	spriteType = {
+		name = "GFX_trait_trait_merc"
+		texturefile = "gfx/interface/traits/personal/trait_merc.dds"
+	}
 	
 }

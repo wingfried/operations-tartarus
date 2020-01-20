@@ -400,7 +400,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_stormgriffons"
-			add_ideas = HLQ_stormgriff
+			add_ideas = HLQ_stormtroops
 			create_corps_commander = {
 			name = "Eisen Silberkrone"
 			    picture = "Eisen.tga"
@@ -1194,7 +1194,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_role_of_sturmtruppen"
-			country_event = { id = hellquill.32 days = 1 }
+			country_event = { id = tartarus_hellquill.43 days = 1 }
 		}
 	}
 

@@ -234,6 +234,11 @@ tartarus_hellquill.41.a:0 "Glory to Wingfried, Glory to the Reformisten!"
 #tartarus_hellquill.42.desc:0 "A simple workaround for a coding problem. You saw nothing!"
 #tartarus_hellquill.42.a:0 "Okay"
 
+tartarus_hellquill.43.t:0 "Role of the Sturmtruppen"
+tartarus_hellquill.43.d:0 "The Sturmtruppen, our new elite forces, have been a topic of debate, as of recent. There is a discussion about their precise role within the armed forces, namely an aggressive and direct role at the frontline by giving them their own regiments within the army, or a more supportive role by stationing their soldiers behind the Frontline and in recon battalions to more effectively aid our troops. Both suggestions sound reasonable, but only one is possible. Which one will it be?"
+tartarus_hellquill.43.a:0 "Give them their own regiments."
+tartarus_hellquill.43.b:0 "Give them a support role."
+
 ### News Events ###
 
 news_tartarus_hellquill.1.t:0 "Hellquill Intervenes in Brodfeld"
@@ -410,6 +415,12 @@ HLQ_kulturkampf_idea:0 "PoW Labor"
 HLQ_kulturkampf_idea_desc:0 "The King has signed several bills allowing Prisoners of War to be used in manual labor to fuel the war machine against the Riverlanders. However, in addition to this, the bills also protect the PoW's from unsafe, debilitating, or cruel work ethics or enviroments, and provides them with sustinance and a proper place to work from. Despite the immorality of it all, it does appear the ones involved are quite content for not being in a worse situation..."
 HLQ_black_knights:0 "Black Knights of Hellquill"
 HLQ_black_knights_desc:0 "Offically the Order of Brothers of the Griffon House of Prelate Aloysious in Cloudbury the Knights of Hellquill have had a storied and bloody past.\n\nHaving been granted the ancient Frontier lands around Hellquill by Emperor Grover II himself, the Knights have continually proven themselves to be a bulwark of Griffonkind against the savage ponies of the East, even if said ponies claim otherwise..."
+HLQ_stormtroops:0 "Sturmtruppen"
+HLQ_stormtroops_desc:0 "A new military branch, the Sturmtruppen or ST, has been created. These elite soldiers are tasked with only the most difficult of missions. These griffons are the bravest supporters of the Integralists."
+HLQ_stormtroops_1:0 "Sturmtruppen Assault Brigades"
+HLQ_stormtroops_1_desc:0 "The ST have been integrated into the Army as an elite assault group. These elite soldiers raise the fighting spirit in the army, as well as our combat strength."
+HLQ_stormtroops_2:0 "Sturmtruppen Support Units"
+HLQ_stormtroops_2_desc:0 "The ST have been integrated into the Army as Support units. These elite soldiers will undertake daring recon missions and help our soldiers with digging defensive positions."
 
 
 ### Flavor Loc ###
