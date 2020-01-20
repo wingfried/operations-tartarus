@@ -101,7 +101,7 @@
 		relative_position_id = HLQ_black_cloaks
 		x = -4
 		y = 1
-		cost = 0.142
+		cost = 1
 		prerequisite = { focus = HLQ_black_cloaks }
 		mutually_exclusive = { focus = HLQ_born_mighty }
 		ai_will_do = {
@@ -137,7 +137,7 @@
 		relative_position_id = HLQ_black_cloaks
 		x = 4
 		y = 1
-		cost = 0.142
+		cost = 1
 		prerequisite = { focus = HLQ_black_cloaks }
 		mutually_exclusive = { focus = HLQ_made_mighty }
 		ai_will_do = {
