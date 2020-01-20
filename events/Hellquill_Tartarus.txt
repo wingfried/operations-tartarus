@@ -1007,10 +1007,10 @@ news_event = {
 }
 
 country_event = { #HLQ Gain Sunrise
-	id = tartarus_tartarus_hellquill.43
-	title = tartarus_tartarus_hellquill.43.t
-	desc = tartarus_tartarus_hellquill.43.desc
-	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_tartarus_hellquill.43"}
+	id = tartarus_hellquill.32
+	title = tartarus_hellquill.32.t
+	desc = tartarus_hellquill.32.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.32"}
 	fire_only_once = yes
 	trigger = {
 		has_country_flag = HLQ_integralsits_choosen
@@ -1022,7 +1022,7 @@ country_event = { #HLQ Gain Sunrise
 		}
 	}
 	option = {
-		name = tartarus_tartarus_hellquill.43.a
+		name = tartarus_hellquill.32.a
 		add_manpower = 27
 		LCT = {
 			add_manpower = -27
@@ -1132,7 +1132,7 @@ country_event = { #Annex GRI. This is the Hellquill variant of the "Save Grover"
 #	}
 #}
 
-country_event = { #Role of the Stormgriffons
+country_event = { #Role of the Stormtruppen
 	id = tartarus_hellquill.43
 	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_hellquill.43"}
 	title = tartarus_hellquill.43.t
