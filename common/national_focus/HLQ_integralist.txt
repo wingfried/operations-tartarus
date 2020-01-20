@@ -385,7 +385,7 @@ focus_tree = {
 	shared_focus = {
 		id = HLQ_stormgriffons
 		relative_position_id = HLQ_made_mighty_2
-		icon = GFX_goal_sturmtruppen
+		icon = GFX_goal_conscription
 		x = 1
 		y = 3
 		cost = 7.00
@@ -1179,7 +1179,7 @@ focus_tree = {
 
 	shared_focus = {
 		id = HLQ_role_of_sturmtruppen
-		icon = GFX_goal_conscription
+		icon = GFX_goal_sturmtruppen
 		x = -2
 		y = 2
 		relative_position_id = HLQ_declare_kingdom_of_hellquill
