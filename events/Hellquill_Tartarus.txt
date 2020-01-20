@@ -1112,7 +1112,6 @@ country_event = { #Annex GRI. This is the Hellquill variant of the "Save Grover"
 	option = {
 		name = tartarus_hellquill.41.a
 		annex_country = { target = GRI transfer_troops = yes }
-		set_cosmetic_tag = NGR
 	}
 }
 #country_event = { #unused event, intended to be a workaround but it turns out this is not necessary. May be converted later.
