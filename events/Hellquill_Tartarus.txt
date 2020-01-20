@@ -1215,3 +1215,25 @@ country_event = {
 		}
 	}
 }
+
+country_event = { 
+	id = tartarus_cyanolisa.2 #
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tartarus_cyanolisa.2"}
+	title = tartarus_cyanolisa.2.t
+	desc = tartarus_cyanolisa.2.d
+	picture = GFX_event_green_mountain
+	is_triggered_only = yes
+
+	option = {
+		name = tartarus_cyanolisa.2.a
+		add_state_core = 445
+		add_state_core = 460
+		add_state_core = 444
+		add_state_core = 509
+		add_state_core = 527
+		add_state_core = 528
+		add_state_core = 518
+		add_state_core = 394
+		add_state_core = 395
+	}
+}
