@@ -131,7 +131,7 @@ create_field_marshal = {
 	name = "Wingfried von Katerinburg"
 	picture = "Wingfried_von_Katerinburg.tga"
 	desc = "wingfried_desc"
-	traits = { trait_reformisten_boss ranger trickster }
+	traits = { trait_reformisten_boss brilliant_strategist trickster }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 3
@@ -139,7 +139,6 @@ create_field_marshal = {
 	logistics_skill = 3
 	id = 991286
 }
-
 create_field_marshal = {
 	name = "Siegfried Trappenfeld"
 	picture = "Hamster.tga"
