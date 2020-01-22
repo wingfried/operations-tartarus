@@ -580,7 +580,6 @@ country_event = { # Asterion War Won
  	option = {
  		name = tartarus_hellquill.19.a
  			
- 			hidden_effect = { 
  				HLQ = {
  					country_event = {
 					id = t_hellquill.1
@@ -591,7 +590,7 @@ country_event = { # Asterion War Won
 					id = t_hellquill.2
 					}
 				}
- 			}
+ 			
  	}
 }
 
