@@ -26,6 +26,9 @@
  HLQ_DMT_neutrality_ADJ:0 "Helvine"
  HLQ_DMT_communism_ADJ:0 "Hellquillian"
 
+ CYAqueen_fascism:0 "Queendom of Cyanolisia"
+ CYAqueen_neutrality:0 "Queendom of Cyanolisia"
+ 
  #### PARTY NAMES ####
  DMT_neutrality_party:0 "PANT"
  DMT_neutrality_party_long:0 "Party National"
