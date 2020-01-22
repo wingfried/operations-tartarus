@@ -130,7 +130,7 @@
 
 				every_unit_leader = {
 					limit = {
-						has_id = 696969
+						has_id = 991286
 					}
 					retire = yes
 				}
@@ -138,7 +138,7 @@
 					name = "Wingfried von Katerinburg"
 					picture = "Wingfried_von_Smirkerinburg.tga"
 					desc = "wingfried_desc"
-					traits = { trait_reformisten_boss ranger trickster }
+					traits = { trait_reformisten_boss brilliant_strategist ranger trickster }
 					skill = 4
 					attack_skill = 4
 					defense_skill = 3
