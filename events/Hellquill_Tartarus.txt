@@ -1251,11 +1251,14 @@ country_event = {
 	option = { 
 		name = tartarus_cyanolisa.1.a
 		set_party_name = { 
-			ideology = neutrality
+			ideology = fascism
 			long_name = "Haus Liváni"
 			name = "House of Liváni"
 		}
-		set_cosmetic_tag = CYA_queen
+		
+		set_politics = {
+		ruling_party = fascism
+		}
 		set_province_name = { id = 7342 name = "Neu Thymíau"}
 		if = {
 			limit = {
@@ -1268,16 +1271,17 @@ country_event = {
 				desc = "thatcher_bird_in_direct_control_desc"
 				picture = "redbirb.tga"
 				expire = "1965.1.1"
-				ideology = despotism
+				ideology = nazism
 				traits = { dictator protector_cyan }
 			}
 			hidden_effect = {
+				set_cosmetic_tag = CYAqueen
 				create_country_leader = {
 				name = "Lady Taillow von Liváni"
 				desc = "thatcher_bird_in_direct_control_desc"
 				picture = "redbirb.tga"
 				expire = "1965.1.1"
-				ideology = nazism
+				ideology = despotism
 				traits = { dictator protector_cyan }
 				}
 				create_country_leader = {
