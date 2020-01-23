@@ -47,6 +47,10 @@ CYA_bring_colonists:0 "Settle the Outback"
 HLQ_edelstahlflugel_tech:0 "Edelstahlflugel"
 HLQ_erlinger_stats_tp:0 "§RAttack Skill§!: §Y2§!\n§YDefense Skill§!: §Y3§!\n§GPlanning Skill§!: §Y2§!\n§MLogistics Skill§!: §Y2§!\n\n"
 
+### Opinion Modifiers ###
+
+happily_married:0 "Happily Married"
+
 ### Events ###
 
 tartarus_hellquill.11.t:0 "Southern Opportunity" #HLQ
