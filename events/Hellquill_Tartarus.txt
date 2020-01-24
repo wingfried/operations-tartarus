@@ -834,7 +834,7 @@ country_event = { # Hellquill pressures for integration
 		name = tartarus_hellquill.25.a
 	
 	ai_chance = {
-			factor = 150
+			factor = 200
 			
 		modifier = {
 				factor = 10
