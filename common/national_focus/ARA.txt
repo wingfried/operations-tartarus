@@ -2060,5 +2060,5 @@ focus_tree = {
 		###### INCOMPLETE Dorotheos gains trait Indomitable will (+5% Division Recovery rate) ##########
 		}
 		}	
-		
+	
 }
