@@ -766,44 +766,9 @@ country_event = { # Hellquill offers "governmental assistance"
 	option = { # We can't really refuse...
 		name = tartarus_hellquill.24.a
 		
-	ai_chance = {
-			factor = 200
-			
-		modifier = {
-				factor = 10
-			NOT = {
-				strength_ratio = {
-				tag = FROM
-				ratio = 0.1
-				}
-				}
-				}
-				
-			modifier = {
-				factor = 0
-				strength_ratio = {
-				tag = FROM
-				ratio = 1
-				}
-				}
-			
-			modifier = {
-				factor = 0.5
-				strength_ratio = {
-				tag = FROM
-				ratio = 0.5
-				}
-				}
-				
-		modifier = {
-				factor = 0.5
-				strength_ratio = {
-				tag = FROM
-				ratio = 0.25
-				}
-			}
+		ai_chance = {
+			base = 200
 		}
-		
 		
 		HLQ = {
 			puppet = BRF
@@ -813,7 +778,7 @@ country_event = { # Hellquill offers "governmental assistance"
 	option = { # We'll fight them, too!
 		name = tartarus_hellquill.24.b
 		ai_chance = {
-			base = 10
+			base = 0
 		}
 		HLQ = {
 			create_wargoal = {
@@ -833,42 +798,9 @@ country_event = { # Hellquill pressures for integration
 	option = { # We cannot fight any longer...
 		name = tartarus_hellquill.25.a
 	
-	ai_chance = {
-			factor = 200
-			
-		modifier = {
-				factor = 10
-			NOT = {
-				strength_ratio = {
-				tag = FROM
-				ratio = 0.1
-				}
-				}
-				}
-				
-			modifier = {
-				factor = 0
-				strength_ratio = {
-				tag = FROM
-				ratio = 1
-				}
-				}
-			
-			modifier = {
-				factor = 0.5
-				strength_ratio = {
-				tag = FROM
-				ratio = 0.5
-				}
-				}
-				
-		modifier = {
-				factor = 0.5
-				strength_ratio = {
-				tag = FROM
-				ratio = 0.25
-				}
-			}
+		ai_chance = {
+			base = 200
+		
 		}
 		
 		HLQ = {
@@ -882,7 +814,7 @@ country_event = { # Hellquill pressures for integration
 	option = { # We will fight for a thousand years more!
 		name = tartarus_hellquill.25.b
 		ai_chance = {
-			base = 100
+			base =0
 		}
 		HLQ = {
 			create_wargoal = {
