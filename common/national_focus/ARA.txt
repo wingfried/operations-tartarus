@@ -782,7 +782,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ARA_the_cadets"
 			add_research_slot = 1
-			decrease_illiteracy = yes
+			
 		}
 	}
 
@@ -1105,16 +1105,14 @@ focus_tree = {
 	### Political Options ###
 	focus = {
 		id = ARA_dorotheos_coup
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_ideology_monarchist
 		x = 23
 		y = 0
 		cost = 5.00
 		available = { always = no }
 		bypass = {
-			OR = {
-				has_country_flag = ARA_coup_succeeded
-				has_country_flag = ARA_coup_stopped
-			}
+			has_country_flag = ARA_coup_succeeded
+			
 		}
 		ai_will_do = {
 			factor = 100
@@ -1127,7 +1125,7 @@ focus_tree = {
 
 	focus = {
 		id = ARA_reorganise_high_command
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_authoritarian
 		x = -2
 		y = 1
 		relative_position_id = ARA_dorotheos_coup
@@ -1143,13 +1141,18 @@ focus_tree = {
 				category = land_doctrine
 			}
 			country_event = couparantiga.2
-			####REMOVE GENERAL Worek Artork######
+			if = {
+			limit = { has_unit_leader = 29348145298 }
+			remove_unit_leader = 29348145298
+		}
+
+			####Access to decisions “Arantigans Abroad”###
 			}
 }
 
 	focus = {
 		id = ARA_army_with_a_state
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_griffon_levy
 		x = 0
 		y = 1
 		relative_position_id = ARA_reorganise_high_command
@@ -1165,7 +1168,7 @@ focus_tree = {
 		
 	focus = {
 		id = ARA_purge_loyalists
-		icon = GFX_goal_graveyard
+		icon = GFX_focus_indy_bound_by_blood
 		x = 0
 		y = 1
 		relative_position_id = ARA_dorotheos_coup
@@ -1182,7 +1185,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_reorganise_government
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_authority
 		x = 0
 		y = 1
 		relative_position_id = ARA_purge_loyalists
@@ -1197,7 +1200,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_nationalization
-		icon = GFX_goal_graveyard
+		icon = GFX_focus_indy_industrial_tanks
 		x = 2
 		y = 1
 		relative_position_id = ARA_dorotheos_coup
@@ -1240,7 +1243,7 @@ focus_tree = {
 	focus = {
 	
 		id = ARA_state_of_war
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_skull_cannon
 		x = 0
 		y = 1
 		relative_position_id = ARA_nationalization
@@ -1263,7 +1266,7 @@ focus_tree = {
 	
 	Focus = {
 		id = ARA_arantiga_rises
-		icon = GFX_goal_graveyard
+		icon = GFX_focus_indy_champagne_repression
 		x = -2
 		y = 2
 		relative_position_id = ARA_nationalization
@@ -1283,7 +1286,7 @@ focus_tree = {
 
 	Focus = {
 		id = ARA_right_to_rule
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_royal_dictatorship_fist
 		x = 0
 		y = 1
 		relative_position_id = ARA_arantiga_rises
@@ -1318,7 +1321,7 @@ focus_tree = {
 			}
 	focus = {
 		id = ARA_rebuild_stone
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_generic_construct_public_housing
 		x = 0
 		y = 1
 		relative_position_id = ARA_craddle
@@ -1371,7 +1374,7 @@ focus_tree = {
 	
 	Focus = {
 		id = ARA_integrate_north
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_generic_construct_public_housing
 		x = 0
 		y = 1
 		relative_position_id = ARA_fight_north
@@ -1414,7 +1417,7 @@ focus_tree = {
 			
 	Focus = {
 		id = ARA_integrate_avian
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_generic_construct_public_housing
 		x = 0
 		y = 1
 		relative_position_id = ARA_fight_avian
@@ -1448,7 +1451,7 @@ focus_tree = {
 	
 	focus = { 
 		id = ARA_new_arantigos
-		icon = GFX_goal_graveyard
+		icon = GFX_focus_indy_swing_the_sword
 		x = 0
 		y = 2
 		relative_position_id = ARA_ac_revelations
@@ -1490,7 +1493,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_mandatory_education
-		icon = GFX_goal_graveyard
+		icon = GFX_focus_research_slave
 		x = 0
 		y = 1
 		relative_position_id = ARA_sparleos_culture
@@ -1517,7 +1520,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_sparleto_university
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_bookstack
 		x = 0
 		y = 1
 		relative_position_id = ARA_arantigos_boreas
@@ -1575,7 +1578,7 @@ focus_tree = {
 		
 	focus = {
 		id = ARA_industrial_warmachine
-		icon = GFX_goal_graveyard
+		icon = GFX_Focus_Military_Mobilisation
 		x = 3
 		y = 1
 		relative_position_id = ARA_self_strength
@@ -1608,7 +1611,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_heavy_industry
-		icon = GFX_goal_graveyard
+		icon = GFX_IRE_heavy_industry
 		x = -3
 		y = 1
 		relative_position_id = ARA_self_strength
@@ -1663,7 +1666,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_exploit_conquered
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_production
 		x = -3
 		y = 2
 		relative_position_id = ARA_kickstart_my_heart
@@ -1838,14 +1841,14 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_work_camps
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_griffon_labour_centers_com
 		x = 0
 		y = 1
 		relative_position_id = ARA_industrial_front
 		cost = 8.00
 		prerequisite = { focus = ARA_industrial_front }
 		completion_reward = {
-		add_idea = { ARA_work_camp }
+		add_ideas = { ARA_work_camp }
 		}
 		}
 	
@@ -1927,7 +1930,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_military_complex
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_generic_dangerous_deal
 		x = -1
 		y = 2
 		relative_position_id = ARA_kickstart_my_heart
@@ -1941,7 +1944,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_afterkeia
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_basic_oil
 		x = 1
 		y = 2
 		relative_position_id = ARA_kickstart_my_heart
@@ -2027,28 +2030,27 @@ focus_tree = {
 		cost = 1.00
 		prerequisite = { focus = ARA_new_arantigos }
 		completion_reward = {
-		couparantiga.6
+		country_event = couparantiga.6
+		}
+		}
+	
+	focus = {
+		id = ARA_es_oblivion
+		icon = GFX_goal_graveyard
+		x = 1
+		y = 1
+		relative_position_id = ARA_legacy_of_grover
+		prerequisite = { focus = ARA_legacy_of_grover }
+		mutually_exclusive = { focus = ARA_bungie_destiny }
+		completion_reward = {
+		country_event = couparantiga.7
 		}
 		}
 	
 	focus = { 
-		id = ARA_es_oblivion
+		id = ARA_bungie_destiny
 		icon = GFX_goal_graveyard
-		x = 0
-		y = 1
-		relative_position_id = ARA_new_arantigos 
-		cost = 1.00
-		prerequisite = { focus = ARA_new_arantigos }
-		mutually_exclusive = { focus = ARA_ubisoft_destiny }
-		completion_reward = {
-		couparantiga.7
-		}
-		}
-		
-	focus = { 
-		id = ARA_ubisoft_destiny
-		icon = GFX_goal_graveyard
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = ARA_legacy_of_grover 
 		cost = 1.00
@@ -2057,8 +2059,11 @@ focus_tree = {
 		completion_reward = {
 		add_political_power = 100
 		add_stability = 0.1
-		###### INCOMPLETE Dorotheos gains trait Indomitable will (+5% Division Recovery rate) ##########
+		country_event = couparantiga.7
 		}
-		}	
+		}
+		###### INCOMPLETE Dorotheos gains trait Indomitable will (+5% Division Recovery rate)#####
+		
 	
+		
 }
