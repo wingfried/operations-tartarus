@@ -44,7 +44,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus HLQ_black_cloaks_in_council"
 			swap_ideas = {
 				remove_idea = HLQ_reformists
-				add_idea = HLQ_reformists_2
+				add_idea = HLQ_reformists_3
 			}
 			hidden_effect = {
 				if = {

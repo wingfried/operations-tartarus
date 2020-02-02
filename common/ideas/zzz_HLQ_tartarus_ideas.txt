@@ -266,7 +266,6 @@ ideas = {
 			}
 		}
 	}
-
 	country = {
 		HLQ_reformists = {
 			allowed = {
@@ -308,3 +307,24 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		HLQ_reformists_3 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = GFX_idea_HLQ_valkist
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.02
+				political_power_gain = 0.15
+				war_support_factor = 0.05
+			}
+		}
+	}
+}

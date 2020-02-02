@@ -870,7 +870,7 @@ country_event = { # Tartarus' Kingdom of Hellquill Event
 		add_popularity = { ideology = fascism popularity = 0.05 }
 		create_country_leader = {
 			name = "King Wingfried I"
-			desc = "griffon_hitler_desc"
+			desc = "wingfried2_desc"
 			picture = "Wingfried_von_Smirkerinburg.tga"
 			expire = "1965.1.1"
 			ideology = nazism
