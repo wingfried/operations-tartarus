@@ -266,4 +266,45 @@ ideas = {
 			}
 		}
 	}
-}
+
+	country = {
+		HLQ_reformists = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				NOT = { has_government = communism }
+			}
+			picture = HLQ_generic_reformisten_lol
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.02
+				political_power_factor = -0.10
+				MONTHLY_POPULATION = -0.10
+			}
+		}
+	}
+
+	country = {
+		HLQ_reformists_2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = HLQ_generic_reformisten_lol
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.02
+				political_power_gain = 0.15
+				war_support_factor = 0.05
+			}
+		}
+	}
