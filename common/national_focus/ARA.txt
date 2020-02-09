@@ -1140,7 +1140,7 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
-			country_event = couparantiga.2
+			country_event = arantiga.005
 			if = {
 			limit = { has_unit_leader = 29348145298 }
 			remove_unit_leader = 29348145298
@@ -1445,7 +1445,7 @@ focus_tree = {
 		prerequisite = { focus = ARA_rebuild_stone }
 		
 		completion_reward = { 
-		country_event = couparantiga.3
+		country_event = arantiga.006
 		}
 		}
 	
@@ -1460,7 +1460,7 @@ focus_tree = {
 		completion_reward = { 
 		add_stability = 0.1
 		add_popularity = { ideology = fascism popularity = 0.1 }
-		country_event = couparantiga.4
+		country_event = arantiga.007
 		}
 		}
 	######################### CULTURE RELIGION AND SCIENCE ####################
@@ -1487,7 +1487,7 @@ focus_tree = {
 		cost = 8.00
 		prerequisite = { focus = ARA_sparleos_legacy }
 		completion_reward = { 
-		country_event = couparantiga.5
+		country_event = arantiga.006
 		}
 		}
 	
@@ -2030,7 +2030,7 @@ focus_tree = {
 		cost = 1.00
 		prerequisite = { focus = ARA_new_arantigos }
 		completion_reward = {
-		country_event = couparantiga.6
+		country_event = arantiga.008
 		}
 		}
 	
@@ -2043,7 +2043,7 @@ focus_tree = {
 		prerequisite = { focus = ARA_legacy_of_grover }
 		mutually_exclusive = { focus = ARA_bungie_destiny }
 		completion_reward = {
-		country_event = couparantiga.7
+		country_event = arantiga.009
 		}
 		}
 	
@@ -2059,7 +2059,7 @@ focus_tree = {
 		completion_reward = {
 		add_political_power = 100
 		add_stability = 0.1
-		country_event = couparantiga.7
+		country_event = arantiga.009
 		}
 		}
 		###### INCOMPLETE Dorotheos gains trait Indomitable will (+5% Division Recovery rate)#####
