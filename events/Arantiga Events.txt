@@ -2,6 +2,8 @@
 
 ##### NEW EVENTS #############
 
+	
+
 	country_event = { #the generals
 	id = arantiga.001
 	title = arantiga.001.t
@@ -99,15 +101,14 @@
 		}
 		}
 		
-	country_event = {    #Prodigal sons
-	id = couparantiga.2
-	immediate = {log = "[GetDateText]: [Root.GetName]: event couparantiga.2"}
-	title = couparantiga.2.t
-	desc = couparantiga.2.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
+	country_event = {
+	id = arantiga.005
+        title = arantiga.005.t
+        desc = arantiga.005.d
+	picture = GFX_event_medieval_city_2
+	is_triggered_only = yes 
 	option = {
-	name = couparantiga.2.a
+	name = arantiga.005.a
 		create_corps_commander = {
 					name = "Craterus"
 					portrait_path = 
@@ -121,47 +122,57 @@
 				}
 				}
 	
+		
 	
 	
 	
 	country_event = { #destiny revealed
-	id = couparantiga.3
-	title = couparantiga.3.t
-	desc = couparantiga.3.d
+	id = arantiga.006
+	title = arantiga.006.t
+	desc = arantiga.006.d
 	is_triggered_only = yes
 	fire_only_once = yes
 	picture = GFX_event_griffon_soldier
 	option = {
-	name = couparantiga.3.a
+	name = arantiga.006.a
 	}
 	}
 	
-	country_event = { #birth of a new kingdom
-	id = couparantiga.4
-	title = couparantiga.4.t
-	desc = couparantiga.4.d
+	country_event = { #arantigos reborn
+	id = arantiga.007 
+	title = arantiga.007.t
+	desc = arantiga.007.d
 	is_triggered_only = yes
 	fire_only_once = yes
 	picture = GFX_event_griffon_soldier
 	option = {
-		couparantiga.4.a
-		####INCOMPLETE Ruler changes to Arantigos II (it’s Dorotheos but with different name).
-		###Add ruler trait: Arantigos Reborn (AI Focus on offensive +40%, War support +10%, Division attack +10%)
-		###World Event Rise of Arantigos
-    }
-    }
+	arantiga.007.a
+	}
+	}
+	
+	country_event = { #legacy of grover
+	id = arantiga.008 
+	title = arantiga.008.t
+	desc = arantiga.008.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+	arantiga.008.a
+	}
+	}
 	
 	country_event = { #end of beta
-	id = couparantiga.7
-	title = couparantiga.7.t
-	desc = couparantiga.7.d
+	id = arantiga.009
+	title = arantiga.009.t
+	desc = arantiga.009.d
 	is_triggered_only = yes
 	fire_only_once = yes
 	picture = GFX_event_griffon_soldier
 	option = {
-		couparantiga.7.a
+		arantiga.009.a
 	}
 	}
 	
- }
+ 
 	
