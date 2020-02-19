@@ -299,15 +299,15 @@ ARA_into_the_world_desc:0 "Arantiga, under our new leadership, has begun to pros
 #ARA_proper_base_arantigos_desc:0 "Our nation cannot reclaim its great destiny and noble birthright, if it stays behind in the past. Our nation must be at the forefront of every advancement."
 
 #### NEW FOCUS ####
-ARA_dorotheos_coup:0 "Dorotheo's coup"
+ARA_dorotheos_coup:0 "Dorotheos' Coup"
 ARA_dorotheos_coup_desc:0 "For too long Arantiga was just a sad reminder of former greatness. For too long Featherins were just minor barons in Griffonia. Now, when weak baroness is dead, Dorotheos Featherin will lead our nation into new bright future… or die trying."
-ARA_reorganise_high_command:0 "Reorganise the high command"
+ARA_reorganise_high_command:0 "Reorganise the High Command"
 ARA_reorganise_high_command_desc:0 "Officers that supported Dorotheos coup have some interesting ideas about reforming our armed forces. Retiring old guard and replacing them with “fresh blood” and those who supported our coup may help us to move into new age of modern warfare."
-ARA_army_with_a_state:0 "Army with a state"
+ARA_army_with_a_state:0 "Army with a State"
 ARA_army_with_a_state_desc:0 "Every griffon a soldier! Under Dorotheos rule Arantiga becomes increasingly militarised, and more and more resources are directed for army needs. If we want to rival the giants of Griffonia we need to mobilise our entire society."
-ARA_purge_loyalists:0 "Purge loyalists"
+ARA_purge_loyalists:0 "Purge Loyalists"
 ARA_purge_loyalists_desc:0 "Although Dorotheos rules the country, there is still a number of Margaret’s loyalists or democrats plotting against his rule. If we have to ever realise dream of restoring Arantiga glory we have to get rid of these obstacles."
-ARA_reorganise_government:0 "Reorganise the government"
+ARA_reorganise_government:0 "Reorganise the Government"
 ARA_reorganise_government_desc:0 "By replacing those, whose loyalty is not certain with Dorotheos loyalists and concentrating all power in his claws, we can ensure that Arantiga will be ruled by only one ruler and follow only one vision."
 ARA_nationalization:0 "Nationalization"
 ARA_nationalization_desc:0 "For years Wingbardians exploited us and treated as mere puppet. Most of them has already fled a nation, but their businesses and factories are still here… And they will serve well for the arantigan cause."
@@ -316,15 +316,15 @@ ARA_state_of_war_desc:0 "There is few of us… What means that every griffon nee
 ARA_arantiga_rises:0 "Arantiga Rises!"
 ARA_arantiga_rises_desc:0 "The time has come to rise and reclaim what rightfully belongs to use. Once Arantigans created the first great empire of Griffonia - and surely we can do it again. Our society is united, our country prepared for total war and army eagerly follows orders of baron. Future of blood and glory awaits!"
 
-ARA_right_to_rule:0 "Right to rule"
+ARA_right_to_rule:0 "Right to Rule"
 ARA_right_to_rule_desc:0 "Central Griffonia is divided region of many nations. Most of them is not aligned with any great power and suffers from poverty, chaos and wars. It is our duty to bring peace, stability and arantigan rule to them."
-ARA_craddle:0 " "The Craddle of griffonkind" "
+ARA_craddle:0 " "The Craddle of Griffonkind" "
 ARA_craddle_desc:0 "In the east lie Griffinstone and Rumare - lands known as “cradle of griffonkind”. Both are ancient nations, which glory is long gone… They are kinda similar to Arantiga, aren’t they? It will be an act of mercy to finish existence of these nations."
 ARA_rebuild_stone:0 "Rebuild Griffinstone"
 ARA_rebuild_stone_desc:0 "Griffinstone is miserable place - in some ways it resembles Arantiga - once a great nation, today in ruins. And as we will restore the greatness of our old Empire, so we will do with city of Grover."
 ARA_fight_north:0 "Northern Squabble"
 ARA_fight_north_desc:0 "Erie and Eyrie are fighting for longer than anyone can remember. Their mutual hatred seems only constant thing in these chaotic times… And it makes them perfect target - weakened and unable to cooperate will be beaten one after another…"
-ARA_integrate_north:0 "Integrate the north"
+ARA_integrate_north:0 "Integrate the North"
 ARA_integrate_north_desc:0 "It is time to get rid of both dukes, their families and followers. When they are gone, there finally will be peace in Rumare region."
 ARA_fight_avian:0 "Crush Avian"
 ARA_fight_avian_desc:0 "The lands of Avian, Although small and not in particular rich are important for our future plans. We should conquer them, to ensure that Empire will not do it first and establish favourable defensive position against our northern and western neighbours."
@@ -463,7 +463,7 @@ arantiga.006.t:0 "Destiny Revealed"
 arantiga.006.d:0 "Dorotheos could not focus. In last month he was suffering nightmares on almost daily basis. He barely slept and ruling or planning military campaigns further exhausted him. Now he tried to focus on studying map of imperial-arantigan borderlands… Suddenly he felt… dizzy. Moments later everything went black and Dorotheos fell from his chair.\n…Beautiful. He could not find a better word. Nothin in world of mortals could be compared to heavenly mountains. So… Was it the end? That was how it would end? He went forward, until finally reached a garden, in a middle of which stood golden fountain… Everything seemed exactly as priests were saying – however there were no gods and for sure, not his ancestors… Dorotheos frowned when he realized, that in afterlife he might actually meet his sister… And is probably would not be a pleasant meeting? But maybe was it simply a hell? He once heard a half-mad priest saying that hell is not a realm of tortures, but simply eternal solitude – worst punishment that gods could have created. Dorotheos sat on one of benches and hid his face in claws… When he once again gazed on a garden, he was however not alone anymore…\nYoung griffon covered in white feathers was admiring one of flowers. When he turned around, Dorotheos could see that his eyes were glowing with some mysterious, inside light. Somehow, Dorotheos felt like he had already met this griffon before… “Welcome, I have been expecting you for some time.” Said stranger. “Expecting? Why?” Asked Dorotheos “Well, I have been watching you for some time and I am rather… impressed. You met my expectations, but I would be rather surprised if you would not. We are in certain way one, you and me…”
 arantiga.006.a:0 "We are Arantigos"
 arantiga.007.t:0 "Birth of a new kingdom"
-arantiga.007.d:0 "To everyone surprise after his sudden loss of consciousness, Dorotheos when he woke up seemed… reinvigorated. Gone were days, when he without any reasons started to scream on servants or seemed perpetually distracted. Most of his subordinates was relieved – general they followed and who conquered central Griffonia was back. Although doctors suggested rest, Dorotheos decided not to delay planned coronation – to cement his recent conquests Arantiga would be elevated to status of kingdom!\nCeremony took place in recently rebuild Griffinstone – however all traces of former Guto dynasty were removed from palace and replaced with symbols of house Featherin. Crowds of arantigan soldiers, and citizens gathered to participate in ceremony that meant return of old glory. When Dorotheos was crowned by prelate Heraclius, he decided to deliver a speech to gathered griffons.\n“Brave soldiers of Arantiga and hard working citizens. It was a long road, but here we are… Arantiga name is known across Griffonia and others fear and respect us. No longer when griffons hear about Arantiga they will look at each other with confusion. We will restore glory of great arantigan Empire… We Arantigos are back, and we will once again lead Arantiga to the future! Glory to Arantiga!”\n“GLORY TO ARANTIGA!” Those who already knew what their baron was planning started screaming. Many of gathered looked… confused after hearing his words, but nevertheless they followed…
+arantiga.007.d:0 "To everyone surprise after his sudden loss of consciousness, Dorotheos when he woke up seemed… reinvigorated. Gone were days, when he without any reasons started to scream on servants or seemed perpetually distracted. Most of his subordinates was relieved – general they followed and who conquered central Griffonia was back. Although doctors suggested rest, Dorotheos decided not to delay planned coronation – to cement his recent conquests Arantiga would be elevated to status of kingdom!\nCeremony took place in recently rebuild Griffinstone – however all traces of former Guto dynasty were removed from palace and replaced with symbols of house Featherin. Crowds of arantigan soldiers, and citizens gathered to participate in ceremony that meant return of old glory. When Dorotheos was crowned by prelate Heraclius, he decided to deliver a speech to gathered griffons.\n“Brave soldiers of Arantiga and hard working citizens. It was a long road, but here we are… Arantiga name is known across Griffonia and others fear and respect us. No longer when griffons hear about Arantiga they will look at each other with confusion. We will restore glory of great arantigan Empire… We Arantigos are back, and we will once again lead Arantiga to the future! Glory to Arantiga!”\n“GLORY TO ARANTIGA!” Those who already knew what their baron was planning started screaming. Many of gathered looked… confused after hearing his words, but nevertheless they followed… "
 arantiga.007.a:0 "Long live Arantigos Reborn!"
 arantiga.008.t:0 "The legacy of Grover"
 arantiga.008.d:0 "Our ruler now faces a difficult path, should he try to emulate the great emperors of old, or try to forge his own path?"
@@ -473,8 +473,11 @@ arantiga.009.d:0 " This is the end of the beta content for Arantiga, from this p
 arantiga.009.a:0 " see you next patch! "
 
 
-
-
+#### news events ####
+arantiga_news.1.t:0 "Rise of Arantigos"
+arantiga_news.1.d:0 "In last few years land of Central Griffonia became place of brutal war in effect of which rose new, powerful dominion – Arantiga. After military coup, its leader, Dorotheos Featherin conquered many neighboring nation and today proclaimed himself a king… and Arantigos Reborn – reincarnation of his famed ancestor and great conqueror from ancient age. Most of neighboring governments reacted with either disbelief or issued protests, considering Dorotheos act as heretical attempt of usurping godhood or as proof that young conqueror had finally lost his mind…"
+arantiga_news.1.a:0 "For Arantigos!"
+arantiga_news.1.b:0 "Heretical madgriff!"
 
 
 ### Country Flags ###
