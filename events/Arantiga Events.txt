@@ -1,5 +1,5 @@
 ﻿add_namespace = arantiga
-
+add_namespace = arantiga_news
 ##### NEW EVENTS #############
 
 	
@@ -101,7 +101,7 @@
 		}
 		}
 		
-	country_event = {
+	country_event = { #prodigal sons
 	id = arantiga.005
         title = arantiga.005.t
         desc = arantiga.005.d
@@ -138,7 +138,7 @@
 	}
 	}
 	
-	country_event = { #arantigos reborn
+	country_event = { #arantigos reborn /birth of a new kingdom
 	id = arantiga.007 
 	title = arantiga.007.t
 	desc = arantiga.007.d
@@ -146,7 +146,40 @@
 	fire_only_once = yes
 	picture = GFX_event_griffon_soldier
 	option = {
-	arantiga.007.a
+	name = arantiga.007.a
+	hidden_effect = {
+	kill_country_leader = yes
+	create_country_leader = {
+			name = "Arantigos II"
+			picture = "gfx/leaders/ARA/dorotheos.tga"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = { arantigos_reborn }
+			}
+	news_event = { id = arantiga_news.1 days = 4 }	
+		}
+	}
+	}
+	
+	news_event = { #rise of arantigos
+	id = arantiga_news.1 
+	title = arantiga_news.1.t
+	desc = arantiga_news.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_news_griffon_soldier
+	major = yes
+	option = {
+	name = arantiga_news.1.a
+	trigger = {
+			TAG = ARA 
+		}
+	}
+	option = {
+	name = arantiga_news.1.b	
+	trigger = {
+			NOT = { TAG = ARA }
+		}
 	}
 	}
 	
@@ -158,7 +191,7 @@
 	fire_only_once = yes
 	picture = GFX_event_griffon_soldier
 	option = {
-	arantiga.008.a
+	name = arantiga.008.a
 	}
 	}
 	
@@ -170,7 +203,7 @@
 	fire_only_once = yes
 	picture = GFX_event_griffon_soldier
 	option = {
-		arantiga.009.a
+	name = 	arantiga.009.a
 	}
 	}
 	
