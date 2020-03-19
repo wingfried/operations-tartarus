@@ -1286,7 +1286,7 @@ focus_tree = {
 
 	Focus = {
 		id = ARA_right_to_rule
-		icon = GFX_goal_royal_dictatorship_fist
+		icon = GFX_goal_crown_and_swords
 		x = 0
 		y = 1
 		relative_position_id = ARA_arantiga_rises
@@ -1301,7 +1301,7 @@ focus_tree = {
 		
 	focus = {
 		id = ARA_craddle
-		icon = GFX_goal_graveyard
+		icon = GFX_focus_strike_griffonstone
 		x = 0
 		y = 1
 		relative_position_id = ARA_right_to_rule
@@ -1352,7 +1352,7 @@ focus_tree = {
 	
 	Focus = {
 		id = ARA_fight_north
-		icon = GFX_goal_graveyard
+		icon = GFX_focus_generic_provoke_border_clashes
 		x = -2
 		y = 1
 		relative_position_id = ARA_right_to_rule
@@ -1400,7 +1400,7 @@ focus_tree = {
 	
 	Focus = {
 		id = ARA_fight_avian
-		icon = GFX_goal_graveyard
+		icon = GFX_focus_rom_abdicate
 		x = 2
 		y = 1
 		relative_position_id = ARA_right_to_rule
@@ -1451,7 +1451,7 @@ focus_tree = {
 	
 	focus = { 
 		id = ARA_new_arantigos
-		icon = GFX_focus_indy_swing_the_sword
+		icon = GFX_goal_DOM_The_Phoenix
 		x = 0
 		y = 2
 		relative_position_id = ARA_ac_revelations
@@ -1466,7 +1466,7 @@ focus_tree = {
 	######################### CULTURE RELIGION AND SCIENCE ####################
 	focus = {
 		id = ARA_sparleos_legacy
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_PAN_Create_the_Universidad_de_Panama
 		x = 5
 		y = 1
 		relative_position_id = ARA_arantiga_rises
@@ -1480,7 +1480,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_sparleos_culture
-		icon = GFX_goal_graveyard
+		icon = GFX_r56_goal_FRA_alliance_with_industrialists
 		x = -1
 		y = 1
 		relative_position_id = ARA_sparleos_legacy
@@ -1505,7 +1505,7 @@ focus_tree = {
 		}
 	focus = {
 		id = ARA_arantigos_boreas
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_new_temple
 		x = 1
 		y = 1
 		relative_position_id = ARA_sparleos_legacy
@@ -1534,7 +1534,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_cult_of_personality
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_national_populism
 		x = -1
 		y = 5
 		relative_position_id = ARA_arantigos_boreas
@@ -1555,7 +1555,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_self_strength
-		icon = GFX_goal_graveyard
+		icon = GFX_focus_generic_self_management
 		x = -7
 		y = 1
 		relative_position_id = ARA_arantiga_rises
@@ -1578,7 +1578,7 @@ focus_tree = {
 		
 	focus = {
 		id = ARA_industrial_warmachine
-		icon = GFX_Focus_Military_Mobilisation
+		icon = GFX_IRE_medium_industry
 		x = 3
 		y = 1
 		relative_position_id = ARA_self_strength
@@ -1598,7 +1598,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_military_research_institute
-		icon = GFX_goal_graveyard
+		icon = GFX_focus_research
 		x = 0
 		y = 1
 		relative_position_id = ARA_industrial_warmachine
@@ -1631,7 +1631,7 @@ focus_tree = {
 			
 	focus = {
 		id = ARA_dig_deeper
-		icon = GFX_goal_graveyard
+		icon = GFX_focus_generic_steel
 		x = 0
 		y = 1
 		relative_position_id = ARA_heavy_industry
@@ -1653,7 +1653,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_kickstart_my_heart
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_griffon_clock
 		x = 0
 		y = 2
 		relative_position_id = ARA_self_strength
@@ -1666,7 +1666,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_exploit_conquered
-		icon = GFX_goal_production
+		icon = GFX_focus_indy_excavations
 		x = -3
 		y = 2
 		relative_position_id = ARA_kickstart_my_heart
@@ -1714,7 +1714,7 @@ focus_tree = {
 		
 	focus = {
 		id = ARA_riches_of_griffinstone
-		icon = GFX_goal_graveyard
+		icon = GFX_Goal_YUN_The_Mountain_Economy
 		x = 0
 		y = 1
 		relative_position_id = ARA_exploit_conquered
@@ -1761,7 +1761,7 @@ focus_tree = {
 		
 	focus = {
 		id = ARA_northern_industry
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_generic_takeover_industries
 		x = -2
 		y = 1
 		relative_position_id = ARA_exploit_conquered
@@ -1811,7 +1811,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_hire_foreigners
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_generic_scientific_exchange
 		x = -1
 		y = 1
 		relative_position_id = ARA_riches_of_griffinstone
@@ -1825,7 +1825,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_industrial_front
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_generic_propaganda
 		x = 3
 		y = 2
 		relative_position_id = ARA_kickstart_my_heart
@@ -1841,7 +1841,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_work_camps
-		icon = GFX_goal_griffon_labour_centers_com
+		icon = GFX_goal_slavery
 		x = 0
 		y = 1
 		relative_position_id = ARA_industrial_front
@@ -1854,7 +1854,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_modern_solutions
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_generic_railroad
 		x = 2
 		y = 1
 		relative_position_id = ARA_industrial_front
@@ -1916,7 +1916,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_homefront_victory
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_generic_build_housing
 		x = 1
 		y = 1
 		relative_position_id = ARA_work_camps
@@ -1973,7 +1973,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_reforge_economy
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_griffon_money_growth
 		x = 0
 		y = 1
 		relative_position_id = ARA_afterkeia
@@ -1988,7 +1988,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_war_against_dumb
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_griffon_books
 		x = -2
 		y = 1
 		relative_position_id = ARA_afterkeia
@@ -2005,7 +2005,7 @@ focus_tree = {
 	
 	focus = { 
 		id = ARA_modern_arantiga
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_griffon_schools
 		x = 1
 		y = 1
 		relative_position_id = ARA_war_against_dumb
@@ -2023,7 +2023,7 @@ focus_tree = {
 	
 	focus = { 
 		id = ARA_legacy_of_grover
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_PAN_Create_the_Universidad_de_Panama
 		x = 0
 		y = 1
 		relative_position_id = ARA_new_arantigos 
@@ -2036,7 +2036,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARA_es_oblivion
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_fire
 		x = 1
 		y = 1
 		relative_position_id = ARA_legacy_of_grover
@@ -2049,7 +2049,7 @@ focus_tree = {
 	
 	focus = { 
 		id = ARA_bungie_destiny
-		icon = GFX_goal_graveyard
+		icon = GFX_goal_supremacy_of_will
 		x = -1
 		y = 1
 		relative_position_id = ARA_legacy_of_grover 
