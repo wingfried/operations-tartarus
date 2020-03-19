@@ -617,7 +617,7 @@ country = {
 			picture = GFX_goal_generic_construct_mil_factory
 			modifier = {
 			stability_factor = -0.1
-			political_power_gain = -0.05
+			political_power_factor = -0.05
 			production_factory_efficiency_gain_factor = 0.1
 			industrial_capacity_factory = 0.1
 			}
@@ -654,7 +654,7 @@ country = {
 			modifier = {	
 			drift_defence_factor = 0.25
 			fascism_drift = 0.1
-			army_org_Factor = -0.05
+			army_morale_factor = 0.05
 			}
 			}
 			}
@@ -672,8 +672,8 @@ country = {
 			modifier = {	
 			drift_defence_factor = 0.5
 			fascism_drift = 0.2
-			army_org_Factor = -0.05
-			political_power_gain 0.1
+			army_morate_factor = 0.05
+			political_power_factor 0.1
 			}
 			}
 			}
@@ -690,9 +690,9 @@ country = {
 			picture = PAP_Legionary_Spirit
 			modifier = {	
 			production_factory_efficiency_gain_factor = 0.2
-			production_speed_buildings_factor = -0.1
+			production_speed_buildings_factor = 0.1
 			consumer_goods_factor = -0.2
-			industrial_capacity_factory = 0.1
+			industrial_capacity_factory = 0.2
 			}
 			}
 			}
@@ -709,7 +709,7 @@ country = {
 			removal_cost = -1
 			picture = PAP_Legionary_Spirit
 			modifier = {
-			production_speed_buildings_factor = -0.1
+			production_speed_buildings_factor = 0.1
 			stability_factor = -0.05
 			}
 			}
@@ -744,8 +744,7 @@ country = {
 			removal_cost = -1
 			picture = PAP_Legionary_Spirit
 			modifier = {
-			production_speed_buildings_factor = 0.07 
-			###### INCOMPLETE SHOULD BE MILITARY FACTORY 10% ############
+			production_speed_arms_factory_factor = 0.1
 			}
 			}
 			}
