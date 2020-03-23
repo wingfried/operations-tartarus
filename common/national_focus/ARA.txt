@@ -1208,12 +1208,6 @@ focus_tree = {
 		prerequisite = { focus = ARA_dorotheos_coup }
 		
 		completion_reward = {
-		if = {
-				limit = {
-					has_idea = ARA_economic_dependance
-				}
-				remove_ideas = ARA_economic_dependance
-			}
 		408 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1231,8 +1225,13 @@ focus_tree = {
 				}
 			}
 		
+		WNG = {
+			add_opinion_modifier = {
+				target = ARA
+				modifier = ARA_nationalized_industry
+			}
+		}
 		
-		### INCOMPLETE WINGBARDY -50 OPINION ###
 		swap_ideas = {
 				remove_idea = ARA_economic_dependance
 				add_idea = ARA_transitional_economy
@@ -1678,7 +1677,7 @@ focus_tree = {
 		cost = 8.00
 		prerequisite = { focus = ARA_self_strength }
 		completion_reward = {
-		increase_society_development_gradually_with_tt = yes
+		increase_society_development_with_tt = yes
 		}
 		}
 	
@@ -2008,10 +2007,9 @@ focus_tree = {
 		cost = 8.00
 		prerequisite = { focus = ARA_afterkeia }
 		prerequisite = { focus = ARA_military_complex }
-		completion_reward = {
-		remove_idea = { ARA_transitional_economy }
-		remove_idea = { ARA_transitional_economy2 }
-		}
+			completion_reward = {
+				remove_ideas = { ARA_transitional_economy2 }
+			}
 		}
 	
 	focus = {
@@ -2033,7 +2031,7 @@ focus_tree = {
 	
 	focus = { 
 		id = ARA_modern_arantiga
-		icon = GFX_goal_griffon_schools
+		icon = GFX_goal_rct_expand_the_city
 		x = 1
 		y = 1
 		relative_position_id = ARA_war_against_dumb
@@ -2041,7 +2039,7 @@ focus_tree = {
 		prerequisite = { focus = ARA_war_against_dumb }
 		prerequisite = { focus = ARA_reforge_economy }
 		completion_reward = {
-			increase_society_development_gradually_with_tt = yes
+			increase_society_development_with_tt = yes
 			}
 			}
 	
