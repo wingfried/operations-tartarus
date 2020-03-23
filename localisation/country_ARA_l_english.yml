@@ -368,7 +368,7 @@ ARA_northern_industry:0 "Expand Northern Industry"
 ARA_northern_industry_desc:0 "Lands of former Verenia fell into disarray and poverty in last decades, ravaged by wars between “heirs” of fallen duchy. As a result, these lands are underdeveloped and not in much use for Arantiga. We should expand key industrial facilities and ensure takeover of former state-controlled companies on these lands."
 ARA_hire_foreigners:0 "Hire Foreign Scientists"
 ARA_hire_foreigners_desc:0 "We cannot rely just on our domestics scientists… There is simply too few of them, and it will take years, maybe even decades before we will able to become a truly modern nation… However by using a most powerful power in a world - money we can convince foreign scientists to come to Arantiga and help us develop our technologies - there is more than enough of those not caring who pays, until they get enough bits."
-ARA_industrial_front:0 "Industria Front"
+ARA_industrial_front:0 "Industrial Front"
 ARA_industrial_front_desc:0 "Enemies of Arantiga are numerous - and we must fight even harder to beat them… And so our workers need to work even harder - they must sacrifice for better future. By propaganda we can try to increase productivity - “year of national effort” programme will take place. However after some time zeal of our workers will burn out and we will be back to previous production level. It is crucial to use this time well."
 ARA_work_camps:0 "Work camps"
 ARA_work_camps_desc:0 "There is large number of criminals, traitors, war captives and other enemies of the state that are just rotting in our prisons. We should let them redeem themselves by labour - some of them will even receive a chance of shortening their sentences. And if they die… Well, it won’t be a great loss."
@@ -527,3 +527,6 @@ arantigos_reborn:0 "Arantigos Reborn"
 
 ### Decisions ###
 ARA_remove_influence:0 "Remove Wingbardian Influence"
+
+### Opinion Modifiers ###
+ARA_nationalized_industry:0 "Nationalized Industry"
