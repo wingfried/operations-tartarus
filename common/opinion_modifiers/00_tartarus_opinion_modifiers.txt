@@ -14,4 +14,6 @@ opinion_modifiers = {
 		value = 100 
 	}
 	
+	ARA_nationalized_industry = { value = -50 }
+	
 }
