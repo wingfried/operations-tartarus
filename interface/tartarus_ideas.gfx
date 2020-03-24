@@ -32,4 +32,8 @@ spriteTypes = {
 		name = "GFX_idea_HLQ_valkist"
 		texturefile = "gfx/interface/ideas/idea_HLQ_valkist.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_white_war_economy"
+		texturefile = "gfx/interface/ideas/white_war_economy.dds"
+    }
 }
