@@ -608,21 +608,21 @@ country = {
 	country = {
 		ARA_militarized_economy = {
 			allowed = {
-			always = no 
+				always = no 
 			}
 			allowed_civil_war = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = idea_war_economy_white
-			modifier = {
-			stability_factor = -0.1
-			political_power_factor = -0.05
-			production_factory_efficiency_gain_factor = 0.1
-			industrial_capacity_factory = 0.1
+			picture = white_war_economy
+				modifier = {
+					stability_factor = -0.1
+					political_power_factor = -0.05
+					production_factory_efficiency_gain_factor = 0.1
+					industrial_capacity_factory = 0.1
+				}
 			}
-			}
-			}
+		}
 			
 	country = {
 		ARA_tungsten_mind = {
