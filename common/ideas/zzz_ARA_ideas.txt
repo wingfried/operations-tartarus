@@ -614,7 +614,7 @@ country = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = GFX_goal_generic_construct_mil_factory
+			picture = idea_war_economy_white
 			modifier = {
 			stability_factor = -0.1
 			political_power_factor = -0.05
@@ -707,7 +707,7 @@ country = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = PAP_Legionary_Spirit
+			picture = idea_slavery
 			modifier = {
 			production_speed_buildings_factor = 0.1
 			stability_factor = -0.05
@@ -764,4 +764,114 @@ country = {
 			}
 			}
 			}
+			
+	country = {
+		ARA_absolute_reign = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = german_advisors
+			desc = ARA_absolute_reign_desc
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = 0.1
+			}
+		}
+	}
+	
+	country = {
+		ARA_every_griff = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = griffon_army3
+			desc = ARA_every_griff
+			removal_cost = -1
+			modifier = {
+			conscription_factor = 0.03
+			}
+		}
+	}
+	
+	country = {
+		ARA_military_research = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = idea_generic_army
+			desc = ARA_military_research_desc
+			removal_cost = -1
+			research_bonus = { 
+				infantry_weapons = 0.1
+				land_doctrine = 0.1
+			}
+		}
+	}
+	
+	country = {
+		ARA_expanded_conscription = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_manpower_bonus
+			desc = ARA_expanded_conscription_desc
+			removal_cost = -1
+			modifier = {
+				training_time_factor = -0.10
+				conscription_factor = 0.05
+				mobilization_speed = 0.1
+			}
+		}
+	}
+	
+	country = {
+		ARA_mobilized_economy = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = idea_partial_economic_mobilisation_red
+			desc = ARA_mobilized_economy_desc
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+	
+	################### New Political Advsiors ###################
+	political_advisor = {
+		prelate_heraclius = {
+			allowed = {
+				original_tag = "ARA"
+			}		
+			traits = { friendly_priest }
+			picture = BRF_Prelate
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				has_completed_focus = ARA_arantigos_boreas
+			}
+		}
+	}	
 }
