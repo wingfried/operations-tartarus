@@ -66,7 +66,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = generic_artillery_regiments
 			removal_cost = -1
 			modifier = {
 				army_artillery_attack_factor = 0.10
@@ -83,7 +83,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_intel_bonus
+			picture = CZE_planning_bonus
 			removal_cost = -1
 			modifier = {
 				planning_speed = 0.10
@@ -190,7 +190,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = german_advisors
+			picture = FRA_scw_intervention_republicans_focus
 			removal_cost = -1
 			modifier = {
 				conscription = -0.01
@@ -633,7 +633,7 @@ country = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = GFX_goal_generic_major_war
+			picture = vittoria_mutilata
 			modifier = {		
 			non_core_manpower = 0.05
 			army_attack_factor = 0.05
@@ -707,7 +707,7 @@ country = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = idea_slavery
+			picture = slavery
 			modifier = {
 			production_speed_buildings_factor = 0.1
 			stability_factor = -0.05
@@ -724,7 +724,7 @@ country = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = PAP_Legionary_Spirit
+			picture = civilian_economy_red
 			modifier = {
 			production_factory_efficiency_gain_factor = 0.1
 			industrial_capacity_factory = 0.1
@@ -742,7 +742,7 @@ country = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = PAP_Legionary_Spirit
+			picture = incomplete_industrialization
 			modifier = {
 			production_speed_arms_factory_factor = 0.1
 			}
@@ -758,7 +758,7 @@ country = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = PAP_Legionary_Spirit
+			picture = generic_refining_concern_1
 			modifier = {
 			##### INCOMPLETE ADD +25% refinery speed construction, +20% fuel gain from refineries ######
 			}
@@ -811,7 +811,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = idea_generic_army
+			picture = generic_army
 			desc = ARA_military_research_desc
 			removal_cost = -1
 			research_bonus = { 
@@ -848,7 +848,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = idea_partial_economic_mobilisation_red
+			picture = partial_economic_mobilisation_red
 			desc = ARA_mobilized_economy_desc
 			removal_cost = -1
 			modifier = {
