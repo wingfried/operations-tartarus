@@ -1094,7 +1094,7 @@ focus_tree = {
 	focus = {
 		id = ARA_dorotheos_coup
 		icon = GFX_goal_ideology_monarchist
-		x = 23
+		x = 27
 		y = 0
 		cost = 1.00
 		available = { always = no }
@@ -1259,11 +1259,13 @@ focus_tree = {
 		prerequisite = { focus = ARA_state_of_war }
 		prerequisite = { focus = ARA_reorganise_government }
 		prerequisite = { focus = ARA_army_with_a_state }
-		
+
 		completion_reward = {
+		custom_effect_tooltip = rise_of_arantiga_tooltip
 		add_stability = 0.05
 		add_political_power = 50
 		add_popularity = { ideology = fascism popularity = 0.1 }
+		set_country_flag = rise_of_arantiga
 		}
 		}
 
@@ -1281,6 +1283,7 @@ focus_tree = {
 		completion_reward = {
 		add_war_support = 0.1
 		add_ideas = ARA_tungsten_mind
+		hidden_effect = { set_country_flag = right_to_rule }
 		}
 		}
 		
@@ -1456,7 +1459,7 @@ focus_tree = {
 		id = ARA_new_arantigos
 		icon = GFX_goal_DOM_The_Phoenix
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = ARA_ac_revelations
 		cost = 3.00
 		prerequisite = { focus = ARA_ac_revelations }
@@ -1490,7 +1493,7 @@ focus_tree = {
 		cost = 8.00
 		prerequisite = { focus = ARA_sparleos_legacy }
 		completion_reward = { 
-		country_event = arantiga.006
+		country_event = arantiga.009
 		}
 		}
 	
@@ -1537,8 +1540,8 @@ focus_tree = {
 	focus = {
 		id = ARA_cult_of_personality
 		icon = GFX_goal_national_populism
-		x = -1
-		y = 5
+		x = -3
+		y = 4
 		relative_position_id = ARA_arantigos_boreas
 		cost = 8.00
 		prerequisite = { focus = ARA_mandatory_education }
@@ -1558,11 +1561,13 @@ focus_tree = {
 	focus = {
 		id = ARA_self_strength
 		icon = GFX_focus_generic_self_management
-		x = -7
-		y = 1
-		relative_position_id = ARA_arantiga_rises
+		x = 17
+		y = 0
+
 		cost = 8.00
-		prerequisite = { focus = ARA_arantiga_rises }
+		available = {
+			has_country_flag = rise_of_arantiga
+		}
 		completion_reward = {
 		add_tech_bonus = {
 			name = industrial_bonus
@@ -2035,11 +2040,11 @@ focus_tree = {
 	focus = { 
 		id = ARA_legacy_of_grover
 		icon = GFX_goal_PAN_Create_the_Universidad_de_Panama
-		x = 0
-		y = 1
+		x = 3
+		y = 2
 		relative_position_id = ARA_new_arantigos 
 		cost = 1.00
-		prerequisite = { focus = ARA_new_arantigos }
+		prerequisite = { focus = ARA_cult_of_personality }
 		completion_reward = {
 		country_event = arantiga.008
 		}
@@ -2054,7 +2059,7 @@ focus_tree = {
 		prerequisite = { focus = ARA_legacy_of_grover }
 		mutually_exclusive = { focus = ARA_bungie_destiny }
 		completion_reward = {
-		country_event = arantiga.009
+		country_event = arantiga.000
 		}
 		}
 	
@@ -2070,7 +2075,7 @@ focus_tree = {
 		completion_reward = {
 		add_political_power = 100
 		add_stability = 0.1
-		country_event = arantiga.009
+		country_event = arantiga.000
 		}
 		}
 		###### INCOMPLETE Dorotheos gains trait Indomitable will (+5% Division Recovery rate)#####
