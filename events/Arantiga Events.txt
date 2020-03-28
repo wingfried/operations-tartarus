@@ -97,6 +97,16 @@ add_namespace = arantiga_news
 			TAL = {
 				country_event = arantiga.10
 			}
+			 ARA = {
+		        country_event = { 
+			        id = arantiga.011
+					days = 120
+			    }
+				 country_event = { 
+			        id = arantiga.012
+					days = 180
+			    }
+		    }
 		}
 		}
 		}
@@ -147,7 +157,9 @@ add_namespace = arantiga_news
 	picture = GFX_event_griffon_soldier
 	option = {
 	name = arantiga.007.a
+	set_cosmetic_tag = ARA_new_kingdom
 	hidden_effect = {
+	
 	kill_country_leader = yes
 	create_country_leader = {
 			name = "Arantigos II"
@@ -195,10 +207,81 @@ add_namespace = arantiga_news
 	}
 	}
 	
-	country_event = { #end of beta
+	
+country_event = { #The Sparletan Language, "borrowed" from base mod
 	id = arantiga.009
+	immediate = {log = "[GetDateText]: [Root.GetName]: event arantiga.8"}
 	title = arantiga.009.t
 	desc = arantiga.009.d
+
+	picture = GFX_event_medieval_city_in_mountains
+	is_triggered_only = yes
+
+	option = {
+		name = arantiga.009.a
+		add_political_power = 50
+		add_stability = 0.05
+		add_popularity = { ideology = fascism popularity = 0.05 }
+		set_province_name = {
+			id = 3756
+			name = "Pontelena"
+		}
+		set_province_name = {
+			id = 7266
+			name = "Sparléos"
+		}
+		set_province_name = {
+			id = 1325
+			name = "Halbuviros"
+		}
+	}
+}
+	
+country_event = { #Dreams flavour event
+	id = arantiga.010
+	title = arantiga.010.t
+	desc = arantiga.010.d
+	trigger = {
+		tag = ARA
+		has_country_flag = right_to_rule
+		mean_time_to_happen = { days = 20 }
+		}
+	fire_only_once = yes
+	option = {
+	name = arantiga.010.a
+	}
+	}
+
+country_event = { #Memories flavour event
+	id = arantiga.011
+	title = arantiga.011.t
+	desc = arantiga.011.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = arantiga.011.a
+	}
+	}
+	
+country_event = { #Unexpected return Flavour events
+	id = arantiga.012
+	title = arantiga.012.t
+	desc = arantiga.012.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = arantiga.012.a
+	}
+	}
+
+
+
+
+	
+	country_event = { #end of beta
+	id = arantiga.000
+	title = arantiga.000.t
+	desc = arantiga.000.d
 	is_triggered_only = yes
 	fire_only_once = yes
 	picture = GFX_event_griffon_soldier
