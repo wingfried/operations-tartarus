@@ -478,9 +478,23 @@ arantiga.007.a:0 "Long live Arantigos Reborn!"
 arantiga.008.t:0 "The legacy of Grover"
 arantiga.008.d:0 "Our ruler now faces a difficult path, should he try to emulate the great emperors of old, or try to forge his own path?"
 arantiga.008.a:0 "To glory!"
-arantiga.009.t:0 " End of the road "  
-arantiga.009.d:0 " This is the end of the beta content for Arantiga, from this point onward you can play it however you like. Thanks for playing!"
-arantiga.009.a:0 " see you next patch! "
+arantiga.000.t:0 " End of the road "  
+arantiga.000.d:0 " This is the end of the beta content for Arantiga, from this point onward you can play it however you like. Thanks for playing!"
+arantiga.000.a:0 " see you next patch! "
+arantiga.009.t:0 "The Sparletan Rebirth"
+arantiga.009.d:0 "The national revival of Dorotheos goes far, further than many had first expected. Today, the ancient Sparletan language was officially revived and introduced as a second official language. While some citizens are annoyed at having to learn a long dead language, many see this as a great cultural revival, and welcome this decision. Additionally, this allows us to remove foreign influences from our language that we deem to be unpatriotic."
+arantiga.009.a:0 "Zíto o Sparléos!"
+arantiga.010.t:0 "Dreams"
+arantiga.010.d:0 ""EVERYTHING IS UNDER CONTROL, MY CONTROL!! He screeches into the megaphone, leading a charge into Griffonia, wandering to himself, still after all this, once he pulled that final trigger in his sisters quarters 'Will it be worth it?' every time he hears this ringing in his head, every felled griffon, every captured city, every converted population cheering him on as their ruler, every time. It always rings in his head. Only loyal bootlickers, He has so much power, Everyday he wakes up in his chambers, decorated with the riches of Griffonia, every single time, the same Nightmare, as he stares into her eye's and all he hears as the world bows before him; "Brother, is this still worth it?" "
+arantiga.010.a:0 "..."
+arantiga.011.t:0 "Memories"
+arantiga.011.d:0 "“…and baron, that is a reason why my company needs to complain about recent events that…” Dorotheos was not really listening to petty problems of influential New Marelander businesspony, who asked for audience just to complain about every problem he faced during making business in Arantiga. Really… Why did he needed to listen to his idiocy? He had griffons that should do it! However pony was not a biggest problem – throne itself, always very comfortable now seemed rather like a torturer tool… Dorotheos simply could not find a position in which he would not feel pain. “Enough! Get away or I will order you executed!” He suddenly screamed. Pony froze with open mouth and then mumbled some apologies – and moments later he trotted out of a room. Dorotheos rose from his throne. “Replace this goddamn chair!” He ordered his secretary. Older griffon nodded and said only “Yes my baron, it shall be done” Secretary learned that it is better not to defy Dorotheos will or express doubt when baron is in… this mood. In last few weeks most of furniture was already replaced, and Dorotheos ordered to remove every picture of his dead sister or item she bought… "
+arantiga.011.a:0 "This job is not safe anymore"
+arantiga.012.t:0 "Unexpected Return"
+arantiga.012.d:0 "Being a ruler always meant lots of paperwork, and slacking on administrative duty never ended up well. Dorotheos was reading some rather uninteresting reports, when during a short moment of losing concentration he saw a single feather lying on a floor. It was nothing strange for a griffon to lose some of them from time to time, however this particular one… Dorotheos looked closer to it… He felt like his heart stopped for a minute… Then he started screaming. “GUARDS! GUARDS!”. Two soldiers guarding doors to his office entered inside with gun in their claws, expecting that their ruler was attacked by an assassin… Instead they found him shaking and pointing on violet feather. “WHAT IS IT?! WHERE IS SHE?!” He continued screaming. Guards looked with confusion on each other. Braver of those two slowly approached problematic item and gave it a closer look. “I think baron, that one of new maids must have dropped it. Clumsy girl, next time she will leave hairs in tea…” Dorotheos blinked in confusion. “Maid?” He asked. “Yes sir, I think she is that exact color…” He stopped, when baron hit a desk with his fist. “I order her fired! She has to leave this residence now! NOW!” When guards quickly escaped from a room, fearing that they might be next target of unexpected outburst of anger, Dorotheos started mumbling to herself. “Yes, it is only a maid… Only a maid. I killed her, right? I killed her!” "
+arantiga.012.a:0 "And she will stay dead!"
+
+
 
 
 #### news events ####
@@ -531,6 +545,19 @@ ARA_sparleos_fascism_ADJ:0 "Sparléan"
 ARA_sparleos_democratic_ADJ:0 "Sparléan"
 ARA_sparleos_neutrality_ADJ:0 "Sparléan"
 ARA_sparleos_communism_ADJ:0 "Sparléan"
+#added by the mod#
+ARA_new_kingdom_neutrality:0 "Kingdom of Arantiga"
+ARA_new_kingdom_neutrality_DEF:0 "The Kingdom of Arantiga"
+ARA_new_kingdom_neutrality_ADJ:0 "Arantigan"
+ARA_new_kingdom_fascism:0 "Kingdom of Arantiga"
+ARA_new_kingdom_fascism_DEF:0 "The Kingdom of Arantiga"
+ARA_new_kingdom_fascism_ADJ:0 "Arantigan"
+ARA_new_kingdom_democratic:0 "Kingdom of Arantiga"
+ARA_new_kingdom_democratic_DEF:0 "The Kingdom of Arantiga"
+ARA_new_kingdom_democratic_ADJ:0 "Arantigan"
+ARA_new_kingdom_communism:0 "People's Republic of Arantiga"
+ARA_new_kingdom_communism_DEF:0 "The People's Republic of Arantiga"
+ARA_new_kingdom_communism_ADJ:0 "Arantigan"
 
 ### Traits ###
 arantigos_reborn:0 "Arantigos Reborn"
@@ -543,3 +570,11 @@ ARA_nationalized_industry:0 "Nationalized Industry"
 
 ### Advisors ###
 prelate_heraclius:0 "Prelate Heraclius"
+
+### Tooltips ###
+rise_of_arantiga_tooltip:0 "Arantiga will begin to rise! Now would be a great time to take a look at our economic situation.\n\n"
+
+### Flags ###
+rise_of_arantiga:0 "Arantiga is rising!"
+
+### Cosmetic ###
