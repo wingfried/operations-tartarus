@@ -1,19 +1,5 @@
-focus_tree = {
-	id = arantiga_focus
-
-	country = {
-		factor = 0
-
-		modifier = {
-			add = 10
-			tag = ARA
-		}
-	}
-	default = no
-	continuous_focus_position = { x = 290 y = 2500 }
-
 	### Airforce ###
-	focus = {
+	shared_focus = {
 		id = ARA_the_new_airforce
 		icon = GFX_goal_generic_air_fighter2
 		x = -12
@@ -35,7 +21,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_new_fighters
 		icon = GFX_goal_generic_air_fighter
 		x = -2
@@ -61,7 +47,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_further_development
 		icon = GFX_focus_chi_flying_tigers
 		x = -2
@@ -83,7 +69,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_new_heavy_fighters
 		icon = GFX_focus_jap_zero
 		x = -1
@@ -109,7 +95,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_airports
 		icon = GFX_goal_expand_the_luftwaffe
 		x = 0
@@ -134,7 +120,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_foregin_designs
 		icon = GFX_goal_industrial_pony
 		x = 0
@@ -156,7 +142,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_napalm
 		icon = GFX_goal_MAF_Napalm
 		x = 0
@@ -175,7 +161,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_finest_aces
 		icon = GFX_goal_conscription
 		x = 0
@@ -194,7 +180,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_new_bombers
 		icon = GFX_goal_poland_goal
 		x = 2
@@ -219,7 +205,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_new_closer_air
 		icon = GFX_goal_generic_CAS
 		x = 2
@@ -244,7 +230,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_new_heavy_bombers
 		icon = GFX_goal_generic_occupy_start_war
 		x = 1
@@ -269,7 +255,7 @@ focus_tree = {
 	}
 
 		### Army Focuses ###
-	focus = {
+	shared_focus = {
 		id = ARA_new_age_new_army
 		icon = GFX_focus_chi_army_reform
 		x = 1
@@ -286,7 +272,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_new_academy
 		icon = GFX_focus_generic_military_mission
 		x = -5
@@ -304,7 +290,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_mobile_warfare_doctrine
 		icon = GFX_goal_planning_bonus
 		x = -7
@@ -335,7 +321,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_develop_doctrine
 		icon = GFX_goal_generic_position_armies
 		x = -8
@@ -359,7 +345,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_cult_of_speed
 		icon = GFX_goal_authority
 		x = -8
@@ -383,7 +369,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_actual_trucks
 		icon = GFX_goal_generic_army_motorized
 		x = -6
@@ -406,7 +392,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_tanks_for_the_army
 		icon = GFX_goal_generic_army_tanks
 		x = -6
@@ -443,7 +429,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_better_tanks
 		icon = GFX_focus_generic_army_tanks2
 		x = -7
@@ -473,7 +459,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_superior_warfare_doctrine
 		icon = GFX_goal_generic_army_artillery
 		x = -3
@@ -504,7 +490,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_develop_superior_doctrine
 		icon = GFX_goal_poland_goal
 		x = -4
@@ -528,7 +514,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_mass_artillery
 		icon = GFX_goal_generic_occupy_start_war
 		x = -4
@@ -552,7 +538,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_better_artillery
 		icon = GFX_goal_generic_army_artillery2
 		x = -2
@@ -576,7 +562,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_fancier_guns
 		icon = GFX_goal_generic_small_arms
 		x = -2
@@ -600,7 +586,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_continous_planning
 		icon = GFX_goal_generic_position_armies
 		x = -3
@@ -619,7 +605,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_new_school
 		icon = GFX_goal_generic_more_territorial_claims
 		x = -5
@@ -637,7 +623,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_new_guns
 		icon = GFX_goal_national_arsenal
 		x = 0
@@ -660,7 +646,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_new_artillery
 		icon = GFX_goal_national_artillery
 		x = -1
@@ -683,7 +669,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_new_equipment
 		icon = GFX_goal_generic_position_armies
 		x = 1
@@ -706,7 +692,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_spec_ops_program
 		icon = GFX_goal_generic_major_war
 		x = 0
@@ -730,7 +716,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_nation_under_arms
 		icon = GFX_goal_generic_production
 		x = 5
@@ -749,7 +735,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_prepare_the_people
 		icon = GFX_goal_conscription
 		x = 3
@@ -767,7 +753,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_the_cadets
 		icon = GFX_goal_KTG_Bookstack
 		x = 2
@@ -786,7 +772,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_guerilla_warfare
 		icon = GFX_focus_secret_rearmament
 		x = 2
@@ -809,7 +795,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_mandatory_training
 		icon = GFX_goal_generic_military_sphere
 		x = 4
@@ -827,7 +813,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_radio_stations
 		icon = GFX_goal_generic_radar
 		x = 4
@@ -857,7 +843,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_extensive_coscription_laws
 		icon = GFX_goal_military_academy
 		x = 3
@@ -879,7 +865,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_military_railroads
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 7
@@ -904,7 +890,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_builder_divisions
 		icon = GFX_goal_generic_construction2
 		x = 6
@@ -922,7 +908,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_reservist_housing
 		icon = GFX_goal_generic_construction
 		x = 6
@@ -945,7 +931,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_fortified_nation
 		icon = GFX_goal_nested_fortifications
 		x = 8
@@ -1006,7 +992,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_stocked_arsenals
 		icon = GFX_goal_munitions_factories
 		x = 8
@@ -1031,7 +1017,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_mobilized_economy
 		icon = GFX_goal_economic_control
 		x = 7
@@ -1050,7 +1036,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_legendary
 		icon = GFX_goal_authority
 		x = 5
@@ -1071,7 +1057,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	shared_focus = {
 		id = ARA_unmatched_army
 		icon = GFX_focus_ger_oppose_hitler
 		x = 0
@@ -1090,475 +1076,9 @@ focus_tree = {
 		}
 	}
 
-	### Political Options ###
-	focus = {
-		id = ARA_dorotheos_coup
-		icon = GFX_goal_ideology_monarchist
-		x = 27
-		y = 0
-		cost = 1.00
-		available = { always = no }
-		bypass = {
-			has_country_flag = ARA_coup_succeeded
-			
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ARA_the_aftermath_of_the_coup"
-			custom_effect_tooltip = unlock_focuses
-		}
-	}
-
-	focus = {
-		id = ARA_reorganise_high_command
-		icon = GFX_goal_authoritarian
-		x = -2
-		y = 1
-		relative_position_id = ARA_dorotheos_coup
-		cost = 5.00
-		prerequisite = { focus = ARA_dorotheos_coup }
-		
-		completion_reward = {
-			army_experience = 30
-			add_tech_bonus = {
-				name = doctrine_research
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
-			country_event = arantiga.005
-			remove_unit_leader = 1337
-
-			####Access to decisions “Arantigans Abroad”###
-		}
-}
-
-	focus = {
-		id = ARA_army_with_a_state
-		icon = GFX_goal_griffon_levy
-		x = 0
-		y = 1
-		relative_position_id = ARA_reorganise_high_command
-		cost = 5.00
-		prerequisite = { focus = ARA_reorganise_high_command }
-		
-		completion_reward = {
-		add_ideas = ARA_every_griff
-		add_war_support = 0.1
-		add_manpower = 40000
-		}
-		}
-		
-	focus = {
-		id = ARA_purge_loyalists
-		icon = GFX_focus_indy_bound_by_blood
-		x = 0
-		y = 1
-		relative_position_id = ARA_dorotheos_coup
-		cost = 5.00
-		prerequisite = { focus = ARA_dorotheos_coup }
-		
-		completion_reward = {
-		add_popularity = { ideology = democratic popularity = -0.05 }
-		add_popularity = { ideology = neutrality popularity = -0.2 }
-		add_war_support = 0.05
-		add_stability = 0.05
-		}
-		}
-	
-	focus = {
-		id = ARA_reorganise_government
-		icon = GFX_goal_authority
-		x = 0
-		y = 1
-		relative_position_id = ARA_purge_loyalists
-		cost = 5.00
-		prerequisite = { focus = ARA_purge_loyalists }
-		
-			completion_reward = {
-				add_stability = 0.1
-				add_political_power = -50
-				add_ideas = ARA_absolute_reign
-			}
-		}
-	
-	focus = {
-		id = ARA_nationalization
-		icon = GFX_focus_indy_industrial_tanks
-		x = 2
-		y = 1
-		relative_position_id = ARA_dorotheos_coup
-		cost = 5.00
-		prerequisite = { focus = ARA_dorotheos_coup }
-		
-		completion_reward = {
-		408 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		408 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		
-		WNG = {
-			add_opinion_modifier = {
-				target = ARA
-				modifier = ARA_nationalized_industry
-			}
-		}
-		
-		swap_ideas = {
-				remove_idea = ARA_economic_dependance
-				add_idea = ARA_transitional_economy
-				}
-		}
-		}
-		
-	focus = {
-	
-		id = ARA_state_of_war
-		icon = GFX_goal_skull_cannon
-		x = 0
-		y = 1
-		relative_position_id = ARA_nationalization
-		cost = 5.00
-		prerequisite = { focus = ARA_nationalization }
-		
-		completion_reward = {
-		408 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-		add_ideas = ARA_militarized_economy
-		}
-		}
-	
-	Focus = {
-		id = ARA_arantiga_rises
-		icon = GFX_focus_indy_champagne_repression
-		x = -2
-		y = 2
-		relative_position_id = ARA_nationalization
-		cost = 5.00
-		prerequisite = { focus = ARA_state_of_war }
-		prerequisite = { focus = ARA_reorganise_government }
-		prerequisite = { focus = ARA_army_with_a_state }
-
-		completion_reward = {
-		custom_effect_tooltip = rise_of_arantiga_tooltip
-		add_stability = 0.05
-		add_political_power = 50
-		add_popularity = { ideology = fascism popularity = 0.1 }
-		set_country_flag = rise_of_arantiga
-		}
-		}
-
-################### CONQUEST #####################		
-
-	Focus = {
-		id = ARA_right_to_rule
-		icon = GFX_goal_crown_and_swords
-		x = 0
-		y = 1
-		relative_position_id = ARA_arantiga_rises
-		cost = 3.00
-		prerequisite = { focus = ARA_arantiga_rises }
-		
-		completion_reward = {
-		add_war_support = 0.1
-		add_ideas = ARA_tungsten_mind
-		hidden_effect = { set_country_flag = right_to_rule }
-		}
-		}
-		
-	focus = {
-		id = ARA_craddle
-		icon = GFX_focus_strike_griffonstone
-		x = 0
-		y = 1
-		relative_position_id = ARA_right_to_rule
-		cost = 5.00
-		prerequisite = { focus = ARA_right_to_rule }
-		
-		completion_reward = {
-		create_wargoal = {
-				type = annex_everything
-				target = LAK
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = BOI
-			}
-			}
-			}
-	focus = {
-		id = ARA_rebuild_stone
-		icon = GFX_goal_generic_construct_public_housing
-		x = 0
-		y = 1
-		relative_position_id = ARA_craddle
-		cost = 10.00
-		prerequisite = { focus = ARA_craddle }
-		available = {
-			383 = { is_owned_and_controlled_by = ROOT }
-			679 = { is_owned_and_controlled_by = ROOT }
-			384 = { is_owned_and_controlled_by = ROOT }
-			471 = { is_owned_and_controlled_by = ROOT }
-			389 = { is_owned_and_controlled_by = ROOT }
-			531 = { is_owned_and_controlled_by = ROOT }
-			488 = { is_owned_and_controlled_by = ROOT }
-			}
-		completion_reward = {
-			ARA = {
-			add_state_core = 383
-			add_state_core = 679
-			add_state_core = 384
-			add_state_core = 471
-			add_state_core = 389
-			add_state_core = 531
-			add_state_core = 488
-			}
-		389 = {
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 4
-					instant_build = yes
-				}
-			}
-		add_political_power = -50
-			}
-		}
-	
-	Focus = {
-		id = ARA_fight_north
-		icon = GFX_focus_generic_provoke_border_clashes
-		x = -2
-		y = 1
-		relative_position_id = ARA_right_to_rule
-		cost = 5.00
-		prerequisite = { focus = ARA_right_to_rule }
-
-		completion_reward = {
-		create_wargoal = {
-				type = annex_everything
-				target = EYR
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = ERI
-			}
-			}
-			}
-	
-	
-	Focus = {
-		id = ARA_integrate_north
-		icon = GFX_goal_generic_construct_public_housing
-		x = 0
-		y = 1
-		relative_position_id = ARA_fight_north
-		cost = 8.00
-		prerequisite = { focus = ARA_fight_north }
-		available = {
-			401 = { is_owned_and_controlled_by = ROOT }
-			500 = { is_owned_and_controlled_by = ROOT }
-			673 = { is_owned_and_controlled_by = ROOT }
-			400 = { is_owned_and_controlled_by = ROOT }
-			391 = { is_owned_and_controlled_by = ROOT }
-			}
-		completion_reward = {
-			ARA = {
-			add_state_core = 401
-			add_state_core = 500
-			add_state_core = 400
-			add_state_core = 673
-			add_state_core = 391
-			}
-			}
-			}
-	
-	Focus = {
-		id = ARA_fight_avian
-		icon = GFX_focus_rom_abdicate
-		x = 2
-		y = 1
-		relative_position_id = ARA_right_to_rule
-		cost = 5.00
-		prerequisite = { focus = ARA_right_to_rule }
-
-		completion_reward = {	
-			create_wargoal = {
-				type = annex_everything
-				target = AVI
-			}
-			}
-			}
-			
-	Focus = {
-		id = ARA_integrate_avian
-		icon = GFX_goal_generic_construct_public_housing
-		x = 0
-		y = 1
-		relative_position_id = ARA_fight_avian
-		cost = 5.00
-		prerequisite = { focus = ARA_fight_avian }
-		available = {
-			470 = { is_owned_and_controlled_by = ROOT }
-		}
-		completion_reward = {
-			ARA = {
-			add_state_core = 470
-				}
-				}
-				}
-	
-	focus = {
-		id = ARA_ac_revelations
-		icon = GFX_goal_graveyard
-		x = -2
-		y = 1
-		relative_position_id = ARA_integrate_avian
-		cost = 1.00
-		prerequisite = { focus = ARA_integrate_avian }
-		prerequisite = { focus = ARA_integrate_north }
-		prerequisite = { focus = ARA_rebuild_stone }
-		
-		completion_reward = { 
-		country_event = arantiga.006
-		}
-		}
-	
-	focus = { 
-		id = ARA_new_arantigos
-		icon = GFX_goal_DOM_The_Phoenix
-		x = 0
-		y = 1
-		relative_position_id = ARA_ac_revelations
-		cost = 3.00
-		prerequisite = { focus = ARA_ac_revelations }
-		completion_reward = { 
-		add_stability = 0.1
-		add_popularity = { ideology = fascism popularity = 0.1 }
-		country_event = arantiga.007
-		}
-		}
-	######################### CULTURE RELIGION AND SCIENCE ####################
-	focus = {
-		id = ARA_sparleos_legacy
-		icon = GFX_goal_PAN_Create_the_Universidad_de_Panama
-		x = 5
-		y = 1
-		relative_position_id = ARA_arantiga_rises
-		cost = 8.00
-		prerequisite = { focus = ARA_arantiga_rises }
-		completion_reward = { 
-		add_stability = 0.05
-		add_political_power = 50
-		}
-		}
-	
-	focus = {
-		id = ARA_sparleos_culture
-		icon = GFX_r56_goal_FRA_alliance_with_industrialists
-		x = -1
-		y = 1
-		relative_position_id = ARA_sparleos_legacy
-		cost = 8.00
-		prerequisite = { focus = ARA_sparleos_legacy }
-		completion_reward = { 
-		country_event = arantiga.009
-		}
-		}
-	
-	focus = {
-		id = ARA_mandatory_education
-		icon = GFX_focus_research_slave
-		x = 0
-		y = 1
-		relative_position_id = ARA_sparleos_culture
-		cost = 8.00
-		prerequisite = { focus = ARA_sparleos_culture }
-		completion_reward = {
-		decrease_illiteracy = yes
-		}
-		}
-	focus = {
-		id = ARA_arantigos_boreas
-		icon = GFX_goal_new_temple
-		x = 1
-		y = 1
-		relative_position_id = ARA_sparleos_legacy
-		cost = 8.00
-		prerequisite = { focus = ARA_sparleos_legacy }
-		completion_reward = {
-		add_ideas = ARA_arantigos_boreas1
-		
-		}
-		}
-	
-	focus = {
-		id = ARA_sparleto_university
-		icon = GFX_goal_bookstack
-		x = 0
-		y = 1
-		relative_position_id = ARA_arantigos_boreas
-		cost = 8.00
-		prerequisite = { focus = ARA_arantigos_boreas }
-		completion_reward = {
-		add_research_slot = 1
-		}
-		}
-	
-	
-	focus = {
-		id = ARA_cult_of_personality
-		icon = GFX_goal_national_populism
-		x = -3
-		y = 4
-		relative_position_id = ARA_arantigos_boreas
-		cost = 8.00
-		prerequisite = { focus = ARA_mandatory_education }
-		prerequisite = { focus = ARA_sparleto_university }
-		prerequisite = { focus = ARA_new_arantigos }
-		completion_reward = {
-	    swap_ideas = {
-				remove_idea = ARA_arantigos_boreas1
-				add_idea = ARA_arantigos_boreas2
-			}
-		######## INCOMPLETE Relations with other griffon nations -20 (Heretical madgriff) ###########
-		}
-		}
-	
 	###################### ECONOMY AND INDUSTRY ####################
 	
-	focus = {
+	shared_focus = {
 		id = ARA_self_strength
 		icon = GFX_focus_generic_self_management
 		x = 17
@@ -1583,7 +1103,7 @@ focus_tree = {
 		}
 	
 		
-	focus = {
+	shared_focus = {
 		id = ARA_industrial_warmachine
 		icon = GFX_IRE_medium_industry
 		x = 3
@@ -1603,7 +1123,7 @@ focus_tree = {
 			}
 			}
 	
-	focus = {
+	shared_focus = {
 		id = ARA_military_research_institute
 		icon = GFX_focus_research
 		x = 0
@@ -1616,7 +1136,7 @@ focus_tree = {
 		}
 		}
 	
-	focus = {
+	shared_focus = {
 		id = ARA_heavy_industry
 		icon = GFX_IRE_heavy_industry
 		x = -3
@@ -1636,7 +1156,7 @@ focus_tree = {
 			}
 			}
 			
-	focus = {
+	shared_focus = {
 		id = ARA_dig_deeper
 		icon = GFX_focus_generic_steel
 		x = 0
@@ -1658,7 +1178,7 @@ focus_tree = {
 			}
 			}
 	
-	focus = {
+	shared_focus = {
 		id = ARA_kickstart_my_heart
 		icon = GFX_goal_griffon_clock
 		x = 0
@@ -1671,7 +1191,7 @@ focus_tree = {
 		}
 		}
 	
-	focus = {
+	shared_focus = {
 		id = ARA_exploit_conquered
 		icon = GFX_focus_indy_excavations
 		x = -3
@@ -1719,7 +1239,7 @@ focus_tree = {
 		}
 		}
 		
-	focus = {
+	shared_focus = {
 		id = ARA_riches_of_griffonstone
 		icon = GFX_Goal_YUN_The_Mountain_Economy
 		x = 0
@@ -1766,7 +1286,7 @@ focus_tree = {
 		}
 		}
 		
-	focus = {
+	shared_focus = {
 		id = ARA_northern_industry
 		icon = GFX_goal_generic_takeover_industries
 		x = -2
@@ -1816,7 +1336,7 @@ focus_tree = {
 		}
 		}
 	
-	focus = {
+	shared_focus = {
 		id = ARA_hire_foreigners
 		icon = GFX_goal_generic_scientific_exchange
 		x = -1
@@ -1830,7 +1350,7 @@ focus_tree = {
 		}
 		}
 	
-	focus = {
+	shared_focus = {
 		id = ARA_industrial_front
 		icon = GFX_goal_generic_propaganda
 		x = 3
@@ -1846,7 +1366,7 @@ focus_tree = {
 		}
 		}
 	
-	focus = {
+	shared_focus = {
 		id = ARA_work_camps
 		icon = GFX_goal_slavery
 		x = 0
@@ -1859,7 +1379,7 @@ focus_tree = {
 		}
 		}
 	
-	focus = {
+	shared_focus = {
 		id = ARA_modern_solutions
 		icon = GFX_goal_generic_railroad
 		x = 2
@@ -1922,7 +1442,7 @@ focus_tree = {
 		}
 	
 	
-	focus = {
+	shared_focus = {
 		id = ARA_homefront_victory
 		icon = GFX_goal_generic_build_housing
 		x = 1
@@ -1936,7 +1456,7 @@ focus_tree = {
 		}
 		}
 	
-	focus = {
+	shared_focus = {
 		id = ARA_military_complex
 		icon = GFX_goal_generic_dangerous_deal
 		x = -1
@@ -1959,7 +1479,7 @@ focus_tree = {
 		}
 	
 	
-	focus = {
+	shared_focus = {
 		id = ARA_afterkeia
 		icon = GFX_goal_basic_oil
 		x = 1
@@ -1988,7 +1508,7 @@ focus_tree = {
 		}
 		
 	
-	focus = {
+	shared_focus = {
 		id = ARA_reforge_economy
 		icon = GFX_goal_griffon_money_growth
 		x = 0
@@ -2002,7 +1522,7 @@ focus_tree = {
 			}
 		}
 	
-	focus = {
+	shared_focus = {
 		id = ARA_war_against_dumb
 		icon = GFX_goal_griffon_books
 		x = -2
@@ -2019,7 +1539,7 @@ focus_tree = {
 		}
 		}
 	
-	focus = { 
+	shared_focus = { 
 		id = ARA_modern_arantiga
 		icon = GFX_goal_rct_expand_the_city
 		x = 1
@@ -2033,53 +1553,3 @@ focus_tree = {
 			}
 			}
 	
-	
-############## THE IDOL OF BOREAS ####################
-
-	
-	focus = { 
-		id = ARA_legacy_of_grover
-		icon = GFX_goal_PAN_Create_the_Universidad_de_Panama
-		x = 3
-		y = 2
-		relative_position_id = ARA_new_arantigos 
-		cost = 1.00
-		prerequisite = { focus = ARA_cult_of_personality }
-		completion_reward = {
-		country_event = arantiga.008
-		}
-		}
-	
-	focus = {
-		id = ARA_es_oblivion
-		icon = GFX_goal_fire
-		x = 1
-		y = 1
-		relative_position_id = ARA_legacy_of_grover
-		prerequisite = { focus = ARA_legacy_of_grover }
-		mutually_exclusive = { focus = ARA_bungie_destiny }
-		completion_reward = {
-		country_event = arantiga.000
-		}
-		}
-	
-	focus = { 
-		id = ARA_bungie_destiny
-		icon = GFX_goal_supremacy_of_will
-		x = -1
-		y = 1
-		relative_position_id = ARA_legacy_of_grover 
-		cost = 1.00
-		prerequisite = { focus = ARA_legacy_of_grover }
-		mutually_exclusive = { focus = ARA_es_oblivion }
-		completion_reward = {
-		add_political_power = 100
-		add_stability = 0.1
-		country_event = arantiga.000
-		}
-		}
-		###### INCOMPLETE Dorotheos gains trait Indomitable will (+5% Division Recovery rate)#####
-		
-	
-		
-}
