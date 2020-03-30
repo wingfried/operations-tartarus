@@ -1,0 +1,369 @@
+focus_tree = {
+	id = Arantiga_coup
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ARA
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 290 y = 2500 }
+	
+		shared_focus = ARA_the_new_airforce
+		shared_focus = ARA_self_strength
+		shared_focus = ARA_new_age_new_army
+		
+		
+		
+		
+	focus = { #CHAOS
+		id = ARA_chaos
+		icon = GFX_goal_forced_res
+		x = 29
+		y = 0
+		cost = 1.00
+		available = { always = no }	
+		bypass = {
+			has_country_flag = ARA_Arantigos_is_dead
+			
+		}
+		}
+		
+	focus = { #Power struggle
+		id = ARA_power_struggle
+		icon = GFX_goal_forced_res
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_chaos
+		prerequisite = { focus = ARA_chaos }
+		completion_reward = {
+		}
+		}
+	
+	focus = { #Purge zealots
+		id = ARA_purge_zealots
+		icon = GFX_goal_forced_res
+		x = -2
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_power_struggle
+		prerequisite = { focus = ARA_power_struggle }
+		completion_reward = {
+		}
+		}
+		
+	focus = { #Secure cities
+		id = ARA_secure_cities
+		icon = GFX_goal_forced_res
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_power_struggle
+		prerequisite = { focus = ARA_power_struggle }
+		completion_reward = {
+		}
+		}
+		
+	focus = { #Support of the army
+		id = ARA_support_army
+		icon = GFX_goal_forced_res
+		x = 2
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_power_struggle
+		prerequisite = { focus = ARA_power_struggle }
+		completion_reward = {
+		}
+		}
+				
+	focus = { #Legacy of Arantigos
+		id = ARA_the_legacy
+		icon = GFX_goal_forced_res
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_secure_cities
+		prerequisite = { focus = ARA_secure_cities }
+		prerequisite = { focus = ARA_support_army }
+		prerequisite = { focus = ARA_purge_zealots }
+		completion_reward = {
+		}
+		}		
+		
+	focus = { #Free the prisioners
+		id = ARA_free_prisioners
+		icon = GFX_goal_forced_res
+		x = -4
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_the_legacy
+		prerequisite = { focus = ARA_the_legacy }
+		completion_reward = {
+		}
+		}		
+		
+	focus = { #Restore the cult of Boreas
+		id = ARA_restore_the_cult
+		icon = GFX_goal_forced_res
+		x = -2
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_the_legacy
+		prerequisite = { focus = ARA_the_legacy }
+		completion_reward = {
+		}
+		}	
+		
+	focus = { #Demobilize the economy
+		id = ARA_demobilize
+		icon = GFX_goal_forced_res
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_the_legacy
+		prerequisite = { focus = ARA_the_legacy }
+		completion_reward = {
+		}
+		}	
+		
+	focus = { #Transitional Government
+		id = ARA_transition
+		icon = GFX_goal_forced_res
+		x = 2
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_the_legacy
+		prerequisite = { focus = ARA_the_legacy }
+		completion_reward = {
+		}
+		}	
+		
+	focus = { #Return of the exiles
+		id = ARA_return_exiles
+		icon = GFX_goal_forced_res
+		x = 4
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_the_legacy
+		prerequisite = { focus = ARA_the_legacy }
+		completion_reward = {
+		}
+		}		
+				
+	focus = { #New direction
+		id = ARA_new_direction
+		icon = GFX_goal_forced_res
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_demobilize
+		prerequisite = { focus = ARA_free_prisioners }
+		prerequisite = { focus = ARA_restore_the_cult }
+		prerequisite = { focus = ARA_demobilize }
+		prerequisite = { focus = ARA_transition }
+		prerequisite = { focus = ARA_return_exiles }
+		completion_reward = {
+		}
+		}			
+
+	focus = { #King of Arantiga
+		id = ARA_return_of_the_king
+		icon = GFX_goal_forced_res
+		x = -1
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_new_direction
+		prerequisite = { focus = ARA_new_direction }
+		mutually_exclusive = { focus = ARA_i_love_democracy }
+		completion_reward = {
+		}
+		}		
+		
+	focus = { #Create Arantigan Republic
+		id = ARA_i_love_democracy
+		icon = GFX_goal_forced_res
+		x = 1
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_new_direction
+		prerequisite = { focus = ARA_new_direction }
+		mutually_exclusive = { focus = ARA_return_of_the_king }
+
+		completion_reward = {
+		}
+		}			
+		
+	focus = { #Stick to tradition
+		id = ARA_tradition
+		icon = GFX_goal_forced_res
+		x = -1
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_return_of_the_king
+		prerequisite = { focus = ARA_return_of_the_king }
+		completion_reward = {
+		}
+		}			
+		
+	focus = { #Local Democracy
+		id = ARA_local_democracy
+		icon = GFX_goal_forced_res
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_tradition
+		prerequisite = { focus = ARA_tradition }
+		completion_reward = {
+		}
+		}	
+		
+	focus = { #Social Welfare
+		id = ARA_social_welfare
+		icon = GFX_goal_forced_res
+		x = 1
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_return_of_the_king
+		prerequisite = { focus = ARA_return_of_the_king focus = ARA_i_love_democracy }
+		completion_reward = {
+		}
+		}	
+		
+	focus = { #Crossroads of Gryffonia
+		id = ARA_The_Crossroads
+		icon = GFX_goal_forced_res
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_social_welfare
+		prerequisite = { focus = ARA_social_welfare }
+		completion_reward = {
+		}
+		}		
+		
+	focus = { #Free press
+		id = ARA_free_press
+		icon = GFX_goal_forced_res
+		x = 1
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_i_love_democracy
+		prerequisite = { focus = ARA_i_love_democracy }
+		completion_reward = {
+		}
+		}
+		
+	focus = { #Never Again
+		id = ARA_never_again
+		icon = GFX_goal_forced_res
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_free_press
+		prerequisite = { focus = ARA_free_press }
+		completion_reward = {
+		}
+		}			
+		
+	focus = { #New Golden age
+		id = ARA_golden_age
+		icon = GFX_goal_forced_res
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_local_democracy
+		prerequisite = { focus = ARA_local_democracy }
+		completion_reward = {
+		}
+		}
+		
+	focus = { #New old allies
+		id = ARA_old_allies
+		icon = GFX_goal_forced_res
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_The_Crossroads
+		prerequisite = { focus = ARA_The_Crossroads }
+		prerequisite = { focus = ARA_never_again focus = ARA_local_democracy  }
+		mutually_exclusive = { focus = ARA_arantiga_forever }
+		completion_reward = {
+		}
+		}	
+		
+	focus = { #Arantiga Forever
+		id = ARA_arantiga_forever
+		icon = GFX_goal_forced_res
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_never_again
+		prerequisite = { focus = ARA_never_again }
+		mutually_exclusive = { focus = ARA_old_allies }
+		completion_reward = {
+		}
+		}	
+		
+	focus = { #Aquileian Brothers
+		id = ARA_aquileian_brothers
+		icon = GFX_goal_forced_res
+		x = -3
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_old_allies
+		prerequisite = { focus = ARA_old_allies }
+		completion_reward = {
+		}
+		}
+		
+	focus = { #Emperor in Griffinheim
+		id = ARA_the_emperor
+		icon = GFX_goal_forced_res
+		x = -1
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_old_allies
+		prerequisite = { focus = ARA_old_allies }
+		completion_reward = {
+		}
+		}
+		
+	focus = { #Realign Karthian pact
+		id = ARA_karthian_pact
+		icon = GFX_goal_forced_res
+		x = 1
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_old_allies
+		prerequisite = { focus = ARA_old_allies }
+		completion_reward = {
+		}
+		}
+		
+	focus = { #Pan-griffonian cause
+		id = ARA_pan-griffonian
+		icon = GFX_goal_forced_res
+		x = 3
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_old_allies
+		prerequisite = { focus = ARA_old_allies }
+		completion_reward = {
+		}
+		}		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+}
