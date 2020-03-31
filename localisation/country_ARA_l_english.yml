@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 ### Ideas ###
 ARA_legacy:0 "The Legacy of Arantigos"
@@ -133,6 +133,14 @@ ARA_new_closer_air:0 "Guard Our Troops"
 ARA_new_closer_air_desc:0 "Coordination between air and land has clear tactical and strategic benefits; creating aircraft designs specifically to aid the boots on the ground will make them grateful for the wings above."
 ARA_new_heavy_bombers:0 "Strategic Destruction"
 ARA_new_heavy_bombers_desc:0 "Bombing key enemy positions; supply depots, railways, you name it, will require specialized planes. Designing some should be a priority."
+ARA_golden_age:0 "New Golden Age"
+ARA_golden_age_desc:0 "Like a phoenix from the ashes, Arantiga has risen. Hopefully we shall never again fall again. Now, we can enjoy an age of progress and prosperity."
+ARA_The_Crossroads:0 "Crossroad of Griffonia"
+ARA_The_Crossroads_desc:0 "Arantiga controls a strategic central part of Griffonia. By promoting trade and securing roads through our nation we can make ourselves a key part of international trade."
+ARA_never_again:0 "Never Again!"
+ARA_never_again_desc:0 "Freedom must be protected at all costs – no matter if another Dorotheos would be from Arantiga or foreign invader. Griffons of Arantiga will defend their nation – and are willing to die for newly gained liberty."
+ARA_arantiga_forever:0 "Arantiga Forever"
+ARA_arantiga_forever_desc:0 "Revolutionaries, emperors and madgriffs… Griffonia has plenty of them, but we shall submit to none. We are free and we shall remain such. Arantiga will never again be under foreign rule!"
 
 #ARA_issue_of_economic_dependance:0 "Dealing with the Economy"
 #ARA_issue_of_economic_dependance_desc:0 "Arantiga's economy is in a pitiful state, and we must see to the matter of resolving this issue if we wish to become a regional power. The first task on the list is deciding our stance towards Wingbardy."
