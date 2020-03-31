@@ -40,6 +40,8 @@ focus_tree = {
 		relative_position_id = ARA_chaos
 		prerequisite = { focus = ARA_chaos }
 		completion_reward = {
+		remove_unit_leader = 29534 
+		add_manpower = -30000
 		}
 		}
 	
@@ -52,6 +54,10 @@ focus_tree = {
 		relative_position_id = ARA_power_struggle
 		prerequisite = { focus = ARA_power_struggle }
 		completion_reward = {
+		add_manpower = -1000
+		add_stability = -0.4
+		add_popularity = { ideology = fascism popularity = -0.4 }
+		add_popularity = { ideology = neutrality popularity = 0.3 }
 		}
 		}
 		
@@ -64,6 +70,7 @@ focus_tree = {
 		relative_position_id = ARA_power_struggle
 		prerequisite = { focus = ARA_power_struggle }
 		completion_reward = {
+		add_manpower = -30000
 		}
 		}
 		
@@ -76,6 +83,7 @@ focus_tree = {
 		relative_position_id = ARA_power_struggle
 		prerequisite = { focus = ARA_power_struggle }
 		completion_reward = {
+		add_political_power = -200
 		}
 		}
 				
@@ -98,10 +106,18 @@ focus_tree = {
 		icon = GFX_goal_forced_res
 		x = -4
 		y = 1
-		cost = 5.00
+		cost = 2.00
 		relative_position_id = ARA_the_legacy
+		bypass = { 
+			NOT = {
+					has_country_flag = work_camps_flag
+		}
+		}
 		prerequisite = { focus = ARA_the_legacy }
 		completion_reward = {
+		add_manpower = 20000
+		add_stability = 0.05
+		remove_ideas = ARA_work_camp
 		}
 		}		
 		
@@ -110,10 +126,11 @@ focus_tree = {
 		icon = GFX_goal_forced_res
 		x = -2
 		y = 1
-		cost = 5.00
+		cost = 2.00
 		relative_position_id = ARA_the_legacy
 		prerequisite = { focus = ARA_the_legacy }
 		completion_reward = {
+		remove_ideas = ARA_arantigos_boreas2
 		}
 		}	
 		
@@ -122,10 +139,11 @@ focus_tree = {
 		icon = GFX_goal_forced_res
 		x = 0
 		y = 1
-		cost = 5.00
+		cost = 2.00
 		relative_position_id = ARA_the_legacy
 		prerequisite = { focus = ARA_the_legacy }
 		completion_reward = {
+		remove_ideas = ARA_militarized_economy
 		}
 		}	
 		
@@ -134,10 +152,11 @@ focus_tree = {
 		icon = GFX_goal_forced_res
 		x = 2
 		y = 1
-		cost = 5.00
+		cost = 2.00
 		relative_position_id = ARA_the_legacy
 		prerequisite = { focus = ARA_the_legacy }
 		completion_reward = {
+		remove_ideas = ARA_nicator_junta
 		}
 		}	
 		
@@ -146,10 +165,14 @@ focus_tree = {
 		icon = GFX_goal_forced_res
 		x = 4
 		y = 1
-		cost = 5.00
+		cost = 2.00
 		relative_position_id = ARA_the_legacy
 		prerequisite = { focus = ARA_the_legacy }
 		completion_reward = {
+		add_popularity = { ideology = democratic popularity = 0.10 }
+		add_popularity = { ideology = communism popularity = 0.05 }
+		add_popularity = { ideology = neutrality popularity = 0.05 }
+		add_stability = 0.1
 		}
 		}		
 				
@@ -205,6 +228,7 @@ focus_tree = {
 		relative_position_id = ARA_return_of_the_king
 		prerequisite = { focus = ARA_return_of_the_king }
 		completion_reward = {
+		add_ideas = ARA_arantigan_way
 		}
 		}			
 		
@@ -217,6 +241,7 @@ focus_tree = {
 		relative_position_id = ARA_tradition
 		prerequisite = { focus = ARA_tradition }
 		completion_reward = {
+		add_ideas = ARA_empower_minorities
 		}
 		}	
 		
@@ -229,6 +254,7 @@ focus_tree = {
 		relative_position_id = ARA_return_of_the_king
 		prerequisite = { focus = ARA_return_of_the_king focus = ARA_i_love_democracy }
 		completion_reward = {
+		add_ideas = ARA_social_welfare
 		}
 		}	
 		
@@ -241,6 +267,7 @@ focus_tree = {
 		relative_position_id = ARA_social_welfare
 		prerequisite = { focus = ARA_social_welfare }
 		completion_reward = {
+		add_ideas = ARA_crossroads
 		}
 		}		
 		
@@ -253,6 +280,7 @@ focus_tree = {
 		relative_position_id = ARA_i_love_democracy
 		prerequisite = { focus = ARA_i_love_democracy }
 		completion_reward = {
+		add_ideas = ARA_new_path
 		}
 		}
 		
@@ -265,6 +293,7 @@ focus_tree = {
 		relative_position_id = ARA_free_press
 		prerequisite = { focus = ARA_free_press }
 		completion_reward = {
+		add_ideas = ARA_liberty_death
 		}
 		}			
 		
@@ -273,10 +302,11 @@ focus_tree = {
 		icon = GFX_goal_forced_res
 		x = 0
 		y = 1
-		cost = 5.00
+		cost = 10.00
 		relative_position_id = ARA_local_democracy
 		prerequisite = { focus = ARA_local_democracy }
 		completion_reward = {
+		add_research_slot = 1
 		}
 		}
 		
@@ -304,6 +334,7 @@ focus_tree = {
 		prerequisite = { focus = ARA_never_again }
 		mutually_exclusive = { focus = ARA_old_allies }
 		completion_reward = {
+		add_ideas = ARA_arantiga_forever
 		}
 		}	
 		
