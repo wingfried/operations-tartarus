@@ -957,6 +957,9 @@ country = {
 			desc = ARA_social_welfare_desc
 			removal_cost = -1
 			modifier = {
+			monthly_population = 0.1
+			consumer_goods_factor = 0.05
+			stability_factor = 0.1
 		}
 		}
 		}
@@ -973,6 +976,8 @@ country = {
 			desc = ARA_liberty_death_desc
 			removal_cost = -1
 			modifier = {
+				army_defence_factor = 0.1
+					drift_defence_factor = 0.50
 		}
 		}
 		}
@@ -989,6 +994,8 @@ country = {
 			desc = ARA_crossroads_desc
 			removal_cost = -1
 			modifier = {
+			trade_opinion_factor = 0.20
+
 		}
 		}
 		}
@@ -1005,6 +1012,8 @@ country = {
 			desc = ARA_arantiga_forever_desc
 			removal_cost = -1
 			modifier = {
+			army_core_defence_factor = 0.2
+			army_core_attack_factor = 0.2
 		}
 		}
 		}
