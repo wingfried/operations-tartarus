@@ -1,5 +1,6 @@
 ﻿add_namespace = arantiga
 add_namespace = arantiga_news
+add_namespace = arantiga_chaos
 ##### NEW EVENTS #############
 
 	
@@ -273,6 +274,158 @@ country_event = { #Unexpected return Flavour events
 	name = arantiga.012.a
 	}
 	}
+
+
+#################################################################
+#################################################################
+###### INTO OBLIVION IDOL OF BOREAS EVENT CHAIN #################
+#################################################################
+#################################################################
+
+country_event = { #into oblivion idol chain start GREAT RIFT
+	id = arantiga.013
+	title = arantiga.013.t
+	desc = arantiga.013.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = arantiga.013.a
+	hidden_effect = {
+				ARA = {
+		        country_event = { 
+			        id = arantiga.014
+					days = 1
+			    }
+				}
+				}
+	}
+	}
+
+country_event = { #going lower
+	id = arantiga.014
+	title = arantiga.014.t
+	desc = arantiga.014.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = arantiga.014.a
+		hidden_effect = {
+				ARA = {
+		        country_event = { 
+			        id = arantiga.015
+					days = 1
+			    }
+				}
+				}
+	}
+	option = {
+	name = arantiga.014.b
+			hidden_effect = {
+				ARA = {
+		        country_event = { 
+			        id = arantiga.016
+					days = 1
+			    }
+				}
+				}
+	}
+	}
+
+country_event = { #flying lower
+	id = arantiga.015
+	title = arantiga.015.t
+	desc = arantiga.015.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = arantiga.015.a
+	kill_country_leader = yes
+	set_politics = {
+			ruling_party = despotism
+			elections_allowed = no
+		}
+	create_country_leader = {
+			name = "Nicator"
+			picture = "nicator.tga"
+			expire = "1965.1.1"
+			ideology = fascism
+		}
+	Hidden_effect = { 
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.001
+					days = 1
+			    }
+			}
+		    load_focus_tree = { 
+		        tree = Arantiga_chaos
+		        keep_completed = yes 
+		    }
+	}
+	}
+	}
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	country_event = { #Total Chaos
+	id = arantiga_chaos.001
+	title = arantiga_chaos.001.t
+	desc = arantiga_chaos.001.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+	name = arantiga_chaos.001.a
+	remove_ideas = ARA_absolute_reign
+	add_ideas = ARA_power_vacuum
+	add_ideas = ARA_absolute_chaos
+	}
+	}
+
+	
+
+
+
 
 
 
