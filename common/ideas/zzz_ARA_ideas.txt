@@ -858,6 +858,167 @@ country = {
 		}
 	}
 	
+	
+	
+############################## Chaos path National Spirits ############################################	
+	
+	
+	
+		country = {
+			ARA_nicator_junta {
+				allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_manpower_bonus
+			desc = ARA_nicator_junta_desc
+			removal_cost = -1
+			modifier = {
+			political_power_factor -0.3
+			}
+			}
+			}
+		
+	
+		country = {
+			ARA_nicator_junta1 {
+				allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_manpower_bonus
+			desc = ARA_nicator_junta1_desc
+			removal_cost = -1
+			modifier = {
+			political_power_factor -0.1
+			}
+			}
+			}
+	
+		country = {
+			ARA_arantigan_way {
+				allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_manpower_bonus
+			desc = ARA_arantigan_way_desc
+			removal_cost = -1
+			modifier = {
+		}
+		}
+		}
+
+		country = {
+			ARA_empower_minorities {
+				allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_manpower_bonus
+			desc = ARA_empower_minorities_desc
+			removal_cost = -1
+			modifier = {
+		}
+		}
+		}
+		country = {
+			ARA_new_path{
+				allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_manpower_bonus
+			desc = ARA_new_path_desc
+			removal_cost = -1
+			modifier = {
+		}
+		}
+		}
+		country = {
+			ARA_social_welfare{
+				allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_manpower_bonus
+			desc = ARA_social_welfare_desc
+			removal_cost = -1
+			modifier = {
+		}
+		}
+		}
+	
+		country = {
+			ARA_liberty_death{
+				allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_manpower_bonus
+			desc = ARA_liberty_death_desc
+			removal_cost = -1
+			modifier = {
+		}
+		}
+		}
+
+		country = {
+			ARA_crossroads{
+				allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_manpower_bonus
+			desc = ARA_crossroads_desc
+			removal_cost = -1
+			modifier = {
+		}
+		}
+		}
+
+		country = {
+			ARA_arantiga_forever{
+				allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_manpower_bonus
+			desc = ARA_arantiga_forever_desc
+			removal_cost = -1
+			modifier = {
+		}
+		}
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	################### New Political Advsiors ###################
 	political_advisor = {
 		prelate_heraclius = {
