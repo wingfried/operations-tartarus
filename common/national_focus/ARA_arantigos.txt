@@ -1,0 +1,60 @@
+focus_tree = {
+	id = Arantiga_chaos
+	
+	country = {
+		factor = 0
+		modifier = {
+			has_country_flag = dorotheos_recovers_idol
+			add = 1000
+			
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 290 y = 2500 }
+	
+		shared_focus = ARA_the_new_airforce
+		shared_focus = ARA_self_strength
+		shared_focus = ARA_new_age_new_army
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}	
