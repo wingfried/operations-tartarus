@@ -331,40 +331,348 @@ country_event = { #going lower
 	}
 	}
 
-country_event = { #flying lower
+
+	country_event = { #Flying lower  #death of dorotheos
 	id = arantiga.015
 	title = arantiga.015.t
 	desc = arantiga.015.d
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-	name = arantiga.015.a
-	kill_country_leader = yes
-	set_politics = {
-			ruling_party = despotism
+		name = arantiga.015.a
+		kill_country_leader = yes
+		set_politics = {
+			ruling_party = neutrality
 			elections_allowed = no
 		}
-	create_country_leader = {
-			name = "Nicator"
-			picture = "nicator.tga"
+		create_country_leader = {
+			name = "Lysimachus"
+			picture = "Lysimachus.tga"
 			expire = "1965.1.1"
-			ideology = fascism
+			ideology = nazism
 		}
-	Hidden_effect = { 
-	ARA = {
-		        country_event = { 
+	
+		hidden_effect = {
+			set_country_flag = arantiga_flag_dorotheos_is_dead
+			country_event = { 
 			        id = arantiga_chaos.001
+					days = 5
+			    }
+		    }
+		}
+		}
+		
+	country_event = { #Wind weakens
+	id = arantiga.016
+	title = arantiga.016.t
+	desc = arantiga.016.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = arantiga.016.a
+		hidden_effect = {
+				ARA = {
+		        country_event = { 
+			        id = arantiga.017
 					days = 1
 			    }
-			}
-		    load_focus_tree = { 
-		        tree = Arantiga_chaos
-		        keep_completed = yes 
-		    }
+				}
+				}
 	}
+	option = {
+	name = arantiga.016.b
+			hidden_effect = {
+				ARA = {
+		        country_event = { 
+			        id = arantiga.018
+					days = 1
+			    }
+				}
+				}
+	}
+	}
+	
+	country_event = { #Into Darkness
+	id = arantiga.017
+	title = arantiga.017.t
+	desc = arantiga.017.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = arantiga.017.a
+	hidden_effect = {
+				ARA = {
+		        country_event = { 
+			        id = arantiga.019
+					days = 1
+			    }
+				}
+				}
 	}
 	}
 
+	country_event = { #Resting a bit  #death of dorotheos
+	id = arantiga.018
+	title = arantiga.018.t
+	desc = arantiga.018.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = arantiga.018.a
+		kill_country_leader = yes
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Lysimachus"
+			picture = "Lysimachus.tga"
+			expire = "1965.1.1"
+			ideology = nazism
+		}
+	
+		hidden_effect = {
+			set_country_flag = arantiga_flag_dorotheos_is_dead
+			country_event = { 
+			        id = arantiga_chaos.001
+					days = 5
+			    }
+		    }
+		}
+		}
+
+	country_event = { #Doorkeeper
+	id = arantiga.019
+	title = arantiga.019.t
+	desc = arantiga.019.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = arantiga.019.a
+	hidden_effect = {
+				ARA = {
+		        country_event = { 
+			        id = arantiga.020
+					days = 1
+			    }
+				}
+				}
+	}
+	option = {
+	name = arantiga.019.b
+	hidden_effect = {
+				ARA = {
+		        country_event = { 
+			        id = arantiga.021
+					days = 1
+			    }
+				}
+				}
+	}
+	option = {
+	name = arantiga.019.c
+	hidden_effect = {
+				ARA = {
+		        country_event = { 
+			        id = arantiga.020
+					days = 1
+			    }
+				}
+				}
+	}
+	}
+
+	country_event = { #heart of darkness  #death of dorotheos
+	id = arantiga.020
+	title = arantiga.020.t
+	desc = arantiga.020.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = arantiga.020.a
+		kill_country_leader = yes
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Lysimachus"
+			picture = "Lysimachus.tga"
+			expire = "1965.1.1"
+			ideology = nazism
+		}
+	
+		hidden_effect = {
+			set_country_flag = arantiga_flag_dorotheos_is_dead
+			country_event = { 
+			        id = arantiga_chaos.001
+					days = 5
+			    }
+		    }
+		}
+		}
+
+	country_event = { #Kings of old
+	id = arantiga.021
+	title = arantiga.021.t
+	desc = arantiga.021.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = arantiga.021.a
+	hidden_effect = {
+				ARA = {
+		        country_event = { 
+			        id = arantiga.022
+					days = 1
+			    }
+				}
+				}
+	}
+	option = {
+	name = arantiga.021.b
+	hidden_effect = {
+				ARA = {
+		        country_event = { 
+			        id = arantiga.023
+					days = 1
+			    }
+				}
+				}
+	}
+	}
+
+	country_event = { #Lord of Griffinstone  #death of dorotheos
+	id = arantiga.022
+	title = arantiga.022.t
+	desc = arantiga.022.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = arantiga.022.a
+		kill_country_leader = yes
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Lysimachus"
+			picture = "Lysimachus.tga"
+			expire = "1965.1.1"
+			ideology = nazism
+		}
+	
+		hidden_effect = {
+			set_country_flag = arantiga_flag_dorotheos_is_dead
+			country_event = { 
+			        id = arantiga_chaos.001
+					days = 5
+			    }
+		    }
+		}
+		}
+
+	country_event = { #Claiming Destiny
+	id = arantiga.023
+	title = arantiga.023.t
+	desc = arantiga.023.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = arantiga.023.a
+	hidden_effect = {
+				ARA = {
+		        country_event = { 
+			        id = arantiga.024
+					days = 1
+			    }
+				}
+				}
+	}
+	option = {
+	name = arantiga.023.b
+	hidden_effect = {
+				ARA = {
+		        country_event = { 
+			        id = arantiga.025
+					days = 1
+			    }
+				}
+				}
+	}
+	}
+
+country_event = { #No remorse
+	id = arantiga.024
+	title = arantiga.024.t
+	desc = arantiga.024.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = arantiga.024.a
+	add_ideas = ARA_idol_of_boreas
+	####INCOMPLETE WORLD NEWS EVENT „Idol of Boreas reclaimed” ####
+	hidden_effect = {
+	set_country_flag = dorotheos_recovers_idol
+	ARA = {
+		        country_event = { 
+			        id = arantiga.026
+					days = 7
+			    }
+	}
+	}
+	}
+	}
+	
+	country_event = { #Revelation  #death of dorotheos
+	id = arantiga.025
+	title = arantiga.025.t
+	desc = arantiga.025.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = arantiga.025.a
+		kill_country_leader = yes
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Lysimachus"
+			picture = "Lysimachus.tga"
+			expire = "1965.1.1"
+			ideology = nazism
+		}
+	
+		hidden_effect = {
+			set_country_flag = arantiga_flag_dorotheos_is_dead
+			country_event = { 
+			        id = arantiga_chaos.001
+					days = 5
+			    }
+		    }
+		}
+		}
+
+	country_event = { #Nicator's coup
+	id = arantiga.026
+	title = arantiga.026.t
+	desc = arantiga.026.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = arantiga.026.a
+	add_manpower = -5000
+	add_stability = -0.05
+	add_war_support = -0.05
+	remove_unit_leader = 6831594
+	create_country_leader = {
+			name = "Soter"
+			picture = "soter.tga"
+			expire = "1965.1.1"
+			ideology = despotism
+		}
+	}
 	
 
 
@@ -383,25 +691,7 @@ country_event = { #flying lower
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+################ CHAOS EVENTS #######################
 
 
 
@@ -419,6 +709,7 @@ country_event = { #flying lower
 	remove_ideas = ARA_absolute_reign
 	add_ideas = ARA_power_vacuum
 	add_ideas = ARA_absolute_chaos
+	
 	}
 	}
 
