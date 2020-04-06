@@ -1,14 +1,17 @@
 focus_tree = {
-	id = Arantiga_chaos
+	id = Arantiga_arantigos
 	
 	country = {
 		factor = 0
 		modifier = {
+			tag = ARA
 			has_country_flag = dorotheos_recovers_idol
 			add = 1000
 			
 		}
 	}
+	
+
 	default = no
 	continuous_focus_position = { x = 290 y = 2500 }
 	
@@ -16,8 +19,18 @@ focus_tree = {
 		shared_focus = ARA_self_strength
 		shared_focus = ARA_new_age_new_army
 		
-	
-
+	focus = { #between giants
+		id = ARA_between_giants
+		icon = GFX_dorotheos_focus
+		x = 29
+		y = 0
+		cost = 1.00
+		completion_reward = {
+		add_war_support = 0.05	
+		add_political_power = 50
+		create_faction = Arantigan_hegemony
+		}
+		}
 
 
 
