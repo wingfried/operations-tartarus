@@ -760,7 +760,8 @@ country = {
 			removal_cost = -1
 			picture = generic_refining_concern_1
 			modifier = {
-			##### INCOMPLETE ADD +25% refinery speed construction, +20% fuel gain from refineries ######
+			production_speed_synthetic_refinery_factor = 0.25
+			fuel_gain_factor_from_states = 0.2
 			}
 			}
 			}
