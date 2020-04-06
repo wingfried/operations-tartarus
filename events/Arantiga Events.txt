@@ -122,7 +122,7 @@ add_namespace = arantiga_chaos
 	name = arantiga.005.a
 		create_corps_commander = {
 					name = "Craterus"
-					portrait_path = 
+					portrait_path = Craterus.tga
 					traits = { career_officer infantry_officer harsh_leader }
 					skill = 3
 					attack_skill = 2
@@ -673,6 +673,7 @@ country_event = { #No remorse
 			ideology = despotism
 		}
 	}
+	}
 	
 
 
@@ -696,6 +697,7 @@ country_event = { #No remorse
 
 
 
+	
 
 	country_event = { #Total Chaos
 	id = arantiga_chaos.001
@@ -709,7 +711,6 @@ country_event = { #No remorse
 	remove_ideas = ARA_absolute_reign
 	add_ideas = ARA_power_vacuum
 	add_ideas = ARA_absolute_chaos
-	
 	}
 	}
 
@@ -718,21 +719,20 @@ country_event = { #No remorse
 
 
 
-
-
-
-	
 	country_event = { #end of beta
-	id = arantiga.000
-	title = arantiga.000.t
-	desc = arantiga.000.d
+	id = arantiga.999
+	title = arantiga.999.t
+	desc = arantiga.999.d
 	is_triggered_only = yes
 	fire_only_once = yes
 	picture = GFX_event_griffon_soldier
 	option = {
-	name = 	arantiga.009.a
+	name = 	arantiga.999.a
 	}
 	}
+
+
+
 	
  
 	
