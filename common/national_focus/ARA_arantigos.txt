@@ -5,9 +5,8 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			tag = ARA
-			has_country_flag = dorotheos_recovers_idol
 			add = 1000
-			
+			has_country_flag = dorotheos_recovers_idol
 		}
 	}
 	
