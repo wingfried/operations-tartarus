@@ -1,0 +1,8 @@
+ARA_arantigans_abroad = {
+	icon = griffon
+
+	allowed = {
+		tag = ARA
+		has_completed_focus = ARA_reorganise_high_command
+	}
+}
