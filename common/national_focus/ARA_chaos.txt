@@ -1,11 +1,11 @@
 focus_tree = {
-	id = Arantiga_coup
+	id = Arantiga_chaos
 	
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
-			tag = ARA
+			add = 1001
+			has_country_flag = arantiga_flag_dorotheos_is_dead
 		}
 	}
 	default = no
