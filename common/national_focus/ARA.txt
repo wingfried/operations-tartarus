@@ -257,7 +257,7 @@
 		### Army Focuses ###
 	shared_focus = {
 		id = ARA_new_age_new_army
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_arantigan_generals
 		x = 1
 		y = 0
 		cost = 5.00
@@ -1105,7 +1105,7 @@
 		
 	shared_focus = {
 		id = ARA_industrial_warmachine
-		icon = GFX_IRE_medium_industry
+		icon = GFX_arantigan_medium_industry
 		x = 3
 		y = 1
 		relative_position_id = ARA_self_strength
@@ -1138,7 +1138,7 @@
 	
 	shared_focus = {
 		id = ARA_heavy_industry
-		icon = GFX_IRE_heavy_industry
+		icon = GFX_arantigan_heavy_industry
 		x = -3
 		y = 1
 		relative_position_id = ARA_self_strength
@@ -1376,6 +1376,7 @@
 		prerequisite = { focus = ARA_industrial_front }
 		completion_reward = {
 		add_ideas = { ARA_work_camp }
+		set_country_flag = work_camps_flag
 		}
 		}
 	
