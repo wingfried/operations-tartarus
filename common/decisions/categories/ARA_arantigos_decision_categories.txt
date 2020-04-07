@@ -1,5 +1,5 @@
 ARA_arantigans_abroad = {
-	icon = griffon
+	icon = GFX_decision_griffon
 
 	allowed = {
 		tag = ARA
