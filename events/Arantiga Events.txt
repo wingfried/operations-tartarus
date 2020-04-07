@@ -667,8 +667,8 @@ country_event = { #No remorse
 	add_war_support = -0.05
 	remove_unit_leader = 6831594
 	create_country_leader = {
-			name = "Soter"
-			picture = "soter.tga"
+			name = "Nicator"
+			picture = "Nicator.tga"
 			expire = "1965.1.1"
 			ideology = despotism
 		}
