@@ -44,4 +44,20 @@ spriteTypes = {
 		name = "GFX_goal_sturmtruppen"
 		texturefile = "gfx/interface/goals/goal_sturmtruppen.dds"
 	}
+	SpriteType = { 
+		name = "GFX_dorotheos_focus"
+		texturefile = "gfx/interface/goals/dorotheos_focus.dds"
+	}
+	SpriteType = { 
+		name = "GFX_arantigan_heavy_industry"
+		texturefile = "gfx/interface/goals/IRE_heavy_industry_arantiga.dds"
+	}
+	SpriteType = { 
+		name = "GFX_arantigan_medium_industry"
+		texturefile = "gfx/interface/goals/IRE_medium_industry_arantiga.dds"
+	}
+	SpriteType = { 
+		name = "GFX_arantigan_generals"
+		texturefile = "gfx/interface/goals/GFX_arantigan_generals.dds"
+	}
 }
