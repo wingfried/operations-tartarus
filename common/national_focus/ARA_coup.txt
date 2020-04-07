@@ -6,7 +6,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 1
+			add = 100
 			tag = ARA
 		}
 	}
@@ -508,7 +508,7 @@ focus_tree = {
 		prerequisite = { focus = ARA_legacy_of_grover }
 		mutually_exclusive = { focus = ARA_bungie_destiny }
 		completion_reward = {
-		country_event = arantiga.000
+		country_event = arantiga.013
 		}
 		}
 	
@@ -524,7 +524,7 @@ focus_tree = {
 		completion_reward = {
 		add_political_power = 100
 		add_stability = 0.1
-		country_event = arantiga.000
+		country_event = arantiga.999
 		}
 		}
 		###### INCOMPLETE Dorotheos gains trait Indomitable will (+5% Division Recovery rate)#####
