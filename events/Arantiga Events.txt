@@ -121,18 +121,23 @@ country_event = { #prodigal sons
 	option = {
 		name = arantiga.005.a
 
-		create_corps_commander = {
-			name = "Craterus"
-			portrait_path = Craterus.tga
-			traits = { career_officer infantry_officer harsh_leader }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 3
-		}
+		custom_effect_tooltip = ARA_sons_of_arantigos_tt
 
-		load_oob = ARA_sons_of_arantigos_OOB
+		hidden_effect = {
+
+			create_corps_commander = {
+				name = "Craterus"
+				portrait_path = Craterus.tga
+				traits = { career_officer infantry_officer harsh_leader }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+
+			load_oob = ARA_sons_of_arantigos_OOB
+		}
 	}
 }
 	
