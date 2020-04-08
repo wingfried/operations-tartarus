@@ -112,26 +112,29 @@ add_namespace = arantiga_chaos
 		}
 		}
 		
-	country_event = { #prodigal sons
+country_event = { #prodigal sons
 	id = arantiga.005
         title = arantiga.005.t
         desc = arantiga.005.d
 	picture = GFX_event_medieval_city_2
 	is_triggered_only = yes 
 	option = {
-	name = arantiga.005.a
+		name = arantiga.005.a
+
 		create_corps_commander = {
-					name = "Craterus"
-					portrait_path = Craterus.tga
-					traits = { career_officer infantry_officer harsh_leader }
-					skill = 3
-					attack_skill = 2
-					defense_skill = 2
-					planning_skill = 2
-					logistics_skill = 3
-				}
-				}
-				}
+			name = "Craterus"
+			portrait_path = Craterus.tga
+			traits = { career_officer infantry_officer harsh_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+
+		load_oob = ARA_sons_of_arantigos_OOB
+	}
+}
 	
 		
 	
