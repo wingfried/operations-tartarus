@@ -1,5 +1,6 @@
 ARA_arantigans_abroad = {
 	icon = GFX_decision_griffon
+	picture = GFX_decision_cat_form_griffon_empire
 
 	visible = {
 		tag = ARA
