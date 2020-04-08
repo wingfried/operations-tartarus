@@ -1,7 +1,7 @@
 ARA_arantigans_abroad = {
 	icon = GFX_decision_griffon
 
-	allowed = {
+	visible = {
 		tag = ARA
 		has_completed_focus = ARA_reorganise_high_command
 	}
