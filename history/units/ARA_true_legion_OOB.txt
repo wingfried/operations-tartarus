@@ -20,7 +20,7 @@ units = {
 		name = "The True Legion"
 		location = 7266
 		division_template = "True Legion"
-		start_experience_factor = 1.3
+		start_experience_factor = 0.80
 		start_equipment_factor = 1.0
 	}
 }
