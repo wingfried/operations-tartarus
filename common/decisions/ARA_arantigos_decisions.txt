@@ -33,7 +33,7 @@ ARA_arantigans_abroad = {
 
 	ARA_francistrian_volunteers = {
 		icon = rifles
-		cost = 50
+		cost = 100
 		fire_only_once = yes
 		days_remove = 10
 		ai_will_do = {
@@ -43,6 +43,9 @@ ARA_arantigans_abroad = {
 			custom_effect_tooltip = ARA_francistrian_tt
 			hidden_effect = {
 				load_oob = ARA_francistrian_OOB
+				481 = { add_manpower = -9000 }
+				487 = { add_manpower = -9000 }
+				410 = { add_manpower = -9000 }
 			}
 		}
 	}
