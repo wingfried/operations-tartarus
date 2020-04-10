@@ -1,0 +1,145 @@
+﻿add_namespace = srs_sickontr
+add_namespace = srs_borderwar
+
+## attacker ## victory! ##
+country_event = {
+	id = srs_borderwar.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_borderwar.3"}
+	title = srs_borderwar.3.t
+	desc = srs_borderwar.3.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+
+	option = {
+		name = srs_borderwar.3.a
+		add_political_power = 100
+	}
+}
+
+## attacker ## defeat! ##
+country_event = {
+	id = srs_borderwar.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_borderwar.4"}
+	title = srs_borderwar.4.t
+	desc = srs_borderwar.4.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+
+	option = {
+		name = srs_borderwar.4.a
+		add_stability = -0.05
+		add_political_power = -100
+	}
+}
+
+## defender-attacker ## timeout! ##
+country_event = {
+	id = srs_borderwar.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_borderwar.5"}
+	title = srs_borderwar.5.t
+	desc = srs_borderwar.5.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+
+	option = {
+		name = srs_borderwar.5.a
+		random_list = {
+			50 = {
+				add_political_power = 10
+			}
+			50 = {
+				add_political_power = -10
+			}
+		}
+	}
+}
+
+## defender ## victory! ##
+country_event = {
+	id = srs_borderwar.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_borderwar.6"}
+	title = srs_borderwar.6.t
+	desc = srs_borderwar.6.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+
+	option = {
+		name = srs_borderwar.6.a
+		add_political_power = 50
+	}
+}
+
+## defender ## defeat! ##
+country_event = {
+	id = srs_borderwar.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_borderwar.7"}
+	title = srs_borderwar.7.t
+	desc = srs_borderwar.7.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+
+	option = {
+		name = srs_borderwar.7.a
+		add_stability = -0.05
+		add_political_power = -50
+	}
+}
+
+## NTR peaceful resolution ##
+country_event = {
+	id = srs_sickontr.1
+	title = srs_sickontr.1.t
+	desc = srs_sickontr.1.d
+	picture = GFX_event_autumn
+	
+	is_triggered_only = yes
+	
+	option = { # Lest we Forget.
+		name = srs_sickontr.1.a
+		add_stability = 0.05
+		add_political_power = -50
+		677 = {
+			if = {
+				limit = { is_owned_by = NTR }
+				add_core_of = SRS
+			}
+		}
+		562 = {
+			if = {
+				limit = { is_owned_by = NTR }
+				add_core_of = SRS
+			}
+		}
+		567 = {
+			if = {
+				limit = { is_owned_by = NTR }
+				add_core_of = SRS
+			}
+		}
+		563 = {
+			if = {
+				limit = { is_owned_by = NTR }
+				add_core_of = SRS
+			}
+		}
+		602 = {
+			if = {
+				limit = { is_owned_by = NTR }
+				add_core_of = SRS
+			}
+		}
+		573 = {
+			if = {
+				limit = { is_owned_by = NTR }
+				add_core_of = SRS
+			}
+		}
+		574 = {
+			if = {
+				limit = { is_owned_by = NTR }
+				add_core_of = SRS
+			}
+		}
+		annex_country = { target = NTR transfer_troops = no }
+		}
+	}
