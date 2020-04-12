@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
 ### Ideas ###
 ARA_legacy:0 "The Legacy of Arantigos"
@@ -133,14 +133,6 @@ ARA_new_closer_air:0 "Guard Our Troops"
 ARA_new_closer_air_desc:0 "Coordination between air and land has clear tactical and strategic benefits; creating aircraft designs specifically to aid the boots on the ground will make them grateful for the wings above."
 ARA_new_heavy_bombers:0 "Strategic Destruction"
 ARA_new_heavy_bombers_desc:0 "Bombing key enemy positions; supply depots, railways, you name it, will require specialized planes. Designing some should be a priority."
-ARA_golden_age:0 "New Golden Age"
-ARA_golden_age_desc:0 "Like a phoenix from the ashes, Arantiga has risen. Hopefully we shall never again fall again. Now, we can enjoy an age of progress and prosperity."
-ARA_The_Crossroads:0 "Crossroad of Griffonia"
-ARA_The_Crossroads_desc:0 "Arantiga controls a strategic central part of Griffonia. By promoting trade and securing roads through our nation we can make ourselves a key part of international trade."
-ARA_never_again:0 "Never Again!"
-ARA_never_again_desc:0 "Freedom must be protected at all costs – no matter if another Dorotheos would be from Arantiga or foreign invader. Griffons of Arantiga will defend their nation – and are willing to die for newly gained liberty."
-ARA_arantiga_forever:0 "Arantiga Forever"
-ARA_arantiga_forever_desc:0 "Revolutionaries, emperors and madgriffs… Griffonia has plenty of them, but we shall submit to none. We are free and we shall remain such. Arantiga will never again be under foreign rule!"
 
 #ARA_issue_of_economic_dependance:0 "Dealing with the Economy"
 #ARA_issue_of_economic_dependance_desc:0 "Arantiga's economy is in a pitiful state, and we must see to the matter of resolving this issue if we wish to become a regional power. The first task on the list is deciding our stance towards Wingbardy."
@@ -179,8 +171,8 @@ ARA_arantiga_forever_desc:0 "Revolutionaries, emperors and madgriffs… Griffoni
 #ARA_science_base:0 "Modernisation Efforts"
 #ARA_science_base_desc:0 "With a developed industrial base, we can now devote our efforts toward scientific matters. The bright future in science will be ours."
 
-ARA_new_age_new_army:0 "New Age, New Army"
-ARA_new_age_new_army_desc:0 "We are entering a new era of warfare. Gone are the days of the spear and shield. Here and now is the age of guns and tanks. We must choose where we stand, and ensure we do not fall behind."
+ARA_new_age_new_army:0 "Arantiga Must Breathe With Both Lungs"
+ARA_new_age_new_army_desc:0 "We are entering a new era of warfare. Gone are the days of the spear and shield. Here and now is the age of guns and tanks. In order to face the threats of the new millennium, both civilians and military personnel must be in perfect cooperation."
 ARA_new_academy:0 "Examine the Officers"
 ARA_new_academy_desc:0 "Once, we were the greatest nation on Griffonia. The ancient military doctrines need to be adapted to modernity. Our officers need to be reinstructed with a mix of classic and modern works about warfare. After that, it is time to develop new doctrines, and adapt to the ever-changing ways of war."
 ARA_mobile_warfare_doctrine:0 "Unimagined Speed"
@@ -215,7 +207,7 @@ ARA_new_artillery:0 "Cannons of the New Age"
 ARA_new_artillery_desc:0 " With these new massive guns, no enemy will be able to hide from our might. No pillbox, no trench, no fortification will be able to stand up to the salvos of our guns. We will force them to face us on even ground!"
 ARA_new_equipment:0 "Sturdy Shovels"
 ARA_new_equipment_desc:0 "An infantryman cannot defend himself if he has no hole to hide in. Improving our support equipment should be a priority. An Arantigan infantryman should be able to march for days while fully packed. Surely they can carry an extra shovel or first aid kit."
-ARA_spec_ops_program:0 "Forze Speciali"
+ARA_spec_ops_program:0 "Cassander's "Forze Speciali" "
 ARA_spec_ops_program_desc:0 "Unconventional warfare is the deadliest. Using new tactics, we can surprise our foes with special operations. We merely need to plan the way we will fight."
 ARA_nation_under_arms:0 "An Armed Society"
 ARA_nation_under_arms_desc:0 "Tensions are rising rapidly all around us. It is clear that we cannot afford to stand back and watch the world burn. We must arm ourselves. Once, the entire nation was mobilized for conquest and if necessary, we can militarise again."
@@ -427,11 +419,58 @@ ARA_es_oblivion_desc:0 "The journey begins . . .  "
 ARA_bungie_destiny:0 "My Own Destiny"
 ARA_bungie_destiny_desc:0 "Grover needed the Idol to conquer Griffonia . . .  But Arantigos did it without any foul magic and artifacts - with just his brilliant mind he beated armies many times stronger than his own! I will be the master of my own fate - i will become worthy heir of Arantigos without any help!"
 
-
-
-
-
-
+ARA_chaos:0 "CHAOS"
+ARA_chaos_desc:0 "After “Arantigos” demise during his foolish attempt to recover Idol, general Nicator declares himself a regent. Chaos follows."
+ARA_power_struggle:0 "Power Struggle"
+ARA_power_struggle_desc:0 "Just like after first Arantigos death, kingdom of Arantiga fell into disarray and is teared apart by internal fights. Maybe after all Dorotheos indeed had something in common with an ancient conqueror? If we wish to save Arantiga, we need to move fast and defeat others who sensed opportunity."
+ARA_purge_zealots:0 "Purge the Zealots" 
+ARA_purge_zealots_desc:0 "There are still many die-hard fanatics who support cause of Dorotheos and are rather willing to die than let their “dream” die. If we wish to bring back old Arantiga we must get rid of these madgriffs."
+ARA_support_army:0 "Support from the Army"
+ARA_support_army_desc:0 "It was the army that let Dorotheos claim the throne, and thanks to his loyal soldiers support, Nicator managed to install himself as regent of Arantiga. However many of officers either went rogue or remained neutral. We need to sway them to our side if we wish for new regime to survive...  Luckily we are in  control of kingdom’s treasury..."
+ARA_secure_cities:0 "Secure the Cities"
+ARA_secure_cities_desc:0 "Although we control capital and repelled Lysimachus' foolish attempt to attack Sparleto, most of country is still a land of anarchy and chaos. We must march forward and reclaim lands of Arantiga if we wish be something more than warlords and bandits infested hellhole."
+ARA_the_legacy:0 "Legacy of Arantigos"
+ARA_the_legacy_desc:0 "Although Dorotheos reign was short, he managed to completely change Arantiga. Now, when Nicator's government is more-less stable we should revert many of deceased king decisions to ensure that Arantiga can properly recover.
+ARA_free_prisioners:0 "Free the prisioners"
+ARA_free_prisioners_desc:0 "Everyone who disagreed with Dorotheos decisions or were simply unfortunate ended up in prisons and work camps. Our first step should be to release these poor griffons."
+ARA_restore_the_cult:0 "Restore the Cult of Boreas"
+ARA_restore_the_cult_desc:0 "The Cult of Arantigos-Boreas was twisted and used by Dorotheos as political tool. It is time to get back to the old version of the faith and purify it from his vile influence."
+ARA_demobilize:0"Demobilize Economy"
+ARA_demobilize_desc:0 "The griffons of Arantiga were either dying on battlefields or produced supply for constantly growing army. Is it what we wish Arantiga to become? Nation of barbaric despoilers and slaves? We must free proud griffons of our nation from these shackles."
+ARA_transition:0 "Transitional Government"
+ARA_transition_desc:0 "Dorotheos concentrated all the power in his claws. When he dies, nation almost collapsed. We need to rebuild government, and do it fast! Surely, enemies of Arantiga will not wait till we properly recover."
+ARA_return_exiles:0 "Return of the Exiles"
+ARA_return_exiles_desc:0 "When he took power, Dorotheos killed or exiled many democrats, supporters of the old baroness and Wingbardians. It is time for these griffons to return to their homes."
+ARA_new_direction:0 "The New Direction"
+ARA_new_direction_desc:0 "Although it may take years before we fully recover from Dorotheos’ madness, country was stabilized, and it is time to move forward, towards new, bright future"
+ARA_return_of_the_king:0 "The King of Arantiga"
+ARA_return_of_the_king_desc:0 "Since time immemorial Arantigans were ruled by monarchs. Undermining this tradition would surely bring no good and create unnecessary chaos… Therefore regent will be crowned new king of Arantiga – long live Nicator I Whitebeak!"
+ARA_i_love_democracy:0 "Create the Arantigan Republic"
+ARA_i_love_democracy_desc:0 "The reign of Dorotheos clearly showed the dangers that are born from a monarch's reign. Therefore the kingdom of Arantiga shall be abolished. Elections will take place, and the regent will step down once a new president is elected."
+ARA_tradition:0 "Stick to Tradition"
+ARA_tradition_desc:0 "Arantiga has a long and proud history – we can’t and we should not forget about it. Even if Dorotheos took worst of it, we can still take the best parts of our tradition and restore Arantiga to what it should really be."
+ARA_local_democracy:0 "Local Democracies"
+ARA_local_democracy_desc:0 "With recent conquests many different nations now live within our realm. Instead of proclaiming arantigan supremacy it will be better to let them self-govern and establish friendly relations with other ethnic groups."
+ARA_golden_age:0 "New Golden Age"
+ARA_golden_age_desc:0 "Like a phoenix from the ashes, Arantiga has risen. Hopefully we shall never again fall again. Now, we can enjoy an age of progress and prosperity."
+ARA_The_Crossroads:0 "Crossroad of Griffonia"
+ARA_The_Crossroads_desc:0 "Arantiga controls a strategic central part of Griffonia. By promoting trade and securing roads through our nation we can make ourselves a key part of international trade."
+ARA_never_again:0 "Never Again!"
+ARA_never_again_desc:0 "Freedom must be protected at all costs – no matter if another Dorotheos would be from Arantiga or foreign invader. Griffons of Arantiga will defend their nation – and are willing to die for newly gained liberty."
+ARA_arantiga_forever:0 "Arantiga Forever"
+ARA_arantiga_forever_desc:0 "Revolutionaries, emperors and madgriffs… Griffonia has plenty of them, but we shall submit to none. We are free and we shall remain such. Arantiga will never again be under foreign rule!"
+ARA_free_press:0 "A Free Press"
+ARA_free_press_desc:0 "The Free media is crucial for our young democracy to survive. They will keep our government in check and ensure that everybirds voice can be heard."
+ARA_old_allies:0 "New Old Allies"
+ARA_old_allies_desc:0 "The world is changing. New empires are rising and it would be foolish to believe they will leave us alone. If we wish to survive we need to align with one of great powers of Griffonia."
+ARA_aquileian_brothers:0 "Aquileian Brothers" 
+ARA_aquileian_brothers_desc:0 "Griffons of Aquileia have deposed their tyrannical king and establish new republic. Although we never really had closer bonds with Aquileians, we both share common values…"
+ARA_the_emperor:0 "The Emperor in Griffinheim"
+ARA_the_emperor_desc:0 "In quite the unexpected turn of events,the Griffonian Empire has miraculously recovered and is attempting to reconquer Griffonia. Opposing the northern juggernaut would surely be a suicide – therefore king Nicator will offer to pledge fealty to emperor Grover VI in hopes of keeping at least parts of Arantigan independence. Such is harsh reality. . ."
+ARA_karthian_pact:0 "Return to the Karthinian Pact"
+ARA_karthian_pact_desc:0 "Wingbardy was long perceived as reason for our utter demise and Dorotheos made its ruination one of key elements of his politics. However now maybe we should reconsider our relations with WIngbardy and join them not as puppets, but as equals."
+ARA_pan-griffonian:0 "Pan-Griffonian Cause"
+ARA_pan-griffonian_desc:0 "After a successful counter-revolution, Kemerskais republicans fled north towards Cloudbury. Thirty years have passed, but they have not forgotten about their dream of republican Griffonia. Although northern government strives toward pan-Griffonian state, they are overshadowed by power of the Empire. An ally able to strike Herzland from south would surely be useful and perhaps we can keep our autonomy in new republican world . . ."
 
 ### Events ###
 arantiga.1.t:0 "The Issue of Arantigan Economic Dependence"
@@ -501,7 +540,9 @@ arantiga.007.t:0 "Birth of a New Kingdom"
 arantiga.007.d:0 "To everyone surprise after his sudden loss of consciousness, Dorotheos when he woke up seemed . . .  reinvigorated. Gone were days, when he without any reasons started to scream on servants or seemed perpetually distracted. Most of his subordinates was relieved – general they followed and who conquered central Griffonia was back. Although doctors suggested rest, Dorotheos decided not to delay planned coronation – to cement his recent conquests Arantiga would be elevated to status of kingdom!\nCeremony took place in recently rebuild Griffinstone – however all traces of former Guto dynasty were removed from palace and replaced with symbols of house Featherin. Crowds of arantigan soldiers, and citizens gathered to participate in ceremony that meant return of old glory. When Dorotheos was crowned by prelate Heraclius, he decided to deliver a speech to gathered griffons.\n“Brave soldiers of Arantiga and hard working citizens. It was a long road, but here we are . . .  Arantiga name is known across Griffonia and others fear and respect us. No longer when griffons hear about Arantiga they will look at each other with confusion. We will restore glory of great arantigan Empire . . .  We Arantigos are back, and we will once again lead Arantiga to the future! Glory to Arantiga!”\n“GLORY TO ARANTIGA!” Those who already knew what their baron was planning started screaming. Many of gathered looked . . .  confused after hearing his words, but nevertheless they followed . . .  "
 arantiga.007.a:0 "Long live Arantigos Reborn!"
 arantiga.008.t:0 "The Legacy of Grover"
-arantiga.008.d:0 "Our ruler now faces a difficult path, should he try to emulate the great emperors of old, or try to forge his own path?"
+arantiga.008.d:0 "Dorotheos was sitting on the throne of the late Guto dynasty while taking the moment to rest. A few well-surviving relics of the past, that he ordered to not be removed when refurbishing the old palace, laid about the room waiting to be given the attention they deserved. Much like the depraved city itself until he finally stepped in. He turned his muse to a mosaic that depicted Grover receiving a blessing from Boreas himself. It lacked more than few stones but it still was quite magnificent.\nFor a brief moment he wondered about Grover's thoughts, when he sat here in this palace, as he was planning his seemingly impossible conquests. Would he have been able to do so without the power of the Idol? Cracking sounds of an opening door returned him to reality. A group of his soldiers were half leading, half dragging a brown-white, very loudly cursing griffoness. As they approached near, she was tossed before the throne.\n\n“We think we have told you to do this in… a civilized manner.” Arantigos told the commander of these soldiers.
+“Lord Arantigos, she told us she had better business to do than answer some questions. She declared you as a ‘Warlord with an ego size of a Grifonstone tree’, and resisted arrest.”\n“I was wrong. His ego is the size of the godsdamned Rumare Lake!” snapped the griffoness. She had a good view to witness a rather kitschy painting depicting Arantigos I handing a sword to Dorotheos. “This place was trashy beyond imagination, but now it looks like Aquileian circus!” \n“We must admit, she has guts,” said Arantigos. “But you are not here to advise me on interior decoration. The Idol of Boreas. We were being told you, and some Equestrian ponies, were the last ones to try and reclaim it. Where is it?”\n“The Idol? It fell deeper into the Abysmal Abyss which happens to be a death trap in case you forgot. Besides, it was just a useless piece of gold... at least so I heard. Going down there is suicide, and the idol is unreclaimable. No one can get down there safely with wind gusts, as fast as a train, going through. We were only lucky to have made it out at all.”\n“You will show us that place…” Arantigos smiled faintly, “and then we will see if it really is ‘unreclaimable’ as you say.”\n“Only a madgriff would try to go down there! You cannot be THAT crazy are you?!”\n“They told us so when we marched on Griffonstone…”"
+Button: “...and yet we are here.”"
 arantiga.008.a:0 "To glory!"
 arantiga.999.t:0 " End of the road "  
 arantiga.999.d:0 " This is the end of the beta content for Arantiga, from this point onward you can play it however you like. Thanks for playing!"
@@ -569,6 +610,21 @@ arantiga.025.a:0 "“Take the body and never mention him again.”"
 
 
 
+arantiga_chaos.001.t:0 "Total Chaos"
+arantiga_chaos.001.d:0 "Few days after Dorotheos descended into great rift, trying to reclaim Idol of Boreas, most lost any hope in his return. Initially no one really knew what to do now - with death of their king, basically there was no one who controlled country. \nThere was only one griffon who was in a way prepared for what happened - even if unintentionally. General Nicator have been for some time gathering support, planning to overthrow Dorotheos. He reluctantly followed him after “Ides of March”, but as time passed he became sure that Dorotheos is madgriff who will doom Arantiga. Although he did not expected this turn of events, general decided to act and lead forces loyal to him towards capital. After he captured city (garrison did not attempted to resist), he addressed nation by radio proclaiming himself regent of Arantiga…\n...And then everything went downhill. With few exceptions, only Nicator loyalists supported him, while rest of generals either started trying to carve their own domains and fought among themselves or remained neutral… "
+arantiga_chaos.001.a:0 "“I do it for Arantiga.”"
+arantiga_chaos.002.t:0 "Battle of Sparleto"
+arantiga_chaos.002.d:0 "At this point Nicator controlled only region of capital and few surrounding towns and villages with small pockets of his supporters scattered across the whole country. When many officers, in a twisted recreation of events that occured after Arantigos the Great death, started fighting among themselves, general Lysimachus managed to gather a substantial part of the Arantigan army and marched straight to capital.\nNicator knew, that he has nowhere to retreat and victory or defeat will define future of Arantiga. He ordered to fortify city and conscripted all griffons he could - those for which there was not enough guns, were ordered to dig trenches and build barricades. When Lysimachus' forces arrived, he ordered to directly attack city, hoping that one decisive push would make the regents forcers to lost faith in victory and abandon their leader. However after the initial push, Lysimachus' forces were trapped in narrow streets and bloody urban combat followed. After two days of fighting, the battle ended up with stalemate. . . That is until due to blind luck, a stranded artillery shell directly hit the forward command position, where Lysimachus was currently visiting to personally inspect his troops…\nWith the death of their commander, Lysimachus' forces surrendered. Nicator had beaten the largest clique of the rebellious armies and in following days many officers proclaimed loyalty to the new regent"
+arantiga_chaos.002.a:0 "We have not won yet!"
+arantiga_chaos.003.t:0 "The New King"
+arantiga_chaos.003.d:0 "Today in Sparleto, Nicator Whitebeak was crowned new king of Arantiga. His recent victories over warlords which tried to plunge country into chaos and quick restoration of order made him quite a popular figure among citizens and few complained about his decision. After the coronation, when Nicator left the temple of Boreas to deliver a speech to the crowds of citizens he proclaimed that peace and prosperity shall return to Arantiga and no longer its citizens shall die for a madgriffs ambition. Arantiga shall remember about her past but will also move towards better future - not one of war and bloodshed. "
+arantiga_chaos.003.a:0 "Long live the king!"
+arantiga_chaos.004.t:0 "Elections"
+arantiga_chaos.004.d:0 "In a rather unexpected move, regent Nicator announced that arantigan monarchy shall be abolished and instead free elections shall be organised. He declared that monarchy has clearly failed - as it can be seen by both the arantigan example and various tyrants ruling across Griffonia, its the commongriffs that should lead a nation towards the future. Not long after that, elections took place and soon it was obvious that he vote was mainly divided between two of the candidates:\n\n Antioco Moro, who has recently returned to the country after being forced to leave when Dorotheos Featherin nationalised wingbardian owned industry. And. . . to many griffons surprise, general Soter, who gathered support of left-leaning parties creating center-left coalition.\n\n The votes have been counted and the public wishes to know: who won the elections?"
+arantiga_chaos.004.a:0 "Congratulations to Antioco Moro and his Partito Riformatore!"
+arantiga_chaos.004.b:0 "Soter's coalition pulls ahead! To the health of our General-President!" 
+
+
 #### news events ####
 arantiga_news.1.t:0 "Rise of Arantigos"
 arantiga_news.1.d:0 "In last few years land of Central Griffonia became place of brutal war in effect of which rose new, powerful dominion – Arantiga. After military coup, its leader, Dorotheos Featherin conquered many neighboring nation and today proclaimed himself a king . . .  and Arantigos Reborn – reincarnation of his famed ancestor and great conqueror from ancient age. Most of neighboring governments reacted with either disbelief or issued protests, considering Dorotheos act as heretical attempt of usurping godhood or as proof that young conqueror had finally lost his mind . . . "
@@ -603,7 +659,10 @@ alexander_but_woke_desc:0 "Dorotheos Featherin has heard Boreas' instructions an
 ###parties###
 ARA_moderates:0 "Moderates"
 ARA_moderates_long:0 "Moderates"
-
+ARA_nicator_royal:0 "Consiglio Reale di Arantiga"
+ARA_nicator_royal_long:0 "Consiglio Reale di Arantiga"
+ARA_soter_coalition:0 "Soter's Coalition"
+ARA_soter_coalition_long:0 "Soter's Coalition of left-leaning parties"
 
 ### Cosmetic Tags ###
 ARA_sparleos_neutrality:0 "Kingdom of Sparléos"
@@ -651,3 +710,8 @@ ARA_The_coup_tooltip:0 "Dorotheos Featherin must lead our country to greatness!"
 rise_of_arantiga:0 "Arantiga is rising!"
 
 ### Cosmetic ###
+tungsten_desc:0 "Literally just a piece of tungsten. It was promoted in 1005 by Dorotheos as a way to poke fun at Nicator and as such, it has its own desk, uniform, salary, and right to be present in the general staff meetings."
+soter_desc:0 "Soter Litori, the owl of Arantiga, was born in 980 in the forests south of Ponteles. One of the brightest mind of the Arantigan general staff, his upbringing in the boondocks gave him the skills to traverse the thick forests of Arantiga with ease, and teach others how to do it. This, along with his charisma and great loyalty to the state of Arantiga made him (at the time of his promotion at 26 years old) the youngest General in the Arantigan Army."
+cassander_desc:0 " "Commando Cassander" as he's often called, is the Griffon in charge of the Divisione di Forze Speciali, also called "that place where money goes in and invisible griffons come out" by Dorotheos"
+lysimachus_desc:0 " Lysimachus is the newest addition to the Arantigan General Staff. A fanatic admirer of Dorotheos, he probably knows more about the Field Marshal than his own mother ever did. Able to inspire soldiers to almost the same level of zealotry as him, he is in charge of rectruiting the new generation of arantigans into the army"
+nicator_desc:0 "Nicator Whitebeak, second both in command structure and ego size of the arantigan army, after Dorotheos himself of course. Promoted by the Duchess Margareth, Nicator is famous for his strategy of shelling the enemy to tartarus, and being damn good at doing it too."
