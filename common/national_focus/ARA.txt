@@ -1372,6 +1372,9 @@
 		x = 0
 		y = 1
 		relative_position_id = ARA_industrial_front
+		bypass = {
+			has_completed_focus = ARA_free_prisioners
+		}
 		cost = 8.00
 		prerequisite = { focus = ARA_industrial_front }
 		completion_reward = {
