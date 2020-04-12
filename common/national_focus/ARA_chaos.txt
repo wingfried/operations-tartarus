@@ -5,7 +5,8 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 1001
-			has_country_flag = arantiga_flag_dorotheos_is_dead
+			tag = ARA
+			#has_country_flag = arantiga_flag_dorotheos_is_dead
 		}
 	}
 	default = no
@@ -40,8 +41,8 @@ focus_tree = {
 		relative_position_id = ARA_chaos
 		prerequisite = { focus = ARA_chaos }
 		completion_reward = {
-		remove_unit_leader = 29534 
-		add_manpower = -30000
+		country_event = arantiga_chaos.002
+		
 		}
 		}
 	
@@ -58,6 +59,28 @@ focus_tree = {
 		add_stability = -0.4
 		add_popularity = { ideology = fascism popularity = -0.4 }
 		add_popularity = { ideology = neutrality popularity = 0.3 }
+		swap_ideas = {
+				remove_idea = ARA_absolute_chaos
+				add_idea = ARA_absolute_chaos1
+			}
+		}
+		}
+		
+		focus = { #Support of the army
+		id = ARA_support_army
+		icon = GFX_goal_forced_res
+		x = 2
+		y = 1
+		cost = 5.00
+		relative_position_id = ARA_power_struggle
+		prerequisite = { focus = ARA_purge_zealots }
+		prerequisite = { focus = ARA_power_struggle }
+		completion_reward = {
+		add_political_power = -200
+		swap_ideas = {
+				remove_idea = ARA_absolute_chaos1
+				add_idea = ARA_absolute_chaos2
+			}
 		}
 		}
 		
@@ -65,27 +88,22 @@ focus_tree = {
 		id = ARA_secure_cities
 		icon = GFX_goal_forced_res
 		x = 0
-		y = 1
+		y = 2
 		cost = 5.00
 		relative_position_id = ARA_power_struggle
-		prerequisite = { focus = ARA_power_struggle }
+		prerequisite = { focus = ARA_support_army }
+		prerequisite = { focus = ARA_purge_zealots }
 		completion_reward = {
 		add_manpower = -30000
+		swap_ideas = {
+				remove_idea = ARA_absolute_chaos2
+				add_idea = ARA_absolute_chaos3
+			}
+
 		}
 		}
 		
-	focus = { #Support of the army
-		id = ARA_support_army
-		icon = GFX_goal_forced_res
-		x = 2
-		y = 1
-		cost = 5.00
-		relative_position_id = ARA_power_struggle
-		prerequisite = { focus = ARA_power_struggle }
-		completion_reward = {
-		add_political_power = -200
-		}
-		}
+
 				
 	focus = { #Legacy of Arantigos
 		id = ARA_the_legacy
@@ -95,9 +113,11 @@ focus_tree = {
 		cost = 5.00
 		relative_position_id = ARA_secure_cities
 		prerequisite = { focus = ARA_secure_cities }
-		prerequisite = { focus = ARA_support_army }
-		prerequisite = { focus = ARA_purge_zealots }
 		completion_reward = {
+		swap_ideas = {
+				remove_idea = ARA_absolute_chaos3
+				add_idea = ARA_absolute_chaos4
+			} 
 		}
 		}		
 		
@@ -156,7 +176,10 @@ focus_tree = {
 		relative_position_id = ARA_the_legacy
 		prerequisite = { focus = ARA_the_legacy }
 		completion_reward = {
-		remove_ideas = ARA_nicator_junta
+		swap_ideas = {
+				remove_idea = ARA_nicator_junta
+				add_idea = ARA_nicator_junta1
+			}
 		}
 		}	
 		
@@ -189,12 +212,13 @@ focus_tree = {
 		prerequisite = { focus = ARA_transition }
 		prerequisite = { focus = ARA_return_exiles }
 		completion_reward = {
+		remove_ideas = ARA_absolute_chaos4 
 		}
 		}			
 
 	focus = { #King of Arantiga
 		id = ARA_return_of_the_king
-		icon = GFX_goal_forced_res
+		icon = GFX_goal_ara_crown
 		x = -1
 		y = 1
 		cost = 5.00
@@ -202,6 +226,16 @@ focus_tree = {
 		prerequisite = { focus = ARA_new_direction }
 		mutually_exclusive = { focus = ARA_i_love_democracy }
 		completion_reward = {
+		create_country_leader = {
+			name = "Nicator I Whitebeak"
+			picture = "nicator.tga"
+			expire = "1965.1.1"
+			ideology = despotism
+		}
+		#### trait: “Shield of Arantiga (+10% Attack on core territory, +10% Defense on core territory).####
+		add_popularity = { ideology = neutrality popularity = 0.1 }
+		set_party_name = {ideology = neutrality name = ARA_nicator_royal long_name = ARA_nicator_royal_long }
+		country_event = arantiga_chaos.003
 		}
 		}		
 		
@@ -216,6 +250,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ARA_return_of_the_king }
 
 		completion_reward = {
+		country_event = arantiga_chaos.004
 		}
 		}			
 		
