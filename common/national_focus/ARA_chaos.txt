@@ -21,7 +21,7 @@ focus_tree = {
 		
 	focus = { #CHAOS
 		id = ARA_chaos
-		icon = GFX_goal_forced_res
+		icon = GFX_goal_revolution
 		x = 29
 		y = 0
 		cost = 1.00
@@ -34,7 +34,7 @@ focus_tree = {
 		
 	focus = { #Power struggle
 		id = ARA_power_struggle
-		icon = GFX_goal_forced_res
+		icon = GFX_focus_indy_bound_by_blood
 		x = 0
 		y = 1
 		cost = 5.00
@@ -48,7 +48,7 @@ focus_tree = {
 	
 	focus = { #Purge zealots
 		id = ARA_purge_zealots
-		icon = GFX_goal_forced_res
+		icon = GFX_goal_GEA_guerilla_warfare
 		x = -2
 		y = 1
 		cost = 5.00
@@ -68,7 +68,7 @@ focus_tree = {
 		
 		focus = { #Support of the army
 		id = ARA_support_army
-		icon = GFX_goal_forced_res
+		icon = GFX_arantigan_generals_shine
 		x = 2
 		y = 1
 		cost = 5.00
@@ -86,7 +86,7 @@ focus_tree = {
 		
 	focus = { #Secure cities
 		id = ARA_secure_cities
-		icon = GFX_goal_forced_res
+		icon = GFX_focus_generic_provoke_border_clashes
 		x = 0
 		y = 2
 		cost = 5.00
@@ -107,7 +107,7 @@ focus_tree = {
 				
 	focus = { #Legacy of Arantigos
 		id = ARA_the_legacy
-		icon = GFX_goal_forced_res
+		icon = GFX_dorotheos_focus
 		x = 0
 		y = 1
 		cost = 5.00
@@ -123,7 +123,7 @@ focus_tree = {
 		
 	focus = { #Free the prisioners
 		id = ARA_free_prisioners
-		icon = GFX_goal_forced_res
+		icon = GFX_goal_liberty
 		x = -4
 		y = 1
 		cost = 2.00
@@ -143,7 +143,7 @@ focus_tree = {
 		
 	focus = { #Restore the cult of Boreas
 		id = ARA_restore_the_cult
-		icon = GFX_goal_forced_res
+		icon = GFX_Valknut_Focus_3
 		x = -2
 		y = 1
 		cost = 2.00
@@ -156,7 +156,7 @@ focus_tree = {
 		
 	focus = { #Demobilize the economy
 		id = ARA_demobilize
-		icon = GFX_goal_forced_res
+		icon = GFX_goal_Automobile_Production
 		x = 0
 		y = 1
 		cost = 2.00
@@ -169,7 +169,7 @@ focus_tree = {
 		
 	focus = { #Transitional Government
 		id = ARA_transition
-		icon = GFX_goal_forced_res
+		icon = GFX_goal_government_icon
 		x = 2
 		y = 1
 		cost = 2.00
@@ -185,7 +185,7 @@ focus_tree = {
 		
 	focus = { #Return of the exiles
 		id = ARA_return_exiles
-		icon = GFX_goal_forced_res
+		icon = GFX_goal_collaborate_local_elites
 		x = 4
 		y = 1
 		cost = 2.00
@@ -201,7 +201,7 @@ focus_tree = {
 				
 	focus = { #New direction
 		id = ARA_new_direction
-		icon = GFX_goal_forced_res
+		icon = GFX_goal_national_populism
 		x = 0
 		y = 1
 		cost = 5.00
@@ -241,7 +241,7 @@ focus_tree = {
 		
 	focus = { #Create Arantigan Republic
 		id = ARA_i_love_democracy
-		icon = GFX_goal_forced_res
+		icon = GFX_focus_indy_democratic_process
 		x = 1
 		y = 1
 		cost = 5.00
