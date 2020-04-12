@@ -94,6 +94,17 @@ ARA_mobilized_economy:0 "Mobilized Economy"
 ARA_mobilized_economy_desc:0 "Arantiga's economy is reaching new peaks of efficiency . . .  military production efficiency. Countless war supplies are leaving our factories and are being sent directly to the front."
 
 #####chaos ideas##########
+
+ARA_absolute_chaos:0 "Total Chaos"
+ARA_absolute_chaos_desc:0 "Who would have thought that the death of an absolute ruler and a bunch of ambitious generals can cause something like that?"
+ARA_absolute_chaos1:0 "Total Chaos"
+ARA_absolute_chaos1_desc:0 "Who would have thought that the death of an absolute ruler and a bunch of ambitious generals can cause something like that?"
+ARA_absolute_chaos2:0 "Total Chaos"
+ARA_absolute_chaos2_desc:0 "Who would have thought that the death of an absolute ruler and a bunch of ambitious generals can cause something like that?"
+ARA_absolute_chaos3:0 "Total Chaos"
+ARA_absolute_chaos3_desc:0 "Who would have thought that the death of an absolute ruler and a bunch of ambitious generals can cause something like that?"
+ARA_absolute_chaos4:0 "Total Chaos"
+ARA_absolute_chaos4_desc:0 "Who would have thought that the death of an absolute ruler and a bunch of ambitious generals can cause something like that?"
 ARA_arantigan_way:0 "Arantigan Way"
 ARA_arantigan_way_desc:0 "We will never forget our past, but we will not let it define us."
 ARA_empower_minorities:0 "Empowered Minorities"
