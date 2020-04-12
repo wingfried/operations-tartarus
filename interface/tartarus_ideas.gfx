@@ -36,4 +36,24 @@ spriteTypes = {
 		name = "GFX_idea_white_war_economy"
 		texturefile = "gfx/interface/ideas/white_war_economy.dds"
     }
+    	SpriteType = {
+		name = "GFX_idea_ARA_cassander"
+		texturefile = "gfx/interface/ideas/idea_ARA_cassander.dds"
+    }
+	SpriteType = {
+		name = "GFX_idea_ARA_soter"
+		texturefile = "gfx/interface/ideas/idea_ARA_soter.dds"
+    }
+	SpriteType = {
+		name = "GFX_idea_ARA_lysimachus"
+		texturefile = "gfx/interface/ideas/idea_ARA_lysimachus.dds"
+    }
+	SpriteType = {
+		name = "GFX_idea_ARA_nicator"
+		texturefile = "gfx/interface/ideas/idea_ARA_nicator.dds"
+    }
+	SpriteType = {
+		name = "GFX_idea_ARA_craterus"
+		texturefile = "gfx/interface/ideas/idea_ARA_craterus.dds"
+    }
 }
