@@ -6,7 +6,7 @@ focus_tree = {
 		modifier = {
 			add = 1001
 			tag = ARA
-			#has_country_flag = arantiga_flag_dorotheos_is_dead
+			has_country_flag = arantiga_flag_dorotheos_is_dead
 		}
 	}
 	default = no
