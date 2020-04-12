@@ -711,6 +711,9 @@ ARA_nationalized_industry:0 "Nationalized Industry"
 
 ### Advisors ###
 prelate_heraclius:0 "Prelate Heraclius"
+ARA_lord_goldstone:0 "Lord Goldstone"
+ARA_lord_goldstone_desc:0 "One of the more conniving griffon lords, Goldstone will entertain the most devious of plans if it will help him expand his own holdings."
+ARA_glenda:0 "Archivist Glenda"
 
 ### Tooltips ###
 rise_of_arantiga_tooltip:0 "Arantiga will begin to rise! Now would be a great time to take a look at our economic situation.\n\n"

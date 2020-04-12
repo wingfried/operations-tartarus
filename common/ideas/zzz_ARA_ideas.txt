@@ -1190,5 +1190,41 @@ country = {
 				has_completed_focus = ARA_arantigos_boreas
 			}
 		}
+	}
+
+	political_advisor = {
+		ARA_lord_goldstone = {
+			allowed = {
+				original_tag = "ARA"
+			}		
+			traits = { smooth_talking_charmer }
+			#picture = BRF_Prelate
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				389 = {
+					is_fully_controlled_by = ARA
+				}
+			}
+		}
+	}
+
+	political_advisor = {
+		ARA_glenda = {
+			allowed = {
+				original_tag = "ARA"
+			}		
+			traits = { silent_workgriffon }
+			#picture = BRF_Prelate
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				389 = {
+					is_fully_controlled_by = ARA
+				}
+			}
+		}
 	}	
 }
