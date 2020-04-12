@@ -866,7 +866,7 @@ country = {
 	
 	
 		country = {
-			ARA_nicator_junta {
+			ARA_nicator_junta = {
 				allowed = {
 				always = no
 			}
@@ -877,14 +877,14 @@ country = {
 			desc = ARA_nicator_junta_desc
 			removal_cost = -1
 			modifier = {
-			political_power_factor -0.3
+			political_power_factor = -0.3
 			}
 			}
 			}
 		
 	
 		country = {
-			ARA_nicator_junta1 {
+			ARA_nicator_junta1 = {
 				allowed = {
 				always = no
 			}
@@ -895,13 +895,13 @@ country = {
 			desc = ARA_nicator_junta1_desc
 			removal_cost = -1
 			modifier = {
-			political_power_factor -0.1
+			political_power_factor = -0.1
 			}
 			}
 			}
 	
 		country = {
-			ARA_arantigan_way {
+			ARA_arantigan_way = {
 				allowed = {
 				always = no
 			}
@@ -912,6 +912,9 @@ country = {
 			desc = ARA_arantigan_way_desc
 			removal_cost = -1
 			modifier = {
+			stability_factor = 0.05
+			war_support_factor = 0.1
+			neutrality_drift = 0.01
 		}
 		}
 		}
@@ -928,6 +931,7 @@ country = {
 			desc = ARA_empower_minorities_desc
 			removal_cost = -1
 			modifier = {
+			conscription_factor = 0.1
 		}
 		}
 		}
@@ -943,11 +947,14 @@ country = {
 			desc = ARA_new_path_desc
 			removal_cost = -1
 			modifier = {
+			conscription_factor = 0.05
+			consumer_goods_factor = -0.1
+			democratic_drift = 0.01
 		}
 		}
 		}
 		country = {
-			ARA_social_welfare{
+			ARA_social_welfare = {
 				allowed = {
 				always = no
 			}
@@ -966,7 +973,7 @@ country = {
 		}
 	
 		country = {
-			ARA_liberty_death{
+			ARA_liberty_death = {
 				allowed = {
 				always = no
 			}
@@ -984,7 +991,7 @@ country = {
 		}
 
 		country = {
-			ARA_crossroads{
+			ARA_crossroads = {
 				allowed = {
 				always = no
 			}
@@ -1003,7 +1010,7 @@ country = {
 		}
 
 		country = {
-			ARA_arantiga_forever{
+			ARA_arantiga_forever = {
 				allowed = {
 				always = no
 			}
@@ -1021,7 +1028,7 @@ country = {
 		}
 	
 		country = {
-			ARA_idol_of_boreas{
+			ARA_idol_of_boreas = {
 				allowed = {
 				always = no
 			}
@@ -1040,9 +1047,128 @@ country = {
 		}
 		}
 	
-	
-	
-	
+		country = {
+			ARA_power_vacuum = {
+				allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_manpower_bonus
+			desc = ARA_arantiga_forever_desc
+			removal_cost = -1
+			modifier = {
+			political_power_factor = -0.5
+			
+		}
+		}
+		}
+		
+		country = {
+			ARA_absolute_chaos = {
+				allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_manpower_bonus
+			desc = ARA_arantiga_forever_desc
+			removal_cost = -1
+			modifier = {
+			consumer_goods_factor = 0.5
+			stability_factor = -0.5
+			war_support_factor = -0.5
+			army_org_Factor = -0.5
+			
+		}
+		}
+		}
+		
+		country = {
+			ARA_absolute_chaos1 = {
+				allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_manpower_bonus
+			desc = ARA_arantiga_forever_desc
+			removal_cost = -1
+			modifier = {
+			consumer_goods_factor = 0.5
+			stability_factor = -0.4
+			war_support_factor = -0.4
+			army_org_Factor = -0.5
+			
+		}
+		}
+		}	
+		
+		country = {
+			ARA_absolute_chaos2 = {
+				allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_manpower_bonus
+			desc = ARA_arantiga_forever_desc
+			removal_cost = -1
+			modifier = {
+			consumer_goods_factor = 0.5
+			stability_factor = -0.4
+			war_support_factor = -0.4
+			army_org_Factor = -0.1
+			
+		}
+		}
+		}
+		
+		country = {
+			ARA_absolute_chaos3 = {
+				allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_manpower_bonus
+			desc = ARA_arantiga_forever_desc
+			removal_cost = -1
+			modifier = {
+			consumer_goods_factor = 0.2
+			stability_factor = -0.2
+			war_support_factor = -0.2
+			army_org_Factor = -0.1
+			
+		}
+		}
+		}
+		
+		country = {
+			ARA_absolute_chaos4 = {
+				allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_manpower_bonus
+			desc = ARA_arantiga_forever_desc
+			removal_cost = -1
+			modifier = {
+			consumer_goods_factor = 0.2
+			stability_factor = -0.1
+			war_support_factor = -0.1
+			army_org_Factor = -0.1
+			
+		}
+		}
+		}
 	
 	
 	
