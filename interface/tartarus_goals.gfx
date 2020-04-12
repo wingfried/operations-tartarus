@@ -60,4 +60,8 @@ spriteTypes = {
 		name = "GFX_arantigan_generals"
 		texturefile = "gfx/interface/goals/GFX_arantigan_generals.dds"
 	}
+	SpriteType = { 
+		name = "GFX_goal_ara_crown"
+		texturefile = "gfx/interface/goals/GFX_goal_ara_crown.dds"
+	}
 }
