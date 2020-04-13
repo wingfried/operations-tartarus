@@ -56,4 +56,14 @@ spriteTypes = {
 		name = "GFX_idea_ARA_craterus"
 		texturefile = "gfx/interface/ideas/idea_ARA_craterus.dds"
     }
+
+    SpriteType = {
+		name = "GFX_idea_ARA_goldstone"
+		texturefile = "gfx/interface/ideas/idea_ARA_lord_goldstone.dds"
+    }
+
+    SpriteType = {
+		name = "GFX_idea_ARA_glenda"
+		texturefile = "gfx/interface/ideas/idea_ARA_glenda.dds"
+    }
 }

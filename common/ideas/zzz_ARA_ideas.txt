@@ -1195,10 +1195,13 @@ country = {
 	political_advisor = {
 		ARA_lord_goldstone = {
 			allowed = {
-				original_tag = "ARA"
+				OR = {
+					original_tag = "ARA"
+					original_tag = "BOI"
+				}
 			}		
 			traits = { smooth_talking_charmer }
-			#picture = BRF_Prelate
+			picture = ARA_goldstone
 			ai_will_do = {
 				factor = 1
 			}
@@ -1213,10 +1216,13 @@ country = {
 	political_advisor = {
 		ARA_glenda = {
 			allowed = {
-				original_tag = "ARA"
+				OR = {
+					original_tag = "ARA"
+					original_tag = "BOI"
+				}
 			}		
 			traits = { silent_workgriffon }
-			#picture = BRF_Prelate
+			picture = ARA_glenda
 			ai_will_do = {
 				factor = 1
 			}
