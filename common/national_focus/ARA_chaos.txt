@@ -241,7 +241,7 @@ focus_tree = {
 		
 	focus = { #Create Arantigan Republic
 		id = ARA_i_love_democracy
-		icon = GFX_focus_indy_democratic_process
+		icon = GFX_goal_support_democracy
 		x = 1
 		y = 1
 		cost = 5.00
@@ -256,7 +256,7 @@ focus_tree = {
 		
 	focus = { #Stick to tradition
 		id = ARA_tradition
-		icon = GFX_goal_forced_res
+		icon = GFX_goal_generic_defence
 		x = -1
 		y = 1
 		cost = 5.00
@@ -269,7 +269,7 @@ focus_tree = {
 		
 	focus = { #Local Democracy
 		id = ARA_local_democracy
-		icon = GFX_goal_forced_res
+		icon = GFX_goal_generic_improve_relations
 		x = 0
 		y = 1
 		cost = 5.00
@@ -282,7 +282,7 @@ focus_tree = {
 		
 	focus = { #Social Welfare
 		id = ARA_social_welfare
-		icon = GFX_goal_forced_res
+		icon = GFX_goal_generic_consumer_goods
 		x = 1
 		y = 1
 		cost = 5.00
@@ -295,7 +295,7 @@ focus_tree = {
 		
 	focus = { #Crossroads of Gryffonia
 		id = ARA_The_Crossroads
-		icon = GFX_goal_forced_res
+		icon = GFX_goal_rct_fancy_train
 		x = 0
 		y = 1
 		cost = 5.00
@@ -308,7 +308,7 @@ focus_tree = {
 		
 	focus = { #Free press
 		id = ARA_free_press
-		icon = GFX_goal_forced_res
+		icon = GFX_goal_generic_propaganda
 		x = 1
 		y = 1
 		cost = 5.00
@@ -321,7 +321,7 @@ focus_tree = {
 		
 	focus = { #Never Again
 		id = ARA_never_again
-		icon = GFX_goal_forced_res
+		icon = GFX_goal_revolution
 		x = 0
 		y = 1
 		cost = 5.00
@@ -334,7 +334,7 @@ focus_tree = {
 		
 	focus = { #New Golden age
 		id = ARA_golden_age
-		icon = GFX_goal_forced_res
+		icon = GFX_focus_generic_the_giant_wakes
 		x = 0
 		y = 1
 		cost = 10.00
@@ -362,7 +362,7 @@ focus_tree = {
 		
 	focus = { #Arantiga Forever
 		id = ARA_arantiga_forever
-		icon = GFX_goal_forced_res
+		icon = GFX_goal_collaborate_local_elites
 		x = 0
 		y = 1
 		cost = 3.00
