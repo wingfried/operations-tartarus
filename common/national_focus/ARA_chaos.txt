@@ -68,7 +68,7 @@ focus_tree = {
 		
 		focus = { #Support of the army
 		id = ARA_support_army
-		icon = GFX_arantigan_generals_shine
+		icon = GFX_goal_support_of_the_army
 		x = 2
 		y = 1
 		cost = 5.00
