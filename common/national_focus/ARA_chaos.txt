@@ -4,10 +4,12 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 1001
+			add = 100
+			original_tag = ARA
 			has_country_flag = arantiga_flag_dorotheos_is_dead
 		}
 	}
+	
 	default = no
 	continuous_focus_position = { x = 290 y = 2500 }
 	
