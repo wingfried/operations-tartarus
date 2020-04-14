@@ -48,7 +48,7 @@ focus_tree = {
 	
 	focus = { #Purge zealots
 		id = ARA_purge_zealots
-		icon = GFX_goal_GEA_guerilla_warfare
+		icon = GFX_goal_purge_zealots
 		x = -2
 		y = 1
 		cost = 5.00
@@ -156,7 +156,7 @@ focus_tree = {
 		
 	focus = { #Demobilize the economy
 		id = ARA_demobilize
-		icon = GFX_goal_Automobile_Production
+		icon = GFX_goal_generic_construct_public_housing
 		x = 0
 		y = 1
 		cost = 2.00
