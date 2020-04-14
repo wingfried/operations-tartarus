@@ -73,7 +73,7 @@ add_namespace = arantiga_chaos
 		kill_country_leader = yes
 		create_country_leader = {
 			name = "Nicator"
-			picture = "nicator.tga"
+			icture = "nicator_king.tga"
 			expire = "1965.1.1"
 			ideology = despotism
 		}
@@ -676,10 +676,12 @@ country_event = { #No remorse
 	remove_unit_leader = 6831594
 	create_country_leader = {
 			name = "Nicator"
-			picture = "Nicator.tga"
+			picture = "Nicator_king.tga"
 			expire = "1965.1.1"
 			ideology = despotism
+			desc = king_nicator_desc
 		}
+	
 	}
 	}
 	
@@ -734,7 +736,7 @@ country_event = { #No remorse
 	remove_unit_leader = 826713672 
 	create_country_leader = {
 			name = "Nicator Whitebeak"
-			picture = "nicator.tga"
+			picture = "nicator_king.tga"
 			expire = "1965.1.1"
 			ideology = nazism
 		}
@@ -772,6 +774,7 @@ country_event = { #No remorse
 			picture = "aradem.tga"
 			expire = "1965.1.1"
 			ideology = liberalism
+			desc = generic_harmony_birb_desc
 		}
 	set_politics = {
 			ruling_party = democratic
@@ -785,9 +788,10 @@ country_event = { #No remorse
 	set_party_name = {ideology = democratic name = ARA_soter_coalition long_name = ARA_soter_coalition_long }
 	create_country_leader = {
 			name = "Soter Litori"
-			picture = "soter.tga"
+			picture = "soter_president.tga"
 			expire = "1965.1.1"
 			ideology = liberalism
+			desc = soter_president_desc
 		}
 	set_politics = {
 			ruling_party = democratic
