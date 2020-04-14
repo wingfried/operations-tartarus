@@ -1233,7 +1233,50 @@ country = {
 			}
 		}
 	}
-	
+		army_chief = {
+			nicator_advisor = {
+			allowed = {
+				original_tag = "ARA"
+			}		
+			traits = { army_chief_planning_3 }
+			picture = ARA_nicator
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				has_completed_focus = ARA_new_academy
+			}
+		}
+		
+		lysimachus_advisor = {
+			allowed = {
+				original_tag = "ARA"
+			}		
+			traits = { army_chief_morale_1 }
+			picture = ARA_lysimachus
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				has_completed_focus = ARA_new_academy
+				NOT = { has_completed_focus = ARA_purge_zealots } 
+			}
+		}
+		
+		craterus_advisor = {
+			allowed = {
+				original_tag = "ARA"
+			}		
+			traits = { army_chief_maneuver_2 }
+			picture = ARA_craterus
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				has_completed_focus = ARA_reorganise_high_command
+			}
+		}
+		}
 	high_command = {
 		soter_advisor = {
 			allowed = {
