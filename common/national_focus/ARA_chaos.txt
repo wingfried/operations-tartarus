@@ -228,9 +228,10 @@ focus_tree = {
 		completion_reward = {
 		create_country_leader = {
 			name = "Nicator I Whitebeak"
-			picture = "nicator.tga"
+			picture = "nicator_king.tga"
 			expire = "1965.1.1"
 			ideology = despotism
+			desc = king_nicator_desc
 		}
 		#### trait: “Shield of Arantiga (+10% Attack on core territory, +10% Defense on core territory).####
 		add_popularity = { ideology = neutrality popularity = 0.1 }
