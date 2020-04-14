@@ -444,7 +444,7 @@ ARA_the_legacy:0 "Legacy of Arantigos"
 ARA_the_legacy_desc:0 "Although Dorotheos reign was short, he managed to completely change Arantiga. Now, when Nicator's government is more-less stable we should revert many of deceased king decisions to ensure that Arantiga can properly recover.
 ARA_free_prisioners:0 "End the Work Camps"
 ARA_free_prisioners_desc:0 "Everyone who disagreed with Dorotheos decisions or were simply unfortunate ended up in prisons and work camps. Our first step should be to release these poor griffons."
-ARA_restore_the_cult:0 "The Return of Boreas"
+ARA_restore_the_cult:0 "Restore the Cult of Boreas"
 ARA_restore_the_cult_desc:0 "The Cult of Arantigos-Boreas was twisted and used by Dorotheos as political tool. It is time to get back to the old version of the faith and purify it from his vile influence."
 ARA_demobilize:0"Demobilize the Economy"
 ARA_demobilize_desc:0 "The griffons of Arantiga were either dying on battlefields or produced supply for constantly growing army. Is it what we wish Arantiga to become? Nation of barbaric despoilers and slaves? We must free proud griffons of our nation from these shackles."
@@ -731,6 +731,9 @@ nicator_advisor:0 "Nicator Whitebeak"
 craterus_advisor:0 "Craterus"
 cassander_advisor:0 "Commando Cassander"
 
+### leader descriptions ###
+soter_president_desc:0 "Soter Litori, the Owl of Arantiga, from youngest general to president of the country, this young griffon now leads from a desk instead of the frontline"
+king_nicator_desc:0 "King Nicator Whitebeak now rules Arantiga, having tamed the chaos left in Dorotheos' death he swears to uphold order and to bring Arantiga once more to glory, peacefully this time."
 
 
 ### Tooltips ###
