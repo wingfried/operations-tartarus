@@ -73,11 +73,11 @@ add_namespace = arantiga_chaos
 		kill_country_leader = yes
 		create_country_leader = {
 			name = "Nicator"
-			icture = "nicator_king.tga"
+			picture = "nicator_king.tga"
 			expire = "1965.1.1"
 			ideology = despotism
 		}
-		set_party_name = {ideology = despotism name = ARA_moderates long_name = ARA_moderates_long }
+		set_party_name = {ideology = neutrality name = ARA_moderates long_name = ARA_moderates_long }
 		
 		set_politics = {
 			ruling_party = fascism
@@ -674,13 +674,6 @@ country_event = { #No remorse
 	add_stability = -0.05
 	add_war_support = -0.05
 	remove_unit_leader = 6831594
-	create_country_leader = {
-			name = "Nicator"
-			picture = "Nicator_king.tga"
-			expire = "1965.1.1"
-			ideology = despotism
-			desc = king_nicator_desc
-		}
 	
 	}
 	}
