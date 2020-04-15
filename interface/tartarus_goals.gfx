@@ -72,4 +72,12 @@ spriteTypes = {
 		name = "GFX_goal_purge_zealots"
 		texturefile = "gfx/interface/goals/GFX_goal_purge_zealots.dds"
 	}
+	SpriteType = { 
+		name = "GFX_goal_dorocoup"
+		texturefile = "gfx/interface/goals/GFX_goal_dorocoup.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_personality"
+		texturefile = "gfx/interface/goals/GFX_goal_personality.dds"
+	}
 }
