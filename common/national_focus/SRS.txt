@@ -28,9 +28,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = 100
-			remove_ideas = SRS_communalist_problems
-			remove_ideas = SRS_internationalist_problems
+            country_event = { id = srs_sickocivwar.1 days = 1 }
 		}
 	}
 
@@ -47,11 +45,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			522 = { set_demilitarized_zone = yes }
-			585 = { set_demilitarized_zone = yes }
-			561 = { set_demilitarized_zone = yes }
-			add_political_power = -200
-			add_stability = -0.5
+		    country_event = { id = srs_sickocivwar.2 days = 1 }
 		}
 	}
 
@@ -80,8 +74,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			561 = { set_demilitarized_zone = no }
-			add_stability = 0.075
+			country_event = { id = srs_sickocivwar.3 days = 1 }
 		}
 	}
 
@@ -97,7 +90,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_stability = 0.075
+			country_event = { id = srs_sickocivwar.4 days = 1 }
 		}
 	}
 
@@ -113,8 +106,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			585 = { set_demilitarized_zone = no }
-			add_stability = 0.075
+			country_event = { id = srs_sickocivwar.5 days = 1 }
 		}
 	}
 
@@ -131,8 +123,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			522 = { set_demilitarized_zone = no }
-			add_stability = 0.075
+			country_event = { id = srs_sickocivwar.6 days = 1 }
 		}
 	}
 
@@ -149,8 +140,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			542 = { set_demilitarized_zone = no }
-			add_stability = 0.075
+			country_event = { id = srs_sickocivwar.7 days = 1 }
 		}
 	}
 
@@ -167,11 +157,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_stability = 0.2
-			add_political_power = -100
-			add_ideas = SRS_doubt_in_sickleclaw
-			add_ideas = SRS_dissident_officers_1
-			add_ideas = SRS_dissident_soldiers_1
+			country_event = { id = srs_sickocivwar.8 days = 1 }
 		}
 	}
 			
