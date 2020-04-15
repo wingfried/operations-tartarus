@@ -127,8 +127,8 @@ country_event = { #prodigal sons
 
 			create_corps_commander = {
 				name = "Craterus"
-				portrait_path = Craterus.tga
-				traits = { career_officer infantry_officer harsh_leader }
+				picture = Craterus.tga
+				traits = { career_officer armor_officer harsh_leader }
 				skill = 3
 				attack_skill = 2
 				defense_skill = 2
@@ -362,6 +362,7 @@ country_event = { #going lower
 	
 		hidden_effect = {
 			set_country_flag = arantiga_flag_dorotheos_is_dead
+			load_focus_tree = Arantiga_chaos
 			country_event = { 
 			        id = arantiga_chaos.001
 					days = 5
@@ -441,6 +442,7 @@ country_event = { #going lower
 	
 		hidden_effect = {
 			set_country_flag = arantiga_flag_dorotheos_is_dead
+			load_focus_tree = Arantiga_chaos
 			country_event = { 
 			        id = arantiga_chaos.001
 					days = 5
@@ -512,6 +514,7 @@ country_event = { #going lower
 	
 		hidden_effect = {
 			set_country_flag = arantiga_flag_dorotheos_is_dead
+			load_focus_tree = Arantiga_chaos
 			country_event = { 
 			        id = arantiga_chaos.001
 					days = 5
@@ -572,6 +575,7 @@ country_event = { #going lower
 	
 		hidden_effect = {
 			set_country_flag = arantiga_flag_dorotheos_is_dead
+			load_focus_tree = Arantiga_chaos
 			country_event = { 
 			        id = arantiga_chaos.001
 					days = 5
@@ -654,6 +658,7 @@ country_event = { #No remorse
 	
 		hidden_effect = {
 			set_country_flag = arantiga_flag_dorotheos_is_dead
+			load_focus_tree = Arantiga_chaos
 			country_event = { 
 			        id = arantiga_chaos.001
 					days = 5
