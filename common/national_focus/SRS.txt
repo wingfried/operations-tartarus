@@ -2915,10 +2915,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SRS_mobile_warfare
+		id = SRS_mobile_warfare_foc
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = SRS_new_chain_of_command }
-		mutually_exclusive = { focus = SRS_mass_assault }
+		mutually_exclusive = { focus = SRS_mass_assault_foc }
 		mutually_exclusive = { focus = SRS_experimental_warfare }
 		x = 28
 		y = 23
@@ -2929,13 +2929,37 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SRS_mass_assault
+		id = SRS_mobile_infantry
+		icon = GFX_goal_planning_bonus
+		prerequisite = { focus = SRS_mobile_warfare_foc }
+		x = 28
+		y = 24
+		cost = 7
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_mass_assault_foc
 		icon = GFX_goal_griffon_arms_focus_com
 		prerequisite = { focus = SRS_new_chain_of_command }
-		mutually_exclusive = { focus = SRS_mobile_warfare }
+		mutually_exclusive = { focus = SRS_mobile_warfare_foc }
 		mutually_exclusive = { focus = SRS_experimental_warfare }
-		x = 24
+		x = 26
 		y = 23
+		cost = 7
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_equipment_standardization
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = SRS_mass_assault_foc }
+		x = 24
+		y = 24
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -2946,10 +2970,22 @@ focus_tree = {
 		id = SRS_experimental_warfare
 		icon = GFX_goal_generic_secret_weapon
 		prerequisite = { focus = SRS_new_chain_of_command }
-		mutually_exclusive = { focus = SRS_mobile_warfare }
-		mutually_exclusive = { focus = SRS_mass_assault }
-		x = 32
+		mutually_exclusive = { focus = SRS_mobile_warfare_foc }
+		mutually_exclusive = { focus = SRS_mass_assault_foc }
+		x = 30
 		y = 23
+		cost = 7
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_specialized_manufacturing
+		icon = GFX_goal_purchase_tech
+		prerequisite = { focus = SRS_experimental_warfare }
+		x = 32
+		y = 24
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -2959,9 +2995,9 @@ focus_tree = {
 	focus = {
 		id = SRS_sickleclaws_tankies
 		icon = GFX_focus_NZL_bob_semple_tank
-		prerequisite = { focus = SRS_mobile_warfare }
+		prerequisite = { focus = SRS_mobile_infantry }
 		x = 27
-		y = 24
+		y = 25
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -2973,7 +3009,7 @@ focus_tree = {
 		icon = GFX_focus_generic_tank_production
 		prerequisite = { focus = SRS_sickleclaws_tankies }
 		x = 27
-		y = 25
+		y = 26
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -2983,9 +3019,9 @@ focus_tree = {
 	focus = {
 		id = SRS_better_cannons
 		icon = GFX_goal_national_artillery
-		prerequisite = { focus = SRS_mobile_warfare }
+		prerequisite = { focus = SRS_mobile_infantry }
 		x = 29
-		y = 24
+		y = 25
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -2997,7 +3033,7 @@ focus_tree = {
 		icon = GFX_goal_military_academy
 		prerequisite = { focus = SRS_better_cannons }
 		x = 29
-		y = 25
+		y = 26
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -3011,7 +3047,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_sickleclaws_shinier_tankies }
 		mutually_exclusive = { focus = SRS_outgun_them }
 		x = 27
-		y = 26
+		y = 27
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -3025,7 +3061,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_sickleclaws_shinier_tankies }
 		mutually_exclusive = { focus = SRS_outmanouver_them }
 		x = 29
-		y = 26
+		y = 27
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -3035,9 +3071,9 @@ focus_tree = {
 	focus = {
 		id = SRS_every_griffon_a_soldier
 		icon = GFX_goal_conscription
-		prerequisite = { focus = SRS_mass_assault }
+		prerequisite = { focus = SRS_equipment_standardization }
 		x = 25
-		y = 24
+		y = 25
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -3049,7 +3085,7 @@ focus_tree = {
 		icon = GFX_goal_offensive_army
 		prerequisite = { focus = SRS_every_griffon_a_soldier }
 		x = 25
-		y = 25
+		y = 26
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -3059,9 +3095,9 @@ focus_tree = {
 	focus = {
 		id = SRS_tankbusters
 		icon = GFX_goal_anti_tank
-		prerequisite = { focus = SRS_mass_assault }
+		prerequisite = { focus = SRS_equipment_standardization }
 		x = 23
-		y = 24
+		y = 25
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -3073,7 +3109,7 @@ focus_tree = {
 		icon = GFX_focus_healthcare_program
 		prerequisite = { focus = SRS_tankbusters }
 		x = 23
-		y = 25
+		y = 26
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -3086,7 +3122,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_winter_training }
 		prerequisite = { focus = SRS_medicine }
 		x = 24
-		y = 26
+		y = 27
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -3096,9 +3132,9 @@ focus_tree = {
 	focus = {
 		id = SRS_magic_guns
 		icon = GFX_goal_magical_weapon_focus
-		prerequisite = { focus = SRS_experimental_warfare }
+		prerequisite = { focus = SRS_specialized_manufacturing }
 		x = 31
-		y = 24
+		y = 25
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -3110,7 +3146,7 @@ focus_tree = {
 		icon = GFX_goal_griffon_special_force
 		prerequisite = { focus = SRS_magic_guns }
 		x = 31
-		y = 25
+		y = 26
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -3120,9 +3156,9 @@ focus_tree = {
 	focus = {
 		id = SRS_rocket_artillery
 		icon = GFX_goal_rocket
-		prerequisite = { focus = SRS_experimental_warfare }
+		prerequisite = { focus = SRS_specialized_manufacturing }
 		x = 33
-		y = 24
+		y = 25
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -3134,7 +3170,7 @@ focus_tree = {
 		icon = GFX_goal_radio
 		prerequisite = { focus = SRS_rocket_artillery }
 		x = 33
-		y = 25
+		y = 26
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -3147,7 +3183,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_expand_specops }
 		prerequisite = { focus = SRS_use_radio }
 		x = 32
-		y = 26
+		y = 27
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -3159,7 +3195,7 @@ focus_tree = {
 		icon = GFX_goal_generic_crystals
 		prerequisite = { focus = SRS_outgun_them focus = SRS_outmanouver_them focus = SRS_relentless_assault focus = SRS_superheavy_tanks_xdxdxd }
 		x = 28
-		y = 27
+		y = 28
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -3171,7 +3207,7 @@ focus_tree = {
 		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = SRS_harness_crystal_energy }
 		x = 28
-		y = 28
+		y = 29
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -3183,7 +3219,7 @@ focus_tree = {
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = SRS_outgun_them focus = SRS_outmanouver_them focus = SRS_relentless_assault focus = SRS_superheavy_tanks_xdxdxd }
 		x = 26
-		y = 27
+		y = 28
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -3195,7 +3231,7 @@ focus_tree = {
 		icon = GFX_focus_Computer_2
 		prerequisite = { focus = SRS_outgun_them focus = SRS_outmanouver_them focus = SRS_relentless_assault focus = SRS_superheavy_tanks_xdxdxd }
 		x = 30
-		y = 27
+		y = 28
 		cost = 7
 		ai_will_do = {
 			factor = 12
