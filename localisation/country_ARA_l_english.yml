@@ -737,6 +737,24 @@ nicator_advisor:0 "Nicator Whitebeak"
 craterus_advisor:0 "Craterus"
 cassander_advisor:0 "Commando Cassander"
 
+### COMPANIES ###
+ARA_h_and_t:0 "H+T Electrics"
+ARA_general_synthetic:0 "General Synthetic"
+ARA_rumare_investment_bank:0 "Rumare Bank"
+
+ARA_xiphos_arms:0 "Xiphos Arms"
+ARA_sparlean_motors:0 "Sparléan Motors"
+ARA_xyston_developments:0 "Xyston Development"
+
+ARA_sarrissa_metalworks:0 "Sarissa Metalworks"
+ARA_arantigan_armor:0 "Arantigan Armor"
+ARA_fulgur_works:0 "Fulgur Works"
+
+ARA_twin_swords:0 "Twin Swords"
+ARA_arantigan_aeronautics:0 "Arantigan Aeronautics"
+ARA_royal_aerial_company:0 "Royal Aerial Company"
+ARA_h_and_t_aircraft:0 "H+T Aircraft"
+
 ### leader descriptions ###
 soter_president_desc:0 "Soter Litori, the Owl of Arantiga, from youngest general to president of the country, this young griffon now leads from a desk instead of the frontline"
 king_nicator_desc:0 "King Nicator Whitebeak now rules Arantiga, having tamed the chaos left in Dorotheos' death he swears to uphold order and to bring Arantiga once more to glory, peacefully this time."

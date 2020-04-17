@@ -66,4 +66,9 @@ spriteTypes = {
 		name = "GFX_idea_ARA_glenda"
 		texturefile = "gfx/interface/ideas/idea_ARA_glenda.dds"
     }
+
+    SpriteType = {
+		name = "GFX_idea_ARA_h_and_t"
+		texturefile = "gfx/interface/ideas/company_ARA_h_plus_t.tga"
+    }
 }
