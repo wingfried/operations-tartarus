@@ -687,7 +687,7 @@ country = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = PAP_Legionary_Spirit
+			picture = industrial_prop
 			modifier = {	
 			production_factory_efficiency_gain_factor = 0.2
 			production_speed_buildings_factor = 0.1
