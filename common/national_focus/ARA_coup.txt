@@ -507,6 +507,7 @@ focus_tree = {
 		relative_position_id = ARA_legacy_of_grover
 		prerequisite = { focus = ARA_legacy_of_grover }
 		mutually_exclusive = { focus = ARA_bungie_destiny }
+		cost = 1.00
 		completion_reward = {
 		country_event = arantiga.013
 		}
