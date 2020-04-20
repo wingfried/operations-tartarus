@@ -767,6 +767,13 @@ ARA_last_legion_tt:0 "The §YKarthin Legion§W will serve us in our quest to rec
 ARA_true_legion_tt:0 "The §YRomau Legion§W will serve us in our quest to reclaim the Arantigan Empire!"
 ARA_francistrian_tt:0 "Volunteers from §YFrancistria§W will take up the fight for Arantigos!"
 ARA_sons_of_arantigos_tt:0 "General §YCraterus§W and the §YSons of Arantigos§W will join our army!"
+old_allies_tooltip:0 "We will look for allies in the world stage"
+ara_tooltip_voices_1:0 "§RWILL IT?§! "
+ara_tooltip_voices_2:0 "§RARE YOU REALLY?§! "
+ara_tooltip_voices_3:0 "§RIT SHOULD HAVE BEEN HIM§! " 
+ara_tooltip_voices_4:0 "§RANSWER HER§! "
+ara_tooltip_voices_5:0 "§RSTILL THINK ITS WORTH IT?§! "
+ara_tooltip_voices_6:0 "§RRIGHT?§! "
 
 ### Flags ###
 rise_of_arantiga:0 "Arantiga is rising!"
