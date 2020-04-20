@@ -693,22 +693,29 @@ country_event = { #No remorse
 	}
 	}
 	
+	
+	
+	
+	
+	
+################ Scientific Advancement #############
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+country_event = { #Griffonstone Archives
+	id = arantiga.027
+	title = arantiga.027.t
+	desc = arantiga.027.d
+	trigger = {
+		tag = ARA
+		owns_state = 389
+	}
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+	picture = GFX_news_griffonstone
+	option = {
+		name = arantiga.027.a
+		increase_science_base = yes
+	}
+}
 
 ################ CHAOS EVENTS #######################
 
