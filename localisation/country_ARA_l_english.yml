@@ -115,7 +115,7 @@ ARA_arantigan_way_desc:0 "We will never forget our past, but we will not let it 
 ARA_empower_minorities:0 "Empowered Minorities"
 ARA_empower_minorities_desc:0 "There are many nationalities living in Arantiga - and with some effort perhaps we can all live in peace."
 ARA_new_path:0 "New Path"
-ARA_new_path_desc:0 "We shall never again let our freedom be taken away from us. We will emulate principles of republicanism - democracy, prosperity and liberty. Arantiga will become a beacon of liberty in Griffonia!"
+ARA_new_path_desc:0 "#incomplete"
 ARA_social_welfare:0 "Arantigan Welfare"
 ARA_social_welfare_desc:0 "Our greatest foe is poverty, for our goal is to bring prosperity to the griffons of Arantiga."
 ARA_liberty_death:0 "Liberty or Death"
@@ -433,7 +433,7 @@ ARA_legacy_of_grover_desc:0 "Centuries ago, Grover of Griffinstone created large
 ARA_es_oblivion:0 "Into Oblivion"
 ARA_es_oblivion_desc:0 "The journey begins . . .  "
 ARA_bungie_destiny:0 "My Own Destiny"
-ARA_bungie_destiny_desc:0 "For generations Arantiga was slowly rotting, being forgotten and outshadowed by new powerhouses of Griffonia. Now however, we stand proud - we stand victorious. No one can deny Arantiga greatness. But as our nation grew, so did our problems. We rule numerous nations and it will take decades before they will all embrace arantigan way of life. Continuing conquests would only led our newly forged kingdom to its demise, it is time to concentrate on internal matters and protecting what we already gained, so Arantiga never falls like it did before."
+ARA_bungie_destiny_desc:0 "Grover needed the Idol to conquer Griffonia . . .  But Arantigos did it without any foul magic and artifacts - with just his brilliant mind he beated armies many times stronger than his own! I will be the master of my own fate - i will become worthy heir of Arantigos without any help!"
 
 ARA_chaos:0 "Absolute Chaos"
 ARA_chaos_desc:0 "After “Arantigos” demise during his foolish attempt to recover Idol, general Nicator declares himself a regent. Chaos reigns."
@@ -618,9 +618,9 @@ arantiga.024.a:0 "“It is not a place for mortals.”"
 arantiga.025.t:0 "Revelation"
 arantiga.025.d:0 "Dorotheos decides to follow his sister. They wander through maze of passages and corridors. After what seems to be eternity he sees light. It blinds him, but without hesitation he goes forward. For a moment he cannot feel his body… When he regains his sight he sees beautiful garden and golden fountains. His sister stands next to him and smiles kindly. For a moment Dorotheos struggles, but finally thoughts about glory and conquests fade… He knows he got what he desired most…"
 arantiga.025.a:0 "Forgiveness"
-arantiga.026.t:0 "Nicator Coup"
-arantiga.026.d:0 "A few days after Dorotheos return from Griffinstone, a group of soldiers led by general Nicator directly assaulted royal residence. When they did so, smaller groups tried to capture key points in capital and secure it. However the plan failed, when rebels failed to break through palace guard, which unlike during Ides of March, fought till last griffon, buying enough time for loyalist forces to counter-attack and push back rebels. Skirmishes lasted for most of a day, until last pockets of rebels surrendered. Nicator was captured and brought before king… \n. . .for a long moment he just stood in silence. Dorotheos did not saw fear in Nicator’s eyes - just contempt. “Why did you betrayed us? You were part of our staff, and basked in our glory… When victory would be ours, rewards would be immense. And yet you turned against us, Arantigos…”\nNicator spat on the floor. “This is exactly why. Arantigos. We? When you killed the baroness I thought that perhaps it was needed to restore our nation. But you became a power-hungry maniac. You consider yourself a god! Don’t you hear yourself? And even if you win… How will you twist Arantiga? Shall all suffering you will bring upon your people be worth it? Will it be worth it Doro…”\nBefore Nicator was able to finish his sentence - Dorotheos suddenly grabbed his revolver and started shooting. Guards seeing this trembled seeing the mask of pure anger Dorotheos face had turned into. After few seconds, when the emptied weapon just made clicking noises with next attempts to put trigger, Dorotheos started to calm down.\n\n“Well… At least traitor is gone…”
-arantiga.026.a:0 "“Take the body and never mention him again.”"
+arantiga.025.t:0 "Nicator Coup"
+arantiga.025.d:0 "A few days after Dorotheos return from Griffinstone, a group of soldiers led by general Nicator directly assaulted royal residence. When they did so, smaller groups tried to capture key points in capital and secure it. However the plan failed, when rebels failed to break through palace guard, which unlike during Ides of March, fought till last griffon, buying enough time for loyalist forces to counter-attack and push back rebels. Skirmishes lasted for most of a day, until last pockets of rebels surrendered. Nicator was captured and brought before king… \n. . .for a long moment he just stood in silence. Dorotheos did not saw fear in Nicator’s eyes - just contempt. “Why did you betrayed us? You were part of our staff, and basked in our glory… When victory would be ours, rewards would be immense. And yet you turned against us, Arantigos…”\nNicator spat on the floor. “This is exactly why. Arantigos. We? When you killed the baroness I thought that perhaps it was needed to restore our nation. But you became a power-hungry maniac. You consider yourself a god! Don’t you hear yourself? And even if you win… How will you twist Arantiga? Shall all suffering you will bring upon your people be worth it? Will it be worth it Doro…”\nBefore Nicator was able to finish his sentence - Dorotheos suddenly grabbed his revolver and started shooting. Guards seeing this trembled seeing the mask of pure anger Dorotheos face had turned into. After few seconds, when the emptied weapon just made clicking noises with next attempts to put trigger, Dorotheos started to calm down.\n\n“Well… At least traitor is gone…”
+arantiga.025.a:0 "“Take the body and never mention him again.”"
 
 
 
@@ -736,24 +736,6 @@ lysimachus_advisor:0 "Lysimachus"
 nicator_advisor:0 "Nicator Whitebeak"
 craterus_advisor:0 "Craterus"
 cassander_advisor:0 "Commando Cassander"
-
-### COMPANIES ###
-ARA_h_and_t:0 "H+T Electrics"
-ARA_general_synthetic:0 "General Synthetic"
-ARA_rumare_investment_bank:0 "Rumare Bank"
-
-ARA_xiphos_arms:0 "Xiphos Arms"
-ARA_sparlean_motors:0 "Sparléan Motors"
-ARA_xyston_developments:0 "Xyston Development"
-
-ARA_sarrissa_metalworks:0 "Sarissa Metalworks"
-ARA_arantigan_armor:0 "Arantigan Armor"
-ARA_fulgur_works:0 "Fulgur Works"
-
-ARA_twin_swords:0 "Twin Swords"
-ARA_arantigan_aeronautics:0 "Arantigan Aeronautics"
-ARA_royal_aerial_company:0 "Royal Aerial Company"
-ARA_h_and_t_aircraft:0 "H+T Aircraft"
 
 ### leader descriptions ###
 soter_president_desc:0 "Soter Litori, the Owl of Arantiga, from youngest general to president of the country, this young griffon now leads from a desk instead of the frontline"
