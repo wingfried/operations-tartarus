@@ -162,6 +162,7 @@ focus_tree = {
 		cost = 1.00
 		prerequisite = { focus = ARA_end_old_empire }
 		mutually_exclusive = { focus = ARA_fate_of_lord_protector }
+		available = { NOT = { has_global_flag =  GRI_grover_vi_dead } }
 		completion_reward = {
 		 country_event = arantiga.028
 		}
@@ -180,17 +181,17 @@ focus_tree = {
 			568 = { is_owned_and_controlled_by = ROOT }
 			492 = { is_owned_and_controlled_by = ROOT }
 			545 = { is_owned_and_controlled_by = ROOT }
-			}
+		}
 		completion_reward = {
 			568 = {
-			add_manpower = -50000
-		}
+				add_manpower = -50000
+			}
 			492 = {
-			add_manpower = -100000
-		}
+				add_manpower = -100000
+			}
 			539 = {
-			add_manpower = -50000
-		}
+				add_manpower = -50000
+			}
 			
 			add_resource = {
 				type = steel
@@ -269,8 +270,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ARA_marriage_of_convience
 		cost = 1.00
-		prerequisite = { focus = ARA_march_west
-						 focus = ARA_marriage_of_convience }
+		prerequisite = { focus = ARA_marriage_of_convience }
 		mutually_exclusive = { focus = ARA_king_of_aquileia }
 			available = {
 							JER = {
