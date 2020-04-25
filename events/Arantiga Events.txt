@@ -818,7 +818,260 @@ country_event = { #Griffonstone Archives
 	}
 	}
 
+	country_event = { #Aquileia considers arantiga
+	id = arantiga_chaos.005
+	title = arantiga_chaos.005.t
+	desc = arantiga_chaos.005.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+	name = arantiga_chaos.005.a #yes
+	ai_chance = {
+			factor = 160
+			modifier = {
+				factor = 0.5
+				has_government = communism
+			}
+			}
+			add_to_faction = ARA
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.009
+					days = 1
+			    } 
+	}
+	option = {
+	name = arantiga_chaos.005.b #no
+			ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				has_government = democratic
+			}
+			}
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.010
+					days = 1
+			    } 
+	}
+	}
+	}
 	
+	
+	
+	country_event = { #empire considers arantiga
+	id = arantiga_chaos.006
+	title = arantiga_chaos.006.t
+	desc = arantiga_chaos.006.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+	name = arantiga_chaos.006.a #yes
+	ai_chance = {
+			factor = 200
+			modifier = {
+				factor = 0.5
+				has_government = fascism
+			}
+			}
+			puppet = ARA
+			add_to_faction = ARA
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.0011
+					days = 1
+			    } 
+	}
+	option = {
+	name = arantiga_chaos.006.b #no
+			ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				has_government = neutrality
+			}
+			}
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.0012
+					days = 1
+			    } 
+	}
+	}
+	}
+	
+	country_event = { #Wingbardy considers arantiga
+	id = arantiga_chaos.007
+	title = arantiga_chaos.007.t
+	desc = arantiga_chaos.007.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+	name = arantiga_chaos.007.a #yes
+	ai_chance = {
+			factor = 200
+			modifier = {
+				factor = 0.5
+				has_government = fascism
+			}
+			}
+			add_to_faction = ARA
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.0013
+					days = 1
+			    } 
+	}
+	option = {
+	name = arantiga_chaos.006.b #no
+			ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				has_government = neutrality
+			}
+			}
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.014
+					days = 1
+			    } 
+	}
+	}
+	}
+	
+	country_event = { #Republicans considers arantiga
+	id = arantiga_chaos.008
+	title = arantiga_chaos.008.t
+	desc = arantiga_chaos.008.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+	name = arantiga_chaos.008.a #yes
+	ai_chance = {
+			factor = 200
+			modifier = {
+				factor = 0.5
+				has_government = fascism
+			}
+			}
+				add_to_faction = ARA
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.015
+					days = 1
+			    } 
+	}
+	option = {
+	name = arantiga_chaos.008.b #no
+			ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				has_government = democratic
+			}
+			}
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.016
+					days = 1
+			    } 
+	}
+	}
+	}
+	
+	country_event = { #we've been added to a faction
+	id = arantiga_chaos.009
+	title = arantiga_chaos.009.t
+	desc = arantiga_chaos.009.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga_chaos.009.a
+	}
+	}
+	
+	country_event = { #we've been added to a faction
+	id = arantiga_chaos.011
+	title = arantiga_chaos.011.t
+	desc = arantiga_chaos.011.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga_chaos.011.a
+	}
+	}
+	
+	country_event = { #we've been added to a faction
+	id = arantiga_chaos.013
+	title = arantiga_chaos.013.t
+	desc = arantiga_chaos.013.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga_chaos.013.a
+	}
+	}
+	
+	country_event = { #we've been added to a faction
+	id = arantiga_chaos.015
+	title = arantiga_chaos.015.t
+	desc = arantiga_chaos.015.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga_chaos.015.a
+	}
+	}
+	
+		country_event = { #we've been told to fuck off
+	id = arantiga_chaos.010
+	title = arantiga_chaos.010.t
+	desc = arantiga_chaos.010.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga_chaos.010.a
+	}
+	}
+	
+	country_event = { #we've been told to fuck off
+	id = arantiga_chaos.012
+	title = arantiga_chaos.012.t
+	desc = arantiga_chaos.012.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga_chaos.012.a
+	}
+	}
+	
+	country_event = {  #we've been told to fuck off
+	id = arantiga_chaos.014
+	title = arantiga_chaos.014.t
+	desc = arantiga_chaos.014.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga_chaos.014.a
+	}
+	}
+	
+	country_event = { #we've been told to fuck off
+	id = arantiga_chaos.016
+	title = arantiga_chaos.016.t
+	desc = arantiga_chaos.016.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga_chaos.016.a
+	}
+	}
 
 
 
