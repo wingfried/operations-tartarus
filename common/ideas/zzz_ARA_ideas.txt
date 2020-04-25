@@ -873,7 +873,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = ARA_nicator
 			desc = ARA_nicator_junta_desc
 			removal_cost = -1
 			modifier = {
@@ -891,7 +891,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = ARA_nicator
 			desc = ARA_nicator_junta1_desc
 			removal_cost = -1
 			modifier = {
@@ -908,7 +908,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = idea_ARA_forever
 			desc = ARA_arantigan_way_desc
 			removal_cost = -1
 			modifier = {
@@ -927,7 +927,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = griffon_race
 			desc = ARA_empower_minorities_desc
 			removal_cost = -1
 			modifier = {
@@ -943,7 +943,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = idea_no_poverty
 			desc = ARA_new_path_desc
 			removal_cost = -1
 			modifier = {
@@ -961,7 +961,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = idea_severe_famine5
 			desc = ARA_social_welfare_desc
 			removal_cost = -1
 			modifier = {
@@ -980,7 +980,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = griffon_army3
 			desc = ARA_liberty_death_desc
 			removal_cost = -1
 			modifier = {
@@ -998,7 +998,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = idea_pre_industrial_society
 			desc = ARA_crossroads_desc
 			removal_cost = -1
 			modifier = {
@@ -1017,7 +1017,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = idea_ARA_forever
 			desc = ARA_arantiga_forever_desc
 			removal_cost = -1
 			modifier = {
@@ -1041,8 +1041,9 @@ country = {
 			modifier = {
 			stability_factor = 0.1
 			war_support_factor = 0.1
-			army_org_Factor = 0.05
-			army_attack_factor = 0.05
+			set_rule = {
+				can_use_kamikaze_pilots = yes
+			}
 		}
 		}
 		}
@@ -1055,7 +1056,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = griffon_army_unhappy
 			desc = ARA_arantiga_forever_desc
 			removal_cost = -1
 			modifier = {
@@ -1073,7 +1074,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = idea_chi_war_of_resistance3
 			desc = ARA_arantiga_forever_desc
 			removal_cost = -1
 			modifier = {
@@ -1094,7 +1095,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = idea_chi_war_of_resistance3
 			desc = ARA_arantiga_forever_desc
 			removal_cost = -1
 			modifier = {
@@ -1115,7 +1116,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = idea_chi_war_of_resistance2
 			desc = ARA_arantiga_forever_desc
 			removal_cost = -1
 			modifier = {
@@ -1136,7 +1137,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = idea_chi_war_of_resistance2
 			desc = ARA_arantiga_forever_desc
 			removal_cost = -1
 			modifier = {
@@ -1157,7 +1158,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = idea_chi_war_of_resistance
 			desc = ARA_arantiga_forever_desc
 			removal_cost = -1
 			modifier = {
