@@ -2833,8 +2833,8 @@ focus_tree = {
 #UNIVERSAL MILITARY TREE#
 #########################
 
-	focus = {
-		id = SRS_state_of_the_army
+focus = {
+		id = SRS_lessons_of_the_civil_war
 		icon = GFX_focus_generic_military_mission
 		available = {
 			has_completed_focus = SRS_civwar_end
@@ -2847,285 +2847,562 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			army_experience = 10
+			army_experience = 20
 		}
 	}
 	
-	focus = {
-		id = SRS_officer_purge_1
-		icon = GFX_goal_purge_opposition
-		prerequisite = { focus = SRS_state_of_the_army }
-		x = 27
-		y = 20
-		cost = 1
-		ai_will_do = {
-			factor = 12
-		}
-		
-		completion_reward = {
-			remove_ideas = SRS_dissident_officers_1
-			add_ideas = SRS_dissident_officers_2
-		}
-	}
-	
-	focus = {
-		id = SRS_officer_purge_2
-		icon = GFX_goal_purge_opposition
-		prerequisite = { focus = SRS_officer_purge_1 }
-		x = 27
-		y = 21
-		cost = 1
-		ai_will_do = {
-			factor = 12
-		}
-		
-		completion_reward = {
-			remove_ideas = SRS_dissident_officers_2
-			add_ideas = SRS_dissident_officers_3
-		}
-	}
-	
-	focus = {
-		id = SRS_rankfile_purge_1
-		icon = GFX_goal_purge_opposition
-		prerequisite = { focus = SRS_state_of_the_army }
-		x = 29
-		y = 20
-		cost = 1
-		ai_will_do = {
-			factor = 12
-		}
-		
-		completion_reward = {
-			remove_ideas = SRS_dissident_soldiers_1
-			add_ideas = SRS_dissident_soldiers_2
-		}
-	}
-	
-	focus = {
-		id = SRS_rankfile_purge_2
-		icon = GFX_goal_purge_opposition
-		prerequisite = { focus = SRS_rankfile_purge_1 }
-		x = 29
-		y = 21
-		cost = 1
-		ai_will_do = {
-			factor = 12
-		}
-		
-		completion_reward = {
-			remove_ideas = SRS_dissident_soldiers_2
-			add_ideas = SRS_dissident_soldiers_3
-		}
-	}
-	
-	focus = {
-		id = SRS_new_chain_of_command
-		icon = GFX_goal_checkmate
-		prerequisite = { focus = SRS_officer_purge_2 }
-		prerequisite = { focus = SRS_rankfile_purge_2 }
-		x = 28
-		y = 22
-		cost = 7
-		ai_will_do = {
-			factor = 12
-		}
-		
-		completion_reward = {
-			remove_ideas = SRS_dissident_officers_3
-			remove_ideas = SRS_dissident_soldiers_3
-		}
-	}
-	
-	focus = {
-		id = SRS_gas_gas_gas
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = SRS_officer_purge_2 }
-		prerequisite = { focus = SRS_rankfile_purge_2 }
+    focus = {
+		id = SRS_fortification_effort
+		icon = GFX_goal_generic_construct_military
+			prerequisite = { focus = SRS_lessons_of_the_civil_war }
 		x = 26
-		y = 22
-		cost = 7
+		y = 20
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
-	}
-	
-	focus = {
-		id = SRS_new_talent
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = SRS_officer_purge_2 }
-		prerequisite = { focus = SRS_rankfile_purge_2 }
-		x = 30
-		y = 22
-		cost = 7
-		ai_will_do = {
-			factor = 12
+		
+		completion_reward = {
+            add_timed_idea = { idea = SRS_fortification_effort days = 200}
 		}
-	}
+	}   
 	
 	focus = {
-		id = SRS_mobile_warfare_foc
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = SRS_new_chain_of_command }
-		mutually_exclusive = { focus = SRS_mass_assault_foc }
-		mutually_exclusive = { focus = SRS_experimental_warfare }
+		id = SRS_cleanse_the_army
+		icon = GFX_goal_HOL_amend_wapenwet
+			prerequisite = { focus = SRS_lessons_of_the_civil_war }
 		x = 28
+		y = 20
+		cost = 1
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+            add_political_power = -50
+		    swap_ideas = {
+		        remove_idea = SRS_UITRAF_1
+		        add_idea = SRS_UITRAF_2
+		    }
+		}
+	}	
+	
+	focus = {
+		id = SRS_loyalty_of_the_generals
+		icon = GFX_focus_srs_loyal_general
+		prerequisite = { focus = SRS_cleanse_the_army }
+		x = 27
+		y = 21
+		cost = 1
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    country_event = { id = srs_simpleevent.1 days = 1 }
+		
+		}
+	}
+	
+	focus = {
+		id = SRS_Retire_disloyal_lieutenants
+		icon = GFX_goal_split_helmet
+		prerequisite = { focus = SRS_loyalty_of_the_generals }
+		x = 27
+		y = 22
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    if = {
+                limit = {
+                    has_idea = SRS_DOC_1
+                }
+                remove_ideas = SRS_DOC_1
+            else = {
+		        if = {
+                    limit = {
+                        has_idea = SRS_DOC_2
+                    }
+                    remove_ideas = SRS_DOC_2
+                else = {
+		            if = {
+                        limit = {
+                            has_idea = SRS_DOC_3
+                        }
+                        remove_ideas = SRS_DOC_3
+                    else = {
+			            remove_ideas = SRS_DOC_4
+			        }			
+			        }			
+			    }     
+                }
+            }
+	        }
+			add_manpower = -1000
+			add_command_power  = -60
+        }
+    }			
+	
+	focus = {
+		id = SRS_hardliner_penal_battalions
+		icon = GFX_goal_MAF_African_Pilots
+		prerequisite = { focus = SRS_cleanse_the_army }
+		x = 29
+		y = 21
+		cost = 1
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    custom_effect_tooltip = SRS_penal_garrison1
+		    swap_ideas = {
+		        remove_idea = SRS_UITRAF_2
+		        add_idea = SRS_UITRAF_3
+		    }
+            hidden_effect = {
+		        load_oob = "SRS_garrison1"
+            }			
+		}
+	}
+	
+	focus = {
+		id = SRS_revolutionary_discipline
+		icon = GFX_goal_strasserist_conscription
+		prerequisite = { focus = SRS_hardliner_penal_battalions }
+		x = 29
+		y = 22
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    custom_effect_tooltip = SRS_penal_garrison2
+		    remove_ideas = SRS_UITRAF_3
+            hidden_effect = {
+		        load_oob = "SRS_garrison2"
+            }			
+		}
+	}
+	
+	focus = {
+		id = SRS_rebuild_thechain_of_command
+		icon = GFX_goal_checkmate
+		prerequisite = { focus = SRS_Retire_disloyal_lieutenants }
+		prerequisite = { focus = SRS_revolutionary_discipline }
+		x = 28
+		y = 23
+		cost = 6
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {	
+		        hidden_effect = { add_ideas = SRS_general_skills_up }
+			custom_effect_tooltip = SRS_generals_skills_up			
+	    }	
+	}
+	
+	focus = {
+		id = SRS_reconsider_chemical_weaponry
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = SRS_Retire_disloyal_lieutenants }
+		prerequisite = { focus = SRS_revolutionary_discipline }
+		x = 26
 		y = 23
 		cost = 7
 		ai_will_do = {
 			factor = 12
 		}
+	    completion_reward = {
+		    add_ideas = SRS_military_gas
+			hidden_effect = {
+			    add_ideas = SRS_military_gas_cruch
+			}
+	    }
 	}
 	
 	focus = {
-		id = SRS_mobile_infantry
-		icon = GFX_goal_planning_bonus
-		prerequisite = { focus = SRS_mobile_warfare_foc }
+		id = SRS_new_military_talent
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = SRS_Retire_disloyal_lieutenants }
+		prerequisite = { focus = SRS_revolutionary_discipline }
+		x = 30
+		y = 23
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+		    custom_effect_tooltip = SRS_two_experts
+		}		
+	}
+	
+	focus = {
+		id = SRS_modern_warfare
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = SRS_rebuild_thechain_of_command }
+		mutually_exclusive = { focus = SRS_infantry_warfare }
+		mutually_exclusive = { focus = SRS_experimental_warfare }
 		x = 28
 		y = 24
 		cost = 7
 		ai_will_do = {
 			factor = 12
 		}
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 1
+                uses = 3
+                category = cat_mobile_warfare
+				category = cat_superior_firepower
+            }		
+		}	
 	}
-	
+
 	focus = {
-		id = SRS_mass_assault_foc
-		icon = GFX_goal_griffon_arms_focus_com
-		prerequisite = { focus = SRS_new_chain_of_command }
-		mutually_exclusive = { focus = SRS_mobile_warfare_foc }
-		mutually_exclusive = { focus = SRS_experimental_warfare }
-		x = 26
-		y = 23
-		cost = 7
+		id = SRS_mobile_infantry
+		icon = GFX_goal_generic_armored_car
+		prerequisite = { focus = SRS_modern_warfare }
+		x = 28
+		y = 25
+		cost = 9
 		ai_will_do = {
 			factor = 12
 		}
-	}
+		completion_reward = {
+		add_ideas = SRS_modern_warfare_1
+			add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                category = motorized_equipment
+            }		
+		}			
+	}		
 	
 	focus = {
-		id = SRS_equipment_standardization
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = SRS_mass_assault_foc }
+		id = SRS_infantry_warfare
+		icon = GFX_goal_griffon_arms_focus_com
+		prerequisite = { focus = SRS_rebuild_thechain_of_command }
+		mutually_exclusive = { focus = SRS_modern_warfare }
+		mutually_exclusive = { focus = SRS_experimental_warfare }
 		x = 24
 		y = 24
 		cost = 7
 		ai_will_do = {
 			factor = 12
 		}
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 1
+                uses = 3
+                category = cat_grand_battle_plan
+	            category = cat_mass_assault
+            }
+		}	
 	}
+	
+	focus = {
+		id = SRS_standardized_infantry_equipment
+		icon = GFX_goal_military_academy
+		prerequisite = { focus = SRS_infantry_warfare }
+		x = 24
+		y = 25
+		cost = 9
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+		    add_ideas = SRS_infantry_warfare_1
+			add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                category = infantry_weapons
+            }
+		}		
+	}	
 	
 	focus = {
 		id = SRS_experimental_warfare
 		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = SRS_new_chain_of_command }
-		mutually_exclusive = { focus = SRS_mobile_warfare_foc }
-		mutually_exclusive = { focus = SRS_mass_assault_foc }
-		x = 30
-		y = 23
-		cost = 7
-		ai_will_do = {
-			factor = 12
-		}
-	}
-	
-	focus = {
-		id = SRS_specialized_manufacturing
-		icon = GFX_goal_purchase_tech
-		prerequisite = { focus = SRS_experimental_warfare }
+		prerequisite = { focus = SRS_rebuild_thechain_of_command }
+		mutually_exclusive = { focus = SRS_modern_warfare }
+		mutually_exclusive = { focus = SRS_infantry_warfare }
 		x = 32
 		y = 24
 		cost = 7
 		ai_will_do = {
 			factor = 12
 		}
+		completion_reward = {
+		    add_ideas = SRS_doctrine_res_bonus
+		}
+	}
+
+	focus = {
+		id = SRS_specialized_manufacruting
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = SRS_experimental_warfare }
+		x = 32
+		y = 25
+		cost = 9
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+		    custom_effect_tooltip = SRS_EW_cruch3
+		    add_ideas = SRS_experimental_warfare_2
+			hidden_effect = {
+		        add_ideas = SRS_experimental_warfare_cruch
+            }			
+		}
 	}
 	
 	focus = {
-		id = SRS_sickleclaws_tankies
+		id = SRS_develop_an_armor_corps
 		icon = GFX_focus_NZL_bob_semple_tank
 		prerequisite = { focus = SRS_mobile_infantry }
 		x = 27
-		y = 25
-		cost = 7
+		y = 26
+		cost = 9
 		ai_will_do = {
 			factor = 12
+		}
+		completion_reward = {
+		    if = {
+		        limit = {
+			        NOT = {
+			            is_researching_technology = gwtank
+				    }
+			    }
+			    set_technology = {
+                    gwtank = 1
+                }    
+		    }
+		    custom_effect_tooltip = SRS_tankdiv1			
+            hidden_effect = {
+                country_event = { id = srs_simpleevent.3 days = 1 }			
+		        load_oob = "SRS_tanks"
+		    }
 		}
 	}
 	
 	focus = {
-		id = SRS_sickleclaws_shinier_tankies
+		id = SRS_Mechanization
 		icon = GFX_focus_generic_tank_production
-		prerequisite = { focus = SRS_sickleclaws_tankies }
+		prerequisite = { focus = SRS_develop_an_armor_corps }
 		x = 27
-		y = 26
-		cost = 7
+		y = 27
+		cost = 9
 		ai_will_do = {
 			factor = 12
 		}
+		completion_reward = {
+		    custom_effect_tooltip = SRS_MW_cruch2
+			add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                category = cat_light_armor
+            }
+			hidden_effect = {
+		        if = {
+		            limit = {
+			            has_idea = SRS_modern_warfare_1
+				    }
+		            swap_ideas = {
+			            remove_idea = SRS_modern_warfare_1
+				        add_idea = SRS_modern_warfare_3a
+			        }
+		        else = {
+		            if = {
+			            limit = {
+				            has_idea = SRS_modern_warfare_2a
+					    }
+			            swap_ideas = {
+			                remove_idea = SRS_modern_warfare_2a
+	                        add_idea = SRS_modern_warfare_2b
+			            }
+		            else = {
+			            swap_ideas = {
+			                remove_idea = SRS_modern_warfare_4a
+	                        add_idea = SRS_modern_warfare_4b
+		                }
+                    }			
+		            }		
+	            }
+	            }
+	        }
+	    }
 	}
 	
 	focus = {
-		id = SRS_better_cannons
+		id = SRS_artillery_modernization
 		icon = GFX_goal_national_artillery
-		prerequisite = { focus = SRS_mobile_infantry }
+		prerequisite = { focus = SRS_mobile_infantry}
 		x = 29
-		y = 25
-		cost = 7
+		y = 26
+		cost = 9
 		ai_will_do = {
 			factor = 12
+		}
+		completion_reward = {
+		    custom_effect_tooltip = SRS_MW_cruch1
+		    hidden_effect = {
+		        if = {
+		            limit = {
+			            has_idea = SRS_modern_warfare_1
+				        }
+		            swap_ideas = {
+			            remove_idea = SRS_modern_warfare_1
+				        add_idea = SRS_modern_warfare_2a
+			        }
+		        else = {
+			        swap_ideas = {
+			            remove_idea = SRS_modern_warfare_3a
+	                    add_idea = SRS_modern_warfare_2b
+		 	        }
+		        }
+                }
+	        }
+		    add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                category = artillery
+            }		
 		}
 	}
 	
 	focus = {
-		id = SRS_reliable_weaponry
+		id = SRS_maintain_our_equipment
 		icon = GFX_goal_military_academy
-		prerequisite = { focus = SRS_better_cannons }
+		prerequisite = { focus = SRS_artillery_modernization }
 		x = 29
-		y = 26
-		cost = 7
+		y = 27
+		cost = 9
 		ai_will_do = {
 			factor = 12
 		}
-	}
+		completion_reward = {
+		    custom_effect_tooltip = SRS_MW_cruch3
+			add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                category = support_tech
+            }
+			hidden_effect = {
+		        add_ideas = SRS_modern_warfare_cruch			
+		        if = {
+		            limit = {
+			            has_idea = SRS_modern_warfare_2a
+				    }
+		            swap_ideas = {
+			            remove_idea = SRS_modern_warfare_2a
+				        add_idea = SRS_modern_warfare_4a
+			        }
+		        else = {
+			        swap_ideas = {
+			            remove_idea = SRS_modern_warfare_2b
+	                    add_idea = SRS_modern_warfare_4b
+			        }
+		        }
+                }			
+		    }		
+	    }
+	}	
 	
 	focus = {
 		id = SRS_outmanouver_them
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = SRS_reliable_weaponry }
-		prerequisite = { focus = SRS_sickleclaws_shinier_tankies }
+		prerequisite = { focus = SRS_maintain_our_equipment }
+		prerequisite = { focus = SRS_Mechanization }
 		mutually_exclusive = { focus = SRS_outgun_them }
 		x = 27
-		y = 27
-		cost = 7
+		y = 28
+		cost = 10
 		ai_will_do = {
 			factor = 12
+		}
+		completion_reward = {
+		    custom_effect_tooltip = SRS_MW_cruch4
+			hidden_effect = {
+		        swap_ideas = {
+		            remove_idea = SRS_modern_warfare_4b
+		            add_idea = SRS_modern_warfare_5a
+		        }    
+			}  
 		}
 	}
 	
 	focus = {
 		id = SRS_outgun_them
 		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = SRS_reliable_weaponry }
-		prerequisite = { focus = SRS_sickleclaws_shinier_tankies }
+		prerequisite = { focus = SRS_maintain_our_equipment }
+		prerequisite = { focus = SRS_Mechanization }
 		mutually_exclusive = { focus = SRS_outmanouver_them }
 		x = 29
-		y = 27
-		cost = 7
+		y = 28
+		cost = 10
 		ai_will_do = {
 			factor = 12
 		}
+		completion_reward = {
+		    custom_effect_tooltip = SRS_MW_cruch5
+		    hidden_effect = {			
+	            add_ideas = SRS_military_MW_cruch
+		        swap_ideas = {
+		            remove_idea = SRS_modern_warfare_4b
+		            add_idea = SRS_modern_warfare_5b
+		        }				
+			}
+        }			
 	}
 	
 	focus = {
 		id = SRS_every_griffon_a_soldier
 		icon = GFX_goal_conscription
-		prerequisite = { focus = SRS_equipment_standardization }
+		prerequisite = { focus = SRS_standardized_infantry_equipment }
 		x = 25
-		y = 25
-		cost = 7
+		y = 26
+		cost = 9
 		ai_will_do = {
 			factor = 12
+		}
+		completion_reward = {
+            custom_effect_tooltip = SRS_IW_cruch1
+		    custom_effect_tooltip = SRS_emergency_conscription			
+		    hidden_effect = {
+		        if = {
+                    limit = {
+                        has_idea = SRS_infantry_warfare_1
+                    }    				
+		            swap_ideas = {
+		                remove_idea = SRS_infantry_warfare_1
+			            add_idea = SRS_infantry_warfare_2a
+		            }
+		        else = {
+		    	    if = {
+		    		    limit = {
+					        has_idea = SRS_infantry_warfare_3a
+		                }
+		                swap_ideas = {
+		                    remove_idea = SRS_infantry_warfare_3a
+			                add_idea = SRS_infantry_warfare_2b
+		                }
+                    else = {
+                        swap_ideas = {
+		                    remove_idea = SRS_infantry_warfare_4a
+			                add_idea = SRS_infantry_warfare_2c
+		                   
+						}
+                    }
+                    }
+                }
+                }
+		    }  
 		}
 	}
 	
@@ -3134,155 +3411,503 @@ focus_tree = {
 		icon = GFX_goal_offensive_army
 		prerequisite = { focus = SRS_every_griffon_a_soldier }
 		x = 25
-		y = 26
-		cost = 7
+		y = 27
+		cost = 9
 		ai_will_do = {
 			factor = 12
 		}
-	}
+		completion_reward = {
+		custom_effect_tooltip = SRS_IW_cruch4
+		    hidden_effect = {
+    		    if = {
+                    limit = {
+                        has_idea = SRS_infantry_warfare_2a
+                    }    				
+	    	        swap_ideas = {
+	    	            remove_idea = SRS_infantry_warfare_2a
+	    		        add_idea = SRS_infantry_warfare_5a
+	    	        }
+	    	    else = {
+	    	        if = {
+	    	    		limit = {
+	    				    has_idea = SRS_infantry_warfare_2b
+	    	            }
+	    	            swap_ideas = {
+	    	                remove_idea = SRS_infantry_warfare_2b
+	    		            add_idea = SRS_infantry_warfare_3c
+	    	            }
+                    else = {
+                        swap_ideas = {
+		                     remove_idea = SRS_infantry_warfare_2c
+		    	            add_idea = SRS_infantry_warfare_4c
+		                }
+                    }   
+                    }
+                }
+                }
+		    }	
+        }		
+ 	}
 	
 	focus = {
 		id = SRS_tankbusters
 		icon = GFX_goal_anti_tank
-		prerequisite = { focus = SRS_equipment_standardization }
+		prerequisite = { focus = SRS_standardized_infantry_equipment }
 		x = 23
-		y = 25
-		cost = 7
+		y = 26
+		cost = 9
 		ai_will_do = {
 			factor = 12
 		}
-	}
+		completion_reward = {
+		    custom_effect_tooltip = SRS_IW_cruch2
+			hidden_effect = {
+			    add_ideas = SRS_infantry_warfare_cruch
+			    add_tech_bonus = {
+                    bonus = 1
+                    uses = 2
+                   technology = antitank1
+		    		technology = antitank2
+	    			technology = antitank3
+	    			technology = antitank4
+	    			technology = antitank5
+	    			technology = antitank_a
+	    			technology = antitank_b
+	    			technology = antitank_c
+	    			technology = antitank_d
+	    			technology = antitank_e				
+                }
+		        if = {
+                    limit = {
+                        has_idea = SRS_infantry_warfare_1
+                    }    				
+		            swap_ideas = {
+		                remove_idea = SRS_infantry_warfare_1
+		    	        add_idea = SRS_infantry_warfare_3a
+		            }
+		        else = {
+		            if = {
+		        		limit = {
+			 		        has_idea = SRS_infantry_warfare_2a
+		                }
+	                    swap_ideas = {
+		                    remove_idea = SRS_infantry_warfare_2a
+			                add_idea = SRS_infantry_warfare_2b
+		                }
+                    else = {
+                        swap_ideas = {
+		                    remove_idea = SRS_infantry_warfare_5a
+			                add_idea = SRS_infantry_warfare_3c
+		                } 
+                    }
+                    }
+                }
+                }			
+	        }
+		}
+	}	
 	
 	focus = {
-		id = SRS_medicine
+		id = SRS_field_medicine
 		icon = GFX_focus_healthcare_program
 		prerequisite = { focus = SRS_tankbusters }
 		x = 23
-		y = 26
-		cost = 7
+		y = 27
+		cost = 9
 		ai_will_do = {
 			factor = 12
+		}	
+		completion_reward = {
+		    custom_effect_tooltip = SRS_IW_cruch3
+			hidden_effect = {
+	    		add_tech_bonus = {
+                    bonus = 1
+                    uses = 2
+                    technology = tech_field_hospital
+	    			technology = tech_field_hospital2
+	    			technology = tech_field_hospital3
+	    			technology = tech_field_hospital4
+	         		technology = tech_field_hospital_a
+	    			technology = tech_field_hospital_b
+		    		technology = tech_field_hospital_c				
+               }		
+		        if = {
+                    limit = {
+                        has_idea = SRS_infantry_warfare_3a
+                     }    				
+		            swap_ideas = {
+		                remove_idea = SRS_infantry_warfare_3a
+		    	        add_idea = SRS_infantry_warfare_4a
+		            }
+		        else = {
+		        	if = {
+		        		limit = {
+		    			    has_idea = SRS_infantry_warfare_2b
+		                }
+		                swap_ideas = {
+		                    remove_idea = SRS_infantry_warfare_2b
+		    	            add_idea = SRS_infantry_warfare_2c
+		                }
+                    else = {
+                        swap_ideas = {
+		                    remove_idea = SRS_infantry_warfare_3c
+			                add_idea = SRS_infantry_warfare_4c
+		                }
+                    }
+                    }
+                }
+                }
+	        }
 		}
-	}
+	}	
 
 	focus = {
 		id = SRS_relentless_assault
 		icon = GFX_focus_generic_provoke_border_clashes
 		prerequisite = { focus = SRS_winter_training }
-		prerequisite = { focus = SRS_medicine }
+		prerequisite = { focus = SRS_field_medicine }
 		x = 24
-		y = 27
-		cost = 7
+		y = 28
+		cost = 10
 		ai_will_do = {
 			factor = 12
+		}
+		completion_reward = {
+		    custom_effect_tooltip = SRS_IW_cruch5
+			hidden_effect = {
+		        swap_ideas = {
+		            remove_idea = SRS_infantry_warfare_4c
+			        add_idea = SRS_infantry_warfare_6
+		        }
+		    }
 		}
 	}
 
 	focus = {
-		id = SRS_magic_guns
+		id = SRS_magical_guns
 		icon = GFX_goal_magical_weapon_focus
-		prerequisite = { focus = SRS_specialized_manufacturing }
+		prerequisite = { focus = SRS_specialized_manufacruting }
 		x = 31
-		y = 25
-		cost = 7
+		y = 26
+		cost = 9
 		ai_will_do = {
 			factor = 12
 		}
+		completion_reward = {
+		custom_effect_tooltip = SRS_EW_cruch1
+		    hidden_effect = {
+			    add_tech_bonus = {
+                    bonus = 1
+                    uses = 2
+                    technology = magical_weapons
+                    technology = magical_weapons1	
+                    technology = magical_weapons2	
+                    technology = magical_weapons3					
+                }
+		        if = {
+                    limit = {
+                        has_idea = SRS_experimental_warfare_2
+                    }    				
+		            swap_ideas = {
+		                remove_idea = SRS_experimental_warfare_2
+			            add_idea = SRS_experimental_warfare_3a
+		            }
+		        else = {
+		    	    if = {
+		    		    limit = {
+					        has_idea = SRS_experimental_warfare_4a
+		                }
+		                swap_ideas = {
+		                    remove_idea = SRS_experimental_warfare_4a
+			                add_idea = SRS_experimental_warfare_3c
+		                }
+                    else = {
+                        swap_ideas = {
+		                    remove_idea = SRS_experimental_warfare_4c
+			                add_idea = SRS_experimental_warfare_3d
+		                } 
+                    }
+                    }
+                }
+                }			
+		    }
+	    }
 	}
 	
 	focus = {
-		id = SRS_expand_specops
+		id = SRS_expanded_special_forces
 		icon = GFX_goal_griffon_special_force
-		prerequisite = { focus = SRS_magic_guns }
+		prerequisite = { focus = SRS_magical_guns }
 		x = 31
-		y = 26
-		cost = 7
-		ai_will_do = {
-			factor = 12
-		}
-	}
-	
-	focus = {
-		id = SRS_rocket_artillery
-		icon = GFX_goal_rocket
-		prerequisite = { focus = SRS_specialized_manufacturing }
-		x = 33
-		y = 25
-		cost = 7
-		ai_will_do = {
-			factor = 12
-		}
-	}
-	
-	focus = {
-		id = SRS_use_radio
-		icon = GFX_goal_radio
-		prerequisite = { focus = SRS_rocket_artillery }
-		x = 33
-		y = 26
-		cost = 7
-		ai_will_do = {
-			factor = 12
-		}
-	}
-	
-	focus = {
-		id = SRS_superheavy_tanks_xdxdxd
-		icon = GFX_focus_generic_army_tanks2
-		prerequisite = { focus = SRS_expand_specops }
-		prerequisite = { focus = SRS_use_radio }
-		x = 32
 		y = 27
-		cost = 7
+		cost = 9
 		ai_will_do = {
 			factor = 12
 		}
+	    completion_reward = {
+		    custom_effect_tooltip = SRS_EW_cruch4
+			    hidden_effect = {
+		            if = {
+                        limit = {
+                            has_idea = SRS_experimental_warfare_3a
+                        }    				
+		                swap_ideas = {
+		                    remove_idea = SRS_experimental_warfare_3a
+			                add_idea = SRS_experimental_warfare_5a
+		                }
+		            else = {
+		    	        if = {
+		    		        limit = {
+					            has_idea = SRS_experimental_warfare_3d
+		                    }
+		                    swap_ideas = {
+		                        remove_idea = SRS_experimental_warfare_3d
+			                    add_idea = SRS_experimental_warfare_5c
+		                    }
+                        else = {
+                            swap_ideas = {
+		                        remove_idea = SRS_experimental_warfare_3c
+			                    add_idea = SRS_experimental_warfare_4b
+		                    }
+                        }
+                        }
+                    }
+                    }
+		        }
+        }				
 	}
 	
 	focus = {
-		id = SRS_harness_crystal_energy
-		icon = GFX_goal_generic_crystals
-		prerequisite = { focus = SRS_outgun_them focus = SRS_outmanouver_them focus = SRS_relentless_assault focus = SRS_superheavy_tanks_xdxdxd }
-		x = 28
+		id = SRS_a_new_type_of_artillery
+		icon = GFX_goal_rocket
+		prerequisite = { focus = SRS_specialized_manufacruting }
+		x = 33
+		y = 26
+		cost = 9
+		ai_will_do = {
+			factor = 12
+		}
+	    completion_reward = {
+		    custom_effect_tooltip = SRS_EW_cruch2
+			hidden_effect = {
+			    add_Ideas = SRS_exp_warfare_cruch_warfare_cruch2
+			    add_tech_bonus = {
+                    bonus = 1
+                    uses = 2
+                    technology = rocket_artillery
+                    technology = rocket_artillery2	
+                    technology = rocket_artillery3
+                    technology = rocket_artillery4
+                    technology = rocket_artillery_a		
+                    technology = rocket_artillery_b	
+                    technology = rocket_artillery_c	
+                    technology = rocket_artillery_d	
+                    technology = rocket_artillery_e					
+                }
+		        if = {
+                    limit = {
+                        has_idea = SRS_experimental_warfare_2
+                    }    				
+		            swap_ideas = {
+		                remove_idea = SRS_experimental_warfare_2
+			            add_idea = SRS_experimental_warfare_4a
+		            }
+		        else = {
+		    	    if = {
+		    	    	limit = {
+					        has_idea = SRS_experimental_warfare_3a
+		                }
+		                swap_ideas = {
+		                    remove_idea = SRS_experimental_warfare_3a
+			                add_idea = SRS_experimental_warfare_3c
+		                }
+                    else = {
+                        swap_ideas = {
+		                    remove_idea = SRS_experimental_warfare_5a
+			                add_idea = SRS_experimental_warfare_4b
+		                }
+                    }
+                    }
+                }
+                }			
+		    }
+	    }
+	}
+	
+	focus = {
+		id = SRS_military_use_of_radio
+		icon = GFX_goal_radio
+		prerequisite = { focus = SRS_a_new_type_of_artillery }
+		x = 33
+		y = 27
+		cost = 9
+		ai_will_do = {
+			factor = 12
+		}
+	    completion_reward = {
+		    custom_effect_tooltip = SRS_EW_cruch5
+			hidden_effect = {
+		        add_ideas = SRS_military_EWinitiative_cruch			
+			    add_tech_bonus = {
+                    bonus = 1
+                    uses = 2
+                    technology = tech_signal_company
+                    technology = tech_signal_company2
+                    technology = tech_signal_company3
+                    technology = tech_signal_company4
+                    technology = tech_signal_company_a	
+                    technology = tech_signal_company_b		
+                    technology = tech_signal_company_c					
+                }
+		        if = {
+                    limit = {
+                        has_idea = SRS_experimental_warfare_4a
+                    }    				
+		            swap_ideas = {
+		                remove_idea = SRS_experimental_warfare_4a
+			            add_idea = SRS_experimental_warfare_4c
+		            }
+		        else = {
+		    	    if = {
+		    		    limit = {
+					        has_idea = SRS_experimental_warfare_3c
+		                }
+		                swap_ideas = {
+		                    remove_idea = SRS_experimental_warfare_3c
+			                add_idea = SRS_experimental_warfare_3d
+		                }
+                    else = {
+                        swap_ideas = {
+		                    remove_idea = SRS_experimental_warfare_4b
+			                add_idea = SRS_experimental_warfare_5c
+		                }
+                    }
+                    }
+                }
+                }			
+		    }		
+	    }
+    }
+	
+	focus = {
+		id = SRS_project_artcurius
+		icon = GFX_focus_generic_army_tanks2
+		prerequisite = { focus = SRS_expanded_special_forces }
+		prerequisite = { focus = SRS_military_use_of_radio }
+		x = 32
 		y = 28
-		cost = 7
+		cost = 12
 		ai_will_do = {
 			factor = 12
 		}
+		completion_reward = {
+		    if = {
+		        limit = {
+			        NOT = {
+			            is_researching_technology = super_heavy_tank
+				    }
+			    }
+		        custom_effect_tooltip = SRS_EW_cruch6			
+		    }
+            custom_effect_tooltip = SRS_tankdiv2
+            hidden_effect = {
+                country_event = { id = srs_simpleevent.2 days = 1 }			
+		        load_oob = "SRS_heavy_tanks"
+		        if = {
+		            limit = {
+			            NOT = {
+			                is_researching_technology = super_heavy_tank
+				        }
+			        }
+			        set_technology = {
+                        super_heavy_tank = 1
+                    }
+		        }
+	        }
+	    }
 	}
 	
 	focus = {
-		id = SRS_ultima_ratio
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = SRS_harness_crystal_energy }
+		id = SRS_harness_the_power_of_crystals
+		icon = GFX_goal_generic_crystals
+		prerequisite = { focus = SRS_outgun_them focus = SRS_outmanouver_them focus = SRS_relentless_assault focus = SRS_project_artcurius }
 		x = 28
+		y = 29
+		cost = 9
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1
+				uses = 1
+				category = nuclear
+			}
+		    add_resource = {
+               type = crystals
+               amount = 10
+               state = 585
+            }	
+			}
+	}
+	
+	focus = {
+		id = SRS_presidents_last_argument
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = SRS_harness_the_power_of_crystals }
+		x = 28
+		y = 30
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = nuclear
+			}
+        }			
+	}
+	
+	focus = {
+		id = SRS_rocketry_experiments
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = SRS_outgun_them focus = SRS_outmanouver_them focus = SRS_relentless_assault focus = SRS_project_artcurius }
+		x = 26
 		y = 29
 		cost = 7
 		ai_will_do = {
 			factor = 12
 		}
-	}
-	
-	focus = {
-		id = SRS_rocketry
-		icon = GFX_focus_rocketry
-		prerequisite = { focus = SRS_outgun_them focus = SRS_outmanouver_them focus = SRS_relentless_assault focus = SRS_superheavy_tanks_xdxdxd }
-		x = 26
-		y = 28
-		cost = 7
-		ai_will_do = {
-			factor = 12
-		}
+		completion_reward = {
+		    custom_effect_tooltip = SRS_rocket_cruch
+		    hidden_effect = {
+			    add_tech_bonus = {
+				    bonus = 1
+				    uses = 3
+				    category = rocketry
+			    }
+		    }
+        }		
 	}
 	
 	focus = {
 		id = SRS_radar_experiments
 		icon = GFX_focus_Computer_2
-		prerequisite = { focus = SRS_outgun_them focus = SRS_outmanouver_them focus = SRS_relentless_assault focus = SRS_superheavy_tanks_xdxdxd }
+		prerequisite = { focus = SRS_outgun_them focus = SRS_outmanouver_them focus = SRS_relentless_assault focus = SRS_project_artcurius }
 		x = 30
-		y = 28
+		y = 29
 		cost = 7
 		ai_will_do = {
 			factor = 12
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = radar_tech
+			}
+        }		
 	}
