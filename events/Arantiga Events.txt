@@ -429,6 +429,26 @@ country_event = { #going lower
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
+			        id = arantiga.171
+					days = 1
+			    }
+				}
+				}
+	}
+	}
+	
+		country_event = { #voi ch'entrate
+	id = arantiga.171
+	title = arantiga.171.t
+	desc = arantiga.171.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = arantiga.171.a
+	custom_effect_tooltip = ara_tooltip_voichentrate
+	hidden_effect = {
+				ARA = {
+		        country_event = { 
 			        id = arantiga.019
 					days = 1
 			    }
@@ -646,6 +666,7 @@ country_event = { #No remorse
 	####INCOMPLETE WORLD NEWS EVENT „Idol of Boreas reclaimed” ####
 	hidden_effect = {
 	set_country_flag = dorotheos_recovers_idol
+	load_focus_tree = Arantiga_arantigos
 	ARA = {
 		        country_event = { 
 			        id = arantiga.026
