@@ -3,11 +3,7 @@ focus_tree = {
 	
 	country = {
 		factor = 0
-		modifier = {
-			original_tag = ARA
-			add = 101
-			#has_country_flag = dorotheos_recovers_idol
-		}
+		
 	}
 	
 
