@@ -2851,7 +2851,7 @@ focus = {
 		}
 	}
 	
-    focus = {
+   focus = {
 		id = SRS_fortification_effort
 		icon = GFX_goal_generic_construct_military
 			prerequisite = { focus = SRS_lessons_of_the_civil_war }
@@ -2863,9 +2863,11 @@ focus = {
 		}
 		
 		completion_reward = {
-            add_timed_idea = { idea = SRS_fortification_effort days = 200}
+            add_timed_idea = {
+				idea = { SRS_fortification_effort days = 200 }
+			}
 		}
-	}   
+	}
 	
 	focus = {
 		id = SRS_cleanse_the_army
