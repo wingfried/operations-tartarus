@@ -9,6 +9,9 @@ SRS_democratic_party:0 "USRF-H"
 SRS_democratic_party_long:0 "United Socialist Revolutionary Front - Harmonist"
 SRS_fascism_party:0 "Skyvanian National Movement"
 
+#### BOOKMARK ####
+SRS_GATHERING_STORM_DESC:0 "From the ashes of revolution, the Republican phoenix went north, where it found a perch in Cloudbury. There it would decay, and Sickleclaw and his socialists would leave in the face of warlordism and in-fighting. In the North, they would find their own home. New Skynavia, built off pony land, would be a beacon of socialism and prosperity for the world to follow. Except, it hasn't. Sickleclaw's transitionary government is still in place and constant infighting between the socialists helps no one. Is a stronger hand needed?"
+
 #### LEADERS ####
 JOHN_CARLINI_NAME_DESC:0 "John Carlini grew up in a rich merchant district in Skyfall, experiencing a pampered childhood provided by his businessgriff father.\n\nGoing to the Cyrusval University in Yale for his higher studies, he became radicalised by the socialist thought prevalent in the University's Faculty of Social Sciences. Thoroughly disillusioned with his bourgeois upbringing, as soon as he graduated he signed up to one of the many mercenary companies fighting in the conflicts flaring up all around the world.\n\nHaving participated in the fierce fighting in the fields of Prywhen on the Communist side, Carlini arrived at the Socialist Republic of Skynavia bringing with him those of his mercenary company he was able to win over to the ideals of socialism. Now, he aspires to fight for a higher cause - that of the liberation of the proletariat of Griffonia."
 SICKLECLAW_NAME_DESC:0 "Asper Sickleclaw was a junior lieutenant in the Griffonian army when the First Revolution smashed the Empire to pieces. Marching alongside his fellow revolutionaries, Sickleclaw participated in most of the battles against the monarchist counter-revolution, eventually ending up in Cloudbury along with the remnants of the Republican government.\n\nHaving witnessed the despotism and authoritarianism of the Republican generals, Sickleclaw, anticipating the Republic's spiral into warlordism, adopted socialist views and marched onwards north, leading disillusioned socialists and other leftists away from the crumbling Republic into the virgin lands of Skynavia, where they hoped to start anew, free from the baggage of capitalist militarism.\n\nNow a staunch Internationalist, Sickleclaw is the foremost military leader of the Skynavian Socialist Republic, and is looked up to by most as a revered war hero, though some have raised concerns over what they perceive to be autocratic tendencies in his leadership."
@@ -154,7 +157,7 @@ srs_borderwar.7.d:0 "Our enemies have broke through our defences and destroyed s
 srs_borderwar.7.a:0 "That's bad."
 
 #### TEMPROARY SUBMOD IDEAS ####
-SRS_doubt_in_sickleclaw:0 "Doubt in Sickleclaw - Vialotile"
+SRS_doubt_in_sickleclaw:0 "Doubt in Sickleclaw - Volatile"
 SRS_doubt_in_sickleclaw_1:0 "Doubt in Sickleclaw - Under Control"
 SRS_doubt_in_sickleclaw_2:0 "Doubt in Sickleclaw - Critical"
 SRS_levee_en_masse:0 "Mass Recruitment"
