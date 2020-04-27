@@ -1,6 +1,7 @@
 ﻿add_namespace = arantiga
 add_namespace = arantiga_news
 add_namespace = arantiga_chaos
+add_namespace = arantiga_govern
 ##### NEW EVENTS #############
 
 	
@@ -286,6 +287,17 @@ country_event = { #Unexpected return Flavour events
 	custom_effect_tooltip = ara_tooltip_voices_6
 	}
 	}
+	
+country_event = { #Soter meets Nicator
+	id = arantiga.998
+	title = arantiga.998.t
+	desc = arantiga.998.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga.998.a
+	}
+	}
 
 
 #################################################################
@@ -414,6 +426,26 @@ country_event = { #going lower
 	fire_only_once = yes
 	option = {
 	name = arantiga.017.a
+	hidden_effect = {
+				ARA = {
+		        country_event = { 
+			        id = arantiga.171
+					days = 1
+			    }
+				}
+				}
+	}
+	}
+	
+		country_event = { #voi ch'entrate
+	id = arantiga.171
+	title = arantiga.171.t
+	desc = arantiga.171.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = arantiga.171.a
+	custom_effect_tooltip = ara_tooltip_voichentrate
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -634,6 +666,7 @@ country_event = { #No remorse
 	####INCOMPLETE WORLD NEWS EVENT „Idol of Boreas reclaimed” ####
 	hidden_effect = {
 	set_country_flag = dorotheos_recovers_idol
+	load_focus_tree = Arantiga_arantigos
 	ARA = {
 		        country_event = { 
 			        id = arantiga.026
@@ -817,7 +850,260 @@ country_event = { #Griffonstone Archives
 	}
 	}
 
+	country_event = { #Aquileia considers arantiga
+	id = arantiga_chaos.005
+	title = arantiga_chaos.005.t
+	desc = arantiga_chaos.005.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+	name = arantiga_chaos.005.a #yes
+	ai_chance = {
+			factor = 160
+			modifier = {
+				factor = 0.5
+				has_government = communism
+			}
+			}
+			add_to_faction = ARA
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.009
+					days = 1
+			    } 
+	}
+	option = {
+	name = arantiga_chaos.005.b #no
+			ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				has_government = democratic
+			}
+			}
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.010
+					days = 1
+			    } 
+	}
+	}
+	}
 	
+	
+	
+	country_event = { #empire considers arantiga
+	id = arantiga_chaos.006
+	title = arantiga_chaos.006.t
+	desc = arantiga_chaos.006.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+	name = arantiga_chaos.006.a #yes
+	ai_chance = {
+			factor = 200
+			modifier = {
+				factor = 0.5
+				has_government = fascism
+			}
+			}
+			puppet = ARA
+			add_to_faction = ARA
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.0011
+					days = 1
+			    } 
+	}
+	option = {
+	name = arantiga_chaos.006.b #no
+			ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				has_government = neutrality
+			}
+			}
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.0012
+					days = 1
+			    } 
+	}
+	}
+	}
+	
+	country_event = { #Wingbardy considers arantiga
+	id = arantiga_chaos.007
+	title = arantiga_chaos.007.t
+	desc = arantiga_chaos.007.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+	name = arantiga_chaos.007.a #yes
+	ai_chance = {
+			factor = 200
+			modifier = {
+				factor = 0.5
+				has_government = fascism
+			}
+			}
+			add_to_faction = ARA
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.0013
+					days = 1
+			    } 
+	}
+	option = {
+	name = arantiga_chaos.006.b #no
+			ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				has_government = neutrality
+			}
+			}
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.014
+					days = 1
+			    } 
+	}
+	}
+	}
+	
+	country_event = { #Republicans considers arantiga
+	id = arantiga_chaos.008
+	title = arantiga_chaos.008.t
+	desc = arantiga_chaos.008.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+	name = arantiga_chaos.008.a #yes
+	ai_chance = {
+			factor = 200
+			modifier = {
+				factor = 0.5
+				has_government = fascism
+			}
+			}
+				add_to_faction = ARA
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.015
+					days = 1
+			    } 
+	}
+	option = {
+	name = arantiga_chaos.008.b #no
+			ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				has_government = democratic
+			}
+			}
+	ARA = {
+		        country_event = { 
+			        id = arantiga_chaos.016
+					days = 1
+			    } 
+	}
+	}
+	}
+	
+	country_event = { #we've been added to a faction
+	id = arantiga_chaos.009
+	title = arantiga_chaos.009.t
+	desc = arantiga_chaos.009.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga_chaos.009.a
+	}
+	}
+	
+	country_event = { #we've been added to a faction
+	id = arantiga_chaos.011
+	title = arantiga_chaos.011.t
+	desc = arantiga_chaos.011.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga_chaos.011.a
+	}
+	}
+	
+	country_event = { #we've been added to a faction
+	id = arantiga_chaos.013
+	title = arantiga_chaos.013.t
+	desc = arantiga_chaos.013.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga_chaos.013.a
+	}
+	}
+	
+	country_event = { #we've been added to a faction
+	id = arantiga_chaos.015
+	title = arantiga_chaos.015.t
+	desc = arantiga_chaos.015.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga_chaos.015.a
+	}
+	}
+	
+		country_event = { #we've been told to fuck off
+	id = arantiga_chaos.010
+	title = arantiga_chaos.010.t
+	desc = arantiga_chaos.010.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga_chaos.010.a
+	}
+	}
+	
+	country_event = { #we've been told to fuck off
+	id = arantiga_chaos.012
+	title = arantiga_chaos.012.t
+	desc = arantiga_chaos.012.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga_chaos.012.a
+	}
+	}
+	
+	country_event = {  #we've been told to fuck off
+	id = arantiga_chaos.014
+	title = arantiga_chaos.014.t
+	desc = arantiga_chaos.014.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga_chaos.014.a
+	}
+	}
+	
+	country_event = { #we've been told to fuck off
+	id = arantiga_chaos.016
+	title = arantiga_chaos.016.t
+	desc = arantiga_chaos.016.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga_chaos.016.a
+	}
+	}
 
 
 
@@ -835,7 +1121,280 @@ country_event = { #Griffonstone Archives
 	}
 
 
-
+################ Governing Empire EVENTS #######################
 	
+ country_event = { #Choosing Capital
+	id = arantiga_govern.001
+	title = arantiga_govern.001.t
+	desc = arantiga_govern.001.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.001.a
+	}
+}
  
+ country_event = { # Arantigan Threat to Skyfall
+	id = arantiga_govern.002
+	title = arantiga_govern.002.t
+	desc = arantiga_govern.002.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.002.a
+	}
+}
+ 
+ country_event = { # Arantigan Threat to Fezara
+	id = arantiga_govern.003
+	title = arantiga_govern.003.t
+	desc = arantiga_govern.003.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.003.a
+	}
+}
+
+ country_event = { # Riches of Skyfall
+	id = arantiga_govern.004
+	title = arantiga_govern.004.t
+	desc = arantiga_govern.004.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.004.a
+	}
+}
 	
+ country_event = { # Haukland Arantigan Invasion
+	id = arantiga_govern.005
+	title = arantiga_govern.005.t
+	desc = arantiga_govern.005.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.005.a
+	}
+}
+ 
+ country_event = { # Knights of the East
+	id = arantiga_govern.006
+	title = arantiga_govern.006.t
+	desc = arantiga_govern.006.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.006.a
+	}
+}
+	
+ country_event = { # Trade Company
+	id = arantiga_govern.007
+	title = arantiga_govern.007.t
+	desc = arantiga_govern.007.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.007.a
+	}
+}
+
+ country_event = { # Fate of Asterion
+	id = arantiga_govern.008
+	title = arantiga_govern.008.t
+	desc = arantiga_govern.008.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.008.a
+	}
+}
+ 
+ country_event = { # Imperial Nightmare
+	id = arantiga_govern.009
+	title = arantiga_govern.009.t
+	desc = arantiga_govern.009.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.009.a
+	}
+}
+ 
+ country_event = { # Destruction of New Skynavia
+	id = arantiga_govern.010
+	title = arantiga_govern.010.t
+	desc = arantiga_govern.010.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.010.a
+	}
+}
+ 
+ country_event = { # Northern Tribes
+	id = arantiga_govern.011
+	title = arantiga_govern.011.t
+	desc = arantiga_govern.011.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.011.a
+	}
+}
+
+ country_event = { # Imperial Parliment
+	id = arantiga_govern.012
+	title = arantiga_govern.012.t
+	desc = arantiga_govern.012.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.012.a
+	}
+}
+ 
+ country_event = { # Faither and Throne
+	id = arantiga_govern.013
+	title = arantiga_govern.013.t
+	desc = arantiga_govern.013.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.013.a
+	}
+}
+ 
+ country_event = { # Nobles of the Emprie
+	id = arantiga_govern.014
+	title = arantiga_govern.014.t
+	desc = arantiga_govern.014.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.014.a
+	}
+}
+ 
+ country_event = { # Imperial Trade Policy 
+	id = arantiga_govern.015
+	title = arantiga_govern.015.t
+	desc = arantiga_govern.015.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.015.a
+	}
+}
+ 
+ country_event = { # Royal Amnesty
+	id = arantiga_govern.016
+	title = arantiga_govern.016.t
+	desc = arantiga_govern.016.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.016.a
+	}
+}
+ 
+ country_event = { # Hearts and Minds
+	id = arantiga_govern.017
+	title = arantiga_govern.017.t
+	desc = arantiga_govern.017.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.017.a
+	}
+}
+ 
+ country_event = { # War or Peace
+	id = arantiga_govern.018
+	title = arantiga_govern.018.t
+	desc = arantiga_govern.018.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.018.a
+	}
+}
+ 
+ country_event = { # Memories
+	id = arantiga_govern.019
+	title = arantiga_govern.019.t
+	desc = arantiga_govern.019.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.019.a
+	}
+}
+ 
+ country_event = { # Envoy from Arantiga
+	id = arantiga_govern.020
+	title = arantiga_govern.020.t
+	desc = arantiga_govern.020.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.020.a
+	}
+}
+ 
+ country_event = { # Envoy from Arantiga
+	id = arantiga_govern.021
+	title = arantiga_govern.021.t
+	desc = arantiga_govern.021.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.021.a
+	}
+}
+ 
+ country_event = { # Western Ponies
+	id = arantiga_govern.022
+	title = arantiga_govern.022.t
+	desc = arantiga_govern.022.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.022.a
+	}
+}
+ 
+ country_event = { # Western Ponies
+	id = arantiga_govern.023
+	title = arantiga_govern.023.t
+	desc = arantiga_govern.023.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.023.a
+	}
+}
