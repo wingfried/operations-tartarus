@@ -28,7 +28,9 @@ technologies = {
 		allow = {
 			is_generic_race = yes
 		}
-
+		
+		intel_network_gain_factor = -0.3
+		
 		ai_will_do = {
 			factor = 20000000
 		}
@@ -195,27 +197,27 @@ technologies = {
 			factor = 2
 			modifier = {
 				factor 1.5
-				num_units > 15
+				num_divisions > 15
 		}
 			modifier = {
 				factor 1.5
-				num_units > 25
+				num_divisions > 25
 		}
 			modifier = {
 				factor 1.5
-				num_units > 45
+				num_divisions > 45
 		}
 			modifier = {
 				factor 1.5
-				num_units > 60
+				num_divisions > 60
 		}
 			modifier = {
 				factor 1.5
-				num_units > 75
+				num_divisions > 75
 		}
 			modifier = {
 				factor 1.5
-				num_units > 100
+				num_divisions > 100
 		}
 		}
 		}
@@ -353,27 +355,27 @@ technologies = {
 			
 			modifier = {
 				factor = 1.5
-				num_units > 15
+				num_divisions > 15
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 25
+				num_divisions > 25
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 45
+				num_divisions > 45
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 60
+				num_divisions > 60
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 75
+				num_divisions > 75
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 100
+				num_divisions > 100
 		}
 		}
 		}
@@ -418,27 +420,27 @@ technologies = {
 			
 			modifier = {
 				factor = 1.5
-				num_units > 15
+				num_divisions > 15
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 25
+				num_divisions > 25
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 45
+				num_divisions > 45
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 60
+				num_divisions > 60
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 75
+				num_divisions > 75
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 100
+				num_divisions > 100
 		}
 		}
 		}
@@ -476,27 +478,27 @@ technologies = {
 			
 			modifier = {
 				factor = 1.5
-				num_units > 15
+				num_divisions > 15
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 25
+				num_divisions > 25
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 45
+				num_divisions > 45
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 60
+				num_divisions > 60
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 75
+				num_divisions > 75
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 100
+				num_divisions > 100
 		}
 		}
 		}
@@ -539,27 +541,27 @@ technologies = {
 			
 			modifier = {
 				factor = 1.5
-				num_units > 15
+				num_divisions > 15
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 25
+				num_divisions > 25
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 45
+				num_divisions > 45
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 60
+				num_divisions > 60
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 75
+				num_divisions > 75
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 100
+				num_divisions > 100
 		}
 		}
 		}
@@ -595,27 +597,27 @@ technologies = {
 			
 			modifier = {
 				factor = 1.5
-				num_units > 15
+				num_divisions > 15
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 25
+				num_divisions > 25
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 45
+				num_divisions > 45
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 60
+				num_divisions > 60
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 75
+				num_divisions > 75
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 100
+				num_divisions > 100
 		}
 		}
 		}
@@ -855,28 +857,29 @@ technologies = {
 			
 		modifier = {
 				factor = 1.5
-				num_units > 15
+				num_divisions > 15
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 25
+				num_divisions > 25
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 45
+				num_divisions > 45
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 60
+				num_divisions > 60
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 75
+				num_divisions > 75
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 100
+				num_divisions > 100
 		}
+	}
 	}
 
 	tech_generic_r5 = {
@@ -905,27 +908,27 @@ technologies = {
 			
 			modifier = {
 				factor = 1.5
-				num_units > 15
+				num_divisions > 15
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 25
+				num_divisions > 25
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 45
+				num_divisions > 45
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 60
+				num_divisions > 60
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 75
+				num_divisions > 75
 		}
 			modifier = {
 				factor = 1.5
-				num_units > 100
+				num_divisions > 100
 		}
 		}
 		}

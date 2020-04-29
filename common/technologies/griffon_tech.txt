@@ -24,6 +24,11 @@ technologies = {
 	griffon_race = {
 
 		research_cost = 1
+		
+		female_random_army_leader_chance = -0.25
+		female_random_admiral_chance = -0.25
+
+		intel_network_gain_factor = -0.3
 
 		allow = {
 			always = no
@@ -549,17 +554,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-
-		modifier = {
-				factor = 10
-				capital_scope = {
-				free_building_slots = {
-				building = arms_factory 
-				size < 1
-				included_locked = no							
-			}
-		}
-		}
 		}
 		}
 
@@ -900,12 +894,12 @@ technologies = {
 
 			modifier = {
 				factor = 3
-				has_tech = improved_light_armor
+				has_tech = improved_light_tank
 				}
 				
 			modifier = {
 				factor = 3
-				has_tech = basic_medium_armor
+				has_tech = basic_medium_tank
 				}
 				
 		
@@ -940,12 +934,12 @@ technologies = {
 
 			modifier = {
 				factor = 3
-				has_tech = improved_light_armor
+				has_tech = improved_light_tank
 				}
 				
 			modifier = {
 				factor = 3
-				has_tech = basic_medium_armor
+				has_tech = basic_medium_tank
 				}
 		}
 	}
@@ -1485,7 +1479,7 @@ technologies = {
 			factor = 2
 			has_navy_size = {
 			size > 30
-			type = naval_screen
+			type = screen_ship
 			}
 			}
 						
@@ -1493,7 +1487,7 @@ technologies = {
 			factor = 2
 			has_navy_size = {
 			size > 50
-			type = naval_screen
+			type = screen_ship
 			}
 			}
 									
@@ -1501,7 +1495,7 @@ technologies = {
 			factor = 2
 			has_navy_size = {
 			size > 75
-			type = naval_screen
+			type = screen_ship
 			}
 			}
 			}

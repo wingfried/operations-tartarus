@@ -127,10 +127,10 @@ technologies = {
 				factor = 2
 				num_divisions > 40
 			}
-		}
 		modifier = {
 			factor = 2
 		has_template = "Infantry_default_EQS"
+		}
 		}
 	}
 
@@ -1249,7 +1249,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 2
-				
+				}
 			modifier = {
 				factor = 2
 				num_divisions > 20
@@ -1777,6 +1777,7 @@ technologies = {
 		}
 		}		
 		}
+	
 
 	artillery_e = {
 

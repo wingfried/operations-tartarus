@@ -34,7 +34,7 @@ technologies = {
 			factor = 30
 
 		modifier = {
-		value = 10
+		factor = 10
 		amount_research_slots > 2		
 		}
 		
@@ -341,12 +341,12 @@ technologies = {
 			factor = 15
 
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 3		
 		}
 		
 				modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 4		
 		}
 		}
@@ -391,15 +391,15 @@ technologies = {
 			factor = 6
 
 		modifier = {
-		value = 5
+		factor = 5
 		date > 1011.1.1		
 		}
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 3		
 		}
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 4		
 		}
 		
@@ -447,16 +447,16 @@ technologies = {
 			factor = 3
 
 		modifier = {
-		value = 5
+		factor = 5
 		date > 1013.1.1		
 		}
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 3		
 		}
 		
 				modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 4		
 		}
 		
@@ -502,16 +502,16 @@ technologies = {
 			factor = 3
 
 		modifier = {
-		value = 5
+		factor = 5
 		date > 1015.1.1		
 		}
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 3		
 		}
 		
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 4		
 		}
 		
@@ -531,7 +531,9 @@ technologies = {
 
 		# encryption 1
 		encryption = 1
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1
 		start_year = 1009
 
@@ -547,11 +549,11 @@ technologies = {
 				factor = 3
 			}
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 3		
 		}
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 4		
 		}
 		}
@@ -566,7 +568,9 @@ technologies = {
 
 		# encryption 2
 		encryption = 1
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1
 		start_year = 1011
 
@@ -582,11 +586,11 @@ technologies = {
 				factor = 3
 			}
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 3		
 		}
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 4		
 		}
 		}
@@ -601,7 +605,9 @@ technologies = {
 
 		# encryption 3
 		encryption = 1
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1
 		start_year = 1013
 
@@ -617,11 +623,11 @@ technologies = {
 				factor = 3
 			}
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 3		
 		}
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 4		
 		}
 		}
@@ -636,7 +642,9 @@ technologies = {
 
 		# decryption 1
 		decryption = 1
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 1009
 
@@ -648,11 +656,11 @@ technologies = {
 		ai_will_do = {
 			factor = 1.5
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 3		
 		}
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 4		
 		}
 		}
@@ -667,7 +675,9 @@ technologies = {
 
 		# decryption 2
 		decryption = 1
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 1011
 
@@ -679,11 +689,11 @@ technologies = {
 		ai_will_do = {
 			factor = 1.5
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 3		
 		}
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 4		
 		}
 		}
@@ -698,7 +708,9 @@ technologies = {
 
 		# decryption 3
 		decryption = 1
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 1013
 
@@ -714,11 +726,11 @@ technologies = {
 				factor = 3
 			}
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 3		
 		}
 		modifier = {
-		value = 5
+		factor = 5
 		amount_research_slots > 4		
 		}
 		}
@@ -1160,7 +1172,7 @@ technologies = {
 				original_tag = EQS
 			}
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		}
@@ -1196,7 +1208,7 @@ technologies = {
 				original_tag = EQS
 			}
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		}
@@ -1226,7 +1238,7 @@ technologies = {
 		ai_will_do = {
 			factor = 10
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		}
@@ -1411,7 +1423,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		
@@ -1456,7 +1468,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		
@@ -1505,7 +1517,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		
@@ -1539,7 +1551,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		
@@ -1561,7 +1573,9 @@ technologies = {
 
 		# encryption 3
 		encryption = 0.5
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1
 		start_year = 1015
 
@@ -1573,7 +1587,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1.5
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		
@@ -1589,7 +1603,9 @@ technologies = {
 
 		# decryption 3
 		decryption = 0.5
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 1015
 
@@ -1601,7 +1617,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1.25
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}		
 		}
@@ -1616,7 +1632,9 @@ technologies = {
 
 		# encryption 3
 		encryption = 0.3
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1
 		start_year = 1018
 
@@ -1628,7 +1646,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1.5
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}		
 		}
@@ -1643,7 +1661,9 @@ technologies = {
 
 		# decryption 3
 		decryption = 0.3
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 1018
 
@@ -1655,7 +1675,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1.25
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		}
@@ -1670,7 +1690,9 @@ technologies = {
 
 		# encryption 3
 		encryption = 0.2
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1
 		start_year = 1022
 
@@ -1693,7 +1715,9 @@ technologies = {
 
 		# decryption 3
 		decryption = 0.2
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 1022
 
@@ -1705,7 +1729,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1.25
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		}
@@ -1753,7 +1777,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		}
@@ -1798,7 +1822,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		}
@@ -1809,6 +1833,24 @@ technologies = {
 	}
 
 	###------> X <><> <><> <><> <><> <><>
+
+	lar_decryption_bonus_tech = {
+				
+		research_cost = 1.5 #Carrier Variant
+		start_year = 1007
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		decryption_power = 10
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+		################
+	}
 
 }
 

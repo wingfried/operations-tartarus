@@ -318,14 +318,14 @@
 			AND = {
 				rubber < 1 
 				has_equipment = { motorized_equipment > 50 }
-				arms_factories < 20
+				arms_factory < 20
 				}
 				}
 			Abort = {
 				OR = {
 				rubber > 2 
 				has_equipment = { motorized_equipment < 1 }
-				arms_factories > 20
+				arms_factory > 20
 				}
 				}
 		
@@ -599,7 +599,7 @@
 	Mechanizedproductionboost = {
 		Enable = {
 			And = {
-			has_tech = mechanized_infantry
+			has_tech = mechanised_infantry
 			}
 			}
 			abort = {
@@ -607,7 +607,7 @@
 			always = no
 			}
 			}
-			ai_stategy = {
+			ai_strategy = {
 			type = equipment_variant_production_factor
 			id = mechanized_equipment
 			value = 15 

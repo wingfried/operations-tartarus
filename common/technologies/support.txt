@@ -903,7 +903,7 @@ technologies = {
 			
 		modifier = {
 			factor  = 3
-			has_tech = main_batttle_tank
+			has_tech = main_battle_tank
 			}
 
 		modifier = {
@@ -984,7 +984,7 @@ modifier = {
 			
 		modifier = {
 			factor  = 2
-			has_tech = main_batttle_tank
+			has_tech = main_battle_tank
 			}
 
 		modifier = {
@@ -1062,7 +1062,7 @@ modifier = {
 			
 		modifier = {
 			factor  = 2
-			has_tech = main_batttle_tank
+			has_tech = main_battle_tank
 			}
 
 		modifier = {
@@ -1145,7 +1145,7 @@ modifier = {
 			
 		modifier = {
 			factor  = 2
-			has_tech = main_batttle_tank
+			has_tech = main_battle_tank
 			}
 
 		modifier = {
@@ -1189,17 +1189,17 @@ modifier = {
 			
 			modifier = {
 				factor = 0.25
-				ruber < 3
+				rubber < 3
 				}
 			
 			modifier = {
 				factor = 0.5
-				ruber < 7
+				rubber < 7
 				}
 			
 			modifier = {
 				factor = 0.75
-				ruber < 8
+				rubber < 8
 				}
 			
 			modifier = {
@@ -1702,37 +1702,37 @@ modifier = {
 		
 		
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = medium_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = light_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = heavy_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			num_divisions > 50 
 			
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			has_army_size = {
-			size  > 5
-			type = light_armor
+			size  > 10
+			type = armor
 				}
 				}
 			modifier = {
-			value = 2
+			factor = 2
 			has_army_size = {
-			size  > 5
-			type = medium_armor
+			size  > 20
+			type = armor
 				}
 				}												
 				}
@@ -1766,37 +1766,37 @@ modifier = {
 		ai_will_do = {
 			factor = 2
 					modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = medium_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = light_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = heavy_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			num_divisions > 50 
 			
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			has_army_size = {
-			size  > 5
-			type = light_armor
+			size  > 10
+			type = armor
 				}
 				}
 			modifier = {
-			value = 5
+			factor = 5
 			has_army_size = {
-			size  > 5
-			type = medium_armor
+			size  > 20
+			type = armor
 				}
 				}
 				}
@@ -1829,37 +1829,37 @@ modifier = {
 		ai_will_do = {
 			factor = 2
 			modifier = {
-			value = 8
+			factor = 8
 				has_template_containing_unit = medium_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = light_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = heavy_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			num_divisions > 50 
 			
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			has_army_size = {
-			size  > 5
-			type = light_armor
+			size  > 10
+			type = armor
 				}
 				}
 			modifier = {
-			value = 2
+			factor = 2
 			has_army_size = {
-			size  > 5
-			type = medium_armor
+			size  > 20
+			type = armor
 				}
 				}
 				}
@@ -1895,37 +1895,37 @@ modifier = {
 			factor = 2
 			
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = medium_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = light_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = heavy_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			num_divisions > 50 
 			
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			has_army_size = {
-			size  > 5
-			type = light_armor
+			size  > 10
+			type = armor
 				}
 				}
 			modifier = {
-			value = 8
+			factor = 8
 			has_army_size = {
-			size  > 5
-			type = medium_armor
+			size  > 20
+			type = armor
 				}
 				}
 				}
@@ -1964,37 +1964,37 @@ modifier = {
 		
 		
 		modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = medium_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = light_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = heavy_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			num_divisions > 50 
 			
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			has_army_size = {
-			size  > 5
-			type = light_armor
+			size  > 10
+			type = armor
 				}
 				}
 			modifier = {
-			value = 3
+			factor = 3
 			has_army_size = {
-			size  > 5
-			type = medium_armor
+			size  > 20
+			type = armor
 				}
 				}
 		}
@@ -2028,37 +2028,37 @@ modifier = {
 			factor = 1
 		
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = medium_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = light_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = heavy_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			num_divisions > 50 
 			
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			has_army_size = {
-			size  > 5
-			type = light_armor
+			size  > 10
+			type = armor
 				}
 				}
 			modifier = {
-			value = 3
+			factor = 3
 			has_army_size = {
-			size  > 5
-			type = medium_armor
+			size  > 20
+			type = armor
 				}
 				}
 				}
@@ -2091,37 +2091,37 @@ modifier = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = medium_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = light_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = heavy_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			num_divisions > 50 
 			
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			has_army_size = {
-			size  > 5
-			type = light_armor
+			size  > 10
+			type = armor
 				}
 				}
 			modifier = {
-			value = 2
+			factor = 2
 			has_army_size = {
-			size  > 5
-			type = medium_armor
+			size  > 20
+			type = armor
 				}
 				}		
 				}
@@ -2669,7 +2669,7 @@ modifier = {
 			
 		modifier = {
 			factor  = 3
-			has_tech = main_batttle_tank
+			has_tech = main_battle_tank
 			}
 
 		modifier = {
@@ -2740,7 +2740,7 @@ modifier = {
 			
 		modifier = {
 			factor  = 3
-			has_tech = main_batttle_tank
+			has_tech = main_battle_tank
 			}
 
 		modifier = {
@@ -2810,7 +2810,7 @@ modifier = {
 			
 		modifier = {
 			factor  = 3
-			has_tech = main_batttle_tank
+			has_tech = main_battle_tank
 			}
 
 		modifier = {
