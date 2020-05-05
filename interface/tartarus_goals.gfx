@@ -80,4 +80,20 @@ spriteTypes = {
 		name = "GFX_goal_personality"
 		texturefile = "gfx/interface/goals/GFX_goal_personality.dds"
 	}
+		SpriteType = { 
+		name = "GFX_goal_dice"
+		texturefile = "gfx/interface/goals/GFX_goal_dice.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_gaw_attack_aquileia"
+		texturefile = "gfx/interface/goals/GFX_goal_gaw_attack_aquileia.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_gaw_attack_empire"
+		texturefile = "gfx/interface/goals/goal_gaw_attack_empire.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_gaw_attack_wingbardy"
+		texturefile = "gfx/interface/goals/goal_gaw_attack_wingbardy.dds"
+	}
 }
