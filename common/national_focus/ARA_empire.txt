@@ -1,0 +1,2732 @@
+focus_tree = {
+	id = Arantiga_empire
+	
+	default=no
+	
+	continuous_focus_position = { x = 290 y = 2500 }
+	
+		shared_focus = ARA_the_new_airforce
+		shared_focus = ARA_self_strength
+		shared_focus = ARA_new_age_new_army
+	
+    ############################################
+	#          MAIN TREE BEGINNING             #
+    ############################################
+	
+	focus = {
+		id = ARA_governing_empire
+		icon = GFX_focus_unknown
+		x = 29
+		y = 0
+		cost = 5.00
+		completion_reward = {
+		    custom_effect_tooltip = ARA_fragile_rule_tooltip
+			hidden_effect = {
+			    swap_ideas = {
+			        remove_idea = ARA_fragile_rule_1
+			        add_idea = ARA_fr0000
+				}
+			}
+		}
+	}
+	
+	focus = {
+	    id = ARA_our_subjects
+		icon = GFX_focus_unknown
+		x = -3
+		y = 1
+		relative_position_id = ARA_governing_empire
+		cost = 5.00
+		prerequisite = { focus = ARA_governing_empire }
+		completion_reward = {
+		    country_event = arantiga.050 #“Nations of Empire”
+			#Modify spirit Fragile Rule (+10% Recruitable population factor)
+			custom_effect_tooltip = ARA_fragile_rule_tooltip_1
+			hidden_effect = {
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0000
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0000
+			        add_idea = ARA_fr1000
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0100
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0100
+			        add_idea = ARA_fr1100
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0010
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0010
+			        add_idea = ARA_fr1010
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0001
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0001
+			        add_idea = ARA_fr1001
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0110
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0110
+			        add_idea = ARA_fr1110
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0101
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0101
+			        add_idea = ARA_fr1101
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0011
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0011
+			        add_idea = ARA_fr1011
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0111
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0111
+			        add_idea = ARA_fr1111
+			    }
+			}
+			}
+		}
+	}
+	
+	focus = {
+	    id = ARA_education_reform
+		icon = GFX_focus_unknown
+		x = -3
+		y = 2
+		relative_position_id = ARA_governing_empire
+		cost = 5.00
+		prerequisite = { focus = ARA_our_subjects }
+		completion_reward = {
+			add_research_slot = 1
+            #Modify spirit Fragile Rule (+5% Research Speed)
+			custom_effect_tooltip = ARA_fragile_rule_tooltip_2
+			hidden_effect = {
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1000
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1000
+			        add_idea = ARA_fr2000
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1100
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1100
+			        add_idea = ARA_fr2100
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1010
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1010
+			        add_idea = ARA_fr2010
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1001
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1001
+			        add_idea = ARA_fr2001
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1110
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1110
+			        add_idea = ARA_fr2110
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1101
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1101
+			        add_idea = ARA_fr2101
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1011
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1011
+			        add_idea = ARA_fr2011
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1111
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1111
+			        add_idea = ARA_fr2111
+			    }
+			}
+			}
+		}
+	}
+	
+	focus = {
+	    id = ARA_expand_cult
+		icon = GFX_focus_unknown
+		x = -1
+		y = 1
+		relative_position_id = ARA_governing_empire
+		cost = 5.00
+		prerequisite = { focus = ARA_governing_empire }
+		completion_reward = {
+			#Modify spirit Cult of Second Arantigos (Division Recovery rate +5%, stability +5%)
+			swap_ideas = {
+			    remove_idea = ARA_arantigos_boreas2
+				add_idea = ARA_arantigos_boreas3
+			}
+		}
+	}
+	
+	focus = {
+	    id = ARA_reform_the_archonates
+		icon = GFX_focus_unknown
+		x = -1
+		y = 2
+		relative_position_id = ARA_governing_empire
+		cost = 5.00
+		prerequisite = { focus = ARA_expand_cult }
+		completion_reward = {
+		    #Remove advisor Prelate Heraclius (Friendly Preacher)
+			#Add advisor Archon Demetrius III (Archon of Boreas)
+			show_ideas_tooltip = ARA_archon_demetrius
+			#Modify spirit Fragile Rule (+10% daily political power)
+			custom_effect_tooltip = ARA_fragile_rule_tooltip_3
+			hidden_effect = {
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0000
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0000
+			        add_idea = ARA_fr0100
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0010
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0010
+			        add_idea = ARA_fr0110
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0001
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0001
+			        add_idea = ARA_fr0101
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0011
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0011
+			        add_idea = ARA_fr0111
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1000
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1000
+			        add_idea = ARA_fr1100
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1010
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1010
+			        add_idea = ARA_fr1110
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1001
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1001
+			        add_idea = ARA_fr1101
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1011
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1011
+			        add_idea = ARA_fr1111
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr2000
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr2000
+			        add_idea = ARA_fr2100
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr2010
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr2010
+			        add_idea = ARA_fr2110
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr2001
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr2001
+			        add_idea = ARA_fr2101
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr2011
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr2011
+			        add_idea = ARA_fr2111
+			    }
+			}
+			}
+		}
+	}
+	
+	focus = {
+	    id = ARA_question_of_capital
+		icon = GFX_focus_unknown
+		x = 1
+		y = 1
+		relative_position_id = ARA_governing_empire
+		cost = 5.00
+		prerequisite = { focus = ARA_governing_empire }
+		completion_reward = {
+			country_event = arantiga.051 #“Choosing Capital”
+		}
+	}
+	
+	focus = {
+	    id = ARA_imperial_bureaucracy
+		icon = GFX_focus_unknown
+		x = 1
+		y = 2
+		relative_position_id = ARA_governing_empire
+		cost = 5.00
+		prerequisite = { focus = ARA_question_of_capital }
+		completion_reward = {
+			#Replace spirit Absolute Reign with Imperial Government (+0,2 daily political power, +5% consumer goods)
+			swap_ideas = {
+			    remove_idea = ARA_absolute_reign
+				add_idea = ARA_imperial_government
+			}
+			#Modify spirit Fragile Rule (+25% daily political power)
+			custom_effect_tooltip = ARA_fragile_rule_tooltip_4
+			hidden_effect = {
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0000
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0000
+			        add_idea = ARA_fr0010
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0100
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0100
+			        add_idea = ARA_fr0110
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0101
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0101
+			        add_idea = ARA_fr0111
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0001
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0001
+			        add_idea = ARA_fr0011
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1000
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1000
+			        add_idea = ARA_fr1010
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1100
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1100
+			        add_idea = ARA_fr1110
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1101
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1101
+			        add_idea = ARA_fr1111
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1001
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1001
+			        add_idea = ARA_fr1011
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr2000
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr2000
+			        add_idea = ARA_fr2010
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr2100
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr2100
+			        add_idea = ARA_fr2110
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr2101
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr2101
+			        add_idea = ARA_fr2111
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr2001
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr2001
+			        add_idea = ARA_fr2011
+			    }
+			}
+			}
+		}
+	}
+	
+	focus = {
+	    id = ARA_establish_imperial_army
+		icon = GFX_focus_unknown
+		x = 3
+		y = 1
+		relative_position_id = ARA_governing_empire
+		cost = 5.00
+		prerequisite = { focus = ARA_governing_empire }
+		completion_reward = {
+            #Get new spirit Arantigan Legions (+1% recruitable population, maximum command power increase +20)
+			add_ideas = ARA_arantigan_legions
+			#Modify spirit Fragile Rule (+20% division organisation)
+			custom_effect_tooltip = ARA_fragile_rule_tooltip_5
+			hidden_effect = {
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0000
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0000
+			        add_idea = ARA_fr0001
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0100
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0100
+			        add_idea = ARA_fr0101
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0110
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0110
+			        add_idea = ARA_fr0111
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0010
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0010
+			        add_idea = ARA_fr0011
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1000
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1000
+			        add_idea = ARA_fr1001
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1100
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1100
+			        add_idea = ARA_fr1101
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1110
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1110
+			        add_idea = ARA_fr1111
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr1010
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr1010
+			        add_idea = ARA_fr1011
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr2000
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr2000
+			        add_idea = ARA_fr2001
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr2100
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr2100
+			        add_idea = ARA_fr2101
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr2110
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr2110
+			        add_idea = ARA_fr2111
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr2010
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr2010
+			        add_idea = ARA_fr2011
+			    }
+			}
+			}
+		}
+	}
+	
+	focus = {
+	    id = ARA_establish_imperial_navy
+		icon = GFX_focus_unknown
+		x = 3
+		y = 2
+		relative_position_id = ARA_governing_empire
+		cost = 5.00
+		prerequisite = { focus = ARA_establish_imperial_army }
+		completion_reward = {
+            navy_experience = 50
+			    create_navy_leader = {
+                    name = "Erich von Tallonitz"
+	                #portrait_path = "gfx/leaders/"
+	                traits = {}
+	                skill = 2
+	                attack_skill = 2
+	                defense_skill = 3
+	                maneuvering_skill = 3
+	                coordination_skill = 2
+                }
+            #Get spirit The Imperial Admiralty (Naval Doctrine research speed +10%, Naval experience gain: +0,05 daily)
+			add_ideas = ARA_imperial_admiralty
+		}
+	}
+	
+	############################################
+	#             SPOILS OF WAR                #
+    ############################################
+	
+	focus = {
+	    id = ARA_spoils_of_war
+		icon = GFX_focus_unknown
+		x = 38
+		y = 0
+		cost = 5.00
+		completion_reward = {
+            add_political_power = 100
+			#Get spirit Spoils of Wars (-10% consumer goods for 360 days)
+			add_timed_idea = {
+		        idea = ARA_spoils_of_war_idea
+		        days = 360
+            }
+		}
+	}
+	
+    focus = {
+	    id = ARA_wingbardian_rubber
+		icon = GFX_focus_unknown
+		x = -4
+		y = 2
+		relative_position_id = ARA_spoils_of_war
+		cost = 8.00
+		prerequisite = { focus = ARA_spoils_of_war }
+		completion_reward = {
+            #+20 rubber in Warthog Forest
+            #+20 rubber in Bloodtalon
+            #+20 rubber in Karthin
+			#TODO move to event
+			add_timed_idea = {
+			    idea = ARA_small_spending
+			    days = 60
+			}
+			add_resource = {
+				type = rubber
+				amount = 20
+				state = 373
+			}
+			add_resource = {
+				type = rubber
+				amount = 20
+				state = 536
+			}
+			add_resource = {
+				type = rubber
+				amount = 20
+				state = 371
+			}
+		}
+	}
+	
+	focus = {
+	    id = ARA_expand_penal_battalions
+		icon = GFX_focus_unknown
+		x = -2
+		y = 2
+		relative_position_id = ARA_spoils_of_war
+		cost = 8.00
+		prerequisite = { focus = ARA_spoils_of_war }
+		completion_reward = {
+            add_manpower = 300000
+            add_stability = -0.05
+			add_war_support = -0.05
+		}
+	}
+	
+	focus = {
+	    id = ARA_rebuilding_navy
+		icon = GFX_focus_unknown
+		x = -3
+		y = 3
+		relative_position_id = ARA_spoils_of_war
+		cost = 8.00
+		prerequisite = { focus = ARA_expand_penal_battalions }
+		completion_reward = {
+            navy_experience = 50
+            #Get spirit “Retroffiting Navy” (+50% Dockyard Output for 180 days)
+			add_timed_idea = {
+		        idea = ARA_retrofitting_navy
+		        days = 180
+            }
+			add_timed_idea = {
+			    idea = ARA_sizeable_spending
+				days = 180
+			}
+		}
+	}
+	
+	focus = {
+	    id = ARA_land_reclamation_crops
+		icon = GFX_focus_unknown
+		x = -1
+		y = 3
+		relative_position_id = ARA_spoils_of_war
+		cost = 8.00
+		prerequisite = { focus = ARA_expand_penal_battalions }
+		completion_reward = {
+            #Southern Scheisswald +50.000 population, +10 steel, +10 crystals, +1 civilian factory
+            #Griffking +100.000 population, +20 steel, +20 crystals, +2 civilian factories
+            #Angelclaw +50.000 population, +10 steel, +10 tungsten, +1 civilian factory
+			#TODO move to event
+			add_timed_idea = {
+			    idea = ARA_sizeable_spending
+				days = 120
+			}	
+			411 = { #Griffing
+			    add_building_construction = {
+				    type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			    add_extra_state_shared_building_slots = 4
+				add_manpower = 100000
+			}
+			422 = { #Scheiss
+			    add_building_construction = {
+				    type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			    add_extra_state_shared_building_slots = 2
+				add_manpower = 50000
+			}
+			547 = { #Angelclaw
+			    add_building_construction = {
+				    type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			    add_extra_state_shared_building_slots = 2
+				add_manpower = 50000
+			}
+			add_resource = {
+				type = steel
+				amount = 20
+				state = 411
+			}
+			add_resource = {
+				type = crystals
+				amount = 20
+				state = 411
+			}
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 422
+			}
+			add_resource = {
+				type = crystals
+				amount = 10
+				state = 422
+			}
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 547
+			}
+			add_resource = {
+				type = crystals
+				amount = 10
+				state = 547
+			}
+		}
+	}
+	
+	focus = {
+	    id = ARA_eyrs_gift_project
+		icon = GFX_focus_unknown
+		x = -2
+		y = 4
+		relative_position_id = ARA_spoils_of_war
+		cost = 10.00
+		prerequisite = { focus = ARA_land_reclamation_crops }
+		prerequisite = { focus = ARA_rebuilding_navy }
+		completion_reward = {
+            add_stability = 0.05
+            #Gain spirit “Massive Spending” (+20% consumer goods for 360 days)
+		    add_timed_idea = {
+			   idea = ARA_massive_spending
+			   days = 360
+			}
+            #After ending effects of “Massive spending” gain spirit “Griffking Dams” (+10% monthly population, -3% consumer goods)
+			#TODO move to event
+			add_ideas = ARA_griffing_dams
+		}
+	}
+	
+	focus = {
+	    id = ARA_rebuild_griffenheim
+		icon = GFX_focus_unknown
+		x = 2
+		y = 2
+		relative_position_id = ARA_spoils_of_war
+		cost = 8.00
+		prerequisite = { focus = ARA_spoils_of_war }
+		completion_reward = {
+            add_political_power = -50
+            add_stability = 0.05
+            #+200.000 population in Griffinheim
+            #+2 civilian factories in Imperial City
+            #+2 civilian factories in Helheim
+            #+2 military factories in Crona
+            #+2 military factories in Interriver
+			#TODO move to event
+			add_timed_idea = {
+			   idea = ARA_sizeable_spending
+			   days = 90
+			}
+			382 = { #Imperial City
+			    add_manpower = 200000
+				add_building_construction = {
+				    type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			437 = { #Crona
+			    add_building_construction = {
+				    type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			397 = { #Helheim
+			    add_building_construction = {
+				    type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			405 = { #Interriver
+			    add_building_construction = {
+				    type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	
+	focus = {
+	    id = ARA_convince_scholars
+		icon = GFX_focus_unknown
+		x = 1
+		y = 3
+		relative_position_id = ARA_spoils_of_war
+		cost = 10.00
+		prerequisite = { focus = ARA_rebuild_griffenheim }
+		completion_reward = {
+            add_political_power = 50
+            #Get spirit “Universities of Yale” (+5% Research Speed)
+			add_ideas = ARA_yale_universities
+		}
+	}
+	
+	focus = {
+	    id = ARA_emperors_only_achievement
+		icon = GFX_focus_unknown
+		x = 3
+		y = 3
+		relative_position_id = ARA_spoils_of_war
+		cost = 8.00
+		prerequisite = { focus = ARA_rebuild_griffenheim }
+		completion_reward = {
+            #+1 infrastructure in all Herzland provinces
+			#TODO move to event
+			add_timed_idea = {
+			    idea = ARA_sizeable_spending
+				days = 60
+			}
+			custom_effect_tooltip = ARA_railroad_tooltip
+			hidden_effect = {
+			    #Angriver
+			547 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			422 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			411 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			#Katerin
+			506 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			554 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			423 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			#Yale
+			665 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			402 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			439 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			398 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			#Greifemarschen
+			399 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			447 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			378 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			#Romau
+			674 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			#Griffonian Empire starting land
+			555 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			437 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			397 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			405 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			382 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			#Feathisia
+			666 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			440 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			441 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			520 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			434 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			498 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			538 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			433 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			497 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			#Strawberry
+			443 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			545 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			546 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			486 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			458 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			#Bronzehill
+			424 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			479 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			492 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			568 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			539 = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			}
+		}
+	}
+	
+	focus = {
+	    id = ARA_imperial_research_initiative
+		icon = GFX_focus_unknown
+		x = 2
+		y = 4
+		relative_position_id = ARA_spoils_of_war
+		cost = 10.00
+		prerequisite = { focus = ARA_convince_scholars }
+		prerequisite = { focus = ARA_emperors_only_achievement }
+		completion_reward = {
+            #Enables set of decisions “IRI Projects”
+			custom_effect_tooltip = ARA_IRI_tooltip
+		}
+	}
+	
+	focus = {
+	    id = ARA_ponies_of_aquileia
+		icon = GFX_focus_unknown
+		x = 4
+		y = 2
+		relative_position_id = ARA_spoils_of_war
+		cost = 8.00
+		prerequisite = { focus = ARA_spoils_of_war }
+		completion_reward = {
+            #2x100% Research bonus for Magical Weapon
+            #1x100% Research bonus for Electronics
+            #2x100% Research bonus for Special Forces
+			add_tech_bonus = {
+			    name = ara_magical_weapons_pony_bonus
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+			add_tech_bonus = {
+			    name = ara_electronics_pony_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+			    name = ara_specops_pony_bonus
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	
+	############################################
+	#        MAIN TREE CONTINUATION            #
+    ############################################
+	
+    focus = {
+	    id = ARA_stable_reign
+		icon = GFX_focus_unknown
+		x = 0
+		y = 3
+		relative_position_id = ARA_governing_empire
+		cost = 5.00
+		prerequisite = { focus = ARA_education_reform }
+		prerequisite = { focus = ARA_reform_the_archonates }
+		prerequisite = { focus = ARA_imperial_bureaucracy }
+		prerequisite = { focus = ARA_establish_imperial_navy }
+		completion_reward = {
+            remove_ideas = ARA_fr2111
+		}
+	}
+	
+	focus = {
+	    id = ARA_integrate_herzland
+		icon = GFX_focus_unknown
+		x = -2
+		y = 4
+		relative_position_id = ARA_governing_empire
+		cost = 8.00
+		prerequisite = { focus = ARA_stable_reign }
+		completion_reward = {
+            #Gain cores on Angriver, Katerin, Romau, Yale, Romau, Greifemarschen, Griffonian Empire, Bronzehill, Strawberry, Feathisia.
+			add_political_power = -200
+			custom_effect_tooltip = ARA_herzland_coring_tooltip
+			#TODO move to event
+			hidden_effect = {
+			#Angriver
+			547 = {
+			    add_core_of = ARA
+			}
+			422 = {
+			    add_core_of = ARA
+			}
+			411 = {
+			    add_core_of = ARA
+			}
+			#Katerin
+			506 = {
+			    add_core_of = ARA
+			}
+			554 = {
+			    add_core_of = ARA
+			}
+			423 = {
+			    add_core_of = ARA
+			}
+			#Yale
+			665 = {
+			    add_core_of = ARA
+			}
+			402 = {
+			    add_core_of = ARA
+			}
+			439 = {
+			    add_core_of = ARA
+			}
+			398 = {
+			    add_core_of = ARA
+			}
+			#Greifemarschen
+			399 = {
+			    add_core_of = ARA
+			}
+			447 = {
+			    add_core_of = ARA
+			}
+			378 = {
+			    add_core_of = ARA
+			}
+			#Romau
+			674 = {
+			    add_core_of = ARA
+			}
+			#Griffonian Empire starting land
+			555 = {
+			    add_core_of = ARA
+			}
+			437 = {
+			    add_core_of = ARA
+			}
+			397 = {
+			    add_core_of = ARA
+			}
+			405 = {
+			    add_core_of = ARA
+			}
+			382 = {
+			    add_core_of = ARA
+			}
+			#Feathisia
+			666 = {
+			    add_core_of = ARA
+			}
+			440 = {
+			    add_core_of = ARA
+			}
+			441 = {
+			    add_core_of = ARA
+			}
+			520 = {
+			    add_core_of = ARA
+			}
+			434 = {
+			    add_core_of = ARA
+			}
+			498 = {
+			    add_core_of = ARA
+			}
+			538 = {
+			    add_core_of = ARA
+			}
+			433 = {
+			    add_core_of = ARA
+			}
+			497 = {
+			    add_core_of = ARA
+			}
+			#Strawberry
+			443 = {
+			    add_core_of = ARA
+			}
+			545 = {
+			    add_core_of = ARA
+			}
+			546 = {
+			    add_core_of = ARA
+			}
+			486 = {
+			    add_core_of = ARA
+			}
+			458 = {
+			    add_core_of = ARA
+			}
+			#Bronzehill
+			424 = {
+			    add_core_of = ARA
+			}
+			479 = {
+			    add_core_of = ARA
+			}
+			492 = {
+			    add_core_of = ARA
+			}
+			568 = {
+			    add_core_of = ARA
+			}
+			539 = {
+			    add_core_of = ARA
+			}
+			#########################
+			}
+		}
+	}
+	focus = {
+	    id = ARA_integrate_wingbardy
+		icon = GFX_focus_unknown
+		x = 0
+		y = 4
+		relative_position_id = ARA_governing_empire
+		cost = 8.00
+		prerequisite = { focus = ARA_stable_reign }
+		completion_reward = {
+            #Gain cores of Franmistria, Talouse, Wingbardy and Falcor
+			add_political_power = -200
+			custom_effect_tooltip = ARA_wingbardy_coring_tooltip
+			#TODO move to event
+			hidden_effect = {
+			#Franmistria
+			487 = {
+			    add_core_of = ARA
+			}
+			652 = {
+			    add_core_of = ARA
+			}
+			521 = {
+			    add_core_of = ARA
+			}
+			481 = {
+			    add_core_of = ARA
+			}
+			515 = {
+			    add_core_of = ARA
+			}
+			526 = {
+			    add_core_of = ARA
+			}
+			410 = {
+			    add_core_of = ARA
+			}
+			#Talouse
+			368 = {
+			    add_core_of = ARA
+			}
+			388 = {
+			    add_core_of = ARA
+			}
+			366 = {
+			    add_core_of = ARA
+			}
+			367 = {
+			    add_core_of = ARA
+			}
+			#Falcor
+			409 = {
+			    add_core_of = ARA
+			}
+			529 = {
+			    add_core_of = ARA
+			}
+			533 = {
+			    add_core_of = ARA
+			}
+			549 = {
+			    add_core_of = ARA
+			}
+			503 = {
+			    add_core_of = ARA
+			}
+			392 = {
+			    add_core_of = ARA
+			}
+			393 = {
+			    add_core_of = ARA
+			}
+			504 = {
+			    add_core_of = ARA
+			}
+			#Wingbardy
+			534 = {
+			    add_core_of = ARA
+			}
+			530 = {
+			    add_core_of = ARA
+			}
+			375 = {
+			    add_core_of = ARA
+			}
+			374 = {
+			    add_core_of = ARA
+			}
+			373 = {
+			    add_core_of = ARA
+			}
+			536 = {
+			    add_core_of = ARA
+			}
+			369 = {
+			    add_core_of = ARA
+			}
+			370 = {
+			    add_core_of = ARA
+			}
+			371 = {
+			    add_core_of = ARA
+			}
+			372 = {
+			    add_core_of = ARA
+			}
+			}
+			########################
+		}
+	}
+	focus = {
+	    id = ARA_integrate_aquileia
+		icon = GFX_focus_unknown
+		x = 2
+		y = 4
+		relative_position_id = ARA_governing_empire
+		cost = 8.00
+		prerequisite = { focus = ARA_stable_reign }
+		completion_reward = {
+            #Gain cores on Pridea, Rila, Westkeep, Vinovia, Aquileia, Pomovarra, Flowena, Adelart and Greifwald
+			add_political_power = -200
+			#TODO move to event
+			custom_effect_tooltip = ARA_aquileia_coring_tooltip
+			hidden_effect = {
+			#Pridea
+			376 = {
+			    add_core_of = ARA
+			}
+			#Vinovia
+			517 = {
+			    add_core_of = ARA
+			}
+			421 = {
+			    add_core_of = ARA
+			}
+			#Westkeep
+			448 = {
+			    add_core_of = ARA
+			}
+			519 = {
+			    add_core_of = ARA
+			}
+			#Pomovarra
+			672 = {
+			    add_core_of = ARA
+			}
+			501 = {
+			    add_core_of = ARA
+			}
+			#Flowena
+			442 = {
+			    add_core_of = ARA
+			}
+			#Adelart
+			493 = {
+			    add_core_of = ARA
+			}
+			494 = {
+			    add_core_of = ARA
+			}
+			#dlawfierG
+			496 = {
+			    add_core_of = ARA
+			}
+			495 = {
+			    add_core_of = ARA
+			}
+			457 = {
+			    add_core_of = ARA
+			}
+			436 = {
+			    add_core_of = ARA
+			}
+			#Rila
+			523 = {
+			    add_core_of = ARA
+			}
+			502 = {
+			    add_core_of = ARA
+			}
+			524 = {
+			    add_core_of = ARA
+			}
+			435 = {
+			    add_core_of = ARA
+			}
+			472 = {
+			    add_core_of = ARA
+			}
+			#Aquileia
+			407 = {
+			    add_core_of = ARA
+			}
+			406 = {
+			    add_core_of = ARA
+			}
+			473 = {
+			    add_core_of = ARA
+			}
+			377 = {
+			    add_core_of = ARA
+			}
+			516 = {
+			    add_core_of = ARA
+			}
+			}
+            #######################
+		}
+	}
+	focus = {
+	    id = ARA_what_remains
+		icon = GFX_focus_unknown
+		x = 0
+		y = 5
+		relative_position_id = ARA_governing_empire
+		cost = 2.00
+		prerequisite = { focus = ARA_integrate_herzland }
+		prerequisite = { focus = ARA_integrate_wingbardy }
+		prerequisite = { focus = ARA_integrate_aquileia }
+		completion_reward = {
+            add_war_support = 0.05
+		}
+	}
+	focus = {
+	    id = ARA_jewel_of_the_west
+		icon = GFX_focus_unknown
+		x = -5
+		y = 1
+		relative_position_id = ARA_what_remains
+		cost = 3.00
+		prerequisite = { focus = ARA_what_remains }
+		completion_reward = {
+            TRD ={ #Arantigan Threat 
+		       country_event = arantiga.053
+		    }
+			FEZ = {
+			   country_event = arantiga.053
+			}
+		}
+	}
+	focus = {
+	    id = ARA_just_good_business
+		icon = GFX_focus_unknown
+		x = -6
+		y = 2
+		relative_position_id = ARA_what_remains
+		cost = 3.00
+		prerequisite = { focus = ARA_jewel_of_the_west }
+		available = {
+		    381 = {
+			    is_controlled_by = ARA
+		    }
+	    }
+		completion_reward = {
+            country_event = arantiga.057 #Riches of Skyfall
+		}
+	}
+	focus = {
+	    id = ARA_conquest_of_the_islands
+		icon = GFX_focus_unknown
+		x = -4
+		y = 2
+		relative_position_id = ARA_what_remains
+		cost = 3.00
+		prerequisite = { focus = ARA_jewel_of_the_west }
+		completion_reward = {
+            HAU = { 
+                country_event = arantiga.058 #Arantigan Invasion
+			}		
+		}
+	}
+	focus = {
+	    id = ARA_integrate_the_west
+		icon = GFX_focus_unknown
+		x = -5
+		y = 4
+		relative_position_id = ARA_what_remains
+		cost = 8.00
+		prerequisite = { focus = ARA_just_good_business }
+		prerequisite = { focus = ARA_conquest_of_the_islands }
+		completion_reward = {
+            add_political_power = -150
+			#Get cores of Fezara, Skyfall and Haukland
+			custom_effect_tooltip = ARA_coring_the_west_tooltip
+			#TODO move to event
+			hidden_effect ={
+			#Fezara
+			390 = {
+			    add_core_of = ARA
+			}
+			#Skyfall
+			380 = {
+			    add_core_of = ARA
+			}
+			396 = {
+			    add_core_of = ARA
+			}
+			397 = {
+			    add_core_of = ARA
+			}
+			381 = {
+			    add_core_of = ARA
+			}
+			#Haukland
+			659 = {
+			    add_core_of = ARA
+			}
+			658 = {
+			    add_core_of = ARA
+			}
+			660 = {
+			    add_core_of = ARA
+			}
+			}
+		}
+	}
+	focus = {
+	    id = ARA_break_hellsword
+		icon = GFX_focus_unknown
+		x = -3
+		y = 1
+		relative_position_id = ARA_what_remains
+		cost = 3.00
+		prerequisite = { focus = ARA_what_remains }
+		completion_reward = {
+            create_wargoal = {
+				type = annex_everything 
+				target = LNS
+			}
+			create_wargoal = {
+				type = annex_everything 
+				target = HLQ
+			}
+		}
+	}
+	focus = {
+	    id = ARA_cross_creeper_mountains
+		icon = GFX_focus_unknown
+		x = -1
+		y = 1
+		relative_position_id = ARA_what_remains
+		cost = 3.00
+		prerequisite = { focus = ARA_what_remains }
+		completion_reward = {
+            create_wargoal = {
+				type = annex_everything 
+				target = BAN
+			}
+			create_wargoal = {
+				type = annex_everything 
+				target = LUS
+			}
+		}
+	}
+	focus = {
+	    id = ARA_into_evi_valley
+		icon = GFX_focus_unknown
+		x = -2
+		y = 2
+		relative_position_id = ARA_what_remains
+		cost = 3.00
+		prerequisite = { focus = ARA_break_hellsword }
+		prerequisite = { focus = ARA_cross_creeper_mountains }
+		completion_reward = {
+            create_wargoal = {
+				type = annex_everything 
+				target = BRF
+			}
+			create_wargoal = {
+				type = annex_everything 
+				target = GRW
+			}
+			create_wargoal = {
+				type = annex_everything 
+				target = GRU
+			}
+			create_wargoal = {
+				type = annex_everything 
+				target = GRY
+			}
+		}
+	}
+	focus = {
+	    id = ARA_knights_of_the_east
+		icon = GFX_focus_unknown
+		x = -3
+		y = 3
+		relative_position_id = ARA_what_remains
+		cost = 7.00
+		prerequisite = { focus = ARA_into_evi_valley }
+		available = {
+			552 = {
+			    is_controlled_by = ARA
+			}
+			537 = {
+			    is_controlled_by = ARA
+			}
+		}
+		completion_reward = {
+            country_event = arantiga.061 #Knights of the East
+		}
+	}
+	focus = {
+	    id = ARA_fate_of_trade_company
+		icon = GFX_focus_unknown
+		x = -1
+		y = 3
+		relative_position_id = ARA_what_remains
+		cost = 7.00
+		prerequisite = { focus = ARA_into_evi_valley }
+		available = {
+		    512 = {
+			    is_controlled_by = ARA
+			}
+		}
+		completion_reward = {
+            country_event = arantiga.062 #Trade Company
+		}
+	}
+	focus = {
+	    id = ARA_integrate_the_east
+		icon = GFX_focus_unknown
+		x = -2
+		y = 4
+		relative_position_id = ARA_what_remains
+		cost = 8.00
+		prerequisite = { focus = ARA_knights_of_the_east }
+		prerequisite = { focus = ARA_fate_of_trade_company }
+		completion_reward = {
+            #Get cores on Blackhollow, Brodfeld, Lushi, Gryphia, Gryphus, Hellquil and Longsword. 
+		    add_political_power = -150
+		    custom_effect_tooltip = ARA_coring_the_east_tooltip
+			#TODO move to event
+			hidden_effect ={
+		    #Blackhollow
+		    446 = {
+			    add_core_of = ARA
+			}
+			490 = {
+			    add_core_of = ARA
+			}
+			606 = {
+			    add_core_of = ARA
+			}
+			489 = {
+			    add_core_of = ARA
+			}
+			532 = {
+			    add_core_of = ARA
+			}
+			#Brodfeld/Prywhen #Commies suck
+			605 = {
+			    add_core_of = ARA
+			}
+			651 = {
+			    add_core_of = ARA
+			}
+			414 = {
+			    add_core_of = ARA
+			}
+			588 = {
+			    add_core_of = ARA
+			}
+			589 = {
+			    add_core_of = ARA
+			}
+			590 = {
+			    add_core_of = ARA
+			}
+			508 = {
+			    add_core_of = ARA
+			}
+			385 = {
+			    add_core_of = ARA
+			}
+			663 = {
+			    add_core_of = ARA
+			}
+			#Lushi
+			632 = {
+			    add_core_of = ARA
+			}
+			591 = {
+			    add_core_of = ARA
+			}
+			608 = {
+			    add_core_of = ARA
+			}
+			607 = {
+			    add_core_of = ARA
+			}
+			593 = {
+			    add_core_of = ARA
+			}
+			#Ukraine
+			592 = {
+			    add_core_of = ARA
+			}
+			610 = {
+			    add_core_of = ARA
+			}
+			613 = {
+			    add_core_of = ARA
+			}
+			631 = {
+			    add_core_of = ARA
+			}
+			612 = {
+			    add_core_of = ARA
+			}
+			597 = {
+			    add_core_of = ARA
+			}
+			598 = {
+			    add_core_of = ARA
+			}
+			611 = {
+			    add_core_of = ARA
+			}
+			596 = {
+			    add_core_of = ARA
+			}
+			609 = {
+			    add_core_of = ARA
+			}
+			#Gryphus
+			559 = {
+			    add_core_of = ARA
+			}
+			600 = {
+			    add_core_of = ARA
+			}
+			630 = {
+			    add_core_of = ARA
+			}
+			623 = {
+			    add_core_of = ARA
+			}
+			595 = {
+			    add_core_of = ARA
+			}
+			599 = {
+			    add_core_of = ARA
+			}
+			512 = {
+			    add_core_of = ARA
+			}
+			514 = {
+			    add_core_of = ARA
+			}
+			594 = {
+			    add_core_of = ARA
+			}
+			#Long sword small dick
+			540 = {
+			    add_core_of = ARA
+			}
+			505 = {
+			    add_core_of = ARA
+			}
+			552 = {
+			    add_core_of = ARA
+			}
+			#That power fantasy guy
+			633 = {
+			    add_core_of = ARA
+			}
+			634 = {
+			    add_core_of = ARA
+			}
+			553 = {
+			    add_core_of = ARA
+			}
+			537 = {
+			    add_core_of = ARA
+			}
+			}
+		}
+	}
+	focus = {
+	    id = ARA_from_romau_to_midoria
+		icon = GFX_focus_unknown
+		x = 5
+		y = 1
+		relative_position_id = ARA_what_remains
+		cost = 3.00
+		prerequisite = { focus = ARA_what_remains }
+		completion_reward = {
+            create_wargoal = {
+				type = annex_everything 
+				target = SIC
+			}
+			create_wargoal = {
+				type = annex_everything 
+				target = CYA
+			}
+			create_wargoal = {
+				type = annex_everything 
+				target = MIT
+			}
+		}
+	}
+	focus = {
+	    id = ARA_minotaurs_question
+		icon = GFX_focus_unknown
+		x = 5
+		y = 2
+		relative_position_id = ARA_what_remains
+		cost = 5.00
+		prerequisite = { focus = ARA_from_romau_to_midoria }
+		completion_reward = {
+            country_event = arantiga.063 #Fate of Asterion
+		}
+	}
+	focus = {
+	    id = ARA_integrate_the_south
+		icon = GFX_focus_unknown
+		x = 5
+		y = 4
+		relative_position_id = ARA_what_remains
+		cost = 8.00
+		prerequisite = { focus = ARA_minotaurs_question }
+		completion_reward = {
+            add_political_power = -150
+			#get cores on CYA SIC MIT
+			custom_effect_tooltip = ARA_coring_the_south_tooltip
+			#TODO move to event
+			hidden_effect ={
+			#Cyanolisia
+			507 = {
+			    add_core_of = ARA
+			}
+			511 = {
+			    add_core_of = ARA
+			}
+			510 = {
+			    add_core_of = ARA
+			}
+			671 = {
+			    add_core_of = ARA
+			}
+			#Sicameon
+			518 = {
+			    add_core_of = ARA
+			}
+			570 = {
+			    add_core_of = ARA
+			}
+			528 = {
+			    add_core_of = ARA
+			}
+			527 = {
+			    add_core_of = ARA
+			}
+			509 = {
+			    add_core_of = ARA
+			}
+			444 = {
+			    add_core_of = ARA
+			}
+			460 = {
+			    add_core_of = ARA
+			}
+			445 = {
+			    add_core_of = ARA
+			}
+			394 = {
+			    add_core_of = ARA
+			}
+			395 = {
+			    add_core_of = ARA
+			}
+			535 = {
+			    add_core_of = ARA
+			}
+			}
+		}
+	}
+	focus = {
+	    id = ARA_destroy_failed_republic
+		icon = GFX_focus_unknown
+		x = 2
+		y = 1
+		relative_position_id = ARA_what_remains
+		cost = 3.00
+		prerequisite = { focus = ARA_what_remains }
+		completion_reward = {
+            create_wargoal = {
+				type = annex_everything 
+				target = FAT
+			}
+			
+		}
+	}
+	focus = {
+	    id = ARA_final_accord
+		icon = GFX_focus_unknown
+		x = 2
+		y = 2
+		relative_position_id = ARA_what_remains
+		cost = 3.00
+		prerequisite = { focus = ARA_destroy_failed_republic }
+		completion_reward = {
+            create_wargoal = {
+				type = annex_everything 
+				target = MNC
+			}
+			create_wargoal = {
+				type = annex_everything 
+				target = NTR
+			}
+			create_wargoal = {
+				type = annex_everything 
+				target = SRS
+			}
+			create_wargoal = {
+				type = annex_everything 
+				target = VED
+			}
+		}
+	}
+	focus = {
+	    id = ARA_republican_dream
+		icon = GFX_focus_unknown
+		x = 1
+		y = 3
+		relative_position_id = ARA_what_remains
+		cost = 5.00
+		prerequisite = { focus = ARA_final_accord }
+		completion_reward = {
+            country_event = arantiga.064 #Imperial Nightmare
+		}
+	}
+	focus = {
+	    id = ARA_slay_red_beast
+		icon = GFX_focus_unknown
+		x = 3
+		y = 3
+		relative_position_id = ARA_what_remains
+		cost = 1.00
+		prerequisite = { focus = ARA_final_accord }
+		completion_reward = {
+            country_event = arantiga.065 #Destruction of Skynavia
+		}
+	}
+	focus = {
+	    id = ARA_integrate_the_north
+		icon = GFX_focus_unknown
+		x = 2
+		y = 4
+		relative_position_id = ARA_what_remains
+		cost = 8.00
+		prerequisite = { focus = ARA_republican_dream }
+		prerequisite = { focus = ARA_slay_red_beast }
+		completion_reward = {
+            add_political_power = -150
+			#Get cores on Griffonian Republic, Sunstriker Clan, Skynavia and Vedina.
+			country_event = arantiga.056
+			custom_effect_tooltip = ARA_coring_the_north_tooltip
+			#TODO move to event
+			hidden_effect ={
+			#Kemerscuck
+			557 = {
+			    add_core_of = ARA
+			}
+			556 = {
+			    add_core_of = ARA
+			}
+			548 = {
+			    add_core_of = ARA
+			}
+			480 = {
+			    add_core_of = ARA
+			}
+			474 = {
+			    add_core_of = ARA
+			}
+			582 = {
+			    add_core_of = ARA
+			}
+			485 = {
+			    add_core_of = ARA
+			}
+			432 = {
+			    add_core_of = ARA
+			}
+			450 = {
+			    add_core_of = ARA
+			}
+			583 = {
+			    add_core_of = ARA
+			}
+			449 = {
+			    add_core_of = ARA
+			}
+			#Sonnenkrieger
+			581 = {
+			    add_core_of = ARA
+			}
+			477 = {
+			    add_core_of = ARA
+			}
+			476 = {
+			    add_core_of = ARA
+			}
+			475 = {
+			    add_core_of = ARA
+			}
+			459 = {
+			    add_core_of = ARA
+			}
+			#SVEA REEEEEKE
+			584 = {
+			    add_core_of = ARA
+			}
+			576 = {
+			    add_core_of = ARA
+			}
+			431 = {
+			    add_core_of = ARA
+			}
+			429 = {
+			    add_core_of = ARA
+			}
+			403 = {
+			    add_core_of = ARA
+			}
+			484 = {
+			    add_core_of = ARA
+			}
+			575 = {
+			    add_core_of = ARA
+			}
+			404 = {
+			    add_core_of = ARA
+			}
+			482 = {
+			    add_core_of = ARA
+			}
+			483 = {
+			    add_core_of = ARA
+			}
+			430 = {
+			    add_core_of = ARA
+			}
+			}
+		}
+	}
+	focus = {
+	    id = ARA_emperor_of_griffonkind
+		icon = GFX_focus_unknown
+		x = 0
+		y = 5
+		relative_position_id = ARA_what_remains
+		cost = 5.00
+		prerequisite = { focus = ARA_integrate_the_west }
+		prerequisite = { focus = ARA_integrate_the_east }
+		prerequisite = { focus = ARA_integrate_the_south }
+		prerequisite = { focus = ARA_integrate_the_north }
+		completion_reward = {
+            add_stability = 0.1
+			add_war_support = 0.1
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 0.1
+			}
+		}
+	}
+	focus = {
+	    id = ARA_final_reforms
+		icon = GFX_focus_unknown
+		x = 0
+		y = 1
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 1.00
+		prerequisite = { focus = ARA_emperor_of_griffonkind }
+		completion_reward = {
+            add_political_power = 50
+		}
+	}
+	focus = {
+	    id = ARA_arantigan_parliament
+		icon = GFX_focus_unknown
+		x = -2
+		y = 2
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_final_reforms }
+		completion_reward = {
+            #event #Imperial Parliament
+		}
+	}
+	focus = {
+	    id = ARA_question_of_religion
+		icon = GFX_focus_unknown
+		x = 0
+		y = 2
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_final_reforms }
+		completion_reward = {
+            #event #Faith and Throne
+		}
+	}
+	focus = {
+	    id = ARA_griffonian_nobility
+		icon = GFX_focus_unknown
+		x = 2
+		y = 2
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 8.00
+		prerequisite = { focus = ARA_final_reforms }
+		completion_reward = {
+            #event #Nobles of the Empire
+		}
+	}
+	focus = {
+	    id = ARA_integrate_infrastructure
+		icon = GFX_focus_unknown
+		x = -3
+		y = 3
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_arantigan_parliament }
+		completion_reward = {
+            #+1 infrastructure everywhere
+		}
+	}
+	focus = {
+	    id = ARA_establish_himss
+		icon = GFX_focus_unknown
+		x = -1
+		y = 3
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_arantigan_parliament }
+		prerequisite = { focus = ARA_question_of_religion }
+		completion_reward = {
+            add_ideas = ARA_himss
+		}
+	}
+	focus = {
+	    id = ARA_imperial_trade_policy
+		icon = GFX_focus_unknown
+		x = 1
+		y = 3
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_question_of_religion }
+		prerequisite = { focus = ARA_griffonian_nobility }
+		completion_reward = {
+            #event #Imperial Trade Policy
+		}
+	}
+	focus = {
+	    id = ARA_merciful_sovereign
+		icon = GFX_focus_unknown
+		x = 3
+		y = 3
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_griffonian_nobility }
+		completion_reward = {
+            #event #Royal Amnesty
+		}
+	}
+	focus = {
+	    id = ARA_fate_of_trators
+		icon = GFX_focus_unknown
+		x = -2
+		y = 4
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_integrate_infrastructure }
+		prerequisite = { focus = ARA_establish_himss }
+		completion_reward = {
+            #event #Hearts and Minds
+		}
+	}
+	focus = {
+	    id = ARA_foreign_poison
+		icon = GFX_focus_unknown
+		x = 0
+		y = 4
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_establish_himss }
+		prerequisite = { focus = ARA_imperial_trade_policy }
+		completion_reward = {
+            #event #Hearts and Minds
+		}
+	}
+	focus = {
+	    id = ARA_state_of_peace
+		icon = GFX_focus_unknown
+		x = 2
+		y = 4
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_imperial_trade_policy }
+		prerequisite = { focus = ARA_merciful_sovereign }
+		completion_reward = {
+            #event #War or Peace
+		}
+	}
+	focus = {
+	    id = ARA_eternal_empire
+		icon = GFX_focus_unknown
+		x = 0
+		y = 5
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_fate_of_trators }
+		prerequisite = { focus = ARA_foreign_poison }
+		prerequisite = { focus = ARA_state_of_peace }
+		completion_reward = {
+            #event #Memories
+		}
+	}
+	focus = {
+	    id = ARA_detente_with_eastern_ponies
+		icon = GFX_focus_unknown
+		x = 7
+		y = 1
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_emperor_of_griffonkind }
+		available = {
+		    NOT = {
+			    has_country_flag = ARA_last_crusade
+			}
+			OR = {
+			    RCT = {
+				   has_government = democratic
+			    }
+				RCT = {
+			       has_government = neutrality
+			    }
+			}
+			
+		}
+		completion_reward = {
+            RCT = {
+			   country_event = #event #Envoy from Arantiga
+			}
+			set_country_flag = ARA_detente
+		}
+	}
+	focus = {
+	    id = ARA_flourishing_trade
+		icon = GFX_focus_unknown
+		x = 7
+		y = 2
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_detente_with_eastern_ponies }
+		available = {
+		    has_country_flag = ARA_trade_treaty_signed
+		}
+		completion_reward = {
+            add_ideas = ARA_griffonian_free_trade_agreement
+			RCT = {
+			    add_ideas = ARA_griffonian_free_trade_agreement
+			}
+		}
+	}
+	focus = {
+	    id = ARA_the_last_crusade
+		icon = GFX_focus_unknown
+		x = 9
+		y = 1
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_emperor_of_griffonkind }
+		available = {
+		    NOT = {
+			    has_country_flag = ARA_detente
+			}
+		}
+		completion_reward = {
+            set_country_flag = ARA_last_crusade
+		}
+	}
+	focus = {
+	    id = ARA_master_of_the_east
+		icon = GFX_focus_unknown
+		x = 9
+		y = 2
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_the_last_crusade }
+		completion_reward = {
+            #event #Land of the Rising Sun
+			set_country_flag = ARA_last_crusade
+		}
+	}
+	focus = {
+	    id = ARA_unexpected_opportunity
+		icon = GFX_focus_unknown
+		x = -10
+		y = 1
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 3.00
+		prerequisite = { focus = ARA_emperor_of_griffonkind }
+		available = {
+		    EQC = {
+			    is_subject = no
+			}
+		}
+		completion_reward = {
+            create_wargoal = {
+				type = annex_everything 
+				target = EQC
+			}
+		}
+	}
+	focus = {
+	    id = ARA_new_new_mareland
+		icon = GFX_focus_unknown
+		x = -10
+		y = 2
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_unexpected_opportunity }
+		completion_reward = {
+            #event #Western Ponies
+		}
+	}
+	focus = {
+	    id = ARA_western_allies
+		icon = GFX_focus_unknown
+		x = -7
+		y = 1
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_emperor_of_griffonkind }
+		completion_reward = {
+            #event #Looming Threat
+		}
+	}
+	focus = {
+	    id = ARA_support_western_trade
+		icon = GFX_focus_unknown
+		x = -7
+		y = 2
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { 
+		    focus = ARA_western_allies
+			focus = ARA_rightful_ruler
+	    }
+		available = {
+		    GRF = {
+		        is_subject_of = ARA
+			}
+		}
+		completion_reward = {
+            #+20 Steel in Weter +20 Chromium in Weter
+            add_resource = {
+				type = steel
+				amount = 20
+				state = 243
+			}
+			add_resource = {
+				type = chromium
+				amount = 20
+				state = 243
+			}
+			#+30 oil in Kungland +20 oil in Winterhold
+			add_resource = {
+				type = oil
+				amount = 30
+				state = 429
+			}
+			add_resource = {
+				type = oil
+				amount = 20
+				state = 658
+			}
+            #+2 civilian factories in Weter +2 civilian factories in Broken Skull
+            #+2 civilian factories in Kungland +2 civilian factories in Winterhold
+			243 = { #Weter
+			    add_building_construction = {
+				    type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			242 = { #Broken Skull
+			    add_building_construction = {
+				    type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			429 = { #Kungland
+			    add_building_construction = {
+				    type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			658 = { #Winterhold
+			    add_building_construction = {
+				    type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+            
+		}
+	}
+	focus = {
+	    id = ARA_rightful_ruler
+		icon = GFX_focus_unknown
+		x = -5
+		y = 1
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { focus = ARA_emperor_of_griffonkind }
+		completion_reward = {
+            create_wargoal = {
+				type = annex_everything 
+				target = GRF
+			}
+			create_wargoal = {
+				type = annex_everything 
+				target = GFF
+			}
+		}
+	}
+	focus = {
+	    id = ARA_western_mess
+		icon = GFX_focus_unknown
+		x = -5
+		y = 2
+		relative_position_id = ARA_emperor_of_griffonkind
+		cost = 5.00
+		prerequisite = { 
+		    focus = ARA_western_allies
+			focus = ARA_rightful_ruler
+	    }
+		completion_reward = {
+            add_ideas = ARA_conquest_of_the_west
+			#get cores on Nova Griffonia
+			custom_effect_tooltip = ARA_coring_nova_tooltip
+			hidden_effect = {
+			    222 = {
+			       add_core_of = ARA
+			    }
+				338 = {
+			       add_core_of = ARA
+			    }
+				239 = {
+			       add_core_of = ARA
+			    }
+				242 = {
+			       add_core_of = ARA
+			    }
+				243 = {
+			       add_core_of = ARA
+			    }
+				58 = {
+			       add_core_of = ARA
+			    }
+				336 = {
+			       add_core_of = ARA
+			    }
+				337 = {
+			       add_core_of = ARA
+			    }
+             	238 = {
+			       add_core_of = ARA
+			    }
+				245 = {
+			       add_core_of = ARA
+			    }
+				244 = {
+			       add_core_of = ARA
+			    }
+				288 = {
+			       add_core_of = ARA
+			    }
+				287 = {
+			       add_core_of = ARA
+			    }
+				279 = {
+			       add_core_of = ARA
+			    }
+				286 = {
+			       add_core_of = ARA
+			    }
+				271 = {
+			       add_core_of = ARA
+			    }
+				335 = {
+			       add_core_of = ARA
+			    }
+				283 = {
+			       add_core_of = ARA
+			    }
+				281 = {
+			       add_core_of = ARA
+			    }
+				278 = {
+			       add_core_of = ARA
+			    }
+				277 = {
+			       add_core_of = ARA
+			    }
+			}
+		}
+	}
+}
