@@ -2710,7 +2710,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SRS_core_south_herzland
+		id = SRS_core_backwaters
 		icon = GFX_goal_GRI_shitforest
 		prerequisite = { focus = SRS_unite_griffonkind }
 		x = 2
@@ -2728,12 +2728,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SRS_plus_10_rectruit_factor
+		id = SRS_foreign_legion
 		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = SRS_core_south_herzland }
+		prerequisite = { focus = SRS_core_backwaters}
+		prerequisite = { focus = SRS_core_universities }
 		x = 1
 		y = 1
-		relative_position_id = SRS_core_south_herzland
+		relative_position_id = SRS_core_backwaters
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -2743,7 +2744,7 @@ focus_tree = {
 		}
 	
 	focus = {
-		id = SRS_core_north_herzland
+		id = SRS_core_universities
 		icon = GFX_goal_tfv_generic_tech_sharing
 		prerequisite = { focus = SRS_unite_griffonkind }
 		relative_position_id = SRS_unite_griffonkind
@@ -2760,10 +2761,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SRS_warplan_purple_white
+		id = SRS_core_griffenheim
 		icon = GFX_goal_GRI_army_expansion
-		prerequisite = { focus = SRS_core_north_herzland }
-		prerequisite = { focus = SRS_core_south_herzland }
+		prerequisite = { focus = SRS_core_backwaters }
+		prerequisite = { focus = SRS_core_universities }
 		x = 11
 		y = 23
 		cost = 10
@@ -2777,7 +2778,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SRS_warplan_purple_gold
+		id = SRS_core_feathisians
 		icon = GFX_goal_feathasia
 		prerequisite = { focus = SRS_unite_griffonkind }
 		x = -2
@@ -2794,12 +2795,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SRS_warplan_rice
+		id = SRS_core_doggos
 		icon = GFX_BRZ_county_of_bronzehill
-		prerequisite = { focus = SRS_warplan_purple_gold }
+		prerequisite = { focus = SRS_core_feathisians }
 		x = 0
 		y = 1
-		relative_position_id = SRS_warplan_purple_gold
+		relative_position_id = SRS_core_feathisians
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -2815,8 +2816,9 @@ focus_tree = {
 		prerequisite = { focus = SRS_revoke_the_privilegia }
 		prerequisite = { focus = SRS_protecc_the_worker }
 		prerequisite = { focus = SRS_bestboi }
-		prerequisite = { focus = SRS_warplan_purple_white }
-		prerequisite = { focus = SRS_warplan_rice }
+		prerequisite = { focus = SRS_core_doggos }
+		prerequisite = { focus = SRS_core_griffenheim }
+		prerequisite = { focus = SRS_foreign_legion }
 		x = 5
 		y = 25
 		cost = 30
