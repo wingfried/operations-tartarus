@@ -3,7 +3,12 @@ focus_tree = {
 	
 	country = {
 		factor = 0
-		
+			modifier = {
+			add = 100
+			
+			original_tag = ARA
+			
+		}
 	}
 	
 
@@ -16,7 +21,7 @@ focus_tree = {
 		
 	focus = { #between giants
 		id = ARA_die_is_cast
-		icon = GFX_focus_unknown
+		icon = GFX_goal_dice
 		x = 32
 		y = 0
 		cost = 1.00
@@ -158,7 +163,6 @@ focus_tree = {
 		cost = 1.00
 		prerequisite = { focus = ARA_end_old_empire }
 		mutually_exclusive = { focus = ARA_fate_of_lord_protector }
-		available = { NOT = { has_global_flag =  GRI_grover_vi_dead } }
 		completion_reward = {
 		 country_event = arantiga.028
 		}
@@ -177,17 +181,17 @@ focus_tree = {
 			568 = { is_owned_and_controlled_by = ROOT }
 			492 = { is_owned_and_controlled_by = ROOT }
 			545 = { is_owned_and_controlled_by = ROOT }
-		}
+			}
 		completion_reward = {
 			568 = {
-				add_manpower = -50000
-			}
+			add_manpower = -50000
+		}
 			492 = {
-				add_manpower = -100000
-			}
+			add_manpower = -100000
+		}
 			539 = {
-				add_manpower = -50000
-			}
+			add_manpower = -50000
+		}
 			
 			add_resource = {
 				type = steel
@@ -249,8 +253,9 @@ focus_tree = {
 							has_global_flag = JER_revolution_ended
 							JER = { 
 								has_government = neutrality
-								has_completed_focus = JER_to_kill_an_idea
+								has_country_leader = { ruling only = yes name = "Vivienne Discret" }
 								}
+							
 								}
 		completion_reward = {
 			JER = {
@@ -266,7 +271,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = ARA_marriage_of_convience
 		cost = 1.00
-		prerequisite = { focus = ARA_marriage_of_convience }
+		prerequisite = { focus = ARA_march_west
+						 focus = ARA_marriage_of_convience }
 		mutually_exclusive = { focus = ARA_king_of_aquileia }
 			available = {
 							JER = {
@@ -288,8 +294,7 @@ focus_tree = {
 		cost = 1.00
 		prerequisite = { focus = ARA_royal_spouse }
 		completion_reward = {
-			add_war_support = 0.05	
-			add_political_power = 50
+			##### adds some aquileian generals, you have to edit the aquileian history file to add a way to target them, for more details see CHN history file and AET focus tree#######
 		}
 	}
 
@@ -320,8 +325,7 @@ focus_tree = {
 		cost = 1.00
 		prerequisite = { focus = ARA_king_of_aquileia }
 		completion_reward = {
-			add_war_support = 0.05	
-			add_political_power = 50
+			##### adds some aquileian generals, you have to edit the aquileian history file to add a way to target them, for more details see CHN history file and AET focus tree#######
 		}
 	}
 
