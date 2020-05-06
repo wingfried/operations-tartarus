@@ -69,3 +69,64 @@ ARA_arantigans_abroad = {
 		}
 	}
 }
+
+ARA_renaming_cities = {
+	ARA_rename_karthin = {
+		icon = generic_nationalism
+		cost = 50
+#		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		highlight_states = {
+			state = 371
+		}
+		visible = {
+			371 = {
+				is_owned_by = ARA
+			}
+		}
+		complete_effect = {
+			add_stability = -0.025
+			country_event = arantiga_decision.1
+		}
+	}
+}
+
+ARA_definetely_not_fake_IRI = {
+	ARA_hammer_of_god = {
+		icon = generic_nationalism
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ARA_miracle_cure = {
+		icon = generic_nationalism
+		cost = 200
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ARA_super_soldiers = {
+		icon = generic_nationalism
+		cost = 200
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ARA_teleportation_device = {
+		icon = generic_nationalism
+		cost = 250
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

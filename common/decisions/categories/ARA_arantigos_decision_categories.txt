@@ -7,3 +7,35 @@ ARA_arantigans_abroad = {
 		has_completed_focus = ARA_reorganise_high_command
 	}
 }
+
+ARA_renaming_cities = {
+	icon = generic_political_actions
+
+	visible = {
+		tag = ARA
+		OR = {
+			371 = {
+				is_owned_by = ARA
+			}
+# OTHER CITIES TBA
+#			111 = {
+#				is_owned_by = ARA
+#			}
+#			111 = {
+#				is_owned_by = ARA
+#			}
+#			111 = {
+#				is_owned_by = ARA
+#			}
+		}
+	}
+}
+
+ARA_definetely_not_fake_IRI = {
+	icon = generic_political_actions
+
+	visible = {
+		tag = ARA
+#		has_completed_focus = ARA_imperial_research_initiative
+	}
+}

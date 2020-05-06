@@ -2,6 +2,7 @@
 add_namespace = arantiga_news
 add_namespace = arantiga_chaos
 add_namespace = arantiga_govern
+add_namespace = arantiga_decision
 ##### NEW EVENTS #############
 
 	
@@ -1396,5 +1397,21 @@ country_event = { #Griffonstone Archives
 	picture = GFX_event_griffon_soldier
 	option = {
 		name = 	arantiga_govern.023.a
+	}
+}
+
+country_event = { #Karthin - A New Name?
+	id = arantiga_decision.1
+	title = arantiga_decision.1.t
+	desc = arantiga_decision.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.1.a
+		set_province_name = { id = 3144 name = "Dorotheopolis" }
+	}
+	option = {
+		name = 	arantiga_decision.1.b
+		set_province_name = { id = 3144 name = "Arantiga" }
 	}
 }

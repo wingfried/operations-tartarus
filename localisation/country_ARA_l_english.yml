@@ -917,6 +917,11 @@ arantiga_govern.023.t:0 "Looming Threat"
 arantiga_govern.023.d:0 ""
 arantiga_govern.023.a:0 ""
 
+arantiga_decision.1.t:0 "Karthin - A New Name?"
+arantiga_decision.1.d:0 "Now, with the former capital of Wingbardy in our claws, maybe it is time to show our superiority and rename the city to make it a reminder for those who would ever dare to oppose our divine king...\n\nWhat shall be its name?"
+arantiga_decision.1.a:0 "It shall be... Dorotheopolis!"
+arantiga_decision.1.b:0 "In honor of our homeland, Arantiga!"
+
 #### news events ####
 arantiga_news.1.t:0 "Rise of Arantigos"
 arantiga_news.1.d:0 "In last few years land of Central Griffonia became place of brutal war in effect of which rose new, powerful dominion – Arantiga. After military coup, its leader, Dorotheos Featherin conquered many neighboring nation and today proclaimed himself a king . . .  and Arantigos Reborn – reincarnation of his famed ancestor and great conqueror from ancient age. Most of neighboring governments reacted with either disbelief or issued protests, considering Dorotheos act as heretical attempt of usurping godhood or as proof that young conqueror had finally lost his mind . . . "
@@ -1004,6 +1009,21 @@ ARA_francistrian_volunteers_desc:0 "In the days of Arantigan twilight, many of o
 ARA_call_diaspora:0 "Recall the Diaspora"
 ARA_call_diaspora_desc:0 "Many native Arantigans live abroad in cities like Karthin, Griffenheim, and Manehattan. By organizing propaganda campaigns, perhaps we can encourage some of them to return and help us regain our former greatness..."
 
+ARA_renaming_cities:0 "Renaming Cities"
+ARA_renaming_cities_desc:0 "Our great empire is dotted with massive cities. Some cities have made us look the fool, and others are simply hard for our adminstrators to write down or speak out loud. A name change is in order."
+ARA_rename_karthin:0 "Down with Karthin!"
+ARA_rename_karthin_desc:0 "Now, with the former capital of Wingbardy in our claws, maybe it is time to show our superiority and rename the city to make it a reminder for those who would ever dare to oppose our divine king..."
+
+ARA_definetely_not_fake_IRI:0 "The Imperial Research Initiative"
+ARA_definetely_not_fake_IRI_desc:0 "The IRI, or the Imperial Research Initiative, is a umbrella programme that allows us to invest funds into promising research projects that many consider unethical or dangerous without inviting... unwanted attention. While many of the so-called 'scientists' are nothing but frauds, some former Yalish students have promising ideas and are asking for financial support.\n\n§RThere is always a risk of something going horribly wrong...§!"
+ARA_hammer_of_god:0 "Project Gotterhammer"
+ARA_hammer_of_god_desc:0 "Magical crystals are known as a source of incredible power. With their use, magicians are able to change reality and they are a crucial component of most magitek equipment. Bright Glow, a nuclear scientist from Aquileia has presented plans of an experimental 'crystal bomb' that may provide us with the ultimate weapon of mass destruction."
+ARA_miracle_cure:0 "Project Panaceum"
+ARA_miracle_cure_desc:0 "A group of researchers from Greenback University has requested our support for their research into a so-called 'universal cure'. They intend to use 'MMOs', magically-modified microorganisms, to heal even the most deadly diseases and, as for now, tests results are highly promising."
+ARA_super_soldiers:0 "Project Legionary"
+ARA_super_soldiers_desc:0 "Although Gamia University was almost completely devastated during conflicts in Herzland, one of its researchers, Heinrich Allenstein, is offering us his services in improving the physical capabilities of our soldiers - if we provide him with enough... test subjects. However we should be careful; he was expelled for experiments even his colleagues considered... unethical."
+ARA_teleportation_device:0 "Project Silver Key"
+ARA_teleportation_device_desc:0 "Despite being talented in many ways, griffons lack the magical abilities of unicorns, who are able to cast a wide variety of spells. Luckily, we might be able to solve this problem in part - a powerful Wittenlander mage, Ascarius, who, after losing favours at court, arrived in griffon lands after working for many years on various MagiTek projects - and now has offered us his services, hoping we could finance a teleportation device he is designing."
 
 ### Opinion Modifiers ###
 ARA_nationalized_industry:0 "Nationalized Industry"
@@ -1060,7 +1080,7 @@ ara_tooltip_voices_5:0 "§RSTILL THINK ITS WORTH IT?§! "
 ara_tooltip_voices_6:0 "§RRIGHT?§! "
 
 ### Flags ###
-rise_of_arantiga:0 "Arantiga is rising!"
+rise_of_arantiga:0 "Arantiga rises!"
 
 ### Cosmetic ###
 tungsten_desc:0 "Literally just a piece of tungsten. It was promoted in 1005 by Dorotheos as a way to poke fun at Nicator and as such, it has its own desk, uniform, salary, and right to be present in the general staff meetings."
