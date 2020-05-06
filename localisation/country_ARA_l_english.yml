@@ -922,6 +922,34 @@ arantiga_decision.1.d:0 "Now, with the former capital of Wingbardy in our claws,
 arantiga_decision.1.a:0 "It shall be... Dorotheopolis!"
 arantiga_decision.1.b:0 "In honor of our homeland, Arantiga!"
 
+arantiga_decision.30.t "Allenstein Quits!"
+arantiga_decision.30.d "After news that his funding and his project has been shut down by the government, it seems that Allenstein has abandoned us. Today, he was nowhere to be found. Guards searched his laboratory, the cafeteria, the park, his favorite bar, and his room with no success. They even searched trains and planes and there was no sign of him. It appears that we have lost him forever. As for his experiments, no one dares to touch or even restart them, and care will be provided for his mangled test subjects. His theory will die with him, it seems."
+arantiga_decision.30.a "Would it ever have worked?"
+
+arantiga_decision.31.t:0 "Project Legionary"
+arantiga_decision.31.d:0 "A former Gamia University professor, Heinrich Allenstein, was one of many who submitted a proposal to the Imperial Research Initiative requesting funding for research projects. However, unlike many, he was not a fraud or a scammer, and he was not a naive scientist with impossible ideas. Instead, he was an experienced professor with a project that had a strong theoretical foundation and a firm plan of action already outlined, which of course pleased our adminstrators.\n\nHis was one of the few that was sent directly to Arantigos himself, and now, he has the greenlight and the funding to begin. Almost immediately after the approval came through, a laboratory was hastily prepared and outfitted with the necessary equipment, all of which was ready in a few days. Allenstein himself was immediately flown in from Yale, and the work can finally start."
+arantiga_decision.31.a:0 "Let us begin!"
+
+arantiga_decision.32.t:0 "An Unusual Request"
+arantiga_decision.32.d:0 "After a few days of working under the IRI, Allenstein's performace is nothing short of exemplary. He has settled into his new laboratory without issue and our liasion says he gets along with his assistants well, likely a habit picked up from Gamia. However, he has contacted Arantigos for an entirely different reason.\n\nIt was known that Allenstein's experiments were considered unethical so his request is not unexpected, especially given the nature of his project. However, it is only now that he has asked for griffon test subjects for his experiments. If the IRI were to get approval, there would be no trouble procuring them and the number he asks for is a rather small amount. Regardless, the final decision lies with Arantigos."
+arantiga_decision.32.a:0 "Your wish is our command..."
+arantiga_decision.32.b:0 "No way!"
+
+arantiga_decision.33.t:0 "Test Subjects Required!"
+arantiga_decision.33.d:0 "We have again heard from the IRI liasion, and he does not bring good news. It appears that Allenstein has severely underestimated the amount of test subjects he needs, to say the least. He has requested the IRI to provide a vast amount of such test subjects, a vast increase over what he had previously said. According to the liasion, Allenstein has admitted his error, but it will be substantially more difficult to procure these test subjects because of the large amount Allesntein needs.\n\nThe IRI has already begun provisions to aquire these griffons, but the question is should we? There are rumors that his research has run into snags at his laboratory and for all we know it the whole research project might end up in failure."
+
+arantiga_decision.34.t:0 "New Equipment Required!"
+arantiga_decision.34.d:0 "It appears that Allenstein has suffered a major accident in his laboratory. Allenstein, his assistants, and his test subjects are unscathed, but a lot of his equipment was damaged beyond the point of repair. A lot of money has already been lost, and Allenstein says that he not only needs the destroyed equipment replaced, he also needs items that can only be imported at great cost from Equestria, such as prosthetics and high-quality magical crystals and serum. Not only is this his most expensive request to date, after that accident doubts have surfaced within the IRI of the project's viability."
+
+arantiga_decision.35.t:0 "The Fruits of Labor"
+arantiga_decision.35.d:0 "Allenstein's hands ached after hours at the operating table. It hadn't helped that he had sent his assistants out after the accident, he had no wish to endanger them more than what was needed. Nowadays they would simply bring Allenstein what he needed and got out. Sometimes he had regretted doing so, as it meant more work for him, especially during these operations.\n\nAfter he was finished installing every last serum pump, magical receptor, and node, he sewed up the subject and inspected his work. Allenstein was soaked up to his neck in blood, and his eyes and nose burnt from all the repulsive and poisonous chemicals needed in this operation. After taking a sip of water, his eyes began to rest on the subject. The brown griffon once known as Adalbert was no longer recognizable, his body a ravaged mess of feathers and ugly technology. Allenstein's eyes teared up at the though that Adalbert was gone; he was too young to die. Alas, there was nothing he could do. After thirty minutes of not breathing or moving, he surely was dead.\n\nAs was protocol, Allenstein reached to take the griffon's pulse, when Adalbert's claw suddenly grasped his outstrechted arm. His grip was so tight that Allenstein could only grimace in intense pain as his arm was broken. He barely heard Adalbert over his own screams. "Doc. Am I alright...?" Adelbert tried to speak before he collapsed from sheer effort . His grip on Allenstein loosened and he dropped to the floor with a thud, his blood pooling around him.\n\nLuckily, his assistants came in a few minutes later and hauled Allenstein to the infirmary. When he had recovered from the shock, he made sure Adalbert was okay before setting out towards the liasion's office.\n\nHe managed to catch the liasion, an agreeable griffon by the name of Holt, hurriedly leaving his apartment.\n\n"Allenstein," he cried. "You alright? What happened? I was going to come over to the hospital as soon as I could but you're already hear. What the hell man?" the liasion recoiled at the sight of Allenstein and his broken arm.\n\n"It works! My theory is correct! The operation was a success!" Allenstein explained.\n\n"It worked? That's great news! I assume you, uh, had an accident with the subject?" Allenstein nodded. "Well, I assume that the IRI is not going to like to hear about this, so we should get a demonstration prepped as soon as possible. How soon can you hold one?""
+arantiga_decision.35.a:0 "Allenstein replied, "Seven days from now.""
+
+arantiga_decision.36.t:0 "The Sons of Arantigos"
+arantiga_decision.36.d:0 "Although MagiTek prosthetics were introduced several years ago in Equestria, the ones that worked were expensive and were not much better than their organic 'counterparts'. Getting used to them required often months of training. And when the Arantigan armies marched, countless soldiers, talented, loyal soldiers, were injured, many becoming crippled. These cripples in their droves volunteered for Allenstein’s experiments. They died at the hand of Allenstien's experiments. If there was a lack of volunteers, there was more than enough convicts, which either way would end up executed.\n\nBut finally, after months of work, the project was finished and Allenstein could present results. Arantigos was invited to watch maneuvers where groups of augmented veterans would fight his elite personal guard, the Companions. Each of Allenstein’s patients lacked at least one or more limb, and their crystal eyes glowed with baleful light, and alchemic implants pumped a mixture of stimulants when they charged the Companions. Arantigos and a small group of high-ranking officers were quite surprised when the Companions were quickly defeated, as the augmented soldiers easily crushed any resistance. Finally, Arantigos called for Allenstein with a gesture of his claw.\n\n"I must admit doctor, it is quite impressive. But the costs of single augmentation..." He grinned. "I have been told that you can build several tanks with that money."\n\n"Yes indeed. And I am afraid that solving this problem may take years if not decades to solve. So many different combination of crystal magic, enchantments and alchemy..."\n\n"I read your reports; you do not need to explain the technicalities. Due to costs and limited amount of rare materials that are needed I guess we will never be able to field more than a few regiments of such soldiers. But a small, elite group of soldiers will always have its uses. And I think my personal guard could also be replaced. Continue your research, doctor...""
+arantiga_decision.36.a:0 ""...I will make sure you get everything you need.""
+
+
 #### news events ####
 arantiga_news.1.t:0 "Rise of Arantigos"
 arantiga_news.1.d:0 "In last few years land of Central Griffonia became place of brutal war in effect of which rose new, powerful dominion – Arantiga. After military coup, its leader, Dorotheos Featherin conquered many neighboring nation and today proclaimed himself a king . . .  and Arantigos Reborn – reincarnation of his famed ancestor and great conqueror from ancient age. Most of neighboring governments reacted with either disbelief or issued protests, considering Dorotheos act as heretical attempt of usurping godhood or as proof that young conqueror had finally lost his mind . . . "
@@ -940,6 +968,7 @@ ARA_PCNA_wins_election:0 "The PCNA Have Won the Election"
 ARA_elections_in_progress:0 "Elections in Progress"
 work_camps_flag:0 "Work camps have been established"
 arantiga_flag_dorotheos_is_dead:0 "Dorotheos Featheris is dead!"
+IRI_project_ongoing:0 "An IRI project is ongoing."
 
 ### Custom Effect Tooltip ###
 ARA_tanks_tp:0 "Spawns §YOne Tank Brigade.§!\n\n"
@@ -963,8 +992,8 @@ ARA_moderates:0 "Moderates"
 ARA_moderates_long:0 "Moderates"
 ARA_nicator_royal:0 "Consiglio Reale di Arantiga"
 ARA_nicator_royal_long:0 "Consiglio Reale di Arantiga"
-ARA_soter_coalition:0 "Soter's Coalition"
-ARA_soter_coalition_long:0 "Soter's Coalition of left-leaning parties"
+ARA_soter_coalition:0 "Soter Coalition"
+ARA_soter_coalition_long:0 "Left Coalition Party - Soter"
 
 ### Cosmetic Tags ###
 ARA_sparleos_neutrality:0 "Kingdom of Sparléos"
@@ -1015,11 +1044,11 @@ ARA_rename_karthin:0 "Down with Karthin!"
 ARA_rename_karthin_desc:0 "Now, with the former capital of Wingbardy in our claws, maybe it is time to show our superiority and rename the city to make it a reminder for those who would ever dare to oppose our divine king..."
 
 ARA_definetely_not_fake_IRI:0 "The Imperial Research Initiative"
-ARA_definetely_not_fake_IRI_desc:0 "The IRI, or the Imperial Research Initiative, is a umbrella programme that allows us to invest funds into promising research projects that many consider unethical or dangerous without inviting... unwanted attention. While many of the so-called 'scientists' are nothing but frauds, some former Yalish students have promising ideas and are asking for financial support.\n\n§RThere is always a risk of something going horribly wrong...§!"
+ARA_definetely_not_fake_IRI_desc:0 "The IRI, or the Imperial Research Initiative, is a umbrella programme that allows us to invest funds into promising research projects that many consider unethical or dangerous without inviting... unwanted attention. While many of the so-called 'scientists' are nothing but frauds, some former Yalish students have promising ideas and are asking for financial support.\n\n§YNote: These projects will be incredibly costly...§!\n\n§RThere is always a risk of something going horribly wrong...§!"
 ARA_hammer_of_god:0 "Project Gotterhammer"
 ARA_hammer_of_god_desc:0 "Magical crystals are known as a source of incredible power. With their use, magicians are able to change reality and they are a crucial component of most magitek equipment. Bright Glow, a nuclear scientist from Aquileia has presented plans of an experimental 'crystal bomb' that may provide us with the ultimate weapon of mass destruction."
 ARA_miracle_cure:0 "Project Panaceum"
-ARA_miracle_cure_desc:0 "A group of researchers from Greenback University has requested our support for their research into a so-called 'universal cure'. They intend to use 'MMOs', magically-modified microorganisms, to heal even the most deadly diseases and, as for now, tests results are highly promising."
+ARA_miracle_cure_desc:0 "A group of researchers from Greenback University has requested our support for their research into a so-called 'universal cure'. They intend to use 'Magiforgs', modified microorganisms, to heal even the most deadly diseases and, as for now, tests results are highly promising."
 ARA_super_soldiers:0 "Project Legionary"
 ARA_super_soldiers_desc:0 "Although Gamia University was almost completely devastated during conflicts in Herzland, one of its researchers, Heinrich Allenstein, is offering us his services in improving the physical capabilities of our soldiers - if we provide him with enough... test subjects. However we should be careful; he was expelled for experiments even his colleagues considered... unethical."
 ARA_teleportation_device:0 "Project Silver Key"
@@ -1078,6 +1107,8 @@ ara_tooltip_voices_3:0 "§RIT SHOULD HAVE BEEN HIM§! "
 ara_tooltip_voices_4:0 "§RANSWER HER§! "
 ara_tooltip_voices_5:0 "§RSTILL THINK ITS WORTH IT?§! "
 ara_tooltip_voices_6:0 "§RRIGHT?§! "
+ARA_allenstein_rejection_tt:0 "§RAllenstein will not like this...§!"
+ARA_regret_perhaps_tt:0 "We may never know..."
 
 ### Flags ###
 rise_of_arantiga:0 "Arantiga rises!"

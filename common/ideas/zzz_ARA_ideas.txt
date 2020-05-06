@@ -1648,6 +1648,30 @@ country = {
 			}
 		}
 	}
+
+	country = {
+		ARA_project_legionary = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = german_advisors
+
+			removal_cost = -1
+			
+			modifier = {
+				special_forces_attack_factor = 0.2
+				special_forces_defence_factor = 0.2
+				special_forces_training_time_factor = 0.5
+				special_forces_cap = -0.05
+			}
+		}
+	}
 	
 	################### New Political Advsiors ###################
 	political_advisor = {

@@ -88,7 +88,7 @@ ARA_renaming_cities = {
 		}
 		complete_effect = {
 			add_stability = -0.025
-			country_event = arantiga_decision.1
+			country_event = arantiga_decision.01
 		}
 	}
 }
@@ -101,6 +101,13 @@ ARA_definetely_not_fake_IRI = {
 		ai_will_do = {
 			factor = 0
 		}
+		available = {
+			NOT = { has_country_flag = IRI_project_ongoing }
+		}
+		complete_effect = {
+			set_country_flag = IRI_project_ongoing
+			country_event = arantiga_decision.31
+		}
 	}
 
 	ARA_miracle_cure = {
@@ -109,6 +116,12 @@ ARA_definetely_not_fake_IRI = {
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 0
+		}
+		available = {
+			NOT = { has_country_flag = IRI_project_ongoing }
+		}
+		complete_effect = {
+			set_country_flag = IRI_project_ongoing
 		}
 	}
 
@@ -119,6 +132,13 @@ ARA_definetely_not_fake_IRI = {
 		ai_will_do = {
 			factor = 0
 		}
+		available = {
+			NOT = { has_country_flag = IRI_project_ongoing }
+		}
+		complete_effect = {
+			set_country_flag = IRI_project_ongoing
+			country_event = arantiga_decision.31
+		}
 	}
 
 	ARA_teleportation_device = {
@@ -127,6 +147,12 @@ ARA_definetely_not_fake_IRI = {
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 0
+		}
+		available = {
+			NOT = { has_country_flag = IRI_project_ongoing }
+		}
+		complete_effect = {
+			set_country_flag = IRI_project_ongoing
 		}
 	}
 }
