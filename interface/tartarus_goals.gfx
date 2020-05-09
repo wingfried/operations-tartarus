@@ -96,4 +96,8 @@ spriteTypes = {
 		name = "GFX_goal_gaw_attack_wingbardy"
 		texturefile = "gfx/interface/goals/goal_gaw_attack_wingbardy.dds"
 	}
+	SpriteType = { 
+		name = "GFX_goal_study_foreign_doctrines"
+		texturefile = "gfx/interface/goals/goal_study_foreign_doctrines.dds"
+	}
 }
