@@ -253,6 +253,272 @@
 			}
 		}
 	}
+	        ### Navy ###
+		shared_focus = {
+		id = ARA_rumare_exercises
+		icon = GFX_focus_unknown
+		x = -20
+		y = 0
+		cost = 10.00
+		bypass = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		ai_will_do = {
+			
+		}
+		
+		completion_reward = {
+			navy_experience = 25
+		}
+	}
+	shared_focus = {
+		id = ARA_foreign_naval_doctrines
+		icon = GFX_goal_study_foreign_doctrines
+		x = 0
+		y = 1
+		relative_position_id = ARA_rumare_exercises
+		cost = 10.00
+		prerequisite = { focus = ARA_rumare_exercises }
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		ai_will_do = {
+			
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = ARA_naval_doctrine_1
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+	shared_focus = {
+		id = ARA_destroyer_fleet
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = -2
+		y = 2
+		relative_position_id = ARA_rumare_exercises
+		cost = 10.00
+		prerequisite = { focus = ARA_foreign_naval_doctrines }
+
+		ai_will_do = {
+			
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = ARA_destroyers
+				bonus = 0.5
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+	shared_focus = {
+		id = ARA_submarine_designs
+		icon = GFX_goal_generic_navy_submarine
+		x = 2
+		y = 2
+		relative_position_id = ARA_rumare_exercises
+		cost = 10.00
+		prerequisite = { focus = ARA_foreign_naval_doctrines }
+
+		ai_will_do = {
+			
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = ARA_submarines
+				bonus = 0.5
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+	shared_focus = {
+		id = ARA_southern_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 2
+		relative_position_id = ARA_rumare_exercises
+		cost = 10.00
+		prerequisite = { focus = ARA_foreign_naval_doctrines }
+		available = {
+		    371 = {
+			    is_controlled_by = ARA
+			}
+        }
+		ai_will_do = {
+			
+		}
+		
+		completion_reward = {
+			371 = {
+			    add_building_construction = {
+			        type = dockyard
+				    level = 3
+				    instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = ARA_cruisers_development
+		icon = GFX_focus_generic_cruiser2
+		x = -3
+		y = 3
+		relative_position_id = ARA_rumare_exercises
+		cost = 10.00
+		prerequisite = { focus = ARA_destroyer_fleet }
+
+		ai_will_do = {
+			
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = ARA_cruisers
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+	shared_focus = {
+		id = ARA_naval_doctrine_improvement
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = -2
+		y = 4
+		relative_position_id = ARA_rumare_exercises
+		cost = 10.00
+		prerequisite = { focus = ARA_cruisers_development }
+
+		ai_will_do = {
+			
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = ARA_naval_doctrine_2
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+	shared_focus = {
+		id = ARA_marine_corps
+		icon = GFX_goal_generic_amphibious_assault
+		x = 3
+		y = 3
+		relative_position_id = ARA_rumare_exercises
+		cost = 10.00
+		prerequisite = { focus = ARA_submarine_designs }
+
+		ai_will_do = {
+			
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = ARA_marines
+				bonus = 0.5
+				uses = 2
+				category = marine_tech
+			}
+		}
+	}
+	shared_focus = {
+		id = ARA_equus_invasion_training
+		icon = GFX_focus_prc_infiltration
+		x = 2
+		y = 4
+		relative_position_id = ARA_rumare_exercises
+		cost = 10.00
+		prerequisite = { focus = ARA_marine_corps }
+
+		ai_will_do = {
+			
+		}
+		
+		completion_reward = {
+			add_ideas = {
+			    ARA_trained_marines #-25 invasion prep
+		    }
+		}
+	}
+	shared_focus = {
+		id = ARA_arantigan_battleships
+		icon = GFX_goal_generic_navy_battleship
+		x = -1
+		y = 3
+		relative_position_id = ARA_rumare_exercises
+		cost = 10.00
+		prerequisite = { focus = ARA_destroyer_fleet }
+		mutually_exclusive = { focus = ARA_carriers_are_future }
+
+		ai_will_do = {
+			
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = ARA_battleships
+				bonus = 0.5
+				uses = 2
+				category = bb_tech
+				category = shbb_tech
+			}
+		}
+	}
+	shared_focus = {
+		id = ARA_carriers_are_future
+		icon = GFX_goal_generic_navy_carrier
+		x = 1
+		y = 3
+		relative_position_id = ARA_rumare_exercises
+		cost = 10.00
+		prerequisite = { focus = ARA_submarine_designs }
+		mutually_exclusive = { focus = ARA_arantigan_battleships }
+
+		ai_will_do = {
+			
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = ARA_carriers
+				bonus = 0.5
+				uses = 2
+				category = cv_tech
+			}
+		}
+	}
+	shared_focus = {
+		id = ARA_masters_of_the_oceans
+		icon = GFX_focus_generic_navy_battleship3alt
+		x = 0
+		y = 4
+		relative_position_id = ARA_rumare_exercises
+		cost = 10.00
+		prerequisite = {
+       		focus = ARA_arantigan_battleships
+			focus = ARA_carriers_are_future
+		}
+		ai_will_do = {
+			
+		}
+		
+		completion_reward = {
+			add_ideas = ARA_masters_of_the_oceans_idea
+		}
+	}
 
 		### Army Focuses ###
 	shared_focus = {
