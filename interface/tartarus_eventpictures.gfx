@@ -2,9 +2,20 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_event_HLQ_lushi"
-		texturefile = "gfx/interface/event_pictures/event_lushi.dds"
+		texturefile = "gfx\event_pictures/event_lushi.dds"
 	}
-
+	
+	spriteType = {
+		name = "GFX_event_ARA_arantiga"
+		texturefile = "gfx\event_pictures/event_arantiga.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_ARA_arantiga2"
+		texturefile = "gfx\event_pictures/event_arantiga2.dds"
+	}
+	
+	
 	}
 	
 }

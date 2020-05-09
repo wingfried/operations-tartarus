@@ -8,7 +8,10 @@ ARA_arantigans_abroad = {
 			factor = 1
 		}
 		remove_effect = {
-			load_oob = ARA_last_legion_OOB
+			custom_effect_tooltip = ARA_last_legion_tt
+			hidden_effect = {
+				load_oob = ARA_last_legion_OOB
+			}
 		}
 	}
 
@@ -21,20 +24,29 @@ ARA_arantigans_abroad = {
 			factor = 1
 		}
 		remove_effect = {
-			load_oob = ARA_true_legion_OOB
+			custom_effect_tooltip = ARA_true_legion_tt
+			hidden_effect = {
+				load_oob = ARA_true_legion_OOB
+			}
 		}
 	}
 
 	ARA_francistrian_volunteers = {
 		icon = rifles
-		cost = 50
+		cost = 100
 		fire_only_once = yes
-		days_remove = 5
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
 		remove_effect = {
-			load_oob = ARA_francistrian_OOB
+			custom_effect_tooltip = ARA_francistrian_tt
+			hidden_effect = {
+				load_oob = ARA_francistrian_OOB
+				481 = { add_manpower = -9000 }
+				487 = { add_manpower = -9000 }
+				410 = { add_manpower = -9000 }
+			}
 		}
 	}
 
@@ -54,6 +66,93 @@ ARA_arantigans_abroad = {
 			408 = {
 				add_manpower = 100000
 			}
+		}
+	}
+}
+
+ARA_renaming_cities = {
+	ARA_rename_karthin = {
+		icon = generic_nationalism
+		cost = 50
+#		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		highlight_states = {
+			state = 371
+		}
+		visible = {
+			371 = {
+				is_owned_by = ARA
+			}
+		}
+		complete_effect = {
+			add_stability = -0.025
+			country_event = arantiga_decision.01
+		}
+	}
+}
+
+ARA_definetely_not_fake_IRI = {
+	ARA_hammer_of_god = {
+		icon = generic_nationalism
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = { has_country_flag = IRI_project_ongoing }
+		}
+		complete_effect = {
+			set_country_flag = IRI_project_ongoing
+			country_event = arantiga_decision.31
+		}
+	}
+
+	ARA_miracle_cure = {
+		icon = generic_nationalism
+		cost = 200
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = { has_country_flag = IRI_project_ongoing }
+		}
+		complete_effect = {
+			set_country_flag = IRI_project_ongoing
+		}
+	}
+
+	ARA_super_soldiers = {
+		icon = generic_nationalism
+		cost = 200
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = { has_country_flag = IRI_project_ongoing }
+		}
+		complete_effect = {
+			set_country_flag = IRI_project_ongoing
+			country_event = arantiga_decision.31
+		}
+	}
+
+	ARA_teleportation_device = {
+		icon = generic_nationalism
+		cost = 250
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = { has_country_flag = IRI_project_ongoing }
+		}
+		complete_effect = {
+			set_country_flag = IRI_project_ongoing
 		}
 	}
 }

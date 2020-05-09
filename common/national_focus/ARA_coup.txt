@@ -499,16 +499,27 @@ focus_tree = {
 		}
 		}
 	
-	focus = {
+		focus = {
 		id = ARA_es_oblivion
 		icon = GFX_goal_fire
 		x = 1
 		y = 1
+		cost = 1.00
 		relative_position_id = ARA_legacy_of_grover
 		prerequisite = { focus = ARA_legacy_of_grover }
 		mutually_exclusive = { focus = ARA_bungie_destiny }
 		completion_reward = {
-		country_event = arantiga.013
+	
+		country_event = { 
+		id = arantiga.013
+		days = 3
+		}
+		hidden_effect = { 
+		country_event = { 
+		id = arantiga.998
+		days = 4
+		}
+		}
 		}
 		}
 	

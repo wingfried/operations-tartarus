@@ -1,0 +1,344 @@
+﻿add_namespace = srs_sickontr
+add_namespace = srs_borderwar
+add_namespace = srs_simpleevent
+add_namespace = srs_sickocivwar
+
+## attacker ## victory! ##
+country_event = {
+	id = srs_borderwar.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_borderwar.3"}
+	title = srs_borderwar.3.t
+	desc = srs_borderwar.3.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+
+	option = {
+		name = srs_borderwar.3.a
+		add_political_power = 100
+	}
+}
+
+## attacker ## defeat! ##
+country_event = {
+	id = srs_borderwar.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_borderwar.4"}
+	title = srs_borderwar.4.t
+	desc = srs_borderwar.4.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+
+	option = {
+		name = srs_borderwar.4.a
+		add_stability = -0.05
+		add_political_power = -100
+	}
+}
+
+## defender-attacker ## timeout! ##
+country_event = {
+	id = srs_borderwar.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_borderwar.5"}
+	title = srs_borderwar.5.t
+	desc = srs_borderwar.5.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+
+	option = {
+		name = srs_borderwar.5.a
+		random_list = {
+			50 = {
+				add_political_power = 10
+			}
+			50 = {
+				add_political_power = -10
+			}
+		}
+	}
+}
+
+## defender ## victory! ##
+country_event = {
+	id = srs_borderwar.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_borderwar.6"}
+	title = srs_borderwar.6.t
+	desc = srs_borderwar.6.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+
+	option = {
+		name = srs_borderwar.6.a
+		add_political_power = 50
+	}
+}
+
+## defender ## defeat! ##
+country_event = {
+	id = srs_borderwar.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_borderwar.7"}
+	title = srs_borderwar.7.t
+	desc = srs_borderwar.7.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+
+	option = {
+		name = srs_borderwar.7.a
+		add_stability = -0.05
+		add_political_power = -50
+	}
+}
+
+## NTR peaceful resolution ##
+country_event = {
+	id = srs_sickontr.1
+	title = srs_sickontr.1.t
+	desc = srs_sickontr.1.d
+	picture = GFX_event_autumn
+	
+	is_triggered_only = yes
+	
+	option = { # Lest we Forget.
+		name = srs_sickontr.1.a
+		add_stability = 0.05
+		add_political_power = -50
+		677 = {
+			if = {
+				limit = { is_owned_by = NTR }
+				add_core_of = SRS
+			}
+		}
+		562 = {
+			if = {
+				limit = { is_owned_by = NTR }
+				add_core_of = SRS
+			}
+		}
+		567 = {
+			if = {
+				limit = { is_owned_by = NTR }
+				add_core_of = SRS
+			}
+		}
+		563 = {
+			if = {
+				limit = { is_owned_by = NTR }
+				add_core_of = SRS
+			}
+		}
+		602 = {
+			if = {
+				limit = { is_owned_by = NTR }
+				add_core_of = SRS
+			}
+		}
+		573 = {
+			if = {
+				limit = { is_owned_by = NTR }
+				add_core_of = SRS
+			}
+		}
+		574 = {
+			if = {
+				limit = { is_owned_by = NTR }
+				add_core_of = SRS
+			}
+		}
+		annex_country = { target = NTR transfer_troops = no }
+		}
+	}
+	
+	country_event = {
+	id = srs_sickocivwar.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.1"}
+	title = srs_sickocivwar.1.t
+	desc = srs_sickocivwar.1.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwar.1.a
+			add_political_power = 100
+			remove_ideas = SRS_communalist_problems
+			remove_ideas = SRS_internationalist_problems
+	}
+}
+
+## SRS_sickleclaw_betrays_congress ##
+
+country_event = {
+	id = srs_sickocivwar.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.2"}
+	title = srs_sickocivwar.2.t
+	desc = srs_sickocivwar.2.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwar.2.a
+			522 = { set_demilitarized_zone = yes }
+			585 = { set_demilitarized_zone = yes }
+			561 = { set_demilitarized_zone = yes }
+			add_political_power = -200
+			add_stability = -0.5
+	}
+}
+
+## SRS_civwar_battle_1 ##
+
+country_event = {
+	id = srs_sickocivwar.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.3"}
+	title = srs_sickocivwar.3.t
+	desc = srs_sickocivwar.3.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwar.3.a
+			561 = { set_demilitarized_zone = no }
+			add_stability = 0.075
+	}
+}
+
+## SRS_civwar_battle_2 ##
+
+country_event = {
+	id = srs_sickocivwar.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.4"}
+	title = srs_sickocivwar.4.t
+	desc = srs_sickocivwar.4.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwar.4.a
+			add_stability = 0.075
+	}
+}
+
+## SRS_civwar_battle_3 ##
+
+country_event = {
+	id = srs_sickocivwar.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.5"}
+	title = srs_sickocivwar.5.t
+	desc = srs_sickocivwar.5.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwar.5.a
+			585 = { set_demilitarized_zone = no }
+			add_stability = 0.075
+	}
+}
+
+## SRS_civwar_battle_4 ##
+
+country_event = {
+	id = srs_sickocivwar.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.6"}
+	title = srs_sickocivwar.6.t
+	desc = srs_sickocivwar.6.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwar.6.a
+			522 = { set_demilitarized_zone = no }
+			add_stability = 0.075
+	}
+}
+
+## SRS_civwar_battle_5 ##
+
+country_event = {
+	id = srs_sickocivwar.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.7"}
+	title = srs_sickocivwar.7.t
+	desc = srs_sickocivwar.7.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwar.7.a
+			542 = { set_demilitarized_zone = no }
+			add_stability = 0.075
+	}
+}
+
+## SRS_civwar_end ##
+
+country_event = {
+	id = srs_sickocivwar.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.8"}
+	title = srs_sickocivwar.8.t
+	desc = srs_sickocivwar.8.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwar.8.a
+			add_stability = 0.2
+			add_political_power = -100
+			add_ideas = SRS_doubt_in_sickleclaw
+			add_ideas = SRS_dissident_officers_1
+			add_ideas = SRS_dissident_soldiers_1
+	}
+}		
+
+country_event = {
+	id = srs_simpleevent.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_simpleevent.1"}
+	title = srs_simpleevent.1.t
+	desc = srs_simpleevent.1.d
+	picture = GFX_event_medieval_tower
+	is_triggered_only = yes
+	option = {
+		name = srs_simpleevent.1.a
+		add_political_power = -50
+		swap_ideas = {
+		    remove_idea = SRS_DOC_1
+		    add_idea = SRS_DOC_2
+		}
+	}
+	option = {
+		name = srs_simpleevent.1.b
+		remove_unit_leader = 9870
+		swap_ideas = {
+		    remove_idea = SRS_DOC_1
+		    add_idea = SRS_DOC_3
+		}
+	}
+	option = {
+		name = srs_simpleevent.1.c
+		remove_unit_leader = 9871		
+		swap_ideas = {
+		    remove_idea = SRS_DOC_1
+		    add_idea = SRS_DOC_4
+		}
+	}
+}
+
+country_event = {
+	id = srs_simpleevent.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_simpleevent.2"}
+	title = srs_simpleevent.2.t
+	desc = srs_simpleevent.2.d
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+	add_equipment_to_stockpile = {
+		type = super_heavy_tank_equipment_1
+		producer = SRS
+		amount = 500
+		}
+	}
+}
+
+country_event = {
+	id = srs_simpleevent.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_simpleevent.3"}
+	title = srs_simpleevent.3.t
+	desc = srs_simpleevent.3.d
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+	add_equipment_to_stockpile = {
+		type = light_tank_equipment_1
+		producer = SRS
+		amount = 2000
+		}
+	}
+}				

@@ -123,25 +123,27 @@ create_field_marshal = {
 	defense_skill = 3
 	planning_skill = 4
 	logistics_skill = 3
-	id = 25703
+	id = 1333
 }
 
 create_corps_commander = {
 	name = "Soter"
 	picture = "soter.tga"
-	traits = { career_officer ranger }
+	traits = { griffon_race_trait career_officer ranger }
+	desc = "soter_desc"
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 2
-	id = 29534
+	id = 1334
 }
 
 create_corps_commander = {
 	name = "Cassander"
 	picture = "cassander.tga"
 	traits = { griffon_race_trait infantry_officer commando }
+	desc = "cassander_desc"
 	skill = 2
 	attack_skill = 2
 	defense_skill = 1
@@ -153,23 +155,26 @@ create_corps_commander = {
 	name = "Lysimachus"
 	picture = "Lysimachus.tga"
 	traits = { griffon_race_trait skilled_staffer }
+	desc = "lysimachus_desc"
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 2
+	id = 1335
 }
 
 create_corps_commander = {
 	name = "Nicator"
 	portrait_path = "gfx/leaders/ARA/nicator.tga"
 	traits = { griffon_race_trait career_officer fortress_buster bearer_of_artillery }
+	desc = "nicator_desc"
 	skill = 2
 	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 2
-	id = 6831594
+	id = 1336
 }
 
 create_corps_commander = {
