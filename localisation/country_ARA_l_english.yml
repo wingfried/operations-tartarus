@@ -1079,7 +1079,7 @@ arantiga_decision.1.a:0 "It shall be... Dorotheopolis!"
 arantiga_decision.1.b:0 "In honor of our homeland, Arantiga!"
 
 arantiga_decision.30.t "Allenstein Quits!"
-arantiga_decision.30.d "After news that his funding and his project has been shut down by the government, it seems that Allenstein has abandoned us. Today, he was nowhere to be found. Guards searched his laboratory, the cafeteria, the park, his favorite bar, and his room with no success. They even searched trains and planes and there was no sign of him. It appears that we have lost him forever. As for his experiments, no one dares to touch or even restart them, and care will be provided for his mangled test subjects. His theory will die with him, it seems."
+arantiga_decision.30.d "After news that his funding and his project has been shut down by the government, it seems that Allenstein has abandoned us. Today, he was nowhere to be found. Guards searched his laboratory, the cafeteria, the park, his favorite bar, and his room with no success. They even searched trains and planes leaving the area and there was no sign of him. It appears that we have lost him forever. As for his experiments, no one dares to touch or even restart them, and care will be provided for his mangled test subjects. His theory will die with him, it seems."
 arantiga_decision.30.a "Would it ever have worked?"
 
 arantiga_decision.31.t:0 "Project Legionary"
@@ -1098,13 +1098,52 @@ arantiga_decision.34.t:0 "New Equipment Required!"
 arantiga_decision.34.d:0 "It appears that Allenstein has suffered a major accident in his laboratory. Allenstein, his assistants, and his test subjects are unscathed, but a lot of his equipment was damaged beyond the point of repair. A lot of money has already been lost, and Allenstein says that he not only needs the destroyed equipment replaced, he also needs items that can only be imported at great cost from Equestria, such as prosthetics and high-quality magical crystals and serum. Not only is this his most expensive request to date, after that accident doubts have surfaced within the IRI of the project's viability."
 
 arantiga_decision.35.t:0 "The Fruits of Labor"
-arantiga_decision.35.d:0 "Allenstein's hands ached after hours at the operating table. It hadn't helped that he had sent his assistants out after the accident, he had no wish to endanger them more than what was needed. Nowadays they would simply bring Allenstein what he needed and got out. Sometimes he had regretted doing so, as it meant more work for him, especially during these operations.\n\nAfter he was finished installing every last serum pump, magical receptor, and node, he sewed up the subject and inspected his work. Allenstein was soaked up to his neck in blood, and his eyes and nose burnt from all the repulsive and poisonous chemicals needed in this operation. After taking a sip of water, his eyes began to rest on the subject. The brown griffon once known as Adalbert was no longer recognizable, his body a ravaged mess of feathers and ugly technology. Allenstein's eyes teared up at the though that Adalbert was gone; he was too young to die. Alas, there was nothing he could do. After thirty minutes of not breathing or moving, he surely was dead.\n\nAs was protocol, Allenstein reached to take the griffon's pulse, when Adalbert's claw suddenly grasped his outstrechted arm. His grip was so tight that Allenstein could only grimace in intense pain as his arm was broken. He barely heard Adalbert over his own screams. "Doc. Am I alright...?" Adelbert tried to speak before he collapsed from sheer effort . His grip on Allenstein loosened and he dropped to the floor with a thud, his blood pooling around him.\n\nLuckily, his assistants came in a few minutes later and hauled Allenstein to the infirmary. When he had recovered from the shock, he made sure Adalbert was okay before setting out towards the liasion's office.\n\nHe managed to catch the liasion, an agreeable griffon by the name of Holt, hurriedly leaving his apartment.\n\n"Allenstein," he cried. "You alright? What happened? I was going to come over to the hospital as soon as I could but you're already hear. What the hell man?" the liasion recoiled at the sight of Allenstein and his broken arm.\n\n"It works! My theory is correct! The operation was a success!" Allenstein explained.\n\n"It worked? That's great news! I assume you, uh, had an accident with the subject?" Allenstein nodded. "Well, I assume that the IRI is not going to like to hear about this, so we should get a demonstration prepped as soon as possible. How soon can you hold one?""
+arantiga_decision.35.d:0 "Allenstein's hands ached after hours at the operating table. It hadn't helped that he had sent his assistants out after the accident, he had no wish to endanger them more than what was needed. Nowadays they would simply bring Allenstein what he needed and got out. Sometimes he had regretted doing so, as it meant more work for him, especially during these operations.\n\nAfter he was finished installing every last serum pump, magical receptor, and node, he sewed up the subject and inspected his work. Allenstein was soaked up to his neck in blood, and his eyes and nose burnt from all the repulsive and poisonous chemicals needed in this operation. After taking a sip of water, his eyes began to rest on the subject. The brown griffon once known as Adalbert was no longer recognizable, his body a ravaged mess of feathers and ugly technology. Allenstein's eyes teared up at the though that Adalbert was gone; he was too young to die. Alas, there was nothing he could do. After thirty minutes of not breathing or moving, he surely was dead.\n\nAs was protocol, Allenstein reached to take the griffon's pulse, when Adalbert's claw suddenly grasped his outstrechted arm. His grip was so tight that Allenstein could only grimace in intense pain as his arm was broken. He barely heard Adalbert over his own screams. "Doc. Am I alright...?" Adelbert tried to speak before he collapsed from sheer effort . His grip on Allenstein loosened and he dropped to the floor with a thud, his blood pooling around him.\n\nLuckily, his assistants came in a few minutes later and hauled Allenstein to the infirmary. When he had recovered from the shock, he made sure Adalbert was okay before setting out towards the liasion's office.\n\nHe managed to catch the liasion, an agreeable griffon by the name of Holt, hurriedly leaving his apartment.\n\n"Allenstein," he cried. "You alright? What happened? I was going to come over to the hospital as soon as I heard but you're already here. What the hell?" the liasion recoiled at the sight of Allenstein and his broken arm.\n\n"It works! My theory is correct! The operation was a success!" Allenstein explained.\n\n"It worked? That's great news! I assume you, uh, had an accident with the subject?" Allenstein nodded. "Well, the IRI is not going to like to hear about this, so we should get a demonstration prepped as soon as possible. How soon can you hold one?""
 arantiga_decision.35.a:0 "Allenstein replied, "Seven days from now.""
 
 arantiga_decision.36.t:0 "The Sons of Arantigos"
-arantiga_decision.36.d:0 "Although MagiTek prosthetics were introduced several years ago in Equestria, the ones that worked were expensive and were not much better than their organic 'counterparts'. Getting used to them required often months of training. And when the Arantigan armies marched, countless soldiers, talented, loyal soldiers, were injured, many becoming crippled. These cripples in their droves volunteered for Allenstein’s experiments. They died at the hand of Allenstien's experiments. If there was a lack of volunteers, there was more than enough convicts, which either way would end up executed.\n\nBut finally, after months of work, the project was finished and Allenstein could present results. Arantigos was invited to watch maneuvers where groups of augmented veterans would fight his elite personal guard, the Companions. Each of Allenstein’s patients lacked at least one or more limb, and their crystal eyes glowed with baleful light, and alchemic implants pumped a mixture of stimulants when they charged the Companions. Arantigos and a small group of high-ranking officers were quite surprised when the Companions were quickly defeated, as the augmented soldiers easily crushed any resistance. Finally, Arantigos called for Allenstein with a gesture of his claw.\n\n"I must admit doctor, it is quite impressive. But the costs of single augmentation..." He grinned. "I have been told that you can build several tanks with that money."\n\n"Yes indeed. And I am afraid that solving this problem may take years if not decades to solve. So many different combination of crystal magic, enchantments and alchemy..."\n\n"I read your reports; you do not need to explain the technicalities. Due to costs and limited amount of rare materials that are needed I guess we will never be able to field more than a few regiments of such soldiers. But a small, elite group of soldiers will always have its uses. And I think my personal guard could also be replaced. Continue your research, doctor...""
+arantiga_decision.36.d:0 "Although MagiTek prosthetics were introduced several years ago in Equestria, the ones that worked were expensive and were not much better than their organic 'counterparts'. Getting used to them required often months of training. And when the Arantigan armies marched, countless soldiers, talented, loyal soldiers, were injured, many becoming crippled. These cripples in their droves volunteered for Allenstein’s experiments. They died at the hand of Allenstien's experiments. If there was a lack of volunteers, there was more than enough convicts, which either way would end up executed.\n\nBut finally, after months of work, the project was finished and Allenstein could present results. Arantigos was invited to watch maneuvers where groups of augmented veterans would fight his elite personal guard, the Companions. Each of Allenstein’s patients lacked at least one or more limb, and their crystal eyes glowed with baleful light, and alchemic implants pumped a mixture of stimulants when they charged the Companions. Arantigos and a small group of high-ranking officers were quite surprised when the Companions were quickly defeated, as the augmented soldiers easily crushed any resistance. Finally, Arantigos called for Allenstein with a gesture of his claw.\n\n"I must admit doctor, it is quite impressive. But the costs of single augmentation..." He grinned. "I have been told that you can build several tanks with that money."\n\n"Yes indeed. And I am afraid that solving this problem may take years if not decades to solve. So many different combination of crystal magic, enchantments and alchemy..."\n\n"I read your reports; you do not need to explain the technicalities. Due to costs and limited amount of rare materials that are needed I guess we will never be able to field more than a few regiments of such soldiers. But a small, elite group of griffons will always have its uses. And I think my personal guard could also be replaced. Continue your research, doctor...""
 arantiga_decision.36.a:0 ""...I will make sure you get everything you need.""
 
+arantiga_decision.401.t:0 "Ascarius Walks Out"
+arantiga_decision.401.d:0 ""
+
+arantiga_decision.402.t:0 "Too Much It Seemed"
+arantiga_decision.402.d:0 ""
+
+arantiga_decision.403.d:0 ""
+
+arantiga_decision.41.t:0 "Project Silver Key"
+arantiga_decision.41.d:0 ""
+arantiga_decision.41.a:0 "Let's get started"
+
+arantiga_decision.47.t:0 "Settling In"
+arantiga_decision.47.d:0 ""
+arantiga_decision.47.a:0 "Good to hear"
+
+arantiga_decision.42.t:0 "Hedonism"
+arantiga_decision.42.d:0 ""
+
+arantiga_decision.43.t:0 "The Finer Things In Life"
+arantiga_decision.43.d:0 ""
+arantiga_decision.43.a:0 "Spare him!"
+arantiga_decision.43.b:0 "Arrest him!"
+arantiga_decision.43.c:0 "Blackmail him!"
+
+arantiga_decision.44.t:0 "A New Ascarius"
+arantiga_decision.44.d:0 ""
+arantiga_decision.44.a:0 "An improvement, to say the least"
+
+arantiga_decision.45.t:0 "Ancient Mysteries"
+arantiga_decision.45.d:0 ""
+
+arantiga_decision.46.t:0 "Day of Reckoning"
+arantiga_decision.46.d:0 ""
+arantiga_decision.46.a:0 "Woah"
+
+arantiga_decision.48.t:0 "A Lost World"
+arantiga_decision.48.d:0 ""
+arantiga_decision.48.a:0 "To a new life!"
 
 #### news events ####
 arantiga_news.1.t:0 "Rise of Arantigos"
@@ -1123,7 +1162,7 @@ ARA_SDL_wins_election:0 "The SDL Have Won the Election"
 ARA_PCNA_wins_election:0 "The PCNA Have Won the Election"
 ARA_elections_in_progress:0 "Elections in Progress"
 work_camps_flag:0 "Work camps have been established"
-arantiga_flag_dorotheos_is_dead:0 "Dorotheos Featheris is dead!"
+arantiga_flag_dorotheos_is_dead:0 "Dorotheos Featherin is dead!"
 IRI_project_ongoing:0 "An IRI project is ongoing."
 
 ### Custom Effect Tooltip ###

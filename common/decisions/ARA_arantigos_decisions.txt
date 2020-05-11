@@ -153,6 +153,7 @@ ARA_definetely_not_fake_IRI = {
 		}
 		complete_effect = {
 			set_country_flag = IRI_project_ongoing
+			country_event = arantiga_decision.41
 		}
 	}
 }

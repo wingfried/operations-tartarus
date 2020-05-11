@@ -136,3 +136,163 @@ country_event = { #The Chosen
 		add_ideas = ARA_project_legionary
 	}
 }
+
+country_event = { #Ascarius Walks Out - Hedonism Unfulfilled
+	id = arantiga_decision.401
+	title = arantiga_decision.401.t
+	desc = arantiga_decision.401.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.30.a
+		custom_effect_tooltip = ARA_regret_perhaps_tt
+	}
+}
+
+country_event = { #Too Much It Seemed
+	id = arantiga_decision.402
+	title = arantiga_decision.402.t
+	desc = arantiga_decision.402.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.30.a
+		custom_effect_tooltip = ARA_regret_perhaps_tt
+	}
+}
+
+country_event = { #Ascarius Walks Out - Lack Of Funds
+	id = arantiga_decision.403
+	title = arantiga_decision.401.t
+	desc = arantiga_decision.403.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.30.a
+		custom_effect_tooltip = ARA_regret_perhaps_tt
+	}
+}
+
+country_event = { #Project Silver Key
+	id = arantiga_decision.41
+	title = arantiga_decision.41.t
+	desc = arantiga_decision.41.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.41.a
+		country_event = { id = arantiga_decision.42 days = 14 }
+		country_event = { id = arantiga_decision.47 days = 7 }
+	}
+}
+
+country_event = { #Settling In
+	id = arantiga_decision.47
+	title = arantiga_decision.47.t
+	desc = arantiga_decision.47.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.47.a
+	}
+}
+
+country_event = { #Hedonism
+	id = arantiga_decision.42
+	title = arantiga_decision.42.t
+	desc = arantiga_decision.42.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.32.a
+		country_event = { id = arantiga_decision.43 days = 100 }
+#		add_political_power = -75
+	}
+	option = {
+		name = 	arantiga_decision.32.b
+		clr_country_flag = IRI_project_ongoing
+#		custom_effect_tooltip = ARA_allenstein_rejection_tt
+		hidden_effect = {
+			country_event = { id = arantiga_decision.401 days = 10 }
+		}
+	}
+}
+
+country_event = { #The Finer Things In Life
+	id = arantiga_decision.43
+	title = arantiga_decision.43.t
+	desc = arantiga_decision.43.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.43.a
+		country_event = { id = arantiga_decision.402 days = 10 }
+#		add_political_power = -75
+	}
+	option = {
+		name = 	arantiga_decision.43.b
+		clr_country_flag = IRI_project_ongoing
+#		custom_effect_tooltip = ARA_allenstein_rejection_tt
+	}
+	option = {
+		name = 	arantiga_decision.43.c
+		country_event = { id = arantiga_decision.44 days = 7 }
+#		add_political_power = -75
+	}
+}
+
+country_event = { #A New Ascarius
+	id = arantiga_decision.44
+	title = arantiga_decision.44.t
+	desc = arantiga_decision.44.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.44.a
+		country_event = { id = arantiga_decision.45 days = 100 }
+	}
+}
+
+country_event = { #Ancient Mysteries
+	id = arantiga_decision.45
+	title = arantiga_decision.45.t
+	desc = arantiga_decision.45.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.32.a
+		country_event = { id = arantiga_decision.46 days = 30 }
+#		add_political_power = -75
+	}
+	option = {
+		name = 	arantiga_decision.32.b
+		clr_country_flag = IRI_project_ongoing
+#		custom_effect_tooltip = ARA_allenstein_rejection_tt
+		hidden_effect = {
+			country_event = { id = arantiga_decision.403 days = 1 }
+		}
+	}
+}
+
+country_event = { #Day of Reckoning
+	id = arantiga_decision.46
+	title = arantiga_decision.46.t
+	desc = arantiga_decision.46.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.46.a
+		clr_country_flag = IRI_project_ongoing
+	}
+}
+
+country_event = { #A Lost World
+	id = arantiga_decision.48
+	title = arantiga_decision.48.t
+	desc = arantiga_decision.48.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.48.a
+	}
+}
