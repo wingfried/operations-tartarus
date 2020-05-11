@@ -127,7 +127,7 @@ ARA_definetely_not_fake_IRI = {
 
 	ARA_super_soldiers = {
 		icon = generic_nationalism
-		cost = 200
+		cost = 75
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 0
