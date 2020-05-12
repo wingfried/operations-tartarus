@@ -5,7 +5,7 @@ tags={
 	"Events"
 }
 name="EaW - Operation Tartarus"
-supported_version="1.9.1"
+supported_version="1.9.*"
 dependencies = {  
 	"Equestria at War"
 }
