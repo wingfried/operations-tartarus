@@ -893,7 +893,7 @@ ideas = {
 			modifier = {
 				democratic_drift = 0.1
 				communism_drift = 0.1
-				unaligned_drift = 0.1
+				neutrality_drift = 0.1
 			}
 		}
 	}
@@ -911,7 +911,7 @@ ideas = {
 			picture = generic_victors_of_ww1
 			removal_cost = -1
 			modifier = {
-				unaligned_drift = 0.1
+				neutrality_drift = 0.1
 			}
 		}
 	}
@@ -986,7 +986,7 @@ ideas = {
 				always = yes
 			}
 			available = {
-				has_control_of = 381
+				owns_state = 381
 			}
 			picture = generic_victors_of_ww1
 			removal_cost = -1
@@ -1006,7 +1006,7 @@ ideas = {
 				always = yes
 			}
 			available = {
-				has_control_of = 381
+				owns_state = 381
 			}
 			picture = generic_victors_of_ww1
 			removal_cost = -1
@@ -1060,7 +1060,7 @@ ideas = {
 				always = yes
 			}
 			available = {
-				has_control_of = 512
+				owns_state = 512
 			}
 			picture = generic_victors_of_ww1
 			removal_cost = -1
@@ -1078,7 +1078,7 @@ ideas = {
 				always = yes
 			}
 			available = {
-				has_control_of = 512
+				owns_state = 512
 			}
 			picture = generic_victors_of_ww1
 			removal_cost = -1

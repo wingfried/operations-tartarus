@@ -835,11 +835,16 @@ country_event = { #Griffonstone Archives
 	option = {
 	name = arantiga_chaos.004.b
 	set_party_name = {ideology = democratic name = ARA_soter_coalition long_name = ARA_soter_coalition_long }
+	set_party_name = { 
+    	ideology = communism
+    	long_name = ARA_soter_coalition_long1 
+    	name = ARA_soter_coalition1
+	}
 	create_country_leader = {
 			name = "Soter Litori"
 			picture = "soter_president.tga"
 			expire = "1965.1.1"
-			ideology = liberalism
+			ideology = socialism
 			desc = soter_president_desc
 		}
 	set_politics = {
@@ -848,6 +853,7 @@ country_event = { #Griffonstone Archives
 		}
 	add_stability = 0.1
 	add_popularity = { ideology = democratic popularity = 0.30 }
+	add_popularity = { ideology = communism popularity = 0.05 }
 	}
 	}
 
