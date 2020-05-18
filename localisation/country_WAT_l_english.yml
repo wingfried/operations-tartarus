@@ -1,0 +1,58 @@
+﻿ l_english:
+ ###########################################
+ ### FOCUS LOCALISATION ####################
+ ###########################################
+ WAT_economy:0 "Call the Keepers!"
+ WAT_economy_desc:0 ""
+
+ WAT_first_keeper_convention:0 "Woes of Industry"
+ WAT_first_keeper_convention_desc:0 ""
+
+ WAT_stupid_deadlock:0 "Deadlock"
+ WAT_stupid_deadlock_desc:0 ""
+
+ WAT_tribal_economy:0 "The Ways of Old"
+ WAT_tribal_economy_desc:0 ""
+
+ WAT_harmony_and_progress:0 "Harmony And Progress"
+ WAT_harmony_and_progress_desc:0 ""
+
+ WAT_industrial_revolution:0 "Northern Industrial Revolution"
+ WAT_industrial_revolution_desc:0 ""
+ 
+ ###########################################
+ ### IDEAS ##################################
+ ###########################################
+ council_of_keepers:0 "Council of Keepers"
+ council_of_keepers_desc:0 "Council of Keepers"
+
+ WAT_holy_srings:0 "Holy Springs"
+ WAT_holy_srings_desc:0 "Holy Springs"
+
+ #Advisors
+ eathelin_sister:0 "Haylay"
+ malcom_corchstone:0 "Malcom Corchstone"
+ aldus_warrior:0 "Aldus Warrior"
+ annalee_the_swift:0 "Annalee the Swift"
+ aylmer_pony:0 "Aylmer"
+ stal_flugel:0 "Stal Flugel"
+ kendrick_flugel:0 "Kendrick Flugel"
+ watertown_boatman:0 "Watertown Boatman"
+ hereward_northern:0 "Hereward Northern"
+ watertowns_strongheart:0 "Strongheart"
+ gandalf_the_grey:0 "Gandalf the Grey"
+ hereward_northern_1:0 "Silry Thunder"
+ meriida_strangelight:0 "Meriida Strangelight"
+
+ #Companies
+ northern_tank:0 "Northern Tank"
+ enchanted_armour_concern:0 "Enchanted Armour Concern"
+ slingshots_of_watertown:0 "Slingshots of Watertown"
+ kenelm_smithery:0 "Kenelm Smithery"
+ imported_factory_WAT:0 "Imported Factory"
+ stal_wing_berau:0 "Stal Wingn Berau"
+ farbrook_shipbuilding:0 "Farbrook Ships"
+ 
+ ###########################################
+ ### EVENTS #################################
+ ###########################################

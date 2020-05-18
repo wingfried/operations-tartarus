@@ -1,0 +1,134 @@
+shared_focus = {
+	id = WAT_economy
+
+	icon = GFX_goal_COS_Peace
+
+	x = 7
+	y = 0
+#	relative_position_id = 
+
+	cost = 3
+#	prerequisite = { focus =  }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_economy"
+	}
+}
+
+shared_focus = {
+	id = WAT_first_keeper_convention
+
+	icon = GFX_focus_chi_flying_tigers
+
+	x = 0
+	y = 1
+	relative_position_id = WAT_economy
+
+	cost = 3
+	prerequisite = { focus = WAT_economy }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_first_keeper_convention"
+	}
+}
+
+shared_focus = {
+	id = WAT_stupid_deadlock
+
+	icon = GFX_focus_chi_flying_tigers
+
+	x = 0
+	y = 2
+	relative_position_id = WAT_economy
+
+	cost = 3
+	prerequisite = { focus = WAT_first_keeper_convention }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_stupid_deadlock"
+	}
+}
+
+shared_focus = {
+	id = WAT_tribal_economy
+
+	icon = GFX_focus_chi_flying_tigers
+
+	x = -6
+	y = 3
+	relative_position_id = WAT_economy
+
+	cost = 3
+	prerequisite = { focus = WAT_stupid_deadlock }
+
+	mutually_exclusive = { focus = WAT_harmony_and_progress }
+	mutually_exclusive = { focus = WAT_industrial_revolution }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_tribal_economy"
+	}
+}
+
+shared_focus = {
+	id = WAT_harmony_and_progress
+
+	icon = GFX_focus_chi_flying_tigers
+
+	x = 0
+	y = 3
+	relative_position_id = WAT_economy
+
+	cost = 3
+	prerequisite = { focus = WAT_stupid_deadlock }
+
+	mutually_exclusive = { focus = WAT_tribal_economy }
+	mutually_exclusive = { focus = WAT_industrial_revolution }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_harmony_and_progress"
+	}
+}
+
+shared_focus = {
+	id = WAT_industrial_revolution
+
+	icon = GFX_focus_chi_flying_tigers
+
+	x = 6
+	y = 3
+	relative_position_id = WAT_economy
+
+	cost = 3
+	prerequisite = { focus = WAT_stupid_deadlock }
+
+	mutually_exclusive = { focus = WAT_tribal_economy }
+	mutually_exclusive = { focus = WAT_harmony_and_progress }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_industrial_revolution"
+	}
+}
