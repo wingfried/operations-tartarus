@@ -53,6 +53,9 @@
  WAT_river_water_treaty:0 "Next Stop: The Coalition?"
  WAT_river_water_treaty_desc:0 ""
 
+ WAT_industrialization1:0 "Reluctant Industrialization"
+ WAT_industrialization1_desc:0 ""
+
  #Parties
  WAT_neutrality_party:0 "Council of Keepers"
  WAT_neutrality_party_long:0 "Council of Keepers - Traditionalist"

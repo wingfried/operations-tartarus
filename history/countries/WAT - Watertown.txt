@@ -24,9 +24,11 @@ set_politics = {
 }
 add_ideas = { 
 	communal_society
+	lack_of_scientists 
 	WAT_holy_srings
 	WAT_council_of_keepers
-	lack_of_scientists }
+	WAT_industrialization1
+}
 
 set_stability = 0.50
 
