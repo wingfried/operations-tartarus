@@ -22,9 +22,10 @@ set_politics = {
 	election_frequency = 60
 	elections_allowed = yes
 }
-add_ideas = { communal_society
+add_ideas = { 
+	communal_society
 	WAT_holy_srings
-	council_of_keepers
+	WAT_council_of_keepers
 	lack_of_scientists }
 
 set_stability = 0.50

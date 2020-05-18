@@ -14,17 +14,60 @@
  WAT_tribal_economy:0 "The Ways of Old"
  WAT_tribal_economy_desc:0 ""
 
+ WAT_deal_with_heretic:0 "Deal With The Heretics"
+ WAT_deal_with_heretic_desc:0 ""
+
  WAT_harmony_and_progress:0 "Harmony And Progress"
  WAT_harmony_and_progress_desc:0 ""
 
+ WAT_land_surveys:0 "Survey The Land"
+ WAT_land_surveys_desc:0 ""
+
  WAT_industrial_revolution:0 "Northern Industrial Revolution"
  WAT_industrial_revolution_desc:0 ""
- 
+
+ WAT_vision_of_oilfield:0 "The Vision of Oilfield"
+ WAT_vision_of_oilfield_desc:0 ""
+
+ WAT_contact_the_spirits:0 "Commune With The Spirits"
+ WAT_contact_the_spirits_desc:0 ""
+
+ WAT_talk_people:0 "Convince the People"
+ WAT_talk_people_desc:0 ""
+
+ WAT_talk_priests:0 "Talk To The Priests"
+ WAT_talk_priests_desc:0 ""
+
+ WAT_spirits_support:0 "The Spirits' Blessings"
+ WAT_spirits_support_desc:0 ""
+
+ WAT_river_indy_support:0 "River Industrial Aid"
+ WAT_river_indy_support_desc:0 ""
+
+ WAT_river_indy_support1:0 "River Equipment"
+ WAT_river_indy_support1_desc:0 ""
+
+ WAT_river_indy_support2:0 "River Expertise"
+ WAT_river_indy_support2_desc:0 ""
+
+ WAT_river_water_treaty:0 "Next Stop: The Coalition?"
+ WAT_river_water_treaty_desc:0 ""
+
+ #Parties
+ WAT_neutrality_party:0 "Council of Keepers"
+ WAT_neutrality_party_long:0 "Council of Keepers - Traditionalist"
+ WAT_communism_party:0 "Council of Keepers"
+ WAT_communism_party_long:0 "Council of Keepers - Moderates"
+ WAT_democratic_party:0 "Council of Keepers"
+ WAT_democratic_party_long:0 "Council of Keepers - Modernists"
+ WAT_fascism_party:0 "Council of Keepers"
+ WAT_fascism_party_long:0 "Council of Keepers - Religious"
+  
  ###########################################
  ### IDEAS ##################################
  ###########################################
- council_of_keepers:0 "Council of Keepers"
- council_of_keepers_desc:0 "Council of Keepers"
+ WAT_council_of_keepers:0 "Council of Keepers"
+ WAT_council_of_keepers_desc:0 "Council of Keepers"
 
  WAT_holy_srings:0 "Holy Springs"
  WAT_holy_srings_desc:0 "Holy Springs"
