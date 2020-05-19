@@ -138,7 +138,7 @@
 					name = "Wingfried von Katerinburg"
 					picture = "Wingfried_von_Smirkerinburg.tga"
 					desc = "wingfried2_desc"
-					traits = { trait_reformisten_boss brilliant_strategist ranger trickster }
+					traits = { griffon_race_trait trait_reformisten_boss brilliant_strategist ranger trickster }
 					skill = 4
 					attack_skill = 4
 					defense_skill = 3

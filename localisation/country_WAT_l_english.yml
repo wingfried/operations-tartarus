@@ -53,9 +53,6 @@
  WAT_river_water_treaty:0 "Next Stop: The Coalition?"
  WAT_river_water_treaty_desc:0 ""
 
- WAT_industrialization1:0 "Reluctant Industrialization"
- WAT_industrialization1_desc:0 ""
-
  #Parties
  WAT_neutrality_party:0 "Council of Keepers"
  WAT_neutrality_party_long:0 "Council of Keepers - Traditionalist"
@@ -68,10 +65,10 @@
 
  #Decisions
  WAT_political_decision_category:0 "The Council of Keepers"
- WAT_political_decision_category_desc:0 "[DESC]\n\nThe popularity of the §RModernist faction§! is §Y[?WAT.modernizer_popularity]§!\n\nThe popularity of the §GModerate faction§! is §Y[?WAT.moderate_popularity]§!\n\nThe popularity of the §gTraditionalist faction§! is §Y[?WAT.traditionalist_popularity]§!\n\nThe popularity of the §bReligious faction§! is §Y[?WAT.religious_popularity]§!\n\n"
+ WAT_political_decision_category_desc:0 "[DESC]\n\nThe popularity of the §RModernist faction§! is §Y[?WAT.modernizer_popularity]§!\n\nThe popularity of the §GModerate faction§! is §Y[?WAT.moderate_popularity]§!\n\nThe popularity of the §gTraditionalist faction§! is §Y[?WAT.traditionalist_popularity]§!\n\nThe popularity of the §BReligious faction§! is §Y[?WAT.religious_popularity]§!\n\n"
 
- WAT_current_party:0 "§YThe careful balance of the Council of Keepers has to be preserved...§!"
- WAT_current_party:0 "§RLest things spiral out of control...§!"
+ WAT_current_party:0 "§YThe careful balance has to be preserved...§!"
+ WAT_current_party_desc:0 "§R...Lest things spiral out of control§!"
   
  ###########################################
  ### IDEAS ##################################
@@ -81,6 +78,9 @@
 
  WAT_holy_srings:0 "Holy Springs"
  WAT_holy_srings_desc:0 "Holy Springs"
+
+ WAT_industrialization1:0 "Reluctant Industrialization"
+ WAT_industrialization1_desc:0 ""
 
  #Advisors
  eathelin_sister:0 "Haylay"
