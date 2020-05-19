@@ -65,6 +65,13 @@
  WAT_democratic_party_long:0 "Council of Keepers - Modernists"
  WAT_fascism_party:0 "Council of Keepers"
  WAT_fascism_party_long:0 "Council of Keepers - Religious"
+
+ #Decisions
+ WAT_political_decision_category:0 "The Council of Keepers"
+ WAT_political_decision_category_desc:0 "[DESC]\n\nThe popularity of the §RModernist faction§! is §Y[?WAT.modernizer_popularity]§!\n\nThe popularity of the §GModerate faction§! is §Y[?WAT.moderate_popularity]§!\n\nThe popularity of the §gTraditionalist faction§! is §Y[?WAT.traditionalist_popularity]§!\n\nThe popularity of the §bReligious faction§! is §Y[?WAT.religious_popularity]§!\n\n"
+
+ WAT_current_party:0 "§YThe careful balance of the Council of Keepers has to be preserved...§!"
+ WAT_current_party:0 "§RLest things spiral out of control...§!"
   
  ###########################################
  ### IDEAS ##################################
