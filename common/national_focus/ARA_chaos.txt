@@ -214,6 +214,7 @@ focus_tree = {
 		prerequisite = { focus = ARA_return_exiles }
 		completion_reward = {
 		remove_ideas = ARA_absolute_chaos4 
+		remove_ideas = ARA_nicator_junta1
 		}
 		}			
 
@@ -369,7 +370,7 @@ focus_tree = {
 		y = 1
 		cost = 3.00
 		relative_position_id = ARA_never_again
-		prerequisite = { focus = ARA_never_again }
+		prerequisite = { focus = ARA_The_Crossroads }
 		mutually_exclusive = { focus = ARA_old_allies }
 		available = { is_in_faction = no }
 		completion_reward = {
