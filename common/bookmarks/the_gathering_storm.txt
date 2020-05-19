@@ -52,6 +52,9 @@ bookmarks = {
 			history = "WAT_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
+				WAT_holy_srings
+				WAT_council_of_keepers
+				WAT_industrialization1
 			}
 			focuses = {
 			}
