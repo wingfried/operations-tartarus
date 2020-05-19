@@ -345,6 +345,7 @@ shared_focus = {
 }
 
 shared_focus = {
+	
 	id = WAT_river_water_treaty
 
 	icon = GFX_goal_riv_river_union

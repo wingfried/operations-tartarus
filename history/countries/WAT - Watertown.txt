@@ -10,10 +10,10 @@ actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIG
 
 set_convoys = 70
 set_popularities = {
-	democratic = 10
-	fascism = 0
-	communism = 80
-	neutrality = 10
+	democratic = 20
+	fascism = 5
+	communism = 60
+	neutrality = 15
 }
 set_politics = {
 
@@ -77,3 +77,5 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 }
+
+WAT_political_reshuffle = yes
