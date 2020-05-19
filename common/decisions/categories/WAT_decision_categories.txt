@@ -1,0 +1,7 @@
+WAT_political_decision_category = {
+	icon = griffon
+
+	allowed = {
+		original_tag = WAT
+	}
+}

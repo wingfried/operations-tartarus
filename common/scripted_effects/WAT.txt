@@ -1,0 +1,11 @@
+WAT_political_reshuffle = {
+	set_variable = { WAT.modernizer_popularity = party_popularity@democratic }
+	set_variable = { WAT.moderate_popularity = party_popularity@communism }
+	set_variable = { WAT.traditionalist_popularity = party_popularity@neutrality }
+	set_variable = { WAT.religious_popularity = party_popularity@fascism }
+
+	multiply_variable = { WAT.modernizer_popularity = 100 }
+	multiply_variable = { WAT.moderate_popularity = 100 }
+	multiply_variable = { WAT.traditionalist_popularity = 100 }
+	multiply_variable = { WAT.religious_popularity = 100 }
+}
