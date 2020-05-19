@@ -18,7 +18,7 @@ focus_tree = {
 		shared_focus = ARA_the_new_airforce
 		shared_focus = ARA_self_strength
 		shared_focus = ARA_new_age_new_army
-		
+		shared_focus = ARA_rumare_exercises
 	focus = { #between giants
 		id = ARA_die_is_cast
 		icon = GFX_goal_dice
