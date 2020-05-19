@@ -1229,6 +1229,149 @@ country = {
 		}
 	}
 	country = {
+		ARA_fragile_rule_2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+                army_org_factor = -0.2
+				stability_factor = -0.3
+				war_support_factor = -0.1
+				conscription_factor = -0.20
+				research_speed_factor = -0.05
+				political_power_factor = -0.35
+				production_speed_buildings_factor = -0.2
+			}
+		}
+	}
+	country = {
+		ARA_fragile_rule_3 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+                army_org_factor = -0.2
+				stability_factor = -0.3
+				war_support_factor = -0.1
+				conscription_factor = -0.10
+				research_speed_factor = -0.1
+				political_power_factor = -0.35
+				production_speed_buildings_factor = -0.2
+			}
+		}
+	}
+	country = {
+		ARA_fragile_rule_4 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+                army_org_factor = -0.2
+				stability_factor = -0.3
+				war_support_factor = -0.1
+				conscription_factor = -0.20
+				research_speed_factor = -0.1
+				political_power_factor = -0.25
+				production_speed_buildings_factor = -0.2
+			}
+		}
+	}
+	country = {
+		ARA_fragile_rule_5 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+                army_org_factor = -0.2
+				stability_factor = -0.3
+				war_support_factor = -0.1
+				conscription_factor = -0.20
+				research_speed_factor = -0.1
+				political_power_factor = -0.10
+				production_speed_buildings_factor = -0.2
+			}
+		}
+	}
+	country = {
+		ARA_fragile_rule_6 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.1
+				conscription_factor = -0.20
+				research_speed_factor = -0.1
+				political_power_factor = -0.35
+				production_speed_buildings_factor = -0.2
+			}
+		}
+	}
+	country = {
+		ARA_fragile_rule_1 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+                army_org_factor = -0.2
+				stability_factor = -0.3
+				war_support_factor = -0.1
+				conscription_factor = -0.20
+				research_speed_factor = -0.1
+				political_power_factor = -0.35
+				production_speed_buildings_factor = -0.2
+			}
+		}
+	}
+	country = {
 		ARA_fr0000 = {
 			allowed = {
 				always = no
@@ -1787,6 +1930,192 @@ country = {
 			}
 		}
 	}
+	country = {
+		ARA_fr9000 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+                army_org_factor = -0.2
+				stability_factor = -0.2
+				war_support_factor = -0.1
+				conscription_factor = -0.20
+				research_speed_factor = -0.05
+				political_power_factor = -0.35
+				production_speed_buildings_factor = -0.2
+			}
+		}
+	}
+	country = {
+		ARA_fr9100 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+                army_org_factor = -0.2
+				stability_factor = -0.2
+				war_support_factor = -0.1
+				conscription_factor = -0.20
+				research_speed_factor = -0.05
+				political_power_factor = -0.25
+				production_speed_buildings_factor = -0.2
+			}
+		}
+	}
+    country = {
+		ARA_fr9110 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+                army_org_factor = -0.2
+				stability_factor = -0.2
+				war_support_factor = -0.1
+				conscription_factor = -0.20
+				research_speed_factor = -0.05
+				production_speed_buildings_factor = -0.2
+			}
+		}
+	}
+    country = {
+		ARA_fr9101 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.1
+				conscription_factor = -0.20
+				research_speed_factor = -0.05
+				political_power_factor = -0.25
+				production_speed_buildings_factor = -0.2
+			}
+		}
+	}
+	country = {
+		ARA_fr9111 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.1
+				conscription_factor = -0.20
+				research_speed_factor = -0.05
+				production_speed_buildings_factor = -0.2
+			}
+		}
+	}
+    country = {
+		ARA_fr9010 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+                army_org_factor = -0.2
+				stability_factor = -0.2
+				war_support_factor = -0.1
+				conscription_factor = -0.20
+				research_speed_factor = -0.05
+				political_power_factor = -0.15
+				production_speed_buildings_factor = -0.2
+			}
+		}
+	}
+	country = {
+		ARA_fr9011 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.1
+				conscription_factor = -0.20
+				research_speed_factor = -0.05
+				political_power_factor = -0.1
+				production_speed_buildings_factor = -0.2
+			}
+		}
+	}
+	country = {
+		ARA_fr9001 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.1
+				conscription_factor = -0.20
+				research_speed_factor = -0.05
+				political_power_factor = -0.35
+				production_speed_buildings_factor = -0.2
+			}
+		}
+	}
     country = {
 	    ARA_imperial_admiralty = {
 		    allowed = {
@@ -2116,9 +2445,13 @@ country = {
 			picture = generic_victors_of_ww1
 			removal_cost = -1
 			modifier = {
-				democratic_drift = 0.1
-				communism_drift = 0.1
-				neutrality_drift = 0.1
+			    neutrality_drift = 0.1
+			}
+			modifier = {
+			    democratic_drift = 0.1
+			}
+			modifier = {
+			    communism_drift = 0.1
 			}
 		}
 	}
@@ -2136,7 +2469,7 @@ country = {
 			picture = generic_victors_of_ww1
 			removal_cost = -1
 			modifier = {
-				neutrality_drift = 0.1
+			    neutrality_drift = 0.1
 			}
 		}
 	}
@@ -2312,7 +2645,245 @@ country = {
 			}
 		}
 	}
-	
+	country = {
+		ARA_conqueror = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			    has_government = fascism
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+			    justify_war_goal_time = -0.50
+			}
+		}
+	}
+	country = {
+		ARA_conquest_of_the_west = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+			    conscription_factor = -0.05
+				stability_factor = 0.10
+				consumer_goods_factor = 0.10
+			}
+		}
+	}
+	country = {
+		ARA_himss_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+				decryption_factor = 0.10
+				encryption_factor = 0.10
+				resistance_damage_to_garrison = -0.25
+			}
+		}
+	}
+	country = {
+		ARA_Religious_Pluralism = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+	}
+	country = {
+		ARA_Memories_of_Freedom = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				neutrality_drift = 0.01
+			}
+		}
+	}
+	country = {
+		ARA_arantigan_parliament = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				neutrality_drift = 0.1
+			}
+		}
+	}
+	country = {
+		ARA_Noble_Reservation = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+	}
+	country = {
+		ARA_Equality_under_Emperor = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+			    conscription_factor = 0.05
+				consumer_goods_factor = -0.01
+			}
+		}
+	}
+	country = {
+		ARA_New_Nobility = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+			    conscription_factor = -0.05
+				stability_factor = 0.10
+				special_forces_cap = 0.05
+			}
+		}
+	}
+	country = {
+		ARA_foreign_influence = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			    has_government = fascism
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier ={
+			democratic_drift = 0.01
+			communism_drift = 0.01
+			}
+		}
+	}
+	country = {
+		ARA_pure_minds = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = -0.10
+				stability_factor = 0.05
+			}
+		}
+	}
+	country = {
+		ARA_welfare_policy = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.10
+				monthly_population = 0.10
+				stability_factor = 0.10
+				fascism_drift = 0.01
+			}
+		}
+	}
+	country = {
+		ARA_griffonian_free_trade_agreement = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				trade_opinion_factor = 0.25
+				min_export = 0.05
+			}
+		}
+	}
 	country = {	
 	ARA_work_camp1 = {
 			allowed = {

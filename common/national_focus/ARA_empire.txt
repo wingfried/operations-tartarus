@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
 	id = Arantiga_empire
 	
 	default=no
@@ -29,13 +29,13 @@ focus_tree = {
 		y = 0
 		cost = 5.00
 		completion_reward = {
-		    custom_effect_tooltip = ARA_fragile_rule_tooltip
-			hidden_effect = {
+		    #custom_effect_tooltip = ARA_fragile_rule_tooltip
+			#hidden_effect = {
 			    swap_ideas = {
 			        remove_idea = ARA_fragile_rule_1
 			        add_idea = ARA_fr0000
 				}
-			}
+			#}
 		}
 	}
 	
@@ -50,8 +50,17 @@ focus_tree = {
 		completion_reward = {
 		    country_event = arantiga.050 #“Nations of Empire”
 			#Modify spirit Fragile Rule (+10% Recruitable population factor)
-			custom_effect_tooltip = ARA_fragile_rule_tooltip_1
-			hidden_effect = {
+			#custom_effect_tooltip = ARA_fragile_rule_tooltip_1
+			#hidden_effect = {
+			if = { #INACCESSIBLE IDEA
+			    limit = {
+	                has_idea = ARA_fragile_rule_1
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fragile_rule_1
+			        add_idea = ARA_fragile_rule_3
+			    }
+			}
 			if = {
 			    limit = {
 	                has_idea = ARA_fr0000
@@ -124,7 +133,7 @@ focus_tree = {
 			        add_idea = ARA_fr1111
 			    }
 			}
-			}
+			#}
 		}
 	}
 	
@@ -139,8 +148,8 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
             #Modify spirit Fragile Rule (+5% Research Speed)
-			custom_effect_tooltip = ARA_fragile_rule_tooltip_2
-			hidden_effect = {
+			#custom_effect_tooltip = ARA_fragile_rule_tooltip_2
+			#hidden_effect = {
 			if = {
 			    limit = {
 	                has_idea = ARA_fr1000
@@ -213,7 +222,88 @@ focus_tree = {
 			        add_idea = ARA_fr2111
 			    }
 			}
+			if = { #INACCESSIBLE IDEAS FROM HERE
+			    limit = {
+	                has_idea = ARA_fragile_rule_1
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fragile_rule_1
+			        add_idea = ARA_fragile_rule_2
+			    }
 			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0000
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0000
+			        add_idea = ARA_fr9000
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0100
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0100
+			        add_idea = ARA_fr9100
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0010
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0010
+			        add_idea = ARA_fr9010
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0001
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0001
+			        add_idea = ARA_fr9001
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0110
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0110
+			        add_idea = ARA_fr9110 #INSERT GEORGE BUSH JOKE
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0101
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0101
+			        add_idea = ARA_fr9101
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0011
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0011
+			        add_idea = ARA_fr9011
+			    }
+			}
+			if = {
+			    limit = {
+	                has_idea = ARA_fr0111
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fr0111
+			        add_idea = ARA_fr9111
+			    }
+			}
+			#}
 		}
 	}
 	
@@ -247,8 +337,17 @@ focus_tree = {
 			#Add advisor Archon Demetrius III (Archon of Boreas)
 			show_ideas_tooltip = ARA_archon_demetrius
 			#Modify spirit Fragile Rule (+10% daily political power)
-			custom_effect_tooltip = ARA_fragile_rule_tooltip_3
-			hidden_effect = {
+			#custom_effect_tooltip = ARA_fragile_rule_tooltip_3
+			#hidden_effect = {
+			if = { #INACCESSIBLE IDEA
+			    limit = {
+	                has_idea = ARA_fragile_rule_1
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fragile_rule_1
+			        add_idea = ARA_fragile_rule_4
+			    }
+			}
 			if = {
 			    limit = {
 	                has_idea = ARA_fr0000
@@ -357,7 +456,7 @@ focus_tree = {
 			        add_idea = ARA_fr2111
 			    }
 			}
-			}
+			#}
 		}
 	}
 	
@@ -389,8 +488,17 @@ focus_tree = {
 				add_idea = ARA_imperial_government
 			}
 			#Modify spirit Fragile Rule (+25% daily political power)
-			custom_effect_tooltip = ARA_fragile_rule_tooltip_4
-			hidden_effect = {
+			#custom_effect_tooltip = ARA_fragile_rule_tooltip_4
+			#hidden_effect = {
+			if = { #INACCESSIBLE IDEA
+			    limit = {
+	                has_idea = ARA_fragile_rule_1
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fragile_rule_1
+			        add_idea = ARA_fragile_rule_5
+			    }
+			}
 			if = {
 			    limit = {
 	                has_idea = ARA_fr0000
@@ -499,7 +607,7 @@ focus_tree = {
 			        add_idea = ARA_fr2011
 			    }
 			}
-			}
+			#}
 		}
 	}
 	
@@ -515,8 +623,17 @@ focus_tree = {
             #Get new spirit Arantigan Legions (+1% recruitable population, maximum command power increase +20)
 			add_ideas = ARA_arantigan_legions
 			#Modify spirit Fragile Rule (+20% division organisation)
-			custom_effect_tooltip = ARA_fragile_rule_tooltip_5
-			hidden_effect = {
+			#custom_effect_tooltip = ARA_fragile_rule_tooltip_5
+			#hidden_effect = {
+			if = { #INACCESSIBLE IDEA
+			    limit = {
+	                has_idea = ARA_fragile_rule_1
+			    }
+			    swap_ideas = {
+			        remove_idea = ARA_fragile_rule_1
+			        add_idea = ARA_fragile_rule_6
+			    }
+			}
 			if = {
 			    limit = {
 	                has_idea = ARA_fr0000
@@ -625,7 +742,7 @@ focus_tree = {
 			        add_idea = ARA_fr2011
 			    }
 			}
-			}
+			#}
 		}
 	}
 	
@@ -2294,7 +2411,7 @@ focus_tree = {
 			}
 			add_stability = 0.10
 			add_war_support = 0.10
-			add_ideas = ARA_conqeuror
+			add_ideas = ARA_conqueror
 		}
 	}
 	
@@ -2377,7 +2494,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ARA_inegrate_infrastructure"
-			add_ideas = ARA_infrastructure_idea
+		    every_owned_state ={
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -2529,19 +2652,16 @@ focus_tree = {
 		relative_position_id = ARA_emperor_of_griffonkind
 		cost = 5.00
 		prerequisite = { focus = ARA_emperor_of_griffonkind }
+		mutually_exclusive = { focus = ARA_the_last_crusade }
 		available = {
-		    NOT = {
-			    has_country_flag = ARA_last_crusade
-			}
 			OR = {
-			    RCT = {
+			    RIV = {
 				   has_government = democratic
 			    }
-				RCT = {
+				RIV = {
 			       has_government = neutrality
 			    }
-			}
-			
+			}	
 		}
 		completion_reward = {
            	RIV = {country_event = { id = arantiga_govern.020 } }
@@ -2582,10 +2702,8 @@ focus_tree = {
 		relative_position_id = ARA_emperor_of_griffonkind
 		cost = 5.00
 		prerequisite = { focus = ARA_emperor_of_griffonkind }
+		mutually_exclusive = { focus = ARA_detente_with_eastern_ponies }
 		available = {
-		    NOT = {
-			    has_country_flag = ARA_detente
-			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ARA_the_last_crusade"
@@ -2712,7 +2830,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ARA_new_new_mareland"
-			country_event = { id = arantiga_govern.022 }
+			country_event = { id = arantiga_govern.025 }
 		}
 	}
 	focus = {
@@ -2723,6 +2841,15 @@ focus_tree = {
 		relative_position_id = ARA_emperor_of_griffonkind
 		cost = 5.00
 		prerequisite = { focus = ARA_emperor_of_griffonkind }
+		mutually_exclusive = { focus = ARA_rightful_ruler }
+		available = {
+		    NOT = {
+			AND = {
+				has_war_with = GRF
+				has_war_with = GFF
+			}
+		    }
+		}
 		bypass = {
 			
 		}
@@ -2731,7 +2858,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ARA_western_allies"
-			GRF = { country_event = { id = arantiga_govern.023 } }
+			GRF = { country_event = { id = arantiga_govern.024 } }
 		}
 	}
 	focus = {
@@ -2743,7 +2870,7 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = { 
 		    focus = ARA_western_allies
-			focus = ARA_rightful_ruler
+			
 	    }
 		bypass = {
 			
@@ -2755,8 +2882,9 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ARA_support_western_trade"
-			add_resource = {
+		    log = "[GetDateText]: [Root.GetName]: Focus ARA_support_western_trade"
+            #+20 Steel in Weter +20 Chromium in Weter
+            add_resource = {
 				type = steel
 				amount = 20
 				state = 243
@@ -2766,58 +2894,52 @@ focus_tree = {
 				amount = 20
 				state = 243
 			}
-			242 = {
-				add_building_construction =
-				{
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction =
-				{
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			286 = {
-				add_building_construction =
-				{
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction =
-				{
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
+			#+30 oil in Kungland +20 oil in Winterhold
+			add_resource = {
+				type = oil
+				amount = 30
+				state = 429
 			}
 			add_resource = {
 				type = oil
 				amount = 20
-				state = 286
+				state = 658
 			}
-			288 = {
-				add_building_construction =
-				{
-					type = industrial_complex
-					level = 1
+            #+2 civilian factories in Weter +2 civilian factories in Broken Skull
+            #+2 civilian factories in Kungland +2 civilian factories in Winterhold
+			243 = { #Weter
+			    add_building_construction = {
+				    type = industrial_complex
+					level = 2
 					instant_build = yes
 				}
-				add_building_construction =
-				{
-					type = industrial_complex
-					level = 1
+				add_extra_state_shared_building_slots = 2
+			}
+			242 = { #Broken Skull
+			    add_building_construction = {
+				    type = industrial_complex
+					level = 2
 					instant_build = yes
 				}
+				add_extra_state_shared_building_slots = 2
 			}
-			add_resource = {
-				type = oil
-				amount = 30
-				state = 288
+			429 = { #Kungland
+			    add_building_construction = {
+				    type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
 			}
+			658 = { #Winterhold
+			    add_building_construction = {
+				    type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+            
 		}
 	}
 	focus = {
@@ -2828,15 +2950,16 @@ focus_tree = {
 		relative_position_id = ARA_emperor_of_griffonkind
 		cost = 5.00
 		prerequisite = { focus = ARA_emperor_of_griffonkind }
-			available = {
-		NOT = {
+		mutually_exclusive = { focus = ARA_western_allies }
+	    available = {
+		    NOT = {
 			AND = {
 				has_war_with = GRF
 				has_war_with = GFF
 			}
+		    }
 		}
-	}
-	bypass = {
+	    bypass = {
 		GRF = {
 			OR = {
 				exists = no
@@ -2849,7 +2972,7 @@ focus_tree = {
 				has_war_with = ROOT
 			}	
 		}		
-	}
+	    }
 		ai_will_do = {
 			factor = 100
 		}
@@ -2872,12 +2995,23 @@ focus_tree = {
 		y = 2
 		relative_position_id = ARA_emperor_of_griffonkind
 		cost = 5.00
-		prerequisite = { 
-		    focus = ARA_western_allies
+		prerequisite = {
 			focus = ARA_rightful_ruler
+			focus = ARA_western_allies
 	    }
+		available = {
+		    243 = {
+			    is_controlled_by = ARA
+			}
+			NOT = {
+			    GRF = { is_subject_of = ROOT }
+		    }
+		}
 		completion_reward = {
-            add_ideas = ARA_conquest_of_the_west
+            add_timed_idea = {
+			    idea = ARA_conquest_of_the_west
+				days = 360
+			}
 			#get cores on Nova Griffonia
 			custom_effect_tooltip = ARA_coring_nova_tooltip
 			hidden_effect = {
