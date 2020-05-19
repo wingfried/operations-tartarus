@@ -727,7 +727,28 @@ country_event = { #No remorse
 	}
 	}
 	
+	country_event = { #Soter meets Nicator
+	id = arantiga.998
+	title = arantiga.998.t
+	desc = arantiga.998.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga.998.a
+	}
+	}
 	
+		country_event = { #Hour of the Wolf flavour
+	id = arantiga.997
+	title = arantiga.997.t
+	desc = arantiga.997.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	name = 	arantiga.997.a
+	custom_effect_tooltip = ara_tooltip_voices_7
+	}
+	}
 	
 	
 	
