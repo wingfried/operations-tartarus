@@ -510,14 +510,18 @@ focus_tree = {
 		mutually_exclusive = { focus = ARA_bungie_destiny }
 		completion_reward = {
 	
-		country_event = { 
+			country_event = { 
 		id = arantiga.013
-		days = 3
+		days = 8
 		}
 		hidden_effect = { 
 		country_event = { 
 		id = arantiga.998
-		days = 4
+		days = 3
+		}
+		country_event = { 
+		id = arantiga.997
+		days = 5
 		}
 		}
 		}
