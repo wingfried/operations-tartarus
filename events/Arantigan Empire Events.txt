@@ -189,40 +189,40 @@
 			custom_effect_tooltip = ARA_NTR_compliance_tooltip
 			hidden_effect = {
 		        573 = {
-					add_compliance = 60
+					add_compliance = 90
 			    }
 				563 = {
-					add_compliance = 60
+					add_compliance = 90
 			    }
 				602 = {
-					add_compliance = 60
+					add_compliance = 90
 			    }
 				567 = {
-					add_compliance = 60
+					add_compliance = 90
 			    }
 				562 = {
-					add_compliance = 60
+					add_compliance = 90
 			    }
 				677 = {
-					add_compliance = 60
+					add_compliance = 90
 			    }
 				601 = {
-					add_compliance = 60
+					add_compliance = 90
 			    }
 				585 = {
-					add_compliance = 60
+					add_compliance = 90
 			    }
 				542 = {
-					add_compliance = 60
+					add_compliance = 90
 			    }
 				561 = {
-					add_compliance = 60
+					add_compliance = 90
 			    }
 				522 = {
-					add_compliance = 60
+					add_compliance = 90
 			    }
 				574 = {
-				    add_compliance = 60
+				    add_compliance = 90
 				}
 			}	
 		}
@@ -342,6 +342,57 @@
 		    add_timed_idea = {
 			    idea = ARA_minotaur_rebels
 				days = 720
+			}
+			custom_effect_tooltip = ARA_MIT_compliance_tooltip
+			hidden_effect = {
+			    463 = {
+				    add_compliance = 20
+				}
+				386 = {
+				    add_compliance = 20
+				}
+				656 = {
+				    add_compliance = 20
+				}
+				464 = {
+				    add_compliance = 20
+				}
+				465 = {
+				    add_compliance = 20
+				}
+				462 = {
+				    add_compliance = 20
+				}
+				466 = {
+				    add_compliance = 20
+				}
+				467 = {
+				    add_compliance = 20
+				}
+				469 = {
+				    add_compliance = 20
+				}
+				468 = {
+				    add_compliance = 20
+				}
+				655 = {
+				    add_compliance = 20
+				}
+				513 = {
+				    add_compliance = 20
+				}
+				657 = {
+				    add_compliance = 20
+				}
+				667 = {
+				    add_compliance = 20
+				}
+				664 = {
+				    add_compliance = 20
+				}
+				654 = {
+				    add_compliance = 20
+				}
 			}
 		}
 		option = {
@@ -602,6 +653,37 @@
 	}
 }
 
+country_event = { # Detente
+	id = arantiga_govern.020
+	title = arantiga_govern.020.t
+	desc = arantiga_govern.020.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = arantiga_govern.020.a
+		hidden_effect = {
+		    FROM = {
+			    country_event = {
+				    id = arantiga_govern.023
+					days = 7
+				}
+			}
+		}
+	}
+	option = {
+	    name = arantiga_govern.020.b
+	    hidden_effect = {
+		    FROM = {
+			    country_event = {
+				    id = arantiga_govern.022
+					days = 7
+				}
+			}
+		}
+	}
+}
+
  country_event = { # land of the rising sun
 	id = arantiga_govern.021
 	title = arantiga_govern.021.t
@@ -614,6 +696,7 @@
 		add_ideas = ARA_riverpony_resistance
 		##add compliance to the riverlands
 		custom_effect_tooltip = ARA_compliance_riverlands
+		add_ideas = ARA_riverpony_resistance
 		hidden_effect = {
 		    640 = {
 				add_compliance = 60
@@ -833,7 +916,6 @@
 					    transfer_state = 644
 					    transfer_state = 650
 					    transfer_state = 455
-					    transfer_state = 522
 						transfer_state = 569
 						transfer_state = 571
 						transfer_state = 572
@@ -875,9 +957,6 @@
 						455 = {
 					        add_core_of = FBK
 					    }
-						522 = {
-						    add_core_of = FBK
-						}
 						569 = {
 					        add_core_of = FBK
 					    }
@@ -950,12 +1029,14 @@
 					            traits = {
 					            }
 				            }
+							remove_ideas = BAR_pentarchy
+							remove_ideas = BAR_insane_weather
 					    }
 						ARA = {
 					    	puppet = BAR
 						    set_autonomy = { target = BAR autonomy_state = autonomy_satellite }
-				            every_army_leader = {
-					            limit = { id = 1335 }
+				            every_unit_leader = {
+					            limit = { has_id = 1335 }
 					            set_nationality = BAR
 				            }
 						}
@@ -1278,11 +1359,9 @@
 				  	puppet = EQC
 				    set_autonomy = { target = EQC autonomy_state = autonomy_satellite }
                 }
-				ARA = {
-				    every_army_leader = {
-					    limit = { id = 1334 }
-					    set_nationality = EQC
-				    }
+				every_unit_leader = {
+				    limit = { has_id = 1334 }
+				    set_nationality = EQC
 				}
 				EQC ={
 					set_politics = {
