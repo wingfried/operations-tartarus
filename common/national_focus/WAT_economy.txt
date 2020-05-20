@@ -3,7 +3,7 @@ shared_focus = {
 
 	icon = GFX_goal_COS_Peace
 
-	x = 7
+	x = 10
 	y = 0.5
 #	relative_position_id = 
 
@@ -66,7 +66,7 @@ shared_focus = {
 
 	icon = GFX_focus_generic_diplomatic_treaty_pony_griffon
 
-	x = -6
+	x = -8
 	y = 3
 	relative_position_id = WAT_economy
 
@@ -103,6 +103,112 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus WAT_deal_with_heretic"
+	}
+}
+
+shared_focus = {
+	id = WAT_revitalise_freshwater
+
+	icon = GFX_goal_generic_military_deal_pony
+
+	x = -1.5
+	y = 2
+	relative_position_id = WAT_tribal_economy
+
+	cost = 3
+	prerequisite = { focus = WAT_deal_with_heretic }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_revitalise_freshwater"
+	}
+}
+
+shared_focus = {
+	id = WAT_halt_industrialization
+
+	icon = GFX_goal_generic_military_deal_pony
+
+	x = 1.5
+	y = 2
+	relative_position_id = WAT_tribal_economy
+
+	cost = 3
+	prerequisite = { focus = WAT_deal_with_heretic }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_halt_industrialization"
+	}
+}
+
+shared_focus = {
+	id = WAT_restore_temples
+
+	icon = GFX_goal_generic_military_deal_pony
+
+	x = -1.5
+	y = 3
+	relative_position_id = WAT_tribal_economy
+
+	cost = 3
+	prerequisite = { focus = WAT_revitalise_freshwater }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_restore_temples"
+	}
+}
+
+shared_focus = {
+	id = WAT_artisan_workshops
+
+	icon = GFX_goal_generic_military_deal_pony
+
+	x = 1.5
+	y = 3
+	relative_position_id = WAT_tribal_economy
+
+	cost = 3
+	prerequisite = { focus = WAT_halt_industrialization }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_artisan_workshops"
+	}
+}
+
+shared_focus = {
+	id = WAT_one_with_earth
+
+	icon = GFX_goal_generic_military_deal_pony
+
+	x = 0
+	y = 4
+	relative_position_id = WAT_tribal_economy
+
+	cost = 3
+	prerequisite = { focus = WAT_artisan_workshops }
+	prerequisite = { focus = WAT_restore_temples }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_one_with_earth"
 	}
 }
 
@@ -152,11 +258,117 @@ shared_focus = {
 }
 
 shared_focus = {
+	id = WAT_communal_factories
+
+	icon = GFX_goal_OTT_Land_Reform
+
+	x = -1.5
+	y = 2
+	relative_position_id = WAT_harmony_and_progress
+
+	cost = 3
+	prerequisite = { focus = WAT_land_surveys }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_communal_factories"
+	}
+}
+
+shared_focus = {
+	id = WAT_sustainable_resource_development
+
+	icon = GFX_goal_OTT_Land_Reform
+
+	x = 1.5
+	y = 2
+	relative_position_id = WAT_harmony_and_progress
+
+	cost = 3
+	prerequisite = { focus = WAT_land_surveys }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_sustainable_resource_development"
+	}
+}
+
+shared_focus = {
+	id = WAT_road_to_every_village
+
+	icon = GFX_goal_OTT_Land_Reform
+
+	x = -1.5
+	y = 3
+	relative_position_id = WAT_harmony_and_progress
+
+	cost = 3
+	prerequisite = { focus = WAT_communal_factories }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_road_to_every_village"
+	}
+}
+
+shared_focus = {
+	id = WAT_environmental_guidelines
+
+	icon = GFX_goal_OTT_Land_Reform
+
+	x = 1.5
+	y = 3
+	relative_position_id = WAT_harmony_and_progress
+
+	cost = 3
+	prerequisite = { focus = WAT_sustainable_resource_development }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_environmental_guidelines"
+	}
+}
+
+shared_focus = {
+	id = WAT_symbiosis
+
+	icon = GFX_goal_OTT_Land_Reform
+
+	x = 0
+	y = 4
+	relative_position_id = WAT_harmony_and_progress
+
+	cost = 3
+	prerequisite = { focus = WAT_road_to_every_village }
+	prerequisite = { focus = WAT_environmental_guidelines }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_symbiosis"
+	}
+}
+
+shared_focus = {
 	id = WAT_industrial_revolution
 
 	icon = GFX_goal_generic_lau_industry
 
-	x = 6
+	x = 8
 	y = 3
 	relative_position_id = WAT_economy
 
@@ -197,11 +409,117 @@ shared_focus = {
 }
 
 shared_focus = {
+	id = WAT_deforestation
+
+	icon = GFX_goal_stg_socialist_industry
+
+	x = -1.5
+	y = 2
+	relative_position_id = WAT_industrial_revolution
+
+	cost = 3
+	prerequisite = { focus = WAT_vision_of_oilfield }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_deforestation"
+	}
+}
+
+shared_focus = {
+	id = WAT_gateway_to_south
+
+	icon = GFX_goal_stg_socialist_industry
+
+	x = 1.5
+	y = 2
+	relative_position_id = WAT_industrial_revolution
+
+	cost = 3
+	prerequisite = { focus = WAT_vision_of_oilfield }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_gateway_to_south"
+	}
+}
+
+shared_focus = {
+	id = WAT_exploitation
+
+	icon = GFX_goal_stg_socialist_industry
+
+	x = -1.5
+	y = 3
+	relative_position_id = WAT_industrial_revolution
+
+	cost = 3
+	prerequisite = { focus = WAT_deforestation }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_exploitation"
+	}
+}
+
+shared_focus = {
+	id = WAT_highways_for_everyone
+
+	icon = GFX_goal_stg_socialist_industry
+
+	x = 1.5
+	y = 3
+	relative_position_id = WAT_industrial_revolution
+
+	cost = 3
+	prerequisite = { focus = WAT_gateway_to_south }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_highways_for_everyone"
+	}
+}
+
+shared_focus = {
+	id = WAT_industry_revoltion_real
+
+	icon = GFX_goal_stg_socialist_industry
+
+	x = 0
+	y = 4
+	relative_position_id = WAT_industrial_revolution
+
+	cost = 3
+	prerequisite = { focus = WAT_highways_for_everyone }
+	prerequisite = { focus = WAT_exploitation }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WAT_industry_revoltion_real"
+	}
+}
+
+shared_focus = {
 	id = WAT_contact_the_spirits
 
 	icon = GFX_goal_generic_pony_unicorn
 
-	x = -3
+	x = -4
 	y = 4
 	relative_position_id = WAT_economy
 
@@ -286,7 +604,7 @@ shared_focus = {
 
 	icon = GFX_goal_riv_industry
 
-	x = 3
+	x = 4
 	y = 4
 	relative_position_id = WAT_economy
 
