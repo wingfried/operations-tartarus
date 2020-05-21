@@ -3,13 +3,13 @@
  ### FOCUS LOCALISATION ####################
  ###########################################
  WAT_economy:0 "Call the Keepers!"
- WAT_economy_desc:0 ""
+ WAT_economy_desc:0 "As the New Year dawns, it is time to once again call the Annual Convention of the Keepers, where Keepers of the seven Watertowns gather in to discuss issues and resolve conflicts between them. Despite the name, the Convention does not occur yearly, and many Keepers have come and gone without ever seeing their counterparts. Not these ones."
 
  WAT_first_keeper_convention:0 "Woes of Industry"
- WAT_first_keeper_convention_desc:0 ""
+ WAT_first_keeper_convention_desc:0 "The topic of this year's Convention is industrialization. It is, unfortunately, a controvertial topic in the Watertowns. The Keeper of Floodgate and his allies seek to forcibly bring the towns into the modern day, while the Keeper of Freshwater and the clergy strive to ensure the status quo. Keeper Eathlin has been trying to forge a middle ground between the two, with limited success. It is to be seen if this issue can be resolved for the congress..."
 
  WAT_stupid_deadlock:0 "Deadlock"
- WAT_stupid_deadlock_desc:0 ""
+ WAT_stupid_deadlock_desc:0 "...Turns out not. Not one Keeper is willing to back down, and the problem is still not solved. There is still a little leeway to wiggle in some reforms, and it is likely that these reforms will be instrumental who will be successful"
 
  WAT_tribal_economy:0 "The Ways of Old"
  WAT_tribal_economy_desc:0 ""
@@ -65,7 +65,7 @@
 
  #Decisions
  WAT_political_decision_category:0 "The Council of Keepers"
- WAT_political_decision_category_desc:0 "[DESC]\n\nThe popularity of the §RModernist faction§! is §Y[?WAT.modernizer_popularity]§!\n\nThe popularity of the §GModerate faction§! is §Y[?WAT.moderate_popularity]§!\n\nThe popularity of the §gTraditionalist faction§! is §Y[?WAT.traditionalist_popularity]§!\n\nThe popularity of the §BReligious faction§! is §Y[?WAT.religious_popularity]§!\n\n"
+ WAT_political_decision_category_desc:0 "[DESC]\n\nThe popularity of the §RModernist faction§! is §Y[?WAT.party_popularity@democratic]§!\n\nThe popularity of the §GModerate faction§! is §Y[?WAT.party_popularity@communism]§!\n\nThe popularity of the §gTraditionalist faction§! is §Y[?WAT.party_popularity@neutrality]§!\n\nThe popularity of the §BReligious faction§! is §Y[?WAT.party_popularity@fascism]§!\n\n"
 
  WAT_current_party:0 "§YThe careful balance has to be preserved...§!"
  WAT_current_party_desc:0 "§R...Lest things spiral out of control§!"
@@ -74,13 +74,13 @@
  ### IDEAS ##################################
  ###########################################
  WAT_council_of_keepers:0 "Council of Keepers"
- WAT_council_of_keepers_desc:0 "Council of Keepers"
+ WAT_council_of_keepers_desc:0 "Each decision undertaken by the Watertowns is extensively argued and debated by the Council of Keepers. Each of the seven Watertowns is entitled to one Keeper to represent them in the Council, and each of them is elected by a complete village assembly. Most prominent among them is Keeper Eathlin, first among equals"
 
  WAT_holy_srings:0 "Holy Springs"
- WAT_holy_srings_desc:0 "Holy Springs"
+ WAT_holy_srings_desc:0 "The Watertowns have always been known for its holy springs. That is, after all, why the Watertowns were settled in the first place. The springs' status as a holy site bring in pilgrims from all around, in addition to providing the towns with their name and their water."
 
  WAT_industrialization1:0 "Reluctant Industrialization"
- WAT_industrialization1_desc:0 ""
+ WAT_industrialization1_desc:0 "The Watertowns, located at the edge of nobody cares, has always lived in blissful isolation from the rest of the world. It was only recently, with Griffon incursions from the west, and with River merchants enroaching from the southeast did the ponies of the Watertowns finally understand the world they lived in. Industrialization has tentatively begun in Floodgate, and while it is in its infancy, but already it is a source of extreme controversy. Anyhoo, the River merchants are the sole source of goods from the outside, given our remoteness, and we have come to rely on them."
 
  #Advisors
  eathelin_sister:0 "Haylay"
@@ -111,4 +111,7 @@
  ###########################################
 
  #Victory Points
-VICTORY_POINTS_10345:0 "Floodgate"
+ VICTORY_POINTS_10345:0 "Floodgate"
+
+ #Traits
+ first_among_equals_trait:0 "First Among Equals"
