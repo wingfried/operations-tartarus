@@ -43,6 +43,7 @@ create_country_leader = {
 	female = yes
 	traits = {
 		democratic_sympathies
+		first_among_equals_trait
 	}
 }
 
@@ -77,5 +78,3 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 }
-
-WAT_political_reshuffle = yes
