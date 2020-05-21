@@ -2900,7 +2900,41 @@ country = {
 			}
 			}
 			}
-
+	country = {	
+	    ARA_minotaur_rebels = {
+			allowed = {
+			always = no 
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			modifier = {
+			    stability_factor = -0.10
+				war_support_factor = -0.10
+				consumer_goods_factor = 0.10
+			}
+		}
+	}
+    country = {	
+	    ARA_riverpony_resistance = {
+			allowed = {
+			always = no 
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			modifier = {
+			    stability_factor = -0.20
+				war_support_factor = -0.20
+				consumer_goods_factor = 0.10
+				conscription_factor = -0.25
+			}
+		}
+	}
 	country = {
 		ARA_project_legionary = {
 
