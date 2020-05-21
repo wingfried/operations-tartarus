@@ -545,10 +545,10 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = 0.10
-				political_power_gain = -0.10
-				democratic_drift = 0.01
-				communism_drift = 0.01
-				neutrality_drift = 0.01
+				political_power_factor = -0.50
+				democratic_drift = 0.02
+				communism_drift = 0.02
+				neutrality_drift = 0.02
 			}
 			removal_cost = -1
 		}
@@ -566,7 +566,6 @@ ideas = {
 			targeted_modifier = {
                 tag = RCT
                 extra_trade_to_target_factor = 0.5
-                trade_cost_for_target_factor = -0.5
             }
 
 			removal_cost = -1
