@@ -55,17 +55,17 @@
 
  #Parties
  WAT_neutrality_party:0 "Council of Keepers"
- WAT_neutrality_party_long:0 "Council of Keepers - Traditionalist"
+ WAT_neutrality_party_long:0 "Council of Keepers - Modernist"
  WAT_communism_party:0 "Council of Keepers"
- WAT_communism_party_long:0 "Council of Keepers - Moderates"
+ WAT_communism_party_long:0 "Council of Keepers - Traditionalist"
  WAT_democratic_party:0 "Council of Keepers"
- WAT_democratic_party_long:0 "Council of Keepers - Modernists"
+ WAT_democratic_party_long:0 "Council of Keepers - Moderate"
  WAT_fascism_party:0 "Council of Keepers"
  WAT_fascism_party_long:0 "Council of Keepers - Religious"
 
  #Decisions
  WAT_political_decision_category:0 "The Council of Keepers"
- WAT_political_decision_category_desc:0 "[DESC]\n\nThe popularity of the §RModernist faction§! is §Y[?WAT.party_popularity@democratic]§!\n\nThe popularity of the §GModerate faction§! is §Y[?WAT.party_popularity@communism]§!\n\nThe popularity of the §gTraditionalist faction§! is §Y[?WAT.party_popularity@neutrality]§!\n\nThe popularity of the §BReligious faction§! is §Y[?WAT.party_popularity@fascism]§!\n\n"
+ WAT_political_decision_category_desc:0 "[DESC]\n\nThe popularity of the §RModernist faction§! is §Y[?WAT.party_popularity@neutrality|%0]§!\n\nThe popularity of the §GModerate faction§! is §Y[?WAT.party_popularity@democratic|%0]§!\n\nThe popularity of the §gTraditionalist faction§! is §Y[?WAT.party_popularity@communism|%0]§!\n\n"
 
  WAT_current_party:0 "§YThe careful balance has to be preserved...§!"
  WAT_current_party_desc:0 "§R...Lest things spiral out of control§!"
@@ -80,7 +80,10 @@
  WAT_holy_srings_desc:0 "The Watertowns have always been known for its holy springs. That is, after all, why the Watertowns were settled in the first place. The springs' status as a holy site bring in pilgrims from all around, in addition to providing the towns with their name and their water."
 
  WAT_industrialization1:0 "Reluctant Industrialization"
- WAT_industrialization1_desc:0 "The Watertowns, located at the edge of nobody cares, has always lived in blissful isolation from the rest of the world. It was only recently, with Griffon incursions from the west, and with River merchants enroaching from the southeast did the ponies of the Watertowns finally understand the world they lived in. Industrialization has tentatively begun in Floodgate, and while it is in its infancy, but already it is a source of extreme controversy. Anyhoo, the River merchants are the sole source of goods from the outside, given our remoteness, and we have come to rely on them."
+ WAT_industrialization1_desc:0 "The Watertowns, located at the edge of nobody cares, has always lived in blissful isolation from the rest of the world. It was only recently, with Griffon incursions from the west, and with River merchants enroaching from the southeast did the ponies of the Watertowns finally understand the world they lived in. Industrialization has tentatively begun in Floodgate, and while it is in its infancy, but already it is a source of extreme controversy."
+
+ WAT_river_influence:0 "River Influence"
+ WAT_river_influence_desc:0 "The merchants from the River Coalition are our only friendly link to the outside world. The Sunstriker Bandits definetely do not have our best interests at heart, and the other Hillponies are just as isolated as we are."
 
  #Advisors
  eathelin_sister:0 "Haylay"
@@ -112,6 +115,8 @@
 
  #Victory Points
  VICTORY_POINTS_10345:0 "Floodgate"
+ VICTORY_POINTS_11031:0 "Helm's Deep"
+ VICTORY_POINTS_4372:0 "Snowdin"
 
  #Traits
  first_among_equals_trait:0 "First Among Equals"
