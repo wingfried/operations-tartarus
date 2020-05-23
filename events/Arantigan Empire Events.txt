@@ -196,10 +196,6 @@
 	    option = {
 		    name = arantiga.056.a
 		    ARA = {
-			    add_timed_idea = {
-			        idea = ARA_integrating_ponies
-                    days = 360
-                }
 			    custom_effect_tooltip = ARA_NTR_puppet_tooltip
 				hidden_effect = {
 				    NTR ={
@@ -240,6 +236,10 @@
 		}
 		option = {
 		    name = arantiga.056.b
+			add_timed_idea = {
+			    idea = ARA_integrating_ponies
+                days = 360
+            }
 			custom_effect_tooltip = ARA_NTR_compliance_tooltip
 			hidden_effect = {
 		        573 = {
