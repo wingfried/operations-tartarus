@@ -100,4 +100,8 @@ spriteTypes = {
 		name = "GFX_goal_study_foreign_doctrines"
 		texturefile = "gfx/interface/goals/goal_study_foreign_doctrines.dds"
 	}
+	SpriteType = { 
+		name = "GFX_goal_red_looting"
+		texturefile = "gfx/interface/goals/goal_red_looting.dds"
+	}
 }

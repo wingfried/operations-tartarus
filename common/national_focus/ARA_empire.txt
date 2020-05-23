@@ -41,7 +41,7 @@
 	
 	focus = {
 	    id = ARA_our_subjects
-		icon = GFX_focus_unknown
+		icon = GFX_goal_generic_national_unity_claws
 		x = -3
 		y = 1
 		relative_position_id = ARA_governing_empire
@@ -326,7 +326,7 @@
 	
 	focus = {
 	    id = ARA_reform_the_archonates
-		icon = GFX_focus_unknown
+		icon = GFX_goal_GRI_triarchy
 		x = -1
 		y = 2
 		relative_position_id = ARA_governing_empire
@@ -475,7 +475,7 @@
 	
 	focus = {
 	    id = ARA_imperial_bureaucracy
-		icon = GFX_focus_unknown
+		icon = GFX_goal_OTT_gendarmerie
 		x = 1
 		y = 2
 		relative_position_id = ARA_governing_empire
@@ -613,7 +613,7 @@
 	
 	focus = {
 	    id = ARA_establish_imperial_army
-		icon = GFX_focus_unknown
+		icon = GFX_PAP_legionary_spirit
 		x = 3
 		y = 1
 		relative_position_id = ARA_governing_empire
@@ -748,7 +748,7 @@
 	
 	focus = {
 	    id = ARA_establish_imperial_navy
-		icon = GFX_focus_unknown
+		icon = GFX_goal_navy_hat_ships
 		x = 3
 		y = 2
 		relative_position_id = ARA_governing_empire
@@ -777,7 +777,7 @@
 	
 	focus = {
 	    id = ARA_spoils_of_war
-		icon = GFX_focus_unknown
+		icon = GFX_goal_red_looting
 		x = 38
 		y = 0
 		cost = 5.00
@@ -793,7 +793,7 @@
 	
     focus = {
 	    id = ARA_wingbardian_rubber
-		icon = GFX_focus_unknown
+		icon = GFX_goal_KTG_Rubber_Farming
 		x = -4
 		y = 2
 		relative_position_id = ARA_spoils_of_war
@@ -828,7 +828,7 @@
 	
 	focus = {
 	    id = ARA_expand_penal_battalions
-		icon = GFX_focus_unknown
+		icon = GFX_goal_MAF_Graveyard
 		x = -2
 		y = 2
 		relative_position_id = ARA_spoils_of_war
@@ -865,7 +865,7 @@
 	
 	focus = {
 	    id = ARA_land_reclamation_crops
-		icon = GFX_focus_unknown
+		icon = GFX_goal_GRI_shitforest
 		x = -1
 		y = 3
 		relative_position_id = ARA_spoils_of_war
@@ -964,7 +964,7 @@
 	
 	focus = {
 	    id = ARA_rebuild_griffenheim
-		icon = GFX_focus_unknown
+		icon = GFX_goal_ITA_urban
 		x = 2
 		y = 2
 		relative_position_id = ARA_spoils_of_war
@@ -1021,7 +1021,7 @@
 	
 	focus = {
 	    id = ARA_convince_scholars
-		icon = GFX_focus_unknown
+		icon = GFX_goal_mikusian
 		x = 1
 		y = 3
 		relative_position_id = ARA_spoils_of_war
@@ -1036,7 +1036,7 @@
 	
 	focus = {
 	    id = ARA_emperors_only_achievement
-		icon = GFX_focus_unknown
+		icon = GFX_goal_quit_preindustrial_society
 		x = 3
 		y = 3
 		relative_position_id = ARA_spoils_of_war
@@ -1347,7 +1347,7 @@
 	
 	focus = {
 	    id = ARA_ponies_of_aquileia
-		icon = GFX_focus_unknown
+		icon = GFX_goal_generic_pony_unicorn
 		x = 4
 		y = 2
 		relative_position_id = ARA_spoils_of_war
@@ -1763,7 +1763,7 @@
 	}
 	focus = {
 	    id = ARA_jewel_of_the_west
-		icon = GFX_focus_unknown
+		icon = GFX_goal_Attack_Skyfall
 		x = -5
 		y = 1
 		relative_position_id = ARA_what_remains
@@ -1774,13 +1774,13 @@
 		       country_event = arantiga.053
 		    }
 			FEZ = {
-			   country_event = arantiga.053
+			   country_event = arantiga.066
 			}
 		}
 	}
 	focus = {
 	    id = ARA_just_good_business
-		icon = GFX_focus_unknown
+		icon = GFX_goal_schemeing_bankers
 		x = -6
 		y = 2
 		relative_position_id = ARA_what_remains
@@ -1858,7 +1858,7 @@
 	}
 	focus = {
 	    id = ARA_break_hellsword
-		icon = GFX_focus_unknown
+		icon = GFX_Example_GFX-1
 		x = -3
 		y = 1
 		relative_position_id = ARA_what_remains
@@ -1896,7 +1896,7 @@
 	}
 	focus = {
 	    id = ARA_into_evi_valley
-		icon = GFX_focus_unknown
+		icon = GFX_goal_prywhen_civilwar_yellow
 		x = -2
 		y = 2
 		relative_position_id = ARA_what_remains
@@ -1924,7 +1924,7 @@
 	}
 	focus = {
 	    id = ARA_knights_of_the_east
-		icon = GFX_focus_unknown
+		icon = GFX_goal_griffon_knights
 		x = -3
 		y = 3
 		relative_position_id = ARA_what_remains
@@ -1940,7 +1940,7 @@
 	}
 	focus = {
 	    id = ARA_fate_of_trade_company
-		icon = GFX_focus_unknown
+		icon = GFX_goal_griffon_rusty_coin
 		x = -1
 		y = 3
 		relative_position_id = ARA_what_remains
@@ -2144,7 +2144,7 @@
 	}
 	focus = {
 	    id = ARA_minotaurs_question
-		icon = GFX_focus_unknown
+		icon = GFX_goal_MIT_The_Brutes_of_Old
 		x = 5
 		y = 2
 		relative_position_id = ARA_what_remains
@@ -2227,7 +2227,7 @@
 	}
 	focus = {
 	    id = ARA_destroy_failed_republic
-		icon = GFX_focus_unknown
+		icon = GFX_goal_abandon_the_republican_dream
 		x = 2
 		y = 1
 		relative_position_id = ARA_what_remains
@@ -2270,7 +2270,7 @@
 	}
 	focus = {
 	    id = ARA_republican_dream
-		icon = GFX_focus_unknown
+		icon = GFX_goal_hang_the_traitor
 		x = 1
 		y = 3
 		relative_position_id = ARA_what_remains
@@ -2285,7 +2285,7 @@
 	}
 	focus = {
 	    id = ARA_slay_red_beast
-		icon = GFX_focus_unknown
+		icon = GFX_goal_socialist_skynavia
 		x = 3
 		y = 3
 		relative_position_id = ARA_what_remains
@@ -2408,7 +2408,7 @@
 	}
 	focus = {
 	    id = ARA_emperor_of_griffonkind
-		icon = GFX_focus_unknown
+		icon = GFX_goal_personality
 		x = 0
 		y = 5
 		relative_position_id = ARA_what_remains
@@ -2449,7 +2449,7 @@
 	}
 	focus = {
 	    id = ARA_arantigan_parliament
-		icon = GFX_focus_unknown
+		icon = GFX_goal_academic_diplomacy
 		x = -2
 		y = 2
 		relative_position_id = ARA_emperor_of_griffonkind
@@ -2468,7 +2468,7 @@
 	}
 	focus = {
 	    id = ARA_question_of_religion
-		icon = GFX_focus_unknown
+		icon = GFX_goal_generic_archonism
 		x = 0
 		y = 2
 		relative_position_id = ARA_emperor_of_griffonkind
@@ -2487,7 +2487,7 @@
 	}
 	focus = {
 	    id = ARA_griffonian_nobility
-		icon = GFX_focus_unknown
+		icon = GFX_goal_collaborate_local_elites
 		x = 2
 		y = 2
 		relative_position_id = ARA_emperor_of_griffonkind
@@ -2525,7 +2525,7 @@
 	}
 	focus = {
 	    id = ARA_establish_himss
-		icon = GFX_focus_unknown
+		icon = GFX_goal_generic_secret_documents
 		x = -1
 		y = 3
 		relative_position_id = ARA_emperor_of_griffonkind
@@ -2592,6 +2592,9 @@
 		cost = 5.00
 		prerequisite = { focus = ARA_integrate_infrastructure }
 		prerequisite = { focus = ARA_establish_himss }
+		available = {
+		    has_completed_focus = ARA_work_camps
+		}
 		bypass = {
 			
 		}
@@ -2605,7 +2608,7 @@
 	}
 	focus = {
 	    id = ARA_foreign_poison
-		icon = GFX_focus_unknown
+		icon = GFX_goal_generic_media_controls
 		x = 0
 		y = 4
 		relative_position_id = ARA_emperor_of_griffonkind
@@ -2666,7 +2669,7 @@
 	}
 	focus = {
 	    id = ARA_detente_with_eastern_ponies
-		icon = GFX_focus_unknown
+		icon = GFX_focus_riv_form_federation
 		x = 7
 		y = 1
 		relative_position_id = ARA_emperor_of_griffonkind
@@ -2692,7 +2695,7 @@
 	}
 	focus = {
 	    id = ARA_flourishing_trade
-		icon = GFX_focus_unknown
+		icon = GFX_goal_riv_free_travel
 		x = 7
 		y = 2
 		relative_position_id = ARA_emperor_of_griffonkind
@@ -2716,7 +2719,7 @@
 	}
 	focus = {
 	    id = ARA_the_last_crusade
-		icon = GFX_focus_unknown
+		icon = GFX_focus_riv_form_federation
 		x = 9
 		y = 1
 		relative_position_id = ARA_emperor_of_griffonkind
@@ -2792,7 +2795,7 @@
 	}
 	focus = {
 	    id = ARA_master_of_the_east
-		icon = GFX_focus_unknown
+		icon = GFX_goal_riv_north_to_fed
 		x = 9
 		y = 2
 		relative_position_id = ARA_emperor_of_griffonkind
@@ -2845,7 +2848,7 @@
 	}
 	focus = {
 	    id = ARA_new_new_mareland
-		icon = GFX_focus_unknown
+		icon = GFX_focus_eqc_defence_of_the_commonwelth
 		x = -10
 		y = 2
 		relative_position_id = ARA_emperor_of_griffonkind
@@ -2867,7 +2870,7 @@
 	}
 	focus = {
 	    id = ARA_western_allies
-		icon = GFX_focus_unknown
+		icon = GFX_focus_indy_flag_1
 		x = -7
 		y = 1
 		relative_position_id = ARA_emperor_of_griffonkind
