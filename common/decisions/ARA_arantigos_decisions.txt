@@ -74,7 +74,7 @@ ARA_renaming_cities = {
 	ARA_rename_karthin = {
 		icon = generic_nationalism
 		cost = 50
-#		fire_only_once = yes
+		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
 		}
@@ -106,7 +106,7 @@ ARA_definetely_not_fake_IRI = {
 		}
 		complete_effect = {
 			set_country_flag = IRI_project_ongoing
-			country_event = arantiga_decision.31
+#			country_event = arantiga_decision.11
 		}
 	}
 
@@ -122,12 +122,13 @@ ARA_definetely_not_fake_IRI = {
 		}
 		complete_effect = {
 			set_country_flag = IRI_project_ongoing
+			country_event = arantiga_decision.21
 		}
 	}
 
 	ARA_super_soldiers = {
 		icon = generic_nationalism
-		cost = 200
+		cost = 75
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 0
@@ -153,6 +154,7 @@ ARA_definetely_not_fake_IRI = {
 		}
 		complete_effect = {
 			set_country_flag = IRI_project_ongoing
+			country_event = arantiga_decision.41
 		}
 	}
 }

@@ -18,7 +18,7 @@ focus_tree = {
 		shared_focus = ARA_the_new_airforce
 		shared_focus = ARA_self_strength
 		shared_focus = ARA_new_age_new_army
-		
+		shared_focus = ARA_rumare_exercises
 	focus = { #between giants
 		id = ARA_die_is_cast
 		icon = GFX_goal_dice
@@ -199,7 +199,7 @@ focus_tree = {
 				state = 492
 			}
 			add_resource = {
-				type = aluminum
+				type = aluminium
 				amount = 20
 				state = 539
 			}
@@ -229,11 +229,11 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05	
 			add_stability = 0.05
-			ountry_event = { 
+			country_event = { 
 			        id = arantiga.029
 					days = 1
 			    }
-			untry_event = { 
+			country_event = { 
 			        id = arantiga.030
 					days = 2
 			    }
@@ -253,7 +253,7 @@ focus_tree = {
 							has_global_flag = JER_revolution_ended
 							JER = { 
 								has_government = neutrality
-								has_country_leader = { ruling only = yes name = "Vivienne Discret" }
+								has_country_leader = { ruling_only = yes name = "Vivienne Discret" }
 								}
 							
 								}
@@ -572,7 +572,7 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -5000
-				producer = ROOT
+				producer = ARA
 			}
 			FRN = { country_event = { id = arantiga.1000 days = 1 } }
 		}

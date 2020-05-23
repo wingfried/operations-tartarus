@@ -58,7 +58,7 @@ HLQ_936_category = {
 		icon = griffon
 		visible = {
 			has_country_flag = HLQ_edelstahlflugel_stuff
-			NOT = { has_tech = HLQ_edelstahlflugel_tech
+			NOT = { has_tech = HLQ_edelstahlflugel_tech }
 		}
 		days_remove = 180
 		modifier = {
@@ -73,7 +73,6 @@ HLQ_936_category = {
 			}
 		}
 	}
-}
 }
 
 HLQ_diplomacy_category = {

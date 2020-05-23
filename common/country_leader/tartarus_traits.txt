@@ -31,4 +31,9 @@ leader_traits = {
 		stability_factor = 0.10
 		defensive_war_stability_factor = 0.4
 	}
+	first_among_equals_trait = {
+		random = no
+		political_power_gain = 0.1
+		stability_factor = 0.05
+	}
 }

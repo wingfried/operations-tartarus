@@ -1,0 +1,8 @@
+WAT_political_decision_category = {
+	WAT_current_party = {
+		icon = decision_category_generic_political_actions
+		available = {
+			always = no
+		}
+	}
+}

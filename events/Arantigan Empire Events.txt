@@ -1,6 +1,8 @@
-    
+################ Governing Empire EVENTS #######################
 	
-	country_event = { #Nations of the Empire
+	###The file is temporary, will become redundant after the chaos event tree gets fixed###
+	
+ country_event = { #Nations of the Empire
 	    id = arantiga.050
 	    title = arantiga.050.t
 	    desc = arantiga.050.d
@@ -52,7 +54,7 @@
 			}
 		}
 	}
-	country_event = {
+	country_event = { #choosing our capital
 	    id = arantiga.052
 		title = arantiga.052.t
 		desc = arantiga.052.d
@@ -85,7 +87,7 @@
 			
 		}
 	}
-	country_event = { #Surrender?
+	country_event = { #Surrender TRD?
 	    id = arantiga.053
 		title = arantiga.053.t
 		desc = arantiga.053.d
@@ -129,6 +131,56 @@
 	    fire_only_once = yes
 	    option = {
 		name = arantiga.055.a
+		    create_wargoal = {
+			    type = annex_everything
+				target = FROM
+			}
+		}
+	}
+	country_event = { #Surrender FEZ?
+	    id = arantiga.066
+		title = arantiga.066.t
+		desc = arantiga.066.d
+	    is_triggered_only = yes
+	    fire_only_once = yes
+	    option = {
+		    name = arantiga.066.a
+		    ARA = {
+			    country_event = {
+				    id = arantiga.054
+					days = 7
+				}
+			}
+		}
+		option = {
+		    name = arantiga.066.b
+		    ARA = {
+			    country_event = {
+				    id = arantiga.055
+					days = 7
+				}
+			}
+		}
+	}
+	country_event = { #Yes
+	    id = arantiga.067
+		title = arantiga.067.t
+		desc = arantiga.067.d
+	    is_triggered_only = yes
+	    fire_only_once = yes
+	    option = {
+		name = arantiga.054.a
+		    annex_country = { target = FROM transfer_troops = yes }
+		}
+	}
+	country_event = { #No
+	    id = arantiga.068
+		title = arantiga.068.t
+		desc = arantiga.068.d
+	    is_triggered_only = yes
+	    fire_only_once = yes
+	    option = {
+		name = arantiga.068.a
 		    create_wargoal = {
 			    type = annex_everything
 				target = FROM
@@ -184,6 +236,10 @@
 		}
 		option = {
 		    name = arantiga.056.b
+			add_timed_idea = {
+			    idea = ARA_integrating_ponies
+                days = 360
+            }
 			custom_effect_tooltip = ARA_NTR_compliance_tooltip
 			hidden_effect = {
 		        573 = {
@@ -279,7 +335,7 @@
 	    fire_only_once = yes
 	    option = {
 		name = arantiga.059.a
-		    annex_country = { target = FROM transfer_troops = yes }
+		    annex_country = { target = FROM transfer_troops = no }
 		}
 	}
 	country_event = { #No
@@ -341,13 +397,64 @@
 			    idea = ARA_minotaur_rebels
 				days = 720
 			}
+			custom_effect_tooltip = ARA_MIT_compliance_tooltip
+			hidden_effect = {
+			    463 = {
+				    add_compliance = 20
+				}
+				386 = {
+				    add_compliance = 20
+				}
+				656 = {
+				    add_compliance = 20
+				}
+				464 = {
+				    add_compliance = 20
+				}
+				465 = {
+				    add_compliance = 20
+				}
+				462 = {
+				    add_compliance = 20
+				}
+				466 = {
+				    add_compliance = 20
+				}
+				467 = {
+				    add_compliance = 20
+				}
+				469 = {
+				    add_compliance = 20
+				}
+				468 = {
+				    add_compliance = 20
+				}
+				655 = {
+				    add_compliance = 20
+				}
+				513 = {
+				    add_compliance = 20
+				}
+				657 = {
+				    add_compliance = 20
+				}
+				667 = {
+				    add_compliance = 20
+				}
+				664 = {
+				    add_compliance = 20
+				}
+				654 = {
+				    add_compliance = 20
+				}
+			}
 		}
 		option = {
 		    name = arantiga.063.b
 			ARA = {
 			    custom_effect_tooltip = ARA_MIT_puppet_tooltip
 				hidden_effect = {
-				    ARA ={
+				    MIT ={
 					    transfer_state = 463
 					    transfer_state = 386
 					    transfer_state = 656
@@ -405,6 +512,7 @@
 			}
 		}
 	}
+	#68
 	news_event = { #Skynavia burns
 	    id = arantiga_news.2
 	    title = arantiga_news.2.t
@@ -443,4 +551,992 @@
 		    load_focus_tree = Arantiga_empire
 		}
 	}
-	
+
+    country_event = { # Imperial Parliment
+	    id = arantiga_govern.012
+	    title = arantiga_govern.012.t
+	    desc = arantiga_govern.012.d
+	    is_triggered_only = yes
+	    fire_only_once = yes
+	    picture = GFX_event_griffon_soldier
+	    option = {
+		    name = arantiga_govern.012.a #One Nation, One Emperor.
+			swap_ideas = {
+			    remove_idea = ARA_voices_of_dissent
+		        add_idea = ARA_Memories_of_Freedom
+			}
+	    }
+	    option = {
+		    name = 	arantiga_govern.012.b #let them bicker
+			swap_ideas = {
+			    remove_idea = ARA_voices_of_dissent
+		        add_idea = ARA_arantigan_parliament
+			}
+	    }
+    }
+ 
+ country_event = { # Faith and Throne
+	id = arantiga_govern.013
+	title = arantiga_govern.013.t
+	desc = arantiga_govern.013.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.013.a #
+		swap_ideas = { 
+		remove_idea = ARA_arantigos_boreas3
+		add_idea = ARA_arantigos_boreas4
+		}
+	}
+	option = {
+		name = 	arantiga_govern.013.b #
+		add_ideas = ARA_Religious_Pluralism
+	}
+}
+ 
+ country_event = { # Nobles of the Emprie
+	id = arantiga_govern.014
+	title = arantiga_govern.014.t
+	desc = arantiga_govern.014.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.014.a #
+		add_ideas = ARA_Noble_Reservation
+	}
+	option = {
+		name = 	arantiga_govern.014.b #
+		add_ideas = ARA_Equality_under_Emperor
+	}
+	option = {
+		name = 	arantiga_govern.014.c #
+		add_ideas = ARA_New_Nobility
+	}
+}
+ 
+ country_event = { # Imperial Trade Policy 
+	id = arantiga_govern.015
+	title = arantiga_govern.015.t
+	desc = arantiga_govern.015.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.015.a
+		add_ideas = free_trade
+	}
+	option = {
+		name = 	arantiga_govern.015.b
+		add_ideas = export_focus
+	}
+	option = {
+		name = 	arantiga_govern.015.c
+		add_ideas = limited_exports
+	}
+}
+ 
+ country_event = { # Royal Amnesty
+	id = arantiga_govern.016
+	title = arantiga_govern.016.t
+	desc = arantiga_govern.016.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.016.a
+		add_popularity = { ideology = democratic popularity = 0.05 }
+		add_popularity = { ideology = communism popularity = 0.05 }
+		remove_ideas = ARA_work_camp
+	}
+	option = {
+		name = 	arantiga_govern.016.b
+		add_popularity = { ideology = democratic popularity = 0.01 }
+		add_popularity = { ideology = communism popularity = 0.01 }
+		swap_ideas = {
+		    remove_idea = ARA_work_camp 
+			add_idea = ARA_work_camp1
+		}
+	}
+}
+ 
+ country_event = { # Hearts and Minds
+	id = arantiga_govern.017
+	title = arantiga_govern.017.t
+	desc = arantiga_govern.017.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.017.a
+		add_ideas = ARA_foreign_influence
+	}
+	option = {
+		name = 	arantiga_govern.017.b
+		add_ideas = ARA_pure_minds
+	}
+}
+ 
+ country_event = { # War or Peace
+	id = arantiga_govern.018
+	title = arantiga_govern.018.t
+	desc = arantiga_govern.018.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.018.a
+		remove_ideas = ARA_militarized_economy 
+		remove_ideas = ARA_every_griff
+	}
+	option = {
+		name = 	arantiga_govern.018.b
+		remove_ideas = ARA_militarized_economy 
+		remove_ideas = ARA_every_griff
+		add_ideas = civilian_economy
+		add_ideas = limited_conscription
+		###INCOMPLETE LOCK ECONOMY AND CONSCRIPTION LAWS
+	}
+}
+ 
+ country_event = { # Memories
+	id = arantiga_govern.019
+	title = arantiga_govern.019.t
+	desc = arantiga_govern.019.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.019.a
+	}
+}
+
+country_event = { # Detente
+	id = arantiga_govern.020
+	title = arantiga_govern.020.t
+	desc = arantiga_govern.020.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = arantiga_govern.020.a
+		hidden_effect = {
+		    FROM = {
+			    country_event = {
+				    id = arantiga_govern.023
+					days = 7
+				}
+			}
+		}
+	}
+	option = {
+	    name = arantiga_govern.020.b
+	    hidden_effect = {
+		    FROM = {
+			    country_event = {
+				    id = arantiga_govern.022
+					days = 7
+				}
+			}
+		}
+	}
+}
+
+ country_event = { # land of the rising sun
+	id = arantiga_govern.021
+	title = arantiga_govern.021.t
+	desc = arantiga_govern.021.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.021.a
+		add_timed_idea = {
+		    idea = ARA_riverpony_resistance
+			days = 720
+		}
+		##add compliance to the riverlands
+		custom_effect_tooltip = ARA_compliance_riverlands
+		hidden_effect = {
+		    640 = {
+				add_compliance = 40
+			}
+			641 = {
+				add_compliance = 40
+			}
+			642 = {
+				add_compliance = 40
+			}
+			643 = {
+				add_compliance = 40
+			}
+			
+			453 = {
+				add_compliance = 40
+			}
+			454 = {
+				add_compliance = 40
+			}
+			478 = {
+				add_compliance = 40
+			}
+			604 = {
+				add_compliance = 40
+			}
+			636 = {
+				add_compliance = 40
+			}
+			644 = {
+				add_compliance = 40
+			}
+			650 = {
+				add_compliance = 40
+			}
+			
+			455 = {
+				add_compliance = 50
+			}
+			569 = {
+				add_compliance = 50
+			}
+			571 = {
+				add_compliance = 50
+			}
+			572 = {
+				add_compliance = 50
+			}
+			603 = {
+				add_compliance = 50
+			}
+			639 = {
+				add_compliance = 50
+			}
+			
+			412 = {
+				add_compliance = 30
+			}
+			579 = {
+				add_compliance = 30
+			}
+			413 = {
+				add_compliance = 30
+			}
+			558 = {
+				add_compliance = 30
+			}
+			578 = {
+				add_compliance = 30
+			}
+			680 = {
+				add_compliance = 30
+			}
+			625 = {
+				add_compliance = 40
+			}
+			624 = {
+				add_compliance = 40
+			}
+			626 = {
+				add_compliance = 40
+			}
+			
+			387 = {
+				add_compliance = 30
+			}
+			499 = {
+				add_compliance = 30
+			}
+			541 = {
+				add_compliance = 30
+			}
+			550 = {
+				add_compliance = 30
+			}
+			551 = {
+				add_compliance = 30
+			}
+			530 = {
+				add_compliance = 30
+			}
+			491 = {
+				add_compliance = 30
+			}
+			543 = {
+				add_compliance = 30
+			}
+			544 = {
+				add_compliance = 30
+			}
+			586 = {
+				add_compliance = 30
+			}
+			635 = {
+				add_compliance = 30
+			}
+			637 = {
+				add_compliance = 30
+			}
+			638 = {
+				add_compliance = 30
+			}
+			647 = {
+				add_compliance = 30
+			}
+			577 = {
+				add_compliance = 30
+			}
+			619 = {
+				add_compliance = 30
+			}
+			620 = {
+				add_compliance = 30
+			}
+			646 = {
+				add_compliance = 30
+			}
+			682 = {
+				add_compliance = 30
+			}
+			438 = {
+				add_compliance = 30
+			}
+			461 = {
+				add_compliance = 30
+			}
+			648 = {
+				add_compliance = 30
+			}
+			649 = {
+				add_compliance = 30
+			}
+			616 = {
+				add_compliance = 30
+			}
+			615 = {
+				add_compliance = 30
+			}
+			614 = {
+				add_compliance = 30
+			}
+			617 = {
+				add_compliance = 30
+			}
+			628 = {
+				add_compliance = 30
+			}
+			627 = {
+				add_compliance = 30
+			}
+			629 = {
+				add_compliance = 30
+			}
+			452 = {
+				add_compliance = 30
+			}
+			587 = {
+				add_compliance = 30
+			}
+			622 = {
+				add_compliance = 30
+			}
+			645 = {
+				add_compliance = 30
+			}
+			580 = {
+				add_compliance = 30
+			}
+			618 = {
+				add_compliance = 30
+			}
+			621 = {
+				add_compliance = 30
+			}
+			681 = {
+				add_compliance = 30
+			}
+		}
+	}
+	option = {
+		name = arantiga_govern.021.b
+		## establish protectorates 
+		custom_effect_tooltip = ARA_protectorates_riverlands
+		hidden_effect = {
+		    ARA = {
+				hidden_effect = {
+				    FBK = {
+					    transfer_state = 640
+					    transfer_state = 641
+						transfer_state = 642
+						transfer_state = 643
+					    transfer_state = 453
+					    transfer_state = 454
+					    transfer_state = 478
+					    transfer_state = 604
+					    transfer_state = 636
+					    transfer_state = 644
+					    transfer_state = 650
+					    transfer_state = 455
+						transfer_state = 569
+						transfer_state = 571
+						transfer_state = 572
+						transfer_state = 603
+						transfer_state = 639
+					    640 = {
+					        add_core_of = FBK
+					    }
+					    641 = {
+					        add_core_of = FBK
+					    }
+					    642 = {
+					        add_core_of = FBK
+					    }
+					    643 = {
+					        add_core_of = FBK
+					    }
+					    453 = {
+					        add_core_of = FBK
+					    }
+						454 = {
+					        add_core_of = FBK
+					    }
+						478 = {
+					        add_core_of = FBK
+					    }
+						604 = {
+					        add_core_of = FBK
+					    }
+						636 = {
+					        add_core_of = FBK
+					    }
+						644 = {
+					        add_core_of = FBK
+					    }
+						650 = {
+					        add_core_of = FBK
+					    }
+						455 = {
+					        add_core_of = FBK
+					    }
+						569 = {
+					        add_core_of = FBK
+					    }
+						571 = {
+					        add_core_of = FBK
+					    }
+						572 = {
+					        add_core_of = FBK
+					    }
+						603 = {
+					        add_core_of = FBK
+					    }
+						639 = {
+					        add_core_of = FBK
+					    }
+					    FBK = {
+							add_ideas = FBK_king_north
+			                set_cosmetic_tag = FBK_kingdom
+				            create_country_leader = {
+					            name = "King Hermane I"
+					            desc = ""
+					            picture = "HermaneGering.tga"
+					            expire = "1965.1.1"
+					            ideology = nazism
+					            traits = {
+						            FBK_the_warrior_chief
+					            }
+				            }
+					    }
+						ARA = {
+					    	puppet = FBK
+						    set_autonomy = { target = FBK autonomy_state = autonomy_satellite }
+						}
+				    }
+					BAR = {
+					    transfer_state = 624
+					    transfer_state = 625
+					    transfer_state = 626
+					    transfer_state = 412
+					    transfer_state = 579
+					    transfer_state = 413
+					    transfer_state = 558
+					    transfer_state = 578
+					    transfer_state = 680
+					    412 = {
+					        add_core_of = BAR
+					    }
+					    579 = {
+					        add_core_of = BAR
+					    }
+					    413 = {
+					        add_core_of = BAR
+					    }
+					    558 = {
+					        add_core_of = BAR
+					    }
+					    578 = {
+					        add_core_of = BAR
+					    }
+						680 = {
+					        add_core_of = BAR
+					    }
+					    BAR = {
+				            create_country_leader = {
+					            name = "Protector Lysimachus"
+					            desc = ""
+					            picture = "gfx/leaders/Asia/portrait_griffon_generic_land_9.dds"
+					            expire = "1965.1.1"
+					            ideology = nazism
+					            traits = {
+					            }
+				            }
+							remove_ideas = BAR_pentarchy
+							remove_ideas = BAR_insane_weather
+					    }
+						ARA = {
+					    	puppet = BAR
+						    set_autonomy = { target = BAR autonomy_state = autonomy_satellite }
+				            every_unit_leader = {
+					            limit = { has_id = 1335 }
+					            set_nationality = BAR
+				            }
+						}
+				    }
+					RCT = {
+					    set_cosmetic_tag = RIV
+					    transfer_state = 387
+					    transfer_state = 499
+					    transfer_state = 541
+					    transfer_state = 550
+					    transfer_state = 551
+					    transfer_state = 560
+					    transfer_state = 491
+					    transfer_state = 543
+					    transfer_state = 544
+					    transfer_state = 586
+					    transfer_state = 635
+						transfer_state = 637
+						transfer_state = 638
+						transfer_state = 647
+						transfer_state = 577
+						transfer_state = 619
+						transfer_state = 620
+					    transfer_state = 646
+					    transfer_state = 682
+					    transfer_state = 438
+					    transfer_state = 461
+					    transfer_state = 648
+					    transfer_state = 649
+					    transfer_state = 616
+					    transfer_state = 615
+					    transfer_state = 614
+						transfer_state = 617
+					    transfer_state = 628
+						transfer_state = 627
+						transfer_state = 629
+						transfer_state = 452
+						transfer_state = 587
+						transfer_state = 622
+						transfer_state = 645
+						transfer_state = 580
+						transfer_state = 618
+						transfer_state = 621
+						transfer_state = 681
+					    387 = {
+					        add_core_of = RCT
+					    }
+					    499 = {
+					        add_core_of = RCT
+					    }
+					    541 = {
+					        add_core_of = RCT
+					    }
+					    550 = {
+					        add_core_of = RCT
+					    }
+					    551 = {
+					        add_core_of = RCT
+					    }
+						560 = {
+					        add_core_of = RCT
+					    }
+						491 = {
+					        add_core_of = RCT
+					    }
+						543 = {
+					        add_core_of = RCT
+					    }
+						544 = {
+					        add_core_of = RCT
+					    }
+						586 = {
+					        add_core_of = RCT
+					    }
+						635 = {
+					        add_core_of = RCT
+					    }
+						637 = {
+					        add_core_of = RCT
+					    }
+						638 = {
+					        add_core_of = RCT
+					    }
+					    647 = {
+					        add_core_of = RCT
+					    }
+					    577 = {
+					        add_core_of = RCT
+					    }
+					    619 = {
+					        add_core_of = RCT
+					    }
+					    620 = {
+					        add_core_of = RCT
+					    }
+						646 = {
+					        add_core_of = RCT
+					    }
+						682 = {
+					        add_core_of = RCT
+					    }
+						438 = {
+					        add_core_of = RCT
+					    }
+						461 = {
+					        add_core_of = RCT
+					    }
+						648 = {
+					        add_core_of = RCT
+					    }
+						649 = {
+					        add_core_of = RCT
+					    }
+						616 = {
+					        add_core_of = RCT
+					    }
+						615 = {
+					        add_core_of = RCT
+					    }
+					    614 = {
+					        add_core_of = RCT
+					    }
+					    617 = {
+					        add_core_of = RCT
+					    }
+					    628 = {
+					        add_core_of = RCT
+					    }
+					    627 = {
+					        add_core_of = RCT
+					    }
+						629 = {
+					        add_core_of = RCT
+					    }
+						452 = {
+					        add_core_of = RCT
+					    }
+						587 = {
+					        add_core_of = RCT
+					    }
+						622 = {
+					        add_core_of = RCT
+					    }
+						645 = {
+					        add_core_of = RCT
+					    }
+						580 = {
+					        add_core_of = RCT
+					    }
+						618 = {
+					        add_core_of = RCT
+					    }
+						621 = {
+					        add_core_of = RCT
+					    }
+						681 = {
+					        add_core_of = RCT
+					    }
+					    RIV = {
+				            create_country_leader = {
+					            name = "Pumpkin Swirl"
+					            desc = ""
+					            picture = "pumpkin_swirl.tga"
+					            expire = "1965.1.1"
+					            ideology = nazism
+					            traits = {
+					            }
+				            }
+					    }
+						ARA = {
+					    	puppet = RCT
+						    set_autonomy = { target = RCT autonomy_state = autonomy_satellite }
+						}
+				    }
+				}
+			}
+		}
+	}
+}
+ 
+ country_event = { # eastern Ponies say no
+	id = arantiga_govern.022
+	title = arantiga_govern.022.t
+	desc = arantiga_govern.022.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.022.a
+	}
+}
+ 
+ country_event = { # eastern Ponies say yes
+	id = arantiga_govern.023
+	title = arantiga_govern.023.t
+	desc = arantiga_govern.023.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.023.a
+		hidden_effect = {
+		    ARA = {
+		        set_country_flag = ARA_trade_treaty_signed
+			}
+		}
+	}
+}
+
+ country_event = { # looming threat
+	id = arantiga_govern.024
+	title = arantiga_govern.024.t
+	desc = arantiga_govern.024.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.024.a #we fight
+		ARA = {
+		    country_event = {
+			    id = arantiga_govern.26
+				days = 7
+			}
+		}
+	}
+	option = {
+		name = 	arantiga_govern.024.b #we surrender
+		ARA = {
+		    country_event = {
+			    id = arantiga_govern.27
+				days = 7
+			}
+		}
+	}
+}
+
+ country_event = { # New new mareland
+	id = arantiga_govern.025
+	title = arantiga_govern.025.t
+	desc = arantiga_govern.025.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.025.a
+		#compliance in mareland
+		add_timed_idea = {
+		    idea = ARA_magic_of_friendship
+			days = 360
+		}
+		custom_effect_tooltip = ARA_EQC_compliance_tooltip
+			hidden_effect = {
+		        357 = {
+					add_compliance = 50
+			    }
+				358 = {
+					add_compliance = 50
+			    }
+				354 = {
+					add_compliance = 50
+			    }
+				359 = {
+					add_compliance = 50
+			    }
+				356 = {
+					add_compliance = 50
+			    }
+				355 = {
+					add_compliance = 50
+			    }
+				675 = {
+					add_compliance = 50
+			    }
+				676 = {
+					add_compliance = 50
+			    }
+				360 = {
+					add_compliance = 50
+			    }
+				361 = {
+					add_compliance = 50
+			    }
+				362 = {
+					add_compliance = 50
+			    }
+				363 = {
+				    add_compliance = 50
+				}
+				364 = {
+					add_compliance = 50
+			    }
+				365 = {
+				    add_compliance = 50
+				}
+			}
+	}
+	option = {
+		name = 	arantiga_govern.025.b
+		#Mareland puppet under Soter
+		custom_effect_tooltip = ARA_EQC_puppet_soter_tooltip
+		ARA = {
+	        hidden_effect = {
+		        EQC ={
+				    transfer_state = 365
+				    transfer_state = 364
+				    transfer_state = 363
+				    transfer_state = 362
+				    transfer_state = 361
+				    transfer_state = 360
+				    transfer_state = 676
+				    transfer_state = 675
+				    transfer_state = 355
+				    transfer_state = 356
+				    transfer_state = 359
+					transfer_state = 358
+					transfer_state = 357
+					transfer_state = 354
+				}
+				ARA = {
+				  	puppet = EQC
+				    set_autonomy = { target = EQC autonomy_state = autonomy_satellite }
+                }
+				every_unit_leader = {
+				    limit = { has_id = 1334 }
+				    set_nationality = EQC
+				}
+				EQC ={
+					set_politics = {
+				        ruling_party = fascism
+				        elections_allowed = no
+			        }
+					retire_country_leader = yes
+				    create_country_leader = {
+				    	name = "Soter"
+				    	desc = "soter_president_desc"
+				    	picture = "gfx/leaders/ARA/Soter.tga"
+				    	ideology = fascism_ideology
+				    	traits = {
+				    	}
+				    }
+				}
+			}
+		}
+	}
+	option = {
+		name = 	arantiga_govern.025.c
+		#Demilitarized puppet Mareland under Jet Set
+		custom_effect_tooltip = ARA_EQC_puppet_jetset_tooltip
+        ARA = {
+	    hidden_effect = {
+	        EQC ={
+			    transfer_state = 365
+			    transfer_state = 364
+			    transfer_state = 363
+			    transfer_state = 362
+			    transfer_state = 361
+			    transfer_state = 360
+			    transfer_state = 676
+			    transfer_state = 675
+			    transfer_state = 355
+			    transfer_state = 356
+			    transfer_state = 359
+				transfer_state = 358
+				transfer_state = 357
+				transfer_state = 354
+			    ARA = {
+			    	puppet = EQC
+				    set_autonomy = { target = EQC autonomy_state = autonomy_satellite }
+			    }
+				EQC ={
+					set_politics = {
+				        ruling_party = democratic
+				        elections_allowed = no
+			        }
+					add_ideas = disarmed_nation
+				}
+		    }
+		}
+		}
+	}
+}
+ country_event = { # grf does not fold
+	id = arantiga_govern.026
+	title = arantiga_govern.026.t
+	desc = arantiga_govern.026.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.026.a #we fight
+		declare_war_on = { type = annex_everything    target = GRF }
+	    create_wargoal = {
+		    target = GFF
+			type = annex_everything
+		}
+	}
+	option = {
+		name = 	arantiga_govern.026.b #we wait
+	    create_wargoal = {
+		    target = GRF
+			type = annex_everything
+        }
+		create_wargoal = {
+		    target = GFF
+			type = annex_everything
+        }
+	}
+}
+ country_event = { # grf does fold
+	id = arantiga_govern.027
+	title = arantiga_govern.027.t
+	desc = arantiga_govern.027.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_griffon_soldier
+	option = {
+		name = 	arantiga_govern.027.a #awesome
+		ARA = {
+		    create_wargoal = {
+		        target = GFF
+		    	type = annex_everything
+		    }
+		}
+		ARA = { puppet = GRF }
+	}
+}
+
+country_event = { #Karthin - A New Name?
+	id = arantiga_decision.1
+	title = arantiga_decision.1.t
+	desc = arantiga_decision.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.1.a
+		set_province_name = { id = 3144 name = "Dorotheopolis" }
+	}
+	option = {
+		name = 	arantiga_decision.1.b
+		set_province_name = { id = 3144 name = "Arantiga" }
+	}
+}

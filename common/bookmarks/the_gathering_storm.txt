@@ -48,18 +48,15 @@ bookmarks = {
 				manifesto_of_materialism
 			}
 		}
-		"CHN"={
-			history = "CHN_GATHERING_STORM_DESC"
-			ideology = fascism
+		"WAT"={
+			history = "WAT_GATHERING_STORM_DESC"
+			ideology = communism
 			ideas = {
-				canterlot_defeat
-				political_divisions
-				CHN_GRI_Attache_For_CHN
+				WAT_holy_srings
+				WAT_council_of_keepers
+				WAT_industrialization1
 			}
 			focuses = {
-				unite_the_people
-				Chrysalis
-				demand_equestria
 			}
 		}
 		"HLQ"={
