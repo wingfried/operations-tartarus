@@ -1384,3 +1384,6 @@ soter_desc:0 "Soter Litori, the owl of Arantiga, was born in 980 in the forests 
 cassander_desc:0 ""Commando Cassander" as he's often called, is the Griffon in charge of the Divisione di Forze Speciali, also called "that place where money goes in and invisible griffons come out" by Dorotheos"
 lysimachus_desc:0 "Lysimachus is the newest addition to the Arantigan General Staff. A fanatic admirer of Dorotheos, he probably knows more about the Field Marshal than his own mother ever did. Able to inspire soldiers to almost the same level of zealotry as him, he is in charge of recruiting the new generation of Arantigans into the army"
 nicator_desc:0 "Nicator Whitebeak is second in both command and ego of the Arantigan army, after Dorotheos himself. Promoted by Duchess Margareth, Nicator is famous for his strategy of shelling the enemy to Tartarus, and being damn good at doing it too."
+
+### Traits ###
+arantiga_shield:0 "Shield of Arantiga"
