@@ -54,7 +54,7 @@ country_event = { #Project Panaceum
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = 	arantiga_decision.21.a
+		name = 	arantiga_decision.31.a
 		country_event = { id = arantiga_decision.22 days = 7 }
 	}
 }
@@ -103,14 +103,9 @@ country_event = { #Strange Coincidences
 		name = 	arantiga_decision.24.a
 		country_event = { id = arantiga_decision.25 days = 7 }
 	}
-
-	option = {
-		name = 	arantiga_decision.24.b
-		country_event = { id = arantiga_decision.201 days = 7 }
-	}
 }
 
-country_event = { #Phillip's Missing Link
+country_event = { #Ferrucio's Missing Link
 	id = arantiga_decision.25
 	title = arantiga_decision.25.t
 	desc = arantiga_decision.25.d
