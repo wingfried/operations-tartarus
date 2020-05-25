@@ -84,7 +84,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1000
+			factor = 100
 		}
 	}
 
@@ -130,7 +130,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1000
+			factor = 100
 		}
 	}
 
@@ -163,7 +163,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1000000
+			factor = 100
 		}
 	}
 
@@ -217,34 +217,39 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-
-				modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}
-	
-			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
+			factor = 3
 
 			modifier = {
-					factor = 1.5
-					num_divisions	> 50
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
-					}
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro > 10 }
+				}
 				
 			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}	
+					factor = 2
+					has_tech = support_weapons
+					}
+			modifier = {
+			factor = 2
+			has_war = yes
+			}				
+
+				modifier = {
+					factor = 0
+			OR = {
+				NOT = {
+					has_tech = basic_machine_tools					
+					}
+				NOT = {
+					has_tech = construction1					
+					}
+				NOT = {
+					has_tech = electronic_mechanical_engineering					
+					}
+					}
+				}
+															
 		}
 	}
 
@@ -280,31 +285,43 @@ technologies = {
 			factor = 3
 
 			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}	
-	
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro > 10 }
+				}
+				
 			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 50
+					factor = 2
+					has_tech = support_weapons
 					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
+				
+				modifier = {
+					factor = 0
+			OR = {
+				NOT = {
+					has_tech = basic_machine_tools					
+					}
+				NOT = {
+					has_tech = construction1					
+					}
+				NOT = {
+					has_tech = electronic_mechanical_engineering					
+					}
+					}
+				}
+				
+				modifier = {
+					add = 5
+					has_war = yes
 					}
 				
 			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}	
+				factor = 0
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 	
@@ -355,36 +372,26 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
 
 			modifier = {
-					factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}
-	
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro > 10 }
+				}
+			
 			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
-
+					add = 5
+					has_war = yes
+					}
+			
 			modifier = {
-					factor = 1.5
-					num_divisions	> 50
+					add = 5
+					has_tech = support_weapons2
 					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}	
-					}
-					}
+		}
+		}
 
 	magical_weapons = {
 
@@ -420,6 +427,7 @@ technologies = {
 								original_tag = CES
 								original_tag = NMS
 								original_tag = CHN
+								original_tag = NTR
 							}
 						}
 						load_oob = "unlock_magical_infantry_eqs"
@@ -478,39 +486,16 @@ technologies = {
 
 
 			modifier = {
-				factor = 1000
+				ADD = 15
 				has_completed_focus = CRY_SOL_military_of_the_inquisition
 			}
 			
 		modifier = {
-			factor = 1.5
-			crystals > 15
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 25
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 50
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 35
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 75
-		}
-		
-		modifier = {
-			factor = 2
-			crystals > 100
-		}
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@crystals}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@crystals}
+				check_variable = { resource_pro > 10 }
+				}
 		}
 		}
 		
@@ -554,43 +539,51 @@ technologies = {
 			factor = 2
 
 			modifier = {
-				factor = 2
+				factor = 3
 				OR = {
 					original_tag = EQS
 					original_tag = NLR
 					original_tag = CRY
 				}
 			}
+
+
+			modifier = {
+				ADD = 15
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
 			
 		modifier = {
-			factor = 1.5
-			crystals > 15
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 25
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 50
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 35
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 75
-		}
-		
-		modifier = {
-			factor = 2
-			crystals > 100
-		}
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@crystals}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@crystals}
+				check_variable = { resource_pro > 10 }
+				} 
+				
+			modifier = {
+				factor = 0	
+				set_temp_variable = {resource_pro = resource_produced@crystals}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@crystals}
+				check_variable = { resource_pro < 1 }
+				}
+				
+			modifier = {
+				factor = 0.5	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
+				
+			modifier = {
+				ADD = 5	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@magical_equipment}
+				check_variable = { temp_equip > 1000 }
+				}
+			modifier = {
+				ADD = 15
+				set_temp_variable = {temp_equip = num_equipment_in_armies@magical_equipment}
+				check_variable = { temp_equip > 10000 }
+				}
 		}
 		}
 
@@ -630,33 +623,41 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 2
+
 			modifier = {
-				factor = 0.6
-				is_major = no
-			}
-			modifier = {
-				factor = 2
+				factor = 3
 				OR = {
 					original_tag = EQS
 					original_tag = NLR
 					original_tag = CRY
 				}
 			}
-		modifier = {
-			factor = 2
-			crystals > 15
-		}
-		
-		modifier = {
-			factor = 2
-			crystals > 25
-		}
-		
-		modifier = {
-			factor = 2
-			crystals > 50
-		}
+
+
+			modifier = {
+				ADD = 15
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+			
+				
+			modifier = {
+				factor = 0.5	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
+				
+			modifier = {
+				ADD = 5	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@magical_equipment}
+				check_variable = { temp_equip > 1000 }
+				}
+			modifier = {
+				ADD = 15
+				set_temp_variable = {temp_equip = num_equipment_in_armies@magical_equipment}
+				check_variable = { temp_equip > 10000 }
+				}
 		}
 		}
 
@@ -690,47 +691,48 @@ technologies = {
 			magical_tech
 		}
 
-		ai_will_do = {
+	ai_will_do = {
 			factor = 2
 
 			modifier = {
-				factor = 2
+				factor = 3
 				OR = {
 					original_tag = EQS
 					original_tag = NLR
 					original_tag = CRY
 				}
 			}
+
+
+			modifier = {
+				ADD = 15
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
 			
-		modifier = {
-			factor = 1.5
-			crystals > 15
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 25
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 50
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 35
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 75
-		}
-		
-		modifier = {
-			factor = 2
-			crystals > 100
-		}
+			modifier = {
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@crystals}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@crystals}
+				check_variable = { resource_pro > 10 }
+				} 
+				
+			modifier = {
+				factor = 0	
+				set_temp_variable = {resource_pro = resource_produced@crystals}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@crystals}
+				check_variable = { resource_pro < 1 }
+				}
+				
+			modifier = {
+				ADD = 5	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@magical_equipment}
+				check_variable = { temp_equip > 1000 }
+				}
+			modifier = {
+				ADD = 15
+				set_temp_variable = {temp_equip = num_equipment_in_armies@magical_equipment}
+				check_variable = { temp_equip > 10000 }
+				}
 		}
 		}
 
@@ -864,36 +866,33 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
 
 			modifier = {
-					factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}
-	
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro > 10 }
+				}
+				
 			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
-
+				factor = 0	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
+				
 			modifier = {
-					factor = 1.5
-					num_divisions	> 50
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
+					add = 5
+					has_war = yes
 					}
 				
 			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}	
+					add = 5
+					has_tech = support_weapons3
 					}
-					}
+			}
+	}
 
 	###------> Old Infantry Equipment   <><> <><> <><> <><> <><>
 
@@ -932,36 +931,28 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-
-		modifier = {
-					factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}
-	
-			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
+			factor = 3
 
 			modifier = {
-					factor = 1.5
-					num_divisions	> 50
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
+					add = 5
+					has_war = yes
 					}
 				
 			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}	
+					add = 5
+					has_tech = support_weapons4
 					}
+			modifier = {
+					factor = 0.5
+					date < 1019.1.1
 					}
+							
+			modifier = {
+					add = 5
+					date > 1019.1.1
+					}
+			}
+		}
 
 	###------> X <><> <><> <><> <><> <><>
 
@@ -985,7 +976,7 @@ technologies = {
 		start_year = 1007
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1007 }
+			position = { x = 3 y = @1007 }
 		}
 
 		on_research_complete = {
@@ -1035,7 +1026,7 @@ technologies = {
 		start_year = 1010
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1010 }
+			position = { x = 3 y = @1010 }
 		}
 
 		on_research_complete = {
@@ -1075,7 +1066,7 @@ technologies = {
 		start_year = 1013
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1013 }
+			position = { x = 3 y = @1013 }
 		}
 
 		on_research_complete = {
@@ -1135,7 +1126,7 @@ technologies = {
 		start_year = 1007
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1007 }
+			position = { x = 3 y = @1007 }
 		}
 
 		categories = {
@@ -1185,7 +1176,7 @@ technologies = {
 		start_year = 1010
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1010 }
+			position = { x = 3 y = @1010 }
 		}
 
 		categories = {
@@ -1221,7 +1212,7 @@ technologies = {
 		start_year = 1013
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1013 }
+			position = { x = 3 y = @1013 }
 		}
 
 		categories = {
@@ -1272,7 +1263,7 @@ technologies = {
 		start_year = 1007
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1007 }
+			position = { x = 3 y = @1007 }
 		}
 
 		categories = {
@@ -1283,7 +1274,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1.2
-		}
 		modifier = {
 				factor = 0
 				original_tag = CHN
@@ -1307,10 +1297,9 @@ technologies = {
 			modifier = {
 					factor = 1.5
 					num_divisions	> 100
-					}	
-		
-		
-	}
+					}
+					}					
+				}
 
 	tech_mountaineers2 = {
 
@@ -1333,7 +1322,7 @@ technologies = {
 		start_year = 1010
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1010 }
+			position = { x = 3 y = @1010 }
 		}
 
 		categories = {
@@ -1376,7 +1365,7 @@ technologies = {
 		start_year = 1013
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1013 }
+			position = { x = 3 y = @1013 }
 		}
 
 		categories = {
@@ -1422,7 +1411,7 @@ technologies = {
 		start_year = 1007
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1007 }
+			position = { x = 4 y = @1007 }
 		}
 
 		categories = {
@@ -1468,7 +1457,7 @@ technologies = {
 		start_year = 1011
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1011 }
+			position = { x = 3 y = @1011 }
 		}
 
 		categories = {
@@ -1511,7 +1500,7 @@ technologies = {
 		start_year = 1011
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1011 }
+			position = { x = 5 y = @1011 }
 		}
 
 		categories = {
@@ -1558,7 +1547,7 @@ technologies = {
 		start_year = 1013
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1013 }
+			position = { x = 3 y = @1013 }
 		}
 
 		categories = {
@@ -1603,7 +1592,7 @@ technologies = {
 		start_year = 1013
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1013 }
+			position = { x = 5 y = @1013 }
 		}
 
 		categories = {
@@ -1644,7 +1633,7 @@ technologies = {
 		start_year = 1015
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1015 }
+			position = { x = 4 y = @1015 }
 		}
 
 		categories = {
@@ -1744,28 +1733,13 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
-
+			factor = 1
+			
 			modifier = {
-				factor = 2
-				date > "1013.1.9"
+				ADD = 15
+				date > "1015.1.1"
 			}
-
-			modifier = {
-				factor = 2
-				date > "1014.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1014.1.6"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1017.1.1"
-			}
-			}
+		}
 			}
 
 	#Jumps Out of Order to SWB
@@ -1790,21 +1764,11 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
-
+			factor = 1
+			
 			modifier = {
-				factor = 2
-				date > "1016.1.9"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1017.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1017.1.6"
+				ADD = 15
+				date > "1019.1.1"
 			}
 		}
 	}
@@ -1851,14 +1815,27 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 
+			
 			modifier = {
-				factor = 2
-				num_divisions > 25
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
 			}
 			
 			modifier = {
-				factor = 2
-				has_tech > infantry_weapons
+				ADD = 5
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
 			}
 
 			modifier = {
@@ -1867,12 +1844,8 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 2
-				date > "1010.1.1"
-			}
-			modifier = {
 				has_war = yes
-				factor = 2
+				factor = 3
 			}
 		}
 	}
@@ -1915,42 +1888,25 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1009.1.6"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1010.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1011.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1012.1.1"
-			}
+			factor = 2
 			
+			modifier = {
+				ADD = 5
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+			}
+
+			modifier = {
+				factor = 2
+				date > "1009.1.1"
+			}
+
 			modifier = {
 				has_war = yes
-				factor = 2
+				factor = 3
 			}
-						modifier = {
-				factor = 2
-				num_divisions > 35
-			}
-			
-			modifier = {
-				factor = 2
-				has_tech > infantry_weapons1
-			}						
-			}
+		}
 			}
 
 	support_weapons3 = {
@@ -1991,41 +1947,25 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1011.1.6"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1012.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1013.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1014.1.1"
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-					modifier = {
-				factor = 2
-				num_divisions > 25
-			}
+			factor = 2
 			
 			modifier = {
-				factor = 2
-				has_tech > improved_infantry_weapons
-			}				
+				ADD = 5
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
 			}
+
+			modifier = {
+				factor = 2
+				date > "1011.1.1"
+			}
+
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+		}
 			}
 	
 	###------> Old Support Weapons   <><> <><> <><> <><> <><>
@@ -2068,39 +2008,36 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-
-
-
+			factor = 2
+			
 			modifier = {
-				factor = 2
-				date > "1014.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1015.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1016.1.1"
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 75
+				ADD = 5
+				AND = {
+				has_tech = improved_computing_machine
+				has_tech = construction4
+				has_tech = dispersed_industry3
+				}
 			}
 			
 			modifier = {
+				ADD = 5
+			AND = {
+				has_tech = advanced_computing_machine
+				has_tech = atomic_research
+				}
+			}
+
+			modifier = {
+				factor = 2
+				date > "1013.1.1"
+			}
+
+			modifier = {
+				has_war = yes
 				factor = 3
-				has_tech > advanced_infantry_weapons
-			}						
 			}
-			}
+		}
+	}
 
 	motorised_infantry = {
 
@@ -2141,6 +2078,10 @@ technologies = {
 			leads_to_tech = mechanised_infantry
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = armored_car1
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2
 		start_year = 1007
@@ -2164,21 +2105,31 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 3
 
 			modifier = {
-				factor = 2
+				add = 2
 				has_tech = gwtank
 			}
 
 			modifier = {
-				factor = 100
+				ADD = 5
 				has_tech = basic_light_tank
+			}
+			
+			modifier = {
+				ADD = 15
+				has_tech = improved_light_tank
 			}
 
 			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@rubber < 4 }
+			}
+			
+			modifier = {
 				factor = 0
-				rubber < 1 
+				check_variable = { resource_produced@rubber < 1 }
 			}
 			}
 			}
@@ -2196,11 +2147,200 @@ technologies = {
 		start_year = 1010
 
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 
 		categories = {
 			mot_rockets
+		}
+	}
+
+	armored_car1 = {
+
+		enable_subunits = {
+			armored_car
+		}
+
+		enable_equipments = {
+			gw_armored_car_equipment
+		}
+		allow_branch = { has_dlc = "La Resistance" }
+		path = {
+			leads_to_tech = armored_car2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1007
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1007 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1008.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1009.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1010.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	armored_car2 = {
+
+		enable_equipments = {
+			armored_car_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = armored_car3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1011
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1011 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1012.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1013.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1014.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	armored_car3 = {
+
+		enable_equipments = {
+			armored_car_equipment_2
+		}
+		path = {
+			leads_to_tech = armored_car4
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1013
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1013 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+		}
+		
+		sub_technologies = {
+			armored_car_at_upgrade
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1014.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1016.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	armored_car_at_upgrade = {
+
+		enable_subunits = {
+			at_armored_car
+		}
+		enable_equipments = {
+			armored_car_at_equipment
+		}
+
+		research_cost = 1
+		start_year = 1013
+		sub_tech_index = 1
+		
+		categories = {
+			motorized_equipment
+			armor
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1014.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1016.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
 		}
 	}
 
@@ -2248,17 +2388,27 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-
+			factor = 1
+		
+		modifier = {
+				factor = 0
+				date < 1011.6.6
+			}
+		
 			modifier = {
-				factor = 20
+				ADD = 20
 				has_tech = basic_medium_tank
 			}
 			
+		modifier = {
+				ADD = 10
+				can_research = improved_medium_tank
+			}
+			
 			modifier = {
-				factor = 0
-				rubber < 2
-		}
+				ADD = 10
+				is_researching_technology = improved_medium_tank
+			}
 		}
 		}
 
@@ -2316,7 +2466,10 @@ technologies = {
 			amphibious_mechanized_equipment_2
 		}
 
-		
+		path = {
+			leads_to_tech = amphibious_mechanized_infantry_3
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2
 		start_year = 1015
@@ -2373,6 +2526,26 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+
+		
+			modifier = {
+				ADD = 5	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@mechanized_equipment}
+				check_variable = { temp_equip > 250 }
+				}
+			
+			modifier = {
+				ADD = 15	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@mechanized_equipment}
+				check_variable = { temp_equip > 100 }
+				}	
+			
+			modifier = {
+				factor = 0.5
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -2409,6 +2582,25 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+		
+			modifier = {
+				ADD = 5	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@mechanized_equipment}
+				check_variable = { temp_equip > 250 }
+				}
+			
+			modifier = {
+				ADD = 15	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@mechanized_equipment}
+				check_variable = { temp_equip > 100 }
+				}	
+			
+			modifier = {
+				factor = 0.5
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -2445,6 +2637,26 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+
+		
+			modifier = {
+				ADD = 5	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@mechanized_equipment}
+				check_variable = { temp_equip > 250 }
+				}
+			
+			modifier = {
+				ADD = 15	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@mechanized_equipment}
+				check_variable = { temp_equip > 100 }
+				}	
+			
+			modifier = {
+				factor = 0.5
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -2474,10 +2686,160 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+
+		
+			modifier = {
+				ADD = 5	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@mechanized_equipment}
+				check_variable = { temp_equip > 250 }
+				}
+			
+			modifier = {
+				ADD = 15	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@mechanized_equipment}
+				check_variable = { temp_equip > 100 }
+				}	
+			
+			modifier = {
+				factor = 0
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
-	###------> X   <><> <><> <><> <><> <><>
+	###------> New Amracs <><> <><> <><> <><> <><>
+
+	amphibious_mechanized_infantry_3 = {
+
+		enable_equipments = {
+			amphibious_mechanized_equipment_3
+		}
+
+		amphibious_mechanized = {
+			soft_attack = 0.15
+			hard_attack = 0.15
+		}
+
+		path = {
+			leads_to_tech = amphibious_mechanized_infantry_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1018
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1018 }
+		}
+
+		categories = {
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+			tp_tech
+			marine_tech
+			special_forces_tech
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+			modifier = {
+				any_controlled_state_is_coastal = no
+				factor = 0
+			}
+		}
+	}
+
+	amphibious_mechanized_infantry_4 = {
+
+		enable_equipments = {
+			amphibious_mechanized_equipment_4
+		}
+
+		amphibious_mechanized = {
+			soft_attack = 0.15
+			hard_attack = 0.15
+		}
+
+		path = {
+			leads_to_tech = amphibious_mechanized_infantry_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1021
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1021 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+			tp_tech
+			marine_tech
+			special_forces_tech
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+			modifier = {
+				any_controlled_state_is_coastal = no
+				factor = 0
+			}
+		}
+	}
+
+	amphibious_mechanized_infantry_5 = {
+
+		enable_equipments = {
+			amphibious_mechanized_equipment_5
+		}
+
+		amphibious_mechanized = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+
+		research_cost = 2
+		start_year = 1024
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1024 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+			tp_tech
+			marine_tech
+			special_forces_tech
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+			modifier = {
+				any_controlled_state_is_coastal = no
+				factor = 0
+			}
+		}
+	}
 
 	###------> New Infantry Equipment <><> <><> <><> <><> <><>
 
@@ -2519,8 +2881,35 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-		}
+			factor = 3
+
+			modifier = {
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro > 10 }
+				}
+				
+				
+			modifier = {
+					add = 5
+					has_war = yes
+					}
+				
+			modifier = {
+					add = 5
+					has_tech = support_weapons4
+					}
+			modifier = {
+					factor = 0.5
+					date < 1019.1.1
+					}
+							
+			modifier = {
+					add = 5
+					date > 1019.1.1
+					}
+			}
 	}
 
 	advanced_infantry_weapons_b = {
@@ -2546,8 +2935,32 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-		}
+			factor = 3
+
+			modifier = {
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro > 10 }
+				}
+				
+			modifier = {
+				factor = 0	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
+				
+			modifier = {
+					add = 5
+					has_war = yes
+					}
+				
+			modifier = {
+					add = 5
+					has_tech = support_weapons_a
+					}
+			}
 	}
 
 	advanced_infantry_weapons_c = {
@@ -2583,8 +2996,29 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-		}
+			factor = 3
+			
+			modifier = {
+					factor = 0.5
+					date < 1025.1.1
+					}
+							
+			modifier = {
+					add = 5
+					date > 1025.1.1
+					}
+					
+				
+			modifier = {
+					add = 5
+					has_war = yes
+					}
+				
+			modifier = {
+					add = 5
+					has_tech = night_vision2
+					}
+			}
 	}
 
 	advanced_infantry_weapons_d = {
@@ -2624,8 +3058,36 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-		}
+			factor = 3
+
+			modifier = {
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro > 10 }
+				}
+			
+			modifier = {
+					factor = 0.5
+					date < 1025.1.1
+					}
+							
+			modifier = {
+					add = 5
+					date > 1025.1.1
+					}
+					
+				
+			modifier = {
+					add = 5
+					has_war = yes
+					}
+				
+			modifier = {
+					add = 5
+					has_tech = support_weapons_b
+					}
+			}
 	}
 
 	advanced_infantry_weapons_e = {
@@ -2646,8 +3108,43 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-		}
+			factor = 3
+
+			modifier = {
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro > 10 }
+				}
+				
+			modifier = {
+				factor = 0	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
+			
+			modifier = {
+					factor = 0.5
+					date < 1025.1.1
+					}
+							
+			modifier = {
+					add = 5
+					date > 1025.1.1
+					}
+					
+				
+			modifier = {
+					add = 5
+					has_war = yes
+					}
+				
+			modifier = {
+					add = 5
+					has_tech = night_vision
+					}
+			}
 	}
 
 	###------> New Infantry Anti-Tank   <><> <><> <><> <><> <><>
@@ -2676,7 +3173,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
 	}
 
@@ -2704,7 +3201,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
 		}
 	}
 
@@ -2727,7 +3224,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
 		}
 	}
 
@@ -2750,7 +3247,7 @@ technologies = {
 		start_year = 1016
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1016 }
+			position = { x = 3 y = @1016 }
 		}
 
 		on_research_complete = {
@@ -2788,7 +3285,7 @@ technologies = {
 		start_year = 1020
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1020 }
+			position = { x = 3 y = @1020 }
 		}
 
 		on_research_complete = {
@@ -2821,7 +3318,7 @@ technologies = {
 		start_year = 1024
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1024 }
+			position = { x = 3 y = @1024 }
 		}
 
 		on_research_complete = {
@@ -2869,7 +3366,7 @@ technologies = {
 		start_year = 1016
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1016 }
+			position = { x = 3 y = @1016 }
 		}
 
 		categories = {
@@ -2903,7 +3400,7 @@ technologies = {
 		start_year = 1020
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1020 }
+			position = { x = 3 y = @1020 }
 		}
 
 		categories = {
@@ -2926,7 +3423,7 @@ technologies = {
 		start_year = 1024
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1024 }
+			position = { x = 3 y = @1024 }
 		}
 
 		on_research_complete = {
@@ -2971,7 +3468,7 @@ technologies = {
 		start_year = 1016
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1016 }
+			position = { x = 3 y = @1016 }
 		}
 
 		categories = {
@@ -3006,7 +3503,7 @@ technologies = {
 		start_year = 1020
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1020 }
+			position = { x = 3 y = @1020 }
 		}
 
 		categories = {
@@ -3030,7 +3527,7 @@ technologies = {
 		start_year = 1024
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1024 }
+			position = { x = 3 y = @1024 }
 		}
 
 		on_research_complete = {
@@ -3092,30 +3589,33 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 			
-			
-		modifier = {
-			factor = 5
-			has_tech = advanced_infantry_weapons_a
+			modifier = {
+				ADD = 5
+				AND = {
+				has_tech = future_computing_machine
+				has_tech = construction5
+				has_tech = dispersed_industry5
+				}
 			}
-		modifier = {
-			factor = 2
-			num_divisions > 50
+			
+			modifier = {
+				ADD = 5
+			AND = {
+				has_tech = future_computing_machine
+				has_tech = atomic_research
+				}
+			}
+
+			modifier = {
+				factor = 2
+				date > "1017.1.1"
+			}
+
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
 		}
-		modifier = {
-			factor = 2
-			num_divisions > 75
-		}
-		
-		modifier = {
-			factor = 2
-			num_divisions > 100
-		}
-		
-		modifier = {
-			factor = 2
-			num_divisions > 120
-		}
-	}
 	}
 
 	support_weapons_b = {
@@ -3157,15 +3657,33 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-		}
-		
-		modifier = {
-			factor = 2
-			has_tech = advanced_infantry_weapons_b
+			
+			modifier = {
+				ADD = 5
+				AND = {
+				has_tech = future_computing_machine
+				has_tech = construction5
+				has_tech = dispersed_industry5
+				}
 			}
-		modifier = {
-			factor = 2
-			num_divisions > 50
+			
+			modifier = {
+				ADD = 5
+			AND = {
+				has_tech = future_computing_machine
+				has_tech = atomic_research
+				}
+			}
+
+			modifier = {
+				ADD = 10
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
 		}
 	}
 
@@ -3189,32 +3707,13 @@ technologies = {
 			night_vision
 		}
 
-		ai_will_do = {
-			factor = 4
+	ai_will_do = {
+			factor = 1
 			
-		modifier = {
-			factor = 5
-			has_tech = advanced_infantry_weapons_b
+			modifier = {
+				ADD = 15
+				date > "1023.1.1"
 			}
-			
-		modifier = {
-			factor = 2
-			num_divisions > 50
-		}
-		modifier = {
-			factor = 2
-			num_divisions > 75
-		}
-		
-		modifier = {
-			factor = 2
-			num_divisions > 100
-		}
-		
-		modifier = {
-			factor = 2
-			num_divisions > 120
-		}
 		}
 	}
 
@@ -3250,36 +3749,147 @@ technologies = {
 			infantry_weapons
 		}
 
-	ai_will_do = {
-			factor = 4
+		ai_will_do = {
+			factor = 2
 			
-		modifier = {
-			factor = 5
-			has_tech = advanced_infantry_weapons_b
+			modifier = {
+				ADD = 5
+				AND = {
+				has_tech = future_computing_machine
+				has_tech = construction5
+				has_tech = dispersed_industry5
+				}
 			}
 			
-		modifier = {
-			factor = 2
-			num_divisions > 50
-		}
-		modifier = {
-			factor = 2
-			num_divisions > 75
-		}
-		
-		modifier = {
-			factor = 2
-			num_divisions > 100
-		}
-		
-		modifier = {
-			factor = 2
-			num_divisions > 120
-		}
+			modifier = {
+				ADD = 5
+			AND = {
+				has_tech = future_computing_machine
+				has_tech = atomic_research
+				}
+			}
+
+			modifier = {
+				ADD = 10
+				date > "1025.1.1"
+			}
+
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
 		}
 	}
 
 	###------> X   <><> <><> <><> <><> <><>
+	
+	###------> New Armored Cars <><> <><> <><> <><> <><>
+
+	armored_car4 = {
+
+		enable_equipments = {
+			armored_car_equipment_3
+		}
+
+		armored_car = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = armored_car5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1020
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1020 }
+		}
+
+		categories = {
+			motorized_equipment
+			armor
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armored_car5 = {
+
+		enable_equipments = {
+			armored_car_equipment_4
+		}
+		
+		armored_car = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}		
+
+		research_cost = 3
+		start_year = 1024
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1024 }
+		}
+
+		categories = {
+			motorized_equipment
+			armor
+		}
+		
+		sub_technologies = {
+			armored_car_at_upgrade2
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armored_car_at_upgrade2 = {
+
+		enable_equipments = {
+			armored_car_at_equipment2
+		}
+
+		research_cost = 1
+		start_year = 1024
+		sub_tech_index = 1
+		
+		categories = {
+			motorized_equipment
+			armor
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1025.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1026.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1027.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	###------> X <><> <><> <><> <><> <><>
 
 }
 

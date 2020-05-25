@@ -29,6 +29,10 @@ technologies = {
 			always = no
 		}
 
+		recon = {
+			maximum_speed = 0.3
+		}
+		
 		ai_will_do = {
 			factor = 20000000
 		}
@@ -118,16 +122,38 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-
+			factor = 3
+			
 			modifier = {
-				factor = 1.5
-				date > "1007.1.1"
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
 			}
-
+			}
+			
 			modifier = {
-				factor = 2
-				date > "1008.1.1"
+				ADD = 5
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+			}
+			
+			modifier = {
+			factor = 0
+			aluminium < 2
+			}
+	
+			modifier = {
+				has_war = yes
+				factor = 3
 			}
 		}
 	}
@@ -164,16 +190,29 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-
+			factor = 3
+			
 			modifier = {
-				factor = 1.5
-				date > "1013.1.1"
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
 			}
-
+			}
+			
 			modifier = {
-				factor = 2
-				date > "1014.1.1"
+				ADD = 2
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				has_tech = support_weapons
 			}
 		}
 	}
@@ -212,16 +251,30 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-
+			
 			modifier = {
-				factor = 1.5
-				date > "1016.1.1"
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				ADD = 2
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				has_tech = improved_infantry_weapons
 			}
 
-			modifier = {
-				factor = 2
-				date > "1017.1.1"
-			}
 		}
 	}
 
@@ -257,17 +310,31 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-
+			factor = 1
+			
 			modifier = {
-				factor = 1.5
-				date > "1020.1.1"
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				ADD = 2
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				has_tech = improved_infantry_weapons
 			}
 
-			modifier = {
-				factor = 2
-				date > "1021.1.1"
-			}
 		}
 	}
 
@@ -298,16 +365,34 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-
+			factor = 1
+			
 			modifier = {
-				factor = 1.5
-				date > "1024.1.1"
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				ADD = 5
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				has_tech = improved_infantry_weapons
 			}
 
 			modifier = {
-				factor = 2
-				date > "1025.1.1"
+				has_war = yes
+				factor = 3
 			}
 		}
 	}
@@ -339,7 +424,31 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 10
+			factor = 20
+			
+		modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				is_researching_technology = construction1
+				}
+			NOT = {
+				is_researching_technology = electronic_mechanical_engineering
+				has_tech = electronic_mechanical_engineering
+				}
+			}
+			}
+				
+		modifier = {
+			factor = 0.5
+			num_of_military_factories < 10			
+			}
+		
+		modifier = {
+			factor = 0
+			num_of_military_factories < 5		
+			}		
 		}
 	}
 
@@ -365,21 +474,95 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 2
-				arms_factory > 50
-			}
+			factor = 5
 			
-			modifier = {
-				factor = 2
-				arms_factory > 75
-			}
+	modifier = {
+		add = 5
+	AND = {
+		has_idea = free_trade
+		check_variable = { resource_exported@rubber > 7 }
+		check_variable = { resource_exported@aluminium > 7 }
+		check_variable = { resource_exported@tungsten > 7 }
+		check_variable = { resource_exported@steel > 7 }
+		check_variable = { resource_exported@chromium > 7 }
+		}
+}	
 			
-		modifier = {
-			factor = 2
-			arms_factory > 100
+
+	modifier = {
+		factor = 3
+			AND = {			
+			check_variable = { resource_imported@rubber > 1 }
+			check_variable = { resource_produced@rubber > 10 }
 			}
+}
+
+
+	modifier = {
+		factor = 3	
+			AND = {			
+			check_variable = { resource_imported@aluminium > 1 }
+			check_variable = { resource_produced@aluminium > 10 }
+			}
+}
+
+
+	modifier = {
+		factor = 3	
+			AND = {			
+			check_variable = { resource_imported@chromium > 1 }
+			check_variable = { resource_produced@chromium > 10 }
+			}
+}
+
+	modifier = {
+		factor = 3	
+			AND = {			
+			check_variable = { resource_imported@steel > 1 }
+			check_variable = { resource_produced@steel > 10 }
+			}
+}
+
+	modifier = {
+		factor = 3	
+			AND = {			
+			check_variable = { resource_imported@tungsten > 1 }
+			check_variable = { resource_produced@tungsten > 10 }
+			}
+}
+
+	modifier = {
+		factor = 0
+			NOT = {			
+			check_variable = { resource_imported@rubber > 1 }
+			check_variable = { resource_imported@aluminium > 1 }
+			check_variable = { resource_imported@tungsten > 1 }
+			check_variable = { resource_imported@steel > 1 }
+			check_variable = { resource_imported@chromium > 1 }
+			has_idea = free_trade
+}
+}
+			modifier = {
+				add = 2				
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				add_to_temp_variable = { resource_pro = resource_produced@chromium}
+				add_to_temp_variable = { resource_pro = resource_produced@crystals}
+				add_to_temp_variable = { resource_pro = resource_produced@rubber}
+				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
+				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
+				check_variable = { resource_pro > 50 }
+				}
+				
+			modifier = {
+				add = 3
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				add_to_temp_variable = { resource_pro = resource_produced@chromium}
+				add_to_temp_variable = { resource_pro = resource_produced@crystals}
+				add_to_temp_variable = { resource_pro = resource_produced@rubber}
+				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
+				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
+				check_variable = { resource_pro > 100 }
+				}									
 		}
 	}
 
@@ -403,12 +586,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 2.5
+	
+		modifier = {
+				add = 3
 				enemies_strength_ratio > 1
 			}
+			
 		modifier = {
-			factor = 2.5
+			add = 10
 			enemies_strength_ratio > 1.5
 			}
 		}
@@ -440,14 +625,18 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1.5
-			modifier = {
-				factor = 1.5
-				has_war = yes
-				date > 1011.1.1
+			factor = 1
+	
+	modifier = {			
+		add = 10		
+	any_owned_state = {
+		NOT = {
+			is_core_of = ROOT
 			}
 			}
-			}
+		}
+	}
+}
 
 	tech_changeling_b2 = {
 
@@ -477,13 +666,22 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1.5
-			modifier = {
-				factor = 1.5
-				has_template_containing_unit = field_hospital
+			factor = 1
+			
+		modifier = {
+			add = 10
+			has_template_containing_unit = field_hospital
 			}
-		}
+			
+		modifier = {
+			add = 5
+		AND = {
+			manpower_per_military_factory < 5000
+			has_idea = extensive_conscription
+			}
+		}	
 	}
+}
 
 	tech_changeling_b3 = {
 
@@ -502,8 +700,26 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 1
+
+		modifier = {
+			add = 15
+		AND = {
+			has_idea = extensive_conscription
+			has_idea = service_by_requirement
+			has_idea = all_adults_serve
+			has_idea = scraping_the_barrel
+			}
 		}
+			
+		modifier = {
+			add = 10
+		AND = {
+			manpower_per_military_factory < 5000
+			has_idea = limited_conscription
+			}
+		}	
+	}
 	}
 
 	tech_changeling_c = {
@@ -536,11 +752,14 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1.5
+			factor = 1
 			
 		modifier = {
-			factor = 2
-			has_template_majority_unit = magical_infantry
+			add = 5
+			has_tech = magical_weapons
+			has_tech = magical_weapons1
+			has_tech = magical_weapons2
+			has_tech = magical_weapons3
 		}
 		}
 	}
@@ -574,17 +793,11 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 2
-				has_tech = fighter2
-				}
+			
 		modifier = {
-				factor = 1.5
-				has_deployed_air_force_size = {
-				size > 500
-				type = fighter
-				}
-				}				
+		add = 5
+		has_tech = mobile_warfare
+		}	
 		}
 	}
 
@@ -652,36 +865,48 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 5
-
+			factor = 3
+			
 			modifier = {
-				factor = 1.2
-				date > "1008.1.1"
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				ADD = 5
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
 			}
 
 			modifier = {
-				factor = 2
-				date > "1009.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1010.1.1"
+				has_war = yes
+				factor = 3
 			}
 		}
 	}
 
 	tech_infiltrators_di = {
 
-		xor = {
-			tech_infiltrators_si
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
 		}
 
-		recon = {
+		category_recon = {
 			recon = 2
 		}
 		military_police = {
-			suppression_factor = 0.3
+			suppression_factor = 0.15
 		}
 
 		path = {
@@ -772,7 +997,7 @@ technologies = {
 	tech_infiltrators_di3 = {
 
 		decryption_factor = 0.25
-		enemy_partisan_effect = -0.15
+		resistance_damage_to_garrison = -0.15
 
 		path = {
 			leads_to_tech = tech_infiltrators_di4
@@ -858,10 +1083,10 @@ technologies = {
 
 	tech_infiltrators_si = {
 
-		xor = {
-			tech_infiltrators_di
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
 		}
-
+		
 		decryption_factor = 0.05
 
 		infiltrator_company = {
@@ -893,17 +1118,11 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
-
-
-			modifier = {
-				factor = 1.5
-				date > "1011.1.1"
-			}
+			factor = 1
 
 			modifier = {
-				factor = 3
-				date > "1012.1.1"
+				add = 5
+				has_tech = magical_weapons
 			}
 		}
 	}
@@ -939,18 +1158,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
-
-
-			modifier = {
-				factor = 1.5
-				date > "1012.1.1"
-			}
-
-			modifier = {
-				factor = 3
-				date > "1013.1.1"
-			}
+			factor = 5
 		}
 	}
 
@@ -961,7 +1169,7 @@ technologies = {
 			hard_attack = 0.6
 		}
 
-		partisan_effect = 0.15
+		resistance_growth_on_our_occupied_states = 0.15
 
 		path = {
 			leads_to_tech = tech_infiltrators_si4
@@ -988,18 +1196,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
-
-
-			modifier = {
-				factor = 1.5
-				date > "1014.1.1"
-			}
-
-			modifier = {
-				factor = 3
-				date > "1015.1.1"
-			}
+			factor = 5
 		}
 	}
 
@@ -1039,14 +1236,383 @@ technologies = {
 		}
 
 		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	tech_infiltrators_di_lar = {
+
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+	
+		category_recon = {
+			recon = 2
+		}
+		military_police = {
+			suppression_factor = 0.15
+		}
+	
+		path = {
+			leads_to_tech = tech_infiltrators_di2_lar
+			research_cost_coeff = 1
+		}
+	
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+	
+		research_cost = 1
+		start_year = 1007
+		folder = {
+			name = changeling_folder
+			position = { x = 6  y = 2 }
+		}
+	
+		categories = {
+			magical_tech
+			infiltrator_tech
+			race_tech
+		}
+	
+		ai_will_do = {
 			factor = 3
-
-
+	
+	
+			modifier = {
+				factor = 1.5
+				date > "1011.1.1"
+			}
+	
+			modifier = {
+				factor = 3
+				date > "1012.1.1"
+			}
+		}
+	}
+	
+	tech_infiltrators_di2_lar = {
+	
+		enemy_army_bonus_air_superiority_factor = -0.10
+		own_operative_detection_chance = -0.15
+	
+		path = {
+			leads_to_tech = tech_infiltrators_di3_lar
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = changeling_folder
+			position = { x = 6  y = 4 }
+		}
+	
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+	
+		categories = {
+			magical_tech
+			infiltrator_tech
+			race_tech
+		}
+	
+		ai_will_do = {
+			factor = 3
+	
+	
+			modifier = {
+				factor = 1.5
+				date > "1012.1.1"
+			}
+	
+			modifier = {
+				factor = 3
+				date > "1013.1.1"
+			}
+		}
+	}
+	
+	tech_infiltrators_di3_lar = {
+	
+		intel_network_gain_factor = 0.1
+		resistance_damage_to_garrison = -0.1
+	
+		path = {
+			leads_to_tech = tech_infiltrators_di4_lar
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = changeling_folder
+			position = { x = 6  y = 6}
+		}
+	
+		categories = {
+			magical_tech
+			infiltrator_tech
+			race_tech
+		}
+	
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+	
+		ai_will_do = {
+			factor = 3
+	
+	
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+	
+			modifier = {
+				factor = 3
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_infiltrators_di4_lar = {
+	
+		operative_slot = 2
+	
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = changeling_folder
+			position = { x = 6  y = 8 }
+		}
+	
+		categories = {
+			magical_tech
+			infiltrator_tech
+			race_tech
+		}
+	
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+	
+		ai_will_do = {
+			factor = 3
+	
+	
 			modifier = {
 				factor = 1.5
 				date > "1017.1.1"
 			}
-
+	
+			modifier = {
+				factor = 3
+				date > "1018.1.1"
+			}
+		}
+	}
+	
+	tech_infiltrators_si_lar = {
+	
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+		
+		infiltrator_company = {
+			breakthrough = 1
+		}
+	
+		path = {
+			leads_to_tech = tech_infiltrators_si2_lar
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1007
+		folder = {
+			name = changeling_folder
+			position = { x = 10  y = 2}
+		}
+	
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+	
+		categories = {
+			magical_tech
+			infiltrator_tech
+			race_tech
+		}
+	
+		ai_will_do = {
+			factor = 3
+	
+	
+			modifier = {
+				factor = 1.5
+				date > "1011.1.1"
+			}
+	
+			modifier = {
+				factor = 3
+				date > "1012.1.1"
+			}
+		}
+	}
+	
+	tech_infiltrators_si2_lar = {
+	
+		infiltrator_company = {
+			initiative = 0.25
+		}
+		
+	
+		path = {
+			leads_to_tech = tech_infiltrators_si3_lar
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = changeling_folder
+			position = { x = 10  y = 4 }
+		}
+	
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+	
+		categories = {
+			magical_tech
+			infiltrator_tech
+			race_tech
+		}
+	
+		ai_will_do = {
+			factor = 3
+	
+	
+			modifier = {
+				factor = 1.5
+				date > "1012.1.1"
+			}
+	
+			modifier = {
+				factor = 3
+				date > "1013.1.1"
+			}
+		}
+	}
+	
+	tech_infiltrators_si3_lar = {
+	
+		infiltrator_company = {
+			soft_attack = 0.6
+			hard_attack = 0.6
+		}
+	
+		target_sabotage_factor = 0.1
+		boost_resistance_factor = 0.1
+	
+		path = {
+			leads_to_tech = tech_infiltrators_si4_lar
+			research_cost_coeff = 1
+		}
+	
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+	
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = changeling_folder
+			position = { x = 10  y = 6}
+		}
+	
+		categories = {
+			magical_tech
+			infiltrator_tech
+			race_tech
+		}
+	
+		ai_will_do = {
+			factor = 3
+	
+	
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+	
+			modifier = {
+				factor = 3
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_infiltrators_si4_lar = {
+	
+		own_operative_detection_chance_factor = -0.15
+		enemy_operative_detection_chance_factor = 0.05
+		infiltrator_company = {
+			recon = 2
+	
+			urban = {
+				attack = 0.25
+			}
+	
+			fort = {
+				attack = 0.15
+			}
+		}
+	
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = changeling_folder
+			position = { x = 10  y = 8}
+		}
+	
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+	
+		categories = {
+			magical_tech
+			infiltrator_tech
+			race_tech
+		}
+	
+		ai_will_do = {
+			factor = 3
+	
+	
+			modifier = {
+				factor = 1.5
+				date > "1017.1.1"
+			}
+	
 			modifier = {
 				factor = 2
 				date > "1018.1.1"

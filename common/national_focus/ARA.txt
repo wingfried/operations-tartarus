@@ -256,7 +256,7 @@
 	        ### Navy ###
 		shared_focus = {
 		id = ARA_rumare_exercises
-		icon = GFX_focus_unknown
+		icon = GFX_goal_naval_effort
 		x = -20
 		y = 0
 		cost = 10.00

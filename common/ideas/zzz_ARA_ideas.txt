@@ -986,7 +986,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = idea_no_poverty
+			picture = no_poverty
 			removal_cost = -1
 			modifier = {
 			conscription_factor = 0.05

@@ -2,6 +2,7 @@ ideas = {
 
 	economy = {
 		law = yes
+		use_list_view = yes
 		undisturbed_isolation = {
 
 			allowed = {
@@ -38,6 +39,7 @@ ideas = {
 				guarantee_tension = 0.75
 				max_fuel_factor = -0.45
 				fuel_gain_factor = -0.6
+				agency_upgrade_time = 1.0
 			}
 
 			allowed_to_remove = {
@@ -86,6 +88,7 @@ ideas = {
 				guarantee_tension = 0.5
 				max_fuel_factor = -0.35
 				fuel_gain_factor = -0.5
+				agency_upgrade_time = 0.8
 			}
 			allowed_to_remove = {
 				OR = {
@@ -269,7 +272,7 @@ ideas = {
 				modifier = { 
 					factor = 5
 					any_neighbor_country = {
-					has_added_tension_amount = 1
+					has_added_tension_amount > 1
 					}
 					}
 					
@@ -312,11 +315,7 @@ ideas = {
 				has_tech = mechanical_computing
 				}
 				}
-				
-				modifier = {
-					factor = 0.5
-				check_variable = { resource_imported@steel > 0 }
-			}
+
 		}
 		}
 
@@ -381,37 +380,36 @@ ideas = {
 			ai_will_do = {
 				factor = 5
 
-				modifier = {
-					factor = 2.5
-					industrial_complex > 15
-					}
-					
-				modifier = {
-					factor = 2.5
-					industrial_complex > 30
-					}
+				
+			modifier = {
+				add = 50
+				stockpile_ratio  = { archetype = infantry_equipment ratio < 0.01 }
+				enemies_strength_ratio > 0.5				
+				}
+				
+			modifier = {
+				add = 15
+				stockpile_ratio  = { archetype = infantry_equipment ratio < 0.05 }	
+				enemies_strength_ratio > 0.5			
+				}
+				
 				
 				modifier = {
-					factor = 2.5
-					num_of_factories > 65
+					factor = 0
+					enemies_strength_ratio < 0.5
 					}
 					
 				modifier = {
-					factor = 0.5
-					industrial_complex < 10
-					}
-					
-				modifier = {
-					factor = 10
+					ADD = 15
 					threat > 0.25
 					}
 					
 				modifier = { 
-					factor = 10
+					ADD = 20
 					any_neighbor_country = {
-					has_added_tension_amount = 5
+					has_added_tension_amount > 5
 					}					
-					}
+					}	
 								
 				modifier = {
 					factor = 0.5
@@ -425,12 +423,7 @@ ideas = {
 					NOT = {
 					has_tech = construction2
 					}
-					}
-				
-				modifier = {
-					factor = 0.3
-					check_variable = { resource_imported@steel > 0 }
-					}			
+					}						
 					}
 					}
 	
@@ -489,64 +482,42 @@ ideas = {
 
 				modifier = {
 					#High prio on production
-					factor = 5
-					manpower_per_military_factory >  1000
+					add = 25
+					manpower_per_military_factory >  5000
 				}
-								
-				modifier = {
-					factor = 2
-					industrial_complex > 30
-					}
-					
-				modifier = {
-					factor = 2
-					industrial_complex > 45
-					}
+
+			modifier = {
+				add = 50
+				stockpile_ratio  = { archetype = infantry_equipment ratio < 0.01 }
+				enemies_strength_ratio > 0.7				
+				}
 				
-				modifier = {
-					factor = 2
-					num_of_factories > 65
-					}
-					
-				modifier = {
-					factor = 0.5
-					industrial_complex > 10
-					}
-					
-				modifier = {
-					factor = 0.5
-					industrial_complex < 20
-					}
-					
-				modifier = {
-					factor = 0.5
-					industrial_complex < 30
-					}
+			modifier = {
+				add = 15
+				stockpile_ratio  = { archetype = infantry_equipment ratio < 0.05 }	
+				enemies_strength_ratio > 0.7			
+				}
+				
 				
 				modifier = {
 					factor = 0
-					enemies_strength_ratio > 0.5
+					enemies_strength_ratio < 0.5
 					}
 				
 				modifier = {
-					factor = 2
-					enemies_strength_ratio > 0.8
-					}
-					
-				modifier = {
-					factor = 5
+					ADD = 10
 					enemies_strength_ratio > 1.0
 					}
 					
 				modifier = {
-					factor = 0
-					manpower < 10000
+					ADD = 20
+					enemies_strength_ratio > 1.5
 					}
-
+					
 				modifier = {
-					factor = 0.2
-					check_variable = { resource_imported@steel > 0 }
-					}					
+					factor = 0
+					has_manpower < 10000
+					}			
 			}
 		}
 
@@ -612,64 +583,42 @@ ideas = {
 
 			cancel_if_invalid = no
 			
-						ai_will_do = {
+			ai_will_do = {
 				factor = 10
 					
-				modifier = {
-					factor = 0.5
-					industrial_complex > 10
-					}
-					
-				modifier = {
-					factor = 0.5
-					industrial_complex < 20
-					}
-					
-				modifier = {
-					factor = 0.5
-					industrial_complex < 30
-					}
 				
+			modifier = {
+				add = 50
+				stockpile_ratio  = { archetype = infantry_equipment ratio < 0.01 }
+				enemies_strength_ratio > 1			
+				}
+				
+			modifier = {
+				add = 15
+				stockpile_ratio  = { archetype = infantry_equipment ratio < 0.05 }	
+				enemies_strength_ratio > 1	
+				}
+
 				modifier = {
 					factor = 0
-					enemies_strength_ratio > 0.5
-					}
-				
-				modifier = {
-					factor = 0
-					enemies_strength_ratio > 0.8
+					enemies_strength_ratio < 0.8
 					}
 					
 				modifier = {
 					factor = 0.5
-					enemies_strength_ratio > 1.0
+					enemies_strength_ratio < 1.0
 					}
-				
+							
 				modifier = {
-					factor = 5
-					enemies_strength_ratio > 1.25
-					}
-				
-				modifier = {
-					factor = 5
-					enemies_strength_ratio > 1.5
+					ADD = 15
+					enemies_strength_ratio > 1.8
 					}
 					
 				modifier = {
-					factor = 5
+					ADD = 25
 					enemies_strength_ratio > 2.0
 					}
 					
-				modifier = {
-					factor = 0
-					check_variable = { resource_imported@steel > 0 }
-					}	
-					
-				modifier = {
-					factor = 100
-					has_equipment = { infantry_equipment < 100 }
-					}
-				
 				modifier = {
 					factor = 0
 					has_equipment = { infantry_equipment > 1000 }
@@ -696,8 +645,20 @@ ideas = {
 
 	trade_laws = {
 		law = yes
+		use_list_view = yes
 
 		free_trade = {
+		
+			visible = {
+				if = { 
+					limit = { original_tag = MAN }
+					NOT = { 
+						has_country_flag = MAN_special_free_trade_unlocked 
+					}
+				}
+			}
+		
+		
 			available = {
 				NOT = { has_country_flag = trade_laws_blocked }
 				if = {
@@ -793,13 +754,13 @@ ideas = {
 				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
 				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
 				
-				set_temp_variable = { type_percentage =  resource_produced@rystals }	
+				set_temp_variable = { type_percentage =  resource_produced@crystals }	
 				divide_temp_variable = { type_percentage = resource_pro}				
 				check_variable = { type_percentage > 0.20 }
 				
 				
-				set_temp_variable = { type_percentageb =  resource_consumed@rystals }
-				divide_temp_variable = { type_percentageb = resource_produced@rystals}
+				set_temp_variable = { type_percentageb =  resource_consumed@crystals }
+				divide_temp_variable = { type_percentageb = resource_produced@crystals}
 				check_variable = { type_percentageb > 0.33 }
 				}
 				}
@@ -1832,5 +1793,36 @@ ideas = {
 				}								
 				}				
 				}
-		}
+				
+			MAN_special_free_trade = {
+			picture = free_trade
+			
+			allowed = {
+				original_tag = MAN
+			}
+			
+			visible = { 
+				has_country_flag = MAN_special_free_trade_unlocked
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				min_export = 0.8
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				production_speed_buildings_factor = 0.2
+				research_speed_factor = 0.2
+				trade_opinion_factor = 0.8
+			}
+
+			allowed_to_remove = { 
+				custom_trigger_tooltip = {
+					tooltip = MAN_special_free_trade_remove_tt
+					always = no 
+				}
+			}
+		}			
 	}
+}
