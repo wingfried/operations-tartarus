@@ -87,7 +87,7 @@
 
  #Advisors
  eathelin_sister:0 "Haylay"
- malcom_corchstone:0 "Malcom Corchstone"
+ malcom_corchstone:0 "Malcolm Corchstone"
  aldus_warrior:0 "Aldus Warrior"
  annalee_the_swift:0 "Annalee the Swift"
  aylmer_pony:0 "Aylmer"
@@ -119,4 +119,4 @@
  VICTORY_POINTS_4372:0 "Snowdin"
 
  #Traits
- first_among_equals_trait:0 "First Among Equals"
+ first_among_equals_trait:0 "First Among Equals\n\n§YThis leader is first among equals, occupies the honorary position as the head of a council whose members are all equal."
