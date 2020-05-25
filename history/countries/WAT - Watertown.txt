@@ -36,13 +36,24 @@ set_stability = 0.50
 set_war_support = 0.05
 
 create_country_leader = {
-	name = "Something?"
+	name = "Keeper Malcolm"
 	desc = ""
 #	picture = "Eathelin.tga"
 	expire = "1965.1.1"
 	ideology = primitive_communism
 	traits = {
 		first_among_equals_trait
+	}
+}
+
+create_country_leader = {
+	name = "Gandalf the Grey"
+	desc = ""
+#	picture = "Eathelin.tga"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+#		first_among_equals_trait
 	}
 }
 
@@ -60,11 +71,12 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Something?"
+	name = "Keeper Elia"
 	desc = ""
 #	picture = "Eathelin.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
+	female = yes
 	traits = {
 		first_among_equals_trait
 	}
