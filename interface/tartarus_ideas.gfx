@@ -76,8 +76,23 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/company_ARA_h_plus_t.tga"
     }
     
-    	SpriteType = {
-		name = "idea_ARA_forever"
-		texturefile = "gfx/interface/ideas/idea_ARA_forever.dds"
+    SpriteType = {
+		name = "GFX_idea_ARA_forever"
+		texturefile = "gfx/interface/ideas/ARA_forever.dds"
     }
+	
+	SpriteType = {
+		name = "GFX_idea_ara_high_resistance"
+		texturefile = "gfx/interface/ideas/ARA_high_resistance.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_ara_medium_resistance"
+		texturefile = "gfx/interface/ideas/ARA_medium_resistance.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_ara_low_resistance"
+		texturefile = "gfx/interface/ideas/ARA_low_resistance.dds"
+	}
 }
