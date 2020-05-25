@@ -1202,8 +1202,8 @@ arantiga_decision.24.a:0 "Such a shame"
 
 arantiga_decision.25.t:0 "Ferrucio's Missing Link"
 arantiga_decision.25.d:0 "The police have been investigating a string of violent crimes, and have managed to connect the crimes to a prominent Maarite cult. Today, they conducted a raid on what was supposed to a be a small safehouse, but turned out the be the main gathering point of the secret organization. The police were intially outnumbered when a gunfight broke out, but reinforcements arrived to finish the Maarites off. A few people died in the engagement, but most of the cultists have been apprehended.\n\nAll day, Ferrucio wore a mask of barely-concealed schadenfreude, as it turned that among the captured, were most of the team at Panaceum. They, like the others, have been arrested by the police, who have refused to release them, citing dangers to civilians and the state. The police claim the best course of action would be to conduct an investigation into the IRI, and many in the organization also feel that this is the best course of action.\n\nNormally, Ferrucio would be at the front of encouraging harsh action on Maarites, but he has toned it down, and instead proposed releasing the Panaceum team and then keeping a very close eye on them. He says he is concerned with the other Maarites who have escaped the raid, and that the Panaceum research is still not complete. And although no one has suggested such an option, there is enough clout to just release the Panaceum team, without any hidden plans and such, although this would be very risky."
-arantiga_decision.25.a:0 "Arrest them!"
-arantiga_decision.25.b:0 "Spy on them!"
+arantiga_decision.25.a:0 "Detail a team to spy on them"
+arantiga_decision.25.b:0 "Arrest them!"
 arantiga_decision.25.c:0 "Just release them..."
 
 arantiga_decision.26.t "The 'Universal Cure'"
