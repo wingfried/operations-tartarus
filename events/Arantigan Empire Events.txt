@@ -689,6 +689,7 @@
 		name = 	arantiga_govern.018.a
 		remove_ideas = ARA_militarized_economy 
 		remove_ideas = ARA_every_griff
+		add_ideas = ARA_state_of_peace
 	}
 	option = {
 		name = 	arantiga_govern.018.b
