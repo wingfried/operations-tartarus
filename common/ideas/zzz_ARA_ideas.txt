@@ -245,7 +245,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = vittoria_mutilata
+			picture = maizuru_naval_arsenal
 			removal_cost = -1
 			modifier = {
 				invasion_preparation = -0.25
@@ -626,7 +626,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_manpower_bonus
+			picture = generic_air_payment
 			removal_cost = -1
 			modifier = {
 				air_ace_generation_chance_factor = 0.25
@@ -953,7 +953,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = idea_ARA_forever
+			picture = PAP_Legionary_Spirit
 			removal_cost = -1
 			modifier = {
 			stability_factor = 0.05
@@ -1003,7 +1003,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = idea_severe_famine5
+			picture = severe_famine5
 			removal_cost = -1
 			modifier = {
 			monthly_population = 0.1
@@ -1038,7 +1038,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = idea_pre_industrial_society
+			picture = pre_industrial_society
 			removal_cost = -1
 			modifier = {
 			trade_opinion_factor = 0.20
@@ -1056,7 +1056,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = idea_ARA_forever
+			picture = ARA_forever
 			removal_cost = -1
 			modifier = {
 			army_core_defence_factor = 0.2
@@ -1110,7 +1110,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = idea_chi_war_of_resistance3
+			picture = ara_high_resistance
 			removal_cost = -1
 			modifier = {
 			consumer_goods_factor = 0.5
@@ -1130,7 +1130,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = idea_chi_war_of_resistance3
+			picture = ara_high_resistance
 			removal_cost = -1
 			modifier = {
 			consumer_goods_factor = 0.5
@@ -1150,7 +1150,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = idea_chi_war_of_resistance2
+			picture = ara_medium_resistance
 			removal_cost = -1
 			modifier = {
 			consumer_goods_factor = 0.5
@@ -1170,7 +1170,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = idea_chi_war_of_resistance2
+			picture = ara_medium_resistance
 			removal_cost = -1
 			modifier = {
 			consumer_goods_factor = 0.2
@@ -1190,7 +1190,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = idea_chi_war_of_resistance
+			picture = ara_low_resistance
 			removal_cost = -1
 			modifier = {
 			consumer_goods_factor = 0.2
@@ -2587,8 +2587,9 @@ country = {
             picture = generic_victors_of_ww1
 			removal_cost = -1
 			modifier = {
-				conscription_factor = 0.05
+				conscription = 0.01
 			}
+			
 		}
 	}
 	country = {
@@ -2766,7 +2767,7 @@ country = {
 			picture = generic_victors_of_ww1
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.10
+				stability_factor = 0.05
 			}
 		}
 	}
@@ -2784,7 +2785,7 @@ country = {
 			removal_cost = -1
 			modifier = {
 			    conscription_factor = 0.05
-				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.01
 			}
 		}
 	}
@@ -2802,6 +2803,7 @@ country = {
 			removal_cost = -1
 			modifier = {
 			    conscription_factor = -0.05
+				stability_factor = 0.10
 				special_forces_cap = 0.05
 			}
 		}
@@ -2853,7 +2855,7 @@ country = {
 			}
 			available = {
 			}
-			picture = generic_victors_of_ww1
+			picture = idea_generic_victors_of_ww1
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.10
@@ -2898,81 +2900,7 @@ country = {
 			}
 			}
 			}
-	country = {	
-	    ARA_minotaur_rebels = {
-			allowed = {
-			always = no 
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = generic_victors_of_ww1
-			modifier = {
-			    stability_factor = -0.10
-				war_support_factor = -0.10
-				consumer_goods_factor = 0.10
-			}
-		}
-	}
-    country = {	
-	    ARA_riverpony_resistance = {
-			allowed = {
-			    always = no 
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			available = {
-			    owns_state = 619
-			}
-			removal_cost = -1
-			picture = generic_victors_of_ww1
-			modifier = {
-			    stability_factor = -0.20
-				war_support_factor = -0.20
-				consumer_goods_factor = 0.10
-				conscription_factor = -0.25
-			}
-		}
-	}
-    country = {	
-	    ARA_integrating_ponies = {
-			allowed = {
-			    always = no 
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			available = {
-			    owns_state = 562
-			}
-			removal_cost = -1
-			picture = generic_victors_of_ww1
-			modifier = {
-			    stability_factor = -0.05
-			}
-		}
-	}
-	country = {
-		ARA_magic_of_friendship = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			available = {
-			    owns_state = 356
-			}
-			picture = generic_victors_of_ww1
-			removal_cost = -1
-			modifier ={
-			    stability_factor = -0.05
-			    democratic_drift = 0.05
-			}
-		}
-	}
+
 	country = {
 		ARA_project_legionary = {
 
@@ -3032,9 +2960,6 @@ country = {
 			}
 			available = {
 				has_completed_focus = ARA_arantigos_boreas
-				NOT = {
-				    has_completed_focus = ARA_reform_archonates
-				}
 			}
 		}
 	}
@@ -3086,13 +3011,13 @@ country = {
 			allowed = {
 				original_tag = "ARA"
 			}		
- 			traits = { archon_boreas }
-			picture = BRF_Prelate
+#			traits = { friendly_priest }
+			picture = 
 			ai_will_do = {
 				factor = 1
 			}
 			available = {
-				has_completed_focus = ARA_reform_archonates
+				has_completed_focus = ARA_arantigos_boreas
 			}
 		}
 	}
