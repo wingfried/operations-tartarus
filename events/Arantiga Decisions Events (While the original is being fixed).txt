@@ -30,7 +30,7 @@ country_event = { #Up In Flames
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = 	arantiga_decision.201.a
+		name = 	arantiga_decision.30.a
 		custom_effect_tooltip = ARA_regret_perhaps_tt
 	}
 }
