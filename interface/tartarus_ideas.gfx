@@ -82,6 +82,11 @@ spriteTypes = {
     }
 	
 	SpriteType = {
+		name = "GFX_idea_ARA_golden_dorotheos"
+		texturefile = "gfx/interface/ideas/idea_ARA_golden_dorotheos.dds"
+    }
+	
+	SpriteType = {
 		name = "GFX_idea_ara_high_resistance"
 		texturefile = "gfx/interface/ideas/ARA_high_resistance.dds"
 	}
