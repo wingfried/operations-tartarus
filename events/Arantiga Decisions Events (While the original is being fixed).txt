@@ -30,8 +30,9 @@ country_event = { #Up In Flames
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = 	arantiga_decision.201.a
+		name = 	arantiga_decision.30.a
 		custom_effect_tooltip = ARA_regret_perhaps_tt
+		clr_country_flag = IRI_project_ongoing
 	}
 }
 
@@ -43,7 +44,12 @@ country_event = { #The Investigation
 	fire_only_once = yes
 	option = {
 		name = 	arantiga_decision.202.a
-		custom_effect_tooltip = ARA_regret_perhaps_tt
+		add_tech_bonus = {
+			name = race_tech_bonus
+			bonus = 0.5
+			uses = 5
+			category = race_tech
+		}
 	}
 }
 
@@ -55,7 +61,7 @@ country_event = { #Project Panaceum
 	fire_only_once = yes
 	option = {
 		name = 	arantiga_decision.31.a
-		country_event = { id = arantiga_decision.22 days = 7 }
+		country_event = { id = arantiga_decision.22 days = 30 }
 	}
 }
 
@@ -67,12 +73,14 @@ country_event = { #Eccentric Scientists
 	fire_only_once = yes
 	option = {
 		name = 	arantiga_decision.22.a
-		country_event = { id = arantiga_decision.23 days = 7 }
+		country_event = { id = arantiga_decision.23 days = 56 }
+		add_political_power = 10
 	}
 
 	option = {
 		name = 	arantiga_decision.22.b
 		country_event = { id = arantiga_decision.201 days = 7 }
+		add_political_power = -50
 	}
 }
 
@@ -84,12 +92,14 @@ country_event = { #Mysterious Resources
 	fire_only_once = yes
 	option = {
 		name = 	arantiga_decision.23.a
-		country_event = { id = arantiga_decision.24 days = 7 }
+		country_event = { id = arantiga_decision.24 days = 70 }
+		add_political_power = 10
 	}
 
 	option = {
 		name = 	arantiga_decision.23.b
 		country_event = { id = arantiga_decision.201 days = 7 }
+		add_political_power = -50
 	}
 }
 
@@ -101,7 +111,8 @@ country_event = { #Strange Coincidences
 	fire_only_once = yes
 	option = {
 		name = 	arantiga_decision.24.a
-		country_event = { id = arantiga_decision.25 days = 7 }
+		country_event = { id = arantiga_decision.25 days = 15 }
+		add_political_power = -5
 	}
 }
 
@@ -113,18 +124,22 @@ country_event = { #Ferrucio's Missing Link
 	fire_only_once = yes
 	option = {
 		name = 	arantiga_decision.25.a
-		country_event = { id = arantiga_decision.26 days = 70 }
+		country_event = { id = arantiga_decision.261 days = 70 }
+		add_political_power = -75
+		add_manpower = -7
 	}
 
 	option = {
 		name = 	arantiga_decision.25.b
 		clr_country_flag = IRI_project_ongoing
 		country_event = { id = arantiga_decision.202 days = 24 }
+		add_political_power = -25
 	}
 
 	option = {
 		name = 	arantiga_decision.25.c
-		country_event = { id = arantiga_decision.261 days = 69 }
+		country_event = { id = arantiga_decision.26 days = 70 }
+		add_political_power = -75
 	}
 }
 
@@ -137,6 +152,8 @@ country_event = { #The 'Universal Cure' - Destroyed
 	option = {
 		name = 	arantiga_decision.26.a
 		clr_country_flag = IRI_project_ongoing
+		add_political_power = -100
+		add_manpower = -45
 	}
 }
 
@@ -149,6 +166,14 @@ country_event = { #The 'Universal Cure' - 'Safe'
 	option = {
 		name = 	arantiga_decision.261.a
 		clr_country_flag = IRI_project_ongoing
+		add_political_power = -100
+		add_manpower = -45
+		add_tech_bonus = {
+			name = race_tech_bonus
+			bonus = 1
+			uses = 5
+			category = race_tech
+		}
 	}
 }
 
