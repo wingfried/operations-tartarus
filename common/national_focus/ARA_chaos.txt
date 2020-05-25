@@ -27,7 +27,7 @@ focus_tree = {
 		y = 0
 		cost = 0
 		bypass = {
-			has_country_flag = ARA_Arantigos_is_dead
+			has_country_flag = arantiga_flag_dorotheos_is_dead
 			
 		}
 		}
@@ -73,7 +73,6 @@ focus_tree = {
 		y = 1
 		cost = 5.00
 		relative_position_id = ARA_power_struggle
-		prerequisite = { focus = ARA_purge_zealots }
 		prerequisite = { focus = ARA_power_struggle }
 		completion_reward = {
 		add_political_power = -200

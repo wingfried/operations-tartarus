@@ -92,13 +92,12 @@ bookmarks = {
 			ideology = neutrality
 			ideas = {
 				ARA_legacy
-				ARA_absolute_reign
-				ARA_arantiga_forever
+				ARA_economic_dependance
 			}
 			focuses = {
 				ARA_dorotheos_coup
 				ARA_chaos
-				ARA_es_oblivion
+				ARA_die_is_cast
 			}
 		}
 		"SOL"={
