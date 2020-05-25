@@ -36,4 +36,9 @@ leader_traits = {
 		political_power_gain = 0.1
 		stability_factor = 0.05
 	}
+	arantiga_shield = {
+		random = no
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
+	}
 }
