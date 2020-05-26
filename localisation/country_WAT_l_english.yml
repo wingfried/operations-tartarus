@@ -17,17 +17,62 @@
  WAT_deal_with_heretic:0 "Deal With The Heretics"
  WAT_deal_with_heretic_desc:0 ""
 
+ WAT_revitalise_freshwater:0 "Revitalise Freshwater Cavern"
+ WAT_revitalise_freshwater_desc:0 ""
+
+ WAT_halt_industrialization:0 "An End To Industrialization"
+ WAT_halt_industrialization_desc:0 ""
+
+ WAT_restore_temples:0 "Restore The Temples"
+ WAT_restore_temples_desc:0 ""
+
+ WAT_artisan_workshops:0 "Encourage Artisanry"
+ WAT_artisan_workshops_desc:0 ""
+
+ WAT_one_with_earth:0 "One With The Earth"
+ WAT_one_with_earth_desc:0 ""
+
  WAT_harmony_and_progress:0 "Harmony And Progress"
  WAT_harmony_and_progress_desc:0 ""
 
  WAT_land_surveys:0 "Survey The Land"
  WAT_land_surveys_desc:0 ""
 
+ WAT_communal_factories:0 "Communal Factories" #Subject to change
+ WAT_communal_factories_desc:0 ""
+
+ WAT_sustainable_resource_development:0 "Sustainable Development"
+ WAT_sustainable_resource_development_desc:0 ""
+
+ WAT_road_to_every_village:0 "A Road To Every Village"
+ WAT_road_to_every_village_desc:0 ""
+
  WAT_industrial_revolution:0 "Northern Industrial Revolution"
  WAT_industrial_revolution_desc:0 ""
 
+ WAT_environmental_guidelines:0 "Environmental Guidlines"
+ WAT_environmental_guidelines_desc:0 ""
+
+ WAT_symbiosis:0 "Symbiosis"
+ WAT_symbiosis_desc:0 ""
+
  WAT_vision_of_oilfield:0 "The Vision of Oilfield"
  WAT_vision_of_oilfield_desc:0 ""
+
+ WAT_deforestation:0 "Clear The Forests"
+ WAT_deforestation_desc:0 ""
+
+ WAT_gateway_to_south:0 "Gateway To The South"
+ WAT_gateway_to_south_desc:0 ""
+
+ WAT_exploitation:0 "Exploit The Land"
+ WAT_exploitation_desc:0 ""
+
+ WAT_highways_for_everyone:0 "Highways For Everyone!"
+ WAT_highways_for_everyone_desc:0 ""
+
+ WAT_industry_revoltion_real:0 "An Industrial Miracle"
+ WAT_industry_revoltion_real_desc:0 ""
 
  WAT_contact_the_spirits:0 "Commune With The Spirits"
  WAT_contact_the_spirits_desc:0 ""
