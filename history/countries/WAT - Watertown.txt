@@ -10,10 +10,10 @@ actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIG
 
 set_convoys = 70
 set_popularities = {
-	democratic = 20
-	fascism = 5
-	communism = 60
-	neutrality = 15
+	democratic = 22
+	fascism = 13
+	communism = 34
+	neutrality = 31
 }
 set_politics = {
 
