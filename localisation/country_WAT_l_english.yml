@@ -55,17 +55,17 @@
 
  #Parties
  WAT_neutrality_party:0 "Council of Keepers"
- WAT_neutrality_party_long:0 "Council of Keepers - Modernist"
+ WAT_neutrality_party_long:0 "Council of Keepers - Modernist\n§gDrawing support from the River merchants residing in Floodgate and the idealists from Snowdin who have been intoxicated on the idea of a powerful, prosperous Watertowns, the modernist faction wields great influence. They, after all, have been the driver of the recent uptick in economic and industrial activity in the Watertowns.§!"
  WAT_communism_party:0 "Council of Keepers"
- WAT_communism_party_long:0 "Council of Keepers - Traditionalist"
+ WAT_communism_party_long:0 "Council of Keepers - Traditionalist\n§gRallying around Keeper Elia of Freshwater Cavern, the traditionalists seek to uphold the status quo. The traditionalists seek to preserve the way of life that the ponies of the Watertowns have lived with for centuries. They see the Council of Keepers as the most desirable form of government and want to keep the decentralized government of the Watertowns intact.§!"
  WAT_democratic_party:0 "Council of Keepers"
- WAT_democratic_party_long:0 "Council of Keepers - Moderate"
+ WAT_democratic_party_long:0 "Council of Keepers - Moderate\n§gAlthough Keeper Eathlin and her moderates are not the most popular faction in the Watertowns, she is respected by all for her attempts at reconciliation and moderation. She hasn't had much success, but her status as first among equals and the Keeper of Watertown, the largest settlement in the area, give her much credibility.§!"
  WAT_fascism_party:0 "Council of Keepers"
- WAT_fascism_party_long:0 "Council of Keepers - Religious"
+ WAT_fascism_party_long:0 "Council of Keepers - Religious\n§gThe clergy are respected by all, even by the modernists who would otherwise seek to do away with the old traditions of religion. Gandalf seeks no involvement in politics beyond a tentative alliance with Keeper Elia of Freshwater Cavern, but many believe that if his influence grows too strong, the Watertowns will find itself under his rule...§!"
 
  #Decisions
  WAT_political_decision_category:0 "The Council of Keepers"
- WAT_political_decision_category_desc:0 "[DESC]\n\nThe popularity of the §RModernist faction§! is §Y[?WAT.party_popularity@neutrality|%0]§!\n\nThe popularity of the §GModerate faction§! is §Y[?WAT.party_popularity@democratic|%0]§!\n\nThe popularity of the §gTraditionalist faction§! is §Y[?WAT.party_popularity@communism|%0]§!\n\n"
+ WAT_political_decision_category_desc:0 "Each decision undertaken by the Watertowns is extensively argued and debated by the Council of Keepers. Each of the seven Watertowns is entitled to one Keeper to represent them in the Council, and each of them is elected by a complete village assembly. Most prominent among them is Keeper Eathlin, first among equals.\n\nDrawing support from the River merchants residing in Floodgate and the idealists from Snowdin who have been intoxicated on the idea of a powerful, prosperous Watertowns, the modernist faction wields great influence. They, after all, have been the driver of the recent uptick in economic and industrial activity in the Watertowns. \nThe popularity of the §RModernist faction§! is §Y[?WAT.party_popularity@neutrality|%0]§!\n\nAlthough Keeper Eathlin and her moderates are not the most popular faction in the Watertowns, she is respected by all for her attempts at reconciliation and moderation. She hasn't had much success, but her status as first among equals and the Keeper of Watertown, the largest settlement in the area, give her much credibility. \nThe popularity of the §GModerate faction§! is §Y[?WAT.party_popularity@democratic|%0]§!\n\nRallying around Keeper Elia of Freshwater Cavern, the traditionalists seek to uphold the status quo. The traditionalists seek to preserve the way of life that the ponies of the Watertowns have lived with for centuries. They see the Council of Keepers as the most desirable form of government and want to keep the decentralized government of the Watertowns intact. \nThe popularity of the §gTraditionalist faction§! is §Y[?WAT.party_popularity@communism|%0]§!\n\n"
 
  WAT_current_party:0 "§YThe careful balance has to be preserved...§!"
  WAT_current_party_desc:0 "§R...Lest things spiral out of control§!"
@@ -74,7 +74,7 @@
  ### IDEAS ##################################
  ###########################################
  WAT_council_of_keepers:0 "Council of Keepers"
- WAT_council_of_keepers_desc:0 "Each decision undertaken by the Watertowns is extensively argued and debated by the Council of Keepers. Each of the seven Watertowns is entitled to one Keeper to represent them in the Council, and each of them is elected by a complete village assembly. Most prominent among them is Keeper Eathlin, first among equals"
+ WAT_council_of_keepers_desc:0 "Each decision undertaken by the Watertowns is extensively argued and debated by the Council of Keepers. Each of the seven Watertowns is entitled to one Keeper to represent them in the Council, and each of them is elected by a complete village assembly. Most prominent among them is Keeper Eathlin, first among equals."
 
  WAT_holy_srings:0 "Holy Springs"
  WAT_holy_srings_desc:0 "The Watertowns have always been known for its holy springs. That is, after all, why the Watertowns were settled in the first place. The springs' status as a holy site bring in pilgrims from all around, in addition to providing the towns with their name and their water."
@@ -119,4 +119,4 @@
  VICTORY_POINTS_4372:0 "Snowdin"
 
  #Traits
- first_among_equals_trait:0 "First Among Equals\n§WThis leader is first among equals, and occupies an honorary position as the head of a council whose members are all equal.§!"
+ first_among_equals_trait:0 "First Among Equals\n§gThis leader is first among equals, and occupies an honorary position as the head of a council whose members are all equal.§!"
