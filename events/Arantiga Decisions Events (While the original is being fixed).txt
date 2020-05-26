@@ -91,13 +91,13 @@ country_event = { #Mysterious Resources
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = 	arantiga_decision.23.a
+		name = 	arantiga_decision.22.a
 		country_event = { id = arantiga_decision.24 days = 70 }
 		add_political_power = 10
 	}
 
 	option = {
-		name = 	arantiga_decision.23.b
+		name = 	arantiga_decision.22.b
 		country_event = { id = arantiga_decision.201 days = 7 }
 		add_political_power = -50
 	}
