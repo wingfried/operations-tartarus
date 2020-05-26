@@ -334,6 +334,7 @@ country_event = { #going lower
 	fire_only_once = yes
 	option = {
 	name = arantiga.014.a
+	custom_effect_tooltip = ara_tooltip_voices_clue_1
 		hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -345,6 +346,7 @@ country_event = { #going lower
 	}
 	option = {
 	name = arantiga.014.b
+	custom_effect_tooltip = ara_tooltip_voices_clue_2
 			hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -397,6 +399,7 @@ country_event = { #going lower
 	fire_only_once = yes
 	option = {
 	name = arantiga.016.a
+	custom_effect_tooltip = ara_tooltip_voices_clue_3
 		hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -408,6 +411,7 @@ country_event = { #going lower
 	}
 	option = {
 	name = arantiga.016.b
+	custom_effect_tooltip = ara_tooltip_voices_clue_4
 			hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -498,17 +502,7 @@ country_event = { #going lower
 	fire_only_once = yes
 	option = {
 	name = arantiga.019.a
-	hidden_effect = {
-				ARA = {
-		        country_event = { 
-			        id = arantiga.020
-					days = 1
-			    }
-				}
-				}
-	}
-	option = {
-	name = arantiga.019.b
+	custom_effect_tooltip = ara_tooltip_voices_clue_5
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -519,7 +513,8 @@ country_event = { #going lower
 				}
 	}
 	option = {
-	name = arantiga.019.c
+	name = arantiga.019.b
+	custom_effect_tooltip = ara_tooltip_voices_clue_6
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -571,6 +566,7 @@ country_event = { #going lower
 	fire_only_once = yes
 	option = {
 	name = arantiga.021.a
+	custom_effect_tooltip = ara_tooltip_voices_clue_7
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -582,6 +578,7 @@ country_event = { #going lower
 	}
 	option = {
 	name = arantiga.021.b
+	custom_effect_tooltip = ara_tooltip_voices_clue_8
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -633,6 +630,7 @@ country_event = { #going lower
 	fire_only_once = yes
 	option = {
 	name = arantiga.023.a
+	custom_effect_tooltip = ara_tooltip_voices_clue_9
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -644,6 +642,7 @@ country_event = { #going lower
 	}
 	option = {
 	name = arantiga.023.b
+	custom_effect_tooltip = ara_tooltip_voices_clue_a
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -1245,7 +1244,7 @@ country_event = { #Griffonstone Archives
 			
 		}
 	}
-	country_event = { #Surrender TRD?
+	country_event = { #Surrender?
 	    id = arantiga.053
 		title = arantiga.053.t
 		desc = arantiga.053.d
@@ -1289,56 +1288,6 @@ country_event = { #Griffonstone Archives
 	    fire_only_once = yes
 	    option = {
 		name = arantiga.055.a
-		    create_wargoal = {
-			    type = annex_everything
-				target = FROM
-			}
-		}
-	}
-	country_event = { #Surrender FEZ?
-	    id = arantiga.066
-		title = arantiga.066.t
-		desc = arantiga.066.d
-	    is_triggered_only = yes
-	    fire_only_once = yes
-	    option = {
-		    name = arantiga.066.a
-		    ARA = {
-			    country_event = {
-				    id = arantiga.054
-					days = 7
-				}
-			}
-		}
-		option = {
-		    name = arantiga.066.b
-		    ARA = {
-			    country_event = {
-				    id = arantiga.055
-					days = 7
-				}
-			}
-		}
-	}
-	country_event = { #Yes
-	    id = arantiga.067
-		title = arantiga.067.t
-		desc = arantiga.067.d
-	    is_triggered_only = yes
-	    fire_only_once = yes
-	    option = {
-		name = arantiga.054.a
-		    annex_country = { target = FROM transfer_troops = yes }
-		}
-	}
-	country_event = { #No
-	    id = arantiga.068
-		title = arantiga.068.t
-		desc = arantiga.068.d
-	    is_triggered_only = yes
-	    fire_only_once = yes
-	    option = {
-		name = arantiga.068.a
 		    create_wargoal = {
 			    type = annex_everything
 				target = FROM
@@ -1394,10 +1343,6 @@ country_event = { #Griffonstone Archives
 		}
 		option = {
 		    name = arantiga.056.b
-			add_timed_idea = {
-			    idea = ARA_integrating_ponies
-                days = 360
-            }
 			custom_effect_tooltip = ARA_NTR_compliance_tooltip
 			hidden_effect = {
 		        573 = {
@@ -1555,57 +1500,6 @@ country_event = { #Griffonstone Archives
 			    idea = ARA_minotaur_rebels
 				days = 720
 			}
-			custom_effect_tooltip = ARA_MIT_compliance_tooltip
-			hidden_effect = {
-			    463 = {
-				    add_compliance = 20
-				}
-				386 = {
-				    add_compliance = 20
-				}
-				656 = {
-				    add_compliance = 20
-				}
-				464 = {
-				    add_compliance = 20
-				}
-				465 = {
-				    add_compliance = 20
-				}
-				462 = {
-				    add_compliance = 20
-				}
-				466 = {
-				    add_compliance = 20
-				}
-				467 = {
-				    add_compliance = 20
-				}
-				469 = {
-				    add_compliance = 20
-				}
-				468 = {
-				    add_compliance = 20
-				}
-				655 = {
-				    add_compliance = 20
-				}
-				513 = {
-				    add_compliance = 20
-				}
-				657 = {
-				    add_compliance = 20
-				}
-				667 = {
-				    add_compliance = 20
-				}
-				664 = {
-				    add_compliance = 20
-				}
-				654 = {
-				    add_compliance = 20
-				}
-			}
 		}
 		option = {
 		    name = arantiga.063.b
@@ -1666,11 +1560,10 @@ country_event = { #Griffonstone Archives
 			}
 			set_province_name = { id = 6502 name = "Ruins of Skynavia" }
 			hidden_effect = {
-			    news_event = { id = arantiga_news.2 days = 5 }
+			     _event = { id = arantiga_news.2 days = 5 }
 			}
 		}
 	}
-	#68
 	news_event = { #Skynavia burns
 	    id = arantiga_news.2
 	    title = arantiga_news.2.t
@@ -1804,18 +1697,14 @@ country_event = { #Griffonstone Archives
 	picture = GFX_event_griffon_soldier
 	option = {
 		name = 	arantiga_govern.016.a
-		add_popularity = { ideology = democratic popularity = 0.05 }
-		add_popularity = { ideology = communism popularity = 0.05 }
 		remove_ideas = ARA_work_camp
 	}
 	option = {
 		name = 	arantiga_govern.016.b
 		add_popularity = { ideology = democratic popularity = 0.01 }
 		add_popularity = { ideology = communism popularity = 0.01 }
-		swap_ideas = {
-		    remove_idea = ARA_work_camp 
-			add_idea = ARA_work_camp1
-		}
+		swap_ideas = {remove_idea = ARA_work_camp 
+					add_idea = ARA_work_camp1}
 	}
 }
  
@@ -1854,7 +1743,6 @@ country_event = { #Griffonstone Archives
 		remove_ideas = ARA_every_griff
 		add_ideas = civilian_economy
 		add_ideas = limited_conscription
-		add_ideas = ARA_state_of_peace
 		###INCOMPLETE LOCK ECONOMY AND CONSCRIPTION LAWS
 	}
 }
@@ -1871,37 +1759,6 @@ country_event = { #Griffonstone Archives
 	}
 }
 
-country_event = { # Detente
-	id = arantiga_govern.020
-	title = arantiga_govern.020.t
-	desc = arantiga_govern.020.d
-	is_triggered_only = yes
-	fire_only_once = yes
-	picture = GFX_event_griffon_soldier
-	option = {
-		name = arantiga_govern.020.a
-		hidden_effect = {
-		    FROM = {
-			    country_event = {
-				    id = arantiga_govern.023
-					days = 7
-				}
-			}
-		}
-	}
-	option = {
-	    name = arantiga_govern.020.b
-	    hidden_effect = {
-		    FROM = {
-			    country_event = {
-				    id = arantiga_govern.022
-					days = 7
-				}
-			}
-		}
-	}
-}
-
  country_event = { # land of the rising sun
 	id = arantiga_govern.021
 	title = arantiga_govern.021.t
@@ -1911,208 +1768,205 @@ country_event = { # Detente
 	picture = GFX_event_griffon_soldier
 	option = {
 		name = 	arantiga_govern.021.a
-		add_timed_idea = {
-		    idea = ARA_riverpony_resistance
-			days = 720
-		}
+		add_ideas = ARA_riverpony_resistance
 		##add compliance to the riverlands
 		custom_effect_tooltip = ARA_compliance_riverlands
 		hidden_effect = {
 		    640 = {
-				add_compliance = 40
+				add_compliance = 60
 			}
 			641 = {
-				add_compliance = 40
+				add_compliance = 60
 			}
 			642 = {
-				add_compliance = 40
+				add_compliance = 60
 			}
 			643 = {
-				add_compliance = 40
+				add_compliance = 60
 			}
 			
 			453 = {
-				add_compliance = 40
+				add_compliance = 60
 			}
 			454 = {
-				add_compliance = 40
+				add_compliance = 60
 			}
 			478 = {
-				add_compliance = 40
+				add_compliance = 60
 			}
 			604 = {
-				add_compliance = 40
+				add_compliance = 60
 			}
 			636 = {
-				add_compliance = 40
+				add_compliance = 60
 			}
 			644 = {
-				add_compliance = 40
+				add_compliance = 60
 			}
 			650 = {
-				add_compliance = 40
+				add_compliance = 60
 			}
 			
 			455 = {
-				add_compliance = 50
+				add_compliance = 60
 			}
 			569 = {
-				add_compliance = 50
+				add_compliance = 60
 			}
 			571 = {
-				add_compliance = 50
+				add_compliance = 60
 			}
 			572 = {
-				add_compliance = 50
+				add_compliance = 60
 			}
 			603 = {
-				add_compliance = 50
+				add_compliance = 60
 			}
 			639 = {
-				add_compliance = 50
+				add_compliance = 60
 			}
 			
 			412 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			579 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			413 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			558 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			578 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			680 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			625 = {
-				add_compliance = 40
+				add_compliance = 60
 			}
 			624 = {
-				add_compliance = 40
+				add_compliance = 60
 			}
 			626 = {
-				add_compliance = 40
+				add_compliance = 60
 			}
 			
 			387 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			499 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			541 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			550 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			551 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
-			530 = {
-				add_compliance = 30
+			560 = {
+				add_compliance = 60
 			}
 			491 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			543 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			544 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			586 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			635 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			637 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			638 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			647 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			577 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			619 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			620 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			646 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			682 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			438 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			461 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			648 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			649 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			616 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			615 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			614 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			617 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			628 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			627 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			629 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			452 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			587 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			622 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			645 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			580 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			618 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			621 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 			681 = {
-				add_compliance = 30
+				add_compliance = 60
 			}
 		}
 	}
@@ -2136,6 +1990,7 @@ country_event = { # Detente
 					    transfer_state = 644
 					    transfer_state = 650
 					    transfer_state = 455
+					    transfer_state = 522
 						transfer_state = 569
 						transfer_state = 571
 						transfer_state = 572
@@ -2177,6 +2032,9 @@ country_event = { # Detente
 						455 = {
 					        add_core_of = FBK
 					    }
+						522 = {
+						    add_core_of = FBK
+						}
 						569 = {
 					        add_core_of = FBK
 					    }
@@ -2249,14 +2107,12 @@ country_event = { # Detente
 					            traits = {
 					            }
 				            }
-							remove_ideas = BAR_pentarchy
-							remove_ideas = BAR_insane_weather
 					    }
 						ARA = {
 					    	puppet = BAR
 						    set_autonomy = { target = BAR autonomy_state = autonomy_satellite }
-				            every_unit_leader = {
-					            limit = { has_id = 1335 }
+				            every_army_leader = {
+					            limit = { id = 1335 }
 					            set_nationality = BAR
 				            }
 						}
@@ -2427,8 +2283,8 @@ country_event = { # Detente
 				            }
 					    }
 						ARA = {
-					    	puppet = RCT
-						    set_autonomy = { target = RCT autonomy_state = autonomy_satellite }
+					    	puppet = RIV
+						    set_autonomy = { target = RIV autonomy_state = autonomy_satellite }
 						}
 				    }
 				}
@@ -2476,18 +2332,22 @@ country_event = { # Detente
 	option = {
 		name = 	arantiga_govern.024.a #we fight
 		ARA = {
-		    country_event = {
-			    id = arantiga_govern.26
-				days = 7
-			}
-		}
+		declare_war_on = { type = annex_everything    target = GRF }
+		    ARA = {
+		        create_wargoal = {
+			        target = GFF
+			    	type = annex_everything
+			    }
+		    }
+	    }
 	}
 	option = {
-		name = 	arantiga_govern.024.b #we surrender
+		name = 	arantiga_govern.024.a #we surrender
+		ARA = { puppet = GRF }
 		ARA = {
-		    country_event = {
-			    id = arantiga_govern.27
-				days = 7
+		    create_wargoal = {
+			    target = GFF
+				type = annex_everything
 			}
 		}
 	}
@@ -2503,10 +2363,6 @@ country_event = { # Detente
 	option = {
 		name = 	arantiga_govern.025.a
 		#compliance in mareland
-		add_timed_idea = {
-		    idea = ARA_magic_of_friendship
-			days = 360
-		}
 		custom_effect_tooltip = ARA_EQC_compliance_tooltip
 			hidden_effect = {
 		        357 = {
@@ -2579,9 +2435,11 @@ country_event = { # Detente
 				  	puppet = EQC
 				    set_autonomy = { target = EQC autonomy_state = autonomy_satellite }
                 }
-				every_unit_leader = {
-				    limit = { has_id = 1334 }
-				    set_nationality = EQC
+				ARA = {
+				    every_army_leader = {
+					    limit = { id = 1334 }
+					    set_nationality = EQC
+				    }
 				}
 				EQC ={
 					set_politics = {
@@ -2636,51 +2494,6 @@ country_event = { # Detente
 		    }
 		}
 		}
-	}
-}
- country_event = { # grf does not fold
-	id = arantiga_govern.026
-	title = arantiga_govern.026.t
-	desc = arantiga_govern.026.d
-	is_triggered_only = yes
-	fire_only_once = yes
-	picture = GFX_event_griffon_soldier
-	option = {
-		name = 	arantiga_govern.026.a #we fight
-		declare_war_on = { type = annex_everything    target = GRF }
-	    create_wargoal = {
-		    target = GFF
-			type = annex_everything
-		}
-	}
-	option = {
-		name = 	arantiga_govern.026.b #we wait
-	    create_wargoal = {
-		    target = GRF
-			type = annex_everything
-        }
-		create_wargoal = {
-		    target = GFF
-			type = annex_everything
-        }
-	}
-}
- country_event = { # grf does fold
-	id = arantiga_govern.027
-	title = arantiga_govern.027.t
-	desc = arantiga_govern.027.d
-	is_triggered_only = yes
-	fire_only_once = yes
-	picture = GFX_event_griffon_soldier
-	option = {
-		name = 	arantiga_govern.027.a #awesome
-		ARA = {
-		    create_wargoal = {
-		        target = GFF
-		    	type = annex_everything
-		    }
-		}
-		ARA = { puppet = GRF }
 	}
 }
 
