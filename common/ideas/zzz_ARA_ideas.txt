@@ -2180,7 +2180,7 @@ country = {
 				has_government = fascism
 			}
 			removal_cost = -1
-			picture = GFX_idea_ARA_truth
+			picture = PAP_Legionary_Spirit
 			modifier = {	
 			    drift_defence_factor = 0.5
 			    fascism_drift = 0.2
@@ -2202,7 +2202,7 @@ country = {
 				has_government = fascism
 			}
 			removal_cost = -1
-			picture = GFX_idea_ARA_truth
+			picture = PAP_Legionary_Spirit
 			modifier = {	
 			    drift_defence_factor = 0.5
 			    fascism_drift = 0.25
@@ -2763,7 +2763,7 @@ country = {
 			}
 			available = {
 			}
-			picture = absentee
+			picture = STW_absentee
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.10
@@ -2798,7 +2798,7 @@ country = {
 			}
 			available = {
 			}
-			picture = enlightened_feudalism
+			picture = feudalism
 			removal_cost = -1
 			modifier = {
 			    conscription_factor = -0.05
@@ -2947,7 +2947,7 @@ country = {
 			    owns_state = 619
 			}
 			removal_cost = -1
-			picture = NIM_martial_society
+			picture = NIM_warrior_society
 			modifier = {
 			    stability_factor = -0.20
 				war_support_factor = -0.20
