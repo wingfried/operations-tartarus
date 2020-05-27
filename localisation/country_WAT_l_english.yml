@@ -158,6 +158,9 @@
  ### EVENTS #################################
  ###########################################
 
+ WAT_economy.01.t:0 "The Keepers of Watertowns 1/2"
+ WAT_economy.01.d:0 "The Watertowns are composed of seven villages, all equal, and each one has the right to elect one Keeper to represent them in all matters of state, should they ever arise. This does not happen too often, contrary to what one might believe. The Keeper is elected by a full and complete village assembly, where everybody has one vote, so their rank is determined by their charm and their eloquence, and not patronage or heredity. This ensures that all Keepers are atleast semi-competent, to an extent.\n\nThe town of most importance is, after all, Watertown. It is from here where the region takes its name as a whole. It was built upon the site where the first settlers recieved the message from god, and where holy water trickled from springs. Gradually, the town grew, and even if ponies left to found new towns, Watertown would always be the largest. This gives it great prestige and power The current keeper is Eathlin, who is also first among equals.\n\nAlthough one of the more recent towns, Floodgate has expanded in the last few years because of the influx of immigrants and merchants from the River Coalition. Although Keeper Connor is a 'native', he has thrown his lot with said immigrants and merchants, and derives much of his ideology from their capitalistic ways.\n\nFreshwater Cavern is the smallest among the Watertowns, but it's meagre size does not reflect the influence it exerts. The town is underground in nature, and like its name suggests, is located in a vast cavern dominated by a resovoir of potable water. The founders were reputedly guided by the gods, and to this day the town has been primarily inhabited by monks and worshippers. Keeper Malcolm pushes his agenda for continued traditon from his powerbase among the clergy, and Gandalf coordinates the holy men of the realm from the city."
+ WAT_economy.01.a:0 "Good to know"
  #Victory Points
  VICTORY_POINTS_10345:0 "Floodgate"
  VICTORY_POINTS_11031:0 "Helm's Deep"
@@ -165,3 +168,6 @@
 
  #Traits
  first_among_equals_trait:0 "First Among Equals\n§gThis leader is first among equals, and occupies an honorary position as the head of a council whose members are all equal.§!"
+
+ #Leader/General Descriptions
+ EATHLIN_COMMUNISM_DESC:0 "You would think that given her status as first among equals, Keeper Eathlin was descended from of the most prestigious families, perhaps even a descendant of one of the Watertowns' most revered heroes. Such a lineage does not exist. Indeed, in all of the Watertowns, elite and noble families do not exist, save for those among the River merchants in Floodgate. This is a key feature of Watertowner society: a distinct lack of stratification, and a strong emphasis on personal ability and charm. This, after, is how Keeper Eathlin rose from being a humble cowherd to Keeper of her hometown, Watertown.\n\nShe strongly disawovs the almost-partisan struggle between the modernists and the traditionalists, rather opting for the middle ground in between the two opposing sides."

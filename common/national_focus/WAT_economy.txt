@@ -16,6 +16,7 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus WAT_economy"
+		country_event = WAT_economy.1
 	}
 }
 

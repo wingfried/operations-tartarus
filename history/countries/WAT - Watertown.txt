@@ -59,7 +59,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Keeper Eathelin"
-	desc = ""
+	desc = "EATHLIN_COMMUNISM_DESC"
 	picture = "Eathelin.tga"
 	expire = "1965.1.1"
 	ideology = primitive_communism
