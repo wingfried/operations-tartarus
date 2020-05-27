@@ -436,7 +436,7 @@
 	}
 	shared_focus = {
 		id = ARA_equus_invasion_training
-		icon = GFX_focus_prc_infiltration
+		icon = GFX_goal_griffon_special_forces_green
 		x = 2
 		y = 4
 		relative_position_id = ARA_rumare_exercises

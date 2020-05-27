@@ -87,6 +87,11 @@ spriteTypes = {
     }
 	
 	SpriteType = {
+		name = "GFX_idea_ARA_swords_and_cap"
+		texturefile = "gfx/interface/ideas/idea_ARA_swords_and_cap.dds"
+    }
+	
+	SpriteType = {
 		name = "GFX_idea_ara_high_resistance"
 		texturefile = "gfx/interface/ideas/ARA_high_resistance.dds"
 	}

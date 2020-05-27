@@ -120,4 +120,8 @@ spriteTypes = {
 		name = "GFX_goal_ARA_kill_rivrep"
 		texturefile = "gfx/interface/goals/goal_ARA_kill_rivrep.dds"
 	}
+	SpriteType = { 
+		name = "GFX_goal_griffon_special_forces_green"
+		texturefile = "gfx/interface/goals/goal_griffon_special_forces_green.dds"
+	}
 }

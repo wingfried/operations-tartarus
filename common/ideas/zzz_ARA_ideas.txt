@@ -2655,7 +2655,7 @@ country = {
 			available = {
 			    has_government = fascism
 			}
-			picture = ARA_golden_dorotheos
+			picture = ARA_swords_and_cap
 			removal_cost = -1
 			modifier = {
 			    justify_war_goal_time = -0.50
