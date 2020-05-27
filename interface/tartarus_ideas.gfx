@@ -92,6 +92,21 @@ spriteTypes = {
     }
 	
 	SpriteType = {
+		name = "GFX_idea_ARA_HIM-ss"
+		texturefile = "gfx/interface/ideas/idea_ARA_HIM-SS.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_ARA_modern_knights"
+		texturefile = "gfx/interface/ideas/idea_ARA_modern_knights.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_griffon_chained"
+		texturefile = "gfx/interface/ideas/idea_griffon_chained.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_idea_ara_high_resistance"
 		texturefile = "gfx/interface/ideas/ARA_high_resistance.dds"
 	}

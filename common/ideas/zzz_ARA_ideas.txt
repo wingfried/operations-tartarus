@@ -181,6 +181,44 @@ ideas = {
 			}
 		}
 	}
+	
+	country = {
+		ARA_steel_legions = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_acquire_tanks
+			removal_cost = -1
+			modifier = {
+				army_armor_attack_factor = 0.05
+			}
+			equipment_bonus = {
+			    armor = {
+				    reliability = 0.05
+			    }
+			}
+		}
+	}
+	
+	country = {
+		ARA_modern_knights = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = ARA_modern_knights
+			removal_cost = -1
+			modifier = {
+				modifier_army_sub_unit_knights_attack_factor = 0.05  
+				modifier_army_sub_unit_knights_defence_factor = 0.05
+			}
+		}
+	}
 
 	country = {
 		ARA_unmatched_army_idea = {
@@ -549,7 +587,7 @@ country = {
 			available = {
 				has_government = fascism
 			}
-			picture = generic_victors_of_ww1
+			picture = PAP_Legionary_Spirit
 			removal_cost = -1
 			modifier = {
 				army_morale_factor = 0.05
@@ -2124,7 +2162,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-            picture = generic_victors_of_ww1
+            picture = generic_coastal_defense_ships
 			removal_cost = -1
 			research_bonus = { naval_doctrine = 0.10 }
 			modifier = {
@@ -2140,7 +2178,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-            picture = generic_victors_of_ww1
+            picture = griffon_army3
 			removal_cost = -1
 			modifier = {
 				max_command_power = 20
@@ -2160,7 +2198,7 @@ country = {
 			available = {
 				has_government = fascism
 			}
-			picture = german_advisors
+			picture = fra_deluge
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.1
@@ -2221,7 +2259,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_victors_of_ww1
+			picture = LEC_staggering_reserves
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.1
@@ -2236,7 +2274,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_victors_of_ww1
+			picture = generic_navy_bonus
 			removal_cost = -1
 			modifier = {
 				industrial_capacity_dockyard = 0.5
@@ -2312,7 +2350,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_victors_of_ww1
+			picture = generic_research_increase
 			removal_cost = -1
 			modifier = {
 				research_speed_factor = 0.05
@@ -2484,7 +2522,7 @@ country = {
 			available = {
 				has_government = fascism
 			}
-			picture = generic_victors_of_ww1
+			picture = EQC_griffon_minorities1
 			removal_cost = -1
 			modifier = {
 			    conscription_factor = -0.15
@@ -2505,7 +2543,7 @@ country = {
 			available = {
 				has_government = fascism
 			}
-			picture = generic_victors_of_ww1
+			picture = griffon_chained
 			removal_cost = -1
 			modifier = {
 				conscription_factor = -0.05
@@ -2525,7 +2563,7 @@ country = {
 			available = {
 				has_government = fascism
 			}
-			picture = generic_victors_of_ww1
+			picture = national_divides
 			removal_cost = -1
 			modifier = {
 				conscription_factor = 0.03
@@ -2619,7 +2657,7 @@ country = {
 			available = {
 				owns_state = 512
 			}
-			picture = generic_victors_of_ww1
+			picture = eng_steady_as_she_goes
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.05
@@ -2637,7 +2675,7 @@ country = {
 			available = {
 				owns_state = 512
 			}
-			picture = generic_victors_of_ww1
+			picture = eng_steady_as_she_goes
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.01
@@ -2691,7 +2729,7 @@ country = {
 			}
 			available = {
 			}
-			picture = generic_victors_of_ww1
+			picture = ARA_HIM-ss
 			removal_cost = -1
 			modifier = {
 				decryption_factor = 0.10
@@ -2927,7 +2965,7 @@ country = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_victors_of_ww1
+			picture = syndicate_of_defence
 			modifier = {
 			    stability_factor = -0.10
 				war_support_factor = -0.10
