@@ -2198,7 +2198,7 @@ country = {
 			available = {
 				has_government = fascism
 			}
-			picture = fra_deluge
+			picture = FRA_la_deluge
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.1
@@ -2259,7 +2259,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = LEC_staggering_reserves
+			picture = SPR_seize_the_gold_reserves
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.1
@@ -2350,7 +2350,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_research_increase
+			picture = jap_supremacy_of_technology
 			removal_cost = -1
 			modifier = {
 				research_speed_factor = 0.05
@@ -2563,7 +2563,7 @@ country = {
 			available = {
 				has_government = fascism
 			}
-			picture = national_divides
+			picture = GRW_national_divides
 			removal_cost = -1
 			modifier = {
 				conscription_factor = 0.03
@@ -3073,6 +3073,190 @@ country = {
 			}
 			}
 			}
+			
+	economy = {
+	    law = yes
+		use_list_view = no
+
+	    civilian_economy_ara = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = civilian_economy
+			
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+				conversion_cost_civ_to_mil_factor= 0.3
+				conversion_cost_mil_to_civ_factor = 0.3
+				max_fuel_factor = -0.25
+				fuel_gain_factor = -0.4
+			}
+			
+			allowed_to_remove = {
+				NOT = {
+				    has_government = fascism
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+	mobilization_laws = { 
+		law = yes
+		use_list_view = no
+		
+		limited_conscription_ara = {
+			allowed = {
+				always = no
+			}	
+			removal_cost = -1
+			picture = limited_conscription
+			level = 5
+
+			modifier = {
+				conscription = 0.025
+			}
+
+			allowed_to_remove = {
+			    IF = {
+				    limit = {
+					    original_tag = ARA
+					}
+				    NOT = {
+				        has_government = fascism
+				    }
+				}
+				IF = {
+				    limit = {
+					    NOT = {
+						    original_tag = ARA
+						}
+					}
+					NOT = {
+					    is_subject_of = ARA
+					}
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+		disarmed_nation_ara = {
+			allowed = {
+				always = no
+			}	
+			removal_cost = -1
+			picture = disarmed_nation
+			level = 7
+			
+			modifier = {
+				conscription = 0.01
+			}
+			
+			allowed_to_remove = {
+			    IF = {
+				    limit = {
+					    original_tag = ARA
+					}
+				    NOT = {
+				        has_government = fascism
+				    }
+				}
+				IF = {
+				    limit = {
+					    NOT = {
+						    original_tag = ARA
+						}
+					}
+					NOT = {
+					    is_subject_of = ARA
+					}
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+	trade_laws = { 
+		law = yes
+		use_list_view = no
+		
+		free_trade_ara = {
+            allowed = {
+				always = no
+			}	
+			removal_cost = -1
+			picture = free_trade
+			
+			modifier = {
+				min_export = 0.8
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.10
+				civilian_intel_to_others = 40.0
+				navy_intel_to_others = 20.0
+			}		
+			allowed_to_remove = {
+				NOT = {
+				    has_government = fascism
+				}
+			}
+			cancel_if_invalid = no
+		}
+		
+		export_focus_ara = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = export_focus
+			
+			modifier = {
+				min_export = 0.5
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.05
+				civilian_intel_to_others = 20.0
+				navy_intel_to_others = 10.0
+			}
+			allowed_to_remove = {
+				NOT = {
+				    has_government = fascism
+				}
+			}
+			cancel_if_invalid = no
+		}
+		
+		limited_exports_ara = {
+		
+			allowed = {
+				always = no
+			}	
+			removal_cost = -1
+			picture = limited_exports
+			
+			modifier = {
+				min_export = 0.25
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.01
+				civilian_intel_to_others = 10.0
+				navy_intel_to_others = 5
+			}
+			allowed_to_remove = {
+				NOT = {
+				    has_government = fascism
+				}
+			}
+			cancel_if_invalid = no
+		}
+	}
 	
 	################### New Political Advsiors ###################
 	political_advisor = {

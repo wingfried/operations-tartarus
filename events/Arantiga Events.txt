@@ -1387,6 +1387,8 @@ country_event = { #Griffonstone Archives
 					    	puppet = NTR
 						    set_autonomy = { target = NTR autonomy_state = autonomy_satellite }
 					    }
+						set_cosmetic_tag = NTR_arantiga
+						add_ideas = limited_conscription_ara
 				    }
 				}
 			}
@@ -1632,6 +1634,8 @@ country_event = { #Griffonstone Archives
 					    	puppet = MIT
 						    set_autonomy = { target = MIT autonomy_state = autonomy_satellite }
 					    }
+						set_cosmetic_tag = MIT_arantiga
+						add_ideas = limited_conscription_ara
 				    }
 				}
 			}
@@ -1782,15 +1786,15 @@ country_event = { #Griffonstone Archives
 	picture = GFX_event_griffon_soldier
 	option = {
 		name = 	arantiga_govern.015.a
-		add_ideas = free_trade
+		add_ideas = free_trade_ara
 	}
 	option = {
 		name = 	arantiga_govern.015.b
-		add_ideas = export_focus
+		add_ideas = export_focus_ara
 	}
 	option = {
 		name = 	arantiga_govern.015.c
-		add_ideas = limited_exports
+		add_ideas = limited_exports_ara
 	}
 }
  
@@ -1851,8 +1855,8 @@ country_event = { #Griffonstone Archives
 		name = 	arantiga_govern.018.b
 		remove_ideas = ARA_militarized_economy 
 		remove_ideas = ARA_every_griff
-		add_ideas = civilian_economy
-		add_ideas = limited_conscription
+		add_ideas = civilian_economy_ara
+		add_ideas = limited_conscription_ara
 		add_ideas = ARA_state_of_peace
 		###INCOMPLETE LOCK ECONOMY AND CONSCRIPTION LAWS
 	}
@@ -2204,6 +2208,8 @@ country_event = { # Detente
 						            FBK_the_warrior_chief
 					            }
 				            }
+							#set_cosmetic_tag = FBK_arantiga
+							add_ideas = limited_conscription_ara
 					    }
 						ARA = {
 					    	puppet = FBK
@@ -2250,10 +2256,12 @@ country_event = { # Detente
 				            }
 							remove_ideas = BAR_pentarchy
 							remove_ideas = BAR_insane_weather
+							set_cosmetic_tag = BRD_arantiga
+							add_ideas = disarmed_nation_ara
 					    }
 						ARA = {
 					    	puppet = BAR
-						    set_autonomy = { target = BAR autonomy_state = autonomy_satellite }
+						    set_autonomy = { target = BAR autonomy_state = autonomy_reichsprotectorate }
 				            every_unit_leader = {
 					            limit = { has_id = 1335 }
 					            set_nationality = BAR
@@ -2261,7 +2269,6 @@ country_event = { # Detente
 						}
 				    }
 					RCT = {
-					    set_cosmetic_tag = RIV
 					    transfer_state = 387
 					    transfer_state = 499
 					    transfer_state = 541
@@ -2414,7 +2421,7 @@ country_event = { # Detente
 						681 = {
 					        add_core_of = RCT
 					    }
-					    RIV = {
+					    RCT = {
 				            create_country_leader = {
 					            name = "Pumpkin Swirl"
 					            desc = ""
@@ -2424,10 +2431,12 @@ country_event = { # Detente
 					            traits = {
 					            }
 				            }
+							set_cosmetic_tag = RIV_arantiga
+							add_ideas = disarmed_nation_ara
 					    }
 						ARA = {
 					    	puppet = RCT
-						    set_autonomy = { target = RCT autonomy_state = autonomy_satellite }
+						    set_autonomy = { target = RCT autonomy_state = autonomy_reichsprotectorate }
 						}
 				    }
 				}
@@ -2576,7 +2585,7 @@ country_event = { # Detente
 				}
 				ARA = {
 				  	puppet = EQC
-				    set_autonomy = { target = EQC autonomy_state = autonomy_satellite }
+				    set_autonomy = { target = EQC autonomy_state = autonomy_reichsprotectorate }
                 }
 				every_unit_leader = {
 				    limit = { has_id = 1334 }
@@ -2596,6 +2605,8 @@ country_event = { # Detente
 				    	traits = {
 				    	}
 				    }
+					set_cosmetic_tag = EQC_arantiga
+					add_ideas = disarmed_nation_ara
 				}
 			}
 		}
@@ -2623,7 +2634,7 @@ country_event = { # Detente
 				transfer_state = 354
 			    ARA = {
 			    	puppet = EQC
-				    set_autonomy = { target = EQC autonomy_state = autonomy_satellite }
+				    set_autonomy = { target = EQC autonomy_state = autonomy_reichsprotectorate }
 			    }
 				EQC ={
 					set_politics = {
@@ -2631,6 +2642,7 @@ country_event = { # Detente
 				        elections_allowed = no
 			        }
 					add_ideas = disarmed_nation
+					set_cosmetic_tag = EQC_arantiga
 				}
 		    }
 		}
