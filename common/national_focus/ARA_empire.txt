@@ -12,7 +12,8 @@
 	country = {
 		factor = 0
 			modifier = {
-			add = 2000
+			add = 10
+			
 			original_tag = ARA
 			
 		}
