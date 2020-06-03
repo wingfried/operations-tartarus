@@ -3472,7 +3472,7 @@ country = {
 				original_tag = "ARA"
 			}		
  			traits = { archon_eyr }
-			picture = BRF_Prelate
+			picture = archon_erion
 			ai_will_do = {
 				factor = 1
 			}
