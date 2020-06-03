@@ -334,6 +334,7 @@ country_event = { #going lower
 	fire_only_once = yes
 	option = {
 	name = arantiga.014.a
+	custom_effect_tooltip = ara_tooltip_voices_clue_1
 		hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -345,6 +346,7 @@ country_event = { #going lower
 	}
 	option = {
 	name = arantiga.014.b
+	custom_effect_tooltip = ara_tooltip_voices_clue_2
 			hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -397,6 +399,7 @@ country_event = { #going lower
 	fire_only_once = yes
 	option = {
 	name = arantiga.016.a
+	custom_effect_tooltip = ara_tooltip_voices_clue_3
 		hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -408,6 +411,7 @@ country_event = { #going lower
 	}
 	option = {
 	name = arantiga.016.b
+	custom_effect_tooltip = ara_tooltip_voices_clue_4
 			hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -498,17 +502,7 @@ country_event = { #going lower
 	fire_only_once = yes
 	option = {
 	name = arantiga.019.a
-	hidden_effect = {
-				ARA = {
-		        country_event = { 
-			        id = arantiga.020
-					days = 1
-			    }
-				}
-				}
-	}
-	option = {
-	name = arantiga.019.b
+	custom_effect_tooltip = ara_tooltip_voices_clue_5
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -519,7 +513,8 @@ country_event = { #going lower
 				}
 	}
 	option = {
-	name = arantiga.019.c
+	name = arantiga.019.b
+	custom_effect_tooltip = ara_tooltip_voices_clue_6
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -571,6 +566,7 @@ country_event = { #going lower
 	fire_only_once = yes
 	option = {
 	name = arantiga.021.a
+	custom_effect_tooltip = ara_tooltip_voices_clue_7
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -582,6 +578,7 @@ country_event = { #going lower
 	}
 	option = {
 	name = arantiga.021.b
+	custom_effect_tooltip = ara_tooltip_voices_clue_8
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -633,6 +630,7 @@ country_event = { #going lower
 	fire_only_once = yes
 	option = {
 	name = arantiga.023.a
+	custom_effect_tooltip = ara_tooltip_voices_clue_9
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -644,6 +642,7 @@ country_event = { #going lower
 	}
 	option = {
 	name = arantiga.023.b
+	custom_effect_tooltip = ara_tooltip_voices_clue_a
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -1388,6 +1387,8 @@ country_event = { #Griffonstone Archives
 					    	puppet = NTR
 						    set_autonomy = { target = NTR autonomy_state = autonomy_satellite }
 					    }
+						set_cosmetic_tag = NTR_arantiga
+						add_ideas = limited_conscription_ara
 				    }
 				}
 			}
@@ -1633,6 +1634,8 @@ country_event = { #Griffonstone Archives
 					    	puppet = MIT
 						    set_autonomy = { target = MIT autonomy_state = autonomy_satellite }
 					    }
+						set_cosmetic_tag = MIT_arantiga
+						add_ideas = limited_conscription_ara
 				    }
 				}
 			}
@@ -1697,6 +1700,112 @@ country_event = { #Griffonstone Archives
 				}
 			}
 		}
+	}
+	news_event = { #Arantigan Empire Proclamation
+	    id = arantiga_news.3
+	    title = arantiga_news.3.t
+	    desc = arantiga_news.3.d
+	    is_triggered_only = yes
+	    fire_only_once = yes
+	    picture = GFX_news_griffon_soldier
+	    major = yes
+		option = {
+		    name = arantiga_news.3.a
+			trigger = {
+			    OR = {
+				    TAG = ARA
+					is_in_faction_with = ARA
+				}
+			}
+		}
+		option = {
+	        name = arantiga_news.3.b
+			trigger = {
+			    AND = {
+			        NOT = {
+				        TAG = ARA
+					    is_in_faction_with = ARA
+				    }
+				    any_owned_state = {
+					    limit = {
+						    is_capital = yes
+						}
+						is_on_continent = asia
+					}
+				}
+			}
+	    }
+		option = {
+	        name = arantiga_news.3.c
+			trigger = {
+			    AND = {
+			        NOT = {
+				        any_owned_state = {
+					        limit = {
+						        is_capital = yes
+						    }
+						    is_on_continent = asia
+					    }
+					}
+					NOT = {
+					    is_in_faction_with = ARA
+				    }
+				}
+			}
+	    }
+	}
+	news_event = { #Discret-Featherin Marriage
+	    id = arantiga_news.4
+	    title = arantiga_news.4.t
+	    desc = arantiga_news.4.d
+	    is_triggered_only = yes
+	    fire_only_once = yes
+	    picture = GFX_news_griffon_soldier
+	    major = yes
+		option = {
+		    name = arantiga_news.4.a
+			trigger = {
+			    OR = {
+				    TAG = ARA
+					is_in_faction_with = ARA
+				}
+			}
+		}
+		option = {
+	        name = arantiga_news.4.b
+			trigger = {
+			    AND = {
+			        NOT = {
+				        TAG = ARA
+					    is_in_faction_with = ARA
+				    }
+				    any_owned_state = {
+					    limit = {
+						    is_capital = yes
+						}
+						is_on_continent = asia
+					}
+				}
+			}
+	    }
+		option = {
+	        name = arantiga_news.4.c
+			trigger = {
+			    AND = {
+			        NOT = {
+				        any_owned_state = {
+					            limit = {
+						            is_capital = yes
+						        }
+						        is_on_continent = asia
+					    }
+					}
+					NOT = {
+					    is_in_faction_with = ARA
+				    }
+				}
+			}
+	    }
 	}
 	country_event = { #debug event to load the imperial tree
 	    id = arantiga.666
@@ -1783,15 +1892,15 @@ country_event = { #Griffonstone Archives
 	picture = GFX_event_griffon_soldier
 	option = {
 		name = 	arantiga_govern.015.a
-		add_ideas = free_trade
+		add_ideas = free_trade_ara
 	}
 	option = {
 		name = 	arantiga_govern.015.b
-		add_ideas = export_focus
+		add_ideas = export_focus_ara
 	}
 	option = {
 		name = 	arantiga_govern.015.c
-		add_ideas = limited_exports
+		add_ideas = limited_exports_ara
 	}
 }
  
@@ -1847,14 +1956,14 @@ country_event = { #Griffonstone Archives
 		name = 	arantiga_govern.018.a
 		remove_ideas = ARA_militarized_economy 
 		remove_ideas = ARA_every_griff
-		add_ideas = ARA_state_of_peace
 	}
 	option = {
 		name = 	arantiga_govern.018.b
 		remove_ideas = ARA_militarized_economy 
 		remove_ideas = ARA_every_griff
-		add_ideas = civilian_economy
-		add_ideas = limited_conscription
+		add_ideas = civilian_economy_ara
+		add_ideas = limited_conscription_ara
+		add_ideas = ARA_state_of_peace
 		###INCOMPLETE LOCK ECONOMY AND CONSCRIPTION LAWS
 	}
 }
@@ -1880,6 +1989,13 @@ country_event = { # Detente
 	picture = GFX_event_griffon_soldier
 	option = {
 		name = arantiga_govern.020.a
+		ai_chance = {
+			factor = 40
+				modifier = {
+				    has_government = democratic
+					factor = 80
+				}
+		}
 		hidden_effect = {
 		    FROM = {
 			    country_event = {
@@ -1891,6 +2007,13 @@ country_event = { # Detente
 	}
 	option = {
 	    name = arantiga_govern.020.b
+		ai_chance = {
+			factor = 60
+				modifier = {
+				    has_government = democratic
+					factor = 20
+				}
+		}
 	    hidden_effect = {
 		    FROM = {
 			    country_event = {
@@ -2205,6 +2328,8 @@ country_event = { # Detente
 						            FBK_the_warrior_chief
 					            }
 				            }
+							#set_cosmetic_tag = FBK_arantiga
+							add_ideas = limited_conscription_ara
 					    }
 						ARA = {
 					    	puppet = FBK
@@ -2251,10 +2376,12 @@ country_event = { # Detente
 				            }
 							remove_ideas = BAR_pentarchy
 							remove_ideas = BAR_insane_weather
+							set_cosmetic_tag = BRD_arantiga
+							add_ideas = disarmed_nation_ara
 					    }
 						ARA = {
 					    	puppet = BAR
-						    set_autonomy = { target = BAR autonomy_state = autonomy_satellite }
+						    set_autonomy = { target = BAR autonomy_state = autonomy_reichsprotectorate }
 				            every_unit_leader = {
 					            limit = { has_id = 1335 }
 					            set_nationality = BAR
@@ -2262,7 +2389,6 @@ country_event = { # Detente
 						}
 				    }
 					RCT = {
-					    set_cosmetic_tag = RIV
 					    transfer_state = 387
 					    transfer_state = 499
 					    transfer_state = 541
@@ -2415,7 +2541,7 @@ country_event = { # Detente
 						681 = {
 					        add_core_of = RCT
 					    }
-					    RIV = {
+					    RCT = {
 				            create_country_leader = {
 					            name = "Pumpkin Swirl"
 					            desc = ""
@@ -2425,10 +2551,12 @@ country_event = { # Detente
 					            traits = {
 					            }
 				            }
+							set_cosmetic_tag = RIV_arantiga
+							add_ideas = disarmed_nation_ara
 					    }
 						ARA = {
 					    	puppet = RCT
-						    set_autonomy = { target = RCT autonomy_state = autonomy_satellite }
+						    set_autonomy = { target = RCT autonomy_state = autonomy_reichsprotectorate }
 						}
 				    }
 				}
@@ -2475,19 +2603,49 @@ country_event = { # Detente
 	picture = GFX_event_griffon_soldier
 	option = {
 		name = 	arantiga_govern.024.a #we fight
+		ai_chance = {
+			factor = 80
+			    modifier = {
+				    has_government = fascism
+					factor = 90
+				}
+				modifier = {
+				    has_government = democratic
+					factor = 90
+				}
+				modifier = {
+				    has_government = communism
+					factor = 100
+				}
+		}
 		ARA = {
 		    country_event = {
-			    id = arantiga_govern.26
-				days = 7
+			    id = arantiga_govern.026
+				days = 2
 			}
 		}
 	}
 	option = {
 		name = 	arantiga_govern.024.b #we surrender
+		ai_chance = {
+			factor = 20
+			    modifier = {
+				    has_government = fascism
+					factor = 10
+				}
+				modifier = {
+				    has_government = democratic
+					factor = 10
+				}
+				modifier = {
+				    has_government = communism
+					factor = 0
+				}
+		}
 		ARA = {
 		    country_event = {
-			    id = arantiga_govern.27
-				days = 7
+			    id = arantiga_govern.027
+				days = 2
 			}
 		}
 	}
@@ -2577,7 +2735,7 @@ country_event = { # Detente
 				}
 				ARA = {
 				  	puppet = EQC
-				    set_autonomy = { target = EQC autonomy_state = autonomy_satellite }
+				    set_autonomy = { target = EQC autonomy_state = autonomy_reichsprotectorate }
                 }
 				every_unit_leader = {
 				    limit = { has_id = 1334 }
@@ -2597,6 +2755,8 @@ country_event = { # Detente
 				    	traits = {
 				    	}
 				    }
+					set_cosmetic_tag = EQC_arantiga
+					add_ideas = disarmed_nation_ara
 				}
 			}
 		}
@@ -2624,7 +2784,7 @@ country_event = { # Detente
 				transfer_state = 354
 			    ARA = {
 			    	puppet = EQC
-				    set_autonomy = { target = EQC autonomy_state = autonomy_satellite }
+				    set_autonomy = { target = EQC autonomy_state = autonomy_reichsprotectorate }
 			    }
 				EQC ={
 					set_politics = {
@@ -2632,6 +2792,7 @@ country_event = { # Detente
 				        elections_allowed = no
 			        }
 					add_ideas = disarmed_nation
+					set_cosmetic_tag = EQC_arantiga
 				}
 		    }
 		}
@@ -2681,6 +2842,816 @@ country_event = { # Detente
 		    }
 		}
 		ARA = { puppet = GRF }
+	}
+}
+
+#########################################
+########## Die Is Cast Tree #############
+#########################################
+
+country_event = { #Arantigan Uprising
+	id = arantiga.075
+	title = arantiga.075.t
+	desc = arantiga.075.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.075.a
+		ai_chance = {
+			factor = 50
+		}
+		add_stability = -0.2
+        add_war_support = -0.2
+		ARA = {
+		    transfer_state = 487
+			transfer_state = 410
+			transfer_state = 481
+		}
+	}
+	option = {
+		name = 	arantiga.075.b
+		ai_chance = {
+			factor = 50
+		}
+		add_timed_idea = {
+		    idea = ARA_arantigan_uprising
+			days = 180
+		}
+	}
+}
+
+country_event = { #Looking south
+	id = arantiga.076
+	title = arantiga.076.t
+	desc = arantiga.076.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.076.a
+		ARA = {
+		    create_wargoal = {
+			    type = annex_everything
+				target = FAL
+			}
+		}
+	}
+	option = {
+		name = 	arantiga.076.b
+		FAL = {
+		    country_event = { id = arantiga.078 days = 2 }
+		}
+	}
+}
+
+country_event = { #Arantigan Alliance
+    id = arantiga.078
+	title = arantiga.078.t
+	desc = arantiga.078.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	  	name = 	arantiga.078.a
+	    ai_chance = {
+			factor = 60
+			    modifier = {
+				    FAL = {
+				        has_government = fascism
+					}
+					factor = 80
+				}
+				modifier = {
+				    FAL = {
+					    OR = {
+					        has_government = democratic
+							is_in_faction = yes
+						}
+					}
+					factor = 0
+				}		
+		}
+		ARA = {
+		    add_to_faction = FAL
+		}
+	}
+	option = {
+		name = 	arantiga.078.b
+		ai_chance = {
+			factor = 40
+			    modifier = {
+				    FAL = {
+				        has_government = fascism
+					}
+					factor = 20
+				}
+				modifier = {
+				    FAL = {
+					    OR = {
+					        has_government = democratic
+							is_in_faction = yes
+						}
+					}
+					factor = 100
+				}
+		}
+		ARA = {
+		    country_event = { id = arantiga.079 days = 2 }
+	    }
+	}
+}
+
+country_event = { #Falcor refuses!
+	id = arantiga.079
+	title = arantiga.079.t
+	desc = arantiga.079.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.079.a
+		ARA = {
+		    create_wargoal = {
+			    type = annex_everything
+				target = FAL
+			}
+		}
+	}
+}
+
+country_event = { #Fate of Falcor
+	id = arantiga.080
+	title = arantiga.080.t
+	desc = arantiga.080.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.080.a
+	}
+	option = {
+		name = 	arantiga.080.b
+		FAL = {
+		    country_event = { id = arantiga.081 }
+		}
+	}
+	option = {
+		name = 	arantiga.080.c
+		remove_from_faction = FAL
+		hidden_effect = {
+			FAL = {
+			    country_event = { id = arantiga.083 hours = 6 }
+			}
+		}
+		create_wargoal = {
+		    type = annex_everything
+			target = FAL
+		}
+	}
+}
+
+country_event = { #Arantigan Demands
+	id = arantiga.081
+	title = arantiga.081.t
+	desc = arantiga.081.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.081.a
+		ai_chance = {
+			factor = 0
+			    modifier = {
+				    strength_ratio = { tag = ARA ratio < 0.8 }
+					factor = 30
+				}
+				modifier = {
+				    strength_ratio = { tag = ARA ratio < 0.6 }
+					factor = 50
+				}
+				modifier = {
+				    strength_ratio = { tag = ARA ratio < 0.5 }
+					factor = 70
+				}
+				modifier = {
+				    strength_ratio = { tag = ARA ratio < 0.3 }
+					factor = 100
+				}
+		}
+		ARA = {
+			puppet = FAL
+			set_autonomy = { target = FAL autonomy_state = autonomy_reichsprotectorate }
+		}
+		FAL = {
+     		set_cosmetic_tag = FAL_ARA
+		}
+	}
+	option = {
+		name = 	arantiga.081.b
+		ai_chance = {
+			factor = 100
+			    modifier = {
+				    strength_ratio = { tag = ARA ratio < 0.8 }
+					factor = 70
+				}
+				modifier = {
+				    strength_ratio = { tag = ARA ratio < 0.6 }
+					factor = 50
+				}
+				modifier = {
+				    strength_ratio = { tag = ARA ratio < 0.5 }
+					factor = 30
+				}
+				modifier = {
+				    strength_ratio = { tag = ARA ratio < 0.3 }
+					factor = 0
+				}
+		}
+		ARA = {
+		    country_event = { id = arantiga.082 days = 1 }
+		}
+	}
+}
+
+country_event = { #Falcor choses war
+	id = arantiga.082
+	title = arantiga.082.t
+	desc = arantiga.082.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.082.a
+		ARA = {
+		    remove_from_faction = FAL
+		}
+		create_wargoal = {
+		    type = annex_everything
+			target = FAL
+		}
+	}
+}
+
+country_event = { #Betrayed
+	id = arantiga.083
+	title = arantiga.083.t
+	desc = arantiga.083.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.083.a
+	}
+}
+
+country_event = { #Old Foes
+	id = arantiga.084
+	title = arantiga.084.t
+	desc = arantiga.084.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.084.a
+		ai_chance = {
+			factor = 50
+		}
+		add_political_power = 50
+		add_war_support = 0.05
+	}
+	option = {
+		name = 	arantiga.084.b
+		ai_chance = {
+			factor = 50
+		}
+		add_political_power = -100
+		add_war_support = -0.1
+		WNG = {
+		    every_unit_leader = {
+		     	limit = { has_id = 304 }
+		    	set_nationality = ARA
+		    }
+		}
+		add_manpower = 100000
+		
+	}
+}
+
+country_event = { #Last Deal
+	id = arantiga.085
+	title = arantiga.085.t
+	desc = arantiga.085.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.085.a
+		ai_chance = {
+			factor = 50
+		}
+		add_political_power = -100
+		add_war_support = -0.05
+		custom_effect_tooltip = ARA_de_charbon_tooltip
+		hidden_effect = {
+		    FLO = {
+		       every_unit_leader = {
+			       limit = { has_id = 5201 }
+			       set_nationality = ARA
+		       }
+		    }
+		    load_oob = ARA_de_charbons_mercs_OOB
+		}
+	}
+	option = {
+		name = 	arantiga.085.b
+		ai_chance = {
+			factor = 50
+		}
+		add_war_support = 0.05
+	}
+}
+
+country_event = { #Death of an Idea
+	id = arantiga.086
+	title = arantiga.086.t
+	desc = arantiga.086.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.086.a
+		ai_chance = {
+			factor = 50
+		}
+		add_stability = -0.10
+		377 = {
+		    add_manpower = -5000
+		}
+		435 = {
+		    add_manpower = -5000
+		}
+		448 = {
+		    add_manpower = -5000
+		}
+		517 = {
+		    add_manpower = -5000
+		}
+		376 = {
+		    add_manpower = -5000
+		}
+	}
+	option = {
+		name = 	arantiga.086.b
+		ai_chance = {
+			factor = 50
+		}
+		add_political_power = -100
+		377 = {
+		    add_manpower = -50000
+		}
+		435 = {
+		    add_manpower = -50000
+		}
+		448 = {
+		    add_manpower = -50000
+		}
+		517 = {
+		    add_manpower = -50000
+		}
+		376 = {
+		    add_manpower = -50000
+		}
+	}
+}
+
+country_event = { #Coronation
+	id = arantiga.087
+	title = arantiga.087.t
+	desc = arantiga.087.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.087.a
+		ai_chance = {
+			factor = 50
+		}
+		hidden_effect = {
+		    news_event = { id = arantiga_news.3 hours = 16 }
+			country_event = { id = arantiga.088 hours = 24 }
+			
+		}
+		set_cosmetic_tag = ARA_EMP
+		set_party_name = { ideology = fascism name = ARA_EMP_monarchists long_name = ARA_EMP_monarchists_long }
+		set_party_name = { ideology = neutrality name = ARA_EMP_elites long_name = ARA_EMP_elites_long }
+		set_party_name = { ideology = democratic name = ARA_EMP_democrats long_name = ARA_EMP_democrats_long }
+		set_party_name = { ideology = communism name = ARA_EMP_communists long_name = ARA_EMP_communists_long }
+	}
+}
+
+country_event = { #Facing Reality
+	id = arantiga.088
+	title = arantiga.088.t
+	desc = arantiga.088.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.088.a
+		ai_chance = {
+			factor = 50
+		}
+		add_ideas = ARA_fragile_rule_1
+		add_ideas = ARA_whispers_of_dissent
+		custom_effect_tooltip = ARA_load_imperial_tree
+		hidden_effect = {
+		    load_focus_tree = Arantiga_empire
+		}
+	}
+}
+
+country_event = { #Marriage
+	id = arantiga.089
+	title = arantiga.089.t
+	desc = arantiga.089.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	    ai_chance = {
+			factor = 60
+		}
+		name = 	arantiga.089.a
+		ARA = {
+			country_event = { id = arantiga.90 days = 2 }
+		}
+	}
+	option = {
+	    ai_chance = {
+			factor = 40
+		}
+		name = 	arantiga.089.b
+		news_event = { id = arantiga_news.4 days = 1 }
+		ARA = {
+		    add_to_faction = JER
+		}
+		hidden_effect = {
+		    add_ai_strategy = {
+				type = alliance
+				id = "JER"
+				value = 200
+			}
+		}
+	}
+}
+
+country_event = { #Turned Down
+	id = arantiga.090
+	title = arantiga.090.t
+	desc = arantiga.090.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.090.a
+		ai_chance = {
+			factor = 50
+		}
+		create_wargoal = {
+		    type = annex_everything
+			target = JER
+		}
+	}
+}
+
+country_event = { #Ignoble Affairs
+	id = arantiga.091
+	title = arantiga.091.t
+	desc = arantiga.091.d
+	is_triggered_only = no
+	fire_only_once = yes
+	#trigger = {
+	#    focus_progress = {
+	#	    focus = ARA_king_of_aquileia
+	#		progress = 0.2857142857142857
+	#	}
+	#}
+	option = {
+		name = 	arantiga.091.a
+		add_timed_idea = {
+		    idea = ARA_lavish_bribes
+			days = 360
+		}
+		hidden_effect = {
+		    #country_event = { id = arantiga.092 days = 38 }
+			JER = {
+			    country_event = { id = arantiga.094 days = 0 }
+			}
+		}
+	}
+}
+country_event = { #Infiltrating Intelligence
+	id = arantiga.092
+	title = arantiga.092.t
+	desc = arantiga.092.d
+	is_triggered_only = no
+	fire_only_once = yes
+	#trigger = {
+	#    focus_progress = {
+	#	    focus = ARA_king_of_aquileia
+	#		progress = 0.5714285714285714‬
+	#	}
+	#}
+	option = {
+		name = 	arantiga.092.a
+		hidden_effect = {
+		    #country_event = { id = arantiga.093 days = 40 }
+			JER = {
+			    country_event = { id = arantiga.095 days = 0 }
+			}
+		}
+	}
+}
+country_event = { #Marechal's Death
+	id = arantiga.093
+	title = arantiga.093.t
+	desc = arantiga.093.d
+	is_triggered_only = no
+	fire_only_once = yes
+	#trigger = {
+	#    focus_progress = {
+	#	    focus = ARA_king_of_aquileia
+	#		progress = 0.8571428571428571
+	#	}
+	#}
+	option = {
+		name = 	arantiga.093.a
+		hidden_effect = {
+		    JER = {
+	           country_event = { id = arantiga.096 days = 0 }
+		    }
+		}
+	}
+}
+
+country_event = { #Corruption in aquileian government
+	id = arantiga.094
+	title = arantiga.094.t
+	desc = arantiga.094.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.094.a
+		add_timed_idea = {
+		    idea = ARA_corrupt_government
+			days = 280
+		}
+	}
+}
+country_event = { #Blind and Deaf
+	id = arantiga.095
+	title = arantiga.095.t
+	desc = arantiga.095.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.095.a
+		add_timed_idea = {
+		    idea = ARA_inefficient_intelligence
+			days = 240
+		}
+	}
+}
+country_event = { #-Marechal is kil -No
+	id = arantiga.096
+	title = arantiga.096.t
+	desc = arantiga.096.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.096.a
+		remove_unit_leader = 75653
+		add_timed_idea = {
+		    idea = ARA_army_in_chaos
+			days = 200
+		}
+	}
+}
+country_event = { #Decline of Aquileia
+	id = arantiga.097
+	title = arantiga.097.t
+	desc = arantiga.097.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.097.a
+		ai_chance = {
+			factor = 50
+		}
+		ARA = {
+		    annex_country = { target = JER transfer_troops = yes }
+		}
+	}
+	option = {
+		name = 	arantiga.097.b
+		ai_chance = {
+			factor = 50
+		}
+		leave_faction = yes
+		set_politics = {
+	        ruling_party = democratic
+		    elections_allowed = no
+		}
+		load_focus_tree = aquileian_focus
+        complete_national_focus = JER_fight_for_freedom
+		declare_war_on = { 
+		    type = topple_government
+	        target = ARA
+		}
+	
+		hidden_effect = {
+		    every_unit_leader = {
+					limit = { has_id = 75656 }
+					set_nationality = ARA
+				}
+				every_unit_leader = {
+					limit = { has_id = 75655 }
+					set_nationality = ARA
+				}
+		    ARA = {
+			    set_country_flag = JER_revolution_number_three
+				set_country_flag = JER_revolution_number_three1
+			}
+		}
+	}
+}
+country_event = { #"King" of Aquileia
+	id = arantiga.105
+	title = arantiga.105.t
+	desc = arantiga.105.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.105.a
+		ai_chance = {
+			factor = 30
+		}
+		country_event = { id = arantiga.108 days = 1 }
+		ARA = { country_event = { id = arantiga.107 hours = 30 }}
+	}
+	option = {
+		name = 	arantiga.105.b
+		ai_chance = {
+			factor = 70
+		}
+		ARA = {
+		    puppet = JER
+		}
+		remove_unit_leader = 75653
+		retire_ideology_leader = fascism
+		ARA = { country_event = { id = arantiga.106 days = 1}}
+	}
+}
+country_event = { #Rodier arrested
+	id = arantiga.106
+	title = arantiga.106.t
+	desc = arantiga.106.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.106.a
+	}
+}
+country_event = { #Rodier's coup #Arantiga
+	id = arantiga.107
+	title = arantiga.107.t
+	desc = arantiga.107.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.107.a
+		create_wargoal = {
+		    type = annex_everything
+			target = JER
+		}
+	    set_country_flag = JER_rodier_is_why_arantiga
+		set_country_flag = JER_cant_have_nice_things
+	}
+}
+country_event = { #Rodier's coup
+	id = arantiga.108
+	title = arantiga.108.t
+	desc = arantiga.108.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.108.a
+		leave_faction = yes
+		set_politics = {
+	        ruling_party = fascism
+		    elections_allowed = no
+		}
+	}
+}
+
+country_event = { #BBEG Dies
+	id = arantiga.098
+	title = arantiga.098.t
+	desc = arantiga.098.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.098.a
+		add_political_power = 100
+		add_stability = 0.05
+	}
+}
+country_event = { #Child Dies
+	id = arantiga.099
+	title = arantiga.099.t
+	desc = arantiga.099.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.099.a
+		382 = {
+		    add_manpower = -300000
+		}
+		add_stability = -0.10
+		add_war_support = -0.10
+		add_timed_idea = {
+		    idea = ARA_dark_rumors
+			days = 360
+		}
+	}
+}
+
+country_event = { #Triumph in Griffenheim
+	id = arantiga.100
+	title = arantiga.100.t
+	desc = arantiga.100.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.100.a
+	}
+}
+country_event = { #Fallen Archon
+	id = arantiga.101
+	title = arantiga.101.t
+	desc = arantiga.101.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga.101.a
+		custom_effect_tooltip = ARA_erion_not_found
+	}
+	option = {
+		name = 	arantiga.101.b
+		show_ideas_tooltip = ARA_archon_erion
+		hidden_effect = {
+		    set_country_flag = ARA_dorotheos_endorsed_erion
+		}
+	}
+}
+
+country_event = { #Fall of Karthin
+	id = arantiga.102
+	title = arantiga.102.t
+	desc = arantiga.102.d
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+	    ARA = {
+	        controls_province = 3144
+		}
+	}
+	option = {
+		name = 	arantiga.102.a
+		hidden_effect = {
+		    set_global_flag = form_wingbardian_empire_flag
+		}
+	}
+}
+country_event = { #Fall of Aquila
+	id = arantiga.103
+	title = arantiga.103.t
+	desc = arantiga.103.d
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+	    ARA = {
+	        controls_province = 3164
+		}
+	}
+	option = {
+		name = 	arantiga.103.a	
+	}
+}
+country_event = { #Fall of Griffenheim
+	id = arantiga.104
+	title = arantiga.104.t
+	desc = arantiga.104.d
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+	    ARA = {
+	        controls_province = 10537
+		}
+	}
+	option = {
+		name = 	arantiga.104.a
+		hidden_effect = {
+		    ARA = {
+		        set_country_flag = holds_griffon_capital
+			}
+		}
 	}
 }
 

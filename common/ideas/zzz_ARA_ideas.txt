@@ -181,6 +181,44 @@ ideas = {
 			}
 		}
 	}
+	
+	country = {
+		ARA_steel_legions = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_acquire_tanks
+			removal_cost = -1
+			modifier = {
+				army_armor_attack_factor = 0.05
+			}
+			equipment_bonus = {
+			    armor = {
+				    reliability = 0.05
+			    }
+			}
+		}
+	}
+	
+	country = {
+		ARA_modern_knights = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = ARA_modern_knights
+			removal_cost = -1
+			modifier = {
+				modifier_army_sub_unit_knights_attack_factor = 0.05  
+				modifier_army_sub_unit_knights_defence_factor = 0.05
+			}
+		}
+	}
 
 	country = {
 		ARA_unmatched_army_idea = {
@@ -549,7 +587,7 @@ country = {
 			available = {
 				has_government = fascism
 			}
-			picture = generic_victors_of_ww1
+			picture = PAP_Legionary_Spirit
 			removal_cost = -1
 			modifier = {
 				army_morale_factor = 0.05
@@ -2124,7 +2162,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-            picture = generic_victors_of_ww1
+            picture = generic_coastal_defense_ships
 			removal_cost = -1
 			research_bonus = { naval_doctrine = 0.10 }
 			modifier = {
@@ -2140,7 +2178,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-            picture = generic_victors_of_ww1
+            picture = griffon_army3
 			removal_cost = -1
 			modifier = {
 				max_command_power = 20
@@ -2160,7 +2198,7 @@ country = {
 			available = {
 				has_government = fascism
 			}
-			picture = german_advisors
+			picture = FRA_la_deluge
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.1
@@ -2180,7 +2218,7 @@ country = {
 				has_government = fascism
 			}
 			removal_cost = -1
-			picture = GFX_idea_ARA_truth
+			picture = PAP_Legionary_Spirit
 			modifier = {	
 			    drift_defence_factor = 0.5
 			    fascism_drift = 0.2
@@ -2202,7 +2240,7 @@ country = {
 				has_government = fascism
 			}
 			removal_cost = -1
-			picture = GFX_idea_ARA_truth
+			picture = PAP_Legionary_Spirit
 			modifier = {	
 			    drift_defence_factor = 0.5
 			    fascism_drift = 0.25
@@ -2221,7 +2259,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_victors_of_ww1
+			picture = SPR_seize_the_gold_reserves
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.1
@@ -2236,7 +2274,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_victors_of_ww1
+			picture = generic_navy_bonus
 			removal_cost = -1
 			modifier = {
 				industrial_capacity_dockyard = 0.5
@@ -2312,7 +2350,7 @@ country = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_victors_of_ww1
+			picture = jap_supremacy_of_technology
 			removal_cost = -1
 			modifier = {
 				research_speed_factor = 0.05
@@ -2484,7 +2522,7 @@ country = {
 			available = {
 				has_government = fascism
 			}
-			picture = generic_victors_of_ww1
+			picture = EQC_griffon_minorities1
 			removal_cost = -1
 			modifier = {
 			    conscription_factor = -0.15
@@ -2505,7 +2543,7 @@ country = {
 			available = {
 				has_government = fascism
 			}
-			picture = generic_victors_of_ww1
+			picture = griffon_chained
 			removal_cost = -1
 			modifier = {
 				conscription_factor = -0.05
@@ -2525,7 +2563,7 @@ country = {
 			available = {
 				has_government = fascism
 			}
-			picture = generic_victors_of_ww1
+			picture = GRW_national_divides
 			removal_cost = -1
 			modifier = {
 				conscription_factor = 0.03
@@ -2619,7 +2657,7 @@ country = {
 			available = {
 				owns_state = 512
 			}
-			picture = generic_victors_of_ww1
+			picture = eng_steady_as_she_goes
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.05
@@ -2637,7 +2675,7 @@ country = {
 			available = {
 				owns_state = 512
 			}
-			picture = generic_victors_of_ww1
+			picture = eng_steady_as_she_goes
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.01
@@ -2655,7 +2693,7 @@ country = {
 			available = {
 			    has_government = fascism
 			}
-			picture = ARA_golden_dorotheos
+			picture = ARA_swords_and_cap
 			removal_cost = -1
 			modifier = {
 			    justify_war_goal_time = -0.50
@@ -2691,7 +2729,7 @@ country = {
 			}
 			available = {
 			}
-			picture = generic_victors_of_ww1
+			picture = ARA_HIM-ss
 			removal_cost = -1
 			modifier = {
 				decryption_factor = 0.10
@@ -2763,7 +2801,7 @@ country = {
 			}
 			available = {
 			}
-			picture = absentee
+			picture = STW_absentee
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.10
@@ -2798,7 +2836,7 @@ country = {
 			}
 			available = {
 			}
-			picture = enlightened_feudalism
+			picture = feudalism
 			removal_cost = -1
 			modifier = {
 			    conscription_factor = -0.05
@@ -2927,7 +2965,7 @@ country = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_victors_of_ww1
+			picture = syndicate_of_defence
 			modifier = {
 			    stability_factor = -0.10
 				war_support_factor = -0.10
@@ -2947,7 +2985,7 @@ country = {
 			    owns_state = 619
 			}
 			removal_cost = -1
-			picture = NIM_martial_society
+			picture = NIM_warrior_society
 			modifier = {
 			    stability_factor = -0.20
 				war_support_factor = -0.20
@@ -3035,6 +3073,317 @@ country = {
 			}
 			}
 			}
+	country = {
+		ARA_arantigan_uprising = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = unhappy_army_3
+			removal_cost = -1
+			modifier = {
+			    army_attack_factor = -0.2
+			    army_defence_factor = -0.2
+				army_org_factor = -0.2
+				conscription_factor = -0.25
+			}
+		}
+	}
+    country = {
+		ARA_corrupt_government = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = generic_neutrality_drift_bonus
+			removal_cost = -1
+			modifier = {
+			    political_power_factor = -0.25
+				stability_factor = -0.25
+				war_support_factor = -0.25
+			}
+		}
+	}	
+	country = {
+		ARA_inefficient_intelligence = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = WNG_braindrain
+			removal_cost = -1
+			modifier = {
+			    decryption_factor = -0.50
+				encryption_factor = -0.50
+			}
+		}
+	}
+	country = {
+		ARA_army_in_chaos = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = unhappy_army_3
+			removal_cost = -1
+			modifier = {
+			    army_attack_factor = -0.2
+			    army_defence_factor = -0.2
+				army_org_factor = -0.2
+			}
+		}
+	}
+	country = {
+		ARA_lavish_bribes = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = capital_outflow
+			removal_cost = -1
+			modifier = {
+			    consumer_goods_factor = 0.10
+				political_power_factor = -0.10
+			}
+		}
+	}
+	country = {
+		ARA_dark_rumors = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = generic_purge
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.10
+			}
+		}
+	}
+	country = {
+		ARA_dogs_of_war = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			picture = diamond_mountain
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}
+	}
+	economy = {
+	    law = yes
+		use_list_view = no
+
+	    civilian_economy_ara = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = civilian_economy
+			
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+				conversion_cost_civ_to_mil_factor= 0.3
+				conversion_cost_mil_to_civ_factor = 0.3
+				max_fuel_factor = -0.25
+				fuel_gain_factor = -0.4
+			}
+			
+			allowed_to_remove = {
+				NOT = {
+				    has_government = fascism
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+	mobilization_laws = { 
+		law = yes
+		use_list_view = no
+		
+		limited_conscription_ara = {
+			allowed = {
+				always = no
+			}	
+			removal_cost = -1
+			picture = limited_conscription
+			level = 5
+
+			modifier = {
+				conscription = 0.025
+			}
+
+			allowed_to_remove = {
+			    IF = {
+				    limit = {
+					    original_tag = ARA
+					}
+				    NOT = {
+				        has_government = fascism
+				    }
+				}
+				IF = {
+				    limit = {
+					    NOT = {
+						    original_tag = ARA
+						}
+					}
+					NOT = {
+					    is_subject_of = ARA
+					}
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+		disarmed_nation_ara = {
+			allowed = {
+				always = no
+			}	
+			removal_cost = -1
+			picture = disarmed_nation
+			level = 7
+			
+			modifier = {
+				conscription = 0.01
+			}
+			
+			allowed_to_remove = {
+			    IF = {
+				    limit = {
+					    original_tag = ARA
+					}
+				    NOT = {
+				        has_government = fascism
+				    }
+				}
+				IF = {
+				    limit = {
+					    NOT = {
+						    original_tag = ARA
+						}
+					}
+					NOT = {
+					    is_subject_of = ARA
+					}
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+	trade_laws = { 
+		law = yes
+		use_list_view = no
+		
+		free_trade_ara = {
+            allowed = {
+				always = no
+			}	
+			removal_cost = -1
+			picture = free_trade
+			
+			modifier = {
+				min_export = 0.8
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.10
+				civilian_intel_to_others = 40.0
+				navy_intel_to_others = 20.0
+			}		
+			allowed_to_remove = {
+				NOT = {
+				    has_government = fascism
+				}
+			}
+			cancel_if_invalid = no
+		}
+		
+		export_focus_ara = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = export_focus
+			
+			modifier = {
+				min_export = 0.5
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.05
+				civilian_intel_to_others = 20.0
+				navy_intel_to_others = 10.0
+			}
+			allowed_to_remove = {
+				NOT = {
+				    has_government = fascism
+				}
+			}
+			cancel_if_invalid = no
+		}
+		
+		limited_exports_ara = {
+		
+			allowed = {
+				always = no
+			}	
+			removal_cost = -1
+			picture = limited_exports
+			
+			modifier = {
+				min_export = 0.25
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.01
+				civilian_intel_to_others = 10.0
+				navy_intel_to_others = 5
+			}
+			allowed_to_remove = {
+				NOT = {
+				    has_government = fascism
+				}
+			}
+			cancel_if_invalid = no
+		}
+	}
 	
 	################### New Political Advsiors ###################
 	political_advisor = {
@@ -3113,6 +3462,25 @@ country = {
 			}
 			available = {
 				has_completed_focus = ARA_reform_the_archonates
+			}
+		}
+	}
+	
+	political_advisor = {
+		ARA_archon_erion = {
+			allowed = {
+				original_tag = "ARA"
+			}		
+ 			traits = { archon_eyr }
+			picture = archon_erion
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				has_country_flag = ARA_dorotheos_endorsed_erion
+			}
+			available = {
+				has_country_flag = ARA_dorotheos_endorsed_erion
 			}
 		}
 	}

@@ -12,7 +12,8 @@
 	country = {
 		factor = 0
 			modifier = {
-			add = 2000
+			add = 10
+			
 			original_tag = ARA
 			
 		}
@@ -2669,7 +2670,7 @@
 	}
 	focus = {
 	    id = ARA_detente_with_eastern_ponies
-		icon = GFX_focus_riv_form_federation
+		icon = GFX_goal_ARA_deal_with_rivrep
 		x = 7
 		y = 1
 		relative_position_id = ARA_emperor_of_griffonkind
@@ -2719,7 +2720,7 @@
 	}
 	focus = {
 	    id = ARA_the_last_crusade
-		icon = GFX_focus_riv_form_federation
+		icon = GFX_goal_ARA_kill_rivrep
 		x = 9
 		y = 1
 		relative_position_id = ARA_emperor_of_griffonkind
@@ -2795,7 +2796,7 @@
 	}
 	focus = {
 	    id = ARA_master_of_the_east
-		icon = GFX_goal_river_fed_suppression
+		icon = GFX_goal_ARA_master_of_the_east_vibrant
 		x = 9
 		y = 2
 		relative_position_id = ARA_emperor_of_griffonkind

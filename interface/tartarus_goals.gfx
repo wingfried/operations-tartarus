@@ -86,7 +86,7 @@ spriteTypes = {
 	}
 	SpriteType = { 
 		name = "GFX_goal_gaw_attack_aquileia"
-		texturefile = "gfx/interface/goals/GFX_goal_gaw_attack_aquileia.dds"
+		texturefile = "gfx/interface/goals/goal_gaw_attack_aquileia.dds"
 	}
 	SpriteType = { 
 		name = "GFX_goal_gaw_attack_empire"
@@ -107,5 +107,25 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_goal_hellquill_burning"
 		texturefile = "gfx/interface/goals/goal_hellquill_burning.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_ARA_master_of_the_east_vibrant"
+		texturefile = "gfx/interface/goals/goal_ARA_master_of_the_east_vibrant.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_ARA_deal_with_rivrep"
+		texturefile = "gfx/interface/goals/goal_ARA_deal_with_rivrep.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_ARA_kill_rivrep"
+		texturefile = "gfx/interface/goals/goal_ARA_kill_rivrep.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_griffon_special_forces_green"
+		texturefile = "gfx/interface/goals/goal_griffon_special_forces_green.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_gaw_marriage_aquileia"
+		texturefile = "gfx/interface/goals/goal_gaw_marriage_aquileia.dds"
 	}
 }

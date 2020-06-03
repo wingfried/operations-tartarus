@@ -34,7 +34,7 @@ focus_tree = {
 
 	focus = {
 		id = ARA_end_old_empire
-		icon = GFX_focus_unknown
+		icon = GFX_goal_gaw_attack_empire
 		x = -6
 		y = 1
 		relative_position_id = ARA_die_is_cast
@@ -128,53 +128,55 @@ focus_tree = {
 
 	focus = {
 		id = ARA_fate_of_lord_protector
-		icon = GFX_focus_unknown
+		icon = GFX_goal_Duskclaw_Icon
 		x = -1
 		y = 1
 		relative_position_id = ARA_end_old_empire
-		cost = 1.00
+		cost = 5.00
 		prerequisite = { focus = ARA_end_old_empire }
 		mutually_exclusive = { focus = ARA_fate_of_child_emperor }
 		available = { has_global_flag =  GRI_grover_vi_dead }
 		completion_reward = {
-			country_event = arantiga.027
+			country_event = arantiga.098
 		}
 	}
 
 	focus = {
 		id = ARA_avenge_of_grover
-		icon = GFX_focus_unknown
+		icon = GFX_goal_grover_returns
 		x = 0
 		y = 1
 		relative_position_id = ARA_fate_of_lord_protector
-		cost = 1.00
+		cost = 3.00
 		prerequisite = { focus = ARA_fate_of_lord_protector }
 		completion_reward = {
 			add_ideas = ARA_dogs_of_war
+			set_technology = { tech_ironpaws = 1 }
 		}
 	}
 
 	focus = {
 		id = ARA_fate_of_child_emperor
-		icon = GFX_focus_unknown
+		icon = GFX_goal_grover_vi
 		x = 1
 		y = 1
 		relative_position_id = ARA_end_old_empire
-		cost = 1.00
+		cost = 5.00
 		prerequisite = { focus = ARA_end_old_empire }
 		mutually_exclusive = { focus = ARA_fate_of_lord_protector }
+		available = { NOT = { has_global_flag =  GRI_grover_vi_dead } }
 		completion_reward = {
-		 country_event = arantiga.028
+		    country_event = arantiga.099
 		}
 	}
 
 	focus = {
 		id = ARA_force_dogs_to_dig
-		icon = GFX_focus_unknown
+		icon = GFX_goal_LEC_monkey
 		x = 0
 		y = 1
 		relative_position_id = ARA_fate_of_child_emperor
-		cost = 1.00
+		cost = 10.00
 		prerequisite = { focus = ARA_fate_of_child_emperor }
 		available = {
 			539 = { is_owned_and_controlled_by = ROOT }
@@ -219,135 +221,251 @@ focus_tree = {
 
 	focus = {
 		id = ARA_triumph_in_griffenheim
-		icon = GFX_focus_unknown
+		icon = GFX_goal_Duskclaw_Icon_Vacant
 		x = 1
 		y = 1
 		relative_position_id = ARA_avenge_of_grover
-		cost = 1.00
+		cost = 2.00
 		prerequisite = { focus = ARA_force_dogs_to_dig
 						 focus = ARA_avenge_of_grover }
 		completion_reward = {
 			add_war_support = 0.05	
 			add_stability = 0.05
 			country_event = { 
-			        id = arantiga.029
-					days = 1
-			    }
-			country_event = { 
-			        id = arantiga.030
+			    id = arantiga.100
+				days = 1
+			}
+			hidden_effect = {
+			    country_event = { 
+			        id = arantiga.101
 					days = 2
 			    }
+			}
 		}
 	}
 
 	focus = {
 		id = ARA_marriage_of_convience
-		icon = GFX_focus_unknown
+		icon = GFX_goal_gaw_marriage_aquileia
 		x = -2
 		y = 1
 		relative_position_id = ARA_die_is_cast
-		cost = 1.00
+		cost = 3.00
 		prerequisite = { focus = ARA_die_is_cast }
 		mutually_exclusive = { focus = ARA_march_west }
 		available = {
-							has_global_flag = JER_revolution_ended
-							JER = { 
-								has_government = neutrality
-								has_country_leader = { ruling_only = yes name = "Vivienne Discret" }
-								}
-							
-								}
+			has_global_flag = JER_revolution_ended
+			JER = { 
+				has_government = neutrality
+				has_country_leader = { ruling_only = yes name = "Vivienne Discret" }
+			}						
+	    }
 		completion_reward = {
 			JER = {
-			country_event = arantiga.31
+			    country_event = { id = arantiga.089 days = 1 }
 			}
 		}
 	}
 
 	focus = {
 		id = ARA_royal_spouse
-		icon = GFX_focus_unknown
+		icon = GFX_goal_jer_royalty
 		x = -1
 		y = 1
 		relative_position_id = ARA_marriage_of_convience
-		cost = 1.00
-		prerequisite = { focus = ARA_march_west
-						 focus = ARA_marriage_of_convience }
+		cost = 8.00
+		prerequisite = {
+    		#focus = ARA_march_west
+			focus = ARA_marriage_of_convience
+		}
 		mutually_exclusive = { focus = ARA_king_of_aquileia }
-			available = {
-							JER = {
-							is_in_faction_with = ROOT 
-							has_country_flag = FLAG_marriage_accepted
-							}
-							}
+		available = {
+			JER = {
+				is_in_faction_with = ROOT 
+			}
+		}
 		completion_reward = {
-			puppet = JER
+		    
+			JER = {
+			    country_event = arantiga.105
+			}
 		}
 	}
 
 	focus = {
 		id = ARA_eastern_wind
-		icon = GFX_focus_unknown
+		icon = GFX_goal_action_francaise
 		x = 0
 		y = 1
 		relative_position_id = ARA_royal_spouse
-		cost = 1.00
+		cost = 8.00
 		prerequisite = { focus = ARA_royal_spouse }
+		available = {
+		    NOT = {
+			    has_country_flag = JER_rodier_is_why_arantiga
+			}
+		}
 		completion_reward = {
-			##### adds some aquileian generals, you have to edit the aquileian history file to add a way to target them, for more details see CHN history file and AET focus tree#######
+			add_tech_bonus = {
+				name = cat_land_doctrine
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = cat_light_armor
+				bonus = 1.0
+				uses = 1
+				category = cat_light_armor
+			}
+			add_tech_bonus = {
+				name = cat_medium_armor
+				bonus = 1.0
+				uses = 1
+				category = cat_medium_armor
+			}
+			custom_effect_tooltip = ARA_one_aquileian_joins
+			hidden_effect = {
+			JER = {
+			    every_unit_leader = {
+					limit = { has_id = 75656 }
+					set_nationality = ARA
+				}
+			}
+			}
 		}
 	}
 
 	focus = {
 		id = ARA_king_of_aquileia
-		icon = GFX_focus_unknown
+		icon = GFX_goal_crown_and_swords
 		x = 1
 		y = 1
 		relative_position_id = ARA_marriage_of_convience
-		cost = 1.00
-		prerequisite = { focus = ARA_march_west
-						 focus = ARA_marriage_of_convience }
+		cost = 20.00
+		prerequisite = {
+    		#focus = ARA_march_west
+			focus = ARA_marriage_of_convience 
+		}
+		available = {
+			JER = {
+				is_in_faction_with = ROOT 
+			}
+		}
 		mutually_exclusive = { focus = ARA_royal_spouse }
+		select_effect = {
+		    #hidden_effect = {
+			    country_event = { id = arantiga.091 days = 40 }
+				country_event = { id = arantiga.092 days = 80 }
+				country_event = { id = arantiga.093 days = 120 }
+			#}
+		}
 		completion_reward = {
+		    custom_effect_tooltip = ARA_decline_of_aquileia_tooltip
+			add_political_power = -200
 			add_stability = -0.2
 			add_war_support = -0.2
-			add_political_power = -200
-			#########INCOMPLETE ADD EVENTS FOR DECLINE OF AQUILEIA############
+			hidden_effect = {
+			    country_event = arantiga.097
+			}
 		}
 	}
 
 	focus = {
 		id = ARA_integrate_aquileian_army
-		icon = GFX_focus_unknown
+		icon = GFX_goal_jer_army
 		x = 0
 		y = 1
 		relative_position_id = ARA_king_of_aquileia
-		cost = 1.00
+		cost = 8.00
 		prerequisite = { focus = ARA_king_of_aquileia }
+		available = {
+		    NOT = {
+			    has_country_flag = JER_revolution_number_three
+			}
+		}
 		completion_reward = {
-			##### adds some aquileian generals, you have to edit the aquileian history file to add a way to target them, for more details see CHN history file and AET focus tree#######
+			add_war_support = -0.10
+			custom_effect_tooltip = ARA_three_aquileians_join
+			hidden_effect = {
+			JER = {
+			    every_unit_leader = {
+					limit = { has_id = 75656 }
+					set_nationality = ARA
+				}
+				every_unit_leader = {
+					limit = { has_id = 75655 }
+					set_nationality = ARA
+				}
+				every_unit_leader = {
+					limit = {
+					    AND = {
+    					    has_trait = trait_focused
+							is_female = yes
+						}
+					}
+					set_nationality = ARA
+				}
+			}
+			}
 		}
 	}
 
 	focus = {
 		id = ARA_conteprise
-		icon = GFX_focus_unknown
+		icon = GFX_r56_goal_FRA_alliance_with_industrialists
 		x = 1
 		y = 1
 		relative_position_id = ARA_eastern_wind
-		cost = 1.00
+		cost = 8.00
 		prerequisite = { focus = ARA_eastern_wind
 						 focus = ARA_integrate_aquileian_army }
 		mutually_exclusive = { focus = ARA_woe_to_the_vanquished }
+		available = {
+		    AND = {
+		        NOT = {
+			        has_country_flag = JER_revolution_number_three
+			    }
+			    NOT = {
+			        has_country_flag = JER_rodier_is_why_arantiga
+			    }
+			}
+		}		
 		completion_reward = {
-			add_war_support = 0.05	
-			add_political_power = 50
+			376 = {
+				add_building_construction = {
+				    type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			517 = {
+				add_building_construction = {
+				    type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			401 = {
+				add_building_construction = {
+				    type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			679 = {
+				add_building_construction = {
+				    type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = ARA_march_west
-		icon = GFX_focus_unknown
+		icon = GFX_goal_gaw_attack_aquileia
 		x = 2
 		y = 1
 		relative_position_id = ARA_die_is_cast
@@ -405,13 +523,15 @@ focus_tree = {
 
 	focus = {
 		id = ARA_secure_frontier
-		icon = GFX_focus_unknown
+		icon = GFX_goal_split_helmet
 		x = -1
 		y = 1
 		relative_position_id = ARA_march_west
 		cost = 3.00
-		prerequisite = { focus = ARA_march_west
-						 focus = ARA_marriage_of_convience }
+		prerequisite = { 
+		    focus = ARA_march_west
+			focus = ARA_marriage_of_convience 
+		}
 		completion_reward = {
 			IF = { 
 				limit = {
@@ -436,7 +556,7 @@ focus_tree = {
 
 	focus = {
 		id = ARA_oil_fields_of_adelart
-		icon = GFX_focus_unknown
+		icon = GFX_goal_further_oil
 		x = 0
 		y = 1
 		relative_position_id = ARA_secure_frontier
@@ -462,13 +582,15 @@ focus_tree = {
 
 	focus = {
 		id = ARA_secure_flank
-		icon = GFX_focus_unknown
+		icon = GFX_goal_generic_lau_military
 		x = 1
 		y = 1
 		relative_position_id = ARA_march_west
 		cost = 3.00
-		prerequisite = { focus = ARA_march_west
-						 focus = ARA_marriage_of_convience }
+		prerequisite = {
+		    focus = ARA_march_west
+			focus = ARA_marriage_of_convience
+		}
 		completion_reward = {
 			IF = { 
 				limit = {
@@ -493,37 +615,47 @@ focus_tree = {
 
 	focus = {
 		id = ARA_flowenian_deal
-		icon = GFX_focus_unknown
+		icon = GFX_focus_Fashy_Flo_Guns
 		x = 0
 		y = 1
 		relative_position_id = ARA_secure_flank
 		cost = 3.00
 		prerequisite = { focus = ARA_secure_flank }
+		available = {
+				442 = { is_owned_and_controlled_by = ROOT }
+				}
 		completion_reward = {
-			country_event = { id = arantiga.1004 days = 0 }
+			country_event = { id = arantiga.085 days = 0 }
 		}
 	}
 
 	focus = {
 		id = ARA_woe_to_the_vanquished
-		icon = GFX_focus_unknown
+		icon = GFX_goal_jer_kill_republicanism
 		x = 1
 		y = 1
 		relative_position_id = ARA_oil_fields_of_adelart
 		cost = 1.00
 		prerequisite = { focus = ARA_flowenian_deal }
 		prerequisite = { focus = ARA_oil_fields_of_adelart }
+		available = {
+		    OR = {
+				has_completed_focus = ARA_march_west
+		        has_country_flag = JER_revolution_number_three1
+				has_country_flag = JER_cant_have_nice_things
+		    }
+		}
 		mutually_exclusive = { focus = ARA_conteprise }
 		completion_reward = {
 			add_war_support = 0.05	
 			add_stability = 0.05
-			country_event = { id = arantiga.1005 days = 0 }
+			country_event = { id = arantiga.086 days = 0 }
 		}
 	}
 
 	focus = {
 		id = ARA_karthin_will_fall
-		icon = GFX_focus_unknown
+		icon = GFX_goal_gaw_attack_wingbardy
 		x = 6
 		y = 1
 		relative_position_id = ARA_die_is_cast
@@ -562,7 +694,7 @@ focus_tree = {
 
 	focus = {
 		id = ARA_francistrian_compatriots
-		icon = GFX_focus_unknown
+		icon = GFX_goal_RUS_white_legacy
 		x = -1
 		y = 1
 		relative_position_id = ARA_karthin_will_fall
@@ -574,13 +706,13 @@ focus_tree = {
 				amount = -5000
 				producer = ARA
 			}
-			FRN = { country_event = { id = arantiga.1000 days = 1 } }
+			FRN = { country_event = { id = arantiga.075 days = 3 } }
 		}
 	}
 
 	focus = {
 		id = ARA_greater_arantiga
-		icon = GFX_focus_unknown
+		icon = GFX_goal_jer_eagle
 		x = 0
 		y = 1
 		relative_position_id = ARA_francistrian_compatriots
@@ -601,33 +733,49 @@ focus_tree = {
 
 	focus = {
 		id = ARA_bitter_enemies
-		icon = GFX_focus_unknown
+		icon = GFX_goal_van_rifles
 		x = 1
 		y = 1
 		relative_position_id = ARA_karthin_will_fall
 		cost = 2.00
 		prerequisite = { focus = ARA_karthin_will_fall }
+		bypass = {
+		    FAL = {
+			    exists = no
+			}
+		}
 		completion_reward = {
-			country_event = { id = arantiga.1001 days = 0 }
+			country_event = { id = arantiga.076 days = 0 }
 		}
 	}
 
 	focus = {
 		id = ARA_reward_allies
-		icon = GFX_focus_unknown
+		icon = GFX_goal_gunpoint_diplomacy
 		x = 0
 		y = 1
 		relative_position_id = ARA_bitter_enemies
 		cost = 2.00
 		prerequisite = { focus = ARA_bitter_enemies }
+		available = {
+		    all_country_with_original_tag = {
+			    original_tag_to_check = WNG
+			    exists = no
+			}
+		}
+		bypass = {
+		    FAL = {
+			    exists = no
+			}
+		}
 		completion_reward = {
-			country_event = { id = arantiga.1002 days = 0 }
+			country_event = { id = arantiga.80 days = 0 }
 		}
 	}
 
 	focus = {
 		id = ARA_old_foes
-		icon = GFX_focus_unknown
+		icon = GFX_goal_wng_glory_to_wingbardy
 		x = -1
 		y = 1
 		relative_position_id = ARA_reward_allies
@@ -637,25 +785,27 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05	
 			add_stability = 0.05
-			country_event = { id = arantiga.1003 days = 0 }
+			country_event = { id = arantiga.084 days = 0 }
 		}
 	}
 
 	focus = {
 		id = ARA_declare_arantigan_empire
-		icon = GFX_focus_unknown
+		icon = GFX_goal_the_idol
 		x = 0
 		y = 5
 		relative_position_id = ARA_die_is_cast
-		cost = 1.00
+		cost = 2.00
+		prerequisite = {
+    		focus = ARA_conteprise
+			focus = ARA_woe_to_the_vanquished 
+		}
 		prerequisite = { focus = ARA_triumph_in_griffenheim }
-		prerequisite = { focus = ARA_conteprise
-						 focus = ARA_woe_to_the_vanquished }
 		prerequisite = { focus = ARA_old_foes }
 		completion_reward = {
 			add_war_support = 0.1	
 			add_stability = 0.1
-			#### ADD EVENT CORONATION
+			country_event = { id = arantiga.087 days = 0 }
 		}
 	}
 }

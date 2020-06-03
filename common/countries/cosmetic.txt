@@ -1,0 +1,4 @@
+ARA_EMP = {
+    color = rgb { 184 17 47 }
+    color_ui = rgb { 193 40 63 }
+}

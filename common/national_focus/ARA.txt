@@ -436,7 +436,7 @@
 	}
 	shared_focus = {
 		id = ARA_equus_invasion_training
-		icon = GFX_focus_prc_infiltration
+		icon = GFX_goal_griffon_special_forces_green
 		x = 2
 		y = 4
 		relative_position_id = ARA_rumare_exercises
@@ -553,6 +553,12 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ARA_new_academy"
 			army_experience = 20
+			add_tech_bonus = {
+				name = cat_doctrine
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 
@@ -579,10 +585,16 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ARA_mobile_warfare_doctrine"
 			add_tech_bonus = {
+				name = cat_armor
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
 				name = cat_mobile_warfare
 				bonus = 1.0
-				uses = 2
-				category = cat_mobile_warfare
+				uses = 1
+				category = land_doctrine
 			}
 		}
 	}
@@ -601,13 +613,10 @@
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ARA_develop_doctrine"
-			add_tech_bonus = {
-				name = cat_mobile_warfare
-				bonus = 1.0
-				uses = 1
-				category = cat_mobile_warfare
-			}
 			army_experience = 15
+			every_army_leader = {
+			    add_attack = 1
+			}
 		}
 	}
 
@@ -625,12 +634,6 @@
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ARA_cult_of_speed"
-			add_tech_bonus = {
-				name = cat_mobile_warfare
-				bonus = 1.0
-				uses = 1
-				category = cat_mobile_warfare
-			}
 			add_ideas = ARA_cult_of_speed_idea
 		}
 	}
@@ -672,25 +675,17 @@
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ARA_tanks_for_the_army"
-			custom_effect_tooltip = ARA_tanks_tp
-			if = {
-				limit = {
-					has_tech = gwtank
-				}
-				add_tech_bonus = {
-					name = armor_bonus
-					bonus = 1.0
-					uses = 1
-					category = cat_light_armor
-				}
-				else = {
-					set_technology = {
-						gwtank = 1
-					}
-				}
+		add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_light_armor
 			}
-			hidden_effect = {
-				load_oob = "ARA_tank_brigade"
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_medium_armor
 			}
 		}
 	}
@@ -710,18 +705,7 @@
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ARA_better_tanks"
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 1
-				category = cat_light_armor
-			}
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 1
-				category = cat_medium_armor
-			}
+			add_ideas = ARA_steel_legions
 		}
 	}
 
@@ -750,8 +734,14 @@
 			add_tech_bonus = {
 				name = cat_superior_firepower
 				bonus = 1.0
-				uses = 2
-				category = cat_superior_firepower
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = cat_superior_firepower_doctrine
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
 			}
 		}
 	}
@@ -770,13 +760,7 @@
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ARA_develop_superior_doctrine"
-			add_tech_bonus = {
-				name = cat_superior_firepower
-				bonus = 1.0
-				uses = 1
-				category = cat_superior_firepower
-			}
-			army_experience = 15
+			add_ideas = ARA_modern_knights
 		}
 	}
 
@@ -794,12 +778,6 @@
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ARA_mass_artillery"
-			add_tech_bonus = {
-				name = cat_superior_firepower
-				bonus = 1.0
-				uses = 1
-				category = cat_superior_firepower
-			}
 			add_ideas = ARA_massed_artillery
 		}
 	}
