@@ -1685,7 +1685,7 @@ equipment_bonus = {
 			}
 			
 			modifier = { 
-				conscription_factor = 0.15
+				conscription_factor = 0.05
 			}
 		}
 		
@@ -1698,7 +1698,7 @@ equipment_bonus = {
 			
 			modifier = { 
 				stability_factor = 0.1
-				conscription_factor = 0.15
+				conscription_factor = 0.05
 			}
 		}
 		
@@ -1827,6 +1827,152 @@ equipment_bonus = {
 			}
 		}
 		
+		SRS_the_third_demand_1 = {
+			picture = FUCK
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		
+		SRS_the_third_demand_2 = {
+			picture = FUCK
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		SRS_the_third_demand_3 = {
+			picture = FUCK
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {			
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		SRS_the_third_demand_4 = {
+			picture = FUCK
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				political_power_factor = -0.07
+			}
+		}
+		
+		SRS_the_third_demand_5 = {
+			picture = FUCK
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {			
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.2
+			}
+		}
+		
+		SRS_our_own_industry = {
+			picture = FUCK
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {			
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.2
+				research_speed_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				
+			}
+		}
+		
+		SRS_tractors = {
+			picture = FUCK
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {			
+				MONTHLY_POPULATION = 0.2
+			}
+		}
+		
+		SRS_old_dragon_agreement_1 = {
+			picture = FUCK
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {			
+				production_factory_max_efficiency_factor = -0.05
+				industrial_capacity_factory = 0.10
+			}
+		}
+		
+		SRS_old_dragon_agreement_2 = {
+			picture = FUCK
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {			
+				production_factory_max_efficiency_factor = -0.025
+				industrial_capacity_factory = 0.07
+				research_speed_factor = 0.1
+			}
+		}
+		
+		SRS_mining = {
+			picture = 
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = { 
+				local_resources_factor = 0.15
+			}
+		}
+		
+		SRS_infrastructure = {
+			picture = 
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = { 
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		
 		SRS_shits_fucked_moderate_1 = {
 			picture = generic_communism_drift_bonus
 			removal_cost = -1
@@ -1931,6 +2077,104 @@ equipment_bonus = {
 			}
 		}
 		
+		SRS_herzland_resistance = {
+			picture = IDI NAHUI
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				resistance_growth = 0.25
+				resistance_damage_to_garrison = 0.25
+				required_garrison_factor = 0.1
+			}
+		}
+		
+		SRS_etranger = {
+			picture = IDI NAHUI
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = 0.10
+			}
+		}
+		
+		SRS_post_war_economic_miracle = {
+			picture = IDI NAHUI
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		
+		SRS_land_distribution = {
+			picture = IDI NAHUI
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				resistance_decay = 0.25
+				compliance_growth = 0.10
+			}
+		}
+		
+		SRS_resistance_surge = {
+			picture = IDI NAHUI
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				resistance_growth = 0.1
+			}
+		}
+		
+		SRS_no_more_nobles = {
+			picture = IDI NAHUI
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				compliance_growth = 0.15
+			}
+		}
+		
+		SRS_protect_the_worker = {
+			picture = IDI NAHUI
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = -0.2
+				consumer_goods_factor = 0.1
+				compliance_growth = 0.1
+				starting_compliance = 0.2
+			}
+		}
+		
 		SRS_internationalist_problems = {
 			picture = soviet_german_friendship
 			allowed = { always = no }
@@ -1946,6 +2190,7 @@ equipment_bonus = {
 				min_export = 0.15
 			}
 		}
+		
 		SRS_communalist_problems = {
 			picture = air_support_focus
 			allowed = { always = no }
@@ -1960,6 +2205,7 @@ equipment_bonus = {
 				mobilization_speed = -0.25
 			}
 		}
+		
 		SRS_northern_war = {
 			picture = FRA_army_of_aggression_focus
 			allowed = { always = no }
@@ -1980,6 +2226,7 @@ equipment_bonus = {
 
 			}
 		}
+		
 		SRS_skynavian_egalitarianism = {
 			allowed = { always = no }
 			removal_cost = -1

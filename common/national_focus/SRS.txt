@@ -41,9 +41,9 @@ focus_tree = {
 		y = 1
 		cost = 1
 		ai_will_do = {
-			factor = 0
+			factor = 12
 		}
-		
+
 		completion_reward = {
 		    country_event = { id = srs_sickocivwar.2 days = 1 }
 		}
@@ -52,7 +52,7 @@ focus_tree = {
 	focus = {
 		id = SRS_sickleclaw_obeys_congress
 		icon = GFX_goal_commune_politics
-		prerequisite = { focus = SRS_finishing_touches}
+		prerequisite = { focus = SRS_finishing_touches }
 		mutually_exclusive = { focus = SRS_sickleclaw_betrays_congress }
 		x = 7
 		y = 1
@@ -74,7 +74,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = srs_sickocivwar.3 days = 1 }
+			country_event = { id = srs_sickocivwar.3 }
 		}
 	}
 
@@ -90,7 +90,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = srs_sickocivwar.4 days = 1 }
+			country_event = { id = srs_sickocivwar.4 }
 		}
 	}
 
@@ -106,7 +106,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = srs_sickocivwar.5 days = 1 }
+			country_event = { id = srs_sickocivwar.5 }
 		}
 	}
 
@@ -123,7 +123,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = srs_sickocivwar.6 days = 1 }
+			country_event = { id = srs_sickocivwar.6 }
 		}
 	}
 
@@ -140,7 +140,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = srs_sickocivwar.7 days = 1 }
+			country_event = { id = srs_sickocivwar.7 }
 		}
 	}
 
@@ -157,7 +157,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = { id = srs_sickocivwar.8 days = 1 }
+			country_event = { id = srs_sickocivwar.8 }
 		}
 	}
 			
@@ -389,8 +389,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = -200
-			add_ideas = SRS_levee_en_masse_diet
-			remove_ideas = SRS_levee_en_masse
+			swap_ideas = {
+			add_idea = SRS_levee_en_masse_diet
+			remove_idea = SRS_levee_en_masse
+			}
 			every_state = {
 			limit = { 
 				OR = {
@@ -492,29 +494,27 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
-		id = SRS_great_patriotic_war
-		icon = GFX_goal_LEC_monkey
+		id = SRS_on_to_griffenheim
+		icon = GFX_goal_revolution
+		prerequisite = { focus = SRS_kemerskai_fate }
 		prerequisite = { focus = SRS_economic_reform }
 		prerequisite = { focus = SRS_education_reform }
-		prerequisite = { focus = SRS_kemerskai_fate }
 		prerequisite = { focus = SRS_commie_yeetbrantbeak }
 		x = -1
 		y = 13
-		cost = 7
+		cost = 10
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = GRI
-			}
+			remove_ideas = SRS_doubt_in_sickleclaw_1
+			add_political_power = 100
 		}
 	}
-
+	
 ###########################
 #EARLY REPUBLICAN POLITICS#
 ###########################
@@ -574,6 +574,7 @@ focus_tree = {
 			}
 				add_ideas = SRS_shits_fucked_moderate_1
 				add_ideas = SRS_shits_fucked_radical_1
+				add_ideas = SRS_the_third_demand_1
 		}
 	}
 	
@@ -961,8 +962,10 @@ focus_tree = {
 			add_ideas = SRS_speak_kraut_language
 			add_stability = 0.025
 			add_political_power = -30
+			decrease_illiteracy
 		}
 	}
+}
 
 	focus = {
 		id = SRS_republican_knights
@@ -1005,8 +1008,8 @@ focus_tree = {
 							exists = no
 							is_subject_of = ROOT
 						}
-					}	
-				}	
+					}
+				}
 			}
 		x = 20
 		y = 11
@@ -1041,7 +1044,7 @@ focus_tree = {
 							is_subject_of = ROOT
 						}
 					}
-				}	
+				}
 			}
 		x = 20
 		y = 12
@@ -1062,6 +1065,24 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = SRS_cloudburian_universities
+		icon = GFX_focus_research
+		prerequisite = { focus = SRS_speak_herzlander }
+		x = 20
+		y = 13
+		cost = 7
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+			increase_science_base
+		}
+	}
+}
 
 	focus = {
 		id = SRS_strike_the_revisionists
@@ -1073,7 +1094,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SRS_unite_with_fatmerskai_playeronly }
 		mutually_exclusive = { focus = SRS_unite_with_fatmerskai_aionly }
 		x = 12
-		y = 14
+		y = 13
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -1089,7 +1110,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_speak_herzlander }
 		mutually_exclusive = { focus = SRS_strike_the_revisionists }
 		x = 10
-		y = 14
+		y = 13
 		cost = 3
 		ai_will_do = {
 			factor = 12
@@ -1105,7 +1126,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_speak_herzlander }
 		mutually_exclusive = {focus = SRS_strike_the_revisionists }
 		x = 14
-		y = 14
+		y = 13
 		cost = 3
 		ai_will_do = {
 			factor = 12
@@ -1129,7 +1150,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.5
 				uses = 3
 				category = industry
 			}
@@ -1783,9 +1804,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = SRS_shall_not_be_infringed_2
-			remove_ideas = SRS_shall_not_be_infringed_1
-		}
+			swap_ideas = {
+				add_idea = SRS_shall_not_be_infringed_2
+				remove_idea = SRS_shall_not_be_infringed_1
+			}
+		}	
 	}
 	
 	focus = {
@@ -1816,8 +1839,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = SRS_breab_2
-			remove_ideas = SRS_breab_1
+			swap_ideas = {
+				add_idea = SRS_breab_2
+				remove_idea = SRS_breab_1
+			}
 		}
 	}
 	
@@ -1854,6 +1879,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SRS_the_third_demand_2
+				remove_idea = SRS_the_third_demand_1
+			}
+		}
 	}
 
 	focus = {
@@ -1866,17 +1898,50 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_political_power = -50
+			561 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			601 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			585 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
-
+		
 	focus = {
 		id = SRS_curtail_union_power
 		icon = GFX_HOL_crackdown_syndie
 		prerequisite = { focus = SRS_under_new_management }
 		x = 28
 		y = 12
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			add_political_power = -30
+			add_ideas = SRS_old_dragon_agreement_1
 		}
 	}
 
@@ -1886,11 +1951,21 @@ focus_tree = {
 		prerequisite = { focus = SRS_curtail_union_power }
 		x = 28
 		y = 13
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_political_power = -30
+			swap_ideas = {
+				remove_idea = SRS_old_dragon_agreement_1
+				add_idea = SRS_old_dragon_agreement_2
+			}
+			decrease_illiteracy
+		}
 	}
+}
 
 	focus = {
 		id = SRS_research_investment
@@ -1898,9 +1973,14 @@ focus_tree = {
 		prerequisite = { focus = SRS_limit_welfare }
 		x = 28
 		y = 14
-		cost = 7
+		cost = 8
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			add_political_power = -40
+			increase_science_base = yes
 		}
 	}
 
@@ -1910,9 +1990,13 @@ focus_tree = {
 		prerequisite = { focus = SRS_research_investment }
 		x = 28
 		y = 15
-		cost = 10
+		cost = 9
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 
@@ -1925,11 +2009,16 @@ focus_tree = {
 		prerequisite = { focus = SRS_naval_funding focus = SRS_refinery }
 		x = 28
 		y = 17
-		cost = 10
+		cost = 9
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			increase_society_development_with_tt
+		}
 	}
+}
 
 	focus = {
 		id = SRS_local_industry_focus
@@ -1938,9 +2027,16 @@ focus_tree = {
 		mutually_exclusive = { focus = SRS_rapid_industrialization }
 		x = 24
 		y = 10
-		cost = 7
+		cost = 1
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SRS_the_third_demand_3
+				remove_idea = SRS_the_third_demand_2
+			}
 		}
 	}
 
@@ -1950,9 +2046,20 @@ focus_tree = {
 		prerequisite = { focus = SRS_local_industry_focus }
 		x = 23
 		y = 11
-		cost = 7
+		cost = 3
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			522 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1962,9 +2069,20 @@ focus_tree = {
 		prerequisite = { focus = SRS_local_industry_focus }
 		x = 25
 		y = 11
-		cost = 7
+		cost = 3
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			561 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1974,9 +2092,47 @@ focus_tree = {
 		prerequisite = { focus = SRS_business_loans }
 		x = 23
 		y = 12
-		cost = 7
+		cost = 5
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			522 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			542 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			561 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			585 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			601 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1986,9 +2142,20 @@ focus_tree = {
 		prerequisite = { focus = SRS_land_grants }
 		x = 25
 		y = 12
-		cost = 7
+		cost = 5
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			522 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2003,6 +2170,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SRS_our_own_industry
+				remove_idea = SRS_the_third_demand_3
+			}
+		}
 	}
 
 	focus = {
@@ -2014,6 +2188,14 @@ focus_tree = {
 		cost = 7
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 3
+				category = industry
+			}
 		}
 	}
 
@@ -2027,6 +2209,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 3
+				category = electronics
+			}
+		}
 	}
 
 	focus = {
@@ -2038,6 +2228,33 @@ focus_tree = {
 		cost = 7
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			522 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			542 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			561 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2053,6 +2270,33 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			522 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			542 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			561 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -2066,6 +2310,10 @@ focus_tree = {
 		cost = 7
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SRS_tractors
 		}
 	}
 
@@ -2081,6 +2329,25 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			522 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			542 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -2090,9 +2357,16 @@ focus_tree = {
 		mutually_exclusive = { focus = SRS_local_industry_focus }
 		x = 32
 		y = 10
-		cost = 7
+		cost = 1
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SRS_the_third_demand_4
+				remove_idea = SRS_the_third_demand_2
+			}
 		}
 	}
 
@@ -2102,9 +2376,14 @@ focus_tree = {
 		prerequisite = { focus = SRS_rapid_industrialization }
 		x = 31
 		y = 11
-		cost = 7
+		cost = 2
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			remove_ideas = SRS_the_third_demand_4
+			add_timed_idea = { idea = SRS_the_third_demand_5 days = 365 }
 		}
 	}
 
@@ -2114,9 +2393,54 @@ focus_tree = {
 		prerequisite = { focus = SRS_rapid_industrialization }
 		x = 34
 		y = 11
-		cost = 7
+		cost = 2
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			522 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			561 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			601 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			474 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			582 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			485 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2127,9 +2451,17 @@ focus_tree = {
 		prerequisite = { focus = SRS_newskynavia_cloudbury_railway }
 		x = 33
 		y = 12
-		cost = 7
+		cost = 4
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = ttSRS_trade_economy
+			swap_ideas = {
+				add_idea = export_focus
+				remove_idea = closed_economy
+			}
 		}
 	}
 
@@ -2140,9 +2472,22 @@ focus_tree = {
 		prerequisite = { focus = SRS_newskynavia_cloudbury_railway }
 		x = 35
 		y = 12
-		cost = 7
+		cost = 4
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 12
+				state = 585
+			}
+			add_resource = {
+				type = crystals
+				amount = 12
+				state = 585
+			}
 		}
 	}
 
@@ -2153,9 +2498,13 @@ focus_tree = {
 		prerequisite = { focus = SRS_natural_riches }
 		x = 34
 		y = 13
-		cost = 7
+		cost = 4
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SRS_mining
 		}
 	}
 
@@ -2166,69 +2515,176 @@ focus_tree = {
 		prerequisite = { focus = SRS_newskynavia_cloudbury_railway }
 		x = 31
 		y = 12
-		cost = 7
+		cost = 4
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			522 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			522 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
-
+	
 	focus = {
 		id = SRS_entrepeneur_subsidies
 		icon = GFX_goal_bag_of_money
 		prerequisite = { focus = SRS_new_skynavia_industrial_park }
 		x = 31
 		y = 13
-		cost = 7
+		cost = 4
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			522 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			561 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			542 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
-
+			
 	focus = {
 		id = SRS_bolster_civilian_industry
 		icon = GFX_goal_state_economy
 		prerequisite = { focus = SRS_entrepeneur_subsidies }
 		x = 31
 		y = 14
-		cost = 7
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			522 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			542 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
-
+	
 	focus = {
 		id = SRS_munitions_factories
 		icon = GFX_goal_munitions_factories
 		prerequisite = { focus = SRS_entrepeneur_subsidies }
 		x = 34
 		y = 15
-		cost = 7
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			522 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			561 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
-
+	
 	focus = {
 		id = SRS_create_merchant_fleet
 		icon = GFX_focus_indy_plan_z
 		prerequisite = { focus = SRS_munitions_factories }
 		x = 34
 		y = 16
-		cost = 7
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 50
+			}
+			522 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
-
+	
+	
 	focus = {
 		id = SRS_refinery
 		icon = GFX_goal_further_oil
 		prerequisite = { focus = SRS_bolster_civilian_industry }
 		x = 30
 		y = 16
-		cost = 7
+		cost = 5
 		ai_will_do = {
 			factor = 12
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 24
+				state = 561
+			}
 		}
 	}
 
@@ -2238,22 +2694,45 @@ focus_tree = {
 		prerequisite = { focus = SRS_bolster_civilian_industry }
 		x = 32
 		y = 16
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SRS_infrastructure
+		}
+	}
+
+############################
+#UNVERSAL HERZLAND CONQUEST#
+############################
+	
+	focus = {
+		id = SRS_great_patriotic_war
+		icon = GFX_goal_LEC_monkey
+		prerequisite = { focus = SRS_on_to_griffenheim focus = SRS_unite_with_fatmerskai_playeronly focus = SRS_strike_the_revisionists }
+		x = 5
+		y = 14
 		cost = 7
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = GRI
+			}
+		}
 	}
-
-##########################
-#COMMIE HERZLAND CONQUEST#
-##########################
-
+	
 	focus = {
 		id = SRS_arise_vast_country
 		icon = GFX_goal_conscription
 		prerequisite = { focus = SRS_great_patriotic_war }
-		x = -1
-		y = 14
+		x = 5
+		y = 15
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -2268,8 +2747,8 @@ focus_tree = {
 		id = SRS_pistol_makin_colt
 		icon = GFX_goal_Modern_Weapons
 		prerequisite = { focus = SRS_great_patriotic_war }
-		x = -3
-		y = 14
+		x = 3
+		y = 15
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -2284,8 +2763,8 @@ focus_tree = {
 		id = SRS_true_revolutionaries
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = SRS_great_patriotic_war }
-		x = 1
-		y = 14
+		x = 7
+		y = 15
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -2300,8 +2779,8 @@ focus_tree = {
 		id = SRS_arise_for_deadly_fight
 		icon = GFX_goal_classless_society
 		prerequisite = { focus = SRS_arise_vast_country }
-		x = -1
-		y = 15
+		x = 5
+		y = 16
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -2319,8 +2798,8 @@ focus_tree = {
 		id = SRS_rifle_makin_mare
 		icon = GFX_goal_national_arsenal
 		prerequisite = { focus = SRS_pistol_makin_colt }
-		x = -4
-		y = 15
+		x = 2
+		y = 16
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -2338,8 +2817,8 @@ focus_tree = {
 		id = SRS_order_4414
 		icon = GFX_goal_offensive_army
 		prerequisite = { focus = SRS_true_revolutionaries }
-		x = 2
-		y = 15
+		x = 8
+		y = 16
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -2357,8 +2836,8 @@ focus_tree = {
 		id = SRS_fight_imperial_hordes
 		icon = GFX_focus_ger_return_of_the_kaiser
 		prerequisite = { focus = SRS_arise_for_deadly_fight }
-		x = -1
-		y = 16
+		x = 5
+		y = 17
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -2376,8 +2855,8 @@ focus_tree = {
 		id = SRS_shell_makin_griff
 		icon = GFX_goal_national_artillery
 		prerequisite = { focus = SRS_rifle_makin_mare }
-		x = -3
-		y = 16
+		x = 3
+		y = 17
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -2395,8 +2874,8 @@ focus_tree = {
 		id = SRS_on_ne_passe_pas
 		icon = GFX_jer_republican_guns
 		prerequisite = { focus = SRS_order_4414 }
-		x = 1
-		y = 16
+		x = 7
+		y = 17
 		cost = 7
 		ai_will_do = {
 			factor = 12
@@ -2414,132 +2893,8 @@ focus_tree = {
 		id = SRS_victory_is_ours
 		icon = GFX_goal_national_populism
 		prerequisite = { focus = SRS_fight_imperial_hordes focus = SRS_shell_makin_griff focus = SRS_on_ne_passe_pas }
-		x = -1
-		y = 17
-		cost = 10
-		ai_will_do = {
-			factor = 12
-		}
-	}
-
-##############################
-#REPUBLICAN HERZLAND CONQUEST#
-##############################
-
-	focus = {
-		id = SRS_new_griffonian_republic
-		icon = GFX_focus_tricolor_over_griffenheim
-		prerequisite = { focus = SRS_unite_with_fatmerskai_playeronly focus = SRS_strike_the_revisionists }
-		x = 11
-		y = 15
-		cost = 1
-		ai_will_do = {
-			factor = 12
-		}
-	}
-
-	focus = {
-		id = SRS_finish_the_revolution
-		icon = GFX_goal_conscription
-		prerequisite = { focus = SRS_new_griffonian_republic }
-		x = 11
-		y = 16
-		cost = 5
-		ai_will_do = {
-			factor = 12
-		}
-	}
-
-	focus = {
-		id = SRS_border_buildup
-		icon = GFX_goal_nested_fortifications
-		prerequisite = { focus = SRS_finish_the_revolution }
-		x = 11
-		y = 17
-		cost = 5
-		ai_will_do = {
-			factor = 12
-		}
-	}
-
-	focus = {
-		id = SRS_march_on_griffenheim
-		icon = GFX_goal_skull_treaty
-		prerequisite = { focus = SRS_border_buildup }
-		x = 11
+		x = 5
 		y = 18
-		cost = 10
-		ai_will_do = {
-			factor = 12
-		}
-	}
-
-	focus = {
-		id = SRS_mobilize_economy
-		icon = GFX_goal_industry_air
-		prerequisite = { focus = SRS_finish_the_revolution }
-		x = 13
-		y = 17
-		cost = 7
-		ai_will_do = {
-			factor = 12
-		}
-	}
-
-	focus = {
-		id = SRS_prepare_the_people
-		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = SRS_mobilize_economy }
-		x = 13
-		y = 18
-		cost = 7
-		ai_will_do = {
-			factor = 12
-		}
-	}
-
-	focus = {
-		id = SRS_republican_coalition
-		icon = GFX_goal_griffonian_republic
-		prerequisite = { focus = SRS_finish_the_revolution }
-		x = 9
-		y = 17
-		cost = 7
-		ai_will_do = {
-			factor = 12
-		}
-	}
-
-	focus = {
-		id = SRS_invite_aquileia
-		icon = GFX_jer_republican_guns
-		prerequisite = { focus = SRS_republican_coalition }
-		x = 9
-		y = 18
-		cost = 7
-		ai_will_do = {
-			factor = 12
-		}
-	}
-
-	focus = {
-		id = SRS_invite_skyfall
-		icon = GFX_goal_skyfall
-		prerequisite = { focus = SRS_republican_coalition }
-		x = 7
-		y = 18
-		cost = 7
-		ai_will_do = {
-			factor = 12
-		}
-	}
-
-	focus = {
-		id = SRS_victory
-		icon = GFX_goal_national_populism
-		prerequisite = { focus = SRS_march_on_griffenheim }
-		x = 11
-		y = 19
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -2553,12 +2908,17 @@ focus_tree = {
 	focus = {
 		id = SRS_herzland_conquered
 		icon = GFX_focus_generic_support_the_left_right_claw
-		prerequisite = { focus = SRS_victory_is_ours focus = SRS_victory }
+		prerequisite = { focus = SRS_victory_is_ours }
 		x = 5
 		y = 20
 		cost = 1
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			add_timed_idea = { idea = SRS_herzland_resistance days = 730 days }
+			}
 		}
 	}
 
@@ -2621,6 +2981,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_ideas = SRS_post_war_economic_miracle
+		}
 	}
 
 	focus = {
@@ -2632,6 +2996,10 @@ focus_tree = {
 		cost = 7
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			add_timed_idea = { idea = SRS_land_distribution days = 730 }
 		}
 	}
 	
@@ -2645,19 +3013,25 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-	}
-	
-	focus = {
-		id = SRS_science_decissions
-		icon = GFX_goal_continuous_research
-		prerequisite = { focus = SRS_serf_emancipation }
-		x = -3
-		y = 23
-		cost = 7
-		ai_will_do = {
-			factor = 12
+		
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = GRI
+					is_core_of = FEA
+					is_core_of = STW
+					is_core_of = BRZ
+					is_core_of = PYT
+					is_core_of = ROU
+					is_core_of = YAL
+					is_core_of = KAT
+					is_core_of = ANG
+				}
+			}
+				add_compliance = 10
+			}
 		}
-	}
 	
 	focus = {
 		id = SRS_revoke_the_privilegia
@@ -2669,6 +3043,11 @@ focus_tree = {
 		cost = 7
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			add_timed_idea = { idea = SRS_resistance_surge days = 180 }
+			add_timed_idea = { idea = SRS_no_more_nobles days = 180 }
 		}
 	}
 	
@@ -2684,7 +3063,7 @@ focus_tree = {
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = SRS_protecc_the_worker
 		icon = GFX_goal_ideology_syndicalist
 		prerequisite = { focus = SRS_gulag_industrialists }
@@ -2694,8 +3073,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_ideas = SRS_protect_the_worker
+		}
 	}
 
+	
 	focus = {
 		id = SRS_unite_griffonkind
 		icon = GFX_focus_indy_swing_the_sword
@@ -2740,8 +3124,10 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
+			add_ideas = SRS_etranger
+			}
 		}
-		}
+		
 	
 	focus = {
 		id = SRS_core_universities
@@ -2835,7 +3221,7 @@ focus_tree = {
 #UNIVERSAL MILITARY TREE#
 #########################
 
-focus = {
+	focus = {
 		id = SRS_lessons_of_the_civil_war
 		icon = GFX_focus_generic_military_mission
 		available = {
@@ -2853,7 +3239,7 @@ focus = {
 		}
 	}
 	
-  	focus = {
+	focus = {
 		id = SRS_fortification_effort
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = SRS_lessons_of_the_civil_war }
@@ -2901,8 +3287,10 @@ focus = {
 		}
 		
 		completion_reward = {
-		    country_event = { id = srs_simpleevent.1 days = 1 }
-		
+		    swap_ideas = {
+		    remove_idea = SRS_DOC_1
+		    add_idea = SRS_DOC_2
+			}
 		}
 	}
 	
@@ -2918,31 +3306,7 @@ focus = {
 		}
 		
 		completion_reward = {
-		    if = {
-                limit = {
-                    has_idea = SRS_DOC_1
-                }
-                remove_ideas = SRS_DOC_1
-            else = {
-		        if = {
-                    limit = {
-                        has_idea = SRS_DOC_2
-                    }
-                    remove_ideas = SRS_DOC_2
-                else = {
-		            if = {
-                        limit = {
-                            has_idea = SRS_DOC_3
-                        }
-                        remove_ideas = SRS_DOC_3
-                    else = {
-			            remove_ideas = SRS_DOC_4
-			        }			
-			        }			
-			    }     
-                }
-            }
-	        }
+		    remove_ideas = SRS_DOC_2
 			add_manpower = -1000
 			add_command_power  = -60
         }
