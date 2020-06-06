@@ -23,6 +23,31 @@ country_event = { #Karthin - A New Name?
 	}
 }
 
+country_event = { #Tendering His Resignation
+	id = arantiga_decision.10
+	title = arantiga_decision.10.t
+	desc = arantiga_decision.10.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.10.a
+		clr_country_flag = IRI_project_ongoing
+	}
+}
+
+country_event = { #Unexpected Explosions
+	id = arantiga_decision.101
+	title = arantiga_decision.101.t
+	desc = arantiga_decision.101.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.30.a
+		custom_effect_tooltip = ARA_regret_perhaps_tt
+		clr_country_flag = IRI_project_ongoing
+	}
+}
+
 country_event = { #Project Gotterhammer
 	id = arantiga_decision.11
 	title = arantiga_decision.11.t
@@ -31,7 +56,99 @@ country_event = { #Project Gotterhammer
 	fire_only_once = yes
 	option = {
 		name = 	arantiga_decision.31.a
-		country_event = { id = arantiga_decision.12 days = 30 }
+		country_event = { id = arantiga_decision.12 days = 7 }
+	}
+}
+
+country_event = { #The Sword of Damocles
+	id = arantiga_decision.12
+	title = arantiga_decision.12.t
+	desc = arantiga_decision.12.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.12.a
+		country_event = { id = arantiga_decision.13 days = 60 }
+	}
+}
+
+country_event = { #The Forbidden Fruit of Knowledge
+	id = arantiga_decision.13
+	title = arantiga_decision.13.t
+	desc = arantiga_decision.13.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.13.a
+		country_event = { id = arantiga_decision.14 days = 30 }
+	}
+	option = {
+		name = 	arantiga_decision.13.b
+		country_event = { id = arantiga_decision.10 days = 60 }
+	}
+}
+
+country_event = { #A Daring Raid
+	id = arantiga_decision.14
+	title = arantiga_decision.14.t
+	desc = arantiga_decision.14.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.14.a
+		country_event = { id = arantiga_decision.15 days = 27 }
+	}
+}
+
+country_event = { #Quality over Quantity
+	id = arantiga_decision.15
+	title = arantiga_decision.15.t
+	desc = arantiga_decision.15.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.15.a
+		country_event = { id = arantiga_decision.16 days = 45 }
+	}
+	option = {
+		name = 	arantiga_decision.15.b
+		country_event = { id = arantiga_decision.101 days = 120 }
+	}
+}
+
+country_event = { #Making The Most
+	id = arantiga_decision.16
+	title = arantiga_decision.16.t
+	desc = arantiga_decision.16.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.16.a
+		country_event = { id = arantiga_decision.17 days = 105 }
+	}
+}
+
+country_event = { #Trinity
+	id = arantiga_decision.17
+	title = arantiga_decision.17.t
+	desc = arantiga_decision.17.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.17.a
+		country_event = { id = arantiga_decision.18 days = 55 }
+	}
+}
+
+country_event = { #Destruction of Temple Prime
+	id = arantiga_decision.18
+	title = arantiga_decision.18.t
+	desc = arantiga_decision.18.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.18.a
+		clr_country_flag = IRI_project_ongoing
 	}
 }
 
@@ -56,6 +173,7 @@ country_event = { #The Investigation
 	fire_only_once = yes
 	option = {
 		name = 	arantiga_decision.202.a
+		clr_country_flag = IRI_project_ongoing
 		add_tech_bonus = {
 			name = race_tech_bonus
 			bonus = 0.5
@@ -143,7 +261,6 @@ country_event = { #Ferrucio's Missing Link
 
 	option = {
 		name = 	arantiga_decision.25.b
-		clr_country_flag = IRI_project_ongoing
 		country_event = { id = arantiga_decision.202 days = 24 }
 		add_political_power = -25
 	}
