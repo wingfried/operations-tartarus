@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 ### Bookmark ###
 ARA_GATHERING_STORM_DESC1:0 "From the stronghold of Romau, to the city of Midoria, and from the boulevards of Aquileia to the ricefields of Sydia stretched Arantigos' Empire. Arantigos 'the Great' they called him, for he never lost a single battle. Alas, he taken too soon, and his empire collapsed with death. Now, all that remains of his legacy is the Barony of Arantiga. With Arantiga in a state of decay, similar to the Rumarean Ruiniad, a young, fanatic army general sees himself as the only hope for his beleagured nation."
@@ -1389,11 +1389,14 @@ arantiga_decision.1.d:0 "Now, with the former capital of Wingbardy in our claws,
 arantiga_decision.1.a:0 "It shall be... Dorotheopolis!"
 arantiga_decision.1.b:0 "In honor of our homeland, Arantiga!"
 
+arantiga_decision.21.t:0 "Project Gotterhammer"
+arantiga_decision.21.d:0 ""
+
 arantiga_decision.201.t:0 "Up In Flames"
 arantiga_decision.201.d:0 "Ferrucio awoke not to the chirps of his alarm clock, but to consistent knocking of his front door. When he opened it, what greeted him was a exhausted firefighter, covered in soot from head to toe. Ferruci was told that the Panaceum building was burned to the ground in the middle of the night. The fire department had had to spend hours preventing the fire from spreading, and they have decided to chalk up the costs to the IRI. After seeing the state of the firefighter, Ferrucio put up no resistance. When he had left, Ferrucio wondered about the cause of the fire. His guess would later become the official explanation, that the Maarites burnt their work to prevent it being used against them in the investigation. Not that it matters, since they, and their theories, are now long gone."
 
 arantiga_decision.202.t:0 "The Investigation" #Need to expand; Haile was lazy
-arantiga_decision.202.d:0 "The Inspector paid a visit to the Panaceum building today, in an effort to gain more evidence against the Maarites. Given their connection to the Panaceum project, it seemed natural that such evidence would be found here too. The Inspector and his small group of seven griffons entered the building and began searching every nook and cranny of the place. They found nothing out of the ordinary, but the journals was were the money was at.\n\nToday, we get close to finishing the Inferno project. Today, we are one step closer of saving the world. We will finish what Zobrist started. \nHail Maar!\n\n - Journal of Horen Bormann, [Root.GetYear]\n\nHowever, as they were finishing up, an Angriver cocktail was thrown at the building, setting it alight. The Inspector was only aware after it was too late, but they managed to escape with a few vials and documents." #Is [Root.GetYear the correct way of doing it?]
+arantiga_decision.202.d:0 "The Inspector paid a visit to the Panaceum building today, in an effort to gain more evidence against the Maarites. Given their connection to the Panaceum project, it seemed natural that such evidence would be found here too. The Inspector and his small group of seven griffons entered the building and began searching every nook and cranny of the place. They found nothing out of the ordinary, but the journals was were the money was at.\n\nToday, we get close to finishing the Inferno project. Today, we are one step closer of saving the world. We will finish what Zobrist started. \nHail Maar!\n\n - Journal of Horen Bormann, [Root.GetYear]\n\nHowever, as they were finishing up, an Angriver cocktail was thrown at the building, setting it alight. The Inspector was only aware after it was too late, but they managed to escape with a few vials and documents." #Is [Root.GetYear] the correct way of doing it?
 arantiga_decision.202.a:0 "That was close!"
 
 arantiga_decision.21.t:0 "Project Panaceum"

@@ -23,6 +23,18 @@ country_event = { #Karthin - A New Name?
 	}
 }
 
+country_event = { #Project Gotterhammer
+	id = arantiga_decision.11
+	title = arantiga_decision.11.t
+	desc = arantiga_decision.11.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = 	arantiga_decision.31.a
+		country_event = { id = arantiga_decision.12 days = 30 }
+	}
+}
+
 country_event = { #Up In Flames
 	id = arantiga_decision.201
 	title = arantiga_decision.201.t
