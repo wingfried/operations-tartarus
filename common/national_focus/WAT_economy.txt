@@ -1,3 +1,24 @@
+#shared_focus = {
+#	id = WAT_
+#
+#	icon = 
+#
+#	x = 
+#	y = 
+#	relative_position_id = WAT_economy
+#
+#	cost = 3
+#	prerequisite = { focus =  }
+#	
+#	ai_will_do = {
+#		factor = 1
+#	}
+#
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: "
+#	}
+#}
+
 shared_focus = {
 	id = WAT_economy
 

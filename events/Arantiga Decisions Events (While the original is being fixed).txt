@@ -35,7 +35,7 @@ country_event = { #Tendering His Resignation
 	}
 }
 
-country_event = { #Unexpected Explosions
+country_event = { #The Death of a Dream
 	id = arantiga_decision.101
 	title = arantiga_decision.101.t
 	desc = arantiga_decision.101.d
@@ -84,7 +84,7 @@ country_event = { #The Forbidden Fruit of Knowledge
 	}
 	option = {
 		name = 	arantiga_decision.13.b
-		country_event = { id = arantiga_decision.10 days = 60 }
+		country_event = { id = arantiga_decision.10 days = 97 }
 	}
 }
 

@@ -1390,50 +1390,50 @@ arantiga_decision.1.a:0 "It shall be... Dorotheopolis!"
 arantiga_decision.1.b:0 "In honor of our homeland, Arantiga!"
 
 arantiga_decision.10.t:0 "Tendering His Resignation"
-arantiga_decision.10.d:0 ""
-arantiga_decision.10.a:0 ""
+arantiga_decision.10.d:0 ""Welcome, Bright Glow. I do not have much time to talk, but what brings you to my office?" asked Heirich. He obviously was very busy with his desk covered with loose paperwork and envelopes. "I trust everything is going fine at Gotterhammer?"\n\nBright Glow smiled nervously at the liasion, and took a seat in front of him. "Er, about that... The project cannot continue." \n\nHeinrich paused, and looked curiously at the pony. He put his clipboard on the desk, and paid rapt attention to what Bright Glow was saying.\n\n"Our research has hit a hurdle, and we are unable to continue further. We are hitting blocks in places we have never even predicted, and every solution we come up with seems to not work. There is no other way forward. Which means that the project has failed entirely."\n\nHeinrich looked blankly at Bright Glow, before the realization hit him. "That... sucks. Arantigos certainly will certainly not be happy. Money, after all, does not grow on trees. You'd better make yourself scarce, my friend. Arantigos does not take lightly to failure."\n\nBright Glow nodded, "My and my colleagues have already prepared for this eventuality. We are to have disappeared by tomorrow."\n\n"Good, good. Knew you guys were always a smart lot. This may be last time we meet each other, so good luck on your journey, Bright Glow."\n\nThe pony and the griffon stood up, and Heinrich watched as Bright Glow disappeared into the corridor. Sure enough, an arrest warrant came through the next day, but he was long gone by then. When it had become clear that they were nowhere to be found, "
+arantiga_decision.10.a:0 "Poor lad..."
+
+arantiga_decision.101.t:0 "The Death of a Dream"
+arantiga_decision.101.d:0 ""
 
 arantiga_decision.11.t:0 "Project Gotterhammer"
 arantiga_decision.11.d:0 ""
 
-arantiga_decision.101.t:0 "Unexpected Explosions"
-arantiga_decision.101.d:0 ""
-
 arantiga_decision.12.t:0 "The Sword of Damocles"
 arantiga_decision.12.d:0 ""
-arantiga_decision.12.a:0 ""
+arantiga_decision.12.a:0 "At least your settling in well..."
 
 arantiga_decision.13.t:0 "The Forbidden Fruit of Knowledge"
 arantiga_decision.13.d:0 ""
-arantiga_decision.13.a:0 ""
-arantiga_decision.13.b:0 ""
+arantiga_decision.13.a:0 "Knowledge is power, steal it!"
+arantiga_decision.13.b:0 "Make do, this is ridiculous..."
 
 arantiga_decision.14.t:0 "A Daring Raid"
 arantiga_decision.14.d:0 ""
-arantiga_decision.14.a:0 ""
+arantiga_decision.14.a:0 "It all went to plan..."
 
 arantiga_decision.15.t:0 "Quality over Quantity"
 arantiga_decision.15.d:0 ""
-arantiga_decision.15.a:0 ""
-arantiga_decision.15.b:0 ""
+arantiga_decision.15.a:0 "Very well, another mission it is..."
+arantiga_decision.15.b:0 "Make do, we are not gods..."
 
 arantiga_decision.16.t:0 "Making The Most"
 arantiga_decision.16.d:0 ""
-arantiga_decision.16.a:0 ""
+arantiga_decision.16.a:0 "Well, well, well..."
 
 arantiga_decision.17.t:0 "Trinity"
 arantiga_decision.17.d:0 ""
-arantiga_decision.17.a:0 ""
+arantiga_decision.17.a:0 "Perhaps it's for the best..."
 
 arantiga_decision.18.t:0 "Destruction of Temple Prime"
 arantiga_decision.18.d:0 ""
-arantiga_decision.18.a:0 ""
+arantiga_decision.18.a:0 "We grieve for the dead... mine those crystals!"
 
 arantiga_decision.201.t:0 "Up In Flames"
 arantiga_decision.201.d:0 "Ferrucio awoke not to the chirps of his alarm clock, but to consistent knocking of his front door. When he opened it, what greeted him was a exhausted firefighter, covered in soot from head to toe. Ferruci was told that the Panaceum building was burned to the ground in the middle of the night. The fire department had had to spend hours preventing the fire from spreading, and they have decided to chalk up the costs to the IRI. After seeing the state of the firefighter, Ferrucio put up no resistance. When he had left, Ferrucio wondered about the cause of the fire. His guess would later become the official explanation, that the Maarites burnt their work to prevent it being used against them in the investigation. Not that it matters, since they, and their theories, are now long gone."
 
 arantiga_decision.202.t:0 "The Investigation" #Need to expand; Haile was lazy
-arantiga_decision.202.d:0 "The Inspector paid a visit to the Panaceum building today, in an effort to gain more evidence against the Maarites. Given their connection to the Panaceum project, it seemed natural that such evidence would be found here too. The Inspector and his small group of seven griffons entered the building and began searching every nook and cranny of the place. They found nothing out of the ordinary, but the journals was were the money was at.\n\nToday, we get close to finishing the Inferno project. Today, we are one step closer of saving the world. We will finish what Zobrist started. \nHail Maar!\n\n - Journal of Horen Bormann, [Root.GetYear]\n\nHowever, as they were finishing up, an Angriver cocktail was thrown at the building, setting it alight. The Inspector was only aware after it was too late, but they managed to escape with a few vials and documents." #Is [Root.GetYear] the correct way of doing it?
+arantiga_decision.202.d:0 "The Inspector paid a visit to the Panaceum building today, in an effort to gain more evidence against the Maarites. Given their connection to the Panaceum project, it seemed natural that such evidence would be found here too. The Inspector and his small group of seven griffons entered the building and began searching every nook and cranny of the place. They found nothing out of the ordinary, but the journals was were the money was at.\n\nToday, we get close to finishing the Inferno project. Today, we are one step closer of saving the world. We will finish what Zobrist started. \nHail Maar!\n\n - Journal of Horen Bormann, [GetDateText]\n\nHowever, as they were finishing up, an Angriver cocktail was thrown at the building, setting it alight. The Inspector was only aware after it was too late, but they managed to escape with a few vials and documents." #Is [Root.GetYear] the correct way of doing it?
 arantiga_decision.202.a:0 "That was close!"
 
 arantiga_decision.21.t:0 "Project Panaceum"
