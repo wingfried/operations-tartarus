@@ -120,4 +120,12 @@ spriteTypes = {
 		name = "GFX_idea_ara_low_resistance"
 		texturefile = "gfx/interface/ideas/ARA_low_resistance.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_ARA_hochsklause"
+		texturefile = "gfx/interface/ideas/idea_ARA_hochsklause.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ARA_alhorsered"
+		texturefile = "gfx/interface/ideas/idea_ARA_alhorsered.dds"
+	}
 }

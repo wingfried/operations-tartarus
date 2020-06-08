@@ -1,16 +1,15 @@
 focus_tree = {
 	id = Arantiga_arantigos
-	
 	country = {
 		factor = 0
 			modifier = {
-			add = 100
+			add = 20
 			
 			original_tag = ARA
 			
 		}
 	}
-	
+
 
 	default = no
 	continuous_focus_position = { x = 290 y = 2500 }
@@ -135,7 +134,10 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = { focus = ARA_end_old_empire }
 		mutually_exclusive = { focus = ARA_fate_of_child_emperor }
-		available = { has_global_flag =  GRI_grover_vi_dead }
+		available = {
+    		has_global_flag =  GRI_grover_vi_dead
+			382 = { is_owned_and_controlled_by = ROOT }
+		}
 		completion_reward = {
 			country_event = arantiga.098
 		}
@@ -164,7 +166,12 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = { focus = ARA_end_old_empire }
 		mutually_exclusive = { focus = ARA_fate_of_lord_protector }
-		available = { NOT = { has_global_flag =  GRI_grover_vi_dead } }
+		available = {
+    		NOT = {
+    			has_global_flag =  GRI_grover_vi_dead
+ 			}
+			382 = { is_owned_and_controlled_by = ROOT }
+		}
 		completion_reward = {
 		    country_event = arantiga.099
 		}
@@ -354,11 +361,9 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = ARA_royal_spouse }
 		select_effect = {
-		    #hidden_effect = {
 			    country_event = { id = arantiga.091 days = 40 }
 				country_event = { id = arantiga.092 days = 80 }
 				country_event = { id = arantiga.093 days = 120 }
-			#}
 		}
 		completion_reward = {
 		    custom_effect_tooltip = ARA_decline_of_aquileia_tooltip

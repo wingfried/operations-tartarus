@@ -26,10 +26,6 @@ focus_tree = {
 		y = 0
 		cost = 1.00
 		available = { always = no }
-		bypass = {
-			has_country_flag = ARA_coup_succeeded
-			
-		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -540,10 +536,11 @@ focus_tree = {
 		completion_reward = {
 		add_political_power = 100
 		add_stability = 0.1
+		add_country_leader_trait = indominable_will
 		country_event = arantiga.999
 		}
 		}
-		###### INCOMPLETE Dorotheos gains trait Indomitable will (+5% Division Recovery rate)#####
+	
 		
 	
 		

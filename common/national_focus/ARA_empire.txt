@@ -9,10 +9,11 @@
 		shared_focus = ARA_self_strength
 		shared_focus = ARA_new_age_new_army
 		shared_focus = ARA_rumare_exercises
+
 	country = {
 		factor = 0
 			modifier = {
-			add = 10
+			add = 20
 			
 			original_tag = ARA
 			
