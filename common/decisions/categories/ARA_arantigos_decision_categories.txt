@@ -40,3 +40,58 @@ ARA_definetely_not_fake_IRI = {
 #FOR TESTING; Remind me to remove comment
 	}
 }
+
+ARA_return_land_cat = { #incomplete, ignore
+    icon = generic_political_actions
+	visible = {
+	    original_tag = ARA
+		has_completed_focus = ARA_what_remains
+		any_neighbor_country = {
+		    OR = {
+                is_original_riv_fed_country = yes
+				is_in_faction_with = RCT
+			}
+		    any_owned_state = {
+				is_griffon_core = yes
+	        }
+		}
+		NOT = {
+		    has_country_flag = ARA_waiting_for_river_response
+		}
+		NOT = {
+		    has_war_with = RCT
+		}
+	}
+}
+
+ARA_northern_threat = {
+    icon = generic_political_actions
+	visible = {
+	    original_tag = ARA
+		OR = {
+		    any_neighbor_country = {
+		        original_tag = DED
+		    }
+			FBK = {
+			    AND = {
+				    is_subject_of = ARA
+					any_neighbor_country = {
+					    original_tag = DED
+					}
+				}
+			}
+			NTR = {
+			    AND = {
+				    is_subject_of = ARA
+					any_neighbor_country = {
+					    original_tag = DED
+					}
+				}
+			}
+			ARA = {
+			    owns_state = 415
+			}
+		}
+	}
+}
+                    					

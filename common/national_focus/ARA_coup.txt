@@ -26,10 +26,6 @@ focus_tree = {
 		y = 0
 		cost = 1.00
 		available = { always = no }
-		bypass = {
-			has_country_flag = ARA_coup_succeeded
-			
-		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -58,6 +54,10 @@ focus_tree = {
 			}
 			country_event = arantiga.005
 			remove_unit_leader = 1337
+			
+			hidden_effect = {
+			    set_country_flag = ARA_reorganise_high_command_flag
+			}
 
 			####Access to decisions “Arantigans Abroad”###
 		}
@@ -237,7 +237,7 @@ focus_tree = {
 			}
 	focus = {
 		id = ARA_rebuild_stone
-		icon = GFX_goal_generic_construct_public_housing
+		icon = GFX_goal_hoist_the_flag_BOI
 		x = 0
 		y = 1
 		relative_position_id = ARA_craddle
@@ -308,7 +308,7 @@ focus_tree = {
 	
 	Focus = {
 		id = ARA_integrate_north
-		icon = GFX_goal_generic_construct_public_housing
+		icon = GFX_goal_eriehouse
 		x = 0
 		y = 1
 		relative_position_id = ARA_fight_north
@@ -351,7 +351,7 @@ focus_tree = {
 			
 	Focus = {
 		id = ARA_integrate_avian
-		icon = GFX_goal_generic_construct_public_housing
+		icon = GFX_goal_DEI_focus_disband_volksraad
 		x = 0
 		y = 1
 		relative_position_id = ARA_fight_avian
@@ -447,6 +447,9 @@ focus_tree = {
 		prerequisite = { focus = ARA_sparleos_legacy }
 		completion_reward = {
 		add_ideas = ARA_arantigos_boreas1
+		hidden_effect = {
+		    set_country_flag = ARA_arantigos_boreas_flag
+		}
 		
 		}
 		}
@@ -540,10 +543,10 @@ focus_tree = {
 		completion_reward = {
 		add_political_power = 100
 		add_stability = 0.1
-		country_event = arantiga.999
+		add_country_leader_trait = indominable_will
 		}
 		}
-		###### INCOMPLETE Dorotheos gains trait Indomitable will (+5% Division Recovery rate)#####
+	
 		
 	
 		

@@ -1,5 +1,5 @@
 division_template = {
-	name = "de Charbon's Mercenaries"
+	name = "De Charbon's Mercenaries"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -18,33 +18,33 @@ division_template = {
 }
 units = {
 	division = {
-		name = "de Charbon's Mercenaries"
+		name = "De Charbon's Mercenaries"
 		location = 12740
-		division_template = "de Charbon's Mercenaries"
+		division_template = "De Charbon's Mercenaries"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 
 	division = {
-		name = "de Charbon's Mercenaries"
+		name = "De Charbon's Mercenaries"
 		location = 12740
-		division_template = "de Charbon's Mercenaries"
+		division_template = "De Charbon's Mercenaries"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 
 	division = {
-		name = "de Charbon's Mercenaries"
+		name = "De Charbon's Mercenaries"
 		location = 12740
-		division_template = "de Charbon's Mercenaries"
+		division_template = "De Charbon's Mercenaries"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	
 	division = {
-		name = "de Charbon's Mercenaries"
+		name = "De Charbon's Mercenaries"
 		location = 12740
-		division_template = "de Charbon's Mercenaries"
+		division_template = "De Charbon's Mercenaries"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}

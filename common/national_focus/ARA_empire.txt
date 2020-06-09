@@ -9,10 +9,11 @@
 		shared_focus = ARA_self_strength
 		shared_focus = ARA_new_age_new_army
 		shared_focus = ARA_rumare_exercises
+
 	country = {
 		factor = 0
 			modifier = {
-			add = 10
+			add = 20
 			
 			original_tag = ARA
 			
@@ -458,6 +459,9 @@
 			    }
 			}
 			#}
+			hidden_effect = {
+			    set_country_flag = ARA_reform_the_archonates_flag
+			}
 		}
 	}
 	
@@ -1844,6 +1848,9 @@
 			381 = {
 			    add_core_of = ARA
 			}
+			379 = {
+			    add_core_of = ARA
+			}
 			#Haukland
 			659 = {
 			    add_core_of = ARA
@@ -1866,13 +1873,50 @@
 		cost = 3.00
 		prerequisite = { focus = ARA_what_remains }
 		completion_reward = {
-            create_wargoal = {
-				type = annex_everything 
-				target = LNS
+		    IF = {
+			    limit = {
+				    LNS = {
+					    exists = yes
+					}
+				}
+                create_wargoal = {
+				    type = annex_everything 
+				    target = LNS
+			    }
+				create_wargoal = {
+				    type = annex_everything 
+				    target = HLQ
+			    }
 			}
-			create_wargoal = {
-				type = annex_everything 
-				target = HLQ
+			IF = {
+			    limit = {
+				    LSC = {
+					    exists = yes
+					}
+				}
+                create_wargoal = {
+				    type = annex_everything 
+				    target = LSC
+			    }
+				create_wargoal = {
+				    type = annex_everything 
+				    target = HLQ
+			    }
+			}
+			IF = {
+			    limit = {
+				    LSM = {
+					    exists = yes
+					}
+				}
+                create_wargoal = {
+				    type = annex_everything 
+				    target = LSM
+			    }
+				create_wargoal = {
+				    type = annex_everything 
+				    target = HLQ
+			    }
 			}
 		}
 	}
