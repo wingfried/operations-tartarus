@@ -45,6 +45,13 @@ country_event = { #The Death of a Dream
 		name = 	arantiga_decision.30.a
 		custom_effect_tooltip = ARA_regret_perhaps_tt
 		clr_country_flag = IRI_project_ongoing
+		add_manpower = -141
+		add_tech_bonus = {
+		    bonus = 0.25
+		    uses = 5
+		    category = nuclear
+		}
+
 	}
 }
 
@@ -81,6 +88,7 @@ country_event = { #The Forbidden Fruit of Knowledge
 	option = {
 		name = 	arantiga_decision.13.a
 		country_event = { id = arantiga_decision.14 days = 30 }
+		add_political_power = -35
 	}
 	option = {
 		name = 	arantiga_decision.13.b
@@ -109,6 +117,7 @@ country_event = { #Quality over Quantity
 	option = {
 		name = 	arantiga_decision.15.a
 		country_event = { id = arantiga_decision.16 days = 45 }
+		add_political_power = -60
 	}
 	option = {
 		name = 	arantiga_decision.15.b
@@ -124,6 +133,7 @@ country_event = { #Making The Most
 	fire_only_once = yes
 	option = {
 		name = 	arantiga_decision.16.a
+		add_manpower = -24
 		country_event = { id = arantiga_decision.17 days = 105 }
 	}
 }
@@ -137,6 +147,14 @@ country_event = { #Trinity
 	option = {
 		name = 	arantiga_decision.17.a
 		country_event = { id = arantiga_decision.18 days = 55 }
+		add_political_power = -50
+		129 = { #replace with state id of schiesswald
+			add_building_construction = {
+    			type = infrastructure
+    			level = 1
+    			instant_build = yes
+			}
+		}
 	}
 }
 
@@ -149,6 +167,19 @@ country_event = { #Destruction of Temple Prime
 	option = {
 		name = 	arantiga_decision.18.a
 		clr_country_flag = IRI_project_ongoing
+		add_political_power = -75
+		add_tech_bonus = {
+		    bonus = 0.75
+		    uses = 5
+		    category = nuclear
+		}
+		129 = { #replace with state id of schiesswald
+			add_manpower = -12000
+			add_resource = {
+	    		type = crystals #replace magical crystals
+    			amount = 24
+			}
+		}
 	}
 }
 
@@ -255,7 +286,7 @@ country_event = { #Ferrucio's Missing Link
 	option = {
 		name = 	arantiga_decision.25.a
 		country_event = { id = arantiga_decision.261 days = 70 }
-		add_political_power = -75
+		add_political_power = -50
 		add_manpower = -7
 	}
 
@@ -452,7 +483,6 @@ country_event = { #Project Silver Key
 	fire_only_once = yes
 	option = {
 		name = 	arantiga_decision.41.a
-		country_event = { id = arantiga_decision.42 days = 70 }
 		country_event = { id = arantiga_decision.47 days = 7 }
 	}
 }
@@ -465,6 +495,7 @@ country_event = { #Settling In
 	fire_only_once = yes
 	option = {
 		name = 	arantiga_decision.47.a
+		country_event = { id = arantiga_decision.42 days = 70 }
 	}
 }
 

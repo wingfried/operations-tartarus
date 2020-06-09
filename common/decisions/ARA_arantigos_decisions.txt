@@ -96,7 +96,7 @@ ARA_renaming_cities = {
 ARA_definetely_not_fake_IRI = {
 	ARA_hammer_of_god = {
 		icon = generic_nationalism
-		cost = 150
+		cost = 75
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 0
@@ -113,7 +113,7 @@ ARA_definetely_not_fake_IRI = {
 
 	ARA_miracle_cure = {
 		icon = generic_nationalism
-		cost = 200
+		cost = 50
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 0
@@ -145,7 +145,7 @@ ARA_definetely_not_fake_IRI = {
 
 	ARA_teleportation_device = {
 		icon = generic_nationalism
-		cost = 250
+		cost = 100
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 0
