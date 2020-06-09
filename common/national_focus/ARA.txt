@@ -559,6 +559,9 @@
 				uses = 2
 				category = land_doctrine
 			}
+			hidden_effect = {
+			    set_country_flag = ARA_new_academy_flag
+			}
 		}
 	}
 

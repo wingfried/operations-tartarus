@@ -164,7 +164,7 @@ country_event = { #prodigal sons
 	picture = GFX_event_griffon_soldier
 	option = {
 	name = arantiga.006.a
-	custom_effect_tooltip = ara_tooltip_voices_2
+	#custom_effect_tooltip = ara_tooltip_voices_2
 	}
 	}
 	
@@ -269,7 +269,7 @@ country_event = { #Dreams flavour event
 	fire_only_once = yes
 	option = {
 	name = arantiga.010.a
-	custom_effect_tooltip = ara_tooltip_voices_4
+	#custom_effect_tooltip = ara_tooltip_voices_4
 	}
 	}
 
@@ -281,7 +281,7 @@ country_event = { #Memories flavour event
 	fire_only_once = yes
 	option = {
 	name = arantiga.011.a
-	custom_effect_tooltip = ara_tooltip_voices_5
+	#custom_effect_tooltip = ara_tooltip_voices_5
 	}
 	}
 	
@@ -293,7 +293,7 @@ country_event = { #Unexpected return Flavour events
 	fire_only_once = yes
 	option = {
 	name = arantiga.012.a
-	custom_effect_tooltip = ara_tooltip_voices_6
+	#custom_effect_tooltip = ara_tooltip_voices_6
 	}
 	}
 	
@@ -342,7 +342,7 @@ country_event = { #going lower
 	fire_only_once = yes
 	option = {
 	name = arantiga.014.a
-	custom_effect_tooltip = ara_tooltip_voices_clue_1
+	#custom_effect_tooltip = ara_tooltip_voices_clue_1
 		hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -354,7 +354,7 @@ country_event = { #going lower
 	}
 	option = {
 	name = arantiga.014.b
-	custom_effect_tooltip = ara_tooltip_voices_clue_2
+	#custom_effect_tooltip = ara_tooltip_voices_clue_2
 			hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -407,7 +407,7 @@ country_event = { #going lower
 	fire_only_once = yes
 	option = {
 	name = arantiga.016.a
-	custom_effect_tooltip = ara_tooltip_voices_clue_3
+	#custom_effect_tooltip = ara_tooltip_voices_clue_3
 		hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -419,7 +419,7 @@ country_event = { #going lower
 	}
 	option = {
 	name = arantiga.016.b
-	custom_effect_tooltip = ara_tooltip_voices_clue_4
+	#custom_effect_tooltip = ara_tooltip_voices_clue_4
 			hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -510,7 +510,7 @@ country_event = { #going lower
 	fire_only_once = yes
 	option = {
 	name = arantiga.019.a
-	custom_effect_tooltip = ara_tooltip_voices_clue_5
+	#custom_effect_tooltip = ara_tooltip_voices_clue_5
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -522,7 +522,7 @@ country_event = { #going lower
 	}
 	option = {
 	name = arantiga.019.b
-	custom_effect_tooltip = ara_tooltip_voices_clue_6
+	#custom_effect_tooltip = ara_tooltip_voices_clue_6
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -574,7 +574,7 @@ country_event = { #going lower
 	fire_only_once = yes
 	option = {
 	name = arantiga.021.a
-	custom_effect_tooltip = ara_tooltip_voices_clue_7
+	#custom_effect_tooltip = ara_tooltip_voices_clue_7
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -586,7 +586,7 @@ country_event = { #going lower
 	}
 	option = {
 	name = arantiga.021.b
-	custom_effect_tooltip = ara_tooltip_voices_clue_8
+	#custom_effect_tooltip = ara_tooltip_voices_clue_8
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -638,7 +638,7 @@ country_event = { #going lower
 	fire_only_once = yes
 	option = {
 	name = arantiga.023.a
-	custom_effect_tooltip = ara_tooltip_voices_clue_9
+	#custom_effect_tooltip = ara_tooltip_voices_clue_9
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -650,7 +650,7 @@ country_event = { #going lower
 	}
 	option = {
 	name = arantiga.023.b
-	custom_effect_tooltip = ara_tooltip_voices_clue_a
+	#custom_effect_tooltip = ara_tooltip_voices_clue_a
 	hidden_effect = {
 				ARA = {
 		        country_event = { 
@@ -725,7 +725,7 @@ country_event = { #No remorse
 	fire_only_once = yes
 	option = {
 	name = arantiga.026.a
-	custom_effect_tooltip = ara_tooltip_voices_3
+	#custom_effect_tooltip = ara_tooltip_voices_3
 	add_manpower = -5000
 	add_stability = -0.05
 	add_war_support = -0.05
@@ -1260,6 +1260,9 @@ country_event = { #Griffonstone Archives
 	    fire_only_once = yes
 	    option = {
 		    name = arantiga.053.a
+			ai_chance = {
+			    factor = 30
+			}
 		    ARA = {
 			    country_event = {
 				    id = arantiga.054
@@ -1269,6 +1272,9 @@ country_event = { #Griffonstone Archives
 		}
 		option = {
 		    name = arantiga.053.b
+			ai_chance = {
+			    factor = 70
+			}
 		    ARA = {
 			    country_event = {
 				    id = arantiga.055
@@ -1310,18 +1316,40 @@ country_event = { #Griffonstone Archives
 	    fire_only_once = yes
 	    option = {
 		    name = arantiga.066.a
+			ai_chance = {
+			    factor = 50
+				modifier = {
+				    has_government = neutrality
+					factor = 100
+				}
+				modifier = {
+				    has_government = fascism
+					factor = 0
+				}
+			}
 		    ARA = {
 			    country_event = {
-				    id = arantiga.054
+				    id = arantiga.067
 					days = 7
 				}
 			}
 		}
 		option = {
 		    name = arantiga.066.b
+			ai_chance = {
+			    factor = 50
+				modifier = {
+				    has_government = neutrality
+					factor = 0
+				}
+				modifier = {
+				    has_government = fascism
+					factor = 100
+				}
+			}
 		    ARA = {
 			    country_event = {
-				    id = arantiga.055
+				    id = arantiga.068
 					days = 7
 				}
 			}
@@ -1477,6 +1505,9 @@ country_event = { #Griffonstone Archives
 	    fire_only_once = yes
 	    option = {
 		    name = arantiga.058.a
+			ai_chance = {
+			    factor = 80
+			}
 		    ARA = {
 			    country_event = {
             	    id = arantiga.059
@@ -1486,10 +1517,13 @@ country_event = { #Griffonstone Archives
 		}
 		option = {
 		    name = arantiga.058.b
+			ai_chance = {
+			    factor = 20
+			}
 		    ARA = {
 			    country_event = {
 				    id = arantiga.060
-					days = 7
+					days = 2
 				}
 			}
 		}
@@ -2858,9 +2892,16 @@ country_event = { # Detente
 	option = {
 		name = 	arantiga_govern.026.a #we fight
 		declare_war_on = { type = annex_everything    target = GRF }
-	    create_wargoal = {
-		    target = GFF
-			type = annex_everything
+		IF = {
+		    limit = {
+			    GFF = {
+				    exists = yes
+				}
+			}
+	        create_wargoal = {
+		        target = GFF
+			    type = annex_everything
+		    }
 		}
 	}
 	option = {
@@ -2869,10 +2910,17 @@ country_event = { # Detente
 		    target = GRF
 			type = annex_everything
         }
-		create_wargoal = {
-		    target = GFF
-			type = annex_everything
-        }
+		IF = {
+		    limit = {
+			    GFF = {
+				    exists = yes
+				}
+			}
+	        create_wargoal = {
+		        target = GFF
+			    type = annex_everything
+		    }
+		}
 	}
 }
  country_event = { # grf does fold
@@ -2885,10 +2933,17 @@ country_event = { # Detente
 	option = {
 		name = 	arantiga_govern.027.a #awesome
 		ARA = {
-		    create_wargoal = {
+		    IF = {
+		    limit = {
+			    GFF = {
+				    exists = yes
+				}
+			}
+	        create_wargoal = {
 		        target = GFF
-		    	type = annex_everything
+			    type = annex_everything
 		    }
+			}
 		}
 		ARA = { puppet = GRF }
 	}

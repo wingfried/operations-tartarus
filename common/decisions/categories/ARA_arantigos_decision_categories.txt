@@ -55,6 +55,12 @@ ARA_return_land_cat = { #incomplete, ignore
 				is_griffon_core = yes
 	        }
 		}
+		NOT = {
+		    has_country_flag = ARA_waiting_for_river_response
+		}
+		NOT = {
+		    has_war_with = RCT
+		}
 	}
 }
 

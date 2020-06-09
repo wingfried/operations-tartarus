@@ -3392,7 +3392,7 @@ country = {
 			allowed = {
 				original_tag = "ARA"
 				NOT = {
-					has_completed_focus = ARA_reform_the_archonates
+					has_country_flag = ARA_reform_the_archonates_flag
 				}
 			}		
 			traits = { friendly_priest }
@@ -3401,14 +3401,14 @@ country = {
 				factor = 1
 			}
 			available = {
-				has_completed_focus = ARA_arantigos_boreas
+				has_country_flag = ARA_arantigos_boreas_flag
 				NOT = {
-				    has_completed_focus = ARA_reform_the_archonates
+				    has_country_flag = ARA_reform_the_archonates_flag
 				}
 			}
 			visible = {
 			    NOT = {
-				    has_completed_focus = ARA_reform_the_archonates
+				    has_country_flag = ARA_reform_the_archonates_flag
 				}
 			}
 		}
@@ -3467,10 +3467,10 @@ country = {
 				factor = 1
 			}
 			available = {
-				has_completed_focus = ARA_reform_the_archonates
+				has_country_flag = ARA_reform_the_archonates_flag
 			}
 			visible = {
-				has_completed_focus = ARA_reform_the_archonates
+				has_country_flag = ARA_reform_the_archonates_flag
 			}
 		}
 	}
@@ -3658,6 +3658,7 @@ country = {
 			}
 			available = {
 			    custom_trigger_tooltip = {
+				    has_country_flag = ARA_reorganise_high_command_flag
 				    tooltip = ARA_miga_busy
 				    NOT = {
 					    has_idea = ARA_miga_ouranos_2
@@ -3676,6 +3677,7 @@ country = {
 			}
 			available = {
 			    custom_trigger_tooltip = {
+				    has_country_flag = ARA_reorganise_high_command_flag
 				    tooltip = ARA_bellerophontes_busy
 				    NOT = {
 					    has_idea = ARA_bellerophontes_2
@@ -3728,7 +3730,7 @@ country = {
 				factor = 1
 			}
 			available = {
-				has_completed_focus = ARA_new_academy
+				has_country_flag = ARA_new_academy_flag
 				custom_trigger_tooltip = {
 				    tooltip = ARA_nicator_army
 				    has_unit_leader = 1336
@@ -3746,7 +3748,7 @@ country = {
 				factor = 1
 			}
 			available = {
-				has_completed_focus = ARA_new_academy
+				has_country_flag = ARA_new_academy_flag
 				custom_trigger_tooltip = {
 				    tooltip = ARA_lysimachus_army
 				    has_unit_leader = 1335
@@ -3764,7 +3766,7 @@ country = {
 				factor = 1
 			}
 			available = {
-				has_completed_focus = ARA_reorganise_high_command
+				has_country_flag = ARA_reorganise_high_command_flag
 			}
 		}
 		}
@@ -3779,7 +3781,7 @@ country = {
 				factor = 1
 			}
 			available = {
-				has_completed_focus = ARA_new_academy
+				has_country_flag = ARA_new_academy_flag
 				custom_trigger_tooltip = {
 				    tooltip = ARA_soter_army
 				    has_unit_leader = 1334
@@ -3797,7 +3799,7 @@ country = {
 				factor = 1
 			}
 			available = {
-				has_completed_focus = ARA_new_academy
+				has_country_flag = ARA_new_academy_flag
 				custom_trigger_tooltip = {
 				    tooltip = ARA_nicator_army
 				    has_unit_leader = 1336
@@ -3815,7 +3817,7 @@ country = {
 				factor = 1
 			}
 			available = {
-				has_completed_focus = ARA_new_academy
+				has_country_flag = ARA_new_academy_flag
 				custom_trigger_tooltip = {
 				    tooltip = ARA_lysimachus_army
 				    has_unit_leader = 1335
@@ -3833,7 +3835,7 @@ country = {
 				factor = 1
 			}
 			available = {
-				has_completed_focus = ARA_reorganise_high_command
+				has_country_flag = ARA_reorganise_high_command_flag
 			}
 		}
 		
@@ -3847,7 +3849,7 @@ country = {
 				factor = 1
 			}
 			available = {
-				has_completed_focus = ARA_new_academy
+				has_country_flag = ARA_new_academy_flag
 			}
 		}
 		ARA_miga_ouranos_2 = {
@@ -3860,6 +3862,7 @@ country = {
 				factor = 1
 			}
 			available = {
+			    has_country_flag = ARA_reorganise_high_command_flag
 			    custom_trigger_tooltip = {
 				    tooltip = ARA_miga_busy
 				    NOT = {
@@ -3878,6 +3881,7 @@ country = {
 				factor = 1
 			}
 			available = {
+			    has_country_flag = ARA_reorganise_high_command_flag
 			    custom_trigger_tooltip = {
 				    tooltip = ARA_bellerophontes_busy
 				    NOT = {
