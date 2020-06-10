@@ -259,7 +259,7 @@
 		icon = GFX_goal_naval_effort
 		x = -20
 		y = 0
-		cost = 10.00
+		cost = 5.00
 		bypass = {
 			any_controlled_state_is_coastal = yes
 		}
@@ -278,7 +278,7 @@
 		x = 0
 		y = 1
 		relative_position_id = ARA_rumare_exercises
-		cost = 10.00
+		cost = 5.00
 		prerequisite = { focus = ARA_rumare_exercises }
 		available = {
 			any_controlled_state_is_coastal = yes
@@ -303,7 +303,7 @@
 		x = -2
 		y = 2
 		relative_position_id = ARA_rumare_exercises
-		cost = 10.00
+		cost = 5.00
 		prerequisite = { focus = ARA_foreign_naval_doctrines }
 
 		ai_will_do = {
@@ -325,7 +325,7 @@
 		x = 2
 		y = 2
 		relative_position_id = ARA_rumare_exercises
-		cost = 10.00
+		cost = 5.00
 		prerequisite = { focus = ARA_foreign_naval_doctrines }
 
 		ai_will_do = {
@@ -347,7 +347,7 @@
 		x = 0
 		y = 2
 		relative_position_id = ARA_rumare_exercises
-		cost = 10.00
+		cost = 5.00
 		prerequisite = { focus = ARA_foreign_naval_doctrines }
 		available = {
 		    371 = {
@@ -374,7 +374,7 @@
 		x = -3
 		y = 3
 		relative_position_id = ARA_rumare_exercises
-		cost = 10.00
+		cost = 5.00
 		prerequisite = { focus = ARA_destroyer_fleet }
 
 		ai_will_do = {
@@ -396,7 +396,7 @@
 		x = -2
 		y = 4
 		relative_position_id = ARA_rumare_exercises
-		cost = 10.00
+		cost = 5.00
 		prerequisite = { focus = ARA_cruisers_development }
 
 		ai_will_do = {
@@ -418,7 +418,7 @@
 		x = 3
 		y = 3
 		relative_position_id = ARA_rumare_exercises
-		cost = 10.00
+		cost = 5.00
 		prerequisite = { focus = ARA_submarine_designs }
 
 		ai_will_do = {
@@ -440,7 +440,7 @@
 		x = 2
 		y = 4
 		relative_position_id = ARA_rumare_exercises
-		cost = 10.00
+		cost = 5.00
 		prerequisite = { focus = ARA_marine_corps }
 
 		ai_will_do = {
@@ -459,7 +459,7 @@
 		x = -1
 		y = 3
 		relative_position_id = ARA_rumare_exercises
-		cost = 10.00
+		cost = 5.00
 		prerequisite = { focus = ARA_destroyer_fleet }
 		mutually_exclusive = { focus = ARA_carriers_are_future }
 
@@ -483,7 +483,7 @@
 		x = 1
 		y = 3
 		relative_position_id = ARA_rumare_exercises
-		cost = 10.00
+		cost = 5.00
 		prerequisite = { focus = ARA_submarine_designs }
 		mutually_exclusive = { focus = ARA_arantigan_battleships }
 
@@ -506,7 +506,7 @@
 		x = 0
 		y = 4
 		relative_position_id = ARA_rumare_exercises
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
        		focus = ARA_arantigan_battleships
 			focus = ARA_carriers_are_future
@@ -1501,7 +1501,7 @@
 	
 		completion_reward = {
 		add_resource = {
-				type = aluminum
+				type = aluminium
 				amount = 5
 				state = 488
 			}
@@ -1516,7 +1516,7 @@
 				state = 488
 			}
 		add_resource = {
-				type = aluminum
+				type = aluminium
 				amount = 5
 				state = 531
 			}

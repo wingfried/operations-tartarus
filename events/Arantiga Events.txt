@@ -2906,21 +2906,6 @@ country_event = { # Detente
 	}
 	option = {
 		name = 	arantiga_govern.026.b #we wait
-	    create_wargoal = {
-		    target = GRF
-			type = annex_everything
-        }
-		IF = {
-		    limit = {
-			    GFF = {
-				    exists = yes
-				}
-			}
-	        create_wargoal = {
-		        target = GFF
-			    type = annex_everything
-		    }
-		}
 	}
 }
  country_event = { # grf does fold
@@ -2946,6 +2931,10 @@ country_event = { # Detente
 			}
 		}
 		ARA = { puppet = GRF }
+		set_autonomy = { target = GRF autonomy_state = autonomy_reichsprotectorate }
+		GRF = {
+		    add_ideas = limited_conscription_ara
+		}
 	}
 }
 
@@ -3806,6 +3795,8 @@ country_event = { #Fallen Archon
 	}
 	option = {
 		name = 	arantiga.101.b
+		add_political_power = -100
+		add_stability = -0.05
 		show_ideas_tooltip = ARA_archon_erion
 		hidden_effect = {
 		    set_country_flag = ARA_dorotheos_endorsed_erion

@@ -174,6 +174,7 @@ ARA_return_land_cat = {
 				}
 			}
 		}
+		days_re_enable = 30
 		complete_effect = {
 		    IF = {
 			    limit = {
@@ -194,11 +195,6 @@ ARA_return_land_cat = {
 					    has_country_flag = river_federation_founder
 					}
 			    	country_event = arantiga.111
-				}
-			}
-			hidden_effect = {
-			    ARA = {
-				    set_country_flag = { flag = ARA_waiting_for_river_response days = 30 }
 				}
 			}
 		}

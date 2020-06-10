@@ -128,4 +128,16 @@ spriteTypes = {
 		name = "GFX_goal_gaw_marriage_aquileia"
 		texturefile = "gfx/interface/goals/goal_gaw_marriage_aquileia.dds"
 	}
+	SpriteType = { 
+		name = "GFX_goal_gaw_integrate_wingbardy"
+		texturefile = "gfx/interface/goals/goal_gaw_integrate_wingbardy.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_gaw_integrate_empire"
+		texturefile = "gfx/interface/goals/goal_gaw_integrate_empire.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_gaw_integrate_aquileia"
+		texturefile = "gfx/interface/goals/goal_gaw_integrate_aquileia.dds"
+	}
 }
