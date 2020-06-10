@@ -887,7 +887,7 @@ country = {
 			picture = griffon_army3
 			removal_cost = -1
 			modifier = {
-			conscription_factor = 0.03
+			conscription_factor = 0.05
 			}
 		}
 	}
@@ -1114,12 +1114,12 @@ country = {
 			picture = idol_of_boreas_lost
 			removal_cost = -1
 			modifier = {
-			stability_factor = 0.1
-			war_support_factor = 0.1
-#			set_rule = {
-#				can_use_kamikaze_pilots = yes NOTE: This is a effect; not a modifier, so it won't work here. Consider putting it in a focus or event or something... - Haile
-#			}
-		}
+			    stability_factor = 0.1
+			    war_support_factor = 0.1
+			}
+			rule = {
+				can_use_kamikaze_pilots = yes #simple as that @Haile  - Elegioneer
+    		}
 		}
 		}
 	
@@ -3428,9 +3428,7 @@ country = {
 				factor = 1
 			}
 			available = {
-				389 = {
-					is_fully_controlled_by = ARA
-				}
+				controls_state = 389
 			}
 		}
 	}
@@ -3449,9 +3447,7 @@ country = {
 				factor = 1
 			}
 			available = {
-				389 = {
-					is_fully_controlled_by = ARA
-				}
+				controls_state = 389
 			}
 		}
 	}
@@ -3591,6 +3587,7 @@ country = {
 			}
 			available = {
 				has_country_flag = ARA_dorotheos_endorsed_erion
+				controls_state = 674
 			}
 		}
 	}

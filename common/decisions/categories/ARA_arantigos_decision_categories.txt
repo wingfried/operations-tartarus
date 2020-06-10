@@ -56,10 +56,12 @@ ARA_return_land_cat = { #incomplete, ignore
 	        }
 		}
 		NOT = {
-		    has_country_flag = ARA_waiting_for_river_response
+		    has_war_with = RCT
 		}
 		NOT = {
-		    has_war_with = RCT
+		    RCT = {
+			    exists = no
+			}
 		}
 	}
 }

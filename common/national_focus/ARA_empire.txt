@@ -947,7 +947,7 @@
 	
 	focus = {
 	    id = ARA_eyrs_gift_project
-		icon = GFX_focus_unknown
+		icon = GFX_goal_dam_1
 		x = -2
 		y = 4
 		relative_position_id = ARA_spoils_of_war
@@ -1352,7 +1352,7 @@
 	
 	focus = {
 	    id = ARA_ponies_of_aquileia
-		icon = GFX_goal_generic_pony_unicorn
+		icon = GFX_goal_generic_ponykind
 		x = 4
 		y = 2
 		relative_position_id = ARA_spoils_of_war
@@ -1405,7 +1405,7 @@
 	
 	focus = {
 	    id = ARA_integrate_herzland
-		icon = GFX_focus_unknown
+		icon = GFX_goal_gaw_integrate_empire
 		x = -2
 		y = 4
 		relative_position_id = ARA_governing_empire
@@ -1546,7 +1546,7 @@
 	}
 	focus = {
 	    id = ARA_integrate_wingbardy
-		icon = GFX_focus_unknown
+		icon = GFX_goal_gaw_integrate_wingbardy
 		x = 0
 		y = 4
 		relative_position_id = ARA_governing_empire
@@ -1655,7 +1655,7 @@
 	}
 	focus = {
 	    id = ARA_integrate_aquileia
-		icon = GFX_focus_unknown
+		icon = GFX_goal_gaw_integrate_aquileia
 		x = 2
 		y = 4
 		relative_position_id = ARA_governing_empire
@@ -1814,7 +1814,7 @@
 	}
 	focus = {
 	    id = ARA_integrate_the_west
-		icon = GFX_focus_unknown
+		icon = GFX_goal_press_barons
 		x = -5
 		y = 4
 		relative_position_id = ARA_what_remains
@@ -2000,7 +2000,7 @@
 	}
 	focus = {
 	    id = ARA_integrate_the_east
-		icon = GFX_focus_unknown
+		icon = GFX_goal_LUS_clover
 		x = -2
 		y = 4
 		relative_position_id = ARA_what_remains
@@ -2204,7 +2204,7 @@
 	}
 	focus = {
 	    id = ARA_integrate_the_south
-		icon = GFX_focus_unknown
+		icon = GFX_SIA_jungletraining
 		x = 5
 		y = 4
 		relative_position_id = ARA_what_remains
@@ -2345,7 +2345,7 @@
 	}
 	focus = {
 	    id = ARA_integrate_the_north
-		icon = GFX_focus_unknown
+		icon = GFX_goal_cloudbury_crown
 		x = 2
 		y = 4
 		relative_position_id = ARA_what_remains
