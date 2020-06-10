@@ -48,7 +48,7 @@ country_event = { #The Death of a Dream
 		add_manpower = -141
 		add_tech_bonus = {
 		    bonus = 0.25
-		    uses = 5
+		    uses = 2
 		    category = nuclear
 		}
 
@@ -93,6 +93,11 @@ country_event = { #The Forbidden Fruit of Knowledge
 	option = {
 		name = 	arantiga_decision.13.b
 		country_event = { id = arantiga_decision.10 days = 97 }
+		add_tech_bonus = {
+		    bonus = 0.25
+		    uses = 1
+		    category = nuclear
+		}
 	}
 }
 
@@ -122,6 +127,11 @@ country_event = { #Quality over Quantity
 	option = {
 		name = 	arantiga_decision.15.b
 		country_event = { id = arantiga_decision.101 days = 120 }
+		add_tech_bonus = {
+		    bonus = 0.25
+		    uses = 2
+		    category = nuclear
+		}
 	}
 }
 
@@ -148,7 +158,7 @@ country_event = { #Trinity
 		name = 	arantiga_decision.17.a
 		country_event = { id = arantiga_decision.18 days = 55 }
 		add_political_power = -50
-		129 = { #replace with state id of schiesswald
+		422 = { #replace with state id of schiesswald
 			add_building_construction = {
     			type = infrastructure
     			level = 1
@@ -170,10 +180,10 @@ country_event = { #Destruction of Temple Prime
 		add_political_power = -75
 		add_tech_bonus = {
 		    bonus = 0.75
-		    uses = 5
+		    uses = 2
 		    category = nuclear
 		}
-		129 = { #replace with state id of schiesswald
+		422 = { #replace with state id of schiesswald
 			add_manpower = -12000
 			add_resource = {
 	    		type = crystals #replace magical crystals
