@@ -36,8 +36,7 @@ ARA_definetely_not_fake_IRI = {
 
 	visible = {
 		tag = ARA
-#		has_completed_focus = ARA_imperial_research_initiative
-#FOR TESTING; Remind me to remove comment
+		has_completed_focus = ARA_imperial_research_initiative
 	}
 }
 
