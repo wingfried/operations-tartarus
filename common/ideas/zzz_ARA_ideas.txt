@@ -3786,7 +3786,7 @@ country = {
 			}
 		}
 		
-		nicator_advisor = {
+		ARA_nicator = {
 			allowed = {
 				original_tag = "ARA"
 			}		
@@ -3804,7 +3804,7 @@ country = {
 			}
 		}
 
-		lysimachus_advisor = {
+		ARA_lysimachus = {
 			allowed = {
 				original_tag = "ARA"
 			}		
@@ -3822,7 +3822,7 @@ country = {
 			}
 		}
 		
-		craterus_advisor = {
+		ARA_craterus = {
 			allowed = {
 				original_tag = "ARA"
 			}		

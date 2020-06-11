@@ -668,7 +668,7 @@ country_event = { #No remorse
 	desc = arantiga.024.d
 	is_triggered_only = yes
 	fire_only_once = yes
-	    option = {
+	option = {
 	    name = arantiga.024.a
 	    add_ideas = ARA_idol_of_boreas
 	    hidden_effect = {
@@ -682,6 +682,7 @@ country_event = { #No remorse
 		        }
     	    }
 	    }
+		custom_effect_tooltip = ARA_load_imperial_tree
 	}
 }
 	
