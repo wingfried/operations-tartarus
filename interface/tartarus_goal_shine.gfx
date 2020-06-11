@@ -385,7 +385,7 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_arantigan_heavy_industry"
+		name = "GFX_arantigan_heavy_industry_shine"
 		texturefile = "gfx/interface/goals/IRE_heavy_industry_arantiga.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -417,7 +417,7 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_arantigan_medium_industry"
+		name = "GFX_arantigan_medium_industry_shine"
 		texturefile = "gfx/interface/goals/IRE_medium_industry_arantiga.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

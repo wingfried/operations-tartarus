@@ -48,20 +48,16 @@ ARA_return_land_cat = { #incomplete, ignore
 		has_completed_focus = ARA_what_remains
 		any_neighbor_country = {
 		    OR = {
-                is_original_riv_fed_country = yes
-				is_in_faction_with = RCT
+			    is_in_faction_with = RCT
+				is_in_faction_with = FRE
+				is_in_faction_with = NIM
+				is_in_faction_with = BAK
+				is_in_faction_with = DEP
+				is_in_faction_with = LCT
 			}
 		    any_owned_state = {
 				is_griffon_core = yes
 	        }
-		}
-		NOT = {
-		    has_war_with = RCT
-		}
-		NOT = {
-		    RCT = {
-			    exists = no
-			}
 		}
 	}
 }

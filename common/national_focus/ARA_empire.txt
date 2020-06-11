@@ -1918,6 +1918,23 @@
 				    target = HLQ
 			    }
 			}
+			IF = {
+			    limit = {
+				    LSM = {
+					    exists = no
+					}
+					LNS = {
+					    exists = no
+					}
+					LSC = {
+					    exists = no
+					}
+				}
+				create_wargoal = {
+				    type = annex_everything 
+				    target = HLQ
+			    }
+			}
 		}
 	}
 	focus = {
@@ -2722,20 +2739,48 @@
 		prerequisite = { focus = ARA_emperor_of_griffonkind }
 		mutually_exclusive = { focus = ARA_the_last_crusade }
 		available = {
-			OR = {
+		    OR = {
 			    RCT = {
-				   has_government = democratic
-			    }
-				RCT = {
-			       has_government = neutrality
-			    }
+				    AND = {
+				        exists = yes
+						is_faction_leader = yes
+					}
+					OR = {
+					   has_government = democratic
+					   has_government = neutrality
+					}
+				}
+				any_country = {
+					has_country_flag = river_federation_founder
+				    OR = {
+					    has_government = democratic
+					    has_government = neutrality
+					}
+				}
 			}	
 		}
 		completion_reward = {
-           	RCT = {country_event = { id = arantiga_govern.020 } }
+		    IF = {
+			    limit = {
+				    RCT = {
+					    is_faction_leader = yes
+					}
+				}
+           	    RCT = {country_event = { id = arantiga_govern.020 } }
 				RCT = { add_opinion_modifier = { target = ROOT modifier = huge_increase  } }
-				ROOT = { add_opinion_modifier = { target = RIV modifier = huge_increase  } }
-			set_country_flag = ARA_detente
+				ARA = { add_opinion_modifier = { target = RIV modifier = huge_increase  } }
+			}
+			IF = {
+			    limit = {
+				    has_global_flag = river_federation_founded
+				}
+				all_country = {
+				    limit = {
+					    has_country_flag = river_federation_founder
+					}
+			    	country_event = arantiga_govern.020
+				}
+			}
 		}
 	}
 	focus = {
@@ -2759,7 +2804,27 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ARA_flourishing_trade"
 			add_ideas = ARA_griffonian_free_trade_agreement 
-			RCT = { add_ideas = ARA_griffonian_free_trade_agreement }
+			IF = {
+			    limit = {
+				    RCT = {
+					    is_faction_leader = yes
+					}
+				}
+           	    RCT = {
+				    add_ideas = ARA_griffonian_free_trade_agreement
+				}
+			}
+			IF = {
+			    limit = {
+				    has_global_flag = river_federation_founded
+				}
+				every_country = {
+				    limit = {
+					    has_country_flag = river_federation_founder
+					}
+			    	add_ideas = ARA_griffonian_free_trade_agreement
+				}
+			}
 		}
 	}
 	focus = {
@@ -2900,7 +2965,12 @@
 		cost = 5.00
 		prerequisite = { focus = ARA_unexpected_opportunity }
 		available = {
-		    owns_state = 356
+			ARA = {
+			    owns_state = 356
+			}
+			EQC = {
+			    exists = no
+			}
 		}
 		bypass = {
 			
@@ -3093,6 +3163,9 @@
 			#get cores on Nova Griffonia
 			custom_effect_tooltip = ARA_coring_nova_tooltip
 			hidden_effect = {
+			    329 = {
+				    add_core_of = ARA
+				}
 			    222 = {
 			       add_core_of = ARA
 			    }
