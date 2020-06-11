@@ -32,6 +32,11 @@ country_event = { #Tendering His Resignation
 	option = {
 		name = 	arantiga_decision.10.a
 		clr_country_flag = IRI_project_ongoing
+		add_tech_bonus = {
+		    bonus = 0.25
+		    uses = 1
+		    category = nuclear
+		}
 	}
 }
 
@@ -51,7 +56,6 @@ country_event = { #The Death of a Dream
 		    uses = 2
 		    category = nuclear
 		}
-
 	}
 }
 
@@ -93,11 +97,6 @@ country_event = { #The Forbidden Fruit of Knowledge
 	option = {
 		name = 	arantiga_decision.13.b
 		country_event = { id = arantiga_decision.10 days = 97 }
-		add_tech_bonus = {
-		    bonus = 0.25
-		    uses = 1
-		    category = nuclear
-		}
 	}
 }
 
@@ -127,11 +126,6 @@ country_event = { #Quality over Quantity
 	option = {
 		name = 	arantiga_decision.15.b
 		country_event = { id = arantiga_decision.101 days = 120 }
-		add_tech_bonus = {
-		    bonus = 0.25
-		    uses = 2
-		    category = nuclear
-		}
 	}
 }
 
@@ -505,7 +499,7 @@ country_event = { #Settling In
 	fire_only_once = yes
 	option = {
 		name = 	arantiga_decision.47.a
-		country_event = { id = arantiga_decision.42 days = 70 }
+		country_event = { id = arantiga_decision.42 days = 50 }
 	}
 }
 
@@ -517,7 +511,7 @@ country_event = { #Hedonism
 	fire_only_once = yes
 	option = {
 		name = 	arantiga_decision.32.a
-		country_event = { id = arantiga_decision.43 days = 100 }
+		country_event = { id = arantiga_decision.43 days = 70 }
 		add_political_power = -50
 	}
 	option = {
@@ -538,7 +532,7 @@ country_event = { #The Finer Things In Life
 	fire_only_once = yes
 	option = {
 		name = 	arantiga_decision.43.a
-		country_event = { id = arantiga_decision.402 days = 50 }
+		country_event = { id = arantiga_decision.402 days = 40 }
 		add_political_power = -20
 		custom_effect_tooltip = ARA_ascarius_ominous_tt
 	}
@@ -562,7 +556,7 @@ country_event = { #A New Ascarius
 	fire_only_once = yes
 	option = {
 		name = 	arantiga_decision.44.a
-		country_event = { id = arantiga_decision.45 days = 75 }
+		country_event = { id = arantiga_decision.45 days = 50 }
 	}
 }
 
