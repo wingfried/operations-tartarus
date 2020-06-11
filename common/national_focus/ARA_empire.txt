@@ -2774,7 +2774,7 @@
 			    limit = {
 				    has_global_flag = river_federation_founded
 				}
-				all_country = {
+				every_country = {
 				    limit = {
 					    has_country_flag = river_federation_founder
 					}
