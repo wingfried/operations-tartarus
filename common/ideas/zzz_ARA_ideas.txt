@@ -3402,9 +3402,6 @@ country = {
 			}
 			available = {
 				has_country_flag = ARA_arantigos_boreas_flag
-				NOT = {
-				    has_country_flag = ARA_reform_the_archonates_flag
-				}
 			}
 			visible = {
 			    NOT = {
@@ -3427,6 +3424,10 @@ country = {
 			ai_will_do = {
 				factor = 1
 			}
+			visible = {
+			    controls_state = 389
+				has_country_flag = ARA_glenda_and_goldstein
+			}
 			available = {
 				controls_state = 389
 			}
@@ -3445,6 +3446,10 @@ country = {
 			picture = ARA_glenda
 			ai_will_do = {
 				factor = 1
+			}
+			visible = {
+			    controls_state = 389
+				has_country_flag = ARA_glenda_and_goldstein
 			}
 			available = {
 				controls_state = 389
@@ -3482,16 +3487,10 @@ country = {
 				factor = 1
 			}
 			available = {
-				custom_trigger_tooltip = {
-				    tooltip = ARA_charbon_army
-				    has_unit_leader = 5201
-				}
+				has_country_flag = ARA_machiavelli_flag
 			}
 			visible = {
-				custom_trigger_tooltip = {
-				    tooltip = ARA_charbon_army
-				    has_unit_leader = 5201
-				}
+				has_country_flag = ARA_machiavelli_flag
 			}
 		}
 	}
@@ -3511,6 +3510,7 @@ country = {
 			}
 			visible = {
 				owns_state = 381
+				has_country_flag = ARA_treasurer_flag
 			}
 		}
 	}

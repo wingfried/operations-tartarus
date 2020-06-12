@@ -281,6 +281,10 @@ focus_tree = {
 				}
 			}
 		add_political_power = -50
+		custom_effect_tooltip = ARA_glenda_and_goldstein_tp 
+		hidden_effect = {
+		    set_country_flag = ARA_glenda_and_goldstein
+		}
 			}
 		}
 	
@@ -450,6 +454,7 @@ focus_tree = {
 		hidden_effect = {
 		    set_country_flag = ARA_arantigos_boreas_flag
 		}
+		custom_effect_tooltip = ARA_heraclius_tp
 		
 		}
 		}

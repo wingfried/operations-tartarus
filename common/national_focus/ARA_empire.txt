@@ -459,6 +459,7 @@
 			    }
 			}
 			#}
+			custom_effect_tooltip = ARA_demetrius_tp
 			hidden_effect = {
 			    set_country_flag = ARA_reform_the_archonates_flag
 			}
@@ -1347,6 +1348,7 @@
 		completion_reward = {
             #Enables set of decisions “IRI Projects”
 			custom_effect_tooltip = ARA_IRI_tooltip
+			custom_effect_tooltip = ARA_alhorsered_tp
 		}
 	}
 	
