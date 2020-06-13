@@ -1446,6 +1446,7 @@ country_event = { #Griffonstone Archives
 					    }
 						set_cosmetic_tag = NTR_arantiga
 						add_ideas = limited_conscription_ara
+						load_focus_tree = generic_focus
 				    }
 				}
 			}
@@ -1707,6 +1708,7 @@ country_event = { #Griffonstone Archives
 					    }
 						set_cosmetic_tag = MIT_arantiga
 						add_ideas = limited_conscription_ara
+						load_focus_tree = generic_griffon_focus
 				    }
 				}
 			}
@@ -2471,6 +2473,7 @@ country_event = { # Detente
 				            }
 							#set_cosmetic_tag = FBK_arantiga
 							add_ideas = limited_conscription_ara
+							load_focus_tree = generic_focus
 					    }
 						ARA = {
 					    	puppet = FBK
@@ -2519,6 +2522,7 @@ country_event = { # Detente
 							remove_ideas = BAR_insane_weather
 							set_cosmetic_tag = BRD_arantiga
 							add_ideas = disarmed_nation_ara
+							load_focus_tree = generic_focus
 					    }
 						ARA = {
 					    	puppet = BAR
@@ -2694,6 +2698,7 @@ country_event = { # Detente
 				            }
 							set_cosmetic_tag = RIV_arantiga
 							add_ideas = disarmed_nation_ara
+							load_focus_tree = generic_focus
 					    }
 						ARA = {
 					    	puppet = RCT
@@ -2898,6 +2903,7 @@ country_event = { # Detente
 				    }
 					set_cosmetic_tag = EQC_arantiga
 					add_ideas = disarmed_nation_ara
+					load_focus_tree = generic_griffon_focus
 				}
 			}
 		}
@@ -2934,6 +2940,7 @@ country_event = { # Detente
 			        }
 					add_ideas = disarmed_nation
 					set_cosmetic_tag = EQC_arantiga
+					load_focus_tree = generic_focus
 				}
 		    }
 		}
@@ -2992,6 +2999,7 @@ country_event = { # Detente
 		set_autonomy = { target = GRF autonomy_state = autonomy_reichsprotectorate }
 		GRF = {
 		    add_ideas = limited_conscription_ara
+			load_focus_tree = generic_griffon_focus
 		}
 	}
 }
@@ -3777,6 +3785,7 @@ country_event = { #Victory over the necromancers
 				set_autonomy = { target = HLR autonomy_state = autonomy_reichsprotectorate }
 			}
 			set_cosmetic_tag = HLR_arantiga
+			load_focus_tree = generic_griffon_focus
 		    }
 		}
 	}
