@@ -37,7 +37,7 @@ infantry_EQS = {
 		factor = 5
 			}
 			
-	match_to_count = 0.55
+	match_to_count = 0.5
 
 Infantry_default_EQS = {
 
@@ -100,6 +100,135 @@ Infantry_default_EQS = {
 				artillery = 1
 				field_hospital = 1
 				anti_air = 1
+				unicorn_company = 1
+			}
+
+			regiments = {
+			infantry = 10
+			}
+			}
+
+		allowed_types = {
+			infantry
+			
+			engineer
+			recon
+			field_hospital
+			anti_tank
+			artillery
+			anti_air						
+			unicorn_company
+			
+			anti_tank_brigade
+			artillery_brigade
+			}
+								
+			}
+
+Infantry_default_anti_tank_EQS = {
+
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+			factor = 6
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 25
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 25
+					}
+					}
+				}
+			}			
+		}	
+	}
+		
+		production_prio = {
+			factor = 1
+			
+			modifier = {
+			factor = 6
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 25
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 25
+					}
+					}
+				}
+			}				
+	}
+	}
+
+		target_width = 20.0
+		width_weight = 1.0
+		column_swap_factor = 0.1
+
+		stat_weights = {
+			0.00 #-- default_morale
+			2.10 #-- defense
+			0.05 #-- breakthrough
+			0.00 #-- hardness
+			4.00 #-- soft_attack
+			0.05 #-- hard_attack
+			0.05 #-- recon
+			1.00 #-- entrenchment
+			0.00 #-- initiative
+			0.01 #-- casualty_trickleback
+			-0.05 #-- supply_consumption_factor
+			-0.01 #-- supply_consumption
+			0.00 #-- suppression
+			0.00 #-- suppression_factor
+			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
+			#-- Air Values
+			0.05 #-- air_attack
+			#-- Common Values
+			1.00 #-- max_organisation
+			0.50 #-- max_strength
+			0.00 #-- maximum_speed
+			0.00 #-- armor_value
+			0.05 #-- ap_attack
+			0.00 #-- reliability
+			0.00 #-- reliability_factor
+			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
+			-0.25 #-- build_cost_ic
+		}
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			support = {
+				engineer = 1
+				anti_air = 1
+				field_hospital = 1
+				anti_tank = 1
 				unicorn_company = 1
 			}
 
@@ -213,6 +342,8 @@ Tungsten_Infantry_EQS = {
 			artillery
 			rocket_artillery
 		}
+		
+
 		}
 		
 Aluminium_Infantry_EQS = {
@@ -298,6 +429,7 @@ Aluminium_Infantry_EQS = {
 			artillery
 			rocket_artillery
 		}
+
 		}
 
 
@@ -381,99 +513,10 @@ PFI_EQS = {
 		allowed_types = {
 			infantry
 		}
-		}
-			
-Modern_Infantry_EQS = {
-
-		upgrade_prio = {
-			factor = 1
-			modifier = {
-			factor = 10
-			arms_factory > 150
-			}
-			}
 	
-		production_prio = {
-			factor = 1
-			modifier = {
-			factor = 10
-			arms_factory > 175
-			}
-			}
-		target_width = 40.0
-		width_weight = 1.0
-		column_swap_factor = 0.5
-
-		stat_weights = {
-			0.00 #-- default_morale
-			2.10 #-- defense
-			0.05 #-- breakthrough
-			0.00 #-- hardness
-			4.00 #-- soft_attack
-			0.05 #-- hard_attack
-			0.05 #-- recon
-			1.00 #-- entrenchment
-			0.00 #-- initiative
-			0.01 #-- casualty_trickleback
-			-0.05 #-- supply_consumption_factor
-			-0.01 #-- supply_consumption
-			0.00 #-- suppression
-			0.00 #-- suppression_factor
-			0.01 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
-			0.00 #-- fuel_capacity
-			#-- Air Values
-			0.05 #-- air_attack
-			#-- Common Values
-			1.00 #-- max_organisation
-			0.50 #-- max_strength
-			0.00 #-- maximum_speed
-			0.00 #-- armor_value
-			0.05 #-- ap_attack
-			0.00 #-- reliability
-			0.00 #-- reliability_factor
-			0.00 #-- weight
-			0.00 #-- fuel_consumption
-			0.00 #-- fuel_consumption_factor
-			0.00 #-- strat_attack
-			0.00 #-- carrier_size
-			0.00 #-- acc_hot_gain
-			0.00 #-- acc_cold_gain
-			-0.25 #-- build_cost_ic
-		}
-
-		target_template = {
-			weight = 0.9
-			match_value = 9000.0
-
-			support = {
-				engineer = 1
-				artillery = 1
-				field_hospital = 1
-				anti_air = 1
-				unicorn_company = 1
-			}
-
-			regiments = {
-				infantry = 13
-				artillery_brigade = 4
-				anti_tank_brigade = 2
-			}
-			}
-
-		allowed_types = {
-			infantry
-			engineer
-			recon
-			field_hospital
-			anti_tank
-			artillery
-			anti_tank_brigade
-			unicorn_company
-			artillery_brigade
-			}
-			}
-			}
+				
+	}	
+	}
 
 	
 support_EQS = {
@@ -849,7 +892,7 @@ magical_infantry_EQS = {
 		}		
 	}
 
-	match_to_count = 0.6
+	match_to_count = 0.85
 
 	magical_infantry_default_EQS = {
 
@@ -993,7 +1036,7 @@ HTDinfantry_EQS = {
 								
 	}	
 
-	match_to_count = 0.75
+	match_to_count = 0.85
 		
 InfantryHTD_EQS = {
 
@@ -1145,10 +1188,17 @@ light_armor_EQS = {
 		}	
 		}
 
-	match_to_count = 0.5
+	match_to_count = 0.8
 
 
 	light_armor_EQS = {
+	
+	can_upgrade_in_field = {
+		AND = {
+			check_variable = { num_equipment@light_tank_aa_equipment > 30 }
+			check_variable = { num_equipment@light_tank_artillery_equipment > 72 }			
+			}
+		}
 
 		upgrade_prio = {
 			factor = 3
@@ -1236,6 +1286,7 @@ light_armor_EQS = {
 			signal_company
 			anti_tank
 		}
+
 		}
 		
 light_armor_improved_EQS = {
@@ -1427,6 +1478,13 @@ light_armor_improved_EQS = {
 				}
 			}
 		NOT = { has_tech = advanced_light_tank_a }	
+		OR = {
+		has_tech = basic_light_td
+		has_tech = improved_light_td
+		has_tech = advanced_light_td
+		has_tech = advanced_light_tank_td_a
+		has_tech = advanced_light_tank_td_b
+		}
 	}	
 	modifier = {
 			factor = 5
@@ -1447,7 +1505,14 @@ light_armor_improved_EQS = {
 					}
 					}
 				}
-			}
+			}			
+	OR = {
+		has_tech = basic_light_td
+		has_tech = improved_light_td
+		has_tech = advanced_light_td
+		has_tech = advanced_light_tank_td_a
+		has_tech = advanced_light_tank_td_b
+		}	
 	}
 }
 
@@ -1581,7 +1646,7 @@ Main_armor_EQS = {
 		}
 		}
 
-	match_to_count = 0.3
+	match_to_count = 0.7
 
 medium_armor_EQS = {
 
@@ -1661,7 +1726,6 @@ medium_armor_EQS = {
 			motorized
 			mechanized
 			unicorn_company
-			unicorn_company
 			
 			motorized_rocket_brigade
 
@@ -1677,6 +1741,7 @@ medium_armor_EQS = {
 			anti_air
 			rocket_artillery
 		}
+
 		}
 
 
@@ -1825,6 +1890,13 @@ upgrade_prio = {
 			
 		modifier = {
 			factor = 5
+			
+	OR = {
+		has_tech = basic_medium_td
+		has_tech = improved_medium_td
+		has_tech = advanced_medium_td
+		}
+		
 		OR = {	
 			AND = {
 			any_enemy_country = {
@@ -1877,6 +1949,12 @@ production_prio = {
 			
 		modifier = {
 			factor = 5
+		OR = {
+		has_tech = basic_medium_td
+		has_tech = improved_medium_td
+		has_tech = advanced_medium_td
+		}	
+			
 		OR = {	
 			AND = {
 			any_enemy_country = {
@@ -2166,7 +2244,7 @@ heavy_armor_EQS = {
 	}
 
 	upgrade_prio = {
-		factor = 2.17
+		factor = 4
 	
 	modifier = {
 			factor = 0.5
@@ -2278,6 +2356,8 @@ heavy_armor_EQS = {
 			anti_air
 			rocket_artillery
 		}
+		
+
 		}
 		
 heavy_armor_improved_EQS = {
@@ -3131,16 +3211,16 @@ Artillery_EQS = {
 		factor = 2
 	}
 
-	match_to_count = 0.70
+	match_to_count = 0.75
 
 	artilleryunit_EQS = {
 
 		upgrade_prio = {
-			factor = 1
+			factor = 2
 		}
 		
 		production_prio = {
-			factor = 1
+			factor = 2
 		}
 
 		target_width = 20.0
@@ -3222,7 +3302,7 @@ Artillery_EQS = {
 Aluminium_artillery_EQS = {
 
 	upgrade_prio = {
-			factor = 0.45
+			factor = 1
 				
 		modifier = {
 				factor = 3
@@ -3231,7 +3311,7 @@ Aluminium_artillery_EQS = {
 		}
 		
 	production_prio = {
-			factor = 0.5
+			factor = 1
 			
 		modifier = {
 				factor = 3
@@ -3346,16 +3426,16 @@ Antitank_EQS = {
 		factor = 1.5
 	}
 
-	match_to_count = 0.70
+	match_to_count = 0.75
 
 antitank_EQS = {
 
 		upgrade_prio = {
-			factor = 1
+			factor = 2
 		}
 		
 		production_prio = {
-			factor = 1
+			factor = 2
 		}
 
 		target_width = 20.0
@@ -3437,7 +3517,7 @@ antitank_EQS = {
 Aluminium_antitank_EQS = {
 
 	upgrade_prio = {
-			factor = 0.45
+			factor = 1
 				
 		modifier = {
 				factor = 3
@@ -3446,7 +3526,7 @@ Aluminium_antitank_EQS = {
 		}
 		
 	production_prio = {
-			factor = 0.5
+			factor = 1
 			
 		modifier = {
 				factor = 3

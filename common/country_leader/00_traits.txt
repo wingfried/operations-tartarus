@@ -915,7 +915,7 @@ leader_traits = {
 	princesses_of_ponies = {
 		random = no
 		stability_factor = 0.1
-		political_power_gain = 0.3
+		political_power_gain = 0.25
 
 		ai_will_do = {
 			factor = 1
@@ -9626,18 +9626,12 @@ ai_will_do = {
 		conscription = 0.15
 		industrial_capacity_factory = 0.5
 		ai_focus_aggressive_factor = 0.75
-		
 		equipment_bonus = {
-			melee_equipment_0 = {
-				build_cost_ic = -0.75
-				instant = yes
-			}
-			melee_equipment_1 = {
+			infantry_equipment = {
 				build_cost_ic = -0.35
 				instant = yes
 			}
 		}
-
 		ai_will_do = {
 			factor = 1
 		}
@@ -10023,6 +10017,16 @@ ai_will_do = {
 			}			
 			}
 	}
+	
+	rural_magnate = {
+		random = no
+		MONTHLY_POPULATION = 0.15
+		consumer_goods_factor = -0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	BAL_mod = {
 		random = no
 		army_core_defence_factor = 0.1

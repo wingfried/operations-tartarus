@@ -1019,4 +1019,55 @@ Infantry_focus = {
 			}
 			}
 				
+Get_light_armor = {
+		Enable = {
+			has_tech = basic_light_tank
+			AND = {
+			check_variable = { num_equipment_in_armies@light_tank_equipment < 100 }
+			check_variable = { num_equipment@light_tank_equipment < 100 }
+			}
+			}
+		abort_when_not_enabled = yes
 
+		ai_strategy = {
+			type = template_prio
+			id = light_armor
+			value = 3
+			}
+			}
+
+Get_med_armor = {
+		Enable = {
+			has_tech = basic_medium_tank
+			AND = {
+			check_variable = { num_equipment_in_armies@medium_tank_equipment < 100 }
+			check_variable = { num_equipment@medium_tank_equipment < 100 }
+			}
+			}
+		abort_when_not_enabled = yes
+
+		
+		ai_strategy = {
+			type = template_prio
+			id = main_armor
+			value = 3
+			}
+			}
+			
+Get_heavy_armor = {
+		Enable = {
+			has_tech = basic_heavy_tank
+			AND = {
+			check_variable = { num_equipment_in_armies@heavy_tank_equipment < 100 }
+			check_variable = { num_equipment@heavy_tank_equipment < 100 }
+			}
+			}
+		abort_when_not_enabled = yes
+
+		
+		ai_strategy = {
+			type = template_prio
+			id = heavy_armor
+			value = 3
+			}
+			}		

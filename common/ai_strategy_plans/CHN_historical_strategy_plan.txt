@@ -22,6 +22,44 @@ CHN_ideas_plan = {
 
 	ai_national_focuses = {
         destroy_thoraxian_opposition
+        steel_industry
+        pressure_olenia
+        offer_puppet
+        industrial_research
+        CHN_develop_vesalipolis
+        CHN_develop_vraks
+        CHN_modern_cities2
+        Expansion_of_newhives
+        CHN_soryth
+        technology_centre
+        CHN_modern_cities
+        CHN_queens_island_facility
+        CHN_polar_bear_envoy
+        CHN_threaten_PLB
+        war_academy
+        CHN_high_command_cabinet_1
+        CHN_high_command_cabinet_3
+        CHN_changeling_school_of_war
+        CHN_great_war_beginning
+        prepare_for_war3
+        prepare_for_war2
+        prepare_for_war
+        demand_equestria
+        send_spies_to_EQS
+        steal_tech
+        CHN_force_ponies_to_repair
+        CHN_force_ponies_to_work
+        CHN_crystal_city_appropriation
+        CHN_canterlot_appropriation
+        CHN_Army
+        CHN_Infantry_2
+        CHN_Blitzkrieg_1
+        CHN_Blitzkrieg_2
+        CHN_Infantry_1
+        CHN_Motorized_1
+        CHN_Support_Companies_1
+        CHN_Motorized_2
+        CHN_Dedicated_Panzer_Production
 	}
 
 	research = {

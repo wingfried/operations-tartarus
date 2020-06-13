@@ -39,11 +39,8 @@ Infantry_GEN = {
 
 	match_to_count = 0.5
 
-Infantrybase_GEN = {
+Infantry_default_GEN = {
 
-	can_upgrade_in_field = {
-          always = yes
-        }
 
 	upgrade_prio = {
 			factor = 2									
@@ -125,6 +122,132 @@ Infantrybase_GEN = {
 			anti_air
 		}
 		}
+		
+Infantry_antitank_GEN = {
+
+		upgrade_prio = {
+			factor = 1
+	
+	modifier = {
+			factor = 6
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 25
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 25
+					}
+					}
+				}
+			}
+	}	
+	}
+		
+	production_prio = {
+			factor = 1
+	modifier = {
+			factor = 6
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 25
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 25
+					}
+					}
+				}
+			}
+	}	
+	}
+
+		target_width = 20.0
+		width_weight = 1.3
+		column_swap_factor = 0.55
+
+		stat_weights = {
+			0.00 #-- default_morale
+			2.10 #-- defense
+			0.05 #-- breakthrough
+			0.00 #-- hardness
+			4.00 #-- soft_attack
+			0.05 #-- hard_attack
+			0.05 #-- recon
+			1.00 #-- entrenchment
+			0.00 #-- initiative
+			0.01 #-- casualty_trickleback
+			-0.05 #-- supply_consumption_factor
+			-0.01 #-- supply_consumption
+			0.00 #-- suppression
+			0.00 #-- suppression_factor
+			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
+			#-- Air Values
+			0.05 #-- air_attack
+			#-- Common Values
+			1.00 #-- max_organisation
+			0.50 #-- max_strength
+			0.00 #-- maximum_speed
+			0.00 #-- armor_value
+			0.05 #-- ap_attack
+			0.00 #-- reliability
+			0.00 #-- reliability_factor
+			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
+			-0.25 #-- build_cost_ic
+		}
+		
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			support = {
+				engineer = 1
+				artillery = 1
+				anti_tank = 1				
+				anti_air = 1
+				field_hospital = 1
+			}
+
+			regiments = {
+				infantry = 10
+			}
+		}
+
+		allowed_types = {
+			infantry
+			engineer
+			recon
+			field_hospital
+			logistics_company
+			anti_tank
+			artillery
+			rocket_artillery
+			anti_air
+		}
+		}		
 		
 Tungsten_Infantry_GEN = {
 
@@ -760,7 +883,7 @@ magical_infantry_GEN = {
 		}							
 		}
 
-	match_to_count = 0.45
+	match_to_count = 0.85
 
 	magical_infantry_default = {
 
@@ -910,7 +1033,7 @@ HTDinfantry_GEN = {
 		}						
 	}		
 
-	match_to_count = 0.75
+	match_to_count = 0.85
 		
 InfantryHTD_GEN = {
 
@@ -1062,7 +1185,7 @@ Light_armor_GEN = {
 		}
 }
 
-	match_to_count = 0.50
+	match_to_count = 0.80
 		
 	Light_armor_Motor_GEN = {
 
@@ -2107,7 +2230,7 @@ heavy_armor_GEN = {
 		}
 	}
 
-	match_to_count = 0.5
+	match_to_count = 0.8
 	
 heavy_armor_basic_GEN = {
 
@@ -3393,15 +3516,16 @@ Artillery_GEN = {
 		factor = 1.5
 	}
 
-	match_to_count = 0.70
+	match_to_count = 0.75
 
 	artillery_default = {
 		
 		production_prio = { 
-		factor = 1 }
+		factor = 2 
+		}
 
 		upgrade_prio = {
-			factor = 1
+			factor = 2
 
 		}
 
@@ -3485,7 +3609,7 @@ Artillery_GEN = {
 Aluminium_artillery_GEN = {
 
 	upgrade_prio = {
-			factor = 0.45
+			factor = 1
 				
 		modifier = {
 				factor = 3
@@ -3494,7 +3618,7 @@ Aluminium_artillery_GEN = {
 		}
 		
 	production_prio = {
-			factor = 0.5
+			factor = 1
 			
 		modifier = {
 				factor = 3
@@ -3610,7 +3734,7 @@ Antitank_GEN = {
 		factor = 1.5
 	}
 
-	match_to_count = 0.70
+	match_to_count = 0.8
 
 antitank_default = {
 

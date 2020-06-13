@@ -19,27 +19,39 @@ EQS_alternate_lunar_civil_war_normal = {
 	ai_national_focuses = {
 		Friendship_Games
 		examine_the_situation
-		Ministry_of_defense
-		worrisome_changelings
-		unicorn_academy_f
-		arms_potential
+		industry_manehattan
 		need_to_reinovate
 		mil_industry_fillydelphia
+		EQS_buffalo_relations
+		eqs_buffalo2
+		eqs_southern_roads
+		tenochtitlan_state_university			
+		unicorn_academy_f
 		luna_nova_academy
-		Spitfire_research
 		Fund_public_schools
 		CTL_center_of_research
-		Magcial_studies
-		magical_training
-		Matilda_research
+		eqs_support_status_quo
+		eqs_support_harmony
+		send_envoy_yak
+		harmony_lean
+		pinkie_pie
+		guarantee_independenceYAK
+		Ministry_of_defense
+		EQS_airfields
+		worrisome_changelings
 		Extreme_war_comittee
+		reinforce_border
 		Hire_Generals
 		Advisors
+		River_Fortifications
 		Extreme_measures
 		Forget_magic_of_friendship
 		War_Plan
 		Remove_Harmonic_Stagnation
 		Suppress_bureaucracy
+		EQS_strengthen_EEA_authority
+		Magcial_studies
+		magical_training
 	}
 	focus_factors = {
 

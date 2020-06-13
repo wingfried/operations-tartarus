@@ -68,12 +68,32 @@ technologies = {
 
 		modifier = {
 				factor = 0
+		AND = {		
 				steel < 10
+			NOT = {
+				has_tech_bonus = {
+				category = armor
+				}
+				has_tech_bonus = {
+				category = cat_light_armor
+				}
+				}
+				}
 		}
 		
 		modifier = {
 				factor = 0
+		AND = {				
 				arms_factory < 5
+			NOT = {
+				has_tech_bonus = {
+				category = armor
+				}
+				has_tech_bonus = {
+				category = cat_light_armor
+				}
+				}
+				}
 		}
 		
 		modifier = {
@@ -169,7 +189,17 @@ technologies = {
 		
 		modifier = {
 			factor = 0
-			arms_factory < 10
+		AND = {		
+		arms_factory < 10	
+			NOT = {
+				has_tech_bonus = {
+				category = armor
+				}
+				has_tech_bonus = {
+				category = cat_light_armor
+				}
+				}
+				}
 			}
 		
 		modifier = {
@@ -180,12 +210,32 @@ technologies = {
 		
 		modifier = {
 			factor = 0
+		AND = {			
 			check_variable = { resource_produced@rubber < 2 }
+			NOT = {
+				has_tech_bonus = {
+				category = armor
+				}
+				has_tech_bonus = {
+				category = cat_light_armor
+				}
+				}
+				}
 			}
 			
 		modifier = {
 				factor = 0
+			AND = {	
 				arms_factory < 10
+			NOT = {
+				has_tech_bonus = {
+				category = armor
+				}
+				has_tech_bonus = {
+				category = cat_light_armor
+				}
+				}
+				}
 		}
 		}
 		
@@ -374,7 +424,17 @@ technologies = {
 		
 		modifier = {
 			factor = 0
+		AND = {	
 			arms_factory < 10
+			NOT = {
+				has_tech_bonus = {
+				category = armor
+				}
+				has_tech_bonus = {
+				category = cat_light_armor
+				}
+				}
+				}
 			}
 
 		
@@ -391,12 +451,30 @@ technologies = {
 			AND = {
 				check_variable = { resource_produced@steel < 20 } 
 				check_variable = { resource_produced@rubber < 2 }
+			NOT = {
+				has_tech_bonus = {
+				category = armor
 				}
+				has_tech_bonus = {
+				category = cat_light_armor
+				}
+				}
+				}				
 		}
 		
 		modifier = {
 				factor = 0
+			AND = {	
 				arms_factory < 5
+			NOT = {
+				has_tech_bonus = {
+				category = armor
+				}
+				has_tech_bonus = {
+				category = cat_light_armor
+				}
+				}
+				}
 		}
 		
 		modifier = {
@@ -491,8 +569,7 @@ technologies = {
 		start_year = 1007
 
 		ai_will_do = {
-			factor = 1
-			
+			factor = 1			
 			
 			modifier = {
 				has_tech = improved_light_spaa
@@ -702,7 +779,17 @@ technologies = {
 		
 	modifier = {
 				factor = 0
+			AND = {	
 				arms_factory < 10
+			NOT = {
+				has_tech_bonus = {
+				category = armor
+				}
+				has_tech_bonus = {
+				category = cat_light_armor
+				}
+				}
+				}
 		}
 		
 		modifier = {
@@ -963,7 +1050,17 @@ technologies = {
 
 		modifier = {
 			factor = 0
+		AND = {	
 			check_variable = { resource_produced@tungsten < 4 }
+			NOT = {
+				has_tech_bonus = {
+				category = armor
+				}
+				has_tech_bonus = {
+				category = cat_medium_armor
+				}
+				}
+				}
 			}
 			
 		modifier = {
@@ -1924,7 +2021,17 @@ technologies = {
 			
 		modifier = {
 			factor = 0
+		AND = {
 			arms_factory < 10
+			NOT = {
+				has_tech_bonus = {
+				category = armor
+				}
+				has_tech_bonus = {
+				category = cat_heavy_armor
+				}
+				}
+				}
 			}
 			
 		modifier = {
@@ -1950,8 +2057,18 @@ technologies = {
 			
 		modifier = {
 			factor = 0
+		AND = {
 			check_variable = { resource_produced@chromium < 8 }
-			}			
+			NOT = {
+				has_tech_bonus = {
+				category = armor
+				}
+				has_tech_bonus = {
+				category = cat_heavy_armor
+				}
+				}
+				}
+			}						
 		}
 		
 
@@ -1979,12 +2096,32 @@ technologies = {
 
 			modifier = {
 				factor = 0
+			AND = {	
 				check_variable = { resource_produced@chromium < 10 }
+			NOT = {
+				has_tech_bonus = {
+				category = armor
+				}
+				has_tech_bonus = {
+				category = cat_heavy_armor
+				}
+				}
+				}
 			}
 			
 			modifier = {
 				factor = 0
+			AND = {	
 				num_of_military_factories < 15
+			NOT = {
+				has_tech_bonus = {
+				category = armor
+				}
+				has_tech_bonus = {
+				category = cat_heavy_armor
+				}
+				}
+				}
 			}
 						
 			modifier = {
@@ -2076,7 +2213,17 @@ technologies = {
 			
 			modifier = {
 				factor = 0
+			AND = {	
 				check_variable = { resource_produced@chromium < 25 }
+			NOT = {
+				has_tech_bonus = {
+				category = armor
+				}
+				has_tech_bonus = {
+				category = cat_heavy_armor
+				}
+				}
+				}
 			}
 			
 			modifier = {

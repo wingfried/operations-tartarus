@@ -1186,14 +1186,7 @@ shared_focus = {
 	icon = GFX_goal_generic_defence
 	cost = 4
 	ai_will_do = { 
-	factor = 5 
-	
-	modifier = {
 	factor = 200
-	CHN = {
-	is_justifying_wargoal_against = EQS
-	}
-	}
 	}
 	prerequisite = {
 		focus = worrisome_changelings
