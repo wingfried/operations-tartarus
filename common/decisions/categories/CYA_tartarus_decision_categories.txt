@@ -1,9 +1,0 @@
-
-CYA_diplomacy_category = {
-	icon = griffon
-
-	allowed = {
-		original_tag = CYA
-	}
-}
-

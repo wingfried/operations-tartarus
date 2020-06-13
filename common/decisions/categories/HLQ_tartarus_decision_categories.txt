@@ -1,7 +1,0 @@
-HLQ_936_category = {
-	icon = griffon
-
-	allowed = {
-		original_tag = HLQ
-	}
-}
