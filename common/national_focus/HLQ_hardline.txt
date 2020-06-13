@@ -1,0 +1,1455 @@
+focus_tree = {
+	id = hellquill_hardline_focus
+
+	country = {
+		factor = 0
+	}
+	default = no
+
+	continuous_focus_position = { x = 600 y = 750 }
+
+	shared_focus = HLQ_lushi_anchluss
+	shared_focus = HLQ_born_mighty_2
+
+	shared_focus = HLQ_regular_economics
+	shared_focus = HLQ_fascist_economics
+	shared_focus = HLQ_wehrmacht
+}
+	### Black Cloaks ###
+
+	shared_focus = {
+    	id =  HLQ_born_mighty_2
+    	icon = GFX_goal_skull_treaty2
+    	x = 15
+    	y = 0
+    	cost = 0.142
+    	bypass = { always = yes }
+    }
+
+	shared_focus = {
+		id = HLQ_black_cloaks_in_government
+		icon = GFX_goal_ideology_national_populist
+		x = -3
+		y = 1
+		relative_position_id = HLQ_born_mighty_2
+		cost = 7.00
+		prerequisite = { focus = HLQ_born_mighty_2 }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_black_cloaks_in_government"
+			swap_ideas = {
+				remove_idea = HLQ_reformists
+				add_idea = HLQ_reformists_2
+			}
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_completed_focus = HLQ_remove_the_old_guard } }
+					country_event = { days = 10 id = hellquill.26 }
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_paramilitaries_in_the_streets
+		icon = GFX_goal_HOL_amend_wapenwet
+		x = -4
+		y = 2
+		relative_position_id = HLQ_born_mighty_2
+		cost = 7.00
+		prerequisite = { focus = HLQ_black_cloaks_in_government }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_paramilitaries_in_the_streets"
+			add_stability = 0.03
+			add_war_support = 0.03
+			add_ideas = HLQ_paramilitaries
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_not_safe_at_home
+		icon = GFX_goal_secret_agents
+		x = -2
+		y = 2
+		relative_position_id = HLQ_born_mighty_2
+		cost = 7.00
+		prerequisite = { focus = HLQ_black_cloaks_in_government }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_not_safe_at_home"
+			add_stability = 0.03
+			add_war_support = 0.03
+			add_ideas = HLQ_secret_service
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_reign_of_terror
+		icon = GFX_goal_guillotine
+		x = -3
+		y = 3
+		relative_position_id = HLQ_born_mighty_2
+		cost = 7.00
+		prerequisite = { focus = HLQ_not_safe_at_home }
+		prerequisite = { focus = HLQ_paramilitaries_in_the_streets }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_reign_of_terror"
+			country_event = { days = 1 id = hellquill.27 }
+			hidden_effect = {
+				DEP = { country_event = { days = 10 id = hellquill.28 } }
+			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_what_minorities
+		icon = GFX_goal_skull_treaty
+		x = -2
+		y = 4
+		relative_position_id = HLQ_born_mighty_2
+		cost = 7.00
+		prerequisite = { focus = HLQ_reign_of_terror }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_what_minorities"
+			remove_ideas = HLQ_pony_minorities
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_a_bullet_for_the_traitors
+		icon = GFX_goal_No_Half_Measures
+		x = -1
+		y = 1
+		relative_position_id = HLQ_born_mighty_2
+		cost = 7.00
+		prerequisite = { focus = HLQ_born_mighty_2 }
+
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			537 = { is_owned_and_controlled_by = ROOT }
+			553 = { is_owned_and_controlled_by = ROOT }
+			634 = { is_owned_and_controlled_by = ROOT }
+			633 = { is_owned_and_controlled_by = ROOT }
+			has_government = fascism
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_a_bullet_for_the_traitors"
+			add_political_power = 25
+			add_popularity = { ideology = democratic popularity = -0.05 }
+			save_current_manpower = yes
+			537 = {
+				add_manpower = -500
+			}
+			553 = {
+				add_manpower = -500
+			}
+			633 = {
+				add_manpower = -500
+			}
+			634 = {
+				add_manpower = -500
+			}
+			restore_previous_manpower = yes
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_new_generals
+		icon = GFX_focus_HOL_deal_with_right
+		x = -1
+		y = 3
+		relative_position_id = HLQ_born_mighty_2
+		cost = 7.00
+		prerequisite = { focus = HLQ_a_bullet_for_the_traitors }
+		prerequisite = { focus = HLQ_outdated_traditions }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_new_generals"
+			create_corps_commander = {
+				name = "Edler von Wingenberg"
+				picture = "Edler_Wingenburg.tga"
+				traits = { griffon_race_trait harsh_leader infantry_officer trait_reformist }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+            custom_effect_tooltip = HLQ_edler_stats_tp
+			create_corps_commander = {
+				name = "Rüdiger Geltz"
+				portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_4.dds"
+				traits = { griffon_race_trait politically_connected career_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			custom_effect_tooltip = HLQ_rudgier_stats_tp
+			create_corps_commander = {
+				name = "Alfred Aschenkampff"
+				picture = "Alfred_Kampf.tga"
+				traits = { griffon_race_trait trickster trait_reformist }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			custom_effect_tooltip = HLQ_alfred_stats_tp
+			create_corps_commander = {
+			name = "Alina Hochmeister"
+			    picture = "Alina_Hochmeister.tga"
+			    traits = { griffon_race_trait commando camouflage_expert winter_specialist }
+			    skill = 2
+			    attack_skill = 2
+			    defense_skill = 3
+			    planning_skill = 2
+			    logistics_skill = 1
+		    }
+			custom_effect_tooltip = HLQ_alina_stats_tp
+			create_corps_commander = {
+			name = "Erika"
+			    picture = "Erika.tga"
+			    traits = { griffon_race_trait panzer_leader winter_specialist trait_reckless }
+			    skill = 2
+			    attack_skill = 2
+			    defense_skill = 1
+			    planning_skill = 1
+			    logistics_skill = 2
+		    }
+			custom_effect_tooltip = HLQ_erika_stats_tp
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_outdated_traditions
+		icon = GFX_goal_skull_treaty2
+		x = 0
+		y = 2
+		relative_position_id = HLQ_born_mighty_2
+		cost = 7.00
+		prerequisite = { focus = HLQ_a_bullet_for_the_traitors focus = HLQ_remove_the_old_guard }
+		available = {
+			has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_outdated_traditions"
+			remove_ideas = HLQ_knights_1
+			add_stability = 0.05
+			add_war_support = 0.05
+			if = {
+				limit = { has_country_flag = HLQ_army_stuff }
+				add_manpower = 30000
+				else = {
+					add_manpower = 15000
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_remove_the_old_guard
+		icon = GFX_goal_split_helmet
+		x = 1
+		y = 1
+		relative_position_id = HLQ_born_mighty_2
+		cost = 7.00
+		prerequisite = { focus = HLQ_born_mighty_2 }
+
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			537 = { is_owned_and_controlled_by = ROOT }
+			553 = { is_owned_and_controlled_by = ROOT }
+			634 = { is_owned_and_controlled_by = ROOT }
+			633 = { is_owned_and_controlled_by = ROOT }
+			has_government = fascism
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_remove_the_old_guard"
+			add_political_power = 25
+			add_popularity = { ideology = neutrality popularity = -0.05 }
+			save_current_manpower = yes
+			537 = {
+				add_manpower = -500
+			}
+			553 = {
+				add_manpower = -500
+			}
+			633 = {
+				add_manpower = -500
+			}
+			634 = {
+				add_manpower = -500
+			}
+			restore_previous_manpower = yes
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_the_stormgriffons
+		icon = GFX_goal_MAF_African_Pilots
+		x = 1
+		y = 3
+		relative_position_id = HLQ_born_mighty_2
+		cost = 7.00
+		prerequisite = { focus = HLQ_outdated_traditions }
+		prerequisite = { focus = HLQ_remove_the_old_guard }
+		available = {
+		    has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_the_stormgriffons"
+			add_ideas = HLQ_stormgriff
+			create_corps_commander = {
+			name = "Eisen Silberkrone"
+			    picture = "Eisen.tga"
+			    desc = HLQ_eisen_desc
+			    traits = { griffon_race_trait trait_cautious logistics_wizard trait_reformist }
+			    skill = 2
+			    attack_skill = 2
+			    defense_skill = 2
+			    planning_skill = 1
+			    logistics_skill = 3
+		    }
+			custom_effect_tooltip = HLQ_eisen_stats_tp
+			if = {
+				limit = { has_country_flag = HLQ_army_stuff }
+				custom_effect_tooltip = HLQ_stormgriff_2_tp
+				else = {
+					custom_effect_tooltip = HLQ_stormgriff_1_tp
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_tech = tech_field_hospital } }
+					set_technology = {
+						tech_field_hospital = 1
+					}
+				}
+				if = {
+					limit = { has_country_flag = HLQ_army_stuff }
+					load_oob = "HLQ_storm_griffs_2"
+					else = {
+						load_oob = "HLQ_storm_griffs_1"
+					}
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_longsword_destroy
+		icon = GFX_focus_generic_eagle
+		x = 0
+		y = 4
+		relative_position_id = HLQ_born_mighty_2
+		cost = 7.00
+		prerequisite = { focus = HLQ_new_generals }
+		prerequisite = { focus = HLQ_the_stormgriffons }
+		bypass  = {
+			event_target:longsword = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+					has_war_with = ROOT
+				}
+			}
+			hidden_trigger = {
+				LNS = {
+					OR = {
+						exists = no
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+						has_war_with = ROOT
+					}
+				}
+				LSM = {
+					OR = {
+						exists = no
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+						has_war_with = ROOT
+					}
+				}
+				LSC = {
+					OR = {
+						exists = no
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		available = {
+			has_global_flag = LNS_civil_war_end_flag
+			has_government = fascism
+		}
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+					tag = event_target:longsword
+					ratio < 0.8
+				}
+			}
+		}
+		will_lead_to_war_with = LSC
+		will_lead_to_war_with = LSM
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_longsword_destroy"
+			if = {
+				limit = { event_target:longsword = { has_country_flag = LNS_bandit_takeover } }
+				create_wargoal = {
+					type = annex_everything
+					target = event_target:longsword
+				}
+				every_state = {
+					limit = { is_core_of = event_target:longsword }
+					add_core_of = ROOT
+				}
+			}
+			else_if = {
+				limit = {
+					event_target:longsword = { has_government = fascism }
+				}
+				event_target:longsword = { country_event = { id = hellquill.23 days = 10 } }
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = event_target:longsword
+				}
+				every_state = {
+					limit = { is_core_of = event_target:longsword }
+					add_core_of = ROOT
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_neuseland_project
+		icon = GFX_goal_tfv_saf_support_ossebrandwag
+		x = 3
+		y = 1
+		relative_position_id = HLQ_born_mighty_2
+		cost = 7.00
+		prerequisite = { focus = HLQ_born_mighty_2 }
+
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			537 = { is_owned_and_controlled_by = ROOT }
+			553 = { is_owned_and_controlled_by = ROOT }
+			634 = { is_owned_and_controlled_by = ROOT }
+			633 = { is_owned_and_controlled_by = ROOT }
+			has_government = fascism
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_neuseland_project"
+			add_ideas = HLQ_free_transit_idea
+			unlock_decision_tooltip = HLQ_bring_colonists
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				553 = {
+					add_manpower = 200000
+				}
+				537 = {
+					add_manpower = 200000
+				}
+				634 = {
+					add_manpower = 200000
+				}
+				633 = {
+					add_manpower = 200000
+				}
+				else = {
+					553 = {
+						add_manpower = 120000
+					}
+					537 = {
+						add_manpower = 120000
+					}
+					634 = {
+						add_manpower = 120000
+					}
+					633 = {
+						add_manpower = 120000
+					}
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_education_and_indocrination
+		icon = GFX_goal_KTG_Bookstack
+		x = 2
+		y = 2
+		relative_position_id = HLQ_born_mighty_2
+		cost = 7.00
+		prerequisite = { focus = HLQ_neuseland_project }
+		available = {
+		    has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_education_and_indocrination"
+			add_stability = 0.05
+			custom_effect_tooltip = HLQ_education_tp
+			hidden_effect = {
+				if = {
+					limit = { has_country_flag = HLQ_the_people }
+					country_event = { days = 160 id = hellquill.29 }
+					else = {
+						country_event = { days = 240 id = hellquill.29 }
+					}
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_make_way
+		icon = GFX_focus_generic_industry_2
+		x = 4
+		y = 2
+		relative_position_id = HLQ_born_mighty_2
+		cost = 7.00
+		prerequisite = { focus = HLQ_neuseland_project }
+
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			537 = { is_owned_and_controlled_by = ROOT }
+			553 = { is_owned_and_controlled_by = ROOT }
+			has_government = fascism
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_make_way"
+			add_stability = 0.05
+			if = {
+				limit = { has_country_flag = HLQ_the_industrial_sector }
+				553 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				else = {
+					553 = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = HLQ_the_industrial_sector }
+				537 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				else = {
+					537 = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_the_new_frontier
+		icon = GFX_goal_factory_complex
+		x = 3
+		y = 3
+		relative_position_id = HLQ_born_mighty_2
+		cost = 7.00
+		prerequisite = { focus = HLQ_make_way }
+		prerequisite = { focus = HLQ_education_and_indocrination }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			553 = { 
+			    is_owned_and_controlled_by = ROOT 
+				free_building_slots = {
+				    building = industrial_complex
+				    size > 0
+				    include_locked = yes
+			    }
+			}
+			has_government = fascism
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_the_new_frontier"
+			add_stability = 0.05
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				553 = {
+					add_manpower = 200000
+				}
+				else = {
+					553 = {
+						add_manpower = 100000
+					}
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_the_industrial_revolution
+		icon = GFX_goal_generic_production2
+		x = 2
+		y = 4
+		relative_position_id = HLQ_born_mighty_2
+		cost = 7.00
+		prerequisite = { focus = HLQ_the_new_frontier }
+        available = {
+			has_government = fascism
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = arms_factory
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_the_industrial_revolution"
+			if = {
+				limit = { has_country_flag = HLQ_the_industrial_sector }
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			increase_society_development = yes
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_the_kingdom_of_hellquill
+		icon = GFX_goal_POR_royal_edicts
+		x = 0
+		y = 5
+		relative_position_id = HLQ_born_mighty_2
+		cost = 5.00
+		prerequisite = { focus = HLQ_what_minorities }
+		prerequisite = { focus = HLQ_longsword_destroy }
+		prerequisite = { focus = HLQ_the_industrial_revolution }
+		available = {
+		    has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_the_kingdom_of_hellquill"
+			country_event = { id = hellquill.31 days = 1 }
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_the_war_economy
+		icon = GFX_goal_Focus_Military_Mobilisation
+		x = -1
+		y = 1
+		relative_position_id = HLQ_the_kingdom_of_hellquill
+		cost = 7.00
+		prerequisite = { focus = HLQ_the_kingdom_of_hellquill }
+		available = {
+		    has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_the_war_economy"
+			add_ideas = war_economy
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_the_ostwall_building
+		icon = GFX_goal_nested_fortifications
+		x = 1
+		y = 1
+		relative_position_id = HLQ_the_kingdom_of_hellquill
+		cost = 7.00
+		prerequisite = { focus = HLQ_the_kingdom_of_hellquill }
+
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			537 = { is_owned_and_controlled_by = ROOT }
+			634 = { is_owned_and_controlled_by = ROOT }
+			has_government = fascism
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_the_ostwall_building"
+			if = {
+				limit = { has_country_flag = HLQ_army_stuff }
+				634 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1845
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 10608
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 12694
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 8192
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 8251
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 2179
+						instant_build = yes
+					}
+				}
+				537 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 10678
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 7421
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 12947
+						instant_build = yes
+					}
+				}
+				else = {
+					634 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 1845
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 10608
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12694
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 8192
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 8251
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 2179
+							instant_build = yes
+						}
+					}
+					537 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 10678
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7421
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12947
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_prepare_longsword
+		icon = GFX_goal_forced_con
+		x = 0
+		y = 2
+		relative_position_id = HLQ_the_kingdom_of_hellquill
+		cost = 7.00
+		prerequisite = { focus = HLQ_the_war_economy focus = HLQ_the_ostwall_building }
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			552 = { is_owned_and_controlled_by = ROOT }
+			has_government = fascism
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_prepare_longsword"
+			if = {
+				limit = { has_country_flag = HLQ_army_stuff }
+				552 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11828
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11775
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 978
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11770
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 10083
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 7070
+						instant_build = yes
+					}
+				}
+				else = {
+					552 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 11828
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 11775
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 978
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 11770
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 10083
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7070
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_prepare_the_crusade
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 0
+		y = 3
+		relative_position_id = HLQ_the_kingdom_of_hellquill
+		cost = 7.00
+		prerequisite = { focus = HLQ_prepare_longsword }
+		available = {
+		    has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_prepare_the_crusade"
+			unlock_decision_category_tooltip = HLQ_crusade_category
+			add_ideas = HLQ_crusade_ready
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_test_subjects
+		icon = GFX_goal_supremacy_of_will
+		x = -1
+		y = 4
+		relative_position_id = HLQ_the_kingdom_of_hellquill
+		cost = 7.00
+		prerequisite = { focus = HLQ_prepare_the_crusade }
+		available = {
+		    has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_test_subjects"
+			add_ideas = HLQ_pony_test_subjects
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_beasts_of_labour
+		icon = GFX_goal_ideology_national_populist
+		x = 1
+		y = 4
+		relative_position_id = HLQ_the_kingdom_of_hellquill
+		cost = 7.00
+		prerequisite = { focus = HLQ_prepare_the_crusade }
+		available = {
+		    has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_beasts_of_labour"
+			add_ideas = HLQ_beasts_of_labour_idea
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_role_of_stormgriffons
+		icon = GFX_goal_conscription
+		x = -2
+		y = 2
+		relative_position_id = HLQ_the_kingdom_of_hellquill
+		cost = 7.00
+		prerequisite = { focus = HLQ_the_war_economy focus = HLQ_the_ostwall_building }
+		available = {
+		    has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_role_of_stormgriffons"
+			country_event = { id = hellquill.32 days = 1 }
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_prepare_the_people
+		icon = GFX_goal_national_arsenal
+		x = -3
+		y = 4
+		relative_position_id = HLQ_the_kingdom_of_hellquill
+		cost = 7.00
+		prerequisite = { focus = HLQ_role_of_stormgriffons }
+		available = {
+		    has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_prepare_the_people"
+			add_ideas = extensive_conscription
+			if = {
+				limit = { has_country_flag = HLQ_army_stuff }
+				add_manpower = 20000
+				else = {
+					add_manpower = 10000
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_proper_cadets
+		icon = GFX_focus_generic_military_mission
+		x = -2
+		y = 3
+		relative_position_id = HLQ_the_kingdom_of_hellquill
+		cost = 7.00
+		prerequisite = { focus = HLQ_role_of_stormgriffons }
+		available = {
+		    has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_proper_cadets"
+			add_ideas = HLQ_junker_school
+			add_research_slot = 1
+			army_experience = 25
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_finish_industry
+		icon = GFX_goal_improve_industry
+		x = 2
+		y = 2
+		relative_position_id = HLQ_the_kingdom_of_hellquill
+		cost = 7.00
+		prerequisite = { focus = HLQ_the_war_economy focus = HLQ_the_ostwall_building }
+		available = {
+			has_government = fascism
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = arms_factory
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_finish_industry"
+			increase_science_base = yes
+			if = {
+				limit = { has_country_flag = HLQ_the_industrial_sector }
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_bring_settlers
+		icon = GFX_goal_generic_position_armies
+		x = 3
+		y = 4
+		relative_position_id = HLQ_the_kingdom_of_hellquill
+		cost = 7.00
+		prerequisite = { focus = HLQ_finish_industry }
+
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			537 = { is_owned_and_controlled_by = ROOT }
+			553 = { is_owned_and_controlled_by = ROOT }
+			634 = { is_owned_and_controlled_by = ROOT }
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				540 = { is_owned_and_controlled_by = ROOT }
+				505 = { is_owned_and_controlled_by = ROOT }
+				552 = { is_owned_and_controlled_by = ROOT }
+			}
+			has_government = fascism
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_bring_settlers"
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				553 = {
+					add_manpower = 150000
+				}
+				else = {
+					553 = {
+						add_manpower = 75000
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				537 = {
+					add_manpower = 150000
+				}
+				else = {
+					537 = {
+						add_manpower = 75000
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				634 = {
+					add_manpower = 150000
+				}
+				else = {
+					634 = {
+						add_manpower = 75000
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				540 = {
+					add_manpower = 150000
+				}
+				else = {
+					553 = {
+						add_manpower = 75000
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				505 = {
+					add_manpower = 150000
+				}
+				else = {
+					537 = {
+						add_manpower = 75000
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = HLQ_the_people }
+				552 = {
+					add_manpower = 150000
+				}
+				else = {
+					634 = {
+						add_manpower = 75000
+					}
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_war_industry
+		icon = GFX_r56_goal_FRA_alliance_with_industrialists
+		x = 2
+		y = 3
+		relative_position_id = HLQ_the_kingdom_of_hellquill
+		cost = 7.00
+		prerequisite = { focus = HLQ_finish_industry }
+		available = {
+			has_government = fascism
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = arms_factory
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = industrial_complex
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_war_industry"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}

@@ -1,0 +1,355 @@
+focus_tree = {
+	id = hellquill_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = HLQ
+		}
+	}
+
+	shared_focus = HLQ_regular_economics
+	shared_focus = HLQ_fascist_economics
+	shared_focus = HLQ_siegfrieds_retirement
+	shared_focus = HLQ_wehrmacht
+
+
+}
+
+######################
+### SHARED FOCUSES ###
+######################
+
+#Reformisten Annex Tree
+shared_focus = {
+	id = HLQ_lushi_anchluss
+	icon = GFX_goal_lushi_anschluss
+	x = 6
+	y = 2
+	cost = 7.00
+	bypass  = {
+		LUS = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		owns_state = 608
+	}
+	available = {
+		OR = {
+			has_completed_focus = HLQ_longsword_destroy
+			has_completed_focus = HLQ_destroy_longsword
+		}
+		has_government = fascism
+		LUS = { NOT = { has_war = yes }}
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	will_lead_to_war_with = LUS
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus HLQ_lushi_anchluss"
+
+		country_event = { id = tartarus_hellquill.11 }
+	}
+}
+
+shared_focus = {
+	id = HLQ_blackrock_attack
+	icon = GFX_goal_ban_blackrock
+	relative_position_id = HLQ_lushi_anchluss
+	x = 0
+	y = 1
+	cost = 7.00
+	bypass  = {
+		BAN = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+	}
+	prerequisite = { focus = HLQ_lushi_anchluss }
+	ai_will_do = {
+		factor = 50
+	}
+	will_lead_to_war_with = BAN
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus HLQ_blackrock_attack"
+
+		create_wargoal = { type = annex_everything target = BAN }
+	}
+}
+
+shared_focus = {
+	id = HLQ_host_attack
+	icon = GFX_goal_GRY_shield
+	relative_position_id = HLQ_lushi_anchluss
+	x = -2
+	y = 1
+	cost = 7.00
+	bypass  = {
+		GRY = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+	}
+	prerequisite = { focus = HLQ_lushi_anchluss }
+	ai_will_do = {
+		factor = 50
+	}
+	will_lead_to_war_with = GRY
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus HLQ_host_attack"
+
+		country_event = { id = tartarus_hellquill.12 }
+	}
+}
+
+shared_focus = {
+	id = HLQ_freetowns_demand
+	icon = GFX_goal_GRU_shield
+	relative_position_id = HLQ_host_attack
+	x = 0
+	y = 1
+	cost = 7.00
+	bypass  = {
+		GRU = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+	}
+	prerequisite = { focus = HLQ_host_attack }
+	ai_will_do = {
+		factor = 50
+	}
+	will_lead_to_war_with = GRU
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus HLQ_host_attack"
+
+		country_event = { id = tartarus_hellquill.13 }
+	}
+}
+
+shared_focus = {
+	id = HLQ_gla_attack
+	icon = GFX_goal_redmenace_knife
+	relative_position_id = HLQ_lushi_anchluss
+	x = 2
+	y = 1
+	cost = 7.00
+	bypass  = {
+		owns_state = 508
+	}
+	prerequisite = { focus = HLQ_lushi_anchluss }
+	ai_will_do = {
+		factor = 50
+	}
+	will_lead_to_war_with = GRW
+	will_lead_to_war_with = BRF
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus HLQ_gla_attack"
+		if = {
+			limit = { GRW = { exists = yes NOT = { is_subject_of = ROOT } } }
+			declare_war_on = { type = annex_everything target = GRW }
+			if = {
+				limit = {
+					BRF = { exists = yes has_war_with = GRW }
+				}
+				hidden_effect = { news_event = { id = news_tartarus_hellquill.1 days = 1 } }
+				else = {
+					hidden_effect = { country_event = { id = tartarus_hellquill.22 } }
+				}
+			}
+		}
+		else_if = {
+			limit = { BRF = { exists = yes NOT = { is_subject_of = ROOT } } }
+			country_event = { id = tartarus_hellquill.21 }
+		}
+	}
+}
+
+shared_focus = {
+	id = HLQ_begin_tartarus
+	icon = GFX_goal_generic_fortify_city
+	relative_position_id = HLQ_gla_attack
+	x = 0
+	y = 1
+	cost = 3.50
+	
+	available = {
+		owns_state = 592
+		owns_state = 613
+		owns_state = 612
+		owns_state = 611
+		owns_state = 591
+		owns_state = 608
+					
+	}
+	prerequisite = { focus = HLQ_gla_attack }
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus HLQ_begin_tartarus"
+		591 = {
+			set_building_level = {
+    			type = bunker
+    			level = 2
+    			province = {
+        			all_provinces = yes
+        			limit_to_border = yes
+        			level < 2
+    			}
+			}
+		}
+		592 = {
+			set_building_level = {
+    			type = bunker
+    			level = 2
+    			province = {
+        			all_provinces = yes
+        			limit_to_border = yes
+        			level < 2
+    			}
+			}
+		}
+		608 = {
+			set_building_level = {
+    			type = bunker
+    			level = 2
+    			province = {
+        			all_provinces = yes
+        			limit_to_border = yes
+        			level < 2
+    			}
+			}
+		}
+		611 = {
+			set_building_level = {
+    			type = bunker
+    			level = 2
+    			province = {
+        			all_provinces = yes
+        			limit_to_border = yes
+        			level < 2
+    			}
+			}
+		}
+		612 = {
+			set_building_level = {
+    			type = bunker
+    			level = 2
+    			province = {
+        			all_provinces = yes
+        			limit_to_border = yes
+        			level < 2
+    			}
+			}
+		}
+		613 = {
+			set_building_level = {
+    			type = bunker
+    			level = 2
+    			province = {
+        			all_provinces = yes
+        			limit_to_border = yes
+        			level < 2
+    			}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = HLQ_protect_cyan
+	icon = GFX_goal_protect_cyan
+	relative_position_id = HLQ_blackrock_attack
+	x = 0
+	y = 1
+	cost = 3.50
+	bypass  = {
+		CYA = {
+			exists = no
+		}
+	}
+	available = {
+		NOT = {
+			has_war_with = CYA
+		}
+		owns_state = 446
+		controls_state = 446
+	}
+	cancel_if_invalid = yes
+	prerequisite = { focus = HLQ_blackrock_attack }
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus HLQ_protect_cyan"
+
+		give_guarantee = CYA
+		CYA = { 
+			transfer_state = 446
+			create_corps_commander = {
+			name = "Lucienne Van Der Stolz"
+			    picture = "derstolz.tga"
+			    traits = { griffon_race_trait war_hero trait_reckless naval_invader trait_reformist }
+			    skill = 2
+			    attack_skill = 3
+			    defense_skill = 3
+			    planning_skill = 2
+			    logistics_skill = 1
+		    }
+			country_event = { id = tartarus_hellquill.17 } 
+		}
+	}
+}
+
+shared_focus = {
+	id = HLQ_marry_countess
+	icon = GFX_goal_marry_countess
+	relative_position_id = HLQ_protect_cyan
+	x = 0
+	y = 1
+	cost = 5
+	available = {
+		MIT = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+			}
+		}
+	}
+	bypass  = {
+		CYA = {
+			exists = no
+		}
+	}
+	prerequisite = { focus = HLQ_protect_cyan }
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus HLQ_marry_countess"
+
+		CYA = {
+			country_event = {
+				id = tartarus_hellquill.19
+			}
+		}
+	}
+}
+

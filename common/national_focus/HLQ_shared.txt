@@ -1,0 +1,2570 @@
+    shared_focus = {
+		id = HLQ_siegfrieds_retirement
+		icon = GFX_goal_COS_Peace
+		x = 14
+		y = 0
+		cost = 7.00
+		available = { always = no }
+		bypass = {
+			has_country_flag = HLQ_siegfried_fucked_off
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_siegfrieds_retirement"
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+
+	### Reconciliation ###
+
+	shared_focus = {
+		id = HLQ_reconciliation
+		icon = GFX_goal_liberty
+		x = -8
+		y = 1
+		relative_position_id = HLQ_siegfrieds_retirement
+		cost = 5.00
+		prerequisite = { focus = HLQ_siegfrieds_retirement }
+		mutually_exclusive = { focus = HLQ_status_quo }
+		mutually_exclusive = { focus = HLQ_black_cloaks }
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_reconciliation"
+			country_event = { days = 1 id = hellquill.3 }
+			load_focus_tree = { tree = hellquill_harmonist_focus keep_completed = yes }
+			hidden_effect = {
+			    complete_national_focus = HLQ_wehrmacht
+			}
+		}
+	}
+
+	### Status Quo ###
+
+	shared_focus = {
+		id = HLQ_status_quo
+		icon = GFX_COS_Ferrer_Coup
+		x = 8
+		y = 1
+		relative_position_id = HLQ_siegfrieds_retirement
+		cost = 5.00
+		prerequisite = { focus = HLQ_siegfrieds_retirement }
+		mutually_exclusive = { focus = HLQ_black_cloaks }
+		mutually_exclusive = { focus = HLQ_reconciliation }
+
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_status_quo"
+			country_event = { days = 1 id = hellquill.19 }
+			load_focus_tree = { tree = hellquill_neutrality_focus keep_completed = yes }
+			hidden_effect = {
+			    complete_national_focus = HLQ_wehrmacht
+			}
+		}
+	}
+
+	### Black Cloaks ###
+
+	shared_focus = {
+		id = HLQ_black_cloaks
+		icon = GFX_goal_national_populism
+		x = 0
+		y = 1
+		relative_position_id = HLQ_siegfrieds_retirement
+		cost = 5.00
+		prerequisite = { focus = HLQ_siegfrieds_retirement }
+		mutually_exclusive = { focus = HLQ_status_quo }
+		mutually_exclusive = { focus = HLQ_reconciliation }
+
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_black_cloaks"
+			country_event = { days = 1 id = hellquill.25 }
+			hidden_effect = {
+			    complete_national_focus = HLQ_wehrmacht
+			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_made_mighty
+		icon = GFX_goal_HLQ_integralist_focus
+		relative_position_id = HLQ_black_cloaks
+		x = -4
+		y = 1
+		cost = 1
+		prerequisite = { focus = HLQ_black_cloaks }
+		mutually_exclusive = { focus = HLQ_born_mighty }
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			load_focus_tree = { tree = hellquill_integralist_focus keep_completed = yes }
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_made_mighty"
+			hidden_effect = {
+				set_country_flag = HLQ_integralsits_choosen
+				GRI = {
+					set_country_flag = HLQ_integralsits_choosen
+				}
+
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Wingfried von Katerinburg"
+					desc = "wingfried2_desc"
+					picture = "Wingfried_von_Smirkerinburg.tga"
+					expire = "1965.1.1"
+					ideology = falangism
+					traits = {
+						moderniser
+					}
+				}
+
+				every_unit_leader = {
+					limit = {
+						has_id = 991286
+					}
+					retire = yes
+				}
+				create_corps_commander = {
+					name = "Wingfried von Katerinburg"
+					picture = "Wingfried_von_Smirkerinburg.tga"
+					desc = "wingfried2_desc"
+					traits = { griffon_race_trait trait_reformisten_boss brilliant_strategist ranger trickster }
+					skill = 4
+					attack_skill = 4
+					defense_skill = 3
+					planning_skill = 3
+					logistics_skill = 3
+					id = 991287
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = HLQ_born_mighty
+		icon = GFX_goal_skull_treaty2
+		relative_position_id = HLQ_black_cloaks
+		x = 4
+		y = 1
+		cost = 1
+		prerequisite = { focus = HLQ_black_cloaks }
+		mutually_exclusive = { focus = HLQ_made_mighty }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			load_focus_tree = { tree = hellquill_hardline_focus keep_completed = yes }
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_born_mighty"
+			hidden_effect = {
+				set_country_flag = HLQ_hardliners_choosen
+			}
+		}
+	}
+	
+	### Industrial Focuses ###
+	shared_focus = {
+	    id = HLQ_regular_economics
+	    icon = GFX_focus_generic_the_giant_wakes
+		available = {
+		    OR = {
+			    has_government = democratic
+				has_government = neutrality
+			}
+			OR = {
+			    has_completed_focus = HLQ_reconciliation_2
+				has_completed_focus = HLQ_status_quo_2
+			}
+		}
+		mutually_exclusive = {
+		    focus = HLQ_fascist_economics
+		}
+	    cost = 7.00
+		ai_will_do = { factor = 80 }
+	    x = -6
+	    y = 0
+	    completion_reward = {
+		    log = "[GetDateText]: [Root.GetName]: Focus HLQ_regular_economics"
+			add_ideas = HLQ_regular_economics_idea
+	    }
+    }
+	
+	shared_focus = {
+		id = HLQ_support_middle_class
+		icon = GFX_goal_ITA_urban
+		x = -1
+		y = 1
+		relative_position_id = HLQ_regular_economics
+		cost = 7.00
+		prerequisite = { 
+		    focus = HLQ_regular_economics 
+		}
+		available = {
+		    OR = {
+			    has_government = democratic
+				has_government = neutrality
+			}
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = industrial_complex
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_support_middle_class"
+			if = {
+				limit = { 
+				    has_country_flag = HLQ_the_industrial_sector 
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+			    limit = {
+				    has_country_flag = HLQ_the_people
+				}
+				add_political_power = 50
+				add_stability = 0.05
+			}
+			else = {
+				add_political_power = 25
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_work_smart
+		icon = GFX_IRE_medium_industry
+		x = -2
+		y = 2
+		relative_position_id = HLQ_regular_economics
+		cost = 7.00
+		prerequisite = { 
+		    focus = HLQ_support_middle_class 
+		}
+		available = {
+		    OR = {
+			    has_government = democratic
+				has_government = neutrality
+			}
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_work_smart"
+			add_ideas = HLQ_work_smart_idea
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_foreign_industrial_deals
+		icon = GFX_goal_bag_of_money
+		x = 0
+		y = 2
+		relative_position_id = HLQ_regular_economics
+		cost = 7.00
+		prerequisite = { 
+		    focus = HLQ_regular_economics 
+		}
+		available = {
+		    OR = {
+			    has_government = democratic
+				has_government = neutrality
+			}
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = arms_factory
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_foreign_industrial_deals"
+			add_ideas = HLQ_foreign_industrial_deals_idea
+			random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			    }
+		    }
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_fiscal_reforms
+		icon = GFX_goal_foreign_diplomacy
+		x = -1
+		y = 3
+		relative_position_id = HLQ_regular_economics
+		cost = 7.00
+		prerequisite = { 
+		    focus = HLQ_foreign_industrial_deals 
+		}
+		prerequisite = { 
+		    focus = HLQ_work_smart 
+		}
+		available = {
+		    OR = {
+			    has_government = democratic
+				has_government = neutrality
+			}
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_fiscal_reforms"
+			add_ideas = HLQ_fiscal_reforms_idea
+			if = {
+			    limit = {
+				    has_country_flag = HLQ_the_people
+				}
+				add_political_power = 100
+			}
+			else = {
+				add_political_power = 50
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_steel_industry
+		icon = GFX_focus_generic_steel
+		x = 1
+		y = 1
+		relative_position_id = HLQ_regular_economics
+		cost = 7.00
+		prerequisite = { 
+		    focus = HLQ_regular_economics 
+			focus = HLQ_fascist_economics 
+		}
+		available = {
+		    633 = {
+			    is_owned_and_controlled_by = ROOT 
+		    }
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_steel_industry"
+			if = {
+			    limit = {
+				    has_country_flag = HLQ_the_industrial_sector
+				}
+				add_resource = {
+			        type = steel
+			        amount = 10
+			        state = 633
+		        }
+				add_resource = {
+			        type = steel
+			        amount = 12
+			        state = 634
+		        }
+			}
+			else = {
+				add_resource = {
+			        type = steel
+			        amount = 12
+			        state = 633
+		        }
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_tungsten_industry
+		icon = GFX_focus_generic_tungsten
+		x = -1
+		y = 1
+		relative_position_id = HLQ_fascist_economics
+		cost = 7.00
+		prerequisite = { 
+		    focus = HLQ_regular_economics 
+			focus = HLQ_fascist_economics 
+		}
+		available = {
+		    553 = {
+			    is_owned_and_controlled_by = ROOT 
+		    }
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_tungsten_industry"
+			if = {
+			    limit = {
+				    has_country_flag = HLQ_the_industrial_sector
+				}
+				add_resource = {
+			        type = tungsten
+			        amount = 12
+			        state = 553
+		        }
+				add_tech_bonus = {
+			        bonus = 1.0
+			        uses = 1
+			        category = construction_tech
+		        }
+			}
+			else = {
+				add_resource = {
+			        type = tungsten
+			        amount = 12
+			        state = 553
+		        }
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_oil_autarky
+		icon = GFX_goal_oil_derrick
+		x = -2
+		y = 2
+		relative_position_id = HLQ_fascist_economics
+		cost = 7.00
+		prerequisite = { 
+		    focus = HLQ_steel_industry 
+		}
+		prerequisite = { 
+		    focus = HLQ_tungsten_industry 
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_oil_autarky"
+			if = {
+			    limit = {
+				    has_country_flag = HLQ_the_industrial_sector
+				}
+				random_owned_controlled_state = {
+			        add_extra_state_shared_building_slots = 2
+			        add_building_construction = {
+				        type = synthetic_refinery
+				        level = 2
+				        instant_build = yes
+			        }
+		        }
+				add_tech_bonus = {
+			        name = synth_bonus
+			        bonus = 1.0
+			        uses = 1
+			        category = synth_resources
+		        }
+			}
+			else = {
+			    random_owned_controlled_state = {
+			        add_extra_state_shared_building_slots = 1
+			        add_building_construction = {
+				        type = synthetic_refinery
+				        level = 1
+				        instant_build = yes
+			        }
+		        }
+				add_tech_bonus = {
+			        name = synth_bonus
+			        bonus = 1.0
+			        uses = 1
+			        category = synth_resources
+		        }
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_full_spead_ahead
+		icon = GFX_goal_double_research
+		x = -2
+		y = 3
+		relative_position_id = HLQ_fascist_economics
+		cost = 7.00
+		prerequisite = { 
+		    focus = HLQ_foreign_industrial_deals
+            focus = HLQ_build_up_industrial_base			
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_full_spead_ahead"
+			increase_society_development = yes
+			if = {
+			    limit = {
+				    has_country_flag = HLQ_the_industrial_sector
+				}
+				add_tech_bonus = {
+			        name = industrial_bonus
+			        bonus = 1.0
+			        uses = 2
+			       category = industry
+		        }
+			}
+			else = {
+				add_tech_bonus = {
+			        name = industrial_bonus
+			        bonus = 1.0
+			        uses = 1
+			       category = industry
+		        }
+			}
+		}
+	}
+	
+	shared_focus = {
+	    id = HLQ_fascist_economics
+	    icon = GFX_r56_goal_FRA_alliance_with_industrialists
+		available = {
+		    has_government = fascism
+		    OR = {
+				has_completed_focus = HLQ_made_mighty_2
+				has_completed_focus = HLQ_born_mighty_2
+			}
+		}
+		mutually_exclusive = {
+		    focus = HLQ_regular_economics
+		}
+	    cost = 7.00
+		ai_will_do = { factor = 80 }
+	    x = -2
+	    y = 0
+	    completion_reward = {
+		    log = "[GetDateText]: [Root.GetName]: Focus HLQ_fascist_economics"
+			add_ideas = HLQ_fascist_economics_idea
+	    }
+    }
+	
+	shared_focus = {
+		id = HLQ_build_up_industrial_base
+		icon = GFX_focus_indy_industrial_tanks
+		x = 0
+		y = 2
+		relative_position_id = HLQ_fascist_economics
+		cost = 7.00
+		prerequisite = { 
+		    focus = HLQ_fascist_economics 
+		}
+		available = {
+			has_government = fascism
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = industrial_complex
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
+			any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = arms_factory
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_build_up_industrial_base"
+			if = {
+			    limit = {
+				    has_country_flag = HLQ_the_people
+				}
+				add_political_power = -50
+				add_stability = -0.05
+			}
+			else = {
+				add_political_power = -100
+				add_stability = -0.10
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_appropriate_pony_farms
+		icon = GFX_goal_skull_treaty
+		x = 1
+		y = 1
+		relative_position_id = HLQ_fascist_economics
+		cost = 7.00
+		prerequisite = { 
+		    focus = HLQ_fascist_economics 
+		}
+		available = {
+		    has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_appropriate_pony_farms"
+			if = {
+			    limit = {
+				    has_country_flag = HLQ_the_people
+				}
+				add_political_power = 50
+				add_stability = 0.05
+				add_popularity = { 
+				    ideology = fascism 
+					popularity = 0.075 
+				}
+			}
+			else = {
+				add_political_power = 25
+				add_stability = 0.025
+				add_popularity = { 
+				    ideology = fascism 
+					popularity = 0.05 
+				}
+			}
+			save_current_manpower = yes
+			every_owned_state = {
+			    limit = {
+				    is_core_of = ROOT
+			    }
+				add_extra_state_shared_building_slots = 1
+				add_manpower = -12500
+		    }
+			restore_previous_manpower = yes
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_collectivization_effort
+		icon = GFX_goal_forced_con
+		x = 2
+		y = 2
+		relative_position_id = HLQ_fascist_economics
+		cost = 7.00
+		prerequisite = { 
+		    focus = HLQ_appropriate_pony_farms 
+		}
+		available = {
+		    has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_collectivization_effort"
+			add_ideas = HLQ_collectivization_effort_idea
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_builder_squads
+		icon = GFX_goal_forced_res
+		x = 1
+		y = 3
+		relative_position_id = HLQ_fascist_economics
+		cost = 7.00
+		prerequisite = { 
+		    focus = HLQ_build_up_industrial_base 
+		}
+		prerequisite = { 
+		    focus = HLQ_collectivization_effort 
+		}
+		available = {
+		    has_government = fascism
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_builder_squads"
+			add_ideas = HLQ_build_squads
+			if = {
+			    limit = {
+				    has_country_flag = HLQ_the_industrial_sector
+				}
+				every_owned_state = {
+			    limit = {
+				    is_core_of = ROOT
+				    free_building_slots = {
+					    building = infrastructure
+					    size > 0
+				    }
+			    }
+				add_extra_state_shared_building_slots = 1
+			    add_building_construction = {
+				    type = infrastructure
+				    level = 1
+				    instant_build = yes
+			        }
+		        }
+			}
+			else = {
+				every_owned_state = {
+			    limit = {
+				    is_core_of = ROOT
+				    free_building_slots = {
+					    building = infrastructure
+					    size > 0
+				    }
+			    }
+			    add_building_construction = {
+				    type = infrastructure
+				    level = 1
+				    instant_build = yes
+			        }
+		        }
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_industrial_expansion
+		icon = GFX_goal_factory_complex
+		x = 0
+		y = 4
+		relative_position_id = HLQ_regular_economics
+		cost = 7.00
+		prerequisite = { 
+		    focus = HLQ_full_spead_ahead 
+		}
+		prerequisite = { 
+		    focus = HLQ_fiscal_reforms 
+			focus = HLQ_builder_squads 
+		}
+		available = {
+		    553 = {
+			    is_owned_and_controlled_by = ROOT 
+			    free_building_slots = {
+				    building = industrial_complex
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_industrial_expansion"
+			553 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_connecting_the_nation
+		icon = GFX_goal_generic_construct_public_housing
+		x = 2
+		y = 4
+		relative_position_id = HLQ_regular_economics
+		cost = 7.00
+		prerequisite = { 
+		    focus = HLQ_full_spead_ahead 
+		}
+		prerequisite = { 
+		    focus = HLQ_fiscal_reforms 
+			focus = HLQ_builder_squads 
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_connecting_the_nation"
+			every_owned_state = {
+			    limit = {
+				    is_core_of = ROOT
+				    free_building_slots = {
+					    building = infrastructure
+					    size > 0
+				    }
+			    }
+				add_extra_state_shared_building_slots = 1
+			    add_building_construction = {
+				    type = infrastructure
+				    level = 1
+				    instant_build = yes
+			    }
+		    }
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_thriving_arms_industry
+		icon = GFX_goal_artillery_factories
+		x = 4
+		y = 4
+		relative_position_id = HLQ_regular_economics
+		cost = 7.00
+		prerequisite = { 
+		    focus = HLQ_full_spead_ahead 
+		}
+		prerequisite = { 
+		    focus = HLQ_fiscal_reforms 
+			focus = HLQ_builder_squads 
+		}
+		available = {
+		    any_owned_state = {
+			    is_controlled_by = ROOT
+			    free_building_slots = {
+				    building = arms_factory
+				    size > 0
+				    include_locked = yes
+			    }
+		    }
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_thriving_arms_factory"
+			random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			    }
+		    }
+			random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			    }
+		    }
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_zinten_uni
+		icon = GFX_goal_technological_supremacy
+		x = 2
+		y = 5
+		relative_position_id = HLQ_regular_economics
+		cost = 7.00
+		prerequisite = { 
+		    focus = HLQ_industrial_expansion 
+		}
+		prerequisite = { 
+		    focus = HLQ_connecting_the_nation 
+		}
+		prerequisite = { 
+		    focus = HLQ_thriving_arms_industry 
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_zinten_uni"
+			add_research_slot = 1
+			increase_science_base = yes
+		}
+	}
+	
+	### Air Focuses ###
+	shared_focus = {
+		id = HLQ_luftwaffe
+		icon = GFX_focus_generic_eagle
+		x = -8
+		y = 1
+		relative_position_id = HLQ_wehrmacht
+		cost = 5.00
+		prerequisite = { focus = HLQ_wehrmacht }
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_luftwaffe"
+			air_experience = 25
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_import_fighters
+		icon = GFX_goal_generic_air_fighter2
+		x = -2
+		y = 1
+		relative_position_id = HLQ_luftwaffe
+		cost = 5.00
+		prerequisite = { focus = HLQ_luftwaffe }
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_import_fighters"
+			add_equipment_to_stockpile = { 
+			    type = fighter_equipment
+			    amount = 50 
+			    producer = GRI 
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_develop_fighter
+		icon = GFX_goal_generic_air_fighter
+		x = -3
+		y = 2
+		relative_position_id = HLQ_luftwaffe
+		cost = 7.00
+		prerequisite = { focus = HLQ_import_fighters }
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_develop_fighter"
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_CAS_f
+		icon = GFX_goal_generic_CAS
+		x = -2
+		y = 3
+		relative_position_id = HLQ_luftwaffe
+		cost = 7.00
+		prerequisite = { focus = HLQ_develop_fighter }
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_CAS_f"
+			add_tech_bonus = {
+				name = bomber_effort
+				bonus = 1.0
+				uses = 2
+				technology = CAS1
+				technology = CAS2
+				technology = CAS3
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_air_superiority_f
+		icon = GFX_goal_MAF_African_Pilots
+		x = -1
+		y = 2
+		relative_position_id = HLQ_luftwaffe
+		cost = 7.00
+		prerequisite = { focus = HLQ_import_fighters }
+		mutually_exclusive = { focus = HLQ_strategic_destruction_f }
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_air_superiority_f"
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = operational_integrity_tree
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_strategic_destruction_f
+		icon = GFX_goal_MAF_Napalm
+		x = 1
+		y = 2
+		relative_position_id = HLQ_luftwaffe
+		cost = 7.00
+		prerequisite = { focus = HLQ_import_bombers }
+		mutually_exclusive = { focus = HLQ_air_superiority_f }
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_strategic_destruction_f"
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = strategic_destruction_tree
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_airbases
+		icon = GFX_goal_generic_air_production
+		x = 0
+		y = 3
+		relative_position_id = HLQ_luftwaffe
+		cost = 7.00
+		prerequisite = { focus = HLQ_air_superiority_f focus = HLQ_strategic_destruction_f }
+		available = {
+		    553 = { 
+			    is_owned_and_controlled_by = ROOT 
+			}
+		}
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_airbases"
+			553 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_import_bombers
+		icon = GFX_focus_usa_escort_fighters
+		x = 2
+		y = 1
+		relative_position_id = HLQ_luftwaffe
+		cost = 5.00
+		prerequisite = { focus = HLQ_luftwaffe }
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_import_bombers"
+			add_equipment_to_stockpile = { 
+			    type = tac_bomber_equipment
+			    amount = 30 
+			    producer = GRI 
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_develop_bombers
+		icon = GFX_goal_generic_territory_or_war
+		x = 3
+		y = 2
+		relative_position_id = HLQ_luftwaffe
+		cost = 7.00
+		prerequisite = { focus = HLQ_import_bombers }
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_develop_bombers"
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = tactical_bomber
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_develop_strat_bombers
+		icon = GFX_goal_generic_air_bomber
+		x = 2
+		y = 3
+		relative_position_id = HLQ_luftwaffe
+		cost = 7.00
+		prerequisite = { focus = HLQ_develop_bombers }
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_develop_strat_bombers"
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_airborne
+		icon = GFX_focus_generic_paratrooper
+		x = -1
+		y = 4
+		relative_position_id = HLQ_luftwaffe
+		cost = 7.00
+		prerequisite = { focus = HLQ_airbases }
+		prerequisite = { focus = HLQ_CAS_f }
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_airborne"
+			add_tech_bonus = {
+			    name = special_forces_bonus
+			    bonus = 3.0
+			    uses = 1
+			    category = para_tech
+		    }
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_develop_heavy_fighters
+		icon = GFX_focus_jap_zero
+		x = 1
+		y = 4
+		relative_position_id = HLQ_luftwaffe
+		cost = 7.00
+		prerequisite = { focus = HLQ_airbases }
+		prerequisite = { focus = HLQ_develop_strat_bombers }
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_develop_heavy_fighters"
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_jet_experiments
+		icon = GFX_focus_generic_air_defense
+		x = 0
+		y = 5
+		relative_position_id = HLQ_luftwaffe
+		cost = 7.00
+		prerequisite = { focus = HLQ_airborne }
+		prerequisite = { focus = HLQ_develop_heavy_fighters }
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_jet_experiments"
+			add_tech_bonus = {
+				name = rocketry
+				bonus = 3.0
+				uses = 1
+				category = jet_technology
+			}
+		}
+	}
+	
+	### Army Focuses ###
+	shared_focus = {
+		id = HLQ_wehrmacht
+		icon = GFX_focus_ger_reichskommisariats
+		x = 40
+		y = 0
+		cost = 7.00
+		available = {
+			OR = {
+				has_completed_focus = HLQ_reconciliation
+				has_completed_focus = HLQ_status_quo
+				has_completed_focus = HLQ_black_cloaks
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_wehrmacht"
+			custom_effect_tooltip = HLQ_wehrmacht_tp
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_heer
+		icon = GFX_focus_ger_oppose_hitler
+		x = 0
+		y = 1
+		relative_position_id = HLQ_wehrmacht
+		cost = 5.00
+		prerequisite = { focus = HLQ_wehrmacht }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_heer"
+			army_experience = 25
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_mass_assault_f
+		icon = GFX_goal_conscription
+		x = -3
+		y = 1
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_heer }
+		mutually_exclusive = { focus = HLQ_grand_assault_f }
+		mutually_exclusive = { focus = HLQ_superior_firepower_f }
+		mutually_exclusive = { focus = HLQ_mobile_warfare_f }
+
+		ai_will_do = {
+			factor = 60
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = superior_firepower
+					has_tech = trench_warfare
+					has_tech = mobile_warfare
+					is_researching_technology = superior_firepower
+					is_researching_technology = trench_warfare
+					is_researching_technology = mobile_warfare
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_mass_assault_f"
+			add_tech_bonus = {
+				name = cat_mass_assault
+				bonus = 1.0
+				uses = 2
+				category = cat_mass_assault
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_grand_assault_f
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = -1
+		y = 1
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_heer }
+		mutually_exclusive = { focus = HLQ_mass_assault_f }
+		mutually_exclusive = { focus = HLQ_superior_firepower_f }
+		mutually_exclusive = { focus = HLQ_mobile_warfare_f }
+
+		ai_will_do = {
+			factor = 60
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = superior_firepower
+					has_tech = mass_assault
+					has_tech = mobile_warfare
+					is_researching_technology = superior_firepower
+					is_researching_technology = mass_assault
+					is_researching_technology = mobile_warfare
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_grand_assault_f"
+			add_tech_bonus = {
+				name = cat_grand_battle_plan
+				bonus = 1.0
+				uses = 2
+				category = cat_grand_battle_plan
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_superior_firepower_f
+		icon = GFX_goal_national_artillery
+		x = 1
+		y = 1
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_heer }
+		mutually_exclusive = { focus = HLQ_mass_assault_f }
+		mutually_exclusive = { focus = HLQ_grand_assault_f }
+		mutually_exclusive = { focus = HLQ_mobile_warfare_f }
+
+		ai_will_do = {
+			factor = 60
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = trench_warfare
+					has_tech = mass_assault
+					has_tech = mobile_warfare
+					is_researching_technology = trench_warfare
+					is_researching_technology = mass_assault
+					is_researching_technology = mobile_warfare
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_superior_firepower_f"
+			add_tech_bonus = {
+				name = cat_superior_firepower
+				bonus = 1.0
+				uses = 2
+				category = cat_superior_firepower
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_mobile_warfare_f
+		icon = GFX_goal_planning_bonus
+		x = 3
+		y = 1
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_heer }
+		mutually_exclusive = { focus = HLQ_mass_assault_f }
+		mutually_exclusive = { focus = HLQ_grand_assault_f }
+		mutually_exclusive = { focus = HLQ_superior_firepower_f }
+
+		ai_will_do = {
+			factor = 60
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = trench_warfare
+					has_tech = mass_assault
+					has_tech = superior_firepower
+					is_researching_technology = trench_warfare
+					is_researching_technology = mass_assault
+					is_researching_technology = superior_firepower
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_mobile_warfare_f"
+			add_tech_bonus = {
+				name = cat_mobile_warfare
+				bonus = 1.0
+				uses = 2
+				category = cat_mobile_warfare
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_artillery_f
+		icon = GFX_goal_artillery
+		x = -3
+		y = 2
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_mass_assault_f focus = HLQ_grand_assault_f focus = HLQ_superior_firepower_f focus = HLQ_mobile_warfare_f }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_artillery_f"
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_anti_air_f
+		icon = GFX_goal_anti_air
+		x = -4
+		y = 3
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_artillery_f }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_anti_air_f"
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				technology = interwar_antiair
+				technology = antiair1
+				technology = antiair2
+				technology = antiair3
+				technology = antiair4
+				technology = antiair5
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_anti_tank_f
+		icon = GFX_goal_anti_tank
+		x = -2
+		y = 3
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_artillery_f }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_anti_tank_f"
+			add_tech_bonus = {
+			    bonus = 1.0
+			    uses = 2
+			    category = cat_anti_tank
+		    }
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_rocket_artillery_f
+		icon = GFX_goal_rocket
+		x = -3
+		y = 4
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_anti_air_f }
+		prerequisite = { focus = HLQ_anti_tank_f }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_rocket_artillery_f"
+			add_tech_bonus = {
+			    name = artillery_bonus
+			    bonus = 1.0
+			    uses = 1
+			    technology = rocket_artillery
+			    technology = rocket_artillery2
+			    technology = rocket_artillery3
+		    }
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_infantry_equipment_f
+		icon = GFX_goal_military_academy
+		x = -1
+		y = 2
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_mass_assault_f focus = HLQ_grand_assault_f focus = HLQ_superior_firepower_f focus = HLQ_mobile_warfare_f }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_infantry_equipment_f"
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_support_equipment_f
+		icon = GFX_goal_generic_construction2
+		x = 1
+		y = 2
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_mass_assault_f focus = HLQ_grand_assault_f focus = HLQ_superior_firepower_f focus = HLQ_mobile_warfare_f }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_support_equipment_f"
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1.0
+				uses = 2
+				category = support_tech
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_osttruppen
+		icon = GFX_goal_HLQ_osttruppen
+		x = 0
+		y = 3
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_infantry_equipment_f }
+		prerequisite = { focus = HLQ_support_equipment_f }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_osttruppen"
+			add_ideas = HLQ_osttruppen_idea
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_cold_training
+		icon = GFX_goal_generic_more_territorial_claims
+		x = -1
+		y = 4
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_osttruppen }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_cold_training"
+			add_ideas = HLQ_cold_training_idea
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_hill_training
+		icon = GFX_focus_RAJ_indian_gurkhas
+		x = 1
+		y = 4
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_osttruppen }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_hill_training"
+			set_technology = {
+                HLQ_hill_warfare = 1
+            }
+			custom_effect_tooltip = HLQ_hill_training_tp
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_motorized_f
+		icon = GFX_goal_generic_army_motorized
+		x = 3
+		y = 2
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_mass_assault_f focus = HLQ_grand_assault_f focus = HLQ_superior_firepower_f focus = HLQ_mobile_warfare_f }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_motorized_f"
+			add_tech_bonus = {
+				name = mech_bonus
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_mobile_tactics
+		icon = GFX_focus_chi_army_reform
+		x = 2
+		y = 3
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_motorized_f }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_mobile_tactics"
+			if = {
+			    limit = {
+				    has_completed_focus = HLQ_mass_assault_f
+				}
+				add_ideas = HLQ_mobile_tactics_1
+			}
+			else_if = {
+			    limit = {
+				    has_completed_focus = HLQ_grand_assault_f
+				}
+				add_ideas = HLQ_mobile_tactics_2
+			}
+			else_if = {
+			    limit = {
+				    has_completed_focus = HLQ_superior_firepower_f
+				}
+				add_ideas = HLQ_mobile_tactics_3
+			}
+			else_if = {
+			    limit = {
+				    has_completed_focus = HLQ_mobile_warfare_f
+				}
+				add_ideas = HLQ_mobile_tactics_4
+			}
+			else = {
+			    custom_effect_tooltip = HLQ_mobile_tactics_tp
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_tank_development
+		icon = GFX_goal_generic_army_tanks
+		x = 4
+		y = 3
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_motorized_f }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_tank_development"
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_light_armor
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_medium_tanks_f
+		icon = GFX_goal_generic_army_tank_2
+		x = 3
+		y = 4
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_mobile_tactics }
+		prerequisite = { focus = HLQ_tank_development }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_medium_tanks_f"
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_medium_armor
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_officer_reforms
+		icon = GFX_goal_officers
+		x = -2
+		y = 5
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_rocket_artillery_f }
+		prerequisite = { focus = HLQ_cold_training }
+		mutually_exclusive = { focus = HLQ_volksgrenadiers }
+		mutually_exclusive = { focus = HLQ_heavier_tanks }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_officer_reforms"
+			add_ideas = HLQ_officer_reforms_idea
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_volksgrenadiers
+		icon = GFX_goal_MAF_African_Pilots
+		x = 0
+		y = 5
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_cold_training }
+		prerequisite = { focus = HLQ_hill_training }
+		mutually_exclusive = { focus = HLQ_officer_reforms }
+		mutually_exclusive = { focus = HLQ_heavier_tanks }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_volksgrenadiers"
+			add_ideas = HLQ_volksgrenadiers_idea
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_heavier_tanks
+		icon = GFX_focus_generic_army_tanks2
+		x = 2
+		y = 5
+		relative_position_id = HLQ_heer
+		cost = 7.00
+		prerequisite = { focus = HLQ_medium_tanks_f }
+		prerequisite = { focus = HLQ_hill_training }
+		mutually_exclusive = { focus = HLQ_officer_reforms }
+		mutually_exclusive = { focus = HLQ_volksgrenadiers }
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_heavier_tanks"
+			add_ideas = HLQ_heavier_tanks_idea
+		}
+	}
+		
+	### Navy Focuses ###
+	
+	shared_focus = {
+		id = HLQ_kriegsmarine
+		icon = GFX_TRM_kolchak_cap
+		x = 8
+		y = 1
+		relative_position_id = HLQ_wehrmacht
+		cost = 5.00
+		prerequisite = { focus = HLQ_wehrmacht }
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_kriegsmarine"
+			navy_experience = 25
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_convoy_fleet
+		icon = GFX_goal_upgrade_reserves
+		x = -2
+		y = 1
+		relative_position_id = HLQ_kriegsmarine
+		cost = 7.00
+		prerequisite = { focus = HLQ_kriegsmarine }
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_convoy_fleet"
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 200
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_destroyer_fleet
+		icon = GFX_focus_generic_destroyer
+		x = -3
+		y = 2
+		relative_position_id = HLQ_kriegsmarine
+		cost = 7.00
+		prerequisite = { focus = HLQ_convoy_fleet }
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_destroyer_fleet"
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_u_boats
+		icon = GFX_goal_generic_wolf_pack
+		x = -2
+		y = 3
+		relative_position_id = HLQ_kriegsmarine
+		cost = 7.00
+		prerequisite = { focus = HLQ_destroyer_fleet }
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_u_boats"
+			add_tech_bonus = {
+				name = navy_bonus
+				bonus = 1.0
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_the_marine_infantry
+		icon = GFX_goal_generic_amphibious_assault
+		x = 2
+		y = 1
+		relative_position_id = HLQ_kriegsmarine
+		cost = 7.00
+		prerequisite = { focus = HLQ_kriegsmarine }
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_the_marine_infantry"
+			add_tech_bonus = {
+				name = navy_bonus
+				bonus = 1.0
+				uses = 1
+				technology = marines
+				technology = marines2
+				technology = marines3
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_cruisers_f
+		icon = GFX_goal_generic_navy_cruiser
+		x = 3
+		y = 2
+		relative_position_id = HLQ_kriegsmarine
+		cost = 7.00
+		prerequisite = { focus = HLQ_the_marine_infantry }
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_cruisers_f"
+			add_tech_bonus = {
+				name = navy_bonus
+				bonus = 1.0
+				uses = 2
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_battleships_f
+		icon = GFX_goal_generic_navy_battleship
+		x = 2
+		y = 3
+		relative_position_id = HLQ_kriegsmarine
+		cost = 7.00
+		prerequisite = { focus = HLQ_cruisers_f }
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_battleships_f"
+			add_tech_bonus = {
+				name = navy_bonus
+				bonus = 1.0
+				uses = 2
+				category = bb_tech
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_a_small_navy
+		icon = GFX_goal_generic_coastal_navy
+		x = -1
+		y = 2
+		relative_position_id = HLQ_kriegsmarine
+		cost = 7.00
+		prerequisite = { focus = HLQ_convoy_fleet }
+		mutually_exclusive = { focus = HLQ_a_large_navy }
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = fleet_in_being
+					has_tech = base_strike
+					is_researching_technology = fleet_in_being
+					is_researching_technology = base_strike
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_a_small_navy"
+			add_tech_bonus = {
+				name = navdoctrine_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_trade_interdiction
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_a_large_navy
+		icon = GFX_goal_generic_sea_focused_navy
+		x = 1
+		y = 2
+		relative_position_id = HLQ_kriegsmarine
+		cost = 7.00
+		prerequisite = { focus = HLQ_the_marine_infantry }
+		mutually_exclusive = { focus = HLQ_a_small_navy }
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = base_strike
+					has_tech = trade_interdiction
+					is_researching_technology = base_strike
+					is_researching_technology = trade_interdiction
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_a_large_navy"
+			add_tech_bonus = {
+				name = navdoctrine_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_fleet_in_being
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_our_own_shipyard
+		icon = GFX_SIA_maritmesilkroad
+		x = 0
+		y = 3
+		relative_position_id = HLQ_kriegsmarine
+		cost = 7.00
+		prerequisite = { focus = HLQ_a_large_navy focus = HLQ_a_small_navy }
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_our_own_shipyard"
+			if = {
+			    limit = {
+				    any_controlled_state_is_coastal = yes
+			    }
+			    random_owned_controlled_state = {
+				    limit = {
+					    free_building_slots = {
+						    building = dockyard
+						    size > 0
+						    include_locked = yes
+					    }
+				    }
+				    add_extra_state_shared_building_slots = 1
+				    add_building_construction = {
+					    type = dockyard
+					    level = 1
+					    instant_build = yes
+				    }
+			    }
+				random_owned_controlled_state = {
+				    limit = {
+					    free_building_slots = {
+						    building = dockyard
+						    size > 0
+						    include_locked = yes
+					    }
+				    }
+				    add_extra_state_shared_building_slots = 1
+				    add_building_construction = {
+					    type = dockyard
+					    level = 1
+					    instant_build = yes
+				    }
+			    }
+		    }
+			else = {
+			    custom_effect_tooltip = HLQ_dockyard_tp
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_naval_bombers
+		icon = GFX_goal_generic_air_naval_bomber
+		x = -1
+		y = 4
+		relative_position_id = HLQ_kriegsmarine
+		cost = 7.00
+		prerequisite = { focus = HLQ_u_boats }
+		prerequisite = { focus = HLQ_our_own_shipyard }
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_naval_bombers"
+			add_tech_bonus = {
+				name = naval_air_effort
+				bonus = 1.0
+				uses = 1
+				technology = naval_bomber1
+				technology = naval_bomber2
+				technology = naval_bomber3
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_carries_f
+		icon = GFX_goal_generic_navy_carrier
+		x = 1
+		y = 4
+		relative_position_id = HLQ_kriegsmarine
+		cost = 7.00
+		prerequisite = { focus = HLQ_battleships_f }
+		prerequisite = { focus = HLQ_our_own_shipyard }
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_carriefs_f"
+			add_tech_bonus = {
+				name = cv_bonus
+				bonus = 1.0
+				uses = 2
+				category = cv_tech
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = HLQ_expand_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 5
+		relative_position_id = HLQ_kriegsmarine
+		cost = 7.00
+		prerequisite = { focus = HLQ_naval_bombers }
+		prerequisite = { focus = HLQ_carries_f }
+		available = {
+			any_controlled_state_is_coastal = yes
+		}
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HLQ_expand_shipyards"
+			if = {
+			    limit = {
+				    any_controlled_state_is_coastal = yes
+			    }
+			    random_owned_controlled_state = {
+				    limit = {
+					    free_building_slots = {
+						    building = dockyard
+						    size > 0
+						    include_locked = yes
+					    }
+				    }
+				    add_extra_state_shared_building_slots = 1
+				    add_building_construction = {
+					    type = dockyard
+					    level = 1
+					    instant_build = yes
+				    }
+			    }
+				random_owned_controlled_state = {
+				    limit = {
+					    free_building_slots = {
+						    building = dockyard
+						    size > 0
+						    include_locked = yes
+					    }
+				    }
+				    add_extra_state_shared_building_slots = 1
+				    add_building_construction = {
+					    type = dockyard
+					    level = 1
+					    instant_build = yes
+				    }
+			    }
+				random_owned_controlled_state = {
+				    limit = {
+					    free_building_slots = {
+						    building = dockyard
+						    size > 0
+						    include_locked = yes
+					    }
+				    }
+				    add_extra_state_shared_building_slots = 1
+				    add_building_construction = {
+					    type = dockyard
+					    level = 1
+					    instant_build = yes
+				    }
+			    }
+				random_owned_controlled_state = {
+				    limit = {
+					    free_building_slots = {
+						    building = dockyard
+						    size > 0
+						    include_locked = yes
+					    }
+				    }
+				    add_extra_state_shared_building_slots = 1
+				    add_building_construction = {
+					    type = dockyard
+					    level = 1
+					    instant_build = yes
+				    }
+			    }
+		    }
+			else = {
+			    custom_effect_tooltip = HLQ_dockyard_2_tp
+			}
+		}
+	}

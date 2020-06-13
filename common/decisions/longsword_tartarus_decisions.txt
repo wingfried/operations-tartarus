@@ -1,0 +1,23 @@
+longsword_HLQ_meeting_category = {
+	
+	longsword_meet_wingfried = {
+		icon = griffon
+		visible = {
+			original_tag = LSM
+			LSC = {
+				exists = no
+			}
+			LNS = {
+				exists = no
+			}
+		}
+		available = {
+			has_war = no
+			is_ai = no
+		}
+		cost = 1
+		complete_effect = {
+			country_event = { id = tartarus_hellquill.29 }
+		}
+	}
+}

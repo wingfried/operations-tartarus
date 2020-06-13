@@ -1,0 +1,8 @@
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_ara
+	names = { "Il Servizio Segreto" }
+	
+	default = { tag = ARA }
+	available = { original_tag = ARA }
+}

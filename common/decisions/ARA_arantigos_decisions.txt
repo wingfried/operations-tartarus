@@ -1,0 +1,259 @@
+ARA_arantigans_abroad = {
+	ARA_last_legion = {
+		icon = rifles
+		cost = 50
+		fire_only_once = yes
+		days_remove = 5
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			custom_effect_tooltip = ARA_last_legion_tt
+			hidden_effect = {
+				load_oob = ARA_last_legion_OOB
+			}
+		}
+	}
+
+	ARA_true_legion = {
+		icon = rifles
+		cost = 50
+		fire_only_once = yes
+		days_remove = 5
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			custom_effect_tooltip = ARA_true_legion_tt
+			hidden_effect = {
+				load_oob = ARA_true_legion_OOB
+			}
+		}
+	}
+
+	ARA_francistrian_volunteers = {
+		icon = rifles
+		cost = 100
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			custom_effect_tooltip = ARA_francistrian_tt
+			hidden_effect = {
+				load_oob = ARA_francistrian_OOB
+				481 = { add_manpower = -9000 }
+				487 = { add_manpower = -9000 }
+				410 = { add_manpower = -9000 }
+			}
+		}
+	}
+
+	ARA_call_diaspora = {
+		icon = generic_nationalism
+		cost = 50
+		fire_only_once = yes
+		days_remove = 20
+		ai_will_do = {
+			factor = 1
+		}
+		highlight_states = {
+			state = 408
+		}
+		remove_effect = {
+			add_manpower = 25000
+			408 = {
+				add_manpower = 100000
+			}
+		}
+	}
+}
+
+ARA_renaming_cities = {
+	ARA_rename_karthin = {
+		icon = generic_nationalism
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		highlight_states = {
+			state = 371
+		}
+		visible = {
+			371 = {
+				is_owned_by = ARA
+			}
+		}
+		complete_effect = {
+			add_stability = -0.025
+			country_event = arantiga_decision.01
+		}
+	}
+}
+
+ARA_definetely_not_fake_IRI = {
+	ARA_hammer_of_god = {
+		icon = generic_nationalism
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = { has_country_flag = IRI_project_ongoing }
+#			owns_state = #state id for schiesswald plox
+		}
+		complete_effect = {
+			set_country_flag = IRI_project_ongoing
+			country_event = arantiga_decision.11
+		}
+	}
+
+	ARA_miracle_cure = {
+		icon = generic_nationalism
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = { has_country_flag = IRI_project_ongoing }
+		}
+		complete_effect = {
+			set_country_flag = IRI_project_ongoing
+			country_event = arantiga_decision.21
+		}
+	}
+
+	ARA_super_soldiers = {
+		icon = generic_nationalism
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = { has_country_flag = IRI_project_ongoing }
+		}
+		complete_effect = {
+			set_country_flag = IRI_project_ongoing
+			country_event = arantiga_decision.31
+		}
+	}
+
+	ARA_teleportation_device = {
+		icon = generic_nationalism
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			NOT = { has_country_flag = IRI_project_ongoing }
+		}
+		complete_effect = {
+			set_country_flag = IRI_project_ongoing
+			country_event = arantiga_decision.41
+		}
+	}
+}
+
+ARA_return_land_cat = {
+    ARA_return_land = {
+	    icon = generic_nationalism
+	    cost = 25
+	    ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					enemies_strength_ratio > 1.5
+					strength_ratio = { tag = RCT ratio < 1 }
+				}
+			}
+		}
+		visible = {
+		    NOT = {
+		        has_war_with = RCT
+		    }
+		}
+		days_re_enable = 30
+		complete_effect = {
+		    IF = {
+			    limit = {
+				    NOT = {
+				        has_global_flag = river_federation_founded
+					}
+				}
+			    RCT = {
+				    country_event = arantiga.111
+			    }
+			}
+			IF = {
+			    limit = {
+				    has_global_flag = river_federation_founded
+				}
+				every_country = {
+				    limit = {
+					    has_country_flag = river_federation_founder
+					}
+			    	country_event = arantiga.111
+				}
+			}
+		}
+	}
+}
+
+ARA_northern_threat = {
+    ARA_kill_DED = {
+	    icon = generic_nationalism
+	    cost = 25
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					strength_ratio = { tag = DED ratio < 1 }
+				}
+			}
+		}
+		complete_effect = {
+		    declare_war_on = { 
+		        type = annex_everything
+	            target = DED
+			}
+		}
+	}
+	ARA_order2electricboogaloo = {
+	    icon = generic_nationalism
+	    cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		visible = {
+		    owns_state = 456
+			owns_state = 451
+			owns_state = 425
+			owns_state = 427
+			owns_state = 428
+			owns_state = 566
+			owns_state = 426
+			owns_state = 564
+			owns_state = 565
+			owns_state = 419
+			owns_state = 420
+			owns_state = 418
+			owns_state = 417
+			owns_state = 416
+			owns_state = 415
+		}
+		complete_effect = {
+		    country_event = arantiga.109
+		}
+	}
+}
+		
