@@ -1,7 +1,0 @@
-longsword_HLQ_meeting_category = {
-	icon = griffon
-
-	allowed = {
-		original_tag = LSM
-	}
-}

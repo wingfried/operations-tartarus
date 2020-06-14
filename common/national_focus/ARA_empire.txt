@@ -764,7 +764,7 @@
             navy_experience = 50
 			    create_navy_leader = {
                     name = "Erich von Tallonitz"
-	                #portrait_path = "gfx/leaders/"
+	                portrait_path = "gfx/leaders/NLR/Erich.tga"
 	                traits = {}
 	                skill = 2
 	                attack_skill = 2
@@ -772,6 +772,7 @@
 	                maneuvering_skill = 3
 	                coordination_skill = 2
                 }
+			custom_effect_tooltip = ARA_erich_tp
             #Get spirit The Imperial Admiralty (Naval Doctrine research speed +10%, Naval experience gain: +0,05 daily)
 			add_ideas = ARA_imperial_admiralty
 		}
@@ -1775,6 +1776,10 @@
 		y = 1
 		relative_position_id = ARA_what_remains
 		cost = 3.00
+		bypass = {
+		    TRD = { exists = no }
+			FEZ = { exists = no }
+		}
 		prerequisite = { focus = ARA_what_remains }
 		completion_reward = {
             TRD ={ #Arantigan Threat 
@@ -1807,6 +1812,9 @@
 		y = 2
 		relative_position_id = ARA_what_remains
 		cost = 3.00
+		bypass = {
+		    HAU = { exists = no }
+		}
 		prerequisite = { focus = ARA_jewel_of_the_west }
 		completion_reward = {
             HAU = { 
@@ -1873,69 +1881,41 @@
 		y = 1
 		relative_position_id = ARA_what_remains
 		cost = 3.00
+		bypass = {
+		    LSM = { exists = no }
+			LNS = { exists = no }
+			LSC = { exists = no }
+			HLQ = { exists = no }
+		}
 		prerequisite = { focus = ARA_what_remains }
 		completion_reward = {
 		    IF = {
-			    limit = {
-				    LNS = {
-					    exists = yes
-					}
-				}
-                create_wargoal = {
-				    type = annex_everything 
-				    target = LNS
-			    }
-				create_wargoal = {
-				    type = annex_everything 
-				    target = HLQ
-			    }
+			    limit = { LSM = { exists = yes } }
+			create_wargoal = {
+				type = annex_everything 
+				target = LSM
+			}
 			}
 			IF = {
-			    limit = {
-				    LSC = {
-					    exists = yes
-					}
-				}
-                create_wargoal = {
-				    type = annex_everything 
-				    target = LSC
-			    }
-				create_wargoal = {
-				    type = annex_everything 
-				    target = HLQ
-			    }
+			    limit = { LNS = { exists = yes } }
+			create_wargoal = {
+				type = annex_everything 
+				target = LNS
+			}
 			}
 			IF = {
-			    limit = {
-				    LSM = {
-					    exists = yes
-					}
-				}
-                create_wargoal = {
-				    type = annex_everything 
-				    target = LSM
-			    }
-				create_wargoal = {
-				    type = annex_everything 
-				    target = HLQ
-			    }
+			    limit = { LSC = { exists = yes } }
+			create_wargoal = {
+				type = annex_everything 
+				target = LSC
+			}
 			}
 			IF = {
-			    limit = {
-				    LSM = {
-					    exists = no
-					}
-					LNS = {
-					    exists = no
-					}
-					LSC = {
-					    exists = no
-					}
-				}
-				create_wargoal = {
-				    type = annex_everything 
-				    target = HLQ
-			    }
+			    limit = { HLQ = { exists = yes } }
+			create_wargoal = {
+				type = annex_everything 
+				target = HLQ
+			}
 			}
 		}
 	}
@@ -1946,15 +1926,25 @@
 		y = 1
 		relative_position_id = ARA_what_remains
 		cost = 3.00
+		bypass = {
+		    BAN = { exists = no }
+			LUS = { exists = no }
+		}
 		prerequisite = { focus = ARA_what_remains }
 		completion_reward = {
+		    IF = {
+			    limit = { BAN = { exists = yes } }
             create_wargoal = {
 				type = annex_everything 
 				target = BAN
 			}
+			}
+			IF = {
+			    limit = { LUS = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything 
 				target = LUS
+			}
 			}
 		}
 	}
@@ -1965,24 +1955,42 @@
 		y = 2
 		relative_position_id = ARA_what_remains
 		cost = 3.00
+		bypass = {
+		    BRF = { exists = no }
+			GRW = { exists = no }
+			GRU = { exists = no }
+			GRY = { exists = no }
+		}
 		prerequisite = { focus = ARA_break_hellsword }
 		prerequisite = { focus = ARA_cross_creeper_mountains }
 		completion_reward = {
+		    IF = {
+			    limit = { BRF = { exists = yes } }
             create_wargoal = {
 				type = annex_everything 
 				target = BRF
 			}
+			}
+			IF = {
+			    limit = { GRW = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything 
 				target = GRW
 			}
+			}
+			IF = {
+			    limit = { GRU = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything 
 				target = GRU
 			}
+			}
+			IF = {
+			    limit = { GRY = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything 
 				target = GRY
+			}
 			}
 		}
 	}
@@ -2190,19 +2198,33 @@
 		y = 1
 		relative_position_id = ARA_what_remains
 		cost = 3.00
+		bypass = {
+		    SIC = { exists = no }
+			CYA = { exists = no }
+			MIT = { exists = no }
+		}
 		prerequisite = { focus = ARA_what_remains }
 		completion_reward = {
+		    IF = {
+			    limit = { SIC = { exists = yes } }
             create_wargoal = {
 				type = annex_everything 
 				target = SIC
 			}
+			}
+			IF = {
+			    limit = { CYA = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything 
 				target = CYA
 			}
+			}
+			IF = {
+			    limit = { MIT = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything 
 				target = MIT
+			}
 			}
 		}
 	}
@@ -2223,7 +2245,7 @@
 	}
 	focus = {
 	    id = ARA_integrate_the_south
-		icon = GFX_SIA_jungletraining
+		icon = GFX_goal_gaw_south
 		x = 5
 		y = 4
 		relative_position_id = ARA_what_remains
@@ -2296,13 +2318,18 @@
 		y = 1
 		relative_position_id = ARA_what_remains
 		cost = 3.00
+		bypass = {
+		    FAT = { exists = no }
+		}
 		prerequisite = { focus = ARA_what_remains }
 		completion_reward = {
+		    IF = {
+			    limit = { FAT = { exists = yes } }
             create_wargoal = {
 				type = annex_everything 
 				target = FAT
 			}
-			
+			}
 		}
 	}
 	focus = {
@@ -2312,23 +2339,41 @@
 		y = 2
 		relative_position_id = ARA_what_remains
 		cost = 3.00
+		bypass = {
+		    MNC = { exists = no }
+		    NTR = { exists = no }
+			SRS = { exists = no }
+			VED = { exists = no }
+		}
 		prerequisite = { focus = ARA_destroy_failed_republic }
 		completion_reward = {
+		    IF = {
+			    limit = { MNC = { exists = yes } }
             create_wargoal = {
 				type = annex_everything 
 				target = MNC
 			}
+			}
+			IF = {
+			    limit = { NTR = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything 
 				target = NTR
 			}
+			}
+			IF = {
+			    limit = { SRS = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything 
 				target = SRS
 			}
+			}
+			IF = {
+			    limit = { VED = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything 
 				target = VED
+			}
 			}
 		}
 	}
@@ -2741,6 +2786,9 @@
 		prerequisite = { focus = ARA_emperor_of_griffonkind }
 		mutually_exclusive = { focus = ARA_the_last_crusade }
 		available = {
+		    NOT = {
+		        has_war_with = GRF
+		    }
 		    OR = {
 			    RCT = {
 				    AND = {
@@ -2838,69 +2886,125 @@
 		cost = 5.00
 		prerequisite = { focus = ARA_emperor_of_griffonkind }
 		mutually_exclusive = { focus = ARA_detente_with_eastern_ponies }
+		bypass = {
+		    AND = {
+		        LCT = { exists = no }
+				DEP = { exists = no }
+				RCT = { exists = no }
+				BAK = { exists = no }
+				WIT = { exists = no }
+				NIM = { exists = no }
+				FRE = { exists = no }
+				BAR = { exists = no }
+				ZES = { exists = no }
+				OLV = { exists = no }
+				FBK = { exists = no }
+				WAT = { exists = no }
+				FIR = { exists = no }
+				DMT = { exists = no }
+			}
+		}
 		available = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ARA_the_last_crusade"
+			IF = {
+			    limit = { LCT = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything
 				target = LCT
 			}
+		    }
+			IF = {
+			    limit = { DEP = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything
 				target = DEP
 			}
+			}
+			IF = {
+			    limit = { DMT = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything
 				target = DMT
 			}
+			}
+			IF = {
+			    limit = { RCT = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything
 				target = RCT
 			}
+			}
+			IF = {
+			    limit = { BAK = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything
 				target = BAK
 			}
+			}
+			IF = {
+			    limit = { WIT = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything
 				target = WIT
 			}
+			}
+			IF = {
+			    limit = { NIM = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything
 				target = NIM
 			}
+			}
+			IF = {
+			    limit = { FRE = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything
 				target = FRE
 			}
+			}
+			IF = {
+			    limit = { BAR = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything
 				target = BAR
 			}
+			}
+			IF = {
+			    limit = { ZES = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything
 				target = ZES
 			}
+			}
+			IF = {
+			    limit = { OLV = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything
 				target = OLV
 			}
+			}
+			IF = {
+			    limit = { FBK = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything
 				target = FBK
 			}
+			}
+			IF = {
+			    limit = { WAT = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything
 				target = WAT
 			}
+			}
+			IF = {
+			    limit = { FIR = { exists = yes } }
 			create_wargoal = {
 				type = annex_everything
 				target = FIR
 			}
-			create_wargoal = {
-				type = annex_everything
-				target = RIV
 			}
             set_country_flag = ARA_last_crusade
 		}

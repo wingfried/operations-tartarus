@@ -121,7 +121,7 @@ focus_tree = {
 				target = ROU
 			}
 			}
-			
+			custom_effect_tooltip = ARA_herzlander_solidarity
 		}
 	}
 
