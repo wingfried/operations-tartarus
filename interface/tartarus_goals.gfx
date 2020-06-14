@@ -140,4 +140,8 @@ spriteTypes = {
 		name = "GFX_goal_gaw_integrate_aquileia"
 		texturefile = "gfx/interface/goals/goal_gaw_integrate_aquileia.dds"
 	}
+	SpriteType = { 
+		name = "GFX_goal_gaw_south"
+		texturefile = "gfx/interface/goals/goal_gaw_south.dds"
+	}
 }
