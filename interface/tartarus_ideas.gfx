@@ -1,37 +1,4 @@
 spriteTypes = {	
-
-	spriteType = {
-		name = "GFX_idea_HLQ_morgend_longpaw"
-		texturefile = "gfx/interface/ideas/idea_HLQ_morgend_longpaw.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_HLQ_river_breeze"
-		texturefile = "gfx/interface/ideas/idea_HLQ_river_breeze.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_HLQ_vanance_lodernd"
-		texturefile = "gfx/interface/ideas/idea_HLQ_vanance_lodernd.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_HLQ_ferrous_adler"
-		texturefile = "gfx/interface/ideas/idea_HLQ_ferrous_adler.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_HLQ_eisen_silberkrone"
-		texturefile = "gfx/interface/ideas/idea_HLQ_eisen_silberkrone.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_HLQ_beakyarov"
-		texturefile = "gfx/interface/ideas/idea_HLQ_beakyarov.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_HLQ_black_knights"
-		texturefile = "gfx/interface/ideas/idea_HLQ_black_knights.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_HLQ_valkist"
-		texturefile = "gfx/interface/ideas/idea_HLQ_valkist.dds"
-	}
 	SpriteType = {
 		name = "GFX_idea_industrial_prop"
 		texturefile = "gfx/interface/ideas/industrial_prop.tga"
@@ -79,11 +46,6 @@ spriteTypes = {
     SpriteType = {
 		name = "GFX_idea_ARA_forever"
 		texturefile = "gfx/interface/ideas/ARA_forever.dds"
-    }
-	
-	SpriteType = {
-		name = "GFX_idea_ARA_golden_dorotheos"
-		texturefile = "gfx/interface/ideas/idea_ARA_golden_dorotheos.dds"
     }
 	
 	SpriteType = {

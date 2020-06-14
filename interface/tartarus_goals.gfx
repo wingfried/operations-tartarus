@@ -1,49 +1,5 @@
 spriteTypes = {	
 
-	spriteType = {
-		name = "GFX_goal_lushi_anschluss"
-		texturefile = "gfx/interface/goals/goal_lushi_anschluss.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_marry_countess"
-		texturefile = "gfx/interface/goals/goal_marry_countess.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_protect_cyan"
-		texturefile = "gfx/interface/goals/goal_protect_cyan.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_redmenace_knife"
-		texturefile = "gfx/interface/goals/goal_redmenace_knife.dds"
-	}
-	SpriteType = { 
-		name = "GFX_goal_HLQ_integralist_focus"
-		texturefile = "gfx/interface/goals/goal_HLQ_integralist_focus.dds"
-	}
-	SpriteType = { 
-		name = "GFX_goal_HLQ_eagle"
-		texturefile = "gfx/interface/goals/GFX_goal_HLQ_eagle.dds"
-	}
-	SpriteType = { 
-		name = "GFX_goal_HLQ_hellquill_kingdom"
-		texturefile = "gfx/interface/goals/goal_HLQ_hellquill_kingdom.dds"
-	}
-	SpriteType = { 
-		name = "GFX_goal_HLQ_create_sturmpferde"
-		texturefile = "gfx/interface/goals/goal_HLQ_create_sturmpferde.dds"
-	}
-	SpriteType = { 
-		name = "GFX_goal_HLQ_black_knights"
-		texturefile = "gfx/interface/goals/goal_HLQ_black_knights.dds"
-	}
-	SpriteType = { 
-		name = "GFX_goal_tart_secret_police"
-		texturefile = "gfx/interface/goals/goal_tart_secret_police.dds"
-	}
-	SpriteType = { 
-		name = "GFX_goal_sturmtruppen"
-		texturefile = "gfx/interface/goals/goal_sturmtruppen.dds"
-	}
 	SpriteType = { 
 		name = "GFX_dorotheos_focus"
 		texturefile = "gfx/interface/goals/dorotheos_focus.dds"

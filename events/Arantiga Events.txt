@@ -268,7 +268,6 @@ country_event = { #Dreams flavour event
 	trigger = {
 		tag = ARA
 		has_country_flag = right_to_rule
-		mean_time_to_happen = { days = 20 }
 		}
 	fire_only_once = yes
 	option = {
