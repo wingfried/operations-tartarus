@@ -1,4 +1,4 @@
-﻿name="EaW - Operation Tartarus"
+﻿name="Griffonia At War: A Submod for EaW"
 path="mod/operations-tartarus/"
 dependencies = { "Equestria at War" }
 tags={
