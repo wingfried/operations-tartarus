@@ -344,7 +344,13 @@ focus_tree = {
 		relative_position_id = ARA_right_to_rule
 		cost = 5.00
 		prerequisite = { focus = ARA_right_to_rule }
-
+		available = {
+			401 = { is_owned_and_controlled_by = ROOT }
+			500 = { is_owned_and_controlled_by = ROOT }
+			673 = { is_owned_and_controlled_by = ROOT }
+			400 = { is_owned_and_controlled_by = ROOT }
+			391 = { is_owned_and_controlled_by = ROOT }
+		}
 		completion_reward = {	
 			create_wargoal = {
 				type = annex_everything
