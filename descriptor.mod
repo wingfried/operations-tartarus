@@ -4,7 +4,7 @@ tags={
 	"Gameplay"
 	"Events"
 }
-name="Griffonia At War: A Submod for EaW"
+name="EaW - Griffonia At War"
 supported_version="1.9.*"
 dependencies = {  
 	"Equestria at War"
