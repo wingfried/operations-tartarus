@@ -3318,7 +3318,6 @@ country_event = { #Last Deal
 		custom_effect_tooltip = ARA_machiavelli_tp
 		hidden_effect = {
 			set_country_flag = ARA_machiavelli_flag
-			load_oob = ARA_de_charbons_mercs_OOB
 			IF = {
 			    limit = {
 				    FLO = {
