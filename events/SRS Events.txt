@@ -279,39 +279,6 @@ country_event = {
 }		
 
 country_event = {
-	id = srs_simpleevent.1
-	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_simpleevent.1"}
-	title = srs_simpleevent.1.t
-	desc = srs_simpleevent.1.d
-	picture = GFX_event_medieval_tower
-	is_triggered_only = yes
-	option = {
-		name = srs_simpleevent.1.a
-		add_political_power = -50
-		swap_ideas = {
-		    remove_idea = SRS_DOC_1
-		    add_idea = SRS_DOC_2
-		}
-	}
-	option = {
-		name = srs_simpleevent.1.b
-		remove_unit_leader = 9870
-		swap_ideas = {
-		    remove_idea = SRS_DOC_1
-		    add_idea = SRS_DOC_3
-		}
-	}
-	option = {
-		name = srs_simpleevent.1.c
-		remove_unit_leader = 9871		
-		swap_ideas = {
-		    remove_idea = SRS_DOC_1
-		    add_idea = SRS_DOC_4
-		}
-	}
-}
-
-country_event = {
 	id = srs_simpleevent.2
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_simpleevent.2"}
 	title = srs_simpleevent.2.t
