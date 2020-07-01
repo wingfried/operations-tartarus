@@ -3221,7 +3221,7 @@ focus_tree = {
 #UNIVERSAL MILITARY TREE#
 #########################
 
-	focus = {
+focus = {
 		id = SRS_lessons_of_the_civil_war
 		icon = GFX_focus_generic_military_mission
 		available = {
@@ -3306,7 +3306,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		    remove_ideas = SRS_DOC_2
 			add_manpower = -1000
 			add_command_power  = -60
         }
@@ -3367,45 +3366,9 @@ focus_tree = {
 			factor = 12
 		}
 		
-		completion_reward = {	
-		        hidden_effect = { add_ideas = SRS_general_skills_up }
-			custom_effect_tooltip = SRS_generals_skills_up			
-	    }	
-	}
-	
-	focus = {
-		id = SRS_reconsider_chemical_weaponry
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = SRS_Retire_disloyal_lieutenants }
-		prerequisite = { focus = SRS_revolutionary_discipline }
-		x = 26
-		y = 23
-		cost = 7
-		ai_will_do = {
-			factor = 12
-		}
-	    completion_reward = {
-		    add_ideas = SRS_military_gas
-			hidden_effect = {
-			    add_ideas = SRS_military_gas_cruch
-			}
-	    }
-	}
-	
-	focus = {
-		id = SRS_new_military_talent
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = SRS_Retire_disloyal_lieutenants }
-		prerequisite = { focus = SRS_revolutionary_discipline }
-		x = 30
-		y = 23
-		cost = 5
-		ai_will_do = {
-			factor = 12
-		}
 		completion_reward = {
-		    custom_effect_tooltip = SRS_two_experts
-		}		
+			remove_ideas = SRS_DOC_2
+	    }	
 	}
 	
 	focus = {
@@ -3520,12 +3483,8 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-		    custom_effect_tooltip = SRS_EW_cruch3
 		    add_ideas = SRS_experimental_warfare_2
-			hidden_effect = {
-		        add_ideas = SRS_experimental_warfare_cruch
-            }			
-		}
+        }			
 	}
 	
 	focus = {
@@ -3738,8 +3697,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-            custom_effect_tooltip = SRS_IW_cruch1
-		    custom_effect_tooltip = SRS_emergency_conscription			
+            custom_effect_tooltip = SRS_IW_cruch1		
 		    hidden_effect = {
 		        if = {
                     limit = {
