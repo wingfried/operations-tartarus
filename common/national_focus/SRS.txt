@@ -3508,10 +3508,9 @@ focus = {
                     gwtank = 1
                 }    
 		    }
-		    custom_effect_tooltip = SRS_tankdiv1			
-            hidden_effect = {
-                country_event = { id = srs_simpleevent.3 days = 1 }			
-		        load_oob = "SRS_tanks"
+		    custom_effect_tooltip = SRS_tankdiv1
+		    hidden_effect = {
+		    	load_oob = "SRS_tanks"
 		    }
 		}
 	}
@@ -4134,8 +4133,7 @@ focus = {
 		        custom_effect_tooltip = SRS_EW_cruch6			
 		    }
             custom_effect_tooltip = SRS_tankdiv2
-            hidden_effect = {
-                country_event = { id = srs_simpleevent.2 days = 1 }			
+            hidden_effect = {			
 		        load_oob = "SRS_heavy_tanks"
 		        if = {
 		            limit = {
