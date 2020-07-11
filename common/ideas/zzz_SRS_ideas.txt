@@ -481,7 +481,7 @@ ideas = {
 		}
 		
 		SRS_infantry_warfare_1 = {
-			picture = unhappy_army_3
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1
 			equipment_bonus = {
@@ -495,7 +495,7 @@ ideas = {
 		
 	    }
 		SRS_infantry_warfare_2a = {
-			picture = unhappy_army_3
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -512,7 +512,7 @@ ideas = {
 	    }
 
 		SRS_infantry_warfare_2b = {
-			picture = unhappy_army_3
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1
 				modifier = {
@@ -531,7 +531,7 @@ ideas = {
 	    } 
 
 		SRS_infantry_warfare_2c = {
-			picture = unhappy_army_3
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1
 				modifier = {
@@ -554,7 +554,7 @@ ideas = {
 		
 
 		SRS_infantry_warfare_3a = {
-			picture = unhappy_army_3
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -574,7 +574,7 @@ ideas = {
 	    }
 		
 		SRS_infantry_warfare_3c = {
-			picture = unhappy_army_3
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1
 				modifier = {
@@ -599,7 +599,7 @@ ideas = {
 	    }		
 
 		SRS_infantry_warfare_4a = {
-			picture = unhappy_army_3
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -623,7 +623,7 @@ ideas = {
 
 
 		SRS_infantry_warfare_4c = {
-			picture = unhappy_army_3
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1
 				modifier = {
@@ -652,7 +652,7 @@ ideas = {
 	    }	
 
 		SRS_infantry_warfare_5a = {
-			picture = unhappy_army_3
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1
 				modifier = {
@@ -676,7 +676,7 @@ ideas = {
 	    }
 	
 		SRS_infantry_warfare_6 = {
-			picture = unhappy_army_3
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1
 				modifier = {
@@ -707,7 +707,7 @@ ideas = {
 	    }	
 
 		SRS_modern_warfare_1 = {
-			picture = generic_acquire_tanks
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1			
 			modifier = {
@@ -716,7 +716,7 @@ ideas = {
 	  	} 
 
 		SRS_modern_warfare_2a = {
-			picture = generic_acquire_tanks
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1			
 			modifier = {
@@ -730,7 +730,7 @@ ideas = {
 	  	}
 
 		SRS_modern_warfare_2b = {
-			picture = generic_acquire_tanks
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -746,7 +746,7 @@ ideas = {
 	  	    }
         }
 		SRS_modern_warfare_3a = {
-			picture = generic_acquire_tanks
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -760,7 +760,7 @@ ideas = {
         }
 
 		SRS_modern_warfare_3b = {
-			picture = generic_acquire_tanks
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -777,7 +777,7 @@ ideas = {
         }		
 		
 		SRS_modern_warfare_4a = {
-			picture = generic_acquire_tanks
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1			
 			modifier = {
@@ -792,7 +792,7 @@ ideas = {
 	  	    }			
 	  	}
 		SRS_modern_warfare_4b = {
-			picture = generic_acquire_tanks
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1			
 			modifier = {
@@ -810,7 +810,7 @@ ideas = {
 	  	}
 
 		SRS_modern_warfare_5a = {
-			picture = generic_acquire_tanks
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1			
 			modifier = {
@@ -829,7 +829,7 @@ ideas = {
 	  	}
 
 		SRS_modern_warfare_5b = {
-			picture = generic_acquire_tanks
+			picture = done
 			allowed = { always = no }
 			removal_cost = -1			
 			modifier = {
@@ -851,7 +851,7 @@ ideas = {
 	  	}
 
 		SRS_doctrine_res_bonus = {
-			picture = CHN_plan_east_prep
+			picture = done
 			allowed = {
 				always = no
 			}
@@ -865,7 +865,7 @@ ideas = {
 		}
 
 		SRS_experimental_warfare_2 = {
-		    picture = CZE_planning_bonus
+		    picture = done
 			allowed = {
 				always = no
 			}
@@ -878,7 +878,7 @@ ideas = {
         }
 
 		SRS_experimental_warfare_3a = {
-		    picture = CZE_planning_bonus
+		    picture = done
 			allowed = {
 				always = no
 			}
@@ -896,7 +896,7 @@ ideas = {
         }
 		
 		SRS_experimental_warfare_3b = {
-		    picture = CZE_planning_bonus
+		    picture = done
 			allowed = {
 				always = no
 			}
@@ -916,7 +916,7 @@ ideas = {
         }		
 
 		SRS_experimental_warfare_3c = {
-		    picture = CZE_planning_bonus
+		    picture = done
 			allowed = {
 				always = no
 			}
@@ -936,7 +936,7 @@ ideas = {
             }
         }
 		SRS_experimental_warfare_3d = {
-		    picture = CZE_planning_bonus
+		    picture = done
 			allowed = {
 				always = no
 			}
@@ -957,7 +957,7 @@ ideas = {
         }
 
 		SRS_experimental_warfare_4a = {
-		    picture = CZE_planning_bonus
+		    picture = done
 			allowed = {
 				always = no
 			}
@@ -975,7 +975,7 @@ ideas = {
         }
 
 		SRS_experimental_warfare_4b = {
-		    picture = CZE_planning_bonus
+		    picture = done
 		    allowed = {
 				always = no
 			}
@@ -998,7 +998,7 @@ ideas = {
         }
 
 		SRS_experimental_warfare_4c = {
-		    picture = CZE_planning_bonus
+		    picture = done
 			allowed = {
 				always = no
 			}
@@ -1016,7 +1016,7 @@ ideas = {
         }
 
 		SRS_experimental_warfare_4d = {
-		    picture = CZE_planning_bonus
+		    picture = done
 			allowed = {
 				always = no
 			}
@@ -1037,7 +1037,7 @@ ideas = {
         }
 
 		SRS_experimental_warfare_5a = {
-		    picture = CZE_planning_bonus
+		    picture = done
 			allowed = {
 				always = no
 			}
@@ -1057,7 +1057,7 @@ ideas = {
         }
 
 		SRS_experimental_warfare_5b = {
-		    picture = CZE_planning_bonus
+		    picture = done
 			allowed = {
 				always = no
 			}
@@ -1078,7 +1078,7 @@ ideas = {
         }		
 		
 		SRS_experimental_warfare_5c = {
-		    picture = CZE_planning_bonus
+		    picture = done
 			allowed = {
 				always = no
 			}
@@ -1104,22 +1104,6 @@ ideas = {
             }
         }				
 		
-	hidden_ideas = {
-		SRS_general_skills_up = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-
-			modifier = {
-                army_leader_start_attack_level= 1 
-				army_leader_start_planning_level= 1 
-				army_leader_start_defense_level= 1 
-				army_leader_start_logistics_level= 1 
-			}
-		}
-    
-    }
 	
 	hidden_ideas = {	
 		SRS_infantry_warfare_cruch = {
