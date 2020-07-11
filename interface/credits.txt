@@ -1,28 +1,26 @@
-﻿#Griffonia At War: A Submod for Equestria At War
+#Griffonia At War
+#A Submod for Equestria At War
 #Version 0.1.0: Arantigos Reborn
 
-#CODERS
+#ROYALS
+Wingfried
+DidiCody
+
+#ARANTIGA
+#PROJECT LEAD
+AdDur
+
+#CONTRIBUTERS
 Tungsten Mind
 Jeff Jefferson
 Haile
 Turbs
 Elegioneer
 Okami Wolf
-
-#WRITERS
 Telly
-AdDur
-Haile
 Wingfried
 Nagerleral
-
-#GFX ARTISTS
-Elegioneer
 Tito
-Tungsten
-
-#Testers:
-AdDur
 Nakoi
 
 #Equestria At War for Hearts of Iron IV
