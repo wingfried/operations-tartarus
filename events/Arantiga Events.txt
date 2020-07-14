@@ -356,18 +356,38 @@ country_event = { #going lower
 			    }
 				}
 				}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_game_rule = {
+				    rule = ARA_ai_behavior
+				    option = ARANTIGA_REBORN
+			    }
+			}
+		}
 	}
 	option = {
 	name = arantiga.014.b
 	#custom_effect_tooltip = ara_tooltip_voices_clue_2
-			hidden_effect = {
-				ARA = {
+		hidden_effect = {
+			ARA = {
 		        country_event = { 
 			        id = arantiga.016
 					days = 1
 			    }
-				}
-				}
+			}
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				has_game_rule = {
+				    rule = ARA_ai_behavior
+				    option = ARANTIGA_REBORN
+			    }
+			}
+		}
 	}
 	}
 
@@ -401,6 +421,9 @@ country_event = { #going lower
 					days = 5
 			    }
 		    }
+		ai_chance = {
+			factor = 100
+		}
 		}
 		}
 		
@@ -421,6 +444,9 @@ country_event = { #going lower
 			    }
 				}
 				}
+		ai_chance = {
+			factor = 100
+		}
 	}
 	option = {
 	name = arantiga.016.b
@@ -433,6 +459,9 @@ country_event = { #going lower
 			    }
 				}
 				}
+		ai_chance = {
+			factor = 100
+		}
 	}
 	}
 	
@@ -453,6 +482,9 @@ country_event = { #going lower
 			    }
 				}
 				}
+		ai_chance = {
+			factor = 100
+		}
 	}
 	}
 	
@@ -473,6 +505,9 @@ country_event = { #going lower
 			    }
 				}
 				}
+	ai_chance = {
+		factor = 100
+	}
 	}
 	}
 
@@ -526,6 +561,9 @@ country_event = { #going lower
 			    }
 				}
 				}
+	ai_chance = {
+			factor = 100
+	}
 	}
 	option = {
 	name = arantiga.019.b
@@ -604,6 +642,9 @@ country_event = { #going lower
 			    }
 				}
 				}
+	ai_chance = {
+		factor = 100
+	}
 	}
 	}
 
@@ -658,6 +699,9 @@ country_event = { #going lower
 			    }
 				}
 				}
+	ai_chance = {
+		factor = 100
+	}
 	}
 	option = {
 	name = arantiga.023.b
@@ -1458,6 +1502,9 @@ country_event = { #Griffonstone Archives
 					    set_autonomy = { target = NTR autonomy_state = autonomy_satellite }
 					}
 				}
+				ai_chance = {
+			        factor = 100
+		        }
 			}
 		option = {
 		    name = arantiga.056.b
@@ -2387,7 +2434,10 @@ country_event = { # Detente
 			}
 			681 = {
 				add_compliance = 30
-			}
+			}	
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 	option = {
@@ -2715,6 +2765,9 @@ country_event = { # Detente
 				    }
 				}
 			}
+		}
+		ai_chance = {
+			factor = 100
 		}
 	}
 }
@@ -3795,6 +3848,9 @@ country_event = { #Victory over the necromancers
 			load_focus_tree = generic_griffon_focus
 		    }
 		}
+		ai_chance = {
+			factor = 50
+		}
 	}
 	option = {
 		name = 	arantiga.109.b
@@ -3805,23 +3861,22 @@ country_event = { #Victory over the necromancers
 		}
 		custom_effect_tooltip = ARA_DED_to_NTR
 		hidden_effect = {
-		NTR = {
-		    transfer_state = 456
-			transfer_state = 451
-			transfer_state = 425
-			transfer_state = 427
-			transfer_state = 428
-			transfer_state = 566
-			transfer_state = 426
-			transfer_state = 564
-			transfer_state = 565
-			transfer_state = 419
-			transfer_state = 420
-			transfer_state = 418
-			transfer_state = 417
-			transfer_state = 416
-			transfer_state = 415
-			#hidden_effect = {
+		    NTR = {
+		        transfer_state = 456
+			    transfer_state = 451
+			    transfer_state = 425
+			    transfer_state = 427
+			    transfer_state = 428
+			    transfer_state = 566
+			    transfer_state = 426
+			    transfer_state = 564
+			    transfer_state = 565
+			    transfer_state = 419
+			    transfer_state = 420
+			    transfer_state = 418
+			    transfer_state = 417
+			    transfer_state = 416
+			    transfer_state = 415
 			    add_state_core = 456
 			    add_state_core = 451
 			    add_state_core = 425
@@ -3837,7 +3892,10 @@ country_event = { #Victory over the necromancers
 			    add_state_core = 417
 			    add_state_core = 416
 			    add_state_core = 415
-			}
+		    }
+		}
+		ai_chance = {
+			factor = 50
 		}
 	}
 }
