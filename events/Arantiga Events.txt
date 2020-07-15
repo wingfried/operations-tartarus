@@ -5308,6 +5308,7 @@ country_event = { #Too Much It Seemed
 	option = {
 		name = 	arantiga_decision.30.a
 		custom_effect_tooltip = ARA_regret_perhaps_tt
+		clr_country_flag = IRI_project_ongoing
 	}
 }
 
