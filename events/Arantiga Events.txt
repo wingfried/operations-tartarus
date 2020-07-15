@@ -789,6 +789,7 @@ country_event = { #No remorse
 	add_stability = -0.05
 	add_war_support = -0.05
 	remove_unit_leader = 1336
+	kill_ideology_leader = neutrality
 	
 	}
 	}
@@ -3561,6 +3562,9 @@ country_event = { #Turned Down
 		create_wargoal = {
 		    type = annex_everything
 			target = JER
+		}
+		hidden_effect = {
+		    complete_national_focus = ARA_march_west
 		}
 	}
 }
