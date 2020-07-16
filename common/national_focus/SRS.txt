@@ -26,7 +26,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+		select_effect = {
+			country_event = {
+				id = srs_sickoflavour.1
+				days = 14
+			}
+			country_event = {
+				id = srs_sickoflavour.2
+				days = 28
+			}
+		}
 		completion_reward = {
             country_event = { id = srs_sickocivwar.1 }
 		}
