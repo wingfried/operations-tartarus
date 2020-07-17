@@ -1,0 +1,11 @@
+﻿ l_english:
+ ### WATERTOWNS ###
+ #Parties
+ WAT_neutrality_party:0 "Council of Keepers"
+ WAT_neutrality_party_long:0 "Council of Keepers - Modernist"
+ WAT_communism_party:0 "Council of Keepers"
+ WAT_communism_party_long:0 "Council of Keepers - Traditionalist"
+ WAT_democratic_party:0 "Council of Keepers"
+ WAT_democratic_party_long:0 "Council of Keepers - Moderate"
+ WAT_fascism_party:0 "Council of Keepers"
+ WAT_fascism_party_long:0 "Council of Keepers - Religious\n§gThe clergy are respected by all, even by the modernists who would otherwise seek to do away with the old traditions of religion. Gandalf seeks no involvement in politics beyond a tentative alliance with Keeper Elia of Freshwater Cavern, but many believe that if his influence grows too strong, the Watertowns will find itself under his rule...§!"
