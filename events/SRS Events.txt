@@ -178,7 +178,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.2"}
 	title = srs_sickoflavour.2.t
 	desc = srs_sickoflavour.2.d
-	picture = GFX_event_poshel_nahui
+	picture = GFX_event_griffon_soldier
 	is_triggered_only = yes
 	option = {
 		name = srs_sickoflavour.2.a	
