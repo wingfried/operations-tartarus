@@ -296,6 +296,15 @@ focus_tree = {
 		relative_position_id = ARA_right_to_rule
 		cost = 5.00
 		prerequisite = { focus = ARA_right_to_rule }
+		bypass = {
+		    AND = {
+		        401 = { is_owned_by = AVI }
+			    500 = { is_owned_by = AVI }
+			    673 = { is_owned_by = AVI }
+			    400 = { is_owned_by = AVI }
+			    391 = { is_owned_by = AVI }
+			}
+		}
 
 		completion_reward = {
 		create_wargoal = {
