@@ -381,7 +381,6 @@ focus_tree = {
 		
 		completion_reward = {
 			remove_ideas = SRS_doubt_in_sickleclaw_1
-			add_political_power = 100
 		}
 	}
 
@@ -397,22 +396,17 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = -200
 			swap_ideas = {
-			add_idea = SRS_levee_en_masse_diet
-			remove_idea = SRS_levee_en_masse
+				add_idea = SRS_levee_en_masse_diet
+				remove_idea = SRS_levee_en_masse
 			}
-			every_state = {
-			limit = { 
-				OR = {
-					is_core_of = VED
-					is_core_of = FAT
-				}
-			}
-			add_core_of = ROOT
-			}
+			VED = { add_to_ROOT_potential_cores = yes }
+			FAT = { add_to_ROOT_potential_cores = yes }
 		}
 	}
+			
+		
+	
 		
 	focus = {
 		id = SRS_economic_reform
@@ -484,7 +478,7 @@ focus_tree = {
 			factor = 12
 		}
 	}
-
+	
 	focus = {
 		id = SRS_commie_yeetbrantbeak
 		icon = GFX_goal_step_on_skull
@@ -501,6 +495,7 @@ focus_tree = {
 				type = annex_everything
 				target = MNC
 			}
+			MNC = { add_to_ROOT_potential_cores = yes }
 		}
 	}
 	
@@ -519,7 +514,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = SRS_doubt_in_sickleclaw_1
 			add_political_power = 100
 		}
 	}
