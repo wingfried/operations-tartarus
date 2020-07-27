@@ -1826,7 +1826,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = SRS_breab_1
+			add_ideas = SRS_breab_2
 		}
 	}
 
@@ -1843,8 +1843,8 @@ focus_tree = {
 		
 		completion_reward = {
 			swap_ideas = {
-				add_idea = SRS_breab_2
-				remove_idea = SRS_breab_1
+				add_idea = SRS_breab_1
+				remove_idea = SRS_breab_2
 			}
 		}
 	}
