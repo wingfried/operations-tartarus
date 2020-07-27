@@ -1655,6 +1655,7 @@ equipment_bonus = {
 			
 			modifier = { 
 				conscription_factor = 0.05
+				stability_factor = 0.1
 			}
 		}
 		
@@ -1667,7 +1668,6 @@ equipment_bonus = {
 			
 			modifier = { 
 				stability_factor = 0.1
-				conscription_factor = 0.05
 			}
 		}
 		
