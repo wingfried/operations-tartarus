@@ -1942,45 +1942,6 @@ equipment_bonus = {
 			}
 		}
 		
-		SRS_shits_fucked_moderate_1 = {
-			picture = generic_communism_drift_bonus
-			removal_cost = -1
-			available = {
-				always = yes
-			}
-			
-			modifier = { 
-				stability_factor = -0.2
-				political_power_cost = 0.5
-			}
-		}
-		
-		SRS_shits_fucked_moderate_2 = {
-			picture = generic_communism_drift_bonus
-			removal_cost = -1
-			available = {
-				always = yes
-			}
-			
-			modifier = { 
-				stability_factor = -0.15
-				political_power_cost = 0.3
-			}
-		}
-		
-		SRS_shits_fucked_moderate_3 = {
-			picture = generic_communism_drift_bonus
-			removal_cost = -1
-			available = {
-				always = yes
-			}
-			
-			modifier = { 
-				stability_factor = -0.10
-				political_power_cost = 0.2
-			}
-		}
-		
 		SRS_shits_fucked_radical_1 = {
 			picture = officers_purged
 			removal_cost = -1
