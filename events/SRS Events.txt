@@ -297,8 +297,8 @@ country_event = {
 			add_stability = 0.2
 			add_political_power = -100
 			add_ideas = SRS_doubt_in_sickleclaw
-			add_ideas = SRS_dissident_officers_1
-			add_ideas = SRS_dissident_soldiers_1
+			add_ideas = SRS_UITRAF_1
+			add_ideas = SRS_DOC_1
 	}
 }		
 
