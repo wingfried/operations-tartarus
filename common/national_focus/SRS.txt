@@ -1804,7 +1804,77 @@ focus_tree = {
 #REPUBLICAN INDUSTRY#
 #####################
 	
+	focus = {
+		id = SRS_market_socialism
+		icon = GFX_
+		prerequisite = { focus = SRS_harmonic_socialism }
+		x = 28
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
 	
+	focus = {
+		id = SRS_centralize_communal_factories
+		icon = GFX_
+		prerequisite = { focus = SRS_market_socialism }
+		x = 28
+		y = 11
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_cut_social_spending
+		icon = GFX_
+		prerequisite = { focus = SRS_centralize_communal_factories }
+		x = 28
+		y = 12
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_education_funding
+		icon = GFX_
+		prerequisite = { focus = SRS_cut_social_spending }
+		x = 28
+		y = 13
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_far_northern_academy
+		icon = GFX_
+		prerequisite = { focus = SRS_education_funding }
+		x = 28
+		y = 14
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_come_again_no_more
+		icon = GFX_
+		prerequisite = { focus = SRS_far_northern_academy }
+		x = 28
+		y = 16
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
 
 ############################
 #UNVERSAL HERZLAND CONQUEST#
