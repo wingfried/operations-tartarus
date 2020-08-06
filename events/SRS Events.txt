@@ -302,34 +302,3 @@ country_event = {
 	}
 }		
 
-country_event = {
-	id = srs_simpleevent.2
-	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_simpleevent.2"}
-	title = srs_simpleevent.2.t
-	desc = srs_simpleevent.2.d
-	hidden = yes
-	is_triggered_only = yes
-	immediate = {
-	add_equipment_to_stockpile = {
-		type = super_heavy_tank_equipment_1
-		producer = SRS
-		amount = 500
-		}
-	}
-}
-
-country_event = {
-	id = srs_simpleevent.3
-	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_simpleevent.3"}
-	title = srs_simpleevent.3.t
-	desc = srs_simpleevent.3.d
-	hidden = yes
-	is_triggered_only = yes
-	immediate = {
-	add_equipment_to_stockpile = {
-		type = light_tank_equipment_1
-		producer = SRS
-		amount = 2000
-		}
-	}
-}				
