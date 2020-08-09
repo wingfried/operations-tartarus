@@ -1875,7 +1875,299 @@ focus_tree = {
 			factor = 12
 		}
 	}
-
+	
+	focus = {
+		id = SRS_local_industry
+		icon = GFX_
+		prerequisite = { focus = SRS_market_socialism }
+		x = 24
+		y = 10
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_tundra_roads
+		icon = GFX_
+		prerequisite = { focus = SRS_local_industry }
+		x = 23
+		y = 11
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_tundra_development
+		icon = GFX_
+		prerequisite = { focus = SRS_tundra_roads }
+		x = 23
+		y = 12
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_forest_roads
+		icon = GFX_
+		prerequisite = { focus = SRS_local_industry }
+		x = 25
+		y = 11
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_forest_industry
+		icon = GFX_
+		prerequisite = { focus = SRS_forest_roads }
+		x = 25
+		y = 12
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_stage_two
+		icon = GFX_
+		prerequisite = { focus = SRS_forest_industry }
+		prerequisite = { focus = SRS_tundra_development }
+		x = 24
+		y = 13
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_better_electronics
+		icon = GFX_
+		prerequisite = { focus = SRS_stage_two }
+		x = 23
+		y = 14
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_better_industrial_equipment
+		icon = GFX_
+		prerequisite = { focus = SRS_stage_two }
+		x = 25
+		y = 14
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_natural_resources
+		icon = GFX_
+		prerequisite = { focus = SRS_better_electronics }
+		prerequisite = { focus = SRS_better_industrial_equipment }
+		x = 24
+		y = 15
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_civilian_industry_development
+		icon = GFX_
+		prerequisite = { focus = SRS_better_electronics }
+		prerequisite = { focus = SRS_better_industrial_equipment }
+		x = 22
+		y = 15
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_military_industry_development
+		icon = GFX_
+		prerequisite = { focus = SRS_better_electronics }
+		prerequisite = { focus = SRS_better_industrial_equipment }
+		x = 26
+		y = 15
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_black_thing_under_us
+		icon = GFX_
+		prerequisite = { focus = SRS_market_socialism }
+		x = 32
+		y = 10
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_off_the_shore_of_veteborg
+		icon = GFX_
+		prerequisite = { focus = SRS_black_thing_under_us }
+		x = 34
+		y = 11
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_round_the_hauklands
+		icon = GFX_
+		prerequisite = { focus = SRS_off_the_shore_of_veteborg }
+		x = 33
+		y = 12
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_in_the_heartlands
+		icon = GFX_
+		prerequisite = { focus = SRS_off_the_shore_of_veteborg }
+		x = 35
+		y = 12
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_and_in_aquileia
+		icon = GFX_
+		prerequisite = { focus = SRS_off_the_shore_of_veteborg }
+		x = 34
+		y = 13
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_ostfloy_infrastructure
+		icon = GFX_
+		prerequisite = { focus = SRS_black_thing_under_us }
+		x = 31
+		y = 11
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_start_extracting
+		icon = GFX_
+		prerequisite = { focus = SRS_ostfloy_infrastructure }
+		x = 31
+		y = 12
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_money_coming_in
+		icon = GFX_
+		prerequisite = { focus = SRS_start_extracting }
+		x = 31
+		y = 13
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_backup_plan
+		icon = GFX_
+		prerequisite = { focus = SRS_money_coming_in }
+		x = 31
+		y = 14
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_invest_in_synthetic_rubber
+		icon = GFX_
+		prerequisite = { focus = SRS_backup_plan }
+		x = 31
+		y = 15
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_military_investments
+		icon = GFX_
+		prerequisite = { focus = SRS_money_coming_in }
+		x = 34
+		y = 14
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_start_up_air_industry
+		icon = GFX_
+		prerequisite = { focus = SRS_military_investments }
+		x = 33
+		y = 15
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_start_up_naval_industry
+		icon = GFX_
+		prerequisite = { focus = SRS_military_investments }
+		x = 35
+		y = 15
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
 ############################
 #UNVERSAL HERZLAND CONQUEST#
 ############################
