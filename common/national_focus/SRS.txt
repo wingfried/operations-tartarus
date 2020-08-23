@@ -2157,7 +2157,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SRS_start_up_naval_industry
+		id = SRS_full_motorization
 		icon = GFX_
 		prerequisite = { focus = SRS_military_investments }
 		x = 35
