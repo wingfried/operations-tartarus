@@ -5,14 +5,14 @@ focus_tree = {
 		factor = 0
 
 		modifier = {
-			add = 10
+			add = 30
 			tag = SRS
 		}
 	}
 
 	continuous_focus_position = { x = -2000 y = 100 }
 	default = no
-
+	
 ###########
 #CIVIL WAR#
 ###########
@@ -68,6 +68,22 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			create_country_leader = {
+				name = "Skynavian General Congress"
+				desc = "SKYNAVIAN_GENERAL_CONGRESS_NAME_DESC"
+				picture = "GeneralCongress.tga"
+				expire = "1965.1.1"
+				ideology = democratic_socialism
+				traits = { }
+			}
+			load_focus_tree = { tree = socialist_republic_of_free_griffons }
+			activate_mission = SRS_elections_timer
+			set_country_flag = SRS_the_game_has_begun
+			set_country_flag = SRS_general_congress_in_power
 		}
 	}
 
@@ -204,26 +220,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SRS_conscript_army
-		icon = GFX_focus_YUG_pan_slavic_congress
-		prerequisite = { focus = SRS_rev_mil_soviet focus = SRS_rejoin_kemerskai_gang }
-		x = 5
-		y = 8
-		cost = 7
-		ai_will_do = {
-			factor = 12
-		}
-		
-		completion_reward = {
-			add_ideas = SRS_levee_en_masse
-		}
-	}
-
-#######################
-#EARLY COMMIE POLITICS#
-#######################
-
-	focus = {
 		id = SRS_rev_mil_soviet
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = SRS_communist_asper }
@@ -239,6 +235,22 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SRS_conscript_army
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = SRS_rev_mil_soviet focus = SRS_rejoin_kemerskai_gang }
+		x = 5
+		y = 8
+		cost = 7
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SRS_levee_en_masse
+		}
+	}
+	
 	focus = {
 		id = SRS_defend_the_revolution
 		icon = GFX_goal_to_the_barricades
@@ -273,7 +285,7 @@ focus_tree = {
 			}
 		}
 	}
-				
+	
 	focus = {
 		id = SRS_far_north_republic
 		icon = GFX_goal_red_star_dove
@@ -308,8 +320,7 @@ focus_tree = {
 			}
 		}
     }
-
-
+	
 	focus = {
 		id = SRS_commie_yeetvedina
 		icon = GFX_focus_indy_swing_the_sword
@@ -329,7 +340,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_avenge_986
 		icon = GFX_goal_FAT_the_three_musketeers
@@ -349,7 +360,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_north_united
 		icon = GFX_goal_COS_Peace
@@ -383,7 +394,7 @@ focus_tree = {
 			remove_ideas = SRS_doubt_in_sickleclaw_1
 		}
 	}
-
+	
 	focus = {
 		id = SRS_conscription_reform
 		icon = GFX_goal_break_rifle
@@ -405,7 +416,6 @@ focus_tree = {
 		}
 	}
 	
-		
 	focus = {
 		id = SRS_economic_reform
 		icon = GFX_goal_syndicalist_industry
@@ -465,7 +475,7 @@ focus_tree = {
 			add_compliance = 20
 		}
 	}
-
+	
 	focus = {
 		id = SRS_kemerskai_fate
 		icon = GFX_goal_hang_the_traitor
@@ -477,7 +487,7 @@ focus_tree = {
 			factor = 12
 		}
 	}
-
+	
 	focus = {
 		id = SRS_commie_yeetbrantbeak
 		icon = GFX_goal_step_on_skull
@@ -556,7 +566,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_harmonic_socialism
 		icon = GFX_goal_ideology_democratic_socialist
@@ -599,7 +609,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_radical_backlash
 		icon = GFX_goal_stg_worst_case
@@ -618,7 +628,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_reforge_enthusiasm
 		icon = GFX_goal_new_leaders
@@ -630,7 +640,7 @@ focus_tree = {
 			factor = 12
 		}
 	}
-
+	
 	focus = {
 		id = SRS_yeet_communalists
 		icon = GFX_goal_broken_red_star
@@ -676,7 +686,7 @@ focus_tree = {
 			add_war_support = 0.1
 		}
 	}
-
+	
 	focus = {
 		id = SRS_approach_the_tribes
 		icon = GFX_goal_molotov_ribbentrop_pact_pony_griffon
@@ -689,7 +699,7 @@ focus_tree = {
 			factor = 12
 		}
 	}
-
+	
 	focus = {
 		id = SRS_meet_with_waifu
 		icon = GFX_goal_pink_waifu
@@ -701,7 +711,7 @@ focus_tree = {
 			factor = 12
 		}
 	}
-
+	
 	focus = {
 		id = SRS_harmonic_union
 		icon = GFX_goal_generic_harmony
@@ -719,11 +729,12 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_ntrwar_republican
 		icon = GFX_goal_gunpoint_diplomacy
 		prerequisite = { focus = SRS_unite_the_north }
+		mutually_exclusive = { focus = SRS_approach_the_tribes }
 		x = 16
 		y = 10
 		cost = 3
@@ -738,8 +749,7 @@ focus_tree = {
 			}
 		}
 	}
-		
-
+	
 	focus = {
 		id = SRS_ntr_infrastructure
 		icon = GFX_goal_forced_con
@@ -814,9 +824,7 @@ focus_tree = {
 			}
 		}
 	}
-		
-		
-
+	
 	focus = {
 		id = SRS_ntr_factories
 		icon = GFX_goal_forced_mil
@@ -866,7 +874,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_republican_yeetbrantbeak
 		icon = GFX_goal_step_on_skull
@@ -885,7 +893,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_speak_herzlander
 		icon = GFX_goal_griffon_books
@@ -901,11 +909,11 @@ focus_tree = {
 			add_ideas = SRS_speak_kraut_language
 			add_stability = 0.025
 			add_political_power = -30
-			decrease_illiteracy
+			decrease_illiteracy = yes
 		}
 	}
-}
-
+	
+	
 	focus = {
 		id = SRS_republican_knights
 		icon = GFX_goal_griffon_knights
@@ -961,7 +969,7 @@ focus_tree = {
 			VED = { add_to_ROOT_potential_cores = yes }
 		}
 	}
-
+	
 	focus = {
 		id = SRS_bandits_be_gone
 		icon = GFX_goal_purge_opposition
@@ -1014,16 +1022,14 @@ focus_tree = {
 		
 		completion_reward = {
 			add_research_slot = 1
-			increase_science_base
+			increase_science_base = yes
 		}
-	}
-}
-
+	}	
+	
 	focus = {
 		id = SRS_strike_the_revisionists
 		icon = GFX_goal_rosewing_and_suntail
 		prerequisite = { focus = SRS_harmonic_union focus = SRS_ntr_factories }
-		prerequisite = { focus = SRS_together_against_monarchy }
 		prerequisite = { focus = SRS_promise_pan_griffonia }
 		prerequisite = { focus = SRS_speak_herzlander }
 		mutually_exclusive = { focus = SRS_unite_with_fatmerskai_playeronly }
@@ -1040,7 +1046,6 @@ focus_tree = {
 		id = SRS_unite_with_fatmerskai_playeronly
 		icon = GFX_goal_griffonia_alliance
 		prerequisite = { focus = SRS_harmonic_union focus = SRS_ntr_factories }
-		prerequisite = { focus = SRS_together_against_monarchy }
 		prerequisite = { focus = SRS_promise_pan_griffonia }
 		prerequisite = { focus = SRS_speak_herzlander }
 		mutually_exclusive = { focus = SRS_strike_the_revisionists }
@@ -1056,7 +1061,6 @@ focus_tree = {
 		id = SRS_unite_with_fatmerskai_aionly
 		icon = GFX_goal_griffonia_alliance
 		prerequisite = { focus = SRS_harmonic_union focus = SRS_ntr_factories }
-		prerequisite = { focus = SRS_together_against_monarchy }
 		prerequisite = { focus = SRS_promise_pan_griffonia }
 		prerequisite = { focus = SRS_speak_herzlander }
 		mutually_exclusive = {focus = SRS_strike_the_revisionists }
@@ -1067,7 +1071,7 @@ focus_tree = {
 			factor = 12
 		}
 	}
-
+	
 #################
 #COMMIE INDUSTRY#
 #################
@@ -1091,7 +1095,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_internationalist_industrialization
 		icon = GFX_goal_ideology_totalist
@@ -1126,7 +1130,7 @@ focus_tree = {
 			add_political_power = 50
 		}
 	}
-
+	
 	focus = {
 		id = SRS_unfinished_urban_projects
 		icon = GFX_goal_factory_complex
@@ -1157,7 +1161,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_industry_dinkau
 		icon = GFX_goal_generic_soviet_construction
@@ -1188,8 +1192,7 @@ focus_tree = {
 			}
 		}
 	}
-			
-
+	
 	focus = {
 		id = SRS_industry_bluffhead
 		icon = GFX_goal_generic_soviet_construction
@@ -1220,7 +1223,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_urban_education
 		icon = GFX_focus_generic_socialist_science
@@ -1237,7 +1240,7 @@ focus_tree = {
 			decrease_illiteracy = yes
 		}
 	}
-
+	
 	focus = {
 		id = SRS_interconnectedness
 		icon = GFX_goal_socialist_infrastructure
@@ -1307,7 +1310,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_stalliongrad_mining_equipment
 		icon = GFX_goal_socialist_union
@@ -1340,7 +1343,7 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-
+	
 	focus = {
 		id = SRS_link_up_communes
 		icon = GFX_goal_Workers_Paradise
@@ -1390,7 +1393,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_small_scale_dinkau
 		icon = GFX_goal_generic_construct_civilian
@@ -1413,7 +1416,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_small_scale_bluffhead
 		icon = GFX_goal_generic_construct_civilian
@@ -1436,7 +1439,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_one_big_union
 		icon = GFX_goal_ideology_syndicalist
@@ -1453,7 +1456,7 @@ focus_tree = {
 			add_ideas = SRS_big_fuckin_union
 		}
 	}
-
+	
 	focus = {
 		id = SRS_consolidated_gunmakers_union
 		icon = GFX_goal_HOL_military_union
@@ -1484,7 +1487,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_mass_unionization
 		icon = GFX_goal_munitions_factories
@@ -1515,7 +1518,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_further_industrialization
 		icon = GFX_goal_soviet_factory_town
@@ -1535,7 +1538,7 @@ focus_tree = {
 			add_ideas = SRS_further_industrialization_idea
 		}
 	}
-
+	
 	focus = {
 		id = SRS_inland_industry
 		icon = GFX_focus_prc_agrarian_socialism
@@ -1687,7 +1690,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = SRS_breathe_skynavia
 		icon = GFX_goal_tfv_burn_the_royal_portraits
@@ -1799,7 +1802,7 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-
+	
 #####################
 #REPUBLICAN INDUSTRY#
 #####################
@@ -2157,7 +2160,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SRS_full_motorization
+		id = SRS_start_up_naval_industry
 		icon = GFX_
 		prerequisite = { focus = SRS_military_investments }
 		x = 35
@@ -2364,7 +2367,7 @@ focus_tree = {
 			factor = 12
 		}
 	}
-
+	
 ####################
 #UNIVERSAL LATEGAME#
 ####################
@@ -2381,11 +2384,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_timed_idea = { idea = SRS_herzland_resistance days = 730 days }
-			}
+			add_timed_idea = { idea = SRS_herzland_resistance days = 730 }
 		}
 	}
-
+	
 	focus = {
 		id = SRS_revenge
 		icon = GFX_goal_purge_opposition
@@ -2397,7 +2399,7 @@ focus_tree = {
 			factor = 12
 		}
 	}
-
+	
 	focus = {
 		id = SRS_herzland_nobility_punishment
 		icon = GFX_focus_rom_abdicate
@@ -2450,7 +2452,7 @@ focus_tree = {
 			add_ideas = SRS_post_war_economic_miracle
 		}
 	}
-
+	
 	focus = {
 		id = SRS_land_redistribution
 		icon = GFX_goal_agricultural_aid
@@ -2676,11 +2678,7 @@ focus_tree = {
 			factor = 12
 		}
 	}
-		
-		
-		
-		
-		
+	
 #########################
 #UNIVERSAL MILITARY TREE#
 #########################
@@ -3697,3 +3695,5 @@ focus_tree = {
 			}
         }		
 	}
+	
+}
