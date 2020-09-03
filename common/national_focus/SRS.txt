@@ -31,10 +31,6 @@ focus_tree = {
 				id = srs_sickoflavour.1
 				days = 18
 			}
-			country_event = {
-				id = srs_sickoflavour.2
-				days = 45
-			}
 		}
 		completion_reward = {
             country_event = { id = srs_sickocivwar.1 }
