@@ -29,7 +29,7 @@ focus_tree = {
 		select_effect = {
 			country_event = {
 				id = srs_sickoflavour.1
-				days = 18
+				days = 21
 			}
 		}
 		completion_reward = {
@@ -48,12 +48,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-
+		select_effect = {
+			country_event = {
+				id = srs_sickoflavour.3
+				days = 7
+			country_event = {
+				id = srs_sickoflavour.4
+				days = 14
+				
 		completion_reward = {
 		    country_event = { id = srs_sickocivwar.2 }
 		}
 	}
-
+	
 	focus = {
 		id = SRS_sickleclaw_obeys_congress
 		icon = GFX_goal_commune_politics
