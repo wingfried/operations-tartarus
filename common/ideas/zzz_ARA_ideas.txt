@@ -1451,30 +1451,6 @@ country = {
 		}
 	}
 	country = {
-		ARA_fragile_rule_1 = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			available = {
-				has_government = fascism
-			}
-			picture = unhappy_army_3
-			removal_cost = -1
-			modifier = {
-                army_org_factor = -0.2
-				stability_factor = -0.3
-				war_support_factor = -0.1
-				conscription_factor = -0.20
-				research_speed_factor = -0.1
-				political_power_factor = -0.35
-				production_speed_buildings_factor = -0.2
-			}
-		}
-	}
-	country = {
 		ARA_fr0000 = {
 			allowed = {
 				always = no
@@ -3119,25 +3095,6 @@ country = {
 			}
 		}
 	}
-	
-	country = {
-		ARA_arantigos_boreas2 = {
-			allowed = {
-			always = no 
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = PAP_Legionary_Spirit
-			modifier = {	
-			drift_defence_factor = 0.5
-			fascism_drift = 0.2
-			army_morale_factor = 0.05
-			political_power_factor 0.1
-			}
-			}
-			}
 	country = {
 		ARA_arantigan_uprising = {
 			allowed = {
@@ -3584,6 +3541,7 @@ country = {
 		ARA_mysterio = {
 			allowed = {
 				original_tag = "ARA"
+				has_dlc = "La Resistance"
 			}		
  			traits = { head_of_intelligence_griffon }
 			picture = JER_generic_advisor
@@ -3591,6 +3549,7 @@ country = {
 				factor = 1
 			}
 			available = {
+				has_intelligence_agency = yes
 			}
 		}
 	}
@@ -3834,6 +3793,8 @@ country = {
 		}
 	high_command = {
 		soter_advisor = {
+		    ledger = army
+		    
 			allowed = {
 				original_tag = "ARA"
 			}		
@@ -3852,6 +3813,8 @@ country = {
 		}
 		
 		ARA_nicator = {
+		    ledger = army
+		
 			allowed = {
 				original_tag = "ARA"
 			}		
@@ -3870,6 +3833,8 @@ country = {
 		}
 
 		ARA_lysimachus = {
+		    ledger = army
+		
 			allowed = {
 				original_tag = "ARA"
 			}		
@@ -3888,6 +3853,8 @@ country = {
 		}
 		
 		ARA_craterus = {
+		    ledger = army
+			
 			allowed = {
 				original_tag = "ARA"
 			}		
@@ -3902,6 +3869,8 @@ country = {
 		}
 		
 		cassander_advisor = {
+		    ledger = army
+			
 			allowed = {
 				original_tag = "ARA"
 			}		
@@ -3915,6 +3884,8 @@ country = {
 			}
 		}
 		ARA_miga_ouranos_2 = {
+		    ledger = air
+			
 			allowed = {
 				original_tag = "ARA"
 			}		
@@ -3934,6 +3905,8 @@ country = {
 			}
 		}
 		ARA_bellerophontes_2 = {
+		    ledger = air
+			
 			allowed = {
 				original_tag = "ARA"
 			}		

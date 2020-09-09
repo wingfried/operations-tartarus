@@ -529,7 +529,6 @@ focus_tree = {
 		cost = 1.00
 		relative_position_id = ARA_legacy_of_grover
 		prerequisite = { focus = ARA_legacy_of_grover }
-		mutually_exclusive = { focus = ARA_bungie_destiny }
 		completion_reward = {
 	
 			country_event = { 
