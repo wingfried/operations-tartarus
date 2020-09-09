@@ -1205,10 +1205,6 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
-	}
-}
-	
-	
 	
 ####MILITARY TREE SHIT####
 
