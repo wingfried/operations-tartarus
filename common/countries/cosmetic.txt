@@ -1210,3 +1210,15 @@ ZES_confederation_2 = {
 	color = rgb { 125 115 95 }
 	color_ui = rgb { 125 115 95 }
 }
+LSC_griffking_empire_cosmetic = {
+	color = rgb { 136 96 142 }
+	color_ui = rgb { 136 96 142 }
+}
+BAR_RIV = {
+	color = rgb { 0 67 111 }
+	color_ui = rgb { 0 52 86 }
+}
+HERZ_LSC = {
+	color = rgb { 204 0 0 }
+	color_ui = rgb { 204 0 0 }
+}

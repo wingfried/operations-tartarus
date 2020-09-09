@@ -1,6 +1,6 @@
 #Griffonia At War
 #A Submod for Equestria At War
-#Version 0.1.1: Arantigos Reborn
+#Version 0.1.2: Arantigos Reborn
 
 #ROYALS
 Wingfried
