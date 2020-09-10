@@ -347,6 +347,15 @@ SRS_radar_experiments_desc:0 "Radars can detect an aircraft from quite an impres
 SRS_presidents_last_argument:0 "Ultima Ratio"
 SRS_presidents_last_argument_desc:0 "TNT can only get us so far. Perhaps there is a much more potent alternative - something that can make TNT fade in comparison when it comes to explosive strength."
 
+#### Republican Industry Ideas and fixes ####
+SRS_socialist_market:0 "A Socialist Market"
+SRS_socialist_market_2:0 "A Socialist Market"
+SRS_socialist_market_3:0 "A Socialist Market"
+SRS_redirected_spending:0 "Redirected Spending"
+SRS_trouble_no_more:0 "Reassured Economy"
+
+SRS_motorized_army:0 "A Motorized Army"
+
 #### COMMIE TREE IDEAS ####
 SRS_doubt_in_sickleclaw:0 "Doubt in Sickleclaw - Vialotile"
 SRS_doubt_in_sickleclaw_1:0 "Doubt in Sickleclaw - Under Control"
