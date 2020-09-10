@@ -1814,7 +1814,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_market_socialism
-		icon = GFX_
+		icon = GFX_focus_generic_industry_1
 		prerequisite = { focus = SRS_harmonic_socialism }
 		x = 28
 		y = 9
@@ -1822,11 +1822,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_ideas = SRS_socialist_market
+		}
 	}
 	
 	focus = {
 		id = SRS_centralize_communal_factories
-		icon = GFX_
+		icon = GFX_goal_state_economy
 		prerequisite = { focus = SRS_market_socialism }
 		x = 28
 		y = 11
@@ -1834,11 +1838,43 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			522 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			542 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			601 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_cut_social_spending
-		icon = GFX_
+		icon = GFX_goal_OTT_Land_Reform
 		prerequisite = { focus = SRS_centralize_communal_factories }
 		x = 28
 		y = 12
@@ -1846,11 +1882,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_ideas = SRS_redirected_spending
+		}
 	}
 	
 	focus = {
 		id = SRS_education_funding
-		icon = GFX_
+		icon = GFX_goal_bag_of_money
 		prerequisite = { focus = SRS_cut_social_spending }
 		x = 28
 		y = 13
@@ -1858,11 +1898,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			decrease_illiteracy = yes
+			add_political_power = 50
+		}
 	}
 	
 	focus = {
 		id = SRS_far_northern_academy
-		icon = GFX_
+		icon = GFX_goal_KTG_Bookstack
 		prerequisite = { focus = SRS_education_funding }
 		x = 28
 		y = 14
@@ -1870,11 +1915,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	
 	focus = {
 		id = SRS_come_again_no_more
-		icon = GFX_
+		icon = GFX_goal_chn_economic_plan
 		prerequisite = { focus = SRS_far_northern_academy }
 		x = 28
 		y = 16
@@ -1882,23 +1931,35 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_ideas = SRS_trouble_no_more
+		}
 	}
 	
 	focus = {
 		id = SRS_local_industry
-		icon = GFX_
+		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = SRS_market_socialism }
+		mutually_exclusive = { focus = SRS_black_thing_under_us }
 		x = 24
 		y = 10
 		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SRS_socialist_market
+				add_idea = SRS_socialist_market_2
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_tundra_roads
-		icon = GFX_
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = SRS_local_industry }
 		x = 23
 		y = 11
@@ -1906,11 +1967,28 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			561 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			601 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_tundra_development
-		icon = GFX_
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = SRS_tundra_roads }
 		x = 23
 		y = 12
@@ -1918,11 +1996,30 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			561 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			601 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_forest_roads
-		icon = GFX_
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = SRS_local_industry }
 		x = 25
 		y = 11
@@ -1930,11 +2027,21 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			542 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_forest_industry
-		icon = GFX_
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = SRS_forest_roads }
 		x = 25
 		y = 12
@@ -1942,11 +2049,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			542 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_stage_two
-		icon = GFX_
+		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = SRS_forest_industry }
 		prerequisite = { focus = SRS_tundra_development }
 		x = 24
@@ -1955,11 +2073,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SRS_socialist_market_2
+				add_idea = SRS_socialist_market_3
+			}
+			swap_ideas = {
+				remove_idea = closed_economy
+				add_idea = limited_exports
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_better_electronics
-		icon = GFX_
+		icon = GFX_goal_goal_machine
 		prerequisite = { focus = SRS_stage_two }
 		x = 23
 		y = 14
@@ -1967,11 +2096,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = electronics
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_better_industrial_equipment
-		icon = GFX_
+		icon = GFX_goal_generic_production
 		prerequisite = { focus = SRS_stage_two }
 		x = 25
 		y = 14
@@ -1979,11 +2116,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_natural_resources
-		icon = GFX_
+		icon = GFX_focus_generic_steel
 		prerequisite = { focus = SRS_better_electronics }
 		prerequisite = { focus = SRS_better_industrial_equipment }
 		x = 24
@@ -1992,11 +2137,27 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 6
+				state = 601
+			}
+			add_resource = {
+				type = steel
+				amount = 12
+				state = 585
+			}
+			585 = {
+				add_manpower = 30000
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_civilian_industry_development
-		icon = GFX_
+		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = SRS_better_electronics }
 		prerequisite = { focus = SRS_better_industrial_equipment }
 		x = 22
@@ -2005,11 +2166,38 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			522 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			561 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			601 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_military_industry_development
-		icon = GFX_
+		icon = GFX_focus_chi_army_reform
 		prerequisite = { focus = SRS_better_electronics }
 		prerequisite = { focus = SRS_better_industrial_equipment }
 		x = 26
@@ -2018,71 +2206,191 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			522 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			561 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			601 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_black_thing_under_us
-		icon = GFX_
+		icon = GFX_goal_GRF_northern_oil
 		prerequisite = { focus = SRS_market_socialism }
+		mutually_exclusive = { focus = SRS_local_industry }
 		x = 32
 		y = 10
 		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_stability = -0.075
+		}
 	}
 	
 	focus = {
 		id = SRS_off_the_shore_of_veteborg
-		icon = GFX_
+		icon = GFX_goal_further_oil
 		prerequisite = { focus = SRS_black_thing_under_us }
+		available = {
+			SRS = {
+				has_full_control_of_state = 430
+			}
+		}
 		x = 34
 		y = 11
 		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 24
+				state = 430
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_round_the_hauklands
-		icon = GFX_
+		icon = GFX_goal_further_oil
 		prerequisite = { focus = SRS_off_the_shore_of_veteborg }
+		available = {
+			SRS = {
+				has_full_control_of_state = 658
+				has_full_control_of_state = 659
+				has_full_control_of_state = 660
+			}
+		}
 		x = 33
 		y = 12
 		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 12
+				state = 658
+			}
+			add_resource = {
+				type = oil
+				amount = 12
+				state = 659
+			}
+			add_resource = {
+				type = oil
+				amount = 12
+				state = 660
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_in_the_heartlands
-		icon = GFX_
+		icon = GFX_goal_further_oil
 		prerequisite = { focus = SRS_off_the_shore_of_veteborg }
+		available = {
+			SRS = {
+				has_full_control_of_state = 378
+				has_full_control_of_state = 399
+				has_full_control_of_state = 447
+			}
+		}
 		x = 35
 		y = 12
 		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 12
+				state = 378
+			}
+			add_resource = {
+				type = oil
+				amount = 12
+				state = 399
+			}
+			add_resource = {
+				type = oil
+				amount = 12
+				state = 447
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_and_in_aquileia
-		icon = GFX_
+		icon = GFX_goal_further_oil
 		prerequisite = { focus = SRS_off_the_shore_of_veteborg }
+		available = {
+			SRS = {
+				has_full_control_of_state = 493
+				has_full_control_of_state = 494
+				has_full_control_of_state = 516
+			}
+		}
 		x = 34
 		y = 13
 		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 9
+				state = 493
+			}
+			add_resource = {
+				type = oil
+				amount = 9
+				state = 494
+			}
+			add_resource = {
+				type = oil
+				amount = 6
+				state = 516
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_ostfloy_infrastructure
-		icon = GFX_
+		icon = GFX_goal_generic_railroad
 		prerequisite = { focus = SRS_black_thing_under_us }
 		x = 31
 		y = 11
@@ -2090,11 +2398,21 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			561 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_start_extracting
-		icon = GFX_
+		icon = GFX_goal_oil_derrick
 		prerequisite = { focus = SRS_ostfloy_infrastructure }
 		x = 31
 		y = 12
@@ -2102,11 +2420,23 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 40
+				state = 561
+			}
+			swap_ideas = {
+				remove_idea = closed_economy
+				add_idea = export_focus
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_money_coming_in
-		icon = GFX_
+		icon = GFX_goal_chn_red_economic_boom
 		prerequisite = { focus = SRS_start_extracting }
 		x = 31
 		y = 13
@@ -2114,11 +2444,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 10
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_backup_plan
-		icon = GFX_
+		icon = GFX_focus_indy_industrial_tanks
 		prerequisite = { focus = SRS_money_coming_in }
 		x = 31
 		y = 14
@@ -2126,11 +2463,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			522 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_invest_in_synthetic_rubber
-		icon = GFX_
+		icon = GFX_focus_generic_rubber
 		prerequisite = { focus = SRS_backup_plan }
 		x = 31
 		y = 15
@@ -2138,11 +2486,24 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = synth_resources
+			}
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 2
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_military_investments
-		icon = GFX_
+		icon = GFX_goal_chn_red_military_factories
 		prerequisite = { focus = SRS_money_coming_in }
 		x = 34
 		y = 14
@@ -2150,11 +2511,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			522 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	
 	focus = {
 		id = SRS_start_up_air_industry
-		icon = GFX_
+		icon = GFX_goal_industry_air
 		prerequisite = { focus = SRS_military_investments }
 		x = 33
 		y = 15
@@ -2162,17 +2534,53 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+			561 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			601 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}
+		}
 	}
 	
 	focus = {
-		id = SRS_start_up_naval_industry
-		icon = GFX_
+		id = SRS_motorized_army
+		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = SRS_military_investments }
 		x = 35
 		y = 15
 		cost = 5
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SRS_motorized_army
+			542 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -2840,7 +3248,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_modern_warfare
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_goal_Focus_Military_Mobilisation
 		prerequisite = { focus = SRS_rebuild_thechain_of_command }
 		mutually_exclusive = { focus = SRS_infantry_warfare }
 		mutually_exclusive = { focus = SRS_experimental_warfare }
