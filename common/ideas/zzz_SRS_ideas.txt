@@ -2718,3 +2718,83 @@ ideas = {
 			starting_compliance = 0.2
 		}
 	}
+	
+	SRS_socialist_market = {
+			picture = chi_hyper_inflation
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.025
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		SRS_socialist_market_2 = {
+			picture = chi_hyper_inflation3
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+		}
+		
+		SRS_socialist_market_3 = {
+			picture = chi_hyper_inflation5
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+			}
+		}
+		
+		SRS_redirected_spending = {
+			picture = capital_outflow
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				research_speed_factor = 0.1
+			}
+		}
+		
+		SRS_trouble_no_more = {
+			picture = generic_democratic_drift_bonus
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		
+		SRS_motorized_army = {
+			picture = FRA_motorized_focus
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+		}
