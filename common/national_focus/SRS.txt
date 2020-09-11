@@ -3092,6 +3092,140 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = SRS_ultimatum_aquileia
+		icon = GFX_
+		prerequisite = { focus = SRS_all_is_well }
+		x = 2
+		y = 25
+		cost = 7
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_wargoal_aquileia
+		icon = GFX_
+		prerequisite = { focus = SRS_ultimatum_aquileia }
+		x = 2
+		y = 26
+		cost = 7
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_coring_aquileia
+		icon = GFX_
+		prerequisite = { focus = SRS_wargoal_aquileia }
+		x = 2
+		y = 27
+		cost = 7
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_ultimatum_wingbardy
+		icon = GFX_
+		prerequisite = { focus = SRS_all_is_well }
+		x = 4
+		y = 25
+		cost = 7
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_wargoal_wingbardy
+		icon = GFX_
+		prerequisite = { focus = SRS_ultimatum_wingbardy }
+		x = 4
+		y = 26
+		cost = 7
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_coring_wingbardy
+		icon = GFX_
+		prerequisite = { focus = SRS_wargoal_wingbardy }
+		x = 4
+		y = 27
+		cost = 7
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_ultimatum_evivalley
+		icon = GFX_
+		prerequisite = { focus = SRS_all_is_well }
+		x = 8
+		y = 25
+		cost = 7
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_wargoal_evivalley_westbank
+		icon = GFX_
+		prerequisite = { focus = SRS_ultimatum_evivalley }
+		x = 6
+		y = 26
+		cost = 7
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_wargoal_evivalley_eastbank
+		icon = GFX_
+		prerequisite = { focus = SRS_ultimatum_evivalley }
+		x = 10
+		y = 26
+		cost = 7
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_wargoal_or_ultimatum_cyanolisia_plus_asterion
+		icon = GFX_
+		prerequisite = { focus = SRS_ultimatum_evivalley }
+		x = 8
+		y = 26
+		cost = 7
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_coring_evivalley
+		icon = GFX_
+		prerequisite = { focus = SRS_wargoal_evivalley_westbank }
+		prerequisite = { focus = SRS_wargoal_evivalley_eastbank }
+		prerequisite = { focus = SRS_wargoal_or_ultimatum_cyanolisia_plus_asterion}
+		x = 8
+		y = 27
+		cost = 7
+		ai_will_do = {
+			factor = 12
+		}
+	}
+	
 #########################
 #UNIVERSAL MILITARY TREE#
 #########################
