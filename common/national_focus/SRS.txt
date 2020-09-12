@@ -592,7 +592,6 @@ focus_tree = {
 				ruling_party = democratic elections_allowed = no
 			}
 				add_ideas = SRS_shits_fucked_radical_1
-				add_ideas = SRS_the_third_demand_1
 		}
 	}
 	
