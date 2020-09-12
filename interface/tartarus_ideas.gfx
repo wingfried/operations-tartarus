@@ -128,4 +128,32 @@ spriteTypes = {
 		name = "GFX_idea_ARA_alhorsered"
 		texturefile = "gfx/interface/ideas/idea_ARA_alhorsered.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_SRS_post_war_economic_miracle"
+		texturefile = "gfx/interface/ideas/SRS_post_war_economic_miracle.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_no_more_nobles"
+		texturefile = "gfx/interface/ideas/SRS_no_more_nobles.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_land_distribution"
+		texturefile = "gfx/interface/ideas/SRS_land_distribution.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_herzland_resistance"
+		texturefile = "gfx/interface/ideas/SRS_herzland_resistance.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_etranger"
+		texturefile = "gfx/interface/ideas/SRS_etranger.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_resistance_surge"
+		texturefile = "gfx/interface/ideas/SRS_resistance_surge.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_protect_the_worker"
+		texturefile = "gfx/interface/ideas/SRS_protect_the_worker.dds"
+	}
 }
