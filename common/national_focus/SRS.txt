@@ -2724,8 +2724,8 @@ focus_tree = {
 		
 		completion_reward = {
 			swap_ideas = {
-				add_idea = SRS_recruitment_war_effort_2
-				remove_idea = SRS_recruitment_war_effort_1
+				add_idea = SRS_recruitment_war_effort_3
+				remove_idea = SRS_recruitment_war_effort_2
 			}
 		}
 	}
