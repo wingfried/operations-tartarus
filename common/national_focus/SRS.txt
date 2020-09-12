@@ -3086,143 +3086,685 @@ focus_tree = {
 		prerequisite = { focus = SRS_foreign_legion }
 		x = 5
 		y = 25
-		cost = 30
+		cost = 5
 		ai_will_do = {
 			factor = 12
+		}
+	}
+	
+	focus = {
+		id = SRS_ultimatum_west_griffonia
+		icon = GFX_
+		prerequisite = { focus = SRS_all_is_well }
+		x = 2
+		y = 26
+		cost = 5
+		bypass = {
+		    TRD = {
+			    exists = no
+			}
+			FEZ = {
+			    exists = no
+			}
+			AET = {
+			    exists = no
+			}
+			HEL = {
+			    exists = no
+			}
+			POM = {
+			    exists = no
+			}
+			FLO = {
+			    exists = no
+			}
+		}
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+		    IF = {
+			    limit = {
+				    TRD = {
+					    exists = yes
+					}
+				}
+				TRD = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    FEZ = {
+					    exists = yes
+						is_puppet = no
+					}
+				}
+				FEZ = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    AET = {
+					    exists = yes
+					}
+				}
+				AET = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    HEL = {
+					    exists = yes
+					}
+				}
+				HEL = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    POM = {
+					    exists = yes
+					}
+				}
+				POM = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    FLO = {
+					    exists = yes
+					}
+				}
+				FLO = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = SRS_ultimatum_aquileia
 		icon = GFX_
-		prerequisite = { focus = SRS_all_is_well }
+		prerequisite = { focus = SRS_ultimatum_west_griffonia }
 		x = 2
-		y = 25
-		cost = 7
+		y = 27
+		cost = 5
+		bypass = {
+		    JER = {
+			    exists = no
+			}
+			JRR = {
+			    exists = no
+			}
+			VIN = {
+			    exists = no
+			}
+			JFT = {
+			    exists = no
+			}
+			JEB = {
+			    exists = no
+			}
+		}
 		ai_will_do = {
 			factor = 12
 		}
-	}
-	
-	focus = {
-		id = SRS_wargoal_aquileia
-		icon = GFX_
-		prerequisite = { focus = SRS_ultimatum_aquileia }
-		x = 2
-		y = 26
-		cost = 7
-		ai_will_do = {
-			factor = 12
+		completion_reward = {
+		    IF = {
+			    limit = {
+				    JER = {
+					    exists = yes
+					}
+				}
+				JER = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    JRR = {
+					    exists = yes
+						is_puppet = no
+					}
+				}
+				JRR = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    VIN = {
+					    exists = yes
+						is_puppet = no
+					}
+				}
+				VIN = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    JFT = {
+					    exists = yes
+						is_puppet = no
+					}
+				}
+				JFT = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    JEB = {
+					    exists = yes
+						is_puppet = no
+					}
+				}
+				JEB = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = SRS_coring_aquileia
 		icon = GFX_
-		prerequisite = { focus = SRS_wargoal_aquileia }
+		prerequisite = { focus = SRS_ultimatum_aquileia }
 		x = 2
-		y = 27
-		cost = 7
+		y = 28
+		cost = 10
 		ai_will_do = {
 			factor = 12
+		}
+		completion_reward = {
+		    TRD = { add_to_ROOT_potential_cores = yes }
+		    FEZ = { add_to_ROOT_potential_cores = yes }
+		    AET = { add_to_ROOT_potential_cores = yes }
+		    HEL = { add_to_ROOT_potential_cores = yes }
+		    POM = { add_to_ROOT_potential_cores = yes }
+			FLO = { add_to_ROOT_potential_cores = yes }
+		    JER = { add_to_ROOT_potential_cores = yes }
+		    JRR = { add_to_ROOT_potential_cores = yes }
+		    VIN = { add_to_ROOT_potential_cores = yes }
+			JFT = { add_to_ROOT_potential_cores = yes }
+			JEB = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	focus = {
+		id = SRS_ultimatum_east_griffonia
+		icon = GFX_
+		prerequisite = { focus = SRS_all_is_well }
+		x = 8
+		y = 26
+		cost = 5
+		bypass = {
+		    AVI = {
+			    exists = no
+			}
+			ERI = {
+			    exists = no
+			}
+			EYR = {
+			    exists = no
+			}
+			BOI = {
+			    exists = no
+			}
+			LAK = {
+			    exists = no
+			}
+			ARA = {
+			    exists = no
+			}
+		}
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+		    IF = {
+			    limit = {
+				    AVI = {
+					    exists = yes
+					}
+				}
+				AVI = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    ERI = {
+					    exists = yes
+						is_puppet = no
+					}
+				}
+				ERI = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    EYR = {
+					    exists = yes
+						is_puppet = no
+					}
+				}
+				EYR = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    BOI = {
+					    exists = yes
+					}
+				}
+				BOI = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    LAK = {
+					    exists = yes
+					}
+				}
+				LAK = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    ARA = {
+					    exists = yes
+					}
+				}
+				ARA = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = SRS_ultimatum_wingbardy
 		icon = GFX_
-		prerequisite = { focus = SRS_all_is_well }
-		x = 4
-		y = 25
-		cost = 7
+		prerequisite = { focus = SRS_ultimatum_east_griffonia }
+		x = 8
+		y = 27
+		cost = 5
+		bypass = {
+		    TAL = {
+			    exists = no
+			}
+			FRN = {
+			    exists = no
+			}
+			FAL = {
+			    exists = no
+			}
+			WNG = {
+			    exists = no
+			}
+			SIC = {
+			    exists = no
+			}
+		}
 		ai_will_do = {
 			factor = 12
 		}
-	}
-	
-	focus = {
-		id = SRS_wargoal_wingbardy
-		icon = GFX_
-		prerequisite = { focus = SRS_ultimatum_wingbardy }
-		x = 4
-		y = 26
-		cost = 7
-		ai_will_do = {
-			factor = 12
+		completion_reward = {
+		    IF = {
+			    limit = {
+				    WNG = {
+					    exists = yes
+					}
+				}
+				WNG = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    SIC = {
+					    exists = yes
+						is_puppet = no
+					}
+				}
+				SIC = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    FAL = {
+					    exists = yes
+						is_puppet = no
+					}
+				}
+				FAL = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    FRN = {
+					    exists = yes
+						is_puppet = no
+					}
+				}
+				FRN = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    TAL = {
+					    exists = yes
+						is_puppet = no
+					}
+				}
+				TAL = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = SRS_coring_wingbardy
 		icon = GFX_
-		prerequisite = { focus = SRS_wargoal_wingbardy }
-		x = 4
-		y = 27
-		cost = 7
+		prerequisite = { focus = SRS_ultimatum_wingbardy }
+		x = 8
+		y = 28
+		cost = 10
 		ai_will_do = {
 			factor = 12
+		}
+		completion_reward = {
+		    AVI = { add_to_ROOT_potential_cores = yes }
+			ERI = { add_to_ROOT_potential_cores = yes }
+		    EYR = { add_to_ROOT_potential_cores = yes }
+		    BOI = { add_to_ROOT_potential_cores = yes }
+		    LAK = { add_to_ROOT_potential_cores = yes }
+		    ARA = { add_to_ROOT_potential_cores = yes }
+			TAL = { add_to_ROOT_potential_cores = yes }
+		    FRN = { add_to_ROOT_potential_cores = yes }
+		    FAL = { add_to_ROOT_potential_cores = yes }
+		    WNG = { add_to_ROOT_potential_cores = yes }
+			SIC = { add_to_ROOT_potential_cores = yes }
 		}
 	}
 	
 	focus = {
-		id = SRS_ultimatum_evivalley
+		id = SRS_ultimatum_evivalley_westbank
 		icon = GFX_
 		prerequisite = { focus = SRS_all_is_well }
-		x = 8
-		y = 25
-		cost = 7
+		x = 4
+		y = 26
+		cost = 5
+		bypass = {
+		    BAN = {
+			    exists = no
+			}
+			GRW = {
+			    exists = no
+			}
+			BRF = {
+			    exists = no
+			}
+		}
 		ai_will_do = {
 			factor = 12
+		}
+		completion_reward = {
+		    IF = {
+			    limit = {
+				    BAN = {
+					    exists = yes
+					}
+				}
+				BAN = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    GRW = {
+					    exists = yes
+					}
+				}
+				GRW = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    BRF = {
+					    exists = yes
+					}
+				}
+				BRF = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
 		}
 	}
 	
 	focus = {
-		id = SRS_wargoal_evivalley_westbank
+		id = SRS_ultimatum_evivalley_eastbank
 		icon = GFX_
-		prerequisite = { focus = SRS_ultimatum_evivalley }
+		prerequisite = { focus = SRS_all_is_well }
 		x = 6
 		y = 26
-		cost = 7
+		cost = 5
+		bypass = {
+		    LUS = {
+			    exists = no
+			}
+			GRY = {
+			    exists = no
+			}
+			GRU = {
+			    exists = no
+			}
+		}
 		ai_will_do = {
 			factor = 12
+		}
+		completion_reward = {
+		    IF = {
+			    limit = {
+				    LUS = {
+					    exists = yes
+					}
+				}
+				LUS = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    GRY = {
+					    exists = yes
+					}
+				}
+				GRY = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    GRU = {
+					    exists = yes
+					}
+				}
+				GRU = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
 		}
 	}
 	
 	focus = {
-		id = SRS_wargoal_evivalley_eastbank
+		id = SRS_ultimatum_cyanolisia_plus_asterion
 		icon = GFX_
-		prerequisite = { focus = SRS_ultimatum_evivalley }
-		x = 10
-		y = 26
-		cost = 7
+		prerequisite = { focus = SRS_ultimatum_evivalley_westbank }
+		prerequisite = { focus = SRS_ultimatum_evivalley_eastbank }
+		x = 5
+		y = 27
+		cost = 5
+		bypass = {
+		    CYA = {
+			    exists = no
+			}
+			MIT = {
+			    exists = no
+			}
+		}
 		ai_will_do = {
 			factor = 12
 		}
-	}
-	
-	focus = {
-		id = SRS_wargoal_or_ultimatum_cyanolisia_plus_asterion
-		icon = GFX_
-		prerequisite = { focus = SRS_ultimatum_evivalley }
-		x = 8
-		y = 26
-		cost = 7
-		ai_will_do = {
-			factor = 12
+		completion_reward = {
+		    IF = {
+			    limit = {
+				    CYA = {
+					    exists = yes
+					}
+				}
+				CYA = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+			IF = {
+			    limit = {
+				    MIT = {
+					    exists = yes
+					}
+				}
+				MIT = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = SRS_coring_evivalley
 		icon = GFX_
-		prerequisite = { focus = SRS_wargoal_evivalley_westbank }
-		prerequisite = { focus = SRS_wargoal_evivalley_eastbank }
-		prerequisite = { focus = SRS_wargoal_or_ultimatum_cyanolisia_plus_asterion}
-		x = 8
-		y = 27
-		cost = 7
+		prerequisite = { focus = SRS_ultimatum_cyanolisia_plus_asterion }
+		x = 5
+		y = 28
+		cost = 10
 		ai_will_do = {
 			factor = 12
+		}
+		completion_reward = {
+		    BAN = { add_to_ROOT_potential_cores = yes }
+		    GRW = { add_to_ROOT_potential_cores = yes }
+		    BRF = { add_to_ROOT_potential_cores = yes }
+		    LUS = { add_to_ROOT_potential_cores = yes }
+		    GRY = { add_to_ROOT_potential_cores = yes }
+			GRU = { add_to_ROOT_potential_cores = yes }
+		    CYA = { add_to_ROOT_potential_cores = yes }
+		    MIT = { add_to_ROOT_potential_cores = yes }
 		}
 	}
 	

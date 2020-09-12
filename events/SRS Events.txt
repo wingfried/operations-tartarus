@@ -3283,3 +3283,127 @@ country_event = {
 	}
 }
 
+## SRS Ultimatum Event ##
+
+country_event = {
+	id = srs_sickocivwar.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.9"}
+	title = srs_sickocivwar.9.t
+	desc = srs_sickocivwar.9.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	fire_only_once = no
+	timeout_days = 5
+	option = {
+		name = srs_sickocivwar.9.a
+		ai_chance = {
+		    factor = 0
+			modifier = {
+			    has_government = communism
+				factor = 10
+			}
+			modifier = {
+			    has_government = democratic
+				factor = 5
+			}
+			modifier = {
+			    original_tag = WNG
+				has_government = democratic
+				factor = 0
+			}
+		}
+		hidden_effect = {
+		    FROM = {
+		        country_event = {
+			        id = srs_sickocivwar.11
+			    }
+		    }
+		}
+	}
+	option = {
+	    ai_chance = {
+		    factor = 10
+			modifier = {
+			    has_government = communism
+				factor = 0
+			}
+			modifier = {
+			    has_government = democratic
+				factor = 5
+			}
+			modifier = {
+			    original_tag = WNG
+				has_government = democratic
+				factor = 10
+			}
+		}
+	    name = srs_sickocivwar.9.b
+		FROM = {
+		    country_event = {
+			    id = srs_sickocivwar.10
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = srs_sickocivwar.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.10"}
+	title = srs_sickocivwar.10.t
+	desc = srs_sickocivwar.10.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	fire_only_once = no
+	timeout_days = 5
+	option = {
+	    ai_chance = {
+		    factor = 10
+		}
+		name = srs_sickocivwar.10.a
+		declare_war_on = {
+		    target = FROM
+			type = annex_everything
+		}
+	}
+}
+country_event = {
+	id = srs_sickocivwar.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.11"}
+	title = srs_sickocivwar.11.t
+	desc = srs_sickocivwar.11.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	fire_only_once = no
+	timeout_days = 5
+	option = {
+	    ai_chance = {
+		    factor = 10
+		}
+		name = srs_sickocivwar.11.a
+		FROM = {
+		    every_unit_leader = {
+			    set_nationality = ROOT
+			}
+		}
+		THIS = {
+		    annex_country = {
+			    target = FROM
+				transfer_troops = yes
+			}
+		}
+		every_other_country = {
+		    limit = {
+			    is_puppet_of = FROM
+			}
+			ROOT = {
+			    annex_country = {
+				    target = THIS
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+}
+
+
