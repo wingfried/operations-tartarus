@@ -2622,7 +2622,7 @@ ideas = {
 ####NOOO I DON'T WANT TO STOP BLOBBING FOR TWO YEARS AAAA####
 
 	SRS_herzland_resistance = {
-		picture = done
+		picture = GFX_idea_SRS_herzland_resistance
 		allowed = { always = no }
 		removal_cost = -1
 		available = {
@@ -2637,7 +2637,7 @@ ideas = {
 	}
 		
 	SRS_etranger = {
-		picture = IDI NAHUI
+		picture = GFX_idea_SRS_etranger
 		allowed = { always = no }
 		removal_cost = -1
 		available = {
@@ -2650,7 +2650,7 @@ ideas = {
 	}
 		
 	SRS_post_war_economic_miracle = {
-		picture = IDI NAHUI
+		picture = GFX_idea_SRS_post_war_economic_miracle
 		allowed = { always = no }
 		removal_cost = -1
 		available = {
@@ -2663,7 +2663,7 @@ ideas = {
 	}
 		
 	SRS_land_distribution = {
-		picture = IDI NAHUI
+		picture = GFX_idea_SRS_land_distribution
 		allowed = { always = no }
 		removal_cost = -1
 		available = {
@@ -2677,7 +2677,7 @@ ideas = {
 	}
 		
 	SRS_resistance_surge = {
-		picture = IDI NAHUI
+		picture = SRS_resistance_surge
 		allowed = { always = no }
 		removal_cost = -1
 		available = {
@@ -2690,7 +2690,7 @@ ideas = {
 	}
 		
 	SRS_no_more_nobles = {
-		picture = IDI NAHUI
+		picture = GFX_idea_SRS_no_more_nobles
 		allowed = { always = no }
 		removal_cost = -1
 		available = {
@@ -2703,7 +2703,7 @@ ideas = {
 	}
 		
 	SRS_protect_the_worker = {
-		picture = IDI NAHUI
+		picture = GFX_idea_SRS_protect_the_worker
 		allowed = { always = no }
 		removal_cost = -1
 		available = {
