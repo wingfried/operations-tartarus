@@ -3172,18 +3172,6 @@ country_event = {
 		name = srs_sickoflavour.3.a	
 		}
 	}
-
-country_event = {
-	id = srs_sickoflavour.4
-	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.4"}
-	title = srs_sickoflavour.4.t
-	desc = srs_sickoflavour.4.d
-	picture = GFX_event_griffon_soldier
-	is_triggered_only = yes
-	option = {
-		name = srs_sickoflavour.4.a	
-		}
-	}
 	
 ## SRS_civwar_battle_1 ##
 
