@@ -1,0 +1,36 @@
+on_actions = {
+    on_startup = {
+	}
+    on_state_control_changed = { 
+	    effect = {
+	        if = {
+				limit = { #Idol of Boreas shifting spirit
+					FROM.FROM = {
+						state = 389
+					}
+					has_global_flag = BOI_idol_recovered
+					ROOT = {
+						NOT = { has_country_flag = BOI_has_true_idol }
+						has_idea = griffon_race
+					}
+				}
+				ROOT = {
+					set_country_flag = BOI_has_true_idol
+					country_event = { id = griffonstone.281 hours = 1 }
+				}
+				FROM = {
+					if = {
+						limit = {
+							has_war = yes
+						}
+						clr_country_flag = BOI_has_true_idol
+						country_event = { id = griffonstone.282 hours = 1 }
+						else = {
+						    clr_country_flag = BOI_has_true_idol
+						}
+					}
+				}
+			}
+		}
+	}
+}

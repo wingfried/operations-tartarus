@@ -1,0 +1,2474 @@
+add_namespace = griffonstone
+add_namespace = griffonstone_news
+add_namespace = griffonstone_decision
+#####EVENTS COMING AT YA AT SUPERSONIC SPEED#####
+
+    ####DEBUG EVENT####
+	
+	country_event = { #DEBUG
+	    id = griffonstone.999
+	    title = griffonstone.999.t
+	    desc = griffonstone.999.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = no
+		
+	    option = {
+	         name = griffonstone.999.a
+			 load_focus_tree = Griffonstone_gallus_1
+		}
+		option = {
+	         name = griffonstone.999.b
+			 load_focus_tree = Griffonstone_gallus_2
+		}
+		option = {
+	         name = griffonstone.999.c
+			 load_focus_tree = Griffonstone_goldstone
+		}
+		option = {
+	         name = griffonstone.999.d
+			 load_focus_tree = Griffonstone_gilda
+		}
+		option = {
+	         name = griffonstone.999.e
+			 load_focus_tree = Griffonstone_gestal
+		}
+	}
+
+    ####INITIAL CHAIN####
+    
+	country_event = { #Homecoming
+	    id = griffonstone.001
+	    title = griffonstone.001.t
+	    desc = griffonstone.001.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	         name = griffonstone.001.a
+			 hidden_effect = {
+			     country_event = {
+				     id = griffonstone.002
+					 days = 20
+			     }
+			 }
+		}
+	}
+	
+	country_event = { #Conspiracy
+	    id = griffonstone.002
+	    title = griffonstone.002.t
+	    desc = griffonstone.002.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	         name = griffonstone.002.a
+			 hidden_effect = {
+			     country_event = {
+				     id = griffonstone.003
+					 days = 11
+			     }
+			 }
+		}
+	}
+	
+	country_event = { #Wohnsitz Unrest
+	    id = griffonstone.003
+	    title = griffonstone.003.t
+	    desc = griffonstone.003.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	         name = griffonstone.003.a
+			 hidden_effect = {
+			     country_event = {
+				     id = griffonstone.004
+					 days = 38
+			     }
+			 }
+		}
+	}
+	
+	country_event = { #Rally
+	    id = griffonstone.004
+	    title = griffonstone.004.t
+	    desc = griffonstone.004.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	         name = griffonstone.004.a
+			 hidden_effect = {
+			     country_event = {
+				     id = griffonstone.005
+					 days = 5
+			     }
+			 }
+		}
+	}
+	
+	country_event = { #Yet another council meeting
+	    id = griffonstone.005
+	    title = griffonstone.005.t
+	    desc = griffonstone.005.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	         name = griffonstone.005.a
+			 hidden_effect = {
+			     country_event = {
+				     id = griffonstone.006
+					 days = 5
+			     }
+			 }
+		}
+	}
+	
+	country_event = { #Unexpected Meeting
+	    id = griffonstone.006
+	    title = griffonstone.006.t
+	    desc = griffonstone.006.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	         name = griffonstone.006.a
+			 add_popularity = { ideology = democratic popularity = 0.03 }
+			 hidden_effect = {
+			     country_event = {
+				     id = griffonstone.007
+					 days = 6
+			     }
+			 }
+		}
+	}
+	
+	country_event = { #The Proposition
+	    id = griffonstone.007
+	    title = griffonstone.007.t
+	    desc = griffonstone.007.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	         name = griffonstone.007.a
+			 hidden_effect = {
+			     country_event = {
+				     id = griffonstone.008
+					 days = 10
+			     }
+			 }
+		}
+		option = {
+	         name = griffonstone.007.b
+			 hidden_effect = {
+			     country_event = {
+				     id = griffonstone.012
+					 days = 5
+			     }
+			 }
+		}
+	}
+	
+	country_event = { #Escape from Griffonstone
+	    id = griffonstone.008
+	    title = griffonstone.008.t
+	    desc = griffonstone.008.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.008.a
+			kill_country_leader = yes
+			create_country_leader = {
+			    name = "Lord Gestal"
+			    picture = "Gestal.tga"
+			    expire = "1965.1.1"
+			    ideology = despotism
+		    }
+			set_politics = {
+			    ruling_party = fascism
+			    elections_allowed = no
+		    }
+			add_popularity = { 
+			    ideology = fascism 
+				popularity = 0.3 
+			}
+			add_stability = -0.05
+			add_manpower = -3000
+			389 = { 
+			    add_manpower = -20000
+			}
+			hidden_effect = {
+			    country_event = {
+			         id = griffonstone.009
+					 days = 3
+			    }
+			}
+		}
+	}
+	
+	country_event = { #Last Best Hope
+	    id = griffonstone.009
+	    title = griffonstone.009.t
+	    desc = griffonstone.009.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	         name = griffonstone.009.a
+			 hidden_effect = {
+			     country_event = {
+				     id = griffonstone.010
+			     }
+			 }
+		}
+		option = {
+	         name = griffonstone.009.b
+			 hidden_effect = {
+			     country_event = {
+				     id = griffonstone.011
+			     }
+			 }
+		}
+	}
+	
+	country_event = { #Fallen Lord
+	    id = griffonstone.010
+	    title = griffonstone.010.t
+	    desc = griffonstone.010.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.010.a
+			add_manpower = -1000
+			389 = {
+			    add_manpower = -50000
+			}
+			set_politics = {
+			    ruling_party = neutrality
+			    elections_allowed = no
+		    }
+			add_popularity = {
+			    ideology = fascism 
+				popularity = -0.2 
+			}
+			add_ideas = BOI_republican_unrest
+			add_ideas = BOI_goldstone_cronies
+			create_corps_commander = {
+	            name = "Klaus Steelfeather"
+	            portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_6.dds"
+	            traits = { griffon_race_trait career_officer infantry_officer }
+	            skill = 2
+	            attack_skill = 3
+	            defense_skill = 3
+	            planning_skill = 2
+	            logistics_skill = 3
+            }
+			custom_effect_tooltip = BOI_CETT_gestal_focus_tree
+			hidden_effect = {
+			    load_focus_tree = Griffonstone_gestal
+				news_event = {
+				     id = griffonstone_news.1
+ 					 hours = 10
+				}
+			}
+		}
+	}
+	
+	country_event = { #Under New Management
+	    id = griffonstone.011
+	    title = griffonstone.011.t
+	    desc = griffonstone.011.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.011.a
+			custom_effect_tooltip = BOI_CETT_goldstone_focus_tree
+			add_manpower = -1
+			add_stability = 0.03
+			389 = {
+			    damage_building = { type = infrastructure damage = 1 }
+				damage_building = { type = industrial_complex damage = 1 }
+			}
+			hidden_effect = {
+			    load_focus_tree = Griffonstone_goldstone
+				news_event = {
+				     id = griffonstone_news.2
+ 					 hours = 10 
+				}
+			}
+		}
+	}
+	
+	country_event = { #Last Try
+	    id = griffonstone.012
+	    title = griffonstone.012.t
+	    desc = griffonstone.012.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	         name = griffonstone.012.a
+			 add_popularity = { ideology = fascism popularity = -0.1 }
+			 hidden_effect = {
+			     country_event = {
+				     id = griffonstone.013
+					 days = 1
+			     }
+			 }
+		}
+	}
+	
+	country_event = { #Scion of a fallen dynasty
+	    id = griffonstone.013
+	    title = griffonstone.013.t
+	    desc = griffonstone.013.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.013.a
+			custom_effect_tooltip = BOI_CETT_gallus_focus_tree
+			hidden_effect = {
+			     load_focus_tree = Griffonstone_gallus_1
+			}
+		}
+		option = {
+	         name = griffonstone.013.b
+			 hidden_effect = {
+			     country_event = {
+				     id = griffonstone.014
+			     }
+			 }
+		}
+	}
+	
+	country_event = { #New Beginning
+	    id = griffonstone.014
+	    title = griffonstone.014.t
+	    desc = griffonstone.014.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	         name = griffonstone.014.a
+			 hidden_effect = {
+			     country_event = {
+				     id = griffonstone.015
+					 days = 1
+			     }
+			 }
+		}
+	}
+	
+	country_event = { #Changing of the guard
+	    id = griffonstone.015
+	    title = griffonstone.015.t
+	    desc = griffonstone.015.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.015.a
+			retire_country_leader = yes
+			create_country_leader = {
+			    name = "Lord Gestal"
+			    picture = "Gestal.tga"
+			    expire = "1965.1.1"
+			    ideology = despotism
+		    }
+			set_politics = {
+			    ruling_party = democratic
+			    elections_allowed = no
+		    }
+			add_popularity = { 
+			    ideology = neutrality 
+				popularity = -0.1
+			}
+			custom_effect_tooltip = BOI_CETT_gilda_focus_tree
+			hidden_effect = {
+			     load_focus_tree = Griffonstone_gilda
+			}
+		}
+	}
+	
+	####FOCUS EVENTS####
+	
+	country_event = { #Mines of Solarspike
+	    id = griffonstone.200
+	    title = griffonstone.200.t
+	    desc = griffonstone.200.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.200.a
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 531
+			}
+			add_resource = {
+				type = chromium
+				amount = 10
+				state = 531 
+			}
+			add_resource = {
+				type = crystals
+				amount = 10
+				state = 531 
+			}
+			add_resource = {
+				type = steel
+				amount = 5
+				state = 488
+			}
+			add_resource = {
+				type = tungsten
+				amount = 5
+				state = 488 
+			}
+			add_resource = {
+				type = crystals
+				amount = 5
+				state = 488 
+			}
+		}
+		option = {
+	        name = griffonstone.200.b
+			add_resource = {
+				type = steel
+				amount = 3
+				state = 531
+			}
+			add_resource = {
+				type = chromium
+				amount = 3
+				state = 531 
+			}
+			add_resource = {
+				type = crystals
+				amount = 3
+				state = 531 
+			}
+			add_resource = {
+				type = steel
+				amount = 5
+				state = 488
+			}
+			add_resource = {
+				type = tungsten
+				amount = 5
+				state = 488 
+			}
+			add_resource = {
+				type = crystals
+				amount = 5
+				state = 488 
+			}
+		}
+	}
+	
+	country_event = { #Time for Changes
+	    id = griffonstone.201
+	    title = griffonstone.201.t
+	    desc = griffonstone.201.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.201.a
+			remove_ideas = BOI_political_deadlock
+		}
+	}
+	country_event = { #
+	    id = griffonstone.202
+	    title = griffonstone.202.t
+	    desc = griffonstone.202.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.202.a
+		}
+	}
+	country_event = { #Griffonstone offers to return Arantiga
+	    id = griffonstone.203
+	    title = griffonstone.203.t
+	    desc = griffonstone.203.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.203.a
+			FROM = {
+			    country_event = {
+				    id = griffonstone.220
+					days = 1
+				}
+			}
+		}
+		option = {
+	        name = griffonstone.203.b
+			FROM = {
+			    country_event = {
+				    id = griffonstone.221
+					days = 1
+				}
+			}
+		}
+	}
+	country_event = { #Wingbardy Agrees
+	    id = griffonstone.220
+	    title = griffonstone.220.t
+	    desc = griffonstone.220.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.220.a
+			hidden_effect = {
+			    ARA = {
+			        kill_ideology_leader = fascism
+				}
+			}
+			ARA = {
+			    transfer_state = 408
+			}
+			WNG = {
+			    set_truce = {
+				    target = BOI
+					days = 720
+				}
+			    puppet = ARA
+			    set_autonomy = { target = ARA autonomy_state = autonomy_subjugated_vassal }
+			}
+		}
+	}
+	country_event = { #Wingbardy Refuses
+	    id = griffonstone.221
+	    title = griffonstone.221.t
+	    desc = griffonstone.221.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.221.a
+			ARA = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	country_event = { #Journey Begins
+	    id = griffonstone.204
+	    title = griffonstone.204.t
+	    desc = griffonstone.204.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.204.a
+			country_event = {
+			    id = griffonstone.222
+				hours = 2
+			}
+		}
+	}
+	country_event = { #Into the Abyss
+	    id = griffonstone.222
+	    title = griffonstone.222.t
+	    desc = griffonstone.222.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.222.a
+			country_event = {
+			    id = griffonstone.223
+				hours = 2
+			}
+		}
+	}
+	country_event = { #Rocky Bottom
+	    id = griffonstone.223
+	    title = griffonstone.223.t
+	    desc = griffonstone.223.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.223.a
+			country_event = {
+			    id = griffonstone.224
+				hours = 2
+			}
+		}
+	}
+	country_event = { #The Last Guardian
+	    id = griffonstone.224
+	    title = griffonstone.224.t
+	    desc = griffonstone.224.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.224.a
+			country_event = {
+			    id = griffonstone.225
+				hours = 2
+			}
+			
+		}
+	}
+	country_event = { #The First One
+	    id = griffonstone.225
+	    title = griffonstone.225.t
+	    desc = griffonstone.225.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.225.a
+			country_event = {
+			    id = griffonstone.226
+				hours = 2
+			}
+		}
+	}
+	country_event = { #Into the Light
+	    id = griffonstone.226
+	    title = griffonstone.226.t
+	    desc = griffonstone.226.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.226.a
+			country_event = {
+			    id = griffonstone.227
+				hours = 2
+			}
+		}
+	}
+	country_event = { #Back From the Abyss
+	    id = griffonstone.227
+	    title = griffonstone.227.t
+	    desc = griffonstone.227.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.227.a
+			hidden_effect = {
+			    retire_ideology_leader = democratic
+			}
+			create_country_leader = {
+	            name = "Gallus"
+	            desc = BOI_gallus_desc
+	            picture = "GAW_Gallus.tga"
+	            expire = "1965.1.1"
+	            ideology = liberalism
+	            traits = {
+
+	            }
+            }
+			set_politics = {
+			    ruling_party = democratic
+		        elections_allowed = no
+			}
+			swap_ideas = {
+			    remove_idea = idol_of_boreas_lost 
+				add_idea = BOI_idol_of_boreas
+			}
+			set_party_name = { ideology = democratic name = BOI_gallus_democrats long_name = BOI_gallus_democrats_long }
+			custom_effect_tooltip = BOI_CETT_load_second_gallus_tree
+		    hidden_effect = {
+		        load_focus_tree = Griffonstone_gallus_2
+				news_event = {
+				    id = griffonstone_news.003
+					days = 1
+				}
+				set_global_flag = BOI_idol_recovered
+				set_country_flag = BOI_has_true_idol
+		    }
+		}
+	}
+	country_event = { #Coronation of Gallus
+	    id = griffonstone.205
+	    title = griffonstone.205.t
+	    desc = griffonstone.205.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.205.a
+			remove_ideas = kingdom_with_no_king
+			create_field_marshal = {
+	            name = "Gallus"
+	            picture = "Gallus.tga"
+	            traits = { griffon_race_trait trait_reckless media_personality infantry_leader organizer inspirational_leader }
+	            skill = 4
+	            attack_skill = 5
+	            defense_skill = 5
+	            planning_skill = 3
+	            logistics_skill = 3
+            }
+			hidden_effect = {
+			    country_event = {
+				    id = griffonstone.228
+					days = 60
+				}
+			}
+		}
+	}
+	country_event = { #The end of the way
+	    id = griffonstone.228
+	    title = griffonstone.228.t
+	    desc = griffonstone.228.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.228.a
+			kill_ideology_leader = neutrality
+			create_country_leader = {
+			    name = "Lord Gestal"
+			    picture = "Gestal.tga"
+			    expire = "1965.1.1"
+			    ideology = despotism
+		    }
+		}
+	}
+	country_event = { #The King and The Emperor
+	    id = griffonstone.206
+	    title = griffonstone.206.t
+	    desc = griffonstone.206.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.206.a
+		}
+	}
+	country_event = { #Something Ends...
+	    id = griffonstone.207
+	    title = griffonstone.207.t
+	    desc = griffonstone.207.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.207.a
+			add_timed_idea = {
+			    idea = BOI_gratitude
+				days = 20
+			}
+		}
+	}
+	country_event = { #Griffons in Pan-Equestrian Research?
+	    id = griffonstone.208
+	    title = griffonstone.208.t
+	    desc = griffonstone.208.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.208.a
+			BOI = {
+			    country_event = {
+				    id = griffonstone.229
+					days = 1
+				}
+			}
+		}
+		option = {
+	        name = griffonstone.208.b
+			BOI = {
+			    add_to_tech_sharing_group = equestrian_research
+			    country_event = {
+				    id = griffonstone.230
+					days = 1
+				}
+			}
+		}
+	}
+	country_event = { #Scientific Cooperation
+	    id = griffonstone.229
+	    title = griffonstone.229.t
+	    desc = griffonstone.229.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.229.a
+		}
+	}
+	country_event = { #Equestria Refuses
+	    id = griffonstone.230
+	    title = griffonstone.230.t
+	    desc = griffonstone.230.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.230.a
+		}
+	}
+	country_event = { #Trade Agreement with Griffons?
+	    id = griffonstone.209
+	    title = griffonstone.209.t
+	    desc = griffonstone.209.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.209.a
+			BOI = {
+			    country_event = {
+				    id = griffonstone.231
+					days = 1
+				}
+			}
+		}
+		option = {
+	        name = griffonstone.209.b
+			BOI = {
+			    country_event = {
+				    id = griffonstone.232
+					days = 1
+				}
+			}
+		}
+	}
+	country_event = { #New Trade Agreement
+	    id = griffonstone.231
+	    title = griffonstone.231.t
+	    desc = griffonstone.231.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.231.a
+			EQS = {
+			    add_ideas = BOI_new_trade_agreement
+			}
+			add_ideas = BOI_new_trade_agreement
+		}
+	}
+	country_event = { #Equestria Rejects Agreement
+	    id = griffonstone.232
+	    title = griffonstone.232.t
+	    desc = griffonstone.232.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.232.a
+		}
+	}
+	country_event = { #Alliance with Griffonstone
+	    id = griffonstone.210
+	    title = griffonstone.210.t
+	    desc = griffonstone.210.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.210.a
+			give_guarantee = BOI
+			BOI = {
+			    country_event = {
+				    id = griffonstone.233
+					days = 1
+				}
+			}
+		}
+		option = {
+	        name = griffonstone.210.b
+			BOI = {
+			    country_event = {
+				    id = griffonstone.234
+					days = 1
+				}
+			}
+		}
+	}
+	country_event = { #Alliance
+	    id = griffonstone.233
+	    title = griffonstone.233.t
+	    desc = griffonstone.233.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.233.a
+			give_guarantee = EQS
+		}
+	}
+	country_event = { #Reject Alliance
+	    id = griffonstone.234
+	    title = griffonstone.234.t
+	    desc = griffonstone.234.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.234.a
+		}
+	}
+	country_event = { #What to do with republicans
+	    id = griffonstone.235
+	    title = griffonstone.235.t
+	    desc = griffonstone.235.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.235.a
+			add_popularity = { ideology = democratic popularity = -0.2 }
+			remove_ideas = BOI_republican_unrest
+			add_ideas = BOI_republicans_supressed
+		}
+		option = {
+	        name = griffonstone.235.b
+			add_popularity = { ideology = democratic popularity = -0.1 }
+			remove_ideas = BOI_republican_unrest
+			add_ideas = BOI_republicans_in_council
+		}
+	}
+	country_event = { #Traitors and Opportunists
+	    id = griffonstone.236
+	    title = griffonstone.236.t
+	    desc = griffonstone.236.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.236.a
+			add_manpower = -3000
+			add_stability = 0.03
+		}
+		option = {
+	        name = griffonstone.236.b
+			add_political_power = -100
+		}
+	}
+	country_event = { #Prodigal Son Returns
+	    id = griffonstone.214
+	    title = griffonstone.214.t
+	    desc = griffonstone.214.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.214.a
+			add_stability = 0.05
+			add_political_power = 100
+			add_ideas = BOI_lord_gestal
+			annex_country = {
+                target = BOI
+                transfer_troops = yes
+            }
+		}
+	}
+	country_event = { #New Regent
+	    id = griffonstone.215
+	    title = griffonstone.215.t
+	    desc = griffonstone.215.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.215.a
+			set_cosmetic_tag = GRIF_EMPIRE
+			save_global_event_target_as = griffonian_empire
+			set_variable = {
+				global.griffonian_empire_var = THIS
+			}
+			set_capital = 382
+			add_ideas = GRI_grover_vi
+			remove_ideas = kingdom_with_no_king
+		}
+	}
+	country_event = { #The Duchess of Strawberry
+	    id = griffonstone.237
+	    title = griffonstone.237.t
+	    desc = griffonstone.237.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.237.a
+			set_cosmetic_tag = GRIF_EMPIRE
+			save_global_event_target_as = griffonian_empire
+			set_variable = {
+				global.griffonian_empire_var = THIS
+			}
+			set_capital = 382
+			retire_country_leader = yes
+			create_country_leader = {
+	            name = "Empress Gabriela Eagleclaw"
+	            desc = "POLITICS_EAGLECLAW_DESC" #TODO Should be changed
+	            picture = "Gabriela.tga"
+	            expire = "1965.1.1"
+	            female = yes
+	            ideology = despotism
+	            traits = {
+		            STW_ambitious_ruler #TODO should be changed
+	            }
+            }
+			remove_ideas = kingdom_with_no_king
+		}
+	}
+	country_event = { #The Lord and The Emperor
+	    id = griffonstone.211
+	    title = griffonstone.211.t
+	    desc = griffonstone.211.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.211.a
+			add_ideas = BOI_grover_I
+		}
+	}
+	country_event = { #The Offer
+	    id = griffonstone.212
+	    title = griffonstone.212.t
+	    desc = griffonstone.212.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.212.a
+			add_ideas = BOI_cyrille_I
+		}
+	}
+	country_event = { #Pirate Raids on Celestial Sea
+	    id = griffonstone.213
+	    title = griffonstone.213.t
+	    desc = griffonstone.213.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.213.a
+			add_timed_idea = {
+			    idea = BOI_widespread_piracy
+				days = 360
+			}
+		}
+	}
+	country_event = { #Noble Affairs
+	    id = griffonstone.216
+	    title = griffonstone.216.t
+	    desc = griffonstone.216.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.216.a
+			add_ideas = BOI_resistance_to_reforms
+		}
+	}
+	country_event = { #Question of Compensation
+	    id = griffonstone.217
+	    title = griffonstone.217.t
+	    desc = griffonstone.217.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+		timeout_days = 7
+		
+		immediate = {
+		    country_event = {
+			    id = griffonstone.238
+				days = 15
+			}
+		}
+		
+	    option = {
+	        name = griffonstone.217.a
+			hidden_effect = {
+			    set_country_flag = BOI_FLAG_nobles_screw_themselves
+			}
+		}
+		option = {
+	        name = griffonstone.217.b
+		}
+	}
+	country_event = { #HIDDEN 1
+	    id = griffonstone.238
+	    title = griffonstone.238.t
+	    desc = griffonstone.238.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+		hidden = yes
+		
+	    immediate = {
+		    IF = {
+			    limit = {
+				    has_country_flag = BOI_FLAG_nobles_screw_themselves
+				}
+				country_event = griffonstone.239
+				else = {
+				    country_event = griffonstone.244
+				}
+			}
+		}
+	}
+	country_event = { #Copperhill Rebellion
+	    id = griffonstone.239
+	    title = griffonstone.239.t
+	    desc = griffonstone.239.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+		timeout_days = 7
+		
+		immediate = {
+		    country_event = {
+			    id = griffonstone.240
+				days = 10
+			}
+		}
+		
+	    option = {
+	        name = griffonstone.239.a
+			set_country_flag = BOI_FLAG_regular_army
+		}
+		option = {
+	        name = griffonstone.239.b
+		}
+	}
+	country_event = { #Exodus of Wealth
+	    id = griffonstone.244
+	    title = griffonstone.244.t
+	    desc = griffonstone.244.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+		immediate = {
+		    country_event = {
+			    id = griffonstone.245
+				days = 20
+			}
+		}
+		
+	    option = {
+	        name = griffonstone.244.a
+			add_political_power = -50
+			add_timed_idea = {
+			    idea = BOI_exodus_of_wealth
+				days = 180
+			}
+		}
+	}
+	country_event = { #HIDDEN 2
+	    id = griffonstone.240
+	    title = griffonstone.240.t
+	    desc = griffonstone.240.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    hidden = yes
+		
+		immediate = {
+		    IF = {
+			    limit = {
+				    has_country_flag = BOI_FLAG_regular_army
+				}
+				country_event = griffonstone.241
+				else = {
+				    country_event = griffonstone.249
+				}
+			}
+		}
+	}
+	country_event = { #Battle of Copperhill
+	    id = griffonstone.241
+	    title = griffonstone.241.t
+	    desc = griffonstone.241.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+		timeout_days = 7
+		
+		immediate = {
+		    country_event = {
+			    id = griffonstone.242
+				days = 10
+			}
+		}
+		
+	    option = {
+	        name = griffonstone.241.a
+			add_manpower = -5000
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -1000 }
+			army_experience = 10
+			#TODO add people exodus from state copperhill
+			hidden_effect = {
+			    EYR = {
+			        #country_event = griffonstone.2
+			    }
+			}
+		}
+	}
+	country_event = { #Copperhill Rises Up
+	    id = griffonstone.249
+	    title = griffonstone.249.t
+	    desc = griffonstone.249.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+		timeout_days = 7
+		
+		immediate = {
+		    country_event = {
+			    id = griffonstone.242
+				days = 10
+			}
+		}
+		
+	    option = {
+	        name = griffonstone.249.a
+			add_manpower = -25000
+			679 = {
+			    damage_building = { type = infrastructure damage = 3 }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
+			add_popularity = { ideology = neutrality popularity = -0.03 }
+			add_stability = -0.05
+		}
+	}
+	country_event = { #Gestal Returns
+	    id = griffonstone.242
+	    title = griffonstone.242.t
+	    desc = griffonstone.242.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+		timeout_days = 7
+		
+		immediate = {
+		    country_event = {
+			    id = griffonstone.243
+				days = 20
+			}
+		}
+		
+	    option = {
+	        name = griffonstone.242.a
+			add_manpower = -5000
+			471 = {
+			    damage_building = { type = infrastructure damage = 2 }
+			}
+		}
+		option = {
+	        name = griffonstone.242.b
+			add_manpower = -2000
+			add_political_power = -60
+			471 = {
+			    damage_building = { type = infrastructure damage = 1 }
+			}
+		}
+	}
+	country_event = { #One Last Obstacle
+	    id = griffonstone.245
+	    title = griffonstone.245.t
+	    desc = griffonstone.245.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+		immediate = {
+		    country_event = {
+			    id = griffonstone.246
+				days = 20
+			}
+		}
+		
+	    option = {
+	        name = griffonstone.245.a
+			hidden_effect = {
+			    set_country_flag = BOI_FLAG_assassination_ordered
+			}
+		}
+		option = {
+		    name = griffonstone.245.b
+		}
+	}
+	country_event = { #Landscape after the battle
+	    id = griffonstone.243
+	    title = griffonstone.243.t
+	    desc = griffonstone.243.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.243.a
+			remove_ideas = BOI_resistance_to_reforms
+			add_stability = 0.05
+			add_political_power = -50
+			add_popularity = { ideology = neutrality popularity = -0.15 }
+		}
+		option = {
+	        name = griffonstone.243.b
+			remove_ideas = BOI_resistance_to_reforms
+			add_political_power = 50
+			add_popularity = { ideology = neutrality popularity = -0.1 }
+		}
+	}
+	country_event = { #HIDDEN 3
+	    id = griffonstone.246
+	    title = griffonstone.246.t
+	    desc = griffonstone.246.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+		hidden = yes
+		
+	    immediate = {
+		    IF = {
+			    limit = {
+				    has_country_flag = BOI_FLAG_assassination_ordered
+				}
+				country_event = griffonstone.247
+				else = {
+				    country_event = griffonstone.248
+				}
+			}
+		}
+	}
+	country_event = { #Failed Assassination
+	    id = griffonstone.247
+	    title = griffonstone.247.t
+	    desc = griffonstone.247.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.247.a
+			remove_ideas = BOI_resistance_to_reforms
+			add_political_power = -100
+			add_popularity = { ideology = neutrality popularity = -0.05 }
+			hidden_effect = {
+			    clr_country_flag = BOI_FLAG_assassination_ordered
+				clr_country_flag = BOI_FLAG_regular_army
+				clr_country_flag = BOI_FLAG_nobles_screw_themselves
+			}
+		}
+	}
+	country_event = { #The end of an Era
+	    id = griffonstone.248
+	    title = griffonstone.248.t
+	    desc = griffonstone.248.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.248.a
+			remove_ideas = BOI_resistance_to_reforms
+			hidden_effect = {
+			    clr_country_flag = BOI_FLAG_assassination_ordered
+				clr_country_flag = BOI_FLAG_regular_army
+				clr_country_flag = BOI_FLAG_nobles_screw_themselves
+			}
+		}
+	}
+	country_event = { #Declaration of Republic
+	    id = griffonstone.218
+	    title = griffonstone.218.t
+	    desc = griffonstone.218.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+		immediate = {
+		    country_event = {
+			    id = griffonstone.249
+				days = 90
+			}
+			country_event = {
+			    id = griffonstone.267
+				days = 1800
+			}
+		}
+		
+	    option = {
+		    set_cosmetic_tag = BOI_REP
+	        name = griffonstone.218.a
+			remove_ideas = kingdom_with_no_king
+			add_popularity = { ideology = democratic popularity = 0.1 }
+			add_country_leader_trait = republican_revolutionary
+		}
+	}
+	country_event = { #Farewell
+	    id = griffonstone.267
+	    title = griffonstone.267.t
+	    desc = griffonstone.267.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.267.a
+		}
+	}
+	country_event = { #Elections
+	    id = griffonstone.250
+	    title = griffonstone.250.t
+	    desc = griffonstone.250.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.250.a
+			set_party_name = { ideology = democratic name = BOI_RRP_democrats long_name = BOI_RRP_democrats_long }
+			complete_national_focus = BOI_new_direction
+		}
+		option = {
+	        name = griffonstone.250.b
+			set_party_name = { ideology = democratic name = BOI_GPL_democrats long_name = BOI_GPL_democrats_long }
+			complete_national_focus = BOI_new_direction
+		}
+		option = {
+	        name = griffonstone.250.c
+			set_party_name = { ideology = democratic name = BOI_GFP_democrats long_name = BOI_GFP_democrats_long }
+			complete_national_focus = BOI_new_direction
+		}
+	}
+	country_event = { #Envoy from Griffonstone
+	    id = griffonstone.219
+	    title = griffonstone.219.t
+	    desc = griffonstone.219.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.219.a
+			add_political_power = -50
+			BOI = {
+			    country_event = {
+				    id = griffonstone.251
+					days = 1
+				}
+			}
+		}
+		option = {
+	        name = griffonstone.219.b
+			add_political_power = -50
+			BOI = {
+			    country_event = {
+				    id = griffonstone.252
+					days = 1
+				}
+			}
+		}
+		option = {
+	        name = griffonstone.219.c
+			add_political_power = -100
+			BOI = {
+			    country_event = {
+				    id = griffonstone.253
+					days = 1
+				}
+			}
+		}
+		option = {
+	        name = griffonstone.219.d
+			BOI = {
+			    country_event = {
+				    id = griffonstone.254
+					days = 1
+				}
+			}
+		}
+	}
+	country_event = { #Advisors
+	    id = griffonstone.251
+	    title = griffonstone.251.t
+	    desc = griffonstone.251.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.251.a
+			add_ideas = BOI_equestrian_advisors
+		}
+	}
+	country_event = { #Research
+	    id = griffonstone.252
+	    title = griffonstone.252.t
+	    desc = griffonstone.252.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.252.a
+			BOI = {
+			    add_to_tech_sharing_group = equestrian_research
+			}
+		}
+	}
+	country_event = { #Friendship
+	    id = griffonstone.253
+	    title = griffonstone.253.t
+	    desc = griffonstone.253.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.253.a
+			add_ideas = BOI_equestrian_advisors
+			BOI = {
+			    add_to_tech_sharing_group = equestrian_research
+			}
+		}
+	}
+	country_event = { #Bugger off
+	    id = griffonstone.254
+	    title = griffonstone.254.t
+	    desc = griffonstone.254.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.254.a
+		}
+	}
+	country_event = { #Griffonstone-Herzland help arrives
+	    id = griffonstone.255
+	    title = griffonstone.255.t
+	    desc = griffonstone.255.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.255.a
+			add_manpower = 25000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+				amount = 5000
+			}
+			#TODO OOB divisions
+		}
+	}
+	country_event = { #Union join proposal
+	    id = griffonstone.256
+	    title = griffonstone.256.t
+	    desc = griffonstone.256.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = no
+		
+	    option = {
+	        name = griffonstone.256.a
+			BOI = {
+			    country_event = {
+				    id = griffonstone.257
+					days = 1
+				}
+			}
+		}
+		option = {
+	        name = griffonstone.256.b
+			BOI = {
+			    country_event = {
+				    id = griffonstone.258
+					days = 1
+				}
+				hidden_effect = {
+				    set_country_flag = BOI_FLAG_refused_griffonian_union
+				}
+			}
+		}
+	}
+	country_event = { #Union join positive
+	    id = griffonstone.257
+	    title = griffonstone.257.t
+	    desc = griffonstone.257.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = no
+		
+	    option = {
+	        name = griffonstone.257.a
+			BOI = {
+			    add_to_faction = FROM
+			}
+		}
+	}
+	country_event = { #Union join negative
+	    id = griffonstone.258
+	    title = griffonstone.258.t
+	    desc = griffonstone.258.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = no
+		
+	    option = {
+	        name = griffonstone.258.a
+		}
+	}
+	country_event = { #War profit proposal
+	    id = griffonstone.259
+	    title = griffonstone.259.t
+	    desc = griffonstone.259.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = no
+		
+	    option = {
+	        name = griffonstone.259.a
+			add_political_power = -100
+			BOI = {
+			    country_event = {
+				    id = griffonstone.260
+					days = 1
+				}
+			}
+		}
+		option = {
+	        name = griffonstone.259.b
+			BOI = {
+			    country_event = {
+				    id = griffonstone.261
+					days = 1
+				}
+			}
+		}
+	}
+	country_event = { #War profit positive
+	    id = griffonstone.260
+	    title = griffonstone.260.t
+	    desc = griffonstone.260.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = no
+		
+	    option = {
+	        name = griffonstone.260.a
+			send_equipment = {
+			    target = FROM
+				type = infantry_equipment
+				amount = 5000
+			}
+			FROM = {
+			    add_timed_idea = {
+				    idea = BOI_griffonstone_military_assistance
+					days = 180
+				}
+			}
+			add_timed_idea = {
+			    idea = BOI_payment
+				days = 90
+		    }
+			hidden_effect = {
+			    clr_country_flag = BOI_FLAG_waiting_for_response
+			}
+		}
+	}
+	country_event = { #War profit negative
+	    id = griffonstone.261
+	    title = griffonstone.261.t
+	    desc = griffonstone.261.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = no
+		
+	    option = {
+	        name = griffonstone.261.a
+			hidden_effect = {
+			    clr_country_flag = BOI_FLAG_waiting_for_response
+			}
+		}
+	}
+	country_event = { #Sicameon Corsairs - Deals With Griffonstone
+	    id = griffonstone.262
+	    title = griffonstone.262.t
+	    desc = griffonstone.262.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.262.a
+			add_ideas = BOI_deal_with_goldstone
+			hidden_effect = {
+			    BOI = {
+			        country_event = {
+				        id = griffonstone.264
+					    days = 1
+				    }
+			    }
+			}
+		}
+		option = {
+	        name = griffonstone.262.b
+			BOI = {
+			    country_event = {
+				    id = griffonstone.265
+					days = 1
+				}
+			}
+		}
+	}
+	country_event = { #Sicameon Corsairs - Deals With Griffonstone - yay
+	    id = griffonstone.264
+	    title = griffonstone.264.t
+	    desc = griffonstone.264.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.264.a
+			add_ideas = BOI_smuggling_in_zebrica
+		}
+	}
+	country_event = { #Sicameon Corsairs - Deals With Griffonstone - nay
+	    id = griffonstone.265
+	    title = griffonstone.265.t
+	    desc = griffonstone.265.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.265.a
+		}
+	}
+	country_event = { #Smugglers in Manehattan
+	    id = griffonstone.263
+	    title = griffonstone.263.t
+	    desc = griffonstone.263.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.263.a
+			add_ideas = BOI_smugglers_activity
+		}
+	}
+	country_event = { #Griffonstonians in the protectorate
+	    id = griffonstone.266
+	    title = griffonstone.266.t
+	    desc = griffonstone.266.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.266.a
+			#TODO add resources
+			add_ideas = BOI_legitimate_businessgriffs
+		}
+	}
+	country_event = { #Golden Dusk
+	    id = griffonstone.268
+	    title = griffonstone.268.t
+	    desc = griffonstone.268.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.268.a
+		}
+	}
+	country_event = { #Plea for Help
+	    id = griffonstone.269
+	    title = griffonstone.269.t
+	    desc = griffonstone.269.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.269.a
+			add_political_power = -25
+			add_manpower = -1000
+			country_event = {
+			    id = griffonstone.271
+				days = 1
+			}
+		}
+		option = {
+	        name = griffonstone.269.b
+			country_event = {
+			    id = griffonstone.272
+				days = 1
+			}
+		}
+	}
+	country_event = { #Breakthrough #is a lie
+	    id = griffonstone.270
+	    title = griffonstone.270.t
+	    desc = griffonstone.270.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.270.a
+			add_political_power = -100
+			add_stability = -0.2
+		}
+	}
+	country_event = { #Plea - yay
+	    id = griffonstone.271
+	    title = griffonstone.271.t
+	    desc = griffonstone.271.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.271.a
+			add_tech_bonus = {
+			    name = gestal_gri_bonus_1
+			    bonus = 0.5
+			    uses = 1
+			    category = infantry_weapons
+		    }
+			add_tech_bonus = {
+			    name = gestal_gri_bonus_2
+			    bonus = 0.5
+			    uses = 1
+			    category = land_doctrine
+		    }
+			add_popularity = { ideology = neutrality popularity = 0.05 }
+		}
+	}
+	country_event = { #Plea - nay
+	    id = griffonstone.272
+	    title = griffonstone.272.t
+	    desc = griffonstone.272.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.272.a
+			add_political_power = -100
+			add_stability = -0.2
+		}
+	}
+	country_event = { #Hidden FRA initialisation event
+	    id = griffonstone.273
+	    title = griffonstone.273.t
+	    desc = griffonstone.273.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = no
+	    fire_only_once = yes
+		
+		hidden = yes
+		
+		trigger = {
+		    tag = BOI
+		}
+		
+	    immediate = {
+		    random_list = {
+			    10 = {
+				    country_event = {
+					    id = griffonstone.274
+						days = 120
+					}
+				}
+				15 = {
+				    country_event = {
+					    id = griffonstone.274
+						days = 180
+					}
+				}
+				10 = {
+				    country_event = {
+					    id = griffonstone.275
+						days = 120
+					}
+				}
+				15 = {
+				    country_event = {
+					    id = griffonstone.275
+						days = 180
+					}
+				}
+				10 = {
+				    country_event = {
+					    id = griffonstone.276
+						days = 120
+					}
+				}
+				15 = {
+				    country_event = {
+					    id = griffonstone.276
+						days = 180
+					}
+				}
+				10 = {
+				    country_event = {
+					    id = griffonstone.277
+						days = 120
+					}
+				}
+				15 = {
+				    country_event = {
+					    id = griffonstone.277
+						days = 180
+					}
+				}
+			}
+		}
+	}
+	country_event = { #Hidden FRA re-initialisation event
+	    id = griffonstone.278
+	    title = griffonstone.278.t
+	    desc = griffonstone.278.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = no
+		
+		allowed = {
+		    has_idea = BOI_rumarean_unrest
+		}
+		
+	    immediate = {
+		    IF = {
+			    limit = {
+				    has_country_flag = BOI_FLAG_FRA_assass
+				}
+				clr_country_flag = BOI_FLAG_FRA_assass
+		        random_list = {
+				    10 = {
+				        country_event = {
+					        id = griffonstone.275
+						    days = 120
+					    }
+				    }
+				    15 = {
+				        country_event = {
+					        id = griffonstone.275
+						    days = 180
+					    }
+				    }
+				    10 = {
+				        country_event = {
+					        id = griffonstone.276
+						    days = 120
+					    }
+				    }
+				    15 = {
+				        country_event = {
+					        id = griffonstone.276
+						    days = 180
+					    }
+				    }
+				    10 = {
+				        country_event = {
+					        id = griffonstone.277
+						    days = 120
+					    }
+				    }
+				    15 = {
+				        country_event = {
+					        id = griffonstone.277
+						    days = 180
+					    }
+				    }
+				}
+			}
+			IF = {
+			    limit = {
+				    has_country_flag = BOI_FLAG_FRA_patrol
+				}
+				clr_country_flag = BOI_FLAG_FRA_patrol
+		        random_list = {
+				    10 = {
+				        country_event = {
+					        id = griffonstone.274
+						    days = 120
+					    }
+				    }
+				    15 = {
+				        country_event = {
+					        id = griffonstone.274
+						    days = 180
+					    }
+				    }
+				    10 = {
+				        country_event = {
+					        id = griffonstone.276
+						    days = 120
+					    }
+				    }
+				    15 = {
+				        country_event = {
+					        id = griffonstone.276
+						    days = 180
+					    }
+				    }
+				    10 = {
+				        country_event = {
+					        id = griffonstone.277
+						    days = 120
+					    }
+				    }
+				    15 = {
+				        country_event = {
+					        id = griffonstone.277
+						    days = 180
+					    }
+				    }
+				}
+			}
+			IF = {
+			    limit = {
+				    has_country_flag = BOI_FLAG_FRA_rail
+				}
+				clr_country_flag = BOI_FLAG_FRA_rail
+		        random_list = {
+				    10 = {
+				        country_event = {
+					        id = griffonstone.275
+						    days = 120
+					    }
+				    }
+				    15 = {
+				        country_event = {
+					        id = griffonstone.275
+						    days = 180
+					    }
+				    }
+				    10 = {
+				        country_event = {
+					        id = griffonstone.274
+						    days = 120
+					    }
+				    }
+				    15 = {
+				        country_event = {
+					        id = griffonstone.274
+						    days = 180
+					    }
+				    }
+				    10 = {
+				        country_event = {
+					        id = griffonstone.277
+						    days = 120
+					    }
+				    }
+				    15 = {
+				        country_event = {
+					        id = griffonstone.277
+						    days = 180
+					    }
+				    }
+				}
+			}
+			IF = {
+			    limit = {
+				    has_country_flag = BOI_FLAG_FRA_bomb
+				}
+				clr_country_flag = BOI_FLAG_FRA_bomb
+		        random_list = {
+				    10 = {
+				        country_event = {
+					        id = griffonstone.275
+						    days = 120
+					    }
+				    }
+				    15 = {
+				        country_event = {
+					        id = griffonstone.275
+						    days = 180
+					    }
+				    }
+				    10 = {
+				        country_event = {
+					        id = griffonstone.276
+						    days = 120
+					    }
+				    }
+				    15 = {
+				        country_event = {
+					        id = griffonstone.276
+						    days = 180
+					    }
+				    }
+				    10 = {
+				        country_event = {
+					        id = griffonstone.274
+						    days = 120
+					    }
+				    }
+				    15 = {
+				        country_event = {
+					        id = griffonstone.274
+						    days = 180
+					    }
+				    }
+				}
+			}
+		}
+	}
+	country_event = { #FRA assassination
+	    id = griffonstone.274
+	    title = griffonstone.274.t
+	    desc = griffonstone.274.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.274.a
+			add_political_power = -50
+			hidden_effect = {
+			    set_country_flag = BOI_FLAG_FRA_assass
+			    country_event = griffonstone.278
+			}
+		}
+	}
+	country_event = { #FRA attacks patrols
+	    id = griffonstone.275
+	    title = griffonstone.275.t
+	    desc = griffonstone.275.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.275.a
+			random_list = {
+			    40 = {
+			        add_manpower = -46
+				}
+				40 = {
+			        add_manpower = -68
+				}
+				20 = {
+			        add_manpower = -89
+				}
+			}
+			hidden_effect = {
+			    set_country_flag = BOI_FLAG_FRA_patrol
+			    country_event = griffonstone.278
+			}
+		}
+	}
+	country_event = { #FRA sabotages rail tracks
+	    id = griffonstone.276
+	    title = griffonstone.276.t
+	    desc = griffonstone.276.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.276.a
+			random_list = {
+			    25 = {
+			        679 = {
+					    damage_building = { type = infrastructure damage = 2 }
+			        }
+				}
+				25 = {
+			        679 = {
+			            damage_building = { type = infrastructure damage = 2 }
+			        }
+				}
+				25 = {
+			        679 = {
+					    damage_building = { type = infrastructure damage = 1 }
+			        }
+			        384 = {
+					    damage_building = { type = infrastructure damage = 1 }
+			        }
+				}
+				10 = {
+			        679 = {
+					    damage_building = { type = infrastructure damage = 2 }
+			        }
+			        384 = {
+					    damage_building = { type = infrastructure damage = 1 }
+			        }
+				}
+				10 = {
+			        679 = {
+					    damage_building = { type = infrastructure damage = 1 }
+			        }
+			        384 = {
+					    damage_building = { type = infrastructure damage = 2 }
+			        }
+				}
+			}
+			hidden_effect = {
+			    set_country_flag = BOI_FLAG_FRA_rail
+			    country_event = griffonstone.278
+			}
+		}
+	}
+	country_event = { #FRA conducts bombing
+	    id = griffonstone.277
+	    title = griffonstone.277.t
+	    desc = griffonstone.277.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.277.a
+			random_list = {
+			    40 = {
+			        389 = {
+					    add_manpower = -347
+					    damage_building = { type = industrial_complex damage = 1 }
+					}
+				}
+				40 = {
+			        389 = {
+					    add_manpower = -459
+					    damage_building = { type = industrial_complex damage = 1 }
+					}
+				}
+				20 = {
+			        389 = {
+					    add_manpower = -941
+					    damage_building = { type = industrial_complex damage = 1 }
+					}
+				}
+			}
+			hidden_effect = {
+			    set_country_flag = BOI_FLAG_FRA_bomb
+			    country_event = griffonstone.278
+			}
+		}
+	}
+	country_event = { #The End
+	    id = griffonstone.279
+	    title = griffonstone.279.t
+	    desc = griffonstone.279.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.279.a
+		}
+	}
+	country_event = { #Visitor from beyond the sea
+	    id = griffonstone.280
+	    title = griffonstone.280.t
+	    desc = griffonstone.280.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = yes
+		
+	    option = {
+	        name = griffonstone.280.a
+		}
+	}
+	country_event = { #Idol transfer
+	    id = griffonstone.281
+	    title = griffonstone.281.t
+	    desc = griffonstone.281.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = no
+		
+	    option = {
+	        name = griffonstone.281.a
+			add_ideas = BOI_idol_of_boreas
+			add_political_power = 100
+		}
+	}
+	country_event = { #Idol loss
+	    id = griffonstone.282
+	    title = griffonstone.282.t
+	    desc = griffonstone.282.d
+	    picture = GFX_event_medieval_city_2
+		
+	    is_triggered_only = yes
+	    fire_only_once = no
+		
+	    option = {
+	        name = griffonstone.282.a
+			remove_ideas = BOI_idol_of_boreas
+			add_political_power = -100
+		}
+	}
+	

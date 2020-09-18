@@ -1,0 +1,7625 @@
+    ##INDUSTRY##
+	shared_focus = {
+		id = BOI_from_ashes
+		icon = GFX_goal_bankruptcy
+		x = -2
+		y = 0
+		cost = 5.00
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = industrial_bonus
+			    bonus = 1
+			    uses = 1
+			    category = industry
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_restore_roads
+		icon = GFX_goal_generic_construct_public_housing
+		x = -2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_from_ashes
+		prerequisite = { focus = BOI_from_ashes }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    389 = {
+			    add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+	}
+	shared_focus = {
+		id = BOI_gather_scraps
+		icon = GFX_goal_griffon_rusty_coin 
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_from_ashes
+		prerequisite = { focus = BOI_from_ashes }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 25
+			389 = {
+			    add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_ask_for_loans
+		icon = GFX_goal_tax_slave 
+		x = 2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_from_ashes
+		prerequisite = { focus = BOI_from_ashes }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = { 
+			    idea = BOI_development_loans  
+				days = 360 
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_literacy_campaign
+		icon = GFX_goal_bookstack 
+		x = -1
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_restore_roads
+		prerequisite = { focus = BOI_restore_roads }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			decrease_illiteracy = yes
+		}
+	}
+	shared_focus = {
+		id = BOI_educate_engineers
+		icon = GFX_goal_industrial_pony 
+		x = -2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_literacy_campaign
+		prerequisite = { focus = BOI_literacy_campaign }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			name = industrial_bonus_2
+			bonus = 1
+			uses = 2
+			category = industry
+		}
+		}
+	}
+	shared_focus = {
+		id = BOI_temple_schools
+		icon = GFX_focus_spa_save_the_alcazar
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_literacy_campaign
+		prerequisite = { focus = BOI_literacy_campaign }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			decrease_illiteracy = yes
+		}
+	}
+	shared_focus = {
+		id = BOI_griffonstone_uni
+		icon = GFX_goal_technological_supremacy 
+		x = -1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_literacy_campaign
+		prerequisite = { focus = BOI_educate_engineers }
+		prerequisite = { focus = BOI_temple_schools }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_research_slot = 1
+			decrease_illiteracy = yes
+		}
+	}
+	shared_focus = {
+		id = BOI_guto_institute
+		icon = GFX_goal_double_research 
+		x = -1
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_literacy_campaign
+		prerequisite = { focus = BOI_griffonstone_uni }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = poor_science_base }
+				add_ideas = better_science_base
+			}
+			if = {
+				limit = { has_idea = better_science_base }
+				add_ideas = big_science_base
+			}
+			if = {
+				limit = { has_idea = big_science_base }
+				add_tech_bonus = {
+			        name = guto_institute_bonus_1_1
+			        bonus = 0.5
+			        uses = 1
+			        category = industry
+		        }
+				add_tech_bonus = {
+			        name = guto_institute_bonus_1_2
+			        bonus = 0.5
+			        uses = 1
+			        category = electronics
+		        }
+			}
+			if = {
+				limit = { has_idea = proper_science_base }
+				add_tech_bonus = {
+			        name = guto_institute_bonus_2_1
+			        bonus = 0.75
+			        uses = 1
+			        category = industry
+		        }
+				add_tech_bonus = {
+			        name = guto_institute_bonus_2_2
+			        bonus = 0.75
+			        uses = 1
+			        category = electronics
+		        }
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_north_west
+		icon = GFX_goal_forced_inf 
+		x = -5
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_restore_roads
+		prerequisite = { focus = BOI_restore_roads }
+		available = {
+		    #owns_state =
+			#owns_state =
+			#owns_state =
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			471 = {
+			    add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}	
+			679 = {
+			    add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}	
+			384 = {
+			    add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+	}
+	shared_focus = {
+		id = BOI_gold_silver
+		icon = GFX_goal_KTG_Jungle_Railroad 
+		x = -2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_north_west
+		prerequisite = { focus = BOI_north_west }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			389 = {
+			    add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}	
+		}
+	}
+	shared_focus = {
+		id = BOI_solar_rail
+		icon = GFX_goal_rct_train 
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_north_west
+		prerequisite = { focus = BOI_north_west }
+		available = {
+		    owns_state = 531
+			owns_state = 488
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			531 = {
+			    add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}	
+			488 = {
+			    add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}	
+		}
+	}
+	shared_focus = {
+		id = BOI_rumare_ferry
+		icon = GFX_goal_dockyard_generic_psody 
+		x = -2
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_north_west
+		prerequisite = { focus = BOI_gold_silver }
+		available = {
+		    #owns_state =
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			383 = {
+			    add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}	
+		}
+	}
+	shared_focus = {
+		id = BOI_connect_blackhollow
+		icon = GFX_goal_death_tracks 
+		x = 0
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_north_west
+		prerequisite = { focus = BOI_solar_rail }
+		available = {
+		    owns_state = 532
+			owns_state = 490
+			owns_state = 606
+			owns_state = 446
+			owns_state = 489
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			532 = {
+			    add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}	
+			490 = {
+			    add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}	
+			606 = {
+			    add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}	
+			446 = {
+			    add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}	
+			489 = {
+			    add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+	}
+	shared_focus = {
+		id = BOI_trade_hub
+		icon = GFX_goal_chn_red_economic_boom 
+		x = -1
+		y = 3
+		cost = 8.00
+		relative_position_id = BOI_north_west
+		prerequisite = { focus = BOI_rumare_ferry }
+		prerequisite = { focus = BOI_connect_blackhollow }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_trade_hub_idea
+		}
+	}
+	shared_focus = {
+		id = BOI_tax_breaks
+		icon = GFX_goal_cash_and_cap 
+		x = 0
+		y = 1
+		cost = 8.00
+		relative_position_id = BOI_gather_scraps
+		prerequisite = { focus = BOI_gather_scraps }
+		prerequisite = { focus = BOI_restore_roads }
+		prerequisite = { focus = BOI_ask_for_loans }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -75
+			increase_society_development_with_tt = yes
+		}
+	}
+	shared_focus = {
+		id = BOI_guns_wohnsitz
+		icon = GFX_goal_industry_air 
+		x = -1
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_tax_breaks
+		prerequisite = { focus = BOI_tax_breaks }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    384 = {
+			    add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}	
+			}
+			add_resource = {
+				type = steel
+				amount = 3
+				state = 384
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_coal_coalfall
+		icon = GFX_goal_ITA_urban 
+		x = 1
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_tax_breaks
+		prerequisite = { focus = BOI_tax_breaks }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    488 = {
+			    add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_gale_park
+		icon = GFX_goal_improve_industry 
+		x = -1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_tax_breaks
+		prerequisite = { focus = BOI_guns_wohnsitz focus = BOI_coal_coalfall }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			471 = {
+			    add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_flame_industry
+		icon = GFX_goal_generic_construct_civ_factory 
+		x = 1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_tax_breaks
+		prerequisite = { focus = BOI_guns_wohnsitz focus = BOI_coal_coalfall }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_industrial_expansion
+		}
+	}
+	shared_focus = {
+		id = BOI_modern_age
+		icon = GFX_goal_chn_economic_plan 
+		x = 0
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_tax_breaks
+		prerequisite = { focus = BOI_gale_park }
+		prerequisite = { focus = BOI_flame_industry }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			increase_society_development_with_tt = yes
+		}
+	}
+	shared_focus = {
+		id = BOI_bright_flame
+		icon = GFX_goal_munitions_factories 
+		x = -3
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_tax_breaks
+		prerequisite = { focus = BOI_modern_age }
+		available = {
+		    owns_state = 384
+			owns_state = 679
+			owns_state = 389
+			owns_state = 471
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			384 = {
+			    add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			679 = {
+			    add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			389 = {
+			    add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			471 = {
+			    add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_great_archive
+		icon = GFX_goal_PAN_Create_the_Universidad_de_Panama 
+		x = -1
+		y = 4
+		cost = 8.00
+		relative_position_id = BOI_tax_breaks
+		prerequisite = { focus = BOI_modern_age }
+		mutually_exclusive = { focus = BOI_griffon_home }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_archives_of_griffonstone
+		}
+	}
+	shared_focus = {
+		id = BOI_griffon_home
+		icon = GFX_goal_hoist_the_flag_BOI 
+		x = 1
+		y = 4
+		cost = 8.00
+		relative_position_id = BOI_tax_breaks
+		prerequisite = { focus = BOI_modern_age }
+		mutually_exclusive = { focus = BOI_great_archive }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			408 = {
+			    add_manpower = 500000
+				set_state_category = large_city
+				add_building_construction = {
+				    type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			    add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+				    type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			    add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+				    type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_fire_forged
+		icon = GFX_IRE_heavy_industry 
+		x = 3
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_tax_breaks
+		prerequisite = { focus = BOI_modern_age }
+		available = {
+		    owns_state = 384
+			owns_state = 679
+			owns_state = 389
+			owns_state = 471
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			384 = {
+			    add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			679 = {
+			    add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			389 = {
+			    add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			471 = {
+			    add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_beyond_old_glory
+		icon = GFX_goal_DOM_The_Phoenix 
+		x = 0
+		y = 5
+		cost = 10.00
+		relative_position_id = BOI_tax_breaks
+		prerequisite = { focus = BOI_great_archive focus = BOI_griffon_home }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_miraculous_recovery
+		}
+	}
+	shared_focus = {
+		id = BOI_demolish_slums
+		icon = GFX_goal_generic_build_housing 
+		x = 1
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_ask_for_loans
+		prerequisite = { focus = BOI_ask_for_loans }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			decrease_poverty = yes
+		}
+	}
+	shared_focus = {
+		id = BOI_expand_terrace
+		icon = GFX_goal_agriculture 
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_demolish_slums
+		prerequisite = { focus = BOI_demolish_slums }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			decrease_poverty = yes
+			add_ideas = BOI_terrace_farms
+		}
+	}
+	shared_focus = {
+		id = BOI_promote_urban
+		icon = GFX_goal_rct_expand_the_city 
+		x = 2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_demolish_slums
+		prerequisite = { focus = BOI_demolish_slums }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			decrease_poverty = yes
+			384 = { 
+			    add_manpower = 100000
+			}
+			679 = { 
+			    add_manpower = 100000
+			}
+			389 = { 
+			    add_manpower = 100000
+			}
+			471 = { 
+			    add_manpower = 100000
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_farm_mecha
+		icon = GFX_goal_agricultural_aid_2 
+		x = 1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_demolish_slums
+		prerequisite = { focus = BOI_expand_terrace }
+		prerequisite = { focus = BOI_promote_urban }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			384 = { 
+			    add_extra_state_shared_building_slots = 1
+			}
+			679 = { 
+			    add_extra_state_shared_building_slots = 1
+			}
+			389 = { 
+			    add_extra_state_shared_building_slots = 1
+			}
+			471 = { 
+			    add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_rebuild_griffonstone
+		icon = GFX_r56_goal_FRA_alliance_with_industrialists 
+		x = 1
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_demolish_slums
+		prerequisite = { focus = BOI_farm_mecha }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    #could be moved to event
+			decrease_poverty = yes
+			389 = {
+			    add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			389 = {
+			    add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			389 = {
+			    add_manpower = 100000
+			}
+			add_timed_idea = {
+			    idea = BOI_griffonstone_reconstruction
+				days = 180
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_mining_tech
+		icon = GFX_goal_Transformation_of_Nature 
+		x = 5
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_ask_for_loans
+		prerequisite = { focus = BOI_ask_for_loans }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = excavation_bonus
+			    bonus = 1
+			    uses = 2
+			    category = excavation_tech
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_lakeshore_oil
+		icon = GFX_goal_further_oil 
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_mining_tech
+		prerequisite = { focus = BOI_mining_tech }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 5
+				state = 384
+			}
+			add_resource = {
+				type = oil
+				amount = 5
+				state = 679
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_solarspike_mines
+		icon = GFX_Goal_YUN_The_Mountain_Economy 
+		x = 2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_mining_tech
+		prerequisite = { focus = BOI_mining_tech }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = griffonstone.200
+		}
+	}
+	shared_focus = {
+		id = BOI_creeper_riches
+		icon = GFX_focus_indy_excavations 
+		x = 0
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_mining_tech
+		prerequisite = { focus = BOI_lakeshore_oil focus = BOI_solarspike_mines }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 2
+				state = 489
+			}
+			add_resource = {
+				type = tungsten
+				amount = 4
+				state = 489 
+			}
+			add_resource = {
+				type = crystals
+				amount = 2
+				state = 489 
+			}
+			add_resource = {
+				type = steel
+				amount = 2
+				state = 606
+			}
+			add_resource = {
+				type = tungsten
+				amount = 4
+				state = 606
+			}
+			add_resource = {
+				type = crystals
+				amount = 2
+				state = 606
+			}
+			add_resource = {
+				type = steel
+				amount = 2
+				state = 446
+			}
+			add_resource = {
+				type = tungsten
+				amount = 4
+				state = 446
+			}
+			add_resource = {
+				type = crystals
+				amount = 2
+				state = 446
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_rumare_refinery
+		icon = GFX_goal_basic_oil 
+		x = 2
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_mining_tech
+		prerequisite = { focus = BOI_lakeshore_oil focus = BOI_solarspike_mines }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 5
+				state = 383
+			}
+			383 = {
+			    add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_mine_chamber
+		icon = GFX_goal_generic_coal_mining 
+		x = 1
+		y = 3
+		cost = 8.00
+		relative_position_id = BOI_mining_tech
+		prerequisite = { focus = BOI_rumare_refinery }
+		prerequisite = { focus = BOI_creeper_riches }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_chamber_of_mines
+		}
+	}
+	##ARMY##
+	shared_focus = {
+		id = BOI_royal_defence_force
+		icon = GFX_goal_conscription 
+		x = -17
+		y = 0
+		cost = 5.00
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	shared_focus = {
+		id = BOI_reichsarmee_veterans
+		icon = GFX_goal_GRI_army_expansion 
+		x = -2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_royal_defence_force
+		prerequisite = { focus = BOI_royal_defence_force }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = veterans_bonus
+			    bonus = 1
+			    uses = 1
+			    category = land_doctrine
+		    }
+			create_corps_commander = {
+	            name = "Karl von Clawswewitz"
+	            portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_6.dds"
+	            traits = { griffon_race_trait old_guard inflexible_strategist career_officer }
+	            skill = 2
+	            attack_skill = 2
+	            defense_skill = 2
+	            planning_skill = 3
+	            logistics_skill = 3
+            }
+		}
+	}
+	shared_focus = {
+		id = BOI_recruitment_drive
+		icon = GFX_focus_generic_support_the_left_right_claw 
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_royal_defence_force
+		prerequisite = { focus = BOI_royal_defence_force }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 30000
+		}
+	}
+	shared_focus = {
+		id = BOI_modern_firearms
+		icon = GFX_goal_generic_military_sphere 
+		x = 2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_royal_defence_force
+		prerequisite = { focus = BOI_royal_defence_force }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -50
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment_2
+				amount = 2000
+				producer = BOI
+			}
+			add_tech_bonus = {
+			    name = purchased_firearms_bonus
+			    bonus = 1
+			    uses = 1
+			    category = infantry_weapons
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_griffons_army
+		icon = GFX_goal_generic_drafted_army 
+		x = -2
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_royal_defence_force
+		prerequisite = { focus = BOI_reichsarmee_veterans }
+		mutually_exclusive = { focus = BOI_noble_levies }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_griffonstone_army_1
+		}
+	}
+	shared_focus = {
+		id = BOI_why_fight
+		icon = GFX_goal_revolution 
+		x = -2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_griffons_army
+		prerequisite = { focus = BOI_griffons_army }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = BOI_griffonstone_army_1
+			    add_idea = BOI_griffonstone_army_2
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_common_soldier_care
+		icon = GFX_goal_academy_of_medicine 
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_griffons_army
+		prerequisite = { focus = BOI_griffons_army }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = BOI_griffonstone_army_2
+			    add_idea = BOI_griffonstone_army_3
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_noble_levies
+		icon = GFX_goal_Griffonian_Heer_2 
+		x = 2
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_royal_defence_force
+		prerequisite = { focus = BOI_modern_firearms }
+		mutually_exclusive = { focus = BOI_griffons_army }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_lords_army_1
+		}
+	}
+	shared_focus = {
+		id = BOI_right_to_rule
+		icon = GFX_focus_indy_champagne_repression 
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_noble_levies
+		prerequisite = { focus = BOI_noble_levies }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = BOI_lords_army_1
+			    add_idea = BOI_lords_army_2
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_emulate_reichsarmee
+		icon = GFX_goal_hoist_the_flag 
+		x = 2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_noble_levies
+		prerequisite = { focus = BOI_noble_levies }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = BOI_lords_army_2
+			    add_idea = BOI_lords_army_3
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_new_doctrine
+		icon = GFX_goal_chn_axis_build_infantry_grey 
+		x = 0
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_royal_defence_force
+		prerequisite = { focus = BOI_recruitment_drive }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = new_age_doctrine_bonus
+			    bonus = 1
+			    uses = 2
+			    category = land_doctrine
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_support_the_army
+		icon = GFX_goal_generic_support_equipment 
+		x = 0
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_new_doctrine
+		prerequisite = { focus = BOI_new_doctrine }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = support_army_bonus
+			    bonus = 1
+			    uses = 2
+			    category = support_tech
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_eyes_ears
+		icon = GFX_goal_generic_radar 
+		x = -1
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_new_doctrine
+		prerequisite = { focus = BOI_support_the_army }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = eyes_ears_bonus
+			    bonus = 1
+			    uses = 2
+			    category = radar_tech
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_military_academy
+		icon = GFX_goal_generic_army_doctrines 
+		x = 1
+		y = 3
+		cost = 10.00
+		relative_position_id = BOI_new_doctrine
+		prerequisite = { focus = BOI_support_the_army }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = BOI_milacad
+		}
+	}
+	shared_focus = {
+		id = BOI_weltbaum
+		icon = GFX_Poison_Joke_Focus 
+		x = 0
+		y = 4
+		cost = 15.00
+		relative_position_id = BOI_new_doctrine
+		prerequisite = { focus = BOI_eyes_ears }
+		prerequisite = { focus = BOI_military_academy }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -300
+			add_stability = -0.1
+			unlock_decision_category_tooltip = BOI_divination_category
+		}
+	}
+	shared_focus = {
+		id = BOI_flesh
+		icon = GFX_goal_griffon_special_force 
+		x = -2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_new_doctrine
+		prerequisite = { focus = BOI_new_doctrine }
+		mutually_exclusive = { focus = BOI_steel }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_reformed_infantry_1
+		}
+	}
+	shared_focus = {
+		id = BOI_birdwave
+		icon = GFX_goal_LEC_monkey 
+		x = -2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_flesh
+		prerequisite = { focus = BOI_flesh }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = BOI_reformed_infantry_1
+			    add_idea = BOI_reformed_infantry_2
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_modernise_eq
+		icon = GFX_goal_military_academy 
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_flesh
+		prerequisite = { focus = BOI_flesh }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = modernise_eq_bonus
+			    bonus = 1
+			    uses = 2
+			    category = infantry_weapons
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_knights_of_griffonstone
+		icon = GFX_goal_griffon_knights 
+		x = -1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_flesh
+		prerequisite = { focus = BOI_birdwave }
+		prerequisite = { focus = BOI_modernise_eq }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = knights_bonus
+			    bonus = 1
+			    uses = 2
+			    category = knights_tech
+		    }
+			add_ideas = BOI_knightly_traditions_restored
+		}
+	}
+	shared_focus = {
+		id = BOI_gun_in_every_claw
+		icon = GFX_goal_van_rifles 
+		x = -2
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_flesh
+		prerequisite = { focus = BOI_knights_of_griffonstone }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_streamlined_infantry_production
+		}
+	}
+	shared_focus = {
+		id = BOI_victory_or_death
+		icon = GFX_goal_split_helmet 
+		x = 0
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_flesh
+		prerequisite = { focus = BOI_knights_of_griffonstone }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    swap_ideas = {
+			    remove_idea = BOI_reformed_infantry_2
+			    add_idea = BOI_reformed_infantry_3
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_steel
+		icon = GFX_goal_punishing_barrage 
+		x = 2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_new_doctrine
+		prerequisite = { focus = BOI_new_doctrine }
+		mutually_exclusive = { focus = BOI_flesh }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_griffonsteel_1
+		}
+	}
+	shared_focus = {
+		id = BOI_achtung
+		icon = GFX_focus_indy_tanks_across_the_border 
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_steel
+		prerequisite = { focus = BOI_steel }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = achtung_bonus
+			    bonus = 1
+			    uses = 2
+			    category = armor
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_barrage
+		icon = GFX_goal_generic_military_equipment 
+		x = 2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_steel
+		prerequisite = { focus = BOI_steel }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = BOI_griffonsteel_1
+				add_idea = BOI_griffonsteel_2
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_new_artillery
+		icon = GFX_focus_generic_air_defense2 
+		x = 1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_steel
+		prerequisite = { focus = BOI_achtung }
+		prerequisite = { focus = BOI_barrage }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = New_artillery_bonus
+			    bonus = 1
+			    uses = 2
+			    category = artillery
+		    }
+			add_ideas = BOI_massive_art_prod
+		}
+	}
+	shared_focus = {
+		id = BOI_steel_beasts
+		icon = GFX_goal_generic_army_tanks 
+		x = 0
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_steel
+		prerequisite = { focus = BOI_new_artillery }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_griffonstone_panzers
+		}
+	}
+	shared_focus = {
+		id = BOI_sturdy_cannons
+		icon = GFX_goal_generic_army_artillery2 
+		x = 2
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_steel
+		prerequisite = { focus = BOI_new_artillery }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = BOI_griffonsteel_2
+				add_idea = BOI_griffonsteel_3
+			}
+		}
+	}
+    ##NAVY##
+	shared_focus = {
+		id = BOI_birth_navy
+		icon = GFX_goal_generic_navy_battleship 
+		x = 12
+		y = 0
+		cost = 5.00
+		
+		available = {
+		    any_owned_state = { 
+			    is_coastal = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 50
+		}
+	}
+	shared_focus = {
+		id = BOI_construct_cruisers
+		icon = GFX_goal_generic_navy_cruiser 
+		x = -2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_birth_navy
+		prerequisite = { focus = BOI_birth_navy }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = cruiser_bonus
+			    bonus = 1
+			    uses = 2
+			    category = cl_tech
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_fund_fleet
+		icon = GFX_goal_BEL_Battleship_Investements 
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_birth_navy
+		prerequisite = { focus = BOI_birth_navy }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = {
+			    idea = BOI_funds_for_navy
+				days = 180
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_destroyer_design
+		icon = GFX_goal_generic_sea_focused_navy 
+		x = 2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_birth_navy
+		prerequisite = { focus = BOI_birth_navy }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = destroyer_bonus
+			    bonus = 1
+			    uses = 2
+			    category = dd_tech
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_naval_aviation
+		icon = GFX_goal_generic_occupy_start_war 
+		x = -2
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_birth_navy
+		prerequisite = { focus = BOI_destroyer_design }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = naval_aviation_bonus
+			    bonus = 1
+			    uses = 2
+			    category = naval_air
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_our_naval_doctrine
+		icon = GFX_goal_generic_navy_doctrines_tactics 
+		x = 0
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_birth_navy
+		prerequisite = { focus = BOI_construct_cruisers }
+		prerequisite = { focus = BOI_destroyer_design }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = our_naval_doctrine_bonus
+			    bonus = 1
+			    uses = 2
+			    category = naval_doctrine
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_marine_corps
+		icon = GFX_goal_generic_amphibious_assault 
+		x = 2
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_birth_navy
+		prerequisite = { focus = BOI_destroyer_design }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = marines_bonus
+			    bonus = 1
+			    uses = 2
+			    category = marine_tech
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_expand_trade_fleet
+		icon = GFX_goal_upgrade_reserves 
+		x = -3
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_birth_navy
+		prerequisite = { focus = BOI_our_naval_doctrine }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+			    type = convoy_1
+				amount = 200
+				producer = BOI
+			}
+			add_ideas = BOI_griffonstonian_trade_fleet
+		}
+	}
+	shared_focus = {
+		id = BOI_good_old_battleships
+		icon = GFX_focus_generic_navy_battleship3alt 
+		x = -1
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_birth_navy
+		prerequisite = { focus = BOI_our_naval_doctrine }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = battleship_bonus
+			    bonus = 1
+			    uses = 2
+			    category = bb_tech
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_rely_on_carriers
+		icon = GFX_goal_generic_navy_carrier 
+		x = 1
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_birth_navy
+		prerequisite = { focus = BOI_our_naval_doctrine }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = destroyer_bonus
+			    bonus = 1
+			    uses = 2
+			    category = cv_tech
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_new_submarines
+		icon = GFX_goal_generic_navy_submarine 
+		x = 3
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_birth_navy
+		prerequisite = { focus = BOI_our_naval_doctrine }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = destroyer_bonus
+			    bonus = 1
+			    uses = 2
+			    category = ss_tech
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_griffonstonian_admiralty
+		icon = GFX_goal_navy_hat_ships 
+		x = 0
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_birth_navy
+		prerequisite = { focus = BOI_good_old_battleships focus = BOI_rely_on_carriers }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_griffonstone_admiralty
+		}
+	}
+	##AIRFORCE##
+	shared_focus = {
+		id = BOI_create_airforce
+		icon = GFX_goal_generic_build_airforce 
+		x = 20
+		y = 0
+		cost = 5.00
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 50
+			679 = {
+			    add_building_construction = {
+			        type = air_base
+					level = 1
+					instant_build = yes
+			    }
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_import_fighters
+		icon = GFX_goal_POL_recon_aircraft 
+		x = -1
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_create_airforce
+		prerequisite = { focus = BOI_create_airforce }
+		bypass = {
+		    has_tech = fighter3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_political_power = -50
+			if = {
+			    limit = {
+				    has_tech = early_fighter
+				}
+				else = {
+			        set_technology = {
+			            early_fighter = 1
+			        }
+			        add_equipment_to_stockpile = {
+			            type = fighter_equipment_0 
+				        amount = 50
+			        }
+				}
+		    }
+			if = {
+			    limit = {
+				    has_tech = fighter1
+				}
+				else = {
+				    if = {
+					    limit = {
+						    has_tech = early_fighter
+							date < 1007.1.1
+						}
+			            add_tech_bonus = {
+			                name = basic_fighter_bonus_1
+			                bonus = 0.5
+			                uses = 1
+			                technology = fighter1
+		                }
+			            add_equipment_to_stockpile = {
+			                type = fighter_equipment_1
+				            amount = 50
+			            }
+				    }
+				}
+		    }
+			if = {
+			    limit = {
+				    has_tech = fighter1
+				}
+				else = {
+				    if = {
+					    limit = {
+						    has_tech = early_fighter
+							date > 1007.1.1
+						}
+			            add_tech_bonus = {
+			                name = basic_fighter_bonus
+			                bonus = 1
+			                uses = 1
+			                technology = fighter1
+		                }
+			            add_equipment_to_stockpile = {
+			                type = fighter_equipment_1
+				            amount = 50
+			            }
+				    }
+				}
+		    }
+			if = {
+			    limit = {
+				    has_tech = fighter2
+				}
+				else = {
+				    if = {
+					    limit = {
+						    has_tech = fighter1
+							date < 1011.1.1
+						}
+			            add_tech_bonus = {
+			                name = improved_fighter_bonus_1
+			                bonus = 0.45
+			                uses = 1
+			                technology = fighter2
+		                }
+			            add_equipment_to_stockpile = {
+			                type = fighter_equipment_2
+				            amount = 50
+			            }
+				    }
+				}
+		    }
+			if = {
+			    limit = {
+				    has_tech = fighter2
+				}
+				else = {
+				    if = {
+					    limit = {
+						    has_tech = fighter1
+							date > 1011.1.1
+						}
+			            add_tech_bonus = {
+			                name = improved_fighter_bonus
+			                bonus = 0.9
+			                uses = 1
+			                technology = fighter2
+		                }
+			            add_equipment_to_stockpile = {
+			                type = fighter_equipment_2
+				            amount = 50
+			            }
+				    }
+				}
+		    }
+			if = {
+			    limit = {
+				    has_tech = fighter3
+				}
+				else = {
+				    if = {
+					    limit = {
+						    has_tech = fighter2
+							date < 1015.1.1
+						}
+			            add_tech_bonus = {
+			                name = advanced_fighter_bonus_1
+			                bonus = 0.25
+			                uses = 1
+			                technology = fighter3
+		                }
+			            add_equipment_to_stockpile = {
+			                type = fighter_equipment_3
+				            amount = 50
+			            }
+				    }
+				}
+		    }
+			if = {
+			    limit = {
+				    has_tech = fighter3
+				}
+				else = {
+				    if = {
+					    limit = {
+						    has_tech = fighter2
+							date > 1015.1.1
+						}
+			            add_tech_bonus = {
+			                name = advanced_fighter_bonus
+			                bonus = 0.75
+			                uses = 1
+			                technology = fighter3
+		                }
+			            add_equipment_to_stockpile = {
+			                type = fighter_equipment_3
+				            amount = 50
+			            }
+				    }
+				}
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_air_doctrine_studies
+		icon = GFX_goal_air_armada 
+		x = 1
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_create_airforce
+		prerequisite = { focus = BOI_create_airforce }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = air_doctrine_bonus
+			    bonus = 1
+			    uses = 2
+			    category = air_doctrine
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_bomber_designs
+		icon = GFX_goal_pacification_of_the_planes 
+		x = -2
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_create_airforce
+		prerequisite = { focus = BOI_import_fighters }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = tacbomb_bonus
+			    bonus = 1
+			    uses = 2
+			    category = tactical_bomber
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_found_air_academy
+		icon = GFX_goal_RUS_white_legacy 
+		x = 0
+		y = 2
+		cost = 10.00
+		relative_position_id = BOI_create_airforce
+		prerequisite = { focus = BOI_import_fighters }
+		prerequisite = { focus = BOI_air_doctrine_studies }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_air_academy
+		}
+	}
+	shared_focus = {
+		id = BOI_CAS
+		icon = GFX_goal_generic_CAS 
+		x = 2
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_create_airforce
+		prerequisite = { focus = BOI_air_doctrine_studies }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = cas_bonus
+			    bonus = 1
+			    uses = 2
+			    category = cas_bomber
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_new_strategic_bombers
+		icon = GFX_goal_generic_air_bomber 
+		x = -3
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_create_airforce
+		prerequisite = { focus = BOI_bomber_designs }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = strategic_bombers_bonus
+			    bonus = 1
+			    uses = 2
+			    category = cat_strategic_bomber
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_streamline_production
+		icon = GFX_goal_factory_complex 
+		x = -1
+		y = 3
+		cost = 10.00
+		relative_position_id = BOI_create_airforce
+		prerequisite = { focus = BOI_found_air_academy }
+		mutually_exclusive = { focus = BOI_improve_bomber_tactics }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_streamlined_airprod
+		}
+	}
+	shared_focus = {
+		id = BOI_improve_bomber_tactics
+		icon = GFX_goal_MAF_Napalm 
+		x = 1
+		y = 3
+		cost = 10.00
+		relative_position_id = BOI_create_airforce
+		prerequisite = { focus = BOI_found_air_academy }
+		mutually_exclusive = { focus = BOI_streamline_production }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_bomber_command
+		}
+	}
+	shared_focus = {
+		id = BOI_improve_fighter_designs
+		icon = GFX_goal_HOL_D21 
+		x = 3
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_create_airforce
+		prerequisite = { focus = BOI_CAS }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = fighter_bonus
+			    bonus = 1
+			    uses = 2
+			    category = light_fighter
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_faster_than_wind
+		icon = GFX_goal_Jet_Engine_Research 
+		x = -2
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_create_airforce
+		prerequisite = { focus = BOI_improve_bomber_tactics focus = BOI_streamline_production }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = rocket_bonus
+			    bonus = 1
+			    uses = 2
+			    category = rocketry
+		    }
+		}
+	}
+	shared_focus = {
+		id = BOI_wetterkommando
+		icon = GFX_goal_COS_Peace 
+		x = 0
+		y = 4
+		cost = 10.00
+		relative_position_id = BOI_create_airforce
+		prerequisite = { focus = BOI_improve_bomber_tactics focus = BOI_streamline_production }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -200
+			unlock_decision_category_tooltip = BOI_wettertrupp_category
+		}
+	}
+	shared_focus = {
+		id = BOI_destroyer_of_worlds
+		icon = GFX_goal_fire 
+		x = 2
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_create_airforce
+		prerequisite = { focus = BOI_improve_bomber_tactics focus = BOI_streamline_production }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    name = nuclear_bonus
+			    bonus = 1
+			    uses = 1
+			    category = nuclear
+		    }
+		}
+	}
+	
+	########################
+	####    DEADLOCK    ####
+	########################
+	
+focus_tree = {
+	id = Griffonstone_deadlock
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = BOI
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 130 y = 1100 }
+	
+		shared_focus = BOI_birth_navy
+		shared_focus = BOI_from_ashes
+		shared_focus = BOI_royal_defence_force
+		shared_focus = BOI_create_airforce
+		
+	focus = {
+		id = BOI_fallen_kingdom
+		icon = GFX_focus_strike_griffonstone 
+		x = 30
+		y = 0
+		cost = 2.00
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = BOI_CETT_breaking_point
+		}
+	}
+	focus = {
+		id = BOI_hire_new_troops
+		icon = GFX_goal_conscription 
+		x = -2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_fallen_kingdom
+		prerequisite = { focus = BOI_fallen_kingdom }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 10000
+		}
+	}
+	focus = {
+		id = BOI_mines_of_goldstone
+		icon = GFX_goal_gold_reserve_2 
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_fallen_kingdom
+		prerequisite = { focus = BOI_fallen_kingdom }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = griffonstone.268
+		}
+	}
+	focus = {
+		id = BOI_grovel_for_help
+		icon = GFX_goal_Griffonian_Marine_1 
+		x = 2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_fallen_kingdom
+		prerequisite = { focus = BOI_fallen_kingdom }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    GRI = {
+			    country_event = griffonstone.269
+			}
+		}
+	}
+	focus = {
+		id = BOI_prepare_for_war
+		icon = GFX_goal_OTT_Land_Reform 
+		x = -1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_fallen_kingdom
+		prerequisite = { focus = BOI_hire_new_troops }
+		prerequisite = { focus = BOI_mines_of_goldstone }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = BOI_whip_council
+		icon = GFX_goal_constitutional_guarantees 
+		x = 1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_fallen_kingdom
+		prerequisite = { focus = BOI_mines_of_goldstone }
+		prerequisite = { focus = BOI_grovel_for_help }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = BOI_discuss_reforms
+		icon = GFX_goal_monarchism 
+		x = 0
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_fallen_kingdom
+		prerequisite = { focus = BOI_prepare_for_war }
+		prerequisite = { focus = BOI_whip_council }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = griffonstone.270
+		}
+	}
+}
+	
+	######################
+	####    GALLUS    ####
+	######################
+	
+focus_tree = {
+	id = Griffonstone_gallus_1
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BOI
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 130 y = 1100 }
+	
+		shared_focus = BOI_birth_navy
+		shared_focus = BOI_from_ashes
+		shared_focus = BOI_royal_defence_force
+		shared_focus = BOI_create_airforce
+		
+	focus = {
+		id = BOI_legacy_of_guto
+		icon = GFX_goal_unknown 
+		x = 30
+		y = 0
+		cost = 1.00
+		bypass = {
+		    hidden_trigger = {
+			    always = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = BOI_land_reform
+		icon = GFX_goal_coffee_boom 
+		x = -2
+		y = 1
+		cost = 8.00
+		relative_position_id = BOI_legacy_of_guto
+		prerequisite = { focus = BOI_legacy_of_guto }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_political_power = -75
+			add_stability = 0.05
+			decrease_poverty = yes
+			384 = { 
+			    add_extra_state_shared_building_slots = 1
+			}
+			679 = { 
+			    add_extra_state_shared_building_slots = 1
+			}
+			389 = { 
+			    add_extra_state_shared_building_slots = 1
+			}
+			471 = { 
+			    add_extra_state_shared_building_slots = 1
+			}
+			add_timed_idea = {
+			    idea = BOI_land_compensation
+				days = 360
+			}
+		}
+	}
+	focus = {
+		id = BOI_reorganise_council
+		icon = GFX_goal_royal_dictatorship_fist 
+		x = 0
+		y = 1
+		cost = 8.00
+		relative_position_id = BOI_legacy_of_guto
+		prerequisite = { focus = BOI_legacy_of_guto }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_popularity = { ideology = neutrality popularity = 0.1 }
+			country_event = griffonstone.201
+		}
+	}
+	focus = {
+		id = BOI_confiscate_traitor
+		icon = GFX_goal_unknown 
+		x = 2
+		y = 1
+		cost = 8.00
+		relative_position_id = BOI_legacy_of_guto
+		prerequisite = { focus = BOI_legacy_of_guto }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			389 = { 
+			   add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BOI_establish_village_schools
+		icon = GFX_goal_griffon_schools 
+		x = -1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_legacy_of_guto
+		prerequisite = { focus = BOI_land_reform }
+		prerequisite = { focus = BOI_reorganise_council }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			decrease_illiteracy = yes
+		}
+	}
+	focus = {
+		id = BOI_no_one_left_behind
+		icon = GFX_goal_generic_national_unity_claws 
+		x = 1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_legacy_of_guto
+		prerequisite = { focus = BOI_reorganise_council }
+		prerequisite = { focus = BOI_confiscate_traitor }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_stability = 0.05
+			decrease_poverty = yes
+		}
+	}
+	focus = {
+		id = BOI_enemies_on_all_sides
+		icon = GFX_goal_authority 
+		x = 0
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_legacy_of_guto
+		prerequisite = { focus = BOI_establish_village_schools }
+		prerequisite = { focus = BOI_no_one_left_behind }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			country_event = griffonstone.202
+		}
+	}
+	focus = {
+		id = BOI_cradle_of_griffonkind
+		icon = GFX_goal_planning_bonus 
+		x = -4
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_enemies_on_all_sides
+		prerequisite = { focus = BOI_enemies_on_all_sides }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+				target = LAK
+			}
+		}
+	}
+	focus = {
+		id = BOI_avenge_922
+		icon = GFX_goal_ban_blackrock 
+		x = -1
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_enemies_on_all_sides
+		prerequisite = { focus = BOI_enemies_on_all_sides }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+				target = BAN
+			}
+		}
+	}
+	focus = {
+		id = BOI_secure_verenia
+		icon = GFX_goal_eyriehouse 
+		x = 1
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_enemies_on_all_sides
+		prerequisite = { focus = BOI_enemies_on_all_sides }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = AVI
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = EYR
+			}
+		    create_wargoal = {
+				type = annex_everything
+				target = ERI
+			}
+		}
+	}
+	focus = {
+		id = BOI_enemy_at_the_gates
+		icon = GFX_goal_dorocoup 
+		x = 4
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_enemies_on_all_sides
+		prerequisite = { focus = BOI_enemies_on_all_sides }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ARA
+			}
+		}
+	}
+	focus = {
+		id = BOI_integrate_rumare
+		icon = GFX_goal_constitutional_guarantees 
+		x = -5
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_enemies_on_all_sides
+		prerequisite = { focus = BOI_cradle_of_griffonkind }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core = 383
+		}
+	}
+	focus = {
+		id = BOI_minorities_protection_act
+		icon = GFX_goal_griffon_harmony_char 
+		x = -3
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_enemies_on_all_sides
+		prerequisite = { focus = BOI_cradle_of_griffonkind }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = BOI_rumarean_unrest
+			add_ideas = BOI_minorities_protected_1
+		}
+	}
+	focus = {
+		id = BOI_rebuild_murkbeak
+		icon = GFX_goal_construction_engineering 
+		x = -1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_enemies_on_all_sides
+		prerequisite = { focus = BOI_avenge_922 }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			532 = { 
+			    add_manpower = 100000
+			    add_building_construction = {
+					 type = industrial_complex
+					 level = 2
+					 instant_build = yes
+				 }
+			    add_building_construction = {
+					 type = infrastructure
+					 level = 2
+					 instant_build = yes
+				 }
+			}
+		}
+	}
+	focus = {
+		id = BOI_integrate_verenia
+		icon = GFX_goal_POR_royal_edicts 
+		x = 1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_enemies_on_all_sides
+		prerequisite = { focus = BOI_secure_verenia }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core = 401
+			add_state_core = 500
+			add_state_core = 400
+			add_state_core = 673
+			add_state_core = 391
+			add_state_core = 470
+		}
+	}
+	focus = {
+		id = BOI_pacify_arantiga
+		icon = GFX_focus_indy_flag_1 
+		x = 3
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_enemies_on_all_sides
+		prerequisite = { focus = BOI_enemy_at_the_gates }
+		mutually_exclusive = { focus = BOI_look_towards_karthin }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			408 = {
+			    add_compliance = 40
+			}
+		}
+	}
+	focus = {
+		id = BOI_look_towards_karthin
+		icon = GFX_focus_wingbardy_forever 
+		x = 5
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_enemies_on_all_sides
+		prerequisite = { focus = BOI_enemy_at_the_gates }
+		mutually_exclusive = { focus = BOI_pacify_arantiga }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			WNG = {
+			    country_event = griffonstone.203
+			}
+		}
+	}
+	focus = {
+		id = BOI_abyss_awaits
+		icon = GFX_goal_the_idol 
+		x = 0
+		y = 3
+		cost = 2.00
+		relative_position_id = BOI_enemies_on_all_sides
+		prerequisite = { focus = BOI_integrate_rumare }
+		prerequisite = { focus = BOI_minorities_protection_act }
+		prerequisite = { focus = BOI_rebuild_murkbeak }
+		prerequisite = { focus = BOI_integrate_verenia }
+		prerequisite = { focus = BOI_pacify_arantiga focus = BOI_look_towards_karthin }
+        available = {
+		    is_puppet = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = griffonstone.204
+		}
+	}
+}
+focus_tree = {
+	id = Griffonstone_gallus_2
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BOI
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 130 y = 1100 }
+	
+		shared_focus = BOI_birth_navy
+		shared_focus = BOI_from_ashes
+		shared_focus = BOI_royal_defence_force
+		shared_focus = BOI_create_airforce
+		
+	focus = {
+		id = BOI_coronation
+		icon = GFX_goal_griffon_crown 
+		x = 30
+		y = 0
+		cost = 2.00
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = griffonstone.205
+		}
+	}
+	focus = {
+		id = BOI_reestablish_royal_guard
+		icon = GFX_goal_NOR_statspolitiet 
+		x = -2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_coronation
+		prerequisite = { focus = BOI_coronation }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_royal_guard
+		}
+	}
+	focus = {
+		id = BOI_appoint_prime_minister
+		icon = GFX_goal_ideology_social_liberal 
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_coronation
+		prerequisite = { focus = BOI_coronation }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = BOI_CETT_gilda_advisor
+			hidden_effect = {
+			    set_country_flag = BOI_gilda_advisor_available
+			}
+		}
+	}
+	focus = {
+		id = BOI_griffonstone_cmc
+		icon = GFX_goal_unknown 
+		x = 2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_coronation
+		prerequisite = { focus = BOI_coronation }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_griff_cmc
+		}
+	}
+	focus = {
+		id = BOI_expand_social_welfare
+		icon = GFX_goal_ideology_social_democrat 
+		x = -3
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_coronation
+		prerequisite = { focus = BOI_reestablish_royal_guard }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_social_welfare_gallus_idea
+		}
+	}
+	focus = {
+		id = BOI_rally_the_griffons
+		icon = GFX_goal_griffon_soldier 
+		x = -1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_coronation
+		prerequisite = { focus = BOI_reestablish_royal_guard }
+		prerequisite = { focus = BOI_appoint_prime_minister }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_fight_for_griffonstone
+		}
+	}
+	focus = {
+		id = BOI_constitutional_monarchy
+		icon = GFX_goal_DOM_Call_Special_Election 
+		x = 1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_coronation
+		prerequisite = { focus = BOI_appoint_prime_minister }
+		prerequisite = { focus = BOI_griffonstone_cmc }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_griffonstone_parliament
+		}
+	}
+	focus = {
+		id = BOI_griffonstone_school_of_friendship
+		icon = GFX_goal_tree_of_harmony 
+		x = 3
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_coronation
+		prerequisite = { focus = BOI_griffonstone_cmc }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_friendship_school
+		}
+	}
+	focus = {
+		id = BOI_war_of_unification
+		icon = GFX_goal_OTT_Land_Reform 
+		x = 0
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_coronation
+		prerequisite = { focus = BOI_rally_the_griffons }
+		prerequisite = { focus = BOI_constitutional_monarchy }
+		
+		available = {
+		    OR = {
+		        any_other_country = {
+				    original_tag = GRI
+				    has_completed_focus = GRI_end_TRD #TODO
+			    }
+			    any_other_country = {
+				    original_tag = FAT
+				    has_completed_focus = FAT_tricolor_over_griffenheim
+			    }
+			    any_other_country = {
+				    has_cosmetic_tag = GRIF_EMPIRE
+				    exists = yes
+			    }
+			}
+		}
+		
+        ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			IF = {
+			    limit = {
+				    GRI = {
+					    owns_state = 822
+					}
+				}
+				create_wargoal = {
+				    type = annex_everything
+				    target = GRI
+				}
+			    else = {
+				    custom_effect_tooltip = BOI_CETT_take_griffenheim
+                    hidden_effect = {
+                        every_other_country = {
+                            limit = {
+                                owns_state = 822
+                            }
+                            BOI = {
+                                create_wargoal = { 
+                                    type = annex_everything 
+                                    target = PREV 
+                                }
+							}
+                        }
+                    }
+				}
+			}
+		}
+	}
+	focus = {
+		id = BOI_look_west
+		icon = GFX_goal_Attack_Skyfall 
+		x = 0
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_new_diarchy focus = BOI_proclaim_new_kingdom }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+				target = TRD
+			}
+		}
+	}
+	focus = {
+		id = BOI_the_last_emperor
+		icon = GFX_goal_grover_vi 
+		x = -1
+		y = 1
+		cost = 2.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_war_of_unification }
+		mutually_exclusive = { focus = BOI_commemoration }
+		available = {
+		    GRI = {
+			    OR = {
+			        has_idea = GRI_grover_vi 
+					has_country_leader = { 
+		                ruling_only = yes 
+			            name = "Emperor Grover VI" 
+		            }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = griffonstone.206
+		}
+	}
+	focus = {
+		id = BOI_commemoration
+		icon = GFX_goal_ideology_harmonist 
+		x = 1
+		y = 1
+		cost = 2.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_war_of_unification }
+		mutually_exclusive = { focus = BOI_the_last_emperor }
+		available = {
+		    GRI = {
+			    NOT = {
+			        OR = {
+			            has_idea = GRI_grover_vi 
+					    has_country_leader = { 
+		                    ruling_only = yes 
+			                name = "Emperor Grover VI" 
+		                }
+				    }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = griffonstone.207
+		}
+	}
+	focus = {
+		id = BOI_bring_order_to_herzland
+		icon = GFX_goal_Vest_Seat 
+		x = 3
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_commemoration }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    unlock_decision_category_tooltip = BOI_order_category
+		}
+	}
+	focus = {
+		id = BOI_abolish_noble_privileges
+		icon = GFX_goal_schemeing 
+		x = -3
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_the_last_emperor }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    remove_ideas = BOI_discontent_nobles
+	    }
+	}
+	focus = {
+		id = BOI_common_hope
+		icon = GFX_goal_compassionaite_politics 
+		x = -1
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_look_west }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = BOI_minorities_protected_1
+				add_idea = BOI_minorities_protected_2
+			}
+		}
+	}
+	focus = {
+		id = BOI_integrate_skyfall
+		icon = GFX_focus_generic_authoritarian_government 
+		x = 1
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_look_west }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    custom_effect_tooltip = BOI_CETT_coring_skyfall
+			hidden_effect = {
+			380 = {
+			    add_core_of = BOI
+			}
+			396 = {
+			    add_core_of = BOI
+			}
+			397 = {
+			    add_core_of = BOI
+			}
+			381 = {
+			    add_core_of = BOI
+			}
+			379 = {
+			    add_core_of = BOI
+			}
+			}
+		}
+	}
+	focus = {
+		id = BOI_new_diarchy
+		icon = GFX_goal_Grover_VI_Reforms 
+		x = -1
+		y = 2
+		cost = 2.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_the_last_emperor }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_griffonian_diarchy
+			custom_effect_tooltip = BOI_CETT_coring_herzland
+			hidden_effect = {
+			#Angriver
+			547 = {
+			    add_core_of = BOI
+			}
+			422 = {
+			    add_core_of = BOI
+			}
+			411 = {
+			    add_core_of = BOI
+			}
+			#Katerin
+			506 = {
+			    add_core_of = BOI
+			}
+			554 = {
+			    add_core_of = BOI
+			}
+			423 = {
+			    add_core_of = BOI
+			}
+			#Yale
+			665 = {
+			    add_core_of = BOI
+			}
+			402 = {
+			    add_core_of = BOI
+			}
+			439 = {
+			    add_core_of = BOI
+			}
+			398 = {
+			    add_core_of = BOI
+			}
+			#Greifemarschen
+			399 = {
+			    add_core_of = BOI
+			}
+			447 = {
+			    add_core_of = BOI
+			}
+			378 = {
+			    add_core_of = BOI
+			}
+			#Romau
+			674 = {
+			    add_core_of = BOI
+			}
+			#Griffonian Empire starting land
+			555 = {
+			    add_core_of = BOI
+			}
+			437 = {
+			    add_core_of = BOI
+			}
+			397 = {
+			    add_core_of = BOI
+			}
+			405 = {
+			    add_core_of = BOI
+			}
+			382 = {
+			    add_core_of = BOI
+			}
+			#Feathisia
+			666 = {
+			    add_core_of = BOI
+			}
+			440 = {
+			    add_core_of = BOI
+			}
+			441 = {
+			    add_core_of = BOI
+			}
+			520 = {
+			    add_core_of = BOI
+			}
+			434 = {
+			    add_core_of = BOI
+			}
+			498 = {
+			    add_core_of = BOI
+			}
+			538 = {
+			    add_core_of = BOI
+			}
+			433 = {
+			    add_core_of = BOI
+			}
+			497 = {
+			    add_core_of = BOI
+			}
+			#Strawberry
+			443 = {
+			    add_core_of = BOI
+			}
+			545 = {
+			    add_core_of = BOI
+			}
+			546 = {
+			    add_core_of = BOI
+			}
+			486 = {
+			    add_core_of = BOI
+			}
+			458 = {
+			    add_core_of = BOI
+			}
+			#Bronzehill
+			424 = {
+			    add_core_of = BOI
+			}
+			479 = {
+			    add_core_of = BOI
+			}
+			492 = {
+			    add_core_of = BOI
+			}
+			568 = {
+			    add_core_of = BOI
+			}
+			539 = {
+			    add_core_of = BOI
+			}
+			#########################
+			}
+		}
+	}
+	focus = {
+		id = BOI_proclaim_new_kingdom
+		icon = GFX_goal_hoist_the_flag_BOI 
+		x = 1
+		y = 2
+		cost = 2.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_commemoration }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_cosmetic_tag = BOI_GRIF_HERZ
+			news_event = griffonstone_news.001
+			GRI = { add_to_ROOT_potential_cores = yes }
+		    ANG = { add_to_ROOT_potential_cores = yes }
+		    STW = { add_to_ROOT_potential_cores = yes }
+		    BRZ = { add_to_ROOT_potential_cores = yes }
+		    FEA = { add_to_ROOT_potential_cores = yes }
+			ROU = { add_to_ROOT_potential_cores = yes }
+		    PYT = { add_to_ROOT_potential_cores = yes }
+		    YAL = { add_to_ROOT_potential_cores = yes }
+		    KAT = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	focus = {
+		id = BOI_reform_the_archonates
+		icon = GFX_goal_generic_archonism 
+		x = -2
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_new_diarchy focus = BOI_proclaim_new_kingdom }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_reformed_archonates
+		}
+	}
+	focus = {
+		id = BOI_barkingian_guard
+		icon = GFX_goal_benito 
+		x = 2
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_new_diarchy focus = BOI_proclaim_new_kingdom }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ARA_dogs_of_war
+			set_technology = { tech_ironpaws = 1 }
+		}
+	}
+	focus = {
+		id = BOI_align_with_equestria
+		icon = GFX_goal_sunshine 
+		x = -5
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_new_diarchy focus = BOI_proclaim_new_kingdom }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#+50 relations with equestria TODO
+		}
+	}
+	focus = {
+		id = BOI_great_union
+		icon = GFX_focus_generic_diplomatic_treaty_pony_griffon 
+		x = 0
+		y = 5
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_common_hope }
+		prerequisite = { focus = BOI_integrate_skyfall }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_faction = BOI_Griffonian_Union
+			unlock_decision_category_tooltip = BOI_griffonian_union_category
+		}
+	}
+	focus = {
+		id = BOI_equestria_has_fallen
+		icon = GFX_goal_magic_of_friendship_end 
+		x = 5
+		y = 3
+		cost = 1.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_new_diarchy focus = BOI_proclaim_new_kingdom }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			#-50 relations with changelings TODO
+		}
+	}
+	focus = {
+		id = BOI_student_exchange
+		icon = GFX_goal_ease_EEA 
+		x = -7
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_align_with_equestria }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			EQS = {
+			    country_event = griffonstone.208
+			}
+		}
+	}
+	focus = {
+		id = BOI_trade_deal_with_equestria
+		icon = GFX_goal_endless_money 
+		x = -5
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_align_with_equestria }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			EQS = {
+			    country_event = griffonstone.209
+			}
+		}
+	}
+	focus = {
+		id = BOI_invite_ponies
+		icon = GFX_goal_generic_national_unity_horseshoe 
+		x = -3
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_align_with_equestria }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_pony_immigration
+		}
+	}
+	focus = {
+		id = BOI_open_border_area
+		icon = GFX_goal_NOR_passport_convention 
+		x = -1
+		y = 6
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_great_union }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_open_borders_initiative
+			every_other_country = {
+			    limit = {
+				    is_in_faction_with = BOI
+				}
+				add_ideas = BOI_open_borders_initiative
+			}
+		}
+	}
+	focus = {
+		id = BOI_research_coop
+		icon = GFX_goal_supremacy_of_will 
+		x = 1
+		y = 6
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_great_union }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_tech_sharing_group = BOI_griffonstone_tech_sharing
+			every_other_country = {
+			    limit = {
+				    is_in_faction_with = BOI
+				}
+				add_to_tech_sharing_group = BOI_griffonstone_tech_sharing
+			}
+		}
+	}
+	focus = {
+		id = BOI_support_the_resistance
+		icon = GFX_goal_we_can_do_it_aj 
+		x = 3
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_equestria_has_fallen }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			CHN = {
+			    add_ideas = BOI_foreign_support_for_resistance
+			}
+			MAN = {
+			    add_ideas = BOI_foreign_support_for_resistance
+			}
+		}
+	}
+	focus = {
+		id = BOI_refugee_haven
+		icon = GFX_goal_military_mission_pony 
+		x = 5
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_equestria_has_fallen }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    433 = {
+			    add_manpower = 200000
+			}
+			add_ideas = BOI_equestrian_refugees
+		}
+	}
+	focus = {
+		id = BOI_harbour_equestrian_elites
+		icon = GFX_goal_blueblood 
+		x = 7
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_equestria_has_fallen }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Get military advisor “Prince Blueblood” ( Army logistics Expert), Get political advisor Dotted Line (Armaments Organiser), Get chief of navy Cynosura (Decisive Battle Expert) Note: All advisors are available if Equestria of ELF does not exist
+		}
+	}
+	focus = {
+		id = BOI_friendship_forever
+		icon = GFX_goal_improve_relations_pony_griffon 
+		x = -5
+		y = 5
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_student_exchange }
+		prerequisite = { focus = BOI_trade_deal_with_equestria }
+		prerequisite = { focus = BOI_invite_ponies }
+		available = {
+		
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			EQS = {
+			    country_event = griffonstone.210
+			}
+		}
+	}
+	focus = {
+		id = BOI_peace_in_our_times
+		icon = GFX_focus_indy_pacifist_state 
+		x = 0
+		y = 7
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_open_border_area }
+		prerequisite = { focus = BOI_research_coop }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_harmony_or_death
+			every_other_country = {
+			    limit = {
+				    is_in_faction_with = BOI
+				}
+				add_ideas = BOI_harmony_or_death
+			}
+		}
+	}
+	focus = {
+		id = BOI_support_war_of_liberation
+		icon = GFX_goal_eqs_warplan 
+		x = 5
+		y = 5
+		cost = 5.00
+		relative_position_id = BOI_war_of_unification
+		prerequisite = { focus = BOI_support_the_resistance }
+		prerequisite = { focus = BOI_refugee_haven }
+		prerequisite = { focus = BOI_harbour_equestrian_elites }
+		available = {
+		    ELF = {
+			    exists = yes
+				has_war_with = CHN
+			}
+			BOI = {
+			    has_equipment = {
+				    type = infantry_equipment
+					amount = 5000
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -5000
+			}
+			ELF = {
+			    country_event = {
+			        id = griffonstone.255
+				    days = 2
+				}
+			}
+			add_ideas = BOI_volunteers_for_equestria
+			unlock_decision_category_tooltip = BOI_support_liberation_front_category
+		}
+	}
+}
+
+    #####################
+	####    GILDA    ####
+	#####################
+	
+focus_tree = {
+	id = Griffonstone_gilda
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BOI
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 130 y = 1100 }
+	
+		shared_focus = BOI_birth_navy
+		shared_focus = BOI_from_ashes
+		shared_focus = BOI_royal_defence_force
+		shared_focus = BOI_create_airforce
+	
+	focus = {
+		id = BOI_age_of_commongriff
+		icon = GFX_goal_unknown 
+		x = 30
+		y = 0
+		cost = 1.00
+		bypass = {
+		    always = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+    focus = {
+		id = BOI_revoke_nobility_privileges
+		icon = GFX_goal_skull_treaty2 
+		x = -1
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_age_of_commongriff
+		prerequisite = { focus = BOI_age_of_commongriff }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = griffonstone.216
+		}
+	}
+	focus = {
+		id = BOI_provisional_government
+		icon = GFX_goal_DOM_The_Trial 
+		x = -4
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_age_of_commongriff
+		prerequisite = { focus = BOI_revoke_nobility_privileges }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = BOI_political_deadlock
+		}
+	}
+	focus = {
+		id = BOI_social_welfare
+		icon = GFX_focus_healthcare_program 
+		x = 1
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_age_of_commongriff
+		prerequisite = { focus = BOI_age_of_commongriff }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_stability = 0.05
+			decrease_poverty = yes
+		}
+	}
+	focus = {
+		id = BOI_affranchisement_peasants
+		icon = GFX_goal_crush_monarchy 
+		x = 0
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_age_of_commongriff
+		prerequisite = { focus = BOI_revoke_nobility_privileges }
+		prerequisite = { focus = BOI_social_welfare }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_popularity = { ideology = communism popularity = 0.05 }
+			decrease_poverty = yes
+			384 = {
+			    add_extra_state_shared_building_slots = 1
+			}
+			679 = {
+			    add_extra_state_shared_building_slots = 1
+			}
+			471 = {
+			    add_extra_state_shared_building_slots = 1
+			}
+			389 = {
+			    add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = BOI_break_resistance
+		icon = GFX_goal_schemeing 
+		x = -2
+		y = 2
+		cost = 10.00
+		relative_position_id = BOI_age_of_commongriff
+		prerequisite = { focus = BOI_revoke_nobility_privileges }
+		
+		cancelable = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		select_effect = {
+		    country_event = {
+			    id = griffonstone.217
+				days = 5
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = BOI_CETT_break_nobles
+		}
+	}
+	focus = {
+		id = BOI_restore_our_pride
+		icon = GFX_goal_hoist_the_flag_BOI 
+		x = 3
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_age_of_commongriff
+		prerequisite = { focus = BOI_support_village_cooperatives }
+		prerequisite = { focus = BOI_educate_griffons }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = idol_of_boreas_lost
+				add_idea = BOI_idol_loss_healed
+			}
+		}
+	}
+	focus = {
+		id = BOI_educate_griffons
+		icon = GFX_goal_education 
+		x = 4
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_age_of_commongriff
+		prerequisite = { focus = BOI_social_welfare }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			decrease_illiteracy = yes
+		}
+	}
+	focus = {
+		id = BOI_support_village_cooperatives
+		icon = GFX_focus_AUS_agriculture 
+		x = 2
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_age_of_commongriff
+		prerequisite = { focus = BOI_social_welfare }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = BOI_modern_communal_agriculture
+		}
+	}
+	focus = {
+		id = BOI_new_republic_rises
+		icon = GFX_goal_liberty 
+		x = 0
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_age_of_commongriff
+		prerequisite = { focus = BOI_provisional_government }
+		prerequisite = { focus = BOI_break_resistance }
+		prerequisite = { focus = BOI_affranchisement_peasants }
+		prerequisite = { focus = BOI_support_village_cooperatives }
+		prerequisite = { focus = BOI_educate_griffons }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = griffonstone.218
+		}
+	}
+	focus = {
+		id = BOI_republican_propaganda
+		icon = GFX_goal_big_news 
+		x = -3
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_age_of_commongriff
+		prerequisite = { focus = BOI_provisional_government }
+		prerequisite = { focus = BOI_break_resistance }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_pro_republican_media
+		}
+	}
+	focus = {
+		id = BOI_protect_our_freedom
+		icon = GFX_goal_generic_harmony 
+		x = -5
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_new_republic_rises
+		prerequisite = { focus = BOI_new_republic_rises }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_liberty_or_death
+		}
+	}
+	focus = {
+		id = BOI_natural_borders
+		icon = GFX_goal_authoritarian 
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_new_republic_rises
+		prerequisite = { focus = BOI_new_republic_rises }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = BOI_strengthen_government
+		icon = GFX_goal_document 
+		x = 5
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_new_republic_rises
+		prerequisite = { focus = BOI_new_republic_rises }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_reformed_bureaucracy
+		}
+	}
+	focus = {
+		id = BOI_look_towards_equestria
+		icon = GFX_goal_equestria 
+		x = -6
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_new_republic_rises
+		prerequisite = { focus = BOI_protect_our_freedom }
+		available = {
+		    EQS = {
+			    exists = yes
+				is_subject = no
+				has_government = democratic
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			EQS = {
+			    country_event = griffonstone.219
+			}
+		}
+	}
+	focus = {
+		id = BOI_declare_neutrality
+		icon = GFX_focus_indy_pacifist_state 
+		x = -4
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_new_republic_rises
+		prerequisite = { focus = BOI_protect_our_freedom }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_neutral_foreign_policy
+		}
+	}
+	focus = {
+		id = BOI_eastern_expedition
+		icon = GFX_goal_GEA_guerilla_warfare 
+		x = -2
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_new_republic_rises
+		prerequisite = { focus = BOI_natural_borders }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+				target = BAN
+			}
+		}
+	}
+	focus = {
+		id = BOI_fortress_griffonstone
+		icon = GFX_goal_nested_fortifications 
+		x = 0
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_new_republic_rises
+		prerequisite = { focus = BOI_natural_borders }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_fortification_effort
+		}
+	}
+	focus = {
+		id = BOI_cradle_of_griffonkind_gilda
+		icon = GFX_goal_planning_bonus 
+		x = 2
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_new_republic_rises
+		prerequisite = { focus = BOI_natural_borders }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+				target = LAK
+			}
+		}
+	}
+	focus = {
+		id = BOI_griffonstone_cmc_gilda
+		icon = GFX_goal_unknown 
+		x = 4
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_new_republic_rises
+		prerequisite = { focus = BOI_strengthen_government }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_griff_cmc
+		}
+	}
+	focus = {
+		id = BOI_free_minds
+		icon = GFX_goal_supremacy_of_will 
+		x = 6
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_new_republic_rises
+		prerequisite = { focus = BOI_strengthen_government }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_scientist_haven
+		}
+	}
+	focus = {
+		id = BOI_rebuild_murkbeak_gilda
+		icon = GFX_goal_construction_engineering 
+		x = -3
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_new_republic_rises
+		prerequisite = { focus = BOI_eastern_expedition }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			532 = { 
+			    add_manpower = 100000
+			    add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			    add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BOI_evi_line
+		icon = GFX_goal_skull_fortification 
+		x = -1
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_new_republic_rises
+		prerequisite = { focus = BOI_eastern_expedition }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			446 = {
+			    add_building_construction = {
+			        type = bunker
+			        province = 1645
+			        level = 1
+			        instant_build = yes
+			    }
+				add_building_construction = {
+			        type = bunker
+			        province = 1588
+			        level = 1
+			        instant_build = yes
+			    }
+				add_building_construction = {
+			        type = bunker
+			        province = 12255
+			        level = 1
+			        instant_build = yes
+			    }
+            }
+			606 = {
+			    add_building_construction = {
+			        type = bunker
+			        province = 12548
+			        level = 1
+			        instant_build = yes
+			    }
+				add_building_construction = {
+			        type = bunker
+			        province = 10282
+			        level = 1
+			        instant_build = yes
+			    }
+				add_building_construction = {
+			        type = bunker
+			        province = 2043
+			        level = 1
+			        instant_build = yes
+			    }
+				add_building_construction = {
+			        type = bunker
+			        province = 10798
+			        level = 1
+			        instant_build = yes
+			    }
+				add_building_construction = {
+			        type = bunker
+			        province = 1683
+			        level = 1
+			        instant_build = yes
+			    }
+				add_building_construction = {
+			        type = bunker
+			        province = 10569
+			        level = 1
+			        instant_build = yes
+			    }
+            }
+			489 = {
+			    add_building_construction = {
+			        type = bunker
+			        province = 12516
+			        level = 1
+			        instant_build = yes
+			    }
+				add_building_construction = {
+			        type = bunker
+			        province = 11948
+			        level = 1
+			        instant_build = yes
+			    }
+				add_building_construction = {
+			        type = bunker
+			        province = 12085
+			        level = 1
+			        instant_build = yes
+			    }
+				add_building_construction = {
+			        type = bunker
+			        province = 4126
+			        level = 1
+			        instant_build = yes
+			    }
+				add_building_construction = {
+			        type = bunker
+			        province = 10400
+			        level = 1
+			        instant_build = yes
+			    }
+				add_building_construction = {
+			        type = bunker
+			        province = 8245
+			        level = 1
+			        instant_build = yes
+			    }
+            }
+		}
+	}
+	focus = {
+		id = BOI_minorities_protection_act_gilda
+		icon = GFX_goal_griffon_harmony_char 
+		x = 1
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_new_republic_rises
+		prerequisite = { focus = BOI_cradle_of_griffonkind_gilda }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = BOI_rumarean_unrest
+			add_ideas = BOI_minorities_protected_1
+		}
+	}
+	focus = {
+		id = BOI_integrate_rumare_gilda
+		icon = GFX_goal_constitutional_guarantees 
+		x = 3
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_new_republic_rises
+		prerequisite = { focus = BOI_cradle_of_griffonkind_gilda }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core = 383
+		}
+	}
+	focus = {
+		id = BOI_new_griffonstonian_identity
+		icon = GFX_goal_boi 
+		x = 0
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_new_republic_rises
+		prerequisite = { focus = BOI_rebuild_murkbeak_gilda }
+		prerequisite = { focus = BOI_evi_line }
+		prerequisite = { focus = BOI_minorities_protection_act_gilda }
+		prerequisite = { focus = BOI_integrate_rumare_gilda }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = BOI_idol_loss_healed
+			add_ideas = BOI_hope_for_the_future
+		}
+	}
+	focus = {
+		id = BOI_new_direction
+		icon = GFX_goal_generic_national_unity_claws 
+		x = 0
+		y = 5
+		cost = 1.00
+		relative_position_id = BOI_new_republic_rises
+		prerequisite = { focus = BOI_new_griffonstonian_identity }
+		available = {
+		    always = no
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = BOI_president_greta
+		icon = GFX_goal_ideology_social_democrat 
+		x = -4
+		y = 1
+		cost = 1.00
+		relative_position_id = BOI_new_direction
+		prerequisite = { focus = BOI_new_direction }
+		available = {
+		    has_country_leader = {
+			    ruling_only = yes
+				name = Greta
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = BOI_president_gabby
+		icon = GFX_goal_ideology_social_liberal 
+		x = 0
+		y = 1
+		cost = 1.00
+		relative_position_id = BOI_new_direction
+		prerequisite = { focus = BOI_new_direction }
+		available = {
+		    has_country_leader = {
+			    ruling_only = yes
+				name = Gabby
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = BOI_president_garner
+		icon = GFX_goal_ideology_social_conservative 
+		x = 4
+		y = 1
+		cost = 1.00
+		relative_position_id = BOI_new_direction
+		prerequisite = { focus = BOI_new_direction }
+		available = {
+		    has_country_leader = {
+			    ruling_only = yes
+				name = Garner
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = BOI_expand_social_programs
+		icon = GFX_goal_ideology_democratic_socialist 
+		x = -5
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_new_direction
+		prerequisite = { focus = BOI_president_greta }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_social_welfare_idea
+		}
+	}
+	focus = {
+		id = BOI_welcome_refugees
+		icon = GFX_goal_pony_passport 
+		x = -3
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_new_direction
+		prerequisite = { focus = BOI_president_greta }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_refugee_haven
+		}
+	}
+	focus = {
+		id = BOI_expand_cmc
+		icon = GFX_goal_ideology_harmonist 
+		x = -1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_new_direction
+		prerequisite = { focus = BOI_president_gabby }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = BOI_griff_cmc
+				add_idea = BOI_griff_cmc_2
+			}
+		}
+	}
+	focus = {
+		id = BOI_interventionism
+		icon = GFX_goal_USA_liberty_ships 
+		x = 1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_new_direction
+		prerequisite = { focus = BOI_president_gabby }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_expeditionary_corps
+		}
+	}
+	focus = {
+		id = BOI_laissez_faire
+		icon = GFX_goal_free_market 
+		x = 3
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_new_direction
+		prerequisite = { focus = BOI_president_garner }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_liberal_economy
+		}
+	}
+	focus = {
+		id = BOI_support_three_temples
+		icon = GFX_goal_generic_archonism 
+		x = 5
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_new_direction
+		prerequisite = { focus = BOI_president_garner }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = home_of_the_griffons
+				add_idea = BOI_home_of_the_griffons_2
+			}
+		}
+	}
+}
+
+    ######################
+	####    GESTAL    ####
+	######################
+
+focus_tree = {
+	id = Griffonstone_gestal
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BOI
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 130 y = 1100 }
+	
+	shared_focus = BOI_loyalty_reward
+	
+	shared_focus = BOI_birth_navy
+	shared_focus = BOI_from_ashes
+	shared_focus = BOI_royal_defence_force
+	shared_focus = BOI_create_airforce
+	
+	#shared_focus = GRI_strike_north
+	#shared_focus = GRI_strike_lakes
+	#shared_focus = GRI_strike_west
+		
+}
+focus_tree = {
+	id = Griffonstone_gestal_2
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BOI
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 130 y = 1100 }
+	
+	shared_focus = BOI_loyalty_reward
+	shared_focus = BOI_claim_regency
+	shared_focus = BOI_rightful_heiress
+	shared_focus = BOI_imperial_reclamation
+	
+	shared_focus = BOI_birth_navy
+	shared_focus = BOI_from_ashes
+	shared_focus = BOI_royal_defence_force
+	shared_focus = BOI_create_airforce
+	
+	#shared_focus = GRI_strike_north
+	#shared_focus = GRI_strike_lakes
+	#shared_focus = GRI_strike_west
+		
+}
+	
+	shared_focus = {
+		id = BOI_loyalty_reward
+		icon = GFX_goal_unknown 
+		x = 30
+		y = 0
+		cost = 1.00
+		bypass = {
+		    always = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = BOI_shake_claws_prelate
+		icon = GFX_goal_new_temple 
+		x = -3
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_loyalty_reward
+		prerequisite = { focus = BOI_loyalty_reward }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			show_ideas_tooltip = BOI_ADVISOR_gunther_silverfeather
+			hidden_effect = {
+			    set_country_flag = BOI_FLAG_gunther_advisor_unlocked
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_grm_problem
+		icon = GFX_goal_ideology_harmonist 
+		x = -1
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_loyalty_reward
+		prerequisite = { focus = BOI_loyalty_reward }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = griffonstone.235
+		}
+	}
+	shared_focus = {
+		id = BOI_opportunists
+		icon = GFX_goal_checkmate 
+		x = 1
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_loyalty_reward
+		prerequisite = { focus = BOI_loyalty_reward }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = griffonstone.236
+		}
+	}
+	shared_focus = {
+		id = BOI_confiscate_traitor_gestal
+		icon = GFX_goal_unknown 
+		x = 3
+		y = 1
+		cost = 8.00
+		relative_position_id = BOI_loyalty_reward
+		prerequisite = { focus = BOI_loyalty_reward }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			389 = {
+			    add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_noble_ties
+		icon = GFX_goal_collaborate_local_elites 
+		x = -2
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_loyalty_reward
+		prerequisite = { focus = BOI_shake_claws_prelate }
+		prerequisite = { focus = BOI_grm_problem }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_noble_cause
+		}
+	}
+	shared_focus = {
+		id = BOI_end_serfdom
+		icon = GFX_goal_compassionaite_politics 
+		x = 2
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_loyalty_reward
+		prerequisite = { focus = BOI_opportunists }
+		prerequisite = { focus = BOI_confiscate_traitor_gestal }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			decrease_poverty = yes
+		}
+	}
+	shared_focus = {
+		id = BOI_reform_regency_gestal
+		icon = GFX_goal_OTT_gendarmerie 
+		x = 0
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_loyalty_reward
+		prerequisite = { focus = BOI_noble_ties }
+		prerequisite = { focus = BOI_end_serfdom }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = BOI_political_deadlock
+		}
+	}
+	shared_focus = {
+		id = BOI_faithful_ruler
+		icon = GFX_goal_GRI_triarchy 
+		x = -4
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_reform_regency_gestal }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_clergy_support
+		}
+	}
+	shared_focus = {
+		id = BOI_expand_rgdf
+		icon = GFX_goal_Griffonian_Heer_2 
+		x = -2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_reform_regency_gestal }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_new_defence_force_recruits
+		}
+	}
+	shared_focus = {
+		id = BOI_look_outside
+		icon = GFX_goal_authority 
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_reform_regency_gestal }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	shared_focus = {
+		id = BOI_royal_corporations
+		icon = GFX_goal_generic_construct_infrastructure 
+		x = 2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_reform_regency_gestal }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_industrial_support
+		}
+	}
+	shared_focus = {
+		id = BOI_compassionate_ruler
+		icon = GFX_goal_ideology_social_democrat 
+		x = 4
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_reform_regency_gestal }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	shared_focus = {
+		id = BOI_reinforce_central
+		icon = GFX_COS_Ferrer_Coup 
+		x = -5
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_faithful_ruler }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_centralised_government
+		}
+	}
+	shared_focus = {
+		id = BOI_local_democracies
+		icon = GFX_goal_academic_diplomacy 
+		x = -3
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_faithful_ruler }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_local_democracies_idea
+		}
+	}
+	shared_focus = {
+		id = BOI_avenge_922_gestal
+		icon = GFX_goal_ban_blackrock 
+		x = -1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_look_outside }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+				target = BAN
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_cradle_of_griffonkind_gestal
+		icon = GFX_goal_planning_bonus 
+		x = 1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_look_outside }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+				target = LAK
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_educate_commoners
+		icon = GFX_goal_education 
+		x = 3
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_compassionate_ruler }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			decrease_illiteracy = yes
+		}
+	}
+	shared_focus = {
+		id = BOI_support_charity
+		icon = GFX_focus_healthcare_program 
+		x = 5
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_compassionate_ruler }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			decrease_poverty = yes
+		}
+	}
+	shared_focus = {
+		id = BOI_rebuild_murkbeak_gestal
+		icon = GFX_goal_construction_engineering 
+		x = -1
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_avenge_922_gestal }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			532 = { 
+			    add_manpower = 100000
+			    add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			    add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_rumare_act
+		icon = GFX_goal_new_treaty 
+		x = 1
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_cradle_of_griffonkind_gestal }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core = 383
+			remove_ideas = BOI_rumarean_unrest
+		}
+	}
+	shared_focus = {
+		id = BOI_our_duty
+		icon = GFX_goal_Duskclaw_Icon_Vacant 
+		x = 0
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_rebuild_murkbeak_gestal }
+		prerequisite = { focus = BOI_rumare_act }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_political_power = 50
+		}
+	}
+	shared_focus = {
+		id = BOI_loyalty_to_the_crown
+		icon = GFX_goal_royal_dictatorship_fist 
+		x = -1
+		y = 5
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_our_duty }
+		mutually_exclusive = { focus = BOI_to_save_the_empire }
+		available = {
+		    OR = {
+			    GRI = {
+				    exists = yes
+					is_subject = no
+					is_neighbor_of = BOI
+					owns_state = 382
+				    OR = {
+				        has_country_leader = { name = "Archon Eros VII" ruling_only = yes }
+					    has_country_leader = { name = "Duchess Gabriela Eagleclaw" ruling_only = yes }
+						has_country_leader = { name = "Grover VI" ruling_only = yes }
+					}
+				}
+				STW = {
+				    exists = yes
+					is_subject = no
+					is_neighbor_of = BOI
+					owns_state = 382
+				    has_country_leader = { name = "Duchess Gabriela Eagleclaw" ruling_only = yes }
+				}
+				BRZ = {
+				    exists = yes
+					is_subject = no
+					is_neighbor_of = BOI
+					owns_state = 382
+				    OR = {
+					    has_country_leader = { name = "Winston Copperhill" ruling_only = yes }
+					    has_country_leader = { name = "Count Ignatius Bronzetail" ruling_only = yes }
+					}
+				}
+				YAL = {
+				    exists = yes
+					is_subject = no
+					is_neighbor_of = BOI
+					owns_state = 382
+				    OR = {
+				        has_country_leader = { name = "Rector Magnificus Mikusian" ruling_only = yes }
+						has_country_leader = { name = "Grover II" ruling_only = yes }
+				    }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			IF = {
+			    limit = {
+			        GRI = {
+				        exists = yes
+						is_subject = no
+						is_neighbor_of = BOI
+						owns_state = 382
+					    OR = {
+					        has_country_leader = { name = "Archon Eros VII" ruling_only = yes }
+					        has_country_leader = { name = "Duchess Gabriela Eagleclaw" ruling_only = yes }
+						    has_country_leader = { name = "Grover VI" ruling_only = yes }
+					    }
+				    }
+				}
+                custom_effect_tooltip = BOI_CETT_gestal_endgame
+				GRI = {
+				    country_event = griffonstone.214
+					annex_country = {
+					    target = BOI
+						transfer_troops = yes
+					}
+				}
+			}
+		    ELSE_IF = {
+			    limit = {
+			        STW = {
+				        exists = yes
+						is_subject = no
+						is_neighbor_of = BOI
+						owns_state = 382
+					    has_country_leader = { name = "Duchess Gabriela Eagleclaw" ruling_only = yes }
+				    }
+				}
+				custom_effect_tooltip = BOI_CETT_gestal_endgame
+				STW = {
+				    country_event = griffonstone.214
+					annex_country = {
+					    target = BOI
+						transfer_troops = yes
+					}
+				}
+			}
+		    ELSE_IF = {
+			    limit = {
+			        BRZ = {
+				        exists = yes
+						is_subject = no
+						is_neighbor_of = BOI
+						owns_state = 382
+					    OR = {
+					        has_country_leader = { name = "Winston Copperhill" ruling_only = yes }
+						    has_country_leader = { name = "Count Ignatius Bronzetail" ruling_only = yes }
+					    }
+				    }
+				}
+				custom_effect_tooltip = BOI_CETT_gestal_endgame
+				BRZ = {
+				    country_event = griffonstone.214
+					annex_country = {
+					    target = BOI
+						transfer_troops = yes
+					}
+				}	    
+			}
+			ELSE_IF = {
+			    limit = {
+			        YAL = {
+				        exists = yes
+						is_subject = no
+						is_neighbor_of = BOI
+						owns_state = 382
+					    OR = {
+					        has_country_leader = { name = "Rector Magnificus Mikusian" ruling_only = yes }
+						    has_country_leader = { name = "Grover II" ruling_only = yes }
+					    }
+				    }
+				}
+				custom_effect_tooltip = BOI_CETT_gestal_endgame
+				YAL = {
+				    country_event = griffonstone.214
+					annex_country = {
+					    target = BOI
+						transfer_troops = yes
+					}
+				}
+			}
+			ELSE = {
+			    custom_effect_tooltip = BOI_CETT_gestal_endgame
+			    GRI = {
+				    country_event = griffonstone.214
+					annex_country = {
+					    target = BOI
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_to_save_the_empire
+		icon = GFX_focus_generic_eagle 
+		x = 1
+		y = 5
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_our_duty }
+		mutually_exclusive = { focus = BOI_loyalty_to_the_crown }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		    AND = {
+			    NOT = {
+			    GRI = {
+				    exists = yes
+					is_subject = no
+					is_neighbor_of = BOI
+					owns_state = 382
+				    OR = {
+				        has_country_leader = { name = "Archon Eros VII" ruling_only = yes }
+					    has_country_leader = { name = "Duchess Gabriela Eagleclaw" ruling_only = yes }
+					    has_country_leader = { name = "Grover VI" ruling_only = yes }
+				    }
+				}
+				}
+				NOT = {
+				STW = {
+				    exists = yes
+					is_subject = no
+					is_neighbor_of = BOI
+					owns_state = 382
+				    OR = {
+				        has_country_leader = { name = "Duchess Gabriela Eagleclaw" ruling_only = yes }
+				    }
+				}
+				}
+				NOT = {
+				BRZ = {
+				    exists = yes
+					is_subject = no
+					is_neighbor_of = BOI
+					owns_state = 382
+				    OR = {
+				        has_country_leader = { name = "Winston Copperhill" ruling_only = yes }
+						has_country_leader = { name = "Count Ignatius Bronzetail" ruling_only = yes }
+				    }
+				}
+				}
+				NOT = {
+				YAL = {
+				    exists = yes
+					is_subject = no
+					is_neighbor_of = BOI
+					owns_state = 382
+				    OR = {
+				        has_country_leader = { name = "Rector Magnificus Mikusian" ruling_only = yes }
+						has_country_leader = { name = "Grover II" ruling_only = yes }
+				    }
+				}
+				}
+			}
+		}
+		completion_reward = {
+			IF = {
+			    limit = {
+				    GRI = {
+					    owns_state = 382
+					}
+				}
+				create_wargoal = {
+				    type = annex_everything
+				    target = GRI
+				}
+			    else = {
+				    custom_effect_tooltip = BOI_CETT_take_griffenheim
+                    hidden_effect = {
+                        every_other_country = {
+                            limit = {
+                                owns_state = 382
+                            }
+                            BOI = {
+                                create_wargoal = { 
+                                    type = annex_everything 
+                                    target = PREV 
+                                }
+							}
+                        }
+                    }
+				}
+			}
+			hidden_effect = {
+			    load_focus_tree = Griffonstone_gestal_2
+			}
+		}
+	}
+    ################
+	shared_focus = {
+		id = BOI_claim_regency
+		icon = GFX_goal_grover_vi 
+		x = -1
+		y = 6
+		cost = 2.00
+		relative_position_id = BOI_reform_regency_gestal
+		mutually_exclusive = { focus = BOI_rightful_heiress }
+		available = {
+		    owns_state = 382
+			NOT = {
+			    has_global_flag =  GRI_grover_vi_dead
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = griffonstone.215
+		}
+	}
+	shared_focus = {
+		id = BOI_rightful_heiress
+		icon = GFX_goal_the_duchess 
+		x = 1
+		y = 6
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		mutually_exclusive = { focus = BOI_claim_regency }
+		available = {
+		    owns_state = 382
+			has_global_flag =  GRI_grover_vi_dead
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = griffonstone.237
+		}
+	}
+	shared_focus = {
+		id = BOI_integrate_herzland
+		icon = GFX_goal_generic_government_deals 
+		x = 0
+		y = 7
+		cost = 10.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_claim_regency focus = BOI_rightful_heiress }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = BOI_CETT_coring_herzland
+			hidden_effect = {
+			#Angriver
+			547 = {
+			    add_core_of = ARA
+			}
+			422 = {
+			    add_core_of = ARA
+			}
+			411 = {
+			    add_core_of = ARA
+			}
+			#Katerin
+			506 = {
+			    add_core_of = ARA
+			}
+			554 = {
+			    add_core_of = ARA
+			}
+			423 = {
+			    add_core_of = ARA
+			}
+			#Yale
+			665 = {
+			    add_core_of = ARA
+			}
+			402 = {
+			    add_core_of = ARA
+			}
+			439 = {
+			    add_core_of = ARA
+			}
+			398 = {
+			    add_core_of = ARA
+			}
+			#Greifemarschen
+			399 = {
+			    add_core_of = ARA
+			}
+			447 = {
+			    add_core_of = ARA
+			}
+			378 = {
+			    add_core_of = ARA
+			}
+			#Romau
+			674 = {
+			    add_core_of = ARA
+			}
+			#Griffonian Empire starting land
+			555 = {
+			    add_core_of = ARA
+			}
+			437 = {
+			    add_core_of = ARA
+			}
+			397 = {
+			    add_core_of = ARA
+			}
+			405 = {
+			    add_core_of = ARA
+			}
+			382 = {
+			    add_core_of = ARA
+			}
+			#Feathisia
+			666 = {
+			    add_core_of = ARA
+			}
+			440 = {
+			    add_core_of = ARA
+			}
+			441 = {
+			    add_core_of = ARA
+			}
+			520 = {
+			    add_core_of = ARA
+			}
+			434 = {
+			    add_core_of = ARA
+			}
+			498 = {
+			    add_core_of = ARA
+			}
+			538 = {
+			    add_core_of = ARA
+			}
+			433 = {
+			    add_core_of = ARA
+			}
+			497 = {
+			    add_core_of = ARA
+			}
+			#Strawberry
+			443 = {
+			    add_core_of = ARA
+			}
+			545 = {
+			    add_core_of = ARA
+			}
+			546 = {
+			    add_core_of = ARA
+			}
+			486 = {
+			    add_core_of = ARA
+			}
+			458 = {
+			    add_core_of = ARA
+			}
+			#Bronzehill
+			424 = {
+			    add_core_of = ARA
+			}
+			479 = {
+			    add_core_of = ARA
+			}
+			492 = {
+			    add_core_of = ARA
+			}
+			568 = {
+			    add_core_of = ARA
+			}
+			539 = {
+			    add_core_of = ARA
+			}
+			#########################
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_attack_skyfall
+		icon = GFX_goal_Attack_Skyfall 
+		x = 0
+		y = 8
+		cost = 5.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_integrate_herzland }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+				target = TRD
+			}
+		}
+	}
+	shared_focus = {
+		id = BOI_heal_the_souls
+		icon = GFX_goal_the_idol 
+		x = 0
+		y = 9
+		cost = 8.00
+		relative_position_id = BOI_reform_regency_gestal
+		prerequisite = { focus = BOI_attack_skyfall }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = idol_of_boreas_lost
+			custom_effect_tooltip = BOI_CETT_ready_for_reclamation
+			hidden_effect = {
+			    set_country_flag = BOI_FLAG_reclamation
+			}
+		}
+	}
+	################
+	shared_focus = {
+		id = BOI_imperial_reclamation
+		icon = GFX_PAP_roman_senate 
+		x = 20
+		y = 6
+		cost = 8.00
+		available = {
+		    has_country_flag = BOI_FLAG_reclamation
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	#################
+shared_focus = {
+	id = BOI_strike_north
+	icon = GFX_goal_purge_opposition
+	x = -4
+	y = 1
+	cost = 7.20
+	prerequisite = { focus = BOI_imperial_reclamation }
+	relative_position_id = BOI_imperial_reclamation
+	available = {
+		is_subject = no
+	}
+	ai_will_do = {
+		factor = 80
+		modifier = {
+			has_war = yes
+			factor = 0
+		}
+	}
+	bypass = { 
+	    custom_trigger_tooltip = {
+			tooltip = GRI_core_FAT_SRS_MNC_VED_HAU_tp
+		    FAT = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			SRS = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			MNC = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			VED = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			HAU = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+		}
+	}
+	will_lead_to_war_with = FAT
+	will_lead_to_war_with = FAW
+	will_lead_to_war_with = SRS
+	will_lead_to_war_with = MNC
+	will_lead_to_war_with = HAU
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_strike_north"
+		effect_tooltip = { create_wargoal = { type = annex_everything target = FAT } }
+		hidden_effect = {
+			every_country_with_original_tag = {
+				original_tag_to_check = FAT
+				ROOT = { create_wargoal = { type = annex_everything target = PREV } }
+			}
+		}
+		if = {
+			limit = { country_exists = FAW }
+			create_wargoal = { type = annex_everything target = FAW }
+		}
+		if = {
+			limit = { country_exists = HAU }
+			create_wargoal = { type = annex_everything target = HAU }
+		}
+		create_wargoal = { type = annex_everything target = SRS }
+		hidden_effect = {
+			every_country_with_original_tag = {
+				original_tag_to_check = SRS
+				ROOT = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					}
+				}
+			}
+		}
+		create_wargoal = { type = annex_everything target = MNC }
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = BOI_go_after_vedina
+	icon = GFX_focus_rom_abdicate
+	x = -5
+	y = 2
+	cost = 7.20
+	prerequisite = { focus = BOI_strike_north }
+	relative_position_id = BOI_imperial_reclamation
+	available = {
+		is_subject = no
+	}
+	bypass = {
+		OR = { 
+		    VED = { 
+		        exists = no 
+		    }
+		    VED = { 
+			    OR = {
+				    is_subject_of = ROOT 
+					is_in_faction_with = ROOT
+					
+		        } 
+		    } 
+		}
+	}
+
+	ai_will_do = {
+		factor = 110
+		modifier = {
+			has_war = yes
+			factor = 0.1
+		}
+	}
+	will_lead_to_war_with = VED
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_go_after_vedina"
+		create_wargoal = { type = annex_everything target = VED }
+		hidden_effect = {
+			every_country_with_original_tag = {
+				original_tag_to_check = VED
+				ROOT = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					}
+				}
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = BOI_hang_the_traitor
+	icon = GFX_goal_Hang_The_Traitor
+	x = -3
+	y = 2
+	cost = 7.20
+	prerequisite = { focus = BOI_strike_north }
+	relative_position_id = BOI_imperial_reclamation
+	available = {
+	    is_subject = no
+	    custom_trigger_tooltip = {
+			tooltip = GRI_core_FAT_tp
+		    557 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    556 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    548 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    480 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    474 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    582 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    485 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    432 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    450 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    583 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    449 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		}
+	}
+
+	ai_will_do = {
+		factor = 110
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_hang_the_traitor"
+		country_event = { days = 1 id = imperial.108 }
+	}
+}
+
+shared_focus = {
+	id = BOI_core_the_north
+	icon = GFX_goal_ideology_authoritarian_democrat
+	x = -4
+	y = 3
+	cost = 7.20
+	prerequisite = { focus = BOI_go_after_vedina }
+	prerequisite = { focus = BOI_hang_the_traitor }
+	relative_position_id = BOI_imperial_reclamation
+	available = { 
+	    is_subject = no
+		has_political_power > 50
+	}
+	cancel_if_invalid = no
+
+	ai_will_do = {
+		factor = 110
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_core_the_north"
+		add_political_power = -150
+		FAT = { add_to_ROOT_potential_original_cores = yes }
+		SRS = { add_to_ROOT_potential_cores = yes }
+		MNC = { add_to_ROOT_potential_cores = yes }
+		VED = { add_to_ROOT_potential_cores = yes }
+		HAU = { add_to_ROOT_potential_cores = yes }
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+
+shared_focus = {
+	id = BOI_strike_lakes
+	icon = GFX_goal_generic_more_territorial_claims
+	x = 0
+	y = 1
+	cost = 7.20
+	prerequisite = { focus = BOI_imperial_reclamation }
+	relative_position_id = BOI_imperial_reclamation
+	available = {
+		is_subject = no
+	}
+	ai_will_do = {
+		factor = 80
+		modifier = {
+			has_war = yes
+			factor = 0
+		}
+		modifier = {
+			NOT = {
+				has_completed_focus = GRI_strike_west
+			}
+			factor = 0.5
+		}
+	}
+	bypass = { 
+	    custom_trigger_tooltip = {
+			tooltip = GRI_core_AVI_BAN_EYR_ERI_LAK_BOI_tp
+		    AVI = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			BAN = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			EYR = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			ERI = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			LAK = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			BOI = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+		}
+		389 = {
+			owner = {
+				OR = { 
+					tag = ROOT 
+					OR = { 
+						is_subject_of = ROOT  
+						is_in_faction_with = ROOT 
+					} 
+				}
+			}
+	    }
+	}
+	will_lead_to_war_with = AVI
+	will_lead_to_war_with = BAN
+	will_lead_to_war_with = EYR
+	will_lead_to_war_with = ERI
+	will_lead_to_war_with = BOI
+	will_lead_to_war_with = LAK
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_strike_lakes"
+		create_wargoal = { type = annex_everything target = AVI }
+		create_wargoal = { type = annex_everything target = BAN }
+		create_wargoal = { type = annex_everything target = EYR }
+		create_wargoal = { type = annex_everything target = ERI }
+		if = {
+			limit = { country_exists = BOI }
+			create_wargoal = { type = annex_everything target = BOI }
+		}
+		if = {
+			limit = {
+				389 = {
+					owner = {
+						NOT = {
+							tag = ROOT
+							tag = BOI
+						}
+					}
+				}
+			}
+			create_wargoal = { type = annex_everything target = 389.owner }
+		}
+		create_wargoal = { type = annex_everything target = LAK }
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = BOI_respect_the_locals_imperial
+	icon = GFX_goal_POR_royal_edicts
+	x = -1
+	y = 2
+	cost = 7.20
+	prerequisite = { focus = BOI_strike_lakes }
+	relative_position_id = BOI_imperial_reclamation
+	available = {
+		is_subject = no
+	}
+
+	ai_will_do = {
+		factor = 110
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_respect_the_locals_imperial"
+		add_ideas = GRI_local_auxiliaries
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESISTANCE FOCUS_FILTER_ARMY_BONUS }
+}
+
+shared_focus = {
+	id = BOI_rebuild_griffinstone_imperial
+	icon = GFX_focus_strike_griffonstone
+	x = 1
+	y = 2
+	cost = 7.20
+	prerequisite = { focus = BOI_strike_lakes }
+	relative_position_id = BOI_imperial_reclamation
+	available = {
+	    is_subject = no
+		389 = {
+			owner = {
+				OR = { tag = ROOT OR = {
+						is_subject_of = ROOT 
+						is_in_faction_with = ROOT
+					} }
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 110
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_rebuild_griffinstone_imperial"
+		389 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 4
+				instant_build = yes
+			}
+		}
+		hidden_effect = {
+			country_event = { id = imperial.95 days = 1 }
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = BOI_core_center
+	icon = GFX_goal_generic_dangerous_deal
+	x = 0
+	y = 3
+	cost = 7.20
+	prerequisite = { focus = BOI_respect_the_locals_imperial }
+	prerequisite = { focus = BOI_rebuild_griffinstone_imperial }
+	relative_position_id = BOI_imperial_reclamation
+	available = { 
+	    is_subject = no
+		has_political_power > 50
+	}
+	cancel_if_invalid = no
+
+	ai_will_do = {
+		factor = 110
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_core_center"
+		add_political_power = -150
+		AVI = { add_to_ROOT_potential_cores = yes }
+		BAN = { add_to_ROOT_potential_cores = yes }
+		EYR = { add_to_ROOT_potential_cores = yes }
+		ERI = { add_to_ROOT_potential_cores = yes }
+		LAK = { add_to_ROOT_potential_cores = yes }
+		BOI = { add_to_ROOT_potential_original_cores = yes }
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = BOI_strike_west
+	icon = GFX_focus_generic_strike_at_democracy1
+	x = 4
+	y = 1
+	dynamic = yes
+	cost = 7.20
+	prerequisite = { focus = BOI_imperial_reclamation }
+	relative_position_id = BOI_imperial_reclamation
+	available = {
+		is_subject = no
+	}
+	ai_will_do = {
+		factor = 80
+		modifier = {
+			has_war = yes
+			factor = 0
+		}
+	}
+	bypass = { 
+	    custom_trigger_tooltip = {
+			tooltip = GRI_core_TRD_FEZ_AET_HEL_POM_FLO_JRR_JER_JEB_JFT_VIN_tp
+		    TRD = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			FEZ = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			AET = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			HEL = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			POM = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			JRR = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			JER = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			JEB = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			JFT = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			VIN = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			FLO = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+		}
+	}
+	will_lead_to_war_with = AET
+	will_lead_to_war_with = FEZ
+	will_lead_to_war_with = JEB
+	will_lead_to_war_with = JES
+	will_lead_to_war_with = JRR
+	will_lead_to_war_with = JER
+	will_lead_to_war_with = VIN
+	will_lead_to_war_with = JFT
+	will_lead_to_war_with = POM
+	will_lead_to_war_with = FLO
+	will_lead_to_war_with = HEL
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_strike_west"
+		if = {
+			limit = { NOT = { has_guaranteed = AET } }
+			create_wargoal = { type = annex_everything target = AET }
+		}
+		create_wargoal = { type = annex_everything target = FEZ }
+		create_wargoal = { type = annex_everything target = JEB }
+		create_wargoal = { type = annex_everything target = JES }
+		create_wargoal = { type = annex_everything target = JRR }
+		create_wargoal = { type = annex_everything target = JER }
+		create_wargoal = { type = annex_everything target = VIN }
+		create_wargoal = { type = annex_everything target = JFT }
+		create_wargoal = { type = annex_everything target = HEL }
+		create_wargoal = { type = annex_everything target = POM }
+		create_wargoal = { type = annex_everything target = FLO }
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = BOI_the_trade_cities_imperial
+	icon = GFX_goal_silver_reserve
+	x = 3
+	y = 2
+	cost = 7.20
+	prerequisite = { focus = BOI_strike_west }
+	relative_position_id = BOI_imperial_reclamation
+	available = {
+	    is_subject = no 
+		381 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		380 = {
+			owner = {
+				OR = { tag = ROOT OR = {
+						is_subject_of = ROOT 
+						is_in_faction_with = ROOT
+					} }
+			}
+		}
+		390 = {
+			owner = {
+				OR = { tag = ROOT OR = {
+						is_subject_of = ROOT 
+						is_in_faction_with = ROOT
+					} }
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 110
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_the_trade_cities_imperial"
+		381 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		380 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		390 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = BOI_the_oil_fields_imperial
+	icon = GFX_goal_further_oil
+	x = 5
+	y = 2
+	cost = 7.20
+	prerequisite = { focus = BOI_strike_west }
+	relative_position_id = BOI_imperial_reclamation
+	available = {
+	    is_subject = no
+		494 = {
+			owner = {
+				OR = { tag = ROOT OR = {
+						is_subject_of = ROOT 
+						is_in_faction_with = ROOT
+					} }
+			}
+		}
+		493 = {
+			owner = {
+				OR = { tag = ROOT OR = {
+						is_subject_of = ROOT 
+						is_in_faction_with = ROOT
+					} }
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 110
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_the_oil_fields_imperial"
+		add_resource = {
+			type = oil
+			amount = 14
+			state = 494
+		}
+		add_resource = {
+			type = oil
+			amount = 14
+			state = 493
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = BOI_core_west
+	icon = GFX_goal_COS_Peace
+	x = 4
+	y = 3
+	cost = 7.20
+	prerequisite = { focus = BOI_the_trade_cities_imperial }
+	prerequisite = { focus = BOI_the_oil_fields_imperial }
+	relative_position_id = BOI_imperial_reclamation
+	available = { 
+	    is_subject = no
+		has_political_power > 50
+	}
+	cancel_if_invalid = no
+
+	ai_will_do = {
+		factor = 110
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_core_west"
+		add_political_power = -150
+		TRD = { add_to_ROOT_potential_cores = yes }
+		FEZ = { add_to_ROOT_potential_cores = yes }
+		AET = { add_to_ROOT_potential_cores = yes }
+		HEL = { add_to_ROOT_potential_cores = yes }
+		JRR = { add_to_ROOT_potential_cores = yes }
+		JER = { add_to_ROOT_potential_cores = yes }
+		JES = { add_to_ROOT_potential_cores = yes }
+		JEB = { add_to_ROOT_potential_cores = yes }
+		JFT = { add_to_ROOT_potential_cores = yes }
+		VIN = { add_to_ROOT_potential_cores = yes }
+		POM = { add_to_ROOT_potential_cores = yes }
+		FLO = { add_to_ROOT_potential_cores = yes }
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = BOI_strike_south
+	icon = GFX_focus_wingbardy_forever
+	x = -2
+	y = 4
+	cost = 7.20
+	prerequisite = { focus = BOI_core_the_north }
+	prerequisite = { focus = BOI_core_center }
+	prerequisite = { focus = BOI_core_west }
+	relative_position_id = BOI_imperial_reclamation
+	available = {
+		is_subject = no
+	}
+
+	ai_will_do = {
+		factor = 80
+		modifier = {
+			has_war = yes
+			factor = 0
+		}
+	}
+	bypass = { 
+	    custom_trigger_tooltip = {
+			tooltip = GRI_core_ARA_FRN_TAL_WNG_FAL_SIC_CYA_tp
+		    ARA = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			FRN = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			TAL = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			WNG = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			FAL = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			SIC = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			CYA = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+		}
+	}
+	will_lead_to_war_with = ARA
+	will_lead_to_war_with = FRN
+	will_lead_to_war_with = TAL
+	will_lead_to_war_with = WNG
+	will_lead_to_war_with = FAL
+	will_lead_to_war_with = SIC
+	will_lead_to_war_with = CYA
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_strike_south"
+		create_wargoal = { type = annex_everything target = ARA }
+		create_wargoal = { type = annex_everything target = FRN }
+		create_wargoal = { type = annex_everything target = TAL }
+		create_wargoal = { type = annex_everything target = WNG }
+		create_wargoal = { type = annex_everything target = FAL }
+		create_wargoal = { type = annex_everything target = SIC }
+		create_wargoal = { type = annex_everything target = CYA }
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = BOI_wingbardian_rubber
+	icon = GFX_goal_generic_army_motorized
+	x = -3
+	y = 5
+	cost = 7.20
+	prerequisite = { focus = BOI_strike_south }
+	relative_position_id = BOI_imperial_reclamation
+	available = {
+	    is_subject = no
+		536 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		373 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		371 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 110
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_wingbardian_rubber"
+		add_resource = {
+			type = rubber
+			amount = 14
+			state = 371
+		}
+		add_resource = {
+			type = rubber
+			amount = 12
+			state = 373
+		}
+		add_resource = {
+			type = rubber
+			amount = 16
+			state = 536
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = BOI_reclaim_minotauria
+	icon = GFX_focus_indy_bullish_diplomacy
+	x = -1
+	y = 5
+	cost = 7.20
+	prerequisite = { focus = BOI_strike_south }
+	relative_position_id = BOI_imperial_reclamation
+	available = {
+	    is_subject = no
+	}
+	bypass = {
+		OR = { 
+		    MIT = { 
+		        exists = no 
+		    }
+		    MIT = { 
+			    OR = {
+				    is_subject_of = ROOT 
+					is_in_faction_with = ROOT
+					
+		        } 
+		    } 
+		}
+	}
+
+	ai_will_do = {
+		factor = 110
+		modifier = {
+			has_war = yes
+			factor = 0.2
+		}
+	}
+	will_lead_to_war_with = MIT
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_reclaim_minotauria"
+		create_wargoal = { type = puppet_wargoal_focus target = MIT }
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = BOI_core_south
+	icon = GFX_goal_wng_glory_to_wingbardy
+	x = -2
+	y = 6
+	cost = 7.20
+	prerequisite = { focus = BOI_wingbardian_rubber }
+	prerequisite = { focus = BOI_reclaim_minotauria }
+	relative_position_id = BOI_imperial_reclamation
+	available = { 
+	    is_subject = no
+		has_political_power > 50
+	}
+	cancel_if_invalid = no
+
+	ai_will_do = {
+		factor = 110
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_core_south"
+		add_political_power = -150
+		ARA = { add_to_ROOT_potential_cores = yes }
+		FRN = { add_to_ROOT_potential_cores = yes }
+		TAL = { add_to_ROOT_potential_cores = yes }
+		WNG = { add_to_ROOT_potential_cores = yes }
+		FAL = { add_to_ROOT_potential_cores = yes }
+		SIC = { add_to_ROOT_potential_cores = yes }
+		CYA = { add_to_ROOT_potential_cores = yes }
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = BOI_strike_frontier
+	icon = GFX_goal_generic_position_armies
+	x = 2
+	y = 4
+	cost = 7.20
+	prerequisite = { focus = BOI_core_the_north }
+	prerequisite = { focus = BOI_core_center }
+	prerequisite = { focus = BOI_core_west }
+	relative_position_id = BOI_imperial_reclamation
+	available = {
+		is_subject = no
+	}
+
+	ai_will_do = {
+		factor = 80
+		modifier = {
+			has_war = yes
+			factor = 0
+		}
+	}
+	bypass = { 
+	    custom_trigger_tooltip = {
+			tooltip = GRI_core_HLQ_LNS_LSM_LSC_LUS_GRW_BRF_GRY_GRU_tp
+		    HLQ = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			LNS = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			LSM = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			LSC = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			LUS = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			GRW = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			BRF = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			GRY = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			GRU = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+		}
+	}
+	will_lead_to_war_with = HLQ
+	will_lead_to_war_with = LNS
+	will_lead_to_war_with = LSC
+	will_lead_to_war_with = LSM
+	will_lead_to_war_with = GRW
+	will_lead_to_war_with = BRF
+	will_lead_to_war_with = GRU
+	will_lead_to_war_with = GRY
+	will_lead_to_war_with = LUS
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_strike_frontier"
+		create_wargoal = { type = annex_everything target = HLQ }
+		create_wargoal = { type = annex_everything target = LNS }
+		create_wargoal = { type = annex_everything target = LSC }
+		create_wargoal = { type = annex_everything target = LSM }
+		create_wargoal = { type = annex_everything target = GRW }
+		create_wargoal = { type = annex_everything target = BRF }
+		create_wargoal = { type = annex_everything target = GRU }
+		create_wargoal = { type = annex_everything target = GRY }
+		create_wargoal = { type = annex_everything target = LUS }
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = BOI_far_eastern_port
+	icon = GFX_SIA_maritmesilkroad
+	x = 1
+	y = 5
+	cost = 7.20
+	prerequisite = { focus = BOI_strike_frontier }
+	relative_position_id = BOI_imperial_reclamation
+	available = {
+	    is_subject = no
+		594 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 110
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_far_eastern_port"
+		594 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = naval_base
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = BOI_settle_the_kosakenland
+	icon = GFX_goal_agricultural_aid
+	x = 3
+	y = 5
+	cost = 7.20
+	prerequisite = { focus = BOI_strike_frontier }
+	relative_position_id = BOI_imperial_reclamation
+	available = {
+	    is_subject = no
+	    custom_trigger_tooltip = {
+			tooltip = GRI_core_GRY_tp
+		    596 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    609 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    611 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    598 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    612 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    631 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    597 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    613 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    610 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    592 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		}
+	}
+
+	ai_will_do = {
+		factor = 110
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_settle_the_kosakenland"
+		592 = { 
+		    add_extra_state_shared_building_slots = 1
+		    add_manpower = 15000
+		}
+		610 = { 
+		    add_extra_state_shared_building_slots = 1
+		    add_manpower = 15000
+		}
+		613 = { 
+		    add_extra_state_shared_building_slots = 1
+		    add_manpower = 15000
+		}
+		597 = { 
+		    add_extra_state_shared_building_slots = 1
+		    add_manpower = 15000
+		}
+		631 = { 
+		    add_extra_state_shared_building_slots = 1
+		    add_manpower = 15000
+		}
+		612 = { 
+		    add_extra_state_shared_building_slots = 1
+		    add_manpower = 15000
+		}
+		598 = { 
+		    add_extra_state_shared_building_slots = 1
+		    add_manpower = 15000
+		}
+		611 = { 
+		    add_extra_state_shared_building_slots = 1
+		    add_manpower = 15000
+		}
+		609 = { 
+		    add_extra_state_shared_building_slots = 1
+		    add_manpower = 15000
+		}
+		596 = { 
+		    add_extra_state_shared_building_slots = 1
+		    add_manpower = 15000
+		}
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = BOI_core_frontier
+	icon = GFX_goal_skull_treaty
+	x = 2
+	y = 6
+	cost = 7.20
+	prerequisite = { focus = BOI_far_eastern_port }
+	prerequisite = { focus = BOI_settle_the_kosakenland }
+	relative_position_id = BOI_imperial_reclamation
+	available = { 
+	    is_subject = no
+		has_political_power > 50
+	}
+	cancel_if_invalid = no
+
+	ai_will_do = {
+		factor = 110
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_core_frontier"
+		add_political_power = -150
+		HLQ = { add_to_ROOT_potential_original_cores = yes }
+		LNS = { add_to_ROOT_potential_cores = yes }
+		hidden_effect = {
+			LSM = { add_to_ROOT_potential_cores = yes }
+			LSC = { add_to_ROOT_potential_cores = yes }
+		}
+		LUS = { add_to_ROOT_potential_cores = yes }
+		GRW = { add_to_ROOT_potential_cores = yes }
+		BRF = { add_to_ROOT_potential_cores = yes }
+		GRY = { add_to_ROOT_potential_cores = yes }
+		GRU = { add_to_ROOT_potential_cores = yes }
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = BOI_attack_GRF
+	icon = GFX_goal_generic_major_war
+	x = 0
+	y = 7
+	cost = 15.80
+	prerequisite = { focus = BOI_core_south }
+	prerequisite = { focus = BOI_core_frontier }
+	relative_position_id = BOI_imperial_reclamation
+	bypass = {
+		GRF = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		GFF = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+	}
+	will_lead_to_war_with = GRF
+	will_lead_to_war_with = GFF
+	available = {
+		is_subject = no
+		any_owned_state = {
+			is_controlled_by = ROOT
+			is_coastal = yes
+		}
+	}
+	ai_will_do = {
+		factor = 110
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BOI_attack_GRF"
+		if = {
+			limit = { country_exists = GRF }
+			GRF = { country_event = { id = imperial.61 days = 7 } }
+		}
+		if = {
+			limit = { GFF = { exists = yes is_subject = no } }
+			GFF = { country_event = { id = imperial.61 days = 7 } }
+		}
+		for_each_scope_loop = {
+			array = GRF.core_states
+			tooltip = EFFECT_EVERY_STATE_STARTS
+			add_claim_by = ROOT
+		}
+		for_each_scope_loop = {
+			array = GFF.core_states
+			tooltip = EFFECT_EVERY_STATE_STARTS
+			add_claim_by = ROOT
+		}
+	}
+}
+
+    #########################
+	####    GOLDSTONE    ####
+	#########################
+
+focus_tree = {
+	id = Griffonstone_goldstone
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BOI
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 130 y = 1100 }
+	
+		shared_focus = BOI_birth_navy
+		shared_focus = BOI_from_ashes
+		shared_focus = BOI_royal_defence_force
+		shared_focus = BOI_create_airforce
+
+	focus = {
+		id = BOI_golden_dawn
+		icon = GFX_goal_unknown 
+		x = 30
+		y = 0
+		cost = 1.00
+		bypass = {
+		    always = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = BOI_purge_republicans
+		icon = GFX_goal_guillotine 
+		x = -2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_golden_dawn }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_popularity = { ideology = democratic popularity = -0.15 }
+		}
+	}
+	focus = {
+		id = BOI_disband_regency_council
+		icon = GFX_focus_indy_crush_the_monarchy 
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_golden_dawn }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = BOI_political_deadlock
+		}
+	}
+	focus = {
+		id = BOI_disappear_the_disloyal
+		icon = GFX_focus_indy_bound_by_blood 
+		x = 2
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_golden_dawn }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = -0.15 }
+		}
+	}
+	focus = {
+		id = BOI_foreign_veterans
+		icon = GFX_goal_unicorn_soldier 
+		x = -3
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_disband_regency_council }
+		prerequisite = { focus = BOI_disappear_the_disloyal }
+		prerequisite = { focus = BOI_purge_republicans }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 25000
+			add_ideas = BOI_foreign_legions
+		}
+	}
+	focus = {
+		id = BOI_shadow_warfare
+		icon = GFX_goal_secret_agents 
+		x = -1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_disband_regency_council }
+		prerequisite = { focus = BOI_disappear_the_disloyal }
+		prerequisite = { focus = BOI_purge_republicans }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_knives_in_the_dark
+		}
+	}
+	focus = {
+		id = BOI_indentured_servitude
+		icon = GFX_goal_slavery 
+		x = 1
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_disband_regency_council }
+		prerequisite = { focus = BOI_disappear_the_disloyal }
+		prerequisite = { focus = BOI_purge_republicans }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			decrease_poverty = yes
+			add_ideas = BOI_indentured_servitude_idea_1
+		}
+	}
+	focus = {
+		id = BOI_knowledge_is_power
+		icon = GFX_focus_research_slave 
+		x = 3
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_disband_regency_council }
+		prerequisite = { focus = BOI_disappear_the_disloyal }
+		prerequisite = { focus = BOI_purge_republicans }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			decrease_illiteracy = yes
+			add_ideas = BOI_narrow_minds
+		}
+	}
+	focus = {
+		id = BOI_divide_and_conquer
+		icon = GFX_goal_HOL_amend_wapenwet 
+		x = -2
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_foreign_veterans }
+		prerequisite = { focus = BOI_shadow_warfare }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_local_collaborators
+		}
+	}
+	focus = {
+		id = BOI_special_economic_zones
+		icon = GFX_goal_bag_of_money 
+		x = 2
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_indentured_servitude }
+		prerequisite = { focus = BOI_knowledge_is_power }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			389 = {
+			    add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = BOI_no_industrial_regulations_1
+		}
+	}
+	focus = {
+		id = BOI_prey_on_the_weak
+		icon = GFX_focus_generic_support_the_left_right_claw 
+		x = 0
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_divide_and_conquer }
+		prerequisite = { focus = BOI_special_economic_zones }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = BOI_cradle_of_griffonkind_goldstone
+		icon = GFX_goal_planning_bonus 
+		x = -3
+		y = 5
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_prey_on_the_weak }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+				target = LAK
+			}
+		}
+	}
+	focus = {
+		id = BOI_reclaim_blackhollow
+		icon = GFX_goal_ban_blackrock 
+		x = 0
+		y = 5
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_prey_on_the_weak }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+				target = BAN
+			}
+		}
+	}
+	focus = {
+		id = BOI_verenian_mess
+		icon = GFX_goal_crown_and_swords 
+		x = 3
+		y = 5
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_prey_on_the_weak }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = AVI
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = EYR
+			}
+		    create_wargoal = {
+				type = annex_everything
+				target = ERI
+			}
+		}
+	}
+	focus = {
+		id = BOI_deal_with_rumareans
+		icon = GFX_goal_Dare_to_Die_Corps 
+		x = -3
+		y = 6
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_cradle_of_griffonkind_goldstone }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    383 = { 
+			    add_manpower = -50000
+			}
+			384 = { 
+			    add_manpower = -100000
+			}
+			389 = { 
+			    add_manpower = 50000
+			}
+			531 = { 
+			    add_manpower = 25000
+			}
+			488 = { 
+			    add_manpower = 25000
+			}
+			remove_ideas = BOI_rumarean_unrest
+			add_ideas = BOI_rumareans_quelled
+		}
+	}
+	focus = {
+		id = BOI_send_them_to_the_mines
+		icon = GFX_goal_SZC_salt 
+		x = -1
+		y = 6
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_reclaim_blackhollow }
+		mutually_exclusive = { focus = BOI_conscript_bandits }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 3
+				state = 489
+			}
+			add_resource = {
+				type = tungsten
+				amount = 3
+				state = 489
+			}
+			add_resource = {
+				type = crystals
+				amount = 3
+				state = 489
+			}
+			add_resource = {
+				type = steel
+				amount = 3
+				state = 606
+			}
+			add_resource = {
+				type = tungsten
+				amount = 3
+				state = 606
+			}
+			add_resource = {
+				type = crystals
+				amount = 3
+				state = 606
+			}
+		}
+	}
+	focus = {
+		id = BOI_conscript_bandits
+		icon = GFX_goal_MAF_Graveyard 
+		x = 1
+		y = 6
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_reclaim_blackhollow }
+		mutually_exclusive = { focus = BOI_send_them_to_the_mines }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 100000
+		}
+	}
+	focus = {
+		id = BOI_integrate_verenia_goldstone
+		icon = GFX_goal_POR_royal_edicts 
+		x = 3
+		y = 6
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_verenian_mess }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core = 401
+			add_state_core = 500
+			add_state_core = 400
+			add_state_core = 673
+			add_state_core = 391
+			add_state_core = 470
+		}
+	}
+	focus = {
+		id = BOI_breaking_the_heart
+		icon = GFX_goal_hoist_the_flag 
+		x = 0
+		y = 7
+		cost = 5.00
+		relative_position_id = BOI_golden_dawn
+		prerequisite = { focus = BOI_deal_with_rumareans }
+		prerequisite = { focus = BOI_send_them_to_the_mines focus = BOI_conscript_bandits }
+		prerequisite = { focus = BOI_integrate_verenia_goldstone }
+		
+		available = {
+		    OR = {
+		        any_other_country = {
+				    original_tag = GRI
+				    has_completed_focus = GRI_end_TRD #TODO
+			    }
+			    any_other_country = {
+				    original_tag = FAT
+				    has_completed_focus = FAT_tricolor_over_griffenheim
+			    }
+			    any_other_country = {
+				    has_cosmetic_tag = GRIF_EMPIRE
+				    exists = yes
+			    }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			IF = {
+			    limit = {
+				    GRI = {
+					    owns_state = 822
+					}
+				}
+				create_wargoal = {
+				    type = annex_everything
+				    target = GRI
+				}
+			    else = {
+				    custom_effect_tooltip = BOI_CETT_take_griffenheim
+                    hidden_effect = {
+                        every_other_country = {
+                            limit = {
+                                owns_state = 822
+                            }
+                            BOI = {
+                                create_wargoal = { 
+                                    type = annex_everything 
+                                    target = PREV 
+                                }
+							}
+                        }
+                    }
+				}
+			}
+		}
+	}
+	focus = {
+		id = BOI_shaking_claws_with_imperials
+		icon = GFX_focus_indy_champagne_repression 
+		x = -4
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_breaking_the_heart
+		prerequisite = { focus = BOI_breaking_the_heart }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = BOI_discontent_nobles
+				add_idea = BOI_imperial_clique
+			}
+		}
+	}
+	focus = {
+		id = BOI_pacify_herzland
+		icon = GFX_goal_national_populism 
+		x = 0
+		y = 1
+		cost = 15.00
+		relative_position_id = BOI_breaking_the_heart
+		prerequisite = { focus = BOI_breaking_the_heart }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = BOI_CETT_coring_herzland
+			hidden_effect = {
+			#Angriver
+			547 = {
+			    add_core_of = ARA
+			}
+			422 = {
+			    add_core_of = ARA
+			}
+			411 = {
+			    add_core_of = ARA
+			}
+			#Katerin
+			506 = {
+			    add_core_of = ARA
+			}
+			554 = {
+			    add_core_of = ARA
+			}
+			423 = {
+			    add_core_of = ARA
+			}
+			#Yale
+			665 = {
+			    add_core_of = ARA
+			}
+			402 = {
+			    add_core_of = ARA
+			}
+			439 = {
+			    add_core_of = ARA
+			}
+			398 = {
+			    add_core_of = ARA
+			}
+			#Greifemarschen
+			399 = {
+			    add_core_of = ARA
+			}
+			447 = {
+			    add_core_of = ARA
+			}
+			378 = {
+			    add_core_of = ARA
+			}
+			#Romau
+			674 = {
+			    add_core_of = ARA
+			}
+			#Griffonian Empire starting land
+			555 = {
+			    add_core_of = ARA
+			}
+			437 = {
+			    add_core_of = ARA
+			}
+			397 = {
+			    add_core_of = ARA
+			}
+			405 = {
+			    add_core_of = ARA
+			}
+			382 = {
+			    add_core_of = ARA
+			}
+			#Feathisia
+			666 = {
+			    add_core_of = ARA
+			}
+			440 = {
+			    add_core_of = ARA
+			}
+			441 = {
+			    add_core_of = ARA
+			}
+			520 = {
+			    add_core_of = ARA
+			}
+			434 = {
+			    add_core_of = ARA
+			}
+			498 = {
+			    add_core_of = ARA
+			}
+			538 = {
+			    add_core_of = ARA
+			}
+			433 = {
+			    add_core_of = ARA
+			}
+			497 = {
+			    add_core_of = ARA
+			}
+			#Strawberry
+			443 = {
+			    add_core_of = ARA
+			}
+			545 = {
+			    add_core_of = ARA
+			}
+			546 = {
+			    add_core_of = ARA
+			}
+			486 = {
+			    add_core_of = ARA
+			}
+			458 = {
+			    add_core_of = ARA
+			}
+			#Bronzehill
+			424 = {
+			    add_core_of = ARA
+			}
+			479 = {
+			    add_core_of = ARA
+			}
+			492 = {
+			    add_core_of = ARA
+			}
+			568 = {
+			    add_core_of = ARA
+			}
+			539 = {
+			    add_core_of = ARA
+			}
+			#########################
+			}
+		}
+	}
+	focus = {
+		id = BOI_skyfall_prize
+		icon = GFX_goal_Attack_Skyfall 
+		x = 4
+		y = 1
+		cost = 5.00
+		relative_position_id = BOI_breaking_the_heart
+		prerequisite = { focus = BOI_breaking_the_heart }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+				target = TRD
+			}
+		}
+	}
+	focus = {
+		id = BOI_oligarchs
+		icon = GFX_goal_top_hat 
+		x = -5
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_breaking_the_heart
+		prerequisite = { focus = BOI_shaking_claws_with_imperials }
+        available = {
+		    owns_state = 381
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    #TODO unlock advisor hippolyte bechard
+			swap_ideas = {
+			    remove_idea = BOI_no_industrial_regulations_1
+				add_idea = BOI_no_industrial_regulations_2
+			}
+		}
+	}
+	focus = {
+		id = BOI_noblegriffs
+		icon = GFX_goal_monarchism 
+		x = -3
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_breaking_the_heart
+		prerequisite = { focus = BOI_shaking_claws_with_imperials }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    #TODO unlock advisor Duke Erwin von Drach
+			swap_ideas = {
+			    remove_idea = BOI_indentured_servitude_idea_1
+				add_idea = BOI_indentured_servitude_idea_2
+			}
+		}
+	}
+	focus = {
+		id = BOI_puppet_emperor
+		icon = GFX_goal_grover_vi 
+		x = -1
+		y = 2
+		cost = 1.00
+		relative_position_id = BOI_breaking_the_heart
+		prerequisite = { focus = BOI_pacify_herzland }
+		mutually_exclusive = { focus = BOI_unlikely_candidate }
+ 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = griffonstone.211
+		}
+	}
+	focus = {
+		id = BOI_unlikely_candidate
+		icon = GFX_goal_stab_cyril 
+		x = 1
+		y = 2
+		cost = 1.00
+		relative_position_id = BOI_breaking_the_heart
+		prerequisite = { focus = BOI_pacify_herzland }
+		mutually_exclusive = { focus = BOI_puppet_emperor }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = griffonstone.212
+		}
+	}
+	focus = {
+		id = BOI_secure_haukland
+		icon = GFX_Maritime_Silkroad_2 
+		x = 3
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_breaking_the_heart
+		prerequisite = { focus = BOI_skyfall_prize }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+				target = HAU
+			}
+		}
+	}
+	focus = {
+		id = BOI_integrate_western_reaches
+		icon = GFX_goal_ideology_monarchist 
+		x = 5
+		y = 2
+		cost = 5.00
+		relative_position_id = BOI_breaking_the_heart
+		prerequisite = { focus = BOI_skyfall_prize }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = BOI_CETT_coring_skyfall
+			hidden_effect = {
+			380 = {
+			    add_core_of = ARA
+			}
+			396 = {
+			    add_core_of = ARA
+			}
+			397 = {
+			    add_core_of = ARA
+			}
+			381 = {
+			    add_core_of = ARA
+			}
+			379 = {
+			    add_core_of = ARA
+			}
+			}
+		}
+	}
+	focus = {
+		id = BOI_unholy_alliance
+		icon = GFX_goal_generic_archonism 
+		x = -4
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_breaking_the_heart
+		prerequisite = { focus = BOI_oligarchs focus = BOI_noblegriffs }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = idol_of_boreas_lost 
+				add_idea = BOI_idol_loss_forgotten
+			}
+		}
+	}
+	focus = {
+		id = BOI_declare_griffonstone_empire
+		icon = GFX_goal_boi 
+		x = 0
+		y = 3
+		cost = 5.00
+		relative_position_id = BOI_breaking_the_heart
+		prerequisite = { focus = BOI_puppet_emperor focus = BOI_unlikely_candidate }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			news_event = griffonstone_news.002
+		}
+	}
+	focus = {
+		id = BOI_dominate_black_market
+		icon = GFX_goal_arms_dealing 
+		x = 4
+		y = 3
+		cost = 10.00
+		relative_position_id = BOI_breaking_the_heart
+		prerequisite = { focus = BOI_secure_haukland }
+		prerequisite = { focus = BOI_integrate_western_reaches }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = BOI_blackmarket_category
+		}
+	}
+	focus = {
+		id = BOI_war_profiteering
+		icon = GFX_goal_endless_money 
+		x = -2
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_breaking_the_heart
+		prerequisite = { focus = BOI_declare_griffonstone_empire }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = BOI_war_profiteering_category
+		}
+	}
+	focus = {
+		id = BOI_raid_equestrian_commerce
+		icon = GFX_focus_indy_dread_fleet_3 
+		x = 0
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_breaking_the_heart
+		prerequisite = { focus = BOI_declare_griffonstone_empire }
+        available = {
+		    EQS = {
+			    has_war_with = CHN
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BOI_piracy_profits
+			EQS = {
+			    country_event = griffonstone.213
+			}
+		}
+	}
+	focus = {
+		id = BOI_new_order_on_equus
+		icon = GFX_goal_cash_and_cap 
+		x = 2
+		y = 4
+		cost = 5.00
+		relative_position_id = BOI_breaking_the_heart
+		prerequisite = { focus = BOI_declare_griffonstone_empire }
+		prerequisite = { focus = BOI_dominate_black_market }
+		available = {
+		    CHN = {
+			    owns_state = 3
+			}
+			MAN = {
+			    exists = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = BOI_CETT_new_blackmarket_decisions_unlocked #TODO adjust to fit
+			hidden_effect = {
+			    set_country_flag = BOI_FLAG_new_blackmarket_decisions_unlocked
+			}
+		}
+	}
+}
+	

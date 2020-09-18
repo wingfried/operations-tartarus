@@ -1,0 +1,62 @@
+BOI_support_liberation_front_category = {
+	icon = generic_political_actions
+
+	visible = {
+		original_tag = BOI
+		has_completed_focus = BOI_support_war_of_liberation
+		ELF = {
+		    OR = {
+		        has_war_with = CHN
+			    has_war_with = MAN
+		    }
+		}
+	}
+}
+BOI_griffonian_union_category = {
+	icon = generic_political_actions
+
+	visible = {
+		original_tag = BOI
+		has_completed_focus = BOI_great_union
+	}
+}
+BOI_blackmarket_category = {
+	picture = GFX_decision_cat_blackmarket
+
+	visible = {
+		original_tag = BOI
+		has_completed_focus = BOI_dominate_black_market
+	}
+}
+BOI_war_profiteering_category = {
+	icon = generic_political_actions
+
+	visible = {
+		original_tag = BOI
+		has_completed_focus = BOI_war_profiteering
+	}
+}
+BOI_divination_category = {
+    icon = generic_political_actions
+	
+	visible = {
+		original_tag = BOI
+		has_completed_focus = BOI_weltbaum
+	}
+}
+BOI_wettertrupp_category = {
+    icon = generic_political_actions
+	
+	visible = {
+		original_tag = BOI
+		has_completed_focus = BOI_wetterkommando
+	}
+}
+BOI_order_category = {
+    icon = generic_political_actions
+	
+	visible = {
+		original_tag = BOI
+		has_completed_focus = BOI_bring_order_to_herzland
+	}
+}

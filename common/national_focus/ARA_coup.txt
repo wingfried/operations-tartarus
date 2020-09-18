@@ -296,6 +296,15 @@ focus_tree = {
 		relative_position_id = ARA_right_to_rule
 		cost = 5.00
 		prerequisite = { focus = ARA_right_to_rule }
+		bypass = {
+		    AND = {
+		        401 = { is_owned_by = AVI }
+			    500 = { is_owned_by = AVI }
+			    673 = { is_owned_by = AVI }
+			    400 = { is_owned_by = AVI }
+			    391 = { is_owned_by = AVI }
+			}
+		}
 
 		completion_reward = {
 		create_wargoal = {
@@ -344,7 +353,11 @@ focus_tree = {
 		relative_position_id = ARA_right_to_rule
 		cost = 5.00
 		prerequisite = { focus = ARA_right_to_rule }
-
+		available = {
+			ARA = {
+				is_neighbor_of = AVI
+			}
+		}
 		completion_reward = {	
 			create_wargoal = {
 				type = annex_everything
@@ -511,7 +524,7 @@ focus_tree = {
 		focus = {
 		id = ARA_es_oblivion
 		icon = GFX_goal_fire
-		x = 1
+		x = 0
 		y = 1
 		cost = 1.00
 		relative_position_id = ARA_legacy_of_grover
@@ -536,21 +549,21 @@ focus_tree = {
 		}
 		}
 	
-	focus = { 
-		id = ARA_bungie_destiny
-		icon = GFX_goal_supremacy_of_will
-		x = -1
-		y = 1
-		relative_position_id = ARA_legacy_of_grover 
-		cost = 1.00
-		prerequisite = { focus = ARA_legacy_of_grover }
-		mutually_exclusive = { focus = ARA_es_oblivion }
-		completion_reward = {
-		add_political_power = 100
-		add_stability = 0.1
-		add_country_leader_trait = indominable_will
-		}
-		}
+	#focus = { 
+	#	id = ARA_bungie_destiny
+	#	icon = GFX_goal_supremacy_of_will
+	#	x = -1
+	#	y = 1
+	#	relative_position_id = ARA_legacy_of_grover 
+	#	cost = 1.00
+	#	prerequisite = { focus = ARA_legacy_of_grover }
+	#	mutually_exclusive = { focus = ARA_es_oblivion }
+	#	completion_reward = {
+	#	add_political_power = 100
+	#	add_stability = 0.1
+	#	add_country_leader_trait = indominable_will
+	#	}
+	#	}
 	
 		
 	
