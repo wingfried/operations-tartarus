@@ -1604,6 +1604,11 @@
 		y = 2
 		relative_position_id = ARA_kickstart_my_heart
 		cost = 8.00
+		bypass = {
+		    hidden_trigger = {
+			    has_completed_focus = ARA_chaos
+			}
+		}
 		prerequisite = { focus = ARA_kickstart_my_heart }
 		completion_reward = {
 		add_stability = -0.05
@@ -1620,7 +1625,9 @@
 		y = 1
 		relative_position_id = ARA_industrial_front
 		bypass = {
-			has_completed_focus = ARA_free_prisioners
+		    hidden_trigger = {
+			    has_completed_focus = ARA_chaos
+			}
 		}
 		cost = 8.00
 		prerequisite = { focus = ARA_industrial_front }
