@@ -144,4 +144,24 @@ spriteTypes = {
 		name = "GFX_goal_gaw_south"
 		texturefile = "gfx/interface/goals/goal_gaw_south.dds"
 	}
+	SpriteType = { 
+		name = "GFX_goal_SCS_1"
+		texturefile = "gfx/interface/goals/SCS_1.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_SCS_2"
+		texturefile = "gfx/interface/goals/SCS_2.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_SCS_3"
+		texturefile = "gfx/interface/goals/SCS_3.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_SCS_4"
+		texturefile = "gfx/interface/goals/SCS_4.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_SCS_5"
+		texturefile = "gfx/interface/goals/SCS_5.dds"
+	}
 }
