@@ -1827,6 +1827,7 @@ focus_tree = {
 		id = SRS_centralize_communal_factories
 		icon = GFX_goal_state_economy
 		prerequisite = { focus = SRS_market_socialism }
+		prerequisite = { focus = SRS_local_industry focus = SRS_black_thing_under_us }
 		x = 28
 		y = 11
 		cost = 5
@@ -1904,6 +1905,7 @@ focus_tree = {
 		id = SRS_far_northern_academy
 		icon = GFX_goal_KTG_Bookstack
 		prerequisite = { focus = SRS_education_funding }
+		prerequisite = { focus = SRS_stage_two focus = SRS_money_coming_in }
 		x = 28
 		y = 14
 		cost = 5
@@ -1920,6 +1922,9 @@ focus_tree = {
 		id = SRS_come_again_no_more
 		icon = GFX_goal_chn_economic_plan
 		prerequisite = { focus = SRS_far_northern_academy }
+		prerequisite = { focus = SRS_military_industry_development focus = SRS_invest_in_synthetic_rubber }
+		prerequisite = { focus = SRS_natural_resources focus = SRS_start_up_air_industry }
+		prerequisite = { focus = SRS_civilian_industry_development focus = SRS_motorized_army }
 		x = 28
 		y = 16
 		cost = 5
