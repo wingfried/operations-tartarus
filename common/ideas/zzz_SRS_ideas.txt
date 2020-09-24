@@ -1219,7 +1219,7 @@ ideas = {
 	}
 
 	SRS_infantry_warfare_1 = {
-		picture = done
+		picture = SRS_infantry_warfare
 		allowed = { always = no }
 		removal_cost = -1
 		
@@ -1232,7 +1232,7 @@ ideas = {
 	}
 	
 	SRS_infantry_warfare_2a = {
-		picture = done
+		picture = SRS_infantry_warfare
 		allowed = { always = no }
 		removal_cost = -1
 		
@@ -1250,7 +1250,7 @@ ideas = {
 	}
 
 	SRS_infantry_warfare_2b = {
-		picture = done
+		picture = SRS_infantry_warfare
 		allowed = { always = no }
 		removal_cost = -1
 		
@@ -1270,7 +1270,7 @@ ideas = {
 	} 
 
 	SRS_infantry_warfare_2c = {
-		picture = done
+		picture = SRS_infantry_warfare
 		allowed = { always = no }
 		removal_cost = -1
 		
@@ -1294,7 +1294,7 @@ ideas = {
 		
 
 	SRS_infantry_warfare_3a = {
-		picture = done
+		picture = SRS_infantry_warfare
 		allowed = { always = no }
 		removal_cost = -1
 		
@@ -1312,7 +1312,7 @@ ideas = {
 	}
 		
 	SRS_infantry_warfare_3c = {
-		picture = done
+		picture = SRS_infantry_warfare
 		allowed = { always = no }
 		removal_cost = -1
 		
@@ -1336,7 +1336,7 @@ ideas = {
 	}	
 
 	SRS_infantry_warfare_4a = {
-		picture = done
+		picture = SRS_infantry_warfare
 		allowed = { always = no }
 		removal_cost = -1
 		modifier = {
@@ -1357,7 +1357,7 @@ ideas = {
 	}
 
 	SRS_infantry_warfare_4c = {
-		picture = done
+		picture = SRS_infantry_warfare
 		allowed = { always = no }
 		removal_cost = -1
 		
@@ -1384,7 +1384,7 @@ ideas = {
 	}	
 
 	SRS_infantry_warfare_5a = {
-		picture = done
+		picture = SRS_infantry_warfare
 		allowed = { always = no }
 		removal_cost = -1
 		
@@ -1409,7 +1409,7 @@ ideas = {
 	}
 	
 	SRS_infantry_warfare_6 = {
-		picture = done
+		picture = SRS_infantry_warfare
 		allowed = { always = no }
 		removal_cost = -1
 		
@@ -1438,7 +1438,7 @@ ideas = {
 	}	
 
 	SRS_modern_warfare_1 = {
-		picture = done
+		picture = SRS_modern_warfare
 		allowed = { always = no }
 		removal_cost = -1	
 		
@@ -1448,7 +1448,7 @@ ideas = {
 	} 
 
 	SRS_modern_warfare_2a = {
-		picture = done
+		picture = SRS_modern_warfare
 		allowed = { always = no }
 		removal_cost = -1	
 		
@@ -1458,12 +1458,13 @@ ideas = {
 		equipment_bonus = {
             artillery = {
                 soft_attack = 0.05
+				breakthrough = 0.05
             }
         }				
 	}
 
 	SRS_modern_warfare_2b = {
-		picture = done
+		picture = SRS_modern_warfare
 		allowed = { always = no }
 		removal_cost = -1
 		
@@ -1476,12 +1477,13 @@ ideas = {
             }
             artillery = {
                 soft_attack = 0.05
+				breakthrough = 0.05
             }				
 	  	}
     }
 	
 	SRS_modern_warfare_3a = {
-		picture = done
+		picture = SRS_modern_warfare
 		allowed = { always = no }
 		removal_cost = -1
 		
@@ -1496,7 +1498,7 @@ ideas = {
     }
 
 	SRS_modern_warfare_3b = {
-		picture = done
+		picture = SRS_modern_warfare
 		allowed = { always = no }
 		removal_cost = -1
 		
@@ -1509,12 +1511,13 @@ ideas = {
                 }
                 artillery = {
                     soft_attack = 0.05
+					breakthrough = 0.05
             }					
 	  	}
     }		
 		
 	SRS_modern_warfare_4a = {
-		picture = done
+		picture = SRS_modern_warfare
 		allowed = { always = no }
 		removal_cost = -1			
 			modifier = {
@@ -1524,12 +1527,13 @@ ideas = {
             equipment_bonus = {
                 artillery = {
                     soft_attack = 0.05
+					breakthrough = 0.05
             }				
 		}			
 	}
 		
 	SRS_modern_warfare_4b = {
-		picture = done
+		picture = SRS_modern_warfare
 		allowed = { always = no }
 		removal_cost = -1	
 		
@@ -1543,12 +1547,13 @@ ideas = {
                 }	
                 artillery = {
                     soft_attack = 0.05
+					breakthrough = 0.05
             }					
 		}			
 	}
 
 	SRS_modern_warfare_5a = {
-		picture = done
+		picture = SRS_modern_warfare
 		allowed = { always = no }
 		removal_cost = -1	
 		
@@ -1564,12 +1569,13 @@ ideas = {
 				}
                 artillery = {
                     soft_attack = 0.05
+					breakthrough = 0.05
             }				   
 	  	}			
 	}
 
 	SRS_modern_warfare_5b = {
-		picture = done
+		picture = SRS_modern_warfare
 		allowed = { always = no }
 		removal_cost = -1
 		
@@ -2424,7 +2430,7 @@ ideas = {
 ####THE GREAT REVOLUTIONARY WAR####
 
 	SRS_industrial_war_effort_1 = {
-		picture = done
+		picture = SRS_industrial_war_effortlvl1
 		removal_cost = -1
 		available = {
 			always = yes
@@ -2438,7 +2444,7 @@ ideas = {
 	}
 		
 	SRS_industrial_war_effort_2 = {
-		picture = done
+		picture = SRS_industrial_war_effortlvl2
 		removal_cost = -1
 		available = {
 			always = yes
@@ -2453,7 +2459,7 @@ ideas = {
 	}
 		
 	SRS_industrial_war_effort_3 = {
-		picture = done
+		picture = SRS_industrial_war_effortlvl3
 		removal_cost = -1
 		available = {
 			always = yes
@@ -2468,7 +2474,7 @@ ideas = {
 	}
 		
 	SRS_recruitment_war_effort_1 = {
-		picture = done
+		picture = SRS_recruitment_war_effort
 		removal_cost = -1
 		available = {
 			always = yes
@@ -2481,7 +2487,7 @@ ideas = {
 	}
 		
 	SRS_recruitment_war_effort_2 = {
-		picture = done
+		picture = SRS_recruitment_war_effort
 		removal_cost = -1
 		available = {
 			always = yes
@@ -2494,7 +2500,7 @@ ideas = {
 	}
 		
 	SRS_recruitment_war_effort_3 = {
-		picture = done
+		picture = SRS_recruitment_war_effort
 		removal_cost = -1
 		available = {
 			always = yes
@@ -2507,7 +2513,7 @@ ideas = {
 	}
 		
 	SRS_elan_war_effort_1 = {
-		picture = done
+		picture = SRS_elan_war_effort
 		removal_cost = -1
 		available = {
 			always = yes
@@ -2521,7 +2527,7 @@ ideas = {
 	}
 		
 	SRS_elan_war_effort_2 = {
-		picture = done
+		picture = SRS_elan_war_effort
 		removal_cost = -1
 		available = {
 			always = yes
@@ -2535,7 +2541,7 @@ ideas = {
 	}
 	
 	SRS_elan_war_effort_3 = {
-		picture = done
+		picture = SRS_elan_war_effort
 		removal_cost = -1
 		available = {
 			always = yes
