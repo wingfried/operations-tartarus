@@ -1591,7 +1591,7 @@ ideas = {
 	}
 
 	SRS_doctrine_res_bonus = {
-		picture = chi_incompetent_officers
+		picture = SRS_doctrine_res_bonus
 		allowed = {
 			always = no
 		}
@@ -1605,7 +1605,7 @@ ideas = {
 	}
 
 	SRS_experimental_warfare_2 = {
-		picture = chi_wargaming_division
+		picture = SRS_warfare_experiments
 		allowed = {
 			always = no
 		}
@@ -1618,7 +1618,7 @@ ideas = {
     }
 
 	SRS_experimental_warfare_3a = {
-		picture = chi_wargaming_division
+		picture = SRS_warfare_experiments
 		allowed = {
 			always = no
 		}
@@ -1636,7 +1636,7 @@ ideas = {
     }
 		
 	SRS_experimental_warfare_3b = {
-		picture = chi_wargaming_division
+		picture = SRS_warfare_experiments
 		allowed = {
 			always = no
 		}
@@ -1656,7 +1656,7 @@ ideas = {
     }		
 
 	SRS_experimental_warfare_3c = {
-		picture = chi_wargaming_division
+		picture = SRS_warfare_experiments
 		allowed = {
 			always = no
 		}
@@ -1677,7 +1677,7 @@ ideas = {
     }
 	
 	SRS_experimental_warfare_3d = {
-		picture = chi_wargaming_division
+		picture = SRS_warfare_experiments
 		allowed = {
 			always = no
 		}
@@ -1698,7 +1698,7 @@ ideas = {
     }
 
 	SRS_experimental_warfare_4a = {
-		picture = chi_wargaming_division
+		picture = SRS_warfare_experiments
 		allowed = {
 			always = no
 		}
@@ -1716,7 +1716,7 @@ ideas = {
     }
 
 	SRS_experimental_warfare_4b = {
-		picture = chi_wargaming_division
+		picture = SRS_warfare_experiments
 		allowed = {
 			always = no
 		}
@@ -1739,7 +1739,7 @@ ideas = {
     }
 
 	SRS_experimental_warfare_4c = {
-		picture = chi_wargaming_division
+		picture = SRS_warfare_experiments
 		allowed = {
 			always = no
 		}
@@ -1757,7 +1757,7 @@ ideas = {
     }
 
 	SRS_experimental_warfare_4d = {
-		picture = chi_wargaming_division
+		picture = SRS_warfare_experiments
 		allowed = {
 			always = no
 		}
@@ -1778,7 +1778,7 @@ ideas = {
     }
 
 	SRS_experimental_warfare_5a = {
-		picture = chi_wargaming_division
+		picture = SRS_warfare_experiments
 		allowed = {
 			always = no
 		}
@@ -1798,7 +1798,7 @@ ideas = {
     }
 	
 	SRS_experimental_warfare_5b = {
-		picture = chi_wargaming_division
+		picture = SRS_warfare_experiments
 		allowed = {
 			always = no
 		}
@@ -1819,7 +1819,7 @@ ideas = {
     }		
 	
 	SRS_experimental_warfare_5c = {
-		picture = chi_wargaming_division
+		picture = SRS_warfare_experiments
 		allowed = {
 			always = no
 		}
