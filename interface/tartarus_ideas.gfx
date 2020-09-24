@@ -164,4 +164,24 @@ spriteTypes = {
 		name = "GFX_idea_SRS_doctrine_res_bonus"
 		texturefile = "gfx/interface/ideas/SRS_doctrine_res_bonus.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_SRS_stalliongradian_mining_aid"
+		texturefile = "gfx/interface/ideas/SRS_stalliongradian_mining_aid.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_big_fuckin_union"
+		texturefile = "gfx/interface/ideas/SRS_big_fuckin_union.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_further_industrialization_idea"
+		texturefile = "gfx/interface/ideas/SRS_further_industrialization_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_shall_not_be_infringed"
+		texturefile = "gfx/interface/ideas/SRS_shall_not_be_infringed.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_breab"
+		texturefile = "gfx/interface/ideas/SRS_breab.dds"
+	}
 }
