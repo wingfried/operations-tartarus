@@ -2320,7 +2320,7 @@ ideas = {
 ####COMMUNISM B-B-B-B-B-B-B-B-BASED????####
 
 	SRS_stalliongradian_mining_aid = {
-		picture = generic_exploit_mines
+		picture = SRS_stalliongradian_mining_aid
 		removal_cost = -1
 		available = {
 			always = yes
@@ -2332,7 +2332,7 @@ ideas = {
 	}
 		
 	SRS_big_fuckin_union = {
-		picture = generic_syndicalism_drift_bonus
+		picture = SRS_big_fuckin_union
 		removal_cost = -1
 		available = {
 			always = yes
@@ -2347,7 +2347,7 @@ ideas = {
 	}
 		
 	SRS_further_industrialization_idea = {
-		picture = pre_industrial_society
+		picture = SRS_further_industrialization_idea
 		removal_cost = -1
 		available = {
 			always = yes
@@ -2361,7 +2361,7 @@ ideas = {
 	}
 		
 	SRS_shall_not_be_infringed_1 = {
-		picture = MEX_politicised_army
+		picture = SRS_shall_not_be_infringed
 		removal_cost = -1
 		available = {
 			always = yes
@@ -2376,7 +2376,7 @@ ideas = {
 	}
 
 	SRS_shall_not_be_infringed_2 = {
-		picture = MEX_politicised_army_2
+		picture = SRS_shall_not_be_infringed
 		removal_cost = -1
 		available = {
 			always = yes
@@ -2395,7 +2395,7 @@ ideas = {
 	}
 		
 	SRS_breab_1 = {
-		picture = severe_famine5
+		picture = SRS_breab
 		removal_cost = -1
 		available = {
 			always = yes
@@ -2408,7 +2408,7 @@ ideas = {
 	}
 		
 	SRS_breab_2 = {
-		picture = severe_famine2 
+		picture = SRS_breab 
 		removal_cost = -1
 		available = {
 			always = yes
