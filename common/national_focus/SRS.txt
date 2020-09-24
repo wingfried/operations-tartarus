@@ -1826,7 +1826,6 @@ focus_tree = {
 	focus = {
 		id = SRS_centralize_communal_factories
 		icon = GFX_goal_state_economy
-		prerequisite = { focus = SRS_market_socialism }
 		prerequisite = { focus = SRS_local_industry focus = SRS_black_thing_under_us }
 		x = 28
 		y = 11
