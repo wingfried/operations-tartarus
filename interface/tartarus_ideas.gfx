@@ -156,4 +156,12 @@ spriteTypes = {
 		name = "GFX_idea_SRS_protect_the_worker"
 		texturefile = "gfx/interface/ideas/SRS_protect_the_worker.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_SRS_warfare_experiments"
+		texturefile = "gfx/interface/ideas/SRS_warfare_experiments.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_doctrine_res_bonus"
+		texturefile = "gfx/interface/ideas/SRS_doctrine_res_bonus.dds"
+	}
 }
