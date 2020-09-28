@@ -16,4 +16,12 @@ opinion_modifiers = {
 	
 	ARA_nationalized_industry = { value = -50 }
 	
+	BOI_aligned_with_EQS = {
+	    value = 50
+	}
+	
+	BOI_supporting_EQS = {
+	    value = -50
+	}
+	
 }

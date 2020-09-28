@@ -184,4 +184,48 @@ spriteTypes = {
 		name = "GFX_idea_SRS_breab"
 		texturefile = "gfx/interface/ideas/SRS_breab.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_BOI_garner"
+		texturefile = "gfx/interface/ideas/BOI_idea_garner.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BOI_gerard"
+		texturefile = "gfx/interface/ideas/BOI_idea_gerard.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BOI_gigi"
+		texturefile = "gfx/interface/ideas/BOI_idea_gigi.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BOI_gimme_moore"
+		texturefile = "gfx/interface/ideas/BOI_idea_gimme_moore.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BOI_griselda"
+		texturefile = "gfx/interface/ideas/BOI_idea_griselda.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BOI_gunther"
+		texturefile = "gfx/interface/ideas/BOI_idea_gunther.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BOI_greta"
+		texturefile = "gfx/interface/ideas/BOI_idea_greta.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BOI_gilda"
+		texturefile = "gfx/interface/ideas/BOI_idea_gilda.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BOI_gabby"
+		texturefile = "gfx/interface/ideas/BOI_idea_gabby.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BOI_julius_advisor"
+		texturefile = "gfx/interface/ideas/BOI_idea_julius.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BOI_bechard"
+		texturefile = "gfx/interface/ideas/BOI_idea_bechard.dds"
+	}
 }

@@ -319,6 +319,7 @@ add_namespace = griffonstone_decision
 			    damage_building = { type = infrastructure damage = 1 }
 				damage_building = { type = industrial_complex damage = 1 }
 			}
+			load_oob = BOI_goldstones_mercs_OOB
 			hidden_effect = {
 			    load_focus_tree = Griffonstone_goldstone
 				news_event = {
@@ -1106,7 +1107,7 @@ add_namespace = griffonstone_decision
 			create_country_leader = {
 	            name = "Empress Gabriela Eagleclaw"
 	            desc = "POLITICS_EAGLECLAW_DESC" #TODO Should be changed
-	            picture = "Gabriela.tga"
+	            portrait_path = "gfx\leaders\GRI\Gabriela.tga"
 	            expire = "1965.1.1"
 	            female = yes
 	            ideology = despotism
@@ -1324,7 +1325,6 @@ add_namespace = griffonstone_decision
 			add_manpower = -5000
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -1000 }
 			army_experience = 10
-			#TODO add people exodus from state copperhill
 			hidden_effect = {
 			    EYR = {
 			        #country_event = griffonstone.2
@@ -1560,17 +1560,23 @@ add_namespace = griffonstone_decision
 	    option = {
 	        name = griffonstone.250.a
 			set_party_name = { ideology = democratic name = BOI_RRP_democrats long_name = BOI_RRP_democrats_long }
-			complete_national_focus = BOI_new_direction
+			hidden_effect = {
+			    set_country_flag = BOI_FLAG_second_elections
+			}
 		}
 		option = {
 	        name = griffonstone.250.b
 			set_party_name = { ideology = democratic name = BOI_GPL_democrats long_name = BOI_GPL_democrats_long }
-			complete_national_focus = BOI_new_direction
+			hidden_effect = {
+			    set_country_flag = BOI_FLAG_second_elections
+			}
 		}
 		option = {
 	        name = griffonstone.250.c
 			set_party_name = { ideology = democratic name = BOI_GFP_democrats long_name = BOI_GFP_democrats_long }
-			complete_national_focus = BOI_new_direction
+			hidden_effect = {
+			    set_country_flag = BOI_FLAG_second_elections
+			}
 		}
 	}
 	country_event = { #Envoy from Griffonstone
@@ -1698,7 +1704,7 @@ add_namespace = griffonstone_decision
 			    type = infantry_equipment
 				amount = 5000
 			}
-			#TODO OOB divisions
+			load_oob = BOI_griffonstonian_volunteers_OOB
 		}
 	}
 	country_event = { #Union join proposal

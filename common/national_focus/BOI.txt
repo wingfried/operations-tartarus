@@ -1685,7 +1685,8 @@
 		cost = 5.00
 		relative_position_id = BOI_birth_navy
 		prerequisite = { focus = BOI_our_naval_doctrine }
-
+        mutually_exclusive = { focus = BOI_rely_on_carriers }
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -1706,6 +1707,7 @@
 		cost = 5.00
 		relative_position_id = BOI_birth_navy
 		prerequisite = { focus = BOI_our_naval_doctrine }
+		mutually_exclusive = { focus = BOI_good_old_battleships }
 
 		ai_will_do = {
 			factor = 1
@@ -2190,7 +2192,7 @@ focus_tree = {
 	focus = {
 		id = BOI_fallen_kingdom
 		icon = GFX_focus_strike_griffonstone 
-		x = 30
+		x = 27
 		y = 0
 		cost = 2.00
 
@@ -2287,7 +2289,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BOI_discuss_reforms
-		icon = GFX_goal_monarchism 
+		icon = GFX_goal_gaw_gruff 
 		x = 0
 		y = 3
 		cost = 5.00
@@ -2328,7 +2330,7 @@ focus_tree = {
 		
 	focus = {
 		id = BOI_legacy_of_guto
-		icon = GFX_goal_unknown 
+		icon = GFX_goal_gaw_gallus 
 		x = 30
 		y = 0
 		cost = 1.00
@@ -2398,7 +2400,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BOI_confiscate_traitor
-		icon = GFX_goal_unknown 
+		icon = GFX_goal_gaw_goldstone_traitor 
 		x = 2
 		y = 1
 		cost = 8.00
@@ -2762,13 +2764,13 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = BOI_CETT_gilda_advisor
 			hidden_effect = {
-			    set_country_flag = BOI_gilda_advisor_available
+			    set_country_flag = BOI_FLAG_gilda_advisor_available
 			}
 		}
 	}
 	focus = {
 		id = BOI_griffonstone_cmc
-		icon = GFX_goal_unknown 
+		icon = GFX_goal_gaw_griff_cmcs 
 		x = 2
 		y = 1
 		cost = 5.00
@@ -3285,7 +3287,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			#+50 relations with equestria TODO
+			add_opinion_modifier = {
+			    target = CHN
+				modifier = BOI_aligned_with_EQS
+			}
 		}
 	}
 	focus = {
@@ -3320,7 +3325,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.1
-			#-50 relations with changelings TODO
+			add_opinion_modifier = {
+			    target = CHN
+				modifier = BOI_supporting_EQS
+			}
 		}
 	}
 	focus = {
@@ -3588,7 +3596,7 @@ focus_tree = {
 	
 	focus = {
 		id = BOI_age_of_commongriff
-		icon = GFX_goal_unknown 
+		icon = GFX_goal_gaw_gilda 
 		x = 30
 		y = 0
 		cost = 1.00
@@ -3944,7 +3952,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BOI_griffonstone_cmc_gilda
-		icon = GFX_goal_unknown 
+		icon = GFX_goal_gaw_griff_cmcs 
 		x = 4
 		y = 2
 		cost = 5.00
@@ -4176,6 +4184,9 @@ focus_tree = {
 		prerequisite = { focus = BOI_new_griffonstonian_identity }
 		available = {
 		    always = no
+		}
+		bypass = {
+		    has_country_flag = BOI_FLAG_second_elections
 		}
 
 		ai_will_do = {
@@ -4415,7 +4426,7 @@ focus_tree = {
 	
 	shared_focus = {
 		id = BOI_loyalty_reward
-		icon = GFX_goal_unknown 
+		icon = GFX_goal_gaw_gestal 
 		x = 30
 		y = 0
 		cost = 1.00
@@ -4443,7 +4454,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			show_ideas_tooltip = BOI_ADVISOR_gunther_silverfeather
+			show_ideas_tooltip = BOI_gunther_silverfeather
 			hidden_effect = {
 			    set_country_flag = BOI_FLAG_gunther_advisor_unlocked
 			}
@@ -4483,7 +4494,7 @@ focus_tree = {
 	}
 	shared_focus = {
 		id = BOI_confiscate_traitor_gestal
-		icon = GFX_goal_unknown 
+		icon = GFX_goal_gaw_goldstone_traitor 
 		x = 3
 		y = 1
 		cost = 8.00
@@ -6754,7 +6765,7 @@ focus_tree = {
 
 	focus = {
 		id = BOI_golden_dawn
-		icon = GFX_goal_unknown 
+		icon = GFX_goal_gaw_goldstone 
 		x = 30
 		y = 0
 		cost = 1.00
@@ -6932,6 +6943,7 @@ focus_tree = {
 				}
 			}
 			add_ideas = BOI_no_industrial_regulations_1
+			decrease_poverty = yes
 		}
 	}
 	focus = {
@@ -7382,6 +7394,7 @@ focus_tree = {
 		cost = 5.00
 		relative_position_id = BOI_breaking_the_heart
 		prerequisite = { focus = BOI_shaking_claws_with_imperials }
+		mutually_exclusive = { focus = BOI_noblegriffs }
         available = {
 		    owns_state = 381
 		}
@@ -7390,6 +7403,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		    #TODO unlock advisor hippolyte bechard
+			show_ideas_tooltip = BOI_bechard
 			swap_ideas = {
 			    remove_idea = BOI_no_industrial_regulations_1
 				add_idea = BOI_no_industrial_regulations_2
@@ -7404,12 +7418,13 @@ focus_tree = {
 		cost = 5.00
 		relative_position_id = BOI_breaking_the_heart
 		prerequisite = { focus = BOI_shaking_claws_with_imperials }
-
+        mutually_exclusive = { focus = BOI_oligarchs }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 		    #TODO unlock advisor Duke Erwin von Drach
+			show_ideas_tooltip = BOI_erwin_von_drach
 			swap_ideas = {
 			    remove_idea = BOI_indentured_servitude_idea_1
 				add_idea = BOI_indentured_servitude_idea_2

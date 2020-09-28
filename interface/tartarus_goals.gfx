@@ -164,4 +164,32 @@ spriteTypes = {
 		name = "GFX_goal_SCS_5"
 		texturefile = "gfx/interface/goals/SCS_5.dds"
 	}
+	SpriteType = { 
+		name = "GFX_goal_gaw_gallus"
+		texturefile = "gfx/interface/goals/goal_gaw_gallus.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_gaw_gestal"
+		texturefile = "gfx/interface/goals/goal_gaw_gestal.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_gaw_gruff"
+		texturefile = "gfx/interface/goals/goal_gaw_gruff.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_gaw_goldstone"
+		texturefile = "gfx/interface/goals/goal_gaw_goldstone.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_gaw_gilda"
+		texturefile = "gfx/interface/goals/goal_gaw_gilda.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_gaw_goldstone_traitor"
+		texturefile = "gfx/interface/goals/goal_gaw_goldstone_traitor.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_gaw_griff_cmcs"
+		texturefile = "gfx/interface/goals/goal_gaw_griff_cmcs.dds"
+	}
 }

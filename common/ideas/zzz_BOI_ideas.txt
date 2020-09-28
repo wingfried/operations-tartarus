@@ -1125,7 +1125,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_artillery_regiments
+			picture = pony_soldier
 			removal_cost = -1
 			modifier = {
 			    weekly_manpower = 500
@@ -1138,7 +1138,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_artillery_regiments
+			picture = generic_secret_police
 			removal_cost = -1
 			modifier = {
 			    operative_slot = 1
@@ -1153,7 +1153,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_artillery_regiments
+			picture = slavery
 			removal_cost = -1
 			modifier = {
 			    war_support_factor = -0.2
@@ -1167,7 +1167,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_artillery_regiments
+			picture = slavery
 			removal_cost = -1
 			modifier = {
 			    war_support_factor = -0.3
@@ -1198,7 +1198,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_artillery_regiments
+			picture = EQC_griffon_minorities1
 			removal_cost = -1
 			modifier = {
 			    non_core_manpower = 0.05
@@ -1212,7 +1212,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_artillery_regiments
+			picture = civilian_economy_red
 			removal_cost = -1
 			modifier = {
 			    industrial_capacity_factory = 0.1
@@ -1225,7 +1225,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_artillery_regiments
+			picture = civilian_economy_red
 			removal_cost = -1
 			modifier = {
 			    stability_factor = -0.05
@@ -1756,6 +1756,886 @@ ideas = {
 			modifier = {
 				compliance_gain = 0.5
 				resistance_growth = -0.75
+			}
+		}
+		BOI_demob_efforts = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_artillery_regiments
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.2
+				consumer_goods_factor = 0.1
+			}
+		}
+		BOI_reformed_archonates = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_artillery_regiments
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				drift_defence_factor = 0.5
+			}
+		}
+	}
+	
+	########################
+	####    ADVISORS    ####
+	########################
+	
+	political_advisor = {
+		BOI_bechard = {
+			allowed = {
+				OR = {
+					original_tag = "BOI"
+				}
+			}		
+			traits = { prince_of_terror }
+			picture = BOI_bechard
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+			    has_government = fascism
+			}
+			available = {
+				has_completed_focus = BOI_oligarchs
+			}
+		}
+	}
+	political_advisor = {
+		BOI_glenda = {
+			allowed = {
+				OR = {
+					original_tag = "BOI"
+				}
+			}		
+			traits = { silent_workgriffon }
+			picture = ARA_glenda
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+			    
+			}
+			available = {
+				
+			}
+		}
+	}
+	political_advisor = {
+		BOI_gabby = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { GAW_cutie_griffon_crusader }
+			picture = BOI_gabby
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+	}
+	political_advisor = {
+		BOI_garner = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { economic_reformer }
+			picture = BOI_garner
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+	}
+	political_advisor = {
+		BOI_gilda = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { GAW_republican_icon } #TODO
+			picture = BOI_gilda
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				has_country_flag = BOI_FLAG_gilda_advisor_available
+			}
+			visible = {
+			    has_government = democratic
+			}
+		}
+	}
+	political_advisor = {
+		BOI_gimme_moore = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { captain_of_industry }
+			picture = BOI_gimme_moore
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+	}
+	political_advisor = {
+		BOI_griselda = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { backroom_backstabber }
+			picture = BOI_griselda
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+	}
+	political_advisor = {
+		BOI_gunther = {
+			allowed = {
+				original_tag = "BOI"
+				has_dlc = "La Resistance"
+			}		
+ 			traits = { head_of_intelligence_griffon }
+			picture = BOI_gunther
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				has_intelligence_agency = yes
+			}
+		}
+	}
+	political_advisor = {
+		BOI_gerard = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { ruthless_capitalist }
+			picture = BOI_gerard
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+	}
+	political_advisor = {
+		BOI_gigi = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { compassionate_gentleman }
+			picture = BOI_gigi
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+	}
+	theorist = {
+	    BOI_julius_advisor = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { military_theorist }
+			picture = BOI_julius_advisor
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+		BOI_gudrun = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { nuclear_scientist }
+			picture = generic_griffon_nuclear_scientist
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+	}
+	high_command = {
+	    BOI_silver_storm_advisor = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { army_logistics_2 }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+		BOI_klaus_steelfeather_advisor = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { army_chief_morale_1 }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+		BOI_gerdr = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { army_infantry_1 }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+		BOI_gerlinde = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { army_commando_1 }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+		BOI_georg = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { army_armored_1 }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+	}
+	army_chief = {
+	    BOI_klawsewitz_advisor = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { army_chief_defensive_3 }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+		BOI_mikhaylo_advisor = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { army_chief_offensive_2 }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+		BOI_greta = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { army_chief_maneuver_2 }
+			picture = BOI_greta
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+	}
+	air_chief = {
+		BOI_gretel = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { air_chief_all_weather_3 }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+		BOI_guido = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { air_chief_ground_support_2 }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+		BOI_guntram = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { air_air_superiority_2 }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+	}
+	navy_chief = {
+	    BOI_erwin_von_drach = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { navy_chief_commerce_raiding_3 }
+			picture = SRS_generico_1
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				has_completed_focus = BOI_noblegriffs
+			}
+			visible = {
+			    has_government = fascism
+			}
+		}
+		BOI_gottlob = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { navy_chief_naval_aviation_1 }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+		BOI_gerulf = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { navy_chief_decisive_battle_2 }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+	}
+	industrial_concern = {
+	    BOI_coalfall_industries = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { industrial_concern }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+			research_bonus = {
+				industry = 0.10
+			}
+			modifier = {
+			    industrial_capacity_factory = 0.1
+			}
+		}
+		BOI_greiffensteinisches_elektroinstitut = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { electronics_developer }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+			research_bonus = {
+				electronics = 0.15
+			}
+		}
+		BOI_rumaremetall = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { industrial_concern }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+			    production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		BOI_shwarze_auge = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { refinery_concern }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+		}
+	}
+	materiel_manufacturer = {
+	    BOI_kopferberg_waffen = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { infantry_equipment_manufacturer }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			equipment_bonus = {
+			    infantry_equipment = {
+				    soft_attack = 0.5 instant = yes
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		BOI_wohnsitz_kanonenfabrik = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { artillery_manufacturer }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+			research_bonus = {
+				artillery = 0.10
+			}
+			equipment_bonus = {
+			    artillery_equipment = {
+				    soft_attack = 0.1
+				}
+			}
+		}
+		BOI_GMW = {
+		    allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { motorized_equipment_manufacturer }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			equipment_bonus = {
+			    mechanized_equipment = {
+				    reliability = 0.05
+					maximum_speed = 0.1
+				}
+				armored_car_equipment = {
+				    reliability = 0.05
+					maximum_speed = 0.1
+				}
+				motorized_equipment = {
+				    reliability = 0.05
+					maximum_speed = 0.1
+				}
+			}
+		}
+	}
+	naval_manufacturer = {
+	    BOI_goldener_hof = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { battlefleet_designer }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+		BOI_guto_werft = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { convoy_escort_naval_manufacturer }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+		BOI_greiffenwerft = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { raiding_fleet_naval_manufacturer }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+	}
+	aircraft_manufacturer = {
+	    BOI_klaue_aviation = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { light_aircraft_manufacturer }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+	    BOI_grossflugel = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { heavy_aircraft_manufacturer }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+		BOI_greiffsturm = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { CAS_manufacturer }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+		BOI_storch_werke = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { medium_aircraft_manufacturer }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+		}
+    }
+	tank_manufacturer = {
+	    BOI_kupferberg_panzerfabrik = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { GAW_fast_tank_manufacturer }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+			research_bonus = {
+				armor = 0.1
+			}
+			equipment_bonus = {
+				medium_tank_equipment = {
+					build_cost_ic = -0.1 instant = yes
+					maximum_speed = 0.1 instant = yes
+					hard_attack = -0.1 instant = yes
+					soft_attack = -0.1 instant = yes
+				}
+				light_tank_equipment = {
+					build_cost_ic = -0.1 instant = yes
+					maximum_speed = 0.1 instant = yes
+					hard_attack = -0.1 instant = yes
+					soft_attack = -0.1 instant = yes
+				}
+			}
+		}
+		BOI_stahladler_werke = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { GAW_medium_tank_manufacturer }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+			research_bonus = {
+				armor = 0.1
+			}
+			equipment_bonus = {
+				medium_tank_equipment = {
+					ap_attack = 0.1 instant = yes
+					soft_attack = 0.1 instant = yes
+					hard_attack = 0.1 instant = yes
+				}
+			}
+		}
+		BOI_greifesten_metallwerke = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { GAW_mass_tank_manufacturer }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+			research_bonus = {
+				armor = 0.10
+			}
+			equipment_bonus = {
+			    armor = {
+					build_cost_ic = -0.15 instant = yes
+					reliability = -0.05 instant = yes
+				}
+			}
+		}
+		BOI_wohnsitz_panzerinstitut = {
+			allowed = {
+				original_tag = "BOI"
+			}		
+			traits = { GAW_tankbuilding_academy }
+			picture = BOI_
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				
+			}
+			visible = {
+			    
+			}
+			research_bonus = {
+				armor = 0.2
+			}
+			equipment_bonus = {
+			    armor = {
+					build_cost_ic = 0.05 instant = yes
+					reliability = 0.05 instant = yes
+					soft_attack = 0.05 instant = yes
+					armor = 0.05 instant = yes
+				}
 			}
 		}
 	}

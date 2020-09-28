@@ -42,6 +42,12 @@ set_politics = {
 	election_frequency = 36
 	elections_allowed = no
 }
+
+set_party_name = { ideology = democratic name = BOI_dem_init long_name = BOI_dem_init_long }
+set_party_name = { ideology = neutrality name = BOI_neu_init long_name = BOI_neu_init_long }
+set_party_name = { ideology = fascism name = BOI_fas_init long_name = BOI_fas_init_long }
+set_party_name = { ideology = communism name = BOI_com_init long_name = BOI_com_init_long }
+
 add_ideas = {
 	home_of_the_griffons
 	pre_industrial_society
@@ -68,7 +74,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Lord Goldstone"
     desc = BOI_goldstone_desc
-	picture = "Governor.tga"
+	picture = "GAW_Goldstone.tga"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
@@ -98,12 +104,36 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Gerhard von Grauschnabel"
+	picture = "GAW_Gerhard.tga"
+	traits = { griffon_race_trait inflexible_strategist unyielding_defender trait_mountaineer  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+	female = no
+}
+
+create_corps_commander = {
+	name = "Grandpa Gruff"
+	picture = "Gruff.tga"
+	traits = { griffon_race_trait old_guard trait_cautious commando }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+	female = no
+}
+
 create_corps_commander = {
 	name = "Greta"
 	picture = "Greta.tga"
-	traits = { griffon_race_trait hill_fighter trait_mountaineer }
+	traits = { griffon_race_trait hill_fighter }
 	skill = 1
-	attack_skill = 1
+	attack_skill = 2
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
@@ -111,28 +141,16 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Gabriella"
-	picture = "Gabby.dds"
-	traits = { griffon_race_trait trait_reckless organizer skilled_staffer }
-	skill = 1
-	id = 10100
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-	female = yes
-}
-
-create_field_marshal = {
-	name = "Gilda"
-	picture = "Gilda.dds"
-	traits = { griffon_race_trait air_force_commander infantry_leader inflexible_strategist trait_mountaineer harsh_leader  }
+	name = "Julius de Rezdomb"
+	picture = "GAW_Julius.dds"
+	traits = { griffon_race_trait organizer skilled_staffer }
 	skill = 2
+	id = 10100
 	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
+	defense_skill = 1
+	planning_skill = 3
 	logistics_skill = 2
-	female = yes
+	female = no
 }
 
 set_rule = {
