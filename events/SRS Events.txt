@@ -3310,7 +3310,7 @@ country_event = {
 	}
 	option = {
 	    ai_chance = {
-		    factor = 10
+		    factor = 0
 			modifier = {
 			    has_government = communism
 				factor = 0
