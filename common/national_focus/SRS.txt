@@ -887,10 +887,28 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = MNC
+			bypass = {
+		    MNC = {
+			    exists = no
 			}
+		}
+		
+		completion_reward = {
+			IF = {
+			    limit = {
+				    MNC = {
+					    exists = yes
+						is_puppet = no
+					}
+				}
+				MNC = {
+				    country_event = {
+					    id = srs_sickocivwar.9
+						days = 2
+					}
+				}
+			}
+		}
 		}
 	}
 	
