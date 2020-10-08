@@ -2,7 +2,7 @@ objectTypes = {
 
 		pdxmesh = {
 		name = "ARA_infantry_rifle_mesh"
-		file = "gfx/models/EAWEntity/griffons/ARA_infantry.mesh"
+		file = "gfx/models/EAWEntities/griffons/ARA_infantry.mesh"
 		
 		animation = { id = "move"			type = "GRI_infantry_move" }
 		animation = { id = "idle"			type = "GRI_infantry_idle" }
@@ -22,7 +22,7 @@ objectTypes = {
 
 		pdxmesh = {
 		name = "ARA_infantry_helmet_central_mesh"
-		file = "gfx/models/EAWEntity/griffons/attachments/ARA_infantry_helmet_central.mesh"
+		file = "gfx/models/EAWEntities/griffons/attachments/ARA_infantry_helmet_central.mesh"
 		}
 }
 
