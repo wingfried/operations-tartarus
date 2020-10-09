@@ -464,10 +464,14 @@ SRS_commie_north_unification:0 "The North is Red."
 SRS_republican_vedina_core:0 "Vedina is under our control."
 SRS_republican_brantbeak_core:0 "Brantbeak is under our control."
 SRS_republican_cloudbury_ownership:0 "Cloudbury is under our control."
+SRS_knights_tooltip:0 "Three divisions worth of §YRepublican Knightly Guards§! will be deployed!"
 SRS_penal_garrison1:0 "The dissidents will be forced into §Ythree redemption-brigades§!!\n"
 SRS_penal_garrison2:0 "The §YLegion of Skynavia§! will be formed, consisting of eight batallions across two brigades!\n"
 SRS_tankdiv1:0 "The §YSkynavian Armoured Corps§! will be formed!\n"
 SRS_tankdiv2:0 "The §YExperimental Heavy Armour Division§! will be formed!\n"
+
+#### COSMETICS ####
+SRS_became_cloudburry:0 "The Northern Republican Authority"
 
 #### TRIBAL EVENTS ####
 srs_sickontr.1.t:0 "Lest we Forget"
@@ -505,6 +509,11 @@ srs_sickocivwar.7.a:0 ""
 srs_sickocivwar.8.t:0 ""Have it Back!""
 srs_sickocivwar.8.d:0 "Jan was taken by surprise when he was just sent home after getting captured on the run after the battle at Plover's Cove. He thought he was going to get punished by resisting Sickleclaw's brigades - either by an execution or a one way trip to a labour camp - instead, he just got sent back home, back to Dinkau.\n\nAfter the war was over, a truck stopped next to his home one freezing Dinkau evening. The noise that it made had startled him, and considering he fought against the Asperites, scared the life out of him.   Three knocks at his door sounded, followed by a shout from the other side - "Jan Rotheld! I'm here to return your firearm!" - The person outside exclaimed, and knocked two more times.   Jan sligtly opened the door, enough to set one eye on the apperent "delivery griff", and it indeed was one. His tired glare faced the small opening into Jan's home, with Jan's rifle in his right claw.\n\nJan opened the door open wide, and immediately, the delivery griffon handed him the rifle, and commanded him - "Take the rifle, and lose the door. now!".   Jan, still spooked by this surprise visit from his former enemy, immediately complied.\n\nThe delivery griffon still had a lot of work to do. To him, Sickleclaw's wish to rearm the people that heeded the Congressional call to arms seemed quite foolish. However, the document he kept on his passenger seat detailing his "mission" stated that everybody deserves a second chance, especially if their personal liberties are at stake."
 srs_sickocivwar.8.a:0 ""Hey, what about the ammo!?""
+
+#### REPUBLICAN PATH STUFF ####
+srs_sickocivwar.986.t:0 "p"
+srs_sickocivwar.986.d:0 "fuck you kemerskai"
+srs_sickocivwar.986.a:0 "*racial slur against people with african ancestry and/or dark skin*"
 
 #### CRUCH TOOLTIPS ####
 SRS_IW_cruch1:0 "Modify §YInfantry Warfare§! by\n§YInfantry§!: Division Organization: §R-5%§!\nRecruitable Population Factor: §G+10%§!"
