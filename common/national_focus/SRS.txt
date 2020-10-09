@@ -1116,7 +1116,7 @@ focus_tree = {
             factor = 12
         }
         completion_reward = {
-            country_event = srs_sickontr.123
+            country_event = srs_sickocivwar.986
 
         }
     }
