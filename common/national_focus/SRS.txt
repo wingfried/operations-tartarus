@@ -2911,23 +2911,62 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			every_owned_state = {
+			every_controlled_state = {
 				limit = {
-					is_controlled_by = ROOT
-					is_core_of = GRI
-					is_core_of = FEA
-					is_core_of = STW
-					is_core_of = BRZ
 					is_core_of = PYT
-					is_core_of = ROU
-					is_core_of = YAL
+				}
+				add_compliance = 10
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = GRI
+				}
+				add_compliance = 10
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = FEA
+				}
+				add_compliance = 10
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = STW
+				}
+				add_compliance = 10
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = BRZ
+				}
+				add_compliance = 10
+			}
+			every_controlled_state = {
+				limit = {
 					is_core_of = KAT
+				}
+				add_compliance = 10
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = ROU
+				}
+				add_compliance = 10
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = YAL
+				}
+				add_compliance = 10
+			}
+			every_controlled_state = {
+				limit = {
 					is_core_of = ANG
 				}
-			}
 				add_compliance = 10
 			}
 		}
+	}
 	
 	focus = {
 		id = SRS_revoke_the_privilegia
