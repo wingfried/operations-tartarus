@@ -2,7 +2,7 @@
 
 ####EPIC SICKLECLAW SUBMOD GAMING LOC :flushed:####
 #### FOCI ####
-RS_finishing_touches:0 "Final Reforms"
+SRS_finishing_touches:0 "Final Reforms"
 SRS_finishing_touches_desc:0 "Despite his initial support for the idea of a General Congress, Sickleclaw has begun spreading a more radical idea. His followers - mostly the personnel of the frontier militia and many internationalist thinkers - are clamouring for the delayment of the Congress until the liberation of Griffenheim under Sickleclaw's leadership - when the revolution is safe from reaction."
 SRS_sickleclaw_betrays_congress:0 "The Power-grab"
 SRS_sickleclaw_betrays_congress_desc:0 "Sickleclaw seems to have become emboldened by support for him. Only one spark is needed for the powderkeg to explode, and that spark will be Sickleclaw announcing his takeover."
@@ -104,7 +104,7 @@ SRS_unite_with_fatmerskai_aionly:0 "Fully Merge with the Cloudburian Authority"
 SRS_unite_with_fatmerskai_aionly_desc:0 "The idea of "One Nation - Two Systems" is too complicated for our current circumstances, that being a resurgent empire."
 SRS_unite_with_fatmerskai_playeronly:0 "Fully Commit to the Cause"
 SRS_unite_with_fatmerskai_playeronly_desc:0 "Despite a very threatening historical enemy south of us, we are to put the idea of "One Nation - Two Systems" to the test."
-SRS_strike_the_revisionists:0 "Srike the Revisionists"
+SRS_strike_the_revisionists:0 "Strike the Revisionists"
 SRS_strike_the_revisionists_desc:0 "The Republican movement has been betrayed again. Sickleclaw, the "traitor" of 986, will crush the true traitors."
 SRS_industrialization_effort:0 "Industrialization Effort"
 SRS_industrialization_effort_desc:0 "Skynavia is lagging behind in industrial innovations. We shall look to cooperate with our Severyan comrades in order to compete with the Cloudburians and Imperials."
