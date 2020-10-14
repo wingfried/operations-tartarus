@@ -3271,6 +3271,46 @@ country_event = {
 	}
 }
 
+## SRS_national_security ##
+
+country_event = {
+	id = srs_sickoflavour.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.1"}
+	title = srs_sickoflavour.5.t
+	desc = srs_sickoflavour.5.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickoflavour.5.a	
+		}
+	}
+	
+country_event = {
+	id = srs_sickoflavour.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.1"}
+	title = srs_sickoflavour.6.t
+	desc = srs_sickoflavour.6.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickoflavour.5.a	
+		}
+	}
+
+## NKVD ##
+
+country_event = {
+	id = srs_sickoflavour.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.1"}
+	title = srs_sickoflavour.7.t
+	desc = srs_sickoflavour.7.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickoflavour.7.a	
+		}
+	}
+	
 ## SRS Ultimatum Event ##
 
 country_event = {
