@@ -197,6 +197,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		select_effect = {
+			country_event = {
+				id = srs_sickoflavour.5
+				days = 19
+			}
+		}
+		completion_reward = {
+            country_event = { id = srs_sickoflavour.6 }
+		}
 	}
 
 	focus = {
@@ -3966,12 +3975,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+		select_effect = {
+			country_event = {
+				id = srs_sickoflavour.7
+				days = 16
+			}
+		}
 		completion_reward = {
 			add_manpower = -1000
 			add_command_power  = -60
         }
-    }			
+    }
 	
 	focus = {
 		id = SRS_hardliner_penal_battalions
