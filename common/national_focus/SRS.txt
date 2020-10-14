@@ -3021,6 +3021,7 @@ focus_tree = {
 			}
 		}
 	}
+}
 	
 	focus = {
 		id = SRS_revoke_the_privilegia
