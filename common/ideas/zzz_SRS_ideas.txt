@@ -2726,81 +2726,137 @@ ideas = {
 	}
 	
 	SRS_socialist_market = {
-			picture = chi_hyper_inflation
-			removal_cost = -1
-			available = {
-				always = yes
-			}
-			
-			modifier = {
-				stability_factor = -0.025
-				industrial_capacity_factory = 0.05
-			}
+		picture = chi_hyper_inflation
+		removal_cost = -1
+		available = {
+			always = yes
 		}
 		
-		SRS_socialist_market_2 = {
-			picture = chi_hyper_inflation3
-			removal_cost = -1
-			available = {
-				always = yes
-			}
-			
-			modifier = {
-				industrial_capacity_factory = 0.10
-			}
+		modifier = {
+			stability_factor = -0.025
+			industrial_capacity_factory = 0.05
+		}
+	}
+	
+	SRS_socialist_market_2 = {
+		picture = chi_hyper_inflation3
+		removal_cost = -1
+		available = {
+			always = yes
 		}
 		
-		SRS_socialist_market_3 = {
-			picture = chi_hyper_inflation5
-			removal_cost = -1
-			available = {
-				always = yes
-			}
-			
-			modifier = {
-				industrial_capacity_factory = 0.15
-			}
+		modifier = {
+			industrial_capacity_factory = 0.10
+		}
+	}
+	
+	SRS_socialist_market_3 = {
+		picture = chi_hyper_inflation5
+		removal_cost = -1
+		available = {
+			always = yes
 		}
 		
-		SRS_redirected_spending = {
-			picture = capital_outflow
-			removal_cost = -1
-			available = {
-				always = yes
-			}
-			
-			modifier = {
-				production_factory_max_efficiency_factor = -0.05
-				research_speed_factor = 0.1
-			}
+		modifier = {
+			industrial_capacity_factory = 0.15
+		}
+	}
+	
+	SRS_redirected_spending = {
+		picture = capital_outflow
+		removal_cost = -1
+		available = {
+			always = yes
 		}
 		
-		SRS_trouble_no_more = {
-			picture = generic_democratic_drift_bonus
-			removal_cost = -1
-			available = {
-				always = yes
-			}
-			
-			modifier = {
-				stability_factor = 0.1
-				war_support_factor = 0.1
-				industrial_capacity_factory = 0.05
-				production_factory_max_efficiency_factor = 0.1
-			}
+		modifier = {
+			production_factory_max_efficiency_factor = -0.05
+			research_speed_factor = 0.1
+		}
+	}
+	
+	SRS_trouble_no_more = {
+		picture = generic_democratic_drift_bonus
+		removal_cost = -1
+		available = {
+			always = yes
 		}
 		
-		SRS_motorized_army = {
-			picture = FRA_motorized_focus
-			removal_cost = -1
-			available = {
-				always = yes
-			}
-			
-			equipment_bonus = {
-				motorized_equipment = {
-					build_cost_ic = -0.15
-					instant = yes
-				}
+		modifier = {
+			stability_factor = 0.1
+			war_support_factor = 0.1
+			industrial_capacity_factory = 0.05
+			production_factory_max_efficiency_factor = 0.1
+		}
+	}
+	
+	SRS_motorized_army = {
+		picture = FRA_motorized_focus
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		
+		equipment_bonus = {
+			motorized_equipment = {
+				build_cost_ic = -0.15
+				instant = yes
 			}
 		}
+	}
+
+	SRS_air_force_research_institute_idea = {
+		#picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		
+		research_bonus = {
+			air_doctrine = 0.1
+		}
+	}
+
+	SRS_surgical_precision_idea = {
+		#picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		
+		modifier = {
+			air_cas_present_factor = 0.1
+		}
+	}
+
+	SRS_explosive_filler_idea = {
+		#picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		
+		equipment_bonus = {
+			category_fighter = {
+				air_attack = 0.10
+			}
+			category_heavy_fighter = {
+				air_attack = 0.10
+			}
+		}
+	}
+
+	SRS_superior_training_idea = {
+		#picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		
+		equipment_bonus = {
+			category_fighter = {
+				air_agility = 0.10
+			}
+		}
+	}
+}
