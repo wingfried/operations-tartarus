@@ -2806,8 +2806,8 @@ focus_tree = {
 		
 		completion_reward = {
 			swap_ideas = {
-				add_idea = SRS_recruitment_war_effort_2
-				remove_idea = SRS_recruitment_war_effort_1
+				add_idea = SRS_recruitment_war_effort_3
+				remove_idea = SRS_recruitment_war_effort_2
 			}
 		}
 	}
@@ -3220,7 +3220,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_ultimatum_west_griffonia
-		icon = GFX_
+		icon = GFX_goal_SCS_1
 		prerequisite = { focus = SRS_all_is_well }
 		x = 2
 		y = 26
@@ -3333,7 +3333,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_ultimatum_aquileia
-		icon = GFX_
+		icon = GFX_goal_jer_royalty
 		prerequisite = { focus = SRS_ultimatum_west_griffonia }
 		x = 2
 		y = 27
@@ -3433,7 +3433,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_coring_aquileia
-		icon = GFX_
+		icon = GFX_goal_jer_eagle
 		prerequisite = { focus = SRS_ultimatum_aquileia }
 		x = 2
 		y = 28
@@ -3458,7 +3458,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_ultimatum_east_griffonia
-		icon = GFX_
+		icon = GFX_goal_SCS_2
 		prerequisite = { focus = SRS_all_is_well }
 		x = 8
 		y = 26
@@ -3572,7 +3572,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_ultimatum_wingbardy
-		icon = GFX_
+		icon = GFX_focus_wingbardy_forever
 		prerequisite = { focus = SRS_ultimatum_east_griffonia }
 		x = 8
 		y = 27
@@ -3672,7 +3672,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_coring_wingbardy
-		icon = GFX_
+		icon = GFX_focus_indy_crush_the_monarchy
 		prerequisite = { focus = SRS_ultimatum_wingbardy }
 		x = 8
 		y = 28
@@ -3697,7 +3697,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_ultimatum_evivalley_westbank
-		icon = GFX_
+		icon = GFX_goal_SCS_4
 		prerequisite = { focus = SRS_all_is_well }
 		x = 4
 		y = 26
@@ -3761,7 +3761,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_ultimatum_evivalley_eastbank
-		icon = GFX_
+		icon = GFX_goal_SCS_5
 		prerequisite = { focus = SRS_all_is_well }
 		x = 6
 		y = 26
@@ -3825,7 +3825,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_ultimatum_cyanolisia_plus_asterion
-		icon = GFX_
+		icon = GFX_goal_SCS_3
 		prerequisite = { focus = SRS_ultimatum_evivalley_westbank }
 		prerequisite = { focus = SRS_ultimatum_evivalley_eastbank }
 		x = 5
@@ -3874,7 +3874,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_coring_evivalley
-		icon = GFX_
+		icon = GFX_focus_AUS_agriculture
 		prerequisite = { focus = SRS_ultimatum_cyanolisia_plus_asterion }
 		x = 5
 		y = 28
