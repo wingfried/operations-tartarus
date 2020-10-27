@@ -283,7 +283,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_communist_asper }
 		x = -2
 		y = 7
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 12
 		}
@@ -362,6 +362,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		select_effect = {
+				country_event = {
+					id = srs_sickoflavour.8
+					days = 45
+				}
+			}
 		
 		completion_reward = {
 			create_wargoal = {
@@ -436,7 +442,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-	
+		select_effect = {
+				country_event = {
+					id = srs_sickoflavour.9
+					days = 12
+				}
+			}
+		
 		completion_reward = {
 			429 = {	add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -495,6 +507,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 12
+		}
+		
+		completion_reward = {
+			country_event = { id = srs_sickoflavour.10 }
 		}
 	}
 	
