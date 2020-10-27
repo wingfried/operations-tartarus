@@ -3310,6 +3310,44 @@ country_event = {
 		name = srs_sickoflavour.7.a	
 		}
 	}
+
+## commie path stuff ##
+
+country_event = {
+	id = srs_sickoflavour.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.8"}
+	title = srs_sickoflavour.8.t
+	desc = srs_sickoflavour.8.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickoflavour.8.a	
+		}
+	}
+
+country_event = {
+	id = srs_sickoflavour.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.9"}
+	title = srs_sickoflavour.9.t
+	desc = srs_sickoflavour.9.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickoflavour.9.a	
+		}
+	}
+
+country_event = {
+	id = srs_sickoflavour.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.10"}
+	title = srs_sickoflavour.10.t
+	desc = srs_sickoflavour.10.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickoflavour.10.a	
+		}
+	}
 	
 ## SRS Ultimatum Event ##
 
