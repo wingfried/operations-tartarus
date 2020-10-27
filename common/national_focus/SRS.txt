@@ -5000,7 +5000,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_death_from_above
-		#icon = 
+		icon = GFX_goal_MAF_Napalm
 		prerequisite = { focus = SRS_air_force_research_institute }
 		relative_position_id = SRS_air_force_research_institute
 		mutually_exclusive = { focus = SRS_support_our_troops }
@@ -5022,7 +5022,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_explosive_filler
-		#icon = 
+		icon = GFX_focus_generic_eagle
 		prerequisite = { focus = SRS_death_from_above }
 		relative_position_id = SRS_death_from_above
 		x = 1
@@ -5038,7 +5038,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_the_heavy_fighter
-		#icon = 
+		icon = GFX_focus_chi_flying_tigers
 		prerequisite = { focus = SRS_death_from_above }
 		relative_position_id = SRS_death_from_above
 		x = -1
@@ -5058,7 +5058,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_unveil_the_1
-		#icon = 
+		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = SRS_explosive_filler }
 		prerequisite = { focus = SRS_the_heavy_fighter }
 		relative_position_id = SRS_explosive_filler
@@ -5079,7 +5079,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_support_our_troops
-		#icon = 
+		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = SRS_air_force_research_institute }
 		relative_position_id = SRS_air_force_research_institute
 		mutually_exclusive = { focus = SRS_death_from_above }
@@ -5101,7 +5101,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_develop_the_stormers
-		#icon = 
+		icon = GFX_goal_bombs_away
 		prerequisite = { focus = SRS_support_our_troops }
 		relative_position_id = SRS_support_our_troops
 		x = -1
@@ -5121,7 +5121,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_surgical_precision
-		#icon = 
+		icon = GFX_goal_generic_occupy_start_war
 		prerequisite = { focus = SRS_support_our_troops }
 		relative_position_id = SRS_support_our_troops
 		x = 1
@@ -5137,7 +5137,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_unveil_the_2
-		#icon = 
+		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = SRS_develop_the_stormers }
 		prerequisite = { focus = SRS_surgical_precision }
 		relative_position_id = SRS_develop_the_stormers
@@ -5158,7 +5158,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_a_flexible_air_force
-		#icon = 
+		icon = GFX_focus_usa_escort_fighters
 		prerequisite = { focus = SRS_air_force_research_institute }
 		relative_position_id = SRS_air_force_research_institute
 		mutually_exclusive = { focus = SRS_support_our_troops }
@@ -5180,7 +5180,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_intermediate_sized_bomber_project
-		#icon = 
+		icon = GFX_focus_YUG_ikarus
 		prerequisite = { focus = SRS_a_flexible_air_force }
 		relative_position_id = SRS_a_flexible_air_force
 		x = -1
@@ -5200,7 +5200,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_superior_training
-		#icon = 
+		icon = GFX_focus_jap_zero
 		prerequisite = { focus = SRS_a_flexible_air_force }
 		relative_position_id = SRS_a_flexible_air_force
 		x = 1
@@ -5216,7 +5216,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_unveil_the_3
-		#icon = 
+		icon = GFX_goal_generic_air_fighter1
 		prerequisite = { focus = SRS_intermediate_sized_bomber_project }
 		prerequisite = { focus = SRS_superior_training }
 		relative_position_id = SRS_intermediate_sized_bomber_project
