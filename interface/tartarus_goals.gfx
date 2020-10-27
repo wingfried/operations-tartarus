@@ -192,4 +192,56 @@ spriteTypes = {
 		name = "GFX_goal_gaw_griff_cmcs"
 		texturefile = "gfx/interface/goals/goal_gaw_griff_cmcs.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_MAF_Napalm"
+		texturefile = "gfx/interface/goals/goal_MAF_Napalm.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_zero"
+		texturefile = "gfx/interface/goals/focus_jap_zero.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_eagle"
+		texturefile = "gfx/interface/goals/focus_generic_eagle.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_chi_flying_tigers"
+		texturefile = "gfx/interface/goals/focus_chi_flying_tigers.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_generic_air_bomber"
+		texturefile = "gfx/interface/goals/goal_generic_air_bomber.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_generic_air_doctrine"
+		texturefile = "gfx/interface/goals/goal_generic_air_doctrine.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_bombs_away"
+		texturefile = "gfx/interface/goals/goal_bombs_away.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/goal_generic_occupy_start_war.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_generic_CAS"
+		texturefile = "gfx/interface/goals/goal_generic_CAS.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_usa_escort_fighters"
+		texturefile = "gfx/interface/goals/focus_usa_escort_fighters.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_YUG_ikarus"
+		texturefile = "gfx/interface/goals/focus_YUG_ikarus.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_jap_zero"
+		texturefile = "gfx/interface/goals/focus_jap_zero.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_generic_air_fighter1"
+		texturefile = "gfx/interface/goals/goal_generic_air_fighter1.dds"
+	}
 }
