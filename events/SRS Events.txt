@@ -3349,6 +3349,67 @@ country_event = {
 		}
 	}
 	
+country_event = {
+	id = srs_sickoflavour.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.11"}
+	title = srs_sickoflavour.11.t
+	desc = srs_sickoflavour.11.d
+	picture = 
+	
+	fire_only_once = yes
+	trigger = {
+	if = {
+	    original_tag = SRS
+		SRS = { controls_state = 576 }
+		}
+	}
+	
+	mean_time_to_happen = { 
+	        days = 4 
+	}	
+	
+	option = {
+	name = srs_sickoflavour.11.a	
+	}
+}
+
+country_event = {
+	id = srs_sickoflavour.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: srs_sickoflavour.12"}
+	title = srs_sickoflavour.12.t
+	desc = srs_sickoflavour.12.d
+	picture = 
+	
+	fire_only_once = yes
+	trigger = {
+	if = {
+		FAT = {
+			exists = no
+			}
+		original_tag = SRS	
+	    SRS = { owns_state = 583 }
+		SRS = { owns_state = 449 }
+		SRS = { owns_state = 432 }
+		SRS = { owns_state = 450 }
+		SRS = { owns_state = 485 }
+		SRS = { owns_state = 582 }
+		SRS = { owns_state = 474 }
+		SRS = { owns_state = 480 }
+		SRS = { owns_state = 548 }
+		SRS = { owns_state = 557 }
+		SRS = { owns_state = 556 }
+		}
+	}
+    
+	mean_time_to_happen = { 
+	        days = 7 
+	}	
+    
+	option = {
+	name = srs_sickoflavour.12.a	
+	}
+}		
+	
 ## SRS Ultimatum Event ##
 
 country_event = {
