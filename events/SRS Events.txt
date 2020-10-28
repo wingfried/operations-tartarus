@@ -3136,16 +3136,32 @@ country_event = {
 		SRS = {
 			add_to_war = { targeted_alliance = FAT enemy = FAW hostility_reason = asked_to_join }
 			give_military_access = FAT
-			remove_opinion_modifier = {
-				target = FAT
-				modifier = hostility
+			IF = {
+				limit = {
+					has_relation_modifier = {
+						target = FAT
+						modifier = hostility
+					}
+				}
+				remove_opinion_modifier = {
+					target = FAT
+					modifier = hostility
+				}
 			}
 		}
 		FAT = {
 			give_military_access = SRS
-			remove_opinion_modifier = {
-				target = SRS
-				modifier = hostility
+			IF = {
+				limit = {
+					has_relation_modifier = {
+						target = SRS
+						modifier = hostility
+					}
+				}
+				remove_opinion_modifier = {
+					target = SRS
+					modifier = hostility
+				}
 			}
 		}
 	}
