@@ -1,4 +1,4 @@
-﻿add_namespace = socrep_grif
+add_namespace = socrep_grif
 add_namespace = socrep_grif_news
 add_namespace = srs_sickontr
 add_namespace = srs_sickocivwar
@@ -3111,8 +3111,50 @@ country_event = {
 			}
 		}
 		annex_country = { target = NTR transfer_troops = no }
+	}
+}
+
+
+
+country_event = {
+	id = srs_sickontr.2
+	title = srs_sickontr.2.t
+	desc = srs_sickontr.2.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SRS
+		SRS = { has_government = democratic }
+		FAT = { has_war_with = FAW }
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	option = { #Join war with FAT against FAW
+		name = srs_sickontr.2.a
+		SRS = {
+			add_to_war = { targeted_alliance = FAT enemy = FAW hostility_reason = asked_to_join }
+			give_military_access = FAT
+			remove_opinion_modifier = {
+				target = FAT
+				modifier = hostility
+			}
+		}
+		FAT = {
+			give_military_access = SRS
+			remove_opinion_modifier = {
+				target = SRS
+				modifier = hostility
+			}
 		}
 	}
+
+	option = { #Do nothing
+		name = srs_sickontr.2.b
+	}
+}
+
 ## SRS_finishing_touches ##
 
 country_event = {
@@ -3127,8 +3169,8 @@ country_event = {
 			add_political_power = 100
 			remove_ideas = SRS_communalist_problems
 			remove_ideas = SRS_internationalist_problems
-		}
 	}
+}
 	
 country_event = {
 	id = srs_sickoflavour.1
@@ -3139,8 +3181,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickoflavour.1.a	
-		}
 	}
+}
 
 ## SRS_sickleclaw_betrays_congress ##
 
@@ -3170,8 +3212,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickoflavour.3.a	
-		}
 	}
+}
 	
 ## SRS_civwar_battle_1 ##
 
@@ -3282,8 +3324,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickoflavour.5.a	
-		}
 	}
+}
 	
 country_event = {
 	id = srs_sickoflavour.6
@@ -3294,8 +3336,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickoflavour.5.a	
-		}
 	}
+}
 
 ## NKVD ##
 
@@ -3308,8 +3350,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickoflavour.7.a	
-		}
 	}
+}
 
 ## commie path stuff ##
 
@@ -3322,8 +3364,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickoflavour.8.a	
-		}
 	}
+}
 
 country_event = {
 	id = srs_sickoflavour.9
@@ -3334,8 +3376,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickoflavour.9.a	
-		}
 	}
+}
 
 country_event = {
 	id = srs_sickoflavour.10
@@ -3346,8 +3388,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickoflavour.10.a	
-		}
 	}
+}
 	
 country_event = {
 	id = srs_sickoflavour.11
@@ -3361,8 +3403,8 @@ country_event = {
 	if = {
 	    original_tag = SRS
 		SRS = { controls_state = 576 }
-		}
 	}
+}
 	
 	mean_time_to_happen = { 
 	        days = 4 
@@ -3556,5 +3598,5 @@ id = srs_sickocivwar.986
                     expire = "1965.1.1"
                     ideology = socialism
                 }
-		}
-    }
+	}
+}
