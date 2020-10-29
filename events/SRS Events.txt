@@ -3445,7 +3445,7 @@ country_event = {
 			exists = no
 			}
 		original_tag = SRS	
-	    SRS = { owns_state = 583 }
+	        SRS = { owns_state = 583 }
 		SRS = { owns_state = 449 }
 		SRS = { owns_state = 432 }
 		SRS = { owns_state = 450 }
@@ -3466,7 +3466,129 @@ country_event = {
 	option = {
 	name = srs_sickoflavour.12.a	
 	}
-}		
+}
+country_event = {
+	id = srs_sickoflavour.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.13"}
+	title = srs_sickoflavour.13.t
+	desc = srs_sickoflavour.13.d
+	picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = srs_sickoflavour.13.a
+	    SRS = {
+			IF = {
+				limit = {
+					has_relation_modifier = {
+						target = FAT
+						modifier = hostility
+					}
+				}
+				remove_opinion_modifier = {
+					target = FAT
+					modifier = hostility
+				}
+			}
+		}
+		FAT = {
+			IF = {
+				limit = {
+					has_relation_modifier = {
+						target = SRS
+						modifier = hostility
+					}
+				}
+				remove_opinion_modifier = {
+					target = SRS
+					modifier = hostility
+				}
+			}
+		}
+	}		
+}
+
+country_event = {
+	id = srs_sickoflavour.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.14"}
+	title = srs_sickoflavour.14.t
+	desc = srs_sickoflavour.14.d
+	picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	    name = srs_sickoflavour.14.a
+	}
+}
+
+country_event = {
+	id = srs_sickoflavour.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.15"}
+	title = srs_sickoflavour.15.t
+	desc = srs_sickoflavour.15.d
+	picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	    name = srs_sickoflavour.15.a
+	}
+}
+	
+country_event = {
+	id = srs_sickoflavour.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.16"}
+	title = srs_sickoflavour.16.t
+	desc = srs_sickoflavour.16.d
+	picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	    name = srs_sickoflavour.16.a
+	}
+}
+
+country_event = {
+	id = srs_sickoflavour.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.17"}
+	title = srs_sickoflavour.17.t
+	desc = srs_sickoflavour.17.d
+	picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	    name = srs_sickoflavour.17.a
+		diplomatic_relation = {
+			country = FAT
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+
+country_event = {
+	id = srs_sickoflavour.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.18"}
+	title = srs_sickoflavour.18.t
+	desc = srs_sickoflavour.18.d
+	picture = 
+	
+	fire_only_once = yes
+	
+	option = {
+	    name = srs_sickoflavour.18.a
+	}
+}
+
 	
 ## SRS Ultimatum Event ##
 
