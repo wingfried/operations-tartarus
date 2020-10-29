@@ -1,0 +1,77 @@
+spriteTypes = {
+
+#### Infantry Equipment ####
+
+	SpriteType = {
+		name = "GFX_SRS_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SpringfieldTrapdoor.dds"
+	}
+	SpriteType = {
+		name = "GFX_SRS_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/Krag-Jorgensen-Rifle_Sky.dds"
+	}
+	SpriteType = {
+		name = "GFX_SRS_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SMG-SKY.dds"
+	}
+	SpriteType = {
+		name = "GFX_SRS_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/MAS-49Sky.dds"
+	}
+	SpriteType = {
+		name = "GFX_SRS_advanced_infantry_weapons_b_medium"
+		texturefile = "gfx/interface/technologies/MAS-49Sky_ExtendedMag.dds"
+	}
+	SpriteType = {
+		name = "GFX_SRS_advanced_infantry_weapons_e_medium"
+		texturefile = "gfx/interface/technologies/vz-58.dds"
+	}
+	
+#### Tanks ####	
+	
+	SpriteType = {
+		name = "GFX_SRS_gwtank_medium"
+		texturefile = "gfx/interface/technologies/first-tank_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SRS_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/T-26_low_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SRS_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/T_50_sky_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SRS_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/tank_04_smollres.dds"
+	}
+	SpriteType = {
+		name = "GFX_SRS_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/tank_01.dds"
+	}
+	SpriteType = {
+		name = "GFX_SRS_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/tank_02.dds"
+	}
+	SpriteType = {
+		name = "GFX_SRS_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/tank_05smolRes.dds"
+	}
+	SpriteType = {
+		name = "GFX_SRS_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/T-28_sky_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SRS_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/tank_03.dds"
+	}
+	SpriteType = {
+		name = "GFX_SRS_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/tank_07_SmollRes.dds"
+	}
+	SpriteType = {
+		name = "GFX_SRS_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/tank_06_smollres.dds"
+	}
+	
+}
