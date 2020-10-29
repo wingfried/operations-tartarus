@@ -1,3 +1,18 @@
+FWF_communism = {
+	color = rgb { 202 23 62 }
+	color_ui = rgb { 202 23 62 }
+}
+
+HLP_communism = {
+	color = rgb { 162 43 82 }
+	color_ui = rgb { 162 43 82 }
+}
+
+MCP_communism = {
+	color = rgb { 182 63 42 }
+	color_ui = rgb { 182 63 42 }
+}
+
 ARA_EMP = {
     color = rgb { 184 17 47 }
     color_ui = rgb { 193 40 63 }
@@ -26,6 +41,7 @@ HLR_arantiga = {
     color = rgb { 210 194 53 }
     color_ui = rgb { 221 202 29 }
 }
+
 ################################
 
 FAT_Monarchy = {

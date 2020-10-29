@@ -1,0 +1,81 @@
+﻿capital = 386
+set_research_slots = 5
+
+set_technology = {
+	
+}
+
+add_ideas = {
+	proper_science_base
+	modern_society
+}
+
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+set_convoys = 200
+
+set_popularities = {
+	democratic = 25
+	fascism = 25
+	communism = 25
+	neutrality = 25
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1006.10.10"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_stability = 0.50
+
+set_war_support = 0.50
+
+create_country_leader = {
+	name = "Asterionese Council"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Asterionese Council"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Konstantine Oplí"
+	desc = MIT_OPLI_DESC
+	picture = "gfx/leaders/MIT/Minotaur.tga"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		militant_harmonist
+	}
+}
+
+create_country_leader = {
+	name = "Maximin Kókkinos"
+	desc = MIT_MAXIMIN_DESC
+	picture = "gfx/leaders/MIT/maximin_kokkinos.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		veteran_communist
+	}
+}
+
+set_rule = {
+	can_generate_female_aces = yes
+}

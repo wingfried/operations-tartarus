@@ -1,0 +1,18 @@
+﻿l_english:
+
+ gaw_form_puppet_category:0 "Form Puppets"
+ 
+ form_MIT_CYA_puppet:0 "Form [Root.GetMitCyaDecision]"
+ MIT_CYA_puppet_communism:0 "Minotaur Autonomous Socialist Republic"
+ MIT_CYA_puppet_democratic:0 "Republic of Asterion-Cyanolisia"
+ MIT_CYA_puppet_neutral:0 "Asterion-Cyanolisia"
+
+ form_HLQ_LNS_puppet:0 "Form [Root.GetHlqLnsDecision]"
+ HLQ_LNS_puppet_communism:0 "Hellsword Autonomous Socialist Republic"
+ HLQ_LNS_puppet_democratic:0 "Hellsword Republic"
+ HLQ_LNS_puppet_neutral:0 "Hellsword"
+
+ form_FBK_WAT_FIR_puppet:0 "Form [Root.GetFbkWatFirDecision]"
+ FBK_WAT_FIR_puppet_communism:0 "Socialist Confederation of Hillpony Tribes"
+ FBK_WAT_FIR_puppet_democratic:0 "Confederation of Hillpony Tribes"
+ FBK_WAT_FIR_puppet_neutral:0 "Hillpony Tribes"
