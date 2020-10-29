@@ -586,6 +586,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+		        country_event = srs_sickoflavour.13
 			swap_ideas = {
 				add_idea = SRS_doubt_in_sickleclaw_2
 				remove_idea = SRS_doubt_in_sickleclaw
@@ -628,6 +629,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+		        country_event = srs_sickoflavour.14
 			swap_ideas = {
 				add_idea = SRS_shits_fucked_radical_2
 				remove_idea = SRS_shits_fucked_radical_1
@@ -691,6 +693,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+		        country_event = srs_sickoflavour.15
 			remove_ideas = SRS_shits_fucked_radical_3
 		}
 	}
@@ -722,6 +725,27 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 12
+		}	
+		
+		select_effect = {
+		    hidden_effect = {
+			country_event = {
+				id = srs_sickoflavour.16
+				days = 4
+			}
+		}
+	}
+	       	select_effect = {
+		    hidden_effect = {
+			country_event = {
+				id = srs_sickoflavour.17
+				days = 32
+			}
+		}
+	}
+		
+		completion_reward = {
+		    
 		}
 	}
 	
@@ -1117,6 +1141,7 @@ focus_tree = {
             factor = 12
         }
         completion_reward = {
+	country_event = srs_sickoflavour.18
         create_wargoal = {
                     type = annex_everything
                     target = FAW 
