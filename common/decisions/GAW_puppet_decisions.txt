@@ -7,6 +7,8 @@ gaw_form_puppet_category = {
 		visible = {
 			AND = {
 				NOT = { tag = MCP }
+				NOT = { tag = MIT }
+				NOT = { tag = CYA }
 				OR = {
 					has_government = communism
 					AND = {
@@ -114,6 +116,8 @@ gaw_form_puppet_category = {
 		visible = {
 			AND = {
 				NOT = { tag = HLP }
+				NOT = { tag = HLQ }
+				NOT = { tag = LNS }
 				OR = {
 					has_government = communism
 					AND = {
@@ -182,6 +186,9 @@ gaw_form_puppet_category = {
 		visible = {
 			AND = {
 				NOT = { tag = FWF }
+				NOT = { tag = FBK }
+				NOT = { tag = WAT }
+				NOT = { tag = FIR }
 				OR = {
 					has_government = communism
 					AND = {
