@@ -2933,6 +2933,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+
+		completion_reward = {
+            country_event = { id = srs_sickoflavour.19 }
+		}
 	}
 	
 	focus = {
@@ -2944,6 +2948,10 @@ focus_tree = {
 		cost = 1
 		ai_will_do = {
 			factor = 12
+		}
+
+		completion_reward = {
+            country_event = { id = srs_sickoflavour.20 }
 		}
 	}
 
@@ -2957,6 +2965,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+
+		completion_reward = {
+            country_event = { id = srs_sickoflavour.21 }
+		}
 	}
 
 	focus = {
@@ -2969,6 +2981,10 @@ focus_tree = {
 		cost = 1
 		ai_will_do = {
 			factor = 12
+		}
+
+		completion_reward = {
+            country_event = { id = srs_sickoflavour.22 }
 		}
 	}
 
@@ -3092,8 +3108,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_timed_idea = { idea = SRS_resistance_surge days = 180 }
+			#add_timed_idea = { idea = SRS_resistance_surge days = 180 }
 			add_timed_idea = { idea = SRS_no_more_nobles days = 180 }
+			country_event = { id = srs_sickoflavour.26 days = 14 }
 		}
 	}
 	
@@ -3106,6 +3123,10 @@ focus_tree = {
 		cost = 7
 		ai_will_do = {
 			factor = 12
+		}
+
+		completion_reward = {
+            country_event = { id = srs_sickoflavour.23 }
 		}
 	}
 	

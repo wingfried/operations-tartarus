@@ -3118,6 +3118,7 @@ country_event = {
 
 country_event = {
 	id = srs_sickontr.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickontr.2"}
 	title = srs_sickontr.2.t
 	desc = srs_sickontr.2.d
 
@@ -3412,7 +3413,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.11"}
 	title = srs_sickoflavour.11.t
 	desc = srs_sickoflavour.11.d
-	picture = 
+	#picture = 
 	
 	fire_only_once = yes
 	trigger = {
@@ -3436,7 +3437,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: srs_sickoflavour.12"}
 	title = srs_sickoflavour.12.t
 	desc = srs_sickoflavour.12.d
-	picture = 
+	#picture = 
 	
 	fire_only_once = yes
 	trigger = {
@@ -3473,7 +3474,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.13"}
 	title = srs_sickoflavour.13.t
 	desc = srs_sickoflavour.13.d
-	picture = 
+	#picture = 
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -3516,7 +3517,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.14"}
 	title = srs_sickoflavour.14.t
 	desc = srs_sickoflavour.14.d
-	picture = 
+	#picture = 
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -3531,7 +3532,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.15"}
 	title = srs_sickoflavour.15.t
 	desc = srs_sickoflavour.15.d
-	picture = 
+	#picture = 
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -3546,7 +3547,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.16"}
 	title = srs_sickoflavour.16.t
 	desc = srs_sickoflavour.16.d
-	picture = 
+	#picture = 
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -3561,7 +3562,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.17"}
 	title = srs_sickoflavour.17.t
 	desc = srs_sickoflavour.17.d
-	picture = 
+	#picture = 
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -3581,13 +3582,152 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.18"}
 	title = srs_sickoflavour.18.t
 	desc = srs_sickoflavour.18.d
-	picture = 
+	#picture = 
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
 	    name = srs_sickoflavour.18.a
+	}
+}
+
+country_event = {
+	id = srs_sickoflavour.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.19"}
+	title = srs_sickoflavour.19.t
+	desc = srs_sickoflavour.19.d
+	#picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	    name = srs_sickoflavour.19.a
+	}
+}
+
+country_event = {
+	id = srs_sickoflavour.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.20"}
+	title = srs_sickoflavour.20.t
+	desc = srs_sickoflavour.20.d
+	#picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	    name = srs_sickoflavour.20.a
+	}
+}
+
+country_event = {
+	id = srs_sickoflavour.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.21"}
+	title = srs_sickoflavour.21.t
+	desc = srs_sickoflavour.21.d
+	#picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	    name = srs_sickoflavour.21.a
+	}
+}
+
+country_event = {
+	id = srs_sickoflavour.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.22"}
+	title = srs_sickoflavour.22.t
+	desc = srs_sickoflavour.22.d
+	#picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	    name = srs_sickoflavour.22.a
+	}
+}
+
+country_event = {
+	id = srs_sickoflavour.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.23"}
+	title = srs_sickoflavour.23.t
+	desc = srs_sickoflavour.23.d
+	#picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	    name = srs_sickoflavour.23.a
+	}
+}
+
+country_event = { #Griffenheim Commie
+	id = srs_sickoflavour.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.24"}
+	title = srs_sickoflavour.24.t
+	desc = srs_sickoflavour.24.d
+	#picture = 
+	
+	trigger = {
+		tag = SRS
+		SRS = {
+			has_government = communism
+			owns_state = 382
+		}
+	}
+
+	fire_only_once = yes
+	
+	option = {
+	    name = srs_sickoflavour.24.a
+	    hidden_effect = {
+		    complete_national_focus = SRS_victory_is_ours_focus
+		}
+	}
+}
+
+country_event = { #Griffenheim Harmony
+	id = srs_sickoflavour.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.25"}
+	title = srs_sickoflavour.25.t
+	desc = srs_sickoflavour.25.d
+	#picture = 
+	
+	trigger = {
+		tag = SRS
+		SRS = {
+			has_government = democratic
+			owns_state = 382
+		}
+	}
+
+	fire_only_once = yes
+	
+	option = {
+	    name = srs_sickoflavour.25.a
+	    hidden_effect = {
+		    complete_national_focus = SRS_victory_is_ours_focus
+		}
+	}
+}
+
+country_event = {
+	id = srs_sickoflavour.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.26"}
+	hidden = yes
+	#picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	    add_timed_idea = { idea = SRS_resistance_surge days = 60 }
 	}
 }
 
