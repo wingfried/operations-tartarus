@@ -3467,6 +3467,7 @@ country_event = {
 	name = srs_sickoflavour.12.a	
 	}
 }
+
 country_event = {
 	id = srs_sickoflavour.13
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.13"}
