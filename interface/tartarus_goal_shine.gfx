@@ -1048,6 +1048,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	
 	SpriteType = {
 		name = "GFX_goal_gaw_gallus_shine"
 		texturefile = "gfx/interface/goals/goal_gaw_gallus.dds"
@@ -1235,6 +1236,130 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_goal_SRS_aviation_dreams_shine"
+		texturefile = "gfx/interface/goals/goal_SRS_aviation_dreams.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_SRS_aviation_dreams.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_SRS_aviation_dreams.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+        SpriteType = {
+		name = "GFX_goal_SRS_buy_fighters_shine"
+		texturefile = "gfx/interface/goals/goal_SRS_buy_fighters.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_SRS_buy_fighters.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_SRS_buy_fighters.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+        SpriteType = {
+		name = "GFX_goal_SRS_buy_bombers_shine"
+		texturefile = "gfx/interface/goals/goal_SRS_buy_bombers.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_SRS_buy_bombers.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_SRS_buy_bombers.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}	
+        SpriteType = {
+		name = "GFX_goal_SRS_avia_institute_shine"
+		texturefile = "gfx/interface/goals/goal_generic_air_fighter1.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_SRS_avia_institute.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_SRS_avia_institute.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}	
+	SpriteType = {
 		name = "GFX_goal_MAF_Napalm_shine"
 		texturefile = "gfx/interface/goals/goal_MAF_Napalm.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1265,8 +1390,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-SpriteType = {
+        SpriteType = {
 		name = "GFX_focus_jap_zero_shine"
 		texturefile = "gfx/interface/goals/focus_jap_zero.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1297,8 +1421,7 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}
-
-SpriteType = {
+        SpriteType = {
 		name = "GFX_focus_generic_eagle_shine"
 		texturefile = "gfx/interface/goals/focus_generic_eagle.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1329,8 +1452,7 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}
-
-SpriteType = {
+        SpriteType = {
 		name = "GFX_focus_chi_flying_tigers_shine"
 		texturefile = "gfx/interface/goals/focus_chi_flying_tigers.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1361,8 +1483,7 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}
-
-SpriteType = {
+        SpriteType = {
 		name = "GFX_goal_generic_air_bomber_shine"
 		texturefile = "gfx/interface/goals/goal_generic_air_bomber.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1393,8 +1514,7 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}
-
-SpriteType = {
+        SpriteType = {
 		name = "GFX_goal_generic_air_doctrine_shine"
 		texturefile = "gfx/interface/goals/goal_generic_air_doctrine.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
