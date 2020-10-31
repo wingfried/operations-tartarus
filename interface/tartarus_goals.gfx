@@ -192,6 +192,22 @@ spriteTypes = {
 		name = "GFX_goal_gaw_griff_cmcs"
 		texturefile = "gfx/interface/goals/goal_gaw_griff_cmcs.dds"
 	}
+	SpriteType = { 
+		name = "GFX_goal_SRS_aviation_dreams"
+		texturefile = "gfx/interface/goals/goal_SRS_aviation_dreams.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_SRS_buy_fighters"
+		texturefile = "gfx/interface/goals/goal_SRS_buy_fighters.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_SRS_buy_bombers"
+		texturefile = "gfx/interface/goals/goal_SRS_buy_bombers.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_SRS_avia_institute"
+		texturefile = "gfx/interface/goals/goal_SRS_avia_institute.dds"
+	}
 	spriteType = {
 		name = "GFX_goal_MAF_Napalm"
 		texturefile = "gfx/interface/goals/goal_MAF_Napalm.dds"
@@ -239,9 +255,5 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_focus_jap_zero"
 		texturefile = "gfx/interface/goals/focus_jap_zero.dds"
-	}
-	SpriteType = { 
-		name = "GFX_goal_generic_air_fighter1"
-		texturefile = "gfx/interface/goals/goal_generic_air_fighter1.dds"
 	}
 }
