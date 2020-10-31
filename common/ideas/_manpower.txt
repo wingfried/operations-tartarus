@@ -971,5 +971,59 @@ ideas = {
 				modifier_army_sub_unit_infiltrator_company_defence_factor = 0.025
 			}
 		}
-	}
-}
+		
+		Skynavian_Redguard = {
+
+			cost = 150
+			removal_cost = -1
+			level = 6
+
+			visible = {
+				if = { 
+					limit = { original_tag = SRS }
+					}
+				}
+
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.015 group = mobilization_laws }
+				if = {
+					limit = { original_tag = SRS }
+				}
+				NOT = {
+					has_country_flag = demilitarized
+				}
+			OR = {
+			is_ai = yes
+			
+			}
+		}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					factor = 60 # being disarmed is bad in a wargame yo
+					has_idea = disarmed_nation
+				}
+			}
+
+			modifier = {
+				conscription = 0.04
+				training_time_army_factor = -0.1
+				army_org_factor = -0.1
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_morale_factor = 0.05
+			}
+
+                        allowed_to_remove = {
+                                always = no
+                        }
+			
+			default = yes
+
+			cancel_if_invalid = no
+			}
+		}
+	}	
+
