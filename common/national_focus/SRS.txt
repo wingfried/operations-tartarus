@@ -4980,7 +4980,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_dreams_of_an_air_force
-		#icon = 
+		icon = GFX_focus_SRS_aviation_dreams
 		prerequisite = { focus = SRS_rebuild_thechain_of_command }
 		relative_position_id = SRS_rebuild_thechain_of_command
 		x = -12
@@ -4996,7 +4996,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_purchase_fighters
-		#icon = 
+		icon = GFX_focus_SRS_buy_fighters
 		prerequisite = { focus = SRS_dreams_of_an_air_force }
 		mutually_exclusive = { focus = SRS_purchase_bombers }
 		relative_position_id = SRS_dreams_of_an_air_force
@@ -5013,7 +5013,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_purchase_bombers
-		#icon = 
+		icon = GFX_focus_SRS_buy_bombers
 		prerequisite = { focus = SRS_dreams_of_an_air_force }
 		mutually_exclusive = { focus = SRS_purchase_fighters }
 		relative_position_id = SRS_dreams_of_an_air_force
@@ -5030,7 +5030,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_air_force_research_institute
-		#icon = 
+		icon = GFX_focus_SRS_avia_institute
 		prerequisite = { focus = SRS_purchase_fighters focus = SRS_purchase_bombers }
 		relative_position_id = SRS_purchase_fighters
 		x = 1
