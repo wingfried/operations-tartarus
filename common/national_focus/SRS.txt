@@ -4980,7 +4980,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_dreams_of_an_air_force
-		icon = GFX_focus_SRS_aviation_dreams
+		icon = GFX_goal_SRS_aviation_dreams
 		prerequisite = { focus = SRS_rebuild_thechain_of_command }
 		relative_position_id = SRS_rebuild_thechain_of_command
 		x = -12
@@ -4996,7 +4996,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_purchase_fighters
-		icon = GFX_focus_SRS_buy_fighters
+		icon = GFX_goal_SRS_buy_fighters
 		prerequisite = { focus = SRS_dreams_of_an_air_force }
 		mutually_exclusive = { focus = SRS_purchase_bombers }
 		relative_position_id = SRS_dreams_of_an_air_force
@@ -5013,7 +5013,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_purchase_bombers
-		icon = GFX_focus_SRS_buy_bombers
+		icon = GFX_goal_SRS_buy_bombers
 		prerequisite = { focus = SRS_dreams_of_an_air_force }
 		mutually_exclusive = { focus = SRS_purchase_fighters }
 		relative_position_id = SRS_dreams_of_an_air_force
@@ -5030,7 +5030,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_air_force_research_institute
-		icon = GFX_focus_SRS_avia_institute
+		icon = GFX_goal_SRS_avia_institute
 		prerequisite = { focus = SRS_purchase_fighters focus = SRS_purchase_bombers }
 		relative_position_id = SRS_purchase_fighters
 		x = 1
@@ -5167,7 +5167,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_surgical_precision
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_goal_generic_occypy_start_war
 		prerequisite = { focus = SRS_support_our_troops }
 		relative_position_id = SRS_support_our_troops
 		x = 1
@@ -5262,7 +5262,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_unveil_the_3
-		icon = GFX_goal_generic_air_fighter1
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = SRS_intermediate_sized_bomber_project }
 		prerequisite = { focus = SRS_superior_training }
 		relative_position_id = SRS_intermediate_sized_bomber_project
