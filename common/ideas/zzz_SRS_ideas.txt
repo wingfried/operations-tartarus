@@ -2859,4 +2859,86 @@ ideas = {
 			}
 		}
 	}
+
+	SRS_skynavia_rules_the_waves_idea = {
+		#picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		
+		modifier = {
+			experience_gain_navy_factor = 0.1
+		}
+
+		research_bonus = {
+			naval_doctrine = 0.15
+		}
+	}
+
+	SRS_competent_admiralty_idea = {
+		#picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		
+		modifier = {
+			spotting_chance = 0.10
+			naval_speed_factor = 0.05
+			naval_coordination = 0.05
+		}
+	}
+
+	SRS_fund_the_navy_idea = {
+		#picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		
+		modifier = {
+			political_power_gain = -0.25
+			industrial_capacity_dockyard = 0.15
+		}
+	}
+
+	SRS_modern_convoys_idea = {
+		#picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		
+		equipment_bonus = {
+			convoy = {
+				build_cost_ic = -0.10
+				maximum_speed = 0.10
+				instant = yes
+			}
+		}
+	}
+
+	SRS_cheap_cruisers_idea = {
+		#picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		
+		equipment_bonus = {
+			cl_tech = {
+				build_cost_ic = -0.10
+				reliability = -0.02
+				armor_value = -0.05
+				instant = yes
+			}
+			ca_tech = {
+				build_cost_ic = -0.10
+				reliability = -0.02
+				armor_value = -0.05
+				instant = yes
+			}
+		}
+	}
 }
