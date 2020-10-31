@@ -1580,11 +1580,11 @@ SpriteType = {
 	}
 
 SpriteType = {
-		name = "GFX_goal_generic_occupy_start_war_shine"
+		name = "GFX_goal_generic_occypy_start_war_shine"
 		texturefile = "gfx/interface/goals/goal_generic_occupy_start_war.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_generic_occupy_start_war.dds"
+			animationmaskfile = "gfx/interface/goals/goal_generic_occypy_start_war.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1597,7 +1597,7 @@ SpriteType = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_generic_occupy_start_war.dds"
+			animationmaskfile = "gfx/interface/goals/goal_generic_occypy_start_war.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1740,11 +1740,11 @@ SpriteType = {
 	}
 
 SpriteType = {
-		name = "GFX_goal_generic_air_fighter1_shine"
+		name = "GFX_goal_generic_air_fighter_shine"
 		texturefile = "gfx/interface/goals/goal_generic_air_fighter1.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_generic_air_fighter1.dds"
+			animationmaskfile = "gfx/interface/goals/goal_generic_air_fighter.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1757,7 +1757,7 @@ SpriteType = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_generic_air_fighter1.dds"
+			animationmaskfile = "gfx/interface/goals/goal_generic_air_fighter.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
