@@ -238,7 +238,7 @@ spriteTypes = {
 	}
 	SpriteType = { 
 		name = "GFX_goal_generic_occypy_start_war"
-		texturefile = "gfx/interface/goals/goal_generic_occupy_start_war.dds"
+		texturefile = "gfx/interface/goals/goal_generic_occypy_start_war.dds"
 	}
 	SpriteType = { 
 		name = "GFX_goal_generic_CAS"
