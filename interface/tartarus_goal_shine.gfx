@@ -1741,7 +1741,7 @@ SpriteType = {
 
 SpriteType = {
 		name = "GFX_goal_generic_air_fighter_shine"
-		texturefile = "gfx/interface/goals/goal_generic_air_fighter1.dds"
+		texturefile = "gfx/interface/goals/goal_generic_air_fighter.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/goal_generic_air_fighter.dds"
