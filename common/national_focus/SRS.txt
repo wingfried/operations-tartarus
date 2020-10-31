@@ -5007,9 +5007,27 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_equipment_to_stockpile = { type = fighter_equipment amount = 20 }
-		}	
+		    if = {
+			limit = {
+			    has_tech = early_fighter
+			}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 40
+			}
+		}
+		    else = {
+			    set_technology = {
+				early_fighter = 1
+			}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 40
+			}
+		}
 	}
+}
+
 
 	focus = {
 		id = SRS_purchase_bombers
@@ -5024,9 +5042,26 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_equipment_to_stockpile = { type = tac_bomber_equipment amount = 20 }
-		}	
+		if = {
+			limit = {
+			    has_tech = early_bomber
+		    }
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment
+				amount = 40
+			}
+		}
+		else = {
+			set_technology = {
+				early_bomber = 1
+			}
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment
+				amount = 40
+			}
+		}
 	}
+}
 
 	focus = {
 		id = SRS_air_force_research_institute
