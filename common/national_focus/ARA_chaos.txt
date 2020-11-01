@@ -27,10 +27,9 @@ focus_tree = {
 		y = 0
 		cost = 0
 		bypass = {
-			has_country_flag = arantiga_flag_dorotheos_is_dead
-			
+			has_country_flag = arantiga_flag_dorotheos_is_dead	
 		}
-		}
+	}
 		
 	focus = { #Power struggle
 		id = ARA_power_struggle
@@ -41,10 +40,9 @@ focus_tree = {
 		relative_position_id = ARA_chaos
 		prerequisite = { focus = ARA_chaos }
 		completion_reward = {
-		country_event = arantiga_chaos.002
-		
+			country_event = arantiga_chaos.002
 		}
-		}
+	}
 	
 	focus = { #Purge zealots
 		id = ARA_purge_zealots
@@ -55,18 +53,29 @@ focus_tree = {
 		relative_position_id = ARA_power_struggle
 		prerequisite = { focus = ARA_power_struggle }
 		completion_reward = {
-		add_manpower = -1000
-		add_stability = -0.4
-		add_popularity = { ideology = fascism popularity = -0.4 }
-		add_popularity = { ideology = neutrality popularity = 0.3 }
-		swap_ideas = {
-				remove_idea = ARA_absolute_chaos
-				add_idea = ARA_absolute_chaos1
+			add_manpower = -1000
+			add_stability = -0.4
+			add_popularity = { ideology = fascism popularity = -0.4 }
+			add_popularity = { ideology = neutrality popularity = 0.3 }
+			if = {
+				limit = {
+					has_idea = ARA_absolute_chaos
+				}
+				swap_ideas = {
+					remove_idea = ARA_absolute_chaos
+					add_idea = ARA_absolute_chaos1
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ARA_absolute_chaos1
+					add_idea = ARA_absolute_chaos2
+				}
 			}
 		}
-		}
+	}
 		
-		focus = { #Support of the army
+	focus = { #Support of the army
 		id = ARA_support_army
 		icon = GFX_goal_support_of_the_army
 		x = 1
@@ -75,13 +84,24 @@ focus_tree = {
 		relative_position_id = ARA_power_struggle
 		prerequisite = { focus = ARA_power_struggle }
 		completion_reward = {
-		add_political_power = -200
-		swap_ideas = {
-				remove_idea = ARA_absolute_chaos1
-				add_idea = ARA_absolute_chaos2
+			add_political_power = -200
+			if = {
+				limit = {
+					has_idea = ARA_absolute_chaos
+				}
+				swap_ideas = {
+					remove_idea = ARA_absolute_chaos
+					add_idea = ARA_absolute_chaos1
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ARA_absolute_chaos1
+					add_idea = ARA_absolute_chaos2
+				}
 			}
 		}
-		}
+	}
 		
 	focus = { #Secure cities
 		id = ARA_secure_cities
@@ -93,14 +113,13 @@ focus_tree = {
 		prerequisite = { focus = ARA_support_army }
 		prerequisite = { focus = ARA_purge_zealots }
 		completion_reward = {
-		add_manpower = -30000
-		swap_ideas = {
+			add_manpower = -30000
+			swap_ideas = {
 				remove_idea = ARA_absolute_chaos2
 				add_idea = ARA_absolute_chaos3
 			}
-
 		}
-		}
+	}
 		
 
 				
@@ -113,12 +132,12 @@ focus_tree = {
 		relative_position_id = ARA_secure_cities
 		prerequisite = { focus = ARA_secure_cities }
 		completion_reward = {
-		swap_ideas = {
+			swap_ideas = {
 				remove_idea = ARA_absolute_chaos3
 				add_idea = ARA_absolute_chaos4
 			} 
 		}
-		}		
+	}		
 		
 	focus = { #Free the prisioners
 		id = ARA_free_prisioners
@@ -129,16 +148,16 @@ focus_tree = {
 		relative_position_id = ARA_the_legacy
 		bypass = { 
 			NOT = {
-					has_country_flag = work_camps_flag
-		}
+				has_country_flag = work_camps_flag
+			}
 		}
 		prerequisite = { focus = ARA_the_legacy }
 		completion_reward = {
-		add_manpower = 20000
-		add_stability = 0.05
-		remove_ideas = ARA_work_camp
+			add_manpower = 20000
+			add_stability = 0.05
+			remove_ideas = ARA_work_camp
 		}
-		}		
+	}		
 		
 	focus = { #Restore the cult of Boreas
 		id = ARA_restore_the_cult
@@ -149,9 +168,9 @@ focus_tree = {
 		relative_position_id = ARA_the_legacy
 		prerequisite = { focus = ARA_the_legacy }
 		completion_reward = {
-		remove_ideas = ARA_arantigos_boreas2
+			remove_ideas = ARA_arantigos_boreas2
 		}
-		}	
+	}	
 		
 	focus = { #Demobilize the economy
 		id = ARA_demobilize
@@ -162,9 +181,9 @@ focus_tree = {
 		relative_position_id = ARA_the_legacy
 		prerequisite = { focus = ARA_the_legacy }
 		completion_reward = {
-		remove_ideas = ARA_militarized_economy
+			remove_ideas = ARA_militarized_economy
 		}
-		}	
+	}	
 		
 	focus = { #Transitional Government
 		id = ARA_transition
@@ -175,12 +194,12 @@ focus_tree = {
 		relative_position_id = ARA_the_legacy
 		prerequisite = { focus = ARA_the_legacy }
 		completion_reward = {
-		swap_ideas = {
+			swap_ideas = {
 				remove_idea = ARA_nicator_junta
 				add_idea = ARA_nicator_junta1
 			}
 		}
-		}	
+	}	
 		
 	focus = { #Return of the exiles
 		id = ARA_return_exiles
@@ -191,12 +210,12 @@ focus_tree = {
 		relative_position_id = ARA_the_legacy
 		prerequisite = { focus = ARA_the_legacy }
 		completion_reward = {
-		add_popularity = { ideology = democratic popularity = 0.10 }
-		add_popularity = { ideology = communism popularity = 0.05 }
-		add_popularity = { ideology = neutrality popularity = 0.05 }
-		add_stability = 0.1
+			add_popularity = { ideology = democratic popularity = 0.10 }
+			add_popularity = { ideology = communism popularity = 0.05 }
+			add_popularity = { ideology = neutrality popularity = 0.05 }
+			add_stability = 0.1
 		}
-		}		
+	}		
 				
 	focus = { #New direction
 		id = ARA_new_direction
@@ -211,10 +230,10 @@ focus_tree = {
 		prerequisite = { focus = ARA_transition }
 		prerequisite = { focus = ARA_return_exiles }
 		completion_reward = {
-		remove_ideas = ARA_absolute_chaos4 
-		remove_ideas = ARA_nicator_junta1
+			remove_ideas = ARA_absolute_chaos4 
+			remove_ideas = ARA_nicator_junta1
 		}
-		}			
+	}			
 
 	focus = { #King of Arantiga
 		id = ARA_return_of_the_king
@@ -227,7 +246,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ARA_i_love_democracy }
 		completion_reward = {
 		create_country_leader = {
-			name = "Nicator I Whitebeak"
+			name = "Nicator I"
 			picture = "nicator_king.tga"
 			expire = "1965.1.1"
 			ideology = despotism

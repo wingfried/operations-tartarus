@@ -1143,21 +1143,20 @@ country = {
 		country = {
 			ARA_absolute_chaos = {
 				allowed = {
-				always = no
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				picture = ara_high_resistance
+				removal_cost = -1
+				modifier = {
+					consumer_goods_factor = 0.5
+					stability_factor = -0.5
+					war_support_factor = -0.5
+					army_org_Factor = -0.5
+				}
 			}
-			allowed_civil_war = {
-				always = yes
-			}
-			picture = ara_high_resistance
-			removal_cost = -1
-			modifier = {
-			consumer_goods_factor = 0.5
-			stability_factor = -0.5
-			war_support_factor = -0.5
-			army_org_Factor = -0.5
-			
-		}
-		}
 		}
 		
 		country = {
@@ -1234,26 +1233,6 @@ country = {
 			consumer_goods_factor = 0.2
 			stability_factor = -0.2
 			war_support_factor = -0.2
-			army_org_Factor = -0.1
-			
-		}
-		}
-		}
-		
-		country = {
-			ARA_absolute_chaos5 = {
-				allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			picture = ara_low_resistance
-			removal_cost = -1
-			modifier = {
-			consumer_goods_factor = 0.2
-			stability_factor = -0.1
-			war_support_factor = -0.1
 			army_org_Factor = -0.1
 			
 		}
