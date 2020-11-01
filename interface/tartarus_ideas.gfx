@@ -228,4 +228,8 @@ spriteTypes = {
 		name = "GFX_idea_BOI_bechard"
 		texturefile = "gfx/interface/ideas/BOI_idea_bechard.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_SRC_concription_law"
+		texturefile = "gfx/interface/ideas/SRC_concription_law.dds"
+	}
 }
