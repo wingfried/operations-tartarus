@@ -134,6 +134,7 @@ country_with_custom_advisors = {
 		original_tag = AVI
 		original_tag = LAK
 		original_tag = BAK
+	    original_tag = NCR
 		##################
 		original_tag = ARA
 	}
@@ -198,6 +199,7 @@ country_with_custom_designers = {
 		original_tag = ZES
 	    original_tag = NCR
 		original_tag = BAK
+		original_tag = OLV
 		##################
 		original_tag = ARA
 	}
@@ -209,6 +211,8 @@ country_with_custom_spymaster = {
 		original_tag = EQS
 		original_tag = RCT
 		original_tag = GRI
+		original_tag = STW
+		original_tag = BAR
 		##################
 		original_tag = ARA
 	}

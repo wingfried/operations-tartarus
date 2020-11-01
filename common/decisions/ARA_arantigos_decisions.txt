@@ -103,7 +103,7 @@ ARA_definetely_not_fake_IRI = {
 		}
 		available = {
 			NOT = { has_country_flag = IRI_project_ongoing }
-#			owns_state = #state id for schiesswald plox
+#			owns_state = #state id for schiesswald plox nvm
 		}
 		complete_effect = {
 			set_country_flag = IRI_project_ongoing
