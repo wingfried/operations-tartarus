@@ -55,18 +55,29 @@ focus_tree = {
 		relative_position_id = ARA_power_struggle
 		prerequisite = { focus = ARA_power_struggle }
 		completion_reward = {
-		add_manpower = -1000
-		add_stability = -0.4
-		add_popularity = { ideology = fascism popularity = -0.4 }
-		add_popularity = { ideology = neutrality popularity = 0.3 }
-		swap_ideas = {
-				remove_idea = ARA_absolute_chaos
-				add_idea = ARA_absolute_chaos1
+			add_manpower = -1000
+			add_stability = -0.4
+			add_popularity = { ideology = fascism popularity = -0.4 }
+			add_popularity = { ideology = neutrality popularity = 0.3 }
+			if = {
+				limit = {
+					has_idea = ARA_absolute_chaos
+				}
+				swap_ideas = {
+					remove_idea = ARA_absolute_chaos
+					add_idea = ARA_absolute_chaos1
+				}
+			}
+			else = {
+				swap_ideas = {
+			    	remove_idea = ARA_absolute_chaos1
+				    add_idea = ARA_absolute_chaos2
+				}
 			}
 		}
-		}
+	}
 		
-		focus = { #Support of the army
+	focus = { #Support of the army
 		id = ARA_support_army
 		icon = GFX_goal_support_of_the_army
 		x = 2
@@ -75,13 +86,24 @@ focus_tree = {
 		relative_position_id = ARA_power_struggle
 		prerequisite = { focus = ARA_power_struggle }
 		completion_reward = {
-		add_political_power = -200
-		swap_ideas = {
-				remove_idea = ARA_absolute_chaos1
-				add_idea = ARA_absolute_chaos2
+			add_political_power = -200
+			if = {
+				limit = {
+					has_idea = ARA_absolute_chaos
+				}
+				swap_ideas = {
+					remove_idea = ARA_absolute_chaos
+					add_idea = ARA_absolute_chaos1
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ARA_absolute_chaos1
+					add_idea = ARA_absolute_chaos2
+				}
 			}
 		}
-		}
+	}
 		
 	focus = { #Secure cities
 		id = ARA_secure_cities
