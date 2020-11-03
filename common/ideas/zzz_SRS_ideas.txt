@@ -396,6 +396,25 @@ ideas = {
 				supply_consumption_factor = -0.05
 			}
 		}
+		Nordrot_manufacturing = {
+			picture = generic_industrial_concern_1
+			
+			allowed = {
+				tag = SRS
+			}
+			available = {
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			    production_factory_max_efficiency_factor = 0.1
+			}
+		}
 	}
 	army_chief = {
 
