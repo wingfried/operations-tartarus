@@ -1,0 +1,94 @@
+leader_traits = {
+	GAW_light_tank_fast_manufacturer = {
+		equipment_bonus = {
+			light_tank_equipment = {
+				build_cost_ic = -0.1
+				maximum_speed = 0.15
+				hard_attack = -0.05
+				soft_attack = -0.05
+				armor_value = -0.05
+			}
+		}
+		random = no
+	}
+	GAW_medium_modern_tank_balanced_manufacturer = {
+		equipment_bonus = {
+			medium_tank_equipment = {
+				build_cost_ic = -0.03
+				maximum_speed = 0.03
+				hard_attack = 0.03
+				soft_attack = 0.03
+				armor_value = 0.03
+			}
+			modern_tank_equipment = {
+				build_cost_ic = -0.03
+				maximum_speed = 0.03
+				hard_attack = 0.03
+				soft_attack = 0.03
+				armor_value = 0.03
+			}
+		}
+		random = no
+	}
+	GAW_heavy_super_heavy_tank_strong_manufacturer = {
+		equipment_bonus = {
+			heavy_tank_equipment = {
+				build_cost_ic = 0.1
+				maximum_speed = -0.15
+				hard_attack = 0.15
+				soft_attack = 0.15
+				armor_value = 0.15
+			}
+			super_heavy_tank_equipment = {
+				build_cost_ic = 0.2
+				maximum_speed = -0.3
+				hard_attack = 0.3
+				soft_attack = 0.3
+				armor_value = 0.3
+			}
+		}
+		random = no
+	}
+	GAW_heavy_super_heavy_tank_mobile_manufacturer = {
+		equipment_bonus = {
+			heavy_tank_equipment = {
+				build_cost_ic = 0.05
+				maximum_speed = 0.25
+			}
+			super_heavy_tank_equipment = {
+				build_cost_ic = 0.05
+				maximum_speed = 0.25
+			}
+		}
+		random = no
+	}
+	GAW_artillery_quantity_manufacturer = {
+		equipment_bonus = {
+			artillery_equipment = {
+				build_cost_ic = -0.15
+				soft_attack = -0.05
+				reliability = -0.05
+			}
+		}
+		random = no
+	}
+	GAW_artillery_quality_manufacturer = {
+		equipment_bonus = {
+			artillery_equipment = {
+				build_cost_ic = 0.15
+				soft_attack = 0.15
+				reliability = 0.05
+			}
+		}
+		random = no
+	}
+	GAW_mechanized_manufacturer = {
+		equipment_bonus = {
+			mechanized_equipment = {
+				build_cost_ic = -0.05
+				maximum_speed = 0.10
+			}
+		}
+		random = no
+	}
+}

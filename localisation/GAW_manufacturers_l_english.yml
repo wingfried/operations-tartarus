@@ -1,0 +1,14 @@
+﻿l_english:
+
+ GAW_light_tank_fast_manufacturer:0 "Light Tank Designer\n(Mobility)"
+ GAW_medium_modern_tank_balanced_manufacturer:0 "Medium Tank Designer\n(Balance)"
+ GAW_heavy_super_heavy_tank_strong_manufacturer:0 "Heavy Tank Designer\n(Strength)"
+ GAW_heavy_super_heavy_tank_mobile_manufacturer:0 "Heavy Tank Designer\n(Mobility)"
+ GAW_artillery_quantity_manufacturer:0 "Artillery Designer\n(Quantity)"
+ GAW_artillery_quality_manufacturer:0 "Artillery Designer\n(Quality)"
+ GAW_mechanized_manufacturer:0 "Mechanized Equipment Designer"
+
+ cat_light_armor_research:0 "Light Tank Research Speed"
+ cat_medium_armor_research:0 "Medium & Modern Tank Research Speed"
+ cat_heavy_armor_research:0 "Heavy & Super Heavy Tank Research Speed"
+ cat_mechanized_equipment_research:0 "Mechanization Research Speed"

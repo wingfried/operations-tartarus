@@ -138,6 +138,74 @@ ideas = {
 			}
 		}
 	}
+	tank_manufacturer = {
+		designer = yes
+		SRS_light_tank_manufacturer = {
+
+			picture = generic_tank_manufacturer_1
+
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				cat_light_armor = 0.1
+			}
+
+			traits = { GAW_light_tank_fast_manufacturer }
+
+		}
+		SRS_medium_modern_tank_manufacturer = {
+
+			picture = generic_tank_manufacturer_2
+
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				cat_medium_armor = 0.1
+			}
+
+			traits = { GAW_medium_modern_tank_balanced_manufacturer }
+
+		}
+		SRS_heavy_super_heavy_tank_manufacturer = {
+
+			picture = generic_tank_manufacturer_3
+
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				cat_heavy_armor = 0.1
+			}
+
+			traits = { GAW_heavy_super_heavy_tank_strong_manufacturer }
+
+		}
+
+		SRS_heavy_super_heavy_tank_manufacturer_2 = {
+
+			picture = generic_motorized_equipment_manufacturer_2
+
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				cat_heavy_armor = 0.1
+			}
+
+			traits = { GAW_heavy_super_heavy_tank_mobile_manufacturer }
+
+		}
+	}
 	materiel_manufacturer = {
 		designer = yes
 		
@@ -157,11 +225,38 @@ ideas = {
 				infantry_weapons = 0.1
 				magical_tech = 0.05
 			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
 			
 			traits = { infantry_equipment_manufacturer }
+
+		}
+		SRS_infantry_weapons_manufacturer = {
+			picture = generic_infantry_equipment_manufacturer_2
 			
-			modifier = {
+			allowed = {
+				tag = SRS
 			}
+			available = {
+
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.05
+					soft_attack = 0.05
+					defense = 0.1
+				}
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+
 		}
 		SRS_skynavian_automobile_cooperative = {
 			picture = schneider
@@ -177,11 +272,66 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.1
 			}
+
+			equipment_bonus = {
+				motorized_equipment = {
+					defense = 0.1
+					reliability = 0.05
+				}
+			}
 			
 			traits = { motorized_equipment_manufacturer }
+
+		}
+		SRS_mechanized_manufacturer = {
+			picture = generic_motorized_equipment_manufacturer_3
 			
-			modifier = {
+			allowed = {
+				tag = SRS
 			}
+			available = {
+
+			}
+			
+			research_bonus = {
+				cat_mechanized_equipment = 0.1
+			}
+			
+			traits = { GAW_mechanized_manufacturer }
+
+		}
+		SRS_mass_artillery_manufacturer = {
+			picture = generic_artillery_manufacturer_1
+			
+			allowed = {
+				tag = SRS
+			}
+			available = {
+				
+			}
+			
+			research_bonus = {
+				artillery = 0.1
+			}
+			
+			traits = { GAW_artillery_quantity_manufacturer }
+		}
+		SRS_elite_artillery_manufacturer = {
+			picture = generic_artillery_manufacturer_2
+			
+			allowed = {
+				tag = SRS
+			}
+			available = {
+				
+			}
+			
+			research_bonus = {
+				artillery = 0.1
+			}
+			
+			traits = { GAW_artillery_quality_manufacturer }
+
 		}
 	}
 	army_chief = {
@@ -371,6 +521,23 @@ ideas = {
 				}
 			}
 		}
+
+		SRS_convoy_escort_company = {
+
+			picture = generic_naval_manufacturer_2
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+
+			traits = { convoy_escort_naval_manufacturer }
+
+		}
+
 	}
 	high_command = {
 		SRS_john_carlini = {
@@ -467,6 +634,36 @@ ideas = {
 			}
 
 			traits = { light_aircraft_manufacturer }
+		}
+
+		SRS_medium_aircraft_manufacturer = {
+
+			picture = generic_air_manufacturer_3
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
+
+			traits = { medium_aircraft_manufacturer }
+		}
+
+		SRS_heavy_aircraft_manufacturer = {
+
+			picture = generic_air_manufacturer_2
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
+
+			traits = { heavy_aircraft_manufacturer }
 		}
 	}
 	
