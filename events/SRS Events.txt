@@ -3570,7 +3570,7 @@ country_event = {
 	option = {
 	    name = srs_sickoflavour.17.a
 		diplomatic_relation = {
-			country = FAT
+			country = NTR
 			relation = non_aggression_pact
 			active = yes
 		}
