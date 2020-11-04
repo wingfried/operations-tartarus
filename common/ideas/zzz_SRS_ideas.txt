@@ -3157,4 +3157,15 @@ ideas = {
 			}
 		}
 	}
+	SRS_reforged_enthusiasm
+	    #picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		modifier = {
+			stability_weekly = 0.004
+		       }
+	        }
+	}  
 }
