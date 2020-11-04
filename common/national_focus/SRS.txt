@@ -666,6 +666,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+		     add_timed_idea = { idea = SRS_reforged_enthusiasm days = 50 }
+		}
 	}
 	
 	focus = {
@@ -678,6 +682,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		
+		completion_reward = {
+		    add_popularity = {
+		        ideology = communism
+			popularity = -0.3
+                }
+                    add_stability = -0.1			
+	        }
 	}
 	
 	focus = {
@@ -728,24 +740,14 @@ focus_tree = {
 		}	
 		
 		select_effect = {
-		    hidden_effect = {
 			country_event = {
 				id = srs_sickoflavour.16
 				days = 4
 			}
 		}
-	}
-	       	select_effect = {
-		    hidden_effect = {
-			country_event = {
-				id = srs_sickoflavour.17
-				days = 32
-			}
-		}
-	}
-		
+	        
 		completion_reward = {
-		    
+		    country_event = srs_sickoflavour.17
 		}
 	}
 	
@@ -935,8 +937,7 @@ focus_tree = {
 			factor = 12
 		}
 		
-		completion_reward = {
-			bypass = {
+		bypass = {
 		    MNC = {
 			    exists = no
 			}
@@ -957,7 +958,6 @@ focus_tree = {
 					}
 				}
 			}
-		}
 		}
 	}
 	
