@@ -488,6 +488,7 @@ SRS_shits_fucked_radical_2:0 "Radical Backlash - Reconsiliation Begun"
 SRS_shits_fucked_radical_3:0 "Radical Backlash - Significant Progress"
 SRS_speak_kraut_language:0 "Military Multilingualism"
 SRS_planning:0 "Warplans"
+SRS_reforged_enthusiasm:0 "Reforged Enthusiasm"
 
 #### ARMY TREE IDEAS ####
 SRS_UITRAF_1:0 "Soldier Dissidence - Widespread"
@@ -1698,4 +1699,6 @@ Socialist_International:0 "Socialist International"
 #ostfloy_nature_reserve:0 "The Ostfloy Nature Reserve"# Different duplicate from Eaw
 #skynavia_trolleybus_network:0 "The New Skynavia Trolleybus Network"# Different duplicate from Eaw
 #Socialist_International:0 "Socialist International"# Identical duplicate from Eaw
+
+#### LAW ###
 Skynavian_Redguard:0 "Skynavian Redguards"
