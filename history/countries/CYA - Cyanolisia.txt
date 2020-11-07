@@ -69,6 +69,7 @@ create_country_leader = {
 	picture = "redbirb.tga"
 	expire = "1965.1.1"
 	ideology = despotism
+	female = yes
 	traits = {
 		protector_cyan
 	}
@@ -80,6 +81,7 @@ create_country_leader = {
 	picture = "redbirb.tga"
 	expire = "1965.1.1"
 	ideology = nazism
+	female = yes
 	traits = {
 		protector_cyan
 	}
@@ -91,6 +93,7 @@ create_country_leader = {
 	picture = "redbirb.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
+	female = yes
 	traits = {
 		protector_cyan
 	}
@@ -116,6 +119,7 @@ create_field_marshal = {
 	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 3
+	female = yes
 }
 
 create_corps_commander = {

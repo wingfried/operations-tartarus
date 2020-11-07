@@ -117,9 +117,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "The Hellquill People's Council"
+	name = "Volkskomitee der Nationalen Befreiung"
 	desc = ""
-	picture = "Governor.tga"
+	picture = "gfx/leaders/CYA/peoplescouncil.tga"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -139,6 +139,7 @@ create_field_marshal = {
 	logistics_skill = 3
 	id = 991286
 }
+
 create_field_marshal = {
 	name = "Siegfried Trappenfeld"
 	picture = "Hamster.tga"
@@ -153,31 +154,47 @@ create_field_marshal = {
 }
 
 create_corps_commander = {
-	name = "Demetrius Kamphaus"
-	picture = "Demetrius_Kampfhaus.tga"
-	traits = { griffon_race_trait trait_engineer }
+	name = "Urlach ap Cyrod"
+	desc = general_siegfried_2_0_desc
+	picture = "Urlach_ap_Cyrod.tga"
+	traits = { griffon_race_trait skilled_staffer infantry_leader }
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 2
-	id = 696970
+	id = 325235
+}
+
+create_corps_commander = {
+	name = "Demetrius Kamphaus"
+	desc = fat_junta_boi_general_desc
+	picture = "Demetrius_Kampfhaus.tga"
+	traits = { griffon_race_trait trait_engineer fortress_buster hill_fighter }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+	id = 23219
 }
 
 create_corps_commander = {
 	name = "Carl von Soldau"
+	desc = general_soldau_desc
 	picture = "Carl_Soldau.tga"
-	traits = { griffon_race_trait bearer_of_artillery adaptable }
+	traits = { griffon_race_trait artillery_officer adaptable }
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 2
-	id = 696971
+	id = 23220
 }
 
 create_corps_commander = {
 	name = "Wilhelm Stackelberg"
+	desc = general_stackelberg_desc
 	picture = "Wilhelm_Stackelburg.tga"
 	traits = { griffon_race_trait fortress_buster }
 	skill = 2
@@ -185,7 +202,33 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 2
-	id = 696972
+	id = 23216
+}
+
+create_corps_commander = {
+	name = "Steeltalon The Butcher"
+	desc = murder_bird_boi_desc
+	picture = "steeltalon.tga"
+	traits = { griffon_race_trait imbecile }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+	id = 23225
+}
+
+create_corps_commander = {
+	name = "Trudy Oettinger"
+	desc = good_knight_girl_desc
+	portrait_path = "gfx/leaders/dogs/portrait_dog_generic_8.dds"
+	traits = { diamond_dog_race_trait }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+	id = 23224
 }
 
 set_rule = {
