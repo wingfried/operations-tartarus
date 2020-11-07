@@ -761,6 +761,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		completion_reward = {
+                        add_opinion_modifier = { target = NTR modifier = huge_increase }
+                }
 	}
 	
 	focus = {
