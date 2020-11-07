@@ -3306,6 +3306,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		bypass = {
+                        has_completed_focus = SRS_revoke_the_privilegia
+                }
+
 	}
 	
 	focus = {
