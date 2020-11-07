@@ -688,7 +688,7 @@ focus_tree = {
 		        ideology = communism
 			popularity = -0.3
                 }
-                    add_stability = -0.1			
+                    add_stability = -0.05			
 	        }
 	}
 	
