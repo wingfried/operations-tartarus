@@ -3164,7 +3164,7 @@ ideas = {
 			always = yes
 		}
 		modifier = {
-			stability_weekly = 0.004
+			stability_weekly = 0.006
 		       }
 	        }
 	}  
