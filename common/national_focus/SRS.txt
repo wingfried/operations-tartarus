@@ -996,39 +996,64 @@ focus_tree = {
             factor = 12
         }
         completion_reward = {
+            if = {
+			limit = {
+			    has_tech = tech_knights
+			}
+			}
+		    else = {
+			    set_technology = {
+				tech_knights = 1
+			    }
+		    }
+            
             custom_effect_tooltip = SRS_knights_tooltip
             hidden_effect = {
                 division_template = {
-                    name = "Republican Knights"
+                    name = "Republican Knightly Guards"
                     priority = 2
-                    division_names_group = SRS_REKN_01
+                    
                     regiments = {
                         knights = { x = 0 y = 0 }
                         knights = { x = 0 y = 1 }
                         knights = { x = 0 y = 2 }
-                        knights = { x = 1 y = 0 }
-                        knights = { x = 1 y = 1 }
-                        knights = { x = 1 y = 2 }
+                        knights = { x = 0 y = 3 }
+                        knights = { x = 0 y = 4 }
+                        }
+	                
+                    support = {
+		        artillery = { x = 0 y = 0 }
+                        engineer = { x = 0 y = 1 }
                     }
                 }
 
-            522 = {
-            create_unit = {
-                            division = "division_name = { is_name_ordered = yes name_order = 13 } division_template = "Republican Knights" start_experience_factor = 0.7 start_equipment_factor = 0.9"
-                            owner = ROOT
-                        }
-            create_unit = {
-                            division = "division_name = { is_name_ordered = yes name_order = 13 } division_template = "Republican Knights" start_experience_factor = 0.7 start_equipment_factor = 0.9"
-                            owner = ROOT
-                        }
-            create_unit = {
-                            division = "division_name = { is_name_ordered = yes name_order = 13 } division_template = "Republican Knights" start_experience_factor = 0.7 start_equipment_factor = 0.9"
-                            owner = ROOT
-                        }
+            	random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 522 }
+					create_unit = {
+						division = "name = \"The Free Knights of Skyrim\" division_template = \"Republican Knightly Guards\" start_experience_factor = 1"
+						owner = SRS
 					}
 				}
-			}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 522 }
+					create_unit = {
+						division = "name = \"The Order of the Pale Sword\" division_template = \"Republican Knightly Guards\" start_experience_factor = 1" 
+						owner = SRS
+					}
+				}
+                random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 522 }
+					create_unit = {
+						division = "name = \"The Order of the Pale Sword\" division_template = \"Republican Knightly Guards\" start_experience_factor = 1" 
+						owner = SRS
+					}
+				}
+                        }
 		}
+	}
 
 	focus = {
 		id = SRS_warplans
