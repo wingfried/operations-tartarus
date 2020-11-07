@@ -3878,5 +3878,13 @@ id = srs_sickocivwar.986
                     expire = "1965.1.1"
                     ideology = socialism
                 }
+		every_state = {
+			limit = {
+				OR = {
+				    is_core_of = FAT
+				}
+			}
+			add_core_of = ROOT
+		}	
 	}
 }
