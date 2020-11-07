@@ -3157,7 +3157,7 @@ ideas = {
 			}
 		}
 	}
-	SRS_reforged_enthusiasm
+	SRS_reforge_enthus
 	        #picture = 
 		removal_cost = -1
 		available = {
