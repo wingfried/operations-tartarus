@@ -1,5 +1,71 @@
 on_actions = {
     on_startup = {
+    	effect = {
+    		CYA = {
+    			create_country_leader = {
+					name = "Countess Taillow Sumpfkiel"
+					desc = "thatcher_birb_desc"
+					picture = "redbirb.tga"
+					expire = "1965.1.1"
+					ideology = despotism
+					female = yes
+					traits = {
+						protector_cyan
+					}
+				}
+
+				create_country_leader = {
+					name = "Countess Taillow Sumpfkiel"
+					desc = "thatcher_birb_desc"
+					picture = "redbirb.tga"
+					expire = "1965.1.1"
+					ideology = nazism
+					female = yes
+					traits = {
+						protector_cyan
+					}
+				}
+
+				create_country_leader = {
+					name = "Countess Taillow Sumpfkiel"
+					desc = "thatcher_birb_desc"
+					picture = "redbirb.tga"
+					expire = "1965.1.1"
+					ideology = conservatism
+					female = yes
+					traits = {
+						protector_cyan
+					}
+				}
+
+				create_field_marshal = {
+					name = "Countess Taillow Sumpfkiel"
+					desc = "thatcher_birb_desc"
+					picture = "redbirb.tga"
+					traits = { griffon_race_trait defensive_doctrine trait_countess inflexible_strategist }
+					skill = 3
+					attack_skill = 2
+					defense_skill = 4
+					planning_skill = 2
+					logistics_skill = 3
+					female = yes
+				}
+    		}
+			CHN = {
+				create_field_marshal = {
+					name = "Queen Chrysalis"
+					desc = POLITICS_CHRYSALIS_DESC
+					picture = "Chrysalis.tga"
+					traits = { changeling_race_trait trickster brilliant_strategist harsh_leader }
+					skill = 4
+					#id = 601
+					attack_skill = 4
+					defense_skill = 3
+					planning_skill = 3
+					logistics_skill = 2
+				}
+			}
+		}
 	}
     on_state_control_changed = { 
 	    effect = {
