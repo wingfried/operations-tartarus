@@ -2369,7 +2369,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_stability = -0.075
+			add_stability = -0.05
 		}
 	}
 	
