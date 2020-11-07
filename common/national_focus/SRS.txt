@@ -668,7 +668,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		     add_timed_idea = { idea = SRS_reforged_enthusiasm days = 50 }
+		     add_timed_idea = { idea = SRS_reforge_enthus days = 50 }
 		}
 	}
 	
@@ -5407,22 +5407,6 @@ focus_tree = {
 					prioritize = { 522 }
 					create_unit = {
 						division = "name = \"2nd Skynavian Patrol Division\" division_template = \"Skynavian Patrol Division\" start_experience_factor = 0.6" 
-						owner = SRS
-					}
-				}
-				random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 522 }
-					create_unit = {
-						division = "name = \"3rd Skynavian Patrol Division\" division_template = \"Skynavian Patrol Division\" start_experience_factor = 0.6" 
-						owner = SRS
-					}
-				}
-				random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 522 }
-					create_unit = {
-						division = "name = \"4th Skynavian Patrol Division\" division_template = \"Skynavian Patrol Division\" start_experience_factor = 0.6" 
 						owner = SRS
 					}
 				}
