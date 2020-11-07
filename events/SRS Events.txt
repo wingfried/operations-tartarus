@@ -3687,7 +3687,7 @@ country_event = { #Griffenheim Commie
 	option = {
 	    name = srs_sickoflavour.24.a
 	    hidden_effect = {
-		    complete_national_focus = SRS_victory_is_ours_focus
+		    complete_national_focus = SRS_victory_is_ours
 		}
 	}
 }
@@ -3712,7 +3712,7 @@ country_event = { #Griffenheim Harmony
 	option = {
 	    name = srs_sickoflavour.25.a
 	    hidden_effect = {
-		    complete_national_focus = SRS_victory_is_ours_focus
+		    complete_national_focus = SRS_victory_is_ours
 		}
 	}
 }
