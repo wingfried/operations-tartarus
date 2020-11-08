@@ -2591,9 +2591,13 @@ ideas = {
 			
 		equipment_bonus = {
 			infantry_equipment = {
-				build_cost_ic = -0.1
+				build_cost_ic = -0.05
 				instant = yes
 			}
+		}
+
+		modifier = { 
+			war_support_factor = 0.05
 		}
 	}
 
@@ -2605,14 +2609,16 @@ ideas = {
 		}
 		
 		equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
+			infantry_equipment = {
+				build_cost_ic = -0.1
+				defense = 0.1
+				instant = yes
 			}
+		}
 			
 		modifier = { 
 			war_support_factor = 0.1
+			army_infantry_defence_factor = 0.05
 		}
 	}
 		
@@ -2623,9 +2629,10 @@ ideas = {
 			always = yes
 		}
 			
-		modifier = { 
-			conscription_factor = 0.05
+		modifier = {
+			weekly_manpower = 300
 			stability_factor = 0.1
+			MONTHLY_POPULATION = 0.10
 		}
 	}
 		
@@ -2636,8 +2643,9 @@ ideas = {
 			always = yes
 		}
 			
-		modifier = { 
-			stability_factor = 0.1
+		modifier = {
+			weekly_manpower = 150
+			stability_factor = 0.05
 		}
 	}
 
@@ -3015,7 +3023,7 @@ ideas = {
 		
 		equipment_bonus = {
 			motorized_equipment = {
-				build_cost_ic = -0.15
+				build_cost_ic = -0.10
 				instant = yes
 			}
 		}
@@ -3157,15 +3165,122 @@ ideas = {
 			}
 		}
 	}
+
 	SRS_reforge_enthus = {
-	        #picture = 
+	    #picture = 
 		removal_cost = -1
 		available = {
 			always = yes
 		}
 		modifier = {
 			stability_weekly = 0.006
-		       }
-	        }
-	}  
+        }
+	}
+
+	SRS_better_electronics_idea = {
+	    #picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		equipment_bonus = {
+			logistics_company = {
+				supply_consumption_factor = -0.06
+				fuel_consumption_factor = -0.03
+				instant = yes
+			}
+			signal_company = {
+				initiative = 0.08
+				instant = yes
+			}
+		}
+	}
+
+	SRS_better_industrial_equipment_idea = {
+	    #picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		equipment_bonus = {
+			engineer = {
+				entrenchment = 1.5
+				instant = yes
+			}
+			maintenance_company = {
+				reliability = 0.03
+				equipment_capture_factor = 0.03
+
+				instant = yes
+			}
+		}
+	}
+
+	SRS_lessons_of_the_civil_war_idea = {
+	    #picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		modifier = {
+			planning_speed = 0.05
+			mobilization_speed = 0.10
+		}
+	}
+
+	SRS_on_to_griffenheim_idea = {
+	    #picture = 
+		removal_cost = -1
+		available = {
+			GRI = { exists = yes }
+		}
+		targeted_modifier = {
+			tag = GRI
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+
+	SRS_victory_is_ours_idea = {
+		#picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		modifier = {
+			non_core_manpower = 0.04
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
+		}
+	}
+
+	SRS_onwards_idea = {
+		#picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		modifier = {
+			conscription = 0.02
+			army_attack_factor = 0.05
+			army_defence_factor = 0.05
+			army_morale_factor = 0.05
+			war_support = 0.15
+		}
+	}
+
+	SRS_consolidated_gunmakers_union_idea = {
+		#picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.04
+				reliability = 0.02
+				instant = yes
+			}
+		}
+	}
 }
