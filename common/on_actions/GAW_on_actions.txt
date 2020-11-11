@@ -67,7 +67,7 @@ on_actions = {
 			}
 		}
 	}
-    on_state_control_changed = { 
+    on_state_control_changed = {
 	    effect = {
 	        if = {
 				limit = { #Idol of Boreas shifting spirit
@@ -95,6 +95,16 @@ on_actions = {
 						    clr_country_flag = BOI_has_true_idol
 						}
 					}
+				}
+			}
+		}
+	}
+	on_peaceconference_ended = {
+		effect = {
+			SRS = {
+				IF = {
+					limit = { NOT = { has_idea = SRS_skynavian_redguard } }
+					add_ideas = SRS_skynavian_redguard
 				}
 			}
 		}

@@ -232,4 +232,32 @@ spriteTypes = {
 		name = "GFX_idea_SRC_concription_law"
 		texturefile = "gfx/interface/ideas/SRC_concription_law.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_SRC_concription_law_2"
+		texturefile = "gfx/interface/ideas/SRC_concription_law_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRC_concription_law_3"
+		texturefile = "gfx/interface/ideas/SRC_concription_law_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_bna"
+		texturefile = "gfx/interface/ideas/SRS_bna.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_tankstars"
+		texturefile = "gfx/interface/ideas/SRS_tankstars.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_retsuko_armory"
+		texturefile = "gfx/interface/ideas/SRS_retsuko_armory.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_panzer_utopia"
+		texturefile = "gfx/interface/ideas/SRS_panzer_utopia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_fighting_fox_factory"
+		texturefile = "gfx/interface/ideas/SRS_fighting_fox_factory.dds"
+	}
 }

@@ -13,9 +13,9 @@ focus_tree = {
 	continuous_focus_position = { x = -2000 y = 100 }
 	default = no
 	
-###########
-#CIVIL WAR#
-###########
+	###########
+	#CIVIL WAR#
+	###########
 
 	focus = {
 		id = SRS_finishing_touches
@@ -281,9 +281,15 @@ focus_tree = {
 		id = SRS_ntrwar_commie
 		icon = GFX_goal_revolution_pony
 		prerequisite = { focus = SRS_communist_asper }
+		bypass = {
+			OR = {
+				has_war_with = NTR
+				NOT = { country_exists = NTR }
+			}
+		}
 		x = -2
 		y = 7
-		cost = 10
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
@@ -321,12 +327,12 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = -50
 			every_state = {
-			limit = { 
-				OR = {
-					is_core_of = NTR
+				limit = { 
+					OR = {
+						is_core_of = NTR
+					}
 				}
-			}
-			add_core_of = ROOT
+				add_core_of = ROOT
 			}
 		}
     }
@@ -336,6 +342,12 @@ focus_tree = {
 		icon = GFX_focus_indy_swing_the_sword
 		prerequisite = { focus = SRS_far_north_republic }
 		prerequisite = { focus = SRS_defend_the_revolution }
+		bypass = {
+			OR = {
+				has_war_with = VED
+				NOT = { country_exists = VED }
+			}
+		}
 		x = -2
 		y = 9
 		cost = 7.2
@@ -356,6 +368,12 @@ focus_tree = {
 		icon = GFX_goal_FAT_the_three_musketeers
 		prerequisite = { focus = SRS_far_north_republic }
 		prerequisite = { focus = SRS_defend_the_revolution }
+		bypass = {
+			OR = {
+				has_war_with = FAT
+				NOT = { country_exists = FAT }
+			}
+		}
 		x = 0
 		y = 9
 		cost = 7.2
@@ -401,7 +419,7 @@ focus_tree = {
 			}
 		x = -1
 		y = 10
-		cost = 10
+		cost = 2.2
 		ai_will_do = {
 			factor = 12
 		}
@@ -491,14 +509,35 @@ focus_tree = {
 		prerequisite = { focus = SRS_conscription_reform }
 		x = -0
 		y = 12
-		cost = 5
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
 			decrease_illiteracy = yes
-			add_compliance = 20
+			IF = {
+				limit = {
+					OR = {
+						owns_state = 429
+						owns_state = 485
+						owns_state = 581
+					}
+				}
+			}
+			ELSE = {
+				custom_effect_tooltip = SRS_edu_reform_compliance_tp
+			}
+			every_controlled_state = {
+				limit = {
+					OR = {
+						is_core_of = FAT
+						is_core_of = VED
+						is_core_of = MNC
+					}
+				}
+				add_compliance = 20
+			}
 		}
 	}
 	
@@ -530,9 +569,15 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = MNC
+			IF = {
+				limit = {
+					NOT = { has_war_with = MNC }
+					country_exists = MNC
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = MNC
+				}
 			}
 			MNC = { add_to_ROOT_potential_cores = yes }
 		}
@@ -545,9 +590,15 @@ focus_tree = {
 		prerequisite = { focus = SRS_economic_reform }
 		prerequisite = { focus = SRS_education_reform }
 		prerequisite = { focus = SRS_commie_yeetbrantbeak }
+		bypass = {
+			OR = {
+				has_war_with = GRI
+				NOT = { country_exists = GRI }
+			}
+		}
 		x = -1
 		y = 13
-		cost = 7.2
+		cost = 4.4
 		ai_will_do = {
 			factor = 12
 		}
@@ -559,9 +610,9 @@ focus_tree = {
 		}
 	}
 	
-###########################
-#EARLY REPUBLICAN POLITICS#
-###########################
+	###########################
+	#EARLY REPUBLICAN POLITICS#
+	###########################
 	
 	focus = {
 		id = SRS_republican_alignment
@@ -795,6 +846,12 @@ focus_tree = {
 		icon = GFX_goal_gunpoint_diplomacy
 		prerequisite = { focus = SRS_unite_the_north }
 		mutually_exclusive = { focus = SRS_approach_the_tribes }
+		bypass = {
+			OR = {
+				has_war_with = NTR
+				NOT = { country_exists = NTR }
+			}
+		}
 		x = 16
 		y = 10
 		cost = 5
@@ -917,6 +974,12 @@ focus_tree = {
 		id = SRS_republican_yeetvedina
 		icon = GFX_focus_indy_swing_the_sword
 		prerequisite = { focus = SRS_unite_the_north }
+		bypass = {
+			OR = {
+				has_war_with = VED
+				NOT = { country_exists = VED }
+			}
+		}
 		x = 18
 		y = 10
 		cost = 7.2
@@ -1198,7 +1261,6 @@ focus_tree = {
         }
         completion_reward = {
             country_event = srs_sickocivwar.986
-
         }
     }
 
@@ -1220,14 +1282,22 @@ focus_tree = {
         }
         completion_reward = {
 			FAT = {
-			annex_country = { target = SRS }
+				annex_country = { target = SRS }
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = SRS
+					}
+				}
+				add_core_of = FAT
 			}
         }
     }
 	
-#################
-#COMMIE INDUSTRY#
-#################
+	#################
+	#COMMIE INDUSTRY#
+	#################
 
 	focus = {
 		id = SRS_industrialization_effort
@@ -1235,7 +1305,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_communist_asper }
 		x = -11
 		y = 7
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 12
 		}
@@ -1243,7 +1313,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
-				uses = 3
+				uses = 2
 				category = industry
 			}
 		}
@@ -1256,14 +1326,14 @@ focus_tree = {
 		mutually_exclusive = { focus = SRS_communalist_industrialization }
 		x = -14
 		y = 8
-		cost = 1
+		cost = 2.2
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
-			add_stability = -0.05
-			add_political_power = -30
+			add_timed_idea = { idea = SRS_our_shortcut_idea days = 730 }
+			add_timed_idea = { idea = SRS_to_victory_idea days = 365 }
 		}
 	}
 
@@ -1274,13 +1344,13 @@ focus_tree = {
 		mutually_exclusive = { focus = SRS_internationalist_industrialization }
 		x = -8
 		y = 8
-		cost = 1
+		cost = 4.4
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = SRS_slow_and_steady_idea
 		}
 	}
 	
@@ -1290,7 +1360,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_internationalist_industrialization }
 		x = -14
 		y = 9
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 12
 		}
@@ -1384,13 +1454,13 @@ focus_tree = {
 		prerequisite = { focus = SRS_industry_dinkau }
 		x = -14
 		y = 11
-		cost = 7.2
+		cost = 4.4
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
-			decrease_illiteracy = yes
+			add_timed_idea = { idea = SRS_urban_education_program_idea days = 365 }
 		}
 	}
 	
@@ -1400,12 +1470,13 @@ focus_tree = {
 		prerequisite = { focus = SRS_internationalist_industrialization }
 		x = -16
 		y = 9
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
+			swap_ideas = { remove_idea = SRS_to_victory_idea add_idea = SRS_to_victory_2_idea }
 			522 = {
 				add_building_construction = {
 					type = infrastructure
@@ -1450,7 +1521,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_interconnectedness }
 		x = -16
 		y = 11
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 12
 		}
@@ -1458,8 +1529,14 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 20
+				amount = 30
 				state = 561
+			}
+			522 = {
+				add_manpower = -20000
+			}
+			561 = {
+				add_manpower = 20000
 			}
 		}
 	}
@@ -1509,6 +1586,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			swap_ideas = { remove_idea = SRS_slow_and_steady_idea add_idea = SRS_slow_and_steady_2_idea }
 			522 = {
 				add_building_construction = {
 					type = infrastructure
@@ -1553,7 +1631,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_link_up_communes }
 		x = -9
 		y = 10
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 12
 		}
@@ -1576,7 +1654,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_link_up_communes }
 		x = -7
 		y = 10
-		cost = 5
+		cost = 4.4
 		ai_will_do = {
 			factor = 12
 		}
@@ -1622,6 +1700,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_ideas = SRS_consolidated_gunmakers_union_idea
 			522 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1638,7 +1717,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_ideas = SRS_consolidated_gunmakers_union_idea
 		}
 	}
 	
@@ -1699,7 +1777,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_further_industrialization }
 		x = -11
 		y = 14
-		cost = 7.2
+		cost = 8.6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1756,7 +1834,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SRS_civillian_industry_focus }
 		x = -12
 		y = 15
-		cost = 7.2
+		cost = 8.6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1794,7 +1872,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_war_support = 0.025
+			add_war_support = 0.05
+			add_stability = -0.05
 		}
 	}
 
@@ -1805,7 +1884,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SRS_military_industry_focus }
 		x = -10
 		y = 15
-		cost = 7.2
+		cost = 8.6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1843,7 +1922,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_stability = 0.025
+			add_stability = 0.05
+			add_war_support = -0.05
 		}
 	}
 	
@@ -1853,16 +1933,17 @@ focus_tree = {
 		prerequisite = { focus = SRS_civillian_industry_focus focus = SRS_military_industry_focus }
 		x = -11
 		y = 16
-		cost = 7.2
+		cost = 8.6
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
 			522 = {
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -1967,9 +2048,9 @@ focus_tree = {
 		}
 	}
 	
-#####################
-#REPUBLICAN INDUSTRY#
-#####################
+	#####################
+	#REPUBLICAN INDUSTRY#
+	#####################
 	
 	focus = {
 		id = SRS_market_socialism
@@ -2624,6 +2705,7 @@ focus_tree = {
 				remove_idea = closed_economy
 				add_idea = export_focus
 			}
+			add_timed_idea = { idea = SRS_ready_for_business_idea days = 365 }
 		}
 	}
 	
@@ -2759,14 +2841,20 @@ focus_tree = {
 	}
 	
 		
-############################
-#UNVERSAL HERZLAND CONQUEST#
-############################
+	############################
+	#UNVERSAL HERZLAND CONQUEST#
+	############################
 	
 	focus = {
 		id = SRS_great_patriotic_war
 		icon = GFX_goal_LEC_monkey
 		prerequisite = { focus = SRS_on_to_griffenheim focus = SRS_unite_with_fatmerskai_playeronly focus = SRS_strike_the_revisionists }
+		bypass = {
+			OR = {
+				has_war_with = GRI
+				NOT = { country_exists = GRI }
+			}
+		}
 		x = 5
 		y = 14
 		cost = 7.2
@@ -2965,9 +3053,9 @@ focus_tree = {
 		}
 	}
 	
-####################
-#UNIVERSAL LATEGAME#
-####################
+	####################
+	#UNIVERSAL LATEGAME#
+	####################
 
 	focus = {
 		id = SRS_herzland_conquered
@@ -3329,9 +3417,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		bypass = {
-            has_completed_focus = SRS_revoke_the_privilegia
-        }
         completion_reward = {
         	add_ideas = SRS_onwards_idea
         	add_war_support = 0.10
@@ -4014,9 +4099,9 @@ focus_tree = {
 		}
 	}
 	
-#########################
-#UNIVERSAL MILITARY TREE#
-#########################
+	#########################
+	#UNIVERSAL MILITARY TREE#
+	#########################
 
 	focus = {
 		id = SRS_lessons_of_the_civil_war
@@ -4026,7 +4111,7 @@ focus_tree = {
 		}
 		x = 28
 		y = 19
-		cost = 1
+		cost = 2.9
 		ai_will_do = {
 			factor = 12
 		}
@@ -4049,8 +4134,8 @@ focus_tree = {
 		
 		completion_reward = {
             add_timed_idea = { idea = SRS_fortification_effort days = 365 }
-			}
 		}
+	}
 	
 	focus = {
 		id = SRS_cleanse_the_army
@@ -4058,7 +4143,7 @@ focus_tree = {
 			prerequisite = { focus = SRS_lessons_of_the_civil_war }
 		x = 28
 		y = 20
-		cost = 1
+		cost = 2.2
 		ai_will_do = {
 			factor = 12
 		}
@@ -4078,7 +4163,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_cleanse_the_army }
 		x = 27
 		y = 21
-		cost = 1
+		cost = 1.5
 		ai_will_do = {
 			factor = 12
 		}
@@ -4119,7 +4204,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_cleanse_the_army }
 		x = 29
 		y = 21
-		cost = 1
+		cost = 1.5
 		ai_will_do = {
 			factor = 12
 		}
@@ -4180,7 +4265,7 @@ focus_tree = {
 		relative_position_id = SRS_rebuild_thechain_of_command
 		x = 0
 		y = 1
-		cost = 2.1
+		cost = 2.2
 		ai_will_do = {
 			factor = 12
 		}
@@ -4220,7 +4305,7 @@ focus_tree = {
 		relative_position_id = SRS_modern_warfare
 		x = 0
 		y = 1
-		cost = 8.6
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
@@ -4228,7 +4313,7 @@ focus_tree = {
 		add_ideas = SRS_modern_warfare_1
 			add_tech_bonus = {
                 bonus = 1
-                uses = 2
+                uses = 1
                 category = motorized_equipment
             }		
 		}			
@@ -4264,7 +4349,7 @@ focus_tree = {
 		relative_position_id = SRS_infantry_warfare
 		x = 0
 		y = 1
-		cost = 8.6
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
@@ -4272,7 +4357,7 @@ focus_tree = {
 		    add_ideas = SRS_infantry_warfare_1
 			add_tech_bonus = {
                 bonus = 1
-                uses = 2
+                uses = 1
                 category = infantry_weapons
             }
 		}		
@@ -4303,12 +4388,15 @@ focus_tree = {
 		relative_position_id = SRS_experimental_warfare
 		x = 0
 		y = 1
-		cost = 8.6
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
 		    add_ideas = SRS_experimental_warfare_2
+		    hidden_effect = {
+		    	add_ideas = SRS_experimental_warfare_cruch
+		    }
         }			
 	}
 	
@@ -4319,7 +4407,7 @@ focus_tree = {
 		relative_position_id = SRS_mobile_infantry
 		x = -1
 		y = 1
-		cost = 8.6
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
@@ -4348,7 +4436,7 @@ focus_tree = {
 		relative_position_id = SRS_develop_an_armor_corps
 		x = 0
 		y = 1
-		cost = 8.6
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
@@ -4356,7 +4444,7 @@ focus_tree = {
 		    custom_effect_tooltip = SRS_MW_cruch2
 			add_tech_bonus = {
                 bonus = 1
-                uses = 2
+                uses = 1
                 category = cat_light_armor
             }
 			hidden_effect = {
@@ -4368,6 +4456,7 @@ focus_tree = {
 			            remove_idea = SRS_modern_warfare_1
 				        add_idea = SRS_modern_warfare_3a
 			        }
+			    }
 		        else = {
 		            if = {
 			            limit = {
@@ -4377,14 +4466,13 @@ focus_tree = {
 			                remove_idea = SRS_modern_warfare_2a
 	                        add_idea = SRS_modern_warfare_2b
 			            }
+			        }
 		            else = {
 			            swap_ideas = {
 			                remove_idea = SRS_modern_warfare_4a
 	                        add_idea = SRS_modern_warfare_4b
 		                }
-                    }			
-		            }		
-	            }
+                    }				
 	            }
 	        }
 	    }
@@ -4397,12 +4485,17 @@ focus_tree = {
 		relative_position_id = SRS_mobile_infantry
 		x = 1
 		y = 1
-		cost = 8.6
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
 		    custom_effect_tooltip = SRS_MW_cruch1
+		    add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = artillery
+            }
 		    hidden_effect = {
 		        if = {
 		            limit = {
@@ -4412,19 +4505,14 @@ focus_tree = {
 			            remove_idea = SRS_modern_warfare_1
 				        add_idea = SRS_modern_warfare_2a
 			        }
+			    }
 		        else = {
 			        swap_ideas = {
 			            remove_idea = SRS_modern_warfare_3a
 	                    add_idea = SRS_modern_warfare_2b
 		 	        }
 		        }
-                }
 	        }
-		    add_tech_bonus = {
-                bonus = 1
-                uses = 2
-                category = artillery
-            }		
 		}
 	}
 	
@@ -4435,7 +4523,7 @@ focus_tree = {
 		relative_position_id = SRS_artillery_modernization
 		x = 0
 		y = 1
-		cost = 8.6
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
@@ -4443,11 +4531,11 @@ focus_tree = {
 		    custom_effect_tooltip = SRS_MW_cruch3
 			add_tech_bonus = {
                 bonus = 1
-                uses = 2
+                uses = 1
                 category = support_tech
             }
 			hidden_effect = {
-		        add_ideas = SRS_modern_warfare_cruch			
+		        add_ideas = SRS_modern_warfare_cruch
 		        if = {
 		            limit = {
 			            has_idea = SRS_modern_warfare_2a
@@ -4456,13 +4544,13 @@ focus_tree = {
 			            remove_idea = SRS_modern_warfare_2a
 				        add_idea = SRS_modern_warfare_4a
 			        }
+			    }
 		        else = {
 			        swap_ideas = {
 			            remove_idea = SRS_modern_warfare_2b
 	                    add_idea = SRS_modern_warfare_4b
 			        }
 		        }
-                }			
 		    }		
 	    }
 	}	
@@ -4476,7 +4564,7 @@ focus_tree = {
 		relative_position_id = SRS_Mechanization
 		x = 0
 		y = 1
-		cost = 10
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
@@ -4500,7 +4588,7 @@ focus_tree = {
 		relative_position_id = SRS_maintain_our_equipment
 		x = 0
 		y = 1
-		cost = 10
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
@@ -4523,12 +4611,12 @@ focus_tree = {
 		relative_position_id = SRS_standardized_infantry_equipment
 		x = 1
 		y = 1
-		cost = 8.6
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-            custom_effect_tooltip = SRS_IW_cruch1		
+            custom_effect_tooltip = SRS_IW_cruch1
 		    hidden_effect = {
 		        if = {
                     limit = {
@@ -4538,6 +4626,7 @@ focus_tree = {
 		                remove_idea = SRS_infantry_warfare_1
 			            add_idea = SRS_infantry_warfare_2a
 		            }
+		        }
 		        else = {
 		    	    if = {
 		    		    limit = {
@@ -4547,6 +4636,7 @@ focus_tree = {
 		                    remove_idea = SRS_infantry_warfare_3a
 			                add_idea = SRS_infantry_warfare_2b
 		                }
+		            }
                     else = {
                         swap_ideas = {
 		                    remove_idea = SRS_infantry_warfare_4a
@@ -4554,8 +4644,6 @@ focus_tree = {
 		                   
 						}
                     }
-                    }
-                }
                 }
 		    }  
 		}
@@ -4568,7 +4656,7 @@ focus_tree = {
 		relative_position_id = SRS_every_griffon_a_soldier
 		x = 0
 		y = 1
-		cost = 8.6
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
@@ -4583,6 +4671,7 @@ focus_tree = {
 	    	            remove_idea = SRS_infantry_warfare_2a
 	    		        add_idea = SRS_infantry_warfare_5a
 	    	        }
+	    	    }
 	    	    else = {
 	    	        if = {
 	    	    		limit = {
@@ -4592,14 +4681,13 @@ focus_tree = {
 	    	                remove_idea = SRS_infantry_warfare_2b
 	    		            add_idea = SRS_infantry_warfare_3c
 	    	            }
+	    	        }
                     else = {
                         swap_ideas = {
 		                     remove_idea = SRS_infantry_warfare_2c
 		    	            add_idea = SRS_infantry_warfare_4c
 		                }
                     }   
-                    }
-                }
                 }
 		    }	
         }		
@@ -4612,28 +4700,19 @@ focus_tree = {
 		relative_position_id = SRS_standardized_infantry_equipment
 		x = -1
 		y = 1
-		cost = 8.6
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
 		    custom_effect_tooltip = SRS_IW_cruch2
+		    add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = cat_anti_tank			
+            }
 			hidden_effect = {
-			    add_ideas = SRS_infantry_warfare_cruch
-			    add_tech_bonus = {
-                    bonus = 1
-                    uses = 2
-                    technology = antitank1
-		    		technology = antitank2
-	    			technology = antitank3
-	    			technology = antitank4
-	    			technology = antitank5
-	    			technology = antitank_a
-	    			technology = antitank_b
-	    			technology = antitank_c
-	    			technology = antitank_d
-	    			technology = antitank_e				
-                }
+				add_ideas = SRS_infantry_warfare_cruch
 		        if = {
                     limit = {
                         has_idea = SRS_infantry_warfare_1
@@ -4642,6 +4721,7 @@ focus_tree = {
 		                remove_idea = SRS_infantry_warfare_1
 		    	        add_idea = SRS_infantry_warfare_3a
 		            }
+		        }
 		        else = {
 		            if = {
 		        		limit = {
@@ -4651,14 +4731,13 @@ focus_tree = {
 		                    remove_idea = SRS_infantry_warfare_2a
 			                add_idea = SRS_infantry_warfare_2b
 		                }
+                    }
                     else = {
                         swap_ideas = {
 		                    remove_idea = SRS_infantry_warfare_5a
 			                add_idea = SRS_infantry_warfare_3c
 		                } 
                     }
-                    }
-                }
                 }			
 	        }
 		}
@@ -4671,24 +4750,18 @@ focus_tree = {
 		relative_position_id = SRS_tankbusters
 		x = 0
 		y = 1
-		cost = 8.6
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}	
 		completion_reward = {
 		    custom_effect_tooltip = SRS_IW_cruch3
+		    add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = hospital_tech			
+			}
 			hidden_effect = {
-	    		add_tech_bonus = {
-                    bonus = 1
-                    uses = 2
-                    technology = tech_field_hospital
-	    			technology = tech_field_hospital2
-	    			technology = tech_field_hospital3
-	    			technology = tech_field_hospital4
-	         		technology = tech_field_hospital_a
-	    			technology = tech_field_hospital_b
-		    		technology = tech_field_hospital_c				
-               }		
 		        if = {
                     limit = {
                         has_idea = SRS_infantry_warfare_3a
@@ -4697,6 +4770,7 @@ focus_tree = {
 		                remove_idea = SRS_infantry_warfare_3a
 		    	        add_idea = SRS_infantry_warfare_4a
 		            }
+		        }
 		        else = {
 		        	if = {
 		        		limit = {
@@ -4706,18 +4780,17 @@ focus_tree = {
 		                    remove_idea = SRS_infantry_warfare_2b
 		    	            add_idea = SRS_infantry_warfare_2c
 		                }
+		            }
                     else = {
                         swap_ideas = {
 		                    remove_idea = SRS_infantry_warfare_3c
 			                add_idea = SRS_infantry_warfare_4c
 		                }
                     }
-                    }
-                }
                 }
 	        }
 		}
-	}	
+	}
 
 	focus = {
 		id = SRS_relentless_assault
@@ -4727,7 +4800,7 @@ focus_tree = {
 		relative_position_id = SRS_field_medicine
 		x = 1
 		y = 1
-		cost = 10
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
@@ -4749,21 +4822,18 @@ focus_tree = {
 		relative_position_id = SRS_specialized_manufacruting
 		x = -1
 		y = 1
-		cost = 8.6
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
 			custom_effect_tooltip = SRS_EW_cruch1
+			add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = magical_tech		
+            }
 		    hidden_effect = {
-			    add_tech_bonus = {
-                    bonus = 1
-                    uses = 2
-                    technology = magical_weapons
-                    technology = magical_weapons1	
-                    technology = magical_weapons2	
-                    technology = magical_weapons3					
-                }
 		        if = {
                     limit = {
                         has_idea = SRS_experimental_warfare_2
@@ -4772,6 +4842,7 @@ focus_tree = {
 		                remove_idea = SRS_experimental_warfare_2
 			            add_idea = SRS_experimental_warfare_3a
 		            }
+		        }
 		        else = {
 		    	    if = {
 		    		    limit = {
@@ -4781,15 +4852,14 @@ focus_tree = {
 		                    remove_idea = SRS_experimental_warfare_4a
 			                add_idea = SRS_experimental_warfare_3c
 		                }
+		            }
                     else = {
                         swap_ideas = {
 		                    remove_idea = SRS_experimental_warfare_4c
 			                add_idea = SRS_experimental_warfare_3d
 		                } 
                     }
-                    }
-                }
-                }			
+                }	
 		    }
 	    }
 	}
@@ -4801,40 +4871,40 @@ focus_tree = {
 		relative_position_id = SRS_magical_guns
 		x = 0
 		y = 1
-		cost = 8.6
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
 	    completion_reward = {
 		    custom_effect_tooltip = SRS_EW_cruch4
-			    hidden_effect = {
-		            if = {
-                        limit = {
-                            has_idea = SRS_experimental_warfare_3a
-                        }    				
-		                swap_ideas = {
-		                    remove_idea = SRS_experimental_warfare_3a
-			                add_idea = SRS_experimental_warfare_5a
-		                }
-		            else = {
-		    	        if = {
-		    		        limit = {
-					            has_idea = SRS_experimental_warfare_3d
-		                    }
-		                    swap_ideas = {
-		                        remove_idea = SRS_experimental_warfare_3d
-			                    add_idea = SRS_experimental_warfare_5c
-		                    }
-                        else = {
-                            swap_ideas = {
-		                        remove_idea = SRS_experimental_warfare_3c
-			                    add_idea = SRS_experimental_warfare_4b
-		                    }
-                        }
-                        }
+		    hidden_effect = {
+	            if = {
+                    limit = {
+                        has_idea = SRS_experimental_warfare_3a
+                    }    				
+	                swap_ideas = {
+	                    remove_idea = SRS_experimental_warfare_3a
+		                add_idea = SRS_experimental_warfare_5a
+	                }
+	            }
+	            else = {
+	    	        if = {
+	    		        limit = {
+				            has_idea = SRS_experimental_warfare_3d
+	                    }
+	                    swap_ideas = {
+	                        remove_idea = SRS_experimental_warfare_3d
+		                    add_idea = SRS_experimental_warfare_5c
+	                    }
+	                }
+                    else = {
+                        swap_ideas = {
+	                        remove_idea = SRS_experimental_warfare_3c
+		                    add_idea = SRS_experimental_warfare_4b
+	                    }
                     }
-                    }
-		        }
+                }
+	        }
         }				
 	}
 	
@@ -4845,27 +4915,19 @@ focus_tree = {
 		relative_position_id = SRS_specialized_manufacruting
 		x = 1
 		y = 1
-		cost = 8.6
+		cost =7.2
 		ai_will_do = {
 			factor = 12
 		}
 	    completion_reward = {
 		    custom_effect_tooltip = SRS_EW_cruch2
+		    add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = rocketry	
+            }
 			hidden_effect = {
 			    add_Ideas = SRS_exp_warfare_cruch_warfare_cruch2
-			    add_tech_bonus = {
-                    bonus = 1
-                    uses = 2
-                    technology = rocket_artillery
-                    technology = rocket_artillery2	
-                    technology = rocket_artillery3
-                    technology = rocket_artillery4
-                    technology = rocket_artillery_a		
-                    technology = rocket_artillery_b	
-                    technology = rocket_artillery_c	
-                    technology = rocket_artillery_d	
-                    technology = rocket_artillery_e					
-                }
 		        if = {
                     limit = {
                         has_idea = SRS_experimental_warfare_2
@@ -4874,6 +4936,7 @@ focus_tree = {
 		                remove_idea = SRS_experimental_warfare_2
 			            add_idea = SRS_experimental_warfare_4a
 		            }
+		        }
 		        else = {
 		    	    if = {
 		    	    	limit = {
@@ -4883,14 +4946,13 @@ focus_tree = {
 		                    remove_idea = SRS_experimental_warfare_3a
 			                add_idea = SRS_experimental_warfare_3c
 		                }
+		            }
                     else = {
                         swap_ideas = {
 		                    remove_idea = SRS_experimental_warfare_5a
 			                add_idea = SRS_experimental_warfare_4b
 		                }
                     }
-                    }
-                }
                 }			
 		    }
 	    }
@@ -4903,25 +4965,19 @@ focus_tree = {
 		relative_position_id = SRS_a_new_type_of_artillery
 		x = 0
 		y = 1
-		cost = 8.6
+		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
 	    completion_reward = {
 		    custom_effect_tooltip = SRS_EW_cruch5
+		    add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = signal_company_tech
+            }
 			hidden_effect = {
-		        add_ideas = SRS_military_EWinitiative_cruch			
-			    add_tech_bonus = {
-                    bonus = 1
-                    uses = 2
-                    technology = tech_signal_company
-                    technology = tech_signal_company2
-                    technology = tech_signal_company3
-                    technology = tech_signal_company4
-                    technology = tech_signal_company_a	
-                    technology = tech_signal_company_b		
-                    technology = tech_signal_company_c					
-                }
+		        add_ideas = SRS_military_EWinitiative_cruch
 		        if = {
                     limit = {
                         has_idea = SRS_experimental_warfare_4a
@@ -4930,6 +4986,7 @@ focus_tree = {
 		                remove_idea = SRS_experimental_warfare_4a
 			            add_idea = SRS_experimental_warfare_4c
 		            }
+		        }
 		        else = {
 		    	    if = {
 		    		    limit = {
@@ -4939,16 +4996,15 @@ focus_tree = {
 		                    remove_idea = SRS_experimental_warfare_3c
 			                add_idea = SRS_experimental_warfare_3d
 		                }
+		            }
                     else = {
                         swap_ideas = {
 		                    remove_idea = SRS_experimental_warfare_4b
 			                add_idea = SRS_experimental_warfare_5c
 		                }
                     }
-                    }
                 }
-                }			
-		    }		
+		    }
 	    }
     }
 	
@@ -5010,7 +5066,7 @@ focus_tree = {
 			}
 		    add_resource = {
                type = crystals
-               amount = 10
+               amount = 25
                state = 585
             }	
 			}
@@ -5023,7 +5079,7 @@ focus_tree = {
 		relative_position_id = SRS_harness_the_power_of_crystals
 		x = 0
 		y = 1
-		cost = 10
+		cost = 8.6
 		ai_will_do = {
 			factor = 12
 		}
@@ -5043,7 +5099,7 @@ focus_tree = {
 		relative_position_id = SRS_outmanouver_them
 		x = -1
 		y = 1
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -5052,7 +5108,7 @@ focus_tree = {
 		    hidden_effect = {
 			    add_tech_bonus = {
 				    bonus = 1
-				    uses = 3
+				    uses = 2
 				    category = rocketry
 			    }
 		    }
@@ -5066,14 +5122,14 @@ focus_tree = {
 		relative_position_id = SRS_outgun_them
 		x = 1
 		y = 1
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1
-				uses = 3
+				uses = 2
 				category = radar_tech
 			}
         }		
@@ -5126,8 +5182,8 @@ focus_tree = {
 					amount = 30
 				}
 			}
+		}
 	}
-}
 
 
 	focus = {
@@ -5143,26 +5199,26 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-		IF = {
-			limit = {
-			    has_tech = early_bomber
-		    }
-			add_equipment_to_stockpile = {
-				type = tac_bomber_equipment
-				amount = 60
+			IF = {
+				limit = {
+				    has_tech = early_bomber
+			    }
+				add_equipment_to_stockpile = {
+					type = tac_bomber_equipment
+					amount = 60
+				}
 			}
-		}
-		ELSE = {
-			set_technology = {
-				early_bomber = 1
-			}
-			add_equipment_to_stockpile = {
-				type = tac_bomber_equipment
-				amount = 30
+			ELSE = {
+				set_technology = {
+					early_bomber = 1
+				}
+				add_equipment_to_stockpile = {
+					type = tac_bomber_equipment
+					amount = 30
+				}
 			}
 		}
 	}
-}
 
 	focus = {
 		id = SRS_air_force_research_institute
