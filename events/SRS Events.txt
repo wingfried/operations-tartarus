@@ -3338,6 +3338,8 @@ country_event = {
 	title = srs_sickoflavour.5.t
 	desc = srs_sickoflavour.5.d
 	picture = GFX_event_poshel_nahui
+	
+	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = srs_sickoflavour.5.a	
@@ -3350,9 +3352,23 @@ country_event = {
 	title = srs_sickoflavour.6.t
 	desc = srs_sickoflavour.6.d
 	picture = GFX_event_poshel_nahui
+	
+	fire_only_once = yes
 	is_triggered_only = yes
+	
 	option = {
 		name = srs_sickoflavour.6.a	
+		hidden_effect = {
+		complete_national_focus = SRS_communist_asper
+		}
+    }
+	
+	option = {
+		name = srs_sickoflavour.6.b
+		custom_effect_tooltip = SRS_Wait_what_tooltip
+		hidden_effect = {
+		complete_national_focus = SRS_republican_alignment
+		}
 	}
 }
 
@@ -3364,7 +3380,10 @@ country_event = {
 	title = srs_sickoflavour.7.t
 	desc = srs_sickoflavour.7.d
 	picture = GFX_event_poshel_nahui
+	
 	is_triggered_only = yes
+	fire_only_once = yes
+	
 	option = {
 		name = srs_sickoflavour.7.a	
 	}
