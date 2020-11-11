@@ -3352,7 +3352,7 @@ country_event = {
 	picture = GFX_event_poshel_nahui
 	is_triggered_only = yes
 	option = {
-		name = srs_sickoflavour.5.a	
+		name = srs_sickoflavour.6.a	
 	}
 }
 
