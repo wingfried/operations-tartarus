@@ -564,11 +564,11 @@ SRS_became_cloudburry:0 "The Northern Republican Authority"
 
 #### TRIBAL EVENTS ####
 srs_sickontr.1.t:0 "Lest we Forget"
-srs_sickontr.1.d:0 "placeholder event thingy. carry on comrade."
+srs_sickontr.1.d:0 "The endless conflicts and raids have reached an officially defined end as the leaders of Skynavia and the Northern Tribes signed the Treaty of Lifthauf and thus fully join the republic. The most contentious point was the designation of reserves that each tribe has sovereignty over in order to prevent a rush of industrialisation that could erase their way of life. Many citizens in other regions feel that the tribes are being granted too many special accommodations compared to other undeveloped regions, but Sickleclaw and Fiana maintain that the tribes will give plenty in return through small artisan industries, cultural exchange and wilderness specialists for the military. Tribal leaders offered only vague statements about the questions of the tribes one day becoming fully integrated into modern society.\n\nThis is also the first time that a pony-majority region has been brought into the embrace of pan-Griffoniaism, thus making the treaty an even greater milestone towards uniting the continent."
 srs_sickontr.1.a:0 "For Peace and Hamony!"
 
-srs_sickontr.2.t:0 ""
-srs_sickontr.2.d:0 ""
+srs_sickontr.2.t:0 "The Dumpster Fire to the South"
+srs_sickontr.2.d:0 "The Griffonian Republican Authority in Cloudbury is in turmoil, and the insufferable worm that is Kemerskai is now fighting for his life as his formerly loyal warlords take up arms against him.\n\nSickleclaw, of course, rejoiced at the sight - that’s a golden opportunity to prove to the Cloudburians that he has indeed returned into the embrace of the republican dream!\n\nHowever, there is a problem with intervening. The Skynavian military may still be full of disloyal elements, a hostile neighbour to the east in form of the northern tribesponies that may strike at any time and the unrest the re-alignment with the Republicans caused in the first place - despite the fact that fascists who would burn New Skynavia to the ground in a heartbeat are being mowed down by the hundreds by Asper’s griffs - may become a big factor of griffonpower shortages already present in the armed forces.\n\nThis is most certainly a black-white choice. It is either sheltering refugees from the south while remaining neutral or jumping into the fray with guns blazing, rescuing the republican cause from the vile fascists of the N.R.A. in its finest hour."
 srs_sickontr.2.a:0 "We will join this war!"
 srs_sickontr.2.b:0 "Why should we care?"
 
