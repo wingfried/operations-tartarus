@@ -2863,10 +2863,15 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = GRI
-			}
+		    create_wargoal = { type = annex_everything target = GRI }
+		    create_wargoal = { type = annex_everything target = FEA }
+		    create_wargoal = { type = annex_everything target = STW }
+		    create_wargoal = { type = annex_everything target = BRZ }
+		    create_wargoal = { type = annex_everything target = PYT }
+		    create_wargoal = { type = annex_everything target = ROU }
+		    create_wargoal = { type = annex_everything target = YAL }
+		    create_wargoal = { type = annex_everything target = KAT }
+		    create_wargoal = { type = annex_everything target = ANG }
 		}
 	}
 	
