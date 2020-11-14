@@ -638,6 +638,12 @@ srs_sickoflavour.12.a:0 "Hello there!"
 srs_sickocivwar.986.t:0 "p"
 srs_sickocivwar.986.d:0 "fuck you kemerskai"
 srs_sickocivwar.986.a:0 "*racial slur against people with african ancestry and/or dark skin*"
+srs_sickoflavour.16.t:0 "No more waiting"
+srs_sickoflavour.16.d:0 "Corporal Ludwing turned his beak at his five comrades, looking through their eyes with a scrupulous gaze, carefully searching for that determined spark in those eyes, that small but certain conviction, that confidence needed to complete the task.\n\nHe wasn't willing to waste any more time here - not even a week more! Stuck in a long guerilla war with the frontier tribes, always hiding - behind bushes, in trees… the bloody cowards! He wasn't willing to wait for some qualified diplomat either. This ends now!\n\nSo he just gathered his small group of soldiers to improvise a diplomatic masterpiece, alongside two indigenous pony volunteers in order to break the language barrier.\n\nWas he a madgriff for trying such a thing? Most probably, but at least it was worth a shot."
+srs_sickoflavour.16.a:0 "Boreas help us"
+srs_sickoflavour.17.t:0 "A surprising success"
+srs_sickoflavour.17.d:0 "Ludwing couldn't believe it.\n\nHe actually couldn't believe it!\n\nHis gamble paid off, his idiotic effort resulted in an important diplomatic victory, as his soldiers managed to bring peace to the small region.\n\nBut, in reality, he didn't really have any serious hope for this operation, as the ones trusted with this mission briefly got lost in the forest for a period of 17 hours in the middle of the expedition, but they eventually made their way to their intended destination.\n\nIt seemed that the two local ponies in the expedition broke the ice and managed to negotiate a cease-fire that was in hindsight mostly\n\n respected.\n\nTo Ludwing and his crew, it seemed like a colossal achievement - As if they ended the entire war by themselves! Despite the achievement’s overall irrelevance in the greater scale of things, it helped the actual diplomats secure the official cease-fire."
+srs_sickoflavour.17.a:0 "We should still make propaganda of this!"
 
 #### CRUCH TOOLTIPS ####
 SRS_IW_cruch1:0 "Modify §YInfantry Warfare§! by\n§YInfantry§!: Division Organization: §R-5%§!\nRecruitable Population Factor: §G+10%§!"
