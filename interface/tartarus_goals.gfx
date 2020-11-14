@@ -256,4 +256,8 @@ spriteTypes = {
 		name = "GFX_goal_generic_air_fighter"
 		texturefile = "gfx/interface/goals/goal_generic_air_fighter.dds"
 	}
+	SpriteType = { 
+		name = "GFX_focus_srs_loyal_general"
+		texturefile = "gfx/interface/goals/GFX_focus_srs_loyal_general.dds"
+	}
 }
