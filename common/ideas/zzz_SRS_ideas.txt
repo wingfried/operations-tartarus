@@ -1,5 +1,17 @@
 ideas = {
 	political_advisor = {
+		SRS_scary_grif_advisor = {
+			picture = SRS_scary_grif
+			allowed = {
+				original_tag = SRS
+			}
+			available = {
+			}
+			traits = { prince_of_terror }
+			modifier = {
+				custom_modifier_tooltip = SRS_not_the_children
+			}
+		}
 		SRS_young_chick = {
 			picture = GRW_Ludochka
 			allowed = {
@@ -454,6 +466,15 @@ ideas = {
 	}
 	army_chief = {
 
+		SRS_army_chief_off_2 = {
+			picture = SRS_army_chief_2
+			allowed = {
+				tag = SRS
+			}
+
+			traits = { army_chief_offensive_2 }
+		}
+
 		SRS_army_chief_off = {
 			picture = SRS_army_chief_1
 			allowed = {
@@ -598,6 +619,36 @@ ideas = {
 
 	}
 	high_command = {
+		SRS_army_chief_medic = {
+			picture = SRS_idea_army_chief_medic
+
+			allowed = {
+				tag = SRS
+			}
+
+			visible = {
+			}
+
+			available = {
+			}
+
+			traits = { army_medic_3 }
+		}
+		SRS_army_instructor = {
+			#picture = SRS_idea_army_instructor
+
+			allowed = {
+				tag = SRS
+			}
+
+			visible = {
+			}
+
+			available = {
+			}
+
+			traits = { army_instructor_2 }
+		}
 		SRS_john_carlini = {
 			picture = SRS_highcommand_carlini
 

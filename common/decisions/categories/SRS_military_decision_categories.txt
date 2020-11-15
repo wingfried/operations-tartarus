@@ -1,0 +1,23 @@
+SRS_military_academy_training_category = {
+	allowed = {
+		original_tag = SRS
+	}
+	visible = {
+		has_completed_focus = SRS_military_academy
+	}
+	priority = {
+		base = 140
+	}
+}
+
+SRS_war_college_training_category = {
+	allowed = {
+		original_tag = SRS
+	}
+	visible = {
+		has_completed_focus = SRS_war_college
+	}
+	priority = {
+		base = 130
+	}
+}

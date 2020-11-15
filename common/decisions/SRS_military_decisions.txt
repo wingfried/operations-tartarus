@@ -1,0 +1,1011 @@
+SRS_military_academy_training_category = {
+	
+	SRS_train_asper_sickleclaw_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SRS
+		}
+		visible = {
+			has_unit_leader = 9876
+		}
+		ai_will_do = {
+			factor = 400
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 9876 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9876 }
+
+				remove_unit_leader_trait = busy_trait
+
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+
+	SRS_train_dakota_rosefeather_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SRS
+		}
+		visible = {
+			has_unit_leader = 9880
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 9880 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9880 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+					IF = {
+						limit = {
+							has_trait = general1_trait
+						}
+						remove_unit_leader_trait = general1_trait
+						add_unit_leader_trait = general2_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general2_trait
+						}
+						remove_unit_leader_trait = general2_trait
+						add_unit_leader_trait = general3_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general3_trait
+						}
+						remove_unit_leader_trait = general3_trait
+						add_unit_leader_trait = general4_trait
+					}
+				}
+
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+
+	SRS_train_thomas_thunderbeak_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SRS
+		}
+		visible = {
+			has_unit_leader = 9879
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 9879 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9879 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+					IF = {
+						limit = {
+							has_trait = general1_trait
+						}
+						remove_unit_leader_trait = general1_trait
+						add_unit_leader_trait = general2_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general2_trait
+						}
+						remove_unit_leader_trait = general2_trait
+						add_unit_leader_trait = general3_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general3_trait
+						}
+						remove_unit_leader_trait = general3_trait
+						add_unit_leader_trait = general4_trait
+					}
+				}
+
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+
+	SRS_train_comrade_frost_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SRS
+		}
+		visible = {
+			has_unit_leader = 9878
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 9878 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9878 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+					IF = {
+						limit = {
+							has_trait = general1_trait
+						}
+						remove_unit_leader_trait = general1_trait
+						add_unit_leader_trait = general2_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general2_trait
+						}
+						remove_unit_leader_trait = general2_trait
+						add_unit_leader_trait = general3_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general3_trait
+						}
+						remove_unit_leader_trait = general3_trait
+						add_unit_leader_trait = general4_trait
+					}
+				}
+
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+
+	SRS_train_riley_vinchers_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SRS
+		}
+		visible = {
+			has_unit_leader = 9877
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 9877 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9877 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+					IF = {
+						limit = {
+							has_trait = general1_trait
+						}
+						remove_unit_leader_trait = general1_trait
+						add_unit_leader_trait = general2_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general2_trait
+						}
+						remove_unit_leader_trait = general2_trait
+						add_unit_leader_trait = general3_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general3_trait
+						}
+						remove_unit_leader_trait = general3_trait
+						add_unit_leader_trait = general4_trait
+					}
+				}
+
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+
+	SRS_train_malcolm_granger_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SRS
+		}
+		visible = {
+			has_unit_leader = 9875
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 9875 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9875 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+					IF = {
+						limit = {
+							has_trait = general1_trait
+						}
+						remove_unit_leader_trait = general1_trait
+						add_unit_leader_trait = general2_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general2_trait
+						}
+						remove_unit_leader_trait = general2_trait
+						add_unit_leader_trait = general3_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general3_trait
+						}
+						remove_unit_leader_trait = general3_trait
+						add_unit_leader_trait = general4_trait
+					}
+				}
+
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+
+	SRS_train_john_carlini_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SRS
+		}
+		visible = {
+			has_unit_leader = 9871
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 9871 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9871 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+					IF = {
+						limit = {
+							has_trait = general1_trait
+						}
+						remove_unit_leader_trait = general1_trait
+						add_unit_leader_trait = general2_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general2_trait
+						}
+						remove_unit_leader_trait = general2_trait
+						add_unit_leader_trait = general3_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general3_trait
+						}
+						remove_unit_leader_trait = general3_trait
+						add_unit_leader_trait = general4_trait
+					}
+				}
+
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+
+	SRS_train_horson_welles_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SRS
+		}
+		visible = {
+			has_unit_leader = 9870
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 9870 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9870 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+					IF = {
+						limit = {
+							has_trait = general1_trait
+						}
+						remove_unit_leader_trait = general1_trait
+						add_unit_leader_trait = general2_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general2_trait
+						}
+						remove_unit_leader_trait = general2_trait
+						add_unit_leader_trait = general3_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general3_trait
+						}
+						remove_unit_leader_trait = general3_trait
+						add_unit_leader_trait = general4_trait
+					}
+				}
+
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+}
+
+SRS_war_college_training_category = {
+
+	SRS_train_asper_sickleclaw_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SRS
+		}
+		visible = {
+			has_unit_leader = 9876
+			
+		}
+		ai_will_do = {
+			factor = 400
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 9876 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9876 }
+
+				remove_unit_leader_trait = busy_trait
+
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+
+	SRS_train_dakota_rosefeather_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SRS
+		}
+		visible = {
+			has_unit_leader = 9880
+			has_trait = academy_training_trait
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 9880 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9880 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+					IF = {
+						limit = {
+							has_trait = general1_trait
+						}
+						remove_unit_leader_trait = general1_trait
+						add_unit_leader_trait = general2_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general2_trait
+						}
+						remove_unit_leader_trait = general2_trait
+						add_unit_leader_trait = general3_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general3_trait
+						}
+						remove_unit_leader_trait = general3_trait
+						add_unit_leader_trait = general4_trait
+					}
+				}
+
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+
+	SRS_train_thomas_thunderbeak_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SRS
+		}
+		visible = {
+			has_unit_leader = 9879
+			has_trait = academy_training_trait
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 9879 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9879 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+					IF = {
+						limit = {
+							has_trait = general1_trait
+						}
+						remove_unit_leader_trait = general1_trait
+						add_unit_leader_trait = general2_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general2_trait
+						}
+						remove_unit_leader_trait = general2_trait
+						add_unit_leader_trait = general3_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general3_trait
+						}
+						remove_unit_leader_trait = general3_trait
+						add_unit_leader_trait = general4_trait
+					}
+				}
+
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+
+	SRS_train_comrade_frost_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SRS
+		}
+		visible = {
+			has_unit_leader = 9878
+			has_trait = academy_training_trait
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 9878 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9878 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+					IF = {
+						limit = {
+							has_trait = general1_trait
+						}
+						remove_unit_leader_trait = general1_trait
+						add_unit_leader_trait = general2_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general2_trait
+						}
+						remove_unit_leader_trait = general2_trait
+						add_unit_leader_trait = general3_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general3_trait
+						}
+						remove_unit_leader_trait = general3_trait
+						add_unit_leader_trait = general4_trait
+					}
+				}
+
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+
+	SRS_train_riley_vinchers_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SRS
+		}
+		visible = {
+			has_unit_leader = 9877
+			has_trait = academy_training_trait
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 9877 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9877 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+					IF = {
+						limit = {
+							has_trait = general1_trait
+						}
+						remove_unit_leader_trait = general1_trait
+						add_unit_leader_trait = general2_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general2_trait
+						}
+						remove_unit_leader_trait = general2_trait
+						add_unit_leader_trait = general3_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general3_trait
+						}
+						remove_unit_leader_trait = general3_trait
+						add_unit_leader_trait = general4_trait
+					}
+				}
+
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+
+	SRS_train_malcolm_granger_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SRS
+		}
+		visible = {
+			has_unit_leader = 9875
+			has_trait = academy_training_trait
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 9875 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9875 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+					IF = {
+						limit = {
+							has_trait = general1_trait
+						}
+						remove_unit_leader_trait = general1_trait
+						add_unit_leader_trait = general2_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general2_trait
+						}
+						remove_unit_leader_trait = general2_trait
+						add_unit_leader_trait = general3_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general3_trait
+						}
+						remove_unit_leader_trait = general3_trait
+						add_unit_leader_trait = general4_trait
+					}
+				}
+
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+
+	SRS_train_john_carlini_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SRS
+		}
+		visible = {
+			has_unit_leader = 9871
+			has_trait = academy_training_trait
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 9871 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9871 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+					IF = {
+						limit = {
+							has_trait = general1_trait
+						}
+						remove_unit_leader_trait = general1_trait
+						add_unit_leader_trait = general2_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general2_trait
+						}
+						remove_unit_leader_trait = general2_trait
+						add_unit_leader_trait = general3_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general3_trait
+						}
+						remove_unit_leader_trait = general3_trait
+						add_unit_leader_trait = general4_trait
+					}
+				}
+
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+
+	SRS_train_horson_welles_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SRS
+		}
+		visible = {
+			has_unit_leader = 9870
+			has_trait = academy_training_trait
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 9870 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9870 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+					IF = {
+						limit = {
+							has_trait = general1_trait
+						}
+						remove_unit_leader_trait = general1_trait
+						add_unit_leader_trait = general2_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general2_trait
+						}
+						remove_unit_leader_trait = general2_trait
+						add_unit_leader_trait = general3_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general3_trait
+						}
+						remove_unit_leader_trait = general3_trait
+						add_unit_leader_trait = general4_trait
+					}
+				}
+
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+}

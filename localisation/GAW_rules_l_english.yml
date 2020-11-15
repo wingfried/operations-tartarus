@@ -1,0 +1,8 @@
+﻿l_english:
+
+ ### GAME RULES ###
+
+ RULE_ALLOW_OFFICER_RANKS:0 "Officer Ranks"
+ RULE_OPTION_DEFAULT_OFFICER_RANKS_DESC:0 "Officers will have ranks assigned to them."
+ RULE_OPTION_NO_RANKS:0 "Remove Officer Ranks"
+ RULE_OPTION_NO_RANKS_DESC:0 "Officers won't have ranks assigned to them."

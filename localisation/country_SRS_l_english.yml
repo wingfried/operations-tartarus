@@ -448,7 +448,8 @@ SRS_skynavian_patrol_tp:0 "Get two §YSkynavian Patrol Divisions§!."
 SRS_skynavian_marines_tp:0 "Get two §YSkynavian Marines Divisions§!."
 SRS_preparing_for_next_war:0 "Preparing for the Next War"
 SRS_preparing_for_next_war_desc:0 "It is time we acknowledge our greatest weakness which is the Army. Advanced training will be prepared for all of our soldiers for a good start, but we will also have to think of an excellent war plan in order to ensure our strong position in this hostile world."
-
+SRS_military_academy:0 "New Skynavia Military Academy"
+SRS_war_college:0 "New Skynavia War College"
 
 #### Republican Industry Ideas and fixes ####
 SRS_socialist_market:0 "A Socialist Market"
@@ -560,6 +561,9 @@ SRS_GRI_compliance_tp:0 "Increase compliance by §Y20%§! in all cores of §YGri
 SRS_griffonia_compliance_tp:0 "Increase compliance by §Y10%§! in all cores of §YGriffonian§! countries."
 SRS_edu_reform_compliance_tp:0 "Increase compliance by §Y20%§! in all cores of §YGriffonian Republic§!, §YVedina§! and §YSunstriker Clan§!."
 SRS_Wait_what_tooltip:0 "§RWait, what?§"
+SRS_not_the_children:0 "Children opinion factor: §Y-10.00%§!"
+SRS_military_academy_tp:0 "Unlocks §YMilitary Academy Training§! for officers."
+SRS_war_college_tp:0 "Unlocks §YWar College Training§! for §YMilitary Academy§! graduates."
 
 #### COSMETICS ####
 SRS_became_cloudburry:0 "The Northern Republican Authority"
@@ -695,8 +699,13 @@ BEAKUNIN_NAME_DESC:0 "Beakunin is one of the oldest and most influential of the 
 HORSON_WELLES_NAME_DESC:0 "Horson Welles began his illustrious career as a socialist revolutionary in his native Equestria, where in his early adulthood he produced numerous groundbreaking films equally revered for their avant-garde creativity and progressive values.\n\nLater he travelled across the ocean to the Socialist Republic of Skynavia, where he could experience and document the griffons' revolutionary struggle firsthoof.\n\nIn his youth, Horson took part in many shooting competitions, and got very good at marksponyship."
 
 #### IDEAS ####
+SRS_army_chief_off_2:0 "Stephen Ironclaw"
+SRS_army_chief_medic:0 "Sirius Kodins"
+SRS_army_instructor:0 "WIP"
 SRS_young_chick:0 "Emilia Stalwart"
 SRS_young_chick_desc:0 "Born to a pair of determined socialist revolutionaries from the Heartlands, Emilia Stalwart was only a child when the Socialist Republic of Skynavia was established. Having experienced an education couched in socialist ideology, Emilia nevertheless was not satisfied with her life in Skynavia, instead choosing to go visit the capitalist countries of the south when she graduated.\n\nHaving experienced firstclaw the depredations of capitalism, authoritarianism, and monarchism during her travels, she has now returned to her home an ardent internationalist, carrying within her an immutable resolve to change the world for the better."
+SRS_scary_grif_advisor:0 "Lavclaw Beria"
+SRS_scary_grif_advisor_desc:0 ""
 SRS_generico_1:0 "Thomas Redwell"
 SRS_generico_2:0 "Finigal D'Eagleton"
 SRS_artillery_griff:0 "Comrade Shell"
@@ -1317,6 +1326,24 @@ SRS_petr_the_general:0 "Appoint §RPetr Pulitorov§! as §YCorps Commander§!"
 SRS_petr_the_general_desc:0 "Petr Pulitorov fought against the ponies when the socialists first arrived in Skynavia. He took a bullet to the lungs and the freezing cold gave him pneumonia. Since then, he has retired from military service, shaken by his experiences and debilitated by his wounds.\n\nWith the recent resolution of our conflict with the Northern Tribes, we might want to bring Petr out of retirement. We'll need all the help we can get for the military campaigns to come."
 SRS_union_with_neighbouring_commie_country:0 "Propose Union With:\nThe §Y[From.GetName]§!"
 SRS_union_with_neighbouring_commie_country_desc:0 "Our neighbours in the [From.GetName] are socialists as well. The Internationalists have proposed that we seek a union between our people and theirs, so that we may both flourish together.\n\nIf the [From.GetName] accepts our proposal, then they will become our §Ypuppet§!.\n\nRegardless of whether or not the [From.GetName] accepts, initiating this proposal will greatly diminish popular support for the Internationalists in the upcoming election, as significant portions of the Skynavian people will disapprove of the expansionism of this act."
+SRS_military_academy_training_category:0 "Military Academy"
+SRS_train_asper_sickleclaw_academy:0 "§YAsper Sicleclaw§!: Military Academy Training"
+SRS_train_dakota_rosefeather_academy:0 "§YDakota Rosefeather§!: Military Academy Training"
+SRS_train_thomas_thunderbeak_academy:0 "§YThomas Thunderbeak§!: Military Academy Training"
+SRS_train_comrade_frost_academy:0 "§YComrade Frost§!: Military Academy Training"
+SRS_train_riley_vinchers_academy:0 "§YRiley Vinchers§!: Military Academy Training"
+SRS_train_malcolm_granger_academy:0 "§YMalcolm Granger§!: Military Academy Training"
+SRS_train_john_carlini_academy:0 "§YJohn Carlini§!: Military Academy Training"
+SRS_train_horson_welles_academy:0 "§YHorson Welles§!: Military Academy Training"
+SRS_war_college_training_category:0 "War College"
+SRS_train_asper_sickleclaw_college:0 "§YAsper Sicleclaw§!: War College Training"
+SRS_train_dakota_rosefeather_college:0 "§YDakota Rosefeather§!: War College Training"
+SRS_train_thomas_thunderbeak_college:0 "§YThomas Thunderbeak§!: War College Training"
+SRS_train_comrade_frost_college:0 "§YComrade Frost§!: War College Training"
+SRS_train_riley_vinchers_college:0 "§YRiley Vinchers§!: War College Training"
+SRS_train_malcolm_granger_college:0 "§YMalcolm Granger§!: War College Training"
+SRS_train_john_carlini_college:0 "§YJohn Carlini§!: War College Training"
+SRS_train_horson_welles_college:0 "§YHorson Welles§!: War College Training"
 
 #### EVENTS ####
 srs_borderwar.3.t:0 "Victory in Border Skirmish!"

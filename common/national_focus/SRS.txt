@@ -215,11 +215,13 @@ focus_tree = {
 		mutually_exclusive = { focus = SRS_republican_alignment }
 		x = 0
 		y = 6
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 12
 		}
-		
+		available = {
+			always = no
+		}
 		completion_reward = {
 			add_political_power = 50
 			swap_ideas = {
@@ -621,11 +623,13 @@ focus_tree = {
 		mutually_exclusive = { focus = SRS_communist_asper }
 		x = 10
 		y = 6
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 12
 		}
-		
+		available = {
+			always = no
+		}
 		completion_reward = {
 			add_political_power = -100
 		}
@@ -2863,7 +2867,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		    create_wargoal = { type = annex_everything target = GRI }
+			create_wargoal = { type = annex_everything target = GRI }
 		    create_wargoal = { type = annex_everything target = FEA }
 		    create_wargoal = { type = annex_everything target = STW }
 		    create_wargoal = { type = annex_everything target = BRZ }
@@ -4160,13 +4164,47 @@ focus_tree = {
 		        add_idea = SRS_UITRAF_2
 		    }
 		}
-	}	
+	}
+
+	focus = {
+		id = SRS_military_academy
+		#icon = 
+		prerequisite = { focus = SRS_cleanse_the_army }
+		relative_position_id = SRS_cleanse_the_army
+		x = 0
+		y = 1
+		cost = 5.8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = SRS_military_academy_tp
+		}
+	}
+
+	focus = {
+		id = SRS_war_college
+		#icon = 
+		prerequisite = { focus = SRS_military_academy }
+		relative_position_id = SRS_military_academy
+		x = 0
+		y = 1
+		cost = 8.6
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = SRS_war_college_tp
+		}
+	}
 	
 	focus = {
 		id = SRS_loyalty_of_the_generals
 		icon = GFX_focus_srs_loyal_general
 		prerequisite = { focus = SRS_cleanse_the_army }
-		x = 27
+		x = 26
 		y = 21
 		cost = 1.5
 		ai_will_do = {
@@ -4185,8 +4223,9 @@ focus_tree = {
 		id = SRS_Retire_disloyal_lieutenants
 		icon = GFX_goal_split_helmet
 		prerequisite = { focus = SRS_loyalty_of_the_generals }
-		x = 27
-		y = 22
+		relative_position_id = SRS_loyalty_of_the_generals
+		x = 0
+		y = 1
 		cost = 2.9
 		ai_will_do = {
 			factor = 12
@@ -4207,7 +4246,7 @@ focus_tree = {
 		id = SRS_hardliner_penal_battalions
 		icon = GFX_goal_MAF_African_Pilots
 		prerequisite = { focus = SRS_cleanse_the_army }
-		x = 29
+		x = 30
 		y = 21
 		cost = 1.5
 		ai_will_do = {
@@ -4230,8 +4269,9 @@ focus_tree = {
 		id = SRS_revolutionary_discipline
 		icon = GFX_goal_strasserist_conscription
 		prerequisite = { focus = SRS_hardliner_penal_battalions }
-		x = 29
-		y = 22
+		relative_position_id = SRS_hardliner_penal_battalions
+		x = 0
+		y = 1
 		cost = 2.9
 		ai_will_do = {
 			factor = 12
@@ -4270,13 +4310,21 @@ focus_tree = {
 		relative_position_id = SRS_rebuild_thechain_of_command
 		x = 0
 		y = 1
-		cost = 2.2
+		cost = 4.4
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
-			army_experience = 50
+			army_experience = 30
+			522 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 	    }	
 	}
 	
@@ -5147,22 +5195,21 @@ focus_tree = {
 		relative_position_id = SRS_rebuild_thechain_of_command
 		x = -12
 		y = 1
-		cost = 2.2
+		cost = 4.4
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			air_experience = 50
-			601 = {
-			add_building_construction = {
-				type = air_base
-				level = 1
-				instant_build = yes
+			air_experience = 30
+			522 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
 			}
-		}
-	}	
-}
-		
+		}	
+	}
 
 	focus = {
 		id = SRS_purchase_fighters
@@ -5496,12 +5543,20 @@ focus_tree = {
 		relative_position_id = SRS_rebuild_thechain_of_command
 		x = 9
 		y = 1
-		cost = 2.2
+		cost = 4.4
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			navy_experience = 50
+			navy_experience = 30
+			522 = {
+				add_building_construction = {
+					type = naval_base
+					province = 11307
+					level = 2
+					instant_build = yes
+				}
+			}
 		}	
 	}
 
