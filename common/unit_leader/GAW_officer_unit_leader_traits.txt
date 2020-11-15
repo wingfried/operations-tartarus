@@ -87,7 +87,79 @@ leader_traits = {
 		allowed = {
 			always = no
 		}
-		planning_skill = 1
+		modifier = {
+			experience_gain_factor = 0.075
+		}
+	}
+
+	armor_academy_training_trait = {
+		type = all
+		trait_type = status_trait
+		allowed = {
+			always = no
+		}
+		modifier = {
+			army_armor_speed_factor = 0.025
+			army_armor_attack_factor = 0.05
+		}
+	}
+
+	motorized_academy_training_trait = {
+		type = all
+		trait_type = status_trait
+		allowed = {
+			always = no
+		}
+		modifier = {
+			mechanized_attack_factor = 0.05
+			motorized_attack_factor = 0.05
+		}
+	}
+
+	infantry_academy_training_trait = {
+		type = all
+		trait_type = status_trait
+		allowed = {
+			always = no
+		}
+		modifier = {
+			army_infantry_defence_factor = 0.05
+		}
+	}
+
+	special_forces_academy_training_trait = {
+		type = all
+		trait_type = status_trait
+		allowed = {
+			always = no
+		}
+		modifier = {
+			special_forces_attack_factor = 0.05
+			special_forces_defence_factor = 0.05
+		}
+	}
+
+	trench_academy_training_trait = {
+		type = all
+		trait_type = status_trait
+		allowed = {
+			always = no
+		}
+		modifier = {
+			dig_in_speed = 0.25
+		}
+	}
+
+	artillery_academy_training_trait = {
+		type = all
+		trait_type = status_trait
+		allowed = {
+			always = no
+		}
+		modifier = {
+			army_artillery_attack_factor = 0.025
+			army_artillery_defence_factor = 0.025
+		}
 	}
 
 	wonderbolts_academy_training_trait = {
@@ -108,7 +180,79 @@ leader_traits = {
 		allowed = {
 			always = no
 		}
-		planning_skill = 2
+		modifier = {
+			experience_gain_factor = 0.15
+		}
+	}
+
+	armor_college_training_trait = {
+		type = all
+		trait_type = status_trait
+		allowed = {
+			always = no
+		}
+		modifier = {
+			army_armor_speed_factor = 0.05
+			army_armor_attack_factor = 0.10
+		}
+	}
+
+	motorized_college_training_trait = {
+		type = all
+		trait_type = status_trait
+		allowed = {
+			always = no
+		}
+		modifier = {
+			mechanized_attack_factor = 0.10
+			motorized_attack_factor = 0.10
+		}
+	}
+
+	infantry_college_training_trait = {
+		type = all
+		trait_type = status_trait
+		allowed = {
+			always = no
+		}
+		modifier = {
+			army_infantry_defence_factor = 0.10
+		}
+	}
+
+	special_forces_college_training_trait = {
+		type = all
+		trait_type = status_trait
+		allowed = {
+			always = no
+		}
+		modifier = {
+			special_forces_attack_factor = 0.10
+			special_forces_defence_factor = 0.10
+		}
+	}
+
+	trench_college_training_trait = {
+		type = all
+		trait_type = status_trait
+		allowed = {
+			always = no
+		}
+		modifier = {
+			dig_in_speed = 0.50
+		}
+	}
+
+	artillery_college_training_trait = {
+		type = all
+		trait_type = status_trait
+		allowed = {
+			always = no
+		}
+		modifier = {
+			army_artillery_attack_factor = 0.05
+			army_artillery_defence_factor = 0.05
+		}
 	}
 	
 }
