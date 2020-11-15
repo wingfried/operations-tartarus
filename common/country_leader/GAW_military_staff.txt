@@ -43,11 +43,11 @@ leader_traits = {
 	army_medic_3 = {
 		random = no
 		
-		experience_loss_factor = -0.15
+		experience_loss_factor = -0.12
 		equipment_bonus = {
 			field_hospital = {
 				instant = yes
-				casualty_trickleback = 0.15
+				casualty_trickleback = 0.06
 			}
 		}
 		
@@ -59,11 +59,11 @@ leader_traits = {
 	army_medic_2 = {
 		random = no
 		
-		experience_loss_factor = -0.10
+		experience_loss_factor = -0.08
 		equipment_bonus = {
 			field_hospital = {
 				instant = yes
-				casualty_trickleback = 0.10
+				casualty_trickleback = 0.04
 			}
 		}
 		
@@ -75,11 +75,11 @@ leader_traits = {
 	army_medic_1 = {
 		random = no
 		
-		experience_loss_factor = -0.05
+		experience_loss_factor = -0.04
 		equipment_bonus = {
 			field_hospital = {
 				instant = yes
-				casualty_trickleback = 0.05
+				casualty_trickleback = 0.02
 			}
 		}
 		

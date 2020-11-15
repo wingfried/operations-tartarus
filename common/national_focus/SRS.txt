@@ -5201,10 +5201,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			air_experience = 30
-			522 = {
+			601 = {
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
