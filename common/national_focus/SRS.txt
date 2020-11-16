@@ -327,14 +327,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = -50
+			NTR = { add_to_ROOT_potential_cores = yes }
 			every_state = {
 				limit = { 
-					OR = {
-						is_core_of = NTR
-					}
+					is_core_of = NTR
 				}
-				add_core_of = ROOT
+				add_compliance = 30
 			}
 		}
     }
@@ -2867,15 +2865,114 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			create_wargoal = { type = annex_everything target = GRI }
-		    create_wargoal = { type = annex_everything target = FEA }
-		    create_wargoal = { type = annex_everything target = STW }
-		    create_wargoal = { type = annex_everything target = BRZ }
-		    create_wargoal = { type = annex_everything target = PYT }
-		    create_wargoal = { type = annex_everything target = ROU }
-		    create_wargoal = { type = annex_everything target = YAL }
-		    create_wargoal = { type = annex_everything target = KAT }
-		    create_wargoal = { type = annex_everything target = ANG }
+			IF = {
+				limit = {
+					country_exists = GRI
+					GRI = {
+						AND = {
+							NOT = { is_subject_of = SRS }
+							NOT = { is_in_faction_with = SRS }
+						}
+					}
+				}
+				create_wargoal = { type = annex_everything target = GRI }
+			}
+			IF = {
+				limit = {
+					country_exists = FEA
+					FEA = {
+						AND = {
+							NOT = { is_subject_of = SRS }
+							NOT = { is_in_faction_with = SRS }
+						}
+					}
+				}
+				create_wargoal = { type = annex_everything target = FEA }
+			}
+			IF = {
+				limit = {
+					country_exists = STW
+					STW = {
+						AND = {
+							NOT = { is_subject_of = SRS }
+							NOT = { is_in_faction_with = SRS }
+						}
+					}
+				}
+				create_wargoal = { type = annex_everything target = STW }
+			}
+			IF = {
+				limit = {
+					country_exists = BRZ
+					BRZ = {
+						AND = {
+							NOT = { is_subject_of = SRS }
+							NOT = { is_in_faction_with = SRS }
+						}
+					}
+				}
+				create_wargoal = { type = annex_everything target = BRZ }
+			}
+			IF = {
+				limit = {
+					country_exists = PYT
+					PYT = {
+						AND = {
+							NOT = { is_subject_of = SRS }
+							NOT = { is_in_faction_with = SRS }
+						}
+					}
+				}
+				create_wargoal = { type = annex_everything target = PYT }
+			}
+			IF = {
+				limit = {
+					country_exists = ROU
+					ROU = {
+						AND = {
+							NOT = { is_subject_of = SRS }
+							NOT = { is_in_faction_with = SRS }
+						}
+					}
+				}
+				create_wargoal = { type = annex_everything target = ROU }
+			}
+			IF = {
+				limit = {
+					country_exists = YAL
+					YAL = {
+						AND = {
+							NOT = { is_subject_of = SRS }
+							NOT = { is_in_faction_with = SRS }
+						}
+					}
+				}
+				create_wargoal = { type = annex_everything target = YAL }
+			}
+			IF = {
+				limit = {
+					country_exists = KAT
+					KAT = {
+						AND = {
+							NOT = { is_subject_of = SRS }
+							NOT = { is_in_faction_with = SRS }
+						}
+					}
+				}
+				create_wargoal = { type = annex_everything target = KAT }
+			}
+			IF = {
+				limit = {
+					country_exists = ANG
+					ANG = {
+						AND = {
+							NOT = { is_subject_of = SRS }
+							NOT = { is_in_faction_with = SRS }
+						}
+					}
+				}
+				create_wargoal = { type = annex_everything target = ANG }
+			}
 		}
 	}
 	
@@ -4168,7 +4265,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_military_academy
-		#icon = 
+		icon = GFX_goal_bookstack
 		prerequisite = { focus = SRS_cleanse_the_army }
 		relative_position_id = SRS_cleanse_the_army
 		x = 0
@@ -4185,7 +4282,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_war_college
-		#icon = 
+		icon = GFX_goal_PAN_Create_the_Universidad_de_Panama
 		prerequisite = { focus = SRS_military_academy }
 		relative_position_id = SRS_military_academy
 		x = 0

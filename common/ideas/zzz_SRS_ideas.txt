@@ -12,6 +12,7 @@ ideas = {
 				custom_modifier_tooltip = SRS_not_the_children
 			}
 		}
+
 		SRS_young_chick = {
 			picture = GRW_Ludochka
 			allowed = {
@@ -23,6 +24,7 @@ ideas = {
 
 			traits = { pioneer_activist }
 		}
+
 		SRS_generico_1 = {
 			allowed = {
 				tag = SRS
@@ -33,6 +35,7 @@ ideas = {
 
 			traits = { captain_of_industry }
 		}
+
 		SRS_generico_2 = {
 			allowed = {
 				tag = SRS
@@ -43,6 +46,7 @@ ideas = {
 
 			traits = { war_industrialist }
 		}
+
 		SRS_emma_goldgriff = {
 			picture = SRS_emma
 			allowed = {
@@ -62,6 +66,7 @@ ideas = {
 
 			traits = { inspiration_leader }
 		}
+
 		SRS_mikhail_beakunin = {
 			picture = SRS_beakunin
 			allowed = {
@@ -81,6 +86,7 @@ ideas = {
 
 			traits = { hero_of_the_revolution }
 		}
+
 		confederation_of_autonomous_cooperatives = {
 			picture = GRW_electronics_manufacturer
 			allowed = {
@@ -100,6 +106,7 @@ ideas = {
 				local_resources_factor = 0.05
 			}
 		}
+
 		league_of_skynavian_workers_councils = {
 			picture = GRW_aircraft_manufacturer
 			allowed = {
@@ -119,6 +126,7 @@ ideas = {
 				line_change_production_efficiency_factor = 0.05
 			}
 		}
+
 		syndicate_of_production = {
 			picture = syndicate_of_production
 			allowed = {
@@ -136,6 +144,7 @@ ideas = {
 				factor = 100
 			}
 		}
+
 		syndicate_of_research = {
 			picture = syndicate_of_science
 			allowed = {
@@ -153,6 +162,7 @@ ideas = {
 				factor = 100
 			}
 		}
+
 		syndicate_of_agriculture = {
 			picture = SRS_commonwealth_2c
 			allowed = {
@@ -171,12 +181,57 @@ ideas = {
 			}
 		}
 	}
+
 	tank_manufacturer = {
 		designer = yes
+		SRS_light_medium_modern_tank_manufacturer = {
+
+			#picture = 
+
+			available = {
+				has_government = communism
+			}
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				cat_light_armor = 0.1
+				cat_medium_armor = 0.1
+			}
+
+			traits = { GAW_light_medium_modern_tank_balanced_manufacturer }
+
+		}
+
+		SRS_heavy_super_heavy_tank_manufacturer_3 = {
+
+			#picture = SRS_retsuko_armory
+
+			available = {
+				has_government = communism
+			}
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				cat_heavy_armor = 0.1
+			}
+
+			traits = { GAW_heavy_super_heavy_tank_cheap_manufacturer }
+
+		}
+
 		SRS_light_tank_manufacturer = {
 
 			picture = SRS_tankstars
 
+			available = {
+				has_government = democratic
+			}
 
 			allowed = {
 				tag = SRS
@@ -189,10 +244,14 @@ ideas = {
 			traits = { GAW_light_tank_fast_manufacturer }
 
 		}
+
 		SRS_medium_modern_tank_manufacturer = {
 
 			picture = SRS_bna
 
+			available = {
+				has_government = democratic
+			}
 
 			allowed = {
 				tag = SRS
@@ -205,10 +264,14 @@ ideas = {
 			traits = { GAW_medium_modern_tank_balanced_manufacturer }
 
 		}
+
 		SRS_heavy_super_heavy_tank_manufacturer = {
 
 			picture = SRS_panzer_utopia
 
+			available = {
+				has_government = democratic
+			}
 
 			allowed = {
 				tag = SRS
@@ -226,6 +289,9 @@ ideas = {
 
 			picture = SRS_retsuko_armory
 
+			available = {
+				has_government = democratic
+			}
 
 			allowed = {
 				tag = SRS
@@ -239,6 +305,7 @@ ideas = {
 
 		}
 	}
+
 	materiel_manufacturer = {
 		designer = yes
 		
@@ -270,6 +337,30 @@ ideas = {
 			traits = { infantry_equipment_manufacturer }
 
 		}
+
+		SRS_infantry_weapons_manufacturer_com = {
+			#picture = SRS_fighting_fox_factory
+			
+			allowed = {
+				tag = SRS
+			}
+			available = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.10
+				}
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+
+		}
+
 		SRS_infantry_weapons_manufacturer = {
 			picture = SRS_fighting_fox_factory
 			
@@ -277,7 +368,7 @@ ideas = {
 				tag = SRS
 			}
 			available = {
-
+				has_government = democratic
 			}
 			
 			research_bonus = {
@@ -294,6 +385,7 @@ ideas = {
 			traits = { infantry_equipment_manufacturer }
 
 		}
+
 		SRS_skynavian_automobile_cooperative = {
 			picture = schneider
 			
@@ -322,6 +414,7 @@ ideas = {
 			traits = { motorized_equipment_manufacturer }
 
 		}
+
 		SRS_mechanized_manufacturer = {
 			picture = generic_motorized_equipment_manufacturer_3
 			
@@ -329,16 +422,35 @@ ideas = {
 				tag = SRS
 			}
 			available = {
-
+				has_government = communism
 			}
 			
 			research_bonus = {
 				cat_mechanized_equipment = 0.1
 			}
 			
-			traits = { GAW_mechanized_manufacturer }
+			traits = { GAW_mechanized_manufacturer_quantity }
 
 		}
+
+		SRS_mechanized_manufacturer_2 = {
+			#picture = 
+			
+			allowed = {
+				tag = SRS
+			}
+			available = {
+				has_government = democratic
+			}
+			
+			research_bonus = {
+				cat_mechanized_equipment = 0.1
+			}
+			
+			traits = { GAW_mechanized_manufacturer_quality }
+
+		}
+
 		SRS_mass_artillery_manufacturer = {
 			picture = generic_artillery_manufacturer_1
 			
@@ -346,7 +458,7 @@ ideas = {
 				tag = SRS
 			}
 			available = {
-				
+				has_government = communism
 			}
 			
 			research_bonus = {
@@ -355,6 +467,7 @@ ideas = {
 			
 			traits = { GAW_artillery_quantity_manufacturer }
 		}
+
 		SRS_elite_artillery_manufacturer = {
 			picture = generic_artillery_manufacturer_2
 			
@@ -362,7 +475,7 @@ ideas = {
 				tag = SRS
 			}
 			available = {
-				
+				has_government = democratic
 			}
 			
 			research_bonus = {
@@ -373,6 +486,7 @@ ideas = {
 
 		}
 	}
+
 	army_chief = {
 		syndicate_of_defence = {
 			picture = syndicate_of_defence
@@ -392,6 +506,7 @@ ideas = {
 			}
 		}
 	}
+
 	industrial_concern = {
 		communalist_manufacturing = {
 			picture = grey_design
@@ -418,6 +533,7 @@ ideas = {
 			modifier = {
 			}
 		}
+
 		the_guild_of_free_magicians = {
 			picture = magic_stars
 		
@@ -444,6 +560,7 @@ ideas = {
 				supply_consumption_factor = -0.05
 			}
 		}
+
 		Nordrot_manufacturing = {
 			picture = generic_industrial_concern_1
 			
@@ -464,15 +581,16 @@ ideas = {
 			}
 		}
 	}
+
 	army_chief = {
 
-		SRS_army_chief_off_2 = {
+		SRS_army_chief_org = {
 			picture = SRS_army_chief_2
 			allowed = {
 				tag = SRS
 			}
 
-			traits = { army_chief_offensive_2 }
+			traits = { army_chief_organizational_2 }
 		}
 
 		SRS_army_chief_off = {
@@ -493,6 +611,7 @@ ideas = {
 			traits = { army_chief_defensive_1 }
 		}
 	}
+
 	navy_chief = {
 
 		SRS_navy_chief_decisive_bat = {
@@ -513,6 +632,7 @@ ideas = {
 			traits = { navy_anti_submarine_2 }
 		}
 	}
+
 	air_chief = {
 
 		SRS_air_close_air_sup = {
@@ -533,6 +653,7 @@ ideas = {
 			traits = { air_chief_all_weather_2 }
 		}
 	}
+
 	theorist = {
 		SRS_theorist_portrait_by_vinchers = {
 			picture = SRS_theorist_portrait_by_vinchers
@@ -547,6 +668,7 @@ ideas = {
 
 			traits = { military_theorist }
 		}
+
 		SRS_naval_theorist = {
 			picture = SRS_naval_theorist
 			allowed = {
@@ -559,6 +681,7 @@ ideas = {
 
 			traits = { naval_theorist }
 		}
+
 		SRS_air_warfare_theorist = {
 			allowed = {
 				tag = SRS
@@ -569,6 +692,7 @@ ideas = {
 			traits = { air_warfare_theorist }
 		}
 	}
+
 	naval_manufacturer = {
 		designer = yes
 
@@ -618,6 +742,7 @@ ideas = {
 		}
 
 	}
+
 	high_command = {
 		SRS_army_chief_medic = {
 			picture = SRS_idea_army_chief_medic
@@ -634,6 +759,7 @@ ideas = {
 
 			traits = { army_medic_3 }
 		}
+
 		SRS_army_instructor = {
 			#picture = SRS_idea_army_instructor
 
@@ -649,6 +775,7 @@ ideas = {
 
 			traits = { army_instructor_2 }
 		}
+
 		SRS_john_carlini = {
 			picture = SRS_highcommand_carlini
 
@@ -670,6 +797,7 @@ ideas = {
 
 			traits = { army_concealment_2 }
 		}
+
 		SRS_horson_welles = {
 			picture = SRS_highcommand_horson
 
@@ -691,6 +819,7 @@ ideas = {
 
 			traits = { army_regrouping_1 }
 		}
+
 		SRS_pierre_ponehon = {
 			picture = SRS_highcommand_ponehon
 
@@ -713,6 +842,7 @@ ideas = {
 
 			traits = { army_commando_3 }
 		}
+
 		SRS_artillery_griff = {
 			picture = SRS_artillery_griff
 			allowed = {
@@ -721,6 +851,7 @@ ideas = {
 
 			traits = { army_artillery_2 }
 		}
+
 		SRS_logistics_griff = {
 			picture = MNC_advisor_13
 			allowed = {
@@ -729,6 +860,7 @@ ideas = {
 
 			traits = { army_logistics_1 }
 		}
+
 		SRS_infantry_griff = {
 			allowed = {
 				tag = SRS
@@ -737,6 +869,7 @@ ideas = {
 			traits = { army_infantry_2 }
 		}
 	}
+
 	aircraft_manufacturer = {
 
 		designer = yes
@@ -776,6 +909,9 @@ ideas = {
 
 			picture = generic_air_manufacturer_2
 
+			available = {
+				has_government = democratic
+			}
 			allowed = {
 				tag = SRS
 			}
@@ -805,6 +941,7 @@ ideas = {
 				min_export = 0.15
 			}
 		}
+
 		SRS_internationalist_problems_1 = {
 			picture = soviet_german_friendship
 			allowed = { always = no }
@@ -820,6 +957,7 @@ ideas = {
 				min_export = 0.05
 			}
 		}
+
 		SRS_communalist_problems = {
 			picture = air_support_focus
 			allowed = { always = no }
@@ -834,6 +972,7 @@ ideas = {
 				mobilization_speed = -0.25
 			}
 		}
+
 		SRS_communalist_problems_1 = {
 			picture = air_support_focus
 			allowed = { always = no }
@@ -848,6 +987,7 @@ ideas = {
 				mobilization_speed = -0.05
 			}
 		}
+
 		SRS_militarised_the_hail_forest = {
 			picture = saf_history_of_segregation_2
 			allowed = { always = no }
@@ -863,6 +1003,7 @@ ideas = {
 				mobilization_speed = -0.05
 			}
 		}
+
 		SRS_the_general_congress = {
 			picture = skynavian_socialist_general_congress
 			allowed = { always = no }
@@ -881,6 +1022,7 @@ ideas = {
 				war_support_factor = 0.05
 			}
 		}
+
 		SRS_the_general_congress_1 = {
 			picture = skynavian_socialist_general_congress
 			allowed = { always = no }
@@ -899,6 +1041,7 @@ ideas = {
 				war_support_factor = 0.05
 			}
 		}
+
 		SRS_northern_war = {
 			picture = FRA_army_of_aggression_focus
 			allowed = { always = no }
@@ -919,6 +1062,7 @@ ideas = {
 
 			}
 		}
+
 		SRS_northern_star = {
 			picture = BAL_peoples_army
 			allowed = { always = no }
@@ -934,6 +1078,7 @@ ideas = {
 				enemy_justify_war_goal_time = -0.1
 			}
 		}
+
 		SRS_skynavian_egalitarianism = {
 			allowed = { always = no }
 			removal_cost = -1
@@ -947,6 +1092,7 @@ ideas = {
 				conscription_factor = 0.05
 			}
 		}
+
 		SRS_skynavian_egalitarianism_a = {
 			picture = SRS_skynavian_egalitarianism
 			allowed = { always = no }
@@ -962,6 +1108,7 @@ ideas = {
 				global_building_slots_factor = 0.15
 			}
 		}
+
 		SRS_skynavian_egalitarianism_1 = {
 			picture = SRS_skynavian_egalitarianism
 			allowed = { always = no }
@@ -977,6 +1124,7 @@ ideas = {
 				mobilization_speed = 0.1
 			}
 		}
+
 		SRS_skynavian_egalitarianism_1a = {
 			picture = SRS_skynavian_egalitarianism
 			allowed = { always = no }
@@ -993,6 +1141,7 @@ ideas = {
 				global_building_slots_factor = 0.15
 			}
 		}
+
 		SRS_skynavian_egalitarianism_2 = {
 			picture = SRS_skynavian_egalitarianism
 			allowed = { always = no }
@@ -1009,6 +1158,7 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.05
 			}
 		}
+
 		SRS_skynavian_egalitarianism_2a = {
 			picture = SRS_skynavian_egalitarianism
 			allowed = { always = no }
@@ -1026,6 +1176,7 @@ ideas = {
 				global_building_slots_factor = 0.15
 			}
 		}
+
 		SRS_the_pan_griffonian_ideal = {
 			picture = BAL_peoples_army
 			allowed = { always = no }
@@ -1046,6 +1197,7 @@ ideas = {
 				subversive_activites_upkeep = -0.1
 			}
 		}
+
 		SRS_international_socialist_identity = {
 			picture = fourth_international
 			allowed = { always = no }
@@ -1063,6 +1215,7 @@ ideas = {
 				opinion_gain_monthly_same_ideology_factor = 0.20
 			}
 		}
+
 		SRS_free_womens_corps = {
 			picture = trotskyite_plot_purged
 			allowed = { always = no }
@@ -1078,6 +1231,7 @@ ideas = {
 				army_core_defence_factor = 0.02
 			}
 		}
+
 		SRS_welfare_league = {
 			picture = eng_for_the_good_of_the_revolution
 			allowed = { always = no }
@@ -1091,6 +1245,7 @@ ideas = {
 				stability_factor = 0.02
 			}
 		}
+
 		SRS_revolution_of_the_people_idea = {
 			picture = nkvd_2
 			allowed = { always = no }
@@ -1104,6 +1259,7 @@ ideas = {
 				conscription_factor = 0.1
 			}
 		}
+
 		SRS_vanguard_idea = {
 			picture = nkvd_2
 			allowed = { always = no }
@@ -1117,6 +1273,7 @@ ideas = {
 				conscription_factor = 0.1
 			}
 		}
+
 		SRS_internationalist_intelligence_agency_the_idea = {
 			picture = STG_progressive_leader
 			allowed = { always = no }
@@ -1133,6 +1290,7 @@ ideas = {
 				encryption_factor = 0.05
 			}
 		}
+
 		SRS_centralism_idea = {
 			picture = FRA_national_mobilization_focus
 			allowed = { always = no }
@@ -1146,6 +1304,7 @@ ideas = {
 				political_power_factor = 0.1
 			}
 		}
+
 		SRS_confederalism_idea = {
 			picture = FRA_national_mobilization_focus
 			allowed = { always = no }
@@ -1160,6 +1319,7 @@ ideas = {
 				army_morale_factor = 0.05
 			}
 		}
+
 		SRS_charter_of_the_srs_republic = {
 			picture = home_of_revolution
 			allowed = { always = no }
@@ -1175,6 +1335,7 @@ ideas = {
 				army_morale_factor = 0.05
 			}
 		}
+
 		SRS_armouries_of_peoples = {
 			picture = jap_the_unthinkable_option
 			allowed = { always = no }
@@ -1190,6 +1351,7 @@ ideas = {
 				industrial_capacity_factory = 0.1
 			}
 		}
+
 		SRS_vertical_command_structure = {
 			picture = saf_soviet_advisers
 			allowed = { always = no }
@@ -1204,6 +1366,7 @@ ideas = {
 				army_org_factor = 0.05
 			}
 		}
+
 		SRS_horizontal_command_structure = {
 			picture = saf_soviet_advisers
 			allowed = { always = no }
@@ -1218,6 +1381,7 @@ ideas = {
 				army_morale_factor = 0.05
 			}
 		}
+
 		SRS_agrarian_socialism = {
 			picture = generic_agrarian_reform
 			allowed = { always = no }
@@ -1231,6 +1395,7 @@ ideas = {
 				min_export = -0.05
 			}
 		}
+
 		SRS_communal_industry = {	
 			picture = eng_spirit_of_the_industrial_revolution
 			allowed = { always = no }
@@ -1247,6 +1412,7 @@ ideas = {
 				consumer_goods_factor = 0.02
 			}
 		}
+
 		SRS_weapons_for_the_front = {	
 			picture = MEX_revolutionary_army
 			allowed = { always = no }
@@ -1262,6 +1428,7 @@ ideas = {
 				industrial_capacity_factory = 0.05
 			}
 		}
+
 		SRS_defend_our_homes = {	
 			picture = MEX_revolutionary_army
 			allowed = { always = no }
@@ -1275,6 +1442,7 @@ ideas = {
 				training_time_army_factor = -0.1
 			}
 		}
+
 		SRS_socialist_utopia = {	
 			picture = ast_abandon_the_westminster_system_communism
 			allowed = { always = no }
@@ -1293,6 +1461,7 @@ ideas = {
 				research_speed_factor = 0.02
 			}
 		}
+
 		SRS_socialist_utopia_better = {	
 			picture = ast_abandon_the_westminster_system_communism
 			allowed = { always = no }
@@ -1313,6 +1482,7 @@ ideas = {
 				consumer_goods_factor = -0.02
 			}
 		}
+
 		SRS_socialist_clergy = {
 			picture = red_star_manufacturing
 			allowed = { always = no }
@@ -1328,6 +1498,7 @@ ideas = {
 				non_core_manpower = 0.02
 			}
 		}
+
 		SRS_the_sword_of_the_revolution = {
 			picture = world_revolution
 			allowed = { always = no }
@@ -1343,6 +1514,7 @@ ideas = {
 				ai_focus_aggressive_factor = 0.5
 			}
 		}
+
 		SRS_the_shield_of_the_revolution = {
 			picture = world_revolution
 			allowed = { always = no }
@@ -1358,6 +1530,7 @@ ideas = {
 				ai_focus_defense_factor = 0.5
 			}
 		}
+
 		### nasty Junta stuff ###
 		SRS_work_camps = {	
 			picture = generic_production_bonus
@@ -1373,6 +1546,7 @@ ideas = {
 				production_speed_buildings_factor = 0.10
 			}
 		}
+
 		SRS_labour_units = {	
 			picture = ast_all_in
 			allowed = { always = no }
@@ -1388,6 +1562,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.05
 			}
 		}
+
 		SRS_purged_the_military = {	
 			picture = anti_soviet_pact
 			allowed = { always = no }
@@ -1403,6 +1578,7 @@ ideas = {
 				experience_gain_army_factor = -0.1
 			}
 		}
+
 		SRS_martial_law_permanent = {	
 			picture = generic_fascism_drift_2
 			allowed = { always = no }
@@ -1416,6 +1592,7 @@ ideas = {
 				political_power_factor = -0.1
 			}
 		}
+
 		### depressing commune stuff ###
 		SRS_decentralised_society = {	
 			picture = hol_aloof_neutrality
@@ -1436,6 +1613,7 @@ ideas = {
 				surrender_limit = 0.1
 			}
 		}
+
 		### uplifting pan-griffonian stuff ###
 		SRS_pangriff_constitution = {	
 			picture = home_of_revolution
@@ -1453,6 +1631,7 @@ ideas = {
 				guarantee_cost = -0.1
 			}
 		}
+
 		SRS_pangriff_constitution_farm_work = {	
 			picture = home_of_revolution
 			allowed = { always = no }
@@ -1471,6 +1650,7 @@ ideas = {
 				local_resources_factor = 0.1
 			}
 		}
+
 		SRS_a_volunteer_military = {	
 			picture = world_revolution
 			allowed = { always = no }
@@ -1484,6 +1664,7 @@ ideas = {
 				army_morale_factor = 0.05
 			}
 		}
+
 		SRS_socialist_science = {	
 			picture = materialist_manifesto
 			allowed = { always = no }
@@ -1496,6 +1677,7 @@ ideas = {
 				research_speed_factor = 0.1
 			}
 		}
+
 		SRS_pangriffonian_identity = {	
 			picture = pioneers
 			allowed = { always = no }
@@ -1509,6 +1691,7 @@ ideas = {
 				conscription_factor = 0.05
 			}
 		}
+
 		SRS_pangriffonian_welfare_league = {
 			picture = eng_for_the_good_of_the_revolution
 			allowed = { always = no }
@@ -2506,7 +2689,8 @@ ideas = {
 		}
 			
 		modifier = {
-			conscription = 0.05
+			conscription = 0.04
+			mobilization_speed = 0.2
 		}
 	}
 		
@@ -2519,6 +2703,7 @@ ideas = {
 			
 		modifier = {
 			conscription = 0.02
+			mobilization_speed = 0.1
 		}
 	}
 		
@@ -3406,7 +3591,7 @@ ideas = {
 		modifier = {
 			stability_weekly = -0.005
 			war_support_weekly = -0.005
-			political_power_gain = -0.25
+			political_power_gain = -0.10
 		}
 	}
 
@@ -3417,8 +3602,8 @@ ideas = {
 			always = yes
 		}
 		modifier = {
-			industrial_capacity_factory = 0.15
-			production_speed_arms_factory_factor = 0.15
+			industrial_capacity_factory = 0.25
+			production_speed_arms_factory_factor = 0.25
 		}
 	}
 
@@ -3429,9 +3614,9 @@ ideas = {
 			always = yes
 		}
 		modifier = {
-			industrial_capacity_factory = 0.15
-			production_speed_arms_factory_factor = 0.15
-			production_speed_infrastructure_factor = 0.15
+			industrial_capacity_factory = 0.25
+			production_speed_arms_factory_factor = 0.25
+			production_speed_infrastructure_factor = 0.25
 		}
 	}
 
