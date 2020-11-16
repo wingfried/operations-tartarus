@@ -10,6 +10,21 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_trait_busy_trait"
+		texturefile = "gfx/interface/traits/personal/trait_busy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_academy_training_trait"
+		texturefile = "gfx/interface/traits/personal/trait_military_academy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_war_college_training_trait"
+		texturefile = "gfx/interface/traits/personal/trait_war_college.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_trait_general1_trait"
 		texturefile = "gfx/interface/traits/officer_ranks/trait_general1.dds"
 	}

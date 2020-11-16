@@ -1,7 +1,7 @@
 SRS_military_academy_training_category = {
 	
 	SRS_train_asper_sickleclaw_academy = {
-		icon = generic_civil_support
+		icon = generic_army_support
 		allowed = {
 			tag = SRS
 		}
@@ -42,7 +42,7 @@ SRS_military_academy_training_category = {
 	}
 
 	SRS_train_dakota_rosefeather_academy = {
-		icon = generic_civil_support
+		icon = generic_army_support
 		allowed = {
 			tag = SRS
 		}
@@ -108,7 +108,7 @@ SRS_military_academy_training_category = {
 	}
 
 	SRS_train_thomas_thunderbeak_academy = {
-		icon = generic_civil_support
+		icon = generic_army_support
 		allowed = {
 			tag = SRS
 		}
@@ -174,7 +174,7 @@ SRS_military_academy_training_category = {
 	}
 
 	SRS_train_comrade_frost_academy = {
-		icon = generic_civil_support
+		icon = generic_army_support
 		allowed = {
 			tag = SRS
 		}
@@ -240,7 +240,7 @@ SRS_military_academy_training_category = {
 	}
 
 	SRS_train_riley_vinchers_academy = {
-		icon = generic_civil_support
+		icon = generic_army_support
 		allowed = {
 			tag = SRS
 		}
@@ -306,7 +306,7 @@ SRS_military_academy_training_category = {
 	}
 
 	SRS_train_malcolm_granger_academy = {
-		icon = generic_civil_support
+		icon = generic_army_support
 		allowed = {
 			tag = SRS
 		}
@@ -372,7 +372,7 @@ SRS_military_academy_training_category = {
 	}
 
 	SRS_train_john_carlini_academy = {
-		icon = generic_civil_support
+		icon = generic_army_support
 		allowed = {
 			tag = SRS
 		}
@@ -438,7 +438,7 @@ SRS_military_academy_training_category = {
 	}
 
 	SRS_train_horson_welles_academy = {
-		icon = generic_civil_support
+		icon = generic_army_support
 		allowed = {
 			tag = SRS
 		}
@@ -507,7 +507,7 @@ SRS_military_academy_training_category = {
 SRS_war_college_training_category = {
 
 	SRS_train_asper_sickleclaw_college = {
-		icon = generic_civil_support
+		icon = generic_army_support
 		allowed = {
 			tag = SRS
 		}
@@ -552,7 +552,7 @@ SRS_war_college_training_category = {
 	}
 
 	SRS_train_dakota_rosefeather_college = {
-		icon = generic_civil_support
+		icon = generic_army_support
 		allowed = {
 			tag = SRS
 		}
@@ -622,7 +622,7 @@ SRS_war_college_training_category = {
 	}
 
 	SRS_train_thomas_thunderbeak_college = {
-		icon = generic_civil_support
+		icon = generic_army_support
 		allowed = {
 			tag = SRS
 		}
@@ -692,7 +692,7 @@ SRS_war_college_training_category = {
 	}
 
 	SRS_train_comrade_frost_college = {
-		icon = generic_civil_support
+		icon = generic_army_support
 		allowed = {
 			tag = SRS
 		}
@@ -762,7 +762,7 @@ SRS_war_college_training_category = {
 	}
 
 	SRS_train_riley_vinchers_college = {
-		icon = generic_civil_support
+		icon = generic_army_support
 		allowed = {
 			tag = SRS
 		}
@@ -832,7 +832,7 @@ SRS_war_college_training_category = {
 	}
 
 	SRS_train_malcolm_granger_college = {
-		icon = generic_civil_support
+		icon = generic_army_support
 		allowed = {
 			tag = SRS
 		}
@@ -902,7 +902,7 @@ SRS_war_college_training_category = {
 	}
 
 	SRS_train_john_carlini_college = {
-		icon = generic_civil_support
+		icon = generic_army_support
 		allowed = {
 			tag = SRS
 		}
@@ -972,7 +972,7 @@ SRS_war_college_training_category = {
 	}
 
 	SRS_train_horson_welles_college = {
-		icon = generic_civil_support
+		icon = generic_army_support
 		allowed = {
 			tag = SRS
 		}

@@ -1,4 +1,5 @@
 SRS_military_academy_training_category = {
+	icon = infiltration
 	allowed = {
 		original_tag = SRS
 	}
@@ -11,6 +12,7 @@ SRS_military_academy_training_category = {
 }
 
 SRS_war_college_training_category = {
+	icon = infiltration
 	allowed = {
 		original_tag = SRS
 	}
