@@ -1,0 +1,9 @@
+SRS_expansion_puppet_category = {
+	#icon = 
+	allowed = {
+		original_tag = SRS
+	}
+	visible = {
+		has_country_flag = SRS_north_conquered
+	}
+}

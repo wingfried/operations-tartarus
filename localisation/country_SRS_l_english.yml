@@ -1358,6 +1358,8 @@ SRS_train_riley_vinchers_college:0 "§YRiley Vinchers§!: War College Training"
 SRS_train_malcolm_granger_college:0 "§YMalcolm Granger§!: War College Training"
 SRS_train_john_carlini_college:0 "§YJohn Carlini§!: War College Training"
 SRS_train_horson_welles_college:0 "§YHorson Welles§!: War College Training"
+SRS_expansion_puppet_category:0 "(Expansion-Puppet Category)"
+SRS_attack_HAU:0 "(Attack HAU)"
 
 #### EVENTS ####
 srs_borderwar.3.t:0 "Victory in Border Skirmish!"

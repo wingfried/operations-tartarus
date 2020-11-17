@@ -3755,6 +3755,7 @@ country_event = { #Skynavia has conquered Vedinia, the Northern Tribes and the G
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.27"}
 	title = srs_sickoflavour.27.t
 	desc = srs_sickoflavour.27.d
+	#picture = 
 	
 	fire_only_once = yes
 	
@@ -3775,10 +3776,12 @@ country_event = { #Skynavia has conquered Vedinia, the Northern Tribes and the G
 			traits = { }
 		}
 		set_cosmetic_tag = SRS_communism_north
+		set_country_flag = SRS_north_conquered
 	}
 	option = {
 		name = srs_sickoflavour.27.b
 		set_cosmetic_tag = SRS_communism_north
+		set_country_flag = SRS_north_conquered
 	}
 }
 	
