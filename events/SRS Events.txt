@@ -3750,6 +3750,33 @@ country_event = {
 	}
 }
 
+country_event = { #Skynavia has conquered Vedinia, the Northern Tribes and the Griffonian Republic.
+	id = srs_sickoflavour.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.27"}
+	title = srs_sickoflavour.27.t
+	desc = srs_sickoflavour.27.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_government = communism
+	}
+	
+	option = {
+		name = srs_sickoflavour.27.a
+		create_country_leader = {
+			name = "Skynavian General Congress"
+			desc = ""
+			picture = "GeneralCongress.tga"
+			expire = "1965.1.1"
+			ideology = democratic_socialism
+			traits = { }
+		}
+		set_cosmetic_tag = SRS_communism_north
+	}
+}
 	
 ## SRS Ultimatum Event ##
 

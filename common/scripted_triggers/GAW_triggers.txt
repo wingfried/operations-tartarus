@@ -215,3 +215,43 @@ country_with_custom_spymaster = {
 		original_tag = ARA
 	}
 }
+
+SRS_owns_VED = {
+	VED = { exists = no }
+	owns_state = 403 #Soderbotten
+	owns_state = 404 #Sydvastland
+	owns_state = 429 #Kungland
+	owns_state = 430 #Borasland
+	owns_state = 431 #Ostland
+	owns_state = 482 #Snalland
+	owns_state = 483 #Skyrim
+	owns_state = 484 #Kullbotten
+	owns_state = 575 #Hogland
+	owns_state = 576 #Flodbotten
+	owns_state = 584 #Fjarrland
+}
+
+SRS_owns_NTR = {
+	NTR = { exists = no }
+	owns_state = 562 #Liftauf
+	owns_state = 563 #Vastmush
+	owns_state = 567 #Cubria
+	owns_state = 573 #Morker
+	owns_state = 602 #Moonrise
+	owns_state = 677 #Firefly Forest
+}
+
+SRS_owns_FAT = {
+	FAT = { exists = no }
+	owns_state = 432 #Winghagen
+	owns_state = 449 #Bleakspire
+	owns_state = 450 #Cavegrove
+	owns_state = 474 #Lostgate
+	owns_state = 480 #Windford
+	owns_state = 485 #Cloudbury
+	owns_state = 548 #Blaland
+	owns_state = 556 #Rotten Rift
+	owns_state = 557 #Doendejord
+	owns_state = 582 #Squark
+	owns_state = 583 #Bredoland
+}

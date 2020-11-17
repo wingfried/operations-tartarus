@@ -108,5 +108,17 @@ on_actions = {
 				}
 			}
 		}
+		effect = {
+			SRS = {
+				if = {
+					limit = {
+						SRS_owns_VED = yes
+						SRS_owns_NTR = yes
+						SRS_owns_FAT = yes
+					}
+					country_event = srs_sickoflavour.27
+				}
+			}
+		}
 	}
 }

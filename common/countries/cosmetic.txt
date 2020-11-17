@@ -1,3 +1,8 @@
+SRS_communism_north = {
+	color = rgb { 125 13 24 }
+	color_ui = rbg { 125 13 24 }
+}
+
 FWF_communism = {
 	color = rgb { 202 23 62 }
 	color_ui = rgb { 202 23 62 }
