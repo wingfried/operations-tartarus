@@ -4246,7 +4246,7 @@ focus_tree = {
 	focus = {
 		id = SRS_cleanse_the_army
 		icon = GFX_goal_HOL_amend_wapenwet
-			prerequisite = { focus = SRS_lessons_of_the_civil_war }
+		prerequisite = { focus = SRS_lessons_of_the_civil_war }
 		x = 28
 		y = 20
 		cost = 2.2
@@ -4267,10 +4267,16 @@ focus_tree = {
 		id = SRS_military_academy
 		icon = GFX_goal_bookstack
 		prerequisite = { focus = SRS_cleanse_the_army }
+		available = {
+			OR = {
+				has_idea = lack_of_scientists3
+				has_idea = no_lack_of_scientists
+			}
+		}
 		relative_position_id = SRS_cleanse_the_army
 		x = 0
 		y = 1
-		cost = 5.8
+		cost = 4.4
 		ai_will_do = {
 			factor = 12
 		}
@@ -4285,9 +4291,12 @@ focus_tree = {
 		icon = GFX_goal_PAN_Create_the_Universidad_de_Panama
 		prerequisite = { focus = SRS_military_academy }
 		relative_position_id = SRS_military_academy
+		available = {
+			has_idea = no_lack_of_scientists
+		}
 		x = 0
 		y = 1
-		cost = 8.6
+		cost = 4.4
 		ai_will_do = {
 			factor = 12
 		}

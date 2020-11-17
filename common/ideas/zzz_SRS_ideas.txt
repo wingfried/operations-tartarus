@@ -434,7 +434,7 @@ ideas = {
 		}
 
 		SRS_mechanized_manufacturer_2 = {
-			#picture = 
+			picture = SRS_beakins
 			
 			allowed = {
 				tag = SRS
@@ -469,7 +469,7 @@ ideas = {
 		}
 
 		SRS_elite_artillery_manufacturer = {
-			picture = generic_artillery_manufacturer_2
+			picture = SRS_cannon
 			
 			allowed = {
 				tag = SRS
@@ -740,10 +740,26 @@ ideas = {
 			traits = { convoy_escort_naval_manufacturer }
 
 		}
+
+		SRS_naval_quantity_manufacturer = {
+
+			#picture = 
+			
+			available = {
+				has_government = communism
+			}
+
+			allowed = {
+				tag = SRS
+			}
+
+			traits = { GAW_ship_quantity }
+
+		}
 		
 		SRS_light_ship_manufacturer = {
 
-			#picture = 
+			picture = SRS_purple_submarine
 			
 			available = {
 				has_government = democratic
@@ -759,7 +775,7 @@ ideas = {
 		
 		SRS_heavy_ship_manufacturer = {
 
-			#picture = 
+			picture = SRS_griffeidon
 			
 			available = {
 				has_government = democratic
@@ -770,22 +786,6 @@ ideas = {
 			}
 
 			traits = { GAW_heavy_ship_quality }
-
-		}
-		
-		SRS_naval_quantity_manufacturer = {
-
-			#picture = 
-			
-			available = {
-				has_government = communism
-			}
-
-			allowed = {
-				tag = SRS
-			}
-
-			traits = { GAW_ship_quantity }
 
 		}
 
@@ -938,69 +938,6 @@ ideas = {
 			traits = { light_aircraft_manufacturer }
 		}
 
-		SRS_medium_aircraft_manufacturer = {
-
-			picture = generic_air_manufacturer_3
-
-			allowed = {
-				tag = SRS
-			}
-
-			research_bonus = {
-				air_equipment = 0.10
-			}
-
-			traits = { medium_aircraft_manufacturer }
-		}
-
-		SRS_heavy_aircraft_manufacturer = {
-
-			picture = generic_air_manufacturer_2
-
-			available = {
-				has_government = democratic
-			}
-			allowed = {
-				tag = SRS
-			}
-
-			research_bonus = {
-				air_equipment = 0.10
-			}
-
-			traits = { heavy_aircraft_manufacturer }
-		}
-		
-		SRS_tactical_strategic_bomber_manufacturer = {
-		
-			#picture =
-			
-			available = {
-				has_government = democratic
-			}
-			
-			allowed = {
-				tag = SRS
-			}
-			
-			traits = { GAW_tactical_strategic_bomber_quality }
-		}
-		
-		SRS_fighter_cas_manufacturer = {
-			
-			#picture =
-			
-			available = {
-				has_government = democratic
-			}
-			
-			allowed = {
-				tag = SRS
-			}
-			
-			traits = { GAW_fighter_cas_quality }
-		}
-		
 		SRS_aircraft_quantity_manufacturer = {
 			
 			#picture =
@@ -1014,6 +951,36 @@ ideas = {
 			}
 			
 			traits = { GAW_plane_quantity }
+		}
+
+		SRS_fighter_cas_manufacturer = {
+			
+			picture = SRS_flying_pig
+			
+			available = {
+				has_government = democratic
+			}
+			
+			allowed = {
+				tag = SRS
+			}
+			
+			traits = { GAW_fighter_cas_quality }
+		}
+		
+		SRS_tactical_strategic_bomber_manufacturer = {
+		
+			picture = SRS_boomers
+			
+			available = {
+				has_government = democratic
+			}
+			
+			allowed = {
+				tag = SRS
+			}
+			
+			traits = { GAW_tactical_strategic_bomber_quality }
 		}
 		
 	}

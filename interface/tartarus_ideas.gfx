@@ -257,8 +257,32 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SRS_panzer_utopia.dds"
 	}
 	SpriteType = {
+		name = "GFX_idea_SRS_purple_submarine"
+		texturefile = "gfx/interface/ideas/SRS_purple_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_griffeidon"
+		texturefile = "gfx/interface/ideas/SRS_griffeidon.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_flying_pig"
+		texturefile = "gfx/interface/ideas/SRS_flying_pig.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_boomers"
+		texturefile = "gfx/interface/ideas/SRS_boomers.dds"
+	}
+	SpriteType = {
 		name = "GFX_idea_SRS_fighting_fox_factory"
 		texturefile = "gfx/interface/ideas/SRS_fighting_fox_factory.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_cannon"
+		texturefile = "gfx/interface/ideas/SRS_cannon.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_beakins"
+		texturefile = "gfx/interface/ideas/SRS_beakins.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_SRS_scary_grif"
