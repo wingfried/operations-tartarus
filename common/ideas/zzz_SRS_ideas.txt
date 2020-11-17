@@ -740,6 +740,54 @@ ideas = {
 			traits = { convoy_escort_naval_manufacturer }
 
 		}
+		
+		SRS_light_ship_manufacturer = {
+
+			#picture = 
+			
+			available = {
+				has_government = democratic
+			}
+
+			allowed = {
+				tag = SRS
+			}
+
+			traits = { GAW_light_ship_quality }
+
+		}
+		
+		SRS_heavy_ship_manufacturer = {
+
+			#picture = 
+			
+			available = {
+				has_government = democratic
+			}
+
+			allowed = {
+				tag = SRS
+			}
+
+			traits = { GAW_heavy_ship_quality }
+
+		}
+		
+		SRS_naval_quantity_manufacturer = {
+
+			#picture = 
+			
+			available = {
+				has_government = communism
+			}
+
+			allowed = {
+				tag = SRS
+			}
+
+			traits = { GAW_ship_quantity }
+
+		}
 
 	}
 
@@ -922,6 +970,52 @@ ideas = {
 
 			traits = { heavy_aircraft_manufacturer }
 		}
+		
+		SRS_tactical_strategic_bomber_manufacturer = {
+		
+			#picture =
+			
+			available = {
+				has_government = democratic
+			}
+			
+			allowed = {
+				tag = SRS
+			}
+			
+			traits = { GAW_tactical_strategic_bomber_quality }
+		}
+		
+		SRS_fighter_cas_manufacturer = {
+			
+			#picture =
+			
+			available = {
+				has_government = democratic
+			}
+			
+			allowed = {
+				tag = SRS
+			}
+			
+			traits = { GAW_fighter_cas_quality }
+		}
+		
+		SRS_aircraft_quantity_manufacturer = {
+			
+			#picture =
+			
+			available = {
+				has_government = communism
+			}
+			
+			allowed = {
+				tag = SRS
+			}
+			
+			traits = { GAW_plane_quantity }
+		}
+		
 	}
 	
 	country = {

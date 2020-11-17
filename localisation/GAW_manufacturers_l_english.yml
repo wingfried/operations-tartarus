@@ -10,7 +10,13 @@
  GAW_artillery_quality_manufacturer:0 "Artillery Designer\n(Quality)"
  GAW_mechanized_manufacturer_quantity:0 "Mechanized Equipment Designer\n(Quantity)"
  GAW_mechanized_manufacturer_quality:0 "Mechanized Equipment Designer\n(Quality)"
-
+ GAW_tactical_strategic_bomber_quality:0 "Tactical and Strategic Bomber Designer\n(Quality)"
+ GAW_fighter_cas_quality:0 "Fighter and Close Air Support Designer\n(Quality)"
+ GAW_light_ship_quality:0 "Light Ship Designer\n(Quality)"
+ GAW_heavy_ship_quality:0 "Heavy Ship Designer\n(Quality)"
+ GAW_plane_quantity:0 "Aircraft Designer\n(Quantity)"
+ GAW_ship_quantity:0 "Naval Designer\n(Quantity)"
+ 
  cat_light_armor_research:0 "Light Tank Research Speed"
  cat_medium_armor_research:0 "Medium & Modern Tank Research Speed"
  cat_heavy_armor_research:0 "Heavy & Super Heavy Tank Research Speed"
