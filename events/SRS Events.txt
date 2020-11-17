@@ -3776,6 +3776,10 @@ country_event = { #Skynavia has conquered Vedinia, the Northern Tribes and the G
 		}
 		set_cosmetic_tag = SRS_communism_north
 	}
+	option = {
+		name = srs_sickoflavour.27.b
+		set_cosmetic_tag = SRS_communism_north
+	}
 }
 	
 ## SRS Ultimatum Event ##
