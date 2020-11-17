@@ -1,0 +1,40 @@
+division_template = {
+	name = "Penal Batallion"	
+	division_names_group = SRS_PENAL_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+    priority = 0
+}
+
+
+
+units = {
+	division = {
+		name = "Penal Batallion Skynavia"
+		location = 11421
+		division_template = "Penal Batallion"
+		start_experience_factor = 0.21 }
+	division = {
+		name = "Penal Batallion Dinkau"
+		location = 11307
+		division_template = "Penal Batallion"
+		start_experience_factor = 0.18 }
+	division = {
+		name = "Penal Batallion Plover"
+		location = 1334
+		division_template = "Penal Batallion"
+		start_experience_factor = 0.26 }		
+}
+
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 900
+		producer = SRS
+	}
+}
