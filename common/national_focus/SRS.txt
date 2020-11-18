@@ -1336,6 +1336,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = { idea = SRS_our_shortcut_idea days = 730 }
 			add_timed_idea = { idea = SRS_to_victory_idea days = 365 }
+			custom_effect_tooltip = internationalist_industrialization_tt
 		}
 	}
 
@@ -1353,6 +1354,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = SRS_slow_and_steady_idea
+			custom_effect_tooltip = communalist_industrialization_tt
 		}
 	}
 	

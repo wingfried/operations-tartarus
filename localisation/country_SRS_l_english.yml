@@ -486,6 +486,8 @@ SRS_recruitment_war_effort_3:0 "Rifles for Everyone!"
 SRS_elan_war_effort_1:0 "Zealous Combatants"
 SRS_elan_war_effort_2:0 "Not One Step Back!"
 SRS_elan_war_effort_3:0 "Remember Pridea!"
+SRS_war_exhaustion:0 "(Placeholder)"
+SRS_army_bolstered:0 "(Placeholder)"
 
 #### REPUBLICAN TREE IDEAS ####
 SRS_shits_fucked_radical_1:0 "Radical Backlash - No Reconsiliation Progress"
@@ -566,6 +568,8 @@ SRS_Wait_what_tooltip:0 "§RWait, what?§"
 SRS_not_the_children:0 "Children opinion factor: §Y-10.00%§!"
 SRS_military_academy_tp:0 "Unlocks §YMilitary Academy Training§! decisions."
 SRS_war_college_tp:0 "Unlocks §YWar College Training§! decisions."
+communalist_industrialization_tt:0 "\nUnlocks £decision_icon_small §YDecisions§! that will allow us to further the industralization of our country in the image of the §CCommunalist Plan§!."
+internationalist_industrialization_tt:0 "\nUnlocks £decision_icon_small §YDecisions§! that will allow us to bolster the army of our country and forge it in the image of the §CInternationalist Plan§!."
 
 #### COSMETICS ####
 SRS_became_cloudburry:0 "The Northern Republican Authority"
@@ -1362,6 +1366,12 @@ SRS_train_john_carlini_college:0 "§YJohn Carlini§!: War College Training"
 SRS_train_horson_welles_college:0 "§YHorson Welles§!: War College Training"
 SRS_expansion_puppet_category:0 "(Expansion-Puppet Category)"
 SRS_attack_HAU:0 "(Attack HAU)"
+SRS_communalist_industrialization_plan:0 "The Communalist Plan"
+SRS_internationalist_industrialization_plan:0 "The Internationalist Plan"
+SRS_aid_bluffhead_development:0 "Aid Bluffhead Development"
+SRS_aid_dinkau_development:0 "Aid Dinkau Development"
+SRS_spirit_reinvigoration:0 "(Placeholder)"
+SRS_army_reinvigoration:0 "(Placeholder)"
 
 #### EVENTS ####
 srs_borderwar.3.t:0 "Victory in Border Skirmish!"
