@@ -580,6 +580,41 @@ ideas = {
 			    production_factory_max_efficiency_factor = 0.075
 			}
 		}
+	        Hoffwing_Steel = {
+			picture = generic_industrial_concern_2
+			
+			allowed = {
+				tag = SRS
+			}
+			available = {
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			    local_resources_factor = 0.15
+			}
+		}
+		
+	        Dinkau_Constructions = {
+			picture = generic_industrial_concern_1
+			
+			allowed = {
+				tag = SRS
+			}
+			available = {
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			    production_speed_arms_factory_factor = 0.1
+			    production_speed_industrial_complex_factor = 0.1
+			    production_speed_synthetic_refinery_factor = 0.1
+			    production_speed_infrastructure_factor = 0.1
+			    production_speed_dockyard_factor = 0.1
+			}
+		}
 	}
 
 	army_chief = {
