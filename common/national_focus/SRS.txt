@@ -1473,7 +1473,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_timed_idea = { idea = SRS_urban_education_program_idea days = 365 }
+		        custom_effect_tooltip = SRS_military_research_tp
+                        custom_effect_tooltip = SRS_industry_research_tp
+		
+		hidden_effect = {
+		        add_ideas = SRS_research_thingy_idea
+			}
 		}
 	}
 	
