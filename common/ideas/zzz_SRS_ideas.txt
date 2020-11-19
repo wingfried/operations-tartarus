@@ -10,6 +10,8 @@ ideas = {
 			}
 			traits = { prince_of_terror }
 			modifier = {
+				political_power_gain = 0.05
+				war_support_weekly = 0.001
 				custom_modifier_tooltip = SRS_not_the_children
 			}
 		}
@@ -46,6 +48,9 @@ ideas = {
 
 			}
 			traits = { minister_of_agriculture }
+			modifier = {
+				stability_weekly = 0.001
+			}
 		}
 
 		SRS_generico_1 = {
@@ -4052,6 +4057,7 @@ ideas = {
 		}
 		modifier = {
 			industrial_capacity_factory = 0.25
+			production_speed_industrial_complex_factor = 0.25
 			production_speed_arms_factory_factor = 0.25
 		}
 	}
@@ -4064,6 +4070,7 @@ ideas = {
 		}
 		modifier = {
 			industrial_capacity_factory = 0.25
+			production_speed_industrial_complex_factor = 0.25
 			production_speed_arms_factory_factor = 0.25
 			production_speed_infrastructure_factor = 0.25
 		}
@@ -4115,8 +4122,10 @@ ideas = {
 			has_war = no
 		}
 		modifier = {
-			stability_weekly = -0.005
-			war_support_weekly = -0.005
+			stability_factor = 0.35
+			war_support_factor = 0.35
+			stability_weekly = -0.01
+			war_support_weekly = -0.01
 		}
 	}
 
@@ -4127,20 +4136,18 @@ ideas = {
 			has_war = no
 		}
 		modifier = {
-			army_attack_factor = 0.075
-			army_defence_factor = 0.075
-			army_org_factor = 0.075
-			stability_weekly = -0.005
-			war_support_weekly = -0.005
+			army_attack_factor = 0.10
+			army_defence_factor = 0.10
+			army_org_factor = 0.10
+			experience_loss_factor = 0.15
+			stability_weekly = -0.01
+			war_support_weekly = -0.01
 		}
 	}
 
 	SRS_military_academy_idea = {
 		#picture =
 		removal_cost = -1
-		cancel = {
-			has_war = no
-		}
 		research_bonus = {
 			land_doctrine = 0.10
 		}
@@ -4149,9 +4156,6 @@ ideas = {
 	SRS_war_college_idea = {
 		#picture =
 		removal_cost = -1
-		cancel = {
-			has_war = no
-		}
 		research_bonus = {
 			land_doctrine = 0.10
 		}
@@ -4164,19 +4168,19 @@ ideas = {
 			always = yes
 		}
      	research_bonus = {
-			infantry_weapons = 0.10
-			artillery = 0.10
-			support_tech = 0.10
-			armor = 0.10
-			motorized_equipment = 0.10
-			naval_equipment = 0.10
-			air_equipment = 0.10
-			land_doctrine = 0.10
-			air_doctrine = 0.10
-			naval_doctrine = 0.10
+			infantry_weapons = 0.15
+			artillery = 0.15
+			support_tech = 0.15
+			armor = 0.15
+			motorized_equipment = 0.15
+			naval_equipment = 0.15
+			air_equipment = 0.15
+			land_doctrine = 0.15
+			air_doctrine = 0.15
+			naval_doctrine = 0.15
 			industry = -0.15
 			electronics = -0.15
-                }
+		}
 	}
 }	
 

@@ -4947,6 +4947,7 @@ SRS_communalist_industrialization_plan = {
 		}
 		fire_only_once = yes
 		days_remove = 60
+		cost = 50
 		modifier  {
 			civilian_factory_use = 3
 		}
@@ -4974,6 +4975,7 @@ SRS_communalist_industrialization_plan = {
 		}
 		fire_only_once = yes
 		days_remove = 60
+		cost = 50
 		modifier  {
 			civilian_factory_use = 3
 		}
@@ -4995,30 +4997,41 @@ SRS_communalist_industrialization_plan = {
 }
 
 SRS_internationalist_industrialization_plan = {
-	SRS_spirit_reinvigoration = {
-		allowed = {
-			original_tag = SRS
-		}
-		available = {
-			has_war = yes
-		}
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision SRS_aid_bluffhead_development"
-			add_stability = 0.25
-			add_war_support = 0.25
-			add_ideas = SRS_war_exhaustion
-		}
-	}
 	SRS_army_reinvigoration = {
 		allowed = {
 			original_tag = SRS
 		}
 		available = {
 			has_war = yes
+			surrender_progress > 0.15
 		}
+		visible = {
+			NOT = { has_idea = SRS_army_bolstered }
+		}
+		cost = 25
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SRS_army_reinvigoration"
 			add_ideas = SRS_army_bolstered
+		}
+	}
+	SRS_spirit_reinvigoration = {
+		allowed = {
+			original_tag = SRS
+		}
+		available = {
+			has_war = yes
+			OR = {
+				has_stability < 0.25
+				has_war_support < 0.25
+			}
+		}
+		visible = {
+			NOT = { has_idea = SRS_war_exhaustion }
+		}
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SRS_aid_bluffhead_development"
+			add_ideas = SRS_war_exhaustion
 		}
 	}
 }

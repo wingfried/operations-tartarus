@@ -3217,6 +3217,7 @@ country_event = {
 			561 = { set_demilitarized_zone = yes }
 			add_political_power = -200
 			add_stability = -0.5
+			add_manpower = -6
 	}
 }
 
@@ -3228,7 +3229,7 @@ country_event = {
 	picture = GFX_event_griffon_soldier
 	is_triggered_only = yes
 	option = {
-		name = srs_sickoflavour.3.a	
+		name = srs_sickoflavour.3.a
 	}
 }
 	
@@ -3245,6 +3246,7 @@ country_event = {
 		name = srs_sickocivwar.3.a
 			561 = { set_demilitarized_zone = no }
 			add_stability = 0.075
+			add_manpower = -2
 	}
 }
 
