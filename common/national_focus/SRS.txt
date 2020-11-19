@@ -5482,20 +5482,46 @@ focus_tree = {
 		prerequisite = { focus = SRS_explosive_filler }
 		prerequisite = { focus = SRS_the_heavy_fighter }
 		relative_position_id = SRS_explosive_filler
-		bypass = { has_tech = strategic_bomber3 }
 		x = -1
 		y = 1
 		cost = 2.9
 		ai_will_do = {
 			factor = 12
 		}
+
+		available = { has_tech = strategic_bomber2 }
+
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				technology = strategic_bomber3
+			IF = {
+	            limit = { NOT = { has_tech = strategic_bomber3 } }
+		        hidden_effect = { set_technology = { strategic_bomber3 = 1 } }
+		        custom_effect_tooltip = SRS_strategic_bomber_technology
 			}
-		}	
+			ELSE_IF = {
+	        	limit = { has_tech = strategic_bomber3}
+		        hidden_effect = { 
+		        	add_equipment_to_stockpile = {
+		        		type = strat_bomber_equipment_3
+		        		amount = 60
+		        	}
+
+		        }
+		        custom_effect_tooltip = SRS_strategic_bomber_stockpile
+			}
+			hidden_effect = {
+				create_equipment_variant = {
+		        	name = "Zebrikabomber"
+		        	type = strat_bomber_equipment_3
+		        	upgrades = {
+		        		plane_bomb_upgrade = 0
+		        		plane_range_upgrade = 2
+		        		plane_engine_upgrade = 0
+		        		plane_reliability_upgrade = 2
+		        	}
+				}
+			}
+			custom_effect_tooltip = SRS_himmelrauber
+		}
 	}
 
 	focus = {
@@ -5562,20 +5588,46 @@ focus_tree = {
 		prerequisite = { focus = SRS_develop_the_stormers }
 		prerequisite = { focus = SRS_surgical_precision }
 		relative_position_id = SRS_develop_the_stormers
-		bypass = { has_tech = CAS3 }
 		x = 1
 		y = 1
 		cost = 2.9
 		ai_will_do = {
 			factor = 12
 		}
+
+		available = { has_tech = CAS2 }
+
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				technology = CAS3
+			IF = {
+	            limit = { NOT = { has_tech = CAS3 } }
+		        hidden_effect = { set_technology = { CAS3 = 1 } }
+		        custom_effect_tooltip = SRS_cas_technology
 			}
-		}	
+			ELSE_IF = {
+	        	limit = { has_tech = CAS3 }
+		        hidden_effect = { 
+		        	add_equipment_to_stockpile = {
+		        		type = CAS_equipment_3
+		        		amount = 60
+		        	}
+
+		        }
+		        custom_effect_tooltip = SRS_CAS_stockpile
+			}
+			hidden_effect = {
+				create_equipment_variant = {
+		        	name = "Himmelrauber"
+		        	type = CAS_equipment_3
+		        	upgrades = {
+		        		plane_cas_upgrade = 2
+		        		plane_range_upgrade = 0
+		        		plane_engine_upgrade = 0
+		        		plane_reliability_upgrade = 2
+		        	}
+				}
+			}
+			custom_effect_tooltip = SRS_himmelrauber
+		}
 	}
 
 	focus = {
@@ -5642,19 +5694,45 @@ focus_tree = {
 		prerequisite = { focus = SRS_intermediate_sized_bomber_project }
 		prerequisite = { focus = SRS_superior_training }
 		relative_position_id = SRS_intermediate_sized_bomber_project
-		bypass = { has_tech = fighter3 }
 		x = 1
 		y = 1
 		cost = 2.9
 		ai_will_do = {
 			factor = 12
 		}
+
+		available = { has_tech = fighter2 }
+
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				technology = fighter3
+			IF = {
+	            limit = { NOT = { has_tech = fighter3 } }
+		        hidden_effect = { set_technology = { fighter3 = 1 } }
+		        custom_effect_tooltip = SRS_fighter_technology
 			}
+			ELSE_IF = {
+	        	limit = { has_tech = fighter3}
+		        hidden_effect = { 
+		        	add_equipment_to_stockpile = {
+		        		type = fighter_equipment_3
+		        		amount = 60
+		        	}
+
+		        }
+		        custom_effect_tooltip = SRS_fighter_stockpile
+			}
+			hidden_effect = {
+				create_equipment_variant = {
+		        	name = "Barenkatze"
+		        	type = fighter_equipment_3
+		        	upgrades = {
+		        		plane_gun_upgrade = 0
+		        		plane_range_upgrade = 0
+		        		plane_engine_upgrade = 4
+		        		plane_reliability_upgrade = 0
+		        	}
+				}
+			}
+			custom_effect_tooltip = SRS_barenkatze
 		}	
 	}
 
