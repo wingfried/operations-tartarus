@@ -4156,4 +4156,27 @@ ideas = {
 			land_doctrine = 0.20
 		}
 	}
-}
+	
+	SRS_research_thingy_idea = {
+		#picture = 
+		removal_cost = -1
+		available = {
+			always = yes
+		}
+     	research_bonus = {
+			infantry_weapons = 0.10
+			artillery = 0.10
+			support_tech = 0.10
+			armor = 0.10
+			motorized_equipment = 0.10
+			naval_equipment = 0.10
+			air_equipment = 0.10
+			land_doctrine = 0.10
+			air_doctrine = 0.10
+			naval_doctrine = 0.10
+			industry = -0.15
+			electronics = -0.15
+                }
+	}
+}	
+
