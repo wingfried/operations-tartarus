@@ -1818,3 +1818,15 @@ SRS_skynavian_redguard_2:0 "Extensive Skynavian Redguard"
 SRS_skynavian_redguard_2_desc:0 "Mass mobilized soldiers who pledged loyalty to Skynavia and their ideals, with limited training on their side yet lead by many great commanders of the army, are ready to fight until their death."
 SRS_skynavian_redguard_3:0 "Boundless Skynavian Redguard"
 SRS_skynavian_redguard_3_desc:0 "Mass mobilized soldiers who pledged loyalty to Skynavia and their ideals, with limited training on their side yet lead by many great commanders of the army, are ready to fight until their death."
+
+#### AVIATION ####
+
+SRS_strategic_bomber_technology:0 "Add Technology: §YFriedenstruppe M.5§!"
+SRS_zebrikabomber:0 "Add Variant: §YZebrikabomber§!"
+SRS_strategic_bomber_stockpile:0 "You will win §Y60§  strategic bombers!"
+SRS_cas_technology:0 "Add Technology: §YFalke§!"
+SRS_himmelrauber:0 "Add Variant: §YHimmelrauber§!"
+SRS_CAS_stockpile:0 "You will win §Y60§  CAS!"
+SRS_fighter_technology:0 "Add Technology: §YGreif IV§!"
+SRS_barenkatze:0 "Add Variant: §YBarenkatze§!"
+SRS_fighter_stockipile:0 "You will win §Y60§  fighters!"
