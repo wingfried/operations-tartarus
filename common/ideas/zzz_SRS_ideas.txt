@@ -4153,7 +4153,7 @@ ideas = {
 			has_war = no
 		}
 		research_bonus = {
-			land_doctrine = 0.20
+			land_doctrine = 0.10
 		}
 	}
 	
