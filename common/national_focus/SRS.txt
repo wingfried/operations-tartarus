@@ -5506,7 +5506,6 @@ focus_tree = {
 	        		type = strat_bomber_equipment_3
 	        		amount = 60
 	        	}
-		        custom_effect_tooltip = SRS_strategic_bomber_stockpile
 			}
 			hidden_effect = {
 				create_equipment_variant = {
@@ -5609,7 +5608,6 @@ focus_tree = {
 	        		type = CAS_equipment_3
 	        		amount = 60
 	        	}
-		        custom_effect_tooltip = SRS_CAS_stockpile
 			}
 			hidden_effect = {
 				create_equipment_variant = {
@@ -5707,12 +5705,11 @@ focus_tree = {
 		        custom_effect_tooltip = SRS_fighter_technology
 			}
 			ELSE_IF = {
-	        	limit = { has_tech = fighter3}
+	        	limit = { has_tech = fighter3 }
 		        add_equipment_to_stockpile = {
 	        		type = fighter_equipment_3
 	        		amount = 60
 	        	}
-		        custom_effect_tooltip = SRS_fighter_stockpile
 			}
 			hidden_effect = {
 				create_equipment_variant = {
