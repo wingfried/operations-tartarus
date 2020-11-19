@@ -116,7 +116,7 @@ SRS_industry_dinkau:0 "Develop Dinkau"
 SRS_industry_dinkau_desc:0 "We are to incorporate the local industry of Dinkau into our country, reaping its benefits. With the aforementioned local industry, we are able to further develop the region."
 SRS_industry_bluffhead:0 "Develop Bluffhead"
 SRS_industry_bluffhead_desc:0 "Bluffhead is very developed for a far-northern settlement. By incorporating the settlement's limited industrial capability with our own, we can turn the settlement into a prosperous city."
-SRS_urban_education:0 "Urban Education Effort"
+SRS_urban_education:0 "Military Research Centre"
 SRS_urban_education_desc:0 "With our industrial capability, we have found ourselves capable of funding an extensive educational program. With this, we will eradicate illiteracy in urban areas."
 SRS_interconnectedness:0 "The Infrastructure Project"
 SRS_interconnectedness_desc:0 "What purpose do the vast industrial complexes of our nation serve, when there is no transportation network to bring the fruits of labour where they are needed? We will remedy our lack of infrastructure post-haste!"
@@ -575,6 +575,8 @@ SRS_internationalist_industrialization_tt:0 "\nUnlocks £decision_icon_small §Y
 SRS_can_be_expanded_tp:0 "\nThis §YIndustrial Concern§! can be upgraded once we have full control of the §YNorth Griffonia§!."
 SRS_can_be_expanded_2_tp:0 "\nThis §YIndustrial Concern§! can be upgraded once we have full control of the §YCentral Griffonia§!."
 SRS_cant_be_expanded_tp:0 "\nThis §YIndustrial Concern§! cannot be upgraded anymore."
+SRS_military_research_tp:0 "§YMilitary research speed: §G10.00%§!"
+SRS_industry_research_tp:0 "§YCivilian research speed: §R-15.00%§!"
 
 #### COSMETICS ####
 SRS_became_cloudburry:0 "The Northern Republican Authority"
@@ -886,6 +888,7 @@ SRS_skynavian_egalitarianism_2a:0 "Skynavian Egalitarianism"
 SRS_skynavian_egalitarianism_2a_desc:0 "All are brothers and sisters in Skynavia. Class distinctions have been broken down so that no creature can dominate another, through coercion or violence. The irrational prejudices premised on species, race, or nationality that are so entrenched in the reactionary countries to the south hold no sway over Skynavian society, because socialism has allowed its people to be free. Ours is a collectivist ethos, where the good of the collective whole takes precedence over individualist desires.\n\nThis has made our society a bit overbearing, and perhaps we allow our actions to be dictated too much by public opinion, but at least we do all this willingly, in the name of cooperation and kinship."
 SRS_militarised_the_hail_forest:0 "The Hail Forest Police Action"
 SRS_militarised_the_hail_forest_desc:0 "Sickleclaw's brutally efficient militarisation of the Hail Forest has proved to be overwhelmingly unpopular."
+SRS_research_thingy_idea:0 "Militarised research
 
 #### TECHNOLOGY ####
 SRS_winter_warfare:0 "Winter Warfare"
