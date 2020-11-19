@@ -1,5 +1,7 @@
 ﻿l_english:
  
+ gaw_upgrade_concern_category:0 "Industrial Concern Actions"
+
  GAW_light_medium_modern_tank_balanced_manufacturer:0 "Tank Designer\n(Balance)"
  GAW_light_tank_fast_manufacturer:0 "Light Tank Designer\n(Mobility)"
  GAW_medium_modern_tank_balanced_manufacturer:0 "Medium Tank Designer\n(Balance)"
@@ -21,3 +23,4 @@
  cat_medium_armor_research:0 "Medium & Modern Tank Research Speed"
  cat_heavy_armor_research:0 "Heavy & Super Heavy Tank Research Speed"
  cat_mechanized_equipment_research:0 "Mechanization Research Speed"
+ construction_tech_research:0 "Construction Research Speed"

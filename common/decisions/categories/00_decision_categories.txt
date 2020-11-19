@@ -16,6 +16,17 @@ gaw_form_puppet_category = {
 	}
 }
 
+gaw_upgrade_concern_category = {
+	icon = generic_construction
+	allowed = {
+		NOT = { tag = DED }
+		NOT = { tag = MAN }
+	}
+	visible = {
+
+	}
+}
+
 propaganda_efforts = {
 	icon = generic_propaganda
 	allowed = {

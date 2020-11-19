@@ -403,20 +403,29 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = SRS_commie_north_unification
-					VED = {
-						OR = {
-							exists = no
-							is_subject_of = ROOT
-						}
+				OR = {
+					AND = {
+						owns_state = 429
+						VED = { exists = no }
 					}
-					FAT = {
-						OR = {
-							exists = no
-							is_subject_of = ROOT
-						}
+					VED = { is_subject_of = ROOT }
+				}
+				OR = {
+					AND = {
+						owns_state = 485
+						FAT = { exists = no }
 					}
-				}	
+					FAT = { is_subject_of = ROOT }
+				}
+				OR = {
+					AND = {
+						owns_state = 562
+						NTR = { exists = no }
+					}
+					NTR = { is_subject_of = ROOT }
+				}
 			}
+		}
 		x = -1
 		y = 10
 		cost = 2.2
@@ -1336,7 +1345,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = { idea = SRS_our_shortcut_idea days = 730 }
 			add_timed_idea = { idea = SRS_to_victory_idea days = 365 }
-			custom_effect_tooltip = internationalist_industrialization_tt
+			custom_effect_tooltip = SRS_internationalist_industrialization_tt
 		}
 	}
 
@@ -1354,7 +1363,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = SRS_slow_and_steady_idea
-			custom_effect_tooltip = communalist_industrialization_tt
+			custom_effect_tooltip = SRS_communalist_industrialization_tt
 		}
 	}
 	
@@ -4284,6 +4293,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_ideas = SRS_military_academy_idea
 			custom_effect_tooltip = SRS_military_academy_tp
 		}
 	}
@@ -4304,6 +4314,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			swap_ideas = { remove_idea = SRS_military_academy_idea add_idea = SRS_war_college_idea }
 			custom_effect_tooltip = SRS_war_college_tp
 		}
 	}

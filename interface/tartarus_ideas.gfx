@@ -293,7 +293,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SRS_idea_army_chief_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_idea_SRS_idea_army_chief_medic"
+		name = "GFX_idea_SRS_army_chief_medic"
 		texturefile = "gfx/interface/ideas/SRS_idea_army_chief_medic.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_pony_advisor_1"
+		texturefile = "gfx/interface/ideas/SRS_idea_pony_advisor_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_griffon_advisor_1"
+		texturefile = "gfx/interface/ideas/SRS_idea_griffon_advisor_1.dds"
 	}
 }

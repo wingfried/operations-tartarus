@@ -6,13 +6,14 @@ ideas = {
 				original_tag = SRS
 			}
 			available = {
+				has_government = communism
 			}
 			traits = { prince_of_terror }
 			modifier = {
 				custom_modifier_tooltip = SRS_not_the_children
 			}
 		}
-
+		
 		SRS_young_chick = {
 			picture = GRW_Ludochka
 			allowed = {
@@ -25,12 +26,34 @@ ideas = {
 			traits = { pioneer_activist }
 		}
 
+		SRS_pony_advisor_1 = {
+			picture = SRS_pony_advisor_1
+			allowed = {
+				original_tag = SRS
+			}
+			available = {
+				
+			}
+			traits = { capable_administrator }
+		}
+
+		SRS_griffon_advisor_1 = {
+			picture = SRS_griffon_advisor_1
+			allowed = {
+				original_tag = SRS
+			}
+			available = {
+
+			}
+			traits = { minister_of_agriculture }
+		}
+
 		SRS_generico_1 = {
 			allowed = {
 				tag = SRS
 			}
 			available = {
-				has_government = communism
+
 			}
 
 			traits = { captain_of_industry }
@@ -41,7 +64,7 @@ ideas = {
 				tag = SRS
 			}
 			available = {
-				has_government = communism
+
 			}
 
 			traits = { war_industrialist }
@@ -561,7 +584,352 @@ ideas = {
 			}
 		}
 
-		Nordrot_manufacturing = {
+		SRS_hoffwing_steel = {
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				OR = {
+					has_idea = SRS_hoffwing_steel
+					NOT = { #invisible if owns all
+						AND = {
+							OR = {
+								AND = {
+									owns_state = 429
+									VED = { exists = no }
+								}
+								VED = { is_subject_of = ROOT }
+							}
+							OR = {
+								AND = {
+									owns_state = 485
+									FAT = { exists = no }
+								}
+								FAT = { is_subject_of = ROOT }
+							}
+							OR = {
+								AND = {
+									owns_state = 562
+									NTR = { exists = no }
+								}
+								NTR = { is_subject_of = ROOT }
+							}
+						}
+					}
+				}
+				NOT = { has_idea = SRS_northern_steel }
+				NOT = { has_idea = SRS_griffonian_steel }
+			}
+			available = {
+			}
+
+			research_bonus = {
+				excavation_tech = 0.15
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+				country_resource_steel = 15
+				custom_modifier_tooltip = SRS_can_be_expanded_tp
+			}
+		}
+
+		SRS_northern_steel = {
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				OR = {
+					has_idea = SRS_northern_steel
+					AND = {
+						OR = { #owns Vedina
+							AND = {
+								owns_state = 429
+								VED = { exists = no }
+							}
+							VED = { is_subject_of = ROOT }
+						}
+						OR = { #owns Griffonian Republic
+							AND = {
+								owns_state = 485
+								FAT = { exists = no }
+							}
+							FAT = { is_subject_of = ROOT }
+						}
+						OR = { #owns Northern Tribes
+							AND = {
+								owns_state = 562
+								NTR = { exists = no }
+							}
+							NTR = { is_subject_of = ROOT }
+						}
+						NOT = { #doesn't own Griffonian Empire
+							OR = {
+								AND = {
+									owns_state = 382
+									GRI = { exists = no }
+								}
+								GRI = { is_subject_of = ROOT }
+							}
+						}
+					}
+				}
+				NOT = { has_idea = SRS_hoffwing_steel }
+				NOT = { has_idea = SRS_griffonian_steel }
+			}
+			available = {
+			}
+
+			research_bonus = {
+				excavation_tech = 0.20
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+				country_resource_steel = 30
+				custom_modifier_tooltip = SRS_can_be_expanded_2_tp
+			}
+		}
+
+		SRS_griffonian_steel = {
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				OR = {
+					has_idea = SRS_griffonian_steel
+					AND = {
+						OR = { #owns Vedina
+							AND = {
+								owns_state = 429
+								VED = { exists = no }
+							}
+							VED = { is_subject_of = ROOT }
+						}
+						OR = { #owns Griffonian Republic
+							AND = {
+								owns_state = 485
+								FAT = { exists = no }
+							}
+							FAT = { is_subject_of = ROOT }
+						}
+						OR = { #owns Northern Tribes
+							AND = {
+								owns_state = 562
+								NTR = { exists = no }
+							}
+							NTR = { is_subject_of = ROOT }
+						}
+						OR = { #owns Griffonian Empire
+							AND = {
+								owns_state = 382
+								GRI = { exists = no }
+							}
+							GRI = { is_subject_of = ROOT }
+						}
+					}
+				}
+				NOT = { has_idea = SRS_hoffwing_steel }
+				NOT = { has_idea = SRS_northern_steel }
+			}
+			available = {
+			}
+
+			research_bonus = {
+				excavation_tech = 0.25
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+				country_resource_steel = 60
+				custom_modifier_tooltip = SRS_cant_be_expanded_tp
+			}
+		}
+
+		SRS_little_griff_crystals = {
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				OR = {
+					has_idea = SRS_little_griff_crystals
+					NOT = { #invisible if owns all
+						AND = {
+							OR = {
+								AND = {
+									owns_state = 429
+									VED = { exists = no }
+								}
+								VED = { is_subject_of = ROOT }
+							}
+							OR = {
+								AND = {
+									owns_state = 485
+									FAT = { exists = no }
+								}
+								FAT = { is_subject_of = ROOT }
+							}
+							OR = {
+								AND = {
+									owns_state = 562
+									NTR = { exists = no }
+								}
+								NTR = { is_subject_of = ROOT }
+							}
+						}
+					}
+				}
+				NOT = { has_idea = SRS_northern_crystals }
+				NOT = { has_idea = SRS_griffonian_crystals }
+			}
+			available = {
+				
+			}
+
+			research_bonus = {
+				excavation_tech = 0.15
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+				country_resource_crystals = 15
+				custom_modifier_tooltip = SRS_can_be_expanded_tp
+			}
+		}
+
+		SRS_northern_crystals = {
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				OR = {
+					has_idea = SRS_northern_crystals
+					AND = {
+						OR = { #owns Vedina
+							AND = {
+								owns_state = 429
+								VED = { exists = no }
+							}
+							VED = { is_subject_of = ROOT }
+						}
+						OR = { #owns Griffonian Republic
+							AND = {
+								owns_state = 485
+								FAT = { exists = no }
+							}
+							FAT = { is_subject_of = ROOT }
+						}
+						OR = { #owns Northern Tribes
+							AND = {
+								owns_state = 562
+								NTR = { exists = no }
+							}
+							NTR = { is_subject_of = ROOT }
+						}
+						NOT = { #doesn't own Griffonian Empire
+							OR = {
+								AND = {
+									owns_state = 382
+									GRI = { exists = no }
+								}
+								GRI = { is_subject_of = ROOT }
+							}
+						}
+					}
+				}
+				NOT = { has_idea = SRS_little_griff_crystals }
+				NOT = { has_idea = SRS_griffonian_crystals }
+			}
+			available = {
+
+			}
+
+			research_bonus = {
+				excavation_tech = 0.20
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+				country_resource_crystals = 30
+				custom_modifier_tooltip = SRS_can_be_expanded_2_tp
+			}
+		}
+
+		SRS_griffonian_crystals = {
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				OR = {
+					has_idea = SRS_griffonian_crystals
+					AND = {
+						OR = { #owns Vedina
+							AND = {
+								owns_state = 429
+								VED = { exists = no }
+							}
+							VED = { is_subject_of = ROOT }
+						}
+						OR = { #owns Griffonian Republic
+							AND = {
+								owns_state = 485
+								FAT = { exists = no }
+							}
+							FAT = { is_subject_of = ROOT }
+						}
+						OR = { #owns Northern Tribes
+							AND = {
+								owns_state = 562
+								NTR = { exists = no }
+							}
+							NTR = { is_subject_of = ROOT }
+						}
+						OR = { #owns Griffonian Empire
+							AND = {
+								owns_state = 382
+								GRI = { exists = no }
+							}
+							GRI = { is_subject_of = ROOT }
+						}
+					}
+				}
+				NOT = { has_idea = SRS_little_griff_crystals }
+				NOT = { has_idea = SRS_northern_crystals }
+			}
+			available = {
+				
+			}
+
+			research_bonus = {
+				excavation_tech = 0.25
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+				country_resource_crystals = 60
+				custom_modifier_tooltip = SRS_cant_be_expanded_tp
+			}
+		}
+
+		SRS_nordrot_manufacturing = {
 			picture = generic_industrial_concern_1
 			
 			allowed = {
@@ -580,39 +948,24 @@ ideas = {
 			    production_factory_max_efficiency_factor = 0.075
 			}
 		}
-	        Hoffwing_Steel = {
-			picture = generic_industrial_concern_2
-			
-			allowed = {
-				tag = SRS
-			}
-			available = {
-			}
-			
-			traits = { industrial_concern }
-			
-			modifier = {
-			    local_resources_factor = 0.15
-			}
-		}
-		
-	        Dinkau_Constructions = {
+
+		SRS_dinkau_constructions = {
 			picture = generic_industrial_concern_1
-			
+
 			allowed = {
 				tag = SRS
 			}
 			available = {
 			}
-			
+
+			research_bonus = {
+				construction_tech = 0.15
+			}
+
 			traits = { industrial_concern }
-			
+
 			modifier = {
-			    production_speed_arms_factory_factor = 0.1
-			    production_speed_industrial_complex_factor = 0.1
-			    production_speed_synthetic_refinery_factor = 0.1
-			    production_speed_infrastructure_factor = 0.1
-			    production_speed_dockyard_factor = 0.1
+			    production_speed_buildings_factor = 0.075
 			}
 		}
 	}
@@ -828,7 +1181,7 @@ ideas = {
 
 	high_command = {
 		SRS_army_chief_medic = {
-			picture = SRS_idea_army_chief_medic
+			picture = SRS_army_chief_medic
 
 			allowed = {
 				tag = SRS
@@ -3754,6 +4107,7 @@ ideas = {
 			research_speed_factor = 0.15
 		}
 	}
+
 	SRS_war_exhaustion = {
 		#picture =
 		removal_cost = -1
@@ -3765,6 +4119,7 @@ ideas = {
 			war_support_weekly = -0.005
 		}
 	}
+
 	SRS_army_bolstered = {
 		#picture =
 		removal_cost = -1
@@ -3777,6 +4132,28 @@ ideas = {
 			army_org_factor = 0.075
 			stability_weekly = -0.005
 			war_support_weekly = -0.005
+		}
+	}
+
+	SRS_military_academy_idea = {
+		#picture =
+		removal_cost = -1
+		cancel = {
+			has_war = no
+		}
+		research_bonus = {
+			land_doctrine = 0.10
+		}
+	}
+
+	SRS_war_college_idea = {
+		#picture =
+		removal_cost = -1
+		cancel = {
+			has_war = no
+		}
+		research_bonus = {
+			land_doctrine = 0.20
 		}
 	}
 }

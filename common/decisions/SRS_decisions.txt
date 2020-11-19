@@ -4217,6 +4217,9 @@ military_training_category = {
 		allowed = {
 			original_tag = SRS
 		}
+		visible = {
+			has_completed_focus = SRS_sickleclaw_obeys_congress
+		}
 		available = {
 			has_completed_focus = SRS_military_tree
 		}
@@ -5016,6 +5019,153 @@ SRS_internationalist_industrialization_plan = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SRS_army_reinvigoration"
 			add_ideas = SRS_army_bolstered
+		}
+	}
+}
+
+gaw_upgrade_concern_category = {
+	SRS_upgrade_steel_1 = {
+		visible = {
+			has_idea = SRS_hoffwing_steel
+		}
+		allowed = {
+			original_tag = SRS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SRS_commie_north_core
+				OR = {
+					AND = {
+						owns_state = 429
+						VED = { exists = no }
+					}
+					VED = { is_subject_of = ROOT }
+				}
+				OR = {
+					AND = {
+						owns_state = 485
+						FAT = { exists = no }
+					}
+					FAT = { is_subject_of = ROOT }
+				}
+				OR = {
+					AND = {
+						owns_state = 562
+						NTR = { exists = no }
+					}
+					NTR = { is_subject_of = ROOT }
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 30
+		cost = 25
+		modifier  {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			swap_ideas = { remove_idea = SRS_hoffwing_steel add_idea = SRS_northern_steel }
+		}
+	}
+	SRS_upgrade_steel_2 = {
+		visible = {
+			has_idea = SRS_northern_steel
+		}
+		allowed = {
+			original_tag = SRS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SRS_commie_griffenheim_core
+				OR = {
+					AND = {
+						owns_state = 382
+						GRI = { exists = no }
+					}
+					GRI = { is_subject_of = ROOT }
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 30
+		cost = 25
+		modifier  {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			swap_ideas = { remove_idea = SRS_northern_steel add_idea = SRS_griffonian_steel }
+		}
+	}
+	SRS_upgrade_crystals_1 = {
+		visible = {
+			has_idea = SRS_little_griff_crystals
+		}
+		allowed = {
+			original_tag = SRS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SRS_commie_north_core
+				OR = {
+					AND = {
+						owns_state = 429
+						VED = { exists = no }
+					}
+					VED = { is_subject_of = ROOT }
+				}
+				OR = {
+					AND = {
+						owns_state = 485
+						FAT = { exists = no }
+					}
+					FAT = { is_subject_of = ROOT }
+				}
+				OR = {
+					AND = {
+						owns_state = 562
+						NTR = { exists = no }
+					}
+					NTR = { is_subject_of = ROOT }
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 30
+		cost = 25
+		modifier  {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			swap_ideas = { remove_idea = SRS_little_griff_crystals add_idea = SRS_northern_crystals }
+		}
+	}
+	SRS_upgrade_crystals_2 = {
+		visible = {
+			has_idea = SRS_northern_crystals
+		}
+		allowed = {
+			original_tag = SRS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SRS_commie_griffenheim_core
+				OR = {
+					AND = {
+						owns_state = 382
+						GRI = { exists = no }
+					}
+					GRI = { is_subject_of = ROOT }
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 30
+		cost = 25
+		modifier  {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			swap_ideas = { remove_idea = SRS_northern_crystals add_idea = SRS_griffonian_crystals }
 		}
 	}
 }
