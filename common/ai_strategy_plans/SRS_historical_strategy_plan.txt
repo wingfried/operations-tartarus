@@ -1,4 +1,4 @@
-EQC_historical = {
+SRS_historical = {
 	name = "Skynavia historical plan"
 	desc = ""
 
