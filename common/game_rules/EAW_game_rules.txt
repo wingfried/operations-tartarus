@@ -228,7 +228,45 @@ WNG_ai_behavior = {
 		allow_achievements = yes
 	}
 }
-
+SRS_ai_behavior = {
+	name = "SRS_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = COMMUNIST_HISTORICAL
+		text = "RULE_OPTION_COMMUNIST_HISTORICAL"
+		desc = "RULE_OPTION_COMMUNIST_HISTORICAL_SRS_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = COMMUNIST_ASPER_INTERNATIONALIST
+		text = "RULE_OPTION_COMMUNIST_ASPER_INTERNATIONALIST"
+		desc = "RULE_OPTION_COMMUNIST_ASPER_INTERNATIONALIST_SRS_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = COMMUNIST_ASPER_COMMUNALIST
+		text = "RULE_OPTION_COMMUNIST_ASPER_COMMUNALIST"
+		desc = "RULE_OPTION_COMMUNIST_ASPER_COMMUNALIST_SRS_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = JOIN_FAT
+		text = "RULE_OPTION_JOIN_FAT"
+		desc = "RULE_OPTION_JOIN_FAT_SRS_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+		allow_achievements = yes
+	}
+}
 FAT_ai_behavior = {
 	name = "FAT_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"

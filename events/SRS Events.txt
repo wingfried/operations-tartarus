@@ -3360,16 +3360,42 @@ country_event = {
 	
 	option = {
 		name = srs_sickoflavour.6.a	
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 1000
+				OR = {
+					has_game_rule = {
+						rule = SRS_ai_behavior
+						option = COMMUNIST_ASPER_INTERNATIONALIST
+					}
+					has_game_rule = {
+						rule = SRS_ai_behavior
+						option = COMMUNIST_ASPER_COMMUNALIST
+					}
+				}
+			}
+		}
 		hidden_effect = {
-		complete_national_focus = SRS_communist_asper
+			complete_national_focus = SRS_communist_asper
 		}
     }
 	
 	option = {
 		name = srs_sickoflavour.6.b
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 1000
+				has_game_rule = {
+					rule = SRS_ai_behavior
+					option = JOIN_FAT
+				}
+			}
+		}
 		custom_effect_tooltip = SRS_Wait_what_tooltip
 		hidden_effect = {
-		complete_national_focus = SRS_republican_alignment
+			complete_national_focus = SRS_republican_alignment
 		}
 	}
 }

@@ -48,12 +48,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-			select_effect = {
-				country_event = {
-					id = srs_sickoflavour.3
-					days = 7
-				}
-			}	
+		select_effect = {
+			country_event = {
+				id = srs_sickoflavour.3
+				days = 7
+			}
+		}
 		completion_reward = {
 		    country_event = { id = srs_sickocivwar.2 }
 		}
@@ -283,6 +283,13 @@ focus_tree = {
 		id = SRS_ntrwar_commie
 		icon = GFX_goal_revolution_pony
 		prerequisite = { focus = SRS_communist_asper }
+		available = {
+			IF = {
+				limit = { is_ai = yes }
+				has_war = no
+				NTR = { has_civil_war = no }
+			}
+		}
 		bypass = {
 			OR = {
 				has_war_with = NTR
@@ -295,7 +302,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+
+		will_lead_to_war_with = NTR
+
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -342,6 +351,13 @@ focus_tree = {
 		icon = GFX_focus_indy_swing_the_sword
 		prerequisite = { focus = SRS_far_north_republic }
 		prerequisite = { focus = SRS_defend_the_revolution }
+		available = {
+			IF = {
+				limit = { is_ai = yes }
+				has_war = no
+				VED = { has_civil_war = no }
+			}
+		}
 		bypass = {
 			OR = {
 				has_war_with = VED
@@ -354,7 +370,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+
+		will_lead_to_war_with = VED
+
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -368,6 +386,13 @@ focus_tree = {
 		icon = GFX_goal_FAT_the_three_musketeers
 		prerequisite = { focus = SRS_far_north_republic }
 		prerequisite = { focus = SRS_defend_the_revolution }
+		available = {
+			IF = {
+				limit = { is_ai = yes }
+				has_war = no
+				FAT = { has_civil_war = no }
+			}
+		}
 		bypass = {
 			OR = {
 				has_war_with = FAT
@@ -381,12 +406,14 @@ focus_tree = {
 			factor = 12
 		}
 		select_effect = {
-				country_event = {
-					id = srs_sickoflavour.8
-					days = 45
-				}
+			country_event = {
+				id = srs_sickoflavour.8
+				days = 45
 			}
-		
+		}
+
+		will_lead_to_war_with = FAT
+
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -570,13 +597,22 @@ focus_tree = {
 		id = SRS_commie_yeetbrantbeak
 		icon = GFX_goal_step_on_skull
 		prerequisite = { focus = SRS_north_united }
+		available = {
+			IF = {
+				limit = { is_ai = yes }
+				has_war = no
+				MNC = { has_civil_war = no }
+			}
+		}
 		x = 2
 		y = 12
 		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
-		
+
+		will_lead_to_war_with = MNC
+
 		completion_reward = {
 			IF = {
 				limit = {
@@ -857,6 +893,13 @@ focus_tree = {
 		icon = GFX_goal_gunpoint_diplomacy
 		prerequisite = { focus = SRS_unite_the_north }
 		mutually_exclusive = { focus = SRS_approach_the_tribes }
+		available = {
+			IF = {
+				limit = { is_ai = yes }
+				has_war = no
+				NTR = { has_civil_war = no }
+			}
+		}
 		bypass = {
 			OR = {
 				has_war_with = NTR
@@ -869,7 +912,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+
+		will_lead_to_war_with = NTR
+
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -985,6 +1030,13 @@ focus_tree = {
 		id = SRS_republican_yeetvedina
 		icon = GFX_focus_indy_swing_the_sword
 		prerequisite = { focus = SRS_unite_the_north }
+		available = {
+			IF = {
+				limit = { is_ai = yes }
+				has_war = no
+				VED = { has_civil_war = no }
+			}
+		}
 		bypass = {
 			OR = {
 				has_war_with = VED
@@ -997,7 +1049,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+
+		will_lead_to_war_with = VED
+
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -1010,6 +1064,13 @@ focus_tree = {
 		id = SRS_republican_yeetbrantbeak
 		icon = GFX_goal_step_on_skull
 		prerequisite = { focus = SRS_republican_yeetvedina }
+		available = {
+			IF = {
+				limit = { is_ai = yes }
+				has_war = no
+				MNC = { has_civil_war = no }
+			}
+		}
 		x = 18
 		y = 11
 		cost = 7.2
@@ -1245,12 +1306,15 @@ focus_tree = {
         ai_will_do = {
             factor = 12
         }
+
+        will_lead_to_war_with = FAW
+
         completion_reward = {
-	country_event = srs_sickoflavour.18
-        create_wargoal = {
-                    type = annex_everything
-                    target = FAW 
-                }
+			country_event = srs_sickoflavour.18
+       		create_wargoal = {
+                type = annex_everything
+                target = FAW 
+            }
         }
     }
 
@@ -2868,6 +2932,12 @@ focus_tree = {
 		id = SRS_great_patriotic_war
 		icon = GFX_goal_LEC_monkey
 		prerequisite = { focus = SRS_on_to_griffenheim focus = SRS_unite_with_fatmerskai_playeronly focus = SRS_strike_the_revisionists }
+		available = {
+			IF = {
+				limit = { is_ai = yes }
+				has_war = no
+			}
+		}
 		bypass = {
 			OR = {
 				has_war_with = GRI
@@ -2880,7 +2950,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+
+		will_lead_to_war_with = GRI
+		will_lead_to_war_with = FEA
+		will_lead_to_war_with = STW
+		will_lead_to_war_with = BRZ
+		will_lead_to_war_with = PYT
+		will_lead_to_war_with = ROU
+		will_lead_to_war_with = YAL
+		will_lead_to_war_with = KAT
+		will_lead_to_war_with = ANG
+
 		completion_reward = {
 			IF = {
 				limit = {

@@ -50,7 +50,7 @@ SRS_military_academy_training_category = {
 			has_unit_leader = 9880
 		}
 		ai_will_do = {
-			factor = 40
+			factor = 400
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -116,7 +116,7 @@ SRS_military_academy_training_category = {
 			has_unit_leader = 9879
 		}
 		ai_will_do = {
-			factor = 40
+			factor = 400
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -563,7 +563,7 @@ SRS_war_college_training_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			factor = 400
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -633,7 +633,7 @@ SRS_war_college_training_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			factor = 400
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
