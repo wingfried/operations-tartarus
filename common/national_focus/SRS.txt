@@ -6086,8 +6086,7 @@ focus_tree = {
 	focus = {
 		id = SRS_fund_the_navy
 		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = SRS_a_raiding_fleet }
-		prerequisite = { focus = SRS_our_grand_navy }
+		prerequisite = { focus = SRS_a_raiding_fleet focus = SRS_our_grand_navy }
 		relative_position_id = SRS_a_raiding_fleet
 		x = 1
 		y = 1
