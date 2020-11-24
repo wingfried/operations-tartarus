@@ -1,0 +1,15 @@
+leader_traits = {
+	lavclaw_beria_trait = {
+		random = no
+		
+		non_core_manpower = 0.03
+		foreign_subversive_activites = -0.45
+		political_power_gain = 0.05
+		war_support_weekly = 0.001
+		custom_modifier_tooltip = SRS_not_the_children
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

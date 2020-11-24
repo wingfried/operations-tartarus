@@ -8,12 +8,7 @@ ideas = {
 			available = {
 				has_government = communism
 			}
-			traits = { prince_of_terror }
-			modifier = {
-				political_power_gain = 0.05
-				war_support_weekly = 0.001
-				custom_modifier_tooltip = SRS_not_the_children
-			}
+			traits = { lavclaw_beria_trait }
 		}
 		
 		SRS_young_chick = {
@@ -28,29 +23,51 @@ ideas = {
 			traits = { pioneer_activist }
 		}
 
-		SRS_pony_advisor_1 = {
-			picture = SRS_pony_advisor_1
-			allowed = {
-				original_tag = SRS
-			}
-			available = {
-				
-			}
-			traits = { capable_administrator }
-		}
-
 		SRS_griffon_advisor_1 = {
 			picture = SRS_griffon_advisor_1
 			allowed = {
 				original_tag = SRS
 			}
 			available = {
-
+				has_government = communism
 			}
 			traits = { minister_of_agriculture }
 			modifier = {
 				stability_weekly = 0.001
 			}
+		}
+
+		SRS_pony_advisor_1 = {
+			picture = SRS_pony_advisor_1
+			allowed = {
+				original_tag = SRS
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = { capable_administrator }
+		}
+
+		SRS_griffon_advisor_2 = {
+			picture = SRS_griffon_advisor_2
+			allowed = {
+				original_tag = SRS
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = { economic_organizer }
+		}
+
+		SRS_griffon_advisor_3 = {
+			picture = SRS_griffon_advisor_3
+			allowed = {
+				original_tag = SRS
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = { social_reformer }
 		}
 
 		SRS_generico_1 = {
@@ -207,6 +224,21 @@ ideas = {
 			ai_will_do = {
 				factor = 100
 			}
+		}
+
+		SRS_spy_grif_lar = {
+			allowed = {
+				original_tag = SRS
+				has_dlc = "La Resistance"
+			}
+			available = {
+				has_intelligence_agency = yes
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			picture = SRS_agent_grif
+			traits = { head_of_intelligence_griffon }
 		}
 	}
 

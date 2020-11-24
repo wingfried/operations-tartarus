@@ -304,4 +304,12 @@ spriteTypes = {
 		name = "GFX_idea_SRS_griffon_advisor_1"
 		texturefile = "gfx/interface/ideas/SRS_idea_griffon_advisor_1.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_SRS_griffon_advisor_2"
+		texturefile = "gfx/interface/ideas/SRS_idea_griffon_advisor_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_agent_grif"
+		texturefile = "gfx/interface/ideas/SRS_idea_agent_grif.dds"
+	}
 }
