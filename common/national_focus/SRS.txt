@@ -5977,8 +5977,30 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SRS_competent_admiralty_idea
-		}	
+		
+		create_navy_leader = {
+		    name = "Karin Blackfeather"
+		    #picture = 
+		    traits = { griffon_race_trait seawolf }
+		    level = 2
+	            attack_skill = 3
+	            defense_skill = 1
+                    maneuvering_skill = 2
+                    coordination_skill = 2
+		}
+		
+		create_navy_leader = {
+		    name = "Hanser Macwingter"
+		    #picture = 
+		    traits = { griffon_race_trait media_personality bold }
+		    level = 2
+		    attack_skill = 2
+	            defense_skill = 4
+                    maneuvering_skill = 1
+                    coordination_skill = 2
+		}
 	}
+}
 
 	focus = {
 		id = SRS_a_raiding_fleet
