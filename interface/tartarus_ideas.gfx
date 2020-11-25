@@ -312,4 +312,33 @@ spriteTypes = {
 		name = "GFX_idea_SRS_agent_grif"
 		texturefile = "gfx/interface/ideas/SRS_idea_agent_grif.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_SRS_elan_war_effort"
+		texturefile = "gfx/interface/ideas/SRS_elan_war_effort.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_infantry_warfare"
+		texturefile = "gfx/interface/ideas/SRS_infantry_warfare.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_recruitment_war_effort"
+		texturefile = "gfx/interface/ideas/SRS_recruitment_war_effort.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_industrial_war_effortlvl1"
+		texturefile = "gfx/interface/ideas/SRS_industrial_war_effortlvl1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_industrial_war_effortlvl2"
+		texturefile = "gfx/interface/ideas/SRS_industrial_war_effortlvl2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_industrial_war_effortlvl3"
+		texturefile = "gfx/interface/ideas/SRS_industrial_war_effortlvl3.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_modern_warfare"
+		texturefile = "gfx/interface/ideas/SRS_modern_warfare.dds"
+	}
+	
 }

@@ -24,10 +24,24 @@ communist_peace = {
 	annex = {
 		factor = 500
 		modifier = {
-			factor = 800
+			factor = 1000
 			tag = SRS
+			has_completed_focus = SRS_sickleclaw_betrays_congress
 			FROM = {
-				tag = NTR
+				OR = {
+					tag = NTR
+					tag = VED
+					tag = FAT
+					tag = GRI
+					tag = FEA
+					tag = STW
+					tag = BRZ
+					tag = PYT
+					tag = ROU
+					tag = YAL
+					tag = KAT
+					tag = ANG
+				}
 			}
 		}
 		modifier = {
@@ -165,8 +179,22 @@ communist_peace = {
 		modifier = {
 			factor = 0
 			tag = SRS
+			has_completed_focus = SRS_sickleclaw_betrays_congress
 			FROM = {
-				tag = NTR
+				OR = {
+					tag = NTR
+					tag = VED
+					tag = FAT
+					tag = GRI
+					tag = FEA
+					tag = STW
+					tag = BRZ
+					tag = PYT
+					tag = ROU
+					tag = YAL
+					tag = KAT
+					tag = ANG
+				}
 			}
 		}
 		modifier = {

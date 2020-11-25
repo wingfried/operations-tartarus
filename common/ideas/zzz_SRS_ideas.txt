@@ -3177,6 +3177,7 @@ ideas = {
 		modifier = {
 			conscription = 0.04
 			mobilization_speed = 0.2
+			mobilization_laws_cost_factor = -0.75
 		}
 	}
 		
@@ -3190,6 +3191,7 @@ ideas = {
 		modifier = {
 			conscription = 0.02
 			mobilization_speed = 0.1
+			mobilization_laws_cost_factor = -0.50
 		}
 	}
 		
@@ -3430,7 +3432,17 @@ ideas = {
 		picture = SRS_industrial_war_effortlvl1
 		removal_cost = -1
 		available = {
-			always = yes
+			OR = {
+				country_exists = GRI
+				country_exists = FEA
+				country_exists = STW
+				country_exists = BRZ
+				country_exists = PYT
+				country_exists = ROU
+				country_exists = YAL
+				country_exists = KAT
+				country_exists = ANG
+			}
 		}
 			
 		modifier = { 
@@ -3444,7 +3456,17 @@ ideas = {
 		picture = SRS_industrial_war_effortlvl2
 		removal_cost = -1
 		available = {
-			always = yes
+			OR = {
+				country_exists = GRI
+				country_exists = FEA
+				country_exists = STW
+				country_exists = BRZ
+				country_exists = PYT
+				country_exists = ROU
+				country_exists = YAL
+				country_exists = KAT
+				country_exists = ANG
+			}
 		}
 			
 		modifier = { 
@@ -3459,7 +3481,17 @@ ideas = {
 		picture = SRS_industrial_war_effortlvl3
 		removal_cost = -1
 		available = {
-			always = yes
+			OR = {
+				country_exists = GRI
+				country_exists = FEA
+				country_exists = STW
+				country_exists = BRZ
+				country_exists = PYT
+				country_exists = ROU
+				country_exists = YAL
+				country_exists = KAT
+				country_exists = ANG
+			}
 		}
 			
 		modifier = { 
@@ -3474,7 +3506,17 @@ ideas = {
 		picture = SRS_recruitment_war_effort
 		removal_cost = -1
 		available = {
-			always = yes
+			OR = {
+				country_exists = GRI
+				country_exists = FEA
+				country_exists = STW
+				country_exists = BRZ
+				country_exists = PYT
+				country_exists = ROU
+				country_exists = YAL
+				country_exists = KAT
+				country_exists = ANG
+			}
 		}
 			
 		modifier = { 
@@ -3487,7 +3529,17 @@ ideas = {
 		picture = SRS_recruitment_war_effort
 		removal_cost = -1
 		available = {
-			always = yes
+			OR = {
+				country_exists = GRI
+				country_exists = FEA
+				country_exists = STW
+				country_exists = BRZ
+				country_exists = PYT
+				country_exists = ROU
+				country_exists = YAL
+				country_exists = KAT
+				country_exists = ANG
+			}
 		}
 			
 		modifier = { 
@@ -3500,7 +3552,17 @@ ideas = {
 		picture = SRS_recruitment_war_effort
 		removal_cost = -1
 		available = {
-			always = yes
+			OR = {
+				country_exists = GRI
+				country_exists = FEA
+				country_exists = STW
+				country_exists = BRZ
+				country_exists = PYT
+				country_exists = ROU
+				country_exists = YAL
+				country_exists = KAT
+				country_exists = ANG
+			}
 		}
 			
 		modifier = { 
@@ -3513,7 +3575,17 @@ ideas = {
 		picture = SRS_elan_war_effort
 		removal_cost = -1
 		available = {
-			always = yes
+			OR = {
+				country_exists = GRI
+				country_exists = FEA
+				country_exists = STW
+				country_exists = BRZ
+				country_exists = PYT
+				country_exists = ROU
+				country_exists = YAL
+				country_exists = KAT
+				country_exists = ANG
+			}
 		}
 			
 		modifier = { 
@@ -3527,7 +3599,17 @@ ideas = {
 		picture = SRS_elan_war_effort
 		removal_cost = -1
 		available = {
-			always = yes
+			OR = {
+				country_exists = GRI
+				country_exists = FEA
+				country_exists = STW
+				country_exists = BRZ
+				country_exists = PYT
+				country_exists = ROU
+				country_exists = YAL
+				country_exists = KAT
+				country_exists = ANG
+			}
 		}
 			
 		modifier = { 
@@ -3541,7 +3623,17 @@ ideas = {
 		picture = SRS_elan_war_effort
 		removal_cost = -1
 		available = {
-			always = yes
+			OR = {
+				country_exists = GRI
+				country_exists = FEA
+				country_exists = STW
+				country_exists = BRZ
+				country_exists = PYT
+				country_exists = ROU
+				country_exists = YAL
+				country_exists = KAT
+				country_exists = ANG
+			}
 		}
 			
 		modifier = { 
@@ -3803,7 +3895,7 @@ ideas = {
 	}
 
 	SRS_air_force_research_institute_idea = {
-		#picture = 
+		picture = generic_air_research
 		removal_cost = -1
 		available = {
 			always = yes
@@ -3815,7 +3907,7 @@ ideas = {
 	}
 
 	SRS_surgical_precision_idea = {
-		#picture = 
+		picture = air_support_focus
 		removal_cost = -1
 		available = {
 			always = yes
@@ -3827,7 +3919,7 @@ ideas = {
 	}
 
 	SRS_explosive_filler_idea = {
-		#picture = 
+		picture = air_war_plans_division_focus
 		removal_cost = -1
 		available = {
 			always = yes
@@ -3844,7 +3936,7 @@ ideas = {
 	}
 
 	SRS_superior_training_idea = {
-		#picture = 
+		picture = generic_air_bonus
 		removal_cost = -1
 		available = {
 			always = yes
@@ -3858,7 +3950,7 @@ ideas = {
 	}
 
 	SRS_skynavia_rules_the_waves_idea = {
-		#picture = 
+		picture = generic_sea_focused_navy
 		removal_cost = -1
 		available = {
 			always = yes
@@ -3874,7 +3966,7 @@ ideas = {
 	}
 
 	SRS_competent_admiralty_idea = {
-		#picture = 
+		picture = BAL_officer
 		removal_cost = -1
 		available = {
 			always = yes
@@ -3888,21 +3980,21 @@ ideas = {
 	}
 
 	SRS_fund_the_navy_idea = {
-		#picture = 
+		picture = chi_hyper_inflation2
 		removal_cost = -1
 		available = {
 			always = yes
 		}
 		
 		modifier = {
-			political_power_gain = -0.25
-			industrial_capacity_dockyard = 0.15
-			industrial_capacity_factory = -0.10
+			political_power_gain = -0.15
+			industrial_capacity_dockyard = 0.25
+			industrial_capacity_factory = -0.15
 		}
 	}
 
 	SRS_modern_convoys_idea = {
-		#picture = 
+		picture = FBK_advisor29
 		removal_cost = -1
 		available = {
 			always = yes
@@ -3918,7 +4010,7 @@ ideas = {
 	}
 
 	SRS_cheap_cruisers_idea = {
-		#picture = 
+		picture = generic_navy_bonus
 		removal_cost = -1
 		available = {
 			always = yes
@@ -3952,7 +4044,7 @@ ideas = {
 	}
 
 	SRS_better_electronics_idea = {
-	    #picture = 
+	    picture = generic_flexible_foreign_policy2
 		removal_cost = -1
 		available = {
 			always = yes
@@ -3971,7 +4063,7 @@ ideas = {
 	}
 
 	SRS_better_industrial_equipment_idea = {
-	    #picture = 
+	    picture = generic_flexible_foreign_policy
 		removal_cost = -1
 		available = {
 			always = yes
@@ -3991,7 +4083,7 @@ ideas = {
 	}
 
 	SRS_lessons_of_the_civil_war_idea = {
-	    #picture = 
+	    picture = chi_wargaming_division
 		removal_cost = -1
 		available = {
 			always = yes
@@ -4002,8 +4094,8 @@ ideas = {
 		}
 	}
 
-	SRS_on_to_griffenheim_idea = {
-	    #picture = 
+	SRS_on_to_griffenheim_GRI_idea = {
+	    picture = generic_purge
 		removal_cost = -1
 		available = {
 			GRI = { exists = yes }
@@ -4014,9 +4106,105 @@ ideas = {
 			defense_bonus_against = 0.1
 		}
 	}
+	SRS_on_to_griffenheim_FEA_idea = {
+	    picture = generic_purge
+		removal_cost = -1
+		available = {
+			FEA = { exists = yes }
+		}
+		targeted_modifier = {
+			tag = FEA
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	SRS_on_to_griffenheim_STW_idea = {
+	    picture = generic_purge
+		removal_cost = -1
+		available = {
+			STW = { exists = yes }
+		}
+		targeted_modifier = {
+			tag = STW
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	SRS_on_to_griffenheim_BRZ_idea = {
+	    picture = generic_purge
+		removal_cost = -1
+		available = {
+			BRZ = { exists = yes }
+		}
+		targeted_modifier = {
+			tag = BRZ
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	SRS_on_to_griffenheim_PYT_idea = {
+	    picture = generic_purge
+		removal_cost = -1
+		available = {
+			PYT = { exists = yes }
+		}
+		targeted_modifier = {
+			tag = PYT
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	SRS_on_to_griffenheim_ROU_idea = {
+	    picture = generic_purge
+		removal_cost = -1
+		available = {
+			ROU = { exists = yes }
+		}
+		targeted_modifier = {
+			tag = ROU
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	SRS_on_to_griffenheim_YAL_idea = {
+	    picture = generic_purge
+		removal_cost = -1
+		available = {
+			YAL = { exists = yes }
+		}
+		targeted_modifier = {
+			tag = YAL
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	SRS_on_to_griffenheim_KAT_idea = {
+	    picture = generic_purge
+		removal_cost = -1
+		available = {
+			KAT = { exists = yes }
+		}
+		targeted_modifier = {
+			tag = KAT
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	SRS_on_to_griffenheim_ANG_idea = {
+	    picture = generic_purge
+		removal_cost = -1
+		available = {
+			ANG = { exists = yes }
+		}
+		targeted_modifier = {
+			tag = ANG
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
 
 	SRS_victory_is_ours_idea = {
-		#picture = 
+		picture = FRA_national_mobilization_focus
 		removal_cost = -1
 		available = {
 			always = yes
@@ -4029,7 +4217,7 @@ ideas = {
 	}
 
 	SRS_onwards_idea = {
-		#picture = 
+		picture = FRA_scw_intervention_nationalists_focus
 		removal_cost = -1
 		available = {
 			always = yes
@@ -4044,7 +4232,7 @@ ideas = {
 	}
 
 	SRS_consolidated_gunmakers_union_idea = {
-		#picture = 
+		picture = ast_volunteer_defence_corps
 		removal_cost = -1
 		available = {
 			always = yes
@@ -4059,7 +4247,7 @@ ideas = {
 	}
 
 	SRS_ready_for_business_idea = {
-		#picture = 
+		picture = generic_economic_increase
 		removal_cost = -1
 		available = {
 			always = yes
@@ -4070,7 +4258,7 @@ ideas = {
 	}
 
 	SRS_our_shortcut_idea = {
-		#picture = 
+		picture = chi_war_of_resistance2
 		removal_cost = -1
 		available = {
 			always = yes
@@ -4083,7 +4271,7 @@ ideas = {
 	}
 
 	SRS_to_victory_idea = {
-		#picture = 
+		picture = workers_culture_stg
 		removal_cost = -1
 		available = {
 			always = yes
@@ -4096,7 +4284,7 @@ ideas = {
 	}
 
 	SRS_to_victory_2_idea = {
-		#picture = 
+		picture = workers_culture_stg
 		removal_cost = -1
 		available = {
 			always = yes
@@ -4110,7 +4298,7 @@ ideas = {
 	}
 
 	SRS_slow_and_steady_idea = {
-		#picture = 
+		picture = feat_company_5
 		removal_cost = -1
 		available = {
 			always = yes
@@ -4123,7 +4311,7 @@ ideas = {
 	}
 
 	SRS_slow_and_steady_2_idea = {
-		#picture = 
+		picture = feat_company_5
 		removal_cost = -1
 		available = {
 			always = yes
@@ -4136,20 +4324,8 @@ ideas = {
 		}
 	}
 
-	SRS_urban_education_program_idea = {
-		#picture = 
-		removal_cost = -1
-		available = {
-			always = yes
-		}
-		modifier = {
-			production_speed_buildings_factor = 0.05
-			research_speed_factor = 0.15
-		}
-	}
-
 	SRS_war_exhaustion = {
-		#picture =
+		picture = unhappy_army_3
 		removal_cost = -1
 		cancel = {
 			has_war = no
@@ -4163,7 +4339,7 @@ ideas = {
 	}
 
 	SRS_army_bolstered = {
-		#picture =
+		picture = broken_resistance
 		removal_cost = -1
 		cancel = {
 			has_war = no
@@ -4179,23 +4355,23 @@ ideas = {
 	}
 
 	SRS_military_academy_idea = {
-		#picture =
+		picture = generic_research_bonus
 		removal_cost = -1
 		research_bonus = {
-			land_doctrine = 0.10
+			land_doctrine = 0.05
 		}
 	}
 
 	SRS_war_college_idea = {
-		#picture =
+		picture = generic_research_bonus
 		removal_cost = -1
 		research_bonus = {
-			land_doctrine = 0.10
+			land_doctrine = 0.15
 		}
 	}
 	
 	SRS_research_thingy_idea = {
-		#picture = 
+		picture = jap_duplicate_research
 		removal_cost = -1
 		available = {
 			always = yes

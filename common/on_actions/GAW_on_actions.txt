@@ -103,7 +103,10 @@ on_actions = {
 		effect = {
 			SRS = {
 				IF = {
-					limit = { NOT = { has_idea = SRS_skynavian_redguard } }
+					limit = {
+						NOT = { has_idea = SRS_skynavian_redguard }
+						has_war = no
+					}
 					add_ideas = SRS_skynavian_redguard
 				}
 			}

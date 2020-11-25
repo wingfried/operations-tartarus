@@ -93,7 +93,7 @@ SRS_alternate_communism_1 = {
 		SRS_avenge_986
 		SRS_north_united
 		SRS_commie_yeetbrantbeak
-		SRS_kamerskai_fate
+		SRS_kemerskai_fate
 		SRS_conscription_feform
 		SRS_education_reform
 		SRS_economic_reform
@@ -290,7 +290,7 @@ SRS_alternate_communism_2 = {
 		SRS_avenge_986
 		SRS_north_united
 		SRS_commie_yeetbrantbeak
-		SRS_kamerskai_fate
+		SRS_kemerskai_fate
 		SRS_conscription_feform
 		SRS_education_reform
 		SRS_economic_reform
@@ -430,7 +430,7 @@ SRS_consumed_by_FAT = {
 
 		#JOIN
 		SRS_republican_alignment
-		SRS_rejoin_kamerskai_gang
+		SRS_rejoin_kemerskai_gang
 		SRS_harmonic_socialism
 		SRS_republican_dream
 		SRS_radical_backlash

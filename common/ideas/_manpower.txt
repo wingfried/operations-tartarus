@@ -1091,14 +1091,15 @@ ideas = {
 			available = {
 				IF = {
 					limit = { original_tag = SRS }
-					ROOT = { surrender_progress > 0.10 }
+					ROOT = { has_manpower = 0 }
 				}
 			}
 
 			ai_will_do = {
 				factor = 1
 				modifier = {
-					
+					factor = 4000
+					has_idea = SRS_skynavian_redguard
 				}
 			}
 
@@ -1138,14 +1139,15 @@ ideas = {
 			available = {
 				IF = {
 					limit = { original_tag = SRS }
-					ROOT = { surrender_progress > 0.25 }
+					ROOT = { surrender_progress > 0.05 }
 				}
 			}
 
 			ai_will_do = {
 				factor = 1
 				modifier = {
-
+					factor = 4000
+					has_idea = SRS_skynavian_redguard_2
 				}
 			}
 

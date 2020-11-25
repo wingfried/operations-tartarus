@@ -636,10 +636,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_education_reform }
 		prerequisite = { focus = SRS_commie_yeetbrantbeak }
 		bypass = {
-			OR = {
-				has_war_with = GRI
-				NOT = { country_exists = GRI }
-			}
+			SRS = { controls_state = 382 }
 		}
 		x = -1
 		y = 13
@@ -649,9 +646,60 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = SRS_on_to_griffenheim_idea
-			SRS = { add_opinion_modifier = { target = GRI modifier = mortal_enemies } }
-			GRI = { add_opinion_modifier = { target = SRS modifier = mortal_enemies } }
+			IF = {
+				limit = { GRI = { controls_state = 382 } }
+				SRS = { add_opinion_modifier = { target = GRI modifier = mortal_enemies } }
+				GRI = { add_opinion_modifier = { target = SRS modifier = mortal_enemies } }
+				add_ideas = SRS_on_to_griffenheim_GRI_idea
+			}
+			IF = {
+				limit = { FEA = { controls_state = 382 } }
+				SRS = { add_opinion_modifier = { target = FEA modifier = mortal_enemies } }
+				FEA = { add_opinion_modifier = { target = SRS modifier = mortal_enemies } }
+				add_ideas = SRS_on_to_griffenheim_FEA_idea
+			}
+			IF = {
+				limit = { STW = { controls_state = 382 } }
+				SRS = { add_opinion_modifier = { target = STW modifier = mortal_enemies } }
+				STW = { add_opinion_modifier = { target = SRS modifier = mortal_enemies } }
+				add_ideas = SRS_on_to_griffenheim_STW_idea
+			}
+			IF = {
+				limit = { BRZ = { controls_state = 382 } }
+				SRS = { add_opinion_modifier = { target = BRZ modifier = mortal_enemies } }
+				BRZ = { add_opinion_modifier = { target = SRS modifier = mortal_enemies } }
+				add_ideas = SRS_on_to_griffenheim_BRZ_idea
+			}
+			IF = {
+				limit = { PYT = { controls_state = 382 } }
+				SRS = { add_opinion_modifier = { target = PYT modifier = mortal_enemies } }
+				PYT = { add_opinion_modifier = { target = SRS modifier = mortal_enemies } }
+				add_ideas = SRS_on_to_griffenheim_PYT_idea
+			}
+			IF = {
+				limit = { ROU = { controls_state = 382 } }
+				SRS = { add_opinion_modifier = { target = ROU modifier = mortal_enemies } }
+				ROU = { add_opinion_modifier = { target = SRS modifier = mortal_enemies } }
+				add_ideas = SRS_on_to_griffenheim_ROU_idea
+			}
+			IF = {
+				limit = { YAL = { controls_state = 382 } }
+				SRS = { add_opinion_modifier = { target = YAL modifier = mortal_enemies } }
+				YAL = { add_opinion_modifier = { target = SRS modifier = mortal_enemies } }
+				add_ideas = SRS_on_to_griffenheim_YAL_idea
+			}
+			IF = {
+				limit = { KAT = { controls_state = 382 } }
+				SRS = { add_opinion_modifier = { target = KAT modifier = mortal_enemies } }
+				KAT = { add_opinion_modifier = { target = SRS modifier = mortal_enemies } }
+				add_ideas = SRS_on_to_griffenheim_KAT_idea
+			}
+			IF = {
+				limit = { ANG = { controls_state = 382 } }
+				SRS = { add_opinion_modifier = { target = ANG modifier = mortal_enemies } }
+				ANG = { add_opinion_modifier = { target = SRS modifier = mortal_enemies } }
+				add_ideas = SRS_on_to_griffenheim_ANG_idea
+			}
 		}
 	}
 	
@@ -2939,10 +2987,15 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			OR = {
-				has_war_with = GRI
-				NOT = { country_exists = GRI }
-			}
+			NOT = { country_exists = GRI }
+			NOT = { country_exists = FEA }
+			NOT = { country_exists = STW }
+			NOT = { country_exists = BRZ }
+			NOT = { country_exists = PYT }
+			NOT = { country_exists = ROU }
+			NOT = { country_exists = YAL }
+			NOT = { country_exists = KAT }
+			NOT = { country_exists = ANG }
 		}
 		x = 5
 		y = 14
@@ -3077,6 +3130,17 @@ focus_tree = {
 		id = SRS_arise_vast_country
 		icon = GFX_goal_conscription
 		prerequisite = { focus = SRS_great_patriotic_war }
+		bypass = {
+			NOT = { country_exists = GRI }
+			NOT = { country_exists = FEA }
+			NOT = { country_exists = STW }
+			NOT = { country_exists = BRZ }
+			NOT = { country_exists = PYT }
+			NOT = { country_exists = ROU }
+			NOT = { country_exists = YAL }
+			NOT = { country_exists = KAT }
+			NOT = { country_exists = ANG }
+		}
 		x = 5
 		y = 15
 		cost = 7.2
@@ -3093,6 +3157,17 @@ focus_tree = {
 		id = SRS_pistol_makin_colt
 		icon = GFX_goal_Modern_Weapons
 		prerequisite = { focus = SRS_great_patriotic_war }
+		bypass = {
+			NOT = { country_exists = GRI }
+			NOT = { country_exists = FEA }
+			NOT = { country_exists = STW }
+			NOT = { country_exists = BRZ }
+			NOT = { country_exists = PYT }
+			NOT = { country_exists = ROU }
+			NOT = { country_exists = YAL }
+			NOT = { country_exists = KAT }
+			NOT = { country_exists = ANG }
+		}
 		x = 3
 		y = 15
 		cost = 7.2
@@ -3109,6 +3184,17 @@ focus_tree = {
 		id = SRS_true_revolutionaries
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = SRS_great_patriotic_war }
+		bypass = {
+			NOT = { country_exists = GRI }
+			NOT = { country_exists = FEA }
+			NOT = { country_exists = STW }
+			NOT = { country_exists = BRZ }
+			NOT = { country_exists = PYT }
+			NOT = { country_exists = ROU }
+			NOT = { country_exists = YAL }
+			NOT = { country_exists = KAT }
+			NOT = { country_exists = ANG }
+		}
 		x = 7
 		y = 15
 		cost = 7.2
@@ -3125,6 +3211,17 @@ focus_tree = {
 		id = SRS_arise_for_deadly_fight
 		icon = GFX_goal_classless_society
 		prerequisite = { focus = SRS_arise_vast_country }
+		bypass = {
+			NOT = { country_exists = GRI }
+			NOT = { country_exists = FEA }
+			NOT = { country_exists = STW }
+			NOT = { country_exists = BRZ }
+			NOT = { country_exists = PYT }
+			NOT = { country_exists = ROU }
+			NOT = { country_exists = YAL }
+			NOT = { country_exists = KAT }
+			NOT = { country_exists = ANG }
+		}
 		x = 5
 		y = 16
 		cost = 7.2
@@ -3144,6 +3241,17 @@ focus_tree = {
 		id = SRS_rifle_makin_mare
 		icon = GFX_goal_national_arsenal
 		prerequisite = { focus = SRS_pistol_makin_colt }
+		bypass = {
+			NOT = { country_exists = GRI }
+			NOT = { country_exists = FEA }
+			NOT = { country_exists = STW }
+			NOT = { country_exists = BRZ }
+			NOT = { country_exists = PYT }
+			NOT = { country_exists = ROU }
+			NOT = { country_exists = YAL }
+			NOT = { country_exists = KAT }
+			NOT = { country_exists = ANG }
+		}
 		x = 2
 		y = 16
 		cost = 7.2
@@ -3163,6 +3271,17 @@ focus_tree = {
 		id = SRS_order_4414
 		icon = GFX_goal_offensive_army
 		prerequisite = { focus = SRS_true_revolutionaries }
+		bypass = {
+			NOT = { country_exists = GRI }
+			NOT = { country_exists = FEA }
+			NOT = { country_exists = STW }
+			NOT = { country_exists = BRZ }
+			NOT = { country_exists = PYT }
+			NOT = { country_exists = ROU }
+			NOT = { country_exists = YAL }
+			NOT = { country_exists = KAT }
+			NOT = { country_exists = ANG }
+		}
 		x = 8
 		y = 16
 		cost = 7.2
@@ -3182,6 +3301,17 @@ focus_tree = {
 		id = SRS_fight_imperial_hordes
 		icon = GFX_focus_ger_return_of_the_kaiser
 		prerequisite = { focus = SRS_arise_for_deadly_fight }
+		bypass = {
+			NOT = { country_exists = GRI }
+			NOT = { country_exists = FEA }
+			NOT = { country_exists = STW }
+			NOT = { country_exists = BRZ }
+			NOT = { country_exists = PYT }
+			NOT = { country_exists = ROU }
+			NOT = { country_exists = YAL }
+			NOT = { country_exists = KAT }
+			NOT = { country_exists = ANG }
+		}
 		x = 5
 		y = 17
 		cost = 7.2
@@ -3201,6 +3331,17 @@ focus_tree = {
 		id = SRS_shell_makin_griff
 		icon = GFX_goal_national_artillery
 		prerequisite = { focus = SRS_rifle_makin_mare }
+		bypass = {
+			NOT = { country_exists = GRI }
+			NOT = { country_exists = FEA }
+			NOT = { country_exists = STW }
+			NOT = { country_exists = BRZ }
+			NOT = { country_exists = PYT }
+			NOT = { country_exists = ROU }
+			NOT = { country_exists = YAL }
+			NOT = { country_exists = KAT }
+			NOT = { country_exists = ANG }
+		}
 		x = 3
 		y = 17
 		cost = 7.2
@@ -3220,6 +3361,17 @@ focus_tree = {
 		id = SRS_on_ne_passe_pas
 		icon = GFX_jer_republican_guns
 		prerequisite = { focus = SRS_order_4414 }
+		bypass = {
+			NOT = { country_exists = GRI }
+			NOT = { country_exists = FEA }
+			NOT = { country_exists = STW }
+			NOT = { country_exists = BRZ }
+			NOT = { country_exists = PYT }
+			NOT = { country_exists = ROU }
+			NOT = { country_exists = YAL }
+			NOT = { country_exists = KAT }
+			NOT = { country_exists = ANG }
+		}
 		x = 7
 		y = 17
 		cost = 7.2
@@ -3241,7 +3393,15 @@ focus_tree = {
 		prerequisite = { focus = SRS_fight_imperial_hordes focus = SRS_shell_makin_griff focus = SRS_on_ne_passe_pas }
 		available = {
 			SRS = { has_war = no }
-			GRI = { exists = no }
+			NOT = { country_exists = GRI }
+			NOT = { country_exists = FEA }
+			NOT = { country_exists = STW }
+			NOT = { country_exists = BRZ }
+			NOT = { country_exists = PYT }
+			NOT = { country_exists = ROU }
+			NOT = { country_exists = YAL }
+			NOT = { country_exists = KAT }
+			NOT = { country_exists = ANG }
 		}
 		x = 5
 		y = 18
@@ -4400,7 +4560,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = SRS_war_college_idea
+			swap_ideas = {
+				remove_idea = SRS_military_academy_idea
+				add_idea = SRS_war_college_idea
+			}
 			custom_effect_tooltip = SRS_war_college_tp
 		}
 	}
@@ -6117,7 +6280,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_timed_idea = { idea = SRS_fund_the_navy_idea days = 120 }
+			add_timed_idea = { idea = SRS_fund_the_navy_idea days = 180 }
 		}	
 	}
 

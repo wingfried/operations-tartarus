@@ -9,7 +9,11 @@ SRS_military_academy_training_category = {
 			has_unit_leader = 9876
 		}
 		ai_will_do = {
-			factor = 400
+			base = 0
+			modifier = {
+				add = 400
+				has_war = no
+			}
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -50,7 +54,11 @@ SRS_military_academy_training_category = {
 			has_unit_leader = 9880
 		}
 		ai_will_do = {
-			factor = 400
+			base = 0
+			modifier = {
+				add = 400
+				has_war = no
+			}
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -116,7 +124,11 @@ SRS_military_academy_training_category = {
 			has_unit_leader = 9879
 		}
 		ai_will_do = {
-			factor = 400
+			base = 0
+			modifier = {
+				add = 400
+				has_war = no
+			}
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -182,7 +194,11 @@ SRS_military_academy_training_category = {
 			has_unit_leader = 9878
 		}
 		ai_will_do = {
-			factor = 40
+			base = 0
+			modifier = {
+				add = 40
+				has_war = no
+			}
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -248,7 +264,10 @@ SRS_military_academy_training_category = {
 			has_unit_leader = 9877
 		}
 		ai_will_do = {
-			factor = 40
+			modifier = {
+				add = 40
+				has_war = no
+			}
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -314,7 +333,11 @@ SRS_military_academy_training_category = {
 			has_unit_leader = 9875
 		}
 		ai_will_do = {
-			factor = 40
+			base = 0
+			modifier = {
+				add = 40
+				has_war = no
+			}
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -380,7 +403,11 @@ SRS_military_academy_training_category = {
 			has_unit_leader = 9871
 		}
 		ai_will_do = {
-			factor = 40
+			base = 0
+			modifier = {
+				add = 40
+				has_war = no
+			}
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -446,7 +473,11 @@ SRS_military_academy_training_category = {
 			has_unit_leader = 9870
 		}
 		ai_will_do = {
-			factor = 40
+			base = 0
+			modifier = {
+				add = 40
+				has_war = no
+			}
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -518,7 +549,11 @@ SRS_war_college_training_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 400
+			base = 0
+			modifier = {
+				add = 400
+				has_war = no
+			}
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -563,7 +598,11 @@ SRS_war_college_training_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 400
+			base = 0
+			modifier = {
+				add = 400
+				has_war = no
+			}
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -633,7 +672,11 @@ SRS_war_college_training_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 400
+			base = 0
+			modifier = {
+				add = 400
+				has_war = no
+			}
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -703,7 +746,11 @@ SRS_war_college_training_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 0
+			modifier = {
+				add = 40
+				has_war = no
+			}
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -773,7 +820,11 @@ SRS_war_college_training_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 0
+			modifier = {
+				add = 40
+				has_war = no
+			}
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -843,7 +894,11 @@ SRS_war_college_training_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 0
+			modifier = {
+				add = 40
+				has_war = no
+			}
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -913,7 +968,11 @@ SRS_war_college_training_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 0
+			modifier = {
+				add = 40
+				has_war = no
+			}
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
@@ -983,7 +1042,11 @@ SRS_war_college_training_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 0
+			modifier = {
+				add = 40
+				has_war = no
+			}
 		}
 		available = {
 			hidden_trigger = { command_power > 24 }
