@@ -1,4 +1,4 @@
-#Griffonia At War
+﻿#Griffonia At War
 #A Submod for Equestria At War
 #Version 0.1.3: Arantigos Reborn
 

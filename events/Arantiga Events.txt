@@ -2566,8 +2566,7 @@ country_event = { # Detente
 					            traits = {
 					            }
 				            }
-							remove_ideas = BAR_pentarchy
-							remove_ideas = BAR_insane_weather
+							remove_ideas = BAR_pentarchy #tl;dr barrad now has content with national spirits and stuff that fuck with this puppeting stuff, so temporary fix for now
 							set_cosmetic_tag = BRD_arantiga
 							add_ideas = disarmed_nation_ara
 							load_focus_tree = generic_focus
@@ -4980,7 +4979,7 @@ country_event = { #Trinity
 		422 = { #replace with state id of schiesswald
 			add_building_construction = {
     			type = infrastructure
-    			level = 1
+    			level = 2
     			instant_build = yes
 			}
 		}
