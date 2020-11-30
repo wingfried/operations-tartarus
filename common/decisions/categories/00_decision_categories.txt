@@ -196,6 +196,20 @@ prospect_for_resources = {
 	}
 }
 
+military_academy_training_category = {
+	icon = infiltration
+	visible = {
+		has_completed_focus = SRS_military_academy
+	}
+}
+
+war_college_training_category = {
+	icon = infiltration
+	visible = {
+		has_completed_focus = SRS_war_college
+	}
+}
+
 special_projects = {
 
 	icon = generic_prospect_for_resources
@@ -239,13 +253,12 @@ lar_local_recruitment = {
 	visibility_type = map_and_decisions_view
 }
 
-
-
 #### ETRUSCAN REWORK MOD DECISIONS ####
 
 Macro_Builder = {
 	icon = generic_economy
 	allowed = {
+		is_ai = yes
 	}
 	visible = {
 
@@ -255,37 +268,43 @@ Macro_Builder = {
 Subject_interactions = {
 	icon = generic_political_actions
 	allowed = {
+		is_ai = yes
 	}
 }
 
 Requesting_civil_aid = {
 	icon = generic_political_actions
 	allowed = {
+		is_ai = yes
 	}
 }
 
 Requesting_Military_aid = {
 	icon = generic_political_actions
-	allowed = {		
+	allowed = {
+		is_ai = yes	
 	}
 }
 
 
 Requesting_Troops = {
 	icon = generic_political_actions
-	allowed = {		
+	allowed = {
+		is_ai = yes
 	}
 }
 
 Demanding_Resources = {
 	icon = generic_political_actions
-	allowed = {		
+	allowed = {
+		is_ai = yes
 	}
 }
 
 Overlord_Actions = {
 	icon = generic_political_actions
-	allowed = {		
+	allowed = {
+		is_ai = yes	
 	}
 }
 

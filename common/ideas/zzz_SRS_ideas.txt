@@ -4338,19 +4338,20 @@ ideas = {
 		}
 	}
 
-	SRS_army_bolstered = {
+	SRS_deals_with_communalists_idea = {
 		picture = broken_resistance
 		removal_cost = -1
 		cancel = {
 			has_war = no
 		}
 		modifier = {
-			army_attack_factor = 0.10
-			army_defence_factor = 0.10
-			army_org_factor = 0.10
-			experience_loss_factor = 0.15
-			stability_weekly = -0.01
-			war_support_weekly = -0.01
+			political_power_gain = -0.5
+			production_speed_arms_factory_factor = -0.5
+			production_speed_industrial_complex_factor = -0.5
+			production_speed_dockyard_factor = -0.5
+			production_speed_infrastructure_factor = 0.1
+			stability_weekly = 0.005
+			war_support_weekly = 0.005
 		}
 	}
 

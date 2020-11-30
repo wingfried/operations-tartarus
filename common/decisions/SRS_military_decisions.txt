@@ -1,4 +1,4 @@
-SRS_military_academy_training_category = {
+military_academy_training_category = {
 	
 	SRS_train_asper_sickleclaw_academy = {
 		icon = generic_army_support
@@ -535,7 +535,7 @@ SRS_military_academy_training_category = {
 	}
 }
 
-SRS_war_college_training_category = {
+war_college_training_category = {
 
 	SRS_train_asper_sickleclaw_college = {
 		icon = generic_army_support
