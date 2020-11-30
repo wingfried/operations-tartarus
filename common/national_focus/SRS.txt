@@ -6142,8 +6142,8 @@ focus_tree = {
 			add_ideas = SRS_competent_admiralty_idea
 		
 		create_navy_leader = {
-		    name = "Karin Blackfeather"
-		    #picture = 
+		    name = "Karin Beigefeather"
+		    picture = "Admiral_1.tga"
 		    traits = { griffon_race_trait seawolf }
 		    level = 2
 	            attack_skill = 3
@@ -6154,7 +6154,7 @@ focus_tree = {
 		
 		create_navy_leader = {
 		    name = "Hanser Macwingter"
-		    #picture = 
+		    picture = "Admiral_2.tga"
 		    traits = { griffon_race_trait media_personality bold }
 		    level = 2
 		    attack_skill = 2

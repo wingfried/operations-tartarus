@@ -399,7 +399,7 @@ ideas = {
 		}
 
 		SRS_infantry_weapons_manufacturer_com = {
-			#picture = SRS_fighting_fox_factory
+			picture = SRS_idea_bh
 			
 			allowed = {
 				tag = SRS
@@ -622,7 +622,7 @@ ideas = {
 		}
 
 		SRS_hoffwing_steel = {
-			picture = generic_industrial_concern_2
+			picture = SRS_hoofwing_steel
 
 			allowed = {
 				tag = SRS
@@ -675,7 +675,7 @@ ideas = {
 		}
 
 		SRS_northern_steel = {
-			picture = generic_industrial_concern_2
+			picture = SRS_hoofwing_steel
 
 			allowed = {
 				tag = SRS
@@ -735,7 +735,7 @@ ideas = {
 		}
 
 		SRS_griffonian_steel = {
-			picture = generic_industrial_concern_2
+			picture = SRS_hoofwing_steel
 
 			allowed = {
 				tag = SRS
@@ -793,7 +793,7 @@ ideas = {
 		}
 
 		SRS_little_griff_crystals = {
-			picture = generic_industrial_concern_2
+			picture = SRS_little_griff_crystals
 
 			allowed = {
 				tag = SRS
@@ -847,7 +847,7 @@ ideas = {
 		}
 
 		SRS_northern_crystals = {
-			picture = generic_industrial_concern_2
+			picture = SRS_little_griff_crystals
 
 			allowed = {
 				tag = SRS
@@ -908,7 +908,7 @@ ideas = {
 		}
 
 		SRS_griffonian_crystals = {
-			picture = generic_industrial_concern_2
+			picture = SRS_little_griff_crystals
 
 			allowed = {
 				tag = SRS
@@ -987,7 +987,7 @@ ideas = {
 		}
 
 		SRS_dinkau_constructions = {
-			picture = generic_industrial_concern_1
+			picture = SRS_dinkau_constructions
 
 			allowed = {
 				tag = SRS
@@ -1168,7 +1168,7 @@ ideas = {
 
 		SRS_naval_quantity_manufacturer = {
 
-			#picture = 
+			picture = SRS_dinkau_ship_factory
 			
 			available = {
 				has_government = communism
@@ -1365,7 +1365,7 @@ ideas = {
 
 		SRS_aircraft_quantity_manufacturer = {
 			
-			#picture =
+			picture = SRS_braunles_aviprogram
 			
 			available = {
 				has_government = communism

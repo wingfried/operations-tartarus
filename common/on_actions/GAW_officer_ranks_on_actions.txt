@@ -10,6 +10,7 @@ on_actions = {
 						IF = {
 							limit = {
 								is_operative = no
+								is_navy_leader = no
 								NOT = { has_trait = general1_trait }
 								NOT = { has_trait = general2_trait }
 								NOT = { has_trait = general3_trait }
@@ -102,6 +103,7 @@ on_actions = {
 				IF = {
 					limit = {
 						is_operative = no
+						is_navy_leader = no
 						NOT = { has_trait = general1_trait }
 						NOT = { has_trait = general2_trait }
 						NOT = { has_trait = general3_trait }
@@ -192,6 +194,7 @@ on_actions = {
 				IF = {
 					limit = {
 						is_operative = no
+						is_navy_leader = no
 						NOT = { has_trait = general11_trait }
 					}
 					IF = {
