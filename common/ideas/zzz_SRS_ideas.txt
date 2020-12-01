@@ -246,7 +246,7 @@ ideas = {
 		designer = yes
 		SRS_light_medium_modern_tank_manufacturer = {
 
-			#picture = 
+			picture = SRS_tas_fac
 
 			available = {
 				has_government = communism
@@ -267,7 +267,7 @@ ideas = {
 
 		SRS_heavy_super_heavy_tank_manufacturer_3 = {
 
-			#picture = SRS_retsuko_armory
+			picture = SRS_herzer_armours
 
 			available = {
 				has_government = communism
