@@ -4946,7 +4946,7 @@ SRS_communalist_industrialization_plan = {
 			has_completed_focus = SRS_small_scale_dinkau
 		}
 		fire_only_once = yes
-		days_remove = 90
+		days_remove = 180
 		cost = 50
 		ai_will_do = {
 			factor = 200
@@ -4983,7 +4983,7 @@ SRS_communalist_industrialization_plan = {
 			has_completed_focus = SRS_small_scale_bluffhead
 		}
 		fire_only_once = yes
-		days_remove = 90
+		days_remove = 180
 		cost = 50
 		ai_will_do = {
 			factor = 200
@@ -5021,13 +5021,13 @@ SRS_communalist_industrialization_plan = {
 			has_country_flag = SRS_finished_dinkau_dev
 		}
 		fire_only_once = yes
-		days_remove = 180
+		days_remove = 365
 		cost = 50
 		ai_will_do = {
 			factor = 200
 		}
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 5
 		}
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SRS_skynavian_railway_decision"
@@ -5051,6 +5051,20 @@ SRS_communalist_industrialization_plan = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
+					instant_build = yes
+				}
+			}
+			585 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			601 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
 					instant_build = yes
 				}
 			}

@@ -3229,8 +3229,8 @@ ideas = {
 		}
 			
 		modifier = {
-			army_org_factor = -0.25
-			conscription_factor  = -0.5
+			army_org_factor = -0.15
+			conscription_factor  = -0.30
 		}
 	}
 		
@@ -3242,8 +3242,8 @@ ideas = {
 		}
 			
 		modifier = {
-			army_org_factor = -0.2
-			conscription_factor  = -0.5
+			army_org_factor = -0.10
+			conscription_factor  = -0.20
 		}
 	}
 		
@@ -3255,25 +3255,12 @@ ideas = {
 		}
 			
 		modifier = {
-			army_org_factor = -0.1
-			conscription_factor  = -0.25
+			army_org_factor = -0.05
+			conscription_factor  = -0.10
 		}
 	}
 		
 	SRS_DOC_1 = {
-		picture = pony_militarization
-		removal_cost = -1
-		available = {
-			always = yes
-		}
-			
-		modifier = { 
-			army_attack_factor = -0.2
-			army_defence_factor  = -0.2
-		}
-	}
-		
-	SRS_DOC_2 = {
 		picture = pony_militarization
 		removal_cost = -1
 		available = {
@@ -3286,33 +3273,18 @@ ideas = {
 		}
 	}
 		
-	SRS_DOC_3 = {
+	SRS_DOC_2 = {
 		picture = pony_militarization
 		removal_cost = -1
 		available = {
 			always = yes
 		}
-		
+			
 		modifier = { 
-			army_attack_factor = -0.1
-			army_defence_factor  = -0.05
+			army_attack_factor = -0.075
+			army_defence_factor  = -0.075
 		}
-	}
-		
-	SRS_DOC_4= {
-		picture = pony_militarization
-		removal_cost = -1
-		available = {
-			always = yes
-		}
-		
-		modifier = { 
-			army_attack_factor = -0.05
-			army_defence_factor  = -0.1
-		}
-	}
-	
-		
+	}	
 		
 ####COMMUNISM B-B-B-B-B-B-B-B-BASED????####
 

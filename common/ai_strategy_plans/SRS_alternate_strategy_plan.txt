@@ -431,6 +431,7 @@ SRS_consumed_by_FAT = {
 		#JOIN
 		SRS_republican_alignment
 		SRS_rejoin_kemerskai_gang
+		SRS_conscript_army
 		SRS_harmonic_socialism
 		SRS_republican_dream
 		SRS_radical_backlash
@@ -467,6 +468,15 @@ SRS_consumed_by_FAT = {
 		SRS_bandits_be_gone
 		SRS_speak_herzlander
 
+		#FIX ARMY
+		SRS_lessons_of_the_civil_war
+		SRS_cleanse_the_army
+		SRS_loyalty_of_the_generals
+		SRS_Retire_disloyal_lieutenants
+		SRS_hardliner_penal_battalions
+		SRS_revolutionary_discipline
+		SRS_rebuild_thechain_of_command
+
 	}
 
 	research = {
@@ -482,9 +492,9 @@ SRS_consumed_by_FAT = {
 
 	ideas = {
 		partial_economic_mobilisation = 40000
-		SRS_young_chick = 800
-		SRS_scary_grif_advisor = 400
-		SRS_griffon_advisor_1 = 400
+		SRS_griffon_advisor_3 = 800
+		SRS_griffon_advisor_2 = 400
+		SRS_pony_advisor_1 = 400
 		SRS_infantry_griff = 100
 		SRS_army_instructor = 100
 		SRS_army_chief_org = 100

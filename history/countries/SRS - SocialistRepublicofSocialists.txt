@@ -126,9 +126,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Gabriella Gentlewing"
-	desc = ""
-	picture = "Governor.tga"
+	name = "Asper Sickleclaw"
+	desc = "SICKLECLAW_NAME_DESC"
+	picture = "Sickleclaw.tga"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {  }
