@@ -1,0 +1,28 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "economy_container"
+		position = { x= 168 y = 6 }
+
+		instantTextBoxType = {
+			name ="economy_text"
+			position = { x= 22 y = 3 }
+			font = "hoi_18mbs"
+			text = "ECONOMY_MAIN"
+			format = center
+			maxWidth = 75
+			maxHeight = 20
+			fixedsize = yes
+			
+			pdx_tooltip = "ECONOMY_TOOLTIP"
+		}
+		
+		iconType = {
+			name ="economy_icon"
+			spriteType = "GFX_coin_text"
+			position = { x= 8 y = 4 }
+			
+			pdx_tooltip = "ECONOMY_TOOLTIP"
+		}
+	}
+}

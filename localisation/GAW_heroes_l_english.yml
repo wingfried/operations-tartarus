@@ -1,0 +1,22 @@
+﻿l_english:
+
+ ######TRAITS######
+
+ hero_celestia:0 "Celestia"
+ hero_luna:0 "Luna"
+ hero_twilight_sparkle:0 "Twilight Sparkle"
+
+ #equestria_eawra.1:0 "Princess Celestia has fallen!"
+ equestria_eawra.1.t:0 "Princess Celestia has fallen!"
+ equestria_eawra.1.d:0 "BOTTOM TEXT"
+ equestria_eawra.1.a:0 "We're doomed!"
+
+ #equestria_eawra.2:0 "Princess Luna has fallen!"
+ equestria_eawra.2.t:0 "Princess Luna has fallen!"
+ equestria_eawra.2.d:0 "BOTTOM TEXT"
+ equestria_eawra.2.a:0 "We're doomed!"
+
+ #equestria_eawra.3:0 "Twilight Sparkle has fallen!"
+ equestria_eawra.3.t:0 "Twilight Sparkle has fallen!"
+ equestria_eawra.3.d:0 "BOTTOM TEXT"
+ equestria_eawra.3.a:0 "Who?"

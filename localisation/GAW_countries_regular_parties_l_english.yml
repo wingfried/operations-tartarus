@@ -1,0 +1,186 @@
+﻿l_english:
+ 
+ ###Parties###
+ 
+ #AET - Aetiea
+ 
+ #ANG - Angriver
+
+ #ARA - Arantiga
+
+ #AVI - Avian
+
+ #BAK - Bakara
+
+ #BAL - Baltimare
+ 
+ #BAN
+
+ #BAR - Barrad Magocracy
+
+ #BBC - Blackrock's Bandits
+
+ #BOI
+
+ #BRF - Brodfeld
+
+ #BRZ - Bronzehill
+
+ #BUF - Buffalo
+ 
+ #CCN - 
+
+ #CES - Celestial Supporters
+ 
+ #CHN - Changelings
+ CHN_gaw_kleptocracy_party:0 "Changeling Bandits"
+ CHN_gaw_theocracy_party:0 "Cult of The Queen"
+ CHN_gaw_anarchism_party:0 "CAP"
+ CHN_gaw_anarchism_party_long:0 "Changeling Anarchist Party"
+ CHN_gaw_magocracy_party:0 "CMP"
+ CHN_gaw_magocracy_party_long:0 "Changeling Magocratic Party"
+ CHN_gaw_technocracy_party:0 "Queen's Leadership"
+
+ #Crystal Empire
+ CRY_gaw_kleptocracy_party:0 "DCB"
+ CRY_gaw_kleptocracy_party_long:0 "Darkheart's Crystal Bandits"
+ CRY_gaw_theocracy_party:0 "Cult of Crystal Heart"
+ CRY_gaw_anarchism_party:0 "CEAP"
+ CRY_gaw_anarchism_party_long:0 "Crystal Empire Anarchist Party"
+ CRY_gaw_magocracy_party:0 "CEMP"
+ CRY_gaw_magocracy_party_long:0 "Crystal Empire Magocratic Party"
+ CRY_gaw_technocracy_party:0 "CETP"
+ CRY_gaw_technocracy_party_long:0 "Crystal Empire Technocratic Party"
+ 
+ #CYA - Cyanolisia
+
+ #DED - Dread League
+
+ #DEP - Deponia
+
+ #DMT - Diamond Mountain
+
+ #DRG - Dragons
+ 
+ #ELF - Equestrian Liberation Front
+
+ #EQC - New Mareland
+ EQC_gaw_kleptocracy_party:0 "NMO"
+ EQC_gaw_kleptocracy_party_long:0 "New Mareland Outlaws"
+ EQC_gaw_theocracy_party:0 "CAP"
+ EQC_gaw_theocracy_party_long:0 "Cult of Alicorn Princesses"
+ EQC_gaw_anarchism_party:0 "NMASP"
+ EQC_gaw_anarchism_party_long:0 "New Mareland Anarcho-Syndicalist Party"
+ EQC_gaw_magocracy_party:0 "NMMP"
+ EQC_gaw_magocracy_party_long:0 "New Mareland Magocracy Party"
+ EQC_gaw_technocracy_party:0 "MTPNM"
+ EQC_gaw_technocracy_party_long:0 "Militaristic Technocracy Party of New Mareland"
+
+ #EQP
+
+ #EQS - Equestria
+ EQS_gaw_kleptocracy_party:0 "Equestrian Bandits"
+ EQS_gaw_theocracy_party:0 "Cult of Celestia"
+ EQS_gaw_anarchism_party:0 "Cult of Discord"
+ EQS_gaw_magocracy_party:0 "SSSCGU"
+ EQS_gaw_magocracy_party_long:0 "Star Swirl's School Complex for Gifted Unicorns"
+ EQS_gaw_technocracy_party:0 "TRM"
+ EQS_gaw_technocracy_party_long:0 "Thestral Rights Movement"
+
+ #ERI
+
+ #EWI
+
+ #EYR
+
+ #FAL
+
+ #FAT - Griffonian Republic
+
+ #FAW
+ 
+ #FBK - Farbrook
+
+ #FEA - Feathisia
+
+ #FEZ
+
+ #FIR - Firtree
+
+ #FLO
+
+ #FRE
+
+ #FRN
+
+ #GEU
+ 
+ #GRI - Griffonian Empire
+
+ #HAU - Haukland
+
+ #HLQ - Hellquill
+
+ #JAK - Jakistan
+ JAK_gaw_kleptocracy_party:0 "Bad Jak"
+ JAK_gaw_theocracy_party:0 "Jak Church"
+ JAK_gaw_anarchism_party:0 "Free Jak"
+ JAK_gaw_magocracy_party:0 "Mag-Jak"
+ JAK_gaw_technocracy_party:0 "Strong Jak"
+
+ #KAT - Katerin Principality
+
+ #LAK - Lake City
+ 
+ #Mutants
+
+ #MNC - Sunstriker Clan
+ MNC_gaw_kleptocracy_party:0 "Sunstriker Bandits"
+ MNC_gaw_theocracy_party:0 "Cultists of Maar"
+ MNC_gaw_anarchism_party:0 "Sons of Joker"
+ MNC_gaw_magocracy_party:0 "Non-existant"
+ MNC_gaw_technocracy_party:0 "Non-existant"
+ 
+ #Nimbusia
+
+ #Northern Tribes
+
+ #OLE - Olenia
+ OLE_gaw_kleptocracy_party:0 "Maanalaiset Rosvot"
+ OLE_gaw_theocracy_party:0 "Vanhimmat Näkijät"
+ OLE_gaw_anarchism_party:0 "Anarkistinen Liike"
+ OLE_gaw_magocracy_party:0 "Magraattinen Puolue"
+ OLE_gaw_technocracy_party_long:0 "Teknokraatit"
+ 
+ #Ponaidhean
+ 
+ #RCT - River Republic
+
+ #ROU - Romau
+
+ #Skyfall
+
+ #Skynavia
+
+ #STW - Strawberry
+ 
+ #VED - Vedina
+ VED_communism_party:0 "Council of Nobles"
+ VED_gaw_kleptocracy_party:0 "Non-existant"
+ VED_gaw_theocracy_party:0 "Holy Tetrarchy"
+ VED_gaw_anarchism_party:0 "Council of Nobles"
+ VED_gaw_magocracy_party:0 "Non-existant"
+ VED_gaw_technocracy_party:0 "Non-existant"
+
+ #WAT - Watertowns
+
+ #WIT - Wittenland
+
+ #YAK - Yakistan
+ YAK_gaw_kleptocracy_party:0 "Yak Bandits"
+ YAK_gaw_theocracy_party:0 "Yak Church"
+ YAK_gaw_anarchism_party:0 "Free Yaks"
+ YAK_gaw_magocracy_party:0 "Non-existant"
+ YAK_gaw_technocracy_party:0 "Non-existant"
+
+ #YAL - Yale Rectorate

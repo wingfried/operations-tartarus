@@ -1,0 +1,43 @@
+add_namespace = equestria_gaw
+
+country_event = {
+	id = equestria_gaw.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event equestria_gaw.1"}
+	title = equestria_gaw.1.t
+	desc = equestria_gaw.1.d
+	#picture = GFX_event_hearthswarming
+
+	is_triggered_only = yes
+	option = {
+		name = equestria_gaw.1.a
+		add_timed_idea = { idea = EQS_celestia_has_fallen_idea days = 365 }
+	}
+}
+
+country_event = {
+	id = equestria_gaw.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event equestria_gaw.2"}
+	title = equestria_gaw.2.t
+	desc = equestria_gaw.2.d
+	#picture = GFX_event_hearthswarming
+
+	is_triggered_only = yes
+	option = {
+		name = equestria_gaw.2.a
+		add_timed_idea = { idea = EQS_luna_has_fallen_idea days = 365 }
+	}
+}
+
+country_event = {
+	id = equestria_gaw.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event equestria_gaw.3"}
+	title = equestria_gaw.3.t
+	desc = equestria_gaw.3.d
+	#picture = GFX_event_hearthswarming
+
+	is_triggered_only = yes
+	option = {
+		name = equestria_gaw.3.a
+		add_timed_idea = { idea = EQS_twilight_sparkle_has_fallen_idea days = 365 }
+	}
+}

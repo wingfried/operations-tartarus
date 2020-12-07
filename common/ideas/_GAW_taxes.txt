@@ -1,0 +1,401 @@
+ideas = {
+
+	taxes_country = {
+		law = yes
+		use_list_view = yes
+
+		#TAXES
+		no_country_taxes = {
+
+			allowed = {
+			}
+			
+			available = {
+				has_country_flag = cooldown_taxescountry_flag
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			on_add = {
+				clr_country_flag = cooldown_taxescountry_flag
+				custom_effect_tooltip = no_country_taxes_tt
+			}
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				base = 0
+			}
+		}
+
+		low_country_taxes = {
+
+			allowed = {
+			}
+			
+			available = {
+				has_country_flag = cooldown_taxescountry_flag
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			on_add = {
+				clr_country_flag = cooldown_taxescountry_flag
+				custom_effect_tooltip = low_country_taxes_tt
+			}
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				base = 0
+				modifier = {
+					has_idea = no_country_taxes
+					check_variable = { coins_this_month < 0 }
+					add = 2000
+				}
+			}
+		}
+
+		normal_country_taxes = {
+
+			allowed = {
+			}
+			
+			available = {
+				has_country_flag = cooldown_taxescountry_flag
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			on_add = {
+				clr_country_flag = cooldown_taxescountry_flag
+				custom_effect_tooltip = normal_country_taxes_tt
+			}
+
+			default = yes
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				base = 0
+				modifier = {
+					has_idea = low_country_taxes
+					check_variable = { coins_this_month < 0 }
+					add = 2000
+				}
+			}
+		}
+
+		high_country_taxes = {
+
+			allowed = {
+			}
+			
+			available = {
+				has_country_flag = cooldown_taxescountry_flag
+			}
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			on_add = {
+				clr_country_flag = cooldown_taxescountry_flag
+				custom_effect_tooltip = high_country_taxes_tt
+			}
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				base = 0
+				modifier = {
+					has_idea = normal_country_taxes
+					check_variable = { coins_this_month < 0 }
+					add = 2000
+				}
+			}
+		}
+
+		all_country_taxes = {
+
+			allowed = {
+			}
+			
+			available = {
+				has_country_flag = cooldown_taxescountry_flag
+			}
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			on_add = {
+				clr_country_flag = cooldown_taxescountry_flag
+				custom_effect_tooltip = all_country_taxes_tt
+			}
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				base = 0
+				modifier = {
+					has_idea = high_country_taxes
+					check_variable = { coins_this_month < 0 }
+					add = 2000
+				}
+			}
+		}
+	}
+
+	taxes_puppet = {
+		law = yes
+		use_list_view = yes
+
+		no_puppet_taxes = {
+
+			allowed = {
+			}
+			
+			available = {
+				has_country_flag = cooldown_taxespuppet_flag
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			on_add = {
+				clr_country_flag = cooldown_taxespuppet_flag
+				custom_effect_tooltip = no_puppet_taxes_tt
+			}
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		low_puppet_taxes = {
+
+			allowed = {
+			}
+			
+			available = {
+				has_country_flag = cooldown_taxespuppet_flag
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			on_add = {
+				clr_country_flag = cooldown_taxespuppet_flag
+				custom_effect_tooltip = low_puppet_taxes_tt
+			}
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		normal_puppet_taxes = {
+
+			allowed = {
+			}
+			
+			available = {
+				has_country_flag = cooldown_taxespuppet_flag
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			on_add = {
+				clr_country_flag = cooldown_taxespuppet_flag
+				custom_effect_tooltip = normal_puppet_taxes_tt
+			}
+
+			default = yes
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		high_puppet_taxes = {
+
+			allowed = {
+			}
+			
+			available = {
+				has_country_flag = cooldown_taxespuppet_flag
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			on_add = {
+				clr_country_flag = cooldown_taxespuppet_flag
+				custom_effect_tooltip = high_puppet_taxes_tt
+			}
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		all_puppet_taxes = {
+
+			allowed = {
+			}
+			
+			available = {
+				has_country_flag = cooldown_taxespuppet_flag
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			on_add = {
+				clr_country_flag = cooldown_taxespuppet_flag
+				custom_effect_tooltip = all_puppet_taxes_tt
+			}
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+		}
+	}
+
+	military_spending = {
+		law = yes
+		use_list_view = yes
+
+		no_military_spending = {
+
+			allowed = {
+			}
+			
+			available = {
+			}
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		low_military_spending = {
+
+			allowed = {
+			}
+			
+			available = {
+			}
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		normal_military_spending = {
+
+			allowed = {
+			}
+			
+			available = {
+			}
+			removal_cost = -1
+
+			modifier = {
+			}
+			default = yes
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		high_military_spending = {
+
+			allowed = {
+			}
+			
+			available = {
+			}
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		all_military_spending = {
+
+			allowed = {
+			}
+			
+			available = {
+			}
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+		}
+	}
+}
