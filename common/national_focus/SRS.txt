@@ -4631,7 +4631,7 @@ focus_tree = {
 		        add_idea = SRS_UITRAF_3
 		    }
             hidden_effect = {
-		        load_oob = "SRS_garrison1"
+		        load_oob = "SRS_Penal"
             }			
 		}
 	}
@@ -4652,7 +4652,7 @@ focus_tree = {
 		    custom_effect_tooltip = SRS_penal_garrison2
 		    remove_ideas = SRS_UITRAF_3
             hidden_effect = {
-		        load_oob = "SRS_garrison2"
+		        load_oob = "SRS_Legion"
             }			
 		}
 	}
