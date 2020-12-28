@@ -1389,10 +1389,11 @@ ideas = {
 			}
 
 			modifier = {
-				enemy_justify_war_goal_time = -0.25
-				production_factory_max_efficiency_factor = -0.15
-				production_speed_buildings_factor = -0.15
-				min_export = 0.15
+				political_power_factor = -0.5
+				enemy_justify_war_goal_time = -0.5
+				production_factory_max_efficiency_factor = -0.3
+				production_speed_buildings_factor = -0.3
+				min_export = 0.3
 			}
 		}
 
@@ -1405,10 +1406,11 @@ ideas = {
 			}
 
 			modifier = {
-				enemy_justify_war_goal_time = -0.1
-				production_factory_max_efficiency_factor = -0.05
-				production_speed_buildings_factor = -0.05
-				min_export = 0.05
+				political_power_factor = -0.25
+				enemy_justify_war_goal_time = -0.25
+				production_factory_max_efficiency_factor = -0.15
+				production_speed_buildings_factor = -0.15
+				min_export = 0.15
 			}
 		}
 
@@ -1421,9 +1423,24 @@ ideas = {
 			}
 
 			modifier = {
-				conscription_factor = -0.5
-				improve_relations_maintain_cost_factor = 0.5
-				mobilization_speed = -0.25
+				conscription_factor = -0.8
+				improve_relations_maintain_cost_factor = 0.8
+				mobilization_speed = -0.5
+			}
+		}
+
+		SRS_communalist_problems_fin = {
+			picture = air_support_focus
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = -0.2
+				improve_relations_maintain_cost_factor = 0.2
+				mobilization_speed = -0.3
 			}
 		}
 
@@ -1436,9 +1453,54 @@ ideas = {
 			}
 
 			modifier = {
-				conscription_factor = -0.25
-				improve_relations_maintain_cost_factor = 0.25
-				mobilization_speed = -0.05
+				conscription_factor = -0.7
+				improve_relations_maintain_cost_factor = 0.7
+				mobilization_speed = -0.4
+			}
+		}
+
+		SRS_communalist_problems_1_fin = {
+			picture = air_support_focus
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = -0.1
+				improve_relations_maintain_cost_factor = 0.1
+				mobilization_speed = -0.2
+			}
+		}
+
+		SRS_communalist_problems_2 = {
+			picture = air_support_focus
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = -0.75
+				improve_relations_maintain_cost_factor = 0.75
+				mobilization_speed = -0.45
+			}
+		}
+
+		SRS_communalist_problems_2_fin = {
+			picture = air_support_focus
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = -0.15
+				improve_relations_maintain_cost_factor = 0.15
+				mobilization_speed = -0.25
 			}
 		}
 
@@ -1506,11 +1568,53 @@ ideas = {
 			}
 
 			modifier = {
+				offensive_war_stability_factor = -0.2
+				justify_war_goal_time = 0.2
+				mobilization_speed = -0.2
+				political_power_factor = -0.2
+				stability_factor = -0.2
+				production_factory_max_efficiency_factor = -0.2
+				production_speed_buildings_factor = -0.2
+
+			}
+		}
+
+		SRS_northern_war = {
+			picture = FRA_army_of_aggression_focus
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				SRS = { exists = yes } 
+				NTR = { exists = yes }
+			}
+
+			modifier = {
+				offensive_war_stability_factor = -0.2
+				justify_war_goal_time = 0.2
+				mobilization_speed = -0.2
+				political_power_factor = -0.2
+				stability_factor = -0.2
+				production_factory_max_efficiency_factor = -0.2
+				production_speed_buildings_factor = -0.2
+
+			}
+		}
+
+		SRS_northern_war_1 = {
+			picture = FRA_army_of_aggression_focus
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				SRS = { exists = yes } 
+				NTR = { exists = yes }
+			}
+
+			modifier = {
 				offensive_war_stability_factor = -0.1
 				justify_war_goal_time = 0.1
 				mobilization_speed = -0.1
 				political_power_factor = -0.1
-				stability_factor = -0.10	
+				stability_factor = -0.1
 				production_factory_max_efficiency_factor = -0.1
 				production_speed_buildings_factor = -0.1
 

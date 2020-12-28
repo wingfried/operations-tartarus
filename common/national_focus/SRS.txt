@@ -22,18 +22,42 @@ focus_tree = {
 		icon = GFX_focus_generic_join_comintern
 		x = 6
 		y = 0
-		cost = 7.2
+		cost = 20
 		ai_will_do = {
 			factor = 12
 		}
 		select_effect = {
+			#country_event = {
+			#	id = srs_sickoflavour.1
+			#	days = 0
+			#}
 			country_event = {
-				id = srs_sickoflavour.1
+				id = srs_sickocivwartwo.0 #Event 1
+				days = 0
+			}
+			country_event = {
+				id = srs_sickocivwartwo.6 #Event 2.b.1
 				days = 21
+			}
+			country_event = {
+				id = srs_sickocivwartwo.11
+				days = 56
+			}
+			country_event = {
+				id = srs_sickocivwartwo.12
+				days = 70
+			}
+			country_event = {
+				id = srs_sickocivwartwo.15
+				days = 98
+			}
+			country_event = {
+				id = srs_sickocivwartwo.16
+				days = 112
 			}
 		}
 		completion_reward = {
-            country_event = { id = srs_sickocivwar.1 }
+            #country_event = { id = srs_sickocivwar.1 }
 		}
 	}
 
@@ -42,6 +66,9 @@ focus_tree = {
 		icon = GFX_goal_ideology_totalist
 		prerequisite = { focus = SRS_finishing_touches }
 		mutually_exclusive = { focus = SRS_sickleclaw_obeys_congress }
+		available = {
+			has_country_flag = sicko_seize_the_congress
+		}
 		x = 5
 		y = 1
 		cost = 2.9
@@ -64,6 +91,9 @@ focus_tree = {
 		icon = GFX_goal_commune_politics
 		prerequisite = { focus = SRS_finishing_touches }
 		mutually_exclusive = { focus = SRS_sickleclaw_betrays_congress }
+		available = {
+			has_country_flag = sicko_relinquishes_power
+		}
 		x = 7
 		y = 1
 		cost = 5
@@ -223,11 +253,8 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = {
-			add_political_power = 50
-			swap_ideas = {
-				remove_idea = SRS_doubt_in_sickleclaw
-				add_idea = SRS_doubt_in_sickleclaw_1
-			}
+			add_political_power = 100
+			add_war_support = 0.10
 		}
 	}
 
@@ -722,7 +749,14 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = {
-			add_political_power = -100
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}
+			set_politics = {
+				ruling_party = democratic elections_allowed = no
+			}
+			add_ideas = SRS_shits_fucked_radical_1
 		}
 	}
 	
@@ -758,14 +792,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.1
-			}
-			set_politics = {
-				ruling_party = democratic elections_allowed = no
-			}
-				add_ideas = SRS_shits_fucked_radical_1
+			
 		}
 	}
 	

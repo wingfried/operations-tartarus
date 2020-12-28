@@ -2,6 +2,7 @@ add_namespace = socrep_grif
 add_namespace = socrep_grif_news
 add_namespace = srs_sickontr
 add_namespace = srs_sickocivwar
+add_namespace = srs_sickocivwartwo
 add_namespace = srs_sickoflavour
 
 ####BASE EAW EVENTS - MODDED EVENTS LINE ~3050####
@@ -3183,12 +3184,376 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickocivwar.1.a
-			add_political_power = 100
-			remove_ideas = SRS_communalist_problems
-			remove_ideas = SRS_internationalist_problems
+		add_political_power = 100
+		#remove_ideas = SRS_communalist_problems
+		#remove_ideas = SRS_internationalist_problems
 	}
 }
-	
+
+country_event = {
+	id = srs_sickocivwartwo.0 #Event 1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.0"}
+	title = srs_sickocivwartwo.0.t
+	desc = srs_sickocivwartwo.0.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.0.a
+		add_political_power = 100
+		country_event = { id = srs_sickocivwartwo.1 } #Event 1.1
+	}
+}
+
+country_event = {
+	id = srs_sickocivwartwo.1 #Event 1.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.1"}
+	title = srs_sickocivwartwo.1.t
+	desc = srs_sickocivwartwo.1.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.1.a
+		add_to_variable = { var = sicko_nice value = 1 }
+		country_event = { id = srs_sickocivwartwo.9 days = 28 } #Event 3.a
+		country_event = { id = srs_sickocivwartwo.2 days = 42 } #Event 2.a
+	}
+	option = {
+		name = srs_sickocivwartwo.1.b
+		add_to_variable = { var = sicko_naughty value = 1 }
+		country_event = { id = srs_sickocivwartwo.10 days = 28 } #Event 3.b
+		country_event = { id = srs_sickocivwartwo.5 days = 42 } #Event 2.b
+	}
+}
+
+country_event = {
+	id = srs_sickocivwartwo.2 #Event 2.a
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.2"}
+	title = srs_sickocivwartwo.2.t
+	desc = srs_sickocivwartwo.2.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.2.a
+		add_to_variable = { var = sicko_nice value = 1 }
+		country_event = { id = srs_sickocivwartwo.3 }
+	}
+	option = {
+		name = srs_sickocivwartwo.2.b
+		add_to_variable = { var = sicko_naughty value = 1 }
+		country_event = { id = srs_sickocivwartwo.4 }
+	}
+}
+
+country_event = {
+	id = srs_sickocivwartwo.3 #Event 2.a.a
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.3"}
+	title = srs_sickocivwartwo.3.t
+	desc = srs_sickocivwartwo.3.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.3.a
+		add_political_power = -25
+		add_stability = 0.05
+		swap_ideas = { remove_idea = SRS_internationalist_problems add_idea = SRS_internationalist_problems_1 }
+	}
+}
+
+country_event = {
+	id = srs_sickocivwartwo.4 #Event 2.a.b
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.4"}
+	title = srs_sickocivwartwo.4.t
+	desc = srs_sickocivwartwo.4.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.4.a
+		add_war_support = -0.05
+		add_manpower = -50
+		remove_ideas = SRS_internationalist_problems
+	}
+}
+
+country_event = {
+	id = srs_sickocivwartwo.5 #Event 2.b
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.5"}
+	title = srs_sickocivwartwo.5.t
+	desc = srs_sickocivwartwo.5.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.5.a
+		add_manpower = -5000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -1000
+		}
+		add_stability = 0.10
+		add_war_support -0.05
+		swap_ideas = { remove_idea = SRS_northern_war add_idea = SRS_northern_war_1 }
+	}
+	option = {
+		name = srs_sickocivwartwo.5.b
+		add_war_support = -0.10
+	}
+}
+
+country_event = {
+	id = srs_sickocivwartwo.6 #Event 2.b.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.6"}
+	title = srs_sickocivwartwo.6.t
+	desc = srs_sickocivwartwo.6.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.6.a
+		add_to_variable = { var = sicko_naughty value = 1 }
+		country_event = { id = srs_sickocivwartwo.7 }
+	}
+	option = {
+		name = srs_sickocivwartwo.6.b
+		add_to_variable = { var = sicko_nice value = 1 }
+		country_event = { id = srs_sickocivwartwo.8 }
+	}
+}
+
+country_event = {
+	id = srs_sickocivwartwo.7 #Event 2.b.1.a
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.7"}
+	title = srs_sickocivwartwo.7.t
+	desc = srs_sickocivwartwo.7.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.7.a
+		add_political_power = -25
+		add_manpower = -50
+		add_stability = 0.05
+		swap_ideas = { remove_idea = SRS_communalist_problems add_idea = SRS_communalist_problems_1 }
+	}
+}
+
+country_event = {
+	id = srs_sickocivwartwo.8 #Event 2.b.1.b
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.8"}
+	title = srs_sickocivwartwo.8.t
+	desc = srs_sickocivwartwo.8.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.8.a
+		add_war_support = -0.05
+		swap_ideas = { remove_idea = SRS_communalist_problems add_idea = SRS_communalist_problems_2 }
+	}
+}
+
+#If the player chose option a in Event 1.1
+country_event = { #3.a
+	id = srs_sickocivwartwo.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.9"}
+	title = srs_sickocivwartwo.9.t
+	desc = srs_sickocivwartwo.9.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		add_manpower = -200
+		add_war_support = -0.05
+		601 = { set_demilitarized_zone = yes }
+		name = srs_sickocivwartwo.9.a
+	}
+}
+
+#If the player chose option b in Event 1.1
+country_event = { #3.b
+	id = srs_sickocivwartwo.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.10"}
+	title = srs_sickocivwartwo.10.t
+	desc = srs_sickocivwartwo.10.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		add_manpower = -600
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -500
+		}
+		name = srs_sickocivwartwo.10.a
+	}
+}
+
+country_event = { #Event 4
+	id = srs_sickocivwartwo.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.11"}
+	title = srs_sickocivwartwo.11.t
+	desc = srs_sickocivwartwo.11.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.11.a
+	}
+}
+
+country_event = { #Event 5
+	id = srs_sickocivwartwo.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.12"}
+	title = srs_sickocivwartwo.12.t
+	desc = srs_sickocivwartwo.12.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.12.a
+		add_to_variable = { var = sicko_naughty value = 1 }
+		country_event = { id = srs_sickocivwartwo.13 }
+	}
+	option = {
+		name = srs_sickocivwartwo.12.b
+		add_to_variable = { var = sicko_nice value = 1 }
+		country_event = { id = srs_sickocivwartwo.14 }
+	}
+}
+
+country_event = { #5.a
+	id = srs_sickocivwartwo.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.13"}
+	title = srs_sickocivwartwo.13.t
+	desc = srs_sickocivwartwo.13.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.13.a
+		add_manpower = -200
+		add_political_power = -50
+		542 = { set_demilitarized_zone = no }
+		585 = { set_demilitarized_zone = no }
+		601 = { set_demilitarized_zone = no }
+		remove_ideas = remove_ideas = SRS_communalist_problems
+		army_experience = 10
+	}
+}
+
+country_event = { #5.b
+	id = srs_sickocivwartwo.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.14"}
+	title = srs_sickocivwartwo.14.t
+	desc = srs_sickocivwartwo.14.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.14.a
+		add_political_power = 50
+		add_stability = 0.10
+		542 = { set_demilitarized_zone = no }
+		585 = { set_demilitarized_zone = no }
+		601 = { set_demilitarized_zone = no }
+		IF = {
+			limit = { has_idea = SRS_communalist_problems }
+			swap_ideas = { add_idea = SRS_communalist_problems_fin remove_idea = SRS_communalist_problems }
+		}
+		ELSE_IF = {
+			limit = { has_idea = SRS_communalist_problems_1 }
+			swap_ideas = { add_idea = SRS_communalist_problems_1_fin remove_idea = SRS_communalist_problems_1 }
+		}
+		ELSE_IF = {
+			limit = { has_idea = SRS_communalist_problems_2 }
+			swap_ideas = { add_idea = SRS_communalist_problems_2_fin remove_idea = SRS_communalist_problems_2 }
+		}
+		#work in progress
+	}
+}
+
+country_event = { #6 Sicko is called back to the capital
+	id = srs_sickocivwartwo.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.15"}
+	title = srs_sickocivwartwo.15.t
+	desc = srs_sickocivwartwo.15.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.15.a
+		add_to_variable = { var = sicko_naughty value = 1 }
+		add_war_support = 0.10
+	}
+	option = {
+		name = srs_sickocivwartwo.15.b
+		add_to_variable = { var = sicko_nice value = 1 }
+		add_stability = 0.10
+	}
+}
+
+country_event = { #7 Sicko has some treacherous thoughts
+	id = srs_sickocivwartwo.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.16"}
+	title = srs_sickocivwartwo.16.t
+	desc = srs_sickocivwartwo.16.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.16.a
+		IF = {
+			limit = { check_variable = { sicko_naughty > sicko_nice } }
+			country_event = { id = srs_sickocivwartwo.17 days = 28 }
+		}
+		ELSE_IF = {
+			limit = { check_variable = { sicko_naughty < sicko_nice } }
+			country_event = { id = srs_sickocivwartwo.18 days = 28 }
+		}
+		ELSE = {
+			country_event = { id = srs_sickocivwartwo.19 days = 28 }
+		}
+	}
+}
+
+country_event = { #8 Sicko returns to report progress and gets shit for being a nazi
+	id = srs_sickocivwartwo.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.17"}
+	title = srs_sickocivwartwo.17.t
+	desc = srs_sickocivwartwo.17.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.17.a
+		set_country_flag = sicko_relinquishes_power
+	}
+	option = {
+		name = srs_sickocivwartwo.17.b
+		set_country_flag = sicko_seize_the_congress
+	}
+}
+
+country_event = { #8 Sicko returns to report progress and gets shit for being a pussy
+	id = srs_sickocivwartwo.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.18"}
+	title = srs_sickocivwartwo.18.t
+	desc = srs_sickocivwartwo.18.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.18.a
+		set_country_flag = sicko_relinquishes_power
+	}
+	option = {
+		name = srs_sickocivwartwo.18.b
+		set_country_flag = sicko_seize_the_congress
+	}
+}
+
+country_event = { #8 Sicko returns to report balanced progress
+	id = srs_sickocivwartwo.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.19"}
+	title = srs_sickocivwartwo.19.t
+	desc = srs_sickocivwartwo.19.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.19.a
+		set_country_flag = sicko_relinquishes_power
+	}
+	option = {
+		name = srs_sickocivwartwo.19.b
+		set_country_flag = sicko_seize_the_congress
+	}
+}
+
 country_event = {
 	id = srs_sickoflavour.1
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.1"}
@@ -3212,12 +3577,12 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickocivwar.2.a
-			522 = { set_demilitarized_zone = yes }
-			585 = { set_demilitarized_zone = yes }
-			561 = { set_demilitarized_zone = yes }
-			add_political_power = -200
-			add_stability = -0.5
-			add_manpower = -6
+			#522 = { set_demilitarized_zone = yes }
+			#585 = { set_demilitarized_zone = yes }
+			#561 = { set_demilitarized_zone = yes }
+			add_stability = -0.15
+			add_manpower = -100
+			add_political_power = 100
 	}
 }
 
@@ -3245,8 +3610,6 @@ country_event = {
 	option = {
 		name = srs_sickocivwar.3.a
 			561 = { set_demilitarized_zone = no }
-			add_stability = 0.075
-			add_manpower = -2
 	}
 }
 
@@ -3261,7 +3624,6 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickocivwar.4.a
-			add_stability = 0.075
 	}
 }
 
@@ -3277,7 +3639,6 @@ country_event = {
 	option = {
 		name = srs_sickocivwar.5.a
 			585 = { set_demilitarized_zone = no }
-			add_stability = 0.075
 	}
 }
 
@@ -3293,7 +3654,6 @@ country_event = {
 	option = {
 		name = srs_sickocivwar.6.a
 			522 = { set_demilitarized_zone = no }
-			add_stability = 0.075
 	}
 }
 
@@ -3309,7 +3669,6 @@ country_event = {
 	option = {
 		name = srs_sickocivwar.7.a
 			542 = { set_demilitarized_zone = no }
-			add_stability = 0.075
 	}
 }
 
@@ -3325,10 +3684,11 @@ country_event = {
 	option = {
 		name = srs_sickocivwar.8.a
 			add_stability = 0.2
-			add_political_power = -100
-			add_ideas = SRS_doubt_in_sickleclaw
-			add_ideas = SRS_UITRAF_1
-			add_ideas = SRS_DOC_1
+			remove_ideas = SRS_internationalist_problems
+			remove_ideas = SRS_communalist_problems
+			#add_ideas = SRS_doubt_in_sickleclaw
+			#add_ideas = SRS_UITRAF_1
+			#add_ideas = SRS_DOC_1
 	}
 }
 
