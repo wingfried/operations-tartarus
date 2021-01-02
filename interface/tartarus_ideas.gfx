@@ -373,6 +373,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SRS_herzer_armours.dds"
 	}
 	SpriteType = {
+		name = "GFX_idea_SRS_nordrot"
+		texturefile = "gfx/interface/ideas/SRS_nordrot.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRS_mass_art"
+		texturefile = "gfx/interface/ideas/SRS_mass_art.dds"
+	}
+	SpriteType = {
 		name = "GFX_idea_SRS_tas_fac"
 		texturefile = "gfx/interface/ideas/SRS_tas_fac.dds"
 	}

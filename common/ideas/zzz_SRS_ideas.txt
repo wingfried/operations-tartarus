@@ -512,7 +512,7 @@ ideas = {
 		}
 
 		SRS_mass_artillery_manufacturer = {
-			picture = generic_artillery_manufacturer_1
+			picture = SRS_mass_art
 			
 			allowed = {
 				tag = SRS
@@ -967,7 +967,7 @@ ideas = {
 		}
 
 		SRS_nordrot_manufacturing = {
-			picture = generic_industrial_concern_1
+			picture = SRS_nordrot
 			
 			allowed = {
 				tag = SRS

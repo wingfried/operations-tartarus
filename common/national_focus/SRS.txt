@@ -39,10 +39,10 @@ focus_tree = {
 				id = srs_sickocivwartwo.6 #Event 2.b.1
 				days = 21
 			}
-			country_event = {
-				id = srs_sickocivwartwo.11
-				days = 56
-			}
+			#country_event = {
+			#	id = srs_sickocivwartwo.11
+			#	days = 56
+			#}
 			country_event = {
 				id = srs_sickocivwartwo.12
 				days = 70

@@ -3381,17 +3381,17 @@ country_event = { #3.b
 	}
 }
 
-country_event = { #Event 4
-	id = srs_sickocivwartwo.11
-	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.11"}
-	title = srs_sickocivwartwo.11.t
-	desc = srs_sickocivwartwo.11.d
-	#picture = GFX_event_poshel_nahui
-	is_triggered_only = yes
-	option = {
-		name = srs_sickocivwartwo.11.a
-	}
-}
+#country_event = { #Event 4
+#	id = srs_sickocivwartwo.11
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.11"}
+#	title = srs_sickocivwartwo.11.t
+#	desc = srs_sickocivwartwo.11.d
+#	#picture = GFX_event_poshel_nahui
+#	is_triggered_only = yes
+#	option = {
+#		name = srs_sickocivwartwo.11.a
+#	}
+#}
 
 country_event = { #Event 5
 	id = srs_sickocivwartwo.12
