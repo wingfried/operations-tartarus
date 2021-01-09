@@ -736,7 +736,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_republican_alignment
-		icon = GFX_goal_griffonia_alliance
+		icon = GFX_
 		prerequisite = { focus = SRS_national_security }
 		mutually_exclusive = { focus = SRS_communist_asper }
 		x = 10
@@ -762,7 +762,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_rejoin_kemerskai_gang
-		icon = GFX_goal_kemerskai
+		icon = GFX_
 		prerequisite = { focus = SRS_republican_alignment }
 		x = 10
 		y = 7
@@ -782,7 +782,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_harmonic_socialism
-		icon = GFX_goal_ideology_democratic_socialist
+		icon = GFX_
 		prerequisite = { focus = SRS_rejoin_kemerskai_gang }
 		x = 10
 		y = 8
@@ -798,7 +798,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_republican_dream
-		icon = GFX_focus_usa_guarantee_the_american_dream
+		icon = GFX_
 		prerequisite = { focus = SRS_harmonic_socialism }
 		x = 10
 		y = 9
@@ -818,7 +818,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_radical_backlash
-		icon = GFX_goal_stg_worst_case
+		icon = GFX_
 		prerequisite = { focus = SRS_republican_dream }
 		x = 10
 		y = 10
@@ -837,7 +837,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_reforge_enthusiasm
-		icon = GFX_goal_new_leaders
+		icon = GFX_
 		prerequisite = { focus = SRS_radical_backlash }
 		x = 9
 		y = 11
@@ -853,7 +853,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_yeet_communalists
-		icon = GFX_goal_broken_red_star
+		icon = GFX_
 		prerequisite = { focus = SRS_radical_backlash }
 		x = 11
 		y = 11
@@ -873,7 +873,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_promise_pan_griffonia
-		icon = GFX_goal_socialist_griffonia
+		icon = GFX_
 		prerequisite = { focus = SRS_reforge_enthusiasm }
 		prerequisite = { focus = SRS_yeet_communalists }
 		x = 10
@@ -891,7 +891,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_unite_the_north
-		icon = GFX_goal_skull_treaty
+		icon = GFX_
 		prerequisite = { focus = SRS_harmonic_socialism }
 		x = 16
 		y = 9
@@ -908,7 +908,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_approach_the_tribes
-		icon = GFX_goal_molotov_ribbentrop_pact_pony_griffon
+		icon = GFX_
 		prerequisite = { focus = SRS_unite_the_north }
 		mutually_exclusive = { focus = SRS_ntrwar_republican }
 		x = 14
@@ -932,7 +932,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_meet_with_waifu
-		icon = GFX_goal_pink_waifu
+		icon = GFX_
 		prerequisite = { focus = SRS_approach_the_tribes }
 		x = 14
 		y = 11
@@ -947,7 +947,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_harmonic_union
-		icon = GFX_goal_generic_harmony
+		icon = GFX_
 		prerequisite = { focus = SRS_meet_with_waifu }
 		x = 14
 		y = 12
@@ -965,7 +965,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_ntrwar_republican
-		icon = GFX_goal_gunpoint_diplomacy
+		icon = GFX_
 		prerequisite = { focus = SRS_unite_the_north }
 		mutually_exclusive = { focus = SRS_approach_the_tribes }
 		available = {
@@ -1000,7 +1000,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_ntr_infrastructure
-		icon = GFX_goal_forced_con
+		icon = GFX_
 		prerequisite = { focus = SRS_ntrwar_republican }
 		available = {
 			custom_trigger_tooltip = {
@@ -1075,7 +1075,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_ntr_factories
-		icon = GFX_goal_forced_mil
+		icon = GFX_
 		prerequisite = { focus = SRS_ntr_infrastructure }
 		x = 16
 		y = 12
@@ -1103,7 +1103,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_republican_yeetvedina
-		icon = GFX_focus_indy_swing_the_sword
+		icon = GFX_
 		prerequisite = { focus = SRS_unite_the_north }
 		available = {
 			IF = {
@@ -1137,7 +1137,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_republican_yeetbrantbeak
-		icon = GFX_goal_step_on_skull
+		icon = GFX_
 		prerequisite = { focus = SRS_republican_yeetvedina }
 		available = {
 			IF = {
@@ -1179,7 +1179,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_speak_herzlander
-		icon = GFX_goal_griffon_books
+		icon = GFX_
 		prerequisite = { focus = SRS_republican_yeetbrantbeak }
 		x = 18
 		y = 12
@@ -1199,7 +1199,7 @@ focus_tree = {
 	
 	focus = {
         id = SRS_republican_knights
-        icon = GFX_goal_griffon_knights
+        icon = GFX_
         prerequisite = { focus = SRS_speak_herzlander }
         prerequisite = { focus = SRS_harmonic_union focus = SRS_ntr_factories }
         x = 18
@@ -1270,7 +1270,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_warplans
-		icon = GFX_goal_planning_bonus
+		icon = GFX_
 		prerequisite = { focus = SRS_unite_the_north }
 		x = 20
 		y = 10
@@ -1286,7 +1286,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_monarchists_be_gone
-		icon = GFX_focus_rom_abdicate
+		icon = GFX_
 		prerequisite = { focus = SRS_republican_yeetvedina }
 		available = {
 			custom_trigger_tooltip = {
@@ -1313,7 +1313,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_bandits_be_gone
-		icon = GFX_goal_purge_opposition
+		icon = GFX_
 		prerequisite = { focus = SRS_republican_yeetbrantbeak }
 		available = {
 			custom_trigger_tooltip = {
@@ -1341,7 +1341,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_cloudburian_universities
-		icon = GFX_focus_research
+		icon = GFX_
 		prerequisite = { focus = SRS_speak_herzlander }
 		available = {
 			custom_trigger_tooltip = {
@@ -1369,7 +1369,7 @@ focus_tree = {
 	
 	focus = {
         id = SRS_strike_the_revisionists
-        icon = GFX_goal_rosewing_and_suntail
+        icon = GFX_
         prerequisite = { focus = SRS_harmonic_union focus = SRS_ntr_factories }
         prerequisite = { focus = SRS_promise_pan_griffonia }
         prerequisite = { focus = SRS_speak_herzlander }
@@ -1395,7 +1395,7 @@ focus_tree = {
 
 	focus = {
         id = SRS_unite_with_fatmerskai_playeronly
-        icon = GFX_goal_griffonia_alliance
+        icon = GFX_
         prerequisite = { focus = SRS_harmonic_union focus = SRS_ntr_factories }
         prerequisite = { focus = SRS_promise_pan_griffonia }
         prerequisite = { focus = SRS_speak_herzlander }
@@ -1416,7 +1416,7 @@ focus_tree = {
 
 	focus = {
         id = SRS_unite_with_fatmerskai_aionly
-        icon = GFX_goal_griffonia_alliance
+        icon = GFX_
         prerequisite = { focus = SRS_harmonic_union focus = SRS_ntr_factories }
         prerequisite = { focus = SRS_promise_pan_griffonia }
         prerequisite = { focus = SRS_speak_herzlander }
