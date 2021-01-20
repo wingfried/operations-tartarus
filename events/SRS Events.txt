@@ -4296,6 +4296,167 @@ country_event = {
 	}
 }
 
+# Heal the Scars #
+
+country_event = {
+	id = srs_sickocivwar.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.12"}
+	title = srs_sickocivwar.12.t
+	desc = srs_sickocivwar.12.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+	    ai_chance = {
+		    factor = 10
+		}
+		name = srs_sickocivwar.12.a
+	}
+}
+
+# Heal the Scars #
+
+country_event = {
+	id = srs_sickocivwar.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.13"}
+	title = srs_sickocivwar.13.t
+	desc = srs_sickocivwar.13.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+	    ai_chance = {
+		    factor = 10
+		}
+		name = srs_sickocivwar.13.a
+	}
+}
+
+# Turhamn Pact #
+
+country_event = {
+	id = srs_sickocivwar.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.14"}
+	title = srs_sickocivwar.14.t
+	desc = srs_sickocivwar.14.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+	    ai_chance = {
+		    factor = 10
+		}
+		name = srs_sickocivwar.14.a
+	}
+}
+
+# The People’s Flying Circus #
+
+country_event = {
+	id = srs_sickocivwar.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.15"}
+	title = srs_sickocivwar.15.t
+	desc = srs_sickocivwar.15.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+	    ai_chance = {
+		    factor = 10
+		}
+		name = srs_sickocivwar.15.a
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_1
+			amount = 20
+			producer = CHN
+		}
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_2
+			amount = 12
+			producer = CHN
+		}
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_0
+			amount = 32
+			producer = EQS
+		}
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_0
+			amount = 24
+			producer = JER
+		}
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_1
+			amount = 12
+			producer = STG
+		}
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_2
+			amount = 8
+			producer = STG
+		}
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_0
+			amount = 20
+			producer = HAU
+		}
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = air_equipment
+		}
+	}
+}
+
+# Stalliongrad Cooperation Part One #
+
+country_event = {
+	id = srs_sickocivwar.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.16"}
+	title = srs_sickocivwar.16.t
+	desc = srs_sickocivwar.16.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+	    ai_chance = {
+		    factor = 10
+		}
+		name = srs_sickocivwar.16.a
+		country_event = srs_sickocivwar.17
+	}
+}
+
+# Stalliongrad Cooperation Part Two #
+
+country_event = {
+	id = srs_sickocivwar.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.17"}
+	title = srs_sickocivwar.17.t
+	desc = srs_sickocivwar.17.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+	    ai_chance = {
+		    factor = 10
+		}
+		name = srs_sickocivwar.17.a
+	}
+}
+
+# International Volunteers #
+
+country_event = {
+	id = srs_sickocivwar.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.18"}
+	title = srs_sickocivwar.18.t
+	desc = srs_sickocivwar.18.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+	    ai_chance = {
+		    factor = 10
+		}
+		name = srs_sickocivwar.18.a
+		add_ideas = SRS_unlikely_membership_idea
+	}
+}
+
 ## SRS-FAT merger event ##
 
 country_event = {

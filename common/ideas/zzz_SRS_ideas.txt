@@ -4436,5 +4436,147 @@ ideas = {
 			electronics = -0.15
 		}
 	}
+
+	SRS_VED_resources_idea = {
+		#picture = 
+		removal_cost = -1
+		modifier = {
+			local_resources_factor = 0.20
+		}
+	}
+
+	SRS_tribal_aux_idea = {
+		#picture = 
+		removal_cost = -1
+		modifier = {
+			conscription_factor = 0.05
+		}
+	}
+
+	SRS_volunteer_idea = {
+		modifier = {
+			send_volunteer_size = 3
+			air_volunteer_cap = 100
+		}
+	}
+
+	SRS_STG_factory_idea = {
+		modifier = {
+			industrial_capacity_factory = 0.05
+		}
+	}
+
+	SRS_STG_research_idea = {
+		modifier = {
+			research_speed_factor = 0.05
+		}
+	}
+
+	SRS_compliance_idea = {
+		modifier = {
+			compliance_growth = 0.50
+		}
+	}
+
+	SRS_STG_our_mining_effort_idea_1 = {
+		modifier = {
+			country_resource_chromium = -4
+			country_resource_aluminium = -10
+		}
+	}
+
+	SRS_STG_their_mining_effort_idea_1 = {
+		modifier = {
+			country_resource_chromium = 4
+			country_resource_aluminium = 10
+		}
+	}
+
+	SRS_seasonal_workers_idea = {
+		modifier = {
+			production_speed_buildings_factor = 0.05
+		}
+	}
+
+	SRS_STG_officer_exchange_idea = {
+		modifier = {
+			training_time_factor = -0.05
+		}
+	}
+
+	SRS_art_of_war_idea = {
+		modifier = {
+			attrition = -0.05
+			unit_upkeep_attrition_factor = -0.05
+		}
+	}
+
+	SRS_GRW_power_of_the_word_idea = {
+		modifier = {
+			consumer_goods_factor = -0.015
+		}
+	}
+
+	SRS_FAT_consumer_goods_idea_1 = {
+		modifier = {
+			consumer_goods_factor = -0.02
+		}
+	}
+
+	SRS_FAT_consumer_goods_idea_1_b = {
+		modifier = {
+			consumer_goods_factor = -0.02
+			trade_opinion_factor = 0.25
+		}
+		targeted_modifier = {
+			tag = FAT
+			trade_cost_for_target_factor = -0.5
+		}
+	}
+
+	SRS_FAT_consumer_goods_idea_1_c = {
+		modifier = {
+			consumer_goods_factor = -0.02
+			trade_opinion_factor = 0.05
+		}
+		targeted_modifier = {
+			tag = SRS
+			trade_cost_for_target_factor = -0.5
+		}
+	}
+
+	SRS_FAT_consumer_goods_idea_2 = {
+		modifier = {
+			consumer_goods_factor = -0.04
+		}
+	}
+
+	SRS_FAT_consumer_goods_idea_2_b = {
+		modifier = {
+			consumer_goods_factor = -0.04
+			trade_opinion_factor = 0.05
+		}
+		targeted_modifier = {
+			tag = FAT
+			trade_cost_for_target_factor = -0.5
+		}
+	}
+
+	SRS_FAT_consumer_goods_idea_2_c = {
+		modifier = {
+			consumer_goods_factor = -0.04
+			trade_opinion_factor = 0.25
+		}
+		targeted_modifier = {
+			tag = SRS
+			trade_cost_for_target_factor = -0.5
+		}
+	}
+
+	SRS_unlikely_membership_idea = {
+		modifier = {
+			conscription = 0.01
+		}
+	}
 }	
 

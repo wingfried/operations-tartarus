@@ -20,7 +20,7 @@ focus_tree = {
 	focus = {
 		id = SRS_finishing_touches
 		icon = GFX_focus_generic_join_comintern
-		x = 6
+		x = 5
 		y = 0
 		cost = 20
 		ai_will_do = {
@@ -65,11 +65,12 @@ focus_tree = {
 		id = SRS_sickleclaw_betrays_congress
 		icon = GFX_goal_ideology_totalist
 		prerequisite = { focus = SRS_finishing_touches }
+		relative_position_id = SRS_finishing_touches
 		mutually_exclusive = { focus = SRS_sickleclaw_obeys_congress }
 		available = {
 			has_country_flag = sicko_seize_the_congress
 		}
-		x = 5
+		x = 0
 		y = 1
 		cost = 2.9
 		ai_will_do = {
@@ -90,11 +91,12 @@ focus_tree = {
 		id = SRS_sickleclaw_obeys_congress
 		icon = GFX_goal_commune_politics
 		prerequisite = { focus = SRS_finishing_touches }
+		relative_position_id = SRS_finishing_touches
 		mutually_exclusive = { focus = SRS_sickleclaw_betrays_congress }
 		available = {
 			has_country_flag = sicko_relinquishes_power
 		}
-		x = 7
+		x = 2
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -122,8 +124,9 @@ focus_tree = {
 		id = SRS_civwar_battle_1
 		icon = GFX_goal_conscription
 		prerequisite = { focus = SRS_sickleclaw_betrays_congress }
-		x = 5
-		y = 2
+		relative_position_id = SRS_sickleclaw_betrays_congress
+		x = 0
+		y = 1
 		cost = 1
 		ai_will_do = {
 			factor = 12
@@ -138,8 +141,9 @@ focus_tree = {
 		id = SRS_civwar_battle_2
 		icon = GFX_focus_generic_provoke_border_clashes
 		prerequisite = { focus = SRS_sickleclaw_betrays_congress }
-		x = 3
-		y = 2
+		relative_position_id = SRS_sickleclaw_betrays_congress
+		x = -2
+		y = 1
 		cost = 1
 		ai_will_do = {
 			factor = 12
@@ -154,8 +158,9 @@ focus_tree = {
 		id = SRS_civwar_battle_3
 		icon = GFX_goal_purge_opposition
 		prerequisite = { focus = SRS_sickleclaw_betrays_congress }
-		x = 7
-		y = 2
+		relative_position_id = SRS_sickleclaw_betrays_congress
+		x = 2
+		y = 1
 		cost = 1
 		ai_will_do = {
 			factor = 12
@@ -171,8 +176,9 @@ focus_tree = {
 		icon = GFX_goal_LEC_monkey
 		prerequisite = { focus = SRS_civwar_battle_1 }
 		prerequisite = { focus = SRS_civwar_battle_2 }
-		x = 4
-		y = 3
+		relative_position_id = SRS_civwar_battle_1
+		x = -1
+		y = 1
 		cost = 1
 		ai_will_do = {
 			factor = 12
@@ -188,8 +194,9 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = SRS_civwar_battle_1 }
 		prerequisite = { focus = SRS_civwar_battle_3 }
-		x = 6
-		y = 3
+		relative_position_id = SRS_civwar_battle_1
+		x = 1
+		y = 1
 		cost = 1
 		ai_will_do = {
 			factor = 12
@@ -205,8 +212,9 @@ focus_tree = {
 		icon = GFX_goal_national_arsenal
 		prerequisite = { focus = SRS_civwar_battle_4 }
 		prerequisite = { focus = SRS_civwar_battle_5 }
-		x = 5
-		y = 4
+		relative_position_id = SRS_civwar_battle_4
+		x = 1
+		y = 1
 		cost = 2.2
 		ai_will_do = {
 			factor = 12
@@ -221,8 +229,9 @@ focus_tree = {
 		id = SRS_national_security
 		icon = GFX_goal_secret_agents
 		prerequisite = { focus = SRS_civwar_end }
-		x = 5
-		y = 5
+		relative_position_id = SRS_civwar_end
+		x = 0
+		y = 1
 		cost = 2.9
 		ai_will_do = {
 			factor = 12
@@ -242,9 +251,10 @@ focus_tree = {
 		id = SRS_communist_asper
 		icon = GFX_goal_GRF_commies_win
 		prerequisite = { focus = SRS_national_security }
-		mutually_exclusive = { focus = SRS_republican_alignment }
-		x = 0
-		y = 6
+		relative_position_id = SRS_national_security
+		mutually_exclusive = { focus = SRS_road_of_pragmatism }
+		x = -6
+		y = 1
 		cost = 1
 		ai_will_do = {
 			factor = 12
@@ -262,8 +272,9 @@ focus_tree = {
 		id = SRS_rev_mil_soviet
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = SRS_communist_asper }
-		x = 0
-		y = 7
+		relative_position_id = SRS_communist_asper
+		x = 1
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -277,9 +288,10 @@ focus_tree = {
 	focus = {
 		id = SRS_conscript_army
 		icon = GFX_focus_YUG_pan_slavic_congress
-		prerequisite = { focus = SRS_rev_mil_soviet focus = SRS_rejoin_kemerskai_gang }
-		x = 5
-		y = 8
+		prerequisite = { focus = SRS_rev_mil_soviet focus = SRS_heal_the_scars }
+		relative_position_id = SRS_national_security
+		x = 0
+		y = 3
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -294,8 +306,9 @@ focus_tree = {
 		id = SRS_defend_the_revolution
 		icon = GFX_goal_to_the_barricades
 		prerequisite = { focus = SRS_rev_mil_soviet }
+		relative_position_id = SRS_rev_mil_soviet
 		x = 0
-		y = 8
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -310,6 +323,7 @@ focus_tree = {
 		id = SRS_ntrwar_commie
 		icon = GFX_goal_revolution_pony
 		prerequisite = { focus = SRS_communist_asper }
+		relative_position_id = SRS_communist_asper
 		available = {
 			IF = {
 				limit = { is_ai = yes }
@@ -323,8 +337,8 @@ focus_tree = {
 				NOT = { country_exists = NTR }
 			}
 		}
-		x = -2
-		y = 7
+		x = -1
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -344,6 +358,7 @@ focus_tree = {
 		id = SRS_far_north_republic
 		icon = GFX_goal_red_star_dove
 		prerequisite = { focus = SRS_ntrwar_commie }
+		relative_position_id = SRS_ntrwar_commie
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = SRS_commie_NTR_core
@@ -355,8 +370,8 @@ focus_tree = {
 					}
 				}
 			}
-		x = -2
-		y = 8
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -378,6 +393,7 @@ focus_tree = {
 		icon = GFX_focus_indy_swing_the_sword
 		prerequisite = { focus = SRS_far_north_republic }
 		prerequisite = { focus = SRS_defend_the_revolution }
+		relative_position_id = SRS_far_north_republic
 		available = {
 			IF = {
 				limit = { is_ai = yes }
@@ -391,8 +407,8 @@ focus_tree = {
 				NOT = { country_exists = VED }
 			}
 		}
-		x = -2
-		y = 9
+		x = 0
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -413,6 +429,7 @@ focus_tree = {
 		icon = GFX_goal_FAT_the_three_musketeers
 		prerequisite = { focus = SRS_far_north_republic }
 		prerequisite = { focus = SRS_defend_the_revolution }
+		relative_position_id = SRS_defend_the_revolution
 		available = {
 			IF = {
 				limit = { is_ai = yes }
@@ -427,7 +444,7 @@ focus_tree = {
 			}
 		}
 		x = 0
-		y = 9
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -454,6 +471,7 @@ focus_tree = {
 		icon = GFX_goal_COS_Peace
 		prerequisite = { focus = SRS_commie_yeetvedina }
 		prerequisite = { focus = SRS_avenge_986 }
+		relative_position_id = SRS_commie_yeetvedina
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = SRS_commie_north_unification
@@ -480,8 +498,8 @@ focus_tree = {
 				}
 			}
 		}
-		x = -1
-		y = 10
+		x = 1
+		y = 1
 		cost = 2.2
 		ai_will_do = {
 			factor = 12
@@ -496,8 +514,9 @@ focus_tree = {
 		id = SRS_conscription_reform
 		icon = GFX_goal_break_rifle
 		prerequisite = { focus = SRS_north_united }
-		x = -1
-		y = 11
+		relative_position_id = SRS_north_united
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -517,8 +536,9 @@ focus_tree = {
 		id = SRS_economic_reform
 		icon = GFX_goal_syndicalist_industry
 		prerequisite = { focus = SRS_conscription_reform }
-		x = -2
-		y = 12
+		relative_position_id = SRS_conscription_reform
+		x = -1
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -570,8 +590,9 @@ focus_tree = {
 		id = SRS_education_reform
 		icon = GFX_focus_research
 		prerequisite = { focus = SRS_conscription_reform }
-		x = -0
-		y = 12
+		relative_position_id = SRS_conscription_reform
+		x = 1
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -608,8 +629,9 @@ focus_tree = {
 		id = SRS_kemerskai_fate
 		icon = GFX_goal_hang_the_traitor
 		prerequisite = { focus = SRS_north_united }
-		x = -4
-		y = 12
+		relative_position_id = SRS_north_united
+		x = -3
+		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -624,6 +646,7 @@ focus_tree = {
 		id = SRS_commie_yeetbrantbeak
 		icon = GFX_goal_step_on_skull
 		prerequisite = { focus = SRS_north_united }
+		relative_position_id = SRS_north_united
 		available = {
 			IF = {
 				limit = { is_ai = yes }
@@ -631,8 +654,8 @@ focus_tree = {
 				MNC = { has_civil_war = no }
 			}
 		}
-		x = 2
-		y = 12
+		x = 3
+		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -662,11 +685,12 @@ focus_tree = {
 		prerequisite = { focus = SRS_economic_reform }
 		prerequisite = { focus = SRS_education_reform }
 		prerequisite = { focus = SRS_commie_yeetbrantbeak }
+		relative_position_id = SRS_economic_reform
 		bypass = {
 			SRS = { controls_state = 382 }
 		}
-		x = -1
-		y = 13
+		x = 1
+		y = 1
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -735,12 +759,13 @@ focus_tree = {
 	###########################
 	
 	focus = {
-		id = SRS_republican_alignment
+		id = SRS_road_of_pragmatism
 		icon = GFX_
 		prerequisite = { focus = SRS_national_security }
 		mutually_exclusive = { focus = SRS_communist_asper }
-		x = 10
-		y = 6
+		relative_position_id = SRS_national_security
+		x = 6
+		y = 1
 		cost = 1
 		ai_will_do = {
 			factor = 12
@@ -749,225 +774,403 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.2
-			}
-			set_politics = {
-				ruling_party = democratic elections_allowed = no
-			}
-			add_ideas = SRS_shits_fucked_radical_1
+			add_political_power = 100
+			add_stability = 0.10
 		}
 	}
 	
 	focus = {
-		id = SRS_rejoin_kemerskai_gang
+		id = SRS_heal_the_scars
 		icon = GFX_
-		prerequisite = { focus = SRS_republican_alignment }
-		x = 10
-		y = 7
+		prerequisite = { focus = SRS_road_of_pragmatism }
+		relative_position_id = SRS_road_of_pragmatism
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
-		        country_event = srs_sickoflavour.13
-			swap_ideas = {
-				add_idea = SRS_doubt_in_sickleclaw_2
-				remove_idea = SRS_doubt_in_sickleclaw
-			}
+		    country_event = { id = srs_sickocivwar.12 }
 		}
 	}
 	
 	focus = {
-		id = SRS_harmonic_socialism
+		id = SRS_new_life_initiative
 		icon = GFX_
-		prerequisite = { focus = SRS_rejoin_kemerskai_gang }
-		x = 10
-		y = 8
+		prerequisite = { focus = SRS_heal_the_scars }
+		relative_position_id = SRS_heal_the_scars
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
-			
+			country_event = { id = srs_sickocivwar.13 }
 		}
 	}
 	
 	focus = {
-		id = SRS_republican_dream
-		icon = GFX_
-		prerequisite = { focus = SRS_harmonic_socialism }
-		x = 10
-		y = 9
+		id = SRS_fortress_skynavia
+		icon = GFX_goal_nested_fortifications
+		prerequisite = { focus = SRS_new_life_initiative }
+		relative_position_id = SRS_new_life_initiative
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
-		        country_event = srs_sickoflavour.14
-			swap_ideas = {
-				add_idea = SRS_shits_fucked_radical_2
-				remove_idea = SRS_shits_fucked_radical_1
+			custom_effect_tooltip = SRS_fortress_skynavia_tp
+			hidden_effect = {
+				522 = {
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = 6502
+					}
+				}
 			}
 		}
 	}
 	
 	focus = {
-		id = SRS_radical_backlash
-		icon = GFX_
-		prerequisite = { focus = SRS_republican_dream }
-		x = 10
-		y = 10
-		cost = 1
-		ai_will_do = {
-			factor = 12
-		}
-		
-		completion_reward = {
-			swap_ideas = {
-				add_idea = SRS_shits_fucked_radical_3
-				remove_idea = SRS_shits_fucked_radical_2
-			}
-		}
-	}
-	
-	focus = {
-		id = SRS_reforge_enthusiasm
-		icon = GFX_
-		prerequisite = { focus = SRS_radical_backlash }
-		x = 9
-		y = 11
-		cost = 1
-		ai_will_do = {
-			factor = 12
-		}
-		
-		completion_reward = {
-		     add_timed_idea = { idea = SRS_reforge_enthus days = 50 }
-		}
-	}
-	
-	focus = {
-		id = SRS_yeet_communalists
-		icon = GFX_
-		prerequisite = { focus = SRS_radical_backlash }
-		x = 11
-		y = 11
-		cost = 1
-		ai_will_do = {
-			factor = 12
-		}
-		
-		completion_reward = {
-		    add_popularity = {
-		        ideology = communism
-			popularity = -0.3
-                }
-                    add_stability = -0.05			
-	        }
-	}
-	
-	focus = {
-		id = SRS_promise_pan_griffonia
-		icon = GFX_
-		prerequisite = { focus = SRS_reforge_enthusiasm }
-		prerequisite = { focus = SRS_yeet_communalists }
-		x = 10
-		y = 12
-		cost = 1
-		ai_will_do = {
-			factor = 12
-		}
-		
-		completion_reward = {
-		        country_event = srs_sickoflavour.15
-			remove_ideas = SRS_shits_fucked_radical_3
-		}
-	}
-	
-	focus = {
-		id = SRS_unite_the_north
-		icon = GFX_
-		prerequisite = { focus = SRS_harmonic_socialism }
-		x = 16
-		y = 9
+		id = SRS_border_fortification
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = SRS_fortress_skynavia }
+		relative_position_id = SRS_fortress_skynavia
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
-			add_manpower = 10000
+			custom_effect_tooltip = SRS_border_fortification_tp
+			hidden_effect = {
+				every_owned_state = {
+					limit = { 
+						is_core_of = ROOT
+						is_fully_controlled_by = ROOT
+						any_neighbor_state = { owner = { NOT = { tag = ROOT } } } 
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SRS_lil_griff_anti_monarchist_rampart
+		icon = GFX_goal_fortify_the_westwall
+		prerequisite = { focus = SRS_border_fortification }
+		relative_position_id = SRS_border_fortification
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		bypass = {
+			NOT = { country_exists = VED }
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = SRS_lil_griff_anti_monarchist_rampart_tp
+			hidden_effect = {
+				every_owned_state = {
+					limit = { 
+						is_core_of = ROOT
+						is_fully_controlled_by = ROOT
+						any_neighbor_state = { owner = { tag = VED } } 
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SRS_bro_anti_capitalist_rampart
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = SRS_border_fortification }
+		relative_position_id = SRS_border_fortification
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		bypass = {
+			NOT = { country_exists = FAT }
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = SRS_bro_anti_capitalist_rampart_tp
+			hidden_effect = {
+				every_owned_state = {
+					limit = { 
+						is_core_of = ROOT
+						is_fully_controlled_by = ROOT
+						any_neighbor_state = { owner = { tag = FAT } }
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+				}
+			}
+	    }
+	}
+	
+	focus = {
+		id = SRS_dinkau_wall
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = SRS_lil_griff_anti_monarchist_rampart }
+		prerequisite = { focus = SRS_bro_anti_capitalist_rampart }
+		relative_position_id = SRS_lil_griff_anti_monarchist_rampart
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = SRS_dinkau_wall_tp_1
+			custom_effect_tooltip = SRS_dinkau_wall_tp_2
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						is_core_of = ROOT
+						is_fully_controlled_by = ROOT
+						any_neighbor_state = { owner = { NOT = { tag = ROOT } } }
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 1
+						instant_build = yes
+						province = {
+							all_provinces = yes
+						}
+					}
+				}
+			    522 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 11307
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SRS_the_sickleclaw_doctrine
+		icon = GFX_
+		prerequisite = { focus = SRS_new_life_initiative }
+		relative_position_id = SRS_new_life_initiative
+		x = 8
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
 			add_war_support = 0.1
+			add_stability = 0.1
 		}
 	}
 	
 	focus = {
-		id = SRS_approach_the_tribes
-		icon = GFX_
-		prerequisite = { focus = SRS_unite_the_north }
-		mutually_exclusive = { focus = SRS_ntrwar_republican }
-		x = 14
-		y = 10
+		id = SRS_operation_toppler
+		icon = GFX_focus_indy_swing_the_sword
+		prerequisite = { focus = SRS_the_sickleclaw_doctrine }
+		relative_position_id = SRS_the_sickleclaw_doctrine
+		x = -3
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
-		}	
-		
-		select_effect = {
-			country_event = {
-				id = srs_sickoflavour.16
-				days = 4
+		}
+		available = {
+			IF = {
+				limit = { is_ai = yes }
+				has_war = no
+				VED = { has_civil_war = no }
 			}
 		}
+		bypass = {
+			OR = {
+				has_war_with = VED
+				NOT = { country_exists = VED }
+			}
+		}
+
+		will_lead_to_war_with = VED
 	        
 		completion_reward = {
-		    country_event = srs_sickoflavour.17
-		}
-	}
-	
-	focus = {
-		id = SRS_meet_with_waifu
-		icon = GFX_
-		prerequisite = { focus = SRS_approach_the_tribes }
-		x = 14
-		y = 11
-		cost = 5
-		ai_will_do = {
-			factor = 12
-		}
-		completion_reward = {
-                        add_opinion_modifier = { target = NTR modifier = huge_increase }
-                }
-	}
-	
-	focus = {
-		id = SRS_harmonic_union
-		icon = GFX_
-		prerequisite = { focus = SRS_meet_with_waifu }
-		x = 14
-		y = 12
-		cost = 7.2
-		ai_will_do = {
-			factor = 12
-		}
-		
-		completion_reward = {
-			SRS = {
-				country_event = srs_sickontr.1
+		    create_wargoal = {
+				type = puppet_wargoal_focus
+				target = VED
 			}
 		}
 	}
 	
 	focus = {
-		id = SRS_ntrwar_republican
-		icon = GFX_
-		prerequisite = { focus = SRS_unite_the_north }
-		mutually_exclusive = { focus = SRS_approach_the_tribes }
+		id = SRS_vedinian_economic_plan
+		icon = GFX_goal_state_economy
+		prerequisite = { focus = SRS_operation_toppler }
+		relative_position_id = SRS_operation_toppler
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			584 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			576 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			431 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+            429 = {
+            	add_extra_state_shared_building_slots = 3
+            	add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+            }
+        }
+	}
+
+	focus = {
+        id = SRS_knak_lil_anti_capitalist_rampart
+        icon = GFX_goal_skull_fortification
+        prerequisite = { focus = SRS_operation_toppler }
+		relative_position_id = SRS_operation_toppler
+		x = -2
+		y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 12
+        }
+        available = {
+        	VED = {
+				is_puppet_of = SRS
+			}
+        }
+        bypass = {
+			NOT = { country_exists = FAT }
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = SRS_knak_lil_anti_capitalist_tp
+			hidden_effect = {
+				VED = {
+					every_owned_state = {
+						limit = { 
+							is_core_of = ROOT
+							is_fully_controlled_by = ROOT
+							any_neighbor_state = { owner = { tag = FAT } }
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							instant_build = yes
+							province = {
+								all_provinces = yes
+								limit_to_border = yes
+							}
+						}
+					}
+				}
+			}
+	    }
+    }
+	
+	focus = {
+		id = SRS_vedinian_bounty
+		icon = GFX_goal_bag_of_money
+		prerequisite = { focus = SRS_vedinian_economic_plan }
+		relative_position_id = SRS_vedinian_economic_plan
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			VED = {
+				add_ideas = SRS_VED_resources_idea
+			}
+		}
+	}
+	
+	focus = {
+		id = SRS_operation_evergreen
+		icon = GFX_goal_pink_waifu
+		prerequisite = { focus = SRS_the_sickleclaw_doctrine }
+		relative_position_id = SRS_the_sickleclaw_doctrine
 		available = {
 			IF = {
 				limit = { is_ai = yes }
@@ -981,8 +1184,8 @@ focus_tree = {
 				NOT = { country_exists = NTR }
 			}
 		}
-		x = 16
-		y = 10
+		x = -1
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -992,16 +1195,17 @@ focus_tree = {
 
 		completion_reward = {
 			create_wargoal = {
-				type = annex_everything
+				type = puppet_wargoal_focus
 				target = NTR
 			}
 		}
 	}
 	
 	focus = {
-		id = SRS_ntr_infrastructure
-		icon = GFX_
-		prerequisite = { focus = SRS_ntrwar_republican }
+		id = SRS_tame_the_wilderness
+		icon = GFX_goal_riv_infra_dep
+		prerequisite = { focus = SRS_operation_evergreen }
+		relative_position_id = SRS_operation_evergreen
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = SRS_commie_NTR_core
@@ -1013,22 +1217,32 @@ focus_tree = {
 					}
 				}
 			}
-		x = 16
-		y = 11
-		cost = 2.9
+		x = 0
+		y = 1
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
-			677 = {
+			562 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			562 = {
+			677 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1074,376 +1288,1057 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SRS_ntr_factories
-		icon = GFX_
-		prerequisite = { focus = SRS_ntr_infrastructure }
-		x = 16
-		y = 12
+		id = SRS_tribal_auxiliaries
+		icon = GFX_goal_riv_army
+		prerequisite = { focus = SRS_tame_the_wilderness }
+		relative_position_id = SRS_tame_the_wilderness
+		x = 0
+		y = 1
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
-			562 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
+			add_ideas = SRS_tribal_aux_idea
+			army_experience = 10
 		}
 	}
 	
 	focus = {
-		id = SRS_republican_yeetvedina
-		icon = GFX_
-		prerequisite = { focus = SRS_unite_the_north }
+		id = SRS_operation_collective
+		icon = GFX_goal_HAU_hang_the_traitor
+		prerequisite = { focus = SRS_the_sickleclaw_doctrine }
+		relative_position_id = SRS_the_sickleclaw_doctrine
 		available = {
 			IF = {
 				limit = { is_ai = yes }
 				has_war = no
-				VED = { has_civil_war = no }
+				HAU = { has_civil_war = no }
 			}
 		}
 		bypass = {
 			OR = {
-				has_war_with = VED
-				NOT = { country_exists = VED }
+				has_war_with = HAU
+				NOT = { country_exists = HAU }
 			}
 		}
-		x = 18
-		y = 10
-		cost = 7.2
+		x = 1
+		y = 1
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
 
-		will_lead_to_war_with = VED
+		will_lead_to_war_with = HAU
 
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
-				target = VED
+				target = HAU
 			}
 		}
 	}
 	
 	focus = {
-		id = SRS_republican_yeetbrantbeak
-		icon = GFX_
-		prerequisite = { focus = SRS_republican_yeetvedina }
-		available = {
-			IF = {
-				limit = { is_ai = yes }
-				has_war = no
-				MNC = { has_civil_war = no }
-			}
-		}
-		x = 18
-		y = 11
-		cost = 7.2
-		ai_will_do = {
-			factor = 12
-		}
-		
-		bypass = {
-		    MNC = {
-			    exists = no
-			}
-		}
-		
-		completion_reward = {
-			IF = {
-			    limit = {
-				    MNC = {
-					    exists = yes
-						is_puppet = no
-					}
-				}
-				MNC = {
-				    country_event = {
-					    id = srs_sickocivwar.9
-						days = 2
-					}
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = SRS_speak_herzlander
-		icon = GFX_
-		prerequisite = { focus = SRS_republican_yeetbrantbeak }
-		x = 18
-		y = 12
+		id = SRS_the_people_flying_circus
+		icon = GFX_goal_pacification_of_the_planes
+		prerequisite = { focus = SRS_operation_collective }
+		relative_position_id = SRS_operation_collective
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
-			add_ideas = SRS_speak_kraut_language
-			add_stability = 0.025
-			add_political_power = -30
-			decrease_illiteracy = yes
+			country_event = srs_sickocivwar.15
 		}
 	}
 	
-	
 	focus = {
-        id = SRS_republican_knights
-        icon = GFX_
-        prerequisite = { focus = SRS_speak_herzlander }
-        prerequisite = { focus = SRS_harmonic_union focus = SRS_ntr_factories }
-        x = 18
-        y = 13
-        cost = 3.7
-        ai_will_do = {
-            factor = 12
-        }
-        completion_reward = {
-            if = {
-			limit = {
-			    has_tech = tech_knights
-			}
-			}
-		    else = {
-			    set_technology = {
-				tech_knights = 1
-			    }
-		    }
-            
-            custom_effect_tooltip = SRS_knights_tooltip
-            hidden_effect = {
-                division_template = {
-                    name = "Republican Knightly Guards"
-                    priority = 2
-                    
-                    regiments = {
-                        knights = { x = 0 y = 0 }
-                        knights = { x = 0 y = 1 }
-                        knights = { x = 0 y = 2 }
-                        knights = { x = 0 y = 3 }
-                        knights = { x = 0 y = 4 }
-                        }
-	                
-                    support = {
-		        artillery = { x = 0 y = 0 }
-                        engineer = { x = 0 y = 1 }
-                    }
-                }
-
-            	random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 522 }
-					create_unit = {
-						division = "name = \"The Free Knights of Skyrim\" division_template = \"Republican Knightly Guards\" start_experience_factor = 1"
-						owner = SRS
-					}
-				}
-				random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 522 }
-					create_unit = {
-						division = "name = \"The Order of the Pale Sword\" division_template = \"Republican Knightly Guards\" start_experience_factor = 1" 
-						owner = SRS
-					}
-				}
-                random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 522 }
-					create_unit = {
-						division = "name = \"The Order of the Pale Sword\" division_template = \"Republican Knightly Guards\" start_experience_factor = 1" 
-						owner = SRS
-					}
-				}
-                        }
-		}
-	}
-
-	focus = {
-		id = SRS_warplans
-		icon = GFX_
-		prerequisite = { focus = SRS_unite_the_north }
-		x = 20
-		y = 10
-		cost = 7.2
+		id = SRS_fortress_haukland
+		icon = GFX_goal_nested_fortifications
+		prerequisite = { focus = SRS_the_people_flying_circus }
+		relative_position_id = SRS_the_people_flying_circus
+		x = 0
+		y = 1
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
-			add_ideas = SRS_planning
-		}
-	}
-
-	focus = {
-		id = SRS_monarchists_be_gone
-		icon = GFX_
-		prerequisite = { focus = SRS_republican_yeetvedina }
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = SRS_republican_vedina_core
-					VED = {
-						OR = {
-							exists = no
-							is_subject_of = ROOT
+			custom_effect_tooltip = SRS_fortress_haukland_tp
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						is_core_of = HAU
+						is_fully_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
 						}
 					}
 				}
 			}
-		x = 20
-		y = 11
+		}
+	}
+
+	focus = {
+		id = SRS_operation_colonist
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		prerequisite = { focus = SRS_the_sickleclaw_doctrine }
+		relative_position_id = SRS_the_sickleclaw_doctrine
+		x = 3
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		
+		available = {
+			IF = {
+				limit = { is_ai = yes }
+				has_war = no
+				GRF = { has_civil_war = no }
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = GRF
+				NOT = { country_exists = GRF }
+			}
+		}
+
+		will_lead_to_war_with = GRF
+	        
+		completion_reward = {
+		    create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GRF
+			}
+		}
+	}
+
+	focus = {
+		id = SRS_nova_griffonia_development_initiative
+		icon = GFX_goal_generic_lau_construction
+		prerequisite = { focus = SRS_operation_colonist }
+		relative_position_id = SRS_operation_colonist
+		x = 0
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
-			VED = { add_to_ROOT_potential_cores = yes }
+			243 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			279 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			238 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
 	focus = {
-		id = SRS_bandits_be_gone
-		icon = GFX_
-		prerequisite = { focus = SRS_republican_yeetbrantbeak }
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = SRS_republican_brantbeak_core
-					MNC = {
-						OR = {
-							exists = no
-							is_subject_of = ROOT
-						}
-					}
-				}
-			}
-		x = 20
-		y = 12
-		cost = 7.2
+		id = SRS_nova_griffonian_shinies
+		icon = GFX_All_resource
+		prerequisite = { focus = SRS_nova_griffonia_development_initiative }
+		relative_position_id = SRS_nova_griffonia_development_initiative
+		x = 0
+		y = 1
+		cost = 2.9
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
-			MNC = { add_to_ROOT_potential_cores = yes }
-			
+			338 = {
+				add_resource = {
+					type = chromium
+					amount = 6
+				}
+			}
 		}
 	}
 	
 	focus = {
-		id = SRS_cloudburian_universities
+		id = SRS_seasonal_workers
 		icon = GFX_
-		prerequisite = { focus = SRS_speak_herzlander }
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = SRS_republican_cloudbury_ownership
-					FAT = {
-						OR = {
-							exists = no
-							is_subject_of = ROOT
-						}
-					}
-				}
-			}
-		x = 20
-		y = 13
-		cost = 7.2
+		prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries focus = SRS_fortress_haukland focus = SRS_nova_griffonian_shinies }
+		relative_position_id = SRS_nova_griffonian_shinies
+		x = -3
+		y = 1
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
 		
 		completion_reward = {
-			add_research_slot = 1
-			increase_science_base = yes
+			custom_effect_tooltip = SRS_seasonal_workers_tt
+			#WIP
 		}
 	}	
 	
 	focus = {
-        id = SRS_strike_the_revisionists
-        icon = GFX_
-        prerequisite = { focus = SRS_harmonic_union focus = SRS_ntr_factories }
-        prerequisite = { focus = SRS_promise_pan_griffonia }
-        prerequisite = { focus = SRS_speak_herzlander }
-        mutually_exclusive = { focus = SRS_unite_with_fatmerskai_playeronly }
-        mutually_exclusive = { focus = SRS_unite_with_fatmerskai_aionly }
-        x = 12
-        y = 13
+        id = SRS_turhamn_pact
+        icon = GFX_goal_tripartite_pact
+        prerequisite = { focus = SRS_vedinian_bounty }
+        prerequisite = { focus = SRS_tribal_auxiliaries }
+        prerequisite = { focus = SRS_dinkau_wall }
+        prerequisite = { focus = SRS_fortress_haukland }
+        relative_position_id = SRS_dinkau_wall
+        x = 0
+        y = 1
         cost = 7.2
         ai_will_do = {
             factor = 12
         }
 
-        will_lead_to_war_with = FAW
-
         completion_reward = {
-			country_event = srs_sickoflavour.18
-       		create_wargoal = {
-                type = annex_everything
-                target = FAW 
+			set_rule = { can_create_factions = yes }
+			create_faction = TURHAMN_PACT_FACTION
+			country_event = srs_sickocivwar.14
+			IF = {
+				limit = {
+					country_exists = VED
+					VED = { is_puppet = yes }
+				}
+				add_to_faction = VED
+			}
+			IF = {
+				limit = {
+					country_exists = NTR
+					NTR = { is_puppet = yes }
+				}
+				add_to_faction = NTR
+			}
+			IF = {
+				limit = {
+					country_exists = HAU
+					NTR = { is_puppet = yes }
+				}
+				add_to_faction = HAU
+			}
+			IF = {
+				limit = {
+					country_exists = GRF
+					NTR = { is_puppet = yes }
+				}
+				add_to_faction = GRF
+			}
+        }
+    }
+
+    focus = {
+        id = SRS_revise_the_sickleclaw_doctrine
+        icon = GFX_goal_generic_major_war
+        prerequisite = { focus = SRS_turhamn_pact }
+        relative_position_id = SRS_turhamn_pact
+        mutually_exclusive = { focus = SRS_unlikely_membership }
+        x = 1
+        y = 1
+        cost = 3.6
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        available = {
+			IF = {
+				limit = { is_ai = yes }
+				has_war = no
+				FAT = { has_civil_war = no }
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = FAT
+				NOT = { country_exists = FAT }
+			}
+		}
+
+		will_lead_to_war_with = FAT
+	        
+		completion_reward = {
+		    create_wargoal = {
+				type = annex_everything
+				target = FAT
+			}
+		}
+    }
+
+    focus = {
+        id = SRS_unlikely_membership
+        icon = GFX_goal_generic_forceful_treaty
+        prerequisite = { focus = SRS_turhamn_pact }
+        relative_position_id = SRS_turhamn_pact
+        mutually_exclusive = { focus = SRS_revise_the_sickleclaw_doctrine }
+        x = -1
+        y = 1
+        cost = 3.6
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+        	#WIP
+            FAT = { country_event = generic.5 }
+            country_event = srs_sickocivwar.18
+        }
+    }
+
+    focus = {
+        id = SRS_settle_the_score
+        icon = GFX_
+        prerequisite = { focus = SRS_revise_the_sickleclaw_doctrine focus = SRS_unlikely_membership }
+        relative_position_id = SRS_revise_the_sickleclaw_doctrine
+        x = -1
+        y = 1
+        cost = 5
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+            custom_effect_tooltip = SRS_settle_the_score_tp
+        }
+    }
+
+    focus = {
+        id = SRS_operation_eclipse
+        icon = GFX_goal_skull_treaty2
+        prerequisite = { focus = SRS_settle_the_score }
+        relative_position_id = SRS_settle_the_score
+        mutually_exclusive = { focus = SRS_detente }
+        x = 2
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 12
+        }
+        available = {
+        	has_country_flag = SRS_betray_FAT_decision_flag
+			IF = {
+				limit = { is_ai = yes }
+				has_war = no
+				MNC = { has_civil_war = no }
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = MNC
+				NOT = { country_exists = MNC }
+			}
+		}
+
+		will_lead_to_war_with = MNC
+	        
+		completion_reward = {
+		    create_wargoal = {
+				type = puppet_wargoal_focus
+				target = MNC
+			}
+		}
+    }
+
+    focus = {
+        id = SRS_cloudbury_anti_imperialism_rampart
+        icon = GFX_goal_generic_fortify_city
+        prerequisite = { focus = SRS_operation_eclipse }
+        relative_position_id = SRS_operation_eclipse
+        x = -1
+        y = 1
+        cost = 5
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+        	custom_effect_tooltip = SRS_cloudbury_anti_imperialism_rampart_tp
+        	hidden_effect = {
+        		every_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						any_neighbor_state = { owner = { NOT = { tag = ROOT } } } 
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+				}
+        	}
+        }
+    }
+
+    focus = {
+        id = SRS_sunstriker_anti_imperialism_rampart
+        icon = GFX_goal_fortify_the_westwall
+        prerequisite = { focus = SRS_cloudbury_anti_imperialism_rampart }
+        relative_position_id = SRS_cloudbury_anti_imperialism_rampart
+        x = 0
+        y = 1
+        cost = 5
+        available = {
+        	MNC = {
+				is_puppet_of = SRS
+			}
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+        	custom_effect_tooltip = SRS_sunstriker_anti_imperialism_rampart_tp
+        	hidden_effect = {
+        		581 = {
+	            	add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 7823
+					}
+	            	add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 12533
+					}
+	            	add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 7885
+					}
+	            	add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 1868
+					}
+	            	add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 10578
+					}
+	            	add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 10708
+					}
+	            }
+	            475 = {
+	            	add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 12665
+					}
+	            }
+        	}
+        }
+    }
+
+    focus = {
+        id = SRS_air_and_radar
+        icon = GFX_goal_generic_radar
+        prerequisite = { focus = SRS_sunstriker_anti_imperialism_rampart }
+        relative_position_id = SRS_sunstriker_anti_imperialism_rampart
+        x = 0
+        y = 1
+        cost = 5
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+            581 = {
+            	add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+    focus = {
+        id = SRS_integrate_brantbeak
+        icon = GFX_
+        prerequisite = { focus = SRS_operation_eclipse }
+        relative_position_id = SRS_operation_eclipse
+        x = 1
+        y = 1
+        cost = 5
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+        	IF = {
+				limit = {
+					OR = {
+						owns_state = 581
+					}
+				}
+			}
+			ELSE = {
+				custom_effect_tooltip = SRS_MNC_compliance_tp
+			}
+            every_controlled_state = {
+				limit = {
+					OR = {
+						is_core_of = MNC
+					}
+				}
+				add_compliance = 5
+			}
+        }
+    }
+
+    focus = {
+        id = SRS_cloudbury_under_socialism
+        icon = GFX_goal_generic_war_with_comintern
+        prerequisite = { focus = SRS_integrate_brantbeak }
+        relative_position_id = SRS_integrate_brantbeak
+        x = 0
+        y = 1
+        cost = 5
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+        	IF = {
+				limit = {
+					OR = {
+						owns_state = 485
+					}
+				}
+			}
+			ELSE = {
+				custom_effect_tooltip = SRS_FAT_compliance_tp
+			}
+            every_controlled_state = {
+				limit = {
+					OR = {
+						is_core_of = FAT
+					}
+				}
+				add_compliance = 5
+			}
+        }
+    }
+
+    focus = {
+        id = SRS_billingualism_act
+        icon = GFX_goal_Workers_of_Griffonia
+        prerequisite = { focus = SRS_cloudbury_under_socialism }
+        relative_position_id = SRS_cloudbury_under_socialism
+        x = 0
+        y = 1
+        cost = 5
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+        	add_timed_idea = { idea = SRS_compliance_idea days = 365 }
+        }
+    }
+
+    focus = {
+        id = SRS_consolidate_our_position
+        icon = GFX_goal_red_menace_griffonia
+        prerequisite = { focus = SRS_billingualism_act }
+        prerequisite = { focus = SRS_air_and_radar }
+        relative_position_id = SRS_air_and_radar
+        x = 1
+        y = 1
+        cost = 5
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+            set_capital = 485
+        }
+    }
+
+    focus = {
+        id = SRS_form_the_union_of_griffonian_socialist_states
+        icon = GFX_goal_red_star_green_wreath
+        prerequisite = { focus = SRS_consolidate_our_position }
+        relative_position_id = SRS_consolidate_our_position
+        x = 0
+        y = 1
+        cost = 5
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+        	#WIP
+        	hidden_effect = { set_cosmetic_tag = SRS_UGSS }
+			custom_effect_tooltip = SRS_union_of_griffonian_socialist_states_tp
+            FAT = { add_to_ROOT_potential_cores = yes }
+            MNC = { add_to_ROOT_potential_cores = yes }
+        }
+    }
+
+    focus = {
+        id = SRS_detente
+        icon = GFX_
+        prerequisite = { focus = SRS_settle_the_score }
+        relative_position_id = SRS_settle_the_score
+        mutually_exclusive = { focus = SRS_operation_eclipse }
+        x = -2
+        y = 1
+        cost = 5
+        available = {
+        	has_country_flag = SRS_detente_decision_flag
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = SRS_oil_trading
+        icon = GFX_goal_basic_oil
+        prerequisite = { focus = SRS_detente }
+        relative_position_id = SRS_detente
+        x = -1
+        y = 1
+        cost = 5
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+            IF = {
+        		limit = { has_idea = SRS_FAT_consumer_goods_idea_1 }
+        		swap_ideas = { remove_idea = SRS_FAT_consumer_goods_idea_1 add_idea = SRS_FAT_consumer_goods_idea_2 }
+            	FAT = { swap_ideas = { remove_idea = SRS_FAT_consumer_goods_idea_1 add_idea = SRS_FAT_consumer_goods_idea_2 } }
+        	}
+        	ELSE = {
+        		add_ideas = SRS_FAT_consumer_goods_idea_1
+            	FAT = { add_Ideas = SRS_FAT_consumer_goods_idea_1 }
+        	}
+        }
+    }
+
+    focus = {
+        id = SRS_trade_deal
+        icon = GFX_goal_generic_positive_trade_relations
+        prerequisite = { focus = SRS_oil_trading }
+        relative_position_id = SRS_oil_trading
+        x = 0
+        y = 1
+        cost = 5
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+            IF = {
+        		limit = { has_idea = SRS_FAT_consumer_goods_idea_1 }
+        		swap_ideas = { remove_idea = SRS_FAT_consumer_goods_idea_1 add_idea = SRS_FAT_consumer_goods_idea_1_b }
+        		FAT = { swap_ideas = { remove_idea = SRS_FAT_consumer_goods_idea_1 add_idea = SRS_FAT_consumer_goods_idea_1_c } }
+        	}
+        	ELSE = {
+        		swap_ideas = { remove_idea = SRS_FAT_consumer_goods_idea_2 add_idea = SRS_FAT_consumer_goods_idea_2_b }
+        		FAT = { swap_ideas = { remove_idea = SRS_FAT_consumer_goods_idea_2 add_idea = SRS_FAT_consumer_goods_idea_2_c } }
+        	}
+        }
+    }
+
+    focus = {
+        id = SRS_reopen_border
+        icon = GFX_goal_rich_focus
+        prerequisite = { focus = SRS_detente }
+        relative_position_id = SRS_detente
+        x = 1
+        y = 1
+        cost = 5
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+        	IF = {
+        		limit = { has_idea = SRS_FAT_consumer_goods_idea_1 }
+        		IF = {
+        			limit = { has_completed_focus = SRS_oil_trading }
+        			swap_ideas = { remove_idea = SRS_FAT_consumer_goods_idea_1_b add_idea = SRS_FAT_consumer_goods_idea_2_b }
+        			FAT = { swap_ideas = { remove_idea = SRS_FAT_consumer_goods_idea_1_c add_idea = SRS_FAT_consumer_goods_idea_2_c } }
+        		}
+        		ELSE = {
+        			swap_ideas = { remove_idea = SRS_FAT_consumer_goods_idea_1 add_idea = SRS_FAT_consumer_goods_idea_2 }
+        			FAT = { swap_ideas = { remove_idea = SRS_FAT_consumer_goods_idea_1 add_idea = SRS_FAT_consumer_goods_idea_2 } }
+        		}
+        	}
+        	ELSE = {
+        		IF = {
+        			limit = { has_completed_focus = SRS_oil_trading }
+        			add_ideas = SRS_FAT_consumer_goods_idea_1_b
+        			FAT = { add_Ideas = SRS_FAT_consumer_goods_idea_1_c }
+        		}
+        		ELSE = {
+        			add_ideas = SRS_FAT_consumer_goods_idea_1
+        			FAT = { add_Ideas = SRS_FAT_consumer_goods_idea_1 }
+        		}
+        	}
+        }
+    }
+
+    focus = {
+        id = SRS_northern_rail_network
+        icon = GFX_goal_generic_railway_construction
+        prerequisite = { focus = SRS_reopen_border }
+        relative_position_id = SRS_reopen_border
+        x = 0
+        y = 1
+        cost = 5
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+            485 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			582 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			450 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			583 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			601 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			561 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			522 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+    focus = {
+        id = SRS_lil_griff_treaty
+        icon = GFX_goal_generic_forceful_treaty
+        prerequisite = { focus = SRS_trade_deal }
+        prerequisite = { focus = SRS_northern_rail_network }
+        relative_position_id = SRS_trade_deal
+        x = 1
+        y = 1
+        cost = 2.9
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+            give_guarantee = FAT
+			FAT = { give_guarantee = SRS }
+			diplomatic_relation = {
+			    country = FAT
+			    relation = non_aggression_pact
+			    active = yes
+			}
+        }
+    }
+
+    focus = {
+        id = SRS_skynavia_versus_the_forces_of_evil
+        icon = GFX_focus_generic_tank_destroyer
+        prerequisite = { focus = SRS_lil_griff_treaty }
+        relative_position_id = SRS_lil_griff_treaty
+        mutually_exclusive = { focus = SRS_introduction_to_social_democracy }
+        x = 0
+        y = 1
+        cost = 5
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+        	#WIP
+        }
+    }
+
+	focus = {
+        id = SRS_stalliongrad_cooperation
+        icon = GFX_goal_commune_politics
+        prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries focus = SRS_fortress_haukland focus = SRS_nova_griffonian_shinies }
+        prerequisite = { focus = SRS_dinkau_wall }
+        relative_position_id = SRS_dinkau_wall
+        x = -4
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+        	custom_effect_tooltip = SRS_stalliongrad_cooperation_tt
+        	SRS = { add_opinion_modifier = { target = STG modifier = SRS_STG_opinion } }
+			STG = { add_opinion_modifier = { target = SRS modifier = SRS_STG_opinion } }
+        }
+    }
+
+    focus = {
+        id = SRS_workers_tour_of_duty
+        icon = GFX_goal_generic_workers_democracy
+        prerequisite = { focus = SRS_stalliongrad_cooperation }
+        relative_position_id = SRS_stalliongrad_cooperation
+        x = -1
+        y = 1
+        cost = 5
+        available = {
+        }
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+            add_tech_bonus = { bonus = 1.0 uses = 1 category = industry }
+            STG = {
+            	add_ideas = SRS_STG_factory_idea
             }
         }
     }
 
-	focus = {
-        id = SRS_unite_with_fatmerskai_playeronly
-        icon = GFX_
-        prerequisite = { focus = SRS_harmonic_union focus = SRS_ntr_factories }
-        prerequisite = { focus = SRS_promise_pan_griffonia }
-        prerequisite = { focus = SRS_speak_herzlander }
-        mutually_exclusive = { focus = SRS_strike_the_revisionists }
-        x = 10
-        y = 13
-        cost = 2.9
-        available = { 
-        is_ai = no 
+    focus = {
+        id = SRS_pan_socialist_tech_exchange
+        icon = GFX_goal_generic_scientific_exchange_pony_griffon
+        prerequisite = { focus = SRS_stalliongrad_cooperation }
+        relative_position_id = SRS_stalliongrad_cooperation
+        x = 1
+        y = 1
+        cost = 5
+        available = {
         }
         ai_will_do = {
             factor = 12
         }
         completion_reward = {
-            country_event = srs_sickocivwar.986
+            #WIP
+            SRS = { add_ideas = SRS_STG_research_idea }
+            STG = { add_ideas = SRS_STG_research_idea }
         }
     }
 
-	focus = {
-        id = SRS_unite_with_fatmerskai_aionly
-        icon = GFX_
-        prerequisite = { focus = SRS_harmonic_union focus = SRS_ntr_factories }
-        prerequisite = { focus = SRS_promise_pan_griffonia }
-        prerequisite = { focus = SRS_speak_herzlander }
-        mutually_exclusive = {focus = SRS_strike_the_revisionists }
-        x = 14
-        y = 13
-        cost = 2.9
-        available = { 
-        is_ai = yes 
+    focus = {
+        id = SRS_collective_mining_effort
+        icon = GFX_goal_GRF_beak_mines
+        prerequisite = { focus = SRS_workers_tour_of_duty }
+        prerequisite = { focus = SRS_pan_socialist_tech_exchange }
+        relative_position_id = SRS_stalliongrad_cooperation
+        x = 0
+        y = 2
+        cost = 5
+        available = {
         }
         ai_will_do = {
             factor = 12
         }
         completion_reward = {
-			FAT = {
-				annex_country = { target = SRS }
+            add_resource = {
+				type = chromium
+				amount = 8
+				state = 585
 			}
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = SRS
-					}
-				}
-				add_core_of = FAT
+			add_resource = {
+				type = aluminium
+				amount = 20
+				state = 585
 			}
+			add_ideas = SRS_STG_our_mining_effort_idea_1
+			STG = { add_Ideas = SRS_STG_their_mining_effort_idea_1 }
         }
     }
+
+    focus = {
+        id = SRS_prywhen_cooperation
+        icon = GFX_
+        prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries focus = SRS_fortress_haukland focus = SRS_nova_griffonian_shinies }
+        prerequisite = { focus = SRS_dinkau_wall }
+        relative_position_id = SRS_dinkau_wall
+        x = 4
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+        	SRS = { add_opinion_modifier = { target = GRW modifier = SRS_GRW_opinion } }
+			GRW = { add_opinion_modifier = { target = SRS modifier = SRS_GRW_opinion } }
+            #WIP
+        }
+    }
+
+    focus = {
+        id = SRS_socialism_abroad
+        icon = GFX_Socialist_Law
+        prerequisite = { focus = SRS_prywhen_cooperation }
+        relative_position_id = SRS_prywhen_cooperation
+        x = -1
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+        	add_ideas = SRS_volunteer_idea
+        }
+            
+	}
+
+	focus = {
+        id = SRS_prywhen_joint_army_training
+        icon = GFX_
+        prerequisite = { focus = SRS_prywhen_cooperation }
+        relative_position_id = SRS_prywhen_cooperation
+        x = 1
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+        	add_ideas = SRS_art_of_war_idea
+        	GRW = { add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine } }
+        }
+            
+	}
+
+	focus = {
+        id = SRS_propaganda_machine_goes_brrrt
+        icon = GFX_
+        prerequisite = { focus = SRS_socialism_abroad }
+        prerequisite = { focus = SRS_prywhen_joint_army_training }
+        relative_position_id = SRS_socialism_abroad
+        x = 1
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 12
+        }
+        completion_reward = {
+        	add_war_support = 0.05
+        	add_stability = 0.05
+        	GRW = { add_Ideas = SRS_GRW_power_of_the_word_idea }
+        }
+            
+	}
 	
 	#################
 	#COMMIE INDUSTRY#
@@ -1453,8 +2348,9 @@ focus_tree = {
 		id = SRS_industrialization_effort
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = SRS_communist_asper }
-		x = -11
-		y = 7
+		relative_position_id = SRS_communist_asper
+		x = -10
+		y = 1
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -1474,8 +2370,9 @@ focus_tree = {
 		icon = GFX_goal_ideology_totalist
 		prerequisite = { focus = SRS_industrialization_effort }
 		mutually_exclusive = { focus = SRS_communalist_industrialization }
-		x = -14
-		y = 8
+		relative_position_id = SRS_industrialization_effort
+		x = -3
+		y = 1
 		cost = 2.2
 		ai_will_do = {
 			factor = 12
@@ -1493,8 +2390,9 @@ focus_tree = {
 		icon = GFX_focus_generic_anarchism
 		prerequisite = { focus = SRS_industrialization_effort }
 		mutually_exclusive = { focus = SRS_internationalist_industrialization }
-		x = -8
-		y = 8
+		relative_position_id = SRS_industrialization_effort
+		x = 3
+		y = 1
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -1510,8 +2408,9 @@ focus_tree = {
 		id = SRS_unfinished_urban_projects
 		icon = GFX_goal_factory_complex
 		prerequisite = { focus = SRS_internationalist_industrialization }
-		x = -14
-		y = 9
+		relative_position_id = SRS_internationalist_industrialization
+		x = 0
+		y = 1
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -1541,8 +2440,9 @@ focus_tree = {
 		id = SRS_industry_dinkau
 		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = SRS_unfinished_urban_projects }
-		x = -15
-		y = 10
+		relative_position_id = SRS_unfinished_urban_projects
+		x = -1
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -1572,8 +2472,9 @@ focus_tree = {
 		id = SRS_industry_bluffhead
 		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = SRS_unfinished_urban_projects }
-		x = -13
-		y = 10
+		relative_position_id = SRS_unfinished_urban_projects
+		x = 1
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -1604,8 +2505,9 @@ focus_tree = {
 		icon = GFX_focus_generic_socialist_science
 		prerequisite = { focus = SRS_industry_bluffhead }
 		prerequisite = { focus = SRS_industry_dinkau }
-		x = -14
-		y = 11
+		relative_position_id = SRS_industry_dinkau
+		x = 1
+		y = 1
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -1623,8 +2525,9 @@ focus_tree = {
 		id = SRS_interconnectedness
 		icon = GFX_goal_socialist_infrastructure
 		prerequisite = { focus = SRS_internationalist_industrialization }
-		x = -16
-		y = 9
+		relative_position_id = SRS_internationalist_industrialization
+		x = -2
+		y = 1
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -1677,8 +2580,9 @@ focus_tree = {
 		id = SRS_sweet_oil
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = SRS_interconnectedness }
-		x = -16
-		y = 11
+		relative_position_id = SRS_interconnectedness
+		x = 0
+		y = 2
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -1703,8 +2607,9 @@ focus_tree = {
 		id = SRS_stalliongrad_mining_equipment
 		icon = GFX_goal_socialist_union
 		prerequisite = { focus = SRS_internationalist_industrialization focus = SRS_communalist_industrialization }
-		x = -11
-		y = 9
+		relative_position_id = SRS_industrialization_effort
+		x = 0
+		y = 2
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -1719,8 +2624,9 @@ focus_tree = {
 		id = SRS_stalliongrad_education_aid
 		icon = GFX_goal_socialist_science
 		prerequisite = { focus = SRS_stalliongrad_mining_equipment }
-		x = -11
-		y = 11
+		relative_position_id = SRS_stalliongrad_mining_equipment
+		x = 0
+		y = 2
 		cost = 8.6
 		ai_will_do = {
 			factor = 12
@@ -1736,8 +2642,9 @@ focus_tree = {
 		id = SRS_link_up_communes
 		icon = GFX_goal_Workers_Paradise
 		prerequisite = { focus = SRS_communalist_industrialization }
-		x = -8
-		y = 9
+		relative_position_id = SRS_communalist_industrialization
+		x = 0
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -1787,8 +2694,9 @@ focus_tree = {
 		id = SRS_small_scale_dinkau
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = SRS_link_up_communes }
-		x = -9
-		y = 10
+		relative_position_id = SRS_link_up_communes
+		x = -1
+		y = 1
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -1810,8 +2718,9 @@ focus_tree = {
 		id = SRS_small_scale_bluffhead
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = SRS_link_up_communes }
-		x = -7
-		y = 10
+		relative_position_id = SRS_link_up_communes
+		x = 1
+		y = 1
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -1834,8 +2743,9 @@ focus_tree = {
 		icon = GFX_goal_ideology_syndicalist
 		prerequisite = { focus = SRS_small_scale_bluffhead }
 		prerequisite = { focus = SRS_small_scale_dinkau }
-		x = -8
-		y = 11
+		relative_position_id = SRS_small_scale_dinkau
+		x = 1
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -1850,8 +2760,9 @@ focus_tree = {
 		id = SRS_consolidated_gunmakers_union
 		icon = GFX_goal_HOL_military_union
 		prerequisite = { focus = SRS_communalist_industrialization }
-		x = -6
-		y = 9
+		relative_position_id = SRS_communalist_industrialization
+		x = 2
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -1882,8 +2793,9 @@ focus_tree = {
 		id = SRS_mass_unionization
 		icon = GFX_goal_munitions_factories
 		prerequisite = { focus = SRS_consolidated_gunmakers_union }
-		x = -6
-		y = 11
+		relative_position_id = SRS_consolidated_gunmakers_union
+		x = 0
+		y = 2
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -1915,8 +2827,9 @@ focus_tree = {
 		prerequisite = { focus = SRS_stalliongrad_education_aid }
 		prerequisite = { focus = SRS_urban_education focus = SRS_one_big_union }
 		prerequisite = { focus = SRS_sweet_oil focus = SRS_mass_unionization }
-		x = -11
-		y = 13
+		relative_position_id = SRS_stalliongrad_education_aid
+		x = 0
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -1933,8 +2846,9 @@ focus_tree = {
 		id = SRS_inland_industry
 		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = SRS_further_industrialization }
-		x = -11
-		y = 14
+		relative_position_id = SRS_further_industrialization
+		x = 0
+		y = 1
 		cost = 8.6
 		ai_will_do = {
 			factor = 12
@@ -1992,9 +2906,10 @@ focus_tree = {
 		id = SRS_military_industry_focus
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = SRS_inland_industry }
+		relative_position_id = SRS_inland_industry
 		mutually_exclusive = { focus = SRS_civillian_industry_focus }
-		x = -12
-		y = 15
+		x = -1
+		y = 1
 		cost = 8.6
 		ai_will_do = {
 			factor = 12
@@ -2042,9 +2957,10 @@ focus_tree = {
 		id = SRS_civillian_industry_focus
 		icon = GFX_goal_improve_industry
 		prerequisite = { focus = SRS_inland_industry }
+		relative_position_id = SRS_inland_industry
 		mutually_exclusive = { focus = SRS_military_industry_focus }
-		x = -10
-		y = 15
+		x = 1
+		y = 1
 		cost = 8.6
 		ai_will_do = {
 			factor = 12
@@ -2092,8 +3008,9 @@ focus_tree = {
 		id = SRS_breathe_skynavia
 		icon = GFX_goal_tfv_burn_the_royal_portraits
 		prerequisite = { focus = SRS_civillian_industry_focus focus = SRS_military_industry_focus }
-		x = -11
-		y = 16
+		relative_position_id = SRS_military_industry_focus
+		x = 1
+		y = 1
 		cost = 8.6
 		ai_will_do = {
 			factor = 12
@@ -2124,8 +3041,9 @@ focus_tree = {
 		id = SRS_plentiful_are_the_swords
 		icon = GFX_goal_national_arsenal
 		prerequisite = { focus = SRS_further_industrialization }
-		x = -13
-		y = 14
+		relative_position_id = SRS_further_industrialization
+		x = -2
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -2140,8 +3058,9 @@ focus_tree = {
 		id = SRS_that_keep_the_people_safe
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = SRS_plentiful_are_the_swords }
-		x = -13
-		y = 16
+		relative_position_id = SRS_plentiful_are_the_swords
+		x = 0
+		y = 2
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -2159,8 +3078,9 @@ focus_tree = {
 		id = SRS_plentiful_is_the_bread
 		icon = GFX_goal_griffon_agriculture
 		prerequisite = { focus = SRS_further_industrialization }
-		x = -9
-		y = 14
+		relative_position_id = SRS_further_industrialization
+		x = 2
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -2175,8 +3095,9 @@ focus_tree = {
 		id = SRS_that_keeps_the_people_fed
 		icon = GFX_goal_griffon_harmony_char
 		prerequisite = { focus = SRS_plentiful_is_the_bread }
-		x = -9
-		y = 16
+		relative_position_id = SRS_plentiful_is_the_bread
+		x = 0
+		y = 2
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -2196,8 +3117,9 @@ focus_tree = {
 		prerequisite = { focus = SRS_breathe_skynavia }
 		prerequisite = { focus = SRS_that_keep_the_people_safe }
 		prerequisite = { focus = SRS_that_keeps_the_people_fed }
-		x = -11
-		y = 17
+		relative_position_id = SRS_breathe_skynavia
+		x = 0
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -2216,9 +3138,10 @@ focus_tree = {
 	focus = {
 		id = SRS_market_socialism
 		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = SRS_harmonic_socialism }
-		x = 28
-		y = 9
+		prerequisite = { focus = SRS_new_life_initiative }
+		relative_position_id = SRS_new_life_initiative
+		x = 19
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -2233,8 +3156,9 @@ focus_tree = {
 		id = SRS_centralize_communal_factories
 		icon = GFX_goal_state_economy
 		prerequisite = { focus = SRS_local_industry focus = SRS_black_thing_under_us }
-		x = 28
-		y = 11
+		relative_position_id = SRS_market_socialism
+		x = 0
+		y = 2
 		cost = 8.6
 		ai_will_do = {
 			factor = 12
@@ -2273,8 +3197,9 @@ focus_tree = {
 		id = SRS_cut_social_spending
 		icon = GFX_goal_OTT_Land_Reform
 		prerequisite = { focus = SRS_centralize_communal_factories }
-		x = 28
-		y = 12
+		relative_position_id = SRS_centralize_communal_factories
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -2289,8 +3214,9 @@ focus_tree = {
 		id = SRS_education_funding
 		icon = GFX_goal_bag_of_money
 		prerequisite = { focus = SRS_cut_social_spending }
-		x = 28
-		y = 13
+		relative_position_id = SRS_cut_social_spending
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -2307,8 +3233,9 @@ focus_tree = {
 		icon = GFX_goal_KTG_Bookstack
 		prerequisite = { focus = SRS_education_funding }
 		prerequisite = { focus = SRS_stage_two focus = SRS_money_coming_in }
-		x = 28
-		y = 14
+		relative_position_id = SRS_education_funding
+		x = 0
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -2326,8 +3253,9 @@ focus_tree = {
 		prerequisite = { focus = SRS_military_industry_development focus = SRS_invest_in_synthetic_rubber }
 		prerequisite = { focus = SRS_natural_resources focus = SRS_start_up_air_industry }
 		prerequisite = { focus = SRS_civilian_industry_development focus = SRS_motorized_army }
-		x = 28
-		y = 16
+		relative_position_id = SRS_far_northern_academy
+		x = 0
+		y = 2
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -2342,9 +3270,10 @@ focus_tree = {
 		id = SRS_local_industry
 		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = SRS_market_socialism }
+		relative_position_id = SRS_market_socialism
 		mutually_exclusive = { focus = SRS_black_thing_under_us }
-		x = 24
-		y = 10
+		x = -4
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -2362,8 +3291,9 @@ focus_tree = {
 		id = SRS_tundra_roads
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = SRS_local_industry }
-		x = 23
-		y = 11
+		relative_position_id = SRS_local_industry
+		x = -1
+		y = 1
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -2391,8 +3321,9 @@ focus_tree = {
 		id = SRS_tundra_development
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = SRS_tundra_roads }
-		x = 23
-		y = 12
+		relative_position_id = SRS_tundra_roads
+		x = 0
+		y = 1
 		cost = 5.8
 		ai_will_do = {
 			factor = 12
@@ -2423,8 +3354,9 @@ focus_tree = {
 		id = SRS_forest_roads
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = SRS_local_industry }
-		x = 25
-		y = 11
+		relative_position_id = SRS_local_industry
+		x = 1
+		y = 1
 		cost = 2.2
 		ai_will_do = {
 			factor = 12
@@ -2445,8 +3377,9 @@ focus_tree = {
 		id = SRS_forest_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = SRS_forest_roads }
-		x = 25
-		y = 12
+		relative_position_id = SRS_forest_roads
+		x = 0
+		y = 1
 		cost = 2.9
 		ai_will_do = {
 			factor = 12
@@ -2470,8 +3403,9 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = SRS_forest_industry }
 		prerequisite = { focus = SRS_tundra_development }
-		x = 24
-		y = 13
+		relative_position_id = SRS_tundra_development
+		x = 1
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -2493,8 +3427,9 @@ focus_tree = {
 		id = SRS_better_electronics
 		icon = GFX_goal_goal_machine
 		prerequisite = { focus = SRS_stage_two }
-		x = 23
-		y = 14
+		relative_position_id = SRS_stage_two
+		x = -1
+		y = 1
 		cost = 5.8
 		ai_will_do = {
 			factor = 12
@@ -2514,8 +3449,9 @@ focus_tree = {
 		id = SRS_better_industrial_equipment
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = SRS_stage_two }
-		x = 25
-		y = 14
+		relative_position_id = SRS_stage_two
+		x = 1
+		y = 1
 		cost = 5.8
 		ai_will_do = {
 			factor = 12
@@ -2536,8 +3472,9 @@ focus_tree = {
 		icon = GFX_focus_generic_steel
 		prerequisite = { focus = SRS_better_electronics }
 		prerequisite = { focus = SRS_better_industrial_equipment }
-		x = 24
-		y = 15
+		relative_position_id = SRS_better_electronics
+		x = 1
+		y = 1
 		cost = 5.8
 		ai_will_do = {
 			factor = 12
@@ -2574,8 +3511,9 @@ focus_tree = {
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = SRS_better_electronics }
 		prerequisite = { focus = SRS_better_industrial_equipment }
-		x = 22
-		y = 15
+		relative_position_id = SRS_better_electronics
+		x = -1
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -2614,8 +3552,9 @@ focus_tree = {
 		icon = GFX_focus_chi_army_reform
 		prerequisite = { focus = SRS_better_electronics }
 		prerequisite = { focus = SRS_better_industrial_equipment }
-		x = 26
-		y = 15
+		relative_position_id = SRS_better_industrial_equipment
+		x = 1
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -2653,9 +3592,10 @@ focus_tree = {
 		id = SRS_black_thing_under_us
 		icon = GFX_goal_GRF_northern_oil
 		prerequisite = { focus = SRS_market_socialism }
+		relative_position_id = SRS_market_socialism
 		mutually_exclusive = { focus = SRS_local_industry }
-		x = 32
-		y = 10
+		x = 4
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -2670,13 +3610,14 @@ focus_tree = {
 		id = SRS_off_the_shore_of_veteborg
 		icon = GFX_goal_further_oil
 		prerequisite = { focus = SRS_black_thing_under_us }
+		relative_position_id = SRS_black_thing_under_us
 		available = {
 			SRS = {
 				has_full_control_of_state = 430
 			}
 		}
-		x = 34
-		y = 11
+		x = 2
+		y = 1
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -2693,8 +3634,9 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_round_the_hauklands
-		icon = GFX_goal_further_oil
+		icon = GFX_goal_oil_derrick
 		prerequisite = { focus = SRS_off_the_shore_of_veteborg }
+		relative_position_id = SRS_off_the_shore_of_veteborg
 		available = {
 			SRS = {
 				has_full_control_of_state = 658
@@ -2702,8 +3644,8 @@ focus_tree = {
 				has_full_control_of_state = 660
 			}
 		}
-		x = 33
-		y = 12
+		x = -1
+		y = 1
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -2730,8 +3672,9 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_in_the_heartlands
-		icon = GFX_goal_further_oil
+		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = SRS_off_the_shore_of_veteborg }
+		relative_position_id = SRS_off_the_shore_of_veteborg
 		available = {
 			SRS = {
 				has_full_control_of_state = 378
@@ -2739,8 +3682,8 @@ focus_tree = {
 				has_full_control_of_state = 447
 			}
 		}
-		x = 35
-		y = 12
+		x = 1
+		y = 1
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -2767,8 +3710,9 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_and_in_aquileia
-		icon = GFX_goal_further_oil
+		icon = GFX_goal_basic_oil
 		prerequisite = { focus = SRS_off_the_shore_of_veteborg }
+		relative_position_id = SRS_off_the_shore_of_veteborg
 		available = {
 			SRS = {
 				has_full_control_of_state = 493
@@ -2776,8 +3720,8 @@ focus_tree = {
 				has_full_control_of_state = 516
 			}
 		}
-		x = 34
-		y = 13
+		x = 0
+		y = 2
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -2806,8 +3750,9 @@ focus_tree = {
 		id = SRS_ostfloy_infrastructure
 		icon = GFX_goal_generic_railroad
 		prerequisite = { focus = SRS_black_thing_under_us }
-		x = 31
-		y = 11
+		relative_position_id = SRS_black_thing_under_us
+		x = -1
+		y = 1
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -2828,8 +3773,9 @@ focus_tree = {
 		id = SRS_start_extracting
 		icon = GFX_goal_oil_derrick
 		prerequisite = { focus = SRS_ostfloy_infrastructure }
-		x = 31
-		y = 12
+		relative_position_id = SRS_ostfloy_infrastructure
+		x = 0
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -2854,8 +3800,9 @@ focus_tree = {
 		id = SRS_money_coming_in
 		icon = GFX_goal_chn_red_economic_boom
 		prerequisite = { focus = SRS_start_extracting }
-		x = 31
-		y = 13
+		relative_position_id = SRS_start_extracting
+		x = 0
+		y = 1
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -2874,8 +3821,9 @@ focus_tree = {
 		id = SRS_backup_plan
 		icon = GFX_focus_indy_industrial_tanks
 		prerequisite = { focus = SRS_money_coming_in }
-		x = 31
-		y = 14
+		relative_position_id = SRS_money_coming_in
+		x = 0
+		y = 1
 		cost = 5.8
 		ai_will_do = {
 			factor = 12
@@ -2897,8 +3845,9 @@ focus_tree = {
 		id = SRS_invest_in_synthetic_rubber
 		icon = GFX_focus_generic_rubber
 		prerequisite = { focus = SRS_backup_plan }
-		x = 31
-		y = 15
+		relative_position_id = SRS_backup_plan
+		x = 0
+		y = 1
 		cost = 4.4
 		ai_will_do = {
 			factor = 12
@@ -2922,8 +3871,9 @@ focus_tree = {
 		id = SRS_military_investments
 		icon = GFX_goal_chn_red_military_factories
 		prerequisite = { focus = SRS_money_coming_in }
-		x = 34
-		y = 14
+		relative_position_id = SRS_money_coming_in
+		x = 3
+		y = 1
 		cost = 5.8
 		ai_will_do = {
 			factor = 12
@@ -2945,8 +3895,9 @@ focus_tree = {
 		id = SRS_start_up_air_industry
 		icon = GFX_goal_industry_air
 		prerequisite = { focus = SRS_military_investments }
-		x = 33
-		y = 15
+		relative_position_id = SRS_military_investments
+		x = -1
+		y = 1
 		cost = 5.8
 		ai_will_do = {
 			factor = 12
@@ -2981,8 +3932,9 @@ focus_tree = {
 		id = SRS_motorized_army
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = SRS_military_investments }
-		x = 35
-		y = 15
+		relative_position_id = SRS_military_investments
+		x = 1
+		y = 1
 		cost = 5.8
 		ai_will_do = {
 			factor = 12
@@ -3009,7 +3961,9 @@ focus_tree = {
 	focus = {
 		id = SRS_great_patriotic_war
 		icon = GFX_goal_LEC_monkey
-		prerequisite = { focus = SRS_on_to_griffenheim focus = SRS_unite_with_fatmerskai_playeronly focus = SRS_strike_the_revisionists }
+		prerequisite = { focus = SRS_on_to_griffenheim }
+		relative_position_id = SRS_on_to_griffenheim
+
 		available = {
 			IF = {
 				limit = { is_ai = yes }
@@ -3027,8 +3981,8 @@ focus_tree = {
 			NOT = { country_exists = KAT }
 			NOT = { country_exists = ANG }
 		}
-		x = 5
-		y = 14
+		x = 0
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -3160,6 +4114,7 @@ focus_tree = {
 		id = SRS_arise_vast_country
 		icon = GFX_goal_conscription
 		prerequisite = { focus = SRS_great_patriotic_war }
+		relative_position_id = SRS_great_patriotic_war
 		bypass = {
 			NOT = { country_exists = GRI }
 			NOT = { country_exists = FEA }
@@ -3171,8 +4126,8 @@ focus_tree = {
 			NOT = { country_exists = KAT }
 			NOT = { country_exists = ANG }
 		}
-		x = 5
-		y = 15
+		x = 0
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -3187,6 +4142,7 @@ focus_tree = {
 		id = SRS_pistol_makin_colt
 		icon = GFX_goal_Modern_Weapons
 		prerequisite = { focus = SRS_great_patriotic_war }
+		relative_position_id = SRS_great_patriotic_war
 		bypass = {
 			NOT = { country_exists = GRI }
 			NOT = { country_exists = FEA }
@@ -3198,8 +4154,8 @@ focus_tree = {
 			NOT = { country_exists = KAT }
 			NOT = { country_exists = ANG }
 		}
-		x = 3
-		y = 15
+		x = -2
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -3214,6 +4170,7 @@ focus_tree = {
 		id = SRS_true_revolutionaries
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = SRS_great_patriotic_war }
+		relative_position_id = SRS_great_patriotic_war
 		bypass = {
 			NOT = { country_exists = GRI }
 			NOT = { country_exists = FEA }
@@ -3225,8 +4182,8 @@ focus_tree = {
 			NOT = { country_exists = KAT }
 			NOT = { country_exists = ANG }
 		}
-		x = 7
-		y = 15
+		x = 2
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -3241,6 +4198,7 @@ focus_tree = {
 		id = SRS_arise_for_deadly_fight
 		icon = GFX_goal_classless_society
 		prerequisite = { focus = SRS_arise_vast_country }
+		relative_position_id = SRS_arise_vast_country
 		bypass = {
 			NOT = { country_exists = GRI }
 			NOT = { country_exists = FEA }
@@ -3252,8 +4210,8 @@ focus_tree = {
 			NOT = { country_exists = KAT }
 			NOT = { country_exists = ANG }
 		}
-		x = 5
-		y = 16
+		x = 0
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -3271,6 +4229,7 @@ focus_tree = {
 		id = SRS_rifle_makin_mare
 		icon = GFX_goal_national_arsenal
 		prerequisite = { focus = SRS_pistol_makin_colt }
+		relative_position_id = SRS_pistol_makin_colt
 		bypass = {
 			NOT = { country_exists = GRI }
 			NOT = { country_exists = FEA }
@@ -3282,8 +4241,8 @@ focus_tree = {
 			NOT = { country_exists = KAT }
 			NOT = { country_exists = ANG }
 		}
-		x = 2
-		y = 16
+		x = -1
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -3301,6 +4260,7 @@ focus_tree = {
 		id = SRS_order_4414
 		icon = GFX_goal_offensive_army
 		prerequisite = { focus = SRS_true_revolutionaries }
+		relative_position_id = SRS_true_revolutionaries
 		bypass = {
 			NOT = { country_exists = GRI }
 			NOT = { country_exists = FEA }
@@ -3312,8 +4272,8 @@ focus_tree = {
 			NOT = { country_exists = KAT }
 			NOT = { country_exists = ANG }
 		}
-		x = 8
-		y = 16
+		x = 1
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -3331,6 +4291,7 @@ focus_tree = {
 		id = SRS_fight_imperial_hordes
 		icon = GFX_focus_ger_return_of_the_kaiser
 		prerequisite = { focus = SRS_arise_for_deadly_fight }
+		relative_position_id = SRS_arise_for_deadly_fight
 		bypass = {
 			NOT = { country_exists = GRI }
 			NOT = { country_exists = FEA }
@@ -3342,8 +4303,8 @@ focus_tree = {
 			NOT = { country_exists = KAT }
 			NOT = { country_exists = ANG }
 		}
-		x = 5
-		y = 17
+		x = 0
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -3361,6 +4322,7 @@ focus_tree = {
 		id = SRS_shell_makin_griff
 		icon = GFX_goal_national_artillery
 		prerequisite = { focus = SRS_rifle_makin_mare }
+		relative_position_id = SRS_rifle_makin_mare
 		bypass = {
 			NOT = { country_exists = GRI }
 			NOT = { country_exists = FEA }
@@ -3372,8 +4334,8 @@ focus_tree = {
 			NOT = { country_exists = KAT }
 			NOT = { country_exists = ANG }
 		}
-		x = 3
-		y = 17
+		x = 1
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -3391,6 +4353,7 @@ focus_tree = {
 		id = SRS_on_ne_passe_pas
 		icon = GFX_jer_republican_guns
 		prerequisite = { focus = SRS_order_4414 }
+		relative_position_id = SRS_order_4414
 		bypass = {
 			NOT = { country_exists = GRI }
 			NOT = { country_exists = FEA }
@@ -3402,8 +4365,8 @@ focus_tree = {
 			NOT = { country_exists = KAT }
 			NOT = { country_exists = ANG }
 		}
-		x = 7
-		y = 17
+		x = -1
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -3421,6 +4384,7 @@ focus_tree = {
 		id = SRS_victory_is_ours
 		icon = GFX_goal_national_populism
 		prerequisite = { focus = SRS_fight_imperial_hordes focus = SRS_shell_makin_griff focus = SRS_on_ne_passe_pas }
+		relative_position_id = SRS_fight_imperial_hordes
 		available = {
 			SRS = { has_war = no }
 			NOT = { country_exists = GRI }
@@ -3433,8 +4397,8 @@ focus_tree = {
 			NOT = { country_exists = KAT }
 			NOT = { country_exists = ANG }
 		}
-		x = 5
-		y = 18
+		x = 0
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -3454,8 +4418,9 @@ focus_tree = {
 		id = SRS_herzland_conquered
 		icon = GFX_focus_generic_support_the_left_right_claw
 		prerequisite = { focus = SRS_victory_is_ours }
-		x = 5
-		y = 20
+		relative_position_id = SRS_victory_is_ours
+		x = 0
+		y = 1
 		cost = 1
 		ai_will_do = {
 			factor = 12
@@ -3470,8 +4435,9 @@ focus_tree = {
 		id = SRS_revenge
 		icon = GFX_goal_purge_opposition
 		prerequisite = { focus = SRS_herzland_conquered }
-		x = 5
-		y = 21
+		relative_position_id = SRS_herzland_conquered
+		x = 0
+		y = 1
 		cost = 1
 		ai_will_do = {
 			factor = 12
@@ -3486,8 +4452,9 @@ focus_tree = {
 		id = SRS_herzland_nobility_punishment
 		icon = GFX_focus_rom_abdicate
 		prerequisite = { focus = SRS_revenge }
-		x = 4
-		y = 22
+		relative_position_id = SRS_revenge
+		x = -1
+		y = 1
 		cost = 1
 		ai_will_do = {
 			factor = 12
@@ -3502,8 +4469,9 @@ focus_tree = {
 		id = SRS_herzland_clergy_punishment
 		icon = GFX_goal_GRI_triarchy
 		prerequisite = { focus = SRS_revenge }
-		x = 6
-		y = 22
+		relative_position_id = SRS_revenge
+		x = 1
+		y = 1
 		cost = 1
 		ai_will_do = {
 			factor = 12
@@ -3519,8 +4487,9 @@ focus_tree = {
 		icon = GFX_goal_grover_vi
 		prerequisite = { focus = SRS_herzland_nobility_punishment }
 		prerequisite = { focus = SRS_herzland_clergy_punishment }
-		x = 5
-		y = 23
+		relative_position_id = SRS_herzland_nobility_punishment
+		x = 1
+		y = 1
 		cost = 1
 		ai_will_do = {
 			factor = 12
@@ -3535,8 +4504,9 @@ focus_tree = {
 		id = SRS_postwar_prosperity
 		icon = GFX_goal_griffon_money_growth
 		prerequisite = { focus = SRS_herzland_conquered }
-		x = 0
-		y = 21
+		relative_position_id = SRS_herzland_conquered
+		x = -5
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -3551,8 +4521,9 @@ focus_tree = {
 		id = SRS_land_redistribution
 		icon = GFX_goal_agricultural_aid
 		prerequisite = { focus = SRS_postwar_prosperity }
+		relative_position_id = SRS_postwar_prosperity
 		x = 0
-		y = 22
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -3567,8 +4538,9 @@ focus_tree = {
 		id = SRS_serf_emancipation
 		icon = GFX_goal_revolution
 		prerequisite = { focus = SRS_postwar_prosperity }
+		relative_position_id = SRS_postwar_prosperity
 		x = -2
-		y = 22
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -3622,8 +4594,9 @@ focus_tree = {
 		icon = GFX_goal_guillotine
 		prerequisite = { focus = SRS_land_redistribution }
 		prerequisite = { focus = SRS_serf_emancipation }
-		x = -1
-		y = 23
+		relative_position_id = SRS_serf_emancipation
+		x = 1
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -3640,8 +4613,9 @@ focus_tree = {
 		id = SRS_gulag_industrialists
 		icon = GFX_focus_empty_coffers
 		prerequisite = { focus = SRS_postwar_prosperity }
+		relative_position_id = SRS_postwar_prosperity
 		x = 2
-		y = 22
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -3656,8 +4630,9 @@ focus_tree = {
 		id = SRS_protecc_the_worker
 		icon = GFX_goal_ideology_syndicalist
 		prerequisite = { focus = SRS_gulag_industrialists }
-		x = 2
-		y = 23
+		relative_position_id = SRS_gulag_industrialists
+		x = 0
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -3673,8 +4648,9 @@ focus_tree = {
 		id = SRS_unite_griffonkind
 		icon = GFX_focus_indy_swing_the_sword
 		prerequisite = { focus = SRS_herzland_conquered }
-		x = 10
-		y = 21
+		relative_position_id = SRS_herzland_conquered
+		x = 5
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -3750,8 +4726,9 @@ focus_tree = {
 		icon = GFX_goal_GRI_army_expansion
 		prerequisite = { focus = SRS_core_backwaters }
 		prerequisite = { focus = SRS_core_universities }
-		x = 11
-		y = 23
+		relative_position_id = SRS_core_universities
+		x = 1
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -3804,8 +4781,9 @@ focus_tree = {
 		prerequisite = { focus = SRS_core_doggos }
 		prerequisite = { focus = SRS_core_griffenheim }
 		prerequisite = { focus = SRS_foreign_legion }
-		x = 5
-		y = 24
+		relative_position_id = SRS_bestboi
+		x = 0
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -3820,8 +4798,9 @@ focus_tree = {
 		id = SRS_ultimatum_west_griffonia
 		icon = GFX_goal_SCS_1
 		prerequisite = { focus = SRS_all_is_well }
-		x = 2
-		y = 26
+		relative_position_id = SRS_all_is_well
+		x = -3
+		y = 1
 		cost = 5
 		bypass = {
 		    TRD = {
@@ -3933,8 +4912,9 @@ focus_tree = {
 		id = SRS_ultimatum_aquileia
 		icon = GFX_goal_jer_royalty
 		prerequisite = { focus = SRS_ultimatum_west_griffonia }
-		x = 2
-		y = 27
+		relative_position_id = SRS_ultimatum_west_griffonia
+		x = 0
+		y = 1
 		cost = 5
 		bypass = {
 		    JER = {
@@ -4033,8 +5013,9 @@ focus_tree = {
 		id = SRS_coring_aquileia
 		icon = GFX_goal_jer_eagle
 		prerequisite = { focus = SRS_ultimatum_aquileia }
-		x = 2
-		y = 28
+		relative_position_id = SRS_ultimatum_aquileia
+		x = 0
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -4058,8 +5039,9 @@ focus_tree = {
 		id = SRS_ultimatum_east_griffonia
 		icon = GFX_goal_SCS_2
 		prerequisite = { focus = SRS_all_is_well }
-		x = 8
-		y = 26
+		relative_position_id = SRS_all_is_well
+		x = 3
+		y = 1
 		cost = 5
 		bypass = {
 		    AVI = {
@@ -4172,8 +5154,9 @@ focus_tree = {
 		id = SRS_ultimatum_wingbardy
 		icon = GFX_focus_wingbardy_forever
 		prerequisite = { focus = SRS_ultimatum_east_griffonia }
-		x = 8
-		y = 27
+		relative_position_id = SRS_ultimatum_east_griffonia
+		x = 0
+		y = 1
 		cost = 5
 		bypass = {
 		    TAL = {
@@ -4272,8 +5255,9 @@ focus_tree = {
 		id = SRS_coring_wingbardy
 		icon = GFX_focus_indy_crush_the_monarchy
 		prerequisite = { focus = SRS_ultimatum_wingbardy }
-		x = 8
-		y = 28
+		relative_position_id = SRS_ultimatum_wingbardy
+		x = 0
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -4297,8 +5281,9 @@ focus_tree = {
 		id = SRS_ultimatum_evivalley_westbank
 		icon = GFX_goal_SCS_4
 		prerequisite = { focus = SRS_all_is_well }
-		x = 4
-		y = 26
+		relative_position_id = SRS_all_is_well
+		x = -1
+		y = 1
 		cost = 5
 		bypass = {
 		    BAN = {
@@ -4361,8 +5346,9 @@ focus_tree = {
 		id = SRS_ultimatum_evivalley_eastbank
 		icon = GFX_goal_SCS_5
 		prerequisite = { focus = SRS_all_is_well }
-		x = 6
-		y = 26
+		relative_position_id = SRS_all_is_well
+		x = 1
+		y = 1
 		cost = 5
 		bypass = {
 		    LUS = {
@@ -4426,8 +5412,9 @@ focus_tree = {
 		icon = GFX_goal_SCS_3
 		prerequisite = { focus = SRS_ultimatum_evivalley_westbank }
 		prerequisite = { focus = SRS_ultimatum_evivalley_eastbank }
-		x = 5
-		y = 27
+		relative_position_id = SRS_ultimatum_evivalley_westbank
+		x = 1
+		y = 1
 		cost = 5
 		bypass = {
 		    CYA = {
@@ -4474,8 +5461,9 @@ focus_tree = {
 		id = SRS_coring_evivalley
 		icon = GFX_focus_AUS_agriculture
 		prerequisite = { focus = SRS_ultimatum_cyanolisia_plus_asterion }
-		x = 5
-		y = 28
+		relative_position_id = SRS_ultimatum_cyanolisia_plus_asterion
+		x = 0
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -4499,11 +5487,10 @@ focus_tree = {
 	focus = {
 		id = SRS_lessons_of_the_civil_war
 		icon = GFX_focus_generic_military_mission
-		available = {
-			has_completed_focus = SRS_civwar_end
-		}
-		x = 28
-		y = 19
+		prerequisite = { focus = SRS_civwar_end }
+		relative_position_id = SRS_civwar_end
+		x = 46
+		y = 1
 		cost = 2.9
 		ai_will_do = {
 			factor = 12
@@ -4518,8 +5505,9 @@ focus_tree = {
 		id = SRS_fortification_effort
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = SRS_lessons_of_the_civil_war }
-		x = 26
-		y = 20
+		relative_position_id = SRS_lessons_of_the_civil_war
+		x = -2
+		y = 1
 		cost = 7.2
 		ai_will_do = {
 			factor = 12
@@ -4534,8 +5522,9 @@ focus_tree = {
 		id = SRS_cleanse_the_army
 		icon = GFX_goal_HOL_amend_wapenwet
 		prerequisite = { focus = SRS_lessons_of_the_civil_war }
-		x = 28
-		y = 20
+		relative_position_id = SRS_lessons_of_the_civil_war
+		x = 0
+		y = 1
 		cost = 2.2
 		ai_will_do = {
 			factor = 12
@@ -4554,13 +5543,13 @@ focus_tree = {
 		id = SRS_military_academy
 		icon = GFX_goal_bookstack
 		prerequisite = { focus = SRS_cleanse_the_army }
+		relative_position_id = SRS_cleanse_the_army
 		available = {
 			OR = {
 				has_idea = lack_of_scientists3
 				has_idea = no_lack_of_scientists
 			}
 		}
-		relative_position_id = SRS_cleanse_the_army
 		x = 0
 		y = 1
 		cost = 4.4
@@ -4602,8 +5591,9 @@ focus_tree = {
 		id = SRS_loyalty_of_the_generals
 		icon = GFX_focus_srs_loyal_general
 		prerequisite = { focus = SRS_cleanse_the_army }
-		x = 26
-		y = 21
+		relative_position_id = SRS_cleanse_the_army
+		x = -2
+		y = 1
 		cost = 1.5
 		ai_will_do = {
 			factor = 12
@@ -4644,8 +5634,9 @@ focus_tree = {
 		id = SRS_hardliner_penal_battalions
 		icon = GFX_goal_MAF_African_Pilots
 		prerequisite = { focus = SRS_cleanse_the_army }
-		x = 30
-		y = 21
+		relative_position_id = SRS_cleanse_the_army
+		x = 2
+		y = 1
 		cost = 1.5
 		ai_will_do = {
 			factor = 12
@@ -4689,8 +5680,9 @@ focus_tree = {
 		icon = GFX_goal_checkmate
 		prerequisite = { focus = SRS_Retire_disloyal_lieutenants }
 		prerequisite = { focus = SRS_revolutionary_discipline }
-		x = 28
-		y = 23
+		relative_position_id = SRS_war_college
+		x = 0
+		y = 1
 		cost = 5.8
 		ai_will_do = {
 			factor = 12
@@ -5591,7 +6583,7 @@ focus_tree = {
 		icon = GFX_goal_SRS_aviation_dreams
 		prerequisite = { focus = SRS_rebuild_thechain_of_command }
 		relative_position_id = SRS_rebuild_thechain_of_command
-		x = -12
+		x = 12
 		y = 1
 		cost = 4.4
 		ai_will_do = {
@@ -6005,7 +6997,7 @@ focus_tree = {
 		icon = GFX_goal_AST_state_of_RAN
 		prerequisite = { focus = SRS_rebuild_thechain_of_command }
 		relative_position_id = SRS_rebuild_thechain_of_command
-		x = 9
+		x = -9
 		y = 1
 		cost = 4.4
 		ai_will_do = {

@@ -23,5 +23,13 @@ opinion_modifiers = {
 	BOI_supporting_EQS = {
 	    value = -50
 	}
+
+	SRS_STG_opinion = {
+		value = 75
+	}
+
+	SRS_GRW_opinion = {
+		value = 75
+	}
 	
 }

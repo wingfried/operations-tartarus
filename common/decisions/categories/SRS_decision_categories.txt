@@ -1,3 +1,15 @@
+SRS_settle_the_score_decision_category = {
+	icon = eng_move_to_secure_the_dominions
+	allowed = {
+		original_tag = SRS
+		has_completed_focus = SRS_settle_the_score
+		NOT = { has_completed_focus = SRS_detente }
+		NOT = { has_completed_focus = SRS_operation_eclipse }
+	}
+	priority = {
+		base = 120
+	}
+}
 SRS_the_defence_of_skynavia = {
 	icon = eng_move_to_secure_the_dominions
 	allowed = {
