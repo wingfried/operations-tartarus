@@ -3176,21 +3176,6 @@ country_event = {
 ## SRS_finishing_touches ##
 
 country_event = {
-	id = srs_sickocivwar.1
-	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.1"}
-	title = srs_sickocivwar.1.t
-	desc = srs_sickocivwar.1.d
-	picture = GFX_event_poshel_nahui
-	is_triggered_only = yes
-	option = {
-		name = srs_sickocivwar.1.a
-		add_political_power = 100
-		#remove_ideas = SRS_communalist_problems
-		#remove_ideas = SRS_internationalist_problems
-	}
-}
-
-country_event = {
 	id = srs_sickocivwartwo.0 #Event 1
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.0"}
 	title = srs_sickocivwartwo.0.t
@@ -3381,18 +3366,6 @@ country_event = { #3.b
 	}
 }
 
-#country_event = { #Event 4
-#	id = srs_sickocivwartwo.11
-#	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.11"}
-#	title = srs_sickocivwartwo.11.t
-#	desc = srs_sickocivwartwo.11.d
-#	#picture = GFX_event_poshel_nahui
-#	is_triggered_only = yes
-#	option = {
-#		name = srs_sickocivwartwo.11.a
-#	}
-#}
-
 country_event = { #Event 5
 	id = srs_sickocivwartwo.12
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.12"}
@@ -3554,18 +3527,6 @@ country_event = { #8 Sicko returns to report balanced progress
 	}
 }
 
-country_event = {
-	id = srs_sickoflavour.1
-	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.1"}
-	title = srs_sickoflavour.1.t
-	desc = srs_sickoflavour.1.d
-	picture = GFX_event_eqs_communists
-	is_triggered_only = yes
-	option = {
-		name = srs_sickoflavour.1.a	
-	}
-}
-
 ## SRS_sickleclaw_betrays_congress ##
 
 country_event = {
@@ -3583,18 +3544,6 @@ country_event = {
 			add_stability = -0.15
 			add_manpower = -100
 			add_political_power = 100
-	}
-}
-
-country_event = {
-	id = srs_sickoflavour.3
-	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickoflavour.3"}
-	title = srs_sickoflavour.3.t
-	desc = srs_sickoflavour.3.d
-	picture = GFX_event_griffon_soldier
-	is_triggered_only = yes
-	option = {
-		name = srs_sickoflavour.3.a
 	}
 }
 	
@@ -3693,22 +3642,8 @@ country_event = {
 }
 
 ## SRS_national_security ##
-
-country_event = {
-	id = srs_sickoflavour.5
-	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.1"}
-	title = srs_sickoflavour.5.t
-	desc = srs_sickoflavour.5.d
-	picture = GFX_event_poshel_nahui
 	
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = srs_sickoflavour.5.a	
-	}
-}
-	
-country_event = {
+country_event = { #shutter pls
 	id = srs_sickoflavour.6
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.1"}
 	title = srs_sickoflavour.6.t
