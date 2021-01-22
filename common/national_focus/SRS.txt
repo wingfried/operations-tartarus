@@ -27,10 +27,6 @@ focus_tree = {
 			factor = 12
 		}
 		select_effect = {
-			#country_event = {
-			#	id = srs_sickoflavour.1
-			#	days = 0
-			#}
 			country_event = {
 				id = srs_sickocivwartwo.0 #Event 1
 				days = 0
@@ -39,10 +35,6 @@ focus_tree = {
 				id = srs_sickocivwartwo.6 #Event 2.b.1
 				days = 21
 			}
-			#country_event = {
-			#	id = srs_sickocivwartwo.11
-			#	days = 56
-			#}
 			country_event = {
 				id = srs_sickocivwartwo.12
 				days = 70
@@ -75,12 +67,6 @@ focus_tree = {
 		cost = 2.9
 		ai_will_do = {
 			factor = 12
-		}
-		select_effect = {
-			country_event = {
-				id = srs_sickoflavour.3
-				days = 7
-			}
 		}
 		completion_reward = {
 		    country_event = { id = srs_sickocivwar.2 }
@@ -119,7 +105,7 @@ focus_tree = {
 			set_country_flag = SRS_general_congress_in_power
 		}
 	}
-
+	
 	focus = {
 		id = SRS_civwar_battle_1
 		icon = GFX_goal_conscription
