@@ -3690,7 +3690,7 @@ country_event = { #shutter pls
 		}
 		custom_effect_tooltip = SRS_Wait_what_tooltip
 		hidden_effect = {
-			complete_national_focus = SRS_republican_alignment
+			complete_national_focus = SRS_road_of_pragmatism
 		}
 	}
 }
@@ -4245,10 +4245,11 @@ country_event = {
 		    factor = 10
 		}
 		name = srs_sickocivwar.12.a
+		add_timed_idea = { days = 90 idea = SRS_heal_scars_idea }
 	}
 }
 
-# Heal the Scars #
+# New Life Initiative #
 
 country_event = {
 	id = srs_sickocivwar.13
@@ -4262,6 +4263,7 @@ country_event = {
 		    factor = 10
 		}
 		name = srs_sickocivwar.13.a
+		add_ideas = SRS_new_life_idea
 	}
 }
 

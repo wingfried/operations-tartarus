@@ -64,12 +64,37 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 2.9
+		cost = 6.5
 		ai_will_do = {
 			factor = 12
 		}
+		select_effect = {
+			country_event = {
+				id = srs_sickocivwar.2
+				days = 7
+			}
+			country_event = {
+				id = srs_sickocivwar.3
+				days = 14
+			}
+			country_event = {
+				id = srs_sickocivwar.4
+				days = 21
+			}
+			country_event = {
+				id = srs_sickocivwar.5
+				days = 28
+			}
+			country_event = {
+				id = srs_sickocivwar.6
+				days = 35
+			}
+			country_event = {
+				id = srs_sickocivwar.7
+				days = 42
+			}
+		}
 		completion_reward = {
-		    country_event = { id = srs_sickocivwar.2 }
 		}
 	}
 	
@@ -105,101 +130,13 @@ focus_tree = {
 			set_country_flag = SRS_general_congress_in_power
 		}
 	}
-	
-	focus = {
-		id = SRS_civwar_battle_1
-		icon = GFX_goal_conscription
-		prerequisite = { focus = SRS_sickleclaw_betrays_congress }
-		relative_position_id = SRS_sickleclaw_betrays_congress
-		x = 0
-		y = 1
-		cost = 1
-		ai_will_do = {
-			factor = 12
-		}
-		
-		completion_reward = {
-			country_event = { id = srs_sickocivwar.3 }
-		}
-	}
-
-	focus = {
-		id = SRS_civwar_battle_2
-		icon = GFX_focus_generic_provoke_border_clashes
-		prerequisite = { focus = SRS_sickleclaw_betrays_congress }
-		relative_position_id = SRS_sickleclaw_betrays_congress
-		x = -2
-		y = 1
-		cost = 1
-		ai_will_do = {
-			factor = 12
-		}
-		
-		completion_reward = {
-			country_event = { id = srs_sickocivwar.4 }
-		}
-	}
-
-	focus = {
-		id = SRS_civwar_battle_3
-		icon = GFX_goal_purge_opposition
-		prerequisite = { focus = SRS_sickleclaw_betrays_congress }
-		relative_position_id = SRS_sickleclaw_betrays_congress
-		x = 2
-		y = 1
-		cost = 1
-		ai_will_do = {
-			factor = 12
-		}
-		
-		completion_reward = {
-			country_event = { id = srs_sickocivwar.5 }
-		}
-	}
-
-	focus = {
-		id = SRS_civwar_battle_4
-		icon = GFX_goal_LEC_monkey
-		prerequisite = { focus = SRS_civwar_battle_1 }
-		prerequisite = { focus = SRS_civwar_battle_2 }
-		relative_position_id = SRS_civwar_battle_1
-		x = -1
-		y = 1
-		cost = 1
-		ai_will_do = {
-			factor = 12
-		}
-		
-		completion_reward = {
-			country_event = { id = srs_sickocivwar.6 }
-		}
-	}
-
-	focus = {
-		id = SRS_civwar_battle_5
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = SRS_civwar_battle_1 }
-		prerequisite = { focus = SRS_civwar_battle_3 }
-		relative_position_id = SRS_civwar_battle_1
-		x = 1
-		y = 1
-		cost = 1
-		ai_will_do = {
-			factor = 12
-		}
-		
-		completion_reward = {
-			country_event = { id = srs_sickocivwar.7 }
-		}
-	}
 
 	focus = {
 		id = SRS_civwar_end
 		icon = GFX_goal_national_arsenal
-		prerequisite = { focus = SRS_civwar_battle_4 }
-		prerequisite = { focus = SRS_civwar_battle_5 }
-		relative_position_id = SRS_civwar_battle_4
-		x = 1
+		prerequisite = { focus = SRS_sickleclaw_betrays_congress }
+		relative_position_id = SRS_sickleclaw_betrays_congress
+		x = 0
 		y = 1
 		cost = 2.2
 		ai_will_do = {
@@ -760,7 +697,7 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 200
 			add_stability = 0.10
 		}
 	}
@@ -1039,6 +976,12 @@ focus_tree = {
 		icon = GFX_goal_state_economy
 		prerequisite = { focus = SRS_operation_toppler }
 		relative_position_id = SRS_operation_toppler
+		available = {
+			OR = {
+				VED = { exists = no }
+				VED = { is_subject_of = ROOT }
+			}
+        }
 		x = 0
 		y = 1
 		cost = 5
@@ -1193,16 +1136,11 @@ focus_tree = {
 		prerequisite = { focus = SRS_operation_evergreen }
 		relative_position_id = SRS_operation_evergreen
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = SRS_commie_NTR_core
-					NTR = {
-						OR = {
-							exists = no
-							is_subject_of = ROOT
-						}
-					}
-				}
+			OR = {
+				NTR = { exists = no }
+				NTR = { is_subject_of = ROOT }
 			}
+        }
 		x = 0
 		y = 1
 		cost = 5
@@ -1331,6 +1269,12 @@ focus_tree = {
 		icon = GFX_goal_pacification_of_the_planes
 		prerequisite = { focus = SRS_operation_collective }
 		relative_position_id = SRS_operation_collective
+		available = {
+			OR = {
+				HAU = { exists = no }
+				HAU = { is_subject_of = ROOT }
+			}
+        }
 		x = 0
 		y = 1
 		cost = 5
@@ -1433,6 +1377,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		available = {
+			OR = {
+				GRF = { exists = no }
+				GRF = { is_subject_of = ROOT }
+			}
+        }
 		
 		completion_reward = {
 			243 = {
@@ -1520,7 +1470,6 @@ focus_tree = {
         prerequisite = { focus = SRS_vedinian_bounty }
         prerequisite = { focus = SRS_tribal_auxiliaries }
         prerequisite = { focus = SRS_dinkau_wall }
-        prerequisite = { focus = SRS_fortress_haukland }
         relative_position_id = SRS_dinkau_wall
         x = 0
         y = 1
@@ -1672,7 +1621,7 @@ focus_tree = {
 	        
 		completion_reward = {
 		    create_wargoal = {
-				type = puppet_wargoal_focus
+				type = annex_everything
 				target = MNC
 			}
 		}
@@ -1687,6 +1636,10 @@ focus_tree = {
         y = 1
         cost = 5
         available = {
+			OR = {
+				MNC = { exists = no }
+				MNC = { is_subject_of = ROOT }
+			}
         }
         ai_will_do = {
             factor = 12
@@ -1816,6 +1769,11 @@ focus_tree = {
         icon = GFX_
         prerequisite = { focus = SRS_operation_eclipse }
         relative_position_id = SRS_operation_eclipse
+        available = {
+        	MNC = {
+				exists = no
+			}
+        }
         x = 1
         y = 1
         cost = 5
@@ -2168,6 +2126,10 @@ focus_tree = {
         prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries focus = SRS_fortress_haukland focus = SRS_nova_griffonian_shinies }
         prerequisite = { focus = SRS_dinkau_wall }
         relative_position_id = SRS_dinkau_wall
+        available = {
+        	country_exists = STG
+        	STG = { has_capitulated = no }
+        }
         x = -4
         y = 1
         cost = 5
@@ -2258,7 +2220,11 @@ focus_tree = {
         prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries focus = SRS_fortress_haukland focus = SRS_nova_griffonian_shinies }
         prerequisite = { focus = SRS_dinkau_wall }
         relative_position_id = SRS_dinkau_wall
-        x = 4
+        available = {
+        	country_exists = GRW
+        	GRW = { has_capitulated = no }
+        }
+        x = 5
         y = 1
         cost = 5
         ai_will_do = {
@@ -2274,10 +2240,11 @@ focus_tree = {
     focus = {
         id = SRS_socialism_abroad
         icon = GFX_Socialist_Law
-        prerequisite = { focus = SRS_prywhen_cooperation }
+        prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries focus = SRS_fortress_haukland focus = SRS_nova_griffonian_shinies }
+        prerequisite = { focus = SRS_dinkau_wall }
         relative_position_id = SRS_prywhen_cooperation
-        x = -1
-        y = 1
+        x = -2
+        y = 0
         cost = 5
         ai_will_do = {
             factor = 12
@@ -2310,7 +2277,7 @@ focus_tree = {
         id = SRS_propaganda_machine_goes_brrrt
         icon = GFX_
         prerequisite = { focus = SRS_socialism_abroad }
-        prerequisite = { focus = SRS_prywhen_joint_army_training }
+        prerequisite = { focus = SRS_prywhen_cooperation }
         relative_position_id = SRS_socialism_abroad
         x = 1
         y = 1

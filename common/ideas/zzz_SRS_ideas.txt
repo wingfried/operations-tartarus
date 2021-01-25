@@ -4578,5 +4578,17 @@ ideas = {
 			conscription = 0.01
 		}
 	}
+
+	SRS_heal_scars_idea = {
+		modifier = {
+			production_speed_buildings_factor = 0.08
+		}
+	}
+
+	SRS_new_life_idea = {
+		modifier = {
+			consumer_goods_factor = -0.02
+		}
+	}
 }	
 
