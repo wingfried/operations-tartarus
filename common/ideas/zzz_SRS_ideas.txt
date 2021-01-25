@@ -4494,7 +4494,7 @@ ideas = {
 
 	SRS_seasonal_workers_idea = {
 		modifier = {
-			production_speed_buildings_factor = 0.05
+			production_speed_buildings_factor = 0.10
 		}
 	}
 

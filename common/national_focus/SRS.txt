@@ -1480,29 +1480,25 @@ focus_tree = {
 			country_event = srs_sickocivwar.14
 			IF = {
 				limit = {
-					country_exists = VED
-					VED = { is_puppet = yes }
+					VED = { is_puppet_of = SRS }
 				}
 				add_to_faction = VED
 			}
 			IF = {
 				limit = {
-					country_exists = NTR
-					NTR = { is_puppet = yes }
+					NTR = { is_puppet_of = SRS }
 				}
 				add_to_faction = NTR
 			}
 			IF = {
 				limit = {
-					country_exists = HAU
-					NTR = { is_puppet = yes }
+					HAU = { is_puppet_of = SRS }
 				}
 				add_to_faction = HAU
 			}
 			IF = {
 				limit = {
-					country_exists = GRF
-					NTR = { is_puppet = yes }
+					GRF = { is_puppet_of = SRS }
 				}
 				add_to_faction = GRF
 			}
@@ -1670,11 +1666,6 @@ focus_tree = {
         x = 0
         y = 1
         cost = 5
-        available = {
-        	MNC = {
-				is_puppet_of = SRS
-			}
-        }
         ai_will_do = {
             factor = 12
         }
@@ -1789,6 +1780,7 @@ focus_tree = {
 			ELSE = {
 				custom_effect_tooltip = SRS_MNC_compliance_tp
 			}
+            MNC = { add_to_ROOT_potential_cores = yes }
             every_controlled_state = {
 				limit = {
 					OR = {
@@ -1824,6 +1816,7 @@ focus_tree = {
 			ELSE = {
 				custom_effect_tooltip = SRS_FAT_compliance_tp
 			}
+			FAT = { add_to_ROOT_potential_cores = yes }
             every_controlled_state = {
 				limit = {
 					OR = {
@@ -1857,9 +1850,8 @@ focus_tree = {
         id = SRS_consolidate_our_position
         icon = GFX_goal_red_menace_griffonia
         prerequisite = { focus = SRS_billingualism_act }
-        prerequisite = { focus = SRS_air_and_radar }
-        relative_position_id = SRS_air_and_radar
-        x = 1
+        relative_position_id = SRS_billingualism_act
+        x = 0
         y = 1
         cost = 5
         available = {
@@ -1889,8 +1881,6 @@ focus_tree = {
         	#WIP
         	hidden_effect = { set_cosmetic_tag = SRS_UGSS }
 			custom_effect_tooltip = SRS_union_of_griffonian_socialist_states_tp
-            FAT = { add_to_ROOT_potential_cores = yes }
-            MNC = { add_to_ROOT_potential_cores = yes }
         }
     }
 
