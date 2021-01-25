@@ -3538,9 +3538,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickocivwar.2.a
-			#522 = { set_demilitarized_zone = yes }
-			#585 = { set_demilitarized_zone = yes }
-			#561 = { set_demilitarized_zone = yes }
+			542 = { set_demilitarized_zone = yes }
+			585 = { set_demilitarized_zone = yes }
+			561 = { set_demilitarized_zone = yes }
+			601 = { set_demilitarized_zone = yes }
 			add_stability = -0.15
 			add_manpower = -100
 			add_political_power = 100
@@ -3558,7 +3559,6 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickocivwar.3.a
-			561 = { set_demilitarized_zone = no }
 	}
 }
 
@@ -3587,7 +3587,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickocivwar.5.a
-			585 = { set_demilitarized_zone = no }
+			561 = { set_demilitarized_zone = no }
+			542 = { set_demilitarized_zone = no }
 	}
 }
 
@@ -3602,22 +3603,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickocivwar.6.a
-			522 = { set_demilitarized_zone = no }
-	}
-}
-
-## SRS_civwar_battle_5 ##
-
-country_event = {
-	id = srs_sickocivwar.7
-	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.7"}
-	title = srs_sickocivwar.7.t
-	desc = srs_sickocivwar.7.d
-	picture = GFX_event_poshel_nahui
-	is_triggered_only = yes
-	option = {
-		name = srs_sickocivwar.7.a
-			542 = { set_demilitarized_zone = no }
+			601 = { set_demilitarized_zone = no }
+			585 = { set_demilitarized_zone = no }
 	}
 }
 
