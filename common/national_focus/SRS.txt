@@ -71,11 +71,11 @@ focus_tree = {
 		select_effect = {
 			country_event = {
 				id = srs_sickocivwar.2
-				days = 7
+				days = 3
 			}
 			country_event = {
 				id = srs_sickocivwar.3
-				days = 14
+				days = 7
 			}
 			country_event = {
 				id = srs_sickocivwar.4
@@ -83,18 +83,14 @@ focus_tree = {
 			}
 			country_event = {
 				id = srs_sickocivwar.5
-				days = 28
+				days = 38
 			}
 			country_event = {
 				id = srs_sickocivwar.6
-				days = 35
+				days = 44
 			}
-			country_event = {
-				id = srs_sickocivwar.7
-				days = 42
+			completion_reward = {
 			}
-		}
-		completion_reward = {
 		}
 	}
 	
