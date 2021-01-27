@@ -43,7 +43,7 @@ ideas = {
 				original_tag = SRS
 			}
 			available = {
-				has_government = democratic
+				has_completed_focus = SRS_market_socialism
 			}
 			traits = { capable_administrator }
 		}
@@ -54,7 +54,7 @@ ideas = {
 				original_tag = SRS
 			}
 			available = {
-				has_government = democratic
+				has_completed_focus = SRS_market_socialism
 			}
 			traits = { economic_organizer }
 		}
@@ -65,7 +65,7 @@ ideas = {
 				original_tag = SRS
 			}
 			available = {
-				has_government = democratic
+				has_completed_focus = SRS_market_socialism
 			}
 			traits = { social_reformer }
 		}
@@ -290,7 +290,7 @@ ideas = {
 			picture = SRS_tankstars
 
 			available = {
-				has_government = democratic
+				has_completed_focus = SRS_market_socialism
 			}
 
 			allowed = {
@@ -310,7 +310,7 @@ ideas = {
 			picture = SRS_bna
 
 			available = {
-				has_government = democratic
+				has_completed_focus = SRS_market_socialism
 			}
 
 			allowed = {
@@ -330,7 +330,7 @@ ideas = {
 			picture = SRS_panzer_utopia
 
 			available = {
-				has_government = democratic
+				has_completed_focus = SRS_market_socialism
 			}
 
 			allowed = {
@@ -350,7 +350,7 @@ ideas = {
 			picture = SRS_retsuko_armory
 
 			available = {
-				has_government = democratic
+				has_completed_focus = SRS_market_socialism
 			}
 
 			allowed = {
@@ -428,7 +428,7 @@ ideas = {
 				tag = SRS
 			}
 			available = {
-				has_government = democratic
+				has_completed_focus = SRS_market_socialism
 			}
 			
 			research_bonus = {
@@ -500,7 +500,7 @@ ideas = {
 				tag = SRS
 			}
 			available = {
-				has_government = democratic
+				has_completed_focus = SRS_market_socialism
 			}
 			
 			research_bonus = {
@@ -535,7 +535,7 @@ ideas = {
 				tag = SRS
 			}
 			available = {
-				has_government = democratic
+				has_completed_focus = SRS_market_socialism
 			}
 			
 			research_bonus = {
@@ -1171,7 +1171,7 @@ ideas = {
 			picture = SRS_purple_submarine
 			
 			available = {
-				has_government = democratic
+				has_completed_focus = SRS_market_socialism
 			}
 
 			allowed = {
@@ -1187,7 +1187,7 @@ ideas = {
 			picture = SRS_griffeidon
 			
 			available = {
-				has_government = democratic
+				has_completed_focus = SRS_market_socialism
 			}
 
 			allowed = {
@@ -1351,7 +1351,7 @@ ideas = {
 			picture = SRS_flying_pig
 			
 			available = {
-				has_government = democratic
+				has_completed_focus = SRS_market_socialism
 			}
 			
 			allowed = {
@@ -1366,7 +1366,7 @@ ideas = {
 			picture = SRS_boomers
 			
 			available = {
-				has_government = democratic
+				has_completed_focus = SRS_market_socialism
 			}
 			
 			allowed = {

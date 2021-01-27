@@ -1254,7 +1254,7 @@ focus_tree = {
 
 		completion_reward = {
 			create_wargoal = {
-				type = annex_everything
+				type = puppet_wargoal_focus
 				target = HAU
 			}
 		}
@@ -1568,6 +1568,9 @@ focus_tree = {
         id = SRS_settle_the_score
         icon = GFX_
         prerequisite = { focus = SRS_revise_the_sickleclaw_doctrine focus = SRS_unlikely_membership }
+        bypass = {
+        	FAT = { exists = no }
+        }
         relative_position_id = SRS_revise_the_sickleclaw_doctrine
         x = -1
         y = 1

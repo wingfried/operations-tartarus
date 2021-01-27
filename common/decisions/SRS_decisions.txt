@@ -5339,3 +5339,104 @@ SRS_settle_the_score_decision_category = {
 		}
 	}
 }
+
+SRS_skynavia_versus_evil_decision_category = {
+	SRS_ask_STG_to_destroy_fascisc_GRF_decision = {
+		visible = {
+			GRF = { has_government = fascism }
+			GRF = { has_civil_war = no }
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SRS_ask_STG_to_destroy_fascisc_GRF_decision"
+			STG = { country_event = srs_sickocivwartwo.40 }
+		}
+	}
+	SRS_ask_STG_to_destroy_fascisc_CRY_decision = {
+		visible = {
+			CRY = { has_government = fascism }
+			CRY = { has_civil_war = no }
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SRS_ask_STG_to_destroy_fascisc_CRY_decision"
+			STG = { country_event = srs_sickocivwartwo.43 }
+		}
+	}
+	SRS_help_STG_destroy_fascisc_CHN_decision = {
+		visible = {
+			CHN = { has_government = fascism }
+			CHN = { has_civil_war = no }
+			OR = {
+				CHN = { has_war_with = EQS }
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SRS_help_STG_destroy_fascisc_CHN_decision"
+			STG = { country_event = srs_sickocivwartwo.46 }
+		}
+	}
+	SRS_help_GRW_destroy_empire_decision = {
+		visible = {
+			OR = {
+				GRW = { has_war_with = MNC }
+				GRW = { has_war_with = STW }
+				GRW = { has_war_with = FEA }
+				GRW = { has_war_with = PYT }
+				GRW = { has_war_with = BRZ }
+				GRW = { has_war_with = GRI }
+				GRW = { has_war_with = YAL }
+				GRW = { has_war_with = KAT }
+				GRW = { has_war_with = ANG }
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SRS_help_GRW_destroy_empire_decision"
+			IF = {
+				limit = { GRW = { has_war_with = MNC } }
+				declare_war_on = { target = MNC type = puppet_wargoal_focus }
+			}
+			ELSE_IF = {
+				limit = { GRW = { has_war_with = STW } }
+				declare_war_on = { target = STW type = puppet_wargoal_focus }
+			}
+			ELSE_IF = {
+				limit = { GRW = { has_war_with = FEA } }
+				declare_war_on = { target = FEA type = puppet_wargoal_focus }
+			}
+			ELSE_IF = {
+				limit = { GRW = { has_war_with = PYT } }
+				declare_war_on = { target = PYT type = puppet_wargoal_focus }
+			}
+			ELSE_IF = {
+				limit = { GRW = { has_war_with = BRZ } }
+				declare_war_on = { target = BRZ type = puppet_wargoal_focus }
+			}
+			ELSE_IF = {
+				limit = { GRW = { has_war_with = GRI } }
+				declare_war_on = { target = GRI type = puppet_wargoal_focus }
+			}
+			ELSE_IF = {
+				limit = { GRW = { has_war_with = YAL } }
+				declare_war_on = { target = YAL type = puppet_wargoal_focus }
+			}
+			ELSE_IF = {
+				limit = { GRW = { has_war_with = KAT } }
+				declare_war_on = { target = KAT type = puppet_wargoal_focus }
+			}
+			ELSE_IF = {
+				limit = { GRW = { has_war_with = ANG } }
+				declare_war_on = { target = ANG type = puppet_wargoal_focus }
+			}
+		}
+	}
+	SRS_puppet_FIR_maybe_WAT_help_decision = {
+		visible = {
+			WAT = { has_government = communism }
+			FIR = { has_government = fascism }
+			FIR = { has_civil_war = no }
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SRS_puppet_FIR_maybe_WAT_help_decision"
+			WAT = { country_event = srs_sickocivwartwo.49 }
+		}
+	}
+}

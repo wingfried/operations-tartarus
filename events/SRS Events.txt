@@ -4381,6 +4381,259 @@ country_event = {
 	}
 }
 
+# Sky vs FoE
+
+country_event = { #SRS_ask_STG_to_destroy_fascisc_GRF_decision
+	id = srs_sickocivwartwo.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.40"}
+	title = srs_sickocivwartwo.40.t
+	desc = srs_sickocivwartwo.40.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.40.a
+		SRS = { country_event = srs_sickocivwar.41 }
+	}
+	option = {
+		name = srs_sickocivwartwo.40.b
+		SRS = { country_event = srs_sickocivwar.42 }
+	}
+}
+
+country_event = { #accept
+	id = srs_sickocivwartwo.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.41"}
+	title = srs_sickocivwartwo.41.t
+	desc = srs_sickocivwartwo.41.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.41.a
+		STG = {
+			declare_war_on = {
+	    		target = GRF
+	    		type = puppet_wargoal_focus
+			}
+		}
+		SRS = {
+			declare_war_on = {
+	    		target = GRF
+	    		type = puppet_wargoal_focus
+			}
+		}	
+	}
+}
+
+country_event = { #nah
+	id = srs_sickocivwartwo.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.42"}
+	title = srs_sickocivwartwo.42.t
+	desc = srs_sickocivwartwo.42.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.42.a
+	}
+}
+
+country_event = { #SRS_ask_STG_to_destroy_fascisc_CRY_decision
+	id = srs_sickocivwartwo.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.43"}
+	title = srs_sickocivwartwo.43.t
+	desc = srs_sickocivwartwo.43.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.43.a
+		SRS = { country_event = srs_sickocivwar.44 }
+	}
+	option = {
+		name = srs_sickocivwartwo.43.b
+		SRS = { country_event = srs_sickocivwar.45 }
+	}
+}
+
+country_event = { #accept
+	id = srs_sickocivwartwo.44
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.44"}
+	title = srs_sickocivwartwo.44.t
+	desc = srs_sickocivwartwo.44.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.44.a
+		STG = {
+			declare_war_on = {
+	    		target = CRY
+	    		type = puppet_wargoal_focus
+			}
+		}
+		SRS = {
+			declare_war_on = {
+	    		target = CRY
+	    		type = puppet_wargoal_focus
+			}
+		}	
+	}
+}
+
+country_event = { #nah
+	id = srs_sickocivwartwo.45
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.45"}
+	title = srs_sickocivwartwo.45.t
+	desc = srs_sickocivwartwo.45.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.45.a
+	}
+}
+
+country_event = { #SRS_help_STG_destroy_fascisc_CHN_decision
+	id = srs_sickocivwartwo.46
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.46"}
+	title = srs_sickocivwartwo.46.t
+	desc = srs_sickocivwartwo.46.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.46.a
+		SRS = { country_event = srs_sickocivwar.47 }
+	}
+	option = {
+		name = srs_sickocivwartwo.46.b
+		SRS = { country_event = srs_sickocivwar.48 }
+	}
+}
+
+country_event = { #accept
+	id = srs_sickocivwartwo.47
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.47"}
+	title = srs_sickocivwartwo.47.t
+	desc = srs_sickocivwartwo.47.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.47.a
+		STG = {
+			declare_war_on = {
+	    		target = CHN
+	    		type = puppet_wargoal_focus
+			}
+		}
+		SRS = {
+			declare_war_on = {
+	    		target = CHN
+	    		type = puppet_wargoal_focus
+			}
+		}	
+	}
+}
+
+country_event = { #nah
+	id = srs_sickocivwartwo.48
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.48"}
+	title = srs_sickocivwartwo.48.t
+	desc = srs_sickocivwartwo.48.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.48.a
+	}
+}
+
+country_event = { #SRS_puppet_FIR_maybe_WAT_help_decision
+	id = srs_sickocivwartwo.49
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.49"}
+	title = srs_sickocivwartwo.49.t
+	desc = srs_sickocivwartwo.49.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.49.a
+		SRS = { country_event = srs_sickocivwar.50 } #yes
+	}
+	option = {
+		name = srs_sickocivwartwo.49.b
+		SRS = { country_event = srs_sickocivwar.51 } #yesnt
+	}
+
+	option = {
+		name = srs_sickocivwartwo.49.c
+		SRS = { country_event = srs_sickocivwar.52 } #no
+	}
+}
+
+country_event = { #accept
+	id = srs_sickocivwartwo.50
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.50"}
+	title = srs_sickocivwartwo.50.t
+	desc = srs_sickocivwartwo.50.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.50.a
+		WAT = {
+			declare_war_on = {
+	    		target = FIR
+	    		type = puppet_wargoal_focus
+			}
+		}
+		SRS = {
+			declare_war_on = {
+	    		target = FIR
+	    		type = puppet_wargoal_focus
+			}
+		}	
+	}
+}
+
+country_event = { #yesnt
+	id = srs_sickocivwartwo.51
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.51"}
+	title = srs_sickocivwartwo.51.t
+	desc = srs_sickocivwartwo.51.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.51.a
+		WAT = {
+			add_state_claim = 644
+			add_state_claim = 604
+			declare_war_on = {
+	    		target = FIR
+	    		type = annex_everything
+			}
+		}
+		SRS = {
+			declare_war_on = {
+	    		target = FIR
+	    		type = puppet_wargoal_focus
+			}
+		}
+	}
+	option = {
+		SRS = {
+			declare_war_on = {
+	    		target = FIR
+	    		type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+
+country_event = { #no
+	id = srs_sickocivwartwo.52
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.52"}
+	title = srs_sickocivwartwo.52.t
+	desc = srs_sickocivwartwo.52.d
+	#picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+		name = srs_sickocivwartwo.52.a
+	}
+}
+
 ## SRS-FAT merger event ##
 
 country_event = {
