@@ -679,7 +679,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_road_of_pragmatism
-		icon = GFX_
+		icon = GFX_focus_srs_road_of_pragmatism
 		prerequisite = { focus = SRS_national_security }
 		mutually_exclusive = { focus = SRS_communist_asper }
 		relative_position_id = SRS_national_security
@@ -700,7 +700,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_heal_the_scars
-		icon = GFX_
+		icon = GFX_focus_srs_heal_the_scars
 		prerequisite = { focus = SRS_road_of_pragmatism }
 		relative_position_id = SRS_road_of_pragmatism
 		x = 0
@@ -717,7 +717,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_new_life_initiative
-		icon = GFX_
+		icon = GFX_focus_srs_new_life
 		prerequisite = { focus = SRS_heal_the_scars }
 		relative_position_id = SRS_heal_the_scars
 		x = 0
@@ -1444,7 +1444,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_seasonal_workers
-		icon = GFX_
+		icon = GFX_focus_srs_seasonal_workers
 		prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries focus = SRS_fortress_haukland focus = SRS_nova_griffonian_shinies }
 		relative_position_id = SRS_nova_griffonian_shinies
 		x = -3
@@ -1462,7 +1462,7 @@ focus_tree = {
 	
 	focus = {
         id = SRS_turhamn_pact
-        icon = GFX_goal_tripartite_pact
+        icon = GFX_focus_srs_turhamn_pact
         prerequisite = { focus = SRS_vedinian_bounty }
         prerequisite = { focus = SRS_tribal_auxiliaries }
         prerequisite = { focus = SRS_dinkau_wall }
@@ -1889,7 +1889,7 @@ focus_tree = {
 
     focus = {
         id = SRS_detente
-        icon = GFX_
+        icon = GFX_focus_srs_detente
         prerequisite = { focus = SRS_settle_the_score }
         relative_position_id = SRS_settle_the_score
         mutually_exclusive = { focus = SRS_operation_eclipse }
@@ -2205,7 +2205,7 @@ focus_tree = {
 
     focus = {
         id = SRS_prywhen_cooperation
-        icon = GFX_
+        icon = GFX_focus_srs_friendship_with_prywhen
         prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries focus = SRS_fortress_haukland focus = SRS_nova_griffonian_shinies }
         prerequisite = { focus = SRS_dinkau_wall }
         relative_position_id = SRS_dinkau_wall
@@ -2246,7 +2246,7 @@ focus_tree = {
 
 	focus = {
         id = SRS_prywhen_joint_army_training
-        icon = GFX_
+        icon = GFX_focus_srs_art_of_war
         prerequisite = { focus = SRS_prywhen_cooperation }
         relative_position_id = SRS_prywhen_cooperation
         x = 1

@@ -260,4 +260,32 @@ spriteTypes = {
 		name = "GFX_focus_srs_loyal_general"
 		texturefile = "gfx/interface/goals/GFX_focus_srs_loyal_general.dds"
 	}
+	SpriteType = { 
+        name = "GFX_focus_srs_art_of_war"
+        texturefile = "gfx/interface/goals/focus_srs_art_of_war.dds"
+    }
+    SpriteType = { 
+        name = "GFX_focus_srs_detente"
+        texturefile = "gfx/interface/goals/focus_srs_detente.dds"
+    }
+    SpriteType = { 
+        name = "GFX_focus_srs_heal_the_scars"
+        texturefile = "gfx/interface/goals/focus_srs_heal_the_scars.dds"
+    }
+    SpriteType = { 
+        name = "GFX_focus_srs_new_life"
+        texturefile = "gfx/interface/goals/focus_srs_new_life.dds"
+    }
+    SpriteType = { 
+        name = "GFX_focus_srs_road_of_pragmatism"
+        texturefile = "gfx/interface/goals/focus_srs_road_of_pragmatism.dds"
+    }
+    SpriteType = { 
+        name = "GFX_focus_srs_seasonal_workers"
+        texturefile = "gfx/interface/goals/focus_srs_seasonal_workers.dds"
+    }
+    SpriteType = { 
+        name = "GFX_focus_srs_friendship_with_prywhen"
+        texturefile = "gfx/interface/goals/focus_srs_friendship_with_prywhen.dds"
+    }
 }
