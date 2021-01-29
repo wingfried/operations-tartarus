@@ -3620,8 +3620,38 @@ country_event = {
 	option = {
 		name = srs_sickocivwar.8.a
 			add_stability = 0.2
-			remove_ideas = SRS_internationalist_problems
-			remove_ideas = SRS_communalist_problems
+			IF = {
+				limit = { has_idea = SRS_internationalist_problems }
+				remove_ideas = SRS_internationalist_problems
+			}
+			IF = {
+				limit = { has_idea = SRS_internationalist_problems_1 }
+				remove_ideas = SRS_internationalist_problems_1
+			}
+			IF = {
+				limit = { has_idea = SRS_communalist_problems }
+				remove_ideas = SRS_communalist_problems
+			}
+			IF = {
+				limit = { has_idea = SRS_communalist_problems_fin }
+				remove_ideas = SRS_communalist_problems_fin
+			}
+			IF = {
+				limit = { has_idea = SRS_communalist_problems_1 }
+				remove_ideas = SRS_communalist_problems_1
+			}
+			IF = {
+				limit = { has_idea = SRS_communalist_problems_1_fin }
+				remove_ideas = SRS_communalist_problems_1_fin
+			}
+			IF = {
+				limit = { has_idea = SRS_communalist_problems_2 }
+				remove_ideas = SRS_communalist_problems_2
+			}
+			IF = {
+				limit = { has_idea = SRS_communalist_problems_2_fin }
+				remove_ideas = SRS_communalist_problems_2_fin
+			}
 			#add_ideas = SRS_doubt_in_sickleclaw
 			#add_ideas = SRS_UITRAF_1
 			#add_ideas = SRS_DOC_1
@@ -4293,6 +4323,11 @@ country_event = {
 		add_equipment_to_stockpile = {
 			type = fighter_equipment_2
 			amount = 12
+			producer = CHN
+		}
+		add_equipment_to_stockpile = {
+			type = tac_bomber_equipment_1
+			amount = 20
 			producer = CHN
 		}
 		add_equipment_to_stockpile = {

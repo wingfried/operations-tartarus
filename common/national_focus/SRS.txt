@@ -1053,8 +1053,8 @@ focus_tree = {
 				VED = {
 					every_owned_state = {
 						limit = { 
-							is_core_of = ROOT
-							is_fully_controlled_by = ROOT
+							is_core_of = VED
+							is_fully_controlled_by = VED
 							any_neighbor_state = { owner = { tag = FAT } }
 						}
 						add_building_construction = {
@@ -1445,7 +1445,7 @@ focus_tree = {
 	focus = {
 		id = SRS_seasonal_workers
 		icon = GFX_focus_srs_seasonal_workers
-		prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries focus = SRS_fortress_haukland focus = SRS_nova_griffonian_shinies }
+		prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries }
 		relative_position_id = SRS_nova_griffonian_shinies
 		x = -3
 		y = 1
@@ -1576,6 +1576,7 @@ focus_tree = {
         y = 1
         cost = 5
         available = {
+        	GRI = { exists = no }
         }
         ai_will_do = {
             factor = 12
@@ -2112,7 +2113,7 @@ focus_tree = {
 	focus = {
         id = SRS_stalliongrad_cooperation
         icon = GFX_goal_commune_politics
-        prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries focus = SRS_fortress_haukland focus = SRS_nova_griffonian_shinies }
+        prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries }
         prerequisite = { focus = SRS_dinkau_wall }
         relative_position_id = SRS_dinkau_wall
         available = {
@@ -2206,7 +2207,7 @@ focus_tree = {
     focus = {
         id = SRS_prywhen_cooperation
         icon = GFX_focus_srs_friendship_with_prywhen
-        prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries focus = SRS_fortress_haukland focus = SRS_nova_griffonian_shinies }
+        prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries }
         prerequisite = { focus = SRS_dinkau_wall }
         relative_position_id = SRS_dinkau_wall
         available = {
@@ -2229,7 +2230,7 @@ focus_tree = {
     focus = {
         id = SRS_socialism_abroad
         icon = GFX_Socialist_Law
-        prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries focus = SRS_fortress_haukland focus = SRS_nova_griffonian_shinies }
+        prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries }
         prerequisite = { focus = SRS_dinkau_wall }
         relative_position_id = SRS_prywhen_cooperation
         x = -2
@@ -5510,9 +5511,6 @@ focus_tree = {
 		icon = GFX_goal_PAN_Create_the_Universidad_de_Panama
 		prerequisite = { focus = SRS_military_academy }
 		relative_position_id = SRS_military_academy
-		available = {
-			has_idea = no_lack_of_scientists
-		}
 		x = 0
 		y = 1
 		cost = 4.4

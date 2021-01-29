@@ -1162,6 +1162,10 @@ ideas = {
 				tag = SRS
 			}
 
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+
 			traits = { GAW_ship_quantity }
 
 		}
@@ -1178,6 +1182,10 @@ ideas = {
 				tag = SRS
 			}
 
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+
 			traits = { GAW_light_ship_quality }
 
 		}
@@ -1192,6 +1200,10 @@ ideas = {
 
 			allowed = {
 				tag = SRS
+			}
+
+			research_bonus = {
+				naval_equipment = 0.10
 			}
 
 			traits = { GAW_heavy_ship_quality }
@@ -1342,6 +1354,10 @@ ideas = {
 			allowed = {
 				tag = SRS
 			}
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
 			
 			traits = { GAW_plane_quantity }
 		}
@@ -1357,6 +1373,11 @@ ideas = {
 			allowed = {
 				tag = SRS
 			}
+
+			research_bonus = {
+				light_fighter = 0.10
+				cas_bomber = 0.10
+			}
 			
 			traits = { GAW_fighter_cas_quality }
 		}
@@ -1371,6 +1392,11 @@ ideas = {
 			
 			allowed = {
 				tag = SRS
+			}
+
+			research_bonus = {
+				tactical_bomber = 0.10
+				cat_strategic_bomber = 0.10
 			}
 			
 			traits = { GAW_tactical_strategic_bomber_quality }

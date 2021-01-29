@@ -6,9 +6,9 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
+			is_puppet = no
 			tag = VED
 			NOT = { has_country_flag = VED_Separatists }
-			is_puppet = no
 		}
 	}
 	default = no
@@ -25,6 +25,7 @@ focus_tree = {
 		
 		modifier = {
 			add = 5
+			is_puppet = no
 			tag = VED
 			NOT = { has_country_flag = VED_Separatists }
 		}
@@ -46,6 +47,7 @@ focus_tree = {
 		
 		modifier = {
 			add = 5
+			is_puppet = no
 			tag = VED
 			NOT = { has_country_flag = VED_Separatists }
 		}
@@ -68,6 +70,7 @@ focus_tree = {
 		
 		modifier = {
 			add = 5
+			is_puppet = no
 			tag = VED
 			NOT = { has_country_flag = VED_Separatists }
 		}
