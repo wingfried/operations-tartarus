@@ -288,4 +288,20 @@ spriteTypes = {
         name = "GFX_focus_srs_friendship_with_prywhen"
         texturefile = "gfx/interface/goals/focus_srs_friendship_with_prywhen.dds"
     }
+    SpriteType = { 
+        name = "GFX_focus_srs_turhamn_pact"
+        texturefile = "gfx/interface/goals/focus_srs_turhamn_pact.dds"
+    }
+    SpriteType = { 
+        name = "GFX_focus_srs_power_of_the_printed_word"
+        texturefile = "gfx/interface/goals/focus_srs_power_of_the_printed_word.dds"
+    }
+    SpriteType = { 
+        name = "GFX_focus_srs_settle_the_score"
+        texturefile = "gfx/interface/goals/focus_srs_settle_the_score.dds"
+    }
+    SpriteType = { 
+        name = "GFX_focus_srs_sickleclaw_doctrine"
+        texturefile = "gfx/interface/goals/focus_srs_sickleclaw_doctrine.dds"
+    }
 }

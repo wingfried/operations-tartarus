@@ -916,7 +916,7 @@ focus_tree = {
 	
 	focus = {
 		id = SRS_the_sickleclaw_doctrine
-		icon = GFX_
+		icon = GFX_focus_srs_sickleclaw_doctrine
 		prerequisite = { focus = SRS_new_life_initiative }
 		relative_position_id = SRS_new_life_initiative
 		x = 8
@@ -1566,7 +1566,7 @@ focus_tree = {
 
     focus = {
         id = SRS_settle_the_score
-        icon = GFX_
+        icon = GFX_focus_srs_settle_the_score
         prerequisite = { focus = SRS_revise_the_sickleclaw_doctrine focus = SRS_unlikely_membership }
         bypass = {
         	FAT = { exists = no }
@@ -2265,7 +2265,7 @@ focus_tree = {
 
 	focus = {
         id = SRS_propaganda_machine_goes_brrrt
-        icon = GFX_
+        icon = GFX_focus_srs_power_of_the_printed_word
         prerequisite = { focus = SRS_socialism_abroad }
         prerequisite = { focus = SRS_prywhen_cooperation }
         relative_position_id = SRS_socialism_abroad
