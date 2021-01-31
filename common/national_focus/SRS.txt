@@ -1588,7 +1588,7 @@ focus_tree = {
 
     focus = {
         id = SRS_operation_eclipse
-        icon = GFX_goal_skull_treaty2
+        icon = GFX_focus_srs_operation_eclipse
         prerequisite = { focus = SRS_settle_the_score }
         relative_position_id = SRS_settle_the_score
         mutually_exclusive = { focus = SRS_detente }
@@ -1757,7 +1757,7 @@ focus_tree = {
 
     focus = {
         id = SRS_integrate_brantbeak
-        icon = GFX_
+        icon = GFX_focus_srs_integrate_brantbeak
         prerequisite = { focus = SRS_operation_eclipse }
         relative_position_id = SRS_operation_eclipse
         available = {
@@ -1798,7 +1798,7 @@ focus_tree = {
 
     focus = {
         id = SRS_cloudbury_under_socialism
-        icon = GFX_goal_generic_war_with_comintern
+        icon = GFX_focus_srs_cloudbury_under_socialism
         prerequisite = { focus = SRS_integrate_brantbeak }
         relative_position_id = SRS_integrate_brantbeak
         x = 0

@@ -304,4 +304,16 @@ spriteTypes = {
         name = "GFX_focus_srs_sickleclaw_doctrine"
         texturefile = "gfx/interface/goals/focus_srs_sickleclaw_doctrine.dds"
     }
+    SpriteType = { 
+        name = "GFX_focus_srs_integrate_brantbeak"
+        texturefile = "gfx/interface/goals/focus_srs_integrate_brantbeak.dds"
+    }
+    SpriteType = { 
+        name = "GFX_focus_srs_operation_eclipse"
+        texturefile = "gfx/interface/goals/focus_srs_operation_eclipse.dds"
+    }
+    SpriteType = { 
+        name = "GFX_focus_srs_cloudbury_under_socialism"
+        texturefile = "gfx/interface/goals/focus_srs_cloudbury_under_socialism.dds"
+    }
 }
