@@ -1,0 +1,155 @@
+DefendEQS = {
+enable = {
+		tag = EQS
+		has_civil_war = no
+		date < 1012.1.1
+		OR = {
+		has_war = no 
+		muchstronger = no
+			}
+}
+abort = {
+	AND = {
+		has_war = yes
+		set_temp_variable = { type_percentage = num_equipment_in_armies@infantry_equipment}
+		divide_temp_variable = { type_percentage = num_target_equipment_in_armies@infantry_equipment}
+		check_variable = { type_percentage > 0.75 }
+		
+		muchstronger = yes
+		}
+}
+
+	ai_strategy = {
+		type = front_control
+		
+		country_trigger = { always = yes }
+		
+		
+		priority = 75
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+		manual_attack = no
+		}	
+	}
+
+	Dont_Cry = {
+		enable = {
+			is_in_faction_with = CRY
+			check_variable = { potential_and_current_enemies > 0 }
+		CRY = {
+			surrender_progress < 0.2
+		}
+		}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "CRY"
+		value = 100
+		}
+	}
+		
+
+	Nation_of_prospertiy = {
+		enable = {
+			AND = {
+				original_tag = EQS
+				}
+				}
+		Abort = {
+			
+			OR = {
+				has_war = yes
+				NOT = {
+				has_idea = friendly_harmony		
+				}
+				check_variable = { potential_and_current_enemies > 0 }		
+				}
+				}
+		
+		ai_strategy = {
+			type = added_military_to_civilian_factory_ratio
+			value = -50
+		}
+		}
+		
+#	The_Great_landwar_factories_EQS = {
+#		enable = {
+#			AND = {
+#				original_tag = EQS
+#				date > 1010.1.1
+#				num_of_civilian_factories > 50
+#				}				
+#				has_war = yes
+#				}
+#				
+#		Abort = {
+#			OR = {
+#				has_war = no
+#				arms_factory > 100 
+#				}
+#				}
+#		
+#		ai_strategy = {
+#			type = building_target
+#			id = arms_factory
+#			value = 100
+#		}
+#		}
+
+
+	The_Great_Landwar_EQS = {
+	enable = {
+			AND = {
+				original_tag = EQS
+				has_war = yes
+				date > 1010.1.1
+				}
+				}
+		Abort = {
+			OR = {
+				has_war = no
+				has_war_With = WNG
+				has_war_With = GRI
+				}
+				}
+		ai_strategy = {
+			type = unit_ratio
+			id = capital_ship
+			value = -100
+			}
+
+		ai_strategy = {
+			type = unit_ratio
+			id = submarine
+			value = -100
+			}
+
+		ai_strategy = {
+			type = unit_ratio
+			id = screen_ship
+			value = -100
+			}
+
+		ai_strategy = {
+			type = unit_ratio
+			id = convoy
+			value = -100
+			}
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = -95	
+		}
+		
+		ai_strategy = {
+		type = equipment_variant_production_factor
+		id = cv_fighter_equipment
+		value = -1000 
+		}	
+		}
+		
+		
+	
+		
+		
+		

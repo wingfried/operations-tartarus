@@ -1,0 +1,64 @@
+#### ETRUSCAN REWORK MOD DECISIONS ####
+
+Macro_Builder = {
+	icon = generic_economy
+	allowed = {
+	}
+	visible = {
+		is_ai = yes
+	}
+}
+
+Subject_interactions = {
+	icon = generic_political_actions
+	allowed = {
+	}
+	visible = {
+		is_ai = yes
+	}
+}
+
+Requesting_civil_aid = {
+	icon = generic_political_actions
+	allowed = {
+	}
+	visible = {
+		is_ai = yes
+	}
+}
+
+Requesting_Military_aid = {
+	icon = generic_political_actions
+	allowed = {		
+	}
+	visible = {
+		is_ai = yes
+	}
+}
+
+Requesting_Troops = {
+	icon = generic_political_actions
+	allowed = {
+	}
+	visible = {
+		is_ai = yes
+	}
+}
+
+Demanding_Resources = {
+	icon = generic_political_actions
+	allowed = {
+	}
+	visible = {
+		is_ai = yes
+	}
+}
+
+Overlord_Actions = {
+	icon = generic_political_actions
+	allowed = {
+	}
+	visible = {
+		is_ai = yes
+	}
+}

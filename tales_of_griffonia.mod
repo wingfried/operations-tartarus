@@ -11,4 +11,5 @@ dependencies={
 	"Equestria at War"
 }
 supported_version="1.10.3"
+path="D:/Dokumenty/Paradox Interactive/Hearts of Iron IV/mod/tales_of_griffonia"
 remote_file_id="2381194431"

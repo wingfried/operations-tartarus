@@ -1,0 +1,3 @@
+FWF = "countries/TOG_FBK_WAT_FIR.txt"
+HLP = "countries/TOG_HLQ_LNS.txt"
+MCP = "countries/TOG_MIT_CYA.txt"

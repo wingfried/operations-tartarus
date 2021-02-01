@@ -1,0 +1,1161 @@
+add_namespace = plan_convert
+add_namespace = plan_offconvert
+
+##TURNONEVENTS##
+country_event = {
+id = plan_convert.0
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.0"}
+mean_time_to_happen = {
+days = 0
+}
+hidden = yes
+
+trigger = {
+	NOT = {
+	has_country_flag = conversion0
+	}	
+} 
+	option = { 
+		name = plan_convert.0.a
+		
+		add_ideas = BreakthroughBuff
+		set_country_flag = conversion0
+		
+		if = {
+			limit = {
+			is_ai = no
+			NOT = {
+			has_country_flag = instructionsdone
+			}
+			}
+		country_event = { id = instructions.0 days = 1 }	
+		}
+	}
+	}
+
+country_event = {
+id = plan_convert.1
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.1"}
+mean_time_to_happen = {
+days = 0
+}
+hidden = yes
+
+trigger = {
+		OR = {
+		has_idea = BRZ_combined_officers_training
+		has_idea = CHN_plan_east_prep
+		has_idea = HAU_officer_core
+		has_idea = GRF_general_staff_idea
+		has_idea = NLR_lunar_continental_command_idea
+		has_idea = BRF_military_support_5_5
+		has_idea = scs_hoofington_academy_idea
+		has_idea = LAK_old_friends_idea
+		has_idea = GRU_espiritdecorps
+		has_idea = LUS_lord_staff
+		has_idea = DED_Blood_Guild_idea21
+		has_idea = HLQ_officer_reforms_idea
+		has_idea = YAL_grand_battleplan1
+		has_idea = BAR_combined_staff
+		has_idea = NIM_nimbusian_general_staff2
+		has_idea = CYA_okw
+		has_idea = RIV_NIM_bonus
+		has_idea = FEA_specialised_staff
+		has_idea = ANG_military_academy_idea
+		has_idea = EQC_SOL_unified_command_idea
+		has_idea = AVI_annual_military_exercises
+		has_idea = TRD_a_plan_for_everything_idea_2
+		has_idea = ZES_copy_some_idea
+		has_idea = FBK_bright_generals
+		has_idea = BAL_CES_cooperation
+		has_idea = FAT_Army_Reform_idea
+		}
+	NOT = {
+	has_country_flag = conversion1
+	}	
+} 
+	option = { 
+		name = plan_convert.1.a
+		
+		add_ideas = PlanConverion1
+		set_country_flag = conversion1
+		}
+	}
+
+country_event = {
+id = plan_convert.2
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.2"}
+mean_time_to_happen = {
+days = 0
+}
+hidden = yes	
+	trigger = { 
+		OR = {
+		has_idea = BRZ_the_new_bloodhounds_idea
+		has_idea = CHN_fob_idea
+		has_idea = DED_Blood_Guild_idea22
+		has_idea = ANG_peacekeeping
+		has_idea = AVI_the_strong_arm_of_the_revolution
+		has_idea = ZES_altu_copy_org
+		has_idea = FBK_nimbusian_officers_idea
+		has_idea = FAT_grand_strategy_game
+		}
+	NOT = {
+		has_country_flag = conversion2
+	} 
+		} 
+	option = { 
+		name = plan_convert.2.a
+		add_ideas = PlanConverion2
+		set_country_flag = conversion2
+		}
+	}
+	
+country_event = {
+id = plan_convert.3
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.3"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = BRZ_the_new_bloodhounds_idea
+		has_idea = DED_Blood_Guild_idea23
+		has_idea = AVI_Kriegsamt
+		has_idea = ZES_altu_copy_morale
+		has_idea = FBK_chain_of_command_idea
+		} 
+	NOT = {
+		has_country_flag = conversion3
+	}
+		} 
+	option = { 
+		name = plan_convert.3.a
+		add_ideas = PlanConverion3
+		set_country_flag = conversion3
+		}
+	}
+	
+country_event = {
+id = plan_convert.4
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.4"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = BRZ_the_new_bloodhounds_idea
+		has_idea = DED_Blood_Guild_idea24
+		has_idea = ZES_altu_copy_org_morale
+		}
+	NOT = {
+		has_country_flag = conversion4
+	} 
+		} 
+		option = { 
+		name = plan_convert.4.a
+		add_ideas = PlanConverion4
+		set_country_flag = conversion4
+		}
+	}
+	##42? 0r 41
+country_event = {
+id = plan_convert.5
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.5"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = EQC_army_empowered
+		has_idea = OLV_planning_skills_idea
+		has_idea = PYT_actual_officers
+		has_idea = YAL_grand_battleplan3
+		has_idea = ARA_continous_planning_idea
+		has_idea = WNG_planning_bonus
+		has_idea = NCR_legacy_of_navarro
+		has_idea = MIT_command_council_idea
+		has_idea = CRY_old_guard
+		has_idea = TRD_proffessional_officers_idea
+		has_idea = ZES_gbp_spirit_2
+		}
+	NOT = {
+		has_country_flag = conversion5
+	} 
+		} 
+		option = { 
+		name = plan_convert.5.a
+		add_ideas = BigPlanConverion1
+		set_country_flag = conversion5
+		}
+	}
+	
+country_event = {
+id = plan_convert.6
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.6"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = MIT_command_council_idea2
+		}
+	NOT = {
+		has_country_flag = conversion6
+	} 
+		} 
+		option = { 
+		name = plan_convert.6.a
+		add_ideas = BigPlanConverion2
+		set_country_flag = conversion6
+		}
+	}
+	
+country_event = {
+id = plan_convert.7
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.7"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = BRF_command_courses
+		has_idea = LUS_lord_staff
+		has_idea = YAL_grand_battleplan1
+		has_idea = CRY_SOL_military_of_the_inquisition_idea
+		has_idea = AVI_found_hq
+		has_idea = TRD_a_plan_for_everything_idea
+		}
+	NOT = {
+		has_country_flag = conversion7
+	} 
+		} 
+		option = { 
+		name = plan_convert.7.a
+		add_ideas = SmallPlanConverion1
+		set_country_flag = conversion7
+		}
+	}			
+
+
+country_event = {
+id = plan_convert.8
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.8"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = BRF_military_support_3_5
+		has_idea = SOL_Imperial_Inquisition_idea
+		has_idea = avitripartitecolleges
+		}
+	NOT = {
+		has_country_flag = conversion8
+	} 
+		} 
+		option = { 
+		name = plan_convert.8.a
+		add_ideas = SmallPlanConverion2
+		set_country_flag = conversion8
+		}
+	}
+##62
+country_event = {
+id = plan_convert.9
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.9"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = CRY_SOL_military_of_the_inquisition_idea2
+		}
+	NOT = {
+		has_country_flag = conversion9
+	} 
+		} 
+		option = { 
+		name = plan_convert.9.a
+		add_ideas = SmallPlanConverion3
+		set_country_flag = conversion9
+		}
+	}
+	
+country_event = {
+id = plan_convert.10
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.10"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = NLR_special_warfare_department_idea
+		}
+	NOT = {
+		has_country_flag = conversion10
+	} 
+		} 
+		option = { 
+		name = plan_convert.10.a
+		add_ideas = .125PlanConversion1
+		set_country_flag = conversion10
+		}
+	}	
+	
+country_event = {
+id = plan_convert.11
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.11"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = NCH_looking_beyond_idea
+		has_idea = YAL_grand_battleplan4
+		has_idea = BAR_undead_slow_and_steady
+		has_idea = FBK_modern_discipline_idea
+		}
+	NOT = {
+		has_country_flag = conversion11
+	} 
+		} 
+		option = { 
+		name = plan_convert.11.a
+		add_ideas = BiggerPlanConversion1
+		set_country_flag = conversion11
+		}
+	}
+
+country_event = {
+id = plan_convert.12
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.12"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = VAN_Partisan_Tactics
+		has_idea = BAL_military_disarray2
+		has_idea = NMS_decentralised_command_idea
+		has_idea = CRY_inexperienced_officers
+		has_idea = FBK_incompetent_generals
+		}
+	NOT = {
+		has_country_flag = conversion12
+	} 
+		} 
+		option = { 
+		name = plan_convert.12.a
+		add_ideas = NegativePlanConversion1
+		set_country_flag = conversion12
+		}
+	}
+	
+country_event = {
+id = plan_convert.13
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.13"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = BRF_military_support_4_5
+		}
+	NOT = {
+		has_country_flag = conversion13
+	} 
+		} 
+		option = { 
+		name = plan_convert.13.a
+		add_ideas = .007PlanConversion1
+		set_country_flag = conversion13
+		}
+	}
+##72	
+country_event = {
+id = plan_convert.14
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.14"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = BRF_military_support_2_5
+		}
+	NOT = {
+		has_country_flag = conversion14
+	} 
+		} 
+		option = { 
+		name = plan_convert.14.a
+		add_ideas = .035PlanConversion1
+		set_country_flag = conversion14
+		}
+	}
+	
+country_event = {
+id = plan_convert.15
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.15"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = BRF_military_support_1_5
+		}
+	NOT = {
+		has_country_flag = conversion15
+	} 
+		} 
+		option = { 
+		name = plan_convert.15.a
+		add_ideas = .015PlanConversion1
+		set_country_flag = conversion15
+		}
+	}	
+		
+country_event = {
+id = plan_convert.16
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.16"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = OLV_lack_of_talent
+		has_idea = BAL_military_disarray
+		has_idea = FBK_purged_communism
+		}
+	NOT = {
+		has_country_flag = conversion16
+	} 
+		} 
+		option = { 
+		name = plan_convert.16.a
+		add_ideas = BigNegativePlanConversion1
+		set_country_flag = conversion16
+		}
+	}			
+	
+country_event = {
+id = plan_convert.17
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.17"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = BAN_equal_command_idea
+		}
+	NOT = {
+		has_country_flag = conversion17
+	} 
+		} 
+		option = { 
+		name = plan_convert.17.a
+		add_ideas = BiggerNegativePlanConversion1
+		set_country_flag = conversion17
+		}
+	}
+	
+country_event = {
+id = plan_convert.18
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.18"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = BAN_equal_command_idea2
+		}
+	NOT = {
+		has_country_flag = conversion18
+	} 
+		} 
+		option = { 
+		name = plan_convert.18.a
+		add_ideas = BiggerNegativePlanConversion1
+		set_country_flag = conversion18
+		}
+	}
+	
+country_event = {
+id = plan_convert.19
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.19"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = BAN_march_to_victory_idea
+		}
+	NOT = {
+		has_country_flag = conversion19
+	} 
+		} 
+		option = { 
+		name = plan_convert.19.a
+		add_ideas = BiggerNegativePlanConversion1
+		set_country_flag = conversion19
+		}
+	}	
+		
+country_event = {
+id = plan_convert.20
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.20"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = OLE_strike_first_idea
+		}
+	NOT = {
+		has_country_flag = conversion20
+	} 
+		} 
+		option = { 
+		name = plan_convert.20.a
+		add_ideas = BiggestPlanConversion1
+		set_country_flag = conversion20
+		}
+	}
+	
+country_event = {
+id = plan_convert.21
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.21"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = WIT_disarray_idea
+		}
+	NOT = {
+		has_country_flag = conversion21
+	} 
+		} 
+		option = { 
+		name = plan_convert.21.a
+		add_ideas = BiggestNegativePlanConversion1
+		set_country_flag = conversion21
+		}
+	}	
+
+country_event = {
+id = plan_convert.22
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_convert.22"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+		OR = {
+		has_idea = BAL_military_disarray3
+		has_idea = FAT_Infantry_Tactics_idea
+		}
+	NOT = {
+		has_country_flag = conversion22
+	} 
+		} 
+		option = { 
+		name = plan_convert.22.a
+		add_ideas = SmallNegativePlanConversion1
+		set_country_flag = conversion22
+		}
+	}	
+##86 or 87
+#####################################################################TURNOFFEVENTS############################################################################################
+
+country_event = {
+id = plan_offconvert.1
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.1"}
+mean_time_to_happen = {
+days = 0
+}
+hidden = yes
+
+trigger = {
+	AND = {
+		NOT = {
+		has_idea = BRZ_combined_officers_training
+		has_idea = CHN_plan_east_prep
+		has_idea = HAU_officer_core
+		has_idea = GRF_general_staff_idea
+		has_idea = NLR_lunar_continental_command_idea
+		has_idea = BRF_military_support_5_5
+		has_idea = scs_hoofington_academy_idea
+		has_idea = LAK_old_friends_idea
+		has_idea = GRU_espiritdecorps
+		has_idea = LUS_lord_staff
+		has_idea = DED_Blood_Guild_idea21
+		has_idea = HLQ_officer_reforms_idea
+		has_idea = YAL_grand_battleplan1
+		has_idea = BAR_combined_staff
+		has_idea = NIM_nimbusian_general_staff2
+		has_idea = CYA_okw
+		has_idea = RIV_NIM_bonus
+		has_idea = FEA_specialised_staff
+		has_idea = ANG_military_academy_idea
+		has_idea = EQC_SOL_unified_command_idea
+		has_idea = AVI_annual_military_exercises
+		has_idea = TRD_a_plan_for_everything_idea_2
+		has_idea = ZES_copy_some_idea
+		has_idea = FBK_bright_generals
+		has_idea = BAL_CES_cooperation
+		has_idea = FAT_Army_Reform_idea
+		}
+		
+	has_country_flag = conversion1
+	}
+} 
+	option = { 
+		name = plan_offconvert.1.a
+		
+		remove_ideas = PlanConverion1
+		clr_country_flag = conversion1
+		}
+	}
+
+country_event = {
+id = plan_offconvert.2
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.2"}
+mean_time_to_happen = {
+days = 0
+}
+hidden = yes	
+	trigger = { 
+	AND = {	
+		NOT = {
+		has_idea = BRZ_the_new_bloodhounds_idea
+		has_idea = CHN_fob_idea
+		has_idea = DED_Blood_Guild_idea22
+		has_idea = ANG_peacekeeping
+		has_idea = AVI_the_strong_arm_of_the_revolution
+		has_idea = ZES_altu_copy_org
+		has_idea = FBK_nimbusian_officers_idea
+		has_idea = FAT_grand_strategy_game
+		}
+		has_country_flag = conversion2
+	} 
+} 
+	option = { 
+		name = plan_offconvert.2.a
+		remove_ideas = PlanConverion2
+		clr_country_flag = conversion2
+		}
+	}
+	
+country_event = {
+id = plan_offconvert.3
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.3"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+	AND = {
+		NOT = {
+		has_idea = BRZ_the_new_bloodhounds_idea
+		has_idea = DED_Blood_Guild_idea23
+		has_idea = AVI_Kriegsamt
+		has_idea = ZES_altu_copy_morale
+		has_idea = FBK_chain_of_command_idea
+		} 
+
+		has_country_flag = conversion3
+		}
+	} 
+	option = { 
+		name = plan_offconvert.3.a
+		remove_ideas = PlanConverion3
+		clr_country_flag = conversion3
+		}
+	}
+	
+country_event = {
+id = plan_offconvert.4
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.4"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+	AND = {
+		NOT = {
+		has_idea = BRZ_the_new_bloodhounds_idea
+		has_idea = DED_Blood_Guild_idea24
+		has_idea = ZES_altu_copy_org_morale
+		}
+
+		has_country_flag = conversion4
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.4.a
+		remove_ideas = PlanConverion4
+		clr_country_flag = conversion4
+		}
+	}
+
+country_event = {
+id = plan_offconvert.5
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.5"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+	AND = {
+		NOT = {
+		has_idea = EQC_army_empowered
+		has_idea = OLV_planning_skills_idea
+		has_idea = PYT_actual_officers
+		has_idea = YAL_grand_battleplan3
+		has_idea = ARA_continous_planning_idea
+		has_idea = WNG_planning_bonus
+		has_idea = NCR_legacy_of_navarro
+		has_idea = MIT_command_council_idea
+		has_idea = CRY_old_guard
+		has_idea = TRD_proffessional_officers_idea
+		has_idea = ZES_gbp_spirit_2
+		}
+
+		has_country_flag = conversion5
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.5.a
+		remove_ideas = BigPlanConverion1
+		clr_country_flag = conversion5
+		}
+	}
+	
+country_event = {
+id = plan_offconvert.6
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.6"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+	AND = {
+		NOT = {
+		has_idea = MIT_command_council_idea2
+		}
+
+		has_country_flag = conversion6
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.6.a
+		remove_ideas = BigPlanConverion2
+		clr_country_flag = conversion6
+		}
+	}
+	
+country_event = {
+id = plan_offconvert.7
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.7"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = {
+	AND = { 
+		NOT = {
+		has_idea = BRF_command_courses
+		has_idea = LUS_lord_staff
+		has_idea = YAL_grand_battleplan1
+		has_idea = CRY_SOL_military_of_the_inquisition_idea
+		has_idea = AVI_found_hq
+		has_idea = TRD_a_plan_for_everything_idea
+		}
+
+		has_country_flag = conversion7
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.7.a
+		remove_ideas = SmallPlanConverion1
+		clr_country_flag = conversion7
+		}
+	}			
+
+
+country_event = {
+id = plan_offconvert.8
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.8"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = {
+	AND = { 
+		NOT = {
+		has_idea = BRF_military_support_3_5
+		has_idea = SOL_Imperial_Inquisition_idea
+		has_idea = avitripartitecolleges
+		}
+
+		has_country_flag = conversion8
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.8.a
+		remove_ideas = SmallPlanConverion2
+		clr_country_flag = conversion8
+		}
+	}
+
+country_event = {
+id = plan_offconvert.9
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.9"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = {
+	AND = { 
+		NOT = {
+		has_idea = CRY_SOL_military_of_the_inquisition_idea2
+		}
+
+		has_country_flag = conversion9
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.9.a
+		remove_ideas = SmallPlanConverion3
+		clr_country_flag = conversion9
+		}
+	}
+	
+country_event = {
+id = plan_offconvert.10
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.10"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = {
+	AND = { 
+		NOT = {
+		has_idea = NLR_special_warfare_department_idea
+		}
+
+		has_country_flag = conversion10
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.10.a
+		remove_ideas = .125PlanConversion1
+		clr_country_flag = conversion10
+		}
+	}	
+	
+country_event = {
+id = plan_offconvert.11
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.11"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = {
+	AND = { 
+		NOT = {
+		has_idea = NCH_looking_beyond_idea
+		has_idea = YAL_grand_battleplan4
+		has_idea = BAR_undead_slow_and_steady
+		has_idea = FBK_modern_discipline_idea
+		}
+
+		has_country_flag = conversion11
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.11.a
+		remove_ideas = BiggerPlanConversion1
+		clr_country_flag = conversion11
+		}
+	}
+
+country_event = {
+id = plan_offconvert.12
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.12"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = {
+	AND = { 
+		NOT = {
+		has_idea = VAN_Partisan_Tactics
+		has_idea = BAL_military_disarray2
+		has_idea = NMS_decentralised_command_idea
+		has_idea = CRY_inexperienced_officers
+		has_idea = FBK_incompetent_generals
+		}
+
+		has_country_flag = conversion12
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.12.a
+		remove_ideas = NegativePlanConversion1
+		clr_country_flag = conversion12
+		}
+	}
+	
+country_event = {
+id = plan_offconvert.13
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.13"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = { 
+	AND = {
+		NOT = {
+		has_idea = BRF_military_support_4_5
+		}
+
+		has_country_flag = conversion13
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.13.a
+		remove_ideas = .007PlanConversion1
+		clr_country_flag = conversion13
+		}
+	}
+
+country_event = {
+id = plan_offconvert.14
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.14"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = {
+	AND = { 
+		NOT = {
+		has_idea = BRF_military_support_2_5
+		}
+
+		has_country_flag = conversion14
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.14.a
+		remove_ideas = .035PlanConversion1
+		clr_country_flag = conversion14
+		}
+	}
+	
+country_event = {
+id = plan_offconvert.15
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.15"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = {
+	AND = { 
+		NOT = {
+		has_idea = BRF_military_support_1_5
+		}
+
+		has_country_flag = conversion15
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.15.a
+		remove_ideas = .015PlanConversion1
+		clr_country_flag = conversion15
+		}
+	}	
+		
+country_event = {
+id = plan_offconvert.16
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.16"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = {
+	AND = { 
+		NOT = {
+		has_idea = OLV_lack_of_talent
+		has_idea = BAL_military_disarray
+		has_idea = FBK_purged_communism
+		}
+
+		has_country_flag = conversion16
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.16.a
+		remove_ideas = BigNegativePlanConversion1
+		clr_country_flag = conversion16
+		}
+	}			
+	
+country_event = {
+id = plan_offconvert.17
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.17"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = {
+	AND = { 
+		NOT = {
+		has_idea = BAN_equal_command_idea
+		}
+
+		has_country_flag = conversion17
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.17.a
+		remove_ideas = BiggerNegativePlanConversion1
+		clr_country_flag = conversion17
+		}
+	}
+	
+country_event = {
+id = plan_offconvert.18
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.18"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = {
+	AND = { 
+		NOT = {
+		has_idea = BAN_equal_command_idea2
+		}
+
+		has_country_flag = conversion18
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.18.a
+		remove_ideas = BiggerNegativePlanConversion1
+		clr_country_flag = conversion18
+		}
+	}
+	
+country_event = {
+id = plan_offconvert.19
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.19"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = {
+	AND = { 
+		NOT = {
+		has_idea = BAN_march_to_victory_idea
+		}
+
+		has_country_flag = conversion19
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.19.a
+		remove_ideas = BiggerNegativePlanConversion1
+		clr_country_flag = conversion19
+		}
+	}	
+		
+country_event = {
+id = plan_offconvert.20
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.20"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = {
+	AND = { 
+		NOT = {
+		has_idea = OLE_strike_first_idea
+		}
+
+		has_country_flag = conversion20
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.20.a
+		remove_ideas = BiggestPlanConversion1
+		clr_country_flag = conversion20
+		}
+	}
+	
+country_event = {
+id = plan_offconvert.21
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.21"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = {
+	AND = { 
+		NOT = {
+		has_idea = WIT_disarray_idea
+		}
+		
+		has_country_flag = conversion21
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.21.a
+		remove_ideas = BiggestNegativePlanConversion1
+		clr_country_flag = conversion21
+		}
+	}	
+
+country_event = {
+id = plan_offconvert.22
+immediate = {log = "[GetDateText]: [Root.GetName]: event plan_offconvert.22"}
+mean_time_to_happen = {
+days = 0
+}	
+hidden = yes
+	trigger = {
+	AND = { 
+		NOT = {
+		has_idea = BAL_military_disarray3
+		has_idea = FAT_Infantry_Tactics_idea
+		}
+
+		has_country_flag = conversion22
+		} 
+	} 
+		option = { 
+		name = plan_offconvert.22.a
+		remove_ideas = SmallNegativePlanConversion1
+		clr_country_flag = conversion22
+		}
+	}

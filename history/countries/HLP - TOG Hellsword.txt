@@ -1,0 +1,81 @@
+﻿capital = 537
+set_research_slots = 5
+
+set_technology = {
+	griffon_race = 1
+}
+
+add_ideas = {
+	proper_science_base
+	modern_society
+}
+
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+generic_DD_template = yes
+generic_CL_template = yes
+
+set_convoys = 200
+
+set_popularities = {
+	democratic = 25
+	fascism = 25
+	communism = 25
+	neutrality = 25
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_stability = 0.50
+
+set_war_support = 0.50
+
+create_country_leader = {
+	name = "Hellsword Council"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Hellsword Council"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "August von Ortelsberg"
+	desc = "wholesome_nerd_desc"
+	picture = "gfx/leaders/HLQ/August_von_Ortelsberg.tga"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = { bookworm }
+}
+
+create_country_leader = {
+	name = "Volkskomitee der Nationalen Befreiung"
+	desc = ""
+	picture = "gfx/leaders/CYA/peoplescouncil.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+	}
+}
+
+set_rule = {
+	can_generate_female_aces = yes
+}

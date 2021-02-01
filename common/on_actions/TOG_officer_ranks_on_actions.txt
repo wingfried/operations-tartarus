@@ -1,0 +1,273 @@
+on_actions = {
+	
+	#OFFICER RANKS
+	on_startup = {
+		effect = {
+			IF = {
+				limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+				every_country = {
+					every_unit_leader = {
+						IF = {
+							limit = {
+								is_operative = no
+								is_navy_leader = no
+								NOT = { has_trait = general1_trait }
+								NOT = { has_trait = general2_trait }
+								NOT = { has_trait = general3_trait }
+								NOT = { has_trait = general4_trait }
+								NOT = { has_trait = general5_trait }
+							}
+
+							IF = {
+								limit = { is_field_marshal = yes }
+								add_unit_leader_trait = general5_trait
+							}
+							ELSE_IF = {
+								limit = {
+									skill > 0
+									skill < 3
+								}
+								IF = {
+									limit = {
+										OR = {
+											has_trait = politically_connected
+											has_trait = career_officer
+											has_trait = war_hero
+										}
+									}
+									add_unit_leader_trait = general2_trait
+								}
+								ELSE = {
+									add_unit_leader_trait = general1_trait
+								}
+							}
+
+							ELSE_IF = {
+								limit = {
+									skill > 2
+									skill < 5
+								}
+								IF = {
+									limit = {
+										OR = {
+											has_trait = politically_connected
+											has_trait = career_officer
+											has_trait = war_hero
+										}
+									}
+									add_unit_leader_trait = general3_trait
+								}
+								ELSE = {
+									add_unit_leader_trait = general2_trait
+								}
+							}
+
+							ELSE_IF = {
+								limit = {
+									skill > 4
+									skill < 7
+								}
+								IF = {
+									limit = {
+										OR = {
+											has_trait = politically_connected
+											has_trait = career_officer
+											has_trait = war_hero
+										}
+									}
+									add_unit_leader_trait = general4_trait
+								}
+								ELSE = {
+									add_unit_leader_trait = general3_trait
+								}
+							}
+
+							ELSE_IF = {
+								limit = {
+									skill > 6
+									skill < 9
+								}
+								add_unit_leader_trait = general4_trait
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_unit_leader_created = {
+		effect = {
+			IF = {
+				limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+				IF = {
+					limit = {
+						is_operative = no
+						is_navy_leader = no
+						NOT = { has_trait = general1_trait }
+						NOT = { has_trait = general2_trait }
+						NOT = { has_trait = general3_trait }
+						NOT = { has_trait = general4_trait }
+						NOT = { has_trait = general5_trait }
+					}
+					
+					IF = {
+						limit = { is_field_marshal = yes }
+						add_unit_leader_trait = general5_trait
+					}
+					ELSE_IF = {
+						limit = {
+							skill > 0
+							skill < 3
+						}
+						IF = {
+							limit = {
+								OR = {
+									has_trait = politically_connected
+									has_trait = career_officer
+									has_trait = war_hero
+								}
+							}
+							add_unit_leader_trait = general2_trait
+						}
+						ELSE = {
+							add_unit_leader_trait = general1_trait
+						}
+					}
+
+					ELSE_IF = {
+						limit = {
+							skill > 2
+							skill < 5
+						}
+						IF = {
+							limit = {
+								OR = {
+									has_trait = politically_connected
+									has_trait = career_officer
+									has_trait = war_hero
+								}
+							}
+							add_unit_leader_trait = general3_trait
+						}
+						ELSE = {
+							add_unit_leader_trait = general2_trait
+						}
+					}
+
+					ELSE_IF = {
+						limit = {
+							skill > 4
+							skill < 7
+						}
+						IF = {
+							limit = {
+								OR = {
+									has_trait = politically_connected
+									has_trait = career_officer
+									has_trait = war_hero
+								}
+							}
+							add_unit_leader_trait = general4_trait
+						}
+						ELSE = {
+							add_unit_leader_trait = general3_trait
+						}
+					}
+
+					ELSE_IF = {
+						limit = {
+							skill > 6
+							skill < 9
+						}
+						add_unit_leader_trait = general4_trait
+					}
+				}
+			}
+		}
+	}
+
+	on_unit_leader_level_up = {
+		effect = {
+			IF = {
+				limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+				IF = {
+					limit = {
+						is_operative = no
+						is_navy_leader = no
+						NOT = { has_trait = general11_trait }
+					}
+					IF = {
+						limit = {
+							has_trait = general1_trait
+							OR = {
+								skill > 2
+								AND = {
+									skill > 0
+									OR = {
+										has_trait = politically_connected
+										has_trait = career_officer
+										has_trait = war_hero
+									}
+								}
+							}
+						}
+						remove_unit_leader_trait = general1_trait
+						add_unit_leader_trait = general2_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general2_trait
+							OR = {
+								skill > 4
+								AND = {
+									skill > 2
+									OR = {
+										has_trait = politically_connected
+										has_trait = career_officer
+										has_trait = war_hero
+									}
+								}
+							}
+						}
+						remove_unit_leader_trait = general2_trait
+						add_unit_leader_trait = general3_trait
+					}
+					ELSE_IF = {
+						limit = {
+							has_trait = general3_trait
+							OR = {
+								skill > 6
+								AND = {
+									skill > 4
+									OR = {
+										has_trait = politically_connected
+										has_trait = career_officer
+										has_trait = war_hero
+									}
+								}
+							}
+						}
+						remove_unit_leader_trait = general3_trait
+						add_unit_leader_trait = general4_trait
+					}
+				}
+			}
+		}
+	}
+
+	on_army_leader_promoted = {
+		effect = {
+			IF = {
+				IF = {
+					limit = { has_game_rule = { rule = officer_ranks option = DEFAULT } }
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+			}
+		}
+	}
+}

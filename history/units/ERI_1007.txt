@@ -1,0 +1,85 @@
+﻿division_template = {
+	name = "New Griffon Infantry Division"			#Infantry Division - kek
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Griffon Infantry Division"			#Infantry Division - kek
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Garrison Division"
+
+	priority = 0
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Mountaineer Division"
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+}
+units = {
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 10601
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3 }
+	division = {
+		#name = "Griffon Infantry Division"
+		location = 1554
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3 }
+}
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "ERI"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 25
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ERI"
+		}
+		requested_factories = 1
+		progress = 0.35
+		efficiency = 12
+	}
+}

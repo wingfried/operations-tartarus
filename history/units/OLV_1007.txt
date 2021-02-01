@@ -1,0 +1,108 @@
+﻿division_template = {
+	name = "Herdeild"			#Infantry Division - kek
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "New Herdeild"			#Infantry Division - kek
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Militia"
+
+	priority = 0
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Mountaineer Division"
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "Fyrsta Herdeild"
+		location = 8043
+		division_template = "Herdeild"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Önnur Herdeild"
+		location = 5041
+		division_template = "Herdeild"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Þriðja Herdeild"
+		location = 10900
+		division_template = "Herdeild"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Fjórða Herdeild"
+		location = 10745
+		division_template = "Herdeild"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Fimmta Herdeild"
+		location = 5091
+		division_template = "Herdeild"
+		start_experience_factor = 0.1 
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "OLV"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 25
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_0
+			creator = "OLV"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 15
+	}
+}
+

@@ -1,0 +1,4614 @@
+ideas = {
+	political_advisor = {
+		SRS_scary_grif_advisor = {
+			picture = SRS_scary_grif
+			allowed = {
+				original_tag = SRS
+			}
+			available = {
+				has_government = communism
+			}
+			traits = { lavclaw_beria_trait }
+		}
+		
+		SRS_young_chick = {
+			picture = GRW_Ludochka
+			allowed = {
+				tag = SRS
+			}
+			available = {
+				has_government = communism
+			}
+
+			traits = { pioneer_activist }
+		}
+
+		SRS_griffon_advisor_1 = {
+			picture = SRS_griffon_advisor_1
+			allowed = {
+				original_tag = SRS
+			}
+			available = {
+				has_government = communism
+			}
+			traits = { minister_of_agriculture }
+			modifier = {
+				stability_weekly = 0.001
+			}
+		}
+
+		SRS_pony_advisor_1 = {
+			picture = SRS_pony_advisor_1
+			allowed = {
+				original_tag = SRS
+			}
+			available = {
+				has_completed_focus = SRS_market_socialism
+			}
+			traits = { capable_administrator }
+		}
+
+		SRS_griffon_advisor_2 = {
+			picture = SRS_griffon_advisor_2
+			allowed = {
+				original_tag = SRS
+			}
+			available = {
+				has_completed_focus = SRS_market_socialism
+			}
+			traits = { economic_organizer }
+		}
+
+		SRS_griffon_advisor_3 = {
+			picture = SRS_griffon_advisor_3
+			allowed = {
+				original_tag = SRS
+			}
+			available = {
+				has_completed_focus = SRS_market_socialism
+			}
+			traits = { popular_figurehead }
+		}
+
+		SRS_generico_1 = {
+			allowed = {
+				tag = SRS
+			}
+			available = {
+
+			}
+
+			traits = { captain_of_industry }
+		}
+
+		SRS_generico_2 = {
+			allowed = {
+				tag = SRS
+			}
+			available = {
+
+			}
+
+			traits = { war_industrialist }
+		}
+
+		SRS_emma_goldgriff = {
+			picture = SRS_emma
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				has_completed_focus = SRS_sickleclaw_obeys_congress
+			}
+			available = {
+				has_government = communism
+				has_country_flag = SRS_unlocked_emma_goldgriff_as_advisor
+				custom_trigger_tooltip = {
+					tooltip = HAS_UNIT_LEADER_GOLDGRIFF
+					hidden_trigger = { has_unit_leader = 9874 }
+				}
+			}
+
+			traits = { inspiration_leader }
+		}
+
+		SRS_mikhail_beakunin = {
+			picture = SRS_beakunin
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				has_completed_focus = SRS_sickleclaw_obeys_congress
+			}
+			available = {
+				has_government = communism
+				has_country_flag = SRS_unlocked_mikhail_beakunin_as_advisor
+				custom_trigger_tooltip = {
+					tooltip = HAS_UNIT_LEADER_BEAKUNIN
+					hidden_trigger = { has_unit_leader = 9872 }
+				}
+			}
+
+			traits = { hero_of_the_revolution }
+		}
+
+		confederation_of_autonomous_cooperatives = {
+			picture = GRW_electronics_manufacturer
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				has_completed_focus = SRS_sickleclaw_obeys_congress
+			}
+			available = {
+				has_government = communism
+				has_completed_focus = SRS_industry_1
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.02
+				industry_repair_factor = 0.02
+				local_resources_factor = 0.05
+			}
+		}
+
+		league_of_skynavian_workers_councils = {
+			picture = GRW_aircraft_manufacturer
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				has_completed_focus = SRS_sickleclaw_obeys_congress
+			}
+			available = {
+				has_government = communism
+				has_completed_focus = SRS_industry_2
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.02
+				industrial_capacity_dockyard = 0.02
+				line_change_production_efficiency_factor = 0.05
+			}
+		}
+
+		syndicate_of_production = {
+			picture = syndicate_of_production
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				has_completed_focus = SRS_sickleclaw_obeys_congress
+			}
+			available = {
+				has_government = communism
+				has_completed_focus = SRS_commonwealth_2d
+			}
+			traits = { syndicate_of_production_trait }
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		syndicate_of_research = {
+			picture = syndicate_of_science
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				has_completed_focus = SRS_sickleclaw_obeys_congress
+			}
+			available = {
+				has_government = communism
+				has_completed_focus = SRS_commonwealth_2b
+			}
+			traits = { syndicate_of_research_trait }
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		syndicate_of_agriculture = {
+			picture = SRS_commonwealth_2c
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				has_completed_focus = SRS_sickleclaw_obeys_congress
+			}
+			available = {
+				has_government = communism
+				has_completed_focus = SRS_commonwealth_2c
+			}
+			traits = { syndicate_of_agriculture_trait }
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		SRS_spy_grif_lar = {
+			allowed = {
+				original_tag = SRS
+				has_dlc = "La Resistance"
+			}
+			available = {
+				has_intelligence_agency = yes
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			picture = SRS_agent_grif
+			traits = { head_of_intelligence_griffon }
+		}
+	}
+
+	tank_manufacturer = {
+		designer = yes
+		SRS_light_medium_modern_tank_manufacturer = {
+
+			picture = SRS_tas_fac
+
+			available = {
+				has_government = communism
+			}
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				cat_light_armor = 0.1
+				cat_medium_armor = 0.1
+			}
+
+			traits = { TOG_light_medium_modern_tank_balanced_manufacturer }
+
+		}
+
+		SRS_heavy_super_heavy_tank_manufacturer_3 = {
+
+			picture = SRS_herzer_armours
+
+			available = {
+				has_government = communism
+			}
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				cat_heavy_armor = 0.1
+			}
+
+			traits = { TOG_heavy_super_heavy_tank_cheap_manufacturer }
+
+		}
+
+		SRS_light_tank_manufacturer = {
+
+			picture = SRS_tankstars
+
+			available = {
+				has_completed_focus = SRS_market_socialism
+			}
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				cat_light_armor = 0.1
+			}
+
+			traits = { TOG_light_tank_fast_manufacturer }
+
+		}
+
+		SRS_medium_modern_tank_manufacturer = {
+
+			picture = SRS_bna
+
+			available = {
+				has_completed_focus = SRS_market_socialism
+			}
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				cat_medium_armor = 0.1
+			}
+
+			traits = { TOG_medium_modern_tank_balanced_manufacturer }
+
+		}
+
+		SRS_heavy_super_heavy_tank_manufacturer = {
+
+			picture = SRS_panzer_utopia
+
+			available = {
+				has_completed_focus = SRS_market_socialism
+			}
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				cat_heavy_armor = 0.1
+			}
+
+			traits = { TOG_heavy_super_heavy_tank_strong_manufacturer }
+
+		}
+
+		SRS_heavy_super_heavy_tank_manufacturer_2 = {
+
+			picture = SRS_retsuko_armory
+
+			available = {
+				has_completed_focus = SRS_market_socialism
+			}
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				cat_heavy_armor = 0.1
+			}
+
+			traits = { TOG_heavy_super_heavy_tank_mobile_manufacturer }
+
+		}
+	}
+
+	materiel_manufacturer = {
+		designer = yes
+		
+		internationalist_armaments = {
+			picture = prolet_airfleet
+			
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				has_completed_focus = SRS_sickleclaw_obeys_congress
+			}
+			available = {
+				has_completed_focus = SRS_debates_3d
+				has_country_flag = SRS_picked_the_internationalist_armaments
+				has_government = communism
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.1
+				magical_tech = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+
+		}
+
+		SRS_infantry_weapons_manufacturer_com = {
+			picture = SRS_idea_bh
+			
+			allowed = {
+				tag = SRS
+			}
+			available = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.10
+				}
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+
+		}
+
+		SRS_infantry_weapons_manufacturer = {
+			picture = SRS_fighting_fox_factory
+			
+			allowed = {
+				tag = SRS
+			}
+			available = {
+				has_completed_focus = SRS_market_socialism
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.05
+					soft_attack = 0.05
+					defense = 0.1
+				}
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+
+		}
+
+		SRS_skynavian_automobile_cooperative = {
+			picture = schneider
+			
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				has_completed_focus = SRS_sickleclaw_obeys_congress
+			}
+			available = {
+				has_country_flag = SRS_picked_the_skynavian_automobile_cooperative
+				has_government = communism
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.1
+			}
+
+			equipment_bonus = {
+				motorized_equipment = {
+					defense = 0.1
+					reliability = 0.05
+				}
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+
+		}
+
+		SRS_mechanized_manufacturer = {
+			picture = generic_motorized_equipment_manufacturer_3
+			
+			allowed = {
+				tag = SRS
+			}
+			available = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				cat_mechanized_equipment = 0.1
+			}
+			
+			traits = { TOG_mechanized_manufacturer_quantity }
+
+		}
+
+		SRS_mechanized_manufacturer_2 = {
+			picture = SRS_beakins
+			
+			allowed = {
+				tag = SRS
+			}
+			available = {
+				has_completed_focus = SRS_market_socialism
+			}
+			
+			research_bonus = {
+				cat_mechanized_equipment = 0.1
+			}
+			
+			traits = { TOG_mechanized_manufacturer_quality }
+
+		}
+
+		SRS_mass_artillery_manufacturer = {
+			picture = SRS_mass_art
+			
+			allowed = {
+				tag = SRS
+			}
+			available = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				artillery = 0.1
+			}
+			
+			traits = { TOG_artillery_quantity_manufacturer }
+		}
+
+		SRS_elite_artillery_manufacturer = {
+			picture = SRS_cannon
+			
+			allowed = {
+				tag = SRS
+			}
+			available = {
+				has_completed_focus = SRS_market_socialism
+			}
+			
+			research_bonus = {
+				artillery = 0.1
+			}
+			
+			traits = { TOG_artillery_quality_manufacturer }
+
+		}
+	}
+
+	army_chief = {
+		syndicate_of_defence = {
+			picture = syndicate_of_defence
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				has_completed_focus = SRS_sickleclaw_obeys_congress
+			}
+			available = {
+				has_government = communism
+				has_completed_focus = SRS_commonwealth_2a
+			}
+			traits = { syndicate_of_defence_trait }
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	}
+
+	industrial_concern = {
+		communalist_manufacturing = {
+			picture = grey_design
+			
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				has_completed_focus = SRS_sickleclaw_obeys_congress
+			}
+			available = {
+				has_completed_focus = SRS_debates_3d
+				has_country_flag = SRS_picked_the_communalist_manufacturing
+				has_government = communism
+			}
+			
+			research_bonus = {
+				industry = 0.1
+				electronics = 0.05
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}
+
+		the_guild_of_free_magicians = {
+			picture = magic_stars
+		
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				has_completed_focus = SRS_sickleclaw_obeys_congress
+			}
+			available = {
+				has_completed_focus = SRS_the_magic_of_socialism
+				has_government = communism
+			}
+			
+			research_bonus = {
+				electronics = 0.05
+				nuclear = 0.1
+			}
+			
+			traits = { nuclear_concern }
+			
+			modifier = {
+				attrition = -0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		SRS_hoffwing_steel = {
+			picture = SRS_hoofwing_steel
+
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				OR = {
+					has_idea = SRS_hoffwing_steel
+					NOT = { #invisible if owns all
+						AND = {
+							OR = {
+								AND = {
+									owns_state = 429
+									VED = { exists = no }
+								}
+								VED = { is_subject_of = ROOT }
+							}
+							OR = {
+								AND = {
+									owns_state = 485
+									FAT = { exists = no }
+								}
+								FAT = { is_subject_of = ROOT }
+							}
+							OR = {
+								AND = {
+									owns_state = 562
+									NTR = { exists = no }
+								}
+								NTR = { is_subject_of = ROOT }
+							}
+						}
+					}
+				}
+				NOT = { has_idea = SRS_northern_steel }
+				NOT = { has_idea = SRS_griffonian_steel }
+			}
+			available = {
+			}
+
+			research_bonus = {
+				excavation_tech = 0.15
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+				country_resource_steel = 15
+				custom_modifier_tooltip = SRS_can_be_expanded_tp
+			}
+		}
+
+		SRS_northern_steel = {
+			picture = SRS_hoofwing_steel
+
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				OR = {
+					has_idea = SRS_northern_steel
+					AND = {
+						OR = { #owns Vedina
+							AND = {
+								owns_state = 429
+								VED = { exists = no }
+							}
+							VED = { is_subject_of = ROOT }
+						}
+						OR = { #owns Griffonian Republic
+							AND = {
+								owns_state = 485
+								FAT = { exists = no }
+							}
+							FAT = { is_subject_of = ROOT }
+						}
+						OR = { #owns Northern Tribes
+							AND = {
+								owns_state = 562
+								NTR = { exists = no }
+							}
+							NTR = { is_subject_of = ROOT }
+						}
+						NOT = { #doesn't own Griffonian Empire
+							OR = {
+								AND = {
+									owns_state = 382
+									GRI = { exists = no }
+								}
+								GRI = { is_subject_of = ROOT }
+							}
+						}
+					}
+				}
+				NOT = { has_idea = SRS_hoffwing_steel }
+				NOT = { has_idea = SRS_griffonian_steel }
+			}
+			available = {
+			}
+
+			research_bonus = {
+				excavation_tech = 0.20
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+				country_resource_steel = 30
+				custom_modifier_tooltip = SRS_can_be_expanded_2_tp
+			}
+		}
+
+		SRS_griffonian_steel = {
+			picture = SRS_hoofwing_steel
+
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				OR = {
+					has_idea = SRS_griffonian_steel
+					AND = {
+						OR = { #owns Vedina
+							AND = {
+								owns_state = 429
+								VED = { exists = no }
+							}
+							VED = { is_subject_of = ROOT }
+						}
+						OR = { #owns Griffonian Republic
+							AND = {
+								owns_state = 485
+								FAT = { exists = no }
+							}
+							FAT = { is_subject_of = ROOT }
+						}
+						OR = { #owns Northern Tribes
+							AND = {
+								owns_state = 562
+								NTR = { exists = no }
+							}
+							NTR = { is_subject_of = ROOT }
+						}
+						OR = { #owns Griffonian Empire
+							AND = {
+								owns_state = 382
+								GRI = { exists = no }
+							}
+							GRI = { is_subject_of = ROOT }
+						}
+					}
+				}
+				NOT = { has_idea = SRS_hoffwing_steel }
+				NOT = { has_idea = SRS_northern_steel }
+			}
+			available = {
+			}
+
+			research_bonus = {
+				excavation_tech = 0.25
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+				country_resource_steel = 60
+				custom_modifier_tooltip = SRS_cant_be_expanded_tp
+			}
+		}
+
+		SRS_little_griff_crystals = {
+			picture = SRS_little_griff_crystals
+
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				OR = {
+					has_idea = SRS_little_griff_crystals
+					NOT = { #invisible if owns all
+						AND = {
+							OR = {
+								AND = {
+									owns_state = 429
+									VED = { exists = no }
+								}
+								VED = { is_subject_of = ROOT }
+							}
+							OR = {
+								AND = {
+									owns_state = 485
+									FAT = { exists = no }
+								}
+								FAT = { is_subject_of = ROOT }
+							}
+							OR = {
+								AND = {
+									owns_state = 562
+									NTR = { exists = no }
+								}
+								NTR = { is_subject_of = ROOT }
+							}
+						}
+					}
+				}
+				NOT = { has_idea = SRS_northern_crystals }
+				NOT = { has_idea = SRS_griffonian_crystals }
+			}
+			available = {
+				
+			}
+
+			research_bonus = {
+				excavation_tech = 0.15
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+				country_resource_crystals = 15
+				custom_modifier_tooltip = SRS_can_be_expanded_tp
+			}
+		}
+
+		SRS_northern_crystals = {
+			picture = SRS_little_griff_crystals
+
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				OR = {
+					has_idea = SRS_northern_crystals
+					AND = {
+						OR = { #owns Vedina
+							AND = {
+								owns_state = 429
+								VED = { exists = no }
+							}
+							VED = { is_subject_of = ROOT }
+						}
+						OR = { #owns Griffonian Republic
+							AND = {
+								owns_state = 485
+								FAT = { exists = no }
+							}
+							FAT = { is_subject_of = ROOT }
+						}
+						OR = { #owns Northern Tribes
+							AND = {
+								owns_state = 562
+								NTR = { exists = no }
+							}
+							NTR = { is_subject_of = ROOT }
+						}
+						NOT = { #doesn't own Griffonian Empire
+							OR = {
+								AND = {
+									owns_state = 382
+									GRI = { exists = no }
+								}
+								GRI = { is_subject_of = ROOT }
+							}
+						}
+					}
+				}
+				NOT = { has_idea = SRS_little_griff_crystals }
+				NOT = { has_idea = SRS_griffonian_crystals }
+			}
+			available = {
+
+			}
+
+			research_bonus = {
+				excavation_tech = 0.20
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+				country_resource_crystals = 30
+				custom_modifier_tooltip = SRS_can_be_expanded_2_tp
+			}
+		}
+
+		SRS_griffonian_crystals = {
+			picture = SRS_little_griff_crystals
+
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				OR = {
+					has_idea = SRS_griffonian_crystals
+					AND = {
+						OR = { #owns Vedina
+							AND = {
+								owns_state = 429
+								VED = { exists = no }
+							}
+							VED = { is_subject_of = ROOT }
+						}
+						OR = { #owns Griffonian Republic
+							AND = {
+								owns_state = 485
+								FAT = { exists = no }
+							}
+							FAT = { is_subject_of = ROOT }
+						}
+						OR = { #owns Northern Tribes
+							AND = {
+								owns_state = 562
+								NTR = { exists = no }
+							}
+							NTR = { is_subject_of = ROOT }
+						}
+						OR = { #owns Griffonian Empire
+							AND = {
+								owns_state = 382
+								GRI = { exists = no }
+							}
+							GRI = { is_subject_of = ROOT }
+						}
+					}
+				}
+				NOT = { has_idea = SRS_little_griff_crystals }
+				NOT = { has_idea = SRS_northern_crystals }
+			}
+			available = {
+				
+			}
+
+			research_bonus = {
+				excavation_tech = 0.25
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+				country_resource_crystals = 60
+				custom_modifier_tooltip = SRS_cant_be_expanded_tp
+			}
+		}
+
+		SRS_nordrot_manufacturing = {
+			picture = SRS_nordrot
+			
+			allowed = {
+				tag = SRS
+			}
+			available = {
+			}
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			    production_factory_max_efficiency_factor = 0.075
+			}
+		}
+
+		SRS_dinkau_constructions = {
+			picture = SRS_dinkau_constructions
+
+			allowed = {
+				tag = SRS
+			}
+			available = {
+			}
+
+			research_bonus = {
+				construction_tech = 0.15
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+			    production_speed_buildings_factor = 0.075
+			}
+		}
+	}
+
+	army_chief = {
+
+		SRS_army_chief_org = {
+			picture = SRS_army_chief_2
+			allowed = {
+				tag = SRS
+			}
+
+			traits = { army_chief_organizational_2 }
+		}
+
+		SRS_army_chief_off = {
+			picture = SRS_army_chief_1
+			allowed = {
+				tag = SRS
+			}
+
+			traits = { army_chief_offensive_1 }
+		}
+
+		SRS_army_chief_def = {
+			picture = LUS_peter_brigand
+			allowed = {
+				tag = SRS
+			}
+
+			traits = { army_chief_defensive_1 }
+		}
+	}
+
+	navy_chief = {
+
+		SRS_navy_chief_decisive_bat = {
+			picture = generic_griffon_politician
+			allowed = {
+				tag = SRS
+			}
+
+			traits = { navy_chief_decisive_battle_2 }
+		}
+
+		SRS_navy_anti_submarine = {
+			picture = LUS_Dormin_Ghalk
+			allowed = {
+				tag = SRS
+			}
+
+			traits = { navy_anti_submarine_2 }
+		}
+	}
+
+	air_chief = {
+
+		SRS_air_close_air_sup = {
+			picture = EQS_sentinel
+			allowed = {
+				tag = SRS
+			}
+
+			traits = { air_close_air_support_2 }
+		}
+
+		SRS_air_chief_all_weather = {
+			picture = generic_griffon_with_monocle
+			allowed = {
+				tag = SRS
+			}
+
+			traits = { air_chief_all_weather_2 }
+		}
+	}
+
+	theorist = {
+		SRS_theorist_portrait_by_vinchers = {
+			picture = SRS_theorist_portrait_by_vinchers
+			allowed = {
+				tag = SRS
+			}
+			#available = { NOT = { has_completed_focus = SRS_commune_2b } }
+			research_bonus = {
+				land_doctrine = 0.075
+				air_doctrine = 0.05
+			}
+
+			traits = { military_theorist }
+		}
+
+		SRS_naval_theorist = {
+			picture = SRS_naval_theorist
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+
+			traits = { naval_theorist }
+		}
+
+		SRS_air_warfare_theorist = {
+			allowed = {
+				tag = SRS
+			}
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			traits = { air_warfare_theorist }
+		}
+	}
+
+	naval_manufacturer = {
+		designer = yes
+
+		plover_cove_shipwrights_collective = {
+			picture = generic_coastal_defense_ships
+			allowed = {
+				tag = SRS
+			}
+			visible = {
+				has_completed_focus = SRS_sickleclaw_obeys_congress
+			}
+			available = {
+				522 = { is_fully_controlled_by = ROOT }
+				has_country_flag = SRS_unlocked_shipwrights_collective_as_naval_designer
+				has_government = communism
+			}
+			research_bonus = {
+				naval_equipment = 0.05
+			}
+			traits = { naval_manufacturer }
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+
+		SRS_naval_quantity_manufacturer = {
+
+			picture = SRS_dinkau_ship_factory
+			
+			available = {
+				has_government = communism
+			}
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+
+			traits = { TOG_ship_quantity }
+
+		}
+		
+		SRS_light_ship_manufacturer = {
+
+			picture = SRS_purple_submarine
+			
+			available = {
+				has_completed_focus = SRS_market_socialism
+			}
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+
+			traits = { TOG_light_ship_quality }
+
+		}
+		
+		SRS_heavy_ship_manufacturer = {
+
+			picture = SRS_griffeidon
+			
+			available = {
+				has_completed_focus = SRS_market_socialism
+			}
+
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+
+			traits = { TOG_heavy_ship_quality }
+
+		}
+
+	}
+
+	high_command = {
+		SRS_army_chief_medic = {
+			picture = SRS_army_chief_medic
+
+			allowed = {
+				tag = SRS
+			}
+
+			visible = {
+			}
+
+			available = {
+			}
+
+			traits = { army_medic_3 }
+		}
+
+		SRS_army_instructor = {
+			#picture = SRS_idea_army_instructor
+
+			allowed = {
+				tag = SRS
+			}
+
+			visible = {
+			}
+
+			available = {
+			}
+
+			traits = { army_instructor_2 }
+		}
+
+		SRS_john_carlini = {
+			picture = SRS_highcommand_carlini
+
+			allowed = {
+				tag = SRS
+			}
+
+			visible = {
+				has_completed_focus = SRS_sickleclaw_obeys_congress
+			}
+
+			available = {
+				has_country_flag = SRS_unlocked_john_carlini_as_high_command
+				custom_trigger_tooltip = {
+					tooltip = HAS_UNIT_LEADER_CARLINI
+					hidden_trigger = { has_unit_leader = 9871 }
+				}
+			}
+
+			traits = { army_concealment_2 }
+		}
+
+		SRS_horson_welles = {
+			picture = SRS_highcommand_horson
+
+			allowed = {
+				tag = SRS
+			}
+
+			visible = {
+				has_completed_focus = SRS_sickleclaw_obeys_congress
+			}
+
+			available = {
+				has_country_flag = SRS_unlocked_horson_welles_as_high_command
+				custom_trigger_tooltip = {
+					tooltip = HAS_UNIT_LEADER_WELLES
+					hidden_trigger = { has_unit_leader = 9870 }
+				}
+			}
+
+			traits = { army_regrouping_1 }
+		}
+
+		SRS_pierre_ponehon = {
+			picture = SRS_highcommand_ponehon
+
+			allowed = {
+				tag = SRS
+			}
+
+			visible = {
+				has_completed_focus = SRS_sickleclaw_obeys_congress
+			}
+
+			available = {
+				has_country_flag = SRS_unlocked_pierre_ponehon_as_high_command
+				has_government = communism
+				custom_trigger_tooltip = {
+					tooltip = HAS_UNIT_LEADER_PONEHON
+					hidden_trigger = { has_unit_leader = 9873 }
+				}
+			}
+
+			traits = { army_commando_3 }
+		}
+
+		SRS_artillery_griff = {
+			picture = SRS_artillery_griff
+			allowed = {
+				tag = SRS
+			}
+
+			traits = { army_artillery_2 }
+		}
+
+		SRS_logistics_griff = {
+			picture = MNC_advisor_13
+			allowed = {
+				tag = SRS
+			}
+
+			traits = { army_logistics_1 }
+		}
+
+		SRS_infantry_griff = {
+			allowed = {
+				tag = SRS
+			}
+
+			traits = { army_infantry_2 }
+		}
+	}
+
+	aircraft_manufacturer = {
+
+		designer = yes
+
+		SRS_aircraft_quantity_manufacturer = {
+			
+			picture = SRS_braunles_aviprogram
+			
+			available = {
+				has_government = communism
+			}
+			
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { TOG_plane_quantity }
+		}
+
+		SRS_fighter_cas_manufacturer = {
+			
+			picture = SRS_flying_pig
+			
+			available = {
+				has_completed_focus = SRS_market_socialism
+			}
+			
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				light_fighter = 0.10
+				cas_bomber = 0.10
+			}
+			
+			traits = { TOG_fighter_cas_quality }
+		}
+		
+		SRS_tactical_strategic_bomber_manufacturer = {
+		
+			picture = SRS_boomers
+			
+			available = {
+				has_completed_focus = SRS_market_socialism
+			}
+			
+			allowed = {
+				tag = SRS
+			}
+
+			research_bonus = {
+				tactical_bomber = 0.10
+				cat_strategic_bomber = 0.10
+			}
+			
+			traits = { TOG_tactical_strategic_bomber_quality }
+		}
+		
+	}
+	
+	country = {
+	
+		SRS_internationalist_problems = {
+			picture = soviet_german_friendship
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.5
+				enemy_justify_war_goal_time = -0.5
+				production_factory_max_efficiency_factor = -0.3
+				production_speed_buildings_factor = -0.3
+				min_export = 0.3
+			}
+		}
+
+		SRS_internationalist_problems_1 = {
+			picture = soviet_german_friendship
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.25
+				enemy_justify_war_goal_time = -0.25
+				production_factory_max_efficiency_factor = -0.15
+				production_speed_buildings_factor = -0.15
+				min_export = 0.15
+			}
+		}
+
+		SRS_communalist_problems = {
+			picture = air_support_focus
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = -0.4
+				improve_relations_maintain_cost_factor = 0.8
+				mobilization_speed = -0.5
+			}
+		}
+
+		SRS_communalist_problems_fin = {
+			picture = air_support_focus
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = -0.1
+				improve_relations_maintain_cost_factor = 0.2
+				mobilization_speed = -0.3
+			}
+		}
+
+		SRS_communalist_problems_1 = {
+			picture = air_support_focus
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = -0.35
+				improve_relations_maintain_cost_factor = 0.7
+				mobilization_speed = -0.4
+			}
+		}
+
+		SRS_communalist_problems_1_fin = {
+			picture = air_support_focus
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = -0.05
+				improve_relations_maintain_cost_factor = 0.1
+				mobilization_speed = -0.2
+			}
+		}
+
+		SRS_communalist_problems_2 = {
+			picture = air_support_focus
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = -0.75
+				improve_relations_maintain_cost_factor = 0.75
+				mobilization_speed = -0.45
+			}
+		}
+
+		SRS_communalist_problems_2_fin = {
+			picture = air_support_focus
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = -0.15
+				improve_relations_maintain_cost_factor = 0.15
+				mobilization_speed = -0.25
+			}
+		}
+
+		SRS_militarised_the_hail_forest = {
+			picture = saf_history_of_segregation_2
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.1
+				war_support_factor = -0.1
+				stability_factor = -0.1
+				mobilization_speed = -0.05
+			}
+		}
+
+		SRS_the_general_congress = {
+			picture = skynavian_socialist_general_congress
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				political_advisor_cost_factor = 0.25
+				high_command_cost_factor = 0.25
+				mobilization_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+				justify_war_goal_time = 0.25
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		SRS_the_general_congress_1 = {
+			picture = skynavian_socialist_general_congress
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				political_advisor_cost_factor = 0.05
+				high_command_cost_factor = 0.05
+				mobilization_laws_cost_factor = 0.05
+				economy_cost_factor = 0.05
+				justify_war_goal_time = 0.05
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		SRS_northern_war = {
+			picture = FRA_army_of_aggression_focus
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				SRS = { exists = yes } 
+				NTR = { exists = yes }
+			}
+
+			modifier = {
+				offensive_war_stability_factor = -0.2
+				justify_war_goal_time = 0.2
+				mobilization_speed = -0.2
+				political_power_factor = -0.2
+				stability_factor = -0.2
+				production_factory_max_efficiency_factor = -0.2
+				production_speed_buildings_factor = -0.2
+
+			}
+		}
+
+		SRS_northern_war_1 = {
+			picture = FRA_army_of_aggression_focus
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				SRS = { exists = yes } 
+				NTR = { exists = yes }
+			}
+
+			modifier = {
+				offensive_war_stability_factor = -0.1
+				justify_war_goal_time = 0.1
+				mobilization_speed = -0.1
+				political_power_factor = -0.1
+				stability_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.1
+
+			}
+		}
+
+		SRS_northern_star = {
+			picture = BAL_peoples_army
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				send_volunteer_size = 6
+				opinion_gain_monthly_same_ideology_factor = 0.1
+				improve_relations_maintain_cost_factor = -0.1
+				enemy_justify_war_goal_time = -0.1
+			}
+		}
+
+		SRS_skynavian_egalitarianism = {
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				political_power_factor = -0.05
+				drift_defence_factor = 0.1
+				conscription_factor = 0.05
+			}
+		}
+
+		SRS_skynavian_egalitarianism_a = {
+			picture = SRS_skynavian_egalitarianism
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				political_power_factor = -0.05
+				drift_defence_factor = 0.1
+				conscription_factor = 0.05
+				global_building_slots_factor = 0.15
+			}
+		}
+
+		SRS_skynavian_egalitarianism_1 = {
+			picture = SRS_skynavian_egalitarianism
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				political_power_factor = -0.05
+				drift_defence_factor = 0.1
+				conscription_factor = 0.1
+				mobilization_speed = 0.1
+			}
+		}
+
+		SRS_skynavian_egalitarianism_1a = {
+			picture = SRS_skynavian_egalitarianism
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				political_power_factor = -0.05
+				drift_defence_factor = 0.1
+				conscription_factor = 0.1
+				mobilization_speed = 0.1
+				global_building_slots_factor = 0.15
+			}
+		}
+
+		SRS_skynavian_egalitarianism_2 = {
+			picture = SRS_skynavian_egalitarianism
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				political_power_factor = -0.05
+				drift_defence_factor = 0.1
+				conscription_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+
+		SRS_skynavian_egalitarianism_2a = {
+			picture = SRS_skynavian_egalitarianism
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				political_power_factor = -0.05
+				drift_defence_factor = 0.1
+				conscription_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+				global_building_slots_factor = 0.15
+			}
+		}
+
+		SRS_the_pan_griffonian_ideal = {
+			picture = BAL_peoples_army
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				send_volunteer_size = 12
+				foreign_subversive_activites = -0.25
+				send_volunteers_tension = -0.25
+				send_volunteer_divisions_required = -0.25
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				improve_relations_maintain_cost_factor = -0.25
+				justify_war_goal_time = -0.25
+				guarantee_cost = -0.1
+				subversive_activites_upkeep = -0.1
+			}
+		}
+
+		SRS_international_socialist_identity = {
+			picture = fourth_international
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				master_ideology_drift = 0.05
+				communism_acceptance = 20
+				lend_lease_tension = -0.20
+				send_volunteers_tension = -0.20
+				join_faction_tension = -0.20
+				opinion_gain_monthly_same_ideology_factor = 0.20
+			}
+		}
+
+		SRS_free_womens_corps = {
+			picture = trotskyite_plot_purged
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				special_forces_cap = 0.1
+				resistance_growth_on_our_occupied_states = 0.1
+				army_core_attack_factor = 0.02
+				army_core_defence_factor = 0.02
+			}
+		}
+
+		SRS_welfare_league = {
+			picture = eng_for_the_good_of_the_revolution
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.02
+				stability_factor = 0.02
+			}
+		}
+
+		SRS_revolution_of_the_people_idea = {
+			picture = nkvd_2
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				conscription_factor = 0.1
+			}
+		}
+
+		SRS_vanguard_idea = {
+			picture = nkvd_2
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				communism_acceptance = 25
+				conscription_factor = 0.1
+			}
+		}
+
+		SRS_internationalist_intelligence_agency_the_idea = {
+			picture = STG_progressive_leader
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				research_speed_factor = 0.02
+				enemy_operative_detection_chance_factor = 0.15
+				own_operative_detection_chance_factor = -0.15
+				decryption_factor = 0.05
+				encryption_factor = 0.05
+			}
+		}
+
+		SRS_centralism_idea = {
+			picture = FRA_national_mobilization_focus
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.1
+			}
+		}
+
+		SRS_confederalism_idea = {
+			picture = FRA_national_mobilization_focus
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+
+		SRS_charter_of_the_srs_republic = {
+			picture = home_of_revolution
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				war_support_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+
+		SRS_armouries_of_peoples = {
+			picture = jap_the_unthinkable_option
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				no_supply_grace = 48
+				minimum_training_level = -0.1
+				out_of_supply_factor = -0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		SRS_vertical_command_structure = {
+			picture = saf_soviet_advisers
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				planning_speed = 0.1
+				resistance_damage_to_garrison = -0.1
+				army_org_factor = 0.05
+			}
+		}
+
+		SRS_horizontal_command_structure = {
+			picture = saf_soviet_advisers
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				dig_in_speed_factor = 0.1
+				resistance_growth_on_our_occupied_states = 0.1
+				army_morale_factor = 0.05
+			}
+		}
+
+		SRS_agrarian_socialism = {
+			picture = generic_agrarian_reform
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				MONTHLY_POPULATION = 0.15
+				min_export = -0.05
+			}
+		}
+
+		SRS_communal_industry = {	
+			picture = eng_spirit_of_the_industrial_revolution
+			allowed = { always = no }
+			available = {
+				has_government  = communism
+			}
+			removal_cost = -1
+	
+			modifier = {
+				global_building_slots_factor = 0.1
+				industrial_capacity_factory = 0.02
+				industrial_capacity_dockyard = 0.02
+				production_speed_buildings_factor = 0.02
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		SRS_weapons_for_the_front = {	
+			picture = MEX_revolutionary_army
+			allowed = { always = no }
+			available = {
+				has_government  = communism
+			}
+			removal_cost = -1
+	
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_bunker_factor = 0.05
+				conversion_cost_civ_to_mil_factor = -0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		SRS_defend_our_homes = {	
+			picture = MEX_revolutionary_army
+			allowed = { always = no }
+			available = {
+				has_government  = communism
+			}
+			removal_cost = -1
+	
+			modifier = {
+				conscription = 0.02
+				training_time_army_factor = -0.1
+			}
+		}
+
+		SRS_socialist_utopia = {	
+			picture = ast_abandon_the_westminster_system_communism
+			allowed = { always = no }
+			available = {
+				has_government = communism
+			}
+			removal_cost = -1
+	
+			modifier = {
+				surrender_limit = 0.1
+				resistance_growth_on_our_occupied_states = 0.1
+				opinion_gain_monthly_factor = 0.1
+				stability_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				research_speed_factor = 0.02
+			}
+		}
+
+		SRS_socialist_utopia_better = {
+			picture = ast_abandon_the_westminster_system_communism
+			allowed = { always = no }
+			available = {
+				has_government = communism
+			}
+			removal_cost = -1
+	
+			modifier = {
+				surrender_limit = 0.2
+				resistance_growth_on_our_occupied_states = 0.2
+				opinion_gain_monthly_factor = 0.2
+				stability_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				research_speed_factor = 0.05
+				army_morale_factor = 0.02
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		SRS_socialist_clergy = {
+			picture = red_star_manufacturing
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				experience_loss_factor = -0.1
+				army_morale_factor = 0.02
+				stability_factor = 0.02
+				non_core_manpower = 0.02
+			}
+		}
+
+		SRS_the_sword_of_the_revolution = {
+			picture = world_revolution
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				resistance_damage_to_garrison = -0.1
+				army_core_attack_factor = 0.05
+				experience_gain_army_factor = 0.1
+				ai_focus_aggressive_factor = 0.5
+			}
+		}
+
+		SRS_the_shield_of_the_revolution = {
+			picture = world_revolution
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				resistance_growth_on_our_occupied_states = 0.1
+				army_core_defence_factor = 0.05
+				experience_loss_factor = -0.1
+				ai_focus_defense_factor = 0.5
+			}
+		}
+
+		### nasty Junta stuff ###
+		SRS_work_camps = {	
+			picture = generic_production_bonus
+			allowed = { always = no }
+			available = {
+				has_government = neutrality
+			}
+			removal_cost = -1
+	
+			modifier = {
+				industry_free_repair_factor = 0.10
+				local_resources_factor = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+
+		SRS_labour_units = {	
+			picture = ast_all_in
+			allowed = { always = no }
+			available = {
+				has_government = neutrality
+			}
+			removal_cost = -1
+	
+			modifier = {
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		SRS_purged_the_military = {
+			picture = anti_soviet_pact
+			allowed = { always = no }
+			available = {
+				has_government = neutrality
+			}
+			removal_cost = -1
+	
+			modifier = {
+				training_time_factor = 0.1
+				planning_speed = -0.1
+				army_morale_factor = -0.1
+				experience_gain_army_factor = -0.1
+			}
+		}
+
+		SRS_martial_law_permanent = {
+			picture = generic_fascism_drift_2
+			allowed = { always = no }
+			available = {
+				has_government = neutrality
+			}
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = -0.1
+			}
+		}
+
+		### depressing commune stuff ###
+		SRS_decentralised_society = {
+			picture = hol_aloof_neutrality
+			allowed = { always = no }
+			available = {
+				has_government = communism
+			}
+			removal_cost = -1
+	
+			modifier = {
+				conscription_factor = -0.15
+				local_resources_factor = -0.15
+				political_power_factor = -0.15
+				stability_factor = 0.15
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				resistance_growth_on_our_occupied_states = 0.1
+				surrender_limit = 0.1
+			}
+		}
+
+		### uplifting pan-griffonian stuff ###
+		SRS_pangriff_constitution = {
+			picture = home_of_revolution
+			allowed = { always = no }
+			available = {
+				has_government = communism
+			}
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.10
+				political_power_factor = 0.10
+				war_support_factor = 0.10
+				army_morale_factor = 0.10
+				guarantee_cost = -0.1
+			}
+		}
+
+		SRS_pangriff_constitution_farm_work = {
+			picture = home_of_revolution
+			allowed = { always = no }
+			available = {
+				has_government = communism
+			}
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.10
+				political_power_factor = 0.10
+				war_support_factor = 0.10
+				army_morale_factor = 0.10
+				guarantee_cost = -0.1
+				min_export = -0.1
+				local_resources_factor = 0.1
+			}
+		}
+
+		SRS_a_volunteer_military = {
+			picture = world_revolution
+			allowed = { always = no }
+			available = {
+				has_government = communism
+			}
+			removal_cost = -1
+	
+			modifier = {
+				conscription_factor = 0.15
+				army_morale_factor = 0.05
+			}
+		}
+
+		SRS_socialist_science = {
+			picture = materialist_manifesto
+			allowed = { always = no }
+			available = {
+				has_government = communism
+			}
+			removal_cost = -1
+	
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+
+		SRS_pangriffonian_identity = {
+			picture = pioneers
+			allowed = { always = no }
+			available = {
+				has_government = communism
+			}
+			removal_cost = -1
+	
+			modifier = {
+				MONTHLY_POPULATION = 0.10
+				conscription_factor = 0.05
+			}
+		}
+
+		SRS_pangriffonian_welfare_league = {
+			picture = eng_for_the_good_of_the_revolution
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.10
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+	
+####MILITARY TREE SHIT####
+
+		SRS_fortification_effort = {
+			picture = generic_wall_line
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+	            production_speed_bunker_factor = 0.2
+		    }
+		}
+
+		SRS_infantry_warfare_1 = {
+			picture = SRS_infantry_warfare
+			allowed = { always = no }
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		SRS_infantry_warfare_2a = {
+			picture = SRS_infantry_warfare
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+	            army_org_factor = -0.05
+				conscription_factor = 0.1
+			}
+				
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}		
+		}
+
+		SRS_infantry_warfare_2b = {
+			picture = SRS_infantry_warfare
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.05
+				conscription_factor = 0.1
+				}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			anti_tank = {
+				ap_attack = 0.1
+				}				
+			}
+		} 
+
+		SRS_infantry_warfare_2c = {
+			picture = SRS_infantry_warfare
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.05
+				conscription_factor = 0.1
+				}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				anti_tank = {
+				    ap_attack = 0.1
+			    }
+			    field_hospital = {
+				    casualty_trickleback = 0.10
+			    } 				
+	        }				
+		} 
+			
+
+		SRS_infantry_warfare_3a = {
+			picture = SRS_infantry_warfare
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				anti_tank = {
+				    ap_attack = 0.1
+			    }						
+			}
+		}
+			
+		SRS_infantry_warfare_3c = {
+			picture = SRS_infantry_warfare
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.05
+				conscription_factor = 0.1
+				}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				anti_tank = {
+				    ap_attack = 0.1
+			    }						
+			}
+	        modifier = {
+				terrain_penalty_reduction = 0.05
+				army_morale_factor = 0.05
+	        }
+		}	
+
+		SRS_infantry_warfare_4a = {
+			picture = SRS_infantry_warfare
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				anti_tank = {
+				    ap_attack = 0.1
+				}				
+			    field_hospital = {
+				    casualty_trickleback = 0.10
+			    }    
+		    } 
+		}
+
+		SRS_infantry_warfare_4c = {
+			picture = SRS_infantry_warfare
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.05
+				conscription_factor = 0.1
+				}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}				
+				anti_tank = {
+				    ap_attack = 0.1
+			    }				
+			    field_hospital = {
+				    casualty_trickleback = 0.10
+			    }    
+		    } 
+	        modifier = {
+				terrain_penalty_reduction = 0.05
+				army_morale_factor = 0.05
+	        }			
+		}	
+
+		SRS_infantry_warfare_5a = {
+			picture = SRS_infantry_warfare
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.05
+				conscription_factor = 0.1
+				}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				anti_tank = {
+				    ap_attack = 0.1
+			    }								
+		    } 
+	        modifier = {
+			terrain_penalty_reduction = 0.05
+			army_morale_factor = 0.05
+	        }			
+		}
+		
+		SRS_infantry_warfare_6 = {
+			picture = SRS_infantry_warfare
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.05
+				conscription_factor = 0.1
+				}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}				
+				anti_tank = {
+				    ap_attack = 0.1
+			    }				
+			    field_hospital = {
+				    casualty_trickleback = 0.10
+			    }    
+		    } 
+	        modifier = {
+				terrain_penalty_reduction = 0.05
+				army_morale_factor = 0.05
+				winter_attrition_factor  = -0.1
+				supply_consumption_factor = -0.05
+	        }			
+		}	
+
+		SRS_modern_warfare_1 = {
+			picture = SRS_modern_warfare
+			allowed = { always = no }
+			removal_cost = -1	
+			
+			modifier = {
+	            army_speed_factor = 0.05 
+			}		
+		} 
+
+		SRS_modern_warfare_2a = {
+			picture = SRS_modern_warfare
+			allowed = { always = no }
+			removal_cost = -1	
+			
+			modifier = {
+	            army_speed_factor = 0.05 
+			}		
+			equipment_bonus = {
+	            artillery = {
+	                soft_attack = 0.05
+					breakthrough = 0.05
+	            }
+	        }				
+		}
+
+		SRS_modern_warfare_2b = {
+			picture = SRS_modern_warfare
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+	            army_speed_factor = 0.05 				
+			}
+	        equipment_bonus = {
+	            category_tanks = {
+					armor_value = 0.05
+	            }
+	            artillery = {
+	                soft_attack = 0.05
+					breakthrough = 0.05
+	            }				
+		  	}
+	    }
+		
+		SRS_modern_warfare_3a = {
+			picture = SRS_modern_warfare
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+	            army_speed_factor = 0.05 				
+			}
+			equipment_bonus = {
+	            category_tanks = {
+					armor_value = 0.05
+	            } 			
+		  	}
+	    }
+
+		SRS_modern_warfare_3b = {
+			picture = SRS_modern_warfare
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+	            army_speed_factor = 0.05 				
+			}
+	            equipment_bonus = {
+	                category_tanks = {
+					    armor_value = 0.05
+	                }
+	                artillery = {
+	                    soft_attack = 0.05
+						breakthrough = 0.05
+	            }					
+		  	}
+	    }		
+			
+		SRS_modern_warfare_4a = {
+			picture = SRS_modern_warfare
+			allowed = { always = no }
+			removal_cost = -1			
+				modifier = {
+			 	    custom_modifier_tooltip = SRS_MW_cruch_modifier1
+	                army_speed_factor = 0.05 
+				}
+	            equipment_bonus = {
+	                artillery = {
+	                    soft_attack = 0.05
+						breakthrough = 0.05
+	            }				
+			}			
+		}
+			
+		SRS_modern_warfare_4b = {
+			picture = SRS_modern_warfare
+			allowed = { always = no }
+			removal_cost = -1	
+			
+			modifier = {
+				custom_modifier_tooltip = SRS_MW_cruch_modifier1
+	            army_speed_factor = 0.05 
+				}
+	            equipment_bonus = {
+	                category_tanks = {
+					    armor_value = 0.05
+	                }	
+	                artillery = {
+	                    soft_attack = 0.05
+						breakthrough = 0.05
+	            }					
+			}			
+		}
+
+		SRS_modern_warfare_5a = {
+			picture = SRS_modern_warfare
+			allowed = { always = no }
+			removal_cost = -1	
+			
+			modifier = {
+			    custom_modifier_tooltip = SRS_MW_cruch_modifier1
+	            army_speed_factor = 0.1
+				}
+				
+	        equipment_bonus = {
+				category_tanks = {
+					armor_value = 0.05
+					breakthrough = 0.05
+					}
+	                artillery = {
+	                    soft_attack = 0.05
+						breakthrough = 0.05
+	            }				   
+		  	}			
+		}
+
+		SRS_modern_warfare_5b = {
+			picture = SRS_modern_warfare
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {	
+	            army_speed_factor = 0.05 
+				}
+	            equipment_bonus = {
+	                category_front_line = {
+	                    breakthrough = 0.1
+	                }			
+	                category_tanks = {
+					armor_value = 0.05
+	                }
+	               	artillery = {
+					breakthrough = 0.05
+	                soft_attack = 0.05	
+	            }				
+		    }			
+		}
+
+		SRS_doctrine_res_bonus = {
+			picture = SRS_doctrine_res_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			research_bonus = {
+				land_doctrine = 0.2
+				naval_doctrine = 0.2
+				air_doctrine = 0.2
+			}
+		}
+
+		SRS_experimental_warfare_2 = {
+			picture = SRS_warfare_experiments
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				line_change_production_efficiency_factor = -0.1
+				custom_modifier_tooltip = SRS_EW_cruch_modifier1			
+			}
+	    }
+
+		SRS_experimental_warfare_3a = {
+			picture = SRS_warfare_experiments
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				line_change_production_efficiency_factor = -0.1
+				custom_modifier_tooltip = SRS_EW_cruch_modifier1			
+				}
+				equipment_bonus = {           
+					magical_infantry = {
+					    defense = 0.05
+				}		
+	        }
+	    }
+			
+		SRS_experimental_warfare_3b = {
+			picture = SRS_warfare_experiments
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {		
+				special_forces_out_of_supply_factor = -0.1
+				custom_modifier_tooltip = SRS_EW_cruch_modifier1				
+				special_forces_cap = 0.1			
+				line_change_production_efficiency_factor = -0.1
+				}
+				equipment_bonus = {           
+					magical_infantry = {
+					    defense = 0.05
+				}			
+	        }
+	    }		
+
+		SRS_experimental_warfare_3c = {
+			picture = SRS_warfare_experiments
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {				
+				line_change_production_efficiency_factor = -0.1
+				custom_modifier_tooltip = SRS_EW_cruch_modifier1			
+				}
+				equipment_bonus = {
+					magical_infantry = {
+					    defense = 0.05
+					}			
+					rocket_artillery_brigade = {
+					    soft_attack = 0.1
+				}			
+	        }
+	    }
+		
+		SRS_experimental_warfare_3d = {
+			picture = SRS_warfare_experiments
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {		
+				line_change_production_efficiency_factor = -0.1
+	            custom_modifier_tooltip = SRS_EW_cruch_modifier1			
+				}
+				equipment_bonus = {
+					magical_infantry = {
+					    defense = 0.05
+					}			
+					rocket_artillery_brigade = {
+					    soft_attack = 0.1
+				}			
+	        }
+	    }
+
+		SRS_experimental_warfare_4a = {
+			picture = SRS_warfare_experiments
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {				
+				line_change_production_efficiency_factor = -0.1
+				custom_modifier_tooltip = SRS_EW_cruch_modifier1			
+				}
+				equipment_bonus = {
+					rocket_artillery_brigade = {
+					    soft_attack = 0.1
+				}			
+	        }
+	    }
+
+		SRS_experimental_warfare_4b = {
+			picture = SRS_warfare_experiments
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {				
+				special_forces_out_of_supply_factor = -0.1
+				special_forces_cap = 0.1			
+				line_change_production_efficiency_factor = -0.1
+				custom_modifier_tooltip = SRS_EW_cruch_modifier1			
+				}
+				equipment_bonus = {
+					magical_infantry = {
+					    defense = 0.05
+					}		
+					rocket_artillery_brigade = {
+					    soft_attack = 0.1
+				}			
+	        }
+	    }
+
+		SRS_experimental_warfare_4c = {
+			picture = SRS_warfare_experiments
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {				
+				line_change_production_efficiency_factor = -0.1
+				custom_modifier_tooltip = SRS_EW_cruch_modifier1
+				}
+				equipment_bonus = {
+					rocket_artillery_brigade = {
+					    soft_attack = 0.1
+				}				
+	        }
+	    }
+
+		SRS_experimental_warfare_4d = {
+			picture = SRS_warfare_experiments
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {				
+				line_change_production_efficiency_factor = -0.1
+				custom_modifier_tooltip = SRS_EW_cruch_modifier1			
+				}
+				equipment_bonus = {
+					magical_infantry = {
+					    defense = 0.05
+					}			
+					rocket_artillery_brigade = {
+						soft_attack = 0.1
+				}			
+	        }
+	    }
+
+		SRS_experimental_warfare_5a = {
+			picture = SRS_warfare_experiments
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {				
+			    special_forces_out_of_supply_factor = -0.1
+				special_forces_cap = 0.1
+				line_change_production_efficiency_factor = -0.1
+				custom_modifier_tooltip = SRS_EW_cruch_modifier1			
+				}
+				equipment_bonus = {           
+					magical_infantry = {
+					defense = 0.05
+				}			
+	        }
+	    }
+		
+		SRS_experimental_warfare_5b = {
+			picture = SRS_warfare_experiments
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {			
+				line_change_production_efficiency_factor = -0.1
+				custom_modifier_tooltip = SRS_EW_cruch_modifier1			
+				}
+				equipment_bonus = {
+					rocket_artillery_brigade = {
+					    soft_attack = 0.1
+					}
+			    category_front_line = {
+				    initiative = 0.05
+				}				
+	        }
+	    }		
+		
+		SRS_experimental_warfare_5c = {
+			picture = SRS_warfare_experiments
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {			
+				special_forces_out_of_supply_factor = -0.1
+				special_forces_cap = 0.1
+				army_magic_infantry_attack_factor = 0.05
+				line_change_production_efficiency_factor = -0.1
+				custom_modifier_tooltip = SRS_EW_cruch_modifier1			
+			}
+				equipment_bonus = {           
+					magical_infantry = {
+					    defense = 0.05
+					}
+			    category_front_line = {
+				    initiative = 0.05
+				}	
+				rocket_artillery_brigade = {
+					soft_attack = 0.1
+				}
+	        }
+	    }				
+		
+
+		
+	####MILITARY TREE HIDDEN IDEAS####
+
+		hidden_ideas = {	
+		SRS_infantry_warfare_cruch = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+	            equipment_bonus = {
+					anti_tank_brigade = {
+				        ap_attack = 0.1
+			        }
+				    mot_anti_tank_brigade = {
+				        ap_attack = 0.1
+			        }
+	            }
+			}
+		}
+		
+	    hidden_ideas = {	
+		SRS_exp_warfare_cruch_warfare_cruch2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+	            equipment_bonus = {
+	                rocket_artillery = {				
+			            soft_attack = 0.1
+					}
+	                motorized_rocket_brigade = {				
+			            soft_attack = 0.1
+					}				
+	                mot_rocket_artillery_brigade = {				
+			            soft_attack = 0.1
+					}
+	            }
+			}
+		}	
+		
+	    hidden_ideas = {
+		SRS_modern_warfare_cruch = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+				equipment_bonus = {
+				    infantry_weapons = {
+					    reliability_factor = 0.05						
+					}
+				    magical_infantry = {
+					    reliability_factor = 0.05				
+					}
+				    artillery = {
+					    reliability_factor = 0.05
+				    }
+				    artillery_brigade = {
+					    reliability_factor = 0.05
+				    }
+				    mot_artillery_brigade = {
+					    reliability_factor = 0.05
+				    }			
+				    armor = {
+					    reliability_factor = 0.05
+				    }
+				    motorized = {
+					    reliability_factor = 0.05
+				    }
+				    mechanized = {
+					    reliability_factor = 0.05
+				    }				
+				    infantry = {
+					    reliability_factor = 0.05
+				    }
+				    infantry_equipment = {
+					    reliability_factor = 0.05
+				    }				
+				    support_equipment = {
+					    reliability_factor = 0.05			
+	                }
+				    anti_tank = {
+					    reliability_factor = 0.05		
+	                }
+				    anti_tank_brigade = {
+					    reliability_factor = 0.05			
+	                }
+				    mot_anti_tank_brigade = {
+					    reliability_factor = 0.05			
+	                }
+				    anti_air = {
+					    reliability_factor = 0.05		
+	                }
+				    anti_air_brigade = {
+					    reliability_factor = 0.05		
+	                }
+				    mot_anti_air_brigade = {
+					    reliability_factor = 0.05			
+	                }		
+				    category_special_forces	 = {
+					    reliability_factor = 0.05		
+	                }
+	                rocket_artillery = {				
+			            reliability_factor = 0.05
+					}
+	                rocket_artillery_brigade = {				
+			            reliability_factor = 0.05
+					}
+	                motorized_rocket_brigade = {				
+			            reliability_factor = 0.05
+					}				
+	                mot_rocket_artillery_brigade = {				
+			            reliability_factor = 0.05
+					}
+	                naval_equipment = {
+			            reliability_factor = 0.05
+	                }
+	                air_equipment = {
+			            reliability_factor = 0.05
+	                }  				
+		        }
+			}
+		}
+		
+	    hidden_ideas = {
+		SRS_experimental_warfare_cruch = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+				equipment_bonus = {			
+					infantry_weapons = {
+					   reliability_factor = 0.1					
+					}
+				    magical_infantry = {
+					    reliability_factor = 0.1				
+					}
+				    artillery = {
+					    reliability_factor = 0.1
+				    }
+				    artillery_brigade = {
+					    reliability_factor = 0.1
+				    }
+				    mot_artillery_brigade = {
+					    reliability_factor = 0.1
+				    }			
+				    armor = {
+					    reliability_factor = 0.1
+				    }
+				    motorized = {
+					    reliability_factor = 0.1
+				    }
+				    mechanized = {
+					    reliability_factor = 0.1
+				    }				
+				    infantry = {
+					    reliability_factor = 0.1
+				    }
+				    infantry_equipment = {
+					    reliability_factor = 0.1
+				    }				
+				    support_equipment = {
+					    reliability_factor = 0.1			
+	                }
+				    anti_tank = {
+					    reliability_factor = 0.1	
+	                }
+				    anti_tank_brigade = {
+					    reliability_factor = 0.1			
+	                }
+				    mot_anti_tank_brigade = {
+					    reliability_factor = 0.1			
+	                }
+				    anti_air = {
+					    reliability_factor = 0.1		
+	                }
+				    anti_air_brigade = {
+					    reliability_factor = 0.1		
+	                }
+				    mot_anti_air_brigade = {
+					    reliability_factor = 0.1			
+	                }		
+				    category_special_forces	 = {
+					    reliability_factor = 0.1		
+	                }
+	                rocket_artillery = {				
+			            reliability_factor = 0.1
+					}
+	                rocket_artillery_brigade = {				
+			            reliability_factor = 0.1
+					}
+	                motorized_rocket_brigade = {				
+			            reliability_factor = 0.1
+					}				
+	                mot_rocket_artillery_brigade = {				
+			            reliability_factor = 0.1
+					}
+	                naval_equipment = {
+			            reliability_factor = 0.1
+	                }
+	                air_equipment = {
+			            reliability_factor = 0.1
+	                } 				
+		        }
+			}
+		}
+		
+	    hidden_ideas = {
+		SRS_military_EWinitiative_cruch = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+				equipment_bonus = {			
+					artillery = {
+						initiative = 0.05
+					}
+					artillery_brigade = {
+						initiative = 0.05
+					}
+					mot_artillery_brigade = {
+						initiative = 0.05
+					}			
+					armor = {
+						initiative = 0.05
+					}
+					motorized = {
+						initiative = 0.05
+					}
+					mechanized = {
+						initiative = 0.05
+					}				
+					infantry = {
+						initiative = 0.05
+					}
+					infantry_equipment = {
+						initiative = 0.05
+					}				
+					engineers_tech = {
+						initiative = 0.05
+					}
+					recon_tech = {
+						initiative = 0.05
+					}
+					anti_tank = {
+						initiative = 0.05
+					}
+					anti_tank_brigade = {
+						initiative = 0.05
+					}
+					mot_anti_tank_brigade = {
+						initiative = 0.05
+					}
+					anti_air = {
+						initiative = 0.05
+					}
+					anti_air_brigade = {
+						initiative = 0.05
+					}
+					mot_anti_air_brigade = {
+						initiative = 0.05
+					}		
+					category_special_forces	 = {
+						initiative = 0.05
+					}
+					rocket_artillery = {				
+						initiative = 0.05
+					}
+					rocket_artillery_brigade = {				
+						initiative = 0.05
+					}
+					motorized_rocket_brigade = {				
+						initiative = 0.05
+					}				
+					mot_rocket_artillery_brigade = {				
+						initiative = 0.05
+					}
+					magical_infantry = {
+						initiative = 0.05
+					} 
+					infantry_weapons = {
+						initiative = 0.05
+					}				
+				}
+			}				
+		}	
+
+
+
+	####ASSORTED EARLY GAME SHIT####
+
+		SRS_doubt_in_sickleclaw = {
+			picture = generic_disjointed_gov
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = {
+				political_power_cost = 0.3
+				stability_factor = -0.05
+			}
+		}
+			
+		SRS_doubt_in_sickleclaw_1 = {
+			picture = generic_disjointed_gov
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = {
+				political_power_cost = 0.1
+			}
+		}
+			
+		SRS_doubt_in_sickleclaw_2 = {
+			picture = generic_disjointed_gov
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = -0.2
+			}
+		}
+			
+		SRS_levee_en_masse = {
+			picture = griffon_army1
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = {
+				conscription = 0.04
+				mobilization_speed = 0.2
+				mobilization_laws_cost_factor = -0.75
+			}
+		}
+			
+		SRS_levee_en_masse_diet = {
+			picture = griffon_army1
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = {
+				conscription = 0.02
+				mobilization_speed = 0.1
+				mobilization_laws_cost_factor = -0.50
+			}
+		}
+			
+		SRS_rev_mil_sov = {
+			picture = nkvd_2
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = {
+				war_support_factor = 0.1
+				political_power_cost = 0.05
+			}
+		}
+			
+		SRS_diet_kgb = {
+			picture = NOR_secret_police_spirit
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = {
+				stability_factor = 0.1
+				political_power_cost = 0.15
+			}
+		}
+			
+		SRS_UITRAF_1 = {
+			picture = tfv_can_conscription_crisis
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = {
+				army_org_factor = -0.15
+				conscription_factor  = -0.30
+			}
+		}
+			
+		SRS_UITRAF_2 = {
+			picture = tfv_can_conscription_crisis
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = {
+				army_org_factor = -0.10
+				conscription_factor  = -0.20
+			}
+		}
+			
+		SRS_UITRAF_3 = {
+			picture = tfv_can_conscription_crisis
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = {
+				army_org_factor = -0.05
+				conscription_factor  = -0.10
+			}
+		}
+			
+		SRS_DOC_1 = {
+			picture = pony_militarization
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = { 
+				army_attack_factor = -0.15
+				army_defence_factor  = -0.15
+			}
+		}
+			
+		SRS_DOC_2 = {
+			picture = pony_militarization
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = { 
+				army_attack_factor = -0.075
+				army_defence_factor  = -0.075
+			}
+		}	
+			
+	####COMMUNISM B-B-B-B-B-B-B-B-BASED????####
+
+		SRS_stalliongradian_mining_aid = {
+			picture = SRS_stalliongradian_mining_aid
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = { 
+				local_resources_factor = 0.10
+			}
+		}
+			
+		SRS_big_fuckin_union = {
+			picture = SRS_big_fuckin_union
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = { 
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+			
+		SRS_further_industrialization_idea = {
+			picture = SRS_further_industrialization_idea
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = { 
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+			
+		SRS_shall_not_be_infringed_1 = {
+			picture = SRS_shall_not_be_infringed
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+
+			modifier = { 
+				war_support_factor = 0.05
+			}
+		}
+
+		SRS_shall_not_be_infringed_2 = {
+			picture = SRS_shall_not_be_infringed
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					defense = 0.1
+					instant = yes
+				}
+			}
+				
+			modifier = { 
+				war_support_factor = 0.1
+				army_infantry_defence_factor = 0.05
+			}
+		}
+			
+		SRS_breab_1 = {
+			picture = SRS_breab
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = {
+				weekly_manpower = 300
+				stability_factor = 0.1
+				MONTHLY_POPULATION = 0.10
+			}
+		}
+			
+		SRS_breab_2 = {
+			picture = SRS_breab 
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = {
+				weekly_manpower = 150
+				stability_factor = 0.05
+			}
+		}
+
+
+
+	####THE GREAT REVOLUTIONARY WAR####
+
+		SRS_industrial_war_effort_1 = {
+			picture = SRS_industrial_war_effortlvl1
+			removal_cost = -1
+			available = {
+				OR = {
+					country_exists = GRI
+					country_exists = FEA
+					country_exists = STW
+					country_exists = BRZ
+					country_exists = PYT
+					country_exists = ROU
+					country_exists = YAL
+					country_exists = KAT
+					country_exists = ANG
+				}
+			}
+				
+			modifier = { 
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				conscription_factor = -0.05
+			}
+		}
+			
+		SRS_industrial_war_effort_2 = {
+			picture = SRS_industrial_war_effortlvl2
+			removal_cost = -1
+			available = {
+				OR = {
+					country_exists = GRI
+					country_exists = FEA
+					country_exists = STW
+					country_exists = BRZ
+					country_exists = PYT
+					country_exists = ROU
+					country_exists = YAL
+					country_exists = KAT
+					country_exists = ANG
+				}
+			}
+				
+			modifier = { 
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				conscription_factor = -0.1
+			}
+		}
+			
+		SRS_industrial_war_effort_3 = {
+			picture = SRS_industrial_war_effortlvl3
+			removal_cost = -1
+			available = {
+				OR = {
+					country_exists = GRI
+					country_exists = FEA
+					country_exists = STW
+					country_exists = BRZ
+					country_exists = PYT
+					country_exists = ROU
+					country_exists = YAL
+					country_exists = KAT
+					country_exists = ANG
+				}
+			}
+				
+			modifier = { 
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				conscription_factor = -0.15
+			}
+		}
+			
+		SRS_recruitment_war_effort_1 = {
+			picture = SRS_recruitment_war_effort
+			removal_cost = -1
+			available = {
+				OR = {
+					country_exists = GRI
+					country_exists = FEA
+					country_exists = STW
+					country_exists = BRZ
+					country_exists = PYT
+					country_exists = ROU
+					country_exists = YAL
+					country_exists = KAT
+					country_exists = ANG
+				}
+			}
+				
+			modifier = { 
+				conscription = 0.02
+				army_org_factor = -0.08
+			}
+		}
+			
+		SRS_recruitment_war_effort_2 = {
+			picture = SRS_recruitment_war_effort
+			removal_cost = -1
+			available = {
+				OR = {
+					country_exists = GRI
+					country_exists = FEA
+					country_exists = STW
+					country_exists = BRZ
+					country_exists = PYT
+					country_exists = ROU
+					country_exists = YAL
+					country_exists = KAT
+					country_exists = ANG
+				}
+			}
+				
+			modifier = { 
+				conscription = 0.04
+				army_org_factor = -0.12
+			}
+		}
+			
+		SRS_recruitment_war_effort_3 = {
+			picture = SRS_recruitment_war_effort
+			removal_cost = -1
+			available = {
+				OR = {
+					country_exists = GRI
+					country_exists = FEA
+					country_exists = STW
+					country_exists = BRZ
+					country_exists = PYT
+					country_exists = ROU
+					country_exists = YAL
+					country_exists = KAT
+					country_exists = ANG
+				}
+			}
+				
+			modifier = { 
+				conscription = 0.06
+				army_org_factor = -0.2
+			}
+		}
+			
+		SRS_elan_war_effort_1 = {
+			picture = SRS_elan_war_effort
+			removal_cost = -1
+			available = {
+				OR = {
+					country_exists = GRI
+					country_exists = FEA
+					country_exists = STW
+					country_exists = BRZ
+					country_exists = PYT
+					country_exists = ROU
+					country_exists = YAL
+					country_exists = KAT
+					country_exists = ANG
+				}
+			}
+				
+			modifier = { 
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				conscription_factor = -0.05
+			}
+		}
+			
+		SRS_elan_war_effort_2 = {
+			picture = SRS_elan_war_effort
+			removal_cost = -1
+			available = {
+				OR = {
+					country_exists = GRI
+					country_exists = FEA
+					country_exists = STW
+					country_exists = BRZ
+					country_exists = PYT
+					country_exists = ROU
+					country_exists = YAL
+					country_exists = KAT
+					country_exists = ANG
+				}
+			}
+				
+			modifier = { 
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				conscription_factor = -0.1
+			}
+		}
+		
+		SRS_elan_war_effort_3 = {
+			picture = SRS_elan_war_effort
+			removal_cost = -1
+			available = {
+				OR = {
+					country_exists = GRI
+					country_exists = FEA
+					country_exists = STW
+					country_exists = BRZ
+					country_exists = PYT
+					country_exists = ROU
+					country_exists = YAL
+					country_exists = KAT
+					country_exists = ANG
+				}
+			}
+				
+			modifier = { 
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				conscription_factor = -0.15
+			}
+		}
+			
+			
+			
+	####FOUR WHOLE REPUBLICAN TREE IDEAS####
+
+		SRS_shits_fucked_radical_1 = {
+			picture = officers_purged
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = { 
+				stability_factor = -0.3
+				political_power_cost = 0.25
+			}
+		}
+			
+		SRS_shits_fucked_radical_2 = {
+			picture = officers_purged
+			removal_cost = -1
+			available = {
+					always = yes
+				}
+				
+			modifier = { 
+				stability_factor = -0.2
+				political_power_cost = 0.15
+			}
+		}
+			
+		SRS_shits_fucked_radical_3 = {
+			picture = officers_purged
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = { 
+				stability_factor = -0.15
+				political_power_cost = 0.05
+			}
+		}
+			
+		SRS_speak_kraut_language = {
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = { 
+				army_morale_factor = 0.10
+				land_reinforce_rate = 0.02
+			}
+		}
+			
+		SRS_planning = {
+			picture = CZE_planning_bonus
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+				
+			modifier = { 
+				max_planning = 0.10
+				planning_speed = 0.10
+			}
+		}
+
+
+
+	####NOOO I DON'T WANT TO STOP BLOBBING FOR TWO YEARS AAAA####
+
+		SRS_herzland_resistance = {
+			picture = GFX_idea_SRS_herzland_resistance
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				resistance_growth = 0.25
+				resistance_damage_to_garrison = 0.25
+				required_garrison_factor = 0.1
+			}
+		}
+			
+		SRS_etranger = {
+			picture = GFX_idea_SRS_etranger
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = 0.10
+			}
+		}
+			
+		SRS_post_war_economic_miracle = {
+			picture = GFX_idea_SRS_post_war_economic_miracle
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+			
+		SRS_land_distribution = {
+			picture = GFX_idea_SRS_land_distribution
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				resistance_decay = 0.25
+				compliance_growth = 0.10
+			}
+		}
+			
+		SRS_resistance_surge = {
+			picture = SRS_resistance_surge
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				resistance_growth = 0.1
+			}
+		}
+			
+		SRS_no_more_nobles = {
+			picture = GFX_idea_SRS_no_more_nobles
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				compliance_growth = 0.15
+			}
+		}
+			
+		SRS_protect_the_worker = {
+			picture = GFX_idea_SRS_protect_the_worker
+			allowed = { always = no }
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = -0.2
+				consumer_goods_factor = 0.1
+				compliance_growth = 0.1
+				starting_compliance = 0.2
+			}
+		}
+		
+		SRS_socialist_market = {
+			picture = chi_hyper_inflation
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.025
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		SRS_socialist_market_2 = {
+			picture = chi_hyper_inflation3
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+		}
+		
+		SRS_socialist_market_3 = {
+			picture = chi_hyper_inflation5
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+			}
+		}
+		
+		SRS_redirected_spending = {
+			picture = capital_outflow
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				research_speed_factor = 0.1
+			}
+		}
+		
+		SRS_trouble_no_more = {
+			picture = generic_democratic_drift_bonus
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		
+		SRS_motorized_army = {
+			picture = FRA_motorized_focus
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+		}
+
+		SRS_air_force_research_institute_idea = {
+			picture = generic_air_research
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.1
+			}
+		}
+
+		SRS_surgical_precision_idea = {
+			picture = air_support_focus
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				air_cas_present_factor = 0.1
+			}
+		}
+
+		SRS_explosive_filler_idea = {
+			picture = air_war_plans_division_focus
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			equipment_bonus = {
+				category_fighter = {
+					air_attack = 0.10
+				}
+				category_heavy_fighter = {
+					air_attack = 0.10
+				}
+			}
+		}
+
+		SRS_superior_training_idea = {
+			picture = generic_air_bonus
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			equipment_bonus = {
+				category_fighter = {
+					air_agility = 0.10
+				}
+			}
+		}
+
+		SRS_skynavia_rules_the_waves_idea = {
+			picture = generic_sea_focused_navy
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				experience_gain_navy_factor = 0.1
+			}
+
+			research_bonus = {
+				naval_doctrine = 0.15
+			}
+		}
+
+		SRS_competent_admiralty_idea = {
+			picture = BAL_officer
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				spotting_chance = 0.10
+				naval_speed_factor = 0.05
+				naval_coordination = 0.05
+			}
+		}
+
+		SRS_fund_the_navy_idea = {
+			picture = chi_hyper_inflation2
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = -0.15
+				industrial_capacity_dockyard = 0.25
+				industrial_capacity_factory = -0.15
+			}
+		}
+
+		SRS_modern_convoys_idea = {
+			picture = FBK_advisor29
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.10
+					maximum_speed = 0.10
+					instant = yes
+				}
+			}
+		}
+
+		SRS_cheap_cruisers_idea = {
+			picture = generic_navy_bonus
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			
+			equipment_bonus = {
+				cl_tech = {
+					build_cost_ic = -0.10
+					reliability = -0.02
+					armor_value = -0.05
+					instant = yes
+				}
+				ca_tech = {
+					build_cost_ic = -0.10
+					reliability = -0.02
+					armor_value = -0.05
+					instant = yes
+				}
+			}
+		}
+
+		SRS_reforge_enthus = {
+		    #picture = 
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			modifier = {
+				stability_weekly = 0.006
+	        }
+		}
+
+		SRS_better_electronics_idea = {
+		    picture = generic_flexible_foreign_policy2
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			equipment_bonus = {
+				logistics_company = {
+					supply_consumption_factor = -0.06
+					fuel_consumption_factor = -0.03
+					instant = yes
+				}
+				signal_company = {
+					initiative = 0.08
+					instant = yes
+				}
+			}
+		}
+
+		SRS_better_industrial_equipment_idea = {
+		    picture = generic_flexible_foreign_policy
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			equipment_bonus = {
+				engineer = {
+					entrenchment = 1.5
+					instant = yes
+				}
+				maintenance_company = {
+					reliability = 0.03
+					equipment_capture_factor = 0.03
+
+					instant = yes
+				}
+			}
+		}
+
+		SRS_lessons_of_the_civil_war_idea = {
+		    picture = chi_wargaming_division
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			modifier = {
+				planning_speed = 0.05
+				mobilization_speed = 0.10
+			}
+		}
+
+		SRS_on_to_griffenheim_GRI_idea = {
+		    picture = generic_purge
+			removal_cost = -1
+			available = {
+				GRI = { exists = yes }
+			}
+			targeted_modifier = {
+				tag = GRI
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		SRS_on_to_griffenheim_FEA_idea = {
+		    picture = generic_purge
+			removal_cost = -1
+			available = {
+				FEA = { exists = yes }
+			}
+			targeted_modifier = {
+				tag = FEA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		SRS_on_to_griffenheim_STW_idea = {
+		    picture = generic_purge
+			removal_cost = -1
+			available = {
+				STW = { exists = yes }
+			}
+			targeted_modifier = {
+				tag = STW
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		SRS_on_to_griffenheim_BRZ_idea = {
+		    picture = generic_purge
+			removal_cost = -1
+			available = {
+				BRZ = { exists = yes }
+			}
+			targeted_modifier = {
+				tag = BRZ
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		SRS_on_to_griffenheim_PYT_idea = {
+		    picture = generic_purge
+			removal_cost = -1
+			available = {
+				PYT = { exists = yes }
+			}
+			targeted_modifier = {
+				tag = PYT
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		SRS_on_to_griffenheim_ROU_idea = {
+		    picture = generic_purge
+			removal_cost = -1
+			available = {
+				ROU = { exists = yes }
+			}
+			targeted_modifier = {
+				tag = ROU
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		SRS_on_to_griffenheim_YAL_idea = {
+		    picture = generic_purge
+			removal_cost = -1
+			available = {
+				YAL = { exists = yes }
+			}
+			targeted_modifier = {
+				tag = YAL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		SRS_on_to_griffenheim_KAT_idea = {
+		    picture = generic_purge
+			removal_cost = -1
+			available = {
+				KAT = { exists = yes }
+			}
+			targeted_modifier = {
+				tag = KAT
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		SRS_on_to_griffenheim_ANG_idea = {
+		    picture = generic_purge
+			removal_cost = -1
+			available = {
+				ANG = { exists = yes }
+			}
+			targeted_modifier = {
+				tag = ANG
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		SRS_victory_is_ours_idea = {
+			picture = FRA_national_mobilization_focus
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			modifier = {
+				non_core_manpower = 0.04
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		SRS_onwards_idea = {
+			picture = FRA_scw_intervention_nationalists_focus
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			modifier = {
+				conscription = 0.02
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_morale_factor = 0.05
+				war_support = 0.15
+			}
+		}
+
+		SRS_consolidated_gunmakers_union_idea = {
+			picture = ast_volunteer_defence_corps
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.04
+					reliability = 0.02
+					instant = yes
+				}
+			}
+		}
+
+		SRS_ready_for_business_idea = {
+			picture = generic_economic_increase
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			modifier = {
+				trade_opinion_factor = 0.50
+			}
+		}
+
+		SRS_our_shortcut_idea = {
+			picture = chi_war_of_resistance2
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			modifier = {
+				stability_weekly = -0.005
+				war_support_weekly = -0.005
+				political_power_gain = -0.10
+			}
+		}
+
+		SRS_to_victory_idea = {
+			picture = workers_culture_stg
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0.25
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_arms_factory_factor = 0.25
+			}
+		}
+
+		SRS_to_victory_2_idea = {
+			picture = workers_culture_stg
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0.25
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_arms_factory_factor = 0.25
+				production_speed_infrastructure_factor = 0.25
+			}
+		}
+
+		SRS_slow_and_steady_idea = {
+			picture = feat_company_5
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				political_power_gain = 0.05
+			}
+		}
+
+		SRS_slow_and_steady_2_idea = {
+			picture = feat_company_5
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				political_power_gain = 0.05
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+
+		SRS_war_exhaustion = {
+			picture = unhappy_army_3
+			removal_cost = -1
+			cancel = {
+				has_war = no
+			}
+			modifier = {
+				stability_factor = 0.35
+				war_support_factor = 0.35
+				stability_weekly = -0.01
+				war_support_weekly = -0.01
+			}
+		}
+
+		SRS_deals_with_communalists_idea = {
+			picture = broken_resistance
+			removal_cost = -1
+			cancel = {
+				has_war = no
+			}
+			modifier = {
+				political_power_gain = -0.5
+				production_speed_arms_factory_factor = -0.5
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_dockyard_factor = -0.5
+				production_speed_infrastructure_factor = 0.1
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+			}
+		}
+
+		SRS_military_academy_idea = {
+			picture = generic_research_bonus
+			removal_cost = -1
+			research_bonus = {
+				land_doctrine = 0.05
+			}
+		}
+
+		SRS_war_college_idea = {
+			picture = generic_research_bonus
+			removal_cost = -1
+			research_bonus = {
+				land_doctrine = 0.15
+			}
+		}
+		
+		SRS_research_thingy_idea = {
+			picture = jap_duplicate_research
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+	     	research_bonus = {
+				infantry_weapons = 0.15
+				artillery = 0.15
+				support_tech = 0.15
+				armor = 0.15
+				motorized_equipment = 0.15
+				naval_equipment = 0.15
+				air_equipment = 0.15
+				land_doctrine = 0.15
+				air_doctrine = 0.15
+				naval_doctrine = 0.15
+				industry = -0.10
+				electronics = -0.10
+			}
+		}
+
+		SRS_VED_resources_idea = {
+			#picture = 
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.20
+			}
+		}
+
+		SRS_tribal_aux_idea = {
+			#picture = 
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}
+
+		SRS_volunteer_idea = {
+			modifier = {
+				send_volunteer_size = 3
+				air_volunteer_cap = 100
+			}
+		}
+
+		SRS_STG_factory_idea = {
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		SRS_STG_research_idea = {
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		SRS_compliance_idea = {
+			modifier = {
+				compliance_growth = 0.50
+			}
+		}
+
+		SRS_STG_our_mining_effort_idea_1 = {
+			modifier = {
+				country_resource_chromium = -4
+				country_resource_aluminium = -10
+			}
+		}
+
+		SRS_STG_their_mining_effort_idea_1 = {
+			modifier = {
+				country_resource_chromium = 4
+				country_resource_aluminium = 10
+			}
+		}
+
+		SRS_seasonal_workers_idea = {
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+
+		SRS_STG_officer_exchange_idea = {
+			modifier = {
+				training_time_factor = -0.05
+			}
+		}
+
+		SRS_art_of_war_idea = {
+			modifier = {
+				attrition = -0.05
+				unit_upkeep_attrition_factor = -0.05
+			}
+		}
+
+		SRS_GRW_power_of_the_word_idea = {
+			modifier = {
+				consumer_goods_factor = -0.015
+			}
+		}
+
+		SRS_FAT_consumer_goods_idea_1 = {
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		SRS_FAT_consumer_goods_idea_1_b = { #SRS
+			modifier = {
+				consumer_goods_factor = -0.02
+				trade_opinion_factor = 0.25
+			}
+			targeted_modifier = {
+				tag = FAT
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+
+		SRS_FAT_consumer_goods_idea_1_c = { #FAT
+			modifier = {
+				consumer_goods_factor = -0.02
+				trade_opinion_factor = 0.25
+			}
+			targeted_modifier = {
+				tag = SRS
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+
+		SRS_FAT_consumer_goods_idea_2 = {
+			modifier = {
+				consumer_goods_factor = -0.04
+			}
+		}
+
+		SRS_FAT_consumer_goods_idea_2_b = { #SRS
+			modifier = {
+				consumer_goods_factor = -0.04
+				trade_opinion_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = FAT
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+
+		SRS_FAT_consumer_goods_idea_2_c = { #FAT
+			modifier = {
+				consumer_goods_factor = -0.04
+				trade_opinion_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SRS
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+
+		SRS_unlikely_membership_idea = {
+			modifier = {
+				conscription = 0.01
+			}
+		}
+
+		SRS_heal_scars_idea = {
+			modifier = {
+				production_speed_buildings_factor = 0.08
+			}
+		}
+
+		SRS_new_life_idea = {
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		SRS_Sky_vs_FoE_idea = {
+			modifier = {
+				justify_war_goal_time = -0.1
+				opinion_gain_monthly_same_ideology_factor = 0.25
+			}
+		}
+	}
+}

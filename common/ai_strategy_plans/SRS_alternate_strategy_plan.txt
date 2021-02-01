@@ -1,0 +1,532 @@
+SRS_alternate_communism_1 = {
+	name = "Asper Sickleclaw takes control of Skynavia and follows the internationalist plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SRS
+
+	}
+
+	enable = {
+
+		OR = {
+			has_country_flag = SRS_AI_COMMUNIST_ASPER_INTERNATIONALIST
+			has_game_rule = {
+				rule = SRS_ai_behavior
+				option = COMMUNIST_ASPER_INTERNATIONALIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		#BASE
+		SRS_finishing_touches
+		SRS_sickleclaw_betrays_congress
+		SRS_civwar_end
+		SRS_national_security
+
+		SRS_rev_mil_soviet
+
+		#FIX ARMY
+		SRS_conscript_army
+		SRS_lessons_of_the_civil_war
+		SRS_cleanse_the_army
+		SRS_loyalty_of_the_generals
+		SRS_Retire_disloyal_lieutenants
+		SRS_hardliner_penal_battalions
+		SRS_revolutionary_discipline
+		SRS_rebuild_thechain_of_command
+
+		#NETORARE WAR
+		SRS_ntrwar_commie
+		SRS_far_north_republic
+		SRS_preparing_for_next_war
+		SRS_infantry_warfare
+		SRS_standardized_infantry_equipment
+
+		#FIX ECONOMY
+		SRS_industrialization_effort
+		SRS_internationalist_industrialization
+		SRS_unfinished_urban_projects
+		SRS_industry_dinkau
+		SRS_industry_bluffhead
+		SRS_interconnectedness
+		SRS_stalliongrad_mining_equipment
+		SRS_stalliongrad_education_aid
+		SRS_sweet_oil
+		SRS_urban_education
+		SRS_further_industrialization
+		SRS_inland_industry
+		SRS_military_industry_focus
+
+		SRS_defend_the_revolution
+		SRS_commie_yeetvedina
+
+		SRS_plentiful_is_the_bread
+		SRS_that_keeps_the_people_fed
+		SRS_plentiful_are_the_swords
+		SRS_that_keep_the_people_safe
+		SRS_breathe_skynavia
+		SRS_the_northern_star
+
+		#FAT WAR
+		SRS_every_griffon_a_soldier
+		SRS_winter_training
+		SRS_tankbusters
+		SRS_field_medicine
+		SRS_relentless_assault
+		SRS_dreams_of_an_air_force
+		SRS_purchase_fighters
+		SRS_air_force_research_institure
+		SRS_support_our_troops
+		SRS_develop_the_stormers
+		SRS_surgical_precision
+		SRS_unveil_the_2
+		SRS_avenge_986
+		SRS_north_united
+		SRS_commie_yeetbrantbeak
+		SRS_kemerskai_fate
+		SRS_conscription_feform
+		SRS_education_reform
+		SRS_economic_reform
+
+		#GRI WAR
+		SRS_military_academy
+		SRS_war_college
+		SRS_humble_naval_beginnings
+		SRS_open_dinkau_shipyard
+		SRS_skynavian_patrol
+		SRS_greater_ambitions
+		SRS_a_raiding_fleet
+		SRS_form_the_seabattalions
+		SRS_on_to_griffenheim
+		SRS_great_patriotic_war
+		SRS_arise_vast_country
+		SRS_true_revolutionaries
+		SRS_arise_for_deadly_fight
+		SRS_order_4414
+		SRS_on_ne_passe_pas
+
+		SRS_victory_is_ours
+		SRS_herzland_conquered
+
+		SRS_postwar_prosperity
+		SRS_sert_emancipation
+		SRS_land_redistribution
+		SRS_revoke_the_privilegia
+		SRS_gulag_industrialists
+		SRS_protecc_the_worker
+
+		SRS_unite_griffonkind
+		SRS_core_universities
+		SRS_core_backwaters
+		SRS_core_griffenheim
+		SRS_core_feathisians
+		SRS_core_doggos
+		SRS_foreign_legion
+
+		SRS_revenge
+		SRS_herzland_nobility_punishment
+		SRS_herzland_clergy_punishment
+		SRS_bestboi
+		SRS_all_is_well
+		SRS_ultimatum_west_griffonia
+		SRS_ultimatum_aquileia
+		SRS_coring_aquileia
+		SRS_ultimatum_evivalley_westbank
+		SRS_ultimatum_evivalley_eastbank
+		SRS_ultimatum_cyanolisia_plus_asterion
+		SRS_coring_evivalley
+		SRS_ultimatum_east_griffonia
+		SRS_ultimatum_wingbardy
+		SRS_coring_wingbardy
+
+		SRS_pistol_makin_colt
+		SRS_rifle_makin_mare
+		SRS_shell_makin_griff
+		SRS_fight_imperial_hordes
+
+	}
+
+	research = {
+		ai_basic_start = 75.0
+		ai_continued_start = 60.0
+		land_doctrine = 50.0
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		partial_economic_mobilisation = 40000
+		SRS_young_chick = 800
+		SRS_scary_grif_advisor = 400
+		SRS_griffon_advisor_1 = 400
+		SRS_infantry_griff = 100
+		SRS_army_instructor = 100
+		SRS_army_chief_org = 100
+
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+SRS_alternate_communism_2 = {
+	name = "Asper Sickleclaw takes control of Skynavia and follows the communalist plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SRS
+
+	}
+
+	enable = {
+
+		OR = {
+			has_country_flag = SRS_AI_COMMUNIST_ASPER_COMMUNALIST
+			has_game_rule = {
+				rule = SRS_ai_behavior
+				option = COMMUNIST_ASPER_COMMUNALIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		#BASE
+		SRS_finishing_touches
+		SRS_sickleclaw_betrays_congress
+		SRS_civwar_end
+		SRS_national_security
+
+		#FIX ECONOMY
+		SRS_industrialization_effort
+		SRS_communalist_industrialization
+		SRS_link_up_communes
+		SRS_small_scale_dinkau
+		SRS_small_scale_bluffhead
+		SRS_consolidated_gunmakers_union
+		SRS_mass_unionization
+		SRS_stalliongrad_mining_equipment
+		SRS_stalliongrad_education_aid
+		SRS_urban_education
+		SRS_further_industrialization
+		SRS_inland_industry
+		SRS_civillian_industry_focus
+		SRS_plentiful_is_the_bread
+		SRS_that_keeps_the_people_fed
+		SRS_plentiful_are_the_swords
+		SRS_that_keep_the_people_safe
+		SRS_breathe_skynavia
+		SRS_the_northern_star
+
+		SRS_rev_mil_soviet
+
+		#FIX ARMY
+		SRS_conscript_army
+		SRS_lessons_of_the_civil_war
+		SRS_cleanse_the_army
+		SRS_loyalty_of_the_generals
+		SRS_Retire_disloyal_lieutenants
+		SRS_hardliner_penal_battalions
+		SRS_revolutionary_discipline
+		SRS_rebuild_thechain_of_command
+
+		#NETORARE WAR
+		SRS_ntrwar_commie
+		SRS_far_north_republic
+		SRS_preparing_for_next_war
+		SRS_infantry_warfare
+		SRS_standardized_infantry_equipment
+
+		SRS_defend_the_revolution
+		SRS_commie_yeetvedina
+
+		#FAT WAR
+		SRS_every_griffon_a_soldier
+		SRS_winter_training
+		SRS_tankbusters
+		SRS_field_medicine
+		SRS_relentless_assault
+		SRS_dreams_of_an_air_force
+		SRS_purchase_fighters
+		SRS_air_force_research_institure
+		SRS_support_our_troops
+		SRS_develop_the_stormers
+		SRS_surgical_precision
+		SRS_unveil_the_2
+		SRS_avenge_986
+		SRS_north_united
+		SRS_commie_yeetbrantbeak
+		SRS_kemerskai_fate
+		SRS_conscription_feform
+		SRS_education_reform
+		SRS_economic_reform
+
+		#GRI WAR
+		SRS_military_academy
+		SRS_war_college
+		SRS_humble_naval_beginnings
+		SRS_open_dinkau_shipyard
+		SRS_skynavian_patrol
+		SRS_greater_ambitions
+		SRS_a_raiding_fleet
+		SRS_form_the_seabattalions
+		SRS_on_to_griffenheim
+		SRS_great_patriotic_war
+		SRS_arise_vast_country
+		SRS_true_revolutionaries
+		SRS_arise_for_deadly_fight
+		SRS_order_4414
+		SRS_on_ne_passe_pas
+
+		SRS_victory_is_ours
+		SRS_herzland_conquered
+
+		SRS_postwar_prosperity
+		SRS_sert_emancipation
+		SRS_land_redistribution
+		SRS_revoke_the_privilegia
+		SRS_gulag_industrialists
+		SRS_protecc_the_worker
+
+		SRS_unite_griffonkind
+		SRS_core_universities
+		SRS_core_backwaters
+		SRS_core_griffenheim
+		SRS_core_feathisians
+		SRS_core_doggos
+		SRS_foreign_legion
+
+		SRS_revenge
+		SRS_herzland_nobility_punishment
+		SRS_herzland_clergy_punishment
+		SRS_bestboi
+		SRS_all_is_well
+		SRS_ultimatum_west_griffonia
+		SRS_ultimatum_aquileia
+		SRS_coring_aquileia
+		SRS_ultimatum_evivalley_westbank
+		SRS_ultimatum_evivalley_eastbank
+		SRS_ultimatum_cyanolisia_plus_asterion
+		SRS_coring_evivalley
+		SRS_ultimatum_east_griffonia
+		SRS_ultimatum_wingbardy
+		SRS_coring_wingbardy
+
+		SRS_pistol_makin_colt
+		SRS_rifle_makin_mare
+		SRS_shell_makin_griff
+		SRS_fight_imperial_hordes
+
+	}
+
+	research = {
+		ai_basic_start = 75.0
+		ai_continued_start = 60.0
+		land_doctrine = 50.0
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		partial_economic_mobilisation = 40000
+		SRS_young_chick = 800
+		SRS_scary_grif_advisor = 400
+		SRS_griffon_advisor_1 = 400
+		SRS_infantry_griff = 100
+		SRS_army_instructor = 100
+		SRS_army_chief_org = 100
+
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+SRS_consumed_by_FAT = {
+	name = "Asper Sickleclaw goes pragmatic"
+	desc = ""
+
+	allowed = {
+		original_tag = SRS
+
+	}
+
+	enable = {
+
+		OR = {
+			has_country_flag = SRS_AI_JOIN_FAT
+			has_game_rule = {
+				rule = SRS_ai_behavior
+				option = JOIN_FAT
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		#BASE
+		SRS_finishing_touches
+		SRS_sickleclaw_betrays_congress
+		SRS_civwar_end
+		SRS_national_security
+
+		#START
+		SRS_road_of_pragmatism
+		SRS_heal_the_scars
+		SRS_new_life_initiative
+
+		#FIX ARMY
+		SRS_lessons_of_the_civil_war
+		SRS_cleanse_the_army
+		SRS_loyalty_of_the_generals
+		SRS_Retire_disloyal_lieutenants
+		SRS_hardliner_penal_battalions
+		SRS_revolutionary_discipline
+		SRS_rebuild_thechain_of_command
+
+		SRS_the_sickleclaw_doctrine
+
+		#EVERGREEN
+		SRS_operation_evergreen
+		SRS_tame_the_wilderness
+		SRS_tribal_auxiliaries
+		SRS_seasonal_workers
+
+		#PROTECC
+		SRS_fortress_skynavia
+		SRS_border_fortification
+		SRS_lil_griff_anti_monarchist_rampart
+		SRS_bro_anti_capitalist_rampart
+		SRS_dinkau_wall
+
+		#STALLIONGRAD
+		SRS_stalliongrad_cooperation
+		SRS_workers_tour_of_duty
+		SRS_pan_socialist_tech_exchange
+		SRS_collective_mining_effort
+
+		#ECONOMY
+		SRS_market_socialism
+		SRS_black_thing_under_us
+		SRS_centralize_communal_factories
+		SRS_cut_social_spending
+		SRS_education_funding
+		SRS_ostfloy_infrastructure
+		SRS_start_extracting
+		SRS_money_coming_in
+		SRS_far_northern_academy
+		SRS_backup_plan
+		SRS_military_investments
+		SRS_start_up_air_industry
+		SRS_motorized_army
+		SRS_invest_in_synthetic_rubber
+		SRS_come_again_no_more
+
+		#VEDINA
+		SRS_operation_toppler
+		SRS_vedinian_economic_plan
+		SRS_vedinian_bounty
+		SRS_knak_lil_anti_capitalist_rampart
+
+		#Prywhen
+		SRS_prywhen_cooperation
+		SRS_socialism_abroad
+		SRS_propaganda_machine_goes_brrrt
+		SRS_prywhen_joint_army_training
+
+		#CONQUER
+		SRS_turhamn_pact
+		SRS_revise_the_sickleclaw_doctrine
+		SRS_settle_the_score
+		SRS_detente
+		SRS_oil_trading
+		SRS_trade_deal
+		SRS_reopen_border
+		SRS_northern_rail_network
+		SRS_lil_griff_treaty
+		SRS_skynavia_versus_the_forces_of_evil
+
+	}
+
+	research = {
+		ai_basic_start = 75.0
+		ai_continued_start = 60.0
+		land_doctrine = 50.0
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		partial_economic_mobilisation = 40000
+		SRS_griffon_advisor_3 = 800
+		SRS_griffon_advisor_2 = 400
+		SRS_pony_advisor_1 = 400
+		SRS_infantry_griff = 100
+		SRS_army_instructor = 100
+		SRS_army_chief_org = 100
+
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}

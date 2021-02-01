@@ -1,0 +1,348 @@
+
+ideas = {
+	country = {
+	exercising = {
+	
+	modifier = {
+	unit_upkeep_attrition_factor = 60
+	}
+	}
+	}
+	hidden_ideas = {
+	
+	BreakthroughBuff = {			
+		modifier = {				
+			breakthrough_factor = 0.30
+			}
+		}
+		
+	SmallPlanConverion1 = {			
+		modifier = {				
+			breakthrough_factor = 0.05
+			max_planning = -0.05
+			}
+		}
+		
+	SmallPlanConverion2 = {			
+		modifier = {				
+			breakthrough_factor = 0.05
+			max_planning = -0.05
+			}
+		}
+		
+	SmallPlanConverion3 = {			
+		modifier = {				
+			breakthrough_factor = 0.05
+			max_planning = -0.05
+			}
+		}
+		
+	
+	PlanConverion1 = {			
+		modifier = {				
+			breakthrough_factor = 0.10
+			max_planning = -0.10
+			}
+		}
+		
+	PlanConverion2 = {			
+		modifier = {				
+			breakthrough_factor = 0.10
+			max_planning = -0.10
+			}
+		}	
+		
+	PlanConverion3 = {			
+		modifier = {				
+			breakthrough_factor = 0.10
+			max_planning = -0.10
+			}
+		}	
+	
+	PlanConverion4 = {			
+		modifier = {				
+			breakthrough_factor = 0.10
+			max_planning = -0.10
+			}
+		}
+	
+	BigPlanConverion1 = {			
+		modifier = {				
+			breakthrough_factor = 0.15
+			max_planning = -0.15
+			}
+		}
+	
+	BigPlanConverion2 = {			
+		modifier = {				
+			breakthrough_factor = 0.15
+			max_planning = -0.15
+			}
+		}
+			
+	BiggerPlanConversion1 = {			
+		modifier = {				
+			breakthrough_factor = 0.20
+			max_planning = -0.20
+			}
+		}
+		
+	BiggestPlanConversion1 = {			
+		modifier = {				
+			breakthrough_factor = 0.25
+			max_planning = -0.25
+			}
+		}
+		
+	SmallNegativePlanConversion1 = {			
+		modifier = {				
+			breakthrough_factor = -0.05
+			max_planning = 0.05
+			}
+		}	
+		
+	NegativePlanConversion1 = {			
+		modifier = {				
+			breakthrough_factor = -0.10
+			max_planning = 0.10
+			}
+		}
+	
+	BigNegativePlanConversion1 = {			
+		modifier = {				
+			breakthrough_factor = -0.15
+			max_planning = 0.15
+			}
+		}
+			
+	BiggerNegativePlanConversion1 = {			
+		modifier = {				
+			breakthrough_factor = -0.20
+			max_planning = 0.20
+			}
+		}	
+	
+	BiggestNegativePlanConversion1 = {			
+		modifier = {				
+			breakthrough_factor = -0.25
+			max_planning = 0.25
+			}
+		}
+		
+		
+	.125PlanConversion1 = {			
+		modifier = {				
+			breakthrough_factor = 0.125
+			max_planning = -0.125
+			}
+		}
+		
+	.007PlanConversion1 = {			
+		modifier = {				
+			breakthrough_factor = 0.007
+			max_planning = -0.007
+			}
+		}
+						
+		
+	.035PlanConversion1 = {			
+		modifier = {				
+			breakthrough_factor = 0.035
+			max_planning = -0.035
+			}
+		}
+	
+	.015PlanConversion1 = {			
+		modifier = {				
+			breakthrough_factor = 0.015
+			max_planning = -0.015
+			}
+		}
+		
+	SmallestSpeedPlanConverion1 = {			
+		modifier = {				
+			org_loss_when_moving = -0.013
+			planning_speed = -0.025
+			}
+		}
+	
+	SmallSpeedPlanConverion1 = {			
+		modifier = {				
+			org_loss_when_moving = -0.03
+			planning_speed = -0.05
+			}
+		}
+	
+	SmallSpeedPlanConverion2 = {			
+		modifier = {				
+			org_loss_when_moving = -0.03
+			planning_speed = -0.05
+			}
+		}	
+		
+	SpeedPlanConverion1 = {			
+		modifier = {				
+			org_loss_when_moving = -0.05
+			planning_speed = -0.10
+			}
+		}
+		
+	SpeedPlanConverion2 = {			
+		modifier = {				
+			org_loss_when_moving = -0.05
+			planning_speed = -0.10
+			}
+		}
+		
+	SpeedPlanConverion3 = {			
+		modifier = {				
+			org_loss_when_moving = -0.05
+			planning_speed = -0.10
+			}
+		}
+	
+	BigSpeedPlanConverion1 = {			
+		modifier = {				
+			org_loss_when_moving = -0.08
+			planning_speed = -0.15
+			}
+		}
+		
+	BigSpeedPlanConverion2 = {			
+		modifier = {				
+			org_loss_when_moving = -0.08
+			planning_speed = -0.15
+			}
+		}
+		
+	BigSpeedPlanConverion3 = {			
+		modifier = {				
+			org_loss_when_moving = -0.08
+			planning_speed = -0.15
+			}
+		}
+		
+	BigSpeedPlanConverion4 = {			
+		modifier = {				
+			org_loss_when_moving = -0.08
+			planning_speed = -0.15
+			}
+		}
+		
+	BiggerSpeedPlanConverion1 = {			
+		modifier = {				
+			org_loss_when_moving = -0.10
+			planning_speed = -0.20
+			}
+		}
+		
+	BiggestSpeedPlanConverion1 = {			
+		modifier = {				
+			org_loss_when_moving = -0.13
+			planning_speed = -0.25
+			}
+		}
+		
+	BiggestSpeedPlanConverion2 = {			
+		modifier = {				
+			org_loss_when_moving = -0.13
+			planning_speed = -0.25
+			}
+		}
+		
+	.125BiggestSpeedPlanConverion1 = {			
+		modifier = {				
+			org_loss_when_moving = -0.06
+			planning_speed = -0.125
+			}
+		}
+		
+	SmallestSpeedNegativePlanConverion1 = {			
+		modifier = {				
+			org_loss_when_moving = 0.03
+			planning_speed = 0.05
+			}
+		}
+		
+	SmallestSpeedNegativePlanConverion2 = {			
+		modifier = {				
+			org_loss_when_moving = 0.03
+			planning_speed = 0.05
+			}
+		}
+		
+	SmallSpeedNegativePlanConverion1 = {			
+		modifier = {				
+			org_loss_when_moving = 0.05
+			planning_speed = 0.10
+			}
+		}
+		
+	SmallSpeedNegativePlanConverion2 = {			
+		modifier = {				
+			org_loss_when_moving = 0.05
+			planning_speed = 0.10
+			}
+		}
+		
+	SpeedNegativePlanConverion1 = {			
+		modifier = {				
+			org_loss_when_moving = 0.08
+			planning_speed = 0.15
+			}
+		}
+		
+	BigSpeedNegativePlanConverion1 = {			
+		modifier = {				
+			org_loss_when_moving = 0.10
+			planning_speed = 0.20
+			}
+		}
+		
+	BigSpeedNegativePlanConverion2 = {			
+		modifier = {				
+			org_loss_when_moving = 0.10
+			planning_speed = 0.20
+			}
+		}
+		
+	BigSpeedNegativePlanConverion3 = {			
+		modifier = {				
+			org_loss_when_moving = 0.10
+			planning_speed = 0.20
+			}
+		}
+		
+	BiggestSpeedNegativePlanConverion1 = {			
+		modifier = {				
+			org_loss_when_moving = 0.13
+			planning_speed = 0.25
+			}
+		}
+		
+	BiggestSpeedNegativePlanConverion2 = {			
+		modifier = {				
+			org_loss_when_moving = 0.13
+			planning_speed = 0.25
+			}
+		}
+		
+	BiggestSpeedNegativePlanConverion3 = {			
+		modifier = {				
+			org_loss_when_moving = 0.13
+			planning_speed = 0.25
+			}
+		}		
+	
+	WTFSpeedNegativePlanConverion1 = {			
+		modifier = {				
+			org_loss_when_moving = 0.25
+			planning_speed = -0.50
+			}
+		}		
+																																																																																																																																																																																																																																												
+	}
+	}
+	
+	
+	

@@ -1,0 +1,38 @@
+﻿
+division_template = {
+	name = "Super Heavy Tank Division"
+
+	regiments = {
+		super_heavy_armor = { x = 0 y = 0 }
+		super_heavy_armor = { x = 0 y = 1 }
+		super_heavy_armor = { x = 0 y = 2 }
+		super_heavy_armor = { x = 1 y = 0 }
+		super_heavy_armor = { x = 1 y = 1 }
+		super_heavy_armor = { x = 1 y = 2 }		
+	}
+	priority = 2
+	support = {
+	    recon = { x = 0 y = 0 }
+	}
+}
+
+
+
+
+units = {
+	division = {
+		name = "Super Heavy Tank Division 1"
+		location = 6502
+		division_template = "Super Heavy Tank Division"
+		start_experience_factor = 0.35
+		}	
+}
+
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 100
+		producer = SRS
+	}	
+}
