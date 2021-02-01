@@ -511,6 +511,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	
 	SpriteType = {
 		name = "GFX_goal_support_of_the_army_shine"
 		texturefile = "gfx/interface/goals/GFX_goal_support_of_the_army.dds"
@@ -542,6 +543,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	
 	SpriteType = {
 		name = "GFX_goal_purge_zealots_shine"
 		texturefile = "gfx/interface/goals/GFX_goal_purge_zealots.dds"
@@ -573,6 +575,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	
 	SpriteType = {
 		name = "GFX_goal_dorocoup_shine"
 		texturefile = "gfx/interface/goals/GFX_goal_dorocoup.dds"
@@ -636,6 +639,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	
 	SpriteType = {
 		name = "GFX_goal_dice_shine"
 		texturefile = "gfx/interface/goals/GFX_goal_dice.dds"
@@ -668,7 +672,8 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	
-		SpriteType = {
+	
+	SpriteType = {
 		name = "GFX_goal_gaw_attack_aquileia_shine"
 		texturefile = "gfx/interface/goals/goal_gaw_attack_aquileia.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -955,6 +960,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	
 	SpriteType = {
 		name = "GFX_goal_griffon_special_forces_green_shine"
 		texturefile = "gfx/interface/goals/goal_griffon_special_forces_green.dds"
@@ -986,6 +992,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	
 	SpriteType = {
 		name = "GFX_goal_gaw_marriage_aquileia_shine"
 		texturefile = "gfx/interface/goals/goal_gaw_marriage_aquileia.dds"
@@ -1017,6 +1024,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	
 	SpriteType = {
 		name = "GFX_goal_gaw_south_shine"
 		texturefile = "gfx/interface/goals/goal_gaw_south.dds"
@@ -1080,6 +1088,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	
 	SpriteType = {
 		name = "GFX_goal_gaw_gestal_shine"
 		texturefile = "gfx/interface/goals/goal_gaw_gestal.dds"
@@ -1111,6 +1120,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	
 	SpriteType = {
 		name = "GFX_goal_gaw_gruff_shine"
 		texturefile = "gfx/interface/goals/goal_gaw_gruff.dds"
@@ -1142,6 +1152,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	
 	SpriteType = {
 		name = "GFX_goal_gaw_goldstone_shine"
 		texturefile = "gfx/interface/goals/goal_gaw_goldstone.dds"
@@ -1173,6 +1184,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	
 	SpriteType = {
 		name = "GFX_goal_gaw_gilda_shine"
 		texturefile = "gfx/interface/goals/goal_gaw_gilda.dds"
@@ -1204,6 +1216,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	
 	SpriteType = {
 		name = "GFX_goal_gaw_griff_cmcs_shine"
 		texturefile = "gfx/interface/goals/goal_gaw_griff_cmcs.dds"
@@ -1235,6 +1248,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	
 	SpriteType = {
 		name = "GFX_goal_SRS_aviation_dreams_shine"
 		texturefile = "gfx/interface/goals/SRS_aviation_dreams.dds"
@@ -1266,7 +1280,8 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-        SpriteType = {
+	
+    SpriteType = {
 		name = "GFX_goal_SRS_buy_fighters_shine"
 		texturefile = "gfx/interface/goals/SRS_buy_fighters.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1297,7 +1312,8 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-        SpriteType = {
+	
+    SpriteType = {
 		name = "GFX_goal_SRS_buy_bombers_shine"
 		texturefile = "gfx/interface/goals/SRS_buy_bombers.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1327,8 +1343,9 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		legacy_lazy_load = no
-	}	
-        SpriteType = {
+	}
+	
+    SpriteType = {
 		name = "GFX_goal_SRS_avia_institute_shine"
 		texturefile = "gfx/interface/goals/SRS_avia_institute.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1358,8 +1375,8 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		legacy_lazy_load = no
-		}
-	}	
+	}
+	
 	SpriteType = {
 		name = "GFX_goal_MAF_Napalm_shine"
 		texturefile = "gfx/interface/goals/goal_MAF_Napalm.dds"
@@ -1391,7 +1408,8 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-        SpriteType = {
+	
+    SpriteType = {
 		name = "GFX_focus_jap_zero_shine"
 		texturefile = "gfx/interface/goals/focus_jap_zero.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1422,7 +1440,8 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-        SpriteType = {
+	
+    SpriteType = {
 		name = "GFX_focus_generic_eagle_shine"
 		texturefile = "gfx/interface/goals/focus_generic_eagle.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1453,7 +1472,8 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-        SpriteType = {
+	
+    SpriteType = {
 		name = "GFX_focus_chi_flying_tigers_shine"
 		texturefile = "gfx/interface/goals/focus_chi_flying_tigers.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1484,7 +1504,8 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-        SpriteType = {
+	
+    SpriteType = {
 		name = "GFX_goal_generic_air_bomber_shine"
 		texturefile = "gfx/interface/goals/goal_generic_air_bomber.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1515,7 +1536,8 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-        SpriteType = {
+	
+    SpriteType = {
 		name = "GFX_goal_generic_air_doctrine_shine"
 		texturefile = "gfx/interface/goals/goal_generic_air_doctrine.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1547,7 +1569,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-SpriteType = {
+	SpriteType = {
 		name = "GFX_goal_bombs_away_shine"
 		texturefile = "gfx/interface/goals/goal_bombs_away.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1579,7 +1601,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 
-SpriteType = {
+	SpriteType = {
 		name = "GFX_goal_generic_occypy_start_war_shine"
 		texturefile = "gfx/interface/goals/goal_generic_occupy_start_war.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1611,7 +1633,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 
-SpriteType = {
+	SpriteType = {
 		name = "GFX_goal_generic_CAS_shine"
 		texturefile = "gfx/interface/goals/goal_generic_CAS.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1643,7 +1665,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 
-SpriteType = {
+	SpriteType = {
 		name = "GFX_focus_usa_escort_fighters_shine"
 		texturefile = "gfx/interface/goals/focus_usa_escort_fighters.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1675,7 +1697,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 
-SpriteType = {
+	SpriteType = {
 		name = "GFX_focus_YUG_ikarus_shine"
 		texturefile = "gfx/interface/goals/focus_YUG_ikarus.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1707,7 +1729,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 
-SpriteType = {
+	SpriteType = {
 		name = "GFX_focus_jap_zero_shine"
 		texturefile = "gfx/interface/goals/focus_jap_zero.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1739,7 +1761,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 
-SpriteType = {
+	SpriteType = {
 		name = "GFX_goal_generic_air_fighter_shine"
 		texturefile = "gfx/interface/goals/goal_generic_air_fighter.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1770,6 +1792,7 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_srs_loyal_general"
 		texturefile = "gfx/interface/goals/GFX_focus_srs_loyal_general.dds"
@@ -1801,6 +1824,7 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_srs_art_of_war_shine"
 		texturefile = "gfx/interface/goals/focus_srs_art_of_war.dds"

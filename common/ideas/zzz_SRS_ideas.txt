@@ -67,7 +67,7 @@ ideas = {
 			available = {
 				has_completed_focus = SRS_market_socialism
 			}
-			traits = { social_reformer }
+			traits = { popular_figurehead }
 		}
 
 		SRS_generico_1 = {

@@ -18,6 +18,11 @@ state = {
 		add_claim_by = FAT
 		victory_points = { 3363 5 }
 		victory_points = { 13235 5 }
+
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+		}
 	}
 	
 	buildings_max_level_factor = 1.000

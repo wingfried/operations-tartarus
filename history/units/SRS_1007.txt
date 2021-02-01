@@ -1,0 +1,189 @@
+﻿division_template = {
+	name = "Experimental Weapon Operations Brigade"	
+	#division_names_group = 
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Skynavia Defence Force"
+	#division_names_group = 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Volunteer Infantry Regiment"
+	#division_names_group = 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Experimental Weapon Operations Brigade"
+		location = 1334
+		division_template = "Experimental Weapon Operations Brigade"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "Strategic Reserve Divison, S.D.F."
+		location = 13235
+		division_template = "Skynavia Defence Force"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "1. Division, S.D.F."
+		location = 4413
+		division_template = "Skynavia Defence Force"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "2. Division, S.D.F."
+		location = 10911
+		division_template = "Skynavia Defence Force"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "3. Division, S.D.F."
+		location = 1943
+		division_template = "Skynavia Defence Force"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "1st Skynavian Delta Home Brigade"
+		location = 11307
+		division_template = "Volunteer Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2nd Skynavian Delta Home Brigade"
+		location = 12567
+		division_template = "Volunteer Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "3rd Skynavian Delta Home Brigade"
+		location = 4758
+		division_template = "Volunteer Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		name = "1st New Skynavia Volunteer Infantry"
+		location = 452
+		division_template = "Volunteer Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2nd New Skynavia Volunteer Infantry"
+		location = 11087
+		division_template = "Volunteer Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "3rd New Skynavia Volunteer Infantry"
+		location = 410
+		division_template = "Volunteer Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		name = "4th New Skynavia Volunteer Infantry"
+		location = 3363
+		division_template = "Volunteer Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "5th New Skynavia Volunteer Infantry"
+		location = 13036
+		division_template = "Volunteer Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		name = "6th New Skynavia Volunteer Infantry"
+		location = 10242
+		division_template = "Volunteer Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "7th New Skynavia Volunteer Infantry"
+		location = 4973
+		division_template = "Volunteer Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		name = "1st Braunles-Ostfloy Home Brigade"
+		location = 10242
+		division_template = "Volunteer Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2nd Braunles-Ostfloy Home Brigade"
+		location = 4973
+		division_template = "Volunteer Infantry Regiment"
+		start_experience_factor = 0.1
+	}
+}
+
+air_wings = {
+    601 = {
+        fighter_equipment_0 = {
+            owner = "STG"
+            amount = 4
+        }
+        fighter_equipment_0 = {
+            owner = "SRS"
+            amount = 10
+        }
+    }
+}
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "SRS"
+		}
+		requested_factories = 2
+		progress = 0.65
+		efficiency = 25
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment
+			creator = "SRS"
+		}
+		requested_factories = 1
+		progress = 0.65
+		efficiency = 25
+	}
+}

@@ -50,6 +50,7 @@ focus_tree = {
 		}
 		completion_reward = {
             #country_event = { id = srs_sickocivwar.1 }
+            custom_effect_tooltip = SRS_lots_events_tp
 		}
 	}
 
@@ -89,8 +90,9 @@ focus_tree = {
 				id = srs_sickocivwar.6
 				days = 44
 			}
-			completion_reward = {
-			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = SRS_lots_events_tp
 		}
 	}
 	
@@ -1446,8 +1448,8 @@ focus_tree = {
 		id = SRS_seasonal_workers
 		icon = GFX_focus_srs_seasonal_workers
 		prerequisite = { focus = SRS_vedinian_bounty focus = SRS_tribal_auxiliaries }
-		relative_position_id = SRS_nova_griffonian_shinies
-		x = -3
+		relative_position_id = SRS_tribal_auxiliaries
+		x = 0
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -1558,38 +1560,54 @@ focus_tree = {
             factor = 12
         }
         completion_reward = {
-        	#WIP
-            FAT = { country_event = generic.5 }
-            country_event = srs_sickocivwar.18
+            FAT = { country_event = srs_sickocivwar.19 }
         }
     }
 
     focus = {
         id = SRS_settle_the_score
         icon = GFX_focus_srs_settle_the_score
-        prerequisite = { focus = SRS_revise_the_sickleclaw_doctrine focus = SRS_unlikely_membership }
+        prerequisite = { focus = SRS_unlikely_membership }
+        relative_position_id = SRS_unlikely_membership
         bypass = {
         	FAT = { exists = no }
         }
-        relative_position_id = SRS_revise_the_sickleclaw_doctrine
-        x = -1
+        x = 0
         y = 1
         cost = 5
         available = {
-        	GRI = { exists = no }
+        	IF = {
+        		limit = {
+        			has_completed_focus = SRS_unlikely_membership
+        			NOT = { FAT = { is_in_faction_with = SRS } }
+        		}
+        	}
+        	ELSE = {
+        		GRI = { exists = no }
+        	}
         }
         ai_will_do = {
             factor = 12
         }
         completion_reward = {
-            custom_effect_tooltip = SRS_settle_the_score_tp
+        	IF = {
+        		limit = {
+        			has_completed_focus = SRS_unlikely_membership
+        			NOT = { FAT = { is_in_faction_with = SRS } }
+        		}
+        		create_wargoal = { type = annex_everything target = GRI }
+        	}
+        	ELSE = {
+        		custom_effect_tooltip = SRS_settle_the_score_tp
+        		set_country_flag = SRS_betray_FAT_decision_flag
+        	}
         }
     }
 
     focus = {
         id = SRS_operation_eclipse
         icon = GFX_focus_srs_operation_eclipse
-        prerequisite = { focus = SRS_settle_the_score }
+        prerequisite = { focus = SRS_settle_the_score focus = SRS_revise_the_sickleclaw_doctrine }
         relative_position_id = SRS_settle_the_score
         mutually_exclusive = { focus = SRS_detente }
         x = 2
@@ -1599,7 +1617,11 @@ focus_tree = {
             factor = 12
         }
         available = {
-        	has_country_flag = SRS_betray_FAT_decision_flag
+        	FAT = { exists = no }
+        	OR = {
+        		has_country_flag = SRS_betray_FAT_decision_flag
+        		has_completed_focus = SRS_revise_the_sickleclaw_doctrine
+        	}
 			IF = {
 				limit = { is_ai = yes }
 				has_war = no
@@ -1904,7 +1926,8 @@ focus_tree = {
             factor = 12
         }
         completion_reward = {
-
+        	SRS = { add_opinion_modifier = { target = FAT modifier = SRS_FAT_opinion } }
+			FAT = { add_opinion_modifier = { target = SRS modifier = SRS_FAT_opinion } }
         }
     }
 
@@ -2168,9 +2191,10 @@ focus_tree = {
             factor = 12
         }
         completion_reward = {
-            #WIP
-            SRS = { add_ideas = SRS_STG_research_idea }
-            STG = { add_ideas = SRS_STG_research_idea }
+            #SRS = { add_ideas = SRS_STG_research_idea }
+            SRS = { add_to_tech_sharing_group = SRS_STG_tech_sharing }
+            #STG = { add_ideas = SRS_STG_research_idea }
+            STG = { add_to_tech_sharing_group = SRS_STG_tech_sharing }
         }
     }
 
@@ -3185,6 +3209,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			decrease_illiteracy = yes
 			add_research_slot = 1
 		}
 	}

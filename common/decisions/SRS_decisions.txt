@@ -5332,6 +5332,9 @@ SRS_settle_the_score_decision_category = {
 			NOT = { has_country_flag = SRS_betray_FAT_decision_flag }
 			NOT = { has_country_flag = SRS_detente_decision_flag }
 		}
+		ai_will_do = {
+			factor = 1000
+		}
 		cost = 0
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SRS_detente_decision"

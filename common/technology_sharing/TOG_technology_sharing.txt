@@ -1,0 +1,11 @@
+
+technology_sharing_group = {
+
+	id = SRS_STG_tech_sharing
+	name = SRS_STG_tech_sharing_name
+	desc = SRS_STG_tech_sharing_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.15
+
+}

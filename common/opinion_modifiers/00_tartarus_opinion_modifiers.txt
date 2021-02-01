@@ -31,5 +31,8 @@ opinion_modifiers = {
 	SRS_GRW_opinion = {
 		value = 75
 	}
-	
+
+	SRS_FAT_opinion = {
+		value = 25
+	}
 }

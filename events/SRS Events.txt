@@ -4139,50 +4139,36 @@ country_event = {
 	option = {
 		name = srs_sickocivwar.9.a
 		ai_chance = {
-		    factor = 0
+		    factor = 10
 			modifier = {
+				factor = 80
 			    has_government = communism
-				factor = 10
-			}
-			modifier = {
-			    has_government = democratic
-				factor = 5
-			}
-			modifier = {
-			    original_tag = WNG
-				has_government = democratic
-				factor = 0
 			}
 		}
 		hidden_effect = {
 		    FROM = {
 		        country_event = {
-			        id = srs_sickocivwar.11
+			        id = srs_sickocivwar.11 #YES
 			    }
 		    }
 		}
 	}
 	option = {
 	    ai_chance = {
-		    factor = 0
+		    factor = 10
 			modifier = {
-			    has_government = communism
 				factor = 0
+			    has_government = communism
 			}
 			modifier = {
-			    has_government = democratic
-				factor = 5
-			}
-			modifier = {
-			    original_tag = WNG
-				has_government = democratic
-				factor = 10
+				factor = 80
+			    has_government = fascism
 			}
 		}
 	    name = srs_sickocivwar.9.b
 		FROM = {
 		    country_event = {
-			    id = srs_sickocivwar.10
+			    id = srs_sickocivwar.10 #NO
 				days = 2
 			}
 		}
@@ -4209,6 +4195,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	id = srs_sickocivwar.11
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.11"}
@@ -4407,12 +4394,90 @@ country_event = {
 	desc = srs_sickocivwar.18.d
 	picture = GFX_event_poshel_nahui
 	is_triggered_only = yes
+	trigger = {
+		AND = {
+			FAT = { is_in_faction_with = SRS }
+			OR = {
+				FAT = { has_war_with = GRI }
+				FAT = { has_war_with = FEA }
+				FAT = { has_war_with = STW }
+				FAT = { has_war_with = BRZ }
+				FAT = { has_war_with = PYT }
+				FAT = { has_war_with = ROU }
+				FAT = { has_war_with = YAL }
+				FAT = { has_war_with = KAT }
+				FAT = { has_war_with = ANG }
+			}
+		}
+	}
 	option = {
 	    ai_chance = {
 		    factor = 10
 		}
 		name = srs_sickocivwar.18.a
 		add_ideas = SRS_unlikely_membership_idea
+	}
+}
+
+# Ask FAT if friends
+
+country_event = {
+	id = srs_sickocivwar.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.19"}
+	title = srs_sickocivwar.19.t
+	desc = srs_sickocivwar.19.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+	    ai_chance = {
+		    factor = 800
+		}
+		name = srs_sickocivwar.19.a #yes
+		SRS = { country_event = srs_sickocivwar.20 }
+	}
+	option = {
+	    ai_chance = {
+		    factor = 0
+		}
+		name = srs_sickocivwar.19.b #nope
+		SRS = { country_event = srs_sickocivwar.21 }
+	}
+}
+
+# FAT yes's
+
+country_event = {
+	id = srs_sickocivwar.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.20"}
+	title = srs_sickocivwar.20.t
+	desc = srs_sickocivwar.20.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+	    ai_chance = {
+		    factor = 10
+		}
+		name = srs_sickocivwar.20.a
+		SRS = { remove_opinion_modifier = { target = FAT modifier = hostility } }
+		FAT = { remove_opinion_modifier = { target = SRS modifier = hostility } }
+		add_to_faction = FAT
+	}
+}
+
+# FAT nopes
+
+country_event = {
+	id = srs_sickocivwar.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.21"}
+	title = srs_sickocivwar.21.t
+	desc = srs_sickocivwar.21.d
+	picture = GFX_event_poshel_nahui
+	is_triggered_only = yes
+	option = {
+	    ai_chance = {
+		    factor = 10
+		}
+		name = srs_sickocivwar.21.a
 	}
 }
 
