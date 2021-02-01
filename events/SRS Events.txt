@@ -3456,22 +3456,20 @@ country_event = { #6 Sicko is called back to the capital
 country_event = { #7 Sicko has some treacherous thoughts
 	id = srs_sickocivwartwo.16
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.16"}
-	title = srs_sickocivwartwo.16.t
-	desc = srs_sickocivwartwo.16.d
+	hidden = yes
 	#picture = GFX_event_poshel_nahui
 	is_triggered_only = yes
-	option = {
-		name = srs_sickocivwartwo.16.a
+	immediate = {
 		IF = {
 			limit = { check_variable = { sicko_naughty > sicko_nice } }
-			country_event = { id = srs_sickocivwartwo.17 days = 28 }
+			country_event = { id = srs_sickocivwartwo.17 }
 		}
 		ELSE_IF = {
 			limit = { check_variable = { sicko_naughty < sicko_nice } }
-			country_event = { id = srs_sickocivwartwo.18 days = 28 }
+			country_event = { id = srs_sickocivwartwo.18 }
 		}
 		ELSE = {
-			country_event = { id = srs_sickocivwartwo.19 days = 28 }
+			country_event = { id = srs_sickocivwartwo.19 }
 		}
 	}
 }
@@ -3705,7 +3703,6 @@ country_event = { #shutter pls
 				}
 			}
 		}
-		custom_effect_tooltip = SRS_Wait_what_tooltip
 		hidden_effect = {
 			complete_national_focus = SRS_road_of_pragmatism
 		}

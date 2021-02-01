@@ -47,109 +47,109 @@ units = {
 		name = "1st Experimental Weapon Operations Brigade"
 		location = 1334
 		division_template = "Experimental Weapon Operations Brigade"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.3
 	}
 
 	division = {
 		name = "Strategic Reserve Divison, S.D.F."
 		location = 13235
 		division_template = "Skynavia Defence Force"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.3
 	}
 	division = {
 		name = "1. Division, S.D.F."
 		location = 4413
 		division_template = "Skynavia Defence Force"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.3
 	}
 	division = {
 		name = "2. Division, S.D.F."
 		location = 10911
 		division_template = "Skynavia Defence Force"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.3
 	}
 	division = {
 		name = "3. Division, S.D.F."
 		location = 1943
 		division_template = "Skynavia Defence Force"
-		start_experience_factor = 0.5
+		start_experience_factor = 0.3
 	}
 
 	division = {
 		name = "1st Skynavian Delta Home Brigade"
 		location = 11307
 		division_template = "Volunteer Infantry Regiment"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.0
 	}
 	division = {
 		name = "2nd Skynavian Delta Home Brigade"
 		location = 12567
 		division_template = "Volunteer Infantry Regiment"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.0
 	}
 	division = {
 		name = "3rd Skynavian Delta Home Brigade"
 		location = 4758
 		division_template = "Volunteer Infantry Regiment"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.0
 	}
 
 	division = {
 		name = "1st New Skynavia Volunteer Infantry"
 		location = 452
 		division_template = "Volunteer Infantry Regiment"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.0
 	}
 	division = {
 		name = "2nd New Skynavia Volunteer Infantry"
 		location = 11087
 		division_template = "Volunteer Infantry Regiment"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.0
 	}
 	division = {
 		name = "3rd New Skynavia Volunteer Infantry"
 		location = 410
 		division_template = "Volunteer Infantry Regiment"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.0
 	}
 
 	division = {
 		name = "4th New Skynavia Volunteer Infantry"
 		location = 3363
 		division_template = "Volunteer Infantry Regiment"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.0
 	}
 	division = {
 		name = "5th New Skynavia Volunteer Infantry"
 		location = 13036
 		division_template = "Volunteer Infantry Regiment"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.0
 	}
 
 	division = {
 		name = "6th New Skynavia Volunteer Infantry"
 		location = 10242
 		division_template = "Volunteer Infantry Regiment"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.0
 	}
 	division = {
 		name = "7th New Skynavia Volunteer Infantry"
 		location = 4973
 		division_template = "Volunteer Infantry Regiment"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.0
 	}
 
 	division = {
 		name = "1st Braunles-Ostfloy Home Brigade"
 		location = 10242
 		division_template = "Volunteer Infantry Regiment"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.0
 	}
 	division = {
 		name = "2nd Braunles-Ostfloy Home Brigade"
 		location = 4973
 		division_template = "Volunteer Infantry Regiment"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.0
 	}
 }
 
@@ -179,7 +179,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = support_equipment
+			type = support_equipment_1
 			creator = "SRS"
 		}
 		requested_factories = 1

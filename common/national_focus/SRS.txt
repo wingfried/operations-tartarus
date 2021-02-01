@@ -50,6 +50,7 @@ focus_tree = {
 		}
 		completion_reward = {
             #country_event = { id = srs_sickocivwar.1 }
+            add_political_power = 100
             custom_effect_tooltip = SRS_lots_events_tp
 		}
 	}
@@ -92,6 +93,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_political_power = 50
 			custom_effect_tooltip = SRS_lots_events_tp
 		}
 	}
@@ -2129,7 +2131,8 @@ focus_tree = {
             factor = 12
         }
         completion_reward = {
-        	#WIP
+        	add_ideas = SRS_Sky_vs_FoE_idea
+        	custom_effect_tooltip = SRS_Sky_vs_FoE_tp
         }
     }
 
@@ -4452,7 +4455,7 @@ focus_tree = {
 
 	focus = {
 		id = SRS_bestboi
-		icon = GFX_goal_grover_vi
+		icon = GFX_focus_spa_save_the_alcazar
 		prerequisite = { focus = SRS_herzland_nobility_punishment }
 		prerequisite = { focus = SRS_herzland_clergy_punishment }
 		relative_position_id = SRS_herzland_nobility_punishment
