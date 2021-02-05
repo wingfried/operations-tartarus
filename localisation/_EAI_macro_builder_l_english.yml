@@ -7,7 +7,6 @@ Subject_Interaction:0 "Generic Subject Interactions"
 Requesting_Troops:0 "Conscripting Subject Forces"
 Demanding_Resources:0 "Resource Acquisition Laws"
 
-
 GEN_Construction_steel:0 "Exploit Steel Resources"
 GEN_Construction_steel_desc:0 "Automatically gives into order construction for Infrastructure on every 15+ Steel state."
 
@@ -38,12 +37,12 @@ End_Hidden_Training_desc:0 "This will bring the exercise cycle to an end and all
 trainingscript:0 "Military Exercises"
 trainingscript_desc:0 "This script replaces and simulates the old exercising for military XP, it runs for 30 days and will then give you an option to repeat or continue indefinitly till cancled."
 
-instructions.0.t:0 "Planaway Intsructions"
-instructions.0.d:0 "This is a onetime popup, if you wish to re-read it load a new game and wait. With Planaway all planning bonuses will be converted into other stats. Max Planing will become Breakthrough, Planning Speed will reduce organization loss while moving. The tooltips for national ideas will not show this change and stats will take anywhere from 1 to 20 ingame days to update. For further questions leave a comment on the modpage."
+instructions.0.t:0 "Planaway Instructions"
+instructions.0.d:0 "This is a onetime popup, if you wish to re-read it load a new game and wait. With Planaway all planning bonuses will be converted into other stats. Max Planning will become Breakthrough, Planning Speed will reduce organization loss while moving. The tooltips for national ideas will not show this change and stats will take anywhere from 1 to 20 ingame days to update. For further questions leave a comment on the modpage."
 instructions.0.a:0 "Understood."
 
 ABILITY_FORCED_ENTRENCHMENT:0 "Entrench"
-ABILITY_FORCED_ENTRENCHMENT_DESC:0 "Gain 150% dig-in speed but slows moral regain."
+ABILITY_FORCED_ENTRENCHMENT_DESC:0 "Your armies will gain massive entrenchment speed bonus at the cost of morale recovery rate."
 
 ABILITY_FORCED_MARCH:0 "Forced March"
-ABILITY_FORCED_MARCH_DESC:0 "Gain 100% movement speed but lose all organization regain while moving."
+ABILITY_FORCED_MARCH_DESC:0 "Your armies will gain massive movement speed bonus at the cost of organization regain while moving."

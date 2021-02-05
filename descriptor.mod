@@ -1,4 +1,4 @@
-version="1.0.0"
+version="1.0.1"
 tags={
 	"Alternative History"
 	"National Focuses"
@@ -10,5 +10,5 @@ picture="thumbnail.png"
 dependencies={
 	"Equestria at War"
 }
-supported_version="1.10.3"
+supported_version="1.10.*"
 remote_file_id="2381194431"

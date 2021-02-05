@@ -352,6 +352,7 @@ focus_tree = {
 		icon = GFX_goal_FAT_the_three_musketeers
 		prerequisite = { focus = SRS_far_north_republic }
 		prerequisite = { focus = SRS_defend_the_revolution }
+		prerequisite = { focus = SRS_conscript_army }
 		relative_position_id = SRS_defend_the_revolution
 		available = {
 			IF = {

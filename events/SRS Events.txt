@@ -3240,7 +3240,10 @@ country_event = {
 		name = srs_sickocivwartwo.3.a
 		add_political_power = -25
 		add_stability = 0.05
-		swap_ideas = { remove_idea = SRS_internationalist_problems add_idea = SRS_internationalist_problems_1 }
+		IF = {
+			limit = { has_idea = SRS_internationalist_problems }
+			swap_ideas = { remove_idea = SRS_internationalist_problems add_idea = SRS_internationalist_problems_1 }
+		}
 	}
 }
 
@@ -3255,7 +3258,14 @@ country_event = {
 		name = srs_sickocivwartwo.4.a
 		add_war_support = -0.05
 		add_manpower = -50
-		remove_ideas = SRS_internationalist_problems
+		IF = {
+			limit = { has_idea = SRS_internationalist_problems }
+			remove_ideas = SRS_internationalist_problems
+		}
+		ELSE_IF = {
+			limit = { has_idea = SRS_internationalist_problems_1 }
+			remove_ideas = SRS_internationalist_problems_1
+		}
 	}
 }
 
@@ -3385,6 +3395,7 @@ country_event = { #Event 5
 	}
 }
 
+# Purple Haze #
 country_event = { #5.a
 	id = srs_sickocivwartwo.13
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwartwo.13"}
@@ -3399,7 +3410,18 @@ country_event = { #5.a
 		542 = { set_demilitarized_zone = no }
 		585 = { set_demilitarized_zone = no }
 		601 = { set_demilitarized_zone = no }
-		remove_ideas = remove_ideas = SRS_communalist_problems
+		IF = {
+			limit = { has_idea = SRS_communalist_problems }
+			remove_ideas = SRS_communalist_problems
+		}
+		ELSE_IF = {
+			limit = { has_idea = SRS_communalist_problems_1 }
+			remove_ideas = SRS_communalist_problems_1
+		}
+		ELSE_IF = {
+			limit = { has_idea = SRS_communalist_problems_2 }
+			remove_ideas = SRS_communalist_problems_2
+		}
 		army_experience = 10
 	}
 }
@@ -3536,13 +3558,13 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickocivwar.2.a
-			542 = { set_demilitarized_zone = yes }
-			585 = { set_demilitarized_zone = yes }
-			561 = { set_demilitarized_zone = yes }
-			601 = { set_demilitarized_zone = yes }
-			add_stability = -0.15
-			add_manpower = -100
-			add_political_power = 100
+		542 = { set_demilitarized_zone = yes }
+		585 = { set_demilitarized_zone = yes }
+		561 = { set_demilitarized_zone = yes }
+		601 = { set_demilitarized_zone = yes }
+		add_stability = -0.15
+		add_manpower = -100
+		add_political_power = 100
 	}
 }
 	
@@ -3585,8 +3607,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickocivwar.5.a
-			561 = { set_demilitarized_zone = no }
-			542 = { set_demilitarized_zone = no }
+		561 = { set_demilitarized_zone = no }
+		542 = { set_demilitarized_zone = no }
 	}
 }
 
@@ -3601,8 +3623,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickocivwar.6.a
-			601 = { set_demilitarized_zone = no }
-			585 = { set_demilitarized_zone = no }
+		601 = { set_demilitarized_zone = no }
+		585 = { set_demilitarized_zone = no }
 	}
 }
 
@@ -3617,48 +3639,48 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = srs_sickocivwar.8.a
-			add_stability = 0.2
-			IF = {
-				limit = { has_idea = SRS_internationalist_problems }
-				remove_ideas = SRS_internationalist_problems
-			}
-			IF = {
-				limit = { has_idea = SRS_internationalist_problems_1 }
-				remove_ideas = SRS_internationalist_problems_1
-			}
-			IF = {
-				limit = { has_idea = SRS_communalist_problems }
-				remove_ideas = SRS_communalist_problems
-			}
-			IF = {
-				limit = { has_idea = SRS_communalist_problems_fin }
-				remove_ideas = SRS_communalist_problems_fin
-			}
-			IF = {
-				limit = { has_idea = SRS_communalist_problems_1 }
-				remove_ideas = SRS_communalist_problems_1
-			}
-			IF = {
-				limit = { has_idea = SRS_communalist_problems_1_fin }
-				remove_ideas = SRS_communalist_problems_1_fin
-			}
-			IF = {
-				limit = { has_idea = SRS_communalist_problems_2 }
-				remove_ideas = SRS_communalist_problems_2
-			}
-			IF = {
-				limit = { has_idea = SRS_communalist_problems_2_fin }
-				remove_ideas = SRS_communalist_problems_2_fin
-			}
-			#add_ideas = SRS_doubt_in_sickleclaw
-			#add_ideas = SRS_UITRAF_1
-			#add_ideas = SRS_DOC_1
+		add_stability = 0.2
+		IF = {
+			limit = { has_idea = SRS_internationalist_problems }
+			remove_ideas = SRS_internationalist_problems
+		}
+		IF = {
+			limit = { has_idea = SRS_internationalist_problems_1 }
+			remove_ideas = SRS_internationalist_problems_1
+		}
+		IF = {
+			limit = { has_idea = SRS_communalist_problems }
+			remove_ideas = SRS_communalist_problems
+		}
+		IF = {
+			limit = { has_idea = SRS_communalist_problems_fin }
+			remove_ideas = SRS_communalist_problems_fin
+		}
+		IF = {
+			limit = { has_idea = SRS_communalist_problems_1 }
+			remove_ideas = SRS_communalist_problems_1
+		}
+		IF = {
+			limit = { has_idea = SRS_communalist_problems_1_fin }
+			remove_ideas = SRS_communalist_problems_1_fin
+		}
+		IF = {
+			limit = { has_idea = SRS_communalist_problems_2 }
+			remove_ideas = SRS_communalist_problems_2
+		}
+		IF = {
+			limit = { has_idea = SRS_communalist_problems_2_fin }
+			remove_ideas = SRS_communalist_problems_2_fin
+		}
+		add_ideas = SRS_doubt_in_sickleclaw
+		add_ideas = SRS_UITRAF_1
+		add_ideas = SRS_DOC_1
 	}
 }
 
 ## SRS_national_security ##
 	
-country_event = { #shutter pls
+country_event = {
 	id = srs_sickoflavour.6
 	immediate = {log = "[GetDateText]: [Root.GetName]: event srs_sickocivwar.1"}
 	title = srs_sickoflavour.6.t
@@ -4139,10 +4161,14 @@ country_event = {
 	option = {
 		name = srs_sickocivwar.9.a
 		ai_chance = {
-		    factor = 10
+		    factor = 40
 			modifier = {
-				factor = 80
+				factor = 160
 			    has_government = communism
+			}
+			modifier = {
+				factor = 0
+			    has_war = yes
 			}
 		}
 		hidden_effect = {
@@ -4155,14 +4181,18 @@ country_event = {
 	}
 	option = {
 	    ai_chance = {
-		    factor = 10
+		    factor = 80
 			modifier = {
 				factor = 0
 			    has_government = communism
 			}
 			modifier = {
-				factor = 80
+				factor = 800
 			    has_government = fascism
+			}
+			modifier = {
+				factor = 4000
+			    has_war = yes
 			}
 		}
 	    name = srs_sickocivwar.9.b

@@ -4921,6 +4921,7 @@ SRS_expansion_puppet_category = {
 		}
 		available = {
 			can_declare_war_on = HAU
+			HAU = { exists = true }
 		}
 		cost = 50
 		fire_only_once = yes

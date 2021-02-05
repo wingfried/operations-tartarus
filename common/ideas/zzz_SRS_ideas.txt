@@ -1449,9 +1449,9 @@ ideas = {
 			}
 
 			modifier = {
-				conscription_factor = -0.4
-				improve_relations_maintain_cost_factor = 0.8
-				mobilization_speed = -0.5
+				conscription_factor = -0.40
+				improve_relations_maintain_cost_factor = 0.80
+				mobilization_speed = -0.50
 			}
 		}
 
@@ -1464,9 +1464,9 @@ ideas = {
 			}
 
 			modifier = {
-				conscription_factor = -0.1
-				improve_relations_maintain_cost_factor = 0.2
-				mobilization_speed = -0.3
+				conscription_factor = -0.10
+				improve_relations_maintain_cost_factor = 0.20
+				mobilization_speed = -0.30
 			}
 		}
 
@@ -1480,8 +1480,8 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.35
-				improve_relations_maintain_cost_factor = 0.7
-				mobilization_speed = -0.4
+				improve_relations_maintain_cost_factor = 0.70
+				mobilization_speed = -0.40
 			}
 		}
 
@@ -1495,8 +1495,8 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.05
-				improve_relations_maintain_cost_factor = 0.1
-				mobilization_speed = -0.2
+				improve_relations_maintain_cost_factor = 0.10
+				mobilization_speed = -0.20
 			}
 		}
 
@@ -1509,7 +1509,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription_factor = -0.75
+				conscription_factor = -0.40
 				improve_relations_maintain_cost_factor = 0.75
 				mobilization_speed = -0.45
 			}
