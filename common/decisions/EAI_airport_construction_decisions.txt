@@ -1,0 +1,879 @@
+Macro_Builder = {
+	
+	GEN_Construction_Airport1 = {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 90
+								
+		ai_will_do = {
+			factor = 10
+		}
+		
+		visible = {
+		is_ai = yes
+		check_variable = { potential_and_current_enemies > 0 }
+		check_variable = { num_deployed_planes < 200 }
+		check_variable = { num_deployed_planes > 0 }
+		NOT = {
+			enemies_strength_ratio > 2.0
+			has_country_flag = airportCD
+			}	
+		}							
+		
+		
+	complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_Airport target: [From.GetName]"
+
+random_owned_state = {
+	limit = {
+		air_base < 1			
+		all_neighbor_state = {
+			OR = {
+				is_fully_controlled_by = ROOT		
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				}
+				
+	any_neighbor_state = {
+	any_neighbor_state = {
+		controller = {
+		ROOT = {
+		is_in_array = { potential_and_current_enemies = PREV } 
+		}
+	}
+	}
+	}
+	
+	all_neighbor_state = {
+	all_neighbor_state = {
+	NOT = {
+			AND = {
+				OR = {
+				is_fully_controlled_by = ROOT
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				air_base > 0
+				}
+			}
+			}	
+			}
+			}
+			
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+				
+		controller = {
+		set_country_flag = airportCD
+		}		
+}
+}
+
+remove_effect = {
+clr_country_flag = airportCD
+}
+}
+	GEN_Construction_Airport2 = {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 180
+								
+		ai_will_do = {
+			factor = 10
+		}
+		
+		visible = {
+		is_ai = yes
+		check_variable = { potential_and_current_enemies > 0 }
+		check_variable = { num_deployed_planes < 400 }
+		check_variable = { num_deployed_planes > 200 }
+		NOT = {
+			enemies_strength_ratio > 2.0
+			}
+		}							
+		
+		
+	complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_Airport target: [From.GetName]"
+		
+		
+random_owned_state = {
+	limit = {
+		air_base < 2			
+		all_neighbor_state = {
+			OR = {
+				is_fully_controlled_by = ROOT		
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				}
+				
+	any_neighbor_state = {
+	any_neighbor_state = {
+		controller = {
+		ROOT = {
+		is_in_array = { potential_and_current_enemies = PREV } 
+		}
+	}
+	}
+	}
+	
+	all_neighbor_state = {
+	all_neighbor_state = {
+	NOT = {
+			AND = {
+				OR = {
+				is_fully_controlled_by = ROOT
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				air_base > 1
+				}
+			}
+			}	
+			}			
+			}
+			
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = no
+				}
+		
+		controller = {
+		set_country_flag = airportCD
+		}		
+						
+}
+}
+remove_effect = {
+clr_country_flag = airportCD
+}
+}
+
+GEN_Construction_Airport3 = {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 270
+								
+		ai_will_do = {
+			factor = 10
+		}
+		
+		visible = {
+		is_ai = yes
+		check_variable = { potential_and_current_enemies > 0 }
+		check_variable = { num_deployed_planes < 600 }
+		check_variable = { num_deployed_planes > 400 }
+		NOT = {
+			enemies_strength_ratio > 2.0
+			}
+		}							
+		
+		
+	complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_Airport target: [From.GetName]"
+
+random_owned_state = {
+	limit = {
+		air_base < 3			
+		all_neighbor_state = {
+			OR = {
+				is_fully_controlled_by = ROOT		
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				}
+				
+	any_neighbor_state = {
+	any_neighbor_state = {
+		controller = {
+		ROOT = {
+		is_in_array = { potential_and_current_enemies = PREV } 
+		}
+	}
+	}
+	}
+	
+	all_neighbor_state = {
+	all_neighbor_state = {
+	NOT = {
+			AND = {
+				OR = {
+				is_fully_controlled_by = ROOT
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				air_base > 2
+				}
+			}
+			}	
+			}
+			}
+			
+			add_building_construction = {
+				type = air_base
+				level = 3
+				instant_build = no
+				}
+		controller = {
+		set_country_flag = airportCD
+		}			
+}
+}
+remove_effect = {
+clr_country_flag = airportCD
+}
+}
+
+GEN_Construction_Airport4 = {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 360
+								
+		ai_will_do = {
+			factor = 10
+		}
+		
+		visible = {
+		is_ai = yes
+		check_variable = { potential_and_current_enemies > 0 }
+		check_variable = { num_deployed_planes < 800 }
+		check_variable = { num_deployed_planes > 600 }
+		NOT = {
+			enemies_strength_ratio > 2.0
+			}
+		}							
+		
+		
+	complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_Airport target: [From.GetName]"
+
+random_owned_state = {
+	limit = {
+		air_base < 4			
+		all_neighbor_state = {
+			OR = {
+				is_fully_controlled_by = ROOT		
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				}
+				
+	any_neighbor_state = {
+	any_neighbor_state = {
+		controller = {
+		ROOT = {
+		is_in_array = { potential_and_current_enemies = PREV } 
+		}
+	}
+	}
+	}
+	
+	all_neighbor_state = {
+	all_neighbor_state = {
+	NOT = {
+			AND = {
+				OR = {
+				is_fully_controlled_by = ROOT
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				air_base > 3
+				}
+			}
+			}	
+			}
+			}
+			
+			add_building_construction = {
+				type = air_base
+				level = 4
+				instant_build = no
+				}
+		
+		controller = {
+		set_country_flag = airportCD
+		}				
+}
+}
+remove_effect = {
+clr_country_flag = airportCD
+}
+}
+
+GEN_Construction_Airport5 = {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 450
+								
+		ai_will_do = {
+			factor = 10
+		}
+		
+		visible = {
+		is_ai = yes
+		check_variable = { potential_and_current_enemies > 0 }
+		check_variable = { num_deployed_planes < 1000 }
+		check_variable = { num_deployed_planes > 800 }
+		NOT = {
+			enemies_strength_ratio > 2.0
+			}
+		}							
+		
+		
+	complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_Airport target: [From.GetName]"
+
+random_owned_state = {
+	limit = {
+		air_base < 5			
+		all_neighbor_state = {
+			OR = {
+				is_fully_controlled_by = ROOT		
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				}
+				
+	any_neighbor_state = {
+	any_neighbor_state = {
+		controller = {
+		ROOT = {
+		is_in_array = { potential_and_current_enemies = PREV } 
+		}
+	}
+	}
+	}
+	
+	all_neighbor_state = {
+	all_neighbor_state = {
+	NOT = {
+			AND = {
+				OR = {
+				is_fully_controlled_by = ROOT
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				air_base > 4
+				}
+			}
+			}	
+			}
+			}
+			
+			add_building_construction = {
+				type = air_base
+				level = 5
+				instant_build = no
+				}
+	controller = {
+		set_country_flag = airportCD
+		}					
+}
+}
+remove_effect = {
+clr_country_flag = airportCD
+}
+}
+
+GEN_Construction_Airport6 = {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 540
+								
+		ai_will_do = {
+			factor = 10
+		}
+		
+		visible = {
+		is_ai = yes
+		check_variable = { potential_and_current_enemies > 0 }
+		check_variable = { num_deployed_planes < 1200 }
+		check_variable = { num_deployed_planes > 1000 }
+		NOT = {
+			enemies_strength_ratio > 2.0
+			}
+		}							
+		
+		
+	complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_Airport target: [From.GetName]"
+
+random_owned_state = {
+	limit = {
+		air_base < 6			
+		all_neighbor_state = {
+			OR = {
+				is_fully_controlled_by = ROOT		
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				}
+				
+	any_neighbor_state = {
+	any_neighbor_state = {
+		controller = {
+		ROOT = {
+		is_in_array = { potential_and_current_enemies = PREV } 
+		}
+	}
+	}
+	}
+	
+	all_neighbor_state = {
+	all_neighbor_state = {
+	NOT = {
+			AND = {
+				OR = {
+				is_fully_controlled_by = ROOT
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				air_base > 5
+				}
+			}
+			}	
+			}
+			}
+			
+			add_building_construction = {
+				type = air_base
+				level = 6
+				instant_build = no
+				}	
+		
+	controller = {
+		set_country_flag = airportCD
+		}			
+}
+}
+remove_effect = {
+clr_country_flag = airportCD
+}
+}
+
+GEN_Construction_Airport7 = {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 630
+								
+		ai_will_do = {
+			factor = 10
+		}
+		
+		visible = {
+		is_ai = yes
+		check_variable = { potential_and_current_enemies > 0 }
+		check_variable = { num_deployed_planes < 1400 }
+		check_variable = { num_deployed_planes > 1200 }
+		NOT = {
+			enemies_strength_ratio > 2.0
+			}
+		}							
+		
+		
+	complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_Airport target: [From.GetName]"
+
+random_owned_state = {
+	limit = {
+		air_base < 7			
+		all_neighbor_state = {
+			OR = {
+				is_fully_controlled_by = ROOT		
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				}
+				
+	any_neighbor_state = {
+	any_neighbor_state = {
+		controller = {
+		ROOT = {
+		is_in_array = { potential_and_current_enemies = PREV } 
+		}
+	}
+	}
+	}
+	
+	all_neighbor_state = {
+	all_neighbor_state = {
+	NOT = {
+			AND = {
+				OR = {
+				is_fully_controlled_by = ROOT
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				air_base > 6
+				}
+			}
+			}	
+			}
+			}
+			
+			add_building_construction = {
+				type = air_base
+				level = 7
+				instant_build = no
+				}
+	controller = {
+		set_country_flag = airportCD
+		}					
+}
+}
+remove_effect = {
+clr_country_flag = airportCD
+}
+}
+
+GEN_Construction_Airport8 = {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 720
+								
+		ai_will_do = {
+			factor = 10
+		}
+		
+		visible = {
+		is_ai = yes
+		check_variable = { potential_and_current_enemies > 0 }
+		check_variable = { num_deployed_planes < 1600 }
+		check_variable = { num_deployed_planes > 1400 }
+		NOT = {
+			enemies_strength_ratio > 2.0
+			}
+		}							
+		
+		
+	complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_Airport target: [From.GetName]"
+
+random_owned_state = {
+	limit = {
+		air_base < 8			
+		all_neighbor_state = {
+			OR = {
+				is_fully_controlled_by = ROOT		
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				}
+				
+	any_neighbor_state = {
+	any_neighbor_state = {
+		controller = {
+		ROOT = {
+		is_in_array = { potential_and_current_enemies = PREV } 
+		}
+	}
+	}
+	}
+	
+	all_neighbor_state = {
+	all_neighbor_state = {
+	NOT = {
+			AND = {
+				OR = {
+				is_fully_controlled_by = ROOT
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				air_base > 7
+				}
+			}
+			}	
+			}
+			}
+			
+			add_building_construction = {
+				type = air_base
+				level = 8
+				instant_build = no
+				}
+	controller = {
+		set_country_flag = airportCD
+		}				
+}
+}
+remove_effect = {
+clr_country_flag = airportCD
+}
+}
+
+GEN_Construction_Airport9 = {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 810
+								
+		ai_will_do = {
+			factor = 10
+		}
+		
+		visible = {
+		is_ai = yes
+		check_variable = { potential_and_current_enemies > 0 }
+		check_variable = { num_deployed_planes < 1800 }
+		check_variable = { num_deployed_planes > 1600 }
+		NOT = {
+			enemies_strength_ratio > 2.0
+			}
+		}							
+		
+		
+	complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_Airport target: [From.GetName]"
+
+random_owned_state = {
+	limit = {
+		air_base < 9		
+		all_neighbor_state = {
+			OR = {
+				is_fully_controlled_by = ROOT		
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				}
+				
+	any_neighbor_state = {
+	any_neighbor_state = {
+		controller = {
+		ROOT = {
+		is_in_array = { potential_and_current_enemies = PREV } 
+		}
+	}
+	}
+	}
+	
+	all_neighbor_state = {
+	all_neighbor_state = {
+	NOT = {
+			AND = {
+				OR = {
+				is_fully_controlled_by = ROOT
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				air_base > 8
+				}
+			}
+			}	
+			}
+			}
+			
+			add_building_construction = {
+				type = air_base
+				level = 9
+				instant_build = no
+				}
+	controller = {
+		set_country_flag = airportCD
+		}					
+}
+}
+remove_effect = {
+clr_country_flag = airportCD
+}
+}
+
+GEN_Construction_Airport10 = {
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 900
+								
+		ai_will_do = {
+			factor = 10
+		}
+		
+		visible = {
+		is_ai = yes
+		check_variable = { potential_and_current_enemies > 0 }
+		check_variable = { num_deployed_planes < 2000 }
+		check_variable = { num_deployed_planes > 1800 }
+		NOT = {
+			enemies_strength_ratio > 2.0
+			}
+		}							
+		
+		
+	complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_Airport target: [From.GetName]"
+
+random_owned_state = {
+	limit = {
+		air_base < 10			
+		all_neighbor_state = {
+			OR = {
+				is_fully_controlled_by = ROOT		
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				}
+				
+	any_neighbor_state = {
+	any_neighbor_state = {
+		controller = {
+		ROOT = {
+		is_in_array = { potential_and_current_enemies = PREV } 
+		}
+	}
+	}
+	}
+	
+	all_neighbor_state = {
+	all_neighbor_state = {
+	NOT = {
+			AND = {
+				OR = {
+				is_fully_controlled_by = ROOT
+			controller = {
+				OR = {
+				is_in_faction_with = ROOT
+				is_puppet_of = ROOT
+				is_subject_of = ROOT
+				}
+				}
+				}
+				air_base > 9
+				}
+			}
+			}	
+			}
+			}
+			
+			add_building_construction = {
+				type = air_base
+				level = 10
+				instant_build = no
+				}
+	controller = {
+		set_country_flag = airportCD
+		}					
+}
+}
+remove_effect = {
+clr_country_flag = airportCD
+}
+}
+}

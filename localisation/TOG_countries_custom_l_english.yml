@@ -1,0 +1,82 @@
+﻿l_english:
+ 
+ #Farbrook Watertowns Firtree
+ FWF_democratic:0 "Confederation of Hillpony Tribes"
+ FWF_communism:0 "Socialist Confederation of Hillpony Tribes"
+ FWF_fascism:0 "Hillpony Tribes State"
+ FWF_neutrality:0 "Hillpony Tribes"
+
+ FWF_democratic_DEF:0 "Confederation of Hillpony Tribes"
+ FWF_communism_DEF:0 "Socialist Confederation of Hillpony Tribes"
+ FWF_fascism_DEF:0 "Hillpony Tribes State"
+ FWF_neutrality_DEF:0 "Hillpony Tribes"
+
+ FWF_democratic_ADJ:0 "Confederation of Hillpony Tribes"
+ FWF_communism_ADJ:0 "Socialist Confederation of Hillpony Tribes"
+ FWF_fascism_ADJ:0 "Hillpony Tribes State"
+ FWF_neutrality_ADJ:0 "Hillpony Tribes"
+
+ #Hellquill Longsword
+ HLP_democratic:0 "Hellsword Republic"
+ HLP_communism:0 "Hellsword Autonomous Socialist Republic"
+ HLP_fascism:0 "Hellsword State"
+ HLP_neutrality:0 "Hellsword"
+
+ HLP_democratic_DEF:0 "Hellsword Republic"
+ HLP_communism_DEF:0 "Hellsword Autonomous Socialist Republic"
+ HLP_fascism_DEF:0 "Hellsword State"
+ HLP_neutrality_DEF:0 "Hellsword"
+
+ HLP_democratic_ADJ:0 "Hellsword Republic"
+ HLP_communism_ADJ:0 "Hellsword Autonomous Socialist Republic"
+ HLP_fascism_ADJ:0 "Hellsword State"
+ HLP_neutrality_ADJ:0 "Hellsword"
+
+ #Minotauria Cyanolisia
+ MCP_democratic:0 "Republic of Asterion-Cyanolisia"
+ MCP_communism:0 "Minotaur Autonomous Socialist Republic"
+ MCP_fascism:0 "Asterion-Cyanolisia State"
+ MCP_neutrality:0 "Asterion-Cyanolisia"
+
+ MCP_democratic_DEF:0 "Republic of Asterion-Cyanolisia"
+ MCP_communism_DEF:0 "Minotaur Autonomous Socialist Republic"
+ MCP_fascism_DEF:0 "Asterion-Cyanolisia State"
+ MCP_neutrality_DEF:0 "Asterion-Cyanolisia"
+
+ MCP_democratic_ADJ:0 "Republic of Asterion-Cyanolisia"
+ MCP_communism_ADJ:0 "Minotaur Autonomous Socialist Republic"
+ MCP_fascism_ADJ:0 "Asterion-Cyanolisia State"
+ MCP_neutrality_ADJ:0 "Asterion-Cyanolisia"
+
+ #Griffongaard
+ GFG_democratic:0 "Duchy of Griffongaard"
+ GFG_communism:0 "Duchy of Griffongaard"
+ GFG_fascism:0 "Duchy of Griffongaard"
+ GFG_neutrality:0 "Duchy of Griffongaard"
+
+ GFG_democratic_DEF:0 "Duchy of Griffongaard"
+ GFG_communism_DEF:0 "Duchy of Griffongaard"
+ GFG_fascism_DEF:0 "Duchy of Griffongaard"
+ GFG_neutrality_DEF:0 "Duchy of Griffongaard"
+
+ GFG_democratic_ADJ:0 "Duchy of Griffongaard"
+ GFG_communism_ADJ:0 "Duchy of Griffongaard"
+ GFG_fascism_ADJ:0 "Duchy of Griffongaard"
+ GFG_neutrality_ADJ:0 "Duchy of Griffongaard"
+ 
+ #Noone
+ NOU_democratic:0 "Noone"
+ NOU_communism:0 "Noone"
+ NOU_fascism:0 "Noone"
+ NOU_neutrality:0 "Noone"
+ 
+ NOU_democratic_DEF:0 "Noone"
+ NOU_communism_DEF:0 "Noone"
+ NOU_fascism_DEF:0 "Noone"
+ NOU_neutrality_DEF:0 "Noone"
+ 
+ NOU_democratic_ADJ:0 "Noone"
+ NOU_communism_ADJ:0 "Noone"
+ NOU_fascism_ADJ:0 "Noone"
+ NOU_neutrality_ADJ:0 "Noone"
+ 

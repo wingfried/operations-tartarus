@@ -82,3 +82,24 @@ units = {
 		start_experience_factor = 0.3 }
 }
 
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = melee_equipment_1
+			creator = "FRN"
+		}
+		requested_factories = 2
+		progress = 0.75
+		efficiency = 25
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "FRN"
+		}
+		requested_factories = 1
+		progress = 0.35
+		efficiency = 12
+	}
+}

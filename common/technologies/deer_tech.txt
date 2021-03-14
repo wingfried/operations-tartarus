@@ -611,19 +611,29 @@ modifier = {
 			surface_visibility = -0.15
 		}
 		battleship = {
-			sub_visibility = -0.15 surface_visibility = -0.15
+			surface_visibility = -0.15
 		}
-
 		destroyer = {
 			surface_visibility = -0.15
 		}
 		submarine = {
-			surface_visibility = -0.15
+			sub_visibility = -0.15 
 		}
 		carrier = {
 			surface_visibility = -0.15
 		}
-
+		monitor = {
+			surface_visibility = -0.15
+		}
+		large_cruiser1 = {
+			surface_visibility = -0.15
+		}
+		large_cruiser2 = {
+			surface_visibility = -0.15
+		}
+		large_cruiser3 = {
+			surface_visibility = -0.15
+		}
 
 		path = {
 			leads_to_tech = tech_deer_naval_c
@@ -731,7 +741,7 @@ modifier = {
 		}
 
 		recon_factor = 0.1
-		planning_speed = 0.1
+		army_morale_factor = 0.05
 
 		path = {
 			leads_to_tech = tech_deer_seer2
@@ -917,7 +927,7 @@ modifier = {
 	#Predictive Planning
 	tech_deer_seer_b = {
 
-		max_planning = 0.1
+		breakthrough_factor = 0.10
 
 		path = {
 			leads_to_tech = tech_deer_naval_c
@@ -1244,7 +1254,7 @@ modifier = {
 
 			modifier = {
 				factor = 2
-				tag = OLE
+				original_tag = OLE
 			}
 
 			modifier = {
@@ -1417,18 +1427,30 @@ modifier = {
 			race_tech
 			deer_army_tech
 		}
-
+		
 		ai_will_do = {
 			factor = 3
 
 			modifier = {
 				factor = 0.3
 				has_government = democratic
+				NOT = { original_tag = OLV }
 			}
 
 			modifier = {
 				factor = 2
-				tag = OLE
+				original_tag = OLE
+			}
+
+			modifier = {
+				factor = 4
+				original_tag = OLV
+			}
+
+			modifier = {
+				factor = 2
+				NOT = { has_country_flag = OLE_CHN_puppet }
+				has_government = fascism
 			}
 			
 			modifier = {

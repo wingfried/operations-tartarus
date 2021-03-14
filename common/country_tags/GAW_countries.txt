@@ -1,3 +1,0 @@
-FWF = "countries/GAW_FBK_WAT_FIR.txt"
-HLP = "countries/GAW_HLQ_LNS.txt"
-MCP = "countries/GAW_MIT_CYA.txt"

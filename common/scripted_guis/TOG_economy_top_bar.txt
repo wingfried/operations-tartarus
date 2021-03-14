@@ -1,0 +1,10 @@
+scripted_gui = {
+	economy = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "economy_container"
+		visible = {
+            always = yes
+		}
+	}
+}

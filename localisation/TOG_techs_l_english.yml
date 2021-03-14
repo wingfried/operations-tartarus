@@ -1,0 +1,237 @@
+﻿l_english:
+ 
+ ### LAND DOCTRINE ###
+
+ ELITE_FORCES_DOCTRINE_LABEL:0 "ELITE FORCES DOCTRINE"
+ ELITE_FORCES_DOCTRINE_DESC:0 "Our special forces are the ustopabble spear, while our regular troops are the unbreakeable shield."
+ SPECIAL_FORCES_LABEL:0 "SPECIAL FORCES"
+ COMBINED_FORCES_LABEL:0 "COMBINED FORCES"
+ SPIES_LABEL:0 "SPIES"
+
+ elite_forces_doc:0 "Specialized Training"
+ delay_efd:0 "Delay"
+ hold_line_efd:0 "Hold The Line"
+ night_missions_efd:0 "Continuous Night Missions"
+
+ ### HEAVY ARTILLERY ###
+
+ heavy_artillery_tech_research:0 "Heavy Artillery Research Speed"
+
+ heavy_artillery:0 "Heavy Artillery"
+ heavy_artillery_equipment:0 "Heavy Artillery Equipment"
+
+ heavy_artillery_2:0 "Heavy Artillery Upgrade"
+ heavy_artillery_2_desc:0 "Placeholder"
+ 
+ heavy_artillery_4:0 "Improved Heavy Artillery Upgrade I"
+ heavy_artillery_4_desc:0 "Placeholder"
+
+ heavy_artillery_5:0 "Improved Heavy Artillery Upgrade II"
+ heavy_artillery_5_desc:0 "Placeholder"
+
+ heavy_artillery_7:0 "Advanced Heavy Artillery Upgrade I"
+ heavy_artillery_7_desc:0 "Placeholder"
+
+ heavy_artillery_8:0 "Advanced Heavy Artillery Upgrade II"
+ heavy_artillery_8_desc:0 "Placeholder"
+
+ heavy_artillery_10:0 "Modern Heavy Artillery Upgrade I"
+ heavy_artillery_10_desc:0 "Placeholder"
+
+ heavy_artillery_11:0 "Modern Heavy Artillery Upgrade II"
+ heavy_artillery_11_desc:0 "Placeholder"
+
+ heavy_artillery_equipment_1:0 "Heavy Artillery"
+ heavy_artillery_equipment_1_desc:0 "Placeholder"
+
+ heavy_artillery_equipment_2:0 "Impoved Heavy Artillery"
+ heavy_artillery_equipment_2_desc:0 "Placeholder"
+
+ heavy_artillery_equipment_3:0 "Advanced Heavy Artillery"
+ heavy_artillery_equipment_3_desc:0 "Placeholder"
+
+ heavy_artillery_equipment_4:0 "Modern Heavy Artillery"
+ heavy_artillery_equipment_4_desc:0 "Placeholder"
+
+ ### GRIFFERS ###
+ 
+ witcher_folder:0 "Griffer Training"
+ witcher_folder_desc:0 "Special training specific to Griffers"
+
+ witchers:0 "Griffers"
+ witchers_desc:0 "Placeholder"
+ 
+ TITLE_WITCHER_SUBTITLE:0 "GRIFFER TRAINING"
+ 
+ tech_recruit_witchers:0 "Trial of the Grassess"
+ tech_recruit_witchers_desc:0 "Placeholder"
+
+ tech_witcher_swords:0 "Focus on Swords Training"
+ tech_witcher_swords_desc:0 "Placeholder"
+
+ tech_steel_sword:0 "Steel Sword Training I"
+ tech_steel_sword_desc:0 "Placeholder"
+
+ tech_steel_sword2:0 "Steel Sword Training II"
+ tech_steel_sword_desc:0 "Placeholder"
+
+ tech_steel_sword3:0 "Steel Sword Training III"
+ tech_steel_sword_desc:0 "Placeholder"
+
+ tech_steel_sword4:0 "Steel Sword Training IV"
+ tech_steel_sword_desc:0 "Placeholder"
+
+ tech_steel_sword5:0 "Steel Sword Training V"
+ tech_steel_sword_desc:0 "Placeholder"
+
+ tech_steel_sword6:0 "Steel Sword Training VI"
+ tech_steel_sword_desc:0 "Placeholder"
+
+ tech_steel_sword7:0 "Steel Sword Training VII"
+ tech_steel_sword_desc:0 "Placeholder"
+
+ tech_steel_sword8:0 "Steel Sword Training VIII"
+ tech_steel_sword_desc:0 "Placeholder"
+
+ tech_silver_sword:0 "Silver Sword Training I"
+ tech_silver_sword_desc:0 "Placeholder"
+
+ tech_silver_sword2:0 "Silver Sword Training II"
+ tech_silver_sword_desc:0 "Placeholder"
+
+ tech_silver_sword3:0 "Silver Sword Training III"
+ tech_silver_sword_desc:0 "Placeholder"
+
+ tech_silver_sword4:0 "Silver Sword Training IV"
+ tech_silver_sword_desc:0 "Placeholder"
+
+ tech_silver_sword5:0 "Silver Sword Training V"
+ tech_silver_sword_desc:0 "Placeholder"
+
+ tech_silver_sword6:0 "Silver Sword Training VI"
+ tech_silver_sword_desc:0 "Placeholder"
+
+ tech_silver_sword7:0 "Silver Sword Training VII"
+ tech_silver_sword_desc:0 "Placeholder"
+
+ tech_silver_sword8:0 "Silver Sword Training VIII"
+ tech_silver_sword_desc:0 "Placeholder"
+
+ tech_signs:0 "Focus on Signs Training"
+ tech_signs_desc:0 "Placeholder"
+
+ tech_aard_sign:0 "Aard I"
+ tech_aard_sign_desc:0 "Placeholder"
+
+ tech_aard_sign2:0 "Aard II"
+ tech_aard_sign2_desc:0 "Placeholder"
+
+ tech_aard_sign3:0 "Aard III"
+ tech_aard_sign3_desc:0 "Placeholder"
+
+ tech_aard_sign4:0 "Aard IV"
+ tech_aard_sign4_desc:0 "Placeholder"
+
+ tech_aksii_sign:0 "Axii I"
+ tech_aksii_sign_desc:0 "Placeholder"
+
+ tech_aksii_sign2:0 "Axii II"
+ tech_aksii_sign2_desc:0 "Placeholder"
+
+ tech_aksii_sign3:0 "Axii III"
+ tech_aksii_sign3_desc:0 "Placeholder"
+
+ tech_aksii_sign4:0 "Axii IV"
+ tech_aksii_sign4_desc:0 "Placeholder"
+
+ tech_igni_sign:0 "Igni I"
+ tech_igni_sign_desc:0 "Placeholder"
+
+ tech_igni_sign2:0 "Igni II"
+ tech_igni_sign2_desc:0 "Placeholder"
+
+ tech_igni_sign3:0 "Igni III"
+ tech_igni_sign3_desc:0 "Placeholder"
+
+ tech_igni_sign4:0 "Igni IV"
+ tech_igni_sign4_desc:0 "Placeholder"
+
+ tech_quen_sign:0 "Quen I"
+ tech_quen_sign_desc:0 "Placeholder"
+
+ tech_quen_sign2:0 "Quen II"
+ tech_quen_sign2_desc:0 "Placeholder"
+
+ tech_quen_sign3:0 "Quen III"
+ tech_quen_sign3_desc:0 "Placeholder"
+
+ tech_quen_sign4:0 "Quen IV"
+ tech_quen_sign4_desc:0 "Placeholder"
+
+ tech_yrden_sign:0 "Yrden I"
+ tech_yrden_sign_desc:0 "Placeholder"
+
+ tech_yrden_sign2:0 "Yrden II"
+ tech_yrden_sign2_desc:0 "Placeholder"
+
+ tech_yrden_sign3:0 "Yrden III"
+ tech_yrden_sign3_desc:0 "Placeholder"
+
+ tech_yrden_sign4:0 "Yrden IV"
+ tech_yrden_sign4_desc:0 "Placeholder"
+
+
+
+ ### AERIAL UNICORNS ###
+
+ aerial_mage_folder:0 "Aerial Unicorn Technologies"
+ aerial_mage_folder_desc:0 "Magical technologies specific to Aerial Unicorns"
+
+ aerial_mage_equipment:0 "Aerial Unicorn Equipment"
+
+ aerial_mages:0 "Aerial Unicorns"
+ aerial_mages_desc:0 "Placeholder"
+
+ aerial_mage_spotters:0 "Aerial Unicorn Spotters"
+ aerial_mage_spotters_desc:0 "Placeholder"
+ 
+ TITLE_AERIAL_MAGE_SUBTITLE:0 "AERIAL UNICORN TECHNOLOGIES"
+
+ aerial_mage_equipment_0:0 "Elenium Type 34"
+ aerial_mage_equipment_0_desc:0 "Placeholder"
+
+ aerial_mage_equipment_1:0 "Elenium Type 45"
+ aerial_mage_equipment_1_desc:0 "Placeholder"
+
+ aerial_mage_equipment_2:0 "Elenium Type 56"
+ aerial_mage_equipment_2_desc:0 "Placeholder"
+
+ aerial_mage_equipment_3:0 "Elenium Type 64"
+ aerial_mage_equipment_3_desc:0 "Placeholder"
+
+ aerial_mage_equipment_4:0 "Elenium Type 76"
+ aerial_mage_equipment_4_desc:0 "Placeholder"
+
+ aerial_mage_equipment_5:0 "Elenium Type 84"
+ aerial_mage_equipment_5_desc:0 "Placeholder"
+
+ aerial_mage_equipment_6:0 "Elenium Type 95"
+ aerial_mage_equipment_6_desc:0 "Placeholder"
+
+ tech_aerial_mages_speed_1:0 "Overclocking 1"
+ tech_aerial_mages_speed_1_desc:0 "Placeholder"
+
+ tech_aerial_mages_speed_2:0 "Overclocking 2"
+ tech_aerial_mages_speed_2_desc:0 "Placeholder"
+
+ tech_aerial_mages_speed_3:0 "Overclocking 3"
+ tech_aerial_mages_speed_3_desc:0 "Placeholder"
+
+ tech_aerial_mages_speed_4:0 "Overclocking 4"
+ tech_aerial_mages_speed_4_desc:0 "Placeholder"
+
+ tech_aerial_mages_speed_5:0 "Overclocking 5"
+ tech_aerial_mages_speed_5_desc:0 "Placeholder"
+
+ tech_aerial_mages_speed_6:0 "Overclocking 6"
+ tech_aerial_mages_speed_6_desc:0 "Placeholder"

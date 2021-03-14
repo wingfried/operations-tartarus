@@ -1,0 +1,42 @@
+﻿l_english:
+
+#ideology decisions
+anti_anarchism_raids:0 "Anti-Anarchist Raids"
+anti_technocracy_raids:0 "Anti-Technocratic Raids"
+anti_kleptocracy_raids:0 "Anti-Kleptocratic Raids"
+anti_theocracy_raids:0 "Anti-Theocratic Raids"
+anti_magocracy_raids:0 "Anti-Magocratic Raids"
+
+ban_anarchism_party:0 "Ban Anarchism"
+ban_technocracy_party:0 "Ban Technocracy"
+ban_kleptocracy_party:0 "Ban Kleptocracy"
+ban_theocracy_party:0 "Ban Theocracy"
+ban_magocracy_party:0 "Ban Magocracy"
+
+ban_anarchism_party_tt:1 "Change in popularity of Anarchism: §G-§![?Root.party_popularity@tog_anarchism|%0G].\n"
+ban_technocracy_party_tt:1 "Change in popularity of Technocracy: §G-§![?Root.party_popularity@tog_technocracy|%0G].\n"
+ban_kleptocracy_party_tt:1 "Change in popularity of Kleptocracy: §G-§![?Root.party_popularity@tog_kleptocracy|%0G].\n"
+ban_theocracy_party_tt:1 "Change in popularity of Theocracy: §G-§![?Root.party_popularity@tog_theocracy|%0G].\n"
+ban_magocracy_party_tt:1 "Change in popularity of Magocracy: §G-§![?Root.party_popularity@tog_magocracy|%0G].\n"
+
+#Puppet decisions
+tog_form_puppet_category:0 "Form Puppets"
+
+form_MIT_CYA_puppet:0 "Form [Root.GetMitCyaDecision]"
+MIT_CYA_puppet_communism:0 "Minotaur Autonomous Socialist Republic"
+MIT_CYA_puppet_democratic:0 "Republic of Asterion-Cyanolisia"
+MIT_CYA_puppet_neutral:0 "Asterion-Cyanolisia"
+
+form_HLQ_LNS_puppet:0 "Form [Root.GetHlqLnsDecision]"
+HLQ_LNS_puppet_communism:0 "Hellsword Autonomous Socialist Republic"
+HLQ_LNS_puppet_democratic:0 "Hellsword Republic"
+HLQ_LNS_puppet_neutral:0 "Hellsword"
+
+form_FBK_WAT_FIR_puppet:0 "Form [Root.GetFbkWatFirDecision]"
+FBK_WAT_FIR_puppet_communism:0 "Socialist Confederation of Hillpony Tribes"
+FBK_WAT_FIR_puppet_democratic:0 "Confederation of Hillpony Tribes"
+FBK_WAT_FIR_puppet_neutral:0 "Hillpony Tribes"
+
+#Other decisions
+military_academy_training_category:0 "Military Academy"
+war_college_training_category:0 "War College"

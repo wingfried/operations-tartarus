@@ -1,0 +1,31 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_TOG_element_of_honesty"
+		texturefile = "gfx/artifacts/elements_of_harmony/Honesty.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TOG_element_of_kindness"
+		texturefile = "gfx/artifacts/elements_of_harmony/Kindness.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TOG_element_of_laughter"
+		texturefile = "gfx/artifacts/elements_of_harmony/Laughter.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TOG_element_of_generosity"
+		texturefile = "gfx/artifacts/elements_of_harmony/Generosity.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TOG_element_of_loyalty"
+		texturefile = "gfx/artifacts/elements_of_harmony/Loyalty.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TOG_element_of_magic"
+		texturefile = "gfx/artifacts/elements_of_harmony/Magic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TOG_elements_of_harmony"
+		texturefile = "gfx/artifacts/elements_of_harmony/Harmony.dds"
+	}
+}

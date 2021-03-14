@@ -1,11 +1,15 @@
-version="1.9.*"
+version="1.0.1"
 tags={
 	"Alternative History"
-	"Gameplay"
+	"National Focuses"
 	"Events"
+	"Gameplay"
 }
-name="EaW - Operation Tartarus"
-supported_version="1.9.*"
-dependencies = {  
+name="EaW: Tales of Griffonia"
+picture="thumbnail.png"
+dependencies={
 	"Equestria at War"
+	"EaW – Ghosts of Yore"
 }
+supported_version="1.10.*"
+remote_file_id="2381194431"

@@ -1,0 +1,22 @@
+defined_text = {
+
+	name = GetEconomyTooltip
+
+	text = {
+		trigger = {
+			has_tech = pony_race
+		}
+		localization_key = BIT_TOOLTIP
+	}
+
+	text = {
+		trigger = {
+			has_tech = griffon_race
+		}
+		localization_key = IDOL_TOOLTIP
+	}
+
+	text = {
+		localization_key = COIN_TOOLTIP
+	}
+}

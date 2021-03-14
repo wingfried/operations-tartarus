@@ -1,0 +1,39 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+
+			# ELEMENTS OF HARMONY
+
+			random_country = {
+				limit = { has_idea = TOG_element_of_honesty_idea }
+				set_variable = { global.element_of_honesty_owner = ROOT }
+			}
+
+			random_country = {
+				limit = { has_idea = TOG_element_of_kindness_idea }
+				set_variable = { global.element_of_kindness_owner = ROOT }
+			}
+
+			random_country = {
+				limit = { has_idea = TOG_element_of_laughter_idea }
+				set_variable = { global.element_of_laughter_owner = ROOT }
+			}
+
+			random_country = {
+				limit = { has_idea = TOG_element_of_generosity_idea }
+				set_variable = { global.element_of_generosity_owner = ROOT }
+			}
+
+			random_country = {
+				limit = { has_idea = TOG_element_of_loyalty_idea }
+				set_variable = { global.element_of_loyalty_owner = ROOT }
+			}
+
+			random_country = {
+				limit = { has_idea = TOG_element_of_magic_idea }
+				set_variable = { global.element_of_magic_owner = ROOT }
+			}
+		}
+	}
+}

@@ -1,0 +1,5 @@
+sub_unit_categories = {
+	category_regular_infantry_all #All infantry without special
+	category_regular_infantry #Hoof/Claw infantry without special
+	category_hero #Heroes
+}

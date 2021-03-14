@@ -1,0 +1,882 @@
+ideas = {
+
+	country = {
+
+		VED_Mountain_Training_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 0.10
+			}
+		}
+
+		VED_Unhappy_Military_Prince_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+			}
+		}
+
+		VED_Unhappy_Fascist_Prince_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+			}
+		}
+
+		VED_One_for_All_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		VED_All_for_One_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.015
+			}
+		}
+
+		VED_Untrained_Workers_idea1 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.14
+				consumer_goods_factor = 0.04
+			}
+		}
+
+		VED_Untrained_Workers_idea2 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.07
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		VED_Shattered_Economy_idea1 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.10
+				stability_factor = -0.10
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+			}
+		}
+		
+		VED_Shattered_Economy_idea2 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = -0.075
+			}
+		}
+
+		VED_Church_Furious_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				political_power_gain = -0.30
+			}
+		}
+
+		VED_Church_Disapproval_idea1 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				political_power_gain = -0.20
+			}
+		}
+		
+		VED_Church_Disapproval_idea2 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				political_power_gain = -0.10
+			}
+		}
+		
+		VED_Chaos_Within_the_Nobles_idea1 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				political_power_gain = -0.50
+			}
+		}
+		
+		VED_Chaos_Within_the_Nobles_idea2 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.20
+				political_power_gain = -0.40
+			}
+		}
+		
+		VED_Chaos_Within_the_Nobles_idea3 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				political_power_gain = -0.30
+			}
+		}
+
+		VED_Chaos_Within_the_Nobles_idea4 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				political_power_gain = -0.20
+			}
+		}
+
+		VED_Chaos_Within_the_Nobles_idea5 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				political_power_gain = -0.10
+			}
+		}
+
+		VED_Reunited_Nobles_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				political_power_gain = 0.25
+			}
+		}
+		
+		VED_Chivalry_Knights_custom_idea = {
+			picture = BRF_everyman_a_knight
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				special_forces_cap = 0.05
+				modifier_army_sub_unit_knights_attack_factor = 0.15
+				modifier_army_sub_unit_knights_defence_factor = 0.15
+				war_support_factor = 0.10
+				conscription_factor = -0.10
+			}
+			research_bonus = {
+				knights_tech = 0.1
+			}
+		}
+		
+		VED_Consumerism_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+		
+		VED_Building_Railway_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+			}
+		}
+		
+		VED_Order_of_Witchers_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				modifier_army_sub_unit_witchers_attack_factor = 0.10
+				modifier_army_sub_unit_witchers_defence_factor = 0.10
+				#special_forces_cap = -0.05
+			}
+		}
+		
+		VED_Buildings_Investment_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		
+		VED_Technology_Investment_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+		
+		VED_Griffons_Investment_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 1000
+				training_time_factor = -0.10
+			}
+		}
+		
+		VED_Machines_Investment_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+		}
+		
+		VED_Great_Medical_School_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				hospital_tech = 0.25
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+				stability_factor = 0.05
+			}
+		}
+		
+		VED_Improved_Hospitals_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.10
+			}
+			
+			equipment_bonus = {
+				field_hospital = {
+				casualty_trickleback = 0.10
+				experience_loss_factor = -0.10
+				}
+			}
+		}
+		
+		VED_Great_Engineer_School_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				maintenance_company_tech = 0.25
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+				stability_factor = 0.05
+			}
+		}
+		
+		VED_Improved_Tools_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industry_repair_factor = 0.10
+			}
+			
+			equipment_bonus = {
+				maintenance_company = {
+				reliability_factor = 0.05
+				equipment_capture_factor = 0.05
+				}
+			}
+		}
+		
+		VED_Great_Architect_School_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				construction_tech = 0.25
+				excavation_tech = -0.25
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+				stability_factor = 0.05
+			}
+		}
+		
+		VED_Improved_Buildings_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				industry_air_damage_factor = -0.10
+				resistance_damage_to_garrison = -0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		
+		VED_Great_Business_School_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				excavation_tech = 0.25
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+				stability_factor = 0.05
+			}
+		}
+		
+		VED_Improved_Economy_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+				min_export = 0.10
+				trade_opinion_factor = 0.25
+			}
+		}
+		
+		VED_Armoured_Offensive_Focus_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			modifier = {
+				war_support_factor = 0.05
+			}
+		}
+		
+		VED_Superior_Firepower_Focus_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			modifier = {
+				war_support_factor = 0.05
+			}
+		}
+		
+		VED_Grand_Battleplan_Focus_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				support_tech = 0.10
+			}
+			
+			modifier = {
+				war_support_factor = 0.05
+			}
+		}
+		
+		VED_Mass_Assault_Focus_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			modifier = {
+				war_support_factor = 0.05
+			}
+		}
+		
+		VED_Princess_College_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+
+		VED_Modernized_Army_idea1 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_infantry_attack_factor	= 0.10
+				army_infantry_defence_factor 0.10
+			}
+		}
+
+		VED_Modernized_Army_idea2 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_infantry_attack_factor	= 0.05
+				army_infantry_defence_factor 0.05
+			}
+		}
+
+		VED_Retrained_Knights_idea1 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				modifier_army_sub_unit_knights_attack_factor = 0.10
+				modifier_army_sub_unit_knights_defence_factor = 0.10
+			}
+		}
+
+		VED_Retrained_Knights_idea2 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				modifier_army_sub_unit_knights_attack_factor = 0.05
+				modifier_army_sub_unit_knights_defence_factor = 0.05
+			}
+		}
+	}
+	
+	political_advisor = {
+
+		VED_advisor_tog_1 = { #Great_Doctor
+			allowed = {
+				original_tag = VED
+			}
+			available = {
+				has_completed_focus = VED_Great_Medical_School
+			}
+			traits = { MNC_rapekill }
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		VED_advisor_tog_2 = { #Great_Engineer
+			allowed = {
+				original_tag = VED
+			}
+			available = {
+				has_completed_focus = VED_Great_Engineer_School
+			}
+			traits = { MNC_rapekill }
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		VED_advisor_tog_3 = { #Great_Buisnessman
+			allowed = {
+				original_tag = VED
+			}
+			available = {
+				has_completed_focus = VED_Great_Business_School
+			}
+			traits = { MNC_rapekill }
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		
+		VED_advisor_tog_4 = { #Great_Architect
+			allowed = {
+				original_tag = VED
+			}
+			available = {
+				has_completed_focus = VED_Great_Architect_School
+			}
+			traits = { MNC_rapekill }
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		VED_advisor_tog_5 = { #Dolerius
+			allowed = {
+				original_tag = VED
+			}
+			available = {
+				has_completed_focus = VED_Negotiate_With_Archons
+			}
+			traits = { VED_popular_priest }
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	}
+	
+	air_chief = {
+	}
+	
+	navy_chief = {
+	}
+	
+	high_command = {
+	}
+	
+	theorist = {
+		VED_advisor_tog_6 = { #Random_Witcher
+			allowed = {
+				original_tag = VED
+			}
+			available = {
+				has_completed_focus = VED_Order_of_Witchers
+			}
+			traits = { MNC_rapekill }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	army_chief = {
+	}
+}

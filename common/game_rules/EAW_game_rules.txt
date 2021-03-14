@@ -148,7 +148,136 @@ CHN_ai_behavior = {
 		allow_achievements = yes
 	}
 }
-
+GRF_ai_behavior = {
+	name = "GRF_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = WILHELM
+		text = "RULE_OPTION_WILHELM"
+		desc = "RULE_OPTION_WILHELM_GRF_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = HIGHHILL
+		text = "RULE_OPTION_HIGHHILL"
+		desc = "RULE_OPTION_HIGHHILL_GRF_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SKEIRON
+		text = "RULE_OPTION_SKEIRON"
+		desc = "RULE_OPTION_SKEIRON_GRF_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = IRONCLAW
+		text = "RULE_OPTION_IRONCLAW"
+		desc = "RULE_OPTION_IRONCLAW_GRF_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = HEINRICH
+		text = "RULE_OPTION_HEINRICH"
+		desc = "RULE_OPTION_HEINRICH_GRF_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = BLACKPEAK
+		text = "RULE_OPTION_BLACKPEAK"
+		desc = "RULE_OPTION_BLACKPEAK_GRF_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+		allow_achievements = yes
+	}
+}
+OLE_ai_behavior = {
+	name = "OLE_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = NEUTRALITY_HISTORICAL
+		text = "RULE_OPTION_OLE_NEUTRALITY"
+		desc = "RULE_OPTION_NEUTRALITY_OLE_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = COMMUNIST
+		text = "RULE_OPTION_OLE_COMMUNIST"
+		desc = "RULE_OLE_COMMUNIST_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = NEUTRALITY_SERVITUDE
+		text = "RULE_OPTION_OLE_NEUTRALITY_SERVITUDE"
+		desc = "RULE_OPTION_NEUTRALITY_SERVITUDE_OLE_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DEMOCRATIC
+		text = "RULE_OPTION_OLE_DEMOCRATIC"
+		desc = "RULE_OPTION_DEMOCRATIC_OLE_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = FASCIST
+		text = "RULE_OPTION_OLE_FASCIST"
+		desc = "RULE_OPTION_FASCIST_OLE_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+		allow_achievements = yes
+	}
+}
+YAK_ai_behavior = {
+    name = "YAK_AI_BEHAVIOR"
+    group = "RULE_GROUP_AI_BEHAVIOR"
+    default = {
+        name = DEFAULT
+        text = "RULE_OPTION_DEFAULT"
+        desc = "RULE_OPTION_DEFAULT_AI_DESC"
+    }
+   option = {
+        name = DEMOCRATIC_HISTORICAL
+        text = "RULE_OPTION_DEMOCRATIC_HISTORICAL"
+        desc = "RULE_OPTION_DEMOCRATIC_HISTORICAL_YAK_AI_DESC"
+        allow_achievements = yes
+    }
+   option = {
+        name = FASCIST
+        text = "RULE_OPTION_FASCIST"
+        desc = "RULE_OPTION_FASCIST_YAK_AI_DESC"
+        allow_achievements = yes
+    }
+    option = {
+        name = COMMUNIST
+        text = "RULE_OPTION_COMMUNIST"
+        desc = "RULE_COMMUNIST_YAK_AI_DESC"
+        allow_achievements = yes
+    }
+    option = {
+        name = RANDOM
+        text = "RULE_OPTION_RANDOM"
+        desc = "RULE_OPTION_RANDOM_AI_DESC"
+        allow_achievements = yes
+    }
+}
 GRI_ai_behavior = {
 	name = "GRI_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
@@ -228,6 +357,7 @@ WNG_ai_behavior = {
 		allow_achievements = yes
 	}
 }
+
 SRS_ai_behavior = {
 	name = "SRS_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
@@ -267,6 +397,7 @@ SRS_ai_behavior = {
 		allow_achievements = yes
 	}
 }
+
 FAT_ai_behavior = {
 	name = "FAT_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
@@ -309,59 +440,6 @@ FAT_ai_behavior = {
 		name = ROSEWING
 		text = "RULE_OPTION_ROSEWING_FAT"
 		desc = "RULE_OPTION_ROSEWING_FAT_AI_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = RANDOM
-		text = "RULE_OPTION_RANDOM"
-		desc = "RULE_OPTION_RANDOM_AI_DESC"
-		allow_achievements = yes
-	}
-}
-
-GRF_ai_behavior = {
-	name = "GRF_AI_BEHAVIOR"
-	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_AI_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = WILHELM
-		text = "RULE_OPTION_WILHELM"
-		desc = "RULE_OPTION_WILHELM_GRF_AI_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = HIGHHILL
-		text = "RULE_OPTION_HIGHHILL"
-		desc = "RULE_OPTION_HIGHHILL_GRF_AI_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = SKEIRON
-		text = "RULE_OPTION_SKEIRON"
-		desc = "RULE_OPTION_SKEIRON_GRF_AI_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = IRONCLAW
-		text = "RULE_OPTION_IRONCLAW"
-		desc = "RULE_OPTION_IRONCLAW_GRF_AI_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = HEINRICH
-		text = "RULE_OPTION_HEINRICH"
-		desc = "RULE_OPTION_HEINRICH_GRF_AI_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = BLACKPEAK
-		text = "RULE_OPTION_BLACKPEAK"
-		desc = "RULE_OPTION_BLACKPEAK_GRF_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
@@ -534,86 +612,6 @@ JER_ai_behavior = {
 	}
 }
 
-OLE_ai_behavior = {
-	name = "OLE_AI_BEHAVIOR"
-	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_AI_DESC"
-	}
-	option = {
-		name = NEUTRALITY_HISTORICAL
-		text = "RULE_OPTION_OLE_NEUTRALITY"
-		desc = "RULE_OPTION_NEUTRALITY_OLE_AI_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = COMMUNIST
-		text = "RULE_OPTION_OLE_COMMUNIST"
-		desc = "RULE_OLE_COMMUNIST_AI_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = NEUTRALITY_SERVITUDE
-		text = "RULE_OPTION_OLE_NEUTRALITY_SERVITUDE"
-		desc = "RULE_OPTION_NEUTRALITY_SERVITUDE_OLE_AI_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = DEMOCRATIC
-		text = "RULE_OPTION_OLE_DEMOCRATIC"
-		desc = "RULE_OPTION_DEMOCRATIC_OLE_AI_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = FASCIST
-		text = "RULE_OPTION_OLE_FASCIST"
-		desc = "RULE_OPTION_FASCIST_OLE_AI_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = RANDOM
-		text = "RULE_OPTION_RANDOM"
-		desc = "RULE_OPTION_RANDOM_AI_DESC"
-		allow_achievements = yes
-	}
-}
-
-YAK_ai_behavior = {
-    name = "YAK_AI_BEHAVIOR"
-    group = "RULE_GROUP_AI_BEHAVIOR"
-    default = {
-        name = DEFAULT
-        text = "RULE_OPTION_DEFAULT"
-        desc = "RULE_OPTION_DEFAULT_AI_DESC"
-    }
-   option = {
-        name = DEMOCRATIC_HISTORICAL
-        text = "RULE_OPTION_DEMOCRATIC_HISTORICAL"
-        desc = "RULE_OPTION_DEMOCRATIC_HISTORICAL_YAK_AI_DESC"
-        allow_achievements = yes
-    }
-   option = {
-        name = FASCIST
-        text = "RULE_OPTION_FASCIST"
-        desc = "RULE_OPTION_FASCIST_YAK_AI_DESC"
-        allow_achievements = yes
-    }
-    option = {
-        name = COMMUNIST
-        text = "RULE_OPTION_COMMUNIST"
-        desc = "RULE_COMMUNIST_YAK_AI_DESC"
-        allow_achievements = yes
-    }
-    option = {
-        name = RANDOM
-        text = "RULE_OPTION_RANDOM"
-        desc = "RULE_OPTION_RANDOM_AI_DESC"
-        allow_achievements = yes
-    }
-}
-
 GRW_ai_behavior = {
 	name = "GRW_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
@@ -690,7 +688,7 @@ WIT_ai_behavior = {
         desc = "RULE_OPTION_VOLIAIRE_WIT_AI_DESC"
         allow_achievements = yes
     }
-    option = {
+	option = {
         name = WULFRIC
         text = "RULE_OPTION_WULFRIC"
         desc = "RULE_OPTION_WULFRIC_WIT_AI_DESC"
@@ -925,7 +923,6 @@ HLQ_ai_behavior = {
 		allow_achievements = yes
 	}
 }
-
 LSC_ai_behavior = {
 	name = "LSC_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
@@ -1077,21 +1074,15 @@ ARA_ai_behavior = {
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
 	}
 	option = {
-		name = ARANTIGA_REBORN
-		text = "RULE_OPTION_ARA_ARANTIGA_REBORN"
-		desc = "RULE_OPTION_ARANTIGA_REBORN_ARA_AI_DESC"
+		name = COUP_SUCCEEDS
+		text = "RULE_OPTION_ARA_COUP_SUCCEEDS"
+		desc = "RULE_OPTION_COUP_SUCCEEDS_ARA_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = ARANTIGA_NICATOR
-		text = "RULE_OPTION_ARA_NICATOR"
-		desc = "RULE_OPTION_NICATOR_ARA_AI_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = ARANTIGA_REPUBLIC
-		text = "RULE_OPTION_ARA_REPUBLIC"
-		desc = "RULE_OPTION_REPUBLIC_ARA_AI_DESC"
+		name = COUP_FAILS
+		text = "RULE_OPTION_ARA_COUP_FAILS"
+		desc = "RULE_OPTION_COUP_FAILS_ARA_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
@@ -1792,46 +1783,6 @@ STW_ai_behavior = {
     }
 }
 
-ZES_ai_behavior = {
-    name = "ZES_AI_BEHAVIOR"
-    group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_AI_DESC"
-	}
-    option = {
-        name = KASA_HISTORICAL ##Lua Ramedi path - same as historical
-        text = "RULE_OPTION_KASA_HISTORICAL"
-        desc = "RULE_OPTION_KASA_HISTORICAL_ZES_AI_DESC"
-        allow_achievements = yes
-    }
-    option = {
-        name = PASARINHA
-        text = "RULE_OPTION_PASARINHA"
-        desc = "RULE_OPTION_PASARINHA_ZES_AI_DESC"
-        allow_achievements = yes
-    }
-    option = {
-        name = YRMTHU
-        text = "RULE_OPTION_YRMTHU"
-        desc = "RULE_OPTION_YRMTHU_ZES_AI_DESC"
-        allow_achievements = yes
-    }
-	option = {
-        name = ALTU
-        text = "RULE_OPTION_ALTU"
-        desc = "RULE_OPTION_ALTU_ZES_AI_DESC"
-        allow_achievements = yes
-    }
-    option = {
-        name = RANDOM
-        text = "RULE_OPTION_RANDOM"
-        desc = "RULE_OPTION_RANDOM_AI_DESC"
-        allow_achievements = yes
-    }
-}
-
 # NTR_ai_behavior = {
 	# name = "NTR_ai_behavior"
 	# group = "RULE_GROUP_AI_BEHAVIOR"
@@ -1994,8 +1945,7 @@ BAR_ai_behavior = {
 ##    #  # ## ## #       #   #    #  #  # #  # 
 ## ## #### # # # ##       #  ##   #  #  # ###  
 ##  # #  # #   # #         # #    #  #  # #    
-# ##  #  # #   # ###     ##  ###  #   ##  #
-
+# ##  #  # #   # ###     ##  ###  #   ##  # 
 equestria_united_status = {
 	name = "EQS_STATUS"
 	group = "RULE_GROUP_GAME_SETUP"
@@ -2110,6 +2060,47 @@ ncr_exists_status = {
 		allow_achievements = no
 	}
 }
+
+ZES_ai_behavior = {
+    name = "ZES_AI_BEHAVIOR"
+    group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+    option = {
+        name = KASA_HISTORICAL ##Lua Ramedi path - same as historical
+        text = "RULE_OPTION_KASA_HISTORICAL"
+        desc = "RULE_OPTION_KASA_HISTORICAL_ZES_AI_DESC"
+        allow_achievements = yes
+    }
+    option = {
+        name = PASARINHA
+        text = "RULE_OPTION_PASARINHA"
+        desc = "RULE_OPTION_PASARINHA_ZES_AI_DESC"
+        allow_achievements = yes
+    }
+    option = {
+        name = YRMTHU
+        text = "RULE_OPTION_YRMTHU"
+        desc = "RULE_OPTION_YRMTHU_ZES_AI_DESC"
+        allow_achievements = yes
+    }
+	option = {
+        name = ALTU
+        text = "RULE_OPTION_ALTU"
+        desc = "RULE_OPTION_ALTU_ZES_AI_DESC"
+        allow_achievements = yes
+    }
+    option = {
+        name = RANDOM
+        text = "RULE_OPTION_RANDOM"
+        desc = "RULE_OPTION_RANDOM_AI_DESC"
+        allow_achievements = yes
+    }
+}
+
 infunstructure = {
 	name = "INFUNSTRUCTURE"
 	group = "RULE_GROUP_GAME_SETUP"

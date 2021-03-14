@@ -1,0 +1,16 @@
+category = {
+ 	name = "EAW_SuperCustom_Effects"
+	soundeffects = {
+		1_sample_event_rarity_fluttershy_1_rarity_1_sound_effect
+		1_sample_event_rarity_fluttershy_2_fluttershy_1_sound_effect
+	}
+ 	compressor = {
+		enabled = yes
+		pregain = 3.0
+		postgain = 0.0
+		ratio = 10.0
+		threshold = -15.0
+		attacktime = 0.030
+		releasetime = 1.2
+ 	}
+}

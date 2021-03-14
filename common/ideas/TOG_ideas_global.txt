@@ -1,0 +1,48 @@
+ideas = {
+
+	country = {
+
+		TOG_element_of_honesty_idea = {
+			picture = TOG_element_of_honesty
+			modifier = {
+				
+			}
+		}
+		TOG_element_of_kindness_idea = {
+			picture = TOG_element_of_kindness
+			modifier = {
+				
+			}
+		}
+		TOG_element_of_laughter_idea = {
+			picture = TOG_element_of_laughter
+			modifier = {
+				
+			}
+		}
+		TOG_element_of_generosity_idea = {
+			picture = TOG_element_of_generosity
+			modifier = {
+				
+			}
+		}
+		TOG_element_of_loyalty_idea = {
+			picture = TOG_element_of_loyalty
+			modifier = {
+				
+			}
+		}
+		TOG_element_of_magic_idea = {
+			picture = TOG_element_of_magic
+			modifier = {
+				
+			}
+		}
+		TOG_elements_of_harmony_idea = {
+			picture = TOG_elements_of_harmony
+			modifier = {
+				
+			}
+		}
+	}
+}

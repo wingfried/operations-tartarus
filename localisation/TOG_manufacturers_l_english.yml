@@ -1,0 +1,31 @@
+﻿l_english:
+ 
+ TOG_upgrade_concern_category:0 "Industrial Concern Actions"
+
+ TOG_light_medium_modern_tank_balanced_manufacturer:0 "Tank Designer\n(Balance)"
+ TOG_light_tank_fast_manufacturer:0 "Light Tank Designer\n(Mobility)"
+ TOG_medium_modern_tank_balanced_manufacturer:0 "Medium Tank Designer\n(Balance)"
+ TOG_heavy_super_heavy_tank_strong_manufacturer:0 "Heavy Tank Designer\n(Strength)"
+ TOG_heavy_super_heavy_tank_mobile_manufacturer:0 "Heavy Tank Designer\n(Mobility)"
+ TOG_heavy_super_heavy_tank_cheap_manufacturer:0 "Heavy Tank Designer\n(Quantity)"
+ TOG_artillery_quantity_manufacturer:0 "Artillery Designer\n(Quantity)"
+ TOG_artillery_quality_manufacturer:0 "Artillery Designer\n(Quality)"
+ TOG_mechanized_manufacturer_quantity:0 "Mechanized Designer\n(Quantity)"
+ TOG_mechanized_manufacturer_quality:0 "Mechanized Designer\n(Quality)"
+ TOG_tactical_strategic_bomber_quality:0 "Bomber Designer\n(Quality)"
+ TOG_fighter_cas_quality:0 "Fighter/CAS Designer\n(Quality)"
+ TOG_light_ship_quality:0 "Light Ship Designer\n(Quality)"
+ TOG_heavy_ship_quality:0 "Heavy Ship Designer\n(Quality)"
+ TOG_plane_quantity:0 "Aircraft Designer\n(Quantity)"
+ TOG_ship_quantity:0 "Naval Designer\n(Quantity)"
+ 
+ cat_light_armor_research:0 "Light Tank Research Speed"
+ cat_medium_armor_research:0 "Medium & Modern Tank Research Speed"
+ cat_heavy_armor_research:0 "Heavy & Super Heavy Tank Research Speed"
+ cat_mechanized_equipment_research:0 "Mechanization Research Speed"
+ construction_tech_research:0 "Construction Research Speed"
+ 
+ ### MANUFACTURER TRAITS ###
+
+ great_shovel_manufacturer:0 "Shovel Designer"
+ heavy_artillery_manufacturer:0 "Heavy Artillery Designer"

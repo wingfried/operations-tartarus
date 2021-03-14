@@ -1,0 +1,27 @@
+technologies = {
+
+	VED_mountain_training_tech = {
+
+		research_cost = 1
+
+		allow = {
+			always = no
+		}
+
+		category_all_infantry = {
+			mountain = {
+				attack = 0.10
+				movement = 0.10
+			}
+		}
+	}
+
+	EQC_series_90_tech = {
+
+		research_cost = 1
+
+		allow = {
+			always = no
+		}
+	}
+}

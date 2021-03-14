@@ -1,0 +1,32 @@
+scripted_gui = {	
+	
+	TOG_custom_ship_event_1 = {
+		context_type = player_context
+		window_name = "TOG_custom_ship_event_1"
+
+		visible = {
+			has_global_flag = tog_custom_ship_event_flag_1
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = tog_custom_ship_event_flag_1
+				set_global_flag = tog_custom_ship_event_flag_2
+			}
+		}
+	}
+	TOG_custom_ship_event_2 = {
+		context_type = player_context
+		window_name = "TOG_custom_ship_event_2"
+
+		visible = {
+			has_global_flag = tog_custom_ship_event_flag_2
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = tog_custom_ship_event_flag_2
+			}
+		}
+	}
+}

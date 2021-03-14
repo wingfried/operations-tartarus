@@ -1,0 +1,154 @@
+leader_traits = {
+
+	accept_democracy_trait = {
+		random = no
+		
+		democratic_acceptance = 40
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	hate_democracy_trait = {
+		random = no
+		
+		democratic_acceptance = -80
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	accept_communism_trait = {
+		random = no
+		
+		communism_acceptance = 40
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	hate_communism_trait = {
+		random = no
+		
+		communism_acceptance = -80
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	accept_anarchism_trait = {
+		random = no
+		
+		tog_anarchism_acceptance = 40
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	hate_anarchism_trait = {
+		random = no
+		
+		tog_anarchism_acceptance = -80
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	accept_technocracy_trait = {
+		random = no
+		
+		tog_technocracy_acceptance = 40
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	hate_technocracy_trait = {
+		random = no
+		
+		tog_technocracy_acceptance = -80
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	accept_fascism_trait = {
+		random = no
+		
+		fascism_acceptance = 40
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	hate_fascism_trait = {
+		random = no
+		
+		fascism_acceptance = -80
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	accept_kleptocracy_trait = {
+		random = no
+		
+		tog_kleptocracy_acceptance = 40
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	hate_kleptocracy_trait = {
+		random = no
+		
+		tog_kleptocracy_acceptance = -80
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	accept_theocracy_trait = {
+		random = no
+		
+		tog_theocracy_acceptance = 40
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	hate_theocracy_trait = {
+		random = no
+		
+		tog_theocracy_acceptance = -80
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	accept_magocracy_trait = {
+		random = no
+		
+		tog_magocracy_acceptance = 40
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	hate_magocracy_trait = {
+		random = no
+		
+		tog_magocracy_acceptance = -80
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,143 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+
+			# ELEMENTS OF HARMONY
+
+			random_country = {
+				limit = {
+					has_government = democratic
+				}
+				add_ideas = TOG_element_of_honesty_idea
+			}
+
+			random_country = {
+				limit = {
+					has_government = democratic
+				}
+				add_ideas = TOG_element_of_kindness_idea
+			}
+
+			random_country = {
+				limit = {
+					has_government = democratic
+				}
+				add_ideas = TOG_element_of_laughter_idea
+			}
+
+			random_country = {
+				limit = {
+					has_government = democratic
+				}
+				add_ideas = TOG_element_of_generosity_idea
+			}
+
+			random_country = {
+				limit = {
+					has_government = democratic
+				}
+				add_ideas = TOG_element_of_loyalty_idea
+			}
+
+			random_country = {
+				limit = {
+					has_government = democratic
+				}
+				add_ideas = TOG_element_of_magic_idea
+			}
+		}
+	}
+
+	on_annex = {
+		effect = {
+			FROM = {
+
+				# ELEMENTS OF HARMONY
+
+				IF = {
+					limit = { has_idea = TOG_element_of_honesty_idea }
+					ROOT = { add_ideas = TOG_element_of_honesty_idea }
+					set_variable = { global.element_of_honesty_owner = ROOT }
+					remove_ideas = TOG_element_of_honesty_idea
+				}
+				IF = {
+					limit = { has_idea = TOG_element_of_kindness_idea }
+					ROOT = { add_ideas = TOG_element_of_kindness_idea }
+					set_variable = { global.element_of_kindness_owner = ROOT }
+					remove_ideas = TOG_element_of_kindness_idea
+				}
+				IF = {
+					limit = { has_idea = TOG_element_of_laughter_idea }
+					ROOT = { add_ideas = TOG_element_of_laughter_idea }
+					set_variable = { global.element_of_laughter_owner = ROOT }
+					remove_ideas = TOG_element_of_laughter_idea
+				}
+				IF = {
+					limit = { has_idea = TOG_element_of_generosity_idea }
+					ROOT = { add_ideas = TOG_element_of_generosity_idea }
+					set_variable = { global.element_of_generosity_owner = ROOT }
+					remove_ideas = TOG_element_of_generosity_idea
+				}
+				IF = {
+					limit = { has_idea = TOG_element_of_loyalty_idea }
+					ROOT = { add_ideas = TOG_element_of_loyalty_idea }
+					set_variable = { global.element_of_loyalty_owner = ROOT }
+					remove_ideas = TOG_element_of_loyalty_idea
+				}
+				IF = {
+					limit = { has_idea = TOG_element_of_magic_idea }
+					ROOT = { add_ideas = TOG_element_of_magic_idea }
+					set_variable = { global.element_of_magic_owner = ROOT }
+					remove_ideas = TOG_element_of_magic_idea
+				}
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			ROOT = {
+
+				# ELEMENTS OF HARMONY
+
+				IF = {
+					limit = { has_idea = TOG_element_of_honesty_idea }
+					FROM = { add_ideas = TOG_element_of_honesty_idea }
+					set_variable = { global.element_of_honesty_owner = FROM }
+					remove_ideas = TOG_element_of_honesty_idea
+				}
+				IF = {
+					limit = { has_idea = TOG_element_of_kindness_idea }
+					FROM = { add_ideas = TOG_element_of_kindness_idea }
+					set_variable = { global.element_of_kindness_owner = FROM }
+					remove_ideas = TOG_element_of_kindness_idea
+				}
+				IF = {
+					limit = { has_idea = TOG_element_of_laughter_idea }
+					FROM = { add_ideas = TOG_element_of_laughter_idea }
+					set_variable = { global.element_of_laughter_owner = FROM }
+					remove_ideas = TOG_element_of_laughter_idea
+				}
+				IF = {
+					limit = { has_idea = TOG_element_of_generosity_idea }
+					FROM = { add_ideas = TOG_element_of_generosity_idea }
+					set_variable = { global.element_of_generosity_owner = FROM }
+					remove_ideas = TOG_element_of_generosity_idea
+				}
+				IF = {
+					limit = { has_idea = TOG_element_of_loyalty_idea }
+					FROM = { add_ideas = TOG_element_of_loyalty_idea }
+					set_variable = { global.element_of_loyalty_owner = FROM }
+					remove_ideas = TOG_element_of_loyalty_idea
+				}
+				IF = {
+					limit = { has_idea = TOG_element_of_magic_idea }
+					FROM = { add_ideas = TOG_element_of_magic_idea }
+					set_variable = { global.element_of_magic_owner = FROM }
+					remove_ideas = TOG_element_of_magic_idea
+				}
+			}
+		}
+	}
+}

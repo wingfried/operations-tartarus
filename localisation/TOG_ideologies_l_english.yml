@@ -1,0 +1,38 @@
+﻿l_english:
+
+ #Custom Ideologies
+
+ tog_technocracy:0 "Technocratic"
+ tog_technocracy_noun:0 "Technocracy"
+ tog_technocracy_desc:0 "Technocratic Regime"
+ tog_technocracy_drift:0 "Daily Technocratic Support"
+ tog_technocracy_ideology:0 "Technocratic"
+ tog_technocracy_ideology_desc:0 "Technocratic Regime"
+
+ tog_anarchism:0 "Anarchist"
+ tog_anarchism_noun:0 "Anarchism"
+ tog_anarchism_desc:0 "Anarchist Regime"
+ tog_anarchism_drift:0 "Daily Anarchism Support"
+ tog_anarchism_ideology:0 "Anarchist"
+ tog_anarchism_ideology_desc:0 "Anarchist Regime"
+
+ tog_kleptocracy:0 "Kleptocratic"
+ tog_kleptocracy_noun:0 "Kleptocracy"
+ tog_kleptocracy_desc:0 "Kleptocratic Regime"
+ tog_kleptocracy_drift:0 "Daily Kleptocracy Support"
+ tog_kleptocracy_ideology:0 "Kleptocratic"
+ tog_kleptocracy_ideology_desc:0 "Kleptocratic Regime"
+ 
+ tog_theocracy:0 "Theocratic"
+ tog_theocracy_noun:0 "Theocracy"
+ tog_theocracy_desc:0 "Theocratic Regime"
+ tog_theocracy_drift:0 "Daily Theocracy Support"
+ tog_theocracy_ideology:0 "Theocracy"
+ tog_theocracy_ideology_desc:0 "Theocratic Regime"
+
+ tog_magocracy:0 "Magocratic"
+ tog_magocracy_noun:0 "Magocracy"
+ tog_magocracy_desc:0 "Magocratic Regime"
+ tog_magocracy_drift:0 "Daily Magocracy Support"
+ tog_magocracy_ideology:0 "Magocratic"
+ tog_magocracy_ideology_desc:0 "Magocratic Regime"

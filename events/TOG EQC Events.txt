@@ -1,0 +1,259 @@
+add_namespace = mareland_tog
+add_namespace = tanya
+
+### Lunar Breeze Speaks
+country_event = {
+	id = mareland_tog.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event mareland_tog.1"}
+	title = mareland_tog.1.t
+	desc = mareland_tog.1.d
+	picture = GFX_event_democratic_opposition
+
+	trigger = {
+		original_tag = EQC
+		has_completed_focus = EQC_let_all_have_a_say
+		NOT = {
+			OR = {
+				has_completed_focus = EQC_gladmane_wins
+				has_completed_focus = EQC_kingfisher_wins
+				has_completed_focus = EQC_the_duke_wins
+				has_completed_focus = EQC_picket_wins
+				has_completed_focus = EQC_technocrats_win
+				has_completed_focus = EQC_anarchists_win
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 210
+	}
+
+	fire_only_once = yes
+
+	option = { # Good Speech
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 2000
+				has_game_rule = {
+					rule = EQC_ai_behavior
+					option = TECHNOCRATIC
+				}
+			}
+		}
+		name = mareland_tog.1.a
+		add_popularity = { ideology = tog_technocracy popularity = 0.05 }
+	}
+	option = { # We don't want this
+		ai_chance = {
+			factor = 2000
+			modifier = {
+				factor = -4000
+				has_game_rule = {
+					rule = EQC_ai_behavior
+					option = TECHNOCRATIC
+				}
+			}
+		}
+		name = mareland_tog.1.b
+		#add_popularity = { ideology = tog_technocracy popularity = -0.02 }
+	}
+}
+
+### Scarlet Proudhorn Speaks
+country_event = {
+	id = mareland_tog.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event mareland_tog.2"}
+	title = mareland_tog.2.t
+	desc = mareland_tog.2.d
+	picture = GFX_event_democratic_opposition
+
+	trigger = {
+		original_tag = EQC
+		has_completed_focus = EQC_let_all_have_a_say
+		NOT = {
+			OR = {
+				has_completed_focus = EQC_gladmane_wins
+				has_completed_focus = EQC_kingfisher_wins
+				has_completed_focus = EQC_the_duke_wins
+				has_completed_focus = EQC_picket_wins
+				has_completed_focus = EQC_technocrats_win
+				has_completed_focus = EQC_anarchists_win
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 210
+	}
+
+	fire_only_once = yes
+
+	option = { # Good Speech
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 2000
+				has_game_rule = {
+					rule = EQC_ai_behavior
+					option = ANARCHISTIC
+				}
+			}
+		}
+		name = mareland_tog.2.a
+		add_popularity = { ideology = tog_anarchism popularity = 0.05 }
+	}
+	option = { # We don't want this
+		ai_chance = {
+			factor = 2000
+			modifier = {
+				factor = -4000
+				has_game_rule = {
+					rule = EQC_ai_behavior
+					option = ANARCHISTIC
+				}
+			}
+		}
+		name = mareland_tog.2.b
+		#add_popularity = { ideology = tog_anarchism popularity = -0.02 }
+	}
+}
+
+### Aryanne Speaks
+country_event = {
+	id = mareland_tog.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event mareland_tog.4"}
+	title = mareland_tog.4.t
+	desc = mareland_tog.4.d
+	picture = GFX_event_democratic_opposition
+
+	trigger = {
+		original_tag = EQC
+		has_completed_focus = EQC_let_all_have_a_say
+		NOT = {
+			OR = {
+				has_completed_focus = EQC_gladmane_wins
+				has_completed_focus = EQC_kingfisher_wins
+				has_completed_focus = EQC_the_duke_wins
+				has_completed_focus = EQC_picket_wins
+				has_completed_focus = EQC_technocrats_win
+				has_completed_focus = EQC_anarchists_win
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 210
+	}
+
+	fire_only_once = yes
+
+	option = { # Good Speech
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 2000
+				has_game_rule = {
+					rule = EQC_ai_behavior
+					option = FASCIST_ARYANNE
+				}
+			}
+		}
+		name = mareland_tog.4.a
+		add_popularity = { ideology = tog_technocracy popularity = 0.05 }
+	}
+	option = { # We don't want this
+		ai_chance = {
+			factor = 2000
+			modifier = {
+				factor = -4000
+				has_game_rule = {
+					rule = EQC_ai_behavior
+					option = FASCIST_ARYANNE
+				}
+			}
+		}
+		name = mareland_tog.4.b
+		add_popularity = { ideology = tog_technocracy popularity = -0.02 }
+	}
+}
+
+country_event = {
+	id = mareland_tog.5
+	title = mareland_tog.5.t
+	desc = mareland_tog.5.d
+	picture = GFX_report_event_german_troops
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = mareland_tog.5.a
+		hidden_effect = {
+		EQC = { country_event = { days = 60 id = mareland_tog.6 } }
+		}
+	}
+}
+
+country_event = {
+	id = mareland_tog.6
+	title = mareland_tog.6.t
+	desc = mareland_tog.6.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+		
+	option = {
+		name = mareland_tog.6.a
+	}
+}
+
+country_event = {
+	id = mareland_tog.7
+	title = mareland_tog.7.t
+	desc = mareland_tog.7.d
+	picture = GFX_report_event_german_troops
+
+	major = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EQC
+		OR = {
+			has_war_with = WNG
+			has_war_with = TAL
+		}
+	}
+	
+	option = {
+		name = mareland_tog.7.a
+		hidden_effect = {
+			EQC = { country_event = { days = 1 id = mareland_tog.5 } }
+			every_unit_leader = {
+				limit = { has_id = 200001 }
+				add_unit_leader_trait = silver_wings_trait
+				add_attack = 1
+				add_planning = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mareland_tog.8
+	title = mareland_tog.8.t
+	desc = mareland_tog.8.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+		
+	option = {
+		name = mareland_tog.8.a
+	}
+}

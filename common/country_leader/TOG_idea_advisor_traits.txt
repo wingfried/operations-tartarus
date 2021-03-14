@@ -1,0 +1,58 @@
+leader_traits = {
+
+	anarchist_demagogue = {
+		random = no
+		# Boosts Anarchism
+		
+		tog_anarchism_drift = 0.10
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	kleptocratic_demagogue = {
+		random = no
+		# Boosts Anarchism
+		
+		tog_kleptocracy_drift = 0.10
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	theocratic_demagogue = {
+		random = no
+		# Boosts Anarchism
+		
+		tog_theocracy_drift = 0.10
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	technocratic_demagogue = {
+		random = no
+		# Boosts Technocracy
+		
+		tog_technocracy_drift = 0.10
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	magocratic_demagogue = {
+		random = no
+		# Boosts Technocracy
+		
+		tog_magocracy_drift = 0.10
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

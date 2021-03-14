@@ -1,0 +1,111 @@
+ideas = {
+
+	country = {
+		
+		GFG_Family_Conflict_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+
+		GFG_Bandits_idea1 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				tog_kleptocracy_drift = 0.10
+				consumer_goods_factor = 0.10
+				stability_factor = -0.10
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+			}
+		}
+		
+		GFG_Bandits_idea2 = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				tog_kleptocracy_drift = 0.05
+				consumer_goods_factor = 0.05
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = -0.075
+			}
+		}
+
+		GFG_Emhyr_Opposition_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				fascism_drift = -0.30
+				neutrality_drift = 0.10
+				democratic_drift = 0.10
+				tog_anarchism_drift = 0.10
+			}
+		}
+
+		GFG_Emhyr_Yes_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.10
+			}
+		}
+	}
+	
+	political_advisor = {
+	
+	}
+	
+	air_chief = {
+	}
+	
+	navy_chief = {
+	}
+	
+	high_command = {
+	}
+	
+	theorist = {
+	
+	}
+	
+	army_chief = {
+	}
+}

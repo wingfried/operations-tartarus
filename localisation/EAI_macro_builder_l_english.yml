@@ -1,0 +1,48 @@
+﻿l_english:
+## Etruscan_AI_Decisions ##
+Macro_Builder:0 "Macro Builder"
+Requesting_civil_aid:0 "Requesting Industrial Assistance"
+Requesting_Military_aid:0 "Requesting Arms-Production Assistance"
+Subject_Interaction:0 "Generic Subject Interactions"
+Requesting_Troops:0 "Conscripting Subject Forces"
+Demanding_Resources:0 "Resource Acquisition Laws"
+
+GEN_Construction_steel:0 "Exploit Steel Resources"
+GEN_Construction_steel_desc:0 "Automatically gives into order construction for Infrastructure on every 15+ Steel state."
+
+GEN_Construction_aluminium:0 "Exploit Aluminium Resources"
+GEN_Construction_aluminium_desc:0 "Automatically gives into order construction for Infrastructure on every 15+ Aluminium state."
+
+GEN_Construction_rubber:0 "Exploit Rubber Resources"
+GEN_Construction_rubber_desc:0 "Automatically gives into order construction for Infrastructure on every 15+ Rubber state."
+
+GEN_Construction_tungsten:0 "Exploit Tungsten Resources"
+GEN_Construction_tungsten_desc:0 "Automatically gives into order construction for Infrastructure on every 15+ Tungsten state."
+
+GEN_Construction_chromium:0 "Exploit Chromium Resources"
+GEN_Construction_chromium_desc:0 "Automatically gives into order construction for Infrastructure on every 15+ Chromium state."
+
+GEN_Construction_crystals:0 "Exploit Crystal Resources"
+GEN_Construction_crystals_desc:0 "Automatically gives into order construction for Infrastructure on every 15+ Crystal state."
+
+AImod.1.t:0 "Automatic Exercise"
+AImod.1.d:0 "This event controlls the automatic exercise decision, the first option will continue the decision but bring it back up again in 30 days, the 2nd option will continue the decision indefinitly untill you cancel it in the decision window(or you begin a war), the 3rd option will simply close this window without taking any further action."
+AImod.1.a:0 "Repeat the Process"
+AImod.1.b:0 "I did not say stop."
+AImod.1.c:0 "Enough!"
+
+End_Hidden_Training:0 "End Exercise Cycle"
+End_Hidden_Training_desc:0 "This will bring the exercise cycle to an end and allow you to retrigger it from the decision window at any time. Might take up to 30 ingame days."
+
+trainingscript:0 "Military Exercises"
+trainingscript_desc:0 "This script replaces and simulates the old exercising for military XP, it runs for 30 days and will then give you an option to repeat or continue indefinitly till cancled."
+
+instructions.0.t:0 "Planaway Instructions"
+instructions.0.d:0 "This is a onetime popup, if you wish to re-read it load a new game and wait. With Planaway all planning bonuses will be converted into other stats. Max Planning will become Breakthrough, Planning Speed will reduce organization loss while moving. The tooltips for national ideas will not show this change and stats will take anywhere from 1 to 20 ingame days to update. For further questions leave a comment on the modpage."
+instructions.0.a:0 "Understood."
+
+ABILITY_FORCED_ENTRENCHMENT:0 "Entrench"
+ABILITY_FORCED_ENTRENCHMENT_DESC:0 "Your armies will gain massive entrenchment speed bonus at the cost of morale recovery rate."
+
+ABILITY_FORCED_MARCH:0 "Forced March"
+ABILITY_FORCED_MARCH_DESC:0 "Your armies will gain massive movement speed bonus at the cost of organization regain while moving."

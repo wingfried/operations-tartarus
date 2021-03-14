@@ -413,11 +413,6 @@ technologies = {
 				factor = 2
 				date > "1008.1.1"
 			}
-
-			modifier = {
-				factor = 0
-				NOT = { has_government = fascism }
-			}
 		}
 
 		categories = {
@@ -1503,7 +1498,7 @@ technologies = {
 			
 			modifier = {
 				factor = 0
-				num_of_civilian_factories_available_for_projects < 10
+				num_of_civilian_factories_available_for_projects < 5
 			}	
 			
 			modifier = {
@@ -1513,7 +1508,7 @@ technologies = {
 			
 			modifier = {
 				add = 15
-				num_of_civilian_factories_available_for_projects > 20
+				num_of_civilian_factories_available_for_projects > 15
 			}	
 
 			modifier = {
@@ -1838,26 +1833,6 @@ technologies = {
 				ADD = 10
 				check_variable = { resource_imported@rubber > 1 }
 			}
-			
-			modifier = {
-				factor = 0
-				synthetic_refinery < 1
-			}
-			
-			modifier = {
-				add = 10
-				synthetic_refinery > 4
-			}
-			
-			modifier = {
-				add = 10
-				synthetic_refinery > 1
-			}	
-			
-			modifier = {
-				add = 10
-				synthetic_refinery > 2
-			}				
 			}
 
 		ai_research_weights = {

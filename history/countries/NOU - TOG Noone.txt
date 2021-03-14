@@ -1,0 +1,33 @@
+﻿set_technology = {
+	
+}
+
+add_ideas = {
+	
+}
+
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+set_convoys = 200
+
+set_popularities = {
+	democratic = 25
+	fascism = 25
+	communism = 25
+	neutrality = 25
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_stability = 0.50
+
+set_war_support = 0.50
+
+set_rule = {
+	can_generate_female_aces = yes
+}

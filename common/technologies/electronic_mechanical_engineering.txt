@@ -1257,7 +1257,7 @@ technologies = {
 
 	atomic_research = {
 
-		research_speed_factor = 0.02
+		research_speed_factor = 0.04
 
 		dependencies = {
 			infantry_weapons = 1
@@ -1390,6 +1390,7 @@ technologies = {
 		research_cost = 5
 
 		research_speed_factor = 0.025
+		nuclear_production_factor = 0.05
 
 		folder = {
 			name = electronics_folder
@@ -1416,6 +1417,7 @@ technologies = {
 		research_cost = 5
 
 		research_speed_factor = 0.05
+		nuclear_production_factor = 0.05
 
 		folder = {
 			name = electronics_folder

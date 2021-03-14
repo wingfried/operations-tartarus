@@ -1,0 +1,146 @@
+spriteTypes = {
+	SpriteType = { 
+		name = "GFX_goal_SRS_END_1"
+		texturefile = "gfx/interface/goals/SRS/SRS_END_1.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_SRS_END_2"
+		texturefile = "gfx/interface/goals/SRS/SRS_END_2.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_SRS_END_3"
+		texturefile = "gfx/interface/goals/SRS/SRS_END_3.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_SRS_END_4"
+		texturefile = "gfx/interface/goals/SRS/SRS_END_4.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_SRS_END_5"
+		texturefile = "gfx/interface/goals/SRS/SRS_END_5.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_SRS_aviation_dreams"
+		texturefile = "gfx/interface/goals/SRS/SRS_aviation_dreams.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_SRS_buy_fighters"
+		texturefile = "gfx/interface/goals/SRS/SRS_buy_fighters.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_SRS_buy_bombers"
+		texturefile = "gfx/interface/goals/SRS/SRS_buy_bombers.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_SRS_avia_institute"
+		texturefile = "gfx/interface/goals/SRS/SRS_avia_institute.dds"
+	}	
+	SpriteType = {
+		name = "GFX_goal_MAF_Napalm"
+		texturefile = "gfx/interface/goals/goal_MAF_Napalm.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_jap_zero"
+		texturefile = "gfx/interface/goals/focus_jap_zero.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_eagle"
+		texturefile = "gfx/interface/goals/focus_generic_eagle.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_chi_flying_tigers"
+		texturefile = "gfx/interface/goals/focus_chi_flying_tigers.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_generic_air_bomber"
+		texturefile = "gfx/interface/goals/goal_generic_air_bomber.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_generic_air_doctrine"
+		texturefile = "gfx/interface/goals/goal_generic_air_doctrine.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_bombs_away"
+		texturefile = "gfx/interface/goals/goal_bombs_away.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_generic_occypy_start_war"
+		texturefile = "gfx/interface/goals/goal_generic_occypy_start_war.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_generic_CAS"
+		texturefile = "gfx/interface/goals/goal_generic_CAS.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_usa_escort_fighters"
+		texturefile = "gfx/interface/goals/focus_usa_escort_fighters.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_YUG_ikarus"
+		texturefile = "gfx/interface/goals/focus_YUG_ikarus.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_generic_air_fighter"
+		texturefile = "gfx/interface/goals/goal_generic_air_fighter.dds"
+	}
+	SpriteType = { 
+		name = "GFX_SRS_loyal_general"
+		texturefile = "gfx/interface/goals/SRS/SRS_loyal_general.dds"
+	}
+	SpriteType = { 
+        name = "GFX_SRS_art_of_war"
+        texturefile = "gfx/interface/goals/SRS/SRS_art_of_war.dds"
+    }
+    SpriteType = { 
+        name = "GFX_SRS_detente"
+        texturefile = "gfx/interface/goals/SRS/SRS_detente.dds"
+    }
+    SpriteType = { 
+        name = "GFX_SRS_heal_the_scars"
+        texturefile = "gfx/interface/goals/SRS/SRS_heal_the_scars.dds"
+    }
+    SpriteType = { 
+        name = "GFX_SRS_new_life"
+        texturefile = "gfx/interface/goals/SRS/SRS_new_life.dds"
+    }
+    SpriteType = { 
+        name = "GFX_SRS_road_of_pragmatism"
+        texturefile = "gfx/interface/goals/SRS/SRS_road_of_pragmatism.dds"
+    }
+    SpriteType = { 
+        name = "GFX_SRS_seasonal_workers"
+        texturefile = "gfx/interface/goals/SRS/SRS_seasonal_workers.dds"
+    }
+    SpriteType = { 
+        name = "GFX_SRS_friendship_with_prywhen"
+        texturefile = "gfx/interface/goals/SRS/SRS_friendship_with_prywhen.dds"
+    }
+    SpriteType = { 
+        name = "GFX_SRS_turhamn_pact"
+        texturefile = "gfx/interface/goals/SRS/SRS_turhamn_pact.dds"
+    }
+    SpriteType = { 
+        name = "GFX_SRS_power_of_the_printed_word"
+        texturefile = "gfx/interface/goals/SRS/SRS_power_of_the_printed_word.dds"
+    }
+    SpriteType = { 
+        name = "GFX_SRS_settle_the_score"
+        texturefile = "gfx/interface/goals/SRS/SRS_settle_the_score.dds"
+    }
+    SpriteType = { 
+        name = "GFX_SRS_sickleclaw_doctrine"
+        texturefile = "gfx/interface/goals/SRS/SRS_sickleclaw_doctrine.dds"
+    }
+    SpriteType = { 
+        name = "GFX_SRS_integrate_brantbeak"
+        texturefile = "gfx/interface/goals/SRS/SRS_integrate_brantbeak.dds"
+    }
+    SpriteType = { 
+        name = "GFX_SRS_operation_eclipse"
+        texturefile = "gfx/interface/goals/SRS/SRS_operation_eclipse.dds"
+    }
+    SpriteType = { 
+        name = "GFX_SRS_cloudbury_under_socialism"
+        texturefile = "gfx/interface/goals/SRS/SRS_cloudbury_under_socialism.dds"
+    }
+}

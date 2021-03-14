@@ -4921,6 +4921,7 @@ SRS_expansion_puppet_category = {
 		}
 		available = {
 			can_declare_war_on = HAU
+			HAU = { exists = true }
 		}
 		cost = 50
 		fire_only_once = yes
@@ -5114,7 +5115,7 @@ SRS_internationalist_industrialization_plan = {
 	}
 }
 
-gaw_upgrade_concern_category = {
+TOG_upgrade_concern_category = {
 	SRS_upgrade_steel_1 = {
 		visible = {
 			has_idea = SRS_hoffwing_steel

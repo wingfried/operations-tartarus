@@ -1,0 +1,245 @@
+TOG_turhamn_pact_project_1_category = {
+
+	turhamn_pact_project_1_start_decision = {
+		icon = generic_civil_support
+		allowed = {
+			
+		}
+		visible = {
+			NOT = { any_country = { has_idea = TOG_turhamn_pact_project_1_project_idea } }
+			NOT = { has_country_flag = TOG_turhamn_pact_project_1_wonder_construction_flag_1 }
+			NOT = { has_country_flag = TOG_turhamn_pact_project_1_wonder_construction_flag_2 }
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			set_country_flag = TOG_turhamn_pact_project_1_wonder_construction_flag_1
+		}
+	}
+
+	turhamn_pact_project_1_decision_1 = {
+		icon = generic_civil_support
+		
+		available = {
+			NOT = { any_country = { has_idea = TOG_turhamn_pact_project_1_project_idea } }
+		}
+		activation = {
+			has_country_flag = TOG_turhamn_pact_project_1_wonder_construction_flag_1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		days_mission_timeout = 14
+		selectable_mission = yes
+		is_good = yes
+		cancel_trigger = {
+			hidden_trigger = {
+				any_country = { has_idea = TOG_turhamn_pact_project_1_project_idea }
+			}
+		}
+		timeout_effect = {
+			clr_country_flag = TOG_turhamn_pact_project_1_wonder_construction_flag_1
+			add_to_variable = { turhamn_pact_project_1_own_num = num_of_civilian_factories }
+			add_to_variable = { global.turhamn_pact_project_1_global_num = num_of_civilian_factories }
+			#Biggest
+			IF = {
+				limit = {
+					check_variable = { turhamn_pact_project_1_own_num > global.turhamn_pact_project_1_biggest_num }
+				}
+				#Change 1st place to 2nd
+				IF = {
+					limit = {
+						NOT = { check_variable = { global.turhamn_pact_project_1_country_2 = global.turhamn_pact_project_1_country_3 } }
+						NOT = { check_variable = { global.turhamn_pact_project_1_country_2 = global.turhamn_pact_project_1_country_1 } }
+						NOT = { check_variable = { global.turhamn_pact_project_1_country_1 = ROOT } }
+					}
+					#Change 2nd place to 3rd
+					IF = {
+						limit = {
+							NOT = { check_variable = { global.turhamn_pact_project_1_country_3 = global.turhamn_pact_project_1_country_2 } }
+							NOT = { check_variable = { global.turhamn_pact_project_1_country_3 = global.turhamn_pact_project_1_country_1 } }
+							NOT = { check_variable = { global.turhamn_pact_project_1_country_2 = ROOT } }
+						}
+						set_variable = { global.turhamn_pact_project_1_third_biggest_num = global.turhamn_pact_project_1_second_biggest_num }
+						set_variable = { global.turhamn_pact_project_1_country_3 = global.turhamn_pact_project_1_country_2 }
+						set_variable = { global.turhamn_pact_project_1_num_3 = global.turhamn_pact_project_1_num_2 }
+
+					}
+					set_variable = { global.turhamn_pact_project_1_second_biggest_num = global.turhamn_pact_project_1_biggest_num }
+					set_variable = { global.turhamn_pact_project_1_country_2 = global.turhamn_pact_project_1_country_1 }
+					set_variable = { global.turhamn_pact_project_1_num_2 = global.turhamn_pact_project_1_num_1 }
+
+				}
+				set_variable = { global.turhamn_pact_project_1_biggest_num = turhamn_pact_project_1_own_num }
+				set_variable = { global.turhamn_pact_project_1_country_1 = ROOT }
+				set_variable = { global.turhamn_pact_project_1_num_1 = global.turhamn_pact_project_1_biggest_num }
+			}
+			#Second Biggest
+			ELSE_IF = {
+				limit = {
+					NOT = { check_variable = { turhamn_pact_project_1_own_num > global.turhamn_pact_project_1_biggest_num } }
+					check_variable = { turhamn_pact_project_1_own_num > global.turhamn_pact_project_1_second_biggest_num }
+				}
+				#Change 2nd place to 3rd
+				IF = {
+					limit = {
+						NOT = { check_variable = { global.turhamn_pact_project_1_country_3 = global.turhamn_pact_project_1_country_2 } }
+						NOT = { check_variable = { global.turhamn_pact_project_1_country_3 = global.turhamn_pact_project_1_country_1 } }
+						NOT = { check_variable = { global.turhamn_pact_project_1_country_2 = ROOT } }
+					}
+					set_variable = { global.turhamn_pact_project_1_third_biggest_num = global.turhamn_pact_project_1_second_biggest_num }
+					set_variable = { global.turhamn_pact_project_1_country_3 = global.turhamn_pact_project_1_country_2 }
+					set_variable = { global.turhamn_pact_project_1_num_3 = global.turhamn_pact_project_1_num_2 }
+
+				}
+				set_variable = { global.turhamn_pact_project_1_second_biggest_num = turhamn_pact_project_1_own_num }
+				set_variable = { global.turhamn_pact_project_1_country_2 = ROOT }
+				set_variable = { global.turhamn_pact_project_1_num_2 = global.turhamn_pact_project_1_second_biggest_num }
+			}
+			#Third Biggest
+			ELSE_IF = {
+				limit = {
+					NOT = { check_variable = { turhamn_pact_project_1_own_num > global.turhamn_pact_project_1_biggest_num } }
+					NOT = { check_variable = { turhamn_pact_project_1_own_num > global.turhamn_pact_project_1_second_biggest_num } }
+					check_variable = { turhamn_pact_project_1_own_num > global.turhamn_pact_project_1_third_biggest_num }
+				}
+				set_variable = { global.turhamn_pact_project_1_third_biggest_num = turhamn_pact_project_1_own_num }
+				set_variable = { global.turhamn_pact_project_1_country_3 = ROOT }
+				set_variable = { global.turhamn_pact_project_1_num_3 = global.turhamn_pact_project_1_third_biggest_num }
+			}
+
+			IF = {
+				limit = {
+					check_variable = {
+						var = turhamn_pact_project_1_own_num
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+				add_ideas = TOG_turhamn_pact_project_1_project_idea
+			}
+			ELSE_IF = {
+				limit = { any_country = { has_idea = TOG_turhamn_pact_project_1_project_idea } }
+			}
+			ELSE = {
+				set_country_flag = TOG_turhamn_pact_project_1_wonder_construction_flag_2
+			}
+		}
+		complete_effect = {
+			clr_country_flag = TOG_turhamn_pact_project_1_wonder_construction_flag_1
+		}
+	}
+
+	turhamn_pact_project_1_decision_2 = {
+		icon = generic_civil_support
+		available = {
+			NOT = { any_country = { has_idea = TOG_turhamn_pact_project_1_project_idea } }
+		}
+		activation = {
+			has_country_flag = TOG_turhamn_pact_project_1_wonder_construction_flag_2
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		days_mission_timeout = 14
+		selectable_mission = yes
+		is_good = yes
+		cancel_trigger = {
+			hidden_trigger = {
+				any_country = { has_idea = TOG_turhamn_pact_project_1_project_idea }
+			}
+		}
+		timeout_effect = {
+			clr_country_flag = TOG_turhamn_pact_project_1_wonder_construction_flag_2
+			add_to_variable = { turhamn_pact_project_1_own_num = num_of_civilian_factories }
+			add_to_variable = { global.turhamn_pact_project_1_global_num = num_of_civilian_factories }
+			#Biggest
+			IF = {
+				limit = {
+					check_variable = { turhamn_pact_project_1_own_num > global.turhamn_pact_project_1_biggest_num }
+				}
+				#Change 1st place to 2nd
+				IF = {
+					limit = {
+						NOT = { check_variable = { global.turhamn_pact_project_1_country_2 = global.turhamn_pact_project_1_country_3 } }
+						NOT = { check_variable = { global.turhamn_pact_project_1_country_2 = global.turhamn_pact_project_1_country_1 } }
+						NOT = { check_variable = { global.turhamn_pact_project_1_country_1 = ROOT } }
+					}
+					#Change 2nd place to 3rd
+					IF = {
+						limit = {
+							NOT = { check_variable = { global.turhamn_pact_project_1_country_3 = global.turhamn_pact_project_1_country_2 } }
+							NOT = { check_variable = { global.turhamn_pact_project_1_country_3 = global.turhamn_pact_project_1_country_1 } }
+							NOT = { check_variable = { global.turhamn_pact_project_1_country_2 = ROOT } }
+						}
+						set_variable = { global.turhamn_pact_project_1_third_biggest_num = global.turhamn_pact_project_1_second_biggest_num }
+						set_variable = { global.turhamn_pact_project_1_country_3 = global.turhamn_pact_project_1_country_2 }
+						set_variable = { global.turhamn_pact_project_1_num_3 = global.turhamn_pact_project_1_num_2 }
+
+					}
+					set_variable = { global.turhamn_pact_project_1_second_biggest_num = global.turhamn_pact_project_1_biggest_num }
+					set_variable = { global.turhamn_pact_project_1_country_2 = global.turhamn_pact_project_1_country_1 }
+					set_variable = { global.turhamn_pact_project_1_num_2 = global.turhamn_pact_project_1_num_1 }
+
+				}
+				set_variable = { global.turhamn_pact_project_1_biggest_num = turhamn_pact_project_1_own_num }
+				set_variable = { global.turhamn_pact_project_1_country_1 = ROOT }
+				set_variable = { global.turhamn_pact_project_1_num_1 = global.turhamn_pact_project_1_biggest_num }
+			}
+			#Second Biggest
+			ELSE_IF = {
+				limit = {
+					NOT = { check_variable = { turhamn_pact_project_1_own_num > global.turhamn_pact_project_1_biggest_num } }
+					check_variable = { turhamn_pact_project_1_own_num > global.turhamn_pact_project_1_second_biggest_num }
+				}
+				#Change 2nd place to 3rd
+				IF = {
+					limit = {
+						NOT = { check_variable = { global.turhamn_pact_project_1_country_3 = global.turhamn_pact_project_1_country_2 } }
+						NOT = { check_variable = { global.turhamn_pact_project_1_country_3 = global.turhamn_pact_project_1_country_1 } }
+						NOT = { check_variable = { global.turhamn_pact_project_1_country_2 = ROOT } }
+					}
+					set_variable = { global.turhamn_pact_project_1_third_biggest_num = global.turhamn_pact_project_1_second_biggest_num }
+					set_variable = { global.turhamn_pact_project_1_country_3 = global.turhamn_pact_project_1_country_2 }
+					set_variable = { global.turhamn_pact_project_1_num_3 = global.turhamn_pact_project_1_num_2 }
+
+				}
+				set_variable = { global.turhamn_pact_project_1_second_biggest_num = turhamn_pact_project_1_own_num }
+				set_variable = { global.turhamn_pact_project_1_country_2 = ROOT }
+				set_variable = { global.turhamn_pact_project_1_num_2 = global.turhamn_pact_project_1_second_biggest_num }
+			}
+			#Third Biggest
+			ELSE_IF = {
+				limit = {
+					NOT = { check_variable = { turhamn_pact_project_1_own_num > global.turhamn_pact_project_1_biggest_num } }
+					NOT = { check_variable = { turhamn_pact_project_1_own_num > global.turhamn_pact_project_1_second_biggest_num } }
+					check_variable = { turhamn_pact_project_1_own_num > global.turhamn_pact_project_1_third_biggest_num }
+				}
+				set_variable = { global.turhamn_pact_project_1_third_biggest_num = turhamn_pact_project_1_own_num }
+				set_variable = { global.turhamn_pact_project_1_country_3 = ROOT }
+				set_variable = { global.turhamn_pact_project_1_num_3 = global.turhamn_pact_project_1_third_biggest_num }
+			}
+
+			IF = {
+				limit = {
+					check_variable = {
+						var = turhamn_pact_project_1_own_num
+						value = 100
+						compare = greater_than_or_equals
+					}
+				}
+				add_ideas = TOG_turhamn_pact_project_1_project_idea
+			}
+			ELSE_IF = {
+				limit = { any_country = { has_idea = TOG_turhamn_pact_project_1_project_idea } }
+			}
+			ELSE = {
+				set_country_flag = TOG_turhamn_pact_project_1_wonder_construction_flag_1
+			}
+		}
+		complete_effect = {
+			clr_country_flag = TOG_turhamn_pact_project_1_wonder_construction_flag_2
+		}
+	}
+}

@@ -1,0 +1,94 @@
+leader_traits = {
+
+    ### Character ###
+
+    RAW_perfectionist_trait = {
+        random = no
+	
+		#army_attack_factor = -0.08
+	
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    RAW_helper_trait = {
+        random = no
+	
+		#army_attack_factor = -0.08
+	
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    RAW_performer_trait = {
+        random = no
+	
+		#army_attack_factor = -0.08
+	
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    RAW_romantic_trait = {
+        random = no
+	
+		#army_attack_factor = -0.08
+	
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    RAW_observer_trait = {
+        random = no
+	
+		#army_attack_factor = -0.08
+	
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    RAW_loyalist_trait = {
+        random = no
+	
+		#army_attack_factor = -0.08
+	
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    RAW_enthusiast_trait = {
+        random = no
+	
+		#army_attack_factor = -0.08
+	
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    RAW_challenger_trait = {
+        random = no
+	
+		#army_attack_factor = -0.08
+	
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    RAW_peacemaker_trait = {
+        random = no
+	
+		#army_attack_factor = -0.08
+	
+		ai_will_do = {
+			factor = 0
+		}
+    }
+}

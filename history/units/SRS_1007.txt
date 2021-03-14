@@ -1,17 +1,11 @@
 ﻿division_template = {
-	name = "Experimental Weapon Operations Brigade"	
+	name = "Volunteer Infantry Regiment"
 	#division_names_group = 
-
 	regiments = {
-		light_armor = { x = 0 y = 0 }
+		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
 	}
-
-	support = {
-		recon = { x = 0 y = 0 }
-	}
+	priority = 0
 }
 
 division_template = {
@@ -30,16 +24,24 @@ division_template = {
 	support = {
 		recon = { x = 0 y = 0 }
 	}
-	priority = 0
+	priority = 1
 }
 
 division_template = {
-	name = "Volunteer Infantry Regiment"
+	name = "Experimental Weapon Operations Brigade"
 	#division_names_group = 
+
 	regiments = {
-		infantry = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
 	}
+
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	priority = 2
 }
 
 units = {

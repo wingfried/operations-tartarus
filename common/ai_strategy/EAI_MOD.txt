@@ -1,0 +1,879 @@
+#Adjust military focus of countries based on their military industrial scale.:		
+EcolawMilfocus = {
+		enable = {
+			OR = {
+				has_idea = partial_economic_mobilisation
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+				}
+				}
+		Abort = {
+			NOT = {
+				has_idea = partial_economic_mobilisation
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation							
+				}
+				}
+		
+		ai_strategy = {
+			type = added_military_to_civilian_factory_ratio
+			value = 50
+		}
+		}
+		
+	Low_indust_country = {
+		enable = {
+			AND = {
+				num_of_military_factories < 12
+				num_of_military_factories > 7
+				}
+				}
+		abort = {
+			OR = { 
+				num_of_military_factories < 8
+				num_of_military_factories > 13
+				}
+				}
+		
+		ai_strategy = {
+			type = role_ratio
+			id = infantry
+			value = 25 
+			}		
+	
+		ai_strategy = {
+			type = role_ratio
+			id = light_armor
+			value = -8
+			}
+			
+		#Planes
+										
+																	
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = tac_bomber_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = strat_bomber_equipment
+			value = -100
+			}
+			
+	#NAV
+	
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = cv_CAS_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = nav_bomber_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = cv_fighter_equipment
+			value = -100
+			} 				
+
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = cv_nav_bomber_equipment
+			value = -100
+			}
+	#JET
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = jet_tac_bomber_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = jet_fighter_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = jet_strat_bomber_equipment
+			value = -200
+			}		
+			}
+		
+		
+			
+	Very_low_indust_country = {
+		enable = {
+			OR = {
+				num_of_military_factories < 6
+				}
+				}			
+		abort = {
+			OR = { 
+				num_of_military_factories > 5
+				}
+				}
+		 
+			
+		ai_strategy = {
+			type = role_ratio
+			id = infantry
+			value = 30 
+			}
+			
+		ai_strategy = {
+			type = template_prio
+			id = infantry
+			value = 25
+			}
+			
+		ai_strategy = {
+			type = role_ratio
+			id = light_armor
+			value = -20
+			}		
+		
+		#Planes
+		
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = fighter_equipment
+			value = -100
+			}					
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = heavy_fighter_equipment
+			value = -100
+			}			
+
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = CAS_equipment
+			value = -100
+			} 
+																	
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = tac_bomber_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = strat_bomber_equipment
+			value = -100
+			}
+			
+	#NAV
+	
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = cv_CAS_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = nav_bomber_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = cv_fighter_equipment
+			value = -100
+			} 				
+
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = cv_nav_bomber_equipment
+			value = -100
+			}
+	#JET
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = jet_tac_bomber_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = jet_fighter_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = jet_strat_bomber_equipment
+			value = -200
+			}		
+	}
+			
+	#Cup-Half-Full_Scripts, aiming the AI away from things it cant efficetly produce and toward things it can.
+
+	CHF_planes = {
+		Enable = {
+			OR = {
+				check_variable = { resource_producedd@rubber < 2 }
+				check_variable = { resource_producedd@aluminium < 4 }
+				}
+				}
+			Abort = {
+				AND = {
+				check_variable = { resource_produced@rubber > 2 }
+				check_variable = { resource_producedd@aluminium < 4 }
+				}
+				}
+		
+	#Planes
+		
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = fighter_equipment
+			value = -100
+			}					
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = heavy_fighter_equipment
+			value = -100
+			}			
+
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = CAS_equipment
+			value = -100
+			} 
+																	
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = tac_bomber_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = strat_bomber_equipment
+			value = -100
+			}
+			
+	#NAV
+	
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = cv_CAS_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = nav_bomber_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = cv_fighter_equipment
+			value = -100
+			} 				
+
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = cv_nav_bomber_equipment
+			value = -100
+			}
+	#JET
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = jet_tac_bomber_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = jet_fighter_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = jet_strat_bomber_equipment
+			value = -200
+			}
+	}
+
+			
+	CHF_Support = {
+		Enable = {
+			AND = {
+				aluminium < 1 
+				has_equipment = { support_equipment > 20 }
+				}
+				}
+			Abort = {
+				OR = {
+				aluminium > 2 
+				has_equipment = { support_equipment < 1 }
+				}
+				}
+		
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = support_equipment
+			value = -10000 
+			}
+			}
+	
+	CHF_Motor = {
+		Enable = {
+			AND = {
+				rubber < 1 
+				has_equipment = { motorized_equipment > 50 }
+				arms_factory < 20
+				}
+				}
+			Abort = {
+				OR = {
+				rubber > 2 
+				has_equipment = { motorized_equipment < 1 }
+				arms_factory > 20
+				}
+				}
+		
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = motorized_equipment
+			value = -1000
+			}
+			}
+
+	CHF_Artillery = {
+		Enable = {
+			AND = {
+				tungsten < 1 
+				has_equipment = { artillery_equipment > 20 }
+				}
+				}
+			Abort = {
+				OR = {
+				tungsten > 2 
+				has_equipment = { artillery_equipment < 1 }
+				}
+				}
+		
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = artillery_equipment
+			value = -100 
+			}
+			}
+			
+			
+	CHF_capital_ship = { #doesnt seem to do anything
+		Enable = {
+			AND = {
+				check_variable = { resource_produced@chromium < 1 }
+				}
+				}
+			Abort = {
+				OR = {
+				check_variable = { resource_produced@chromium > 2 }
+				}
+				}
+		
+		ai_strategy = {
+			type = unit_ratio
+			id = capital_ship
+			value = -100 
+			}
+			
+		ai_strategy = {
+			type = unit_ratio
+			id = screen_ship
+			value = 20
+			}
+			}
+			
+			
+			
+	
+
+		#Varius scripts incentivising newly researched technlogy while it is ahead - Half a year later and idk what OOD means, what are these names.
+	
+	
+	Fighter_over_early = {
+		Enable = { 
+			AND = { 
+				has_tech = fighter1 
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = tactical_bomber1
+				}
+				}
+				   
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = fighter_equipment
+			value = 50
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = tac_bomber_equipment
+			value = -100						
+			}
+	}
+	
+	Fighter_over_heavy = {
+		Enable = { 
+			AND = { 
+				has_tech = fighter2 
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = heavy_fighter2
+				}
+				}
+				   
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = fighter_equipment
+			value = 50
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = heavy_fighter_equipment
+			value = -100						
+			}
+	}
+			
+	Fighter_over_heavy2 = {
+		Enable = { 
+			AND = { 
+				has_tech = fighter3 
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = heavy_fighter3
+				}
+				}
+				   
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = fighter_equipment
+			value = 50
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = heavy_fighter_equipment
+			value = -100						
+			}
+	}
+	
+	CAS_over_TACearly = {
+		Enable = { 
+			AND = { 
+				has_tech = CAS1
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = tactical_bomber1
+				}
+				}
+				   
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = CAS_equipment
+			value = 50
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = tac_bomber_equipment
+			value = -100			
+			}
+	}
+	
+	CAS_over_TAC = {
+		Enable = { 
+			AND = { 
+				has_tech = CAS2 
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = tactical_bomber2
+				}
+				}
+				   
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = CAS_equipment
+			value = 50
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = tac_bomber_equipment
+			value = -100			
+			}
+	}
+	
+	CAS_over_TAC2 = {
+		Enable = { 
+			AND = { 
+				has_tech = CAS3 
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = tactical_bomber3
+				}
+				}
+				   
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = CAS_equipment
+			value = 50
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = tac_bomber_equipment
+			value = -100						
+			}
+	}
+			
+	The_big_guns = {
+		Enable = { 
+			AND = { 
+				has_tech = strategic_bomber2 
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = tactical_bomber2
+				has_tech = CAS2
+				}
+				}
+				   
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = strat_bomber_equipment
+			value = 50
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = tac_bomber_equipment
+			value = -100						
+			}
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = CAS_equipment
+			value = -100						
+			}				
+	}
+			
+	The_big_guns = {
+		Enable = { 
+			AND = { 
+				has_tech = strategic_bomber3 
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = tactical_bomber3
+				has_tech = CAS3
+				}
+				}
+				   
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = strat_bomber_equipment
+			value = 50
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = tac_bomber_equipment
+			value = -100						
+			}
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = CAS_equipment
+			value = -100						
+			}				
+	}		
+	
+		
+	OOD_BMT = {
+		Enable = { 
+			AND = { 
+				has_tech = basic_medium_tank 
+				}
+				}
+		abort = {
+			OR = { 
+				has_tech = improved_medium_tank
+				has_tech = advanced_light_tank
+				}
+				}
+				   
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = light_tank_equipment
+			value = -50
+			}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = medium_tank_equipment
+			value = 50						
+			}
+	}
+		
+	
+	  OOD_ALT = {
+		Enable = {
+			And = {
+				has_tech = advanced_medium_tank
+				}
+				}
+		abort = {
+			OR = {
+			has_tech = advanced_light_tank_a
+			}
+			}
+			
+		 ai_strategy = {
+			type = equipment_variant_production_factor
+			id = light_tank_equipment
+			value = -75
+			}
+	}		
+				
+			
+	In_with_new_HT= {
+		Enable = {
+			And = {
+				has_tech = advanced_heavy_tank
+				}
+				}
+		abort = {
+			OR = {
+			has_tech = advanced_medium_tank
+			has_tech = advanced_light_tank_a
+			has_tech = main_battle_tank
+			}
+			}
+			
+		 ai_strategy = {
+			type = equipment_variant_production_factor
+			id = heavy_tank_equipment
+			value = 55
+			}
+	}
+			
+	In_with_new_Arti= {
+		Enable = {
+			And = {
+				has_tech = artillery4
+				}
+				}
+		abort = {
+			OR = {
+			has_tech = artillery_b
+			has_equipment = { artillery_equipment > 200 }
+			date > 1015.6.6 
+			}
+			}
+			
+		 ai_strategy = {
+			type = equipment_variant_production_factor
+			id = artillery_equipment
+			value = 25
+			}
+	}					
+			
+	In_with_new_LT= {
+		Enable = {
+			And = {
+				has_tech = advanced_light_tank_a
+				}
+				}
+		abort = {
+			OR = {
+			has_tech = main_battle_tank
+			}
+			}
+			
+		 ai_strategy = {
+			type = equipment_variant_production_factor
+			id = light_tank_equipment
+			value = 15
+			}
+	}			
+									
+	AheadtimeALTA = {
+		Enable = {
+			AND = {
+				has_tech = advanced_light_tank_a
+				}
+				}
+			abort = { 
+				OR = { 
+					date > 1017.1.1
+					has_tech = main_battle_tank
+					}
+					}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id   = light_tank_equipment
+			value = 50 
+			}			
+	}
+
+	AheadtimeIMT = {
+		Enable = {
+			AND = {
+				has_tech = improved_medium_tank 
+				}
+				}
+			abort = { 
+				OR = { 
+					date > 1014.1.1
+					}
+					}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id   = medium_tank_equipment
+			value = 30 
+			}			
+	}
+			
+	AheadtimeAMT = {
+		Enable = {
+			AND = {
+				has_tech = advanced_medium_tank 
+				}
+				}
+			abort = { 
+				OR = { 
+					date > 1015.6.6 
+					}
+					}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id   = medium_tank_equipment
+			value = 20 
+			}
+	}
+			
+
+In_with_new_MT = {
+		Enable = {
+			AND = { 
+			has_tech = improved_medium_tank 
+			}
+			}
+		abort = { 
+			OR = { 
+				has_tech = advanced_light_tank
+				has_tech = improved_heavy_tank
+				has_tech = advanced_medium_tank
+				}
+				}
+			
+			
+						ai_strategy = {
+			type = equipment_variant_production_factor
+			id = light_tank_equipment
+			value = -100
+			}
+			
+			ai_strategy = {
+			type = equipment_variant_production_factor
+			id = heavy_tank_equipment
+			value = -100
+			}			   
+			}
+												
+			
+
+	Volkssturm = {
+		Enable = {
+			AND = { 
+			enemies_strength_ratio > 1.5
+			has_manpower > 100000 
+			has_war = yes
+			}
+			}
+		abort = {
+			OR ={ 
+				has_manpower < 10000
+				any_war_score > 24 
+				}
+				}
+				
+		ai_strategy = {
+			type = equipment_variant_production_factor 
+			id = infantry_equipment
+			value = 150 
+			}
+		
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = support_equipment
+			value = 25 
+			}
+		
+		ai_strategy = {
+			type = role_ratio
+			id = infantry
+			value = 15 
+			}
+			}
+
+
+Infantry_focus = {
+		Enable = {
+			stockpile_ratio  = { archetype = infantry_equipment ratio < 0.05 }
+			has_war = yes
+			}
+		abort = {
+		stockpile_ratio  = { archetype = infantry_equipment ratio > 0.10 }
+				}
+				
+		ai_strategy = {
+			type = equipment_variant_production_factor 
+			id = infantry_equipment
+			value = 25
+			}
+
+		
+		ai_strategy = {
+			type = air_factory_balance
+			value = -50 
+			}
+			}
+				
+

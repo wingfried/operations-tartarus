@@ -1,0 +1,210 @@
+leader_traits = {
+
+	half_blind = {
+		type = all
+		trait_type = status_trait
+		allowed = {
+			always = no
+		}
+		modifier = {
+			army_attack_factor = -0.05
+			army_defence_factor = -0.05
+		}
+	}
+
+	fast_boi_trait = {
+		type = all
+		trait_type = personality_trait
+		allowed = {
+			always = no
+		}
+		modifier = {
+			army_speed_factor = 0.50
+		}
+	}
+
+	wound_badge_trait = {
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			wounded_chance_factor = -0.30
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	viktoriya_ivanovna_companion_trait = {
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			army_morale_factor = 0.05
+			wounded_chance_factor = -0.20
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	silver_wings_trait = {
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			modifier_army_sub_unit_aerial_mages_attack_factor  = 0.25
+			modifier_army_sub_unit_aerial_mages_defence_factor = 0.25
+			no_supply_grace = 48
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+		
+		enable_ability = glider_planes
+	}
+	
+	autist = {
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			special_forces_attack_factor = 0.50
+			special_forces_defence_factor = 0.50
+			planning_speed = -0.75
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	jew = {
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			equipment_capture_factor = 0.10
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	rapist = {
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			army_attack_factor = 0.10
+			army_speed_factor = 0.10
+			army_defence_factor = -0.25
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	eternal_rage = {
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			army_attack_factor = 0.10
+			attrition = -0.25
+			army_defence_factor = -0.25
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	witcher = {
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			modifier_army_sub_unit_witchers_attack_factor  = 0.10
+			modifier_army_sub_unit_witchers_defence_factor = 0.10
+			attrition = -0.08
+			no_supply_grace = 72
+			max_commander_army_size = -20
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	signs_specialist = {
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			army_org_factor = 0.10
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	swords_specialist = {
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			modifier_army_sub_unit_witchers_attack_factor  = 0.10
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	alchemy_specialist = {
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			experience_loss_factor = -0.10
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	petard_specialist = {
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	VED_Warrior_Princess_trait = {
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+}

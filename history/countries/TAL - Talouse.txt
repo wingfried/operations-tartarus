@@ -1,0 +1,209 @@
+﻿capital = 366
+oob = "TAL_1007"
+set_research_slots = 3
+
+set_technology = {
+	griffon_race = 1
+	tech_griffon_army = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		transport = 1
+	}
+	set_naval_oob = "TAL_1007_naval_legacy"
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_torpedo = 1
+		basic_battery = 1
+		early_ship_hull_light = 1
+		mtg_transport = 1
+	}
+	set_naval_oob = "TAL_1007_naval"
+}
+
+set_convoys = 70
+set_popularities = {
+	tog_technocracy = 11
+	democratic = 0
+	fascism = 14
+	communism = 25
+	neutrality = 50
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+add_ideas = {
+	outdated_industry
+	poverty5
+	lack_of_scientists3
+	TAL_wingbardian_influence
+	TAL_imperium_talousianum_idea
+}
+
+set_stability = 0.50
+
+create_country_leader = {
+	name = "Duchess Ginevra"
+	female = yes
+	#	name = "Gilberto de Griffarate"
+	desc = ""
+	picture = "Ginevra.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		tactician_leader_trait
+		accept_fascism_trait
+		accept_technocracy_trait
+		hate_communism_trait
+	}
+}
+
+create_country_leader = {
+	name = "Duchess Ginevra"
+	#	name = "Gavino Blackbeak"
+	female = yes
+	picture = "Ginevra.tga"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		tactician_leader_trait
+		accept_technocracy_trait
+		hate_communism_trait
+	}
+}
+
+create_country_leader = {
+	name = "Duchess Ginevra"
+	desc = ""
+	picture = "Ginevra.tga"
+	expire = "1965.1.1"
+	ideology = tog_technocracy_ideology
+	female = yes
+	traits = {
+		tactician_leader_trait
+		accept_fascism_trait
+		hate_communism_trait
+	}
+}
+
+create_country_leader = {
+	name = "Gaetano Martello"
+	desc = ""
+	picture = "Governor.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+
+	}
+}
+
+create_corps_commander = {
+	name = "Premio Miocespulgio"
+	desc = "premio_mio_desc"
+	portrait_path = "gfx/leaders/TAL/Premio_Miocespulgio.tga"
+	traits = { griffon_race_trait infantry_leader ambusher trickster guerilla_fighter }
+	skill = 4
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Giulia Miocespulgio"
+	desc = "giulia_mio_desc"
+	portrait_path = "gfx/leaders/TAL/Giulia_Miocespulgio.tga"
+	traits = { griffon_race_trait infantry_officer infantry_leader infantry_expert bearer_of_artillery }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 4
+	female = yes
+}
+
+create_corps_commander = {
+	name = "Plutarco Liscio"
+	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_4.dds"
+	traits = { griffon_race_trait ranger }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Berardo Prisco"
+	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_16.dds"
+	traits = { griffon_race_trait expert_improviser }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ferruccio Bartolo"
+	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_6.dds"
+	traits = { griffon_race_trait infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Samuele Madclaw"
+	portrait_path = "gfx/leaders/TAL/Ironclaw.tga"
+	traits = { griffon_race_trait brilliant_strategist politically_connected }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+set_rule = {
+	can_generate_female_aces = yes
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	create_equipment_variant = {
+		name = "Curatone Class" #Purchased from Wingbardy
+		name_group = TAL_DD_HISTORICAL
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+}

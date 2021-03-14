@@ -1098,7 +1098,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 5
+			factor = 1 
 			
 			modifier = {
 				factor = 0.5
@@ -1792,12 +1792,7 @@ technologies = {
 			type = armor
 				}
 				}
-				}
-		
-		
-		
-		
-		
+				}		
 		
 	}
 
@@ -2560,8 +2555,8 @@ technologies = {
 	tech_field_hospital_a = {
 
 		field_hospital = {
-			casualty_trickleback = 0.1
-			experience_loss_factor = -0.10
+			casualty_trickleback = 0.08
+			experience_loss_factor = -0.08
 		}
 
 		path = {
@@ -2591,8 +2586,8 @@ technologies = {
 
 
 		field_hospital = {
-			casualty_trickleback = 0.1
-			experience_loss_factor = -0.10
+			casualty_trickleback = 0.08
+			experience_loss_factor = -0.08
 		}
 
 		path = {
@@ -2671,8 +2666,8 @@ technologies = {
 	tech_field_hospital_c = {
 
 		field_hospital = {
-			casualty_trickleback = 0.1
-			experience_loss_factor = -0.10
+			casualty_trickleback = 0.08
+			experience_loss_factor = -0.08
 		}
 
 		research_cost = 1.5
@@ -2749,7 +2744,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.08
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.03
 		}
 
 		path = {
@@ -2780,7 +2775,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.06
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.03
 		}
 
 		path = {
@@ -2810,8 +2805,8 @@ technologies = {
 	tech_logistics_company_c = {
 
 		logistics_company = {
-			supply_consumption_factor = -0.05
-			fuel_consumption_factor = -0.02
+			supply_consumption_factor = -0.06
+			fuel_consumption_factor = -0.03
 		}
 
 		research_cost = 1.5

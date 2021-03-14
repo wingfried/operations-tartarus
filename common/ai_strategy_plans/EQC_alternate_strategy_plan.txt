@@ -1,0 +1,957 @@
+EQC_alternate_democratic = {
+	name = "New Mareland goes it alone!"
+	desc = ""
+
+	enable = {
+		original_tag = EQC
+		OR = {
+			has_country_flag = EQC_AI_DEMOCRATIC_ALTERNATE 
+			has_game_rule = {
+				rule = EQC_ai_behavior
+				option = DEMOCRATIC_ALTERNATE
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		EQC_commonwealth_defence
+		EQC_national_mobilisation_act
+		EQC_national_defence_company
+
+		EQC_patriation
+		EQC_commonwelth_congress
+		EQC_support_the_harmonists
+		EQC_industral_support_fund
+		EQC_national_census
+		EQC_new_mareland_railway
+		EQC_the_flare_plan
+		EQC_the_election
+		EQC_jet_set_wins
+		EQC_education_programms
+		EQC_nationalise_assets
+		EQC_public_works_act
+		EQC_trade_negotiations
+		EQC_expand_charity_work
+		EQC_expand_oil_industry
+		EQC_national_recovery_act
+		EQC_expand_new_manehatten
+		EQC_economic_recovery
+		EQC_expand_sunset_university
+		EQC_legacy_of_the_cockatrice_war
+		EQC_expand_manehatten_harbour
+		EQC_rnmaf_stratus_springs
+		EQC_littlehoof_small_arms
+		EQC_a_new_fighter
+		EQC_bits_gun
+		EQC_royal_military_academy_sunset
+		EQC_nmac_spirit
+		EQC_commerce_protection
+		EQC_befriend_eastern_ponies
+	}
+
+	research = {
+		ai_basic_start = 75.0
+		ai_continued_start = 60.0
+		land_doctrine = 50.0
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+EQC_alternate_fascist_duke = {
+	name = "New Mareland goes fascist duke"
+	desc = ""
+
+	enable = {
+		original_tag = EQC
+		OR = {
+			has_country_flag = EQC_AI_FASCIST_DUKE 
+			has_game_rule = {
+				rule = EQC_ai_behavior
+				option = FASCIST_DUKE
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		EQC_commonwealth_defence
+		EQC_national_mobilisation_act
+		EQC_national_defence_company		
+		EQC_patriation
+		EQC_commonwelth_congress
+		EQC_industral_support_fund
+		EQC_let_all_have_a_say
+		EQC_national_census
+		EQC_new_mareland_railway
+		EQC_the_flare_plan
+		EQC_the_election
+		EQC_fascist_win
+		EQC_the_duke_wins
+		EQC_build_now_play_later
+		EQC_autarky
+		EQC_seize_control
+		EQC_three_year_plan
+		EQC_expand_new_manehatten
+		EQC_empower_the_army
+		EQC_section_13
+		EQC_expand_the_stormponies
+		EQC_work_for_the_nation
+		EQC_economic_recovery
+		EQC_united_shadowworks
+		EQC_every_little_helps		
+		EQC_nation_works_projects
+		EQC_expand_sunset_university
+		EQC_littlehoof_small_arms
+		EQC_legacy_of_the_cockatrice_war
+		EQC_rnmaf_stratus_springs
+		EQC_expand_manehatten_harbour
+		EQC_a_new_fighter
+		EQC_bits_gun
+		EQC_royal_military_academy_sunset
+		EQC_nmac_spirit
+		EQC_commerce_protection
+		EQC_stand_against_griffons
+	}
+
+	research = {
+		ai_basic_start = 75.0
+		ai_continued_start = 60.0
+		land_doctrine = 50.0
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+		fascist_demagogue = 10
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+EQC_alternate_fascist_fence = {
+	name = "New Mareland goes fascist fence"
+	desc = ""
+
+	enable = {
+		original_tag = EQC
+		OR = {
+			has_country_flag = EQC_AI_FASCIST_FENCE
+			has_game_rule = {
+				rule = EQC_ai_behavior
+				option = FASCIST_FENCE
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		EQC_commonwealth_defence
+		EQC_national_mobilisation_act
+		EQC_national_defence_company		
+		EQC_patriation
+		EQC_commonwelth_congress
+		EQC_industral_support_fund
+		EQC_let_all_have_a_say
+		EQC_national_census
+		EQC_new_mareland_railway
+		EQC_the_flare_plan
+		EQC_the_election
+		EQC_fascist_win
+		EQC_picket_wins
+		EQC_regulated_capitalism
+		EQC_break_the_bankers
+		EQC_defend_democracy
+		EQC_pony_citizen_councils
+		EQC_expand_new_manehatten
+		EQC_the_national_guard
+		EQC_implement_segregation
+		EQC_accept_the_bats
+		EQC_model_communities
+		EQC_economic_recovery
+		EQC_tuitions_for_ponies
+		EQC_marelandian_recovery
+		EQC_the_silver_crescent_doctrine
+		EQC_united_shadowworks
+		EQC_every_little_helps	
+		EQC_nation_works_projects
+		EQC_expand_sunset_university
+		EQC_littlehoof_small_arms
+		EQC_legacy_of_the_cockatrice_war
+		EQC_rnmaf_stratus_springs
+		EQC_expand_manehatten_harbour
+		EQC_a_new_fighter
+		EQC_bits_gun
+		EQC_royal_military_academy_sunset
+		EQC_nmac_spirit
+		EQC_commerce_protection
+	}
+
+	research = {
+		ai_basic_start = 75.0
+		ai_continued_start = 60.0
+		land_doctrine = 50.0
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+		fascist_demagogue = 10
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+EQC_alternate_technocracy = {
+	name = "New Mareland goes technocratic"
+	desc = ""
+
+	enable = {
+		original_tag = EQC
+		OR = {
+			has_game_rule = {
+				rule = EQC_ai_behavior
+				option = TECHNOCRATIC
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+
+		#EQC_Independence
+		EQC_patriation
+		EQC_commonwelth_congress
+		EQC_let_all_have_a_say
+		EQC_national_census
+		EQC_legacy_of_the_cockatrice_war
+		EQC_bits_gun
+		EQC_royal_military_academy_sunset_custom
+		EQC_nmac_spirit
+		EQC_the_election
+
+		#EQC_Technocracy_Economy
+		EQC_technocrats_win
+		EQC_optimized_hierarchy
+		EQC_labour_law
+		EQC_massive_nationalization
+		EQC_fund_construction_companies
+		EQC_appoint_captain_of_industry
+		EQC_reorganize_the_economic_institutes
+		EQC_new_salary_system
+		EQC_better_banking
+		EQC_allow_the_choice_of_life
+		EQC_deal_with_opo_tech
+
+		#EQC_Recovery_Research_Conscription
+		EQC_commonwealth_defence
+		EQC_national_defence_company
+		EQC_every_little_helps
+		EQC_economic_recovery_custom
+		EQC_expand_sunset_university
+		EQC_defence_of_x
+		EQC_national_mobilisation_act
+		EQC_equestrian_crisis
+		EQC_return_to_alliance
+		EQC_invest_in_victory
+		EQC_expand_conscription
+
+		#EQC_Perfect_System
+		EQC_no_country_for_old_horses
+		EQC_perfect_workforce
+		EQC_remove_the_defects
+
+		### IF_WINGBARDY_NOT_DANGEROUS ###
+
+		#EQC_Technocracy_Construction
+		EQC_massive_investment_in_economy
+		EQC_restructure_new_manehattan
+		EQC_new_manehattan_factories
+		EQC_a_workplace_for_everycreature
+		EQC_new_trade_system
+		EQC_expand_sunset
+		EQC_griffonia_trade_centre
+
+		#EQC_Technocracy_Research_Army
+		EQC_military_discipline
+		EQC_specialized_education
+		EQC_fund_genius_minds
+		EQC_massive_investment_in_research
+		EQC_invite_foreign_scientists
+		EQC_new_manehattan_research_centre
+		EQC_appoint_army_instructor
+		EQC_reorganize_the_military_staff
+		EQC_new_conscription_system
+		EQC_great_military_academy
+		EQC_military_laboratories
+		EQC_flying_unicorns
+		EQC_perfect_soldiers
+		EQC_next_gen_artillery
+		EQC_artillery_is_god
+		EQC_next_gen_tanks
+
+		#EQC_Economy
+		EQC_squish_the_parasprites
+		EQC_full_economic_commitment
+
+		#EQC_Project_Salamander
+		EQC_elenium_series_90_testing
+		EQC_rapid_response_unit
+		EQC_project_salamander
+		EQC_unexpected_help
+
+		#EQC_Technocracy_War
+		EQC_kill_them_all
+		EQC_in_defense_of_motherland
+
+		#Third_Way
+		EQC_third_way_tech
+		EQC_invite_asterion
+		EQC_strike_cyanolisia
+		EQC_invite_vedina
+		EQC_strike_griffingaard
+		EQC_expand_cities
+		EQC_project_phoenix
+		EQC_karthinian_question
+
+		#Right_Way
+		EQC_spread_propaganda_techno
+		EQC_strike_the_pact
+		EQC_massive_integration_act
+		EQC_new_superpower
+		EQC_tale_of_two_motherlands
+		EQC_closer_cooperation
+
+		#Left_Way
+		EQC_befriend_wingbardy
+		EQC_join_wingbardy
+		EQC_karthinian_cooperation
+		EQC_strengthen_friendship
+		EQC_strike_aquileia
+		EQC_integrate_aquileia
+
+		#Extra_Military
+		EQC_new_mareland_artillery
+		EQC_marine_assault_tactics
+		EQC_unconventional_warfare
+		EAC_section_z
+
+		#END
+		EQC_war_with_the_empire
+		EQC_rulers_of_griffonia
+
+		#IF_AI_DUMB
+		EQC_industral_support_fund
+		EQC_new_mareland_railway
+		EQC_expand_new_manehatten
+		EQC_project_midas
+
+	}
+
+	research = {
+		ai_basic_start = 75.0
+		ai_continued_start = 60.0
+		land_doctrine = 50.0
+		industry = 20.0
+		special_forces_tech = 20.0
+		aerial_mage_tech = 20.0
+		infantry_tech = 15.0
+		artillery = 15.0
+		support_tech = 8.0
+		dd_tech = 5.0
+	}
+
+	ideas = {
+		EQC_technocratic_pony = 40000
+		partial_economic_mobilisation = 800
+		juniper_montage = 400
+		EQC_new_manehatten_steelworks = 200
+		EQC_mustang_automotive = 150
+		sour_sweet = 100
+		EQC_sunset_car_co = 50
+		EQC_heavy_artillery_company = 25
+
+		EQC_genius_army_offense_pony = 200
+		EQC_artillery_specialist_pony = 200
+		EQC_genius_ace_generation_griff = 100
+	}
+
+	traits = {
+		
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+EQC_alternate_technocracy_revanchist_union = {
+	name = "New Mareland goes technocratic and union"
+	desc = ""
+
+	enable = {
+		original_tag = EQC
+		OR = {
+			has_game_rule = {
+				rule = EQC_ai_behavior
+				option = TECHNOCRATIC_REVANCHIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		#EQC_Independence
+		EQC_patriation
+		EQC_commonwelth_congress
+		EQC_let_all_have_a_say
+		EQC_national_census
+		EQC_legacy_of_the_cockatrice_war
+		EQC_bits_gun
+		EQC_royal_military_academy_sunset_custom
+		EQC_nmac_spirit
+		EQC_the_election
+
+		#EQC_Technocracy_Economy
+		EQC_technocrats_win
+		EQC_optimized_hierarchy
+		EQC_labour_law
+		EQC_massive_nationalization
+		EQC_fund_construction_companies
+		EQC_appoint_captain_of_industry
+		EQC_reorganize_the_economic_institutes
+		EQC_new_salary_system
+		EQC_better_banking
+		EQC_allow_the_choice_of_life
+		EQC_deal_with_opo_tech
+
+		#Third_Way
+		EQC_in_defense_of_motherland
+		EQC_third_way_tech
+		EQC_invite_asterion
+		EQC_strike_cyanolisia
+		EQC_invite_vedina
+		EQC_strike_griffingaard
+		EQC_project_phoenix
+
+		#EQC_Recovery_Research_Conscription
+		EQC_commonwealth_defence
+		EQC_national_defence_company
+		EQC_every_little_helps
+		EQC_economic_recovery_custom
+		EQC_expand_sunset_university
+		EQC_defence_of_x
+		EQC_national_mobilisation_act
+		EQC_invest_in_victory
+		EQC_expand_conscription
+
+		#EQC_Perfect_System
+		EQC_no_country_for_old_horses
+		EQC_perfect_workforce
+		EQC_remove_the_defects
+
+		### IF_WINGBARDY_NOT_DANGEROUS ###
+
+		#EQC_Technocracy_Construction
+		EQC_massive_investment_in_economy
+		EQC_restructure_new_manehattan
+		EQC_new_manehattan_factories
+		EQC_a_workplace_for_everycreature
+		EQC_new_trade_system
+		EQC_expand_sunset
+		EQC_griffonia_trade_centre
+
+		#EQC_Technocracy_Research_Army
+		EQC_military_discipline
+		EQC_specialized_education
+		EQC_fund_genius_minds
+		EQC_massive_investment_in_research
+		EQC_invite_foreign_scientists
+		EQC_new_manehattan_research_centre
+		EQC_appoint_army_instructor
+		EQC_reorganize_the_military_staff
+		EQC_new_conscription_system
+		EQC_great_military_academy
+		EQC_military_laboratories
+		EQC_flying_unicorns
+		EQC_perfect_soldiers
+		EQC_next_gen_artillery
+		EQC_artillery_is_god
+		EQC_next_gen_tanks
+
+		#EQC_Economy
+		EQC_squish_the_parasprites
+		EQC_full_economic_commitment
+
+		#EQC_Project_Salamander
+		EQC_elenium_series_90_testing
+		EQC_rapid_response_unit
+		EQC_project_salamander
+		EQC_unexpected_help
+
+		#EQC_Technocracy_War
+		EQC_kill_them_all
+		EQC_in_defense_of_motherland
+
+		#Right_Way
+		EQC_spread_propaganda_techno
+		EQC_strike_the_pact
+		EQC_massive_integration_act
+		EQC_new_superpower
+		EQC_tale_of_two_motherlands
+		EQC_closer_cooperation
+
+		#Left_Way
+		EQC_befriend_wingbardy
+		EQC_join_wingbardy
+		EQC_karthinian_cooperation
+		EQC_strengthen_friendship
+		EQC_strike_aquileia
+		EQC_integrate_aquileia
+
+		#Extra_Military
+		EQC_new_mareland_artillery
+		EQC_marine_assault_tactics
+		EQC_unconventional_warfare
+		EAC_section_z
+
+		#END
+		EQC_karthinian_question
+		EQC_war_with_the_empire
+		EQC_rulers_of_griffonia
+
+		#IF_AI_DUMB
+		EQC_industral_support_fund
+		EQC_new_mareland_railway
+		EQC_expand_new_manehatten
+		EQC_project_midas
+
+	}
+
+	research = {
+		ai_basic_start = 75.0
+		ai_continued_start = 60.0
+		land_doctrine = 50.0
+		industry = 20.0
+		special_forces_tech = 20.0
+		aerial_mage_tech = 20.0
+		infantry_tech = 15.0
+		artillery = 15.0
+		support_tech = 8.0
+		dd_tech = 5.0
+	}
+
+	ideas = {
+		EQC_technocratic_pony = 40000
+		partial_economic_mobilisation = 800
+		juniper_montage = 400
+		EQC_new_manehatten_steelworks = 200
+		EQC_mustang_automotive = 150
+		sour_sweet = 100
+		EQC_sunset_car_co = 50
+		EQC_heavy_artillery_company = 25
+
+		EQC_genius_army_offense_pony = 200
+		EQC_artillery_specialist_pony = 200
+		EQC_genius_ace_generation_griff = 100
+	}
+
+	traits = {
+		
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+EQC_alternate_communist = {
+	name = "New Mareland goes normal communist"
+	desc = ""
+
+	enable = {
+		original_tag = EQC
+		OR = {
+			has_country_flag = EQC_AI_COMMUNIST 
+			has_game_rule = {
+				rule = EQC_ai_behavior
+				option = COMMUNIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		EQC_patriation
+		EQC_recognise_stalliongrad
+		EQC_form_communist_unions
+		EQC_unite_the_left
+	}
+
+	research = {
+		ai_basic_start = 75.0
+		ai_continued_start = 60.0
+		land_doctrine = 50.0
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		communist_revolutionary = 10
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+EQC_alternate_equalist = {
+	name = "New Mareland goes Equalist"
+	desc = ""
+
+	enable = {
+		original_tag = EQC
+		OR = {
+			has_country_flag = EQC_AI_EQUALIST 
+			has_game_rule = {
+				rule = EQC_ai_behavior
+				option = EQUALIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		EQC_patriation
+		EQC_recognise_stalliongrad
+		EQC_form_communist_unions
+		EQC_unite_the_left
+	}
+
+	research = {
+		ai_basic_start = 75.0
+		ai_continued_start = 60.0
+		land_doctrine = 50.0
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		communist_revolutionary = 10
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+EQC_alternate_equalist = {
+	name = "New Mareland goes MARESOC"
+	desc = ""
+
+	enable = {
+		original_tag = EQC
+		OR = {
+			has_country_flag = EQC_AI_MARESOC 
+			has_game_rule = {
+				rule = EQC_ai_behavior
+				option = MARESOC
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		EQC_patriation
+		EQC_recognise_stalliongrad
+		EQC_form_communist_unions
+		EQC_unite_the_left
+	}
+
+	research = {
+		ai_basic_start = 75.0
+		ai_continued_start = 60.0
+		land_doctrine = 50.0
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		communist_revolutionary = 10
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+EQC_alternate_gladmane = {
+	name = "New Mareland elects Gladmane"
+	desc = ""
+
+	enable = {
+		original_tag = EQC
+		OR = {
+			has_country_flag = EQC_AI_GLADMANE 
+			has_game_rule = {
+				rule = EQC_ai_behavior
+				option = GLADMANE
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		EQC_patriation
+		EQC_commonwelth_congress
+		EQC_let_all_have_a_say
+		EQC_the_election
+		EQC_gladmane_wins
+	}
+
+	research = {
+		ai_basic_start = 75.0
+		ai_continued_start = 60.0
+		land_doctrine = 50.0
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		communist_revolutionary = 10
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+EQC_alternate_gladmane = {
+	name = "New Mareland elects Kingfisher"
+	desc = ""
+
+	enable = {
+		original_tag = EQC
+		OR = {
+			has_country_flag = EQC_AI_KINGFISHER 
+			has_game_rule = {
+				rule = EQC_ai_behavior
+				option = KINGFISHER
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		EQC_patriation
+		EQC_commonwelth_congress
+		EQC_let_all_have_a_say
+		EQC_the_election
+		EQC_kingfisher_wins
+	}
+
+	research = {
+		ai_basic_start = 75.0
+		ai_continued_start = 60.0
+		land_doctrine = 50.0
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		communist_revolutionary = 10
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}

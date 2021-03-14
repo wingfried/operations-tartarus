@@ -5,7 +5,28 @@ debug_decisions = {
 	}
 }
 
-gaw_form_puppet_category = {
+TOG_turhamn_pact_project_1_category = {
+	icon = generic_propaganda
+	allowed = {
+	}
+	priority = {
+		base = 1000
+	}
+	visible = {
+		SRS = {
+			exists = yes
+			has_completed_focus = SRS_turhamn_pact
+			is_in_faction = yes
+			is_faction_leader = yes
+		}
+		IF = {
+			limit = { NOT = { TAG = SRS } }
+			is_in_faction_with = SRS
+		}
+	}
+}
+
+TOG_form_puppet_category = {
 	icon = generic_propaganda
 	allowed = {
 		NOT = { tag = DED }
@@ -16,7 +37,7 @@ gaw_form_puppet_category = {
 	}
 }
 
-gaw_upgrade_concern_category = {
+TOG_upgrade_concern_category = {
 	icon = generic_construction
 	allowed = {
 		NOT = { tag = DED }

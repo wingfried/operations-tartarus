@@ -1,0 +1,247 @@
+spriteTypes = {
+	
+	SpriteType = {
+		name = "GFX_tech_recruit_witchers_medium"
+		texturefile = "gfx/interface/technologies/witchers/witcher.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_signs_medium"
+		texturefile = "gfx/interface/technologies/witchers/signs.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_witcher_swords_medium"
+		texturefile = "gfx/interface/technologies/witchers/silversteel.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_steel_sword_medium"
+		texturefile = "gfx/interface/technologies/witchers/steelsword1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_steel_sword2_medium"
+		texturefile = "gfx/interface/technologies/witchers/steelsword2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_steel_sword3_medium"
+		texturefile = "gfx/interface/technologies/witchers/steelsword3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_steel_sword4_medium"
+		texturefile = "gfx/interface/technologies/witchers/steelsword4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_steel_sword5_medium"
+		texturefile = "gfx/interface/technologies/witchers/steelsword5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_steel_sword6_medium"
+		texturefile = "gfx/interface/technologies/witchers/steelsword6.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_steel_sword7_medium"
+		texturefile = "gfx/interface/technologies/witchers/steelsword7.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_steel_sword8_medium"
+		texturefile = "gfx/interface/technologies/witchers/steelsword8.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_silver_sword_medium"
+		texturefile = "gfx/interface/technologies/witchers/silversword1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_silver_sword2_medium"
+		texturefile = "gfx/interface/technologies/witchers/silversword2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_silver_sword3_medium"
+		texturefile = "gfx/interface/technologies/witchers/silversword3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_silver_sword4_medium"
+		texturefile = "gfx/interface/technologies/witchers/silversword4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_silver_sword5_medium"
+		texturefile = "gfx/interface/technologies/witchers/silversword5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_silver_sword6_medium"
+		texturefile = "gfx/interface/technologies/witchers/silversword6.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_silver_sword7_medium"
+		texturefile = "gfx/interface/technologies/witchers/silversword7.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_silver_sword8_medium"
+		texturefile = "gfx/interface/technologies/witchers/silversword8.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_aard_sign_medium"
+		texturefile = "gfx/interface/technologies/witchers/aard1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_aard_sign2_medium"
+		texturefile = "gfx/interface/technologies/witchers/aard2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_aard_sign3_medium"
+		texturefile = "gfx/interface/technologies/witchers/aard3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_aard_sign4_medium"
+		texturefile = "gfx/interface/technologies/witchers/aard4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_aksii_sign_medium"
+		texturefile = "gfx/interface/technologies/witchers/axii1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_aksii_sign2_medium"
+		texturefile = "gfx/interface/technologies/witchers/axii2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_aksii_sign3_medium"
+		texturefile = "gfx/interface/technologies/witchers/axii3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_aksii_sign4_medium"
+		texturefile = "gfx/interface/technologies/witchers/axii4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_quen_sign_medium"
+		texturefile = "gfx/interface/technologies/witchers/quen1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_quen_sign2_medium"
+		texturefile = "gfx/interface/technologies/witchers/quen2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_quen_sign3_medium"
+		texturefile = "gfx/interface/technologies/witchers/quen3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_quen_sign4_medium"
+		texturefile = "gfx/interface/technologies/witchers/quen4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_igni_sign_medium"
+		texturefile = "gfx/interface/technologies/witchers/igni1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_igni_sign2_medium"
+		texturefile = "gfx/interface/technologies/witchers/igni2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_igni_sign3_medium"
+		texturefile = "gfx/interface/technologies/witchers/igni3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_igni_sign4_medium"
+		texturefile = "gfx/interface/technologies/witchers/igni4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_yrden_sign_medium"
+		texturefile = "gfx/interface/technologies/witchers/yrden1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_yrden_sign2_medium"
+		texturefile = "gfx/interface/technologies/witchers/yrden2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_yrden_sign3_medium"
+		texturefile = "gfx/interface/technologies/witchers/yrden3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_yrden_sign4_medium"
+		texturefile = "gfx/interface/technologies/witchers/yrden4.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_witcher_techtree_bg"
+		textureFile = "gfx//interface//techtree//pony_magic_techtree_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_witcher_folder_tab"
+		textureFile = "gfx//interface//techtree//techtree_witcher_tab.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_witcher_folder_icon"
+		textureFile = "gfx/interface/techtree/icons/magic_folder_icon.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_witcher_folder_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	
+	spriteType = {
+		name = "GFX_technology_witcher_folder_researched_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_researched_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_witcher_folder_available_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_witcher_folder_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_witcher_folder_branch_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_branch_item_bg.dds"
+	}
+}

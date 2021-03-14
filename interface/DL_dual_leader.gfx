@@ -1,0 +1,66 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_header_bg_political"
+		texturefile = "gfx/interface/header_bg_political.dds"
+	}
+
+	spriteType = {
+		name = "GFX_diplo_header_bg"
+		texturefile = "gfx/interface/diplo_header_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_bg_blank"
+		texturefile = "gfx/interface/portrait_bg_blank.dds"
+	}
+
+	spriteType = {
+		name = "GFX_diplo_leader_frame_2"
+		texturefile = "gfx/interface/diplo_leader_frame_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_bg_transparent"
+		texturefile = "gfx/interface/portrait_bg_transparent.dds"
+	}
+
+	spriteType = {
+		name = "GFX_diplo_tab_extender"
+		texturefile = "gfx/interface/diplo_tab_extender.dds"
+	}
+
+	textSpriteType = {
+		name = "GFX_button_148x31"
+		texturefile = "gfx/interface/button_148x31.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	# Country Specific Portraits
+
+	spriteType = {
+		name = "GFX_EQS_LUNA"
+		texturefile = "gfx/dual_leaders/EQS/Luna.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_VED_SKOLD"
+		texturefile = "gfx/dual_leaders/VED/Skold.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CRY_SHINY"
+		texturefile = "gfx/dual_leaders/CRY/ShiningArmour.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_EQC_SUNSET"
+		texturefile = "gfx/dual_leaders/EQC/Sunset.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GFG_ROSEFEATHER"
+		texturefile = "gfx/dual_leaders/GFG/Rosefeather.dds"
+	}
+}

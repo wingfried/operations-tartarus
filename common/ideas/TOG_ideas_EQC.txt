@@ -1,0 +1,1205 @@
+ideas = {
+
+	country = {
+
+		EQC_new_mareland_scientists_idea = {
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		EQC_foreign_scientists_idea = {
+			modifier = {
+				research_speed_factor = 0.10
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 10.0
+			}
+		}
+
+		EQC_rising_phoenix_idea = {
+			modifier = {
+				production_speed_arms_factory_factor = 0.20
+				production_speed_industrial_complex_factor = -0.20
+			}
+		}
+
+		EQC_perfect_workforce_idea = {
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+
+		EQC_resources_focus_idea = {
+			modifier = {
+				consumer_goods_factor = 0.02
+				local_resources_factor = 0.25
+			}
+		}
+
+		EQC_propaganda1_idea = {
+			targeted_modifier = {
+				tag = WNG
+				attack_bonus_against = 0.1
+			}
+			available = {
+				country_exists = WNG
+			}
+		}
+		EQC_propaganda2_idea = {
+			targeted_modifier = {
+				tag = TAL
+				attack_bonus_against = 0.1
+			}
+			available = {
+				country_exists = TAL
+			}
+		}
+		EQC_propaganda3_idea = {
+			targeted_modifier = {
+				tag = FRN
+				attack_bonus_against = 0.1
+			}
+			available = {
+				country_exists = FRN
+			}
+		}
+
+		EQC_in_defence_of_anarchism = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				has_government = tog_anarchism
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			rule = {
+				can_send_volunteers = yes
+			}
+
+			modifier = {
+				send_volunteer_divisions_required = -1
+				send_volunteer_size = 1
+			}
+		}
+
+		EQC_in_defence_of_technocracy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				has_government = tog_technocracy
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			rule = {
+				can_send_volunteers = yes
+			}
+
+			modifier = {
+				send_volunteer_divisions_required = -1.00
+				send_volunteer_size = 3
+				army_morale_factor = 0.05
+			}
+		}
+
+		EQC_perfect_soldiers_idea = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_speed_factor = 0.05
+				army_morale_factor = -0.05
+			}
+		}
+
+		EQC_equestrian_training_idea = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = 0.10
+				army_org_factor = 0.05
+			}
+		}
+
+		EQC_defensive_planes_idea = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				air_air_superiority_defence_factor = 0.10
+			}
+		}
+
+		EQC_new_trade_system_idea = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				min_export = -0.3
+			}
+
+		}
+
+		EQC_last_stand_idea = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.10
+				mobilization_speed = 0.25
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+
+		}
+
+		EQC_waste_sorting_idea = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.10
+			}
+
+		}
+
+		EQC_political_stability_idea = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.01
+			}
+
+		}
+
+		EQC_unsupported_economy_idea1 = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+
+		}
+
+		EQC_unsupported_economy_idea2 = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+
+		}
+
+		EQC_awful_military_idea1 = {
+
+			picture = unhappy_army_3
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = -0.06
+				army_defence_factor = -0.06
+				army_org_factor = -0.12
+			}
+
+		}
+
+		EQC_awful_military_idea2 = {
+
+			picture = unhappy_army_3
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = -0.03
+				army_defence_factor = -0.03
+				army_org_factor = -0.06
+			}
+
+		}
+
+		EQC_artillery_is_god_idea = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = 0.10
+				}
+			}
+			modifier = {
+				army_artillery_attack_factor = 0.10
+				army_artillery_defence_factor = 0.05
+			}
+
+		}
+
+		EQC_artillery_focus_idea = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = 0.15
+				}
+			}
+
+			modifier = {
+				army_artillery_attack_factor = 0.15
+				army_artillery_defence_factor = 0.10
+			}
+
+			research_bonus = {
+				artillery = 0.10
+			}
+
+		}
+
+		EQC_combined_forces_idea = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+
+		EQC_new_salary_system_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		EQC_in_defense_of_motherland_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+
+			}
+		}
+
+		EQC_kill_them_all_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+
+			}
+		}
+
+		EQC_griffonia_trade_centre_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				trade_opinion_factor = 0.25
+				consumer_goods_factor = -0.10
+			}
+		}
+
+		EQC_construction_companies_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				#consumer_goods_factor = 0.03
+				production_speed_buildings_factor = 0.06
+			}
+		}
+
+		EQC_investment_in_economy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				#consumer_goods_factor = 0.10
+				production_speed_buildings_factor = 0.20
+			}
+		}
+
+		EQC_fund_genius_minds_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				#consumer_goods_factor = 0.03
+				research_speed_factor = 0.06
+			}
+		}
+
+		EQC_investment_in_research = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				#consumer_goods_factor = 0.10
+				research_speed_factor = 0.20
+			}
+		}
+
+		EQC_investment_in_research2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				#consumer_goods_factor = 0.10
+				research_speed_factor = 0.20
+			}
+			research_bonus = {
+				aerial_mage_tech = 0.15
+			}
+		}
+
+		EQC_next_gen_tanks_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+			}
+		}
+
+		EQC_next_gen_artillery_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_artillery_attack_factor = 0.05
+				army_artillery_defence_factor = 0.05
+			}
+		}
+
+		EQC_specialized_education_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.30
+			}
+		}
+
+		EQC_military_laboratories = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+		}
+
+		EQC_military_academy_techno = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				special_forces_cap = 0.05
+				#military_leader_cost_factor = -0.25
+				army_leader_start_level = 1
+			}
+
+			research_bonus = {
+				land_doctrine = 0.05
+			}
+		}
+
+		EQC_child_conscription_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    has_government = communism
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.02
+			}
+		}
+
+		EQC_choice_of_life1 = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    has_government = communism
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		EQC_choice_of_life2 = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    has_government = communism
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		EQC_choice_of_life3 = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    has_government = communism
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.08
+			}
+		}
+
+		EQC_let_all_have_a_say_custom = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    has_government = communism
+				}
+			}
+
+			removal_cost = -1
+
+			picture = ast_abandon_the_westminster_system
+
+
+			modifier = {
+				neutrality_drift = 0.1
+				fascism_drift = 0.1
+				tog_anarchism_drift = 0.1
+				tog_technocracy_drift = 0.1
+				democratic_drift = -0.1
+			}
+		}
+
+		EQC_aerial_mages_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				modifier_army_sub_unit_aerial_mages_attack_factor = 0.10
+				modifier_army_sub_unit_aerial_mages_defence_factor = 0.10
+			}
+		}
+
+		EQC_concerned_thestrals_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = NLR_bats2_idea
+
+			modifier = {
+				stability_factor = -0.10
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.10
+				conscription_factor = -0.15
+			}
+		}
+		
+		EQC_thestral_minorities_idea1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = NLR_bats2_idea
+
+			modifier = {
+				democratic_drift = 0.10
+				communism_drift = 0.10
+				stability_factor = -0.30
+				consumer_goods_factor = 0.15
+				political_power_factor = -0.20
+				conscription_factor = -0.30
+			}
+		}
+		
+		EQC_thestral_minorities_idea2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = NLR_bats2_idea
+
+			modifier = {
+				democratic_drift = 0.05
+				communism_drift = 0.05
+				stability_factor = -0.50
+				consumer_goods_factor = 0.10
+				political_power_factor = -0.10
+				conscription_factor = -0.15
+			}
+		}
+
+		EQC_unhappy_griffon_minorities_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = EQC_griffon_minorities1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.2
+				conscription_factor = -0.3
+			}
+		}
+		
+		EQC_happy_griffon_labour_camps_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = EQC_griffon_minorities1
+
+			modifier = {
+				conscription_factor = -0.15
+				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_factor = -0.05
+				
+			}
+		}
+	}
+	
+	political_advisor = {
+
+		EQC_technocratic_pony = {
+
+
+			allowed = {
+				original_tag = EQC
+
+			}
+
+			available = {
+				OR = {
+					has_completed_focus = EQC_let_all_have_a_say
+					has_government = tog_technocracy
+				}
+				NOT = {
+				    tog_technocracy > 0.6
+				}
+				if = { limit = { has_civil_war = yes } NOT = { any_enemy_country = { has_idea = EQC_technocratic_pony } } }
+			}
+
+			traits = { technocratic_demagogue }
+
+			do_effect = {
+				NOT = {
+					has_government = tog_technocracy
+				}
+			}
+		}
+
+		EQC_anarchist_pony = {
+
+			allowed = {
+				original_tag = EQC
+
+			}
+
+			available = {
+				OR = {
+					has_completed_focus = EQC_let_all_have_a_say
+					has_government = tog_anarchism
+				}
+				NOT = {
+				    tog_anarchism > 0.6
+				}
+				if = { limit = { has_civil_war = yes } NOT = { any_enemy_country = { has_idea = EQC_anarchist_pony } } }
+			}
+
+			traits = { anarchist_demagogue }
+
+			do_effect = {
+				NOT = {
+					has_government = tog_anarchism
+				}
+			}
+		}
+	}
+	
+	air_chief = {
+		EQC_genius_ace_generation_griff = {
+
+
+			allowed = {
+				original_tag = EQC
+
+			}
+
+			available = {
+				AND = {
+					has_completed_focus = EQC_reorganize_the_military_staff
+				}
+			}
+
+			traits = { air_air_combat_training_3_abusive }
+
+			do_effect = {
+			}
+		}
+	}
+	
+	navy_chief = {
+	}
+	
+	high_command = {
+
+		EQC_army_instructor = {
+
+
+			allowed = {
+				original_tag = EQC
+
+			}
+
+			available = {
+				has_completed_focus = EQC_appoint_army_instructor
+			}
+
+			traits = { army_instructor_3 }
+
+			do_effect = {
+			}
+		}
+
+		EQC_infantry_specialist_pony = {
+
+			allowed = {
+				original_tag = EQC
+			}
+
+			available = {
+				has_completed_focus = EQC_reorganize_the_military_staff
+			}
+
+			traits = { army_infantry_2 }
+
+			do_effect = {
+			}
+		}
+
+		EQC_artillery_specialist_pony = {
+
+			allowed = {
+				original_tag = EQC
+			}
+
+			available = {
+				has_completed_focus = EQC_reorganize_the_military_staff
+			}
+
+			traits = { army_artillery_2 }
+
+			do_effect = {
+			}
+		}
+
+		EQC_genius_special_forces_pony = {
+
+
+			allowed = {
+				original_tag = EQC
+
+			}
+
+			available = {
+				AND = {
+					has_completed_focus = EQC_reorganize_the_military_staff
+				}
+			}
+
+			traits = { army_commando_3_abusive }
+
+			do_effect = {
+			}
+		}
+	}
+	
+	theorist = {
+		EQC_adelheid_von_schugel = {
+
+
+			allowed = {
+				original_tag = EQC
+			}
+
+			allowed_to_remove = {
+				always = no
+			}
+
+			available = {
+				has_completed_focus = EQC_fund_genius_minds
+			}
+
+			research_bonus = {
+				aerial_mage_tech = 0.07
+				land_doctrine = 0.07
+			}
+
+			traits = { EQC_mad_genius }
+
+			do_effect = {
+			}
+		}
+	}
+	
+	army_chief = {
+		EQC_genius_army_offense_pony = {
+
+
+			allowed = {
+				original_tag = EQC
+
+			}
+
+			available = {
+				AND = {
+					has_completed_focus = EQC_reorganize_the_military_staff
+				}
+			}
+
+			traits = { army_chief_offensive_3 }
+
+			do_effect = {
+			}
+		}
+	}
+
+	materiel_manufacturer = {
+		designer = yes
+
+		EQC_shovel_company = {
+
+			picture = EQC_uplant
+
+			allowed = {
+				original_tag = EQC
+			}
+
+			research_bonus = {
+				engineers_tech = 0.10
+			}
+
+			traits = { great_shovel_manufacturer }
+
+		}
+
+		EQC_heavy_artillery_company = {
+
+			picture = EQC_fire_eagle
+
+			allowed = {
+				original_tag = EQC
+			}
+
+			research_bonus = {
+				heavy_artillery_tech = 0.10
+			}
+
+			traits = { heavy_artillery_manufacturer }
+
+		}
+	}
+}

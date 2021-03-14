@@ -6,79 +6,8971 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
-			is_puppet = no
 			tag = VED
 			NOT = { has_country_flag = VED_Separatists }
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 100 y = 1520 }
-	
-	shared_focus = VED_Succession
-}
+	continuous_focus_position = { x = 40 y = 40 }
 
-focus_tree = {
-	id = vedina_focus_harmony
-	
-	country = {
-		factor = 0
+	focus = {
+		id = VED_Succession
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 4.30
+		x = 15
+		y = 0
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_country_flag = VED_Princess_Is_In_Power
+			log = "[GetDateText]: [Root.GetName]: Focus VED_Succession"
+			country_event = {id = vedina.1 days = 1}
+			set_variable = {
+				var = quests_complete
+				value = 0
+			}
+			set_variable = {
+				var = VED_Chivalry_Points
+				value = 0
+			}
+			set_variable = {
+				var = VED_Princess_Attack_Level
+				value = 0
+			}
+			set_variable = {
+				var = VED_Princess_Statecraft_Level
+				value = 0
+			}
+			set_variable = {
+				var = VED_Sepratist_Suppression
+				value = 0
+			}
+			
+			hidden_effect = {
+				country_event = {id = wingstrom.1 days = 100}
+				country_event = {id = wingstrom.4 days = 400}
+			}
+		}
+	}
+
+	focus = {
+		id = VED_Role_Of_The_Princess
+		#icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 4.30
+		x = 0
+		y = 1
+
+		relative_position_id = VED_Succession
+
+		prerequisite = {
+			focus = VED_Succession
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = VED_Role_Of_The_King
+		#icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 4.30
+		x = 9
+		y = 1
+
+		relative_position_id = VED_Succession
+
+		prerequisite = {
+			focus = VED_Succession
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = VED_Matters_State_Custom
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 2.15
+		x = 0
+		y = 1
 		
-		modifier = {
-			add = 5
-			is_puppet = no
-			tag = VED
-			NOT = { has_country_flag = VED_Separatists }
+		relative_position_id = VED_Role_Of_The_King
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
 		}
-	}
-	default = no
-	continuous_focus_position = { x = 100 y = 1520 }
-	
-	shared_focus = VED_Succession
-	
-	shared_focus = VED_Harmoy_Princess
-	shared_focus = VED_Continual_Army_Reform
-}
-
-focus_tree = {
-	id = vedina_focus_neutral
-	
-	country = {
-		factor = 0
+		prerequisite = {
+			focus = VED_Role_Of_The_King
+		}
 		
-		modifier = {
-			add = 5
-			is_puppet = no
-			tag = VED
-			NOT = { has_country_flag = VED_Separatists }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_Matters_State_Custom"
+			add_to_variable = {
+				var = VED_Chivalry_Points
+				value = 1
+			}
+			custom_effect_tooltip = VED_Gain_Chivalry_TT
 		}
 	}
-	default = no
-	continuous_focus_position = { x = 100 y = 1520 }
-	
-	shared_focus = VED_Succession
-	
-	shared_focus = VED_Neutral_Princess
-	shared_focus = VED_Continual_Army_Reform
-}
 
+	######START OF THE EXTERNAL POLITICS PART OF THE TREE
 
-focus_tree = {
-	id = vedina_focus_evil
-	
-	country = {
-		factor = 0
+	focus = {
+		id = VED_Matters_External_Politics
+		cost = 2.15
+		x = 8
+		y = 1
 		
-		modifier = {
-			add = 5
-			is_puppet = no
-			tag = VED
-			NOT = { has_country_flag = VED_Separatists }
+		relative_position_id = VED_Role_Of_The_King
+		
+		prerequisite = {
+			focus = VED_Role_Of_The_King
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		completion_reward = {
+			add_to_variable = {
+				var = VED_Chivalry_Points
+				value = 1
+			}
+			custom_effect_tooltip = VED_Gain_Chivalry_TT
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = VED_The_Griffongaardian_Question
+		cost = 4.30
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Matters_External_Politics
+		
+		prerequisite = {
+			focus = VED_Matters_External_Politics
+		
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = VED_Befriend_Griffongaard
+		cost = 6.50
+		x = 2
+		y = 1
+		
+		relative_position_id = VED_The_Griffongaardian_Question
+		
+		prerequisite = {
+			focus = VED_The_Griffongaardian_Question
+		}
+
+		mutually_exclusive = {
+			focus = VED_Denounce_Griffongaard
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+			NFG = {
+				has_war = no
+				NOT = { has_government = fascism }
+			}
+		}
+		completion_reward = {
+			add_political_power = -100
+			VED = {
+				add_opinion_modifier = { target = NFG modifier = established_embassy }
+			}
+			NFG = {
+				add_opinion_modifier = { target = VED modifier = FBK_villages_diplo }
+			}
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = VED_Denounce_Griffongaard
+		cost = 4.30
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_The_Griffongaardian_Question
+		
+		prerequisite = {
+			focus = VED_The_Griffongaardian_Question
+		}
+		
+		mutually_exclusive = {
+			focus = VED_Befriend_Griffongaard
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		completion_reward = {
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = VED_Strike_The_Black_Sun
+		cost = 4.30
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Denounce_Griffongaard
+		
+		prerequisite = {
+			focus = VED_Denounce_Griffongaard
+		
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		completion_reward = {
+			if = {
+				limit = { country_exists = NFG }
+				create_wargoal = { type = annex_everything target = NFG }
+			}
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = VED_The_Northern_Kingdoms
+		cost = 8.60
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Befriend_Griffongaard
+		
+		prerequisite = {
+			focus = VED_Befriend_Griffongaard
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		completion_reward = {
+			create_faction = VED_NORTHERN_KONGDOMS
+			IF = {
+				limit = {
+					has_completed_focus = VED_Guarantee_Skynavia
+					SRS = {
+						is_in_faction = no
+						is_puppet = no
+						NOT = { has_war_with = VED }
+					}
+				}
+				VED = {
+					add_to_faction = SRS
+					SRS = {
+						add_ai_strategy = {
+							type = alliance
+							id = "VED"
+							value = 200
+						}
+					}
+				}
+			}
+
+			IF = {
+				limit = {
+					has_completed_focus = VED_Guarantee_Skynavia
+					MNC = {
+						is_in_faction = no
+						is_puppet = no
+						NOT = { has_war_with = VED }
+					}
+				}
+				VED = {
+					add_to_faction = MNC
+					MNC = {
+						add_ai_strategy = {
+							type = alliance
+							id = "VED"
+							value = 200
+						}
+					}
+				}
+			}
+
+			IF = {
+				limit = {
+					has_completed_focus = VED_Guarantee_Skynavia
+					NFG = {
+						is_in_faction = no
+						is_puppet = no
+						NOT = { has_war_with = VED }
+					}
+				}
+				VED = {
+					add_to_faction = NFG
+					NFG = {
+						add_ai_strategy = {
+							type = alliance
+							id = "VED"
+							value = 200
+						}
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = VED_Griffongaard_No_More
+		cost = 2.15
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Strike_The_Black_Sun
+		
+		prerequisite = {
+			focus = VED_Strike_The_Black_Sun
+			focus = VED_The_Northern_Kingdoms
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	######START OF THE INTERNAL POLITICS PART OF THE TREE
+
+	focus = {
+		id = VED_Matters_Internal_Politics
+		cost = 2.15
+		x = 1
+		y = 1
+		
+		relative_position_id = VED_Role_Of_The_Princess
+		
+		prerequisite = {
+			focus = VED_Role_Of_The_Princess
+		
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		completion_reward = {
+			add_to_variable = {
+				var = VED_Chivalry_Points
+				value = 1
+			}
+			custom_effect_tooltip = VED_Gain_Chivalry_TT
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = VED_Nobles_Aftermath
+		cost = 4.30
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Matters_Internal_Politics
+		prerequisite = {
+			focus = VED_Matters_Internal_Politics
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+			NOT = { has_idea = VED_Unhappy_Fascist_Prince_idea }
+			NOT = { has_idea = VED_Unhappy_Military_Prince_idea }
+		}
+		completion_reward = {
+			add_ideas = VED_Reunited_Nobles_idea
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	######START OF THE LOVE PART OF THE TREE
+
+	focus = {
+		id = VED_Matters_Love
+		icon = GFX_goal_crystal_heart
+		cost = 2.15
+		x = 1
+		y = 1
+		
+		relative_position_id = VED_Flight_Home
+		
+		prerequisite = {
+			focus = VED_Flight_Home
+		}
+		prerequisite = {
+			focus = VED_Nobles_Aftermath
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_Matters_Love"
+			country_event = vedina.2
+			add_stability = 0.05
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = VED_Love_Letter
+		icon = GFX_goal_love_letter
+		cost = 4.30
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Matters_Love
+		
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+			#has completed at least one love path
+		}
+
+		prerequisite = {
+			focus = VED_Matters_Love
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_Love_Letter"
+			country_event = vedina.47
+			add_to_variable = {
+				var = VED_Chivalry_Points
+				value = 1
+			}
+			custom_effect_tooltip = VED_Gain_Chivalry_TT
 		}
 	}
-	default = no
-	continuous_focus_position = { x = 100 y = 1520 }
+
+	###HEROIC QUEST STUFF
+
+	focus = {
+		id = VED_Matters_Heroism
+		icon = GFX_focus_indy_swing_the_sword
+		cost = 2.15
+		x = -1
+		y = 1
+		
+		relative_position_id = VED_Role_Of_The_Princess
+		
+		prerequisite = {
+			focus = VED_Role_Of_The_Princess
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_Matters_Heroism"
+			add_to_variable = {
+				var = VED_Chivalry_Points
+				value = 1
+			}
+			custom_effect_tooltip = VED_Gain_Chivalry_TT
+		}
+	}
+
+	#Fascist Exclusive Heroism Stuff
+
+	focus = {
+		id = VED_Flight_Home
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5.00
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Matters_Heroism
+		
+		prerequisite = {
+			focus = VED_Matters_Heroism
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_Flight_Home"
+			add_tech_bonus = { bonus = 3 uses = 1 category = air_equipment }
+			if = {
+				limit = { 429 = { is_owned_and_controlled_by = ROOT } }
+				429 = {
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			country_event = vedina_quest.55
+			set_country_flag = VED_Finished_Quest
+			clr_country_flag = VED_quest_block_focuses
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+
+	###MATTERS OF STATE STUFF
+
+	focus = {
+		id = VED_Retirement_Prep
+		#icon = GFX_focus_research
+		cost = 4.30
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_take_winghagen
+		
+		prerequisite = { focus = VED_investigate_corrupt_nobles }
+		prerequisite = { focus = VED_urban_industrialization }
+		prerequisite = { focus = VED_reclaim_winterhold }
+		prerequisite = { focus = VED_take_winghagen }
+		prerequisite = { focus = VED_gain_a_grip_on_the_mountains }
+		prerequisite = { focus = VED_electrical_power }
+		prerequisite = { focus = VED_vedinan_cmc }
+		available = { NOT = { has_country_flag = VED_quest_block_focuses } }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_tempo_one
+		#icon = GFX_focus_research
+		cost = 4.30
+		x = -8
+		y = 1
+		
+		relative_position_id = VED_Military_Education
+		
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Invest_In_New_Technologies
+		icon = GFX_goal_supremacy_of_will
+		cost = 4.30
+		x = -2
+		y = 1
+		
+		relative_position_id = VED_tempo_one
+		
+		prerequisite = {
+			focus = VED_tempo_one
+		}
+		mutually_exclusive = {
+			focus = VED_Secret_Laboratories
+		}
+		mutually_exclusive = {
+			focus = VED_Invest_In_New_Buildings
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = hospital_tech }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = maintenance_company_tech }
+			add_timed_idea = { idea = VED_Technology_Investment_idea days = 180 }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Secret_Laboratories
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 12.90
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_tempo_one
+		
+		prerequisite = {
+			focus = VED_tempo_one
+		}
+		mutually_exclusive = {
+			focus = VED_Invest_In_New_Buildings
+		}
+		mutually_exclusive = {
+			focus = VED_Invest_In_New_Technologies
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_tech_bonus = { bonus = 1.0 uses = 1 category = nuclear }
+			add_research_slot = 1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Invest_In_New_Buildings
+		icon = GFX_goal_factory_complex
+		cost = 4.30
+		x = 2
+		y = 1
+		
+		relative_position_id = VED_tempo_one
+		
+		prerequisite = {
+			focus = VED_tempo_one
+		}
+		mutually_exclusive = {
+			focus = VED_Secret_Laboratories
+		}
+		mutually_exclusive = {
+			focus = VED_Invest_In_New_Technologies
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = construction_tech }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = excavation_tech }
+			add_timed_idea = { idea = VED_Buildings_Investment_idea days = 180 }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Great_Medical_School
+		icon = GFX_goal_academy_of_medicine
+		cost = 14.30
+		x = -1
+		y = 1
+		
+		relative_position_id = VED_Invest_In_New_Technologies
+		
+		prerequisite = {
+			focus = VED_Invest_In_New_Technologies
+		}
+		mutually_exclusive = {
+			focus = VED_Great_Engineer_School
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = VED_Great_Medical_School_idea
+			add_to_variable = {
+				var = VED_Chivalry_Points
+				value = 1
+			}		
+			custom_effect_tooltip = VED_Gain_Chivalry_TT
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Improved_Hospitals
+		icon = GFX_focus_healthcare_program
+		cost = 7.20
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Great_Medical_School
+		
+		prerequisite = {
+			focus = VED_Great_Medical_School
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = VED_Improved_Hospitals_idea
+			add_tech_bonus = { uses = 1 ahead_reduction = 1 category = hospital_tech }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Great_Engineer_School
+		cost = 14.30
+		x = 1
+		y = 1
+		
+		relative_position_id = VED_Invest_In_New_Technologies
+		
+		prerequisite = {
+			focus = VED_Invest_In_New_Technologies
+		}
+		mutually_exclusive = {
+			focus = VED_Great_Medical_School
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = VED_Great_Engineer_School_idea
+			add_to_variable = {
+				var = VED_Chivalry_Points
+				value = 1
+			}		
+			custom_effect_tooltip = VED_Gain_Chivalry_TT
+			
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Improved_Tools
+		icon = GFX_goal_generic_production
+		cost = 7.20
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Great_Engineer_School
+		
+		prerequisite = {
+			focus = VED_Great_Engineer_School
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = VED_Improved_Tools_idea
+			add_tech_bonus = { uses = 1 ahead_reduction = 1 category = maintenance_company_tech }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Great_Business_School
+		cost = 14.30
+		x = -1
+		y = 1
+		
+		relative_position_id = VED_Invest_In_New_Buildings
+		
+		prerequisite = {
+			focus = VED_Invest_In_New_Buildings
+		}
+		mutually_exclusive = {
+			focus = VED_Great_Architect_School
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = VED_Great_Business_School_idea
+			add_to_variable = {
+				var = VED_Chivalry_Points
+				value = 1
+			}		
+			custom_effect_tooltip = VED_Gain_Chivalry_TT
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Improved_Economy
+		cost = 7.20
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Great_Business_School
+		
+		prerequisite = {
+			focus = VED_Great_Business_School
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = VED_Improved_Economy_idea
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Great_Architect_School
+		cost = 14.30
+		x = 1
+		y = 1
+		
+		relative_position_id = VED_Invest_In_New_Buildings
+		
+		prerequisite = {
+			focus = VED_Invest_In_New_Buildings
+		}
+		mutually_exclusive = {
+			focus = VED_Great_Business_School
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = VED_Great_Architect_School_idea
+			add_to_variable = {
+				var = VED_Chivalry_Points
+				value = 1
+			}		
+			custom_effect_tooltip = VED_Gain_Chivalry_TT
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Improved_Buildings
+		cost = 7.20
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Great_Architect_School
+		
+		prerequisite = {
+			focus = VED_Great_Architect_School
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = VED_Improved_Buildings_idea
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Building_Civilian_Economy
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 8.60
+		x = 1
+		y = 1
+		
+		relative_position_id = VED_Improved_Tools
+		
+		prerequisite = {
+			focus = VED_Improved_Hospitals
+			focus = VED_Improved_Tools
+			focus = VED_Improved_Economy
+			focus = VED_Improved_Buildings
+		}
+
+
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+			}
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = civilian_economy
+			random_owned_controlled_state = {
+					
+				add_extra_state_shared_building_slots = 2
+					
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+					
+				add_extra_state_shared_building_slots = 2
+					
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = VED_Further_Investment_In_Technologies
+		cost = 4.30
+		x = 1
+		y = 1
+		
+		relative_position_id = VED_Improved_Hospitals
+		
+		prerequisite = {
+			focus = VED_Improved_Hospitals
+			focus = VED_Improved_Tools
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_timed_idea = { idea = VED_Technology_Investment_idea days = 360 }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Further_Investment_In_Buildings
+		cost = 4.30
+		x = 1
+		y = 1
+		
+		relative_position_id = VED_Improved_Economy
+		
+		prerequisite = {
+			focus = VED_Improved_Economy
+			focus = VED_Improved_Buildings
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_timed_idea = { idea = VED_Buildings_Investment_idea days = 360 }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	###Military Education part
+
+	focus = {
+		id = VED_Military_Education
+		icon = GFX_goal_griffon_knights
+		cost = 4.30
+		x = -68
+		y = 0
+		
+		relative_position_id = VED_Royal_Marriage
+		
+		available = {
+			has_country_flag = VED_Chose_Military_Prince_Flag
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_Military_Education"
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = support_tech }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Building_War_Economy
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8.60
+		x = 1
+		y = 1
+		
+		relative_position_id = VED_Big_Guns
+		
+		prerequisite = {
+			focus = VED_Armoured_Tractors
+			focus = VED_Big_Guns
+			focus = VED_Support_Equipment
+			focus = VED_New_Weapons
+		}
+
+
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+			}
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_Building_War_Economy"
+			add_ideas = war_economy
+			random_owned_controlled_state = {
+					
+				add_extra_state_shared_building_slots = 2
+					
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	##Universities
+
+	focus = {
+		id = VED_Military_Academy
+		icon = GFX_focus_wonderweapons
+		cost = 4.30
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Military_Education
+		
+		prerequisite = {
+			focus = VED_Military_Education
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_New_University"
+			add_research_slot = 1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	###Military Theory
+
+	focus = {
+		id = VED_New_Military_Theory
+		icon = GFX_goal_checkmate
+		cost = 7.20
+		x = -1
+		y = 1
+		
+		relative_position_id = VED_Invest_In_Griffons
+		
+		prerequisite = {
+			focus = VED_Invest_In_Griffons
+		}
+		mutually_exclusive = {
+			focus = VED_Peasent_Levy
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = mobile_warfare
+					has_tech = mass_assault
+					is_researching_technology = mobile_warfare
+					is_researching_technology = mass_assault
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = VED_Grand_Battleplan_Focus_idea
+			add_tech_bonus = { bonus = 1 uses = 2 category = cat_grand_battle_plan }
+			create_corps_commander = {
+				name = "NMT"
+				desc = "cijik_desc"
+				traits = { griffon_race_trait }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 6
+				female = no
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Support_Equipment
+		cost = 5.00
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_New_Military_Theory
+		
+		prerequisite = {
+			focus = VED_New_Military_Theory
+			focus = VED_Superior_Firepower
+			focus = VED_Peasent_Levy
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_Big_Guns"
+			add_tech_bonus = { bonus = 1 ahead_reduction = 2 uses = 1 category = support_tech }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Trade_Interdiction
+		cost = 4.30
+		x = 1
+		y = 1
+		
+		relative_position_id = VED_Support_Equipment
+		
+		prerequisite = {
+			focus = VED_Support_Equipment
+			focus = VED_New_Weapons
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_New_Naval_Approach"
+			add_tech_bonus = { bonus = 2 uses = 1 category = naval_doctrine }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Superior_Firepower
+		icon = GFX_goal_national_artillery
+		cost = 7.20
+		x = 1
+		y = 1
+		
+		relative_position_id = VED_Invest_In_Machines
+		
+		prerequisite = {
+			focus = VED_Invest_In_Machines
+		}
+		mutually_exclusive = {
+			focus = VED_Armoured_Offensive
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = mobile_warfare
+					has_tech = trench_warfare
+					is_researching_technology = mobile_warfare
+					is_researching_technology = trench_warfare
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = VED_Superior_Firepower_Focus_idea
+			add_tech_bonus = { bonus = 1 uses = 2 category = cat_superior_firepower }
+			create_corps_commander = {
+				name = "Artillery"
+				desc = "cijik_desc"
+				traits = { griffon_race_trait }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 6
+				female = no
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Big_Guns
+		icon = GFX_goal_artillery
+		cost = 4.30
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Superior_Firepower
+		
+		prerequisite = {
+			focus = VED_Superior_Firepower
+			focus = VED_New_Military_Theory
+			focus = VED_Armoured_Offensive
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_Big_Guns"
+			add_tech_bonus = { bonus = 1 ahead_reduction = 2 uses = 1 category = artillery }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Peasent_Levy
+		icon = GFX_goal_national_arsenal
+		cost = 7.20
+		x = 1
+		y = 1
+		
+		relative_position_id = VED_Invest_In_Griffons
+		
+		prerequisite = {
+			focus = VED_Invest_In_Griffons
+		}
+		mutually_exclusive = {
+			focus = VED_New_Military_Theory
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = mobile_warfare
+					has_tech = trench_warfare
+					is_researching_technology = mobile_warfare
+					is_researching_technology = trench_warfare
+				}
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_Peasent_Levy"
+			add_ideas = VED_Mass_Assault_Focus_idea
+			add_tech_bonus = { bonus = 1 uses = 2 category = cat_mass_assault }
+			create_corps_commander = {
+				name = "Peasant"
+				desc = "cijik_desc"
+				traits = { griffon_race_trait }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 6
+				female = no
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_New_Weapons
+		icon = GFX_goal_generic_small_arms
+		cost = 4.30
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Peasent_Levy
+		
+		prerequisite = {
+			focus = VED_Peasent_Levy
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_New_Weapons"
+			add_tech_bonus = { bonus = 1 ahead_reduction = 2 uses = 1 category = infantry_weapons }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Armoured_Offensive
+		icon = GFX_focus_generic_tank_production
+		cost = 7.20
+		x = -1
+		y = 1
+		
+		relative_position_id = VED_Invest_In_Machines
+		
+		prerequisite = {
+			focus = VED_Invest_In_Machines
+		}
+		mutually_exclusive = {
+			focus = VED_Superior_Firepower
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = trench_warfare
+					has_tech = mass_assault
+					is_researching_technology = trench_warfare
+					is_researching_technology = mass_assault
+				}
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_Armoured_Offensive"
+			add_ideas = VED_Armoured_Offensive_Focus_idea
+			add_tech_bonus = { bonus = 1 uses = 2 category = cat_mobile_warfare }
+			create_corps_commander = {
+				name = "Panzer"
+				desc = "cijik_desc"
+				traits = { griffon_race_trait }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 6
+				female = no
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Armoured_Tractors
+		icon = GFX_goal_generic_army_tank_2
+		cost = 4.30
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Armoured_Offensive
+		
+		prerequisite = {
+			focus = VED_Armoured_Offensive
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_Armoured_Tractors"
+			add_to_variable = {
+				var = VED_Chivalry_Points
+				value = 1
+			}
+			add_tech_bonus = { bonus = 1 ahead_reduction = 2 uses = 1 category = armor }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Fleet_In_Being
+		cost = 4.30
+		x = 1
+		y = 1
+		
+		relative_position_id = VED_Armoured_Tractors
+		
+		prerequisite = {
+			focus = VED_Armoured_Tractors
+			focus = VED_Big_Guns
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_New_Naval_Approach"
+			add_tech_bonus = { bonus = 2 uses = 1 category = naval_doctrine }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Order_of_Witchers
+		icon = GFX_goal_generic_major_war
+		cost = 12.90
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Military_Academy
+		
+		available = {
+			has_tech = advanced_special_forces
+			has_tech = tech_knights_magical2
+		}
+		prerequisite = {
+			focus = VED_Military_Academy
+		}
+		mutually_exclusive = {
+			focus = VED_Invest_In_Machines
+		}
+		mutually_exclusive = {
+			focus = VED_Invest_In_Griffons
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = VED_Order_of_Witchers_idea
+			create_corps_commander = {
+				name = "Erland of Larvik"
+				desc = "cijik_desc"
+
+				traits = { griffon_race_trait witcher signs_specialist }
+				skill = 4
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 4
+				female = no
+			}
+			create_corps_commander = {
+				name = "Barmin"
+				desc = "cijik_desc"
+				traits = { griffon_race_trait witcher swords_specialist }
+				skill = 3
+				attack_skill = 5
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+				female = no
+			}
+			create_corps_commander = {
+				name = "Letho of Gulet"
+				desc = "cijik_desc"
+				traits = { griffon_race_trait witcher alchemy_specialist }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 2
+				female = no
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Invest_In_Machines
+		icon = GFX_goal_generic_production2
+		cost = 4.30
+		x = -2
+		y = 1
+		
+		relative_position_id = VED_Military_Academy
+		
+		prerequisite = {
+			focus = VED_Military_Academy
+		}
+		mutually_exclusive = {
+			focus = VED_Order_of_Witchers
+		}
+		mutually_exclusive = {
+			focus = VED_Invest_In_Griffons
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_timed_idea = { idea = VED_Machines_Investment_idea days = 180 }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Invest_In_Griffons
+		icon = GFX_goal_conscription
+		cost = 4.30
+		x = 2
+		y = 1
+		
+		relative_position_id = VED_Military_Academy
+		
+		prerequisite = {
+			focus = VED_Military_Academy
+		}
+		mutually_exclusive = {
+			focus = VED_Order_of_Witchers
+		}
+		mutually_exclusive = {
+			focus = VED_Invest_In_Machines
+		}
+		available = {
+			NOT = { has_country_flag = VED_quest_block_focuses }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_timed_idea = { idea = VED_Griffons_Investment_idea days = 180 }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VED_Royal_Marriage
+		icon = GFX_goal_wedding
+		cost = 4.30
+		x = 0
+		y = 2
+		
+		relative_position_id = VED_Love_Letter
+		
+		prerequisite = {
+			focus = VED_Love_Letter
+		}
+
+		prerequisite = {
+			focus = VED_Retirement_Prep
+		}
+
+		prerequisite = {
+			focus = VED_Griffongaard_No_More
+		}
+		
+		ai_will_do = { # factors for NTR_VEDINA rule #???
+			factor = 100
+		}
+
+		available = { is_subject = no has_war = no }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus VED_Royal_Marriage"
+			custom_effect_tooltip = VED_Fate_TT
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = VED_Chose_Fascist_Prince_Flag }
+					}
+					#country_event = vedina_wedding.1
+				}
+					
+				else = {
+					#country_event = vedina_wedding.10
+				}
+			}
+		}
+	}
+
+	### ONDSKA TREE ###
+
+	focus = {
+		id = VED_Ondska
+		#icon = GFX_goal_wedding
+		cost = 4.30
+		x = 30
+		y = 1
+		
+		relative_position_id = VED_Royal_Marriage
+		
+		prerequisite = {
+			focus = VED_Royal_Marriage
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Focus for A New Order
+	focus = {
+		id = VED_a_new_order
+		icon = GFX_goal_support_fascism
+		x = 0
+		y = 1
+		relative_position_id = VED_Ondska
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Death of an Empire
+	focus = {
+		id = VED_death_of_an_empire
+		icon = GFX_goal_unknown
+		x = 1
+		y = 3
+		relative_position_id = VED_new_kings_of_the_mountain
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_arcturus_falls 
+		}
+		prerequisite = { 
+			focus = VED_new_kings_of_the_mountain 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Shadow over Equus
+	focus = {
+		id = VED_a_shadow_over_equus
+		icon = GFX_goal_unknown
+		x = -3
+		y = 1
+		relative_position_id = VED_new_kings_of_the_mountain
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_new_kings_of_the_mountain }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for None can Escape Our Gaze
+	focus = {
+		id = VED_none_can_escape_our_gaze
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_the_eyes_of_maar
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_eyes_of_maar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Umbral Engines
+	focus = {
+		id = VED_umbral_engines
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_engines_of_mass_destruction
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_engines_of_mass_destruction }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dead Crewman
+	focus = {
+		id = VED_dead_crewman
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_engines_of_mass_destruction
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_engines_of_mass_destruction }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A thousands dark blessings
+	focus = {
+		id = VED_a_thousands_dark_blessings
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_dark_communion
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_dark_communion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A New Conquest
+	focus = {
+		id = VED_a_new_conquest
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_a_dark_imperium
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_dark_imperium }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for From North to South
+	focus = {
+		id = VED_from_north_to_south
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_destroy_the_holy_lands
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_destroy_the_holy_lands }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sadistic Handlers
+	focus = {
+		id = VED_sadistic_handlers
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_dreaded_masters
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_dreaded_masters }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for An Army of Slaves
+	focus = {
+		id = VED_an_army_of_slaves
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_sacrifice_the_unloyal
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_sacrifice_the_unloyal }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Slave Colony
+	focus = {
+		id = VED_a_slave_colony
+		icon = GFX_goal_unknown
+		x = -3
+		y = 1
+		relative_position_id = VED_a_shadow_over_equus
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_shadow_over_equus }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Conquest of Equus
+	focus = {
+		id = VED_conquest_of_equus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_a_shadow_over_equus
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_shadow_over_equus }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Harmony Dies
+	focus = {
+		id = VED_harmony_dies
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_conquest_of_equus
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_conquest_of_equus }
+		mutually_exclusive = { focus = VED_puppeteer_the_civil_war }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Puppeteer the Civil War
+	focus = {
+		id = VED_puppeteer_the_civil_war
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_conquest_of_equus
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_conquest_of_equus }
+		mutually_exclusive = { focus = VED_harmony_dies }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Civilize Eastern Griffonia
+	focus = {
+		id = VED_civilize_eastern_griffonia
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_a_new_conquest
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_new_conquest }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Destroy the Holy Lands
+	focus = {
+		id = VED_destroy_the_holy_lands
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_a_new_conquest
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_new_conquest }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Communes Crushed
+	focus = {
+		id = VED_the_communes_crushed
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_the_time_has_come
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_time_has_come }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Incorporate the Pirates by Force
+	focus = {
+		id = VED_incorporate_the_pirates_by_force
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_the_time_has_come
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_time_has_come }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Serrated Bayonets
+	focus = {
+		id = VED_serrated_bayonets
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_forged_to_kill
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_forged_to_kill }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ruination
+	focus = {
+		id = VED_ruination
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_rituals_of_corruption
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_rituals_of_corruption }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Soulbinding
+	focus = {
+		id = VED_soulbinding
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_umbral_engines
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_umbral_engines }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Broken by the Lash
+	focus = {
+		id = VED_broken_by_the_lash
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_suffering_for_the_unbroken
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_sadistic_handlers 
+		}
+		prerequisite = { 
+			focus = VED_suffering_for_the_unbroken 
+		}
+		prerequisite = { 
+			focus = VED_chartered_piracy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Culling the Weak
+	focus = {
+		id = VED_culling_the_weak
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_legalize_indentured_servitude
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_legalize_indentured_servitude }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ...and the Whip
+	focus = {
+		id = VED_and_the_whip
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_legalize_indentured_servitude
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_legalize_indentured_servitude }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Legalize Indentured Servitude
+	focus = {
+		id = VED_legalize_indentured_servitude
+		icon = GFX_goal_unknown
+		x = 5
+		y = 1
+		relative_position_id = VED_a_new_order
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_new_order }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bloodthirsty Soldiers
+	focus = {
+		id = VED_bloodthirsty_soldiers
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_bloodshed_for_ranks
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_bloodshed_for_ranks }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dark Magics
+	focus = {
+		id = VED_dark_magics
+		icon = GFX_goal_unknown
+		x = -10
+		y = 1
+		relative_position_id = VED_a_new_order
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_new_order }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Exploit Feuds
+	focus = {
+		id = VED_exploit_feuds
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_none_can_escape_our_gaze
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_none_can_escape_our_gaze }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Revoke Controversial Studies Act
+	focus = {
+		id = VED_revoke_controversial_studies_act
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = -1
+		y = 1
+		relative_position_id = VED_dark_magics
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_dark_magics }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Forged to Kill
+	focus = {
+		id = VED_forged_to_kill
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_open_portals_to_tartarus
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_open_portals_to_tartarus }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Umbral Pacts
+	focus = {
+		id = VED_umbral_pacts
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_dark_magics
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_dark_magics }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Clarify our Faith
+	focus = {
+		id = VED_clarify_our_faith
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_umbral_pacts
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_umbral_pacts }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Legalize Necromancy
+	focus = {
+		id = VED_legalize_necromancy
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_revoke_controversial_studies_act
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_revoke_controversial_studies_act }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Form the Occult Science Institute
+	focus = {
+		id = VED_form_the_occult_science_institute
+		icon = GFX_focus_research2
+		x = 0
+		y = 1
+		relative_position_id = VED_legalize_necromancy
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_legalize_necromancy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dark Spellcasting
+	focus = {
+		id = VED_dark_spellcasting
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_clarify_our_faith
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_clarify_our_faith }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Open Portals to Tartarus
+	focus = {
+		id = VED_open_portals_to_tartarus
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_form_the_occult_science_institute
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_form_the_occult_science_institute 
+		}
+		prerequisite = { 
+			focus = VED_dark_spellcasting 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Eyes of Maar
+	focus = {
+		id = VED_the_eyes_of_maar
+		icon = GFX_VED_the_eyes_of_maar-54191
+		x = -2
+		y = 1
+		relative_position_id = VED_open_portals_to_tartarus
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_open_portals_to_tartarus }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Black Inquisitors
+	focus = {
+		id = VED_the_black_inquisitors
+		icon = GFX_goal_generic_wolf_pack
+		x = -1
+		y = 1
+		relative_position_id = VED_the_eyes_of_maar
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_eyes_of_maar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for In the Dead of Night
+	focus = {
+		id = VED_in_the_dead_of_night
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_black_inquisitors
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_black_inquisitors }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sacrifice the Unloyal
+	focus = {
+		id = VED_sacrifice_the_unloyal
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_great_slaughter
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_the_great_slaughter 
+		}
+		prerequisite = { 
+			focus = VED_mournful_training_grounds 
+		}
+		prerequisite = { 
+			focus = VED_broken_by_the_lash 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Remove (2 named-generals), -3000 manpower
+		}
+	}
+
+	#Focus for Null Armor
+	focus = {
+		id = VED_null_armor
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_serrated_bayonets
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_serrated_bayonets }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Black Iron Ship hulls
+	focus = {
+		id = VED_black_iron_ship_hulls
+		icon = GFX_goal_generic_navy_cruiser
+		x = 1
+		y = 1
+		relative_position_id = VED_forged_to_kill
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_forged_to_kill }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ceremonial Weapons
+	focus = {
+		id = VED_ceremonial_weapons
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 0
+		y = 1
+		relative_position_id = VED_black_iron_ship_hulls
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_black_iron_ship_hulls }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for An Instrument of War
+	focus = {
+		id = VED_an_instrument_of_war
+		icon = GFX_goal_unknown
+		x = -5
+		y = 1
+		relative_position_id = VED_a_new_order
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_new_order }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Martial Society
+	focus = {
+		id = VED_martial_society
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_an_instrument_of_war
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_an_instrument_of_war }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Thunder-Strike Tactics
+	focus = {
+		id = VED_thunderstrike_tactics
+		icon = GFX_focus_eng_organise_the_blackshirts
+		x = 0
+		y = 1
+		relative_position_id = VED_an_instrument_of_war
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_an_instrument_of_war }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's 'Bonzai Charge' combat tactic
+		}
+	}
+
+	#Focus for Bloodshed for Ranks
+	focus = {
+		id = VED_bloodshed_for_ranks
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_an_instrument_of_war
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_an_instrument_of_war }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Marching to War
+	focus = {
+		id = VED_marching_to_war
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_martial_society
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_martial_society }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Great Slaughter
+	focus = {
+		id = VED_the_great_slaughter
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_public_executions
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_black_knights 
+		}
+		prerequisite = { 
+			focus = VED_public_executions 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Reduce population of all combined provinces by 800k
+		}
+	}
+
+	#Focus for Rework Rifles
+	focus = {
+		id = VED_rework_rifles
+		icon = GFX_focus_focus_fra_maquis
+		x = 0
+		y = 1
+		relative_position_id = VED_thunderstrike_tactics
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_thunderstrike_tactics }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Hit-and-Run
+	focus = {
+		id = VED_hitandrun
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_marching_to_war
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_marching_to_war }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Barbed Rounds
+	focus = {
+		id = VED_barbed_rounds
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_rework_rifles
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_rework_rifles }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Purge the Weak
+	focus = {
+		id = VED_purge_the_weak
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_bloodthirsty_soldiers
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_bloodthirsty_soldiers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#-5000 manpower, (other stuff)
+		}
+	}
+
+	#Focus for Mournful Training Grounds
+	focus = {
+		id = VED_mournful_training_grounds
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_barbed_rounds
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_purge_the_weak 
+		}
+		prerequisite = { 
+			focus = VED_barbed_rounds 
+		}
+		prerequisite = { 
+			focus = VED_hitandrun 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Loyalty Through Fear
+	focus = {
+		id = VED_loyalty_through_fear
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_a_new_order
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_new_order }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Violence Against Dissidence
+	focus = {
+		id = VED_violence_against_dissidence
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_loyalty_through_fear
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_loyalty_through_fear }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Daylight Denied
+	focus = {
+		id = VED_daylight_denied
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_loyalty_through_fear
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_loyalty_through_fear }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reward Acts of Cruelty
+	focus = {
+		id = VED_reward_acts_of_cruelty
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_violence_against_dissidence
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_violence_against_dissidence }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Corrupt Pure Souls
+	focus = {
+		id = VED_corrupt_pure_souls
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_daylight_denied
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_daylight_denied }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Public Executions
+	focus = {
+		id = VED_public_executions
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_reward_acts_of_cruelty
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_reward_acts_of_cruelty }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Black Knights
+	focus = {
+		id = VED_black_knights
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_corrupt_pure_souls
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_corrupt_pure_souls }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Chain...
+	focus = {
+		id = VED_the_chain
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = -2
+		y = 1
+		relative_position_id = VED_legalize_indentured_servitude
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_legalize_indentured_servitude }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Chartered Piracy
+	focus = {
+		id = VED_chartered_piracy
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 0
+		y = 1
+		relative_position_id = VED_continuous_slave_supply
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_continuous_slave_supply }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Continuous Slave Supply
+	focus = {
+		id = VED_continuous_slave_supply
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_and_the_whip
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_and_the_whip }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dreaded Masters
+	focus = {
+		id = VED_dreaded_masters
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_chain
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_chain }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tyranny of the Masters
+	focus = {
+		id = VED_tyranny_of_the_masters
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_culling_the_weak
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_culling_the_weak }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Suffering for the Unbroken
+	focus = {
+		id = VED_suffering_for_the_unbroken
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_tyranny_of_the_masters
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_tyranny_of_the_masters }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Prison-Nation
+	focus = {
+		id = VED_a_prisonnation
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_a_slave_colony
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_slave_colony }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for An offer that should not be refused
+	focus = {
+		id = VED_an_offer_that_should_not_be_refused
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_dread_league
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_dread_league }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Death Knights
+	focus = {
+		id = VED_death_knights
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		relative_position_id = VED_the_dread_league
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_dread_league }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Gift from the Dread League
+	focus = {
+		id = VED_a_gift_from_the_dread_league
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_an_offer_that_should_not_be_refused
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_an_offer_that_should_not_be_refused }
+		mutually_exclusive = { focus = VED_the_punishment_for_defiance }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Selecting a Deathlord
+	focus = {
+		id = VED_selecting_a_deathlord
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_death_knights
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_death_knights }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Punishment for Defiance
+	focus = {
+		id = VED_the_punishment_for_defiance
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_an_offer_that_should_not_be_refused
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_an_offer_that_should_not_be_refused }
+		mutually_exclusive = { focus = VED_a_gift_from_the_dread_league }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Dread League
+	focus = {
+		id = VED_the_dread_league
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		relative_position_id = VED_arcturus_falls
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_arcturus_falls }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dominate the Scum
+	focus = {
+		id = VED_dominate_the_scum
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_under_the_yoke
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_under_the_yoke }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Spoils of War
+	focus = {
+		id = VED_the_spoils_of_war
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_war_profiteering
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_war_profiteering }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Under the Yoke
+	focus = {
+		id = VED_under_the_yoke
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_an_army_of_slaves
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_an_army_of_slaves }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Conqueror's Due
+	focus = {
+		id = VED_conquerors_due
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_spoils_of_war
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_spoils_of_war }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dark Communion
+	focus = {
+		id = VED_dark_communion
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_erect_dark_monuments
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_erect_dark_monuments 
+		}
+		prerequisite = { 
+			focus = VED_ruination 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Engines of Mass Destruction
+	focus = {
+		id = VED_engines_of_mass_destruction
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_dark_communion
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_dark_communion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Erect Dark Monuments
+	focus = {
+		id = VED_erect_dark_monuments
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_ruinous_spires
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_ruinous_spires }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ruinous Spires
+	focus = {
+		id = VED_ruinous_spires
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_seed_of_corruption
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_seed_of_corruption }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sow Fear
+	focus = {
+		id = VED_sow_fear
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_corrupt_the_land
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_corrupt_the_land }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Seed of Corruption
+	focus = {
+		id = VED_the_seed_of_corruption
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_corrupt_the_land
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_corrupt_the_land }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Inscribe Eldritch Sign's on Tank Hulls
+	focus = {
+		id = VED_inscribe_eldritch_signs_on_tank_hulls
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_a_thousands_dark_blessings
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_thousands_dark_blessings }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sorcerous Weapons
+	focus = {
+		id = VED_sorcerous_weapons
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_inscribe_eldritch_signs_on_tank_hulls
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_inscribe_eldritch_signs_on_tank_hulls }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bred in Captivity
+	focus = {
+		id = VED_bred_in_captivity
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_dominate_the_scum
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_dominate_the_scum }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dragon-Soul Engines
+	focus = {
+		id = VED_dragonsoul_engines
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_dead_crewman
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_dead_crewman }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for War Profiteering
+	focus = {
+		id = VED_war_profiteering
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_an_army_of_slaves
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_an_army_of_slaves }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bloodforging
+	focus = {
+		id = VED_bloodforging
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_a_thousands_dark_blessings
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_thousands_dark_blessings }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Umbral Arms
+	focus = {
+		id = VED_umbral_arms
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_bloodforging
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_bloodforging }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Corrupt the Land
+	focus = {
+		id = VED_corrupt_the_land
+		icon = GFX_goal_unknown
+		x = 10
+		y = 1
+		relative_position_id = VED_a_new_order
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_new_order }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rituals of Corruption
+	focus = {
+		id = VED_rituals_of_corruption
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_sow_fear
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_sow_fear }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Forced into Servitude
+	focus = {
+		id = VED_forced_into_servitude
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_an_army_of_slaves
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_an_army_of_slaves }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Join, or die
+	focus = {
+		id = VED_join_or_die
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_forced_into_servitude
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_forced_into_servitude }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Recruit Convicts
+	focus = {
+		id = VED_recruit_convicts
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_join_or_die
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_join_or_die }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Time has Come
+	focus = {
+		id = VED_the_time_has_come
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_conquerors_due
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_recruit_convicts 
+		}
+		prerequisite = { 
+			focus = VED_conquerors_due 
+		}
+		prerequisite = { 
+			focus = VED_bred_in_captivity 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Death of Hope
+	focus = {
+		id = VED_death_of_hope
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_time_has_come
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_time_has_come }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for New King's of the Mountain
+	focus = {
+		id = VED_new_kings_of_the_mountain
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_incorporate_the_pirates_by_force
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_incorporate_the_pirates_by_force 
+		}
+		prerequisite = { 
+			focus = VED_death_of_hope 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Arcturus Falls
+	focus = {
+		id = VED_arcturus_falls
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_death_of_hope
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_the_communes_crushed 
+		}
+		prerequisite = { 
+			focus = VED_death_of_hope 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Death Wins
+	focus = {
+		id = VED_death_wins
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_true_gods_rising
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_true_gods_rising }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for One Thousand Years of Tyranny
+	focus = {
+		id = VED_one_thousand_years_of_tyranny
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_final_war
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_final_war }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sacrifice the Slaves
+	focus = {
+		id = VED_sacrifice_the_slaves
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_the_summoning
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_summoning }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Designate the Ritual Ground
+	focus = {
+		id = VED_designate_the_ritual_ground
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_artifacts_of_power
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_artifacts_of_power }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Dark Imperium
+	focus = {
+		id = VED_a_dark_imperium
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_death_of_an_empire
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_death_of_an_empire }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Idol of Maar
+	focus = {
+		id = VED_the_idol_of_maar
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_the_punishment_for_defiance
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_a_gift_from_the_dread_league 
+			focus = VED_the_punishment_for_defiance 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Research the Ritual of Arival
+	focus = {
+		id = VED_research_the_ritual_of_arival
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_idol_of_maar
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_the_idol_of_maar 
+		}
+		prerequisite = { 
+			focus = VED_a_dark_imperium 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Artifacts of Power
+	focus = {
+		id = VED_artifacts_of_power
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_research_the_ritual_of_arival
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_research_the_ritual_of_arival }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for What We Were Meant For
+	focus = {
+		id = VED_what_we_were_meant_for
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_a_new_conquest
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_new_conquest }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Other Issues
+	focus = {
+		id = VED_other_issues
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_what_we_were_meant_for
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_what_we_were_meant_for }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Grab the Bull by the Horns
+	focus = {
+		id = VED_grab_the_bull_by_the_horns
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_civilize_eastern_griffonia
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_civilize_eastern_griffonia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reclaim what is Ours
+	focus = {
+		id = VED_reclaim_what_is_ours
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_from_north_to_south
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_from_north_to_south }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Final War
+	focus = {
+		id = VED_the_final_war
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_reclaim_what_is_ours
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_grab_the_bull_by_the_horns 
+		}
+		prerequisite = { 
+			focus = VED_reclaim_what_is_ours 
+		}
+		prerequisite = { 
+			focus = VED_other_issues 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Summoning
+	focus = {
+		id = VED_the_summoning
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_designate_the_ritual_ground
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_designate_the_ritual_ground }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for True God's Rising
+	focus = {
+		id = VED_true_gods_rising
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_summoning
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_summoning }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A True Test of Faith
+	focus = {
+		id = VED_a_true_test_of_faith
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_the_summoning
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_summoning }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	### STRIDANDE TREE
+
+	focus = {
+		id = VED_Stridande
+		#icon = GFX_goal_wedding
+		cost = 4.30
+		x = 0
+		y = 1
+		
+		relative_position_id = VED_Royal_Marriage
+		
+		prerequisite = {
+			focus = VED_Royal_Marriage
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Focus for Prince and Marshal
+	focus = {
+		id = VED_prince_and_marshal
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_Stridande
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Border Patrol Reforms
+	focus = {
+		id = VED_border_patrol_reforms
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_in_defense_of_the_homeland
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_in_defense_of_the_homeland }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Hauklanders Fleet is now our Fleet
+	focus = {
+		id = VED_the_hauklanders_fleet_is_now_our_fleet
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_rebuild_damaged_shipyards
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_celebrations_in_winterhold 
+		}
+		prerequisite = { 
+			focus = VED_rebuild_damaged_shipyards 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Better Garrison Housing
+	focus = {
+		id = VED_better_garrison_housing
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_a_bunker_a_mile
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_bunker_a_mile }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Behind Closed Doors
+	focus = {
+		id = VED_behind_closed_doors
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_the_kloby_ball
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_kloby_ball }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Vedina's Greatest
+	focus = {
+		id = VED_vedinas_greatest
+		icon = GFX_goal_unknown
+		x = 6
+		y = 1
+		relative_position_id = VED_prince_and_marshal
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_prince_and_marshal }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Defensive Doctrine
+	focus = {
+		id = VED_defensive_doctrine
+		icon = GFX_goal_generic_build_tank
+		x = -1
+		y = 1
+		relative_position_id = VED_in_defense_of_the_homeland
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_in_defense_of_the_homeland }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for In Defense of the Homeland
+	focus = {
+		id = VED_in_defense_of_the_homeland
+		icon = GFX_goal_unknown
+		x = -7
+		y = 1
+		relative_position_id = VED_prince_and_marshal
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_prince_and_marshal }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Put the Nobles in Line
+	focus = {
+		id = VED_put_the_nobles_in_line
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_prince_and_marshal
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_prince_and_marshal }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Maze of Trenches
+	focus = {
+		id = VED_a_maze_of_trenches
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_militarize_the_border
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_militarize_the_border }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Fortress Nation
+	focus = {
+		id = VED_a_fortress_nation
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_a_maze_of_trenches
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_better_garrison_housing 
+		}
+		prerequisite = { 
+			focus = VED_a_maze_of_trenches 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Kloby Ball
+	focus = {
+		id = VED_the_kloby_ball
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_rewards_for_loyalty
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_rewards_for_loyalty 
+		}
+		prerequisite = { 
+			focus = VED_freegriffs_not_serfs 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Skirmish Operations
+	focus = {
+		id = VED_skirmish_operations
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 3
+		y = 1
+		relative_position_id = VED_in_defense_of_the_homeland
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_in_defense_of_the_homeland }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for World Renown
+	focus = {
+		id = VED_world_renown
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		x = 0
+		y = 2
+		relative_position_id = VED_soldiers_etiquette
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_soldiers_etiquette }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Daily Marksmanship Training
+	focus = {
+		id = VED_daily_marksmanship_training
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_skilled_and_disciplined
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_skilled_and_disciplined }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Skilled and Disciplined
+	focus = {
+		id = VED_skilled_and_disciplined
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_winter_march
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_winter_march }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Titles for Generals
+	focus = {
+		id = VED_titles_for_generals
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_military_balls
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_military_balls }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Courtesy to Officer's Wives
+	focus = {
+		id = VED_courtesy_to_officers_wives
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_titles_for_generals
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_titles_for_generals }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The World Famous Vedina Royal Military Band
+	focus = {
+		id = VED_the_world_famous_vedina_royal_military_band
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_vedinas_greatest
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_vedinas_greatest }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Winter March
+	focus = {
+		id = VED_the_winter_march
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_vedinas_greatest
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_vedinas_greatest }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Princess is Born!
+	focus = {
+		id = VED_a_princess_is_born
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_preparations_for_an_heir
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_preparations_for_an_heir }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Always Together
+	focus = {
+		id = VED_always_together
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_the_kloby_ball
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_kloby_ball }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Preparations for an Heir
+	focus = {
+		id = VED_preparations_for_an_heir
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_kloby_ball
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_kloby_ball }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Compulsory Military Service
+	focus = {
+		id = VED_compulsory_military_service
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_put_the_nobles_in_line
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_put_the_nobles_in_line }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Peasant Autonomy
+	focus = {
+		id = VED_peasant_autonomy
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_put_the_nobles_in_line
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_put_the_nobles_in_line }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Freegriffs, not Serfs!
+	focus = {
+		id = VED_freegriffs_not_serfs
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_moral_reform
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_peasant_autonomy 
+		}
+		prerequisite = { 
+			focus = VED_moral_reform 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rewards for Loyalty
+	focus = {
+		id = VED_rewards_for_loyalty
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_compulsory_military_service
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_compulsory_military_service 
+		}
+		prerequisite = { 
+			focus = VED_moral_reform 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reinforced Border Fences
+	focus = {
+		id = VED_reinforced_border_fences
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_defensive_doctrine
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_defensive_doctrine 
+		}
+		prerequisite = { 
+			focus = VED_border_patrol_reforms 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Militarize the Border
+	focus = {
+		id = VED_militarize_the_border
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_reinforced_border_fences
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_reinforced_border_fences }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Control our Borders
+	focus = {
+		id = VED_control_our_borders
+		icon = GFX_goal_unknown
+		x = -3
+		y = 1
+		relative_position_id = VED_in_defense_of_the_homeland
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_in_defense_of_the_homeland }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Bunker a Mile
+	focus = {
+		id = VED_a_bunker_a_mile
+		icon = GFX_goal_generic_construct_military
+		x = 1
+		y = 1
+		relative_position_id = VED_reinforced_border_fences
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_reinforced_border_fences }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Moral Reform
+	focus = {
+		id = VED_moral_reform
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_put_the_nobles_in_line
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_put_the_nobles_in_line }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Military Balls
+	focus = {
+		id = VED_military_balls
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_vedinas_greatest
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_vedinas_greatest }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Soldier's Etiquette
+	focus = {
+		id = VED_soldiers_etiquette
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_daily_marksmanship_training
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_daily_marksmanship_training 
+		}
+		prerequisite = { 
+			focus = VED_courtesy_to_officers_wives 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Civility in War
+	focus = {
+		id = VED_civility_in_war
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_soldiers_etiquette
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_soldiers_etiquette }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Squire-Princess
+	focus = {
+		id = VED_the_squireprincess
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		relative_position_id = VED_a_princess_is_born
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_a_princess_is_born 
+		}
+		prerequisite = { 
+			focus = VED_civility_in_war 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Ambitions of the Nation
+	focus = {
+		id = VED_the_ambitions_of_the_nation
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		relative_position_id = VED_a_princess_is_born
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_a_princess_is_born 
+		}
+		prerequisite = { 
+			focus = VED_world_renown 
+		}
+		prerequisite = { 
+			focus = VED_a_fortress_nation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Refound Cloudburian Knightly Orders
+	focus = {
+		id = VED_refound_cloudburian_knightly_orders
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_incorporate_cloudburian_nobles
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_incorporate_cloudburian_nobles }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Operation: Shatter
+	focus = {
+		id = VED_operation_shatter
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		x = 0
+		y = 1
+		relative_position_id = VED_the_ambitions_of_the_nation
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_ambitions_of_the_nation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Operation: Charybdis
+	focus = {
+		id = VED_operation_charybdis
+		icon = GFX_goal_unknown
+		x = -4
+		y = 1
+		relative_position_id = VED_the_ambitions_of_the_nation
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_ambitions_of_the_nation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Operation: Monocolor
+	focus = {
+		id = VED_operation_monocolor
+		icon = GFX_goal_unknown
+		x = 4
+		y = 1
+		relative_position_id = VED_the_ambitions_of_the_nation
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_ambitions_of_the_nation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gather Monarchist Support
+	focus = {
+		id = VED_gather_monarchist_support
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_operation_monocolor
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_operation_monocolor }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Discredit Kamerskei
+	focus = {
+		id = VED_discredit_kamerskei
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_operation_monocolor
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_operation_monocolor }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Northern Nationalism
+	focus = {
+		id = VED_northern_nationalism
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_gather_monarchist_support
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_gather_monarchist_support }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tyranny of Suntail
+	focus = {
+		id = VED_tyranny_of_suntail
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_discredit_kamerskei
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_discredit_kamerskei }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gain Pony Support
+	focus = {
+		id = VED_gain_pony_support
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_operation_shatter
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_operation_shatter }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Force Partisanship
+	focus = {
+		id = VED_force_partisanship
+		icon = GFX_focus_generic_soviet_politics
+		x = -1
+		y = 1
+		relative_position_id = VED_operation_shatter
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_operation_shatter }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sickclaw's Broken Promise
+	focus = {
+		id = VED_sickclaws_broken_promise
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_gain_pony_support
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_gain_pony_support }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Frontier Forts
+	focus = {
+		id = VED_frontier_forts
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_force_partisanship
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_force_partisanship }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Raid Shanty Towns
+	focus = {
+		id = VED_raid_shanty_towns
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_operation_charybdis
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_operation_charybdis }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Detonate the Haukheim Shipyard
+	focus = {
+		id = VED_detonate_the_haukheim_shipyard
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_operation_charybdis
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_operation_charybdis }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for L-Day
+	focus = {
+		id = VED_lday
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_detonate_the_haukheim_shipyard
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_detonate_the_haukheim_shipyard }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Commandeer Hauklander Vessels
+	focus = {
+		id = VED_commandeer_hauklander_vessels
+		icon = GFX_focus_generic_navy_battleship2
+		x = 0
+		y = 1
+		relative_position_id = VED_raid_shanty_towns
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_raid_shanty_towns }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Sentencing of Hermann Meyer
+	focus = {
+		id = VED_the_sentencing_of_hermann_meyer
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_lday
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_lday 
+		}
+		prerequisite = { 
+			focus = VED_commandeer_hauklander_vessels 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Destroy Anarchy
+	focus = {
+		id = VED_destroy_anarchy
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_frontier_forts
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_frontier_forts 
+		}
+		prerequisite = { 
+			focus = VED_sickclaws_broken_promise 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Incorporate Cloudburian Nobles
+	focus = {
+		id = VED_incorporate_cloudburian_nobles
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_tyranny_of_suntail
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_tyranny_of_suntail 
+		}
+		prerequisite = { 
+			focus = VED_northern_nationalism 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rebuild Damaged Shipyards
+	focus = {
+		id = VED_rebuild_damaged_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = -1
+		y = 1
+		relative_position_id = VED_the_sentencing_of_hermann_meyer
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_sentencing_of_hermann_meyer }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Celebrations in Winterhold
+	focus = {
+		id = VED_celebrations_in_winterhold
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_the_sentencing_of_hermann_meyer
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_sentencing_of_hermann_meyer }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Legalize Commune-Homesteads
+	focus = {
+		id = VED_legalize_communehomesteads
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_destroy_anarchy
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_destroy_anarchy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Modernize the North
+	focus = {
+		id = VED_modernize_the_north
+		icon = GFX_focus_generic_industry_3
+		x = 1
+		y = 1
+		relative_position_id = VED_destroy_anarchy
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_destroy_anarchy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tax the Communes
+	focus = {
+		id = VED_tax_the_communes
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_legalize_communehomesteads
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_legalize_communehomesteads 
+		}
+		prerequisite = { 
+			focus = VED_modernize_the_north 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for One Kingdom, One Language
+	focus = {
+		id = VED_one_kingdom_one_language
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_incorporate_cloudburian_nobles
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_incorporate_cloudburian_nobles }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Vedinanization
+	focus = {
+		id = VED_vedinanization
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_refound_cloudburian_knightly_orders
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_one_kingdom_one_language 
+		}
+		prerequisite = { 
+			focus = VED_refound_cloudburian_knightly_orders 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Form Greater Vedina
+	focus = {
+		id = VED_form_greater_vedina
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_tax_the_communes
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_tax_the_communes 
+		}
+		prerequisite = { 
+			focus = VED_vedinanization 
+		}
+		prerequisite = { 
+			focus = VED_the_hauklanders_fleet_is_now_our_fleet 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Northern Commonwealth
+	focus = {
+		id = VED_northern_commonwealth
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_form_greater_vedina
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_form_greater_vedina }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Our Pony Friends
+	focus = {
+		id = VED_our_pony_friends
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_northern_commonwealth
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_northern_commonwealth }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Griffons of the West
+	focus = {
+		id = VED_griffons_of_the_west
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_northern_commonwealth
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_northern_commonwealth }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Looking South
+	focus = {
+		id = VED_looking_south
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_our_pony_friends
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_griffons_of_the_west 
+		}
+		prerequisite = { 
+			focus = VED_our_pony_friends 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Liberate the Mountains
+	focus = {
+		id = VED_liberate_the_mountains
+		icon = GFX_goal_unknown
+		x = 4
+		y = 1
+		relative_position_id = VED_form_greater_vedina
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_form_greater_vedina }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Empire of the North
+	focus = {
+		id = VED_empire_of_the_north
+		icon = GFX_goal_unknown
+		x = -4
+		y = 1
+		relative_position_id = VED_form_greater_vedina
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_form_greater_vedina }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Trunaham Prospers!
+	focus = {
+		id = VED_trunaham_prospers
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_empire_of_the_north
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_empire_of_the_north }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Coastal Griffenheim
+	focus = {
+		id = VED_a_coastal_griffenheim
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_trunaham_prospers
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_trunaham_prospers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Hearts of Fire, Land of Ice
+	focus = {
+		id = VED_hearts_of_fire_land_of_ice
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_empire_of_the_north
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_empire_of_the_north }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Northern Jewel
+	focus = {
+		id = VED_the_northern_jewel
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_hearts_of_fire_land_of_ice
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_hearts_of_fire_land_of_ice }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mountain Fortifications
+	focus = {
+		id = VED_mountain_fortifications
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_liberate_the_mountains
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_liberate_the_mountains }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Hang the Bandits
+	focus = {
+		id = VED_hang_the_bandits
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_liberate_the_mountains
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_liberate_the_mountains }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Make Exceptions
+	focus = {
+		id = VED_make_exceptions
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_hang_the_bandits
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_hang_the_bandits }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Make the Sunstrike's Declare Fealty
+	focus = {
+		id = VED_make_the_sunstrikes_declare_fealty
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_mountain_fortifications
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_mountain_fortifications }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Titan of Trunaham
+	focus = {
+		id = VED_the_titan_of_trunaham
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_the_northern_jewel
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_the_northern_jewel 
+		}
+		prerequisite = { 
+			focus = VED_a_coastal_griffenheim 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Watch the South
+	focus = {
+		id = VED_watch_the_south
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_make_the_sunstrikes_declare_fealty
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_make_the_sunstrikes_declare_fealty 
+		}
+		prerequisite = { 
+			focus = VED_make_exceptions 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ports in Skyfall
+	focus = {
+		id = VED_ports_in_skyfall
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_looking_south
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_looking_south }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Usurp the Empire!
+	focus = {
+		id = VED_usurp_the_empire
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_ports_in_skyfall
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_ports_in_skyfall 
+		}
+		prerequisite = { 
+			focus = VED_watch_the_south 
+		}
+		prerequisite = { 
+			focus = VED_the_titan_of_trunaham 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Move the Royal Family to Griffenheim
+	focus = {
+		id = VED_move_the_royal_family_to_griffenheim
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_usurp_the_empire
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_usurp_the_empire }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build the Griffenheim Canals
+	focus = {
+		id = VED_build_the_griffenheim_canals
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_move_the_royal_family_to_griffenheim
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_move_the_royal_family_to_griffenheim }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A City of Luxury
+	focus = {
+		id = VED_a_city_of_luxury
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_build_the_griffenheim_canals
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_build_the_griffenheim_canals }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Skoldsvard for Regent!
+	focus = {
+		id = VED_skoldsvard_for_regent
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_move_the_royal_family_to_griffenheim
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_move_the_royal_family_to_griffenheim }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Arrange Grover's Betrothal
+	focus = {
+		id = VED_arrange_grovers_betrothal
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_skoldsvard_for_regent
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_skoldsvard_for_regent }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Absorb Herzlander Knights
+	focus = {
+		id = VED_absorb_herzlander_knights
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_move_the_royal_family_to_griffenheim
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_move_the_royal_family_to_griffenheim }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Vedinan Cultural Expansion
+	focus = {
+		id = VED_vedinan_cultural_expansion
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_absorb_herzlander_knights
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_absorb_herzlander_knights }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The New Age of Chivalry!
+	focus = {
+		id = VED_the_new_age_of_chivalry
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_a_city_of_luxury
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_vedinan_cultural_expansion 
+		}
+		prerequisite = { 
+			focus = VED_a_city_of_luxury 
+		}
+		prerequisite = { 
+			focus = VED_arrange_grovers_betrothal 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	### Lycklig Tree ###
+
+	focus = {
+		id = VED_Lycklig
+		#icon = GFX_goal_wedding
+		cost = 4.30
+		x = -30
+		y = 1
+		
+		relative_position_id = VED_Royal_Marriage
+		
+		prerequisite = {
+			focus = VED_Royal_Marriage
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Focus for The Nobility Displeased
+	focus = {
+		id = VED_the_nobility_displeased
+		icon = GFX_VED_the_nobility_displeased-35355
+		x = 0
+		y = 1
+		relative_position_id = VED_Lycklig
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Gives national spirit that grants
+			#-1 stability gain per month
+			#-20% political power gain per month
+			#-20 war support
+			#-10% manpower
+		}
+	}
+
+	#Focus for Unite the Classes
+	focus = {
+		id = VED_unite_the_classes
+		icon = GFX_VED_unite_the_classes-35351
+		x = -10
+		y = 1
+		relative_position_id = VED_the_nobility_displeased
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_nobility_displeased }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds event 'Uniting the Working and Noble Class'
+		}
+	}
+
+	#Focus for The Roles of the Nobles
+	focus = {
+		id = VED_the_roles_of_the_nobles
+		icon = GFX_focus_rom_royal_dictatorship
+		x = -2
+		y = 1
+		relative_position_id = VED_unite_the_classes
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_unite_the_classes }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds new Event 'Skoldsvard thinks of the Nobility'
+			#Removes -1% stability a month from 'Displeased Nobility'
+			#Adds national spirit 'New Noble Customs' which grants +1% stability a month
+		}
+	}
+
+	#Focus for Reinstate Landed Nobility
+	focus = {
+		id = VED_reinstate_landed_nobility
+		icon = GFX_VED_reinstate_landed_nobility-38569
+		x = -1
+		y = 1
+		relative_position_id = VED_the_roles_of_the_nobles
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_roles_of_the_nobles }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds to 'New Noble Customs' -20% cost to recruit new generals
+		}
+	}
 	
-	shared_focus = VED_Succession
-	shared_focus = VED_Evil_Princess
-	shared_focus = VED_Continual_Army_Reform
+	#Focus for Grant Titles to Influential Peasants
+	focus = {
+		id = VED_grant_titles_to_influential_peasants
+		icon = GFX_focus_generic_monarchy_2
+		x = 0
+		y = 1
+		relative_position_id = VED_reinstate_landed_nobility
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_reinstate_landed_nobility }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Grants 2 building slots, and 2 military factories in Trunaham
+		}
+	}
+	
+	#Focus for Privilege, not Pedigree
+	focus = {
+		id = VED_privilege_not_pedigree
+		icon = GFX_VED_privilege_not_pedigree-38570
+		x = 1
+		y = 1
+		relative_position_id = VED_the_roles_of_the_nobles
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_roles_of_the_nobles }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Modifies 'New Noble Customs' to increase stability by +3% a month
+		}
+	}
+
+	#Focus for Revocable Titles
+	focus = {
+		id = VED_revocable_titles
+		icon = GFX_focus_generic_monarchy_1
+		x = 0
+		y = 1
+		relative_position_id = VED_privilege_not_pedigree
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_privilege_not_pedigree }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Changes 'New Noble Customs' to include -20% cost to change advisors
+		}
+	}
+	
+	#Focus for Exclusive Events
+	focus = {
+		id = VED_exclusive_events
+		icon = GFX_VED_exclusive_events-44984
+		x = 1
+		y = 1
+		relative_position_id = VED_grant_titles_to_influential_peasants
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_grant_titles_to_influential_peasants 
+		}
+		prerequisite = { 
+			focus = VED_revocable_titles 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds a decision to host a ball which can have 3 selectable outcomes
+			#Outcome 1: Increases stability by 20% over the course of 3 months
+			#Outcome 2: Increases war support gain by 20% over the course of 3 months
+			#Outcome 3: Increases political power gain by 40% for 3 months
+		}
+	}
+	
+	#Focus for The Rights of the Peasants
+	focus = {
+		id = VED_the_rights_of_the_peasants
+		icon = GFX_focus_generic_support_the_left_right
+		x = 2
+		y = 1
+		relative_position_id = VED_unite_the_classes
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_unite_the_classes }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds event 'Lycklig complains about peasant rights', and adds nation spirit 'Charter of Peasant's Rights':
+			#-10 construction time for infrastructure
+		}
+	}
+	
+	#Focus for Outlaw Serfdom
+	focus = {
+		id = VED_outlaw_serfdom
+		icon = GFX_VED_outlaw_serfdom-38571
+		x = -1
+		y = 1
+		relative_position_id = VED_the_rights_of_the_peasants
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_rights_of_the_peasants }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds to 'Charter of Peasant's Rights' to include +10% increased population per month, and +5% recruitable population
+		}
+	}
+	
+	#Focus for Better Housing
+	focus = {
+		id = VED_better_housing
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 0
+		y = 1
+		relative_position_id = VED_outlaw_serfdom
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_outlaw_serfdom }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add 2 building slots, and 2 infrastructure to Trunaham
+		}
+	}
+	
+	#Focus for Allow Peasant Businesses
+	focus = {
+		id = VED_allow_peasant_businesses
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 1
+		y = 1
+		relative_position_id = VED_the_rights_of_the_peasants
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_rights_of_the_peasants }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add 2 building slots and 2 civilian factories to Trunaham
+		}
+	}
+	
+	#Focus for Republicanism on a Local Scale
+	focus = {
+		id = VED_republicanism_on_a_local_scale
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		relative_position_id = VED_allow_peasant_businesses
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_allow_peasant_businesses }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Changes 'Charter of Peasant's Right's' to decrease stability decay by 40%
+		}
+	}
+	
+	#Focus for The Peasants Appeased
+	focus = {
+		id = VED_the_peasants_appeased
+		icon = GFX_VED_the_peasants_appeased-44985
+		x = 1
+		y = 1
+		relative_position_id = VED_better_housing
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_republicanism_on_a_local_scale 
+		}
+		prerequisite = { 
+			focus = VED_better_housing 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds event 'Peasant's are Pleased', Increases recruitible manpower by 5%, Increase research speed by 10%, Decrease Stability decay by 10%, and increases build speed by 5%
+		}
+	}
+
+	#Focus for Solidarity Forever
+	focus = {
+		id = VED_solidarity_forever
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 2
+		y = 2
+		relative_position_id = VED_exclusive_events
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_the_peasants_appeased 
+		}
+		prerequisite = { 
+			focus = VED_exclusive_events 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Removes National Spirit 'Nobility Displeased'
+		}
+	}
+
+	#Focus for Two Queens, One Nation
+	focus = {
+		id = VED_two_queens_one_nation
+		icon = GFX_VED_two_queens_one_nation-35352
+		x = -3
+		y = 1
+		relative_position_id = VED_the_nobility_displeased
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_nobility_displeased }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds Lycklig as a political advisor (Champion of Peace stats), Adds event 'The Tale of Two Queens'
+		}
+	}
+
+	#Focus for Father's Disproval
+	focus = {
+		id = VED_fathers_disproval
+		icon = GFX_VED_fathers_disproval-49248
+		x = 0
+		y = 1
+		relative_position_id = VED_two_queens_one_nation
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_two_queens_one_nation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's King Wingstrom as a Political Advisor (Popular King stats), triggers events 'Father worries about inheritance'
+		}
+	}
+	
+	#Focus for A Bastard Queen
+	focus = {
+		id = VED_a_bastard_queen
+		icon = GFX_VED_a_bastard_queen-49249
+		x = 0
+		y = 1
+		relative_position_id = VED_fathers_disproval
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_fathers_disproval }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds General 'Baron Ilska' as a general. (Stat's are in country creation page), adds event 'Skoldsvard meets her new Father-in-law'
+		}
+	}
+
+	#Focus for A Vision for the Future
+	focus = {
+		id = VED_a_vision_for_the_future
+		icon = GFX_VED_a_vision_for_the_future-49250
+		x = 0
+		y = 1
+		relative_position_id = VED_a_bastard_queen
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_bastard_queen }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's event 'Skoldsvard's Dream', Give's 'Renewed purpose' national spirit for 12 months, which greatly decreases recruitment time for all divisions (-20%).
+		}
+	}
+	
+	#Focus for The Matter of Inheritance
+	focus = {
+		id = VED_the_matter_of_inheritance
+		icon = GFX_VED_the_matter_of_inheritance-49252
+		x = 0
+		y = 1
+		relative_position_id = VED_a_vision_for_the_future
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_vision_for_the_future }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's Event 'The Matter of Inheritance'. Two decisions will appear, one to adopt, and one to declare Skoldsvard's younger sister 'Astrid Wingstrom II'
+		}
+	}
+
+	#Focus for Adoption
+	focus = {
+		id = VED_adoption
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_the_matter_of_inheritance
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_matter_of_inheritance }
+		mutually_exclusive = { 
+			focus = VED_cousin_inherits 
+		}
+		mutually_exclusive = { 
+			focus = VED_surrogacy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds event 'A visit to the orphanage' which will give you three options.
+			#Option 1: A knight's daughter
+			#Option 2: A noble's bastard
+			#Option 3: A merchant's son
+
+			#Option 1 adds national spirit 'Princess Riddare' which increases the breakthrough of knight units by 10%, and recovery rate of knights by 25%
+			#Option 2 adds national spirit 'Princess Vanlig' which decreases construction time by 5% and decreases research time by 5%
+			#Option 3 adds nation spirit 'Prince Hedrande' which decreases civilian factory construction time by 15%, and increases political power gain by 10%.
+		}
+	}
+
+	#Focus for Surrogacy
+	focus = {
+		id = VED_surrogacy
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_matter_of_inheritance
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_matter_of_inheritance }
+		mutually_exclusive = { 
+			focus = VED_adoption 
+		}
+		mutually_exclusive = { 
+			focus = VED_cousin_inherits 
+		}
+		mutually_exclusive = { 
+			#focus = VED_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Cousin Inherits
+	focus = {
+		id = VED_cousin_inherits
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_the_matter_of_inheritance
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_matter_of_inheritance }
+		mutually_exclusive = { 
+			focus = VED_adoption 
+		}
+		mutually_exclusive = { 
+			focus = VED_surrogacy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's event 'a conversation with Astrid', Add's Astrid Wingstrom II as an advisor (Socialite Connections stats)
+		}
+	}
+
+	#Focus for Declare an Heir
+	focus = {
+		id = VED_declare_an_heir
+		icon = GFX_VED_declare_an_heir-49253
+		x = 0
+		y = 1
+		relative_position_id = VED_surrogacy
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_adoption 
+			focus = VED_cousin_inherits 
+			focus = VED_surrogacy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's New's Event 'Vedinan Heir declared', Stability of Vedina increases by 5, and gain 100 political power.
+		}
+	}
+
+	#Focus for Constitutional Rights
+	focus = {
+		id = VED_constitutional_rights
+		icon = GFX_VED_constitutional_rights-35353
+		x = 3
+		y = 1
+		relative_position_id = VED_the_nobility_displeased
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_nobility_displeased }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's national spirit 'Vedinan Constitution' which grants:
+			#+10% increased compliance gain
+			#-1% Political drift
+			#+0.5 monthly Harmonist support
+		}
+	}
+	
+	#Focus for Clarifying Powers of the Nobles
+	focus = {
+		id = VED_clarifying_powers_of_the_nobles
+		icon = GFX_focus_hun_elect_a_king
+		x = -1
+		y = 1
+		relative_position_id = VED_constitutional_rights
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_constitutional_rights }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's '-1% stability decay each month' to Vedinan Constitution spirit.
+		}
+	}
+
+	#Focus for Powers of the Elected
+	focus = {
+		id = VED_powers_of_the_elected
+		icon = GFX_focus_generic_self_management
+		x = 0
+		y = 1
+		relative_position_id = VED_clarifying_powers_of_the_nobles
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_clarifying_powers_of_the_nobles }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's '+10% political power gain each month' to Vedinan Constitution National spirit, increases harmonist support
+		}
+	}
+
+	#Focus for Protections for Peasants
+	focus = {
+		id = VED_protections_for_peasants
+		icon = GFX_goal_generic_defence
+		x = 1
+		y = 1
+		relative_position_id = VED_constitutional_rights
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_constitutional_rights }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's '-5% construction time for infrastructure' to Vedinan Constitution Spirit
+		}
+	}
+
+	#Focus for Legalize Unions
+	focus = {
+		id = VED_legalize_unions
+		icon = GFX_focus_por_workers_of_iberia
+		x = 0
+		y = 1
+		relative_position_id = VED_protections_for_peasants
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_protections_for_peasants }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's 'Decreases building time -10%', and '+0.1 communist support each month' to Vedinan Constitution Spirit, Increases communist support
+		}
+	}
+
+	#Focus for A New Economic Charter
+	focus = {
+		id = VED_a_new_economic_charter
+		icon = GFX_focus_mex_privatisation
+		x = 1
+		y = 1
+		relative_position_id = VED_powers_of_the_elected
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_legalize_unions 
+		}
+		prerequisite = { 
+			focus = VED_powers_of_the_elected 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's Event 'Lycklig and Skoldsvard debate about the economy'
+
+			#Option 1: "Lycklig is right", which unlocks socialism
+			#Option 2: "I think we can find compromise", which unlocks capitalism
+		}
+	}
+
+	#Focus for Capitalism
+	focus = {
+		id = VED_capitalism
+		icon = GFX_goal_support_democracy
+		x = -2
+		y = 1
+		relative_position_id = VED_a_new_economic_charter
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_new_economic_charter }
+		mutually_exclusive = { focus = VED_socialism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds event 'Lycklig changes stance on capitalism', and adds national spirit 'Moral capitalism' which grants:
+			#-10% research time
+			#-5% construction time
+		}
+	}
+
+	#Focus for Socialism
+	focus = {
+		id = VED_socialism
+		icon = GFX_goal_support_communism
+		x = 2
+		y = 1
+		relative_position_id = VED_a_new_economic_charter
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_new_economic_charter }
+		mutually_exclusive = { focus = VED_capitalism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's event 'Lycklig sways Skoldsvard', and adds national spirit 'Planned Economy' which grants:
+			#-5% research time
+			#-15% construction time
+		}
+	}
+
+	#Focus for Ban Oligopolies
+	focus = {
+		id = VED_ban_oligopolies
+		icon = GFX_VED_ban_oligopolies-50723
+		x = 0
+		y = 1
+		relative_position_id = VED_capitalism
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_capitalism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's '+5% factory output' too 'Moral Capitalism'.
+		}
+	}
+
+	#Focus for Eco-Yellow
+	focus = {
+		id = VED_ecoyellow
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 2
+		y = 1
+		relative_position_id = VED_capitalism
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_socialism 
+			focus = VED_capitalism 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's event 'Lycklig proposes emergency economic document', adds decision 'Enforce Eco-yellow' which grants +25% repair speed, +15% factory output for 3 months. Can only be selected if Vedina signed a peace treaty within the last 12 months.
+		}
+	}
+
+	#Focus for Seize the Means of Production
+	focus = {
+		id = VED_seize_the_means_of_production
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 0
+		y = 1
+		relative_position_id = VED_socialism
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_socialism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's '-15% consumer good's factories' to Planned Economy
+		}
+	}
+
+	#Focus for Tax Reform Overhaul
+	focus = {
+		id = VED_tax_reform_overhaul
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 1
+		relative_position_id = VED_ecoyellow
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_ecoyellow 
+		}
+		prerequisite = { 
+			focus = VED_seize_the_means_of_production 
+		}
+		prerequisite = { 
+			focus = VED_ban_oligopolies 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's event 'Military servicemen pay less in taxes', adds 100,000 griffonpower, and increases griffonpower gains by 10%
+		}
+	}
+
+	#Focus for Welfare Socialization
+	focus = {
+		id = VED_welfare_socialization
+		icon = GFX_VED_welfare_socialization-35354
+		x = 10
+		y = 1
+		relative_position_id = VED_the_nobility_displeased
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_nobility_displeased }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's national spirit 'Vedinan Welfare', which grants:
+			#+5% research speed
+			#+5% population gain a month
+			#+5% griffonpower a month
+		}
+	}
+
+	#Focus for Free Public Education
+	focus = {
+		id = VED_free_public_education
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = -1
+		y = 1
+		relative_position_id = VED_welfare_socialization
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_welfare_socialization }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's +5% research speed to Vedinan Welfare spirit.
+		}
+	}
+
+	#Focus for New Factory Management
+	focus = {
+		id = VED_new_factory_management
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 1
+		y = 1
+		relative_position_id = VED_welfare_socialization
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_welfare_socialization }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds -10% factory construction speed to Vedinan Welfare Spirit.
+		}
+	}
+
+	#Focus for Build more Retirement Homes
+	focus = {
+		id = VED_build_more_retirement_homes
+		icon = GFX_VED_build_more_retirement_homes-50725
+		x = -1
+		y = 1
+		relative_position_id = VED_free_public_education
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_free_public_education }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds 2 building slots and 2 infrastructure to Skyrim
+		}
+	}
+
+	#Focus for Raise Minimum Wage
+	focus = {
+		id = VED_raise_minimum_wage
+		icon = GFX_VED_raise_minimum_wage-50724
+		x = 1
+		y = 1
+		relative_position_id = VED_free_public_education
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_new_factory_management 
+		}
+		prerequisite = { 
+			focus = VED_free_public_education 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add 2 building slots and 2 civilian factories to Skyrim
+		}
+	}
+
+	#Focus for Homeless Shelters in Every City
+	focus = {
+		id = VED_homeless_shelters_in_every_city
+		icon = GFX_VED_homeless_shelters_in_every_city-51425
+		x = 1
+		y = 1
+		relative_position_id = VED_new_factory_management
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_new_factory_management }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases harmonist support by 0.5% monthly.
+		}
+	}
+
+	#Focus for Royal Bank of Vedina
+	focus = {
+		id = VED_royal_bank_of_vedina
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 0
+		y = 1
+		relative_position_id = VED_build_more_retirement_homes
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_build_more_retirement_homes }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds +5% research speed, and +5% construction speed to Vedina Welfare spirit.
+		}
+	}
+
+	#Focus for Peasants Welfare Act
+	focus = {
+		id = VED_peasants_welfare_act
+		icon = GFX_focus_generic_concessions
+		x = 0
+		y = 1
+		relative_position_id = VED_raise_minimum_wage
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_raise_minimum_wage }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases monthly population increase by 5%
+		}
+	}
+
+	#Focus for Affordable Healthcare
+	focus = {
+		id = VED_affordable_healthcare
+		icon = GFX_VED_affordable_healthcare-50727
+		x = 0
+		y = 1
+		relative_position_id = VED_homeless_shelters_in_every_city
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_homeless_shelters_in_every_city }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases Division recovery Rate by +5%
+		}
+	}
+
+	#Focus for Reopen the College of Trunaham
+	focus = {
+		id = VED_reopen_the_college_of_trunaham
+		icon = GFX_focus_spa_save_the_alcazar
+		x = 1
+		y = 1
+		relative_position_id = VED_royal_bank_of_vedina
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_peasants_welfare_act 
+		}
+		prerequisite = { 
+			focus = VED_royal_bank_of_vedina 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Grant's an additional research slot.
+		}
+	}
+
+	#Focus for Worker's Safety Act
+	focus = {
+		id = VED_workers_safety_act
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 1
+		y = 1
+		relative_position_id = VED_peasants_welfare_act
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_peasants_welfare_act 
+		}
+		prerequisite = { 
+			focus = VED_affordable_healthcare 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's +5% building speed to Vedinan Welfare Spirit, Adds 1 off-map civilian factory
+		}
+	}
+
+	#Focus for Skattskyldiga-val
+	focus = {
+		id = VED_skattskyldigaval
+		icon = GFX_VED_skattskyldigaval-50726
+		x = 1
+		y = 2
+		relative_position_id = VED_reopen_the_college_of_trunaham
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_workers_safety_act 
+		}
+		prerequisite = { 
+			focus = VED_reopen_the_college_of_trunaham 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Grants a decision that will do one of the following depending on your choices. Can only be done once every six months.
+
+			#1) Reduce division training time by 10% for 6 months
+			#2) Increase population per month by 10% for 6 months
+			#3) Increase political power gain by 15% for 6 months
+		}
+	}
+
+	#Focus for A Democratic Kingdom
+	focus = {
+		id = VED_a_democratic_kingdom
+		icon = GFX_VED_a_democratic_kingdom-50944
+		x = 3
+		y = 1
+		relative_position_id = VED_declare_an_heir
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_tax_reform_overhaul 
+		}
+		prerequisite = { 
+			focus = VED_declare_an_heir 
+		}
+		prerequisite = { 
+			focus = VED_solidarity_forever 
+		}
+		prerequisite = { 
+			focus = VED_skattskyldigaval 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Triggers event 'A Symbol of Griffonian Harmonism', Triggers news event 'Vedina becomes leader of Harmonist ideology in Griffonia', adds national spirit 'Equestria of the East' which grants:
+			#-0.5% fascism support a month
+			#+0.5% harmonist support a month
+			#+10 relationship with all other harmonist nations
+			#-0.5 political drift
+		}
+	}
+
+	#Focus for The Vanguard of Harmony
+	focus = {
+		id = VED_the_vanguard_of_harmony
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
+		x = -4
+		y = 1
+		relative_position_id = VED_a_democratic_kingdom
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_democratic_kingdom }
+		mutually_exclusive = { focus = VED_the_bulwark_of_harmony }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Allows war goal (Puppet) on every fascist nation.
+		}
+	}
+
+	#Focus for The Bulwark of Harmony
+	focus = {
+		id = VED_the_bulwark_of_harmony
+		icon = GFX_goal_generic_build_tank
+		x = 4
+		y = 1
+		relative_position_id = VED_a_democratic_kingdom
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_democratic_kingdom }
+		mutually_exclusive = { focus = VED_the_vanguard_of_harmony }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Decreases build time for defensive structures by 40%
+		}
+	}
+
+	#Focus for A United Harmonist Front
+	focus = {
+		id = VED_a_united_harmonist_front
+		icon = GFX_focus_spa_fuse_the_parties
+		x = -4
+		y = 1
+		relative_position_id = VED_the_vanguard_of_harmony
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_vanguard_of_harmony }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Vedina will create an alliance. They can invite neighboring Harmonist nations through the decision tab.
+		}
+	}
+
+	#Focus for Til Ungdommen
+	focus = {
+		id = VED_til_ungdommen
+		icon = GFX_VED_til_ungdommen-53043
+		x = -2
+		y = 1
+		relative_position_id = VED_the_vanguard_of_harmony
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_vanguard_of_harmony }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's event 'Til Ungdommen: Lyrics', Add's 40,000 manpower.
+		}
+	}
+
+	#Focus for Peace through the Pen
+	focus = {
+		id = VED_peace_through_the_pen
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 0
+		y = 1
+		relative_position_id = VED_the_vanguard_of_harmony
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_vanguard_of_harmony }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds +5 relations with all nations
+		}
+	}
+	
+	#Focus for Crusaders of Harmony
+	focus = {
+		id = VED_crusaders_of_harmony
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 2
+		y = 1
+		relative_position_id = VED_the_vanguard_of_harmony
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_vanguard_of_harmony }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds national spirit 'Knights of Harmony' which adds the following:
+			#Soft Attack for Knights: +2
+			#Special Forces limit: +4
+			#Recovery Rate for Knight: +2
+		}
+	}
+
+	#Focus for Defense against Subversion
+	focus = {
+		id = VED_defense_against_subversion
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 4
+		y = 1
+		relative_position_id = VED_the_vanguard_of_harmony
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_the_bulwark_of_harmony 
+			focus = VED_the_vanguard_of_harmony 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Decreases ideological drift by -1
+		}
+	}
+
+	#Focus for Never Give Up
+	focus = {
+		id = VED_never_give_up
+		icon = GFX_goal_continuous_def_against_influence
+		x = -2
+		y = 1
+		relative_position_id = VED_the_bulwark_of_harmony
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_bulwark_of_harmony }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#+15 resistance growth speed
+		}
+	}
+	
+	#Focus for Kringsatt av Fiender
+	focus = {
+		id = VED_kringsatt_av_fiender
+		icon = GFX_VED_kringsatt_av_fiender-50946
+		x = 0
+		y = 1
+		relative_position_id = VED_the_bulwark_of_harmony
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_bulwark_of_harmony }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			#Vedina is surrounded by enemies. From all sides fascists, communists, and imperialists seek to undermine our nation and to put us under their heel's. We must prepare for any eventual attack, and overall we must hold the line.
+		}
+		completion_reward = {
+			#Increases max entrenchment by 15%
+		}
+	}
+	
+	#Focus for Enemies in the Front
+	focus = {
+		id = VED_enemies_in_the_front
+		icon = GFX_VED_enemies_in_the_front-50943
+		x = 2
+		y = 1
+		relative_position_id = VED_the_bulwark_of_harmony
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_bulwark_of_harmony }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds +15 breakthrough
+		}
+	}
+	
+	#Focus for Mercy for All
+	focus = {
+		id = VED_mercy_for_all
+		icon = GFX_goal_continuous_boost_freedom
+		x = 4
+		y = 1
+		relative_position_id = VED_the_bulwark_of_harmony
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_bulwark_of_harmony }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increase attack and defense of all divisions by 2
+		}
+	}
+
+	#Focus for The Crusade Abroad
+	focus = {
+		id = VED_the_crusade_abroad
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 0
+		y = 1
+		relative_position_id = VED_a_united_harmonist_front
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_united_harmonist_front }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's the focus 'Harmonist Crusaders' to each nation in the United Harmonist Front which adds:
+		}
+	}
+	
+	#Focus for Peacekeeping Operations
+	focus = {
+		id = VED_peacekeeping_operations
+		icon = GFX_VED_peacekeeping_operations-51426
+		x = 0
+		y = 1
+		relative_position_id = VED_til_ungdommen
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_til_ungdommen }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases amount of division you can send as volunteer's by 2.
+		}
+	}
+	
+	#Focus for Peace through the Sword
+	focus = {
+		id = VED_peace_through_the_sword
+		icon = GFX_VED_peace_through_the_sword-51422
+		x = 0
+		y = 1
+		relative_position_id = VED_peace_through_the_pen
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_peace_through_the_pen }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Grant's War Goal (Puppet) on all communist nations.
+		}
+	}
+	
+	#Focus for Righteous Champions
+	focus = {
+		id = VED_righteous_champions
+		icon = GFX_VED_righteous_champions-51421
+		x = 0
+		y = 1
+		relative_position_id = VED_crusaders_of_harmony
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_crusaders_of_harmony }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds an additional +2 special forces limit to 'Knights of Harmony' National Spirit
+		}
+	}
+	
+	#Focus for O.R.I.C.L.E.
+	focus = {
+		id = VED_oricle
+		icon = GFX_focus_TUR_the_sun_language_theory
+		x = 0
+		y = 1
+		relative_position_id = VED_defense_against_subversion
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_defense_against_subversion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Grants national spirit: O.R.I.C.L.E which gives:
+			#1 spy slot
+			#Increases spy network construction time by 1%
+			#Decreases the research time of Agency upgrades by 5%
+		}
+	}
+	
+	#Focus for Never Give In
+	focus = {
+		id = VED_never_give_in
+		icon = GFX_focus_focus_fra_fascist_threat
+		x = 0
+		y = 1
+		relative_position_id = VED_never_give_up
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_never_give_up }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases division organization by 5%
+		}
+	}
+	
+	#Focus for Under a Bloody Storm
+	focus = {
+		id = VED_under_a_bloody_storm
+		icon = GFX_VED_under_a_bloody_storm-53044
+		x = 0
+		y = 1
+		relative_position_id = VED_kringsatt_av_fiender
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_kringsatt_av_fiender }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds -15% division attrition
+		}
+	}
+	
+	#Focus for Comrades at our Side
+	focus = {
+		id = VED_comrades_at_our_side
+		icon = GFX_VED_comrades_at_our_side-53046
+		x = 0
+		y = 1
+		relative_position_id = VED_enemies_in_the_front
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_enemies_in_the_front }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#-25% organization loss when entrenched
+		}
+	}
+	
+	#Focus for Redemption for some
+	focus = {
+		id = VED_redemption_for_some
+		icon = GFX_goal_continuous_restrict_freedom
+		x = 0
+		y = 1
+		relative_position_id = VED_mercy_for_all
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_mercy_for_all }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			#When at war
+		}
+		completion_reward = {
+			#Add's division template 'Friendship Battalion's', spawns 6 divisions of friendship battalions in Trunaham
+		}
+	}
+
+	#Focus for Vad är ditt vapen?
+	focus = {
+		id = VED_vad_r_ditt_vapen
+		icon = GFX_VED_vad_r_ditt_vapen-51493
+		x = -1
+		y = 1
+		relative_position_id = VED_peace_through_the_sword
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_peacekeeping_operations 
+		}
+		prerequisite = { 
+			focus = VED_peace_through_the_sword 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds event 'Here is your sword', Increases manpower gain by 5%
+		}
+	}
+
+	#Focus for Compassion for the Surrendered
+	focus = {
+		id = VED_compassion_for_the_surrendered
+		icon = GFX_goal_anschluss
+		x = 1
+		y = 1
+		relative_position_id = VED_peace_through_the_sword
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_peace_through_the_sword 
+		}
+		prerequisite = { 
+			focus = VED_righteous_champions 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds event 'Comforting an Enemy' if at war, adds event 'PoW rights act' if at peace, all nations get news event 'Vedinans have a merciful army'
+			#Increases attack and defense for all Divisions by 1
+		}
+	}
+	
+	#Focus for Harmony or Death!
+	focus = {
+		id = VED_harmony_or_death
+		icon = GFX_goal_generic_secret_weapon
+		x = 1
+		y = 1
+		relative_position_id = VED_vad_r_ditt_vapen
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_vad_r_ditt_vapen 
+		}
+		prerequisite = { 
+			focus = VED_compassion_for_the_surrendered 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's war goal (Puppet) on all non-aligned nations.
+		}
+	}
+
+	#Focus for War is contempt for life
+	focus = {
+		id = VED_war_is_contempt_for_life
+		icon = GFX_focus_hol_war_on_pacifism
+		x = -2
+		y = 1
+		relative_position_id = VED_harmony_or_death
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_harmony_or_death }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Decreases resistance growth in occupied territories by 20%
+		}
+	}
+
+	#Focus for The only just war
+	focus = {
+		id = VED_the_only_just_war
+		icon = GFX_VED_the_only_just_war-51492
+		x = 0
+		y = 1
+		relative_position_id = VED_war_is_contempt_for_life
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_war_is_contempt_for_life }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases war support by 10%
+		}
+	}
+
+	#Focus for Pilgrimage to the Tree of Harmony
+	focus = {
+		id = VED_pilgrimage_to_the_tree_of_harmony
+		icon = GFX_VED_pilgrimage_to_the_tree_of_harmony-51488
+		x = 0
+		y = 1
+		relative_position_id = VED_the_only_just_war
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_only_just_war }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds event 'Skoldsvard and Lycklig in Equestria', Increases organization for all divisions by 5
+		}
+	}
+
+	#Focus for It falls to us, oath bound brothers...
+	focus = {
+		id = VED_it_falls_to_us_oath_bound_brothers
+		icon = GFX_VED_it_falls_to_us_oath_bound_brothers-51486
+		x = 0
+		y = 1
+		relative_position_id = VED_harmony_or_death
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_harmony_or_death }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Spawns two divisions of knights in Skyrim
+		}
+	}
+
+	#Focus for ...to stand where other's cannot...
+	focus = {
+		id = VED_to_stand_where_others_cannot
+		icon = GFX_VED_to_stand_where_others_cannot-51485
+		x = 0
+		y = 1
+		relative_position_id = VED_it_falls_to_us_oath_bound_brothers
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_it_falls_to_us_oath_bound_brothers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases special forces limit by +2
+		}
+	}
+
+	#Focus for ...for if not us, then who?
+	focus = {
+		id = VED_for_if_not_us_then_who
+		icon = GFX_VED_for_if_not_us_then_who-53051
+		x = 0
+		y = 1
+		relative_position_id = VED_to_stand_where_others_cannot
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_to_stand_where_others_cannot }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases manpower by 5000, increase manpower gain by 5%
+		}
+	}
+
+	#Focus for A Sacrifice for Harmony
+	focus = {
+		id = VED_a_sacrifice_for_harmony
+		icon = GFX_VED_a_sacrifice_for_harmony-51490
+		x = 2
+		y = 1
+		relative_position_id = VED_harmony_or_death
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_harmony_or_death }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases division recovery rate by .5
+		}
+	}
+
+	#Focus for Faith in Friendship
+	focus = {
+		id = VED_faith_in_friendship
+		icon = GFX_VED_faith_in_friendship-51487
+		x = 0
+		y = 1
+		relative_position_id = VED_a_sacrifice_for_harmony
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_sacrifice_for_harmony }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases organization by 5
+		}
+	}
+
+	#Focus for Death Loses
+	focus = {
+		id = VED_death_loses
+		icon = GFX_goal_generic_attack_allies
+		x = 0
+		y = 1
+		relative_position_id = VED_faith_in_friendship
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_faith_in_friendship }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases compliance gain by 50%
+		}
+	}
+
+	#Focus for Harmony World Wide
+	focus = {
+		id = VED_harmony_world_wide
+		icon = GFX_VED_harmony_world_wide-51489
+		x = 0
+		y = 1
+		relative_position_id = VED_for_if_not_us_then_who
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_death_loses 
+		}
+		prerequisite = { 
+			focus = VED_pilgrimage_to_the_tree_of_harmony 
+		}
+		prerequisite = { 
+			focus = VED_for_if_not_us_then_who 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			#All focus's (That are not mutually exclusive or locked behind them) are unlocked, no non-harmonist nations exist
+		}
+		completion_reward = {
+			#Add's event 'The final crusade, finally over'
+		}
+	}
+
+	#Focus for Patriotic Sentiment
+	focus = {
+		id = VED_patriotic_sentiment
+		icon = GFX_VED_patriotic_sentiment-51496
+		x = 2
+		y = 1
+		relative_position_id = VED_the_stridande_line
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_the_stridande_line 
+		}
+		prerequisite = { 
+			focus = VED_right_to_bear_arms 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases manpower gain by 5% monthly
+		}
+	}
+
+	#Focus for Master Defenders
+	focus = {
+		id = VED_master_defenders
+		icon = GFX_goal_generic_fortify_city
+		x = -1
+		y = 1
+		relative_position_id = VED_rigorous_training
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_is_a_safe_nation 
+		}
+		prerequisite = { 
+			focus = VED_modern_castles 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases entrenchment speed by 35%
+			#Increases max entrenchment by 15
+		}
+	}
+
+	#Focus for Right to bear arms
+	focus = {
+		id = VED_right_to_bear_arms
+		icon = GFX_goal_generic_small_arms
+		x = 1
+		y = 1
+		relative_position_id = VED_now_make_your_stand
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_innocents_behind_us 
+		}
+		prerequisite = { 
+			focus = VED_now_make_your_stand 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases manpower gain by 10% monthly
+		}
+	}
+
+	#Focus for An armed nation...
+	focus = {
+		id = VED_an_armed_nation
+		icon = GFX_focus_secret_rearmament
+		x = 0
+		y = 1
+		relative_position_id = VED_right_to_bear_arms
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_right_to_bear_arms }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases manpower by 40,000
+		}
+	}
+
+	#Focus for Fort Wingstrom
+	focus = {
+		id = VED_fort_wingstrom
+		icon = GFX_goal_generic_construct_military
+		x = 0
+		y = 1
+		relative_position_id = VED_the_stridande_line
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_stridande_line }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds 5 bunkers to Trunaham
+		}
+	}
+
+	#Focus for Modern Castles
+	focus = {
+		id = VED_modern_castles
+		icon = GFX_VED_modern_castles-51495
+		x = 0
+		y = 1
+		relative_position_id = VED_fort_wingstrom
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_fort_wingstrom }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Adds 3 bunkers to each of Vedina's cities.
+		}
+	}
+
+	#Focus for The Stridande Line
+	focus = {
+		id = VED_the_stridande_line
+		icon = GFX_VED_the_stridande_line-51494
+		x = 1
+		y = 1
+		relative_position_id = VED_never_surrender
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_now_make_your_stand 
+		}
+		prerequisite = { 
+			focus = VED_never_surrender
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's 2 bunkers to all of Vedina's border territories.
+		}
+	}
+
+	#Focus for Innocents behind us
+	focus = {
+		id = VED_innocents_behind_us
+		icon = GFX_VED_innocents_behind_us-53047
+		x = 0
+		y = 1
+		relative_position_id = VED_comrades_at_our_side
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_comrades_at_our_side }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#-15% compliance gain for enemy forces.
+		}
+	}
+
+	#Focus for Never Surrender
+	focus = {
+		id = VED_never_surrender
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 0
+		y = 1
+		relative_position_id = VED_never_give_in
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_never_give_in }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases division defense by 10%
+		}
+	}
+
+	#Focus for Now make your stand
+	focus = {
+		id = VED_now_make_your_stand
+		icon = GFX_VED_now_make_your_stand-53045
+		x = 0
+		y = 1
+		relative_position_id = VED_under_a_bloody_storm
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_under_a_bloody_storm }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Add's +4% reinforcement rate
+		}
+	}
+
+	#Focus for ...is a safe nation.
+	focus = {
+		id = VED_is_a_safe_nation
+		icon = GFX_goal_generic_military_sphere
+		x = 0
+		y = 1
+		relative_position_id = VED_an_armed_nation
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_an_armed_nation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increase defense for all units by 1.
+		}
+	}
+
+	#Focus for Rigorous Training
+	focus = {
+		id = VED_rigorous_training
+		icon = GFX_focus_hol_continue_the_war_in_batavia
+		x = 0
+		y = 1
+		relative_position_id = VED_patriotic_sentiment
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_fort_wingstrom 
+		}
+		prerequisite = { 
+			focus = VED_an_armed_nation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Increases special forces cap by 3
+		}
+	}
+
+	### EVIL SKOLD ###
+
+	#Focus for Succumbing at Last
+	focus = {
+		id = VED_succumbing_at_last
+		icon = GFX_goal_unknown
+		x = 0
+		y = 32
+		relative_position_id = VED_Ondska
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Corrupt the Nobles
+	focus = {
+		id = VED_corrupt_the_nobles
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_succumbing_at_last
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_succumbing_at_last }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Slay the Knights
+	focus = {
+		id = VED_slay_the_knights
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_succumbing_at_last
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_succumbing_at_last }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Promote Corrupted Officers
+	focus = {
+		id = VED_promote_corrupted_officers
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_corrupt_the_nobles
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_corrupt_the_nobles }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Burn the Chapel to the Wise Lady
+	focus = {
+		id = VED_burn_the_chapel_to_the_wise_lady
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_slay_the_knights
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_slay_the_knights }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Duel with Gottfried
+	focus = {
+		id = VED_duel_with_gottfried
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_burn_the_chapel_to_the_wise_lady
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_promote_corrupted_officers 
+		}
+		prerequisite = { 
+			focus = VED_burn_the_chapel_to_the_wise_lady 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Purge of Skyrim
+	focus = {
+		id = VED_the_purge_of_skyrim
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_duel_with_gottfried
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_duel_with_gottfried }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Black Banners over Trunaham
+	focus = {
+		id = VED_black_banners_over_trunaham
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_the_purge_of_skyrim
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_door_to_door_house_to_house 
+		}
+		prerequisite = { 
+			focus = VED_the_purge_of_skyrim 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Demand Fealty
+	focus = {
+		id = VED_demand_fealty
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_duel_with_gottfried
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_duel_with_gottfried }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for No Mercy for the Traitors!
+	focus = {
+		id = VED_no_mercy_for_the_traitors
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_the_purge_of_skyrim
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_demand_fealty 
+		}
+		prerequisite = { 
+			focus = VED_the_purge_of_skyrim 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Door to Door, House to House
+	focus = {
+		id = VED_door_to_door_house_to_house
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_duel_with_gottfried
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_duel_with_gottfried }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Destroy the Resistence
+	focus = {
+		id = VED_destroy_the_resistence
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_no_mercy_for_the_traitors
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_no_mercy_for_the_traitors 
+		}
+		prerequisite = { 
+			focus = VED_black_banners_over_trunaham 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Burn the Knight Quarter
+	focus = {
+		id = VED_burn_the_knight_quarter
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_black_banners_over_trunaham
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_black_banners_over_trunaham }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Execute our Beloved
+	focus = {
+		id = VED_execute_our_beloved
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_no_mercy_for_the_traitors
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_no_mercy_for_the_traitors }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Eternal Hopelessness
+	focus = {
+		id = VED_eternal_hopelessness
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_destroy_the_resistence
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_destroy_the_resistence 
+		}
+		prerequisite = { 
+			focus = VED_burn_the_knight_quarter 
+		}
+		prerequisite = { 
+			focus = VED_execute_our_beloved 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Purge Those that Remain
+	focus = {
+		id = VED_purge_those_that_remain
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_eternal_hopelessness
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_eternal_hopelessness }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Malevolent Reform
+	focus = {
+		id = VED_malevolent_reform
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_eternal_hopelessness
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_eternal_hopelessness }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strengthen the Cult of Maar
+	focus = {
+		id = VED_strengthen_the_cult_of_maar
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_eternal_hopelessness
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_eternal_hopelessness }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The New Magehold
+	focus = {
+		id = VED_the_new_magehold
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_strengthen_the_cult_of_maar
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_strengthen_the_cult_of_maar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Punish Weakness
+	focus = {
+		id = VED_punish_weakness
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_empower_the_slave_trade
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_empower_the_slave_trade }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Empower the Slave Trade
+	focus = {
+		id = VED_empower_the_slave_trade
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_purge_those_that_remain
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_purge_those_that_remain }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Return to Serfdom
+	focus = {
+		id = VED_return_to_serfdom
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_malevolent_reform
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_malevolent_reform }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dark Rituals
+	focus = {
+		id = VED_dark_rituals
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_new_magehold
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_new_magehold }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dark Armaments
+	focus = {
+		id = VED_dark_armaments
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_return_to_serfdom
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_return_to_serfdom }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Mirror's Call
+	focus = {
+		id = VED_the_mirrors_call
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_punish_weakness
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_dark_rituals 
+		}
+		prerequisite = { 
+			focus = VED_dark_armaments 
+		}
+		prerequisite = { 
+			focus = VED_punish_weakness 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dark Knights
+	focus = {
+		id = VED_dark_knights
+		icon = GFX_goal_unknown
+		x = -4
+		y = 1
+		relative_position_id = VED_return_to_serfdom
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_return_to_serfdom }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Within our Nature
+	focus = {
+		id = VED_within_our_nature
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_dark_knights
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_dark_knights }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Corrupt Remaining Orders
+	focus = {
+		id = VED_corrupt_remaining_orders
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_dark_knights
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_dark_knights }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Pardon Oathbreakers
+	focus = {
+		id = VED_pardon_oathbreakers
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_dark_knights
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_dark_knights }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Fallen Knight
+	focus = {
+		id = VED_the_fallen_knight
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_corrupt_remaining_orders
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_within_our_nature 
+		}
+		prerequisite = { 
+			focus = VED_corrupt_remaining_orders 
+		}
+		prerequisite = { 
+			focus = VED_pardon_oathbreakers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Small Step for the Corrupt
+	focus = {
+		id = VED_a_small_step_for_the_corrupt
+		icon = GFX_goal_unknown
+		x = 4
+		y = 1
+		relative_position_id = VED_the_new_magehold
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_new_magehold }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Blasphemous Acts
+	focus = {
+		id = VED_blasphemous_acts
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_a_small_step_for_the_corrupt
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_small_step_for_the_corrupt }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Raise the Dead
+	focus = {
+		id = VED_raise_the_dead
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_a_small_step_for_the_corrupt
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_small_step_for_the_corrupt }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Maledictus, Inficimur
+	focus = {
+		id = VED_maledictus_inficimur
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_a_small_step_for_the_corrupt
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_small_step_for_the_corrupt }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Create the Lich-Lord
+	focus = {
+		id = VED_create_the_lichlord
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_raise_the_dead
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_blasphemous_acts 
+		}
+		prerequisite = { 
+			focus = VED_raise_the_dead 
+		}
+		prerequisite = { 
+			focus = VED_maledictus_inficimur 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ritual Preperations
+	focus = {
+		id = VED_ritual_preperations
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_mirrors_call
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_create_the_lichlord 
+		}
+		prerequisite = { 
+			focus = VED_the_fallen_knight 
+		}
+		prerequisite = { 
+			focus = VED_the_mirrors_call 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Begin the Ritual
+	focus = {
+		id = VED_begin_the_ritual
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_ritual_preperations
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_ritual_preperations }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sacrifice Unwilling Souls
+	focus = {
+		id = VED_sacrifice_unwilling_souls
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_begin_the_ritual
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_begin_the_ritual }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Destroy the Philactory
+	focus = {
+		id = VED_destroy_the_philactory
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_begin_the_ritual
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_begin_the_ritual }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The End of Days
+	focus = {
+		id = VED_the_end_of_days
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_begin_the_ritual
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_begin_the_ritual }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Twist of the Knife
+	focus = {
+		id = VED_the_twist_of_the_knife
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_end_of_days
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_end_of_days }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	### SKOLD GETS FUCKED ###
+
+	#Focus for What We Never Wanted to See
+	focus = {
+		id = VED_what_we_never_wanted_to_see
+		icon = GFX_goal_unknown
+		x = 20
+		y = 32
+		relative_position_id = VED_Ondska
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Imprison and Reform
+	focus = {
+		id = VED_imprison_and_reform
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_the_queen_on_trial
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_queen_on_trial }
+		mutually_exclusive = { focus = VED_execution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Hunt Collaborators
+	focus = {
+		id = VED_hunt_collaborators
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_victory_at_what_cost
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_victory_at_what_cost }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Pardon Conscripts
+	focus = {
+		id = VED_pardon_conscripts
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_declare_national_holiday
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_hunt_collaborators 
+		}
+		prerequisite = { 
+			focus = VED_declare_national_holiday 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rebuilding what was Lost
+	focus = {
+		id = VED_rebuilding_what_was_lost
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_declare_national_holiday
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_free_slaves 
+		}
+		prerequisite = { 
+			focus = VED_declare_national_holiday 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Free Slaves
+	focus = {
+		id = VED_free_slaves
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_victory_at_what_cost
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_victory_at_what_cost }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Declare National Holiday
+	focus = {
+		id = VED_declare_national_holiday
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_victory_at_what_cost
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_victory_at_what_cost }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Declaring a New Regent
+	focus = {
+		id = VED_declaring_a_new_regent
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_pardon_conscripts
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_pardon_conscripts 
+		}
+		prerequisite = { 
+			focus = VED_rebuilding_what_was_lost 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Jarnkoping Irregulars
+	focus = {
+		id = VED_the_jarnkoping_irregulars
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_defensive_campaign
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_defensive_campaign }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Queen on Trial
+	focus = {
+		id = VED_the_queen_on_trial
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_defensive_campaign
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_defensive_campaign }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Execution
+	focus = {
+		id = VED_execution
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_the_queen_on_trial
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_queen_on_trial }
+		mutually_exclusive = { focus = VED_imprison_and_reform }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Flygham Liberation
+	focus = {
+		id = VED_the_flygham_liberation
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_defensive_campaign
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_defensive_campaign }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Refuge for the Innocent
+	focus = {
+		id = VED_refuge_for_the_innocent
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_but_we_were_prepared_for
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_but_we_were_prepared_for }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for But We Were Prepared For
+	focus = {
+		id = VED_but_we_were_prepared_for
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_what_we_never_wanted_to_see
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_what_we_never_wanted_to_see }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gather Loyalists
+	focus = {
+		id = VED_gather_loyalists
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_but_we_were_prepared_for
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_but_we_were_prepared_for }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Defensive Campaign
+	focus = {
+		id = VED_defensive_campaign
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_contingency_plan_hrund
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_gather_loyalists 
+		}
+		prerequisite = { 
+			focus = VED_refuge_for_the_innocent 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Victory... at what cost?
+	focus = {
+		id = VED_victory_at_what_cost
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_execution
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_imprison_and_reform 
+			focus = VED_execution 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reflecting on Love
+	focus = {
+		id = VED_reflecting_on_love
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_king_stridande
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_king_stridande }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Further Military Reform
+	focus = {
+		id = VED_further_military_reform
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_king_stridande
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_king_stridande }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for King Stridande
+	focus = {
+		id = VED_king_stridande
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_declaring_a_new_regent
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_declaring_a_new_regent }
+		mutually_exclusive = { focus = VED_queen_lycklig }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Time of Mourning
+	focus = {
+		id = VED_a_time_of_mourning
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_queen_lycklig
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_queen_lycklig }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Lessons from The Bad
+	focus = {
+		id = VED_lessons_from_the_bad
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_a_time_of_mourning
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_a_time_of_mourning 
+		}
+		prerequisite = { 
+			focus = VED_punish_the_practitioners 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Continued Social Programs
+	focus = {
+		id = VED_continued_social_programs
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_queen_lycklig
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_queen_lycklig }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Punish the Practitioners
+	focus = {
+		id = VED_punish_the_practitioners
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_queen_lycklig
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_king_stridande 
+			focus = VED_queen_lycklig 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Honoring the Good
+	focus = {
+		id = VED_honoring_the_good
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_a_time_of_mourning
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_continued_social_programs 
+		}
+		prerequisite = { 
+			focus = VED_a_time_of_mourning 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Queen Lycklig
+	focus = {
+		id = VED_queen_lycklig
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_declaring_a_new_regent
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_declaring_a_new_regent }
+		mutually_exclusive = { focus = VED_king_stridande }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Accepting New Duties
+	focus = {
+		id = VED_accepting_new_duties
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_reflecting_on_love
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_further_military_reform 
+		}
+		prerequisite = { 
+			focus = VED_reflecting_on_love 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for What Love that Remains
+	focus = {
+		id = VED_what_love_that_remains
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_reflecting_on_love
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_punish_the_practitioners 
+		}
+		prerequisite = { 
+			focus = VED_reflecting_on_love 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The King-Marshal
+	focus = {
+		id = VED_the_kingmarshal
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_what_love_that_remains
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_what_love_that_remains 
+		}
+		prerequisite = { 
+			focus = VED_accepting_new_duties 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Continuing her Legacy
+	focus = {
+		id = VED_continuing_her_legacy
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_honoring_the_good
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_honoring_the_good 
+		}
+		prerequisite = { 
+			focus = VED_lessons_from_the_bad 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Coronation
+	focus = {
+		id = VED_the_coronation
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_continuing_her_legacy
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_the_kingmarshal 
+			focus = VED_continuing_her_legacy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Destruction of Magehold
+	focus = {
+		id = VED_the_destruction_of_magehold
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		relative_position_id = VED_punish_the_practitioners
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_punish_the_practitioners }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Battle for Haromy
+	focus = {
+		id = VED_the_battle_for_haromy
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_continuing_her_legacy
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_continuing_her_legacy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Harmony Without Borders
+	focus = {
+		id = VED_harmony_without_borders
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_the_battle_for_haromy
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_battle_for_haromy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Refuge from War
+	focus = {
+		id = VED_a_refuge_from_war
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_the_battle_for_haromy
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_battle_for_haromy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Restoring our Reputation
+	focus = {
+		id = VED_restoring_our_reputation
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_harmony_without_borders
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_harmony_without_borders 
+		}
+		prerequisite = { 
+			focus = VED_a_refuge_from_war 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reverence for the King-Father
+	focus = {
+		id = VED_reverence_for_the_kingfather
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_kingmarshal
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_kingmarshal }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Strength of Stridande
+	focus = {
+		id = VED_the_strength_of_stridande
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_reverence_for_the_kingfather
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_reverence_for_the_kingfather }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Legacy of the Wingstroms
+	focus = {
+		id = VED_the_legacy_of_the_wingstroms
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_reverence_for_the_kingfather
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_reverence_for_the_kingfather }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Military Monarchy
+	focus = {
+		id = VED_a_military_monarchy
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_the_strength_of_stridande
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_the_strength_of_stridande 
+		}
+		prerequisite = { 
+			focus = VED_the_legacy_of_the_wingstroms 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Contingency Plan: Hrund
+	focus = {
+		id = VED_contingency_plan_hrund
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_but_we_were_prepared_for
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_but_we_were_prepared_for }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	### Wingstrom ###
+
+	#Focus for King Wingstrom's Reforms
+	focus = {
+		id = VED_king_wingstroms_reforms
+		icon = GFX_VED_king_wingstroms_reforms-57294
+		x = -5
+		y = 2
+		relative_position_id = VED_Role_Of_The_King
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_Matters_State_Custom }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#Focus for Electrical Power
+	focus = {
+		id = VED_electrical_power
+		icon = GFX_VED_electrical_power-57313
+		x = 0
+		y = 1
+		relative_position_id = VED_public_education
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_public_education }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Grant Scolarships
+	focus = {
+		id = VED_grant_scolarships
+		icon = GFX_VED_grant_scolarships-57314
+		x = 1
+		y = 1
+		relative_position_id = VED_wingstrom_university
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_wingstrom_university }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Public Education
+	focus = {
+		id = VED_public_education
+		icon = GFX_VED_public_education-57318
+		x = -1
+		y = 1
+		relative_position_id = VED_wingstrom_university
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_wingstrom_university }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gain a Grip on the Mountains
+	focus = {
+		id = VED_gain_a_grip_on_the_mountains
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 0
+		y = 1
+		relative_position_id = VED_anticommunist_rhetoric
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_anticommunist_rhetoric }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Guard the Borders
+	focus = {
+		id = VED_guard_the_borders
+		icon = GFX_VED_guard_the_borders-57308
+		x = 0
+		y = 1
+		relative_position_id = VED_appeasing_the_irredentists
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_appeasing_the_irredentists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Anti-Communist Rhetoric
+	focus = {
+		id = VED_anticommunist_rhetoric
+		icon = GFX_VED_anticommunist_rhetoric-57309
+		x = 2
+		y = 1
+		relative_position_id = VED_appeasing_the_irredentists
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_appeasing_the_irredentists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reinforce the Royal Flotilla
+	focus = {
+		id = VED_reinforce_the_royal_flotilla
+		icon = GFX_VED_reinforce_the_royal_flotilla-57304
+		x = -2
+		y = 1
+		relative_position_id = VED_appeasing_the_irredentists
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_appeasing_the_irredentists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Wingstrom University
+	focus = {
+		id = VED_wingstrom_university
+		icon = GFX_VED_wingstrom_university-57321
+		x = 5
+		y = 0
+		relative_position_id = VED_appeasing_the_irredentists
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_Matters_State_Custom }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Appeasing the Irredentists
+	focus = {
+		id = VED_appeasing_the_irredentists
+		icon = GFX_VED_appeasing_the_irredentists-57302
+		x = 5
+		y = 0
+		relative_position_id = VED_king_wingstroms_reforms
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_Matters_State_Custom }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Urban Industrialization
+	focus = {
+		id = VED_urban_industrialization
+		icon = GFX_VED_urban_industrialization-57298
+		x = 0
+		y = 1
+		relative_position_id = VED_peasant_housing_act
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_peasant_housing_act }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Investigate Corrupt Nobles
+	focus = {
+		id = VED_investigate_corrupt_nobles
+		icon = GFX_VED_investigate_corrupt_nobles-57301
+		x = 0
+		y = 1
+		relative_position_id = VED_punish_oathbreakers
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_punish_oathbreakers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Punish Oathbreakers
+	focus = {
+		id = VED_punish_oathbreakers
+		icon = GFX_VED_punish_oathbreakers-57300
+		x = -1
+		y = 1
+		relative_position_id = VED_king_wingstroms_reforms
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_king_wingstroms_reforms }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Peasant Housing Act
+	focus = {
+		id = VED_peasant_housing_act
+		icon = GFX_VED_peasant_housing_act-57295
+		x = 1
+		y = 1
+		relative_position_id = VED_king_wingstroms_reforms
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_king_wingstroms_reforms }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Take Winghagen
+	focus = {
+		id = VED_take_winghagen
+		icon = GFX_VED_take_winghagen-57311
+		x = 0
+		y = 1
+		relative_position_id = VED_guard_the_borders
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_guard_the_borders }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reclaim Winterhold
+	focus = {
+		id = VED_reclaim_winterhold
+		icon = GFX_VED_reclaim_winterhold-57310
+		x = 0
+		y = 1
+		relative_position_id = VED_reinforce_the_royal_flotilla
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_reinforce_the_royal_flotilla }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Vedinan CMC
+	focus = {
+		id = VED_vedinan_cmc
+		icon = GFX_VED_vedinan_cmc-57312
+		x = 0
+		y = 1
+		relative_position_id = VED_grant_scolarships
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_grant_scolarships }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	### SKOLD GOOD ###
+
+	#Focus for Victory of Will
+	focus = {
+		id = VED_victory_of_will
+		icon = GFX_goal_unknown
+		x = 15
+		y = 0
+		relative_position_id = VED_what_we_never_wanted_to_see
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Monument to Harmony
+	focus = {
+		id = VED_a_monument_to_harmony
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_champion_of_the_lady
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_champion_of_the_lady }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Holy Arms
+	focus = {
+		id = VED_holy_arms
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_pious_defenders
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_pious_defenders }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Hero of Harmonism
+	focus = {
+		id = VED_a_hero_of_harmonism
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_harmony_for_all
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_harmony_for_all }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Blades of Harmony
+	focus = {
+		id = VED_the_blades_of_harmony
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_a_hero_of_harmonism
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_a_hero_of_harmonism 
+		}
+		prerequisite = { 
+			focus = VED_friendship_school_of_trunaham 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Idyylic Crusader
+	focus = {
+		id = VED_the_idyylic_crusader
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_victory_of_will
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_victory_of_will }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Vedina Withstands!
+	focus = {
+		id = VED_vedina_withstands
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_victory_of_will
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_victory_of_will }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Wielder of the Godsword
+	focus = {
+		id = VED_wielder_of_the_godsword
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_skoldsvards_own_order
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_the_idyylic_crusader 
+		}
+		prerequisite = { 
+			focus = VED_skoldsvards_own_order 
+		}
+		prerequisite = { 
+			focus = VED_vedina_withstands 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Champion of the Lady
+	focus = {
+		id = VED_champion_of_the_lady
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_the_idyylic_crusader
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_the_idyylic_crusader }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Friendship School of Trunaham
+	focus = {
+		id = VED_friendship_school_of_trunaham
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_harmony_for_all
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_harmony_for_all }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build the Cathedral of Trunaham
+	focus = {
+		id = VED_build_the_cathedral_of_trunaham
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_vedina_withstands
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_vedina_withstands }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Pious Defenders
+	focus = {
+		id = VED_pious_defenders
+		icon = GFX_goal_unknown
+		x = -5
+		y = 2
+		relative_position_id = VED_victory_of_will
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_victory_of_will }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Harmony for All
+	focus = {
+		id = VED_harmony_for_all
+		icon = GFX_goal_unknown
+		x = 5
+		y = 2
+		relative_position_id = VED_victory_of_will
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_victory_of_will }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Clergy of the Lady
+	focus = {
+		id = VED_clergy_of_the_lady
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = VED_pious_defenders
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_pious_defenders }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Holy Vedina
+	focus = {
+		id = VED_holy_vedina
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		relative_position_id = VED_wielder_of_the_godsword
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_a_monument_to_harmony 
+		}
+		prerequisite = { 
+			focus = VED_wielder_of_the_godsword 
+		}
+		prerequisite = { 
+			focus = VED_consecrate_sacred_land 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Discerning the Will of the Lady
+	focus = {
+		id = VED_discerning_the_will_of_the_lady
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = VED_clergy_of_the_lady
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_clergy_of_the_lady 
+		}
+		prerequisite = { 
+			focus = VED_holy_arms 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Consecrate Sacred Land
+	focus = {
+		id = VED_consecrate_sacred_land
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_build_the_cathedral_of_trunaham
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_build_the_cathedral_of_trunaham }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Purge Evil from the World
+	focus = {
+		id = VED_purge_evil_from_the_world
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_holy_vedina
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_holy_vedina 
+		}
+		prerequisite = { 
+			focus = VED_the_blades_of_harmony 
+		}
+		prerequisite = { 
+			focus = VED_discerning_the_will_of_the_lady 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Fall of Barrad
+	focus = {
+		id = VED_the_fall_of_barrad
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_purge_evil_from_the_world
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_purge_evil_from_the_world }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Purify the Mountains and the Forests
+	focus = {
+		id = VED_purify_the_mountains_and_the_forests
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = VED_purge_evil_from_the_world
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_purge_evil_from_the_world }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Cults of Oleania
+	focus = {
+		id = VED_the_cults_of_oleania
+		icon = GFX_goal_unknown
+		x = -4
+		y = 1
+		relative_position_id = VED_purge_evil_from_the_world
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_purge_evil_from_the_world }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tame the Storm
+	focus = {
+		id = VED_tame_the_storm
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = VED_purge_evil_from_the_world
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_purge_evil_from_the_world }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Dragon of Lushi
+	focus = {
+		id = VED_the_dragon_of_lushi
+		icon = GFX_goal_unknown
+		x = 4
+		y = 1
+		relative_position_id = VED_purge_evil_from_the_world
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_purge_evil_from_the_world }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Skoldsvard's Own Order
+	focus = {
+		id = VED_skoldsvards_own_order
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = VED_victory_of_will
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_victory_of_will }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

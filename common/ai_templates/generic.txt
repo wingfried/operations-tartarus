@@ -37,7 +37,7 @@ Infantry_GEN = {
 		factor = 5		
 				}	
 
-	match_to_count = 0.5
+	match_to_count = 0.3
 
 Infantrybase_GEN = {
 
@@ -3393,7 +3393,7 @@ Artillery_GEN = {
 		factor = 1.5
 	}
 
-	match_to_count = 0.70
+	match_to_count = 0.90
 
 	artillery_default = {
 		

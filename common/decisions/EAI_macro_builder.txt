@@ -1,0 +1,350 @@
+Macro_Builder = {
+
+	GEN_Construction_Synth = {
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 360
+						
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+			factor = 0
+			AND = {
+			tag = CHN
+			date < 1011.1.1
+			}
+			}
+		}
+		
+		visible = {
+		is_ai = yes
+		has_tech = synth_oil_experiments
+		check_variable = { resource_imported@rubber > 1 }
+		any_owned_state = {
+		AND = {
+		infrastructure > 9
+		}
+		free_building_slots = {
+		building = synthetic_refinery
+		size > 0
+		include_locked = no
+		}	
+		}
+		}
+											
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_Synth target: [From.GetName]"
+	
+			random_owned_state = {
+				limit = {
+				infrastructure > 9
+				free_building_slots = {
+				building = synthetic_refinery
+				size > 0
+				include_locked = no
+				}
+				}
+				
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+	}
+		
+	GEN_Construction_crystals = {
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 1
+		
+		
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+		is_ai = no
+		any_owned_state = {
+		AND = {
+		check_variable = {
+		resource@crystals > 14
+		}
+		infrastructure < 10	
+		}		
+		}
+		}
+		
+		
+							
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_crystals target: [From.GetName]"
+	
+			every_owned_state = {
+			if = {
+				limit = {
+				check_variable = {
+				resource@crystals > 14
+				}
+				}
+				
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+		}
+	}
+
+	GEN_Construction_steel = {
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 1
+		
+		
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+		is_ai = no
+		any_owned_state = {
+		AND = {
+		check_variable = {
+		resource@steel > 14
+		}
+		infrastructure < 10				
+		}		
+		}
+		}
+		
+		
+							
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_steel target: [From.GetName]"
+	
+			every_owned_state = {
+			if = {
+				limit = {
+				check_variable = {
+				resource@steel > 14
+				}
+				}
+				
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = no
+				}
+				}
+				}
+			}
+		}
+				
+	GEN_Construction_aluminium = {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 1
+		
+		
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+		is_ai = no
+		any_owned_state = {
+		AND = {
+		check_variable = {
+		resource@aluminium > 14
+		}		
+		infrastructure < 10				
+		}
+		}
+		}
+		
+		
+							
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_aluminium target: [From.GetName]"
+	
+			every_owned_state = {
+			if = {
+				limit = {
+				check_variable = {
+				resource@aluminium > 14
+				}
+				}
+				
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = no
+				}
+				}
+			}
+		}
+	}
+				
+				
+	GEN_Construction_rubber = {
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 1
+		
+		
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+		is_ai = no
+		any_owned_state = {
+		AND = {
+		check_variable = {
+		resource@rubber > 14
+		}
+		infrastructure < 10				
+		}		
+		}		
+		}
+		
+		
+							
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_rubber target: [From.GetName]"
+	
+			every_owned_state = {
+			if = {
+				limit = {
+				check_variable = {
+				resource@rubber > 14
+				}
+				}
+				
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = no
+				}
+				}
+				}
+				}
+				}
+				
+				
+	GEN_Construction_tungsten = {
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 1
+		
+		
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+		is_ai = no
+		any_owned_state = {
+		AND = {
+		check_variable = {
+		resource@tungsten > 14
+		}
+		infrastructure < 10				
+		}		
+		}
+		}
+		
+		
+							
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_tungsten target: [From.GetName]"
+	
+			every_owned_state = {
+			if = {
+				limit = {
+				check_variable = {
+				resource@tungsten > 14
+				}
+				}
+				
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = no
+				}
+				}
+				}
+				}
+				}
+				
+				
+	GEN_Construction_chromium = {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 1
+		
+		
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+		is_ai = no
+		any_owned_state = {
+		AND = {
+		check_variable = {
+		resource@chromium > 14
+		}
+		infrastructure < 10				
+		}		
+		}
+		}
+		
+		
+							
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_chromium target: [From.GetName]"
+	
+			every_owned_state = {
+			if = {
+				limit = {
+				check_variable = {
+				resource@chromium > 14
+				}
+				}
+				
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = no
+				}
+				}
+			}
+		}
+	}	 					
+}

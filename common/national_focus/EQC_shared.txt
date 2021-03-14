@@ -5,9 +5,9 @@
 shared_focus = {
 	id = EQC_legacy_of_the_cockatrice_war
 	icon = GFX_goal_AST_state_of_army
-	x = 2
+	x = 1
 	y = 0
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 4
@@ -41,7 +41,7 @@ shared_focus = {
 	relative_position_id = EQC_legacy_of_the_cockatrice_war
 	x = -1
 	y = 1
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 2
@@ -60,7 +60,7 @@ shared_focus = {
 		add_tech_bonus = {
 			name = EQC_a_mobile_army
 			bonus = 1.0
-			uses = 2
+			uses = 1
 			category = motorized_equipment
 		}
 	}
@@ -74,7 +74,7 @@ shared_focus = {
 	relative_position_id = EQC_legacy_of_the_cockatrice_war
 	x = 1
 	y = 1
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 4
@@ -101,13 +101,13 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = EQC_royal_military_academy_sunset
+	id = EQC_royal_military_academy_sunset_custom
 	icon = GFX_goal_generic_pony_volunteer
 	prerequisite = { focus = EQC_a_mobile_army focus = EQC_bits_gun }
 	relative_position_id = EQC_legacy_of_the_cockatrice_war
 	x = 0
 	y = 2
-	cost = 8
+	cost = 7.2
 	dynamic = yes
 	ai_will_do = {
 		factor = 4
@@ -122,11 +122,9 @@ shared_focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus EQC_royal_military_academy_sunset"
+		log = "[GetDateText]: [Root.GetName]: Focus EQC_royal_military_academy_sunset_custom"
+		custom_effect_tooltip = mil_aca_sun_tp
 		add_ideas = EQC_royal_military_academy_sunset
-		every_army_leader = {
-			add_planning = 1
-		}
 	}
 	search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
 }
@@ -134,11 +132,11 @@ shared_focus = {
 shared_focus = {
 	id = EQC_new_mareland_catering_corps
 	icon = GFX_goal_planning_bonus
-	prerequisite = { focus = EQC_royal_military_academy_sunset }
-	relative_position_id = EQC_royal_military_academy_sunset
+	prerequisite = { focus = EQC_royal_military_academy_sunset_custom }
+	relative_position_id = EQC_royal_military_academy_sunset_custom
 	x = -1
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 2
@@ -162,11 +160,11 @@ shared_focus = {
 shared_focus = {
 	id = EQC_nmac_spirit
 	icon = GFX_goal_AST_clarify_anzac
-	prerequisite = { focus = EQC_royal_military_academy_sunset }
-	relative_position_id = EQC_royal_military_academy_sunset
+	prerequisite = { focus = EQC_royal_military_academy_sunset_custom }
+	relative_position_id = EQC_royal_military_academy_sunset_custom
 	x = 1
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 5
@@ -194,7 +192,7 @@ shared_focus = {
 	relative_position_id = EQC_new_mareland_catering_corps
 	x = 1
 	y = 1
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 3
@@ -212,9 +210,10 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus EQC_hackhoof_shovel"
 		add_tech_bonus = {
 			name = infantry_bonus
-			bonus = 1.0
-			uses = 2
-			category = support_tech
+			bonus = 1.00
+			uses = 1
+			ahead_reduction = 2
+			category = engineers_tech
 		}
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }
@@ -227,7 +226,7 @@ shared_focus = {
 	relative_position_id = EQC_a_mobile_army
 	x = -1
 	y = 1
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 2
@@ -246,7 +245,7 @@ shared_focus = {
 		add_tech_bonus = {
 			name = EQC_sentinel_project
 			bonus = 1.0
-			uses = 2
+			uses = 1
 			category = armor
 		}
 	}
@@ -260,7 +259,7 @@ shared_focus = {
 	relative_position_id = EQC_bits_gun
 	x = 1
 	y = 1
-	cost = 8
+	cost = 4.3
 	dynamic = yes
 	ai_will_do = {
 		factor = 2
@@ -279,7 +278,7 @@ shared_focus = {
 		add_tech_bonus = {
 			name = arty_bonus
 			bonus = 1.0
-			uses = 2
+			uses = 1
 			category = artillery
 		}
 	}
@@ -294,7 +293,7 @@ shared_focus = {
 	dynamic = yes
 	x = 0
 	y = 2
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 2
@@ -333,7 +332,7 @@ shared_focus = {
 	relative_position_id = EQC_sentinel_project
 	x = 0
 	y = 2
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 2
@@ -372,7 +371,7 @@ shared_focus = {
 	relative_position_id = EQC_marine_assault_tactics
 	x = -2
 	y = 1
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 2
@@ -405,7 +404,7 @@ shared_focus = {
 	relative_position_id = EQC_unconventional_warfare
 	x = 0
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 3
@@ -443,9 +442,9 @@ shared_focus = {
 	id = EQC_expand_manehatten_harbour
 	icon = GFX_goal_AST_state_of_RAN
 	relative_position_id = EQC_legacy_of_the_cockatrice_war
-	x = 6
+	x = 7
 	y = 0
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 4
@@ -508,7 +507,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = EQC_expand_manehatten_harbour
 
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 3
@@ -531,7 +530,7 @@ shared_focus = {
 		add_tech_bonus = {
 			name = EQC_commerce_protection
 			bonus = 1.0
-			uses = 2
+			uses = 1
 			category = fleet_in_being_tree
 			category = convoy_defense_tree
 		}
@@ -548,7 +547,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = EQC_expand_manehatten_harbour
 
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 2
@@ -571,7 +570,7 @@ shared_focus = {
 		add_tech_bonus = {
 			name = EQC_seawolves
 			bonus = 1.0
-			uses = 2
+			uses = 1
 			category = submarine_doctrine
 		}
 	}
@@ -586,7 +585,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = EQC_commerce_protection
 
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 2
@@ -631,7 +630,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = EQC_seawolves
 	dynamic = yes
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 2
@@ -654,7 +653,7 @@ shared_focus = {
 		add_tech_bonus = {
 			name = AST_royal_australian_submarine_service
 			bonus = 1.0
-			uses = 2
+			uses = 1
 			category = ss_tech
 		}
 	}
@@ -669,7 +668,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = EQC_commerce_protection
 
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 2
@@ -702,7 +701,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = EQC_merchant_navy
 
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 2
@@ -747,7 +746,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = EQC_modernise_the_fleet
 
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 2
@@ -802,7 +801,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = EQC_modernise_the_fleet
 
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 2
@@ -866,7 +865,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = EQC_naval_auxiliary_patrol
 
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 2
@@ -889,7 +888,7 @@ shared_focus = {
 		add_tech_bonus = {
 			name = EQC_project_kununurra
 			bonus = 1.0
-			uses = 2
+			uses = 1
 			category = cv_tech
 		}
 	}
@@ -905,7 +904,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = EQC_naval_auxiliary_patrol
 
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 2
@@ -928,7 +927,7 @@ shared_focus = {
 		add_tech_bonus = {
 			name = EQC_secure_the_centeral_sea
 			bonus = 1.0
-			uses = 2
+			uses = 1
 			category = naval_doctrine
 		}
 	}
@@ -944,9 +943,9 @@ shared_focus = {
 	id = EQC_rnmaf_stratus_springs
 	icon = GFX_goal_AST_state_of_RAAF
 	relative_position_id = EQC_expand_manehatten_harbour
-	x = 6
+	x = 7
 	y = 0
-	cost = 8
+	cost = 7.2
 
 	dynamic = yes
 
@@ -1017,7 +1016,7 @@ shared_focus = {
 	prerequisite = { focus = EQC_rnmaf_stratus_springs }
 	x = -1
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 3
@@ -1207,7 +1206,7 @@ shared_focus = {
 	prerequisite = { focus = EQC_rnmaf_stratus_springs }
 	x = 1
 	y = 1
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 3
@@ -1223,14 +1222,12 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus EQC_a_new_fighter"
+		air_experience = 25
 		add_tech_bonus = {
 			name = EQC_a_new_fighter
 			bonus = 1.0
-			uses = 2
-			technology = early_fighter
-			technology = fighter1
-			technology = fighter2
-			technology = fighter3
+			uses = 1
+			category = light_fighter
 		}
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1243,7 +1240,7 @@ shared_focus = {
 	prerequisite = { focus = EQC_new_south_bales_air_warning_system }
 	x = -1
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 2
@@ -1352,12 +1349,12 @@ shared_focus = {
 
 shared_focus = {
 	id = EQC_long_air_patrols
-	relative_position_id = EQC_new_south_bales_air_warning_system
 	icon = GFX_goal_expand_the_luftwaffe
+	relative_position_id = EQC_new_south_bales_air_warning_system
 	prerequisite = { focus = EQC_new_south_bales_air_warning_system focus = EQC_a_new_fighter }
 	x = 1
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 3
@@ -1391,7 +1388,7 @@ shared_focus = {
 	prerequisite = { focus = EQC_long_air_patrols }
 	x = -1
 	y = 1
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 2
@@ -1410,7 +1407,7 @@ shared_focus = {
 		add_tech_bonus = {
 			name = EQC_scout_seas
 			bonus = 1.0
-			uses = 2
+			uses = 1
 			category = naval_air
 		}
 	}
@@ -1424,7 +1421,7 @@ shared_focus = {
 	prerequisite = { focus = EQC_long_air_patrols }
 	x = 1
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 4
@@ -1456,7 +1453,7 @@ shared_focus = {
 	prerequisite = { focus = EQC_fly_or_die focus = EQC_scout_seas }
 	x = 1
 	y = 1
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 2
@@ -1484,14 +1481,89 @@ shared_focus = {
 }
 
 shared_focus = {
+	id = EQC_air_foc1
+	relative_position_id = EQC_advanced_air_tactics
+	prerequisite = { focus = EQC_defensive_planes focus = EQC_special_air_fund }
+	x = 0
+	y = 1
+	cost = 7.2
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	available = {
+
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+	}
+	search_filters = { FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_RESEARCH }
+}
+
+shared_focus = {
+	id = EQC_air_foc2
+	relative_position_id = EQC_air_foc1
+	prerequisite = { focus = EQC_air_foc1 }
+	x = 0
+	y = 1
+	cost = 7.2
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	available = {
+
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+	}
+	search_filters = { FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_RESEARCH }
+}
+
+shared_focus = {
+	id = EQC_defensive_planes
+	icon = GFX_goal_generic_air_fighter
+	relative_position_id = EQC_expand_air_defence
+	prerequisite = { focus = EQC_expand_air_defence }
+	x = 0
+	y = 2
+	cost = 7.2
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	available = {
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_ideas = EQC_defensive_planes_idea
+	}
+	search_filters = { FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_RESEARCH }
+}
+
+shared_focus = {
 	id = EQC_bombardier_focus
 	relative_position_id = EQC_a_new_fighter
 	icon = GFX_goal_generic_air_bomber
 	prerequisite = { focus = EQC_a_new_fighter }
-	prerequisite = { focus = EQC_littlehoof_small_arms }
 	x = 1
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 5
@@ -1511,10 +1583,10 @@ shared_focus = {
 			limit = {
 				has_state_flag = EQC_bombardier_factory
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -1522,15 +1594,9 @@ shared_focus = {
 		add_tech_bonus = {
 			name = EQC_bombardier_focus
 			bonus = 1.0
-			uses = 1
+			uses = 2
 			category = cat_strategic_bomber
 			category = tactical_bomber
-		}
-		add_tech_bonus = {
-			name = EQC_bombardier_focus
-			bonus = 1.0
-			uses = 1
-			category = cat_strategic_bomber
 		}
 	}
 
@@ -1545,10 +1611,10 @@ shared_focus = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 			set_state_flag = EQC_bombardier_factory
@@ -1561,12 +1627,6 @@ shared_focus = {
 			category = cat_strategic_bomber
 			category = tactical_bomber
 		}
-		add_tech_bonus = {
-			name = EQC_bombardier_focus
-			bonus = 1.0
-			uses = 1
-			category = cat_strategic_bomber
-		}
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 }
@@ -1576,9 +1636,9 @@ shared_focus = {
 	relative_position_id = EQC_bombardier_focus
 	icon = GFX_focus_rocketry
 	prerequisite = { focus = EQC_bombardier_focus }
-	x = 1
+	x = 0
 	y = 2
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 2
@@ -1614,9 +1674,9 @@ shared_focus = {
 	id = EQC_industral_support_fund
 	icon = GFX_goal_endless_money
 	relative_position_id = EQC_rnmaf_stratus_springs
-	x = 5
+	x = 7
 	y = 0
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 7
@@ -1652,7 +1712,7 @@ shared_focus = {
 	relative_position_id = EQC_industral_support_fund
 	x = 2
 	y = 0
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 7
@@ -1680,11 +1740,11 @@ shared_focus = {
 shared_focus = {
 	id = EQC_littlehoof_small_arms
 	icon = GFX_focus_indy_industrial_tanks
-	relative_position_id = EQC_industral_support_fund
-	prerequisite = { focus = EQC_industral_support_fund }
-	x = -2
-	y = 1
-	cost = 8
+	relative_position_id = EQC_new_hoofington_steelworks
+	prerequisite = { focus = EQC_new_hoofington_steelworks }
+	x = 0
+	y = 2
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 5
@@ -1707,10 +1767,10 @@ shared_focus = {
 			limit = {
 				has_state_flag = EQC_littlehoof_small_arms_factory
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -1718,6 +1778,7 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus EQC_littlehoof_small_arms"
+		add_ideas = EQC_lsaf
 		random_owned_controlled_state = {
 			prioritize = { 362 356 }
 			limit = {
@@ -1744,9 +1805,9 @@ shared_focus = {
 	icon = GFX_goal_industrial_pony
 	prerequisite = { focus = EQC_industral_support_fund }
 	relative_position_id = EQC_industral_support_fund
-	x = 0
+	x = -1
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 4
@@ -1780,10 +1841,10 @@ shared_focus = {
 	prerequisite = { focus = EQC_national_census }
 	prerequisite = { focus = EQC_industral_support_fund }
 	relative_position_id = EQC_national_census
-	x = 0
+	x = -1
 	y = 1
 
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 4
@@ -1906,9 +1967,9 @@ shared_focus = {
 	icon = GFX_focus_generic_steel
 	prerequisite = { focus = EQC_the_flare_plan }
 	relative_position_id = EQC_the_flare_plan
-	x = -1
+	x = 0
 	y = 1
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 4
@@ -1939,7 +2000,7 @@ shared_focus = {
 			prioritize = { 359 }
 			add_resource = {
 				type = steel
-				amount = 16
+				amount = 8
 			}
 			set_state_flag = EQC_new_hoofington_steelworks1
 		}
@@ -1952,10 +2013,10 @@ shared_focus = {
 	icon = GFX_goal_factory_complex
 	prerequisite = { focus = EQC_new_mareland_railway }
 	relative_position_id = EQC_new_mareland_railway
-	x = -1
+	x = 0
 	y = 1
 
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 6
@@ -2018,7 +2079,7 @@ shared_focus = {
 	relative_position_id = EQC_new_hoofington_steelworks
 	x = 1
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 4
@@ -2027,7 +2088,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
@@ -2053,9 +2114,6 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus EQC_resource_resuse_act"
 		random_owned_controlled_state = {
 			limit = { is_in_home_area = yes }
-			
-			prioritize = { 354 }
-			
 			add_resource = {
 				type = aluminium
 				amount = 24
@@ -2064,9 +2122,6 @@ shared_focus = {
 		}
 		random_owned_controlled_state = {
 			limit = { is_in_home_area = yes }
-			
-			prioritize = { 354 }
-			
 			add_resource = {
 				type = oil
 				amount = 12
@@ -2078,14 +2133,14 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = EQC_economic_recovery
+	id = EQC_economic_recovery_custom
 	icon = GFX_goal_gold_up
 	prerequisite = { focus = EQC_expand_new_manehatten focus = EQC_every_little_helps }
 	relative_position_id = EQC_expand_new_manehatten
 	x = 1
 	y = 1
 
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 6
@@ -2117,7 +2172,7 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus EQC_economic_recovery"
+		log = "[GetDateText]: [Root.GetName]: Focus EQC_economic_recovery_custom"
 		remove_ideas = EQC_great_depression_3
 	}
 }
@@ -2125,12 +2180,12 @@ shared_focus = {
 shared_focus = {
 	id = EQC_expand_sunset_university
 	icon = GFX_goal_technological_supremacy
-	prerequisite = { focus = EQC_economic_recovery }
-	relative_position_id = EQC_economic_recovery
-	x = 0
+	prerequisite = { focus = EQC_economic_recovery_custom }
+	relative_position_id = EQC_economic_recovery_custom
+	x = -1
 	y = 1
 
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 6
@@ -2157,15 +2212,47 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = EQC_uranium_mine
-	icon = GFX_focus_wonderweapons
+	id = EQC_waste_sorting
+	icon = GFX_goal_generic_construction
 	prerequisite = { focus = EQC_expand_sunset_university }
-	prerequisite = { focus = EQC_special_air_fund }
+	prerequisite = { focus = EQC_resource_resuse_act }
 	relative_position_id = EQC_expand_sunset_university
-	x = -2
+	x = -1
 	y = 1
 
-	cost = 8
+	cost = 7.2
+
+	ai_will_do = {
+		factor = 6
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = EQC_waste_sorting_idea
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH }
+}
+
+shared_focus = {
+	id = EQC_uranium_mines
+	icon = GFX_goal_generic_construct_infrastructure
+	prerequisite = { focus = EQC_the_flare_plan }
+	relative_position_id = EQC_the_flare_plan
+	x = -1
+	y = 2
+
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 2
@@ -2184,9 +2271,49 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus EQC_uranium_mine"
+		log = "[GetDateText]: [Root.GetName]: Focus EQC_uranium_mines"
+		random_owned_controlled_state = {
+				limit = { is_in_home_area = yes }
+				prioritize = { 361 }
+				add_resource = {
+					type = crystals
+					amount = 12
+				}
+				set_state_flag = EQC_new_hoofington_steelworks1
+			}
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH }
+}
+
+shared_focus = {
+	id = EQC_atomic_research
+	icon = GFX_focus_wonderweapons
+	prerequisite = { focus = EQC_uranium_mines }
+	relative_position_id = EQC_uranium_mines
+	x = 0
+	y = 2
+
+	cost = 7.2
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
 		add_tech_bonus = {
-			name = EQC_uranium_mine
+			name = EQC_uranium_mines
 			bonus = 1.0
 			uses = 2
 			category = nuclear
@@ -2198,13 +2325,13 @@ shared_focus = {
 shared_focus = {
 	id = EQC_griffon_affairs_act
 	icon = GFX_goal_AST_maori
-	prerequisite = { focus = EQC_expand_sunset_university }
-	relative_position_id = EQC_expand_sunset_university
+	prerequisite = { focus = EQC_waste_sorting }
+	relative_position_id = EQC_waste_sorting
 	mutually_exclusive = { focus = EQC_griffon_workers }
 	x = -1
-	y = 2
+	y = 1
 
-	cost = 10
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 4
@@ -2248,7 +2375,7 @@ shared_focus = {
 	relative_position_id = EQC_national_census
 	x = 2
 	y = 0
-	cost = 5
+	cost = 4.3
 
 	dynamic = yes
 
@@ -2286,9 +2413,9 @@ shared_focus = {
 	icon = GFX_goal_silver_reserve
 	relative_position_id = EQC_commonwealth_defence
 	prerequisite = { focus = EQC_commonwealth_defence }
-	x = 0
+	x = -1
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 7
@@ -2310,51 +2437,14 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = EQC_national_mobilisation_act
-	icon = GFX_goal_pony_labour
-	relative_position_id = EQC_commonwealth_defence
-	prerequisite = { focus = EQC_commonwealth_defence }
-	x = 1
-	y = 2
-	cost = 5
-
-	ai_will_do = {
-		factor = 5
-		modifier = {
-			has_war = yes
-			factor = 2
-		}
-	}
-
-	available = {
-		OR = {
-			has_war = yes
-			NOT = { has_government = democratic }
-		}
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = yes
-
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus EQC_national_mobilisation_act"
-		add_stability = -0.05
-		add_ideas = EQC_national_mobilisation_act1
-		custom_effect_tooltip = will_allow_conscription_laws_tt
-	}
-	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
-}
-
-shared_focus = {
 	id = EQC_defence_of_x
 	icon = GFX_goal_support_equestria
 	relative_position_id = EQC_commonwealth_defence
 	prerequisite = { focus = EQC_commonwealth_defence }
 	dynamic = yes
-	x = 2
+	x = 1
 	y = 1
-	cost = 8
+	cost = 4.3
 
 	ai_will_do = {
 		factor = 3
@@ -2392,6 +2482,18 @@ shared_focus = {
 			}
 			add_ideas = EQC_in_defence_of_fascism
 		}
+		else_if = {
+			limit = {
+				has_government = tog_technocracy
+			}
+			add_ideas = EQC_in_defence_of_technocracy
+		}
+		else_if = {
+			limit = {
+				has_government = tog_anarchism
+			}
+			add_ideas = EQC_in_defence_of_anarchism
+		}
 		else = {
 			add_ideas = EQC_defence_of_outsiders
 		}
@@ -2400,13 +2502,202 @@ shared_focus = {
 }
 
 shared_focus = {
+	id = EQC_equestrian_crisis
+	icon = GFX_goal_magic_of_friendship_end
+	relative_position_id = EQC_defence_of_x
+	prerequisite = { focus = EQC_defence_of_x }
+	dynamic = yes
+	x = 1
+	y = 2
+	cost = 4.3
+
+	ai_will_do = {
+		modifier = {
+			EQS = { has_war_with = CRY }
+			factor = 2000
+		}
+		modifier = {
+			EQS = { has_war_with = NLR }
+			factor = 2000
+		}
+	}
+
+	available = {
+		has_war = no
+		is_subject = no
+		NOT = { EQC = { is_in_faction_with = EQS } }
+		OR = {
+			EQS = { has_war_with = CRY }
+			EQS = { has_war_with = NLR }
+		}
+		EQC = { is_subject = no }
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		IF = {
+			limit = { NOT = { has_government = fascism } }
+			EQC = {
+				add_opinion_modifier = { target = EQS modifier = common_threat }
+			}
+			EQS = {
+				add_opinion_modifier = { target = EQC modifier = common_threat }
+			}
+			set_country_flag = has_helped_good_equestria
+			IF = {
+				limit = { EQS = { has_war_with = CRY } }
+				declare_war_on = { target = CRY type = annex_everything }
+			}
+			ELSE_IF = {
+				limit = { EQS = { has_war_with = NLR } }
+				declare_war_on = { target = NLR type = annex_everything }
+			}
+		}
+		ELSE_IF = {
+			limit = { has_government = fascism NLR = { has_war_with = EQS } }
+			EQC = {
+				add_opinion_modifier = { target = NLR modifier = common_threat }
+			}
+			NLR = {
+				add_opinion_modifier = { target = EQC modifier = common_threat }
+			}
+			set_country_flag = has_helped_bad_equestria
+			declare_war_on = { target = EQS type = annex_everything }
+		}
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = EQC_return_to_alliance
+	icon = GFX_goal_generic_harmony
+	relative_position_id = EQC_equestrian_crisis
+	prerequisite = { focus = EQC_equestrian_crisis }
+	dynamic = yes
+	x = 0
+	y = 2
+	cost = 4.3
+
+	ai_will_do = {
+		modifier = {
+			is_in_faction = no
+			factor = 2000
+		}
+	}
+
+	available = {
+		is_in_faction = no
+		OR = {
+			country_exists = EQS
+			country_exists = NLR
+		}
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		IF = {
+			limit = { has_country_flag = has_helped_good_equestria }
+			EQS = {
+				country_event = generic.2
+			}
+		}
+		ELSE_IF = {
+			limit = { has_country_flag = has_helped_bad_equestria }
+			NLR = {
+				country_event = generic.2
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = EQC_national_mobilisation_act
+	icon = GFX_goal_pony_labour
+	relative_position_id = EQC_defence_of_x
+	prerequisite = { focus = EQC_defence_of_x }
+	x = 0
+	y = 1
+	cost = 4.3
+
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			has_war = yes
+			factor = 2
+		}
+	}
+
+	available = {
+		OR = {
+			has_war = yes
+			NOT = { has_government = democratic }
+		}
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EQC_national_mobilisation_act"
+		add_stability = -0.05
+		add_ideas = EQC_national_mobilisation_act1
+		custom_effect_tooltip = will_allow_conscription_laws_tt
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
+}
+
+shared_focus = {
+	id = EQC_last_stand
+	icon = GFX_focus_wingbardy_forever
+	relative_position_id = EQC_national_mobilisation_act
+	prerequisite = { focus = EQC_national_mobilisation_act }
+	x = 0
+	y = 2
+	cost = 2.15
+
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			has_war = yes
+			EQC = { surrender_progress > 0.20 }
+			factor = 2000
+		}
+	}
+
+	available = {
+		AND = {
+			has_war = yes
+			EQC = { surrender_progress > 0.20 }
+		}
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_stability = -0.20
+		add_timed_idea = { idea = EQC_last_stand_idea  days = 365 }
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
+}
+
+shared_focus = {
 	id = EQC_every_little_helps
 	icon = GFX_focus_generic_tank_production
 	relative_position_id = EQC_national_defence_company
 	prerequisite = { focus = EQC_national_defence_company }
-	x = -1
+	x = 0
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 7
@@ -2424,29 +2715,6 @@ shared_focus = {
 	continue_if_invalid = no
 	available_if_capitulated = yes
 
-	complete_tooltip = {
-		random_state = {
-			limit = {
-				has_state_flag = EQC_every_little_helps_factory1
-			}
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-		random_state = {
-			limit = {
-				has_state_flag = EQC_every_little_helps_factory2
-			}
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-	}
-
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus EQC_every_little_helps"
 		random_owned_controlled_state = {
@@ -2458,31 +2726,13 @@ shared_focus = {
 					size > 1
 				}
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 			set_state_flag = EQC_every_little_helps_factory1
-		}
-
-		random_owned_controlled_state = {
-			limit = {
-				ROOT = { has_full_control_of_state = PREV }
-				is_core_of = ROOT
-				free_building_slots = {
-					building = arms_factory
-					size > 1
-				}
-			}
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-			set_state_flag = EQC_every_little_helps_factory2
 		}
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2496,7 +2746,7 @@ shared_focus = {
 	prerequisite = { focus = EQC_national_mobilisation_act }
 	x = -1
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 5
@@ -2526,9 +2776,9 @@ shared_focus = {
 	icon = GFX_goal_split_helmet
 	relative_position_id = EQC_invest_in_victory
 	prerequisite = { focus = EQC_invest_in_victory }
-	x = 0
+	x = -1
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 5
@@ -2559,12 +2809,12 @@ shared_focus = {
 shared_focus = {
 	id = EQC_full_economic_commitment
 	icon = GFX_focus_empty_coffers
-	relative_position_id = EQC_economic_recovery
-	prerequisite = { focus = EQC_economic_recovery }
+	relative_position_id = EQC_economic_recovery_custom
+	prerequisite = { focus = EQC_economic_recovery_custom }
 	prerequisite = { focus = EQC_squish_the_parasprites }
-	x = 1
+	x = 0
 	y = 2
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 5
@@ -2655,9 +2905,9 @@ shared_focus = {
 	icon = GFX_goal_military_academy
 	relative_position_id = EQC_invest_in_victory
 	prerequisite = { focus = EQC_invest_in_victory }
-	x = 1
+	x = 0
 	y = 2
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 5
@@ -2692,20 +2942,23 @@ shared_focus = {
 	relative_position_id = EQC_full_economic_commitment
 	prerequisite = { focus = EQC_full_economic_commitment }
 	mutually_exclusive = { focus = EQC_griffon_affairs_act focus = EQC_force_griffon_conscription }
-	x = 0
+	x = -1
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 6
 	}
 
 	available = {
-	        NOT = { 
+        NOT = { 
 		    OR = {
 				has_completed_focus = EQC_picket_wins
 				has_completed_focus = EQC_the_duke_wins
 				has_completed_focus = EQC_kingfisher_wins
+				has_completed_focus = EQC_aryanne_wins
+				has_completed_focus = EQC_technocrats_win
+				has_completed_focus = EQC_anarchists_win
             }			
 		}
 	}
@@ -2730,9 +2983,9 @@ shared_focus = {
 	relative_position_id = EQC_expand_conscription
 	prerequisite = { focus = EQC_expand_conscription }
 	mutually_exclusive = { focus = EQC_negotiate_with_griffon_clans focus = EQC_griffon_workers }
-	x = 0
+	x = -1
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 2
@@ -2748,6 +3001,9 @@ shared_focus = {
 				has_completed_focus = EQC_picket_wins
 				has_completed_focus = EQC_the_duke_wins
 				has_completed_focus = EQC_kingfisher_wins
+				has_completed_focus = EQC_aryanne_wins
+				has_completed_focus = EQC_technocrats_win
+				has_completed_focus = EQC_anarchists_win
             }			
 		}
 	}
@@ -2772,9 +3028,9 @@ shared_focus = {
 	relative_position_id = EQC_expand_conscription
 	prerequisite = { focus = EQC_expand_conscription }
 	mutually_exclusive = { focus = EQC_force_griffon_conscription }
-	x = 2
+	x = 1
 	y = 1
-	cost = 8
+	cost = 7.2
 
 	ai_will_do = {
 		factor = 6
@@ -2790,10 +3046,12 @@ shared_focus = {
 				has_completed_focus = EQC_picket_wins
 				has_completed_focus = EQC_the_duke_wins
 				has_completed_focus = EQC_kingfisher_wins
+				has_completed_focus = EQC_aryanne_wins
+				has_completed_focus = EQC_technocrats_win
+				has_completed_focus = EQC_anarchists_win
             }			
 		}
 	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
@@ -2806,78 +3064,4 @@ shared_focus = {
 		}
 	}
 	search_filters = { FOCUS_FILTER_MANPOWER }
-}
-
-shared_focus = {
-	id = EQC_transoceanic_support
-	icon = GFX_goal_equestria
-	prerequisite = { focus = EQC_attract_immigrants focus = EQC_SOL_university_exchanges }
-	relative_position_id = EQC_attract_immigrants
-	x = -1
-	y = 1
-
-	cost = 8
-
-	ai_will_do = {
-		factor = 6
-	}
-
-	available = {
-		OR = {
-			NOT = { has_war_with = EQS }
-			EQS = { exists = yes }
-		}
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus EQC_transoceanic_support"
-		custom_effect_tooltip = available_theorist
-		show_ideas_tooltip = moon_dancer
-		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = EQC_commonwealth_aircraft_corporation
-	}
-}
-
-shared_focus = {
-	id = EQC_eastern_wonderbolts
-	icon = GFX_goal_generic_air_doctrine
-	relative_position_id = EQC_transoceanic_support
-	prerequisite = { focus = EQC_national_mobilisation_act focus = EQC_defence_of_x }
-	prerequisite = { focus = EQC_transoceanic_support }
-	x = -1
-	y = 1
-	cost = 8
-
-	allow_branch = {
-		OR = {
-			has_focus_tree = new_mareland_focus
-			has_focus_tree = eqc_sol_focus
-		}
-	}
-
-	ai_will_do = {
-		factor = 6
-	}
-
-	available = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = yes
-
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus EQC_eastern_wonderbolts"
-		add_ideas = EQC_eastern_wonderbolts_id
-	}
-	search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
 }

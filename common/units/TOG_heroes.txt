@@ -1,0 +1,307 @@
+# options for map_icon_category:
+# For land units: infantry,armored,other
+# For sea units: ship,transport,uboat
+
+sub_units = {
+
+	hero_celestia = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+
+		priority = 1000
+		ai_priority = 400
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = infantry
+
+		categories = {
+			category_hero
+		}
+
+		combat_width = 2
+
+		#Size Definitions
+		experience_loss_factor = -0.60
+		breakthrough = 10.0
+		entrenchment = 2.0
+		recon = 2.0
+		max_strength = 100
+		max_organisation = 240
+		default_morale = 2.0
+		manpower = 500
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 10
+		weight = 0.25
+
+		supply_consumption = 0.02
+
+		need = {
+			magical_equipment = 50
+		}
+	}
+
+	hero_luna = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+
+		priority = 1000
+		ai_priority = 400
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = infantry
+
+		categories = {
+			category_hero
+		}
+
+		combat_width = 2
+
+		#Size Definitions
+		experience_loss_factor = -0.60
+		breakthrough = 10.0
+		entrenchment = 2.0
+		recon = 2.0
+		max_strength = 100
+		max_organisation = 240
+		default_morale = 2.0
+		manpower = 500
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 10
+		weight = 0.25
+
+		supply_consumption = 0.02
+
+		need = {
+			magical_equipment = 50
+		}
+	}
+
+	hero_twilight_sparkle = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+
+		priority = 1000
+		ai_priority = 400
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = infantry
+
+		categories = {
+			category_hero
+		}
+
+		combat_width = 2
+
+		#Size Definitions
+		experience_loss_factor = -0.60
+		breakthrough = 10.0
+		entrenchment = 2.0
+		recon = 2.0
+		max_strength = 100
+		max_organisation = 240
+		default_morale = 2.0
+		manpower = 500
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 10
+		weight = 0.25
+
+		supply_consumption = 0.02
+
+		need = {
+			magical_equipment = 50
+		}
+	}
+
+	hero_cadance = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+
+		priority = 1000
+		ai_priority = 400
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = infantry
+
+		categories = {
+			category_hero
+		}
+
+		combat_width = 2
+
+		#Size Definitions
+		experience_loss_factor = -0.60
+		breakthrough = 10.0
+		entrenchment = 2.0
+		recon = 2.0
+		max_strength = 100
+		max_organisation = 240
+		default_morale = 2.0
+		manpower = 500
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 10
+		weight = 0.25
+
+		supply_consumption = 0.02
+
+		need = {
+			magical_equipment = 50
+		}
+	}
+
+	hero_chrysalis = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+
+		priority = 1000
+		ai_priority = 400
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = infantry
+
+		categories = {
+			category_hero
+		}
+
+		combat_width = 2
+
+		#Size Definitions
+		experience_loss_factor = -0.60
+		breakthrough = 10.0
+		entrenchment = 2.0
+		recon = 2.0
+		max_strength = 100
+		max_organisation = 240
+		default_morale = 2.0
+		manpower = 500
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 10
+		weight = 0.25
+
+		supply_consumption = 0.02
+
+		need = {
+			magical_equipment = 50
+		}
+	}
+
+	hero_discord = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+
+		priority = 1000
+		ai_priority = 400
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = infantry
+
+		categories = {
+			category_hero
+		}
+
+		combat_width = 2
+
+		#Size Definitions
+		experience_loss_factor = -0.60
+		breakthrough = 10.0
+		entrenchment = 2.0
+		recon = 2.0
+		max_strength = 100
+		max_organisation = 240
+		default_morale = 2.0
+		manpower = 500
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 10
+		weight = 0.25
+
+		supply_consumption = 0.02
+
+		need = {
+			magical_equipment = 50
+		}
+	}
+
+	hero_tirek = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+
+		priority = 1000
+		ai_priority = 400
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = infantry
+
+		categories = {
+			category_hero
+		}
+
+		combat_width = 2
+
+		#Size Definitions
+		experience_loss_factor = -0.60
+		breakthrough = 10.0
+		entrenchment = 2.0
+		recon = 2.0
+		max_strength = 100
+		max_organisation = 240
+		default_morale = 2.0
+		manpower = 500
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 10
+		weight = 0.25
+
+		supply_consumption = 0.02
+
+		need = {
+			magical_equipment = 50
+		}
+	}
+}

@@ -1,0 +1,2448 @@
+EQC_military_academy_training_category = {
+	
+	EQC_train_lunar_breeze_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			has_unit_leader = 200002
+		}
+		ai_will_do = {
+			factor = 400
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 200002 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 200002 }
+
+				remove_unit_leader_trait = busy_trait
+
+				add_unit_leader_trait = academy_training_trait
+				add_logistics = 1
+			}
+		}
+	}
+
+	EQC_train_moonlight_poppy_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			has_unit_leader = 712
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 712 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 712 }
+
+				remove_unit_leader_trait = busy_trait
+
+				add_unit_leader_trait = academy_training_trait
+				add_logistics = 1
+			}
+		}
+	}
+
+	EQC_train_triple_sevens_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			has_unit_leader = 200004
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 200004 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 200004 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+
+	EQC_train_wandering_sunrise_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			has_unit_leader = 200003
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 200003 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 200003 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+
+	EQC_train_grand_wingsword_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			has_unit_leader = 9279
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 9279 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9279 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+
+	EQC_train_nightlight_charm_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			has_unit_leader = 716
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 716 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 716 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+
+	EQC_train_tanya_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			has_unit_leader = 200001
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 200001 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 200001 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+
+				add_unit_leader_trait = harsh_leader
+				
+				add_unit_leader_trait = academy_training_trait
+				add_logistics = 1
+			}
+		}
+	}
+
+	EQC_train_sunny_shield_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			has_unit_leader = 710
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 710 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 710 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+
+	EQC_train_candy_garden_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			has_unit_leader = 711
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 711 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 711 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+
+	EQC_train_earthberry_crust_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			has_unit_leader = 715
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 715 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 715 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+
+	EQC_train_anja_snow_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			has_unit_leader = 718
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 718 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 718 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+
+	EQC_train_chifundo_academy = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			has_unit_leader = 719
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -25 }
+			every_unit_leader = {
+				limit = { has_id = 719 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 719 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				add_unit_leader_trait = academy_training_trait
+			}
+		}
+	}
+}
+
+EQC_military_college_training_category = {
+	
+	EQC_train_lunar_breeze_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			any_unit_leader = {
+				has_id = 200002
+				has_trait = academy_training_trait
+			}
+		}
+		ai_will_do = {
+			factor = 400
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 200002 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 200002 }
+
+				remove_unit_leader_trait = busy_trait
+
+				add_unit_leader_trait = knight_of_the_war_college_trait #1
+				
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+				add_logistics = 1
+			}
+		}
+	}
+
+	EQC_train_moonlight_poppy_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			any_unit_leader = {
+				has_id = 712
+				has_trait = academy_training_trait
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 712 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 712 }
+
+				remove_unit_leader_trait = busy_trait
+
+				add_unit_leader_trait = knight_of_the_war_college_trait #8
+				
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+				add_logistics = 1
+			}
+		}
+	}
+
+	EQC_train_triple_sevens_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			any_unit_leader = {
+				has_id = 200004
+				has_trait = academy_training_trait
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 200004 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 200004 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+
+	EQC_train_wandering_sunrise_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			any_unit_leader = {
+				has_id = 200003
+				has_trait = academy_training_trait
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 200003 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 200003 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+
+	EQC_train_nightlight_charm_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			any_unit_leader = {
+				has_id = 716
+				has_trait = academy_training_trait
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 716 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 716 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+
+	EQC_train_grand_wingsword_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			any_unit_leader = {
+				has_id = 9279
+				has_trait = academy_training_trait
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 9279 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 9279 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+
+	EQC_train_tanya_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			any_unit_leader = {
+				has_id = 200001
+				has_trait = academy_training_trait
+			}
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 200001 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 200001 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+
+				add_unit_leader_trait = knight_of_the_war_college_trait #11
+				
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+				add_logistics = 1
+			}
+			set_country_flag = EQC_tanya_college_finished
+		}
+	}
+
+	EQC_train_sunny_shield_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			any_unit_leader = {
+				has_id = 710
+				has_trait = academy_training_trait
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 710 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 710 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+
+	EQC_train_candy_garden_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			any_unit_leader = {
+				has_id = 711
+				has_trait = academy_training_trait
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 711 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 711 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+
+	EQC_train_earthberry_crust_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			any_unit_leader = {
+				has_id = 715
+				has_trait = academy_training_trait
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 715 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 715 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+
+	EQC_train_anja_snow_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			any_unit_leader = {
+				has_id = 718
+				has_trait = academy_training_trait
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 718 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 718 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+
+	EQC_train_chifundo_college = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+		visible = {
+			any_unit_leader = {
+				has_id = 719
+				has_trait = academy_training_trait
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			hidden_trigger = { command_power > 24 }
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = { add_command_power = -25 add_political_power = -50 }
+			every_unit_leader = {
+				limit = { has_id = 719 }
+
+				add_unit_leader_trait = busy_trait
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			every_unit_leader = {
+				limit = { has_id = 719 }
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general4_trait
+					}
+					remove_unit_leader_trait = general4_trait
+					add_unit_leader_trait = general5_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general5_trait
+					}
+					remove_unit_leader_trait = general5_trait
+					add_unit_leader_trait = general6_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general6_trait
+					}
+					remove_unit_leader_trait = general6_trait
+					add_unit_leader_trait = general7_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general7_trait
+					}
+					remove_unit_leader_trait = general7_trait
+					add_unit_leader_trait = general8_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general8_trait
+					}
+					remove_unit_leader_trait = general8_trait
+					add_unit_leader_trait = general9_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general9_trait
+					}
+					remove_unit_leader_trait = general9_trait
+					add_unit_leader_trait = general10_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general10_trait
+					}
+					remove_unit_leader_trait = general10_trait
+					add_unit_leader_trait = general11_trait
+				}
+				
+				remove_unit_leader_trait = academy_training_trait
+				add_unit_leader_trait = war_college_training_trait
+			}
+		}
+	}
+}

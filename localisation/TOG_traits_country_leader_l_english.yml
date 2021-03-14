@@ -1,0 +1,38 @@
+﻿l_english:
+
+ ### COUNTRY LEADER TRAITS ###
+
+ military_leader_trait:0 "Head of the Army"
+ 
+ minority_supporter_trait:0 "Minority Supporter"
+
+ ### ACCEPT/HATE IDEOLOGY LEADER TRAIT ###
+
+ accept_democracy_trait:0 "Acceptor of Harmonist Ideology"
+ hate_democracy_trait:0 "Hater of Harmonist Ideology"
+
+ accept_communism_trait:0 "Acceptor of Communist Ideology"
+ hate_communism_trait:0 "Hater of Communist Ideology"
+
+ accept_fascism_trait:0 "Acceptor of Supremacist Ideology"
+ hate_fascism_trait:0 "Hater of Supremacist Ideology"
+
+ accept_technocracy_trait:0 "Acceptor of Technocratic Ideology"
+ hate_technocracy_trait:0 "Hater of Technocratic Ideology"
+ tog_technocracy_acceptance:0 "Acceptance of Technocratic Diplomacy"
+ 
+ accept_anarchism_trait:0 "Acceptor of Anarchist Ideology"
+ hate_anarchism_trait:0 "Hater of Anarchist Ideology"
+ tog_anarchism_acceptance:0 "Acceptance of Anarchist Diplomacy"
+
+ accept_kleptocracy_trait:0 "Acceptor of Kleptacratic Ideology"
+ hate_kleptocracy_trait:0 "Hater of Kleptacratic Ideology"
+ tog_kleptocracy_acceptance:0 "Acceptance of Kleptocratic Diplomacy"
+
+ accept_theocracy_trait:0 "Acceptor of Theocratic Ideology"
+ hate_theocracy_trait:0 "Hater of Theocratic Ideology"
+ tog_theocracy_acceptance:0 "Acceptance of Theocratic Diplomacy"
+
+ accept_magocracy_trait:0 "Acceptor of Magocratic Ideology"
+ hate_magocracy_trait:0 "Hater of Magocratic Ideology"
+ tog_magocracy_acceptance:0 "Acceptance of Magocratic Diplomacy"

@@ -1,0 +1,353 @@
+leader_traits = {
+	
+	summer_specialist = {
+		type = corps_commander
+		gain_xp = {
+			temperature > 30
+		}
+		cost = 500
+		modifier = {
+			heat_attrition_factor = -0.5
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = basic_terrain_trait
+		gui_row = 8
+	}
+
+	summer_expert = { 
+		type = corps_commander
+
+		gain_xp = {
+			always = no # not gainable
+		}
+
+		modifier = {
+			acclimatization_hot_climate_gain_factor = 0.40
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		parent = summer_specialist
+
+		trait_type = assignable_terrain_trait
+		gui_row = 8
+	}
+	
+	logistics_wizard_CC = {
+		type = corps_commander
+		gain_xp = {
+			has_combat_modifier = lack_of_supply
+		}
+		
+		cost = 500
+		
+		modifier = {
+			supply_consumption_factor = -0.05
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		gui_row = 16
+	}	
+	
+	logistics_wizard_CC_II = { 
+		type = corps_commander
+		gain_xp = {
+			always = no # not gainable
+		}
+		cost = 750 #experience
+		
+		modifier = {
+			supply_consumption_factor = -0.03
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_trait
+		parent = logistics_wizard_CC
+		
+		gui_row = 16
+	}
+	
+	logistics_wizard_CC_III = {
+		type = field_marshal
+		
+		gain_xp = {
+			always = no # not gainable
+		}
+		
+		cost = 1000
+		
+		field_marshal_modifier = {
+			supply_consumption_factor = -0.01
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_trait
+		parent = logistics_wizard_CC
+
+		gui_row = 16
+	}
+	
+	spearhead_specialist = {
+		type = corps_commander
+		gain_xp = {
+			has_trait = offensive_doctrine_CC_III
+			is_attacker = yes
+		}
+		
+		cost = 1000
+		
+		modifier = {
+			combat_width_factor = -0.05
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		gui_row = 17
+	}
+	
+	spearhead_specialist_II = {
+		type = corps_commander
+		gain_xp = {
+			always = no # not gainable
+		}
+		
+		cost = 500
+		
+		modifier = {
+			combat_width_factor = -0.07 
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_trait
+		parent = spearhead_specialist
+		
+		gui_row = 17
+	}
+	
+	spearhead_specialist_III = {
+		type = field_marshal
+		gain_xp = {
+			always = no # not gainable
+		}
+		cost = 750
+		
+		field_marshal_modifier = {
+			combat_width_factor = -0.1 
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_trait
+		parent = spearhead_specialist
+		
+		gui_row = 17
+	}
+	
+	offensive_doctrine_CC = { 
+		type = corps_commander
+		gain_xp = {
+			is_attacker = yes
+		}
+		
+		cost = 1000
+		
+		modifier = {
+			offence = 0.1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		gui_row = 18
+	}
+	
+	offensive_doctrine_CC_II = { 
+		type = corps_commander
+		gain_xp = {
+			always = no # not gainable
+		}
+		cost = 750
+		
+		modifier = {
+			offence = 0.07
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_trait
+		parent = offensive_doctrine_CC
+		
+		gui_row = 18
+	}
+	
+	offensive_doctrine_CC_III = {
+		type = field_marshal
+		gain_xp = {
+			always = no # not gainable
+		}
+		cost = 1000
+		
+		field_marshal_modifier = {
+			offence = 0.05
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_trait
+		parent = offensive_doctrine_CC
+		
+		gui_row = 18
+	}
+	
+	defensive_doctrine_CC = { 
+		type = corps_commander
+		gain_xp = {
+			is_attacker = no
+		}
+		
+		cost = 1000
+	
+		modifier = {
+			defence = 0.1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		gui_row = 19
+	}
+	
+	defensive_doctrine_CC_II = { 
+		type = corps_commander
+		gain_xp = {
+			always = no # not gainable
+		}
+		
+		cost = 750
+		
+		modifier = {
+			defence = 0.07
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_trait
+		parent = defensive_doctrine_CC
+		
+		gui_row = 19
+	}
+	
+	defensive_doctrine_CC_III = { 
+		type = field_marshal
+		gain_xp = {
+			always = no # not gainable
+		}
+		cost = 750
+		
+		field_marshal_modifier = {
+			defence = 0.05
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_trait
+		parent = defensive_doctrine_CC
+		
+		gui_row = 19
+	}
+	
+	trench_warfare_specialist = { 
+		type = corps_commander
+		gain_xp = {
+			has_trait = defensive_doctrine_CC_III
+			is_attacker = no
+		}
+		
+		cost = 1000
+		
+		modifier = {
+			max_dig_in_factor = 0.3
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		gui_row = 20
+	}
+	
+	trench_warfare_specialist_II = {
+		type = corps_commander
+		gain_xp = {
+			always = no # not gainable
+		}
+		
+		cost = 500
+		
+		modifier = {
+			max_dig_in_factor = 0.2 
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_trait
+		parent = trench_warfare_specialist
+		
+		gui_row = 20
+	}
+	
+	trench_warfare_specialist_III = {
+		type = field_marshal
+		gain_xp = {
+			always = no # not gainable
+		}
+		cost = 750
+		
+		field_marshal_modifier = {
+			max_dig_in_factor = 0.1 
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_trait
+		parent = trench_warfare_specialist
+		
+		gui_row = 20
+	}
+}

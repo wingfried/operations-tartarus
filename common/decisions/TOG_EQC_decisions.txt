@@ -1,0 +1,54 @@
+EQC_investment_decisions_category = {
+
+	EQC_stop_further_construction_investment = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+
+		visible = {
+			has_completed_focus = EQC_griffonia_trade_center
+		}
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		complete_effect = {
+			remove_ideas = EQC_investment_in_economy
+		}
+	}
+
+	EQC_stop_further_research_investment = {
+		icon = generic_civil_support
+		allowed = {
+			tag = EQC
+		}
+
+		visible = {
+			has_completed_focus = EQC_elenium_series_90_testing
+		}
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		complete_effect = {
+			remove_ideas = EQC_investment_in_research2
+		}
+	}
+}

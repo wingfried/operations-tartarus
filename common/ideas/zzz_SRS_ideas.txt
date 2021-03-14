@@ -261,7 +261,7 @@ ideas = {
 				cat_medium_armor = 0.1
 			}
 
-			traits = { GAW_light_medium_modern_tank_balanced_manufacturer }
+			traits = { TOG_light_medium_modern_tank_balanced_manufacturer }
 
 		}
 
@@ -281,7 +281,7 @@ ideas = {
 				cat_heavy_armor = 0.1
 			}
 
-			traits = { GAW_heavy_super_heavy_tank_cheap_manufacturer }
+			traits = { TOG_heavy_super_heavy_tank_cheap_manufacturer }
 
 		}
 
@@ -301,7 +301,7 @@ ideas = {
 				cat_light_armor = 0.1
 			}
 
-			traits = { GAW_light_tank_fast_manufacturer }
+			traits = { TOG_light_tank_fast_manufacturer }
 
 		}
 
@@ -321,7 +321,7 @@ ideas = {
 				cat_medium_armor = 0.1
 			}
 
-			traits = { GAW_medium_modern_tank_balanced_manufacturer }
+			traits = { TOG_medium_modern_tank_balanced_manufacturer }
 
 		}
 
@@ -341,7 +341,7 @@ ideas = {
 				cat_heavy_armor = 0.1
 			}
 
-			traits = { GAW_heavy_super_heavy_tank_strong_manufacturer }
+			traits = { TOG_heavy_super_heavy_tank_strong_manufacturer }
 
 		}
 
@@ -361,7 +361,7 @@ ideas = {
 				cat_heavy_armor = 0.1
 			}
 
-			traits = { GAW_heavy_super_heavy_tank_mobile_manufacturer }
+			traits = { TOG_heavy_super_heavy_tank_mobile_manufacturer }
 
 		}
 	}
@@ -489,7 +489,7 @@ ideas = {
 				cat_mechanized_equipment = 0.1
 			}
 			
-			traits = { GAW_mechanized_manufacturer_quantity }
+			traits = { TOG_mechanized_manufacturer_quantity }
 
 		}
 
@@ -507,7 +507,7 @@ ideas = {
 				cat_mechanized_equipment = 0.1
 			}
 			
-			traits = { GAW_mechanized_manufacturer_quality }
+			traits = { TOG_mechanized_manufacturer_quality }
 
 		}
 
@@ -525,7 +525,7 @@ ideas = {
 				artillery = 0.1
 			}
 			
-			traits = { GAW_artillery_quantity_manufacturer }
+			traits = { TOG_artillery_quantity_manufacturer }
 		}
 
 		SRS_elite_artillery_manufacturer = {
@@ -542,7 +542,7 @@ ideas = {
 				artillery = 0.1
 			}
 			
-			traits = { GAW_artillery_quality_manufacturer }
+			traits = { TOG_artillery_quality_manufacturer }
 
 		}
 	}
@@ -1166,7 +1166,7 @@ ideas = {
 				naval_equipment = 0.10
 			}
 
-			traits = { GAW_ship_quantity }
+			traits = { TOG_ship_quantity }
 
 		}
 		
@@ -1186,7 +1186,7 @@ ideas = {
 				naval_equipment = 0.10
 			}
 
-			traits = { GAW_light_ship_quality }
+			traits = { TOG_light_ship_quality }
 
 		}
 		
@@ -1206,7 +1206,7 @@ ideas = {
 				naval_equipment = 0.10
 			}
 
-			traits = { GAW_heavy_ship_quality }
+			traits = { TOG_heavy_ship_quality }
 
 		}
 
@@ -1359,7 +1359,7 @@ ideas = {
 				air_equipment = 0.10
 			}
 			
-			traits = { GAW_plane_quantity }
+			traits = { TOG_plane_quantity }
 		}
 
 		SRS_fighter_cas_manufacturer = {
@@ -1379,7 +1379,7 @@ ideas = {
 				cas_bomber = 0.10
 			}
 			
-			traits = { GAW_fighter_cas_quality }
+			traits = { TOG_fighter_cas_quality }
 		}
 		
 		SRS_tactical_strategic_bomber_manufacturer = {
@@ -1399,7 +1399,7 @@ ideas = {
 				cat_strategic_bomber = 0.10
 			}
 			
-			traits = { GAW_tactical_strategic_bomber_quality }
+			traits = { TOG_tactical_strategic_bomber_quality }
 		}
 		
 	}
@@ -1449,9 +1449,9 @@ ideas = {
 			}
 
 			modifier = {
-				conscription_factor = -0.4
-				improve_relations_maintain_cost_factor = 0.8
-				mobilization_speed = -0.5
+				conscription_factor = -0.40
+				improve_relations_maintain_cost_factor = 0.80
+				mobilization_speed = -0.50
 			}
 		}
 
@@ -1464,9 +1464,9 @@ ideas = {
 			}
 
 			modifier = {
-				conscription_factor = -0.1
-				improve_relations_maintain_cost_factor = 0.2
-				mobilization_speed = -0.3
+				conscription_factor = -0.10
+				improve_relations_maintain_cost_factor = 0.20
+				mobilization_speed = -0.30
 			}
 		}
 
@@ -1480,8 +1480,8 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.35
-				improve_relations_maintain_cost_factor = 0.7
-				mobilization_speed = -0.4
+				improve_relations_maintain_cost_factor = 0.70
+				mobilization_speed = -0.40
 			}
 		}
 
@@ -1495,8 +1495,8 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.05
-				improve_relations_maintain_cost_factor = 0.1
-				mobilization_speed = -0.2
+				improve_relations_maintain_cost_factor = 0.10
+				mobilization_speed = -0.20
 			}
 		}
 
@@ -1509,7 +1509,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription_factor = -0.75
+				conscription_factor = -0.40
 				improve_relations_maintain_cost_factor = 0.75
 				mobilization_speed = -0.45
 			}
@@ -4445,8 +4445,8 @@ ideas = {
 				land_doctrine = 0.15
 				air_doctrine = 0.15
 				naval_doctrine = 0.15
-				industry = -0.15
-				electronics = -0.15
+				industry = -0.10
+				electronics = -0.10
 			}
 		}
 
@@ -4454,7 +4454,118 @@ ideas = {
 			#picture = 
 			removal_cost = -1
 			modifier = {
-				local_resources_factor = 0.20
+				local_resources_factor = 0.15
+			}
+		}
+
+		SRS_NTR_resources_idea = {
+			#picture = 
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.15
+			}
+		}
+
+		SRS_VED_NTR_overlord_idea = {
+			#picture = 
+			removal_cost = -1
+			modifier = {
+				extra_trade_to_overlord_factor = 0.15
+			}
+		}
+
+		SRS_puppet_tax_idea = {
+			#picture = 
+			removal_cost = -1
+			modifier = {
+				extra_trade_to_overlord_factor = 0.25
+				cic_to_overlord_factor = 0.25
+				mic_to_overlord_factor = 0.25
+				autonomy_gain = 1.0
+			}
+		}
+
+		SRS_puppet_tax_2_idea = {
+			#picture = 
+			removal_cost = -1
+			modifier = {
+				extra_trade_to_overlord_factor = 0.25
+				cic_to_overlord_factor = 0.25
+				mic_to_overlord_factor = 0.25
+				master_ideology_drift = 0.05
+				autonomy_gain = 0.5
+			}
+		}
+
+		SRS_puppet_cooperation_idea = {
+			#picture = 
+			removal_cost = -1
+			modifier = {
+				can_master_build_for_us = 1
+				master_ideology_drift = 0.10
+				autonomy_gain = -0.5
+			}
+		}
+
+		SRS_spy_on_FAT_idea = {
+			#picture = 
+			removal_cost = -1
+			modifier = {
+				decryption_factor = 0.10
+				army_intel_factor = 0.15
+			}
+		}
+
+		TOG_turhamn_pact_project_1_project_idea = {
+			#picture = 
+			removal_cost = -1
+			modifier = {
+				decryption_factor = 0.10
+				army_intel_factor = 0.15
+			}
+		}
+
+		SRS_knights_of_socialism_idea = {
+			#picture = 
+			removal_cost = -1
+			modifier = {
+				modifier_army_sub_unit_knights_defence_factor = 0.05
+				special_forces_cap = 0.05
+			}
+		}
+
+		SRS_defensive_equipment_1_idea = {
+			#picture = 
+			removal_cost = -1
+			equipment_bonus = {
+				field_hospital = {
+					casualty_trickleback = 0.10
+					experience_loss_factor = -0.10
+				}
+			}
+		}
+
+		SRS_defensive_equipment_2_idea = {
+			#picture = 
+			removal_cost = -1
+			equipment_bonus = {
+				engineer = {
+					entrenchment = 2
+				}
+			}
+		}
+
+		SRS_defensive_equipment_3_idea = {
+			#picture = 
+			removal_cost = -1
+			equipment_bonus = {
+				field_hospital = {
+					casualty_trickleback = 0.05
+					experience_loss_factor = -0.05
+				}
+				engineer = {
+					entrenchment = 1
+				}
 			}
 		}
 
@@ -4463,6 +4574,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				conscription_factor = 0.05
+
 			}
 		}
 
@@ -4470,6 +4582,7 @@ ideas = {
 			modifier = {
 				send_volunteer_size = 3
 				air_volunteer_cap = 100
+				opinion_gain_monthly_same_ideology_factor = 0.25
 			}
 		}
 

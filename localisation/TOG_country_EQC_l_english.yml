@@ -1,0 +1,497 @@
+﻿l_english:
+ 
+ ######EQC######
+ 
+ RULE_OPTION_TECHNOCRATIC:0 "Technocratic"
+ RULE_TECHNOCRATIC_EQC_AI_DESC:0 "Placeholder"
+ 
+ EQC_haysight:0 "Haysight Company"
+ EQC_shovel_company:0 "UPlant Company"
+
+ EQC_uranium_mines:0 "Glowhorn Crystal Mines"
+ EQC_uranium_mines_desc:0 "Placeholder"
+
+ EQC_equestrian_crisis:0 "Equestrian Crisis"
+ EQC_equestrian_crisis_desc:0 "Placeholder"
+
+ EQC_return_to_alliance:0 "Equestrian Alliance"
+ EQC_return_to_alliance_desc:0 "Placeholder"
+
+ secret_aquileia_pact_tt:0 "§RIf we sign a secret pact with Aquileia before cooperating with the members of Karthinian Pact, then we'll have an opportunity to conquer Wingbardy.§!"
+
+ EQC_defence_of_x:0 "In the Defence of Ideology"
+ EQC_in_defence_of_technocracy:0 "In the Defence of Technocracy"
+ EQC_in_defence_of_anarchism:0 "In the Defence of Anarchism"
+
+ EQC_UNITED_CREATURES_ALLIANCE:0 "United Creatures Alliance"
+
+ EQC_atomic_research:0 "Project Harvi"
+ EQC_atomic_research_desc:0 "Placeholder"
+
+ EQC_defensive_planes:0 "Defensive Planes"
+ EQC_defensive_planes_desc:0 "Placeholder"
+
+ EQC_defensive_planes_idea:0 "Defensive Planes"
+ EQC_defensive_planes_idea_desc:0 "Placeholder"
+
+ EQC_equestrian_training:0 "Eqeustrian Training"
+ EQC_equestrian_training_desc:0 "Placeholder"
+
+ EQC_wonderbolts_academy:0 "Wonderbolts Academy"
+ EQC_wonderbolts_academy_desc:0 "Placeholder"
+
+ EQC_equestrian_training_idea:0 "Eqeustrian Training"
+ EQC_equestrian_training_idea_desc:0 "Placeholder"
+
+ EQC_salamander_1:0 "Get two §YElite Aerial Mage Divisions§!."
+ EQC_salamander_2:0 "Get two §YElite Panzer Divisions§!."
+ EQC_salamander_3:0 "Get two §YElite Infantry Divisions§!."
+ EQC_series_90_tech:0 "Has completed focus §YElenium Series 90' Testing§!."
+ EQC_series_90_tech_effect:0 "Enables §YElenium Type 95§! technology to be researched."
+ mil_aca_sun_tp:0 "Unlocks §YMilitary Academy Training§! decisions."
+ mil_aca_tech_tp:0 "Unlocks §YWar College Training§! decisions."
+ EQC_NEW_WORLD_ORDER:0 "New World Order"
+ EQC_REVANCHISM:0 "Revanchist Union"
+
+ EQC_military_academy_training_category:0 "Military Academy"
+ EQC_train_lunar_breeze_academy:0 "§RLunar Breeze§!: Military Academy Training"
+ EQC_train_tanya_academy:0 "§RTanya von Degurechaff§!: Military Academy Training"
+ EQC_train_grand_wingsword_academy:0 "§YGrand Wingstrom§!: Military Academy Training"
+ EQC_train_nightlight_charm_academy:0 "§YNightlight Charm§!: Military Academy Training"
+ EQC_train_sunny_shield_academy:0 "§YSunny Shield§!: Military Academy Training"
+ EQC_train_candy_garden_academy:0 "§YCandy Garden§!: Military Academy Training"
+ EQC_train_wandering_sunrise_academy:0 "§YWandering Sunrise§!: Military Academy Training"
+ EQC_train_earthberry_crust_academy:0 "§YEarthberry Crust§!: Military Academy Training"
+ EQC_train_triple_sevens_academy:0 "§YTriple Sevens§!: Military Academy Training"
+ EQC_train_anja_snow_academy:0 "§YAnja Snow§!: Military Academy Training"
+ EQC_train_chifundo_academy:0 "§YChifundo§!: Military Academy Training"
+ EQC_train_moonlight_poppy_academy:0 "§YMoonlight Poppy§!: Military Academy Training"
+
+ EQC_military_college_training_category:0 "War College"
+ EQC_train_lunar_breeze_college:0 "§RLunar Breeze§!: War College Training"
+ EQC_train_tanya_college:0 "§RTanya von Degurechaff§!: War College Training"
+ EQC_train_grand_wingsword_college:0 "§YGrand Wingstrom§!: War College Training"
+ EQC_train_nightlight_charm_college:0 "§YNightlight Charm§!: War College Training"
+ EQC_train_sunny_shield_college:0 "§YSunny Shield§!: War College Training"
+ EQC_train_candy_garden_college:0 "§YCandy Garden§!: War College Training"
+ EQC_train_wandering_sunrise_college:0 "§YWandering Sunrise§!: War College Training"
+ EQC_train_earthberry_crust_college:0 "§YEarthberry Crust§!: War College Training"
+ EQC_train_triple_sevens_college:0 "§YTriple Sevens§!: War College Training"
+ EQC_train_anja_snow_college:0 "§YAnja Snow§!: War College Training"
+ EQC_train_chifundo_college:0 "§YChifundo§!: War College Training"
+ EQC_train_moonlight_poppy_college:0 "§YMoonlight Poppy§!: War College Training"
+
+ EQC_investment_decisions_category:0 "Investment Decisions"
+ EQC_griffonia_trade_centre_tp:0 "Unlocks a decision to §RStop Further Construction Investment§!."
+ EQC_elenium_series_90_testing_tp:0 "Unlocks a decision to §RStop Further Research Investment§!."
+
+ EQC_stop_further_construction_investment:0 "§RStop Further Construction Investment§!"
+ EQC_stop_further_research_investment:0 "§RStop Further Research Investment§!"
+
+ EQC_tanya_college_finished:0 "Tanya has graduated from §YWar College§!"
+ EQC_reorg_mil_staff_tp:0 "Unlocks new canditates for the §YMilitary High Command§!."
+ EQC_flying_unicorns_tp:0 "Unlocks §CAerial Mage Technologies§!."
+ EQC_new_superpower_tp:0 "This country will be known as the §YNew Mareland Empire§!."
+ EQC_new_equestria_tp:0 "This country will be known as the §YNew Equestria§!."
+ EQC_new_mareland_kingdom_tp:0 "This country will be known as the §YNew Mareland Kingdom§!."
+
+ EQC_griffonia_trade_centre_idea:0 "Griffonia Trade Centre"
+ EQC_griffonia_trade_centre_idea_desc:0 "Placeholder"
+
+ EQC_invite_asterion:0 "Invite Asterion"
+ EQC_invite_asterion_desc:0 "Placeholder"
+
+ EQC_invite_vedina:0 "Invite Vedina"
+ EQC_invite_vedina_desc:0 "Placeholder"
+
+ EQC_modernize_new_manehattan:0 "Modernize New Manehattan"
+ EQC_modernize_new_manehattan_desc:0 "Placeholder"
+
+ EQC_appoint_our_scientists:0 "National Scientists"
+ EQC_appoint_our_scientists_desc:0 "Placeholder"
+
+ EQC_project_phoenix:0 "Project Phoenix"
+ EQC_project_phoenix_desc:0 "Placeholder"
+
+ EQC_rising_phoenix_idea:0 "Rising Phoenix"
+ EQC_rising_phoenix_idea_desc:0 "Placeholder"
+
+ EQC_appoint_captain_of_industry:0 "Appoint The Captain of Industry"
+ EQC_appoint_captain_of_industry_desc:0 "Placeholder"
+
+ EQC_appoint_army_instructor:0 "Appoint The Army Instructor"
+ EQC_appoint_army_instructor_desc:0 "Placeholder"
+
+ EQC_unsupported_economy_idea1:0 "Unsupported Economy"
+ EQC_unsupported_economy_idea1_desc:0 "Placeholder"
+
+ EQC_labour_law:0 "Adjust The Labour Law"
+ EQC_labour_law_desc:0 "Placeholder"
+
+ EQC_unsupported_economy_idea2:0 "Unsupported Economy"
+ EQC_unsupported_economy_idea2_desc:0 "Placeholder"
+
+ EQC_strengthen_friendship:0 "Strengthen Our Friendship"
+ EQC_strengthen_friendship_desc:0 "Placeholder"
+
+ EQC_heavy_artillery_company:0 "EAGLE Company"
+
+ EQC_perfect_workforce:0 "Worker Retraining Program"
+ EQC_perfect_workforce_desc:0 "Placeholder"
+
+ EQC_karthinian_cooperation:0 "§YKarthinian Cooperation§!"
+ EQC_karthinian_cooperation_desc:0 "Placeholder"
+
+ EQC_perfect_workforce_idea:0 "Retrained Workers"
+ EQC_perfect_workforce_idea_desc:0 "Placeholder"
+
+ EQC_chromium_mines:0 "Chromium Processing Factory"
+ EQC_chromium_mines_desc:0 "Placeholder"
+
+ EQC_new_superpower:0 "New Superpower"
+ EQC_new_superpower_desc:0 "Placeholder"
+
+ EQC_new_trade_system_idea:0 "New Trade System"
+ EQC_new_trade_system_idea_desc:0 "Placeholder"
+
+ EQC_project_salamander:0 "Project Salamander"
+ EQC_project_salamander_desc:0 "Placeholder"
+
+ EQC_artillery_is_god:0 "Artillery Is God"
+ EQC_artillery_is_god_desc:0 "Placeholder"
+
+ EQC_war_with_the_empire:0 "War With The Empire"
+ EQC_war_with_the_empire_desc:0 "Placeholder"
+
+ EQC_rulers_of_griffonia:0 "Rulers Of Griffonia"
+ EQC_rulers_of_griffonia_desc:0 "Placeholder"
+
+ EQC_artillery_is_god_idea:0 "Divine Artillery"
+ EQC_artillery_is_god_idea_desc:0 "Placeholder"
+
+ EQC_strike_cyanolisia:0 "Restore Asterion"
+ EQC_strike_cyanolisia_desc:0 "Placeholder"
+
+ EQC_strike_griffingaard:0 "Restore Vedina"
+ EQC_strike_griffingaard_desc:0 "Placeholder"
+
+ EQC_karthinian_question:0 "Wingbardian Question"
+ EQC_karthinian_question_desc:0 "Placeholder"
+
+ EQC_kill_them_all:0 "Defend The Future"
+ EQC_kill_them_all_desc:0 "Placeholder"
+
+ EQC_kill_them_all_idea:0 "Defenders of The Future"
+ EQC_kill_them_all_idea_desc:0 "Placeholder"
+
+ EQC_tale_of_two_motherlands:0 "Tale of Two Motherlands"
+ EQC_tale_of_two_motherlands_desc:0 "Placeholder"
+
+ EQC_closer_cooperation:0 "Better Than Ever"
+ EQC_closer_cooperation_desc:0 "Placeholder"
+
+ EQC_perfect_soldiers:0 "Harsh Training"
+ EQC_perfect_soldiers_desc:0 "Placeholder"
+
+ EQC_perfect_soldiers_idea:0 "Harsh Training"
+ EQC_perfect_soldiers_idea_desc:0 "Placeholder"
+
+ EQC_rapid_response_1:0 "Get four §YAerial Mage Divisions§!."
+
+ EQC_combined_forces_idea:0 "Combined Forces"
+ EQC_combined_forces_idea_desc:0 "Placeholder"
+
+ EQC_tartarus_tt:0 "Get four §YElite Heavy Artillery Divisions§!."
+
+ EQC_artillery_focus_idea:0 "Artillery Driven Army"
+ EQC_artillery_focus_idea_desc:0 "Placeholder"
+
+ EQC_project_tartarus:0 "Project Tartarus"
+ EQC_project_tartarus_desc:0 "Placeholder"
+
+ EQC_resources_focus_idea:0 "Valuables Extraction Companies"
+ EQC_resources_focus_idea_desc:0 "Placeholder"
+
+ EQC_secret_pact_with_aquileia:0 "§YSecret Pact With Aquileia§!"
+ EQC_secret_pact_with_aquileia_desc:0 "Placeholder"
+
+ EQC_side_with_aquileia:0 "Join The Crown"
+ EQC_side_with_aquileia_desc:0 "Placeholder"
+
+ EQC_great_betrayal:0 "Great Betrayal"
+ EQC_great_betrayal_desc:0 "Placeholder"
+
+ EQC_dream_of_an_empire:0 "Dream of An Empire"
+ EQC_dream_of_an_empire_desc:0 "Placeholder"
+
+ EQC_preemptive_strike:0 "Preemptive Strike"
+ EQC_preemptive_strike_desc:0 "Placeholder"
+
+ EQC_project_midas:0 "Project Midas"
+ EQC_project_midas_desc:0 "Placeholder"
+
+ EQC_restructure_new_manehattan:0 "§RRestructure New Manehattan§!"
+ EQC_restructure_new_manehattan_desc:0 "Placeholder"
+
+ EQC_new_manehattan_research_centre:0 "§RNew Manehattan Research Centre§!"
+ EQC_new_manehattan_research_centre_desc:0 "Placeholder"
+
+ EQC_invite_foreign_scientists:0 "Foreign Scientists"
+ EQC_invite_foreign_scientists_desc:0 "Placeholder"
+
+ EQC_new_mareland_scientists_idea:0 "National Scientists"
+ EQC_new_mareland_scientists_idea_desc:0 "Placeholder"
+
+ EQC_foreign_scientists_idea:0 "Foreign Scientists"
+ EQC_foreign_scientists_idea_desc:0 "Placeholder"
+ 
+ EQC_new_manehattan_factories:0 "New Manehattan Industrial District"
+ EQC_new_manehattan_factories_desc:0 "Placeholder"
+
+ EQC_military_discipline:0 "CQC Training"
+ EQC_military_discipline_desc:0 "Placeholder"
+
+ EQC_unexpected_help:0 "Unexpected Help"
+ EQC_unexpected_help_desc:0 "Placeholder"
+
+ EQC_third_way_tech:0 "Revanchist Union"
+ EQC_third_way_tech_desc:0 "Placeholder"
+
+ EQC_propaganda1_idea:0 "Anti-Wingbardy Propaganda"
+ EQC_propaganda1_idea_desc:0 "Placeholder"
+
+ EQC_propaganda2_idea:0 "Anti-Talouse Propaganda"
+ EQC_propaganda2_idea_desc:0 "Placeholder"
+
+ EQC_propaganda3_idea:0 "Anti-Francistria Propaganda"
+ EQC_propaganda3_idea_desc:0 "Placeholder"
+
+ EQC_spread_propaganda_techno:0 "Spread Propaganda"
+ EQC_spread_propaganda_techno_desc:0 "Placeholder"
+
+ strike_cyo_tt:0 "§RAll conquered Cyanolisian land will be tranfered to Asterion after the peace conference.§!"
+ strike_nfg_tt:0 "§RAll conquered Griffingaardian land will be tranfered to Vedina after the peace conference.§!"
+
+ aerial_mage_tech_research:0 "Aerial Mages Research Speed"
+
+ EQC_artillery_specialist_pony:0 "Lucky Thunder"
+ EQC_infantry_specialist_pony:0 "Pearly Swirl"
+ EQC_technocratic_pony:0 "Artificer Rare"
+ EQC_anarchist_pony:0 "Silver Surprise"
+ EQC_adelheid_von_schugel:0 "Adelheid von Schugelbeak"
+ EQC_genius_ace_generation_griff:0 "Athena Lightningfeather"
+ EQC_genius_special_forces_pony:0 "Midnight Crystal"
+ EQC_genius_army_offense_pony:0 "Oliviero Ala Dell'alba"
+ EQC_army_instructor:0 "Ares Riverclaw"
+
+ EQC_mad_genius:0 "Mad Genius"
+
+ EQC_concerned_thestrals_idea:0 "Concerned Thestrals"
+ EQC_concerned_thestrals_idea_desc:0 "Placeholder"
+
+ EQC_political_stability_idea:0 "Restoring Political Stability"
+ EQC_political_stability_idea_desc:0 "Placeholder"
+
+ EQC_concerned_thestrals_idea:0 "Concerned Thestrals"
+ EQC_concerned_thestrals_idea_desc:0 "Placeholder"
+
+ EQC_freedom_win:0 "Freedom Party Triumph"
+ EQC_freedom_win_desc:0 "Placeholder"
+
+ EQC_technocrats_win:0 "Lunar Breeze Wins"
+ EQC_technocrats_win_desc:0 "Placeholder"
+ 
+ EQC_anarchists_win:0 "Scarlet Proudhorn Wins"
+ EQC_anarchists_win_desc:0 "Placeholder"
+
+ EQC_optimized_hierarchy:0 "Optimize Hierarchy"
+ EQC_optimized_hierarchy_desc:0 "Placeholder"
+
+ EQC_specialized_education:0 "Specialized Education"
+ EQC_specialized_education_desc:0 "Placeholder"
+
+ EQC_specialized_education_idea:0 "Specialized Education"
+ EQC_specialized_education_idea_desc:0 "Placeholder"
+
+ EQC_massive_nationalization:0 "Massive Nationalisation"
+ EQC_massive_nationalization_desc:0 "Placeholder"
+
+ EQC_fund_construction_companies:0 "Fund Construction Companies"
+ EQC_fund_construction_companies_desc:0 "Placeholder"
+
+ EQC_economic_recovery_custom:0 "§CEconomic Recovery§!"
+ EQC_economic_recovery_custom_desc:0 "Placeholder"
+
+ EQC_construction_companies_idea:0 "Investment in Construction"
+ EQC_construction_companies_idea_desc:0 "Placeholder"
+
+ EQC_reorganize_the_economic_institutes:0 "Reorganize The Economic Institutes"
+ EQC_reorganize_the_economic_institutes_desc:0 "Placeholder"
+
+ EQC_reorganize_the_military_staff:0 "Reorganize The Military Staff"
+ EQC_reorganize_the_military_staff_desc:0 "Placeholder"
+
+ EQC_fund_genius_minds:0 "Fund Genius Minds"
+ EQC_fund_genius_minds_desc:0 "Placeholder"
+
+ EQC_massive_investment_in_economy:0 "§CMassive Investment In Construction§!"
+ EQC_massive_investment_in_economy_desc:0 "Placeholder"
+
+ EQC_investment_in_economy:0 "Investment in Construction"
+ EQC_investment_in_economy_desc:0 "Placeholder"
+
+ EQC_new_salary_system:0 "New Salary System"
+ EQC_new_salary_system_desc:0 "Placeholder"
+
+ EQC_new_conscription_system:0 "§GNew Conscription System§!"
+ EQC_new_conscription_system_desc:0 "Placeholder"
+
+ EQC_expand_conscription:0 "§GExpand Conscription§!"
+
+ EQC_royal_military_academy_sunset_custom:0 "§ORoyal Military Academy Sunset§!"
+ EQC_royal_military_academy_sunset_custom_desc:0 "Placeholder"
+
+ EQC_massive_investment_in_research:0 "§CMassive Investment in Research§!"
+ EQC_massive_investment_in_research_desc:0 "Placeholder"
+
+ EQC_child_conscription_idea:0 "Foal Unicorns In The Army"
+ EQC_child_conscription_idea_desc:0 "Placeholder"
+
+ EQC_fund_genius_minds_idea:0 "Investment in Research"
+ EQC_fund_genius_minds_idea_desc:0 "Placeholder"
+
+ EQC_investment_in_research:0 "Investment In Research"
+ EQC_investment_in_research_desc:0 "Placeholder"
+
+ EQC_investment_in_research2:0 "Investment In Research"
+ EQC_investment_in_research2_desc:0 "Placeholder"
+
+ EQC_better_banking:0 "Modern Banks"
+ EQC_better_banking_desc:0 "Placeholder"
+
+ EQC_allow_the_choice_of_life:0 "Allow The Choice of Life"
+ EQC_allow_the_choice_of_life_desc:0 "Placeholder"
+
+ EQC_great_military_academy:0 "§ORoyal War College Sunset§!"
+ EQC_great_military_academy_desc:0 "Placeholder"
+
+ EQC_a_workplace_for_everycreature:0 "A Workplace For Everycreature"
+ EQC_a_workplace_for_everycreature_desc:0 "Placeholder"
+
+ EQC_no_country_for_old_horses:0 "No Country For Old Horses"
+ EQC_no_country_for_old_horses_desc:0 "Placeholder"
+
+ EQC_remove_the_defects:0 "Remove The Defects"
+ EQC_remove_the_defects_desc:0 "Placeholder"
+
+ EQC_military_laboratories:0 "Military Laboratories"
+ EQC_military_laboratories_desc:0 "Placeholder"
+
+ EQC_expand_the_mines:0 "Crystal Processing Factory"
+ EQC_expand_the_mines_desc:0 "Placeholder"
+
+ EQC_expand_cities:0 "Expand Cities"
+ EQC_expand_cities_desc:0 "Placeholder"
+
+ EQC_in_defense_of_motherland:0 "Defend The Motherland"
+ EQC_in_defense_of_motherland_desc:0 "Placeholder"
+
+ EQC_next_gen_tanks:0 "Next Gen Tanks"
+ EQC_next_gen_tanks_desc:0 "Placeholder"
+
+ EQC_next_gen_artillery:0 "Next Gen Artillery"
+ EQC_next_gen_artillery_desc:0 "Placeholder"
+
+ EQC_choice_of_life1:0 "Choice of Life"
+ EQC_choice_of_life1_desc:0 "Placeholder"
+
+ EQC_choice_of_life2:0 "Choice of Life"
+ EQC_choice_of_life1_desc:0 "Placeholder"
+
+ EQC_choice_of_life3:0 "Choice of Life"
+ EQC_choice_of_life1_desc:0 "Placeholder"
+
+ EQC_new_trade_system:0 "New Trade System"
+ EQC_new_trade_system_desc:0 "Placeholder"
+
+ EQC_griffonia_trade_centre:0 "Griffonia Trade Centre"
+ EQC_griffonia_trade_centre_desc:0 "Placeholder"
+
+ EQC_flying_unicorns:0 "Angels of Death"
+ EQC_flying_unicorns_desc:0 "Placeholder"
+
+ EQC_elenium_series_90_testing:0 "Elenium Series 90' Testing"
+ EQC_elenium_series_90_testing_desc:0 "Placeholder"
+
+ EQC_in_defense_of_motherland_idea:0 "Defenders of The Motherland"
+ EQC_in_defense_of_motherland_idea_desc:0 "Placeholder"
+
+ EQC_next_gen_tanks_idea:0 "Next Gen Tanks"
+ EQC_next_gen_tanks_idea:0 "Placeholder"
+
+ EQC_next_gen_artillery_idea:0 "Next Gen Artillery"
+ EQC_next_gen_artillery_idea:0 "Placeholder"
+
+ EQC_aerial_mages_idea:0 "Aerial Mages"
+ EQC_aerial_mages_idea_desc:0 "Placeholder"
+
+ EQC_strike_the_pact:0 "Strike The Pact"
+ EQC_strike_the_pact_desc:0 "Placeholder"
+
+ EQC_massive_integration_act:0 "Massive Integration"
+ EQC_massive_integration_act_desc:0 "Placeholder"
+
+ EQC_befriend_wingbardy:0 "Befriend Wingbardy"
+ EQC_befriend_wingbardy_desc:0 "Placeholder"
+
+ EQC_join_wingbardy:0 "Join The Pact"
+ EQC_join_wingbardy_desc:0 "Placeholder"
+
+ EQC_strike_aquileia:0 "Strike Aquileia"
+ EQC_strike_aquileia_desc:0 "Placeholder"
+
+ EQC_integrate_aquileia:0 "Integrate Aquileia"
+ EQC_integrate_aquileia_desc:0 "Placeholder"
+ 
+ EQC_let_all_have_a_say_custom:0 "Let All Have A Say"
+ EQC_let_all_have_a_say_custom_desc:0 "Placeholder"
+
+ EQC_military_academy_techno:0 "Great War College"
+ EQC_military_academy_techno_desc:0 "Placeholder"
+
+ EQC_new_salary_system_idea:0 "New Salary System"
+ EQC_new_salary_system_idea_desc:0 "Placeholder"
+
+ EQC_expand_sunset:0 "Restructure Sunset"
+ EQC_expand_sunset_desc:0 "Placeholder"
+
+ EQC_rapid_response_unit:0 "Rapid Response Unit"
+ EQC_rapid_response_unit_desc:0 "Placeholder"
+
+ EQC_deal_with_opo_tech:0 "Deal With The Opposition"
+ EQC_deal_with_opo_tech_desc:0 "Placeholder"
+
+ EQC_awful_military_idea1:0 "Untrained Soldiers"
+ EQC_awful_military_idea1_desc:0 "Placeholder"
+
+ EQC_awful_military_idea2:0 "Untrained Soldiers"
+ EQC_awful_military_idea2_desc:0 "Placeholder"
+
+ EQC_waste_sorting:0 "National Waste Sorting Act"
+ EQC_waste_sorting_desc:0 "Placeholder"
+
+ EQC_waste_sorting_idea:0 "Waste Sorting"
+ EQC_waste_sorting_idea_desc:0 "Placeholder"
+ 
+ EQC_last_stand:0 "Last Stand"
+ EQC_last_stand_desc:0 "Placeholder"
+
+ EQC_last_stand_idea:0 "Last Stand"
+ EQC_last_stand_idea_desc:0 "Placeholder"
+
+ EQC_accept_the_bats_duke:0 "Accept The Bats"
+ EQC_accept_the_bats_duke_desc:0 "Placeholder"
+ 
+ EQC_pay_250k_tp:0 "This policy will cost us §R0.25§! Million Bits per month."
+ EQC_pay_500k_tp:0 "This policy will cost us §R0.5§! Million Bits per month."
+ EQC_pay_1m_tp:0 "This policy will cost us §R1§! Million Bits per month."

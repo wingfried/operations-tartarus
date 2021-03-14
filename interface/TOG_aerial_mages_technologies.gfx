@@ -1,0 +1,117 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_tech_recruit_aerial_mages_medium"
+		textureFile = "gfx/interface/technologies/aerial_mages/aerial_mage_equipment_0.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tech_aerial_mages_1_medium"
+		textureFile = "gfx/interface/technologies/aerial_mages/aerial_mage_equipment_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tech_aerial_mages_2_medium"
+		textureFile = "gfx/interface/technologies/aerial_mages/aerial_mage_equipment_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tech_aerial_mages_3_medium"
+		textureFile = "gfx/interface/technologies/aerial_mages/aerial_mage_equipment_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tech_aerial_mages_4_medium"
+		textureFile = "gfx/interface/technologies/aerial_mages/aerial_mage_equipment_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tech_aerial_mages_5_medium"
+		textureFile = "gfx/interface/technologies/aerial_mages/aerial_mage_equipment_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tech_aerial_mages_6_medium"
+		textureFile = "gfx/interface/technologies/aerial_mages/aerial_mage_equipment_6.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_aerial_mages_speed_1_medium"
+		texturefile = "gfx/interface/technologies/aerial_mages/aerial_mage_speed_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_aerial_mages_speed_2_medium"
+		texturefile = "gfx/interface/technologies/aerial_mages/aerial_mage_speed_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_aerial_mages_speed_3_medium"
+		texturefile = "gfx/interface/technologies/aerial_mages/aerial_mage_speed_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_aerial_mages_speed_4_medium"
+		texturefile = "gfx/interface/technologies/aerial_mages/aerial_mage_speed_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_aerial_mages_speed_5_medium"
+		texturefile = "gfx/interface/technologies/aerial_mages/aerial_mage_speed_5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_aerial_mages_speed_6_medium"
+		texturefile = "gfx/interface/technologies/aerial_mages/aerial_mage_speed_6.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_aerial_mage_techtree_bg"
+		textureFile = "gfx//interface//techtree//pony_magic_techtree_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aerial_mage_folder_tab"
+		textureFile = "gfx//interface//techtree//techtree_aerial_mage_tab.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_aerial_mage_folder_icon"
+		textureFile = "gfx/interface/techtree/icons/magic_folder_icon.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_aerial_mage_folder_small_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	spriteType = {
+		name = "GFX_technology_aerial_mage_folder_small_researched_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_researched_item_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_technology_aerial_mage_folder_small_available_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_aerial_mage_folder_small_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_aerial_mage_folder_small_branch_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_branch_item_bg.dds"
+	}
+}

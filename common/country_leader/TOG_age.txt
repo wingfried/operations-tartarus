@@ -1,0 +1,725 @@
+leader_traits = {
+
+    ### Age ###
+
+    TOG_age_1_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_2_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_3_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_4_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_5_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_6_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_7_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_8_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_9_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_10_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_11_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_12_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_13_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_14_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_15_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_16_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_17_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_18_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_19_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_20_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_21_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_22_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_23_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_24_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_25_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_26_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_27_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_28_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_29_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_30_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_31_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_32_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_33_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_34_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_35_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_36_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_37_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_38_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_39_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_40_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_41_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_42_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_43_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_44_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_45_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_46_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_47_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_48_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_49_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_50_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_51_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_52_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_53_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_54_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_55_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_56_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_57_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_58_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_59_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_60_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_61_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_62_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_63_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_64_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_65_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_66_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_67_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_68_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_69_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_70_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_71_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_72_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_73_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_74_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_75_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_76_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_77_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_78_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_79_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_80_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_81_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_82_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_83_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_84_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_85_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_86_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_87_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_88_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_89_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_90_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_91_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_92_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_93_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_94_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_95_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_96_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_97_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_98_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_99_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_100_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_101_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_102_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_103_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_104_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_105_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_106_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_107_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_108_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_109_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_110_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_111_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_112_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_113_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_114_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_115_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_116_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_117_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_118_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_119_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    TOG_age_120_trait = {
+        random = no
+		ai_will_do = {
+			factor = 0
+		}
+    }
+}

@@ -1,0 +1,88 @@
+leader_traits = {
+	moderniser = {
+		random = no
+		army_org_factor = 0.05
+		production_speed_buildings_factor = 0.05
+		research_speed_factor = 0.025
+	}
+	integralist_king = {
+		random = no
+		army_morale_factor = 0.05
+		conscription_factor = 0.05
+		stability_factor = 0.05
+	}
+	ferrous_trait = {
+		random = no
+		political_power_gain = 0.1
+		political_advisor_cost_factor = -0.1
+		economy_cost_factor = -0.1
+		trade_laws_cost_factor = -0.1
+		mobilization_laws_cost_factor = -0.1
+	}
+	sturmgriefen_commander = {
+		random = no
+		experience_gain_army = 0.05
+		enemy_partisan_effect = -0.25
+	}
+	protector_cyan = {
+		random = no
+		targeted_modifier = { tag = MIT defense_bonus_against = 0.1 }
+		max_dig_in = 1.5
+		stability_factor = 0.10
+		defensive_war_stability_factor = 0.4
+	}
+	first_among_equals_trait = {
+		random = no
+		political_power_gain = 0.1
+		stability_factor = 0.05
+	}
+	arantiga_shield = {
+		random = no
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
+	}
+	unhinged_scientist = {
+	    random = no
+		political_power_factor = -0.15
+		research_speed_factor = 0.05
+	}
+	imperial_treasurer = {
+	    random = no
+		stability_factor = -0.10
+		consumer_goods_factor = -0.05
+	}
+	indominable_will = {
+	    random = no
+		army_morale_factor = 0.05
+	}
+	king_of_the_people = {
+	    random = no
+		political_power_factor = 0.1
+		army_morale_factor = 0.1
+	}
+	republican_revolutionary = {
+	    random = no
+		army_morale_factor = 0.1
+		communism_acceptance = 20
+	}
+	TOG_tankbuilding_academy = { #loc is inside BOI's files
+	    random = no
+	}
+	TOG_mass_tank_manufacturer = {
+	    random = no
+	}
+	TOG_fast_tank_manufacturer = {
+	    random = no
+	}
+	TOG_cutie_griffon_crusader = {
+	    random = no
+		stability_factor = 0.05
+		conscription_factor = 0.05
+	}
+	TOG_republican_icon = {
+	    random = no
+		drift_defence_factor = 0.2
+		stability_factor = 0.05
+		war_support_factor = 0.05
+	}
+}

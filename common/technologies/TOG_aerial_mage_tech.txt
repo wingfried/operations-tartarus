@@ -1,0 +1,410 @@
+@989 = 0
+@1007 = 0
+@1009 = 2
+@1010 = 4
+@1011 = 6
+@1012 = 8
+@1013 = 10
+@1014 = 12
+@1015 = 14
+@1016 = 16
+@1017 = 18
+@1018 = 20
+@1019 = 22
+@1020 = 24
+@1021 = 26
+@1022 = 28
+@1023 = 30
+@1024 = 32
+@1025 = 34
+@1026 = 36
+
+technologies = {
+	
+	tech_recruit_aerial_mages = {
+	
+		enable_subunits = {
+			aerial_mages
+			aerial_mage_spotters
+		}
+
+		enable_equipments = {
+			aerial_mage_equipment_0
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_aerial_mages_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = aerial_mage_folder
+			position = { x = 1 y = @1007 }
+		}
+
+		categories = {
+			aerial_mage_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 3.5
+				date > "1008.1.1"
+			}
+
+			modifier = {
+				factor = 20
+				date > "1009.1.1"
+			}
+		}
+	}
+
+	tech_aerial_mages_1 = {
+
+		enable_equipments = {
+			aerial_mage_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = tech_aerial_mages_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = tech_aerial_mages_speed_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1010
+		folder = {
+			name = aerial_mage_folder
+			position = { x = 1 y = @1010 }
+		}
+		
+		categories = {
+			aerial_mage_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 3.5
+				date > "10010.1.1"
+			}
+
+			modifier = {
+				factor = 20
+				date > "1011.1.1"
+			}
+		}
+	}
+
+	tech_aerial_mages_2 = {
+
+		enable_equipments = {
+			aerial_mage_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = tech_aerial_mages_3
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = tech_aerial_mages_speed_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1013
+		folder = {
+			name = aerial_mage_folder
+			position = { x = 1 y = @1013 }
+		}
+		
+		categories = {
+			aerial_mage_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tech_aerial_mages_3 = {
+
+		enable_equipments = {
+			aerial_mage_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = tech_aerial_mages_4
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = tech_aerial_mages_speed_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1016
+		folder = {
+			name = aerial_mage_folder
+			position = { x = 1 y = @1016 }
+		}
+		
+		categories = {
+			aerial_mage_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tech_aerial_mages_4 = {
+
+		enable_equipments = {
+			aerial_mage_equipment_4
+		}
+
+		path = {
+			leads_to_tech = tech_aerial_mages_5
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = tech_aerial_mages_speed_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1019
+		folder = {
+			name = aerial_mage_folder
+			position = { x = 1 y = @1019 }
+		}
+		
+		categories = {
+			aerial_mage_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tech_aerial_mages_5 = {
+
+		enable_equipments = {
+			aerial_mage_equipment_5
+		}
+
+		path = {
+			leads_to_tech = tech_aerial_mages_6
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = tech_aerial_mages_speed_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1022
+		folder = {
+			name = aerial_mage_folder
+			position = { x = 1 y = @1022 }
+		}
+		
+		categories = {
+			aerial_mage_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tech_aerial_mages_6 = {
+
+		enable_equipments = {
+			aerial_mage_equipment_6
+		}
+
+		dependencies = {
+			EQC_series_90_tech = 1
+		}
+		
+		path = {
+			leads_to_tech = tech_aerial_mages_speed_6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1025
+		folder = {
+			name = aerial_mage_folder
+			position = { x = 1 y = @1025 }
+		}
+		
+		categories = {
+			aerial_mage_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tech_aerial_mages_speed_1 = {
+
+		aerial_mages = {
+			maximum_speed = 0.25
+			reliability = -0.03
+		}
+
+		research_cost = 1.5
+		start_year = 1011
+		folder = {
+			name = aerial_mage_folder
+			position = { x = 0 y = @1011 }
+		}
+		
+		categories = {
+			aerial_mage_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tech_aerial_mages_speed_2 = {
+
+		aerial_mages = {
+			maximum_speed = 0.25
+			reliability = -0.03
+		}
+
+		research_cost = 1.5
+		start_year = 1014
+		folder = {
+			name = aerial_mage_folder
+			position = { x = 0 y = @1014 }
+		}
+		
+		categories = {
+			aerial_mage_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tech_aerial_mages_speed_3 = {
+
+		aerial_mages = {
+			maximum_speed = 0.25
+			reliability = -0.03
+		}
+
+		research_cost = 1.5
+		start_year = 1017
+		folder = {
+			name = aerial_mage_folder
+			position = { x = 0 y = @1017 }
+		}
+		
+		categories = {
+			aerial_mage_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tech_aerial_mages_speed_4 = {
+
+		aerial_mages = {
+			maximum_speed = 0.25
+			reliability = -0.03
+		}
+
+		research_cost = 1.5
+		start_year = 1020
+		folder = {
+			name = aerial_mage_folder
+			position = { x = 0 y = @1020 }
+		}
+		
+		categories = {
+			aerial_mage_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tech_aerial_mages_speed_5 = {
+
+		aerial_mages = {
+			maximum_speed = 0.25
+			reliability = -0.03
+		}
+
+		research_cost = 1.5
+		start_year = 1023
+		folder = {
+			name = aerial_mage_folder
+			position = { x = 0 y = @1023 }
+		}
+		
+		categories = {
+			aerial_mage_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tech_aerial_mages_speed_6 = {
+
+		aerial_mages = {
+			maximum_speed = 0.25
+			reliability = -0.03
+		}
+
+		research_cost = 1.5
+		start_year = 1026
+		folder = {
+			name = aerial_mage_folder
+			position = { x = 0 y = @1026 }
+		}
+		
+		categories = {
+			aerial_mage_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

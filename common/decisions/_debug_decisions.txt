@@ -1,0 +1,20 @@
+debug_decisions = {
+	shipping_event_debug = {
+
+		#icon = generic_independence
+
+		#days_re_enable = 120 # Prevent event spam
+
+		#cost = 10
+
+		#VPI by Yard1
+		
+		complete_effect = {
+			country_event = { id = tog_debug_event.0 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

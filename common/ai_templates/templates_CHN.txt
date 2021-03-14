@@ -13,7 +13,7 @@ Infantry_CHN = {
 		factor = 5		
 	}
 			
-	match_to_count = 0.5
+	match_to_count = 0.3 ###I changed it for the others but changing it for this one somehow breaks everything? Idk, I am tired of this -sapare
 
 	Infantry_CHN = {
 
@@ -24,8 +24,7 @@ Infantry_CHN = {
 	production_prio = {
 			factor = 2
 		
-	}
-		
+	}		
 
 		target_width = 20.0
 		width_weight = 1.0
@@ -88,15 +87,19 @@ Infantry_CHN = {
 
 		allowed_types = {
 			infantry
+			
 			engineer
-			recon
-			field_hospital
 			artillery
+			recon				
+			anti_air
+			infiltrator_company		
+						
 			anti_tank
+			anti_air
+			field_hospital
 			anti_tank_brigade
 			infiltrator_company
-			artillery_brigade
-			anti_air
+			artillery_brigade			
 			}																													
 			}
 			
@@ -125,8 +128,7 @@ Infantryantitank_CHN = {
 					}
 				}
 			}
-	}
-	
+	}	
 	}
 		
 	production_prio = {
@@ -216,17 +218,20 @@ Infantryantitank_CHN = {
 
 		allowed_types = {
 			infantry
+			
 			engineer
-			recon
-			field_hospital
 			artillery
+			recon						
 			anti_tank
+			infiltrator_company
+						
+			anti_air						
 			anti_tank_brigade
 			infiltrator_company
 			artillery_brigade
-			anti_air
+			field_hospital			
 			}																													
-			}	
+			}
 			
 Tungsten_Infantry_CHN = {
 
@@ -308,13 +313,17 @@ Tungsten_Infantry_CHN = {
 
 		allowed_types = {
 			infantry
+			
 			engineer
-			recon
+			recon		
+			anti_air
+			infiltrator_company
+			
 			field_hospital
-			logistics_company
+			logistics_company			
+			rocket_artillery
 			anti_tank
 			artillery
-			rocket_artillery
 		}
 		}
 		
@@ -396,9 +405,13 @@ Aluminium_Infantry_CHN = {
 
 		allowed_types = {
 			infantry
-			anti_tank
+						
+			anti_air
 			artillery
+			
 			rocket_artillery
+			artillery
+			anti_tank
 		}
 		}
 	
@@ -571,15 +584,17 @@ War_Infantry_CHN = {
 
 		allowed_types = {
 			infantry
+			
 			engineer
 			recon
 			field_hospital
 			artillery
-			anti_tank_brigade
-			infiltrator_company
-			artillery_brigade
 			anti_air
+			infiltrator_company
+			
 			anti_air_brigade
+			anti_tank_brigade			
+			artillery_brigade
 			}																										
 			}
 													
@@ -666,13 +681,16 @@ Modern_Infantry_CHN = {
 
 		allowed_types = {
 			infantry
+			
 			engineer
-			recon
-			field_hospital
-			anti_tank
 			artillery
-			anti_tank_brigade
+			recon
+			anti_air
+			anti_tank
+			field_hospital						
 			infiltrator_company
+			
+			anti_tank_brigade
 			artillery_brigade
 			}
 			}			
@@ -832,20 +850,22 @@ modifier = {
 			}
 		}
 
-		allowed_types = {
+		allowed_types = {		
+		infantry
 		medium_sp_artillery_brigade
 		medium_sp_anti_air_brigade
+						
+		engineer
+		recon	
+		artillery
+		anti_air	
 		infiltrator_company
-			infantry
-			engineer
-			recon
-			field_hospital
-			logistics_company
-			anti_tank
-			artillery
-			rocket_artillery
-			anti_air
-			maintenance_company
+		
+		field_hospital	
+		logistics_company	
+		anti_tank	
+		rocket_artillery	
+		maintenance_company													
 		}
 		}
 		
@@ -957,20 +977,24 @@ modifier = {
 		}
 
 		allowed_types = {
+		
+		infantry
 		heavy_tank_destroyer_brigade
 		heavy_sp_artillery_brigade
 		heavy_sp_anti_air_brigade
-		infiltrator_company
-			infantry
+		
+			
 			engineer
+			artillery
 			recon
+			maintenance_company
+			infiltrator_company
+			
 			field_hospital
 			logistics_company
-			anti_tank
-			artillery
-			rocket_artillery
+			anti_tank			
+			rocket_artillery								
 			anti_air
-			maintenance_company
 		}
 		}			
 		}	
@@ -1076,17 +1100,20 @@ magical_infantry_CHN = {
 		allowed_types = {
 			magical_infantry
 			infantry
+			
+			anti_tank_brigade
+			artillery_brigade
+			
 			engineer
+			artillery
+			anti_air
+			maintenance_company
+			infiltrator_company
 			recon
 			signal_company
 			field_hospital
-			logistics_company
-			infiltrator_company
-			anti_tank
-			anti_air
-			artillery
-			anti_tank_brigade
-			artillery_brigade
+			logistics_company			
+			anti_tank												
 		}
 		}
 		}
@@ -1208,18 +1235,23 @@ InfantryHTD_CHN = {
 		}
 
 		allowed_types = {
+		infantry
+		magical_infantry
 		heavy_tank_destroyer_brigade
-			infantry
-			magical_infantry
-			engineer
-			recon
-			field_hospital
-			logistics_company
-			anti_tank
-			artillery
-			rocket_artillery
-			anti_air
-			maintenance_company
+		
+			
+		engineer	
+		artillery
+		anti_air
+		maintenance_company
+		infiltrator_company
+			
+		recon
+		field_hospital
+		logistics_company
+		anti_tank
+		artillery
+		rocket_artillery
 		}
 		}
 		}		
@@ -1243,7 +1275,14 @@ Light_armor_CHN = {
 		check_variable = { resource_produced@rubber < 3 }
 		}
 		
-		modifier = {
+	modifier = {
+		factor = 0
+		not = {
+		has_tech = motorised_infantry
+		}
+		}
+		
+	modifier = {
 			factor = 0.5
 		AND = {
 			has_war = yes
@@ -1329,15 +1368,19 @@ Light_armor_CHN = {
 		allowed_types = {
 			light_armor
 			motorized
+			
 			light_sp_artillery_brigade
 			light_tank_destroyer_brigade
 			light_sp_anti_air_brigade
 			mot_artillery_brigade
+			
 			engineer
-			light_tank_recon
 			artillery
+			light_tank_recon			
+			anti_air
 			infiltrator_company
-			signal_company
+			
+			signal_company		
 		}
 		}
 
@@ -1444,16 +1487,17 @@ light_armor_improved_CHN = {
 			motorized
 			
 			light_sp_artillery_brigade
-			light_tank_destroyer_brigade
 			light_sp_anti_air_brigade
+			light_tank_destroyer_brigade
 			
-			mot_artillery_brigade
-			light_tank_recon
 			engineer
-			recon
-			anti_tank
 			artillery
-			infiltrator_company
+			light_tank_recon
+			anti_tank
+			infiltrator_company			
+			
+			mot_artillery_brigade			
+			recon									
 			signal_company
 		}
 		}
@@ -1617,21 +1661,26 @@ light_armor_antitank_CHN = {
 			}
 			}
 
-		allowed_types = {
-			motorized
-			infantry
+		allowed_types = {			
 			light_armor
-			light_sp_artillery_brigade
+			mechanized
 			light_tank_destroyer_brigade
+			light_sp_artillery_brigade			
 			light_sp_anti_air_brigade
+						
+			motorized
+			infantry						
 			mot_artillery_brigade
-			light_tank_recon
+			
 			engineer
-			recon
 			artillery
-			anti_tank
-			signal_company
+			light_tank_recon
 			anti_air
+			infiltrator_company
+			
+			recon		
+			anti_tank
+			signal_company			
 			logistics_company
 		}
 		}
@@ -1738,25 +1787,26 @@ Main_armor_CHN = {
 
 		allowed_types = {
 			medium_armor
+			motorized
+			
+			mechanized			
 			medium_sp_artillery_brigade
 			medium_tank_destroyer_brigade
 			medium_sp_anti_air_brigade
-			motorized
-			mechanized
-			infiltrator_company
 
 			motorized_rocket_brigade
 
 			engineer
-			recon
+			anti_air			
 			signal_company
 			maintenance_company
+			infiltrator_company
+			
 			logistics_company
-
 			anti_tank
 			military_police
 			artillery
-			anti_air
+			recon
 			rocket_artillery
 		}
 		}
@@ -1877,24 +1927,27 @@ production_prio = {
 
 		allowed_types = {
 			medium_armor
-			medium_sp_artillery_brigade
-			medium_tank_destroyer_brigade
-			medium_sp_anti_air_brigade
-			motorized
 			mechanized
-			infiltrator_company
+			medium_sp_artillery_brigade
+			medium_sp_anti_air_brigade
+			
+			medium_tank_destroyer_brigade			
+			motorized
+			
+			
 			light_tank_recon
 
 			motorized_rocket_brigade
 
 			engineer
-			recon
+			light_tank_recon
 			signal_company
-			maintenance_company
+			maintenance_company			
+			infiltrator_company
+			
+			recon						
 			logistics_company
-
 			anti_tank
-			military_police
 			artillery
 			anti_air
 			rocket_artillery
@@ -2069,24 +2122,24 @@ production_prio = {
 
 		allowed_types = {
 			medium_armor
-			medium_sp_artillery_brigade
-			medium_tank_destroyer_brigade
-			medium_sp_anti_air_brigade
-			motorized
 			mechanized
-
+			medium_tank_destroyer_brigade
+			
+			medium_sp_artillery_brigade			
+			medium_sp_anti_air_brigade
 			motorized_rocket_brigade
-
+			motorized
+						
 			engineer
-			recon
 			signal_company
-			maintenance_company
-			logistics_company
-
-			anti_tank
-			military_police
-			artillery
 			anti_air
+			maintenance_company
+			infiltrator_company
+			
+			recon						
+			logistics_company
+			anti_tank
+			artillery			
 			rocket_artillery
 		}
 	}
@@ -2189,21 +2242,22 @@ production_prio = {
 
 		allowed_types = {
 			modern_armor
-			motorized
 			mechanized
+			
+			motorized			
 			motorized_rocket_brigade 
 			medium_sp_artillery_brigade
+			
 			engineer
-			recon
 			signal_company
-			maintenance_company
-			logistics_company
-			infiltrator_company
-
-			anti_tank
-			military_police
-			artillery
 			anti_air
+			maintenance_company
+			infiltrator_company
+			
+			recon						
+			logistics_company			
+			anti_tank
+			artillery		
 			rocket_artillery
 		}									
 		}
@@ -2318,21 +2372,22 @@ heavy_armor_CHN = {
 
 		allowed_types = {
 			heavy_armor
+			infantry
+			
 			heavy_sp_artillery_brigade
 			heavy_tank_destroyer_brigade
 			heavy_sp_anti_air_brigade
-			infantry
+			
 
 			engineer
-			recon
-			signal_company
-			maintenance_company
-			logistics_company
-			infiltrator_company
-
-			anti_tank
-			military_police
 			artillery
+			recon
+			maintenance_company
+			infiltrator_company
+			
+			signal_company			
+			logistics_company			
+			anti_tank			
 			anti_air
 			rocket_artillery
 		}
@@ -2426,22 +2481,23 @@ heavy_armor_improved_CHN = {
 
 		allowed_types = {
 			heavy_armor
+			mechanized
 			heavy_sp_artillery_brigade
+			
 			heavy_tank_destroyer_brigade
 			heavy_sp_anti_air_brigade
 			infantry
 
 			engineer
-			recon
 			signal_company
+			anti_air
 			maintenance_company
-			logistics_company
 			infiltrator_company
 			
+			recon						
+			logistics_company						
 			anti_tank
-			military_police
-			artillery
-			anti_air
+			artillery			
 			rocket_artillery
 		}
 		}
@@ -2471,7 +2527,7 @@ Motor_CHN = {
 		}	
 				}
 			
-	match_to_count = 0.70
+	match_to_count = 0.30
 
 	Motorized_CHN = {
 
@@ -2544,19 +2600,21 @@ Motor_CHN = {
 			}
 
 		allowed_types = {
-			infantry
 			motorized
-			mechanized
 			mot_artillery_brigade
 			
+			infantry
+			mechanized
+						
 			engineer
-			recon
-			mot_recon
-			field_hospital
-			anti_tank
 			artillery
-			infiltrator_company
+			mot_recon
 			anti_air
+			infiltrator_company
+			
+			recon
+			field_hospital						
+			anti_tank			
 			maintenance_company
 			}																									
 			}									
@@ -2649,14 +2707,16 @@ Jager_CHN = {
 
 		allowed_types = {
 			jager
+			
 			engineer
+			artillery
 			recon
 			field_hospital
+			infiltrator_company
+			
 			logistics_company
 			signal_company
-			anti_tank
-			artillery
-			infiltrator_company
+			anti_tank						
 		}
 		}
 		}
@@ -2748,7 +2808,9 @@ garrison_CHN = {
 
 		allowed_types = {
 			infantry
+			
 			military_police
+			
 			anti_air
 			}
 			}
@@ -2851,13 +2913,16 @@ mountaineers_CHN = {
 
 		allowed_types = {
 			mountaineers
+			
+			engineer
 			artillery
 			recon
-			signal_company
 			field_hospital
-			logistics_company
-			anti_tank
 			infiltrator_company
+			
+			signal_company			
+			logistics_company
+			anti_tank			
 		}
 		}
 		}
@@ -2958,14 +3023,16 @@ marines_CHN = {
 
 
 		allowed_types = {
-			marine
+			marine			
 			artillery_brigade
+			
 			engineer
-			logistics_company
-			recon
-			anti_tank
 			artillery
+			logistics_company
+			anti_tank
 			infiltrator_company
+			
+			recon									
 		}
 		}
 		}
@@ -3060,20 +3127,22 @@ paratroopers_CHN = {
 			}
 
 			regiments = {
-				paratrooper = 5
+				paratrooper = 10
 			}
 		}
 
 		allowed_types = {
 			paratrooper
+			
 			engineer
-			recon
-			signal_company
-			field_hospital
+			artillery
+			anti_tank
 			logistics_company
 			infiltrator_company
-			anti_tank
-			artillery
+			
+			recon
+			signal_company
+			field_hospital												
 			anti_air
 			rocket_artillery
 		}
@@ -3096,7 +3165,7 @@ Artillery_CHN = {
 		factor = 2
 	}
 
-	match_to_count = 0.70
+	match_to_count = 0.90
 
 artilleryunit_CHN = {
 
@@ -3172,16 +3241,18 @@ artilleryunit_CHN = {
 
 		allowed_types = {
 			infantry
-			engineer
-			recon
-			field_hospital
-			logistics_company
-			anti_tank
-			artillery
-			rocket_artillery
 			artillery_brigade
+			
+			engineer
+			artillery
+			logistics_company
 			anti_air
 			infiltrator_company
+			
+			recon
+			field_hospital
+			anti_tank
+			rocket_artillery
 		}
 		}
 		
@@ -3264,10 +3335,12 @@ Aluminium_artillery_CHN = {
 
 		allowed_types = {
 			infantry
-			anti_tank
-			artillery
-			rocket_artillery
 			artillery_brigade
+			
+			artillery
+			
+			anti_tank			
+			rocket_artillery			
 			infiltrator_company
 		}
 		}
@@ -3363,15 +3436,17 @@ antitank_CHN = {
 
 		allowed_types = {
 			infantry
-			engineer
-			recon
-			field_hospital
-			logistics_company
-			anti_tank
-			artillery
-			rocket_artillery
 			anti_tank_brigade
+			
+			engineer
+			artillery
+			recon
 			anti_air
+			logistics_company
+			
+			field_hospital			
+			anti_tank			
+			rocket_artillery						
 			infiltrator_company
 		}
 		}
@@ -3455,10 +3530,12 @@ Aluminium_antitank_CHN = {
 
 		allowed_types = {
 			infantry
-			anti_tank
-			artillery
-			rocket_artillery
 			anti_tank_brigade
+			
+			artillery
+			
+			anti_tank			
+			rocket_artillery			
 		}		
 		}
 }
@@ -3568,20 +3645,23 @@ Mechanized_CHN = {
 			}
 
 		allowed_types = {
-			motorized
 			mechanized
+			mot_artillery_brigade
+			
+			motorized
+			
 			engineer
-			recon
-			field_hospital
-			anti_tank
 			artillery
-			anti_tank_brigade
-			infiltrator_company
-			artillery_brigade
 			anti_air
 			maintenance_company
 			infiltrator_company
-			mot_artillery_brigade
+			
+			recon
+			field_hospital
+			anti_tank			
+			anti_tank_brigade
+			infiltrator_company
+			artillery_brigade												
 			}																									
 			}
 }
@@ -3689,20 +3769,21 @@ Mechanized_arty_CHN = {
 			}
 
 		allowed_types = {
+			mechanized
 			medium_sp_artillery_brigade
 			motorized
-			mechanized
-			
-			light_tank_recon
+									
 			engineer
-			recon
-			field_hospital
-			anti_tank
 			artillery
-			anti_tank_brigade
-			artillery_brigade
+			light_tank_recon
 			anti_air
 			maintenance_company
+			
+			recon
+			field_hospital
+			anti_tank			
+			anti_tank_brigade
+			artillery_brigade						
 			}																									
 			}
 }

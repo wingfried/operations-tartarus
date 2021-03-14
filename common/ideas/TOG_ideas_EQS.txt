@@ -1,0 +1,83 @@
+ideas = {
+
+	country = {
+
+		EQS_celestia_has_fallen_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.20
+				army_attack_factor	= -0.08
+				army_defence_factor -0.08
+			}
+		}
+
+		EQS_luna_has_fallen_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.20
+				army_attack_factor	= -0.08
+				army_defence_factor -0.08
+			}
+		}
+
+		EQS_twilight_sparkle_has_fallen_idea = { #NOT IMPORTANT AT THIS STAGE
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				army_attack_factor	= -0.02
+				army_defence_factor -0.02
+			}
+		}
+	}
+	
+	political_advisor = {
+	}
+	
+	air_chief = {
+	}
+	
+	navy_chief = {
+	}
+	
+	high_command = {
+	}
+	
+	theorist = {
+	}
+	
+	army_chief = {
+	}
+}

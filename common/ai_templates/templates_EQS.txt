@@ -37,7 +37,7 @@ infantry_EQS = {
 		factor = 5
 			}
 			
-	match_to_count = 0.55
+	match_to_count = 0.3
 
 Infantry_default_EQS = {
 
@@ -99,7 +99,7 @@ Infantry_default_EQS = {
 				engineer = 1
 				artillery = 1
 				field_hospital = 1
-				anti_air = 1
+				anti_tank = 1
 				unicorn_company = 1
 			}
 
@@ -193,7 +193,7 @@ Tungsten_Infantry_EQS = {
 			support = {
 				engineer = 1				
 				field_hospital = 1
-				anti_air = 1
+				anti_tank = 1
 				field_hospital = 1
 				unicorn_company = 1
 			}
@@ -1133,6 +1133,13 @@ light_armor_EQS = {
 	modifier = {
 		factor = 0.5
 		check_variable = { resource_produced@rubber < 3 }
+		}
+		
+	modifier = {
+		factor = 0
+		not = {
+		has_tech = motorised_infantry
+		}
 		}
 		
 	modifier = {
@@ -3131,7 +3138,7 @@ Artillery_EQS = {
 		factor = 2
 	}
 
-	match_to_count = 0.70
+	match_to_count = 0.90
 
 	artilleryunit_EQS = {
 
@@ -3346,7 +3353,7 @@ Antitank_EQS = {
 		factor = 1.5
 	}
 
-	match_to_count = 0.70
+	match_to_count = 0.90
 
 antitank_EQS = {
 

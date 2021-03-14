@@ -1,0 +1,50 @@
+on_actions = {
+	
+	#HEROES
+	on_daily = {
+		effect = {
+			IF = {
+				limit = {
+					EQS = {
+						AND = {
+							has_template = "Celestia"
+							check_variable = { num_battalions_with_type@hero_celestia < 1 }
+						}
+					}
+				}
+				EQS = {
+					delete_unit_template_and_units = { division_template = "Celestia" }
+					country_event = equestria_tog.1
+				}
+			}
+			IF = {
+				limit = {
+					EQS = {
+						AND = {
+							has_template = "Luna"
+							check_variable = { num_battalions_with_type@hero_luna < 1 }
+						}
+					}
+				}
+				EQS = {
+					delete_unit_template_and_units = { division_template = "Luna" }
+					country_event = equestria_tog.2
+				}
+			}
+			IF = {
+				limit = {
+					EQS = {
+						AND = {
+							has_template = "Twilight Sparkle"
+							check_variable = { num_battalions_with_type@hero_twilight_sparkle < 1 }
+						}
+					}
+				}
+				EQS = {
+					delete_unit_template_and_units = { division_template = "Twilight Sparkle" }
+					country_event = equestria_tog.3
+				}
+			}
+		}
+	}
+}

@@ -15,12 +15,12 @@ technologies = {
 			infantry_weapons = 1
 		}
 
-		on_research_complete = {
-			limit = {
-				NOT = {	has_template_containing_unit = light_armor }
-				NOT = {	has_template_containing_unit = heavy_armor }
-				NOT = {	has_template_containing_unit = medium_armor }
-			}
+		on_research_complete_limit = {
+			NOT = {	has_template_containing_unit = light_armor }
+			NOT = {	has_template_containing_unit = heavy_armor }
+			NOT = {	has_template_containing_unit = medium_armor }
+		}
+	on_research_complete = {
 			hidden_effect = {
 				if = {
 					limit = {
@@ -113,16 +113,14 @@ technologies = {
 		enable_equipments = {
 			light_tank_equipment_1
 		}
-		enable_subunits = {
-			light_armor
+
+		on_research_complete_limit = {
+			NOT = {	has_template_containing_unit = light_armor }
+			NOT = {	has_template_containing_unit = heavy_armor }
+			NOT = {	has_template_containing_unit = medium_armor }
 		}
 
 		on_research_complete = {
-			limit = {
-				NOT = {	has_template_containing_unit = light_armor }
-				NOT = {	has_template_containing_unit = heavy_armor }
-				NOT = {	has_template_containing_unit = medium_armor }
-			}
 			hidden_effect = {
 				if = {
 					limit = {
@@ -165,34 +163,47 @@ technologies = {
 			modifier = {
 				factor = 2
 				arms_factory > 25
-		}
-		
-		modifier = {
-			factor = 0
-			arms_factory < 10
-			}
-		
-		modifier = {
-			ADD = 25
-			check_variable = { resource_produced@steel > 16 }
-			check_variable = { resource_produced@rubber > 4 }
-			}
-		
-		modifier = {
-			factor = 0
-			check_variable = { resource_produced@rubber < 2 }
 			}
 			
-		modifier = {
+			modifier = {
+				factor = 0.5
+				arms_factory < 20
+			}
+			
+			modifier = {
 				factor = 0
 				arms_factory < 10
-		}
+			}
+			
+			modifier = {
+					add = 25
+				AND = {
+					check_variable = { resource_produced@steel > 35 } 
+					check_variable = { resource_produced@rubber > 4 }
+					}
+			}
+			
+			modifier = {
+				factor = 0
+				AND = {
+					check_variable = { resource_produced@steel < 25 } 
+					check_variable = { resource_produced@rubber < 2 }
+				}
+			}
+			
+			modifier = {
+				factor = 0.5
+				AND = {
+					check_variable = { resource_produced@rubber < 2 }
+				}
+			}
+			
 		}
 		
 		categories = {
 			armor
 			cat_light_armor			
-	}
+		}
 	}
 	
 	basic_light_td = {
@@ -392,11 +403,6 @@ technologies = {
 				check_variable = { resource_produced@steel < 20 } 
 				check_variable = { resource_produced@rubber < 2 }
 				}
-		}
-		
-		modifier = {
-				factor = 0
-				arms_factory < 5
 		}
 		
 		modifier = {
@@ -906,9 +912,12 @@ technologies = {
 			leads_to_tech = improved_medium_tank
 			research_cost_coeff = 1
 		}
-
+		
+		on_research_complete_limit = {
+			is_ai = yes
+		}
+		
 		on_research_complete = {
-			limit = { is_ai = yes }
 			hidden_effect = {
 				army_experience = -30
 				load_oob = "unlock_med_tanks_mot"
@@ -1662,9 +1671,11 @@ technologies = {
 			modern_art
 			modern_spaa
 		}
-
+		
+		on_research_complete_limit = {
+			is_ai = yes
+		}
 		on_research_complete = {
-			limit = { is_ai = yes }
 			hidden_effect = {
 				army_experience = -30
 				if = {

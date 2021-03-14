@@ -1,0 +1,933 @@
+focus_tree = {
+	id = nilfgaard_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			original_tag = GFG
+		}
+	}
+
+	continuous_focus_position = { x = 10 y = 1825 }
+
+	#### Industry
+
+	focus = {
+		id = GFG_The_Power_Struggle
+		cost = 2
+		x = 0
+		y = 0
+
+		available_if_capitulated = yes
+
+		bypass = {
+			has_country_flag = GFG_absolutely_humiliated
+		}
+
+		completion_reward = {
+			add_political_power = -100
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	
+	focus = {
+		id = GFG_Stand_With_Folkmord
+		cost = 5
+		x = -4
+		y = 1
+		
+		relative_position_id = GFG_The_Power_Struggle
+		prerequisite = {
+			focus = GFG_The_Power_Struggle
+		}
+		mutually_exclusive = {
+		focus = GFG_Oppose_Folkmord
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { GFG_Folkmord_Yes_idea }
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Folkmords_Sudden_Change
+		cost = 2
+		x = 0
+		y = 1
+		
+		relative_position_id = GFG_Stand_With_Folkmord
+		prerequisite = {
+			focus = GFG_Stand_With_Folkmord
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Eradicate_Bandits
+		cost = 7
+		x = -1
+		y = 1
+		
+		relative_position_id = GFG_Folkmords_Sudden_Change
+		prerequisite = {
+			focus = GFG_Folkmords_Sudden_Change
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.10
+			add_popularity = { ideology = tog_kleptocracy popularity = -0.20 }
+			set_party_name = {
+				ideology = tog_kleptocracy
+				name = "GDP"
+				long_name = "Silverclaw's Bandits"
+			}
+			create_country_leader = {
+				name = "Silverclaw"
+				desc = "ondska_desc"
+				expire = "1965.1.1"
+				ideology = tog_kleptocracy_ideology
+			}
+			remove_ideas = GFG_Bandits_idea1
+			483 = { add_manpower = -10000 }
+			430 = { add_manpower = -10000 }
+			add_popularity = { ideology = fascism popularity = 0.20 }
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Roads_of_Blood_And_Concrete
+		cost = 7
+		x = 1
+		y = 1
+		
+		relative_position_id = GFG_Eradicate_Bandits
+		prerequisite = {
+			focus = GFG_Eradicate_Bandits
+		}
+		prerequisite = {
+			focus = GFG_Hanging_Out_With_Siblings
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			483 = { add_manpower = -15000 }
+			430 = { add_manpower = -15000 }
+			483 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+			430 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_popularity = { ideology = fascism popularity = -0.025 }
+			add_popularity = { ideology = tog_anarchism popularity = 0.025 }
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Hanging_Out_With_Siblings
+		cost = 7
+		x = 1
+		y = 1
+		
+		relative_position_id = GFG_Folkmords_Sudden_Change
+		prerequisite = {
+			focus = GFG_Folkmords_Sudden_Change
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_manpower = -2
+			add_popularity = { ideology = democratic popularity = -0.15 }
+			set_party_name = {
+				ideology = democratic
+				name = "GDP"
+				long_name = "Griffingaardian Harmonistic Party"
+			}
+			create_country_leader = {
+				name = "Dorminus Eaglesworth"
+				desc = "ondska_desc"
+				expire = "1965.1.1"
+				ideology = conservatism
+			}
+			add_popularity = { ideology = neutrality popularity = -0.15 }
+			set_party_name = {
+				ideology = neutrality
+				name = "GAP"
+				long_name = "Griffingaardian Autocratic Party"
+			}
+			create_country_leader = {
+				name = "Angela Bronzebeak"
+				desc = "ondska_desc"
+				expire = "1965.1.1"
+				ideology = despotism
+			}
+			remove_ideas = GFG_Family_Conflict_idea
+			add_popularity = { ideology = fascism popularity = 0.20 }
+			add_popularity = { ideology = tog_anarchism popularity = 0.10 }
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Folkmords_Great_Reforms
+		cost = 14.30
+		x = 0
+		y = 1
+		
+		relative_position_id = GFG_Roads_of_Blood_And_Concrete
+		prerequisite = {
+			focus = GFG_Roads_of_Blood_And_Concrete
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.10
+			add_war_support = 0.10
+			483 = { add_manpower = -25000 }
+			430 = { add_manpower = -25000 }
+			add_research_slot = 1
+			add_ideas = better_science_base
+			add_ideas = pre_industrial_society
+			add_ideas = low_economic_mobilisation
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Folkmords_Schools
+		cost = 10
+		x = -2
+		y = 1
+		
+		relative_position_id = GFG_Folkmords_Great_Reforms
+		prerequisite = {
+			focus = GFG_Folkmords_Great_Reforms
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			483 = { add_manpower = -25000 }
+			430 = { add_manpower = -25000 }
+			add_ideas = big_science_base
+			swap_ideas = {
+				remove_idea = lack_of_scientists1
+				add_idea = lack_of_scientists2
+			}
+			add_popularity = { ideology = fascism popularity = -0.025 }
+			add_popularity = { ideology = tog_anarchism popularity = 0.025 }
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Folkmords_Enforced_Reading_Classess
+		cost = 5
+		x = 0
+		y = 1
+		
+		relative_position_id = GFG_Folkmords_Schools
+		prerequisite = {
+			focus = GFG_Folkmords_Schools
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			483 = { add_manpower = -5000 }
+			430 = { add_manpower = -5000 }
+			swap_ideas = {
+				remove_idea = lack_of_scientists2
+				add_idea = lack_of_scientists3
+			}
+			add_popularity = { ideology = fascism popularity = -0.01 }
+			add_popularity = { ideology = tog_anarchism popularity = 0.01 }
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_False_Advertisement
+		cost = 10
+		x = 0
+		y = 1
+		
+		relative_position_id = GFG_Folkmords_Great_Reforms
+		prerequisite = {
+			focus = GFG_Folkmords_Great_Reforms
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -100
+			483 = { add_manpower = 300000 }
+			430 = { add_manpower = 150000 }
+			add_popularity = { ideology = fascism popularity = -0.10 }
+			add_popularity = { ideology = tog_anarchism popularity = 0.10 }
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Folkmords_Economy
+		cost = 10
+		x = 2
+		y = 1
+		
+		relative_position_id = GFG_Folkmords_Great_Reforms
+		prerequisite = {
+			focus = GFG_Folkmords_Great_Reforms
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			483 = { add_manpower = -25000 }
+			430 = { add_manpower = -25000 }
+			483 = {
+				
+				add_extra_state_shared_building_slots = 2
+					
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			430 = {
+					
+				add_extra_state_shared_building_slots = 2
+					
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = poverty1
+				add_idea = poverty2
+			}
+			add_popularity = { ideology = fascism popularity = -0.025 }
+			add_popularity = { ideology = tog_anarchism popularity = 0.025 }
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Enforce_A_New_Standard
+		cost = 5
+		x = 0
+		y = 1
+		
+		relative_position_id = GFG_Folkmords_Economy
+		prerequisite = {
+			focus = GFG_Folkmords_Economy
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			483 = { add_manpower = -5000 }
+			430 = { add_manpower = -5000 }
+			swap_ideas = {
+				remove_idea = poverty2
+				add_idea = poverty3
+			}
+			add_popularity = { ideology = fascism popularity = -0.01 }
+			add_popularity = { ideology = tog_anarchism popularity = 0.01 }
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Folkmords_Brand_New_Slave_Miners
+		cost = 10
+		x = 0
+		y = 1
+		
+		relative_position_id = GFG_False_Advertisement
+		prerequisite = {
+			focus = GFG_False_Advertisement
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			483 = { add_manpower = -10000 }
+			430 = { add_manpower = -10000 }
+			483 = {
+				add_resource = {
+					type = steel
+					amount = 24
+				}
+			}
+			430 = {
+				add_resource = {
+					type = tungsten
+					amount = 12
+				}
+			}
+			add_popularity = { ideology = fascism popularity = -0.05 }
+			add_popularity = { ideology = tog_anarchism popularity = 0.05 }
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Folkmords_A_Better_Future
+		cost = 14.30
+		x = 0
+		y = 1
+		
+		relative_position_id = GFG_Folkmords_Brand_New_Slave_Miners
+		prerequisite = {
+			focus = GFG_Folkmords_Brand_New_Slave_Miners
+		}
+		prerequisite = {
+			focus = GFG_Folkmords_Enforced_Reading_Classess
+		}
+		prerequisite = {
+			focus = GFG_Enforce_A_New_Standard
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.10
+			add_war_support = 0.10
+			483 = { add_manpower = -25000 }
+			430 = { add_manpower = -25000 }
+			add_research_slot = 1
+			add_ideas = outdated_industry
+			483 = {
+				
+				add_extra_state_shared_building_slots = 2
+					
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			430 = {
+					
+				add_extra_state_shared_building_slots = 2
+					
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			remove_ideas = poverty3
+			remove_ideas = lack_of_scientists3
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_An_Anarchist_Problem
+		cost = 7.00
+		x = 0
+		y = 1
+		
+		relative_position_id = GFG_Folkmords_A_Better_Future
+		prerequisite = {
+			focus = GFG_Folkmords_A_Better_Future
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.10
+			add_ideas = war_economy
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Die_For_Your_Country
+		cost = 5.00
+		x = -1
+		y = 1
+		
+		relative_position_id = GFG_An_Anarchist_Problem
+		prerequisite = {
+			focus = GFG_An_Anarchist_Problem
+		}
+		mutually_exclusive = {
+			focus = GFG_Fight_For_Your_Freedom
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Fight_For_Your_Freedom
+		cost = 5.00
+		x = 1
+		y = 1
+		
+		relative_position_id = GFG_An_Anarchist_Problem
+		prerequisite = {
+			focus = GFG_An_Anarchist_Problem
+		}
+		mutually_exclusive = {
+			focus = GFG_Die_For_Your_Country
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Oppose_Folkmord
+		cost = 5
+		x = 4
+		y = 1
+		
+		relative_position_id = GFG_The_Power_Struggle
+		prerequisite = {
+			focus = GFG_The_Power_Struggle
+		}
+		mutually_exclusive = {
+		focus = GFG_Stand_With_Folkmord
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { GFG_Folkmord_Opposition_idea }
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Deal_With_Bandits
+		cost = 5
+		x = 2
+		y = 1
+		
+		relative_position_id = GFG_Oppose_Folkmord
+		prerequisite = {
+			focus = GFG_Oppose_Folkmord
+		}
+		mutually_exclusive = {
+		focus = GFG_Support_Bandits
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GFG_Bandits_idea1
+				add_idea = GFG_Bandits_idea2
+			}
+			add_popularity = { ideology = tog_kleptocracy popularity = -0.05 }
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Support_Bandits
+		cost = 5
+		x = -2
+		y = 1
+		
+		relative_position_id = GFG_Oppose_Folkmord
+		prerequisite = {
+			focus = GFG_Oppose_Folkmord
+		}
+		mutually_exclusive = {
+		focus = GFG_Deal_With_Bandits
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Ariadne_Takes_Control
+		cost = 7
+		x = 0
+		y = 1
+		
+		relative_position_id = GFG_Deal_With_Bandits
+		prerequisite = {
+			focus = GFG_Deal_With_Bandits
+		}
+		mutually_exclusive = {
+		focus = GFG_Wilhelm_Takes_Control
+		}
+		mutually_exclusive = {
+		focus = GFG_Rosefeather_Takes_Control
+		}
+		
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				democratic > 0.25
+				factor = 20
+			}
+		}
+
+		available = {
+			democratic > 0.25
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = GFG_Ariadne_Takes_Control_flag
+			add_popularity = { ideology = democratic popularity = 0.10 }
+			add_popularity = { ideology = fascism popularity = -0.25 }
+			remove_ideas = { GFG_Folkmord_Opposition_idea }
+			set_politics = {
+				ruling_party = democratic
+			}
+			set_cosmetic_tag = GFG_Ariadne_color
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Start_Economy
+		cost = 10
+		x = 4
+		y = 0
+		
+		relative_position_id = GFG_Rosefeather_Takes_Control
+
+		available = {
+			OR = {
+				has_country_flag = GFG_Ariadne_Takes_Control_flag
+				has_country_flag = GFG_Rosefeather_Takes_Control_flag
+				has_country_flag = GFG_Wilhelm_Takes_Control_flag
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				
+				add_extra_state_shared_building_slots = 1
+					
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = poverty1
+				add_idea = poverty2
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Evoke_Law_And_Order
+		cost = 10
+		x = -2
+		y = 1
+		
+		relative_position_id = GFG_Start_Economy
+		prerequisite = {
+			focus = GFG_Start_Economy
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = GFG_Bandits_idea2
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Small_Science_Base
+		cost = 10
+		x = 2
+		y = 1
+		
+		relative_position_id = GFG_Start_Economy
+		prerequisite = {
+			focus = GFG_Start_Economy
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = better_science_base
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Industrializing_Society
+		cost = 10
+		x = 0
+		y = 1
+		
+		relative_position_id = GFG_Start_Economy
+		prerequisite = {
+			focus = GFG_Start_Economy
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = pre_industrial_society
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Seeking_Investors
+		cost = 10
+		x = -1
+		y = 1
+		
+		relative_position_id = GFG_Industrializing_Society
+		prerequisite = {
+			focus = GFG_Industrializing_Society
+		}
+		prerequisite = {
+			focus = GFG_Evoke_Law_And_Order
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				
+				add_extra_state_shared_building_slots = 1
+					
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+					
+				add_extra_state_shared_building_slots = 1
+					
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Book_Clubs
+		cost = 10
+		x = 1
+		y = 1
+		
+		relative_position_id = GFG_Industrializing_Society
+		prerequisite = {
+			focus = GFG_Industrializing_Society
+		}
+		prerequisite = {
+			focus = GFG_Small_Science_Base
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = lack_of_scientists1
+				add_idea = lack_of_scientists2
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Wilhelm_Takes_Control
+		cost = 7
+		x = -2
+		y = 1
+		
+		relative_position_id = GFG_Deal_With_Bandits
+		prerequisite = {
+			focus = GFG_Deal_With_Bandits
+		}
+		mutually_exclusive = {
+		focus = GFG_Ariadne_Takes_Control
+		}
+		mutually_exclusive = {
+		focus = GFG_Rosefeather_Takes_Control
+		}
+		
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				neutrality > 0.25
+				factor = 20
+			}
+		}
+
+		available = {
+			neutrality > 0.25
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = GFG_Wilhelm_Takes_Control_flag
+			add_popularity = { ideology = neutrality popularity = 0.10 }
+			add_popularity = { ideology = fascism popularity = -0.25 }
+			remove_ideas = { GFG_Folkmord_Opposition_idea }
+			set_politics = {
+				ruling_party = neutrality
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Rosefeather_Takes_Control
+		cost = 7
+		x = 2
+		y = 1
+		
+		relative_position_id = GFG_Deal_With_Bandits
+		prerequisite = {
+			focus = GFG_Deal_With_Bandits
+		}
+		mutually_exclusive = {
+		focus = GFG_Ariadne_Takes_Control
+		}
+		mutually_exclusive = {
+		focus = GFG_Wilhelm_Takes_Control
+		}
+		
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				tog_anarchism > 0.25
+				factor = 20
+			}
+		}
+
+		available = {
+			tog_anarchism > 0.25
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = GFG_Rosefeather_Takes_Control_flag
+			add_popularity = { ideology = tog_anarchism popularity = 0.10 }
+			add_popularity = { ideology = fascism popularity = -0.25 }
+			remove_ideas = { GFG_Folkmord_Opposition_idea }
+			set_politics = {
+				ruling_party = tog_anarchism
+			}
+			create_operative_leader = {
+				name = "Rosefeather"
+				portrait_path = "gfx/leaders/GFG/Rosefeather.tga"
+				traits = { griffon_race_trait operative_natural_orator operative_infiltrator operative_uncatchable }
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				nationalities = { GFG VED FAT }
+				skill = 2
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GFG_Goldclaw_Takes_Control
+		cost = 7
+		x = 0
+		y = 1
+		
+		relative_position_id = GFG_Support_Bandits
+		prerequisite = {
+			focus = GFG_Support_Bandits
+		}
+		
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				tog_kleptocracy > 0.3
+				factor = 20
+			}
+		}
+
+		available = {
+			tog_kleptocracy > 0.3
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = { ideology = tog_kleptocracy popularity = 0.10 }
+			add_popularity = { ideology = fascism popularity = -0.25 }
+			remove_ideas = { GFG_Folkmord_Opposition_idea }
+			set_politics = {
+				ruling_party = tog_kleptocracy
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+}

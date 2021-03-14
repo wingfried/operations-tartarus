@@ -1,0 +1,17 @@
+add_namespace = instructions
+
+country_event = {
+id = instructions.0
+immediate = {log = "[GetDateText]: [Root.GetName]: event instructions.0"}
+
+title = instructions.0.t
+desc = instructions.0.d
+fire_only_once = yes
+is_triggered_only = yes
+
+	option = { 
+		name = instructions.0.a
+		
+		set_country_flag = instructionsdone
+		}
+	}

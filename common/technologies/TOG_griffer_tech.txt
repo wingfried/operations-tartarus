@@ -1,0 +1,1648 @@
+@989 = 0
+@1007 = 0
+@1009 = 2
+@1010 = 4
+@1011 = 6
+@1012 = 8
+@1013 = 10
+@1014 = 12
+@1015 = 14
+@1016 = 16
+@1017 = 18
+@1018 = 20
+@1019 = 22
+@1020 = 24
+@1021 = 26
+@1022 = 28
+@1023 = 30
+@1024 = 32
+@1025 = 34
+@1026 = 36
+
+technologies = {
+	
+	tech_recruit_witchers = {
+	
+		enable_subunits = {
+			witchers
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+		
+		path = {
+			leads_to_tech = tech_witcher_swords
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = tech_signs
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = tech_witcher_equipment
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = witcher_folder
+			position = { x = 4 y = @1007 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1008.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1009.1.1"
+			}
+		}
+	}
+	
+	tech_witcher_swords = {
+
+		witchers = {
+			soft_attack = 0.05
+			hard_attack = 0.10
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_steel_sword
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = tech_silver_sword
+			research_cost_coeff = 1
+		}
+		
+		xor = { tech_signs }
+		
+		research_cost = 1.5
+		start_year = 1009
+		folder = {
+			name = witcher_folder
+			position = { x = 1 y = @1009 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1008.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1009.1.1"
+			}
+		}
+	}
+
+	tech_steel_sword = {
+
+		witchers = {
+			soft_attack = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_steel_sword2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1010
+		folder = {
+			name = witcher_folder
+			position = { x = 0 y = @1010 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_steel_sword2 = {
+
+		witchers = {
+			soft_attack = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_steel_sword3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1012
+		folder = {
+			name = witcher_folder
+			position = { x = 0 y = @1012 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_steel_sword3 = {
+
+		witchers = {
+			soft_attack = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_steel_sword4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1014
+		folder = {
+			name = witcher_folder
+			position = { x = 0 y = @1014 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_steel_sword4 = {
+
+		witchers = {
+			soft_attack = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_steel_sword5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1016
+		folder = {
+			name = witcher_folder
+			position = { x = 0 y = @1016 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_steel_sword5 = {
+
+		witchers = {
+			soft_attack = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+		
+		path = {
+			leads_to_tech = tech_steel_sword6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1018
+		folder = {
+			name = witcher_folder
+			position = { x = 0 y = @1018 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_steel_sword6 = {
+
+		witchers = {
+			soft_attack = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+		
+		path = {
+			leads_to_tech = tech_steel_sword7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1020
+		folder = {
+			name = witcher_folder
+			position = { x = 0 y = @1020 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_steel_sword7 = {
+
+		witchers = {
+			soft_attack = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+		
+		path = {
+			leads_to_tech = tech_steel_sword8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1022
+		folder = {
+			name = witcher_folder
+			position = { x = 0 y = @1022 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_steel_sword8 = {
+
+		witchers = {
+			soft_attack = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		research_cost = 1.5
+		start_year = 1024
+		folder = {
+			name = witcher_folder
+			position = { x = 0 y = @1024 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_silver_sword = {
+
+		witchers = {
+			hard_attack = 0.10
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_silver_sword2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1011
+		folder = {
+			name = witcher_folder
+			position = { x = 2 y = @1011 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_silver_sword2 = {
+
+		witchers = {
+			hard_attack = 0.10
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_silver_sword3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1013
+		folder = {
+			name = witcher_folder
+			position = { x = 2 y = @1013 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_silver_sword3 = {
+
+		witchers = {
+			hard_attack = 0.10
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_silver_sword4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1015
+		folder = {
+			name = witcher_folder
+			position = { x = 2 y = @1015 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_silver_sword4 = {
+
+		witchers = {
+			hard_attack = 0.10
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_silver_sword5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1017
+		folder = {
+			name = witcher_folder
+			position = { x = 2 y = @1017 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_silver_sword5 = {
+
+		witchers = {
+			hard_attack = 0.10
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+		
+		path = {
+			leads_to_tech = tech_silver_sword6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1019
+		folder = {
+			name = witcher_folder
+			position = { x = 2 y = @1019 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_silver_sword6 = {
+
+		witchers = {
+			hard_attack = 0.10
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+		
+		path = {
+			leads_to_tech = tech_silver_sword7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1021
+		folder = {
+			name = witcher_folder
+			position = { x = 2 y = @1021 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_silver_sword7 = {
+
+		witchers = {
+			hard_attack = 0.10
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+		
+		path = {
+			leads_to_tech = tech_silver_sword8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1023
+		folder = {
+			name = witcher_folder
+			position = { x = 2 y = @1023 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+		}
+	}
+	
+	tech_silver_sword8 = {
+
+		witchers = {
+			hard_attack = 0.10
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		research_cost = 1.5
+		start_year = 1025
+		folder = {
+			name = witcher_folder
+			position = { x = 2 y = @1025 }
+		}
+
+		categories = {
+			race_tech
+			custom_magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.5
+				date > "1014.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+		}
+	}
+
+	tech_signs = {
+
+		witchers = {
+			max_organisation = 5
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+		
+		path = {
+			leads_to_tech = tech_aard_sign
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = tech_aksii_sign
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = tech_igni_sign
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = tech_quen_sign
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = tech_yrden_sign
+			research_cost_coeff = 1
+		}
+		
+		xor = { tech_witcher_swords }
+
+		research_cost = 1.5
+		start_year = 1009
+		folder = {
+			name = witcher_folder
+			position = { x = 8 y = @1009 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_aard_sign = {
+		
+		witchers = {
+			maximum_speed = 0.10
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_aard_sign2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1010
+		folder = {
+			name = witcher_folder
+			position = { x = 4 y = @1010 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_aard_sign2 = {
+
+		witchers = {
+			maximum_speed = 0.10
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_aard_sign3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1014
+		folder = {
+			name = witcher_folder
+			position = { x = 4 y = @1014 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_aard_sign3 = {
+
+		witchers = {
+			maximum_speed = 0.10
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_aard_sign4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1018
+		folder = {
+			name = witcher_folder
+			position = { x = 4 y = @1018 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_aard_sign4 = {
+
+		witchers = {
+			maximum_speed = 0.10
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		research_cost = 1.5
+		start_year = 1022
+		folder = {
+			name = witcher_folder
+			position = { x = 4 y = @1022 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_aksii_sign = {
+
+		witchers = {
+			suppression = 2
+			default_morale = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_aksii_sign2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1011
+		folder = {
+			name = witcher_folder
+			position = { x = 6 y = @1011 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_aksii_sign2 = {
+
+		witchers = {
+			suppression = 2
+			default_morale = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_aksii_sign3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1015
+		folder = {
+			name = witcher_folder
+			position = { x = 6 y = @1015 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_aksii_sign3 = {
+
+		witchers = {
+			suppression = 2
+			default_morale = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_aksii_sign4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1019
+		folder = {
+			name = witcher_folder
+			position = { x = 6 y = @1019 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_aksii_sign4 = {
+
+		witchers = {
+			suppression = 2
+			default_morale = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		research_cost = 1.5
+		start_year = 1023
+		folder = {
+			name = witcher_folder
+			position = { x = 6 y = @1023 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_igni_sign = {
+
+		witchers = {
+			breakthrough = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_igni_sign2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1012
+		folder = {
+			name = witcher_folder
+			position = { x = 8 y = @1012 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_igni_sign2 = {
+
+		witchers = {
+			breakthrough = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_igni_sign3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1016
+		folder = {
+			name = witcher_folder
+			position = { x = 8 y = @1016 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_igni_sign3 = {
+
+		witchers = {
+			breakthrough = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_igni_sign4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1020
+		folder = {
+			name = witcher_folder
+			position = { x = 8 y = @1020 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_igni_sign4 = {
+
+		witchers = {
+			breakthrough = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		research_cost = 1.5
+		start_year = 1024
+		folder = {
+			name = witcher_folder
+			position = { x = 8 y = @1024 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_quen_sign = {
+
+		witchers = {
+			experience_loss_factor = -0.005
+			defense = 0.05
+			
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_quen_sign2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1013
+		folder = {
+			name = witcher_folder
+			position = { x = 10 y = @1013 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_quen_sign2 = {
+
+		witchers = {
+			experience_loss_factor = -0.005
+			defense = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_quen_sign3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1017
+		folder = {
+			name = witcher_folder
+			position = { x = 10 y = @1017 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_quen_sign3 = {
+
+		witchers = {
+			experience_loss_factor = -0.005
+			defense = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_quen_sign4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1021
+		folder = {
+			name = witcher_folder
+			position = { x = 10 y = @1021 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_quen_sign4 = {
+
+		witchers = {
+			experience_loss_factor = -0.005
+			defense = 0.05
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		research_cost = 1.5
+		start_year = 1025
+		folder = {
+			name = witcher_folder
+			position = { x = 10 y = @1025 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_yrden_sign = {
+
+		witchers = {
+			entrenchment = 0.20
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_yrden_sign2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1014
+		folder = {
+			name = witcher_folder
+			position = { x = 12 y = @1014 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_yrden_sign2 = {
+
+		witchers = {
+			entrenchment = 0.20
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_yrden_sign3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1018
+		folder = {
+			name = witcher_folder
+			position = { x = 12 y = @1018 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_yrden_sign3 = {
+
+		witchers = {
+			entrenchment = 0.20
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_yrden_sign4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1022
+		folder = {
+			name = witcher_folder
+			position = { x = 12 y = @1022 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+	
+	tech_yrden_sign4 = {
+
+		witchers = {
+			entrenchment = 0.20
+		}
+		
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		research_cost = 1.5
+		start_year = 1026
+		folder = {
+			name = witcher_folder
+			position = { x = 12 y = @1026 }
+		}
+
+		categories = {
+			race_tech
+			special_forces_tech
+		}
+
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+		}
+	}
+}

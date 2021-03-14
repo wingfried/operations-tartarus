@@ -1,0 +1,77 @@
+															
+	#Construction scripts:
+												
+	The_Great_Landwar_CHN = {
+	enable = {
+			AND = {
+				original_tag = CHN
+				has_war = yes
+				date > 1010.1.1
+				}
+				}
+		Abort = {
+			OR = {
+				has_war = no
+				}
+				}
+		ai_strategy = {
+			type = unit_ratio
+			id = capital_ship
+			value = -100
+			}
+
+		ai_strategy = {
+			type = unit_ratio
+			id = submarine
+			value = -100
+			}
+
+		ai_strategy = {
+			type = unit_ratio
+			id = screen_ship
+			value = -100
+			}
+
+		ai_strategy = {
+			type = unit_ratio
+			id = convoy
+			value = -100
+			}
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = -95	
+		}
+		
+		ai_strategy = {
+		type = equipment_variant_production_factor
+		id = cv_fighter_equipment
+		value = -1000 
+		}		
+		}
+
+
+	The_Great_landwar_factories_CHN = {
+		enable = {
+			AND = {
+				original_tag = CHN
+				date > 1010.1.1
+				}				
+			Or = {
+				has_war = yes
+				check_variable = {  potential_and_current_enemies > 0 }
+				}
+				}
+		Abort = {
+			OR = {
+				has_war = no
+				CHN = { arms_factory > 120 }
+				check_variable = { potential_and_current_enemies < 1 }
+				}
+				}
+		
+		ai_strategy = {
+			type = added_military_to_civilian_factory_ratio
+			value = 50
+		}
+		}
+

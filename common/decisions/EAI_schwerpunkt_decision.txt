@@ -1,0 +1,261 @@
+military_training_category = {
+trainingscript = { ###This current tanks the AI because it cant deal with the drain
+		icon = rifles
+
+		cost = 0
+		
+		days_remove = 30
+		
+		
+		
+	ai_will_do = {
+			factor = 0
+	modifier = {
+		factor = 0
+		has_army_experience > 25
+		}
+		
+	modifier = {
+		factor = 0	
+		set_temp_variable = { type_percentage = num_equipment_in_armies@infantry_equipment}
+		divide_temp_variable = { type_percentage = num_target_equipment_in_armies@infantry_equipment}
+		check_variable = { type_percentage < 0.95 }
+	}
+	
+	modifier = {
+		factor = 0	
+		check_variable = { potential_and_current_enemies > 0 }
+		}
+	}
+		
+	visible = {		
+		always = no
+		has_war = no
+		NOT = {
+		has_country_flag = alreadytraining
+		}
+		}
+							
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision trainingscript target: [From.GetName]"		
+			
+set_country_flag = alreadytraining
+add_ideas = exercising
+
+country_event = { id = AImod.1 days = 30 }
+	}
+
+
+remove_effect = {
+
+set_temp_variable = { xpgain = 0.93 }
+	set_temp_variable = { units = num_battalions }
+	multiply_temp_variable = { xpgain = units }
+	multiply_temp_variable = { xpgain = 30 }
+	divide_temp_variable = { xpgain = 100 }
+	divide_temp_variable = { xpgain = num_divisions }
+
+	if = {
+		limit = {
+			check_variable = { xpgain > 0.5 }
+			check_variable = { xpgain < 1.5 }
+		}
+			set_temp_variable = { xpgain = 1 }
+		
+
+	else_if = {
+		limit = {
+			check_variable = { xpgain > 1.5 }
+			check_variable = { xpgain < 2.5 }
+		}
+			set_temp_variable = { xpgain = 2 }
+}		
+
+	else_if = {
+		limit = {
+			check_variable = { xpgain > 2.5 }
+			check_variable = { xpgain < 3.5 }
+		}
+			set_temp_variable = { xpgain = 3 }
+}	
+
+	else_if = {
+		limit = {
+			check_variable = { xpgain > 3.5 }
+			check_variable = { xpgain < 4.5 }
+		}
+			set_temp_variable = { xpgain = 4 }
+}	
+
+	else_if = {
+		limit = {
+			check_variable = { xpgain > 4.5 }
+			check_variable = { xpgain < 5.5 }
+		}
+			set_temp_variable = { xpgain = 5 }
+	}
+}
+army_experience = xpgain
+}
+}
+
+End_Hidden_Training = {
+		icon = rifles
+
+		cost = 0
+		
+		days_remove = 1
+		
+		
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+		has_country_flag = hiddentraining
+		}
+							
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision End_Hidden_Training target: [From.GetName]"
+
+set_country_flag = stophiddentraining
+}
+}
+
+CreateSchwerpunkt = {
+		icon = generic_industry
+
+		cost = 0
+		
+		days_remove = 100
+		
+		
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+		always = no
+		is_ai = no
+		has_war = yes
+		all_enemy_country = {
+			add_to_temp_variable = { yours = num_battalions }
+		}
+		set_temp_variable = { mine = num_battalions }
+			divide_temp_variable = { mine = yours }
+			check_variable = { mine > 1.25 }
+		
+		set_temp_variable = { type_percentage = num_equipment_in_armies@infantry_equipment}
+		divide_temp_variable = { type_percentage = num_target_equipment_in_armies@infantry_equipment}
+		check_variable = { type_percentage > 0.85}
+		}
+							
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CreateSchwerpunkt target: [From.GetName]"
+	
+	every_neighbor_country = {
+		limit = {
+			ROOT = {
+			is_in_array = { potential_and_current_enemies = PREV }
+			}
+			}
+		random_controlled_state = {
+			limit = {
+				any_neighbor_state = {
+				controller = {
+				tag = ROOT
+				}
+			}
+			}
+			
+			set_state_flag = target			
+			}
+			}	
+			set_country_flag = placedtarget				
+			}
+			}
+			
+
+Invaded = {
+		icon = generic_industry
+
+		cost = 0
+		
+		days_remove = 100		
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		visible = {
+		is_ai = yes
+		has_war = yes
+		any_controlled_state {
+		is_coastal = yes
+		NOT = {
+			any_neighbor_state = {
+			is_controlled_by = ROOT
+			}
+			}
+			}
+			}
+							
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Invaded target: [From.GetName]"
+		set_country_flag = invasioncd
+	}	
+}
+			
+#TagPocket = {
+#		icon = generic_industry
+#
+#		cost = 0
+#		
+#		days_remove = 1
+#		
+#		
+#		
+#		ai_will_do = {
+#			factor = 0
+#		}
+#		
+#		visible = {
+#		is_ai = no
+#		has_war = yes
+#		any_enemy_country = {
+#		any_controlled_state = {
+#		all_neighbor_state = {
+#		controller = {
+#		NOT = {
+#		has_war_with = ROOT
+#		}
+#		}
+#		}
+#		}
+#		}
+#		}
+#							
+#		complete_effect = {
+#			log = "[GetDateText]: [Root.GetName]: Decision CreateSchwerpunkt target: [From.GetName]"
+#	
+#	every_enemy_country = {
+#	limit = {
+#	any_controlled_state = {
+#	all_neighbor_state = {
+#		controller = {
+#		NOT = {
+#		has_war_with = ROOT
+#		}
+#		}
+#	}
+#	}
+#	}
+#	set_state_flag = pocket	 ##wrong scope, but not using this anyway
+#	}			
+#	}	
+#}		
+}
+
+	

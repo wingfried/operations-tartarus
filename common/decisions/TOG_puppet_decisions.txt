@@ -1,0 +1,289 @@
+TOG_form_puppet_category = {
+
+	form_MIT_CYA_puppet = {
+		icon = griffon
+		allowed = {
+		}
+		visible = {
+			AND = {
+				NOT = { tag = MCP }
+				NOT = { tag = MIT }
+				NOT = { tag = CYA }
+				OR = {
+					has_government = communism
+					AND = {
+						TAG = SRS
+						has_government = democratic
+					}
+				}
+				#MIT
+				owns_state = 386
+				owns_state = 462
+				owns_state = 463
+				owns_state = 464
+				owns_state = 465
+				owns_state = 466
+				owns_state = 467
+				owns_state = 468
+				owns_state = 469
+				owns_state = 513
+				owns_state = 654
+				owns_state = 655
+				owns_state = 656
+				owns_state = 657
+				owns_state = 664
+				owns_state = 667
+				
+				#CYA
+				owns_state = 507
+				owns_state = 510
+				owns_state = 511
+				owns_state = 671
+			}
+		}
+		available = {
+			is_subject = no
+		}
+		complete_effect = {
+			MCP = {
+				#MIT
+				add_state_core = 386
+				add_state_core = 462
+				add_state_core = 463
+				add_state_core = 464
+				add_state_core = 465
+				add_state_core = 466
+				add_state_core = 467
+				add_state_core = 468
+				add_state_core = 469
+				add_state_core = 513
+				add_state_core = 654
+				add_state_core = 655
+				add_state_core = 656
+				add_state_core = 657
+				add_state_core = 664
+				add_state_core = 667
+
+				transfer_state = 386
+				transfer_state = 462
+				transfer_state = 463
+				transfer_state = 464
+				transfer_state = 465
+				transfer_state = 466
+				transfer_state = 467
+				transfer_state = 468
+				transfer_state = 469
+				transfer_state = 513
+				transfer_state = 654
+				transfer_state = 655
+				transfer_state = 656
+				transfer_state = 657
+				transfer_state = 664
+				transfer_state = 667
+
+				#CYA
+				add_state_core = 507
+				add_state_core = 510
+				add_state_core = 511
+				add_state_core = 671
+
+				transfer_state = 507
+				transfer_state = 510
+				transfer_state = 511
+				transfer_state = 671
+			}
+			MIT = { every_unit_leader = { set_nationality = MCP } }
+			MIT = { MCP = { transfer_technology = yes } }
+			CYA = { every_unit_leader = { set_nationality = MCP } }
+			CYA = { MCP = { transfer_technology = yes } }
+			puppet = MCP
+			IF = {
+				limit = { 
+					MCP = { has_government = communism }
+				}
+				MCP = { set_cosmetic_tag = MCP_communism }
+			}
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	form_HLQ_LNS_puppet = {
+		icon = griffon
+		allowed = {
+		}
+		visible = {
+			AND = {
+				NOT = { tag = HLP }
+				NOT = { tag = HLQ }
+				NOT = { tag = LNS }
+				OR = {
+					has_government = communism
+					AND = {
+						TAG = SRS
+						has_government = democratic
+					}
+				}
+				#HLQ
+				owns_state = 633
+				owns_state = 634
+				owns_state = 553
+				owns_state = 537
+
+				#LNS
+				owns_state = 540
+				owns_state = 552
+				owns_state = 505
+			}
+		}
+		available = {
+			is_subject = no
+		}
+		complete_effect = {
+			HLP = {
+				#HLQ
+				add_state_core = 633
+				add_state_core = 634
+				add_state_core = 553
+				add_state_core = 537
+
+				transfer_state = 633
+				transfer_state = 634
+				transfer_state = 553
+				transfer_state = 537
+
+				#LNS
+				add_state_core = 540
+				add_state_core = 552
+				add_state_core = 505
+
+				transfer_state = 540
+				transfer_state = 552
+				transfer_state = 505
+			}
+			HLQ = { every_unit_leader = { set_nationality = HLP } }
+			HLQ = { HLP = { transfer_technology = yes } }
+			LNS = { every_unit_leader = { set_nationality = HLP } }
+			LNS = { HLP = { transfer_technology = yes } }
+			puppet = HLP
+			IF = {
+				limit = {
+					HLP = { has_government = communism }
+				}
+				HLP = { set_cosmetic_tag = HLP_communism }
+			}
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	form_FBK_WAT_FIR_puppet = {
+		icon = griffon
+		allowed = {
+		}
+		visible = {
+			AND = {
+				NOT = { tag = FWF }
+				NOT = { tag = FBK }
+				NOT = { tag = WAT }
+				NOT = { tag = FIR }
+				OR = {
+					has_government = communism
+					AND = {
+						TAG = SRS
+						has_government = democratic
+					}
+				}
+				#FBK
+				owns_state = 455
+				owns_state = 569
+				owns_state = 571
+				owns_state = 572
+				owns_state = 603
+				owns_state = 639
+
+				#WAT
+				owns_state = 640
+				owns_state = 641
+				owns_state = 642
+				owns_state = 643
+
+				#FIR
+				owns_state = 453
+				owns_state = 454
+				owns_state = 478
+				owns_state = 604
+				owns_state = 636
+				owns_state = 644
+				owns_state = 650
+			}
+		}
+		available = {
+			is_subject = no
+		}
+		complete_effect = {
+			FWF = {
+				#FBK
+				add_state_core = 455
+				add_state_core = 569
+				add_state_core = 571
+				add_state_core = 572
+				add_state_core = 603
+				add_state_core = 639
+
+				transfer_state = 455
+				transfer_state = 569
+				transfer_state = 571
+				transfer_state = 572
+				transfer_state = 603
+				transfer_state = 639
+
+				#WAT
+				add_state_core = 640
+				add_state_core = 641
+				add_state_core = 642
+				add_state_core = 643
+
+				transfer_state = 640
+				transfer_state = 641
+				transfer_state = 642
+				transfer_state = 643
+
+				#FIR
+				add_state_core = 453
+				add_state_core = 454
+				add_state_core = 478
+				add_state_core = 604
+				add_state_core = 636
+				add_state_core = 644
+				add_state_core = 650
+
+				transfer_state = 453
+				transfer_state = 454
+				transfer_state = 478
+				transfer_state = 604
+				transfer_state = 636
+				transfer_state = 644
+				transfer_state = 650
+			}
+			FBK = { every_unit_leader = { set_nationality = FWF } }
+			FBK = { FWF = { transfer_technology = yes } }
+			WAT = { every_unit_leader = { set_nationality = FWF } }
+			WAT = { FWF = { transfer_technology = yes } }
+			FIR = { every_unit_leader = { set_nationality = FWF } }
+			FIR = { FWF = { transfer_technology = yes } }
+			puppet = FWF
+			IF = {
+				limit = {
+					FWF = { has_government = communism }
+				}
+				FWF = { set_cosmetic_tag = FWF_communism }
+			}
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}

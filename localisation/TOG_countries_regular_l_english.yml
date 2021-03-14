@@ -1,0 +1,859 @@
+﻿l_english:
+
+ #Skynavia
+ SRS_tog_kleptocracy:0 "Skynavia"
+ SRS_tog_theocracy:0 "Skynavia"
+ SRS_tog_anarchism:0 "Skynavia"
+ SRS_tog_technocracy:0 "Skynavia"
+ SRS_tog_magocracy:0 "Skynavia"
+
+ SRS_tog_kleptocracy_DEF:0 "Skynavia"
+ SRS_tog_theocracy_DEF:0 "Skynavia"
+ SRS_tog_anarchism_DEF:0 "Skynavia"
+ SRS_tog_technocracy_DEF:0 "Skynavia"
+ SRS_tog_magocracy_DEF:0 "Skynavia"
+
+ SRS_tog_kleptocracy_ADJ:0 "Skynavian"
+ SRS_tog_theocracy_ADJ:0 "Skynavian"
+ SRS_tog_anarchism_ADJ:0 "Skynavian"
+ SRS_tog_technocracy_ADJ:0 "Skynavian"
+ SRS_tog_magocracy_ADJ:0 "Skynavian"
+
+ #Northern Tribes
+ NTR_tog_kleptocracy:0 "Northern Tribes"
+ NTR_tog_theocracy:0 "Northern Tribes"
+ NTR_tog_anarchism:0 "Northern Tribes"
+ NTR_tog_technocracy:0 "Northern Tribes"
+ NTR_tog_magocracy:0 "Northern Tribes"
+
+ NTR_tog_kleptocracy_DEF:0 "Northern Tribes"
+ NTR_tog_theocracy_DEF:0 "Northern Tribes"
+ NTR_tog_anarchism_DEF:0 "Northern Tribes"
+ NTR_tog_technocracy_DEF:0 "Northern Tribes"
+ NTR_tog_magocracy_DEF:0 "Northern Tribes"
+
+ NTR_tog_kleptocracy_ADJ:0 "The Northern Tribes"
+ NTR_tog_theocracy_ADJ:0 "The Northern Tribes"
+ NTR_tog_anarchism_ADJ:0 "The Northern Tribes"
+ NTR_tog_technocracy_ADJ:0 "The Northern Tribes"
+ NTR_tog_magocracy_ADJ:0 "The Northern Tribes"
+
+ #Arcturian Order
+ HLR_tog_kleptocracy:0 "Arcturian Order"
+ HLR_tog_theocracy:0 "Arcturian Order"
+ HLR_tog_anarchism:0 "Arcturian Order"
+ HLR_tog_technocracy:0 "Arcturian Order"
+ HLR_tog_magocracy:0 "Arcturian Order"
+
+ HLR_tog_kleptocracy_DEF:0 "Arcturian Order"
+ HLR_tog_theocracy_DEF:0 "Arcturian Order"
+ HLR_tog_anarchism_DEF:0 "Arcturian Order"
+ HLR_tog_technocracy_DEF:0 "Arcturian Order"
+ HLR_tog_magocracy_DEF:0 "Arcturian Order"
+
+ HLR_tog_kleptocracy_ADJ:0 "Arcturian"
+ HLR_tog_theocracy_ADJ:0 "Arcturian"
+ HLR_tog_anarchism_ADJ:0 "Arcturian"
+ HLR_tog_technocracy_ADJ:0 "Arcturian"
+ HLR_tog_magocracy_ADJ:0 "Arcturian"
+
+ #Dread League
+ DED_tog_kleptocracy:0 "Dread League"
+ DED_tog_theocracy:0 "Dread League"
+ DED_tog_anarchism:0 "Dread League"
+ DED_tog_technocracy:0 "Dread League"
+ DED_tog_magocracy:0 "Dread League"
+
+ DED_tog_kleptocracy_DEF:0 "Dread League"
+ DED_tog_theocracy_DEF:0 "Dread League"
+ DED_tog_anarchism_DEF:0 "Dread League"
+ DED_tog_technocracy_DEF:0 "Dread League"
+ DED_tog_magocracy_DEF:0 "Dread League"
+
+ DED_tog_kleptocracy_ADJ:0 "The Dread League"
+ DED_tog_theocracy_ADJ:0 "The Dread League"
+ DED_tog_anarchism_ADJ:0 "The Dread League"
+ DED_tog_technocracy_ADJ:0 "The Dread League"
+ DED_tog_magocracy_ADJ:0 "The Dread League"
+
+ #Barrad Magocracy
+ BAR_tog_kleptocracy:0 "Barrad Magocracy"
+ BAR_tog_theocracy:0 "Barrad Magocracy"
+ BAR_tog_anarchism:0 "Barrad Magocracy"
+ BAR_tog_technocracy:0 "Barrad Magocracy"
+ BAR_tog_magocracy:0 "Barrad Magocracy"
+
+ BAR_tog_kleptocracy_DEF:0 "Barrad Magocracy"
+ BAR_tog_theocracy_DEF:0 "Barrad Magocracy"
+ BAR_tog_anarchism_DEF:0 "Barrad Magocracy"
+ BAR_tog_technocracy_DEF:0 "Barrad Magocracy"
+ BAR_tog_magocracy_DEF:0 "Barrad Magocracy"
+
+ BAR_tog_kleptocracy_ADJ:0 "The Barrad Magocracy"
+ BAR_tog_theocracy_ADJ:0 "The Barrad Magocracy"
+ BAR_tog_anarchism_ADJ:0 "The Barrad Magocracy"
+ BAR_tog_technocracy_ADJ:0 "The Barrad Magocracy"
+ BAR_tog_magocracy_ADJ:0 "The Barrad Magocracy"
+
+ #Vedina
+ VED_tog_kleptocracy:0 "Vedinian Kleptocratic State"
+ VED_tog_theocracy:0 "Holy Vedinian Kingdom"
+ VED_tog_anarchism:0 "Vedinian Republic"
+ VED_tog_technocracy:0 "Vedina"
+ VED_tog_magocracy:0 "Vedina"
+
+ VED_tog_kleptocracy_DEF:0 "Vedinian Kleptocracy State"
+ VED_tog_theocracy_DEF:0 "Holy Vedinian Kingdom"
+ VED_tog_anarchism_DEF:0 "Vedinian Republic"
+ VED_tog_technocracy_DEF:0 "Vedina"
+ VED_tog_magocracy_DEF:0 "Vedina"
+
+ VED_tog_kleptocracy_ADJ:0 "Vedinian"
+ VED_tog_theocracy_ADJ:0 "Vedinian"
+ VED_tog_anarchism_ADJ:0 "Vedinian"
+ VED_tog_technocracy_ADJ:0 "Vedinian"
+ VED_tog_magocracy_ADJ:0 "Vedinian"
+
+ #Griffonian Republic
+ FAT_tog_kleptocracy:0 "Griffonian Republic"
+ FAT_tog_theocracy:0 "Griffonian Republic"
+ FAT_tog_anarchism:0 "Griffonian Republic"
+ FAT_tog_technocracy:0 "Griffonian Republic"
+ FAT_tog_magocracy:0 "Griffonian Republic"
+
+ FAT_tog_kleptocracy_DEF:0 "Griffonian Republic"
+ FAT_tog_theocracy_DEF:0 "Griffonian Republic"
+ FAT_tog_anarchism_DEF:0 "Griffonian Republic"
+ FAT_tog_technocracy_DEF:0 "Griffonian Republic"
+ FAT_tog_magocracy_DEF:0 "Griffonian Republic"
+
+ FAT_tog_kleptocracy_ADJ:0 "The Griffonian Republic"
+ FAT_tog_theocracy_ADJ:0 "The Griffonian Republic"
+ FAT_tog_anarchism_ADJ:0 "The Griffonian Republic"
+ FAT_tog_technocracy_ADJ:0 "The Griffonian Republic"
+ FAT_tog_magocracy_ADJ:0 "The Griffonian Republic"
+
+ #Sunstriker Clan
+ MNC_tog_kleptocracy:0 "Sunstriker Clan"
+ MNC_tog_theocracy:0 "Brantbeak"
+ MNC_tog_anarchism:0 "Brantbeak"
+ MNC_tog_technocracy:0 "Brantbeak"
+ MNC_tog_magocracy:0 "Brantbeak"
+
+ MNC_tog_kleptocracy_DEF:0 "Sunstriker Clan"
+ MNC_tog_theocracy_DEF:0 "Brantbeak"
+ MNC_tog_anarchism_DEF:0 "Brantbeak"
+ MNC_tog_technocracy_DEF:0 "Brantbeak"
+ MNC_tog_magocracy_DEF:0 "Brantbeak"
+
+ MNC_tog_kleptocracy_ADJ:0 "Sunstriker"
+ MNC_tog_theocracy_ADJ:0 "Brantbeak"
+ MNC_tog_anarchism_ADJ:0 "Sunstriker"
+ MNC_tog_technocracy_ADJ:0 "Brantbeak"
+ MNC_tog_magocracy_ADJ:0 "Brantbeak"
+
+ #Watertowns
+ WAT_tog_kleptocracy:0 "Watertowns"
+ WAT_tog_theocracy:0 "Watertowns"
+ WAT_tog_anarchism:0 "Watertowns"
+ WAT_tog_technocracy:0 "Watertowns"
+ WAT_tog_magocracy:0 "Watertowns"
+
+ WAT_tog_kleptocracy_DEF:0 "Watertowns"
+ WAT_tog_theocracy_DEF:0 "Watertowns"
+ WAT_tog_anarchism_DEF:0 "Watertowns"
+ WAT_tog_technocracy_DEF:0 "Watertowns"
+ WAT_tog_magocracy_DEF:0 "Watertowns"
+
+ WAT_tog_kleptocracy_ADJ:0 "Watertowner"
+ WAT_tog_theocracy_ADJ:0 "Watertowner"
+ WAT_tog_anarchism_ADJ:0 "Watertowner"
+ WAT_tog_technocracy_ADJ:0 "Watertowner"
+ WAT_tog_magocracy_ADJ:0 "Watertowner"
+
+ #Farbrook
+ FBK_tog_kleptocracy:0 "Farbrook"
+ FBK_tog_theocracy:0 "Farbrook"
+ FBK_tog_anarchism:0 "Farbrook"
+ FBK_tog_technocracy:0 "Farbrook"
+ FBK_tog_magocracy:0 "Farbrook"
+
+ FBK_tog_kleptocracy_DEF:0 "Farbrook"
+ FBK_tog_theocracy_DEF:0 "Farbrook"
+ FBK_tog_anarchism_DEF:0 "Farbrook"
+ FBK_tog_technocracy_DEF:0 "Farbrook"
+ FBK_tog_magocracy_DEF:0 "Farbrook"
+
+ FBK_tog_kleptocracy_ADJ:0 "Farbrookian"
+ FBK_tog_theocracy_ADJ:0 "Farbrookian"
+ FBK_tog_anarchism_ADJ:0 "Farbrookian"
+ FBK_tog_technocracy_ADJ:0 "Farbrookian"
+ FBK_tog_magocracy_ADJ:0 "Farbrookian"
+ 
+ #Greneclyf
+ NCH_tog_kleptocracy:0 "Greneclyf"
+ NCH_tog_theocracy:0 "Greneclyf"
+ NCH_tog_anarchism:0 "Greneclyf"
+ NCH_tog_technocracy:0 "Greneclyf"
+ NCH_tog_magocracy:0 "Greneclyf"
+
+ NCH_tog_kleptocracy_DEF:0 "Greneclyf"
+ NCH_tog_theocracy_DEF:0 "Greneclyf"
+ NCH_tog_anarchism_DEF:0 "Greneclyf"
+ NCH_tog_technocracy_DEF:0 "Greneclyf"
+ NCH_tog_magocracy_DEF:0 "Greneclyf"
+
+ NCH_tog_kleptocracy_ADJ:0 "Greneclyfian"
+ NCH_tog_theocracy_ADJ:0 "Greneclyfian"
+ NCH_tog_anarchism_ADJ:0 "Greneclyfian"
+ NCH_tog_technocracy_ADJ:0 "Greneclyfian"
+ NCH_tog_magocracy_ADJ:0 "Greneclyfian"
+
+ #Haukland
+ HAU_tog_kleptocracy:0 "Haukland"
+ HAU_tog_theocracy:0 "Haukland"
+ HAU_tog_anarchism:0 "Haukland"
+ HAU_tog_technocracy:0 "Haukland"
+ HAU_tog_magocracy:0 "Haukland"
+
+ HAU_tog_kleptocracy_DEF:0 "Haukland"
+ HAU_tog_theocracy_DEF:0 "Haukland"
+ HAU_tog_anarchism_DEF:0 "Haukland"
+ HAU_tog_technocracy_DEF:0 "Haukland"
+ HAU_tog_magocracy_DEF:0 "Haukland"
+
+ HAU_tog_kleptocracy_ADJ:0 "Hauklander"
+ HAU_tog_theocracy_ADJ:0 "Hauklander"
+ HAU_tog_anarchism_ADJ:0 "Hauklander"
+ HAU_tog_technocracy_ADJ:0 "Hauklander"
+ HAU_tog_magocracy_ADJ:0 "Hauklander"
+
+ #Skyfall
+ TRD_tog_kleptocracy:0 "Skyfall"
+ TRD_tog_theocracy:0 "Skyfall"
+ TRD_tog_anarchism:0 "Skyfall"
+ TRD_tog_technocracy:0 "Skyfall"
+ TRD_tog_magocracy:0 "Skyfall"
+
+ TRD_tog_kleptocracy_DEF:0 "Skyfall"
+ TRD_tog_theocracy_DEF:0 "Skyfall"
+ TRD_tog_anarchism_DEF:0 "Skyfall"
+ TRD_tog_technocracy_DEF:0 "Skyfall"
+ TRD_tog_magocracy_DEF:0 "Skyfall"
+
+ TRD_tog_kleptocracy_ADJ:0 "Skyfallian"
+ TRD_tog_theocracy_ADJ:0 "Skyfallian"
+ TRD_tog_anarchism_ADJ:0 "Skyfallian"
+ TRD_tog_technocracy_ADJ:0 "Skyfallian"
+ TRD_tog_magocracy_ADJ:0 "Skyfallian"
+
+ #Feathisia
+ FEA_tog_kleptocracy:0 "Feathisia"
+ FEA_tog_theocracy:0 "Feathisia"
+ FEA_tog_anarchism:0 "Feathisia"
+ FEA_tog_technocracy:0 "Feathisia"
+ FEA_tog_magocracy:0 "Feathisia"
+
+ FEA_tog_kleptocracy_DEF:0 "Feathisia"
+ FEA_tog_theocracy_DEF:0 "Feathisia"
+ FEA_tog_anarchism_DEF:0 "Feathisia"
+ FEA_tog_technocracy_DEF:0 "Feathisia"
+ FEA_tog_magocracy_DEF:0 "Feathisia"
+
+ FEA_tog_kleptocracy_ADJ:0 "Feathisian"
+ FEA_tog_theocracy_ADJ:0 "Feathisian"
+ FEA_tog_anarchism_ADJ:0 "Feathisian"
+ FEA_tog_technocracy_ADJ:0 "Feathisian"
+ FEA_tog_magocracy_ADJ:0 "Feathisian"
+
+ #Strawberry
+ STW_tog_kleptocracy:0 "Strawberry"
+ STW_tog_theocracy:0 "Strawberry"
+ STW_tog_anarchism:0 "Strawberry"
+ STW_tog_technocracy:0 "Strawberry"
+ STW_tog_magocracy:0 "Strawberry"
+
+ STW_tog_kleptocracy_DEF:0 "Strawberry"
+ STW_tog_theocracy_DEF:0 "Strawberry"
+ STW_tog_anarchism_DEF:0 "Strawberry"
+ STW_tog_technocracy_DEF:0 "Strawberry"
+ STW_tog_magocracy_DEF:0 "Strawberry"
+
+ STW_tog_kleptocracy_ADJ:0 "Strawberry"
+ STW_tog_theocracy_ADJ:0 "Strawberry"
+ STW_tog_anarchism_ADJ:0 "Strawberry"
+ STW_tog_technocracy_ADJ:0 "Strawberry"
+ STW_tog_magocracy_ADJ:0 "Strawberry"
+
+ #Bronzehill
+ BRZ_tog_kleptocracy:0 "Bronzehill"
+ BRZ_tog_theocracy:0 "Bronzehill"
+ BRZ_tog_anarchism:0 "Bronzehill"
+ BRZ_tog_technocracy:0 "Bronzehill"
+ BRZ_tog_magocracy:0 "Bronzehill"
+
+ BRZ_tog_kleptocracy_DEF:0 "Bronzehill"
+ BRZ_tog_theocracy_DEF:0 "Bronzehill"
+ BRZ_tog_anarchism_DEF:0 "Bronzehill"
+ BRZ_tog_technocracy_DEF:0 "Bronzehill"
+ BRZ_tog_magocracy_DEF:0 "Bronzehill"
+
+ BRZ_tog_kleptocracy_ADJ:0 "Bronzehill"
+ BRZ_tog_theocracy_ADJ:0 "Bronzehill"
+ BRZ_tog_anarchism_ADJ:0 "Bronzehill"
+ BRZ_tog_technocracy_ADJ:0 "Bronzehill"
+ BRZ_tog_magocracy_ADJ:0 "Bronzehill"
+
+ #Griffonian Empire
+ GRI_tog_kleptocracy:0 "Griffonian Empire"
+ GRI_tog_theocracy:0 "Griffonian Empire"
+ GRI_tog_anarchism:0 "Griffonian Empire"
+ GRI_tog_technocracy:0 "Griffonian Empire"
+ GRI_tog_magocracy:0 "Griffonian Empire"
+
+ GRI_tog_kleptocracy_DEF:0 "Griffonian Empire"
+ GRI_tog_theocracy_DEF:0 "Griffonian Empire"
+ GRI_tog_anarchism_DEF:0 "Griffonian Empire"
+ GRI_tog_technocracy_DEF:0 "Griffonian Empire"
+ GRI_tog_magocracy_DEF:0 "Griffonian Empire"
+
+ GRI_tog_kleptocracy_ADJ:0 "Griffonian"
+ GRI_tog_theocracy_ADJ:0 "Griffonian"
+ GRI_tog_anarchism_ADJ:0 "Griffonian"
+ GRI_tog_technocracy_ADJ:0 "Griffonian"
+ GRI_tog_magocracy_ADJ:0 "Griffonian"
+
+ #Katerin Principality
+ KAT_tog_kleptocracy:0 "Katerin"
+ KAT_tog_theocracy:0 "Katerin"
+ KAT_tog_anarchism:0 "Katerin"
+ KAT_tog_technocracy:0 "Katerin"
+ KAT_tog_magocracy:0 "Katerin"
+
+ KAT_tog_kleptocracy_DEF:0 "Katerin"
+ KAT_tog_theocracy_DEF:0 "Katerin"
+ KAT_tog_anarchism_DEF:0 "Katerin"
+ KAT_tog_technocracy_DEF:0 "Katerin"
+ KAT_tog_magocracy_DEF:0 "Katerin"
+
+ KAT_tog_kleptocracy_ADJ:0 "Katerinian"
+ KAT_tog_theocracy_ADJ:0 "Katerinian"
+ KAT_tog_anarchism_ADJ:0 "Katerinian"
+ KAT_tog_technocracy_ADJ:0 "Katerinian"
+ KAT_tog_magocracy_ADJ:0 "Katerinian"
+ 
+ #Yale Rectorate
+ YAL_tog_kleptocracy:0 "Yale Rectorate"
+ YAL_tog_theocracy:0 "Yale Rectorate"
+ YAL_tog_anarchism:0 "Yale Rectorate"
+ YAL_tog_technocracy:0 "Yale Rectorate"
+ YAL_tog_magocracy:0 "Yale Rectorate"
+
+ YAL_tog_kleptocracy_DEF:0 "The Yale Rectorate"
+ YAL_tog_theocracy_DEF:0 "The Yale Rectorate"
+ YAL_tog_anarchism_DEF:0 "The Yale Rectorate"
+ YAL_tog_technocracy_DEF:0 "The Yale Rectorate"
+ YAL_tog_magocracy_DEF:0 "The Yale Rectorate"
+
+ YAL_tog_kleptocracy_ADJ:0 "Yalish"
+ YAL_tog_theocracy_ADJ:0 "Yalish"
+ YAL_tog_anarchism_ADJ:0 "Yalish"
+ YAL_tog_technocracy_ADJ:0 "Yalish"
+ YAL_tog_magocracy_ADJ:0 "Yalish"
+
+ #Angriver
+ ANG_tog_kleptocracy:0 "Angriver"
+ ANG_tog_theocracy:0 "Angriver"
+ ANG_tog_anarchism:0 "Angriver"
+ ANG_tog_technocracy:0 "Angriver"
+ ANG_tog_magocracy:0 "Angriver"
+
+ ANG_tog_kleptocracy_DEF:0 "Angriver"
+ ANG_tog_theocracy_DEF:0 "Angriver"
+ ANG_tog_anarchism_DEF:0 "Angriver"
+ ANG_tog_technocracy_DEF:0 "Angriver"
+ ANG_tog_magocracy_DEF:0 "Angriver"
+
+ ANG_tog_kleptocracy_ADJ:0 "Angriver"
+ ANG_tog_theocracy_ADJ:0 "Angriver"
+ ANG_tog_anarchism_ADJ:0 "Angriver"
+ ANG_tog_technocracy_ADJ:0 "Angriver"
+ ANG_tog_magocracy_ADJ:0 "Angriver"
+
+ #Romau
+ ROU_tog_kleptocracy:0 "Romau"
+ ROU_tog_theocracy:0 "Romau"
+ ROU_tog_anarchism:0 "Romau"
+ ROU_tog_technocracy:0 "Romau"
+ ROU_tog_magocracy:0 "Romau"
+
+ ROU_tog_kleptocracy_DEF:0 "The Romau"
+ ROU_tog_theocracy_DEF:0 "The Romau"
+ ROU_tog_anarchism_DEF:0 "The Romau"
+ ROU_tog_technocracy_DEF:0 "The Romau"
+ ROU_tog_magocracy_DEF:0 "The Romau"
+
+ ROU_tog_kleptocracy_ADJ:0 "Romauan"
+ ROU_tog_theocracy_ADJ:0 "Romauan"
+ ROU_tog_anarchism_ADJ:0 "Romauan"
+ ROU_tog_technocracy_ADJ:0 "Romauan"
+ ROU_tog_magocracy_ADJ:0 "Romauan"
+
+ #Greifenmarschen
+ PYT_tog_kleptocracy:0 "Greifenmarschen"
+ PYT_tog_theocracy:0 "Greifenmarschen"
+ PYT_tog_anarchism:0 "Greifenmarschen"
+ PYT_tog_technocracy:0 "Greifenmarschen"
+ PYT_tog_magocracy:0 "Greifenmarschen"
+
+ PYT_tog_kleptocracy_DEF:0 "The Greifenmarschen"
+ PYT_tog_theocracy_DEF:0 "The Greifenmarschen"
+ PYT_tog_anarchism_DEF:0 "The Greifenmarschen"
+ PYT_tog_technocracy_DEF:0 "The Greifenmarschen"
+ PYT_tog_magocracy_DEF:0 "The Greifenmarschen"
+
+ PYT_tog_kleptocracy_ADJ:0 "Greifenmarschen"
+ PYT_tog_theocracy_ADJ:0 "Greifenmarschen"
+ PYT_tog_anarchism_ADJ:0 "Greifenmarschen"
+ PYT_tog_technocracy_ADJ:0 "Greifenmarschen"
+ PYT_tog_magocracy_ADJ:0 "Greifenmarschen"
+
+ #Firtree
+ FIR_tog_kleptocracy:0 "Firtree Villages"
+ FIR_tog_theocracy:0 "Firtree Villages"
+ FIR_tog_anarchism:0 "Firtree Villages"
+ FIR_tog_technocracy:0 "Firtree Villages"
+ FIR_tog_magocracy:0 "Firtree Magocracy"
+
+ FIR_tog_kleptocracy_DEF:0 "Firtree"
+ FIR_tog_theocracy_DEF:0 "Firtree"
+ FIR_tog_anarchism_DEF:0 "Firtree"
+ FIR_tog_technocracy_DEF:0 "Firtree"
+ FIR_tog_magocracy_DEF:0 "Firtree"
+
+ FIR_tog_kleptocracy_ADJ:0 "Firtree"
+ FIR_tog_theocracy_ADJ:0 "Firtree"
+ FIR_tog_anarchism_ADJ:0 "Firtree"
+ FIR_tog_technocracy_ADJ:0 "Firtree"
+ FIR_tog_magocracy_ADJ:0 "Firtree"
+
+ #Hellquill
+ HLQ_tog_kleptocracy:0 "Hellquill"
+ HLQ_tog_theocracy:0 "Hellquill"
+ HLQ_tog_anarchism:0 "Hellquill"
+ HLQ_tog_technocracy:0 "Hellquill"
+ HLQ_tog_magocracy:0 "Hellquill"
+
+ HLQ_tog_kleptocracy_DEF:0 "Hellquill"
+ HLQ_tog_theocracy_DEF:0 "Hellquill"
+ HLQ_tog_anarchism_DEF:0 "Hellquill"
+ HLQ_tog_technocracy_DEF:0 "Hellquill"
+ HLQ_tog_magocracy_DEF:0 "Hellquill"
+
+ HLQ_tog_kleptocracy_ADJ:0 "Hellquill"
+ HLQ_tog_theocracy_ADJ:0 "Hellquill"
+ HLQ_tog_anarchism_ADJ:0 "Hellquill"
+ HLQ_tog_technocracy_ADJ:0 "Hellquill"
+ HLQ_tog_magocracy_ADJ:0 "Hellquill"
+
+ #Diamond Mountain
+ DMT_tog_kleptocracy:0 "Diamond Mountain"
+ DMT_tog_theocracy:0 "Diamond Mountain"
+ DMT_tog_anarchism:0 "Diamond Mountain"
+ DMT_tog_technocracy:0 "Diamond Mountain"
+ DMT_tog_magocracy:0 "Diamond Mountain"
+
+ DMT_tog_kleptocracy_DEF:0 "Diamond Dog"
+ DMT_tog_theocracy_DEF:0 "Diamond Dog"
+ DMT_tog_anarchism_DEF:0 "Diamond Dog"
+ DMT_tog_technocracy_DEF:0 "Diamond Dog"
+ DMT_tog_magocracy_DEF:0 "Diamond Dog"
+
+ DMT_tog_kleptocracy_ADJ:0 "Diamond Mountain"
+ DMT_tog_theocracy_ADJ:0 "Diamond Mountain"
+ DMT_tog_anarchism_ADJ:0 "Diamond Mountain"
+ DMT_tog_technocracy_ADJ:0 "Diamond Mountain"
+ DMT_tog_magocracy_ADJ:0 "Diamond Mountain"
+
+ #Bakara
+ BAK_tog_kleptocracy:0 "Bakaran Republic"
+ BAK_tog_theocracy:0 "Bakaran Republic"
+ BAK_tog_anarchism:0 "Bakaran Republic"
+ BAK_tog_technocracy:0 "Bakaran Republic"
+ BAK_tog_magocracy:0 "Bakaran Republic"
+
+ BAK_tog_kleptocracy_DEF:0 "Bakaran Republic"
+ BAK_tog_theocracy_DEF:0 "Bakaran Republic"
+ BAK_tog_anarchism_DEF:0 "Bakaran Republic"
+ BAK_tog_technocracy_DEF:0 "Bakaran Republic"
+ BAK_tog_magocracy_DEF:0 "Bakaran Republic"
+
+ BAK_tog_kleptocracy_ADJ:0 "Bakaran Republic"
+ BAK_tog_theocracy_ADJ:0 "Bakaran Republic"
+ BAK_tog_anarchism_ADJ:0 "Bakaran Republic"
+ BAK_tog_technocracy_ADJ:0 "Bakaran Republic"
+ BAK_tog_magocracy_ADJ:0 "Bakaran Republic"
+
+ #Deponia
+ DEP_tog_kleptocracy:0 "Deponia"
+ DEP_tog_theocracy:0 "Deponia"
+ DEP_tog_anarchism:0 "Deponia"
+ DEP_tog_technocracy:0 "Deponia"
+ DEP_tog_magocracy:0 "Deponia"
+
+ DEP_tog_kleptocracy_DEF:0 "Deponia's"
+ DEP_tog_theocracy_DEF:0 "Deponia's"
+ DEP_tog_anarchism_DEF:0 "Deponia's"
+ DEP_tog_technocracy_DEF:0 "Deponia's"
+ DEP_tog_magocracy_DEF:0 "Deponia's"
+
+ DEP_tog_kleptocracy_ADJ:0 "Deponian"
+ DEP_tog_theocracy_ADJ:0 "Deponian"
+ DEP_tog_anarchism_ADJ:0 "Deponian"
+ DEP_tog_technocracy_ADJ:0 "Deponian"
+ DEP_tog_magocracy_ADJ:0 "Deponian"
+
+ #River Republic
+ RCT_tog_kleptocracy:0 "River Republic"
+ RCT_tog_theocracy:0 "River Republic"
+ RCT_tog_anarchism:0 "River Republic"
+ RCT_tog_technocracy:0 "River Republic"
+ RCT_tog_magocracy:0 "River Republic"
+
+ RCT_tog_kleptocracy_DEF:0 "River Republic"
+ RCT_tog_theocracy_DEF:0 "River Republic"
+ RCT_tog_anarchism_DEF:0 "River Republic"
+ RCT_tog_technocracy_DEF:0 "River Republic"
+ RCT_tog_magocracy_DEF:0 "River Republic"
+
+ RCT_tog_kleptocracy_ADJ:0 "River Republic"
+ RCT_tog_theocracy_ADJ:0 "River Republic"
+ RCT_tog_anarchism_ADJ:0 "River Republic"
+ RCT_tog_technocracy_ADJ:0 "River Republic"
+ RCT_tog_magocracy_ADJ:0 "River Republic"
+
+ #Nimbusia
+ NIM_tog_kleptocracy:0 "Nimbusia"
+ NIM_tog_theocracy:0 "Nimbusia"
+ NIM_tog_anarchism:0 "Nimbusia"
+ NIM_tog_technocracy:0 "Nimbusia"
+ NIM_tog_magocracy:0 "Nimbusia"
+
+ NIM_tog_kleptocracy_DEF:0 "Nimbusia"
+ NIM_tog_theocracy_DEF:0 "Nimbusia"
+ NIM_tog_anarchism_DEF:0 "Nimbusia"
+ NIM_tog_technocracy_DEF:0 "Nimbusia"
+ NIM_tog_magocracy_DEF:0 "Nimbusia"
+
+ NIM_tog_kleptocracy_ADJ:0 "Nimbusia"
+ NIM_tog_theocracy_ADJ:0 "Nimbusia"
+ NIM_tog_anarchism_ADJ:0 "Nimbusia"
+ NIM_tog_technocracy_ADJ:0 "Nimbusia"
+ NIM_tog_magocracy_ADJ:0 "Nimbusia"
+
+ #Lake City
+ LCT_tog_kleptocracy:0 "Lake City"
+ LCT_tog_theocracy:0 "Lake City"
+ LCT_tog_anarchism:0 "Lake City"
+ LCT_tog_technocracy:0 "Lake City"
+ LCT_tog_magocracy:0 "Lake City"
+
+ LCT_tog_kleptocracy_DEF:0 "Lake City"
+ LCT_tog_theocracy_DEF:0 "Lake City"
+ LCT_tog_anarchism_DEF:0 "Lake City"
+ LCT_tog_technocracy_DEF:0 "Lake City"
+ LCT_tog_magocracy_DEF:0 "Lake City"
+
+ LCT_tog_kleptocracy_ADJ:0 "Lake City"
+ LCT_tog_theocracy_ADJ:0 "Lake City"
+ LCT_tog_anarchism_ADJ:0 "Lake City"
+ LCT_tog_technocracy_ADJ:0 "Lake City"
+ LCT_tog_magocracy_ADJ:0 "Lake City"
+
+ #Kingdom of Wittenland
+ WIT_tog_kleptocracy:0 "Kingdom of Wittenland"
+ WIT_tog_theocracy:0 "Kingdom of Wittenland"
+ WIT_tog_anarchism:0 "Kingdom of Wittenland"
+ WIT_tog_technocracy:0 "Kingdom of Wittenland"
+ WIT_tog_magocracy:0 "Kingdom of Wittenland"
+
+ WIT_tog_kleptocracy_DEF:0 "Wittenland"
+ WIT_tog_theocracy_DEF:0 "Wittenland"
+ WIT_tog_anarchism_DEF:0 "Wittenland"
+ WIT_tog_technocracy_DEF:0 "Wittenland"
+ WIT_tog_magocracy_DEF:0 "Wittenland"
+
+ WIT_tog_kleptocracy_ADJ:0 "Wittenland"
+ WIT_tog_theocracy_ADJ:0 "Wittenland"
+ WIT_tog_anarchism_ADJ:0 "Wittenland"
+ WIT_tog_technocracy_ADJ:0 "Wittenland"
+ WIT_tog_magocracy_ADJ:0 "Wittenland"
+
+ #Ponaidhean
+ FRE_tog_kleptocracy:0 "Pònaidhean"
+ FRE_tog_theocracy:0 "Pònaidhean"
+ FRE_tog_anarchism:0 "Pònaidhean"
+ FRE_tog_technocracy:0 "Pònaidhean"
+ FRE_tog_magocracy:0 "Pònaidhean"
+
+ FRE_tog_kleptocracy_DEF:0 "Pònaidhean"
+ FRE_tog_theocracy_DEF:0 "Pònaidhean"
+ FRE_tog_anarchism_DEF:0 "Pònaidhean"
+ FRE_tog_technocracy_DEF:0 "Pònaidhean"
+ FRE_tog_magocracy_DEF:0 "Pònaidhean"
+
+ FRE_tog_kleptocracy_ADJ:0 "Pònaid"
+ FRE_tog_theocracy_ADJ:0 "Pònaid"
+ FRE_tog_anarchism_ADJ:0 "Pònaid"
+ FRE_tog_technocracy_ADJ:0 "Pònaid"
+ FRE_tog_magocracy_ADJ:0 "Pònaid"
+
+ #Blackrock's Bandits
+ BAN_tog_kleptocracy:0 "Blackrock's Bandits"
+ BAN_tog_theocracy:0 "Blackrock's Bandits"
+ BAN_tog_anarchism:0 "Blackrock's Bandits"
+ BAN_tog_technocracy:0 "Blackrock's Bandits"
+ BAN_tog_magocracy:0 "Blackrock's Bandits"
+
+ BAN_tog_kleptocracy_DEF:0 "Blackrock's Bandits"
+ BAN_tog_theocracy_DEF:0 "Blackrock's Bandits"
+ BAN_tog_anarchism_DEF:0 "Blackrock's Bandits"
+ BAN_tog_technocracy_DEF:0 "Blackrock's Bandits"
+ BAN_tog_magocracy_DEF:0 "Blackrock's Bandits"
+
+ BAN_tog_kleptocracy_ADJ:0 "Blackrock's"
+ BAN_tog_theocracy_ADJ:0 "Blackrock's"
+ BAN_tog_anarchism_ADJ:0 "Blackrock's"
+ BAN_tog_technocracy_ADJ:0 "Blackrock's"
+ BAN_tog_magocracy_ADJ:0 "Blackrock's"
+ 
+ #New Mareland
+ EQC_tog_kleptocracy:0 "New Mareland"
+ EQC_tog_theocracy:0 "New Mareland"
+ EQC_tog_anarchism:0 "New Mareland"
+ EQC_tog_technocracy:0 "Militaristic Directory of New Mareland"
+ EQC_tog_magocracy:0 "Militaristic Directory of New Mareland"
+
+ EQC_tog_kleptocracy_DEF:0 "New Mareland"
+ EQC_tog_theocracy_DEF:0 "New Mareland"
+ EQC_tog_anarchism_DEF:0 "New Mareland"
+ EQC_tog_technocracy_DEF:0 "Militaristic Directory of New Mareland"
+ EQC_tog_magocracy_DEF:0 "Militaristic Directory of New Mareland"
+
+ EQC_tog_kleptocracy_ADJ:0 "New Mareland's"
+ EQC_tog_theocracy_ADJ:0 "New Mareland's"
+ EQC_tog_anarchism_ADJ:0 "New Mareland's"
+ EQC_tog_technocracy_ADJ:0 "Militaristic Directory of New Mareland's"
+ EQC_tog_magocracy_ADJ:0 "Militaristic Directory of New Mareland's"
+
+ ###New Mareland Empire
+ EQC_NSP_democratic:0 "New Mareland Empire"
+ EQC_NSP_communism:0 "New Mareland Empire"
+ EQC_NSP_fascism:0 "New Mareland Empire"
+ EQC_NSP_neutrality:0 "New Mareland Empire"
+
+ EQC_NSP_tog_kleptocracy:0 "New Mareland Empire"
+ EQC_NSP_tog_theocracy:0 "New Mareland Empire"
+ EQC_NSP_tog_anarchism:0 "New Mareland Empire"
+ EQC_NSP_tog_technocracy:0 "New Mareland Empire"
+ EQC_NSP_tog_magocracy:0 "New Mareland Empire"
+
+ EQC_NSP_democratic_DEF:0 "New Mareland Empire"
+ EQC_NSP_communism_DEF:0 "New Mareland Empire"
+ EQC_NSP_fascism_DEF:0 "New Mareland Empire"
+ EQC_NSP_neutrality_DEF:0 "New Mareland Empire"
+
+ EQC_NSP_tog_kleptocracy_DEF:0 "New Mareland Empire"
+ EQC_NSP_tog_theocracy_DEF:0 "New Mareland Empire"
+ EQC_NSP_tog_anarchism_DEF:0 "New Mareland Empire"
+ EQC_NSP_tog_technocracy_DEF:0 "New Mareland Empire"
+ EQC_NSP_tog_magocracy_DEF:0 "New Mareland Empire"
+
+ EQC_NSP_democratic_ADJ:0 "New Mareland Empire's"
+ EQC_NSP_communism_ADJ:0 "New Mareland Empire's"
+ EQC_NSP_fascism_ADJ:0 "New Mareland Empire's"
+ EQC_NSP_neutrality_ADJ:0 "New Mareland Empire's"
+ 
+ EQC_NSP_tog_kleptocracy_ADJ:0 "New Mareland Empire's"
+ EQC_NSP_tog_theocracy_ADJ:0 "New Mareland Empire's"
+ EQC_NSP_tog_anarchism_ADJ:0 "New Mareland Empire's"
+ EQC_NSP_tog_technocracy_ADJ:0 "New Mareland Empire's"
+ EQC_NSP_tog_magocracy_ADJ:0 "New Mareland Empire's"
+
+ ###New Equestria
+ EQC_NE_democratic:0 "New Eqeustria"
+ EQC_NE_communism:0 "New Equestria"
+ EQC_NE_fascism:0 "New Equestria"
+ EQC_NE_neutrality:0 "New Equestria"
+
+ EQC_NE_tog_kleptocracy:0 "New Equestria"
+ EQC_NE_tog_theocracy:0 "New Equestria"
+ EQC_NE_tog_anarchism:0 "New Equestria"
+ EQC_NE_tog_technocracy:0 "New Equestria"
+ EQC_NE_tog_magocracy:0 "New Equestria"
+
+ EQC_NE_democratic_DEF:0 "New Eqeustria"
+ EQC_NE_communism_DEF:0 "New Equestria"
+ EQC_NE_fascism_DEF:0 "New Equestria"
+ EQC_NE_neutrality_DEF:0 "New Equestria"
+
+ EQC_NE_tog_kleptocracy_DEF:0 "New Equestria"
+ EQC_NE_tog_theocracy_DEF:0 "New Equestria"
+ EQC_NE_tog_anarchism_DEF:0 "New Equestria"
+ EQC_NE_tog_technocracy_DEF:0 "New Equestria"
+ EQC_NE_tog_magocracy_DEF:0 "New Equestria"
+
+ EQC_NE_democratic_ADJ:0 "New Eqeustrian"
+ EQC_NE_communism_ADJ:0 "New Equestrian"
+ EQC_NE_fascism_ADJ:0 "New Equestrian"
+ EQC_NE_neutrality_ADJ:0 "New Equestrian"
+
+ EQC_NE_tog_kleptocracy_ADJ:0 "New Equestrian"
+ EQC_NE_tog_theocracy_ADJ:0 "New Equestrian"
+ EQC_NE_tog_anarchism_ADJ:0 "New Equestrian"
+ EQC_NE_tog_technocracy_ADJ:0 "New Equestrian"
+ EQC_NE_tog_magocracy_ADJ:0 "New Equestrian"
+
+ ###New Mareland Kingdom
+ EQC_NMK_democratic:0 "New Mareland Kingdom"
+ EQC_NMK_communism:0 "New Mareland Kingdom"
+ EQC_NMK_fascism:0 "New Mareland Kingdom"
+ EQC_NMK_neutrality:0 "New Mareland Kingdom"
+
+ EQC_NMK_tog_kleptocracy:0 "New Mareland Kingdom"
+ EQC_NMK_tog_theocracy:0 "New Mareland Kingdom"
+ EQC_NMK_tog_anarchism:0 "New Mareland Kingdom"
+ EQC_NMK_tog_technocracy:0 "New Mareland Kingdom"
+ EQC_NMK_tog_magocracy:0 "New Mareland Kingdom"
+
+ EQC_NMK_democratic_DEF:0 "New Mareland Kingdom"
+ EQC_NMK_communism_DEF:0 "New Mareland Kingdom"
+ EQC_NMK_fascism_DEF:0 "New Mareland Kingdom"
+ EQC_NMK_neutrality_DEF:0 "New Mareland Kingdom"
+
+ EQC_NMK_tog_kleptocracy_DEF:0 "New Mareland Kingdom"
+ EQC_NMK_tog_theocracy_DEF:0 "New Mareland Kingdom"
+ EQC_NMK_tog_anarchism_DEF:0 "New Mareland Kingdom"
+ EQC_NMK_tog_technocracy_DEF:0 "New Mareland Kingdom"
+ EQC_NMK_tog_magocracy_DEF:0 "New Mareland Kingdom"
+
+ EQC_NMK_democratic_ADJ:0 "New Mareland Kingdom's"
+ EQC_NMK_communism_ADJ:0 "New Mareland Kingdom's"
+ EQC_NMK_fascism_ADJ:0 "New Mareland Kingdom's"
+ EQC_NMK_neutrality_ADJ:0 "New Mareland Kingdom's"
+
+ EQC_NMK_tog_kleptocracy_ADJ:0 "New Mareland Kingdom's"
+ EQC_NMK_tog_theocracy_ADJ:0 "New Mareland Kingdom's"
+ EQC_NMK_tog_anarchism_ADJ:0 "New Mareland Kingdom's"
+ EQC_NMK_tog_technocracy_ADJ:0 "New Mareland Kingdom's"
+ EQC_NMK_tog_magocracy_ADJ:0 "New Mareland Kingdom's"
+
+ ###New Mareland Reich
+ EQC_NAZI_democratic:0 "New Mareland"
+ EQC_NAZI_communism:0 "New Mareland"
+ EQC_NAZI_fascism:0 "New Mareland Reich"
+ EQC_NAZI_neutrality:0 "New Mareland"
+
+ EQC_NAZI_tog_kleptocracy:0 "New Mareland"
+ EQC_NAZI_tog_theocracy:0 "New Mareland"
+ EQC_NAZI_tog_anarchism:0 "New Mareland"
+ EQC_NAZI_tog_technocracy:0 "New Mareland"
+ EQC_NAZI_tog_magocracy:0 "New Mareland"
+
+ EQC_NAZI_democratic_DEF:0 "New Mareland"
+ EQC_NAZI_communism_DEF:0 "New Mareland"
+ EQC_NAZI_fascism_DEF:0 "New Mareland Reich"
+ EQC_NAZI_neutrality_DEF:0 "New Mareland"
+
+ EQC_NAZI_tog_kleptocracy_DEF:0 "New Mareland"
+ EQC_NAZI_tog_theocracy_DEF:0 "New Mareland"
+ EQC_NAZI_tog_anarchism_DEF:0 "New Mareland"
+ EQC_NAZI_tog_technocracy_DEF:0 "New Mareland"
+ EQC_NAZI_tog_magocracy_DEF:0 "New Mareland"
+
+ EQC_NAZI_democratic_ADJ:0 "The New Mareland"
+ EQC_NAZI_communism_ADJ:0 "The New Mareland"
+ EQC_NAZI_fascism_ADJ:0 "The New Mareland Reich"
+ EQC_NAZI_neutrality_ADJ:0 "The New Mareland"
+
+ EQC_NAZI_tog_kleptocracy_ADJ:0 "The New Mareland"
+ EQC_NAZI_tog_theocracy_ADJ:0 "The New Mareland"
+ EQC_NAZI_tog_anarchism_ADJ:0 "The New Mareland"
+ EQC_NAZI_tog_technocracy_ADJ:0 "The New Mareland"
+ EQC_NAZI_tog_magocracy_ADJ:0 "The New Mareland"
+
+ #Equestria
+ EQS_tog_kleptocracy:0 "Equestrian Kleptocratic State"
+ EQS_tog_theocracy:0 "Holy Equestrian Empire"
+ EQS_tog_anarchism:0 "Discordia"
+ EQS_tog_technocracy:0 "Equestria"
+ EQS_tog_magocracy:0 "Equestria"
+
+ EQS_tog_kleptocracy_DEF:0 "Equestrian Kleptocratic State"
+ EQS_tog_theocracy_DEF:0 "Holy Equestrian Empire"
+ EQS_tog_anarchism_DEF:0 "Discordia"
+ EQS_tog_technocracy_DEF:0 "Equestria"
+ EQS_tog_magocracy_DEF:0 "Equestria"
+
+ EQS_tog_kleptocracy_ADJ:0 "Equestrian"
+ EQS_tog_theocracy_ADJ:0 "Equestrian"
+ EQS_tog_anarchism_ADJ:0 "Discordian"
+ EQS_tog_technocracy_ADJ:0 "Equestrian"
+ EQS_tog_magocracy_ADJ:0 "Equestrian"
+
+ #Crystal Empire
+ CRY_tog_kleptocracy:0 "Crystal Empire"
+ CRY_tog_theocracy:0 "Crystal Empire"
+ CRY_tog_anarchism:0 "Crystal Empire"
+ CRY_tog_technocracy:0 "Crystal Empire"
+ CRY_tog_magocracy:0 "Crystal Empire"
+
+ CRY_tog_kleptocracy_DEF:0 "Crystal Empire"
+ CRY_tog_theocracy_DEF:0 "Crystal Empire"
+ CRY_tog_anarchism_DEF:0 "Crystal Empire"
+ CRY_tog_technocracy_DEF:0 "Crystal Empire"
+ CRY_tog_magocracy_DEF:0 "Crystal Empire"
+
+ CRY_tog_kleptocracy_ADJ:0 "The Crystal Empire"
+ CRY_tog_theocracy_ADJ:0 "The Crystal Empire"
+ CRY_tog_anarchism_ADJ:0 "The Crystal Empire"
+ CRY_tog_technocracy_ADJ:0 "The Crystal Empire"
+ CRY_tog_magocracy_ADJ:0 "The Crystal Empire"
+
+ #Olenia
+ OLE_tog_kleptocracy:0 "Kingdom of Olenia"
+ OLE_tog_theocracy:0 "Kingdom of Olenia"
+ OLE_tog_anarchism:0 "Kingdom of Olenia"
+ OLE_tog_technocracy:0 "Kingdom of Olenia"
+ OLE_tog_magocracy:0 "Kingdom of Olenia"
+
+ OLE_tog_kleptocracy_DEF:0 "Kingdom of Olenia"
+ OLE_tog_theocracy_DEF:0 "Kingdom of Olenia"
+ OLE_tog_anarchism_DEF:0 "Kingdom of Olenia"
+ OLE_tog_technocracy_DEF:0 "Kingdom of Olenia"
+ OLE_tog_magocracy_DEF:0 "Kingdom of Olenia"
+
+ OLE_tog_kleptocracy_ADJ:0 "Olenian"
+ OLE_tog_theocracy_ADJ:0 "Olenian"
+ OLE_tog_anarchism_ADJ:0 "Olenian"
+ OLE_tog_technocracy_ADJ:0 "Olenian"
+ OLE_tog_magocracy_ADJ:0 "Olenian"
+
+ #Changelings
+ CHN_tog_kleptocracy:0 "Changeling Lands"
+ CHN_tog_theocracy:0 "Changeling Lands"
+ CHN_tog_anarchism:0 "Changeling Lands"
+ CHN_tog_technocracy:0 "Changeling Lands"
+ CHN_tog_magocracy:0 "Changeling Lands"
+
+ CHN_tog_kleptocracy_DEF:0 "Changeling Lands"
+ CHN_tog_theocracy_DEF:0 "Changeling Lands"
+ CHN_tog_anarchism_DEF:0 "Changeling Lands"
+ CHN_tog_technocracy_DEF:0 "Changeling Lands"
+ CHN_tog_magocracy_DEF:0 "Changeling Lands"
+
+ CHN_tog_kleptocracy_ADJ:0 "The Changeling Queendom"
+ CHN_tog_theocracy_ADJ:0 "The Changeling Queendom"
+ CHN_tog_anarchism_ADJ:0 "The Changeling Queendom"
+ CHN_tog_technocracy_ADJ:0 "The Changeling Queendom"
+ CHN_tog_magocracy_ADJ:0 "The Changeling Queendom"

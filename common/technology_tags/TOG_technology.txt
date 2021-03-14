@@ -1,0 +1,31 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+
+technology_categories = {
+	witcher_tech
+	custom_magical_tech
+
+	aerial_mage_tech
+	aerial_mage_equipment
+
+	heavy_artillery_tech
+	cat_elite_forces_doc
+}
+
+technology_folders = {
+	witcher_folder = {
+		available = {
+			has_completed_focus = VED_Order_of_Witchers
+			#tag = VED
+		}
+		ledger = civilian
+	}
+
+	aerial_mage_folder = {
+		available = {
+			has_completed_focus = EQC_flying_unicorns
+			#tag = EQC
+		}
+		ledger = civilian
+	}
+}

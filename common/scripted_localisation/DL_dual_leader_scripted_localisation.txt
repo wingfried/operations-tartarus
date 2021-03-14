@@ -1,0 +1,215 @@
+# For the Duel Leader Title, Leader Names, and custom portrait!
+
+defined_text = {
+	name = GetFirstTitle
+	text = {
+		trigger = {
+			tag = OLE
+			has_government = neutrality
+		}
+		localization_key = KING_TITLE
+	}
+	text = {
+		trigger = {
+			tag = OLE
+			has_government = democratic
+		}
+		localization_key = QUEEN_TITLE
+	}
+	text = {
+		trigger = {
+			tag = CHN
+			has_government = fascism
+		}
+		localization_key = QUEEN_TITLE
+	}
+	text = {
+		trigger = {
+			tag = EQS
+			has_government = democratic
+		}
+		localization_key = PRINCESS_TITLE
+	}
+	text = {
+		trigger = {
+			tag = EQC
+			has_government = democratic
+		}
+		localization_key = GOVERNOR_GENERAL_TITLE
+	}
+	text = {
+		trigger = {
+			tag = CRY
+			has_government = democratic
+		}
+		localization_key = PRINCESS_TITLE
+	}
+	text = {
+		trigger = {
+			tag = VED
+			has_government = democratic
+		}
+		localization_key = KING_TITLE
+	}
+	text = {
+		trigger = {
+			tag = GFG
+			has_government = fascism
+		}
+		localization_key = DUKE_TITLE
+	}
+	text = {
+		localization_key = DEFAULT_FIRST_TITLE
+	}
+}
+
+defined_text = {
+	name = GetSecondTitle
+	text = {
+		trigger = {
+			original_tag = EQS
+			has_government = democratic
+		}
+		localization_key = PRINCESS_TITLE
+	}
+	text = {
+		trigger = {
+			original_tag = EQC
+			has_government = democratic
+		}
+		localization_key = EQS_OVERSEER_TITLE
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			has_government = democratic
+		}
+		localization_key = PRINCE_TITLE
+	}
+	text = {
+		trigger = {
+			original_tag = VED
+			has_government = democratic
+		}
+		localization_key = PRINCESS_TITLE
+	}
+	text = {
+		trigger = {
+			original_tag = GFG
+			has_government = fascism
+		}
+		localization_key = COUNSELOR_TITLE
+	}
+}
+
+defined_text = {
+	name = GetDualLeaderName
+	text = {
+		trigger = {
+			tag = EQS
+			has_government = democratic
+		}
+		localization_key = EQS_LUNA
+	}
+	text = {
+		trigger = {
+			tag = EQC
+			has_government = democratic
+		}
+		localization_key = EQC_SUNSET
+	}
+	text = {
+		trigger = {
+			tag = CRY
+			has_government = democratic
+		}
+		localization_key = CRY_SHINY
+	}
+	text = {
+		trigger = {
+			tag = VED
+			has_government = democratic
+		}
+		localization_key = VED_SKOLD
+	}
+	text = {
+		trigger = {
+			tag = GFG
+			has_government = fascism
+		}
+		localization_key = GFG_ROSEFEATHER
+	}
+	text = {
+		localization_key = DEFAULT_TITLE
+	}
+}
+
+defined_text = {
+    name = GetDualLeaderPortrait
+	text = {
+		trigger = {
+			tag = EQS
+			has_government = democratic
+		}
+		localization_key = "GFX_EQS_LUNA"
+	}
+	text = {
+		trigger = {
+			tag = EQC
+			has_government = democratic
+		}
+		localization_key = "GFX_EQC_SUNSET"
+	}
+	text = {
+		trigger = {
+			tag = CRY
+			has_government = democratic
+		}
+		localization_key = "GFX_CRY_SHINY"
+	}
+	text = {
+		trigger = {
+			tag = VED
+			has_government = democratic
+		}
+		localization_key = "GFX_VED_SKOLD"
+	}
+	text = {
+		trigger = {
+			tag = GFG
+			has_government = fascism
+		}
+		localization_key = "GFX_GFG_ROSEFEATHER"
+	}
+	text = {
+		localization_key = "GFX_portrait_bg_blank"
+	}
+}
+
+defined_text = {
+    name = GetDualLeaderDesc
+    
+    text = {
+        trigger = {
+			original_tag = ENG
+			ENG = {
+				has_idea = george_v
+			}
+        }
+        localization_key = "DESCRIPTION_TEST"
+	}
+}
+
+defined_text = {
+    name = GetFirstLeaderDesc
+    
+    text = {
+        trigger = {
+			original_tag = ENG
+			ENG = {
+				has_idea = george_v
+			}
+        }
+        localization_key = "FIRST_LEADER_DESC_TEST"
+	}
+}

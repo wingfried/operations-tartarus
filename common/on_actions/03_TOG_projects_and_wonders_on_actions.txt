@@ -1,0 +1,11 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			set_variable = { global.turhamn_pact_project_1_country_1 = NOU }
+			set_variable = { global.turhamn_pact_project_1_country_2 = NOU }
+			set_variable = { global.turhamn_pact_project_1_country_3 = NOU }
+			set_variable = { global.turhamn_pact_project_1_biggest_num = 0 }
+		}
+	}
+}

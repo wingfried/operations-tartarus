@@ -1,0 +1,130 @@
+spriteTypes = {
+
+	##################################
+	### Large images for DIVISIONS ###
+	
+	spriteType = {
+		name = "GFX_unit_hero_celestia_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_celestia_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_hero_luna_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_luna_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_hero_twilight_sparkle_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_twilight_sparkle_icon.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_unit_heavy_artillery_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_heavy_artillery_icon.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_unit_witchers_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_witchers_icon.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_unit_aerial_mages_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_aerial_mages_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_aerial_mage_spotters_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_aerial_mages_icon.dds"
+		noOfFrames = 2
+	}
+
+	####################################################
+	
+	### Small images for DIVISIONS (On-map-counters) ###
+	
+	spriteType = { 
+		name = "GFX_unit_hero_celestia_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_celestia_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_hero_celestia_icon_small"
+		texturefile = "gfx/texticons/unit_celestia_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = { 
+		name = "GFX_unit_hero_luna_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_luna_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_hero_luna_icon_small"
+		texturefile = "gfx/texticons/unit_luna_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = { 
+		name = "GFX_unit_hero_twilight_sparkle_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_twilight_sparkle_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_hero_twilight_sparkle_icon_small"
+		texturefile = "gfx/texticons/unit_twilight_sparkle_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_heavy_artillery_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_heavy_artillery_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_artillery_icon_small"
+		texturefile = "gfx/texticons/unit_heavy_artillery_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_aerial_mages_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_aerial_mages_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_aerial_mages_icon_small"
+		texturefile = "gfx/texticons/unit_aerial_mages_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = { 
+		name = "GFX_unit_aerial_mage_spotters_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_aerial_mages_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_aerial_mage_spotters_icon_small"
+		texturefile = "gfx/texticons/unit_aerial_mages_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_witchers_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_witchers_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_witchers_icon_small"
+		texturefile = "gfx/texticons/unit_witchers_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+}

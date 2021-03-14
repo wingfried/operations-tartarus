@@ -1028,7 +1028,7 @@ ideas = {
 		
 		SRS_skynavian_redguard = {
                         
-			picture = SRC_concription_law
+			picture = SRS_concription_law
 			cost = 150
 			removal_cost = -1
 			level = 3
@@ -1073,7 +1073,7 @@ ideas = {
 
 		SRS_skynavian_redguard_2 = {
                         
-			picture = SRC_concription_law_2
+			picture = SRS_concription_law_2
 			cost = 150
 			removal_cost = -1
 			level = 2
@@ -1090,8 +1090,12 @@ ideas = {
 
 			available = {
 				IF = {
-					limit = { original_tag = SRS }
-					ROOT = { has_manpower = 0 }
+					limit = {
+						original_tag = SRS
+						NOT = { has_idea = SRS_skynavian_redguard_2 }
+						NOT = { has_idea = SRS_skynavian_redguard_3 }
+					}
+					ROOT = { surrender_progress > 0.03 }
 				}
 			}
 
@@ -1114,6 +1118,7 @@ ideas = {
 				industrial_capacity_factory = -0.10
 				industrial_capacity_dockyard = -0.10
 				production_speed_buildings_factor = -0.10
+				custom_modifier_tooltip = SRS_will_end_at_war_end_tt
 			}
 
 			cancel_if_invalid = no
@@ -1121,7 +1126,7 @@ ideas = {
 
 		SRS_skynavian_redguard_3 = {
                         
-			picture = SRC_concription_law_3
+			picture = SRS_concription_law_3
 			cost = 150
 			removal_cost = -1
 			level = 1
@@ -1138,8 +1143,11 @@ ideas = {
 
 			available = {
 				IF = {
-					limit = { original_tag = SRS }
-					ROOT = { surrender_progress > 0.05 }
+					limit = {
+						original_tag = SRS
+						NOT = { has_idea = SRS_skynavian_redguard_3 }
+					}
+					ROOT = { surrender_progress > 0.06 }
 				}
 			}
 
@@ -1162,10 +1170,10 @@ ideas = {
 				industrial_capacity_factory = -0.20
 				industrial_capacity_dockyard = -0.20
 				production_speed_buildings_factor = -0.20
+				custom_modifier_tooltip = SRS_will_end_at_war_end_tt
 			}
 
 			cancel_if_invalid = no
 		}
 	}
 }
-

@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "tog_microphone"
+		texturefile = "gfx/interface/decisions/tog_microphone.dds"
+	}
+	spriteType = {
+		name = "tog_instrument"
+		texturefile = "gfx/interface/decisions/tog_instrument.dds"
+	}
+	spriteType = {
+		name = "tog_bow_arrow"
+		texturefile = "gfx/interface/decisions/tog_bow_arrow.dds"
+	}
+	spriteType = {
+		name = "tog_phoenix"
+		texturefile = "gfx/interface/decisions/tog_phoenix.dds"
+	}
+	spriteType = {
+		name = "tog_timberwolf"
+		texturefile = "gfx/interface/decisions/tog_timberwolf.dds"
+	}
+}
