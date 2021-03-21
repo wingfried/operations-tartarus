@@ -1,0 +1,77 @@
+scripted_gui = {
+
+	tog_buttons_topbar_container = {
+		context_type = player_context
+		window_name = "tog_buttons_topbar_container"
+
+		visible = {
+			always = yes
+		}
+		
+		effects = {
+			archeology_button_click = {
+				#Open/Close Archeology
+				if = {
+					limit = { NOT = { has_country_flag = archeology_open_flag } }
+					set_country_flag = archeology_open_flag
+				}
+				else = {
+					clr_country_flag = archeology_open_flag
+				}
+				#Close everything else
+				if = {
+					limit = { has_country_flag = wonders_and_projects_open_flag }
+					clr_country_flag = wonders_and_projects_open_flag
+				}
+			}
+		}
+
+		effects = {
+			wonders_and_projects_button_click = {
+				#Open/Close Wonders and Projects
+				if = {
+					limit = { NOT = { has_country_flag = wonders_and_projects_open_flag } }
+					set_country_flag = wonders_and_projects_open_flag
+				}
+				else = {
+					clr_country_flag = wonders_and_projects_open_flag
+				}
+				#Close everything else
+				if = {
+					limit = { has_country_flag = archeology_open_flag }
+					clr_country_flag = archeology_open_flag
+				}
+			}
+		}
+	}
+
+	countryarcheologyview = {
+		context_type = player_context
+		window_name = "countryarcheologyview"
+
+		visible = {
+			has_country_flag = archeology_open_flag
+		}
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = archeology_open_flag
+			}
+		}
+	}
+
+	countrywondersandprojectsview = {
+		context_type = player_context
+		window_name = "countrywondersandprojectsview"
+
+		visible = {
+			has_country_flag = wonders_and_projects_open_flag
+		}
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = wonders_and_projects_open_flag
+			}
+		}
+	}
+}

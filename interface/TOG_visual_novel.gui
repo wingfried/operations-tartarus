@@ -10,7 +10,7 @@ guiTypes = {
 		Origo = center
 		clipping = no
 		moveable = no
-		show_sound = 1_sample_event_rarity_fluttershy_1_rarity_1_sound_effect
+		#show_sound = 1_sample_event_rarity_fluttershy_1_rarity_1_sound_effect
 		
 		background = {
 			name = "Background"
@@ -38,14 +38,16 @@ guiTypes = {
 			
 			iconType = {
 				name ="Character_1"
-				spriteType = "GFX_rarity_left_2_on"
+				#spriteType = "GFX_rarity_left_2_on"
+				spriteType = "GFX_sample_character"
 				position = { x = 40 y = 140 }
 				alwaystransparent = yes
 			}
 			
 			iconType = {
 				name ="Character_2"
-				spriteType = "GFX_fluttershy_right_1_off"
+				#spriteType = "GFX_fluttershy_right_1_off"
+				spriteType = "GFX_sample_character"
 				position = { x = 700 y = 140 }
 				alwaystransparent = yes
 			}

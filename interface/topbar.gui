@@ -209,20 +209,20 @@ guiTypes = {
 		iconType ={
 			name ="experience_value_bg"
 			spriteType = "GFX_generic_box_smallest"
-			position = { x=1305 y=5 }
+			position = { x = 855 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType = {
 			name ="experience_icon"
 			spriteType = "GFX_army_experience"
-			position = { x= 1312 y=11 }
+			position = { x = 862 y = 11 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = {
 			name ="experience_value"
-			position = { x=1327 y=9 }
+			position = { x = 877 y = 9 }
 			font = "hoi_18mbs"
 			text = "999"
 			format = center
@@ -234,20 +234,20 @@ guiTypes = {
 		iconType ={
 			name ="navy_experience_value_bg"
 			spriteType = "GFX_generic_box_smallest"
-			position = { x=1377 y=5 }
+			position = { x=927 y=5 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType = {
 			name ="navy_experience_icon"
 			spriteType = "GFX_navy_experience"
-			position = { x= 1384 y = 11 }
+			position = { x= 934 y = 11 }
 			Orientation = "UPPER_LEFT"
 		}		
 		
 		instantTextBoxType = {
 			name ="navy_experience_value"
-			position = { x= 1398 y = 9 }
+			position = { x= 948 y = 9 }
 			font = "hoi_18mbs"
 			text = "999"
 			format = center
@@ -259,20 +259,20 @@ guiTypes = {
 		iconType ={
 			name ="air_experience_value_bg"
 			spriteType = "GFX_generic_box_smallest"
-			position = { x=1449 y=5 }
+			position = { x=999 y=5 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType = {
 			name ="air_experience_icon"
 			spriteType = "GFX_air_experience"
-			position = { x= 1456 y = 11 }
+			position = { x= 1006 y = 11 }
 			Orientation = "UPPER_LEFT"
 		}		
 		
 		instantTextBoxType = {
 			name ="air_experience_value"
-			position = { x= 1471 y = 9 }
+			position = { x= 1021 y = 9 }
 			font = "hoi_18mbs"
 			text = "999"
 			format = center
@@ -284,20 +284,20 @@ guiTypes = {
 		iconType ={
 			name ="command_power_value_bg"
 			spriteType = "GFX_generic_box_smallest"
-			position = { x=1233 y=5 }
+			position = { x=783 y=5 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType = {
 			name ="command_power_icon"
 			spriteType = "GFX_command_power"
-			position = { x= 1239 y = 7 }
+			position = { x= 789 y = 7 }
 			Orientation = "UPPER_LEFT"
 		}		
 		
 		instantTextBoxType = {
 			name ="command_power_value"
-			position = { x= 1262 y = 9 }
+			position = { x= 812 y = 9 }
 			font = "hoi_18mbs"
 			text = "999"
 			format = center
@@ -334,20 +334,20 @@ guiTypes = {
 		iconType ={
 			name ="convoy_text_bg"
 			spriteType = "GFX_generic_box_small"
-			position = { x=684 y=5 }
+			position = { x=665 y=5 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType ={
 			name ="convoys_icon"
 			spriteType = "GFX_topbar_convoys"
-			position = { x= 688 y = 9 }
+			position = { x= 669 y = 9 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = {
 			name ="convoys_count"
-			position = { x= 722 y = 9 }
+			position = { x= 703 y = 9 }
 			font = "hoi_18mbs"
 			text = "0"
 			format = center
@@ -729,7 +729,6 @@ guiTypes = {
 				buttonType = {
 					name = "technology_button"
 					quadTextureSprite ="GFX_topbar_technology"
-	#				position = { x= -104 y = 0 }
 					position = { x= -49 y = 0 }
 					Orientation = "UPPER_LEFT"
 					shortcut = "w"

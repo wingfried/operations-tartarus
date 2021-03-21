@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tog_accept"
+		texturefile = "gfx/interface/custom_tabs/accept.dds"
+	}
+	spriteType = {
+		name = "GFX_tog_decline"
+		texturefile = "gfx/interface/custom_tabs/decline.dds"
+	}
+	spriteType = {
+		name = "GFX_tog_archeology_item"
+		texturefile = "gfx/interface/custom_tabs/archeology_item.dds"
+	}
+	spriteType = {
+		name = "GFX_tog_archeologist_frame"
+		texturefile = "gfx/interface/custom_tabs/archeologist_frame.dds"
+	}
+}

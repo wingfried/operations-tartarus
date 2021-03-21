@@ -1,0 +1,34 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "tog_buttons_topbar_container"
+		position = { x=260 y=38 }	
+		size = { width=100%% height=100%% }
+		
+		buttonType = {
+			name = "wonders_and_projects_button"
+			position = { x = 336 y = 0 }
+			quadTextureSprite ="GFX_wonders_and_projects_button"
+			Orientation = "UPPER_LEFT"
+			#shortcut = "i"
+			clicksound = click_close
+			oversound = ui_menu_over
+			
+			pdx_tooltip = wonders_and_projects_tooltip
+			#pdx_tooltip_delayed = wonders_and_projects_tooltip_delayed
+		}
+		
+		buttonType = {
+			name = "archeology_button"
+			position = { x = 392 y = 0 }
+			quadTextureSprite ="GFX_archeology_button"
+			Orientation = "UPPER_LEFT"
+			#shortcut = "i"
+			clicksound = click_close
+			oversound = ui_menu_over
+			
+			pdx_tooltip = archeology_tooltip
+			#pdx_tooltip_delayed = archeology_tooltip_delayed
+		}
+	}
+}

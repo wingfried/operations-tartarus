@@ -1,7 +1,9 @@
 ideas = {
 
 	country = {
+		### Equestria ###
 
+		# Elements of Harmony #
 		TOG_element_of_honesty_idea = {
 			picture = TOG_element_of_honesty
 			modifier = {
@@ -40,6 +42,46 @@ ideas = {
 		}
 		TOG_elements_of_harmony_idea = {
 			picture = TOG_elements_of_harmony
+			modifier = {
+				
+			}
+		}
+
+		# Other #
+		TOG_clover_the_clever_cloak_idea = {
+			#picture = 
+			modifier = {
+				
+			}
+		}
+
+		### Crystal Empire ###
+		TOG_crystal_heart_idea = {
+			#picture = 
+			modifier = {
+				
+			}
+		}
+
+		### New Mareland ###
+		TOG_memory_stone_idea = {
+			#picture = 
+			modifier = {
+				
+			}
+		}
+
+		### Daring Doo ###
+		TOG_rings_of_scorchero_idea = {
+			#picture = 
+			modifier = {
+				
+			}
+		}
+
+		### Griffongaard ###
+		TOG_beak_of_wilhelm_clawsterlitz_idea = {
+			#picture = 
 			modifier = {
 				
 			}

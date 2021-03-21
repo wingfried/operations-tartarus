@@ -1,0 +1,14 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_archeology_button"
+		texturefile = "gfx//interface//topbar//toolbar//archeology_button.dds"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_wonders_and_projects_button"
+		texturefile = "gfx//interface//topbar//toolbar//wonders_and_projects_button.dds"
+		noOfFrames = 2		
+	}
+	
+}

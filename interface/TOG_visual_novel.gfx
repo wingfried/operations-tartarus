@@ -32,6 +32,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_sample_character"
+		textureFile = "gfx//visual_novel//sample//sample_character.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_rarity_left_1_on"
 		textureFile = "gfx//visual_novel//rarity//rarity_left_1_on.tga"
 	}
