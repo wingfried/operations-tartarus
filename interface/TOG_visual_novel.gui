@@ -10,7 +10,8 @@ guiTypes = {
 		Origo = center
 		clipping = no
 		moveable = no
-		#show_sound = 1_sample_event_rarity_fluttershy_1_rarity_1_sound_effect
+		upsound = 1_sample_event_rarity_fluttershy_1_rarity_1_sound_effect
+		#downsound = 1_sample_event_rarity_fluttershy_2_fluttershy_1_sound_effect
 		
 		background = {
 			name = "Background"
@@ -92,7 +93,7 @@ guiTypes = {
 		Origo = center
 		clipping = no
 		moveable = no
-		show_sound = 1_sample_event_rarity_fluttershy_2_fluttershy_1_sound_effect
+		#show_sound = 1_sample_event_rarity_fluttershy_2_fluttershy_1_sound_effect
 		
 		background = {
 			name = "Background"

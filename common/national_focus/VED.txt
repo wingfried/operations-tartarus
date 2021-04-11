@@ -55,7 +55,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = VED_Role_Of_The_Princess
+		id = VED_future_of_the_princess
 		#icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		cost = 4.30
 		x = 0
@@ -77,10 +77,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = VED_Role_Of_The_King
-		#icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		id = VED_duties_of_the_father_and_the_king
+		icon = GFX_goal_VED_father_king
 		cost = 4.30
-		x = 8
+		x = 10
 		y = 1
 
 		relative_position_id = VED_Succession
@@ -94,79 +94,23 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = VED_Matters_State_Custom
-		icon = GFX_goal_generic_neutrality_focus
-		cost = 2.15
-		x = 0
-		y = 1
-		
-		relative_position_id = VED_Role_Of_The_King
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		prerequisite = {
-			focus = VED_Role_Of_The_King
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus VED_Matters_State_Custom"
-			add_to_variable = {
-				var = VED_Chivalry_Points
-				value = 1
-			}
-			custom_effect_tooltip = VED_Gain_Chivalry_TT
+			add_political_power = 100
 		}
 	}
 
 	######START OF THE EXTERNAL POLITICS PART OF THE TREE
 
 	focus = {
-		id = VED_Matters_External_Politics
-		cost = 2.15
-		x = 7
-		y = 1
-		
-		relative_position_id = VED_Role_Of_The_King
-		
-		prerequisite = {
-			focus = VED_Role_Of_The_King
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		completion_reward = {
-			add_to_variable = {
-				var = VED_Chivalry_Points
-				value = 1
-			}
-			custom_effect_tooltip = VED_Gain_Chivalry_TT
-		}
-		search_filters = { FOCUS_FILTER_STABILITY }
-	}
-
-	focus = {
-		id = VED_The_Griffongaardian_Question
+		id = VED_address_the_elephant_in_the_room
+		icon = GFX_focus_generic_anti_fascist_diplomacy
 		cost = 4.30
-		x = 0
+		x = 6
 		y = 1
 		
-		relative_position_id = VED_Matters_External_Politics
+		relative_position_id = VED_duties_of_the_father_and_the_king
 		
 		prerequisite = {
-			focus = VED_Matters_External_Politics
-		
+			focus = VED_duties_of_the_father_and_the_king
 		}
 		
 		ai_will_do = {
@@ -176,43 +120,45 @@ focus_tree = {
 			NOT = { has_country_flag = VED_quest_block_focuses }
 		}
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.10
+			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
 	}
 
 	focus = {
-		id = VED_Befriend_Griffongaard
+		id = VED_support_the_royal_blood
+		icon = GFX_goal_generic_national_unity_claws
 		cost = 6.50
-		x = 2
+		x = 1
 		y = 1
 		
-		relative_position_id = VED_The_Griffongaardian_Question
+		relative_position_id = VED_address_the_elephant_in_the_room
 		
 		prerequisite = {
-			focus = VED_The_Griffongaardian_Question
+			focus = VED_address_the_elephant_in_the_room
 		}
 
 		mutually_exclusive = {
-			focus = VED_Denounce_Griffongaard
+			focus = VED_stand_against_folkmord
 		}
 		
 		ai_will_do = {
 			factor = 100
 		}
 		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-			NFG = {
+			GFG = {
 				has_war = no
 				NOT = { has_government = fascism }
 			}
 		}
 		completion_reward = {
 			add_political_power = -100
+			add_popularity = { ideology = democratic popularity = 0.10 }
 			VED = {
-				add_opinion_modifier = { target = NFG modifier = established_embassy }
+				add_opinion_modifier = { target = GFG modifier = established_embassy }
 			}
-			NFG = {
+			GFG = {
 				add_opinion_modifier = { target = VED modifier = FBK_villages_diplo }
 			}
 		}
@@ -220,19 +166,20 @@ focus_tree = {
 	}
 
 	focus = {
-		id = VED_Denounce_Griffongaard
+		id = VED_stand_against_folkmord
+		icon = GFX_focus_focus_fra_fascist_threat
 		cost = 4.30
-		x = 0
+		x = -1
 		y = 1
 		
-		relative_position_id = VED_The_Griffongaardian_Question
+		relative_position_id = VED_address_the_elephant_in_the_room
 		
 		prerequisite = {
-			focus = VED_The_Griffongaardian_Question
+			focus = VED_address_the_elephant_in_the_room
 		}
 		
 		mutually_exclusive = {
-			focus = VED_Befriend_Griffongaard
+			focus = VED_support_the_royal_blood
 		}
 
 		ai_will_do = {
@@ -242,21 +189,23 @@ focus_tree = {
 			NOT = { has_country_flag = VED_quest_block_focuses }
 		}
 		completion_reward = {
+			add_war_support = 0.10
+			add_popularity = { ideology = neutrality popularity = 0.10 }
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
 	}
 
 	focus = {
-		id = VED_Strike_The_Black_Sun
+		id = VED_on_garde_griffengaarde
+		icon = GFX_goal_No_Half_Measures
 		cost = 4.30
 		x = 0
 		y = 1
 		
-		relative_position_id = VED_Denounce_Griffongaard
+		relative_position_id = VED_stand_against_folkmord
 		
 		prerequisite = {
-			focus = VED_Denounce_Griffongaard
-		
+			focus = VED_stand_against_folkmord
 		}
 		
 		ai_will_do = {
@@ -266,24 +215,28 @@ focus_tree = {
 			NOT = { has_country_flag = VED_quest_block_focuses }
 		}
 		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			add_popularity = { ideology = neutrality popularity = 0.05 }
 			if = {
-				limit = { country_exists = NFG }
-				create_wargoal = { type = annex_everything target = NFG }
+				limit = { country_exists = GFG }
+				create_wargoal = { type = annex_everything target = GFG }
 			}
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
 	}
 
 	focus = {
-		id = VED_The_Northern_Kingdoms
+		id = VED_a_reasonable_deal
+		icon = GFX_goal_collaborate_local_elites
 		cost = 8.60
 		x = 0
 		y = 1
 		
-		relative_position_id = VED_Befriend_Griffongaard
+		relative_position_id = VED_support_the_royal_blood
 		
 		prerequisite = {
-			focus = VED_Befriend_Griffongaard
+			focus = VED_support_the_royal_blood
+			focus = VED_stand_against_folkmord
 		}
 		
 		ai_will_do = {
@@ -293,7 +246,7 @@ focus_tree = {
 			NOT = { has_country_flag = VED_quest_block_focuses }
 		}
 		completion_reward = {
-			create_faction = VED_NORTHERN_KONGDOMS
+			create_faction = VED_NORTHERN_KINGDOMS
 			IF = {
 				limit = {
 					has_completed_focus = VED_Guarantee_Skynavia
@@ -339,15 +292,15 @@ focus_tree = {
 			IF = {
 				limit = {
 					has_completed_focus = VED_Guarantee_Skynavia
-					NFG = {
+					GFG = {
 						is_in_faction = no
 						is_puppet = no
 						NOT = { has_war_with = VED }
 					}
 				}
 				VED = {
-					add_to_faction = NFG
-					NFG = {
+					add_to_faction = GFG
+					GFG = {
 						add_ai_strategy = {
 							type = alliance
 							id = "VED"
@@ -361,16 +314,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = VED_Griffongaard_No_More
+		id = VED_united_once_again
+		icon = GFX_goal_compassionaite_politics
 		cost = 2.15
-		x = 0
+		x = 1
 		y = 1
 		
-		relative_position_id = VED_Strike_The_Black_Sun
+		relative_position_id = VED_on_garde_griffengaarde
 		
 		prerequisite = {
-			focus = VED_Strike_The_Black_Sun
-			focus = VED_The_Northern_Kingdoms
+			focus = VED_on_garde_griffengaarde
+			focus = VED_a_reasonable_deal
 		}
 		
 		ai_will_do = {
@@ -380,7 +334,9 @@ focus_tree = {
 			NOT = { has_country_flag = VED_quest_block_focuses }
 		}
 		completion_reward = {
-			
+			add_political_power = 200
+			add_stability = 0.10
+			#Wingstrom wonders about his relationship with his daughter. He wishes to reunite with her as well.
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
 	}
@@ -393,10 +349,10 @@ focus_tree = {
 		x = 1
 		y = 1
 		
-		relative_position_id = VED_Role_Of_The_Princess
+		relative_position_id = VED_future_of_the_princess
 		
 		prerequisite = {
-			focus = VED_Role_Of_The_Princess
+			focus = VED_future_of_the_princess
 		
 		}
 		
@@ -513,10 +469,10 @@ focus_tree = {
 		x = -1
 		y = 1
 		
-		relative_position_id = VED_Role_Of_The_Princess
+		relative_position_id = VED_future_of_the_princess
 		
 		prerequisite = {
-			focus = VED_Role_Of_The_Princess
+			focus = VED_future_of_the_princess
 		}
 		
 		ai_will_do = {
@@ -573,482 +529,25 @@ focus_tree = {
 	###MATTERS OF STATE STUFF
 
 	focus = {
-		id = VED_retirement_preparations
-		#icon = GFX_focus_research
+		id = VED_a_safe_country_to_pass_on
+		icon = GFX_goal_generic_stable_government
 		cost = 4.30
 		x = 1
 		y = 1
 		
-		relative_position_id = VED_reclaim_winterhold
+		relative_position_id = VED_royal_knight_divisions
 		
-		prerequisite = { focus = VED_investigate_corrupt_nobles }
-		prerequisite = { focus = VED_urban_industrialization }
-		prerequisite = { focus = VED_reclaim_winterhold }
-		prerequisite = { focus = VED_gain_a_grip_on_the_mountains }
-		prerequisite = { focus = VED_electrical_power }
-		prerequisite = { focus = VED_vedinan_cmc }
+		prerequisite = { focus = VED_royal_knight_divisions }
+		prerequisite = { focus = VED_field_testing }
 		available = { NOT = { has_country_flag = VED_quest_block_focuses } }
 		
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_tempo_one
-		#icon = GFX_focus_research
-		cost = 4.30
-		x = -8
-		y = 1
-		
-		relative_position_id = VED_Military_Education
-		
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Invest_In_New_Technologies
-		icon = GFX_goal_supremacy_of_will
-		cost = 4.30
-		x = -2
-		y = 1
-		
-		relative_position_id = VED_tempo_one
-		
-		prerequisite = {
-			focus = VED_tempo_one
-		}
-		mutually_exclusive = {
-			focus = VED_Secret_Laboratories
-		}
-		mutually_exclusive = {
-			focus = VED_Invest_In_New_Buildings
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = hospital_tech }
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = maintenance_company_tech }
-			add_timed_idea = { idea = VED_Technology_Investment_idea days = 180 }
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Secret_Laboratories
-		icon = GFX_goal_tfv_generic_tech_sharing
-		cost = 12.90
-		x = 0
-		y = 1
-		
-		relative_position_id = VED_tempo_one
-		
-		prerequisite = {
-			focus = VED_tempo_one
-		}
-		mutually_exclusive = {
-			focus = VED_Invest_In_New_Buildings
-		}
-		mutually_exclusive = {
-			focus = VED_Invest_In_New_Technologies
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_stability = -0.05
-			add_tech_bonus = { bonus = 1.0 uses = 1 category = nuclear }
-			add_research_slot = 1
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Invest_In_New_Buildings
-		icon = GFX_goal_factory_complex
-		cost = 4.30
-		x = 2
-		y = 1
-		
-		relative_position_id = VED_tempo_one
-		
-		prerequisite = {
-			focus = VED_tempo_one
-		}
-		mutually_exclusive = {
-			focus = VED_Secret_Laboratories
-		}
-		mutually_exclusive = {
-			focus = VED_Invest_In_New_Technologies
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = construction_tech }
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = excavation_tech }
-			add_timed_idea = { idea = VED_Buildings_Investment_idea days = 180 }
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Great_Medical_School
-		icon = GFX_goal_academy_of_medicine
-		cost = 14.30
-		x = -1
-		y = 1
-		
-		relative_position_id = VED_Invest_In_New_Technologies
-		
-		prerequisite = {
-			focus = VED_Invest_In_New_Technologies
-		}
-		mutually_exclusive = {
-			focus = VED_Great_Engineer_School
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_ideas = VED_Great_Medical_School_idea
-			add_to_variable = {
-				var = VED_Chivalry_Points
-				value = 1
-			}		
-			custom_effect_tooltip = VED_Gain_Chivalry_TT
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Improved_Hospitals
-		icon = GFX_focus_healthcare_program
-		cost = 7.20
-		x = 0
-		y = 1
-		
-		relative_position_id = VED_Great_Medical_School
-		
-		prerequisite = {
-			focus = VED_Great_Medical_School
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_ideas = VED_Improved_Hospitals_idea
-			add_tech_bonus = { uses = 1 ahead_reduction = 1 category = hospital_tech }
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Great_Engineer_School
-		cost = 14.30
-		x = 1
-		y = 1
-		
-		relative_position_id = VED_Invest_In_New_Technologies
-		
-		prerequisite = {
-			focus = VED_Invest_In_New_Technologies
-		}
-		mutually_exclusive = {
-			focus = VED_Great_Medical_School
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_ideas = VED_Great_Engineer_School_idea
-			add_to_variable = {
-				var = VED_Chivalry_Points
-				value = 1
-			}		
-			custom_effect_tooltip = VED_Gain_Chivalry_TT
-			
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Improved_Tools
-		icon = GFX_goal_generic_production
-		cost = 7.20
-		x = 0
-		y = 1
-		
-		relative_position_id = VED_Great_Engineer_School
-		
-		prerequisite = {
-			focus = VED_Great_Engineer_School
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_ideas = VED_Improved_Tools_idea
-			add_tech_bonus = { uses = 1 ahead_reduction = 1 category = maintenance_company_tech }
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Great_Business_School
-		cost = 14.30
-		x = -1
-		y = 1
-		
-		relative_position_id = VED_Invest_In_New_Buildings
-		
-		prerequisite = {
-			focus = VED_Invest_In_New_Buildings
-		}
-		mutually_exclusive = {
-			focus = VED_Great_Architect_School
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_ideas = VED_Great_Business_School_idea
-			add_to_variable = {
-				var = VED_Chivalry_Points
-				value = 1
-			}		
-			custom_effect_tooltip = VED_Gain_Chivalry_TT
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Improved_Economy
-		cost = 7.20
-		x = 0
-		y = 1
-		
-		relative_position_id = VED_Great_Business_School
-		
-		prerequisite = {
-			focus = VED_Great_Business_School
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_ideas = VED_Improved_Economy_idea
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Great_Architect_School
-		cost = 14.30
-		x = 1
-		y = 1
-		
-		relative_position_id = VED_Invest_In_New_Buildings
-		
-		prerequisite = {
-			focus = VED_Invest_In_New_Buildings
-		}
-		mutually_exclusive = {
-			focus = VED_Great_Business_School
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_ideas = VED_Great_Architect_School_idea
-			add_to_variable = {
-				var = VED_Chivalry_Points
-				value = 1
-			}		
-			custom_effect_tooltip = VED_Gain_Chivalry_TT
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Improved_Buildings
-		cost = 7.20
-		x = 0
-		y = 1
-		
-		relative_position_id = VED_Great_Architect_School
-		
-		prerequisite = {
-			focus = VED_Great_Architect_School
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_ideas = VED_Improved_Buildings_idea
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Building_Civilian_Economy
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 8.60
-		x = 1
-		y = 1
-		
-		relative_position_id = VED_Improved_Tools
-		
-		prerequisite = {
-			focus = VED_Improved_Hospitals
-			focus = VED_Improved_Tools
-			focus = VED_Improved_Economy
-			focus = VED_Improved_Buildings
-		}
-
-
-		available = {
-			any_owned_state = {
-				is_controlled_by = ROOT
-			}
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		ai_will_do = {
-			factor = 50
-		}
-		completion_reward = {
-			add_ideas = civilian_economy
-			random_owned_controlled_state = {
-					
-				add_extra_state_shared_building_slots = 2
-					
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-					
-				add_extra_state_shared_building_slots = 2
-					
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = VED_Further_Investment_In_Technologies
-		cost = 4.30
-		x = 1
-		y = 1
-		
-		relative_position_id = VED_Improved_Hospitals
-		
-		prerequisite = {
-			focus = VED_Improved_Hospitals
-			focus = VED_Improved_Tools
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_timed_idea = { idea = VED_Technology_Investment_idea days = 360 }
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Further_Investment_In_Buildings
-		cost = 4.30
-		x = 1
-		y = 1
-		
-		relative_position_id = VED_Improved_Economy
-		
-		prerequisite = {
-			focus = VED_Improved_Economy
-			focus = VED_Improved_Buildings
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_timed_idea = { idea = VED_Buildings_Investment_idea days = 360 }
+			add_stability = 0.1
+			add_war_support = 0.1
+			#Wingstrom ponders about the safety of his daughter. He is worried about her.
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -1650,7 +1149,7 @@ focus_tree = {
 		icon = GFX_goal_wedding
 		cost = 4.30
 		x = 0
-		y = 2
+		y = 1
 		
 		relative_position_id = VED_Love_Letter
 		
@@ -1659,11 +1158,19 @@ focus_tree = {
 		}
 
 		prerequisite = {
-			focus = VED_retirement_preparations
+			focus = VED_found_vedina_wooden_and_left_it_bricked
 		}
 
 		prerequisite = {
-			focus = VED_Griffongaard_No_More
+			focus = VED_vedinan_maturity_and_wisdom
+		}
+
+		prerequisite = {
+			focus = VED_a_safe_country_to_pass_on
+		}
+
+		prerequisite = {
+			focus = VED_united_once_again
 		}
 		
 		ai_will_do = { # factors for NTR_VEDINA rule #???
@@ -4992,23 +4499,26 @@ focus_tree = {
 
 	#Focus for King Wingstrom's Reforms
 	focus = {
-		id = VED_king_wingstroms_reforms
-		icon = GFX_VED_king_wingstroms_reforms-57294
-		x = -4
-		y = 2
-		relative_position_id = VED_Role_Of_The_King
+		id = VED_economic_reforms
+		icon = GFX_Goal_YUN_The_Mountain_Economy
+		x = -6
+		y = 1
+		relative_position_id = VED_duties_of_the_father_and_the_king
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_Matters_State_Custom }
+		prerequisite = { focus = VED_duties_of_the_father_and_the_king }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = TOG_eco_great_depression_2_idea add_idea = TOG_eco_great_depression_3_idea }
 		}
 	}
 	
 	#Focus for Electrical Power
 	focus = {
-		id = VED_electrical_power
-		icon = GFX_VED_electrical_power-57313
+		id = VED_the_gift_of_lightning
+		icon = GFX_goal_generic_lightbulb
 		x = 0
 		y = 1
 		relative_position_id = VED_public_education
@@ -5018,12 +4528,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = pre_industrial_society
+				add_idea = outdated_industry
+			}
+		}
 	}
 
 	#Focus for Grant Scolarships
 	focus = {
-		id = VED_grant_scolarships
-		icon = GFX_VED_grant_scolarships-57314
+		id = VED_grant_scholarships
+		icon = GFX_goal_KTG_Bookstack
 		x = 1
 		y = 1
 		relative_position_id = VED_wingstrom_university
@@ -5032,13 +4548,19 @@ focus_tree = {
 		prerequisite = { focus = VED_wingstrom_university }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = VED_advisor_great_doctor
+			add_ideas = VED_advisor_great_engineer
+			add_ideas = VED_advisor_great_buisnessgriff
+			add_ideas = VED_advisor_great_architect
 		}
 	}
 
 	#Focus for Public Education
 	focus = {
 		id = VED_public_education
-		icon = GFX_VED_public_education-57318
+		icon = GFX_goal_supremacy_of_will
 		x = -1
 		y = 1
 		relative_position_id = VED_wingstrom_university
@@ -5048,170 +4570,375 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			decrease_illiteracy = yes
+		}
 	}
 
-	#Focus for Gain a Grip on the Mountains
 	focus = {
-		id = VED_gain_a_grip_on_the_mountains
-		icon = GFX_focus_spr_crush_the_revolution
-		x = 0
+		id = VED_vedinan_maturity_and_wisdom
+		icon = GFX_goal_double_research
+		x = 1
 		y = 1
-		relative_position_id = VED_anticommunist_rhetoric
+		relative_position_id = VED_the_gift_of_lightning
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_anticommunist_rhetoric }
+		prerequisite = { focus = VED_the_gift_of_lightning }
+		prerequisite = { focus = VED_the_first_vedinan_science_award }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			decrease_illiteracy = yes
+			add_ideas = VED_research_bonus_idea
+			#the king thinks about his growing up daughter and how quickly she matures
+		}
+	}
+
+	focus = {
+		id = VED_field_testing
+		icon = GFX_goal_generic_military_equipment
+		x = 0
+		y = 1
+		relative_position_id = VED_royal_ordinance_factories
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_royal_ordinance_factories }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 1.0 uses = 1 category = infantry_weapons }
+			add_ideas = VED_more_reliable_weapons_idea
 		}
 	}
 
 	#Focus for Anti-Communist Rhetoric
 	focus = {
-		id = VED_anticommunist_rhetoric
-		icon = GFX_VED_anticommunist_rhetoric-57309
+		id = VED_royal_ordinance_factories
+		icon = GFX_goal_chn_red_military_factories
 		x = 1
 		y = 1
-		relative_position_id = VED_appeasing_the_irredentists
+		relative_position_id = VED_military_financing
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_appeasing_the_irredentists }
+		prerequisite = { focus = VED_military_financing }
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			429 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			429 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 
-	#Focus for Reinforce the Royal Flotilla
 	focus = {
-		id = VED_reinforce_the_royal_flotilla
-		icon = GFX_VED_reinforce_the_royal_flotilla-57304
+		id = VED_address_the_eastern_threat
+		icon = GFX_focus_generic_home_defense
 		x = -1
 		y = 1
-		relative_position_id = VED_appeasing_the_irredentists
+		relative_position_id = VED_military_financing
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_appeasing_the_irredentists }
+		prerequisite = { focus = VED_military_financing }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = volunteer_only add_idea = limited_conscription }
+			#unlocks the thing
 		}
 	}
 
 	#Focus for Wingstrom University
 	focus = {
 		id = VED_wingstrom_university
-		icon = GFX_VED_wingstrom_university-57321
-		x = 4
-		y = 0
-		relative_position_id = VED_appeasing_the_irredentists
+		icon = GFX_goal_PAN_Create_the_Universidad_de_Panama
+		x = 2
+		y = 1
+		relative_position_id = VED_duties_of_the_father_and_the_king
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_Matters_State_Custom }
+		prerequisite = { focus = VED_duties_of_the_father_and_the_king }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+			custom_effect_tooltip = SRS_choose_one_tt
+			custom_effect_tooltip = SRS_one_tt
+			add_ideas = VED_great_medical_school_idea
+			custom_effect_tooltip = SRS_two_tt
+			add_ideas = VED_great_engineer_school_idea
+			custom_effect_tooltip = SRS_three_tt
+			add_ideas = VED_great_business_school_idea
+			custom_effect_tooltip = SRS_four_tt
+			add_ideas = VED_great_architect_school_idea
 		}
 	}
 
 	#Focus for Appeasing the Irredentists
 	focus = {
-		id = VED_appeasing_the_irredentists
-		icon = GFX_VED_appeasing_the_irredentists-57302
-		x = 4
-		y = 0
-		relative_position_id = VED_king_wingstroms_reforms
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_Matters_State_Custom }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Urban Industrialization
-	focus = {
-		id = VED_urban_industrialization
-		icon = GFX_VED_urban_industrialization-57298
-		x = 0
+		id = VED_military_financing
+		icon = GFX_goal_military_academy
+		x = -2
 		y = 1
-		relative_position_id = VED_peasant_housing_act
+		relative_position_id = VED_duties_of_the_father_and_the_king
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_peasant_housing_act }
+		prerequisite = { focus = VED_duties_of_the_father_and_the_king }
 		ai_will_do = {
 			factor = 1
 		}
-	}
-
-	#Focus for Investigate Corrupt Nobles
-	focus = {
-		id = VED_investigate_corrupt_nobles
-		icon = GFX_VED_investigate_corrupt_nobles-57301
-		x = 0
-		y = 1
-		relative_position_id = VED_punish_oathbreakers
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_punish_oathbreakers }
-		ai_will_do = {
-			factor = 1
+		completion_reward = {
+			add_ideas = TOG_military_financing_idea
+			add_tech_bonus = { bonus = 1 uses = 1 category = land_doctrine }
 		}
 	}
 
-	#Focus for Punish Oathbreakers
 	focus = {
-		id = VED_punish_oathbreakers
-		icon = GFX_VED_punish_oathbreakers-57300
+		id = VED_all_roads_lead_to_turhamn
+		icon = GFX_goal_generic_railroad
 		x = -1
 		y = 1
-		relative_position_id = VED_king_wingstroms_reforms
+		relative_position_id = VED_economic_reforms
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_king_wingstroms_reforms }
+		prerequisite = { focus = VED_economic_reforms }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			429 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = TOG_high_quality_roads_idea
 		}
 	}
 
 	#Focus for Peasant Housing Act
 	focus = {
 		id = VED_peasant_housing_act
-		icon = GFX_VED_peasant_housing_act-57295
+		icon = GFX_goal_generic_lau_industry
 		x = 1
 		y = 1
-		relative_position_id = VED_king_wingstroms_reforms
+		relative_position_id = VED_economic_reforms
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_king_wingstroms_reforms }
+		prerequisite = { focus = VED_economic_reforms }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			decrease_poverty = yes
+		}
+	}
+
+	focus = {
+		id = VED_prosperity_of_the_capital
+		icon = GFX_goal_griffon_money_growth
+		x = 0
+		y = 1
+		relative_position_id = VED_all_roads_lead_to_turhamn
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_all_roads_lead_to_turhamn }
+		prerequisite = { focus = VED_peasant_housing_act }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			429 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Urban Industrialization
+	focus = {
+		id = VED_urban_industrialization
+		icon = GFX_goal_improve_industry
+		x = 0
+		y = 1
+		relative_position_id = VED_peasant_housing_act
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_peasant_housing_act }
+		prerequisite = { focus = VED_all_roads_lead_to_turhamn }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			576 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			431 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Investigate Corrupt Nobles
+	focus = {
+		id = VED_found_vedina_wooden_and_left_it_bricked
+		icon = GFX_goal_VED_wood_to_brick
+		x = 1
+		y = 1
+		relative_position_id = VED_prosperity_of_the_capital
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_prosperity_of_the_capital }
+		prerequisite = { focus = VED_urban_industrialization }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = TOG_eco_great_depression_3_idea
+			decrease_poverty = yes
+			#king thinks about the similarities between him and his daughter.
 		}
 	}
 
 	#Focus for Reclaim Winterhold
 	focus = {
-		id = VED_reclaim_winterhold
-		icon = GFX_VED_reclaim_winterhold-57310
+		id = VED_royal_knight_divisions
+		icon = GFX_goal_griffon_knights
 		x = 0
 		y = 1
-		relative_position_id = VED_reinforce_the_royal_flotilla
+		relative_position_id = VED_address_the_eastern_threat
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_reinforce_the_royal_flotilla }
+		prerequisite = { focus = VED_address_the_eastern_threat }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			army_experience = 20
+			custom_effect_tooltip = VED_royal_knight_divisions_tt
+			hidden_effect = {
+				division_template = {
+						name = "Royal Knight Division"
+						priority = 2
+						division_names_group = VED_INF_01
+						regiments = {
+							knights = { x = 0 y = 0 }
+							knights = { x = 0 y = 1 }
+				
+							knights = { x = 1 y = 0 }
+							
+							knights = { x = 2 y = 0 }
+							knights = { x = 2 y = 1 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+							recon = { x = 0 y = 1 }
+						}
+					}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 429 }
+					create_unit = {
+						division = "name = \"1st Royal Knight Division\" division_template = \"Royal Knight Division\" start_experience_factor = 1.0"
+						owner = VED
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 429 }
+					create_unit = {
+						division = "name = \"2st Royal Knight Division\" division_template = \"Royal Knight Division\" start_experience_factor = 1.0"
+						owner = VED
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 429 }
+					create_unit = {
+						division = "name = \"3rd Royal Knight Division\" division_template = \"Royal Knight Division\" start_experience_factor = 1.0"
+						owner = VED
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 429 }
+					create_unit = {
+						division = "name = \"4th Royal Knight Division\" division_template = \"Royal Knight Division\" start_experience_factor = 1.0"
+						owner = VED
+					}
+				}
+			}
 		}
 	}
 
 	#Focus for Vedinan CMC
 	focus = {
-		id = VED_vedinan_cmc
-		icon = GFX_VED_vedinan_cmc-57312
+		id = VED_the_first_vedinan_science_award
+		icon = GFX_focus_research
 		x = 0
 		y = 1
-		relative_position_id = VED_grant_scolarships
+		relative_position_id = VED_grant_scholarships
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_grant_scolarships }
+		prerequisite = { focus = VED_grant_scholarships }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = VED_improved_hospitals_idea
+			custom_effect_tooltip = SRS_or_tt
+			add_ideas = VED_improved_tools_idea
+			custom_effect_tooltip = SRS_or_tt
+			add_ideas = VED_improved_economy_idea
+			custom_effect_tooltip = SRS_or_tt
+			add_ideas = VED_improved_buildings_idea
 		}
 	}
 
@@ -5281,7 +5008,7 @@ focus_tree = {
 	focus = {
 		id = VED_new_tools
 		#icon = 
-		x = -4
+		x = -5
 		y = 1
 		relative_position_id = VED_industrial_revolution
 		cost = 10
@@ -5326,7 +5053,7 @@ focus_tree = {
 	focus = {
 		id = VED_building_our_economy
 		icon = GFX_goal_generic_consumer_goods
-		x = 17
+		x = 18
 		y = 0
 		relative_position_id = VED_skoldsvards_military_reforms
 		cost = 10
@@ -5370,7 +5097,7 @@ focus_tree = {
 	focus = {
 		id = VED_a_new_hypothesis
 		icon = GFX_goal_continuous_research
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = VED_the_scientific_method
 		cost = 10
@@ -5407,10 +5134,10 @@ focus_tree = {
 		icon = GFX_focus_por_luso_tropicalism
 		x = 0
 		y = 1
-		relative_position_id = VED_scientific_and_academic_awards
+		relative_position_id = VED_the_scientific_method
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_scientific_and_academic_awards }
+		prerequisite = { focus = VED_the_scientific_method }
 		ai_will_do = {
 			factor = 1
 		}
@@ -5420,7 +5147,7 @@ focus_tree = {
 	focus = {
 		id = VED_new_opportunities
 		icon = GFX_goal_generic_neutrality_focus
-		x = 4
+		x = 5
 		y = 1
 		relative_position_id = VED_industrial_revolution
 		cost = 10
@@ -5480,7 +5207,7 @@ focus_tree = {
 	focus = {
 		id = VED_research_contracts
 		icon = GFX_goal_generic_scientific_exchange
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = VED_the_scientific_method
 		cost = 10

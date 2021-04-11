@@ -95,6 +95,9 @@ on_actions = {
 			}
 			divide_variable = { var = coins_civilian_factories value = coins_divide_economy }
 
+			#DEPRESSION
+			set_variable = { coins_depression = modifier@modifier_expenses_depression }
+
 			#TAXES 0/10/15/20/30
 			set_variable = { coins_country_tax = max_manpower_k }
 			divide_variable = { var = coins_country_tax value = 1000 }
@@ -365,6 +368,9 @@ on_actions = {
 					set_variable = { coins_civilian_factories_value = 0 }
 				}
 				divide_variable = { var = coins_civilian_factories value = coins_divide_economy }
+
+				#DEPRESSION
+				set_variable = { coins_depression = modifier@modifier_expenses_depression }
 
 				#TAXES 0/10/15/20/30
 				set_variable = { coins_country_tax = max_manpower_k }

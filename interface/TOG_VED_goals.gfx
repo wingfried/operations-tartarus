@@ -1,0 +1,10 @@
+spriteTypes = {
+	SpriteType = { 
+		name = "GFX_goal_VED_father_king"
+		texturefile = "gfx/interface/goals/VED/VED_father_king.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_VED_wood_to_brick"
+		texturefile = "gfx/interface/goals/VED/VED_wood_to_brick.dds"
+	}
+}

@@ -2,6 +2,40 @@ ideas = {
 
 	country = {
 
+		VED_more_reliable_weapons_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = 0.05
+				}
+			}
+			modifier = {
+			}
+		}
+
+		VED_research_bonus_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+
 		VED_Mountain_Training_idea = {
 			allowed = {
 				always = yes
@@ -443,7 +477,7 @@ ideas = {
 			}
 		}
 		
-		VED_Great_Medical_School_idea = {
+		VED_great_medical_school_idea = {
 
 			allowed = {
 				always = no
@@ -460,12 +494,11 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = 0.03
-				stability_factor = 0.05
+				modifier_expenses_education = 0.1
 			}
 		}
 		
-		VED_Improved_Hospitals_idea = {
+		VED_improved_hospitals_idea = {
 
 			allowed = {
 				always = no
@@ -489,7 +522,7 @@ ideas = {
 			}
 		}
 		
-		VED_Great_Engineer_School_idea = {
+		VED_great_engineer_school_idea = {
 
 			allowed = {
 				always = no
@@ -506,12 +539,11 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = 0.03
-				stability_factor = 0.05
+				modifier_expenses_education = 0.1
 			}
 		}
 		
-		VED_Improved_Tools_idea = {
+		VED_improved_tools_idea = {
 
 			allowed = {
 				always = no
@@ -535,7 +567,7 @@ ideas = {
 			}
 		}
 		
-		VED_Great_Architect_School_idea = {
+		VED_great_architect_school_idea = {
 
 			allowed = {
 				always = no
@@ -553,12 +585,11 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = 0.03
-				stability_factor = 0.05
+				modifier_expenses_education = 0.1
 			}
 		}
 		
-		VED_Improved_Buildings_idea = {
+		VED_improved_buildings_idea = {
 
 			allowed = {
 				always = no
@@ -578,7 +609,7 @@ ideas = {
 			}
 		}
 		
-		VED_Great_Business_School_idea = {
+		VED_great_business_school_idea = {
 
 			allowed = {
 				always = no
@@ -595,12 +626,11 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = 0.03
-				stability_factor = 0.05
+				modifier_expenses_education = 0.1
 			}
 		}
 		
-		VED_Improved_Economy_idea = {
+		VED_improved_economy_idea = {
 
 			allowed = {
 				always = no
@@ -787,53 +817,49 @@ ideas = {
 	
 	political_advisor = {
 
-		VED_advisor_tog_1 = { #Great_Doctor
+		VED_advisor_great_doctor = { #Great_Doctor
 			allowed = {
 				original_tag = VED
 			}
-			available = {
-				has_completed_focus = VED_Great_Medical_School
+			visible = {
+				has_completed_focus = VED_grant_scholarships
 			}
-			traits = { MNC_rapekill }
 			ai_will_do = {
 				factor = 100
 			}
 		}
 
-		VED_advisor_tog_2 = { #Great_Engineer
+		VED_advisor_great_engineer = { #Great_Engineer
 			allowed = {
 				original_tag = VED
 			}
-			available = {
-				has_completed_focus = VED_Great_Engineer_School
+			visible = {
+				has_completed_focus = VED_grant_scholarships
 			}
-			traits = { MNC_rapekill }
 			ai_will_do = {
 				factor = 100
 			}
 		}
 
-		VED_advisor_tog_3 = { #Great_Buisnessman
+		VED_advisor_great_buisnessgriff = { #Great_Buisnessgriff
 			allowed = {
 				original_tag = VED
 			}
-			available = {
-				has_completed_focus = VED_Great_Business_School
+			visible = {
+				has_completed_focus = VED_grant_scholarships
 			}
-			traits = { MNC_rapekill }
 			ai_will_do = {
 				factor = 100
 			}
 		}
 		
-		VED_advisor_tog_4 = { #Great_Architect
+		VED_advisor_great_architect = { #Great_Architect
 			allowed = {
 				original_tag = VED
 			}
-			available = {
-				has_completed_focus = VED_Great_Architect_School
+			visible = {
+				has_completed_focus = VED_grant_scholarships
 			}
-			traits = { MNC_rapekill }
 			ai_will_do = {
 				factor = 100
 			}

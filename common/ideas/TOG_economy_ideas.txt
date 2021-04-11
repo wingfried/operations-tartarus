@@ -1,0 +1,80 @@
+ideas = {
+
+	country = {
+
+		TOG_military_financing_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				modifier_expenses_army_spending = 0.25
+			}
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+		}
+		TOG_eco_great_depression_1_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				modifier_expenses_great_depression = 1.00
+			}
+		}
+		TOG_eco_great_depression_2_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				modifier_expenses_great_depression = 0.5
+			}
+		}
+		TOG_eco_great_depression_3_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				modifier_expenses_great_depression = 0.25
+			}
+		}
+		TOG_high_quality_roads_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = -0.05
+				modifier_expenses_infrastructure_upkeep_efficiency = -0.25
+			}
+		}
+	}
+}

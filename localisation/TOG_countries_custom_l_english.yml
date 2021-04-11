@@ -48,21 +48,21 @@
  MCP_fascism_ADJ:0 "Asterion-Cyanolisia State"
  MCP_neutrality_ADJ:0 "Asterion-Cyanolisia"
 
- #Griffongaard
- GFG_democratic:0 "Duchy of Griffongaard"
- GFG_communism:0 "Duchy of Griffongaard"
- GFG_fascism:0 "Duchy of Griffongaard"
- GFG_neutrality:0 "Duchy of Griffongaard"
+ #Griffengaarde
+ GFG_democratic:0 "Duchy of Griffengaarde"
+ GFG_communism:0 "Duchy of Griffengaarde"
+ GFG_fascism:0 "Duchy of Griffengaarde"
+ GFG_neutrality:0 "Duchy of Griffengaarde"
 
- GFG_democratic_DEF:0 "Duchy of Griffongaard"
- GFG_communism_DEF:0 "Duchy of Griffongaard"
- GFG_fascism_DEF:0 "Duchy of Griffongaard"
- GFG_neutrality_DEF:0 "Duchy of Griffongaard"
+ GFG_democratic_DEF:0 "Duchy of Griffengaarde"
+ GFG_communism_DEF:0 "Duchy of Griffengaarde"
+ GFG_fascism_DEF:0 "Duchy of Griffengaarde"
+ GFG_neutrality_DEF:0 "Duchy of Griffengaarde"
 
- GFG_democratic_ADJ:0 "Duchy of Griffongaard"
- GFG_communism_ADJ:0 "Duchy of Griffongaard"
- GFG_fascism_ADJ:0 "Duchy of Griffongaard"
- GFG_neutrality_ADJ:0 "Duchy of Griffongaard"
+ GFG_democratic_ADJ:0 "Duchy of Griffengaarde"
+ GFG_communism_ADJ:0 "Duchy of Griffengaarde"
+ GFG_fascism_ADJ:0 "Duchy of Griffengaarde"
+ GFG_neutrality_ADJ:0 "Duchy of Griffengaarde"
  
  #Noone
  NOU_democratic:0 "Noone"

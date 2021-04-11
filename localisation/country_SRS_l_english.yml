@@ -1447,6 +1447,7 @@ SRS_or_tt:0 "\n§OOr§!"
 SRS_one_tt:0 "\n§OFirst Option§!"
 SRS_two_tt:0 "\n§OSecond Option§!"
 SRS_three_tt:0 "\n§OThird Option§!"
+SRS_four_tt:0 "\n§OFourth Option§!"
 
 #### DECISIONS ####
 SRS_political_discussion:0 "@SRS The United Socialist Revolutionary Front @SRS "

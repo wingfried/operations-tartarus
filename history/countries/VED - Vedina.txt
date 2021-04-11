@@ -98,8 +98,7 @@ set_politics = {
 }
 add_ideas = { 
 	VED_Chivalry_Knights_idea
-	VED_Shattered_Economy_idea1
-	VED_Untrained_Workers_idea1
+	TOG_eco_great_depression_2_idea
 	pre_industrial_society 
 	lack_of_scientists1
 	poverty3 

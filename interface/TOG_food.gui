@@ -1,0 +1,28 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "food_container"
+		position = { x= 577 y = 6 }
+
+		instantTextBoxType = {
+			name ="food_text"
+			position = { x= 22 y = 3 }
+			font = "hoi_18mbs"
+			text = "FOOD_MAIN"
+			format = center
+			maxWidth = 75
+			maxHeight = 20
+			fixedsize = yes
+			
+			pdx_tooltip = "FOOD_TOOLTIP"
+		}
+		
+		iconType = {
+			name ="food_icon"
+			spriteType = "GFX_TOG_food_icon"
+			position = { x= 10 y = 4 }
+			
+			pdx_tooltip = "FOOD_TOOLTIP"
+		}
+	}
+}
