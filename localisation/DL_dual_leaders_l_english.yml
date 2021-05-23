@@ -1,5 +1,6 @@
 ﻿l_english:
-    # GUI Localisation, do not edit!
+
+ # GUI Localisation, do not edit!
  first_leader_title:0 "[ROOT.GetFirstTitle]"
  second_leader_title:0 "[ROOT.GetSecondTitle]"
  dual_leader_name:0 "[ROOT.GetDualLeaderName]"
@@ -11,7 +12,8 @@
  second_leader_diplo_tt:0 "§Y[From.GetDualLeaderName]§!\n[From.GetSecondTitle] of [From.GetNameDef]"
  dual_leader_desc_tt:0 "§g[From.GetDualLeaderDesc]§!"
  first_leader_desc_tt:0 "§g[From.GetFirstLeaderDesc]§!"
-    # Nation Specific Localisation
+ 
+ # Nation Specific Localisation
  PRINCESS_TITLE:0 "Princess"
  PRINCE_TITLE:0 "Prince"
  KING_TITLE:0 "King"

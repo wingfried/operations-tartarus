@@ -256,48 +256,6 @@ EQC_military_academy_training_category = {
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
 				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
-				}
 				
 				add_unit_leader_trait = academy_training_trait
 			}
@@ -367,48 +325,6 @@ EQC_military_academy_training_category = {
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
 				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
-				}
 				
 				add_unit_leader_trait = academy_training_trait
 			}
@@ -477,48 +393,6 @@ EQC_military_academy_training_category = {
 					}
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
 				}
 				
 				add_unit_leader_trait = academy_training_trait
@@ -703,48 +577,6 @@ EQC_military_academy_training_category = {
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
 				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
-				}
 				
 				add_unit_leader_trait = academy_training_trait
 			}
@@ -813,48 +645,6 @@ EQC_military_academy_training_category = {
 					}
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
 				}
 				
 				add_unit_leader_trait = academy_training_trait
@@ -925,48 +715,6 @@ EQC_military_academy_training_category = {
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
 				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
-				}
 				
 				add_unit_leader_trait = academy_training_trait
 			}
@@ -1036,48 +784,6 @@ EQC_military_academy_training_category = {
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
 				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
-				}
 				
 				add_unit_leader_trait = academy_training_trait
 			}
@@ -1146,48 +852,6 @@ EQC_military_academy_training_category = {
 					}
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
 				}
 				
 				add_unit_leader_trait = academy_training_trait
@@ -1358,48 +1022,6 @@ EQC_military_college_training_category = {
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
 				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
-				}
 				
 				remove_unit_leader_trait = academy_training_trait
 				add_unit_leader_trait = war_college_training_trait
@@ -1472,48 +1094,6 @@ EQC_military_college_training_category = {
 					}
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
 				}
 				
 				remove_unit_leader_trait = academy_training_trait
@@ -1588,48 +1168,6 @@ EQC_military_college_training_category = {
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
 				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
-				}
 				
 				remove_unit_leader_trait = academy_training_trait
 				add_unit_leader_trait = war_college_training_trait
@@ -1702,48 +1240,6 @@ EQC_military_college_training_category = {
 					}
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
 				}
 				
 				remove_unit_leader_trait = academy_training_trait
@@ -1937,48 +1433,6 @@ EQC_military_college_training_category = {
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
 				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
-				}
 				
 				remove_unit_leader_trait = academy_training_trait
 				add_unit_leader_trait = war_college_training_trait
@@ -2051,48 +1505,6 @@ EQC_military_college_training_category = {
 					}
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
 				}
 				
 				remove_unit_leader_trait = academy_training_trait
@@ -2167,48 +1579,6 @@ EQC_military_college_training_category = {
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
 				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
-				}
 				
 				remove_unit_leader_trait = academy_training_trait
 				add_unit_leader_trait = war_college_training_trait
@@ -2282,48 +1652,6 @@ EQC_military_college_training_category = {
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
 				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
-				}
 				
 				remove_unit_leader_trait = academy_training_trait
 				add_unit_leader_trait = war_college_training_trait
@@ -2396,48 +1724,6 @@ EQC_military_college_training_category = {
 					}
 					remove_unit_leader_trait = general4_trait
 					add_unit_leader_trait = general5_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general5_trait
-					}
-					remove_unit_leader_trait = general5_trait
-					add_unit_leader_trait = general6_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general6_trait
-					}
-					remove_unit_leader_trait = general6_trait
-					add_unit_leader_trait = general7_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general7_trait
-					}
-					remove_unit_leader_trait = general7_trait
-					add_unit_leader_trait = general8_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general8_trait
-					}
-					remove_unit_leader_trait = general8_trait
-					add_unit_leader_trait = general9_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general9_trait
-					}
-					remove_unit_leader_trait = general9_trait
-					add_unit_leader_trait = general10_trait
-				}
-				ELSE_IF = {
-					limit = {
-						has_trait = general10_trait
-					}
-					remove_unit_leader_trait = general10_trait
-					add_unit_leader_trait = general11_trait
 				}
 				
 				remove_unit_leader_trait = academy_training_trait

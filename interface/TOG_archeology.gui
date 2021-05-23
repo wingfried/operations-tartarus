@@ -80,46 +80,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "archeology_item"
-				position = { x=353 y=54 }
-				size = { width=100% height=41 }
-				clipping = no
-
-				iconType = {
-					name = "btn_bg"
-					position = {x=0 y=0}
-					spriteType = "GFX_tog_archeology_item"
-				}
-
-				iconType = {
-					name = "icon"
-					position = {x=30 y=19}
-					spriteType = "GFX_decision_unknown"
-					centerposition = yes
-				}
-
-				instantTextboxType = {
-					name = "name_text"
-					position = { x = 63 y = 10 }
-					textureFile = ""
-					font = "hoi_16mbs"
-					borderSize = { x = 0 y = 0 }
-					text = "assign_new_archeologist"
-					maxWidth = 330
-					maxHeight = 20
-					format = left
-				}
-
-				buttonType = {
-					name = "btn_select"
-					position = {x=310 y=10}
-					spriteType = "GFX_tog_accept"
-					clicksound = decisions_ui_checkbox
-				}
-			}
-			
-			containerWindowType = {
-				name = "archeology_item_2"
-				position = { x=353 y=95 }
+				position = { x=353 y=50 }
 				size = { width=100% height=41 }
 				clipping = no
 
@@ -158,7 +119,7 @@ guiTypes = {
 				containerWindowType = {
 					name = "archeologist_category_desc"
 					position = { x=0 y=40 }
-					size = { width=345 height=165 }
+					size = { width=345 height=210 }
 					clipping = no
 					
 					background = {
@@ -214,46 +175,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "archeology_item"
-				position = { x=353 y=54 }
-				size = { width=100% height=41 }
-				clipping = no
-
-				iconType = {
-					name = "btn_bg"
-					position = {x=0 y=0}
-					spriteType = "GFX_tog_archeology_item"
-				}
-
-				iconType = {
-					name = "icon"
-					position = {x=30 y=19}
-					spriteType = "GFX_decision_unknown"
-					centerposition = yes
-				}
-
-				instantTextboxType = {
-					name = "name_text"
-					position = { x = 63 y = 10 }
-					textureFile = ""
-					font = "hoi_16mbs"
-					borderSize = { x = 0 y = 0 }
-					text = "assign_new_archeologist"
-					maxWidth = 330
-					maxHeight = 20
-					format = left
-				}
-
-				buttonType = {
-					name = "btn_select"
-					position = {x=310 y=10}
-					spriteType = "GFX_tog_accept"
-					clicksound = decisions_ui_checkbox
-				}
-			}
-			
-			containerWindowType = {
-				name = "archeology_item_2"
-				position = { x=353 y=95 }
+				position = { x=353 y=50 }
 				size = { width=100% height=41 }
 				clipping = no
 
@@ -292,7 +214,7 @@ guiTypes = {
 				containerWindowType = {
 					name = "archeologist_category_desc"
 					position = { x=0 y=40 }
-					size = { width=345 height=165 }
+					size = { width=345 height=210 }
 					clipping = no
 					
 					background = {
@@ -348,46 +270,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "archeology_item"
-				position = { x=353 y=54 }
-				size = { width=100% height=41 }
-				clipping = no
-
-				iconType = {
-					name = "btn_bg"
-					position = {x=0 y=0}
-					spriteType = "GFX_tog_archeology_item"
-				}
-
-				iconType = {
-					name = "icon"
-					position = {x=30 y=19}
-					spriteType = "GFX_decision_unknown"
-					centerposition = yes
-				}
-
-				instantTextboxType = {
-					name = "name_text"
-					position = { x = 63 y = 10 }
-					textureFile = ""
-					font = "hoi_16mbs"
-					borderSize = { x = 0 y = 0 }
-					text = "assign_new_archeologist"
-					maxWidth = 330
-					maxHeight = 20
-					format = left
-				}
-
-				buttonType = {
-					name = "btn_select"
-					position = {x=310 y=10}
-					spriteType = "GFX_tog_accept"
-					clicksound = decisions_ui_checkbox
-				}
-			}
-			
-			containerWindowType = {
-				name = "archeology_item_2"
-				position = { x=353 y=95 }
+				position = { x=353 y=50 }
 				size = { width=100% height=41 }
 				clipping = no
 
@@ -426,7 +309,7 @@ guiTypes = {
 				containerWindowType = {
 					name = "archeologist_category_desc"
 					position = { x=0 y=40 }
-					size = { width=345 height=165 }
+					size = { width=345 height=210 }
 					clipping = no
 					
 					background = {
@@ -449,8 +332,8 @@ guiTypes = {
 				
 				containerWindowType = {
 					name = "archeologist_category_desc_2"
-					position = { x=-168 y=201 }
-					size = { width=513 height=195 }
+					position = { x=-168 y=246 }
+					size = { width=513 height=200 }
 					clipping = no
 					
 					background = {

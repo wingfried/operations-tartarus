@@ -18,6 +18,7 @@ buildings = {
 		local_resources_chromium = 0
 		local_resources_oil = 0
 		local_resources_crystals = 0
+		local_resources_TOG_food = 0
 		show_modifier = yes
 		max_fuel_building = 0.75 #k
 	}
@@ -38,6 +39,7 @@ buildings = {
 		local_resources_chromium = 0
 		local_resources_oil = 0
 		local_resources_crystals = 0
+		local_resources_TOG_food = 0
 		infrastructure_construction_effect = yes
 	}
 
@@ -57,26 +59,27 @@ buildings = {
 		local_resources_chromium = 0
 		local_resources_oil = 0
 		local_resources_crystals = 0
+		local_resources_TOG_food = 0
 		infrastructure_construction_effect = yes
 	}
 
-	farm = {
+	TOG_farm = {
 		#show_on_map = 6
-		base_cost = 7200
-		#base_cost_conversion = 4000
-		#military_production = 1
-		icon_frame = 13
+		base_cost = 5800
+		icon_frame = 15
 		max_level = 20
 		shares_slots = yes
-		value = 8
+		value = 3
 		local_resources_steel = 0
 		local_resources_tungsten = 0
 		local_resources_rubber = 0
 		local_resources_aluminium = 0
 		local_resources_chromium = 0
 		local_resources_oil = 0
-		local_resources_crystals = 10
+		local_resources_crystals = 0
+		local_resources_TOG_food = 8
 		infrastructure_construction_effect = yes
+		show_modifier = yes
 	}
 
 	air_base = {
@@ -93,6 +96,7 @@ buildings = {
 		local_resources_chromium = 0
 		local_resources_oil = 0
 		local_resources_crystals = 0
+		local_resources_TOG_food = 0
 		damage_factor = 0.5
 	}
 
@@ -153,6 +157,7 @@ buildings = {
 		local_resources_chromium = 0
 		local_resources_oil = 0
 		local_resources_crystals = 0
+		local_resources_TOG_food = 0
 		infrastructure_construction_effect = yes
 	}
 
@@ -173,6 +178,7 @@ buildings = {
 		local_resources_chromium = 0
 		local_resources_oil = 0
 		local_resources_crystals = 0
+		local_resources_TOG_food = 0
 		value = 1
 	}
 	
@@ -188,6 +194,7 @@ buildings = {
 		local_resources_chromium = 0
 		local_resources_oil = 0
 		local_resources_crystals = 0
+		local_resources_TOG_food = 0
 		refinery = yes
 		max_level = 3 # This is the max unlock level
 		shares_slots = yes
@@ -214,6 +221,7 @@ buildings = {
 		local_resources_chromium = 0
 		local_resources_oil = 0
 		local_resources_crystals = 0
+		local_resources_TOG_food = 0
 		show_modifier = yes
 		max_fuel_building = 100.0 #k
 	}
@@ -234,6 +242,7 @@ buildings = {
 		local_resources_chromium = 0
 		local_resources_oil = 0
 		local_resources_crystals = 0
+		local_resources_TOG_food = 0
 	}
 
 	rocket_site = {
@@ -252,6 +261,7 @@ buildings = {
 		local_resources_chromium = 0
 		local_resources_oil = 0
 		local_resources_crystals = 0
+		local_resources_TOG_food = 0
 		infrastructure_construction_effect = yes
 	}
 
@@ -273,5 +283,6 @@ buildings = {
 		local_resources_chromium = 0
 		local_resources_oil = 0
 		local_resources_crystals = 0
+		local_resources_TOG_food = 0
 	}
 }

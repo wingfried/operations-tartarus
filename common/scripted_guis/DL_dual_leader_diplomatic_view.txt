@@ -1,4 +1,5 @@
 scripted_gui = {
+	
 	dual_leader_politics_view = {
 		context_type = selected_country_context
 		parent_window_token = selected_country_view_diplomacy
@@ -23,4 +24,3 @@ scripted_gui = {
 		}
 	}
 }
-

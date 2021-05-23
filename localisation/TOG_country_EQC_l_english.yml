@@ -491,7 +491,3 @@
 
  EQC_accept_the_bats_duke:0 "Accept The Bats"
  EQC_accept_the_bats_duke_desc:0 "Placeholder"
- 
- EQC_pay_250k_tp:0 "This policy will cost us §R0.25§! Million Bits per month."
- EQC_pay_500k_tp:0 "This policy will cost us §R0.5§! Million Bits per month."
- EQC_pay_1m_tp:0 "This policy will cost us §R1§! Million Bits per month."

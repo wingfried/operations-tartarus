@@ -35,54 +35,63 @@ modifier_income_taxes = {
 	value_type = number
 	precision = 2
 	postfix = none
+	color_type = good
 }
 
 modifier_income_taxes_efficiency = {
 	value_type = percentage
 	precision = 2
 	postfix = none
+	color_type = good
 }
 
 modifier_income_subject_taxes = {
 	value_type = number
 	precision = 2
 	postfix = none
+	color_type = good
 }
 
 modifier_income_subject_taxes_efficiency = {
 	value_type = percentage
 	precision = 2
 	postfix = none
+	color_type = good
 }
 
 modifier_income_from_other_countries = {
 	value_type = number
 	precision = 2
 	postfix = none
+	color_type = good
 }
 
 modifier_income_civilian_factories = {
 	value_type = number
 	precision = 2
 	postfix = none
+	color_type = good
 }
 
 modifier_income_civilian_factories_efficiency = {
 	value_type = percentage
 	precision = 2
 	postfix = none
+	color_type = good
 }
 
 modifier_income_exported_resources = {
 	value_type = number
 	precision = 2
 	postfix = none
+	color_type = good
 }
 
 modifier_income_exported_resources_efficiency = {
 	value_type = percentage
 	precision = 2
 	postfix = none
+	color_type = good
 }
 
 modifier_expenses_overlord = {
@@ -110,6 +119,18 @@ modifier_expenses_education = {
 }
 
 modifier_expenses_education_efficiency = {
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
+
+modifier_expenses_farms = {
+	value_type = number
+	precision = 2
+	postfix = none
+}
+
+modifier_expenses_farms_efficiency = {
 	value_type = percentage
 	precision = 2
 	postfix = none

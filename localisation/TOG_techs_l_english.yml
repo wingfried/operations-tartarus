@@ -1,5 +1,10 @@
 ﻿l_english:
  
+ ### ADDED MISSING LOCALISATION (VANILLA TECHNOLOGY) ###
+
+ hospital_tech_research:0 "Field Hospital Tech Bonus Research"
+ maintenance_company_tech_research:0 "Maintenance Company Tech Bonus Research"
+
  ### LAND DOCTRINE ###
 
  ELITE_FORCES_DOCTRINE_LABEL:0 "ELITE FORCES DOCTRINE"
@@ -197,25 +202,25 @@
  
  TITLE_AERIAL_MAGE_SUBTITLE:0 "AERIAL UNICORN TECHNOLOGIES"
 
- aerial_mage_equipment_0:0 "Elenium Type 34"
+ aerial_mage_equipment_0:0 "Crystalium Type 34"
  aerial_mage_equipment_0_desc:0 "Placeholder"
 
- aerial_mage_equipment_1:0 "Elenium Type 45"
+ aerial_mage_equipment_1:0 "Crystalium Type 45"
  aerial_mage_equipment_1_desc:0 "Placeholder"
 
- aerial_mage_equipment_2:0 "Elenium Type 56"
+ aerial_mage_equipment_2:0 "Crystalium Type 56"
  aerial_mage_equipment_2_desc:0 "Placeholder"
 
- aerial_mage_equipment_3:0 "Elenium Type 64"
+ aerial_mage_equipment_3:0 "Crystalium Type 64"
  aerial_mage_equipment_3_desc:0 "Placeholder"
 
- aerial_mage_equipment_4:0 "Elenium Type 76"
+ aerial_mage_equipment_4:0 "Crystalium Type 76"
  aerial_mage_equipment_4_desc:0 "Placeholder"
 
- aerial_mage_equipment_5:0 "Elenium Type 84"
+ aerial_mage_equipment_5:0 "Crystalium Type 84"
  aerial_mage_equipment_5_desc:0 "Placeholder"
 
- aerial_mage_equipment_6:0 "Elenium Type 95"
+ aerial_mage_equipment_6:0 "Crystalium Type 95"
  aerial_mage_equipment_6_desc:0 "Placeholder"
 
  tech_aerial_mages_speed_1:0 "Overclocking 1"

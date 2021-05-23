@@ -1,0 +1,57 @@
+### TOG ###
+
+SRS_ai_behavior = {
+	name = "SRS_AI_BEHAVIOR"
+	group = "RULE_GROUP_EXTRA_CONTENT_TOG"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = COMMUNIST_HISTORICAL
+		text = "RULE_OPTION_COMMUNIST_HISTORICAL"
+		desc = "RULE_OPTION_COMMUNIST_HISTORICAL_SRS_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = COMMUNIST_ASPER_INTERNATIONALIST
+		text = "RULE_OPTION_COMMUNIST_ASPER_INTERNATIONALIST"
+		desc = "RULE_OPTION_COMMUNIST_ASPER_INTERNATIONALIST_SRS_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = COMMUNIST_ASPER_COMMUNALIST
+		text = "RULE_OPTION_COMMUNIST_ASPER_COMMUNALIST"
+		desc = "RULE_OPTION_COMMUNIST_ASPER_COMMUNALIST_SRS_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = JOIN_FAT
+		text = "RULE_OPTION_JOIN_FAT"
+		desc = "RULE_OPTION_JOIN_FAT_SRS_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+		allow_achievements = yes
+	}
+}
+
+officer_ranks = {
+	name = "RULE_ALLOW_OFFICER_RANKS"
+	group = "RULE_GROUP_EXTRA_CONTENT_TOG"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_OFFICER_RANKS_DESC"
+	}
+	option = {
+		name = NO_RANKS
+		text = "RULE_OPTION_NO_RANKS"
+		desc = "RULE_OPTION_NO_RANKS_DESC"
+		allow_achievements = yes
+	}
+}

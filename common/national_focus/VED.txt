@@ -11,7 +11,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 40 y = 40 }
+	continuous_focus_position = { x = 1000 y = 170 }
 
 	focus = {
 		id = VED_Succession
@@ -139,9 +139,7 @@ focus_tree = {
 			focus = VED_address_the_elephant_in_the_room
 		}
 
-		mutually_exclusive = {
-			focus = VED_stand_against_folkmord
-		}
+		mutually_exclusive = { focus = VED_stand_against_folkmord }
 		
 		ai_will_do = {
 			factor = 100
@@ -344,17 +342,14 @@ focus_tree = {
 	######START OF THE INTERNAL POLITICS PART OF THE TREE
 
 	focus = {
-		id = VED_Matters_Internal_Politics
+		id = VED_matters_internal_politics
 		cost = 2.15
 		x = 1
 		y = 1
 		
 		relative_position_id = VED_future_of_the_princess
 		
-		prerequisite = {
-			focus = VED_future_of_the_princess
-		
-		}
+		prerequisite = { focus = VED_future_of_the_princess }
 		
 		ai_will_do = {
 			factor = 100
@@ -363,32 +358,26 @@ focus_tree = {
 			NOT = { has_country_flag = VED_quest_block_focuses }
 		}
 		completion_reward = {
-			add_to_variable = {
-				var = VED_Chivalry_Points
-				value = 1
-			}
-			custom_effect_tooltip = VED_Gain_Chivalry_TT
+			
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
 	}
 
 	focus = {
-		id = VED_Nobles_Aftermath
+		id = VED_nobles_aftermath
 		cost = 4.30
 		x = 0
 		y = 1
 		
-		relative_position_id = VED_Matters_Internal_Politics
+		relative_position_id = VED_matters_internal_politics
 		prerequisite = {
-			focus = VED_Matters_Internal_Politics
+			focus = VED_matters_internal_politics
 		}
 		ai_will_do = {
 			factor = 100
 		}
 		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-			NOT = { has_idea = VED_Unhappy_Fascist_Prince_idea }
-			NOT = { has_idea = VED_Unhappy_Military_Prince_idea }
+			
 		}
 		completion_reward = {
 			add_ideas = VED_Reunited_Nobles_idea
@@ -411,7 +400,7 @@ focus_tree = {
 			focus = VED_Flight_Home
 		}
 		prerequisite = {
-			focus = VED_Nobles_Aftermath
+			focus = VED_nobles_aftermath
 		}
 		
 		ai_will_do = {
@@ -438,8 +427,7 @@ focus_tree = {
 		relative_position_id = VED_Matters_Love
 		
 		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-			#has completed at least one love path
+			
 		}
 
 		prerequisite = {
@@ -479,12 +467,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus VED_Matters_Heroism"
-			add_to_variable = {
-				var = VED_Chivalry_Points
-				value = 1
-			}
-			custom_effect_tooltip = VED_Gain_Chivalry_TT
+			
 		}
 	}
 
@@ -548,598 +531,6 @@ focus_tree = {
 			add_stability = 0.1
 			add_war_support = 0.1
 			#Wingstrom ponders about the safety of his daughter. He is worried about her.
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	###Military Education part
-
-	focus = {
-		id = VED_Military_Education
-		icon = GFX_goal_griffon_knights
-		cost = 4.30
-		x = -30
-		y = 0
-		
-		relative_position_id = VED_Royal_Marriage
-		
-		available = {
-			has_country_flag = VED_Chose_Military_Prince_Flag
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		prerequisite = {
-			
-		}
-		mutually_exclusive = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 75
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus VED_Military_Education"
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = support_tech }
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Building_War_Economy
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 8.60
-		x = 1
-		y = 1
-		
-		relative_position_id = VED_Big_Guns
-		
-		prerequisite = {
-			focus = VED_Armoured_Tractors
-			focus = VED_Big_Guns
-			focus = VED_Support_Equipment
-			focus = VED_New_Weapons
-		}
-
-
-		available = {
-			any_owned_state = {
-				is_controlled_by = ROOT
-			}
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		ai_will_do = {
-			factor = 50
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus VED_Building_War_Economy"
-			add_ideas = war_economy
-			random_owned_controlled_state = {
-					
-				add_extra_state_shared_building_slots = 2
-					
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	##Universities
-
-	focus = {
-		id = VED_Military_Academy
-		icon = GFX_focus_wonderweapons
-		cost = 4.30
-		x = 0
-		y = 1
-		
-		relative_position_id = VED_Military_Education
-		
-		prerequisite = {
-			focus = VED_Military_Education
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus VED_New_University"
-			add_research_slot = 1
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	###Military Theory
-
-	focus = {
-		id = VED_New_Military_Theory
-		icon = GFX_goal_checkmate
-		cost = 7.20
-		x = -1
-		y = 1
-		
-		relative_position_id = VED_Invest_In_Griffons
-		
-		prerequisite = {
-			focus = VED_Invest_In_Griffons
-		}
-		mutually_exclusive = {
-			focus = VED_Peasent_Levy
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = mobile_warfare
-					has_tech = mass_assault
-					is_researching_technology = mobile_warfare
-					is_researching_technology = mass_assault
-				}
-			}
-		}
-		completion_reward = {
-			add_ideas = VED_Grand_Battleplan_Focus_idea
-			add_tech_bonus = { bonus = 1 uses = 2 category = cat_grand_battle_plan }
-			create_corps_commander = {
-				name = "NMT"
-				desc = "cijik_desc"
-				traits = { griffon_race_trait }
-				skill = 4
-				attack_skill = 4
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 6
-				female = no
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Support_Equipment
-		cost = 5.00
-		x = 0
-		y = 1
-		
-		relative_position_id = VED_New_Military_Theory
-		
-		prerequisite = {
-			focus = VED_New_Military_Theory
-			focus = VED_Superior_Firepower
-			focus = VED_Peasent_Levy
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		ai_will_do = {
-			factor = 50
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus VED_Big_Guns"
-			add_tech_bonus = { bonus = 1 ahead_reduction = 2 uses = 1 category = support_tech }
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Trade_Interdiction
-		cost = 4.30
-		x = 1
-		y = 1
-		
-		relative_position_id = VED_Support_Equipment
-		
-		prerequisite = {
-			focus = VED_Support_Equipment
-			focus = VED_New_Weapons
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus VED_New_Naval_Approach"
-			add_tech_bonus = { bonus = 2 uses = 1 category = naval_doctrine }
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Superior_Firepower
-		icon = GFX_goal_national_artillery
-		cost = 7.20
-		x = 1
-		y = 1
-		
-		relative_position_id = VED_Invest_In_Machines
-		
-		prerequisite = {
-			focus = VED_Invest_In_Machines
-		}
-		mutually_exclusive = {
-			focus = VED_Armoured_Offensive
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					is_researching_technology = mobile_warfare
-					is_researching_technology = trench_warfare
-				}
-			}
-		}
-		completion_reward = {
-			add_ideas = VED_Superior_Firepower_Focus_idea
-			add_tech_bonus = { bonus = 1 uses = 2 category = cat_superior_firepower }
-			create_corps_commander = {
-				name = "Artillery"
-				desc = "cijik_desc"
-				traits = { griffon_race_trait }
-				skill = 4
-				attack_skill = 4
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 6
-				female = no
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Big_Guns
-		icon = GFX_goal_artillery
-		cost = 4.30
-		x = 0
-		y = 1
-		
-		relative_position_id = VED_Superior_Firepower
-		
-		prerequisite = {
-			focus = VED_Superior_Firepower
-			focus = VED_New_Military_Theory
-			focus = VED_Armoured_Offensive
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		ai_will_do = {
-			factor = 50
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus VED_Big_Guns"
-			add_tech_bonus = { bonus = 1 ahead_reduction = 2 uses = 1 category = artillery }
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Peasent_Levy
-		icon = GFX_goal_national_arsenal
-		cost = 7.20
-		x = 1
-		y = 1
-		
-		relative_position_id = VED_Invest_In_Griffons
-		
-		prerequisite = {
-			focus = VED_Invest_In_Griffons
-		}
-		mutually_exclusive = {
-			focus = VED_New_Military_Theory
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					is_researching_technology = mobile_warfare
-					is_researching_technology = trench_warfare
-				}
-			}
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus VED_Peasent_Levy"
-			add_ideas = VED_Mass_Assault_Focus_idea
-			add_tech_bonus = { bonus = 1 uses = 2 category = cat_mass_assault }
-			create_corps_commander = {
-				name = "Peasant"
-				desc = "cijik_desc"
-				traits = { griffon_race_trait }
-				skill = 4
-				attack_skill = 4
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 6
-				female = no
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_New_Weapons
-		icon = GFX_goal_generic_small_arms
-		cost = 4.30
-		x = 0
-		y = 1
-		
-		relative_position_id = VED_Peasent_Levy
-		
-		prerequisite = {
-			focus = VED_Peasent_Levy
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		ai_will_do = {
-			factor = 50
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus VED_New_Weapons"
-			add_tech_bonus = { bonus = 1 ahead_reduction = 2 uses = 1 category = infantry_weapons }
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Armoured_Offensive
-		icon = GFX_focus_generic_tank_production
-		cost = 7.20
-		x = -1
-		y = 1
-		
-		relative_position_id = VED_Invest_In_Machines
-		
-		prerequisite = {
-			focus = VED_Invest_In_Machines
-		}
-		mutually_exclusive = {
-			focus = VED_Superior_Firepower
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = trench_warfare
-					has_tech = mass_assault
-					is_researching_technology = trench_warfare
-					is_researching_technology = mass_assault
-				}
-			}
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus VED_Armoured_Offensive"
-			add_ideas = VED_Armoured_Offensive_Focus_idea
-			add_tech_bonus = { bonus = 1 uses = 2 category = cat_mobile_warfare }
-			create_corps_commander = {
-				name = "Panzer"
-				desc = "cijik_desc"
-				traits = { griffon_race_trait }
-				skill = 4
-				attack_skill = 4
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 6
-				female = no
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Armoured_Tractors
-		icon = GFX_goal_generic_army_tank_2
-		cost = 4.30
-		x = 0
-		y = 1
-		
-		relative_position_id = VED_Armoured_Offensive
-		
-		prerequisite = {
-			focus = VED_Armoured_Offensive
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		ai_will_do = {
-			factor = 50
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus VED_Armoured_Tractors"
-			add_to_variable = {
-				var = VED_Chivalry_Points
-				value = 1
-			}
-			add_tech_bonus = { bonus = 1 ahead_reduction = 2 uses = 1 category = armor }
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Fleet_In_Being
-		cost = 4.30
-		x = 1
-		y = 1
-		
-		relative_position_id = VED_Armoured_Tractors
-		
-		prerequisite = {
-			focus = VED_Armoured_Tractors
-			focus = VED_Big_Guns
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus VED_New_Naval_Approach"
-			add_tech_bonus = { bonus = 2 uses = 1 category = naval_doctrine }
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Order_of_Witchers
-		icon = GFX_goal_generic_major_war
-		cost = 12.90
-		x = 0
-		y = 1
-		
-		relative_position_id = VED_Military_Academy
-		
-		available = {
-			has_tech = advanced_special_forces
-			has_tech = tech_knights_magical2
-		}
-		prerequisite = {
-			focus = VED_Military_Academy
-		}
-		mutually_exclusive = {
-			focus = VED_Invest_In_Machines
-		}
-		mutually_exclusive = {
-			focus = VED_Invest_In_Griffons
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_ideas = VED_Order_of_Witchers_idea
-			create_corps_commander = {
-				name = "Erland of Larvik"
-				desc = "cijik_desc"
-
-				traits = { griffon_race_trait witcher signs_specialist }
-				skill = 4
-				attack_skill = 2
-				defense_skill = 4
-				planning_skill = 4
-				logistics_skill = 4
-				female = no
-			}
-			create_corps_commander = {
-				name = "Barmin"
-				desc = "cijik_desc"
-				traits = { griffon_race_trait witcher swords_specialist }
-				skill = 3
-				attack_skill = 5
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 2
-				female = no
-			}
-			create_corps_commander = {
-				name = "Letho of Gulet"
-				desc = "cijik_desc"
-				traits = { griffon_race_trait witcher alchemy_specialist }
-				skill = 3
-				attack_skill = 3
-				defense_skill = 4
-				planning_skill = 3
-				logistics_skill = 2
-				female = no
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Invest_In_Machines
-		icon = GFX_goal_generic_production2
-		cost = 4.30
-		x = -2
-		y = 1
-		
-		relative_position_id = VED_Military_Academy
-		
-		prerequisite = {
-			focus = VED_Military_Academy
-		}
-		mutually_exclusive = {
-			focus = VED_Order_of_Witchers
-		}
-		mutually_exclusive = {
-			focus = VED_Invest_In_Griffons
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_timed_idea = { idea = VED_Machines_Investment_idea days = 180 }
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = VED_Invest_In_Griffons
-		icon = GFX_goal_conscription
-		cost = 4.30
-		x = 2
-		y = 1
-		
-		relative_position_id = VED_Military_Academy
-		
-		prerequisite = {
-			focus = VED_Military_Academy
-		}
-		mutually_exclusive = {
-			focus = VED_Order_of_Witchers
-		}
-		mutually_exclusive = {
-			focus = VED_Invest_In_Machines
-		}
-		available = {
-			NOT = { has_country_flag = VED_quest_block_focuses }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_timed_idea = { idea = VED_Griffons_Investment_idea days = 180 }
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -3203,6 +2594,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_ideas = VED_the_second_succesion_crisis_idea
 			#Gives national spirit that grants
 			#-1 stability gain per month
 			#-20% political power gain per month
@@ -3243,6 +2635,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			swap_ideas = { remove_idea = VED_the_second_succesion_crisis_idea add_idea = VED_the_second_succesion_crisis_2_idea }
+			add_ideas = VED_new_noble_customs_idea
 			#Adds new Event 'Skoldsvard thinks of the Nobility'
 			#Removes -1% stability a month from 'Displeased Nobility'
 			#Adds national spirit 'New Noble Customs' which grants +1% stability a month
@@ -3263,6 +2657,94 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			every_unit_leader = {
+				limit = {
+					has_id = 42901
+				}
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+			}
+			every_unit_leader = {
+				limit = {
+					has_id = 42902
+				}
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+			}
+			every_unit_leader = {
+				limit = {
+					has_id = 42903
+				}
+
+				remove_unit_leader_trait = busy_trait
+
+				IF = {
+					limit = {
+						has_trait = general1_trait
+					}
+					remove_unit_leader_trait = general1_trait
+					add_unit_leader_trait = general2_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general2_trait
+					}
+					remove_unit_leader_trait = general2_trait
+					add_unit_leader_trait = general3_trait
+				}
+				ELSE_IF = {
+					limit = {
+						has_trait = general3_trait
+					}
+					remove_unit_leader_trait = general3_trait
+					add_unit_leader_trait = general4_trait
+				}
+			}
+			swap_ideas = { remove_idea = VED_new_noble_customs_idea add_idea = VED_new_noble_customs_2_idea }
 			#Adds to 'New Noble Customs' -20% cost to recruit new generals
 		}
 	}
@@ -3281,6 +2763,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			429 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 			#Grants 2 building slots, and 2 military factories in Trunaham
 		}
 	}
@@ -3317,6 +2807,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_ideas = VED_revocable_titles_idea
 			#Changes 'New Noble Customs' to include -20% cost to change advisors
 		}
 	}
@@ -3498,6 +2989,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_ideas = VED_constitutional_rights_idea
 			#Add's national spirit 'Vedinan Constitution' which grants:
 			#+10% increased compliance gain
 			#-1% Political drift
@@ -3519,6 +3011,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			swap_ideas = { remove_idea = VED_constitutional_rights_idea add_idea = VED_constitutional_rights_2_idea }
 			#Add's '-1% stability decay each month' to Vedinan Constitution spirit.
 		}
 	}
@@ -3537,6 +3030,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			swap_ideas = { remove_idea = VED_constitutional_rights_2_idea add_idea = VED_constitutional_rights_3_idea }
 			#Add's '+10% political power gain each month' to Vedinan Constitution National spirit, increases harmonist support
 		}
 	}
@@ -3617,6 +3111,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_ideas = VED_welfare_socialization_idea
 			#Add's national spirit 'Vedinan Welfare', which grants:
 			#+5% research speed
 			#+5% population gain a month
@@ -3638,6 +3133,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_ideas = VED_free_public_education_idea
 			#Add's +5% research speed to Vedinan Welfare spirit.
 		}
 	}
@@ -3656,6 +3152,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			403 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 			#Adds 2 building slots and 2 infrastructure to Skyrim
 		}
 	}
@@ -3676,6 +3180,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			403 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 			#Add 2 building slots and 2 civilian factories to Skyrim
 		}
 	}
@@ -3694,6 +3206,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_ideas = VED_royal_bank_of_vedina_idea
 			#Adds +5% research speed, and +5% construction speed to Vedina Welfare spirit.
 		}
 	}
@@ -3712,6 +3225,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_ideas = VED_peasants_welfare_act_idea
 			#Increases monthly population increase by 5%
 		}
 	}
@@ -3736,6 +3250,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			#Grant's an additional research slot.
+			add_research_slot = 1
 		}
 	}
 
@@ -3758,6 +3273,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_ideas = VED_skattskyldigaval_idea
 			#Grants a decision that will do one of the following depending on your choices. Can only be done once every six months.
 
 			#1) Reduce division training time by 10% for 6 months
@@ -4942,13 +4458,181 @@ focus_tree = {
 		}
 	}
 
-	### SCIENCE AND INDUSTRY ###
+	### INDUSTRY ###
 
-	#Focus for The Scientific Method
 	focus = {
-		id = VED_the_scientific_method
-		icon = GFX_goal_tfv_generic_tech_sharing
+		id = VED_building_our_economy
+		icon = GFX_goal_generic_consumer_goods
+		x = 15
+		y = 0
+		relative_position_id = VED_skoldsvards_military_reforms
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VED_civilian_economy
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -2
+		y = 1
+		relative_position_id = VED_building_our_economy
+		mutually_exclusive = { focus = VED_war_economy }
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_building_our_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = civilian_economy
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VED_war_economy
+		icon = GFX_goal_chn_red_military_factories
+		x = 2
+		y = 1
+		relative_position_id = VED_building_our_economy
+		mutually_exclusive = { focus = VED_civilian_economy }
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_building_our_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = war_economy
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VED_our_entry_into_the_food_industry
+		icon = GFX_focus_AUS_agriculture
 		x = 0
+		y = 1
+		relative_position_id = VED_civilian_economy
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_civilian_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = TOG_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = TOG_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VED_industrial_revolution
+		icon = GFX_goal_generic_air_production
+		x = 2
+		y = 1
+		relative_position_id = VED_civilian_economy
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_civilian_economy focus = VED_war_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = outdated_industry
+				add_idea = modern_society
+			}
+		}
+	}
+
+	focus = {
+		id = VED_our_entry_into_the_weapon_industry
+		icon = GFX_goal_Modern_Weapons
+		x = 0
+		y = 1
+		relative_position_id = VED_war_economy
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_war_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = VED_our_entry_into_the_weapon_industry_idea
+		}
+	}
+
+	focus = {
+		id = VED_better_harvesters
+		icon = GFX_goal_generic_construct_civilian
+		x = -1
+		y = 1
+		relative_position_id = VED_our_entry_into_the_food_industry
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_our_entry_into_the_food_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = VED_better_harvesters_idea
+		}
+	}
+	
+	focus = {
+		id = VED_new_way_of_agriculture
+		icon = GFX_goal_agriculture
+		x = -1
 		y = 1
 		relative_position_id = VED_industrial_revolution
 		cost = 10
@@ -4957,13 +4641,50 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			remove_ideas = TOG_outdated_agriculture_idea
+		}
 	}
-	
-	#Focus for Longer Cranes
+
 	focus = {
-		id = VED_longer_cranes
-		icon = GFX_goal_continuous_non_factory_construct
-		x = 0
+		id = VED_new_way_of_building
+		icon = GFX_goal_construction_engineering
+		x = 1
+		y = 1
+		relative_position_id = VED_industrial_revolution
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_industrial_revolution }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = VED_new_way_of_building_idea
+		}
+	}
+
+	focus = {
+		id = VED_better_tools
+		icon = GFX_focus_indy_excavations
+		x = 1
+		y = 1
+		relative_position_id = VED_our_entry_into_the_weapon_industry
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_our_entry_into_the_weapon_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 1.00 uses = 2 category = industry }
+			add_ideas = VED_better_tools_idea
+		}
+	}
+
+	focus = {
+		id = VED_kingdom_of_profits
+		icon = GFX_goal_endless_money
+		x = -1
 		y = 1
 		relative_position_id = VED_better_harvesters
 		cost = 10
@@ -4972,107 +4693,237 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-	}
-
-	#Focus for High Quality Concrete Mixers
-	focus = {
-		id = VED_high_quality_concrete_mixers
-		icon = GFX_goal_generic_construction2
-		x = 0
-		y = 1
-		relative_position_id = VED_monkey_wrenches
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_monkey_wrenches }
-		ai_will_do = {
-			factor = 1
+		completion_reward = {
+			add_ideas = free_trade
 		}
 	}
 
-	#Focus for Monkey Wrenches
 	focus = {
-		id = VED_monkey_wrenches
-		icon = GFX_goal_continuous_repairments
+		id = VED_foreign_deals
+		icon = GFX_goal_bag_of_money
+		x = 0
+		y = 1
+		relative_position_id = VED_kingdom_of_profits
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_kingdom_of_profits }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = TOG_free_trade_lock
+			add_ideas = VED_foreign_deals_idea
+		}
+	}
+
+	focus = {
+		id = VED_improved_farming_standards
+		icon = GFX_goal_SZC_improvised_farming_machinery
+		x = -1
+		y = 1
+		relative_position_id = VED_new_way_of_agriculture
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_new_way_of_agriculture }
+		prerequisite = { focus = VED_better_harvesters }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = VED_better_harvesters_idea add_idea = VED_improved_farming_standards_idea }
+		}
+	}
+
+	focus = {
+		id = VED_suburban_reindustrialization
+		icon = GFX_focus_generic_industry_2
+		x = 0
+		y = 1
+		relative_position_id = VED_improved_farming_standards
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_improved_farming_standards }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = TOG_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = TOG_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VED_equal_work_for_equal_pay
+		icon = GFX_focus_hol_abandon_the_gold_standard
 		x = 1
 		y = 1
-		relative_position_id = VED_new_tools
+		relative_position_id = VED_new_way_of_agriculture
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_new_tools }
+		prerequisite = { focus = VED_new_way_of_agriculture focus = VED_new_way_of_building }
 		ai_will_do = {
 			factor = 1
 		}
-	}
-
-	#Focus for New Tools
-	focus = {
-		id = VED_new_tools
-		#icon = 
-		x = -5
-		y = 1
-		relative_position_id = VED_industrial_revolution
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_industrial_revolution }
-		ai_will_do = {
-			factor = 1
+		completion_reward = {
+			add_stability = 0.10
+			decrease_poverty = yes
 		}
 	}
 
-	#Focus for Industrial Revolution
 	focus = {
-		id = VED_industrial_revolution
-		icon = GFX_goal_generic_air_production
+		id = VED_work_shifts
+		icon = GFX_goal_griffon_clock
 		x = 0
 		y = 1
-		relative_position_id = VED_building_our_economy
+		relative_position_id = VED_equal_work_for_equal_pay
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_building_our_economy }
+		prerequisite = { focus = VED_equal_work_for_equal_pay }
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = VED_work_shifts_idea
+		}
 	}
 
-	#Focus for Tungsten Grants
 	focus = {
-		id = VED_tungsten_grants
+		id = VED_improved_military_construction_standards
+		icon = GFX_goal_state_economy
+		x = 1
+		y = 1
+		relative_position_id = VED_new_way_of_building
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_new_way_of_building }
+		prerequisite = { focus = VED_better_tools }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = VED_new_way_of_building_idea add_idea = VED_improved_military_construction_standards_idea }
+		}
+	}
+
+	focus = {
+		id = VED_industrial_war_effort
+		icon = GFX_goal_industry_air
+		x = 0
+		y = 1
+		relative_position_id = VED_improved_military_construction_standards
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_improved_military_construction_standards }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VED_kullbotten_steel_mill
+		icon = GFX_focus_generic_steel
+		x = 1
+		y = 1
+		relative_position_id = VED_better_tools
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_better_tools }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 18
+				state = 484
+			}
+		}
+	}
+
+	focus = {
+		id = VED_expand_fjarrland_tungsten_mine
 		icon = GFX_focus_generic_tungsten
-		x = -2
+		x = 0
 		y = 1
+		relative_position_id = VED_kullbotten_steel_mill
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_kullbotten_steel_mill }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource = {
+				type = tungsten
+				amount = 12
+				state = 584
+			}
+		}
+	}
+
+	### SCIENCE ###
+
+	#Focus for The Scientific Method
+	focus = {
+		id = VED_the_scientific_method
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 8
+		y = 0
 		relative_position_id = VED_building_our_economy
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_building_our_economy }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Building Our Economy
-	focus = {
-		id = VED_building_our_economy
-		icon = GFX_goal_generic_consumer_goods
-		x = 18
-		y = 0
-		relative_position_id = VED_skoldsvards_military_reforms
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for The Nuclear Club
-	focus = {
-		id = VED_the_nuclear_club
-		icon = GFX_focus_wonderweapons
-		x = 0
-		y = 1
-		relative_position_id = VED_multiple_experiments
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_multiple_experiments }
 		ai_will_do = {
 			factor = 1
 		}
@@ -5108,26 +4959,6 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Scientific and Academic Awards
-	focus = {
-		id = VED_scientific_and_academic_awards
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = VED_common_cause
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = VED_sonar_tech 
-		}
-		prerequisite = { 
-			focus = VED_common_cause 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	#Focus for Expeditions into Zebrica
 	focus = {
 		id = VED_expeditions_into_zebrica
@@ -5138,51 +4969,6 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = VED_the_scientific_method }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for New Opportunities
-	focus = {
-		id = VED_new_opportunities
-		icon = GFX_goal_generic_neutrality_focus
-		x = 5
-		y = 1
-		relative_position_id = VED_industrial_revolution
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_industrial_revolution }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Better Harvesters
-	focus = {
-		id = VED_better_harvesters
-		icon = GFX_goal_generic_construct_civilian
-		x = -1
-		y = 1
-		relative_position_id = VED_new_tools
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_new_tools }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Steel Grants
-	focus = {
-		id = VED_steel_grants
-		icon = GFX_focus_generic_steel
-		x = 2
-		y = 1
-		relative_position_id = VED_building_our_economy
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_building_our_economy }
 		ai_will_do = {
 			factor = 1
 		}
@@ -5233,66 +5019,6 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Work Shifts
-	focus = {
-		id = VED_work_shifts
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = VED_a_more_bearable_9to5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_a_more_bearable_9to5 }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Suburban Re-Industrialization
-	focus = {
-		id = VED_suburban_reindustrialization
-		icon = GFX_focus_generic_industry_2
-		x = 0
-		y = 1
-		relative_position_id = VED_equal_work_for_equal_pay
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_equal_work_for_equal_pay }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for A More Bearable 9-to-5
-	focus = {
-		id = VED_a_more_bearable_9to5
-		icon = GFX_goal_unknown
-		x = -1
-		y = 1
-		relative_position_id = VED_new_opportunities
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_new_opportunities }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Equal Work for Equal Pay
-	focus = {
-		id = VED_equal_work_for_equal_pay
-		icon = GFX_focus_hol_abandon_the_gold_standard
-		x = 1
-		y = 1
-		relative_position_id = VED_new_opportunities
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_new_opportunities }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	### SKOLD ARMY ###
 
 	#Focus for Skoldsvard's Military Reforms
@@ -5306,6 +5032,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			army_experience = 10
+			air_experience = 10
+			navy_experience = 10
+			add_ideas = VED_skoldsvards_military_reforms_idea
 		}
 	}
 
@@ -5675,6 +5407,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = VED_mobile_bunkers_idea
+		}
 	}
 
 	#Focus for Marinejeger Kommando Troppe
@@ -5707,6 +5442,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = VED_the_orders_under_one_banner_idea
+		}
 	}
 
 	#Focus for Rally the Knights!
@@ -5715,12 +5453,15 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		x = 0
 		y = 1
-		relative_position_id = VED_the_trunaham_march
+		relative_position_id = VED_skoldsvards_military_reforms
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_the_trunaham_march }
+		prerequisite = { focus = VED_skoldsvards_military_reforms }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = knights_tech }
 		}
 	}
 
@@ -5730,12 +5471,15 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery2
 		x = -3
 		y = 1
-		relative_position_id = VED_the_trunaham_march
+		relative_position_id = VED_skoldsvards_military_reforms
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_the_trunaham_march }
+		prerequisite = { focus = VED_skoldsvards_military_reforms }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery }
 		}
 	}
 
@@ -5745,12 +5489,15 @@ focus_tree = {
 		icon = GFX_focus_usa_escort_fighters
 		x = 7
 		y = 1
-		relative_position_id = VED_the_trunaham_march
+		relative_position_id = VED_skoldsvards_military_reforms
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_the_trunaham_march }
+		prerequisite = { focus = VED_skoldsvards_military_reforms }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
 		}
 	}
 
@@ -5760,12 +5507,15 @@ focus_tree = {
 		icon = GFX_focus_generic_tank_production
 		x = 3
 		y = 1
-		relative_position_id = VED_the_trunaham_march
+		relative_position_id = VED_skoldsvards_military_reforms
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_the_trunaham_march }
+		prerequisite = { focus = VED_skoldsvards_military_reforms }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = armor }
 		}
 	}
 
@@ -5775,27 +5525,15 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_battleship
 		x = -7
 		y = 1
-		relative_position_id = VED_the_trunaham_march
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_the_trunaham_march }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for The Trunaham March
-	focus = {
-		id = VED_the_trunaham_march
-		icon = GFX_VED_the_trunaham_march-57665
-		x = 0
-		y = 1
 		relative_position_id = VED_skoldsvards_military_reforms
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = VED_skoldsvards_military_reforms }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = naval_equipment }
 		}
 	}
 
@@ -5845,6 +5583,9 @@ focus_tree = {
 		prerequisite = { focus = VED_a_different_kind_of_cannon }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = VED_recoiless_rifles_idea
 		}
 	}
 

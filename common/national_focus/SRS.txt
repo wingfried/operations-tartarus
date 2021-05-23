@@ -176,7 +176,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_national_security }
 		relative_position_id = SRS_national_security
 		mutually_exclusive = { focus = SRS_road_of_pragmatism }
-		x = -12
+		x = -10
 		y = 1
 		cost = 1
 		ai_will_do = {
@@ -688,7 +688,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_national_security }
 		mutually_exclusive = { focus = SRS_communist_asper }
 		relative_position_id = SRS_national_security
-		x = 12
+		x = 10
 		y = 1
 		cost = 1
 		ai_will_do = {
@@ -925,7 +925,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_dinkau_wall }
 		prerequisite = { focus = SRS_knights_of_socialism }
 		relative_position_id = SRS_dinkau_wall
-		x = 1
+		x = 0
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -984,7 +984,7 @@ focus_tree = {
 		icon = GFX_SRS_sickleclaw_doctrine
 		prerequisite = { focus = SRS_new_life_initiative }
 		relative_position_id = SRS_new_life_initiative
-		x = -5
+		x = -4
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -1211,7 +1211,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_vedinian_bounty }
 		relative_position_id = SRS_vedinian_bounty
 		mutually_exclusive = { focus = SRS_puppet_taxation }
-		x = -1
+		x = 0
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -1235,7 +1235,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_vedinian_bounty }
 		relative_position_id = SRS_vedinian_bounty
 		mutually_exclusive = { focus = SRS_puppet_cooperation }
-		x = 1
+		x = 2
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -1535,6 +1535,24 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SRS_randofoc1
+		#icon = GFX_goal_nested_fortifications
+		prerequisite = { focus = SRS_the_people_navy }
+		prerequisite = { focus = SRS_fortress_haukland }
+		relative_position_id = SRS_the_people_navy
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = SRS_operation_colonist
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		prerequisite = { focus = SRS_the_sickleclaw_doctrine }
@@ -1633,7 +1651,7 @@ focus_tree = {
 		icon = GFX_All_resource
 		prerequisite = { focus = SRS_nova_griffonia_development_initiative }
 		relative_position_id = SRS_nova_griffonia_development_initiative
-		x = 0
+		x = -1
 		y = 1
 		cost = 2.9
 		ai_will_do = {
@@ -1647,6 +1665,403 @@ focus_tree = {
 					amount = 6
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = SRS_randofoc2
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_nova_griffonia_development_initiative }
+		relative_position_id = SRS_nova_griffonia_development_initiative
+		x = 1
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofoc3
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_nova_griffonian_shinies }
+		prerequisite = { focus = SRS_randofoc2 }
+		relative_position_id = SRS_nova_griffonian_shinies
+		x = 1
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofoc4
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofoc3 }
+		prerequisite = { focus = SRS_randofoc1 }
+		relative_position_id = SRS_randofoc3
+		x = 0
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofoc5
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofoc4 }
+		prerequisite = { focus = SRS_turhamn_pact }
+		relative_position_id = SRS_randofoc4
+		x = 0
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofoc6
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofoc5 }
+		relative_position_id = SRS_randofoc5
+		mutually_exclusive = { focus = SRS_randofoc7 }
+		x = 0
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofoc7
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofoc5 }
+		relative_position_id = SRS_randofoc5
+		mutually_exclusive = { focus = SRS_randofoc6 }
+		x = 2
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofoc8
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofoc7 }
+		relative_position_id = SRS_randofoc7
+		x = 0
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofoc9
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofoc8 focus = SRS_randofoc6 }
+		relative_position_id = SRS_randofoc8
+		x = -2
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofocB1
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofoc9 }
+		relative_position_id = SRS_randofoc9
+		x = -1
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofocB2
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofocB1 }
+		relative_position_id = SRS_randofocB1
+		x = 0
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofocB3
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofocB2 }
+		relative_position_id = SRS_randofocB2
+		x = 0
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofocB4
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofocB3 }
+		relative_position_id = SRS_randofocB3
+		x = 0
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofocB5
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofocB4 }
+		relative_position_id = SRS_randofocB4
+		x = 0
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofocB6
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofoc9 }
+		relative_position_id = SRS_randofoc9
+		x = 1
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofocB7
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofocB6 }
+		relative_position_id = SRS_randofocB6
+		x = 0
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofocB8
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofocB7 }
+		relative_position_id = SRS_randofocB7
+		x = 0
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofocA1
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofoc8 }
+		relative_position_id = SRS_randofoc8
+		x = 2
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofocA2
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofocA1 }
+		relative_position_id = SRS_randofocA1
+		x = -1
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofocA3
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofocA2 }
+		relative_position_id = SRS_randofocA2
+		x = 0
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofocA4
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofocA1 }
+		relative_position_id = SRS_randofocA1
+		x = 1
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofocA5
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofocA4 }
+		relative_position_id = SRS_randofocA4
+		x = 0
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofocA6
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofocA3 }
+		prerequisite = { focus = SRS_randofocA5 }
+		relative_position_id = SRS_randofocA3
+		x = 1
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SRS_randofocA7
+		#icon = GFX_All_resource
+		prerequisite = { focus = SRS_randofocA6 }
+		relative_position_id = SRS_randofocA6
+		x = 0
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
 		}
 	}
 
@@ -1691,8 +2106,8 @@ focus_tree = {
         #icon = GFX_SRS_turhamn_pact
         prerequisite = { focus = SRS_turhamn_pact }
         prerequisite = { focus = SRS_defensive_equipment }
-        relative_position_id = SRS_turhamn_pact
-        x = -4
+        relative_position_id = SRS_defensive_equipment
+        x = 0
         y = 1
         cost = 7.2
         ai_will_do = {
@@ -2453,11 +2868,12 @@ focus_tree = {
         icon = GFX_goal_commune_politics
         prerequisite = { focus = SRS_socialism_abroad }
         relative_position_id = SRS_socialism_abroad
+        mutually_exclusive = { focus = SRS_prywhen_cooperation }
         available = {
         	country_exists = STG
         	STG = { has_capitulated = no }
         }
-        x = 0
+        x = -2
         y = 1
         cost = 5
         ai_will_do = {
@@ -2601,11 +3017,12 @@ focus_tree = {
         icon = GFX_SRS_friendship_with_prywhen
         prerequisite = { focus = SRS_socialism_abroad }
         relative_position_id = SRS_socialism_abroad
+        mutually_exclusive = { focus = SRS_stalliongrad_cooperation }
         available = {
         	country_exists = GRW
         	GRW = { has_capitulated = no }
         }
-        x = 6
+        x = 2
         y = 1
         cost = 5
         ai_will_do = {
@@ -2708,104 +3125,11 @@ focus_tree = {
 	}
 
 	focus = {
-        id = SRS_stalliongrad_prywhen_political_effort
-        #icon = GFX_SRS_power_of_the_printed_word
-        prerequisite = { focus = SRS_stalliongrad_cooperation focus = SRS_prywhen_cooperation }
-        relative_position_id = SRS_stalliongrad_cooperation
-        x = 3
-        y = 1
-        cost = 5
-        ai_will_do = {
-            factor = 12
-        }
-        completion_reward = {
-        	
-        }
-            
-	}
-
-	focus = {
-        id = SRS_stalliongrad_prywhen_another_one
-        #icon = GFX_SRS_power_of_the_printed_word
-        prerequisite = { focus = SRS_test_STG_newest_weapons focus = SRS_socialist_politics_101 }
-        prerequisite = { focus = SRS_stalliongrad_prywhen_political_effort }
-        relative_position_id = SRS_stalliongrad_prywhen_political_effort
-        x = 0
-        y = 1
-        cost = 5
-        ai_will_do = {
-            factor = 12
-        }
-        completion_reward = {
-        	
-        }
-            
-	}
-
-	focus = {
-        id = SRS_give_prywhen_stalliongrad_bonuses
-        #icon = GFX_SRS_power_of_the_printed_word
-        prerequisite = { focus = SRS_pan_socialist_tech_exchange }
-        prerequisite = { focus = SRS_stalliongrad_prywhen_another_one }
-        relative_position_id = SRS_stalliongrad_prywhen_another_one
-        x = -1
-        y = 1
-        cost = 5
-        ai_will_do = {
-            factor = 12
-        }
-        completion_reward = {
-        	
-        }
-            
-	}
-
-	focus = {
-        id = SRS_give_stalliongrad_prywhen_bonuses
-        #icon = GFX_SRS_power_of_the_printed_word
-        prerequisite = { focus = SRS_propaganda_machine_goes_brrrt }
-        prerequisite = { focus = SRS_stalliongrad_prywhen_another_one }
-        relative_position_id = SRS_stalliongrad_prywhen_another_one
-        x = 1
-        y = 1
-        cost = 5
-        ai_will_do = {
-            factor = 12
-        }
-        completion_reward = {
-        	
-        }
-            
-	}
-
-	focus = {
         id = SRS_stalliongrad_union
         #icon = GFX_SRS_power_of_the_printed_word
         prerequisite = { focus = SRS_collective_mining_effort }
-        relative_position_id = SRS_give_prywhen_stalliongrad_bonuses
-        mutually_exclusive = { focus = SRS_stalliongrad_prywhen_union }
-        mutually_exclusive = { focus = SRS_prywhen_union }
-        x = -2
-        y = 1
-        cost = 5
-        ai_will_do = {
-            factor = 12
-        }
-        completion_reward = {
-        	
-        }
-            
-	}
-
-	focus = {
-        id = SRS_stalliongrad_prywhen_union
-        #icon = GFX_SRS_power_of_the_printed_word
-        prerequisite = { focus = SRS_give_prywhen_stalliongrad_bonuses }
-        prerequisite = { focus = SRS_give_stalliongrad_prywhen_bonuses }
-        relative_position_id = SRS_give_prywhen_stalliongrad_bonuses
-        mutually_exclusive = { focus = SRS_stalliongrad_union }
-        mutually_exclusive = { focus = SRS_prywhen_union }
-        x = 1
+        relative_position_id = SRS_collective_mining_effort
+        x = 0
         y = 1
         cost = 5
         ai_will_do = {
@@ -2821,11 +3145,9 @@ focus_tree = {
         id = SRS_prywhen_union
         #icon = GFX_SRS_power_of_the_printed_word
         #prerequisite = { focus = SRS_give_prywhen_stalliongrad_bonuses }
-        relative_position_id = SRS_give_prywhen_stalliongrad_bonuses
-        mutually_exclusive = { focus = SRS_stalliongrad_union }
-        mutually_exclusive = { focus = SRS_stalliongrad_prywhen_union }
+        relative_position_id = SRS_prywhen_thingy_3
         prerequisite = { focus = SRS_prywhen_thingy_3 }
-        x = 4
+        x = 0
         y = 1
         cost = 5
         ai_will_do = {
@@ -3637,7 +3959,7 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_1
 		prerequisite = { focus = SRS_new_life_initiative }
 		relative_position_id = SRS_new_life_initiative
-		x = 9
+		x = 12
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -4120,7 +4442,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 2
+		x = 1
 		y = 1
 		cost = 4.4
 		ai_will_do = {
@@ -4286,7 +4608,7 @@ focus_tree = {
 		icon = GFX_goal_oil_derrick
 		prerequisite = { focus = SRS_ostfloy_infrastructure }
 		relative_position_id = SRS_ostfloy_infrastructure
-		x = 0
+		x = -1
 		y = 1
 		cost = 7.2
 		ai_will_do = {
@@ -4313,7 +4635,7 @@ focus_tree = {
 		icon = GFX_goal_chn_red_economic_boom
 		prerequisite = { focus = SRS_start_extracting }
 		relative_position_id = SRS_start_extracting
-		x = 0
+		x = 1
 		y = 1
 		cost = 4.4
 		ai_will_do = {
@@ -4358,7 +4680,7 @@ focus_tree = {
 		icon = GFX_focus_generic_rubber
 		prerequisite = { focus = SRS_backup_plan }
 		relative_position_id = SRS_backup_plan
-		x = 0
+		x = -1
 		y = 1
 		cost = 4.4
 		ai_will_do = {
@@ -4384,7 +4706,7 @@ focus_tree = {
 		icon = GFX_goal_chn_red_military_factories
 		prerequisite = { focus = SRS_money_coming_in }
 		relative_position_id = SRS_money_coming_in
-		x = 3
+		x = 2
 		y = 1
 		cost = 5.8
 		ai_will_do = {
@@ -4753,7 +5075,7 @@ focus_tree = {
 			NOT = { country_exists = KAT }
 			NOT = { country_exists = ANG }
 		}
-		x = -1
+		x = 0
 		y = 1
 		cost = 7.2
 		ai_will_do = {
@@ -4784,7 +5106,7 @@ focus_tree = {
 			NOT = { country_exists = KAT }
 			NOT = { country_exists = ANG }
 		}
-		x = 1
+		x = 0
 		y = 1
 		cost = 7.2
 		ai_will_do = {
@@ -4846,7 +5168,7 @@ focus_tree = {
 			NOT = { country_exists = KAT }
 			NOT = { country_exists = ANG }
 		}
-		x = 1
+		x = 0
 		y = 1
 		cost = 7.2
 		ai_will_do = {
@@ -4877,7 +5199,7 @@ focus_tree = {
 			NOT = { country_exists = KAT }
 			NOT = { country_exists = ANG }
 		}
-		x = -1
+		x = 0
 		y = 1
 		cost = 7.2
 		ai_will_do = {
@@ -5015,9 +5337,9 @@ focus_tree = {
 	focus = {
 		id = SRS_postwar_prosperity
 		icon = GFX_goal_griffon_money_growth
-		prerequisite = { focus = SRS_herzland_conquered }
-		relative_position_id = SRS_herzland_conquered
-		x = -5
+		prerequisite = { focus = SRS_bestboi }
+		relative_position_id = SRS_bestboi
+		x = -3
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -5100,6 +5422,23 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = SRS_blarht1
+		#icon = GFX_goal_revolution
+		prerequisite = { focus = SRS_serf_emancipation }
+		relative_position_id = SRS_serf_emancipation
+		x = 0
+		y = 1
+		cost = 7.2
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
 	
 	focus = {
 		id = SRS_revoke_the_privilegia
@@ -5107,7 +5446,7 @@ focus_tree = {
 		prerequisite = { focus = SRS_land_redistribution }
 		prerequisite = { focus = SRS_serf_emancipation }
 		relative_position_id = SRS_serf_emancipation
-		x = 1
+		x = 2
 		y = 1
 		cost = 7.2
 		ai_will_do = {
@@ -5159,9 +5498,9 @@ focus_tree = {
 	focus = {
 		id = SRS_unite_griffonkind
 		icon = GFX_focus_indy_swing_the_sword
-		prerequisite = { focus = SRS_herzland_conquered }
-		relative_position_id = SRS_herzland_conquered
-		x = 5
+		prerequisite = { focus = SRS_bestboi }
+		relative_position_id = SRS_bestboi
+		x = 3
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -5289,12 +5628,12 @@ focus_tree = {
 		icon = GFX_goal_liberty
 		prerequisite = { focus = SRS_revoke_the_privilegia }
 		prerequisite = { focus = SRS_protecc_the_worker }
-		prerequisite = { focus = SRS_bestboi }
 		prerequisite = { focus = SRS_core_doggos }
 		prerequisite = { focus = SRS_core_griffenheim }
 		prerequisite = { focus = SRS_foreign_legion }
-		relative_position_id = SRS_bestboi
-		x = 0
+		prerequisite = { focus = SRS_blarht1 }
+		relative_position_id = SRS_protecc_the_worker
+		x = 1
 		y = 1
 		cost = 10
 		ai_will_do = {

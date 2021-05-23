@@ -2,6 +2,415 @@ ideas = {
 
 	country = {
 
+		VED_work_shifts_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				modifier_income_civilian_factories_efficiency = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		VED_foreign_deals_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = 0.25
+				faction_trade_opinion_factor = 0.25
+				local_resources_factor = 0.25
+			}
+		}
+
+		VED_better_tools_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			equipment_bonus = {
+				maintenance_company = {
+					reliability_factor = 0.05
+				}
+			}
+		}
+
+		VED_recoiless_rifles_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_artillery_attack_factor = 0.05
+				army_artillery_defence_factor = 0.05
+			}
+		}
+
+		VED_the_orders_under_one_banner_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				modifier_army_sub_unit_knights_attack_factor = 0.05
+				modifier_army_sub_unit_knights_defence_factor = 0.05
+			}
+		}
+
+		VED_mobile_bunkers_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+			}
+		}
+
+		VED_skoldsvards_military_reforms_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+
+		VED_new_way_of_building_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		VED_improved_military_construction_standards_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				modifier_expenses_military_factories_efficiency = -0.10
+			}
+		}
+
+		VED_our_entry_into_the_weapon_industry_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = 0.03
+					build_cost_ic = -0.05
+				}
+			}
+			modifier = {
+			}
+		}
+
+		VED_better_harvesters_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				modifier_yield_farms_efficiency = 0.05
+				modifier_expenses_farms_efficiency = -0.05
+			}
+		}
+
+		VED_improved_farming_standards_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				modifier_yield_farms_efficiency = 0.15
+				modifier_expenses_farms_efficiency = -0.10
+				production_speed_TOG_farm_factor = -0.10
+			}
+		}
+
+		VED_the_second_succesion_crisis_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.005
+				political_power_factor = -0.2
+				war_support_factor = -0.2
+				recruitable_population_factor = -0.1
+			}
+		}
+
+		VED_the_second_succesion_crisis_2_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.2
+				war_support_factor = -0.2
+				recruitable_population_factor = -0.1
+			}
+		}
+
+		VED_constitutional_rights_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				compliance_growth = 0.1
+				democratic_drift = 0.05
+			}
+		}
+
+		VED_constitutional_rights_2_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				compliance_growth = 0.1
+				democratic_drift = 0.05
+			}
+		}
+
+		VED_constitutional_rights_3_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				compliance_growth = 0.1
+				democratic_drift = 0.05
+				political_power_factor = 0.10
+			}
+		}
+
+		VED_skattskyldigaval_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				modifier_income_taxes_efficiency = -0.01
+			}
+		}
+
+		VED_revocable_titles_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_advisor_cost_factor = -0.2
+			}
+		}
+
+		VED_welfare_socialization_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				monthly_population = 0.10
+			}
+		}
+
+		VED_new_noble_customs_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.005
+			}
+		}
+
+		VED_new_noble_customs_2_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.005
+				army_leader_cost_factor = -0.10
+			}
+		}
+
+		VED_free_public_education_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				modifier_expenses_education = 0.10
+				research_speed_factor = 0.10
+			}
+		}
+
+		VED_royal_bank_of_vedina_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				modifier_income_civilian_factories_efficiency = 0.10
+			}
+		}
+
+		VED_peasants_welfare_act_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				modifier_income_civilian_factories_efficiency = -0.05
+				modifier_yield_farms_efficiency = 0.10
+			}
+		}
+
 		VED_more_reliable_weapons_idea = {
 			allowed = {
 				always = yes
@@ -561,8 +970,8 @@ ideas = {
 			
 			equipment_bonus = {
 				maintenance_company = {
-				reliability_factor = 0.05
-				equipment_capture_factor = 0.05
+					reliability_factor = 0.05
+					equipment_capture_factor = 0.05
 				}
 			}
 		}

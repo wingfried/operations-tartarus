@@ -1,12 +1,17 @@
 ﻿l_english:
 
- ECONOMY_TOOLTIP:0 "§YEconomy§!\n§GMonthly Income§!\nTaxes (§Y[?coins_current_country_tax]%§!): §G[?coins_country_tax]§! Million [Root.GetEconomyTooltip]\nSubject Taxes (§Y[?coins_current_puppet_tax]%§!): §G[?coins_from_puppets]§! Million [Root.GetEconomyTooltip]\nFrom Other Countries: §G[?coins_from_countries]§! Million [Root.GetEconomyTooltip]\nCivilian Factories (§Y[?coins_civilian_factories_value]%§!): §G[?coins_civilian_factories]§! Million [Root.GetEconomyTooltip]\nExported Resources: §G[?coins_resources_exported]§! Million [Root.GetEconomyTooltip]\nTotal Income: §G[?coins_total_income]§! Million [Root.GetEconomyTooltip]\n\n§RMonthly Expenses§!\nOverlord (§Y[?coins_current_overlord_tax]%§!): §R-[?coins_to_overlord]§! Million [Root.GetEconomyTooltip]\nTo Other Countries: §R-[?coins_to_countries]§! Million [Root.GetEconomyTooltip]\nEducation: §R-[?coins_education]§! Million [Root.GetEconomyTooltip]\nArmy Spending: §R-[?coins_army]§! Million [Root.GetEconomyTooltip]\nMilitary Factories: §R-[?coins_military_factories]§! Million [Root.GetEconomyTooltip]\nNaval Factories: §R-[?coins_naval_factories]§! Million [Root.GetEconomyTooltip]\nImported Resources: §R-[?coins_resources_imported]§! Million [Root.GetEconomyTooltip]\nGreat Depression: §R-[?coins_depression]§! Million [Root.GetEconomyTooltip]\nInfrastructure Upkeep: §R-[?coins_infrastructure]§! Million [Root.GetEconomyTooltip]\nOccupation Cost: §R-[?coins_occupation]§! Million [Root.GetEconomyTooltip]\nDebt Payment: §R-[?debtexp]§! Million [Root.GetEconomyTooltip]\nTotal Expenses: §R-[?coins_total_expenses]§! Million [Root.GetEconomyTooltip]\n\nWe Make: §Y[?coins_this_month]§! Million [Root.GetEconomyTooltip]\nTotal Debt: §R[?coins_debt_total]§! Million [Root.GetEconomyTooltip]\n\nBought Civ: [?coins_bought_civilian_factories]\nBought Mil: [?coins_bought_military_factories]"
+ ECONOMY_TOOLTIP:0 "§YEconomy§!\n§GMonthly Income§!\nTaxes (§Y[?coins_current_country_tax]%§!): §G[?coins_country_tax]§! Million [Root.GetEconomyTooltip]\nSubject Taxes (§Y[?coins_current_puppet_tax]%§!): §G[?coins_from_puppets]§! Million [Root.GetEconomyTooltip]\nDonations: §G[?coins_from_countries]§! Million [Root.GetEconomyTooltip]\nCivilian Factories (§Y[?coins_civilian_factories_value]%§!): §G[?coins_civilian_factories]§! Million [Root.GetEconomyTooltip]\nExported Resources: §G[?coins_resources_exported]§! Million [Root.GetEconomyTooltip]\nTotal Income: §G[?coins_total_income]§! Million [Root.GetEconomyTooltip]\n\n§RMonthly Expenses§!\nOverlord (§Y[?coins_current_overlord_tax]%§!): §R-[?coins_to_overlord]§! Million [Root.GetEconomyTooltip]\nDonations: §R-[?coins_to_countries]§! Million [Root.GetEconomyTooltip]\nEducation: §R-[?coins_education]§! Million [Root.GetEconomyTooltip]\nArmy Spending: §R-[?coins_army]§! Million [Root.GetEconomyTooltip]\nMilitary Factories: §R-[?coins_military_factories]§! Million [Root.GetEconomyTooltip]\nNaval Factories: §R-[?coins_naval_factories]§! Million [Root.GetEconomyTooltip]\nImported Resources: §R-[?coins_resources_imported]§! Million [Root.GetEconomyTooltip]\nPoverty: §R-[?coins_depression]§! Million [Root.GetEconomyTooltip]\nInfrastructure Upkeep: §R-[?coins_infrastructure]§! Million [Root.GetEconomyTooltip]\nOccupation Cost: §R-[?coins_occupation]§! Million [Root.GetEconomyTooltip]\nDebt Payment: §R-[?debtexp]§! Million [Root.GetEconomyTooltip]\nTotal Expenses: §R-[?coins_total_expenses]§! Million [Root.GetEconomyTooltip]\n\nWe Make: §Y[?coins_this_month]§! Million [Root.GetEconomyTooltip]\nTotal Debt: §R[?coins_debt_total]§! Million [Root.GetEconomyTooltip]\n\nBought Civ: [?coins_bought_civilian_factories]\nBought Mil: [?coins_bought_military_factories]"
  BIT_TOOLTIP:0 "Bits"
  IDOL_TOOLTIP:0 "Idols"
  COIN_TOOLTIP:0 "Coins"
 
  ECONOMY_MAIN:0 "[?coins_total] M"
  ECONOMY_DEBT:0 "§YYou Have [?coins_debt_total] Debt§!"
+
+ ASK_FOR_MONEY_ACTION_KEY_TITLE:0 "Ask for Money"
+ ASK_FOR_MONEY_ACTION_KEY_ACTION_DESC:0 "Ask them for money."
+ OFFER_MONEY_ACTION_KEY_TITLE:0 "Offer Money"
+ OFFER_MONEY_ACTION_KEY_ACTION_DESC:0 "Give them some money."
 
  build_civ_factory_tp:0 "§Y5.00M§! is removed from the national funds."
  build_mil_factory_tp:0 "§Y5.00M§! is removed from the national funds."
@@ -47,15 +52,27 @@
  all_puppet_taxes_tt:0 "Puppet Taxes: §Y30%§!"
 
  #INCOME
+ modifier_income_taxes:0 "§GMonthly Income:§! Taxes"
+ modifier_income_taxes_efficiency:0 "§GMonthly Income:§! Taxes Efficiency"
+ modifier_income_subject_taxes:0 "§GMonthly Income:§! Subject Taxes"
+ modifier_income_subject_taxes_efficiency:0 "§GMonthly Income:§! Subject Taxes Efficiency"
+ modifier_income_from_other_countries:0 "§GMonthly Income:§! Donations"
+ modifier_income_civilian_factories:0 "§GMonthly Income:§! Civilian Factories"
+ modifier_income_civilian_factories_efficiency:0 "§GMonthly Income:§! Civilian Factories Efficiency"
+ modifier_income_exported_resources:0 "§GMonthly Income:§! Exported Resources"
+ modifier_income_exported_resources_efficiency:0 "§GMonthly Income:§! Exported Resources Efficiency"
 
  #EXPENSES
  modifier_expenses_overlord:0 "§RMonthly Expenses:§! Overlord"
  modifier_expenses_overlord_efficiency:0 "§RMonthly Expenses:§! Overlord"
 
- modifier_expenses_to_other_countries:0 "§RMonthly Expenses:§! To Other Countries"
+ modifier_expenses_to_other_countries:0 "§RMonthly Expenses:§! Donations"
 
  modifier_expenses_education:0 "§RMonthly Expenses:§! Education"
  modifier_expenses_education_efficiency:0 "§RMonthly Expenses:§! Education"
+
+ modifier_expenses_farms:0 "§RMonthly Expenses:§! Farms"
+ modifier_expenses_farms_efficiency:0 "§RMonthly Expenses:§! Farms"
 
  modifier_expenses_army_spending:0 "§RMonthly Expenses:§! Army Spending"
  modifier_expenses_army_spending_efficiency:0 "§RMonthly Expenses:§! Army Spending"
@@ -69,7 +86,7 @@
  modifier_expenses_imported_resources:0 "§RMonthly Expenses:§! Imported Resources"
  modifier_expenses_imported_resources_efficiency:0 "§RMonthly Expenses:§! Imported Resources"
 
- modifier_expenses_great_depression:0 "§RMonthly Expenses:§! Great Depression"
+ modifier_expenses_great_depression:0 "§RMonthly Expenses:§! Poverty"
 
  modifier_expenses_infrastructure_upkeep:0 "§RMonthly Expenses:§! §YInfrastructure§! Upkeep"
  modifier_expenses_infrastructure_upkeep_efficiency:0 "§RMonthly Expenses:§! §YInfrastructure§! Upkeep"
@@ -78,3 +95,4 @@
  modifier_expenses_occupation_cost_efficiency:0 "§RMonthly Expenses:§! Occupation Cost"
 
  modifier_expenses_debt_payment:0 "§RMonthly Expenses:§! Debt Payment"
+ 

@@ -1,13 +1,10 @@
 ﻿l_english:
 
  ### COUNTRY LEADER TRAITS ###
-
  military_leader_trait:0 "Head of the Army"
- 
  minority_supporter_trait:0 "Minority Supporter"
 
- ### ACCEPT/HATE IDEOLOGY LEADER TRAIT ###
-
+ ### ACCEPT/HATE IDEOLOGY LEADER TRAITS ###
  accept_democracy_trait:0 "Acceptor of Harmonist Ideology"
  hate_democracy_trait:0 "Hater of Harmonist Ideology"
 
@@ -36,3 +33,19 @@
  accept_magocracy_trait:0 "Acceptor of Magocratic Ideology"
  hate_magocracy_trait:0 "Hater of Magocratic Ideology"
  tog_magocracy_acceptance:0 "Acceptance of Magocratic Diplomacy"
+
+ ### ADVISOR TRAITS ###
+ technocratic_demagogue:0 "Technocratic Reformer"
+ anarchist_demagogue:0 "Anarchist Revolutionary"
+
+ ### MILITARY STAFF TRAITS ###
+ army_instructor_1:0 "Army Instructor\n(Specialist)"
+ army_instructor_2:0 "Army Instructor\n(Expert)"
+ army_instructor_3:0 "Army Instructor\n(Genius)"
+
+ army_medic_1:0 "Chief Medic\n(Specialist)"
+ army_medic_2:0 "Chief Medic\n(Expert)"
+ army_medic_3:0 "Chief Medic\n(Genius)"
+
+ ### SRS ADVISORS TRAITS ###
+ lavclaw_beria_trait:0 "Chef of Security and Internal Affairs"

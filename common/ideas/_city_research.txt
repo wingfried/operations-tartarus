@@ -31,6 +31,7 @@ ideas = {
 				}
 			}
 			modifier = {
+				modifier_expenses_education = 0.30
 			}
 			ai_will_do = {
 				factor = 10000
@@ -74,7 +75,7 @@ ideas = {
 			}
 			modifier = {
 				research_speed_factor = -0.3
-				political_power_gain = 0.1
+				modifier_expenses_education = 0.20
 			}
 			ai_will_do = {
 				factor = 100
@@ -123,7 +124,7 @@ ideas = {
 			}
 			modifier = {
 				research_speed_factor = -0.55
-				political_power_gain = 0.2
+				modifier_expenses_education = 0.10
 			}
 			ai_will_do = {
 				factor = 20
@@ -165,7 +166,6 @@ ideas = {
 			}
 			modifier = {
 				research_speed_factor = -0.8
-				political_power_gain = 0.3
 			}
 			ai_will_do = {
 				factor = 2

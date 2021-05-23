@@ -2,6 +2,8 @@
 
  ### GAME RULES ###
 
+ RULE_GROUP_EXTRA_CONTENT_TOG:0 "Tales of Griffonia"
+
  RULE_ALLOW_OFFICER_RANKS:0 "Officer Ranks"
  RULE_OPTION_DEFAULT_OFFICER_RANKS_DESC:0 "Officers will have ranks assigned to them."
  RULE_OPTION_NO_RANKS:0 "Remove Officer Ranks"

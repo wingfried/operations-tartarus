@@ -1,0 +1,46 @@
+#background sprite is in frontendmainviewbg.gfx
+
+spriteTypes = {
+	textSpriteType = {
+		name = "GFX_main_lobby_button"
+		textureFile = "gfx/interface/main_lobby_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+		
+	spriteType = {
+		name = "GFX_frontend_game_logo"
+		texturefile = "gfx/interface/logo_game.dds"
+	}
+	spriteType = {
+		name = "GFX_frontend_game_logo_2"
+		texturefile = "gfx/interface/logo_game_2.dds"
+	}
+	spriteType = {
+		name = "GFX_frontend_game_logo_2_off"
+		texturefile = "gfx/interface/logo_game_2_off.dds"
+	}
+	spriteType = {
+		name = "GFX_frontend_game_logo_3"
+		texturefile = "gfx/interface/logo_game_3.dds"
+	}
+	spriteType = {
+		name = "GFX_frontend_game_logo_3_off"
+		texturefile = "gfx/interface/logo_game_3_off.dds"
+	}
+
+	spriteType = {
+		name = "GFX_frontend_dev_logo"
+		texturefile = "gfx/interface/pdx_dev_logo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_alpha_stamp"
+		texturefile = "gfx/interface/alpha_stamp.dds"
+	}
+
+	spriteType = {
+		name = "GFX_socialview_icon"
+		texturefile = "gfx/interface/icons/pi_icon.dds"
+	}
+}

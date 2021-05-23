@@ -3,3 +3,23 @@
  FOOD_TOOLTIP:0 "§YFood§!\n§GMonthly Yield§!\nFarms (§Y100%§!): §G0.4§! Megatonnes\nDonations: §G[?coins_from_countries]§! Megatonnes\nImported Food: §G[?coins_resources_exported]§! Megatonnes\nTotal Yield: §G[?coins_total_income]§! Megatonnes\n\n§RMonthly Consumption§!\nPopulation (§Y[?coins_current_overlord_tax]%§!): §R-[?coins_to_overlord]§! Megatonnes\nDonations: §R-[?coins_to_countries]§! Megatonnes\nExported Food: §R-[?coins_resources_imported]§! Megatonnes\nTotal Consumption: §R-[?coins_total_expenses]§! Megatonnes\n\nWe Make: §Y[?coins_this_month]§! Megatonnes"
 
  FOOD_MAIN:0 "2 Mt"
+
+ modifier_yield_farms:0 "§GMonthly Yield:§! Farms"
+ modifier_yield_farms_efficiency:0 "§GMonthly Yield:§! Farms Efficiency"
+ modifier_yield_donations:0 "§GMonthly Yield:§! Donations"
+ modifier_yield_donations_efficiency:0 "§GMonthly Yield:§! Donations Efficiency"
+ modifier_yield_imported_food:0 "§GMonthly Yield:§! Imported Food"
+ modifier_yield_imported_food_efficiency:0 "§GMonthly Yield:§! Imported Food Efficiency"
+ modifier_consumption_population:0 "§RMonthly Consumption:§! Population"
+ modifier_consumption_population_efficiency:0 "§RMonthly Consumption:§! Population Efficiency"
+ modifier_consumption_donations:0 "§RMonthly Consumption:§! Donations"
+ modifier_consumption_donations_efficiency:0 "§RMonthly Consumption:§! Donations Efficiency"
+ modifier_consumption_exported_food:0 "§RMonthly Consumption:§! Exported Food"
+ modifier_consumption_exported_food_efficiency:0 "§RMonthly Consumption:§! Exported Food Efficiency"
+ 
+ PRODUCTION_MATERIALS_TOG_FOOD:0 "Food"
+ TOG_food_desc:0 "Food is a type of resource that makes your population not die from starvation."
+ TOG_farm:0 "Farm"
+ TOG_farm_plural:0 "Farms"
+ TOG_farm_desc:0 "\nThis building provides the state with +8 £resources_strip|8"
+ modifier_production_speed_TOG_farm_factor:0 "§YFarm§! construction speed"

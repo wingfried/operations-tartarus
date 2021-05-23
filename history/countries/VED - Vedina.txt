@@ -99,6 +99,7 @@ set_politics = {
 add_ideas = { 
 	VED_Chivalry_Knights_idea
 	TOG_eco_great_depression_2_idea
+	TOG_outdated_agriculture_idea
 	pre_industrial_society 
 	lack_of_scientists1
 	poverty3 
@@ -186,6 +187,7 @@ create_corps_commander = {
 	name = "Count Aluvia"
 	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_13.dds"
 	traits = { griffon_race_trait infantry_leader old_guard }
+	id = 42901
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
@@ -197,6 +199,7 @@ create_corps_commander = {
 	name = "Sir Ventrue Hansson"
 	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_5.dds"
 	traits = { griffon_race_trait career_officer }
+	id = 42902
 	skill = 2
 	attack_skill = 3
 	defense_skill = 2
@@ -208,6 +211,7 @@ create_corps_commander = {
 	name = "Camarilla Allvar"
 	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_15.dds"
 	traits = { griffon_race_trait hill_fighter }
+	id = 42903
 	skill = 1
 	attack_skill = 1
 	defense_skill = 2
@@ -219,6 +223,7 @@ create_corps_commander = {
 	name = "Daltanye Backström"
 	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_9.dds"
 	traits = { griffon_race_trait }
+	id = 42904
 	skill = 1
 	attack_skill = 2
 	defense_skill = 1
@@ -230,6 +235,7 @@ create_navy_leader = {
 	name = "Gustav Garrensson"
 	portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_navy_7.dds"
 	traits = { griffon_race_trait gentlemanly }
+	id = 42905
 	skill = 2
 	attack_skill = 1
 	defense_skill = 3
