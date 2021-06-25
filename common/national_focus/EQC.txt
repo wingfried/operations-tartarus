@@ -5866,7 +5866,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = EQC_pay_250k_tp
 			add_ideas = EQC_fund_genius_minds_idea
 			add_ideas = EQC_adelheid_von_schugel
 		}
@@ -5926,7 +5925,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = EQC_pay_500k_tp
 			swap_ideas = { remove_idea = EQC_fund_genius_minds_idea add_idea = EQC_investment_in_research }
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -5953,7 +5951,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = EQC_new_mareland_scientists_idea
+			add_ideas = TOG_national_scientists_idea
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -5979,8 +5977,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_stability = -0.05
-			add_ideas = EQC_foreign_scientists_idea
+			#add_stability = -0.05
+			add_ideas = TOG_foreign_scientists_idea
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -6109,7 +6107,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = EQC_pay_250k_tp
 			add_tech_bonus = { bonus = 0.5 uses = 1 category = construction_tech }
 			add_ideas = EQC_construction_companies_idea
 		}
@@ -6169,7 +6166,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = EQC_pay_500k_tp
 			add_tech_bonus = { bonus = 1.0 uses = 1 category = construction_tech }
 			swap_ideas = { add_idea = EQC_investment_in_economy remove_idea = EQC_construction_companies_idea }
 		}

@@ -182,7 +182,314 @@ defined_text = {
 		localization_key = "GFX_GFG_ROSEFEATHER"
 	}
 	text = {
-		localization_key = "GFX_portrait_bg_blank"
+		localization_key = "GFX_portrait_bg_transparent"
+	}
+}
+
+defined_text = {
+    name = GetDualLeaderBackground
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					tag = EQS
+					has_government = democratic
+				}
+				AND = {
+					tag = EQC
+					has_government = democratic
+				}
+				AND = {
+					tag = CRY
+					has_government = democratic
+				}
+				AND = {
+					tag = VED
+					has_government = democratic
+				}
+				AND = {
+					tag = GFG
+					has_government = fascism
+				}
+			}
+		}
+		localization_key = "GFX_pol_leader_frame"
+	}
+	text = {
+		localization_key = "GFX_portrait_bg_transparent"
+	}
+}
+
+defined_text = {
+    name = GetPoliticalViewBackground
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					tag = EQS
+					has_government = democratic
+				}
+				AND = {
+					tag = EQC
+					has_government = democratic
+				}
+				AND = {
+					tag = CRY
+					has_government = democratic
+				}
+				AND = {
+					tag = VED
+					has_government = democratic
+				}
+				AND = {
+					tag = GFG
+					has_government = fascism
+				}
+			}
+		}
+		localization_key = "GFX_pol_view_bg_add"
+	}
+	text = {
+		localization_key = "GFX_portrait_bg_transparent"
+		#localization_key = "GFX_pol_view_bg_not"
+	}
+}
+
+defined_text = {
+    name = GetLeaderNameDL
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					tag = EQS
+					has_government = democratic
+				}
+				AND = {
+					tag = EQC
+					has_government = democratic
+				}
+				AND = {
+					tag = CRY
+					has_government = democratic
+				}
+				AND = {
+					tag = VED
+					has_government = democratic
+				}
+				AND = {
+					tag = GFG
+					has_government = fascism
+				}
+			}
+		}
+		localization_key = "show_first_name_dl"
+	}
+	text = {
+		localization_key = "blank_dl"
+	}
+}
+
+defined_text = {
+    name = GetLeaderPopDL
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					tag = EQS
+					has_government = democratic
+				}
+				AND = {
+					tag = EQC
+					has_government = democratic
+				}
+				AND = {
+					tag = CRY
+					has_government = democratic
+				}
+				AND = {
+					tag = VED
+					has_government = democratic
+				}
+				AND = {
+					tag = GFG
+					has_government = fascism
+				}
+			}
+		}
+		localization_key = "show_first_popularity_dl"
+	}
+	text = {
+		localization_key = "blank_dl"
+	}
+}
+
+defined_text = {
+    name = GetLeaderOpDL
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					tag = EQS
+					has_government = democratic
+				}
+				AND = {
+					tag = EQC
+					has_government = democratic
+				}
+				AND = {
+					tag = CRY
+					has_government = democratic
+				}
+				AND = {
+					tag = VED
+					has_government = democratic
+				}
+				AND = {
+					tag = GFG
+					has_government = fascism
+				}
+			}
+		}
+		localization_key = "show_first_opinion_value_dl"
+	}
+	text = {
+		localization_key = "blank_dl"
+	}
+}
+
+defined_text = {
+    name = GetSecondLeaderPopDL
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					tag = EQS
+					has_government = democratic
+				}
+				AND = {
+					tag = EQC
+					has_government = democratic
+				}
+				AND = {
+					tag = CRY
+					has_government = democratic
+				}
+				AND = {
+					tag = VED
+					has_government = democratic
+				}
+				AND = {
+					tag = GFG
+					has_government = fascism
+				}
+			}
+		}
+		localization_key = "show_second_pupularity_dl"
+	}
+	text = {
+		localization_key = "blank_dl"
+	}
+}
+
+defined_text = {
+    name = GetSecondLeaderOpDL
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					tag = EQS
+					has_government = democratic
+				}
+				AND = {
+					tag = EQC
+					has_government = democratic
+				}
+				AND = {
+					tag = CRY
+					has_government = democratic
+				}
+				AND = {
+					tag = VED
+					has_government = democratic
+				}
+				AND = {
+					tag = GFG
+					has_government = fascism
+				}
+			}
+		}
+		localization_key = "show_second_opinion_value_dl"
+	}
+	text = {
+		localization_key = "blank_dl"
+	}
+}
+
+defined_text = {
+    name = GetLeaderIdeDL
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					tag = EQS
+					has_government = democratic
+				}
+				AND = {
+					tag = EQC
+					has_government = democratic
+				}
+				AND = {
+					tag = CRY
+					has_government = democratic
+				}
+				AND = {
+					tag = VED
+					has_government = democratic
+				}
+				AND = {
+					tag = GFG
+					has_government = fascism
+				}
+			}
+		}
+		localization_key = "show_first_ideology_dl"
+	}
+	text = {
+		localization_key = "blank_dl"
+	}
+}
+
+defined_text = {
+    name = GetSecondLeaderIdeDL
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					tag = EQS
+					has_government = democratic
+				}
+				AND = {
+					tag = EQC
+					has_government = democratic
+				}
+				AND = {
+					tag = CRY
+					has_government = democratic
+				}
+				AND = {
+					tag = VED
+					has_government = democratic
+				}
+				AND = {
+					tag = GFG
+					has_government = fascism
+				}
+			}
+		}
+		localization_key = "show_second_ideology_dl"
+	}
+	text = {
+		localization_key = "blank_dl"
 	}
 }
 

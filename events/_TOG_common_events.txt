@@ -1,0 +1,80 @@
+add_namespace = common_tog
+
+### Specialized Eureka
+country_event = {
+	id = common_tog.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event common_tog.1"}
+	title = common_tog.1.t
+	desc = common_tog.1.d
+	#picture = GFX_event_democratic_opposition
+	is_triggered_only = yes
+	
+	option = { # First tech
+		ai_chance = {
+			factor = 100
+		}
+		name = common_tog.1.a
+		IF = {
+			limit = { check_variable = { random_tech_1_var < 0.333 } }
+			add_tech_bonus = { bonus = 0.50 uses = 1 category = infantry_weapons }
+		}
+		ELSE_IF = {
+			limit = { check_variable = { random_tech_1_var < 0.666 } }
+			add_tech_bonus = { bonus = 0.50 uses = 1 category = artillery }
+		}
+		ELSE = {
+			add_tech_bonus = { bonus = 0.50 uses = 1 category = armor }
+		}
+	}
+	option = { # Second tech
+		ai_chance = {
+			factor = 100
+		}
+		name = common_tog.1.b
+		IF = {
+			limit = { check_variable = { random_tech_2_var < 0.333 } }
+			add_tech_bonus = { bonus = 0.50 uses = 1 category = motorized_equipment }
+		}
+		ELSE_IF = {
+			limit = { check_variable = { random_tech_2_var < 0.666 } }
+			add_tech_bonus = { bonus = 0.50 uses = 1 category = air_equipment }
+		}
+		ELSE = {
+			add_tech_bonus = { bonus = 0.50 uses = 1 category = naval_equipment }
+		}
+	}
+	option = { # Third tech
+		ai_chance = {
+			factor = 100
+		}
+		name = common_tog.1.c
+		IF = {
+			limit = { check_variable = { random_tech_3_var < 0.333 } }
+			add_tech_bonus = { bonus = 0.50 uses = 1 category = land_doctrine }
+		}
+		ELSE_IF = {
+			limit = { check_variable = { random_tech_3_var < 0.666 } }
+			add_tech_bonus = { bonus = 0.50 uses = 1 category = air_doctrine }
+		}
+		ELSE = {
+			add_tech_bonus = { bonus = 0.50 uses = 1 category = naval_doctrine }
+		}
+	}
+	option = { # Fourth tech
+		ai_chance = {
+			factor = 100
+		}
+		name = common_tog.1.d
+		IF = {
+			limit = { check_variable = { random_tech_4_var < 0.333 } }
+			add_tech_bonus = { bonus = 0.50 uses = 1 category = support_tech }
+		}
+		ELSE_IF = {
+			limit = { check_variable = { random_tech_4_var < 0.666 } }
+			add_tech_bonus = { bonus = 0.50 uses = 1 category = industry }
+		}
+		ELSE = {
+			add_tech_bonus = { bonus = 0.50 uses = 1 category = electronics }
+		}
+	}
+}

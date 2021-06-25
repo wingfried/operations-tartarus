@@ -3,8 +3,7 @@ on_actions = {
 	on_startup = {
 		effect = {
 
-			# ELEMENTS OF HARMONY
-
+			#Elements of Harmony
 			random_country = {
 				limit = { has_idea = TOG_element_of_honesty_idea }
 				set_variable = { global.element_of_honesty_owner = ROOT }

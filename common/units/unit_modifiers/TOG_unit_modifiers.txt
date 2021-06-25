@@ -1,6 +1,18 @@
 sub_unit_modifiers = {
 
-    modifier_army_sub_unit_witchers_attack_factor   
+    modifier_army_sub_unit_mountaineers_attack_factor
+    modifier_army_sub_unit_mountaineers_defence_factor
+    modifier_army_sub_unit_mountaineers_speed_factor
+
+    modifier_army_sub_unit_paratroopers_attack_factor
+    modifier_army_sub_unit_paratroopers_defence_factor
+    modifier_army_sub_unit_paratroopers_speed_factor
+
+    modifier_army_sub_unit_marines_attack_factor
+    modifier_army_sub_unit_marines_defence_factor
+    modifier_army_sub_unit_marines_speed_factor
+
+    modifier_army_sub_unit_witchers_attack_factor
     modifier_army_sub_unit_witchers_defence_factor
     modifier_army_sub_unit_witchers_speed_factor
 

@@ -2,20 +2,6 @@ ideas = {
 
 	country = {
 
-		EQC_new_mareland_scientists_idea = {
-			modifier = {
-				research_speed_factor = 0.05
-			}
-		}
-
-		EQC_foreign_scientists_idea = {
-			modifier = {
-				research_speed_factor = 0.10
-				civilian_intel_to_others = 20.0
-				army_intel_to_others = 10.0
-			}
-		}
-
 		EQC_rising_phoenix_idea = {
 			modifier = {
 				production_speed_arms_factory_factor = 0.20
@@ -534,7 +520,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				#consumer_goods_factor = 0.03
+				modifier_expenses_education = 0.25
 				production_speed_buildings_factor = 0.06
 			}
 		}
@@ -552,7 +538,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				#consumer_goods_factor = 0.10
+				modifier_expenses_education = 0.5
 				production_speed_buildings_factor = 0.20
 			}
 		}
@@ -570,7 +556,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				#consumer_goods_factor = 0.03
+				modifier_expenses_education = 0.25
 				research_speed_factor = 0.06
 			}
 		}
@@ -588,7 +574,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				#consumer_goods_factor = 0.10
+				modifier_expenses_education = 0.5
 				research_speed_factor = 0.20
 			}
 		}

@@ -1,0 +1,379 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			
+			every_country = {
+				#These variables activate the cooldows for certain policies that get removed at the beginning of each month (in the on_monthly section).
+				#They are confusing because once they're ACTIVE you CAN choose the policy and then they DEACTIVATE. Honestly should be rewritten to work better ¯\_(ツ)_/¯.
+				#They exist so that the player can't cheese the system with min-maxing policies.
+				set_country_flag = cooldown_tradelaw_flag
+				set_country_flag = cooldown_economylaw_flag
+				set_country_flag = cooldown_taxescountry_flag
+				set_country_flag = cooldown_taxespuppet_flag
+				set_country_flag = cooldown_militaryspending_flag
+
+				#These exist just in case if paradox fucks up the way variables are being read.
+				#Giving them values at the beginning of the game makes them safe to use in calculations, because X + 0 = X; but X + null = ERROR.
+				set_variable = { coins_this_month = 0 }
+				set_variable = { coins_total = 0 }
+				set_variable = { coins_to_countries = 0 }
+				set_variable = { coins_from_countries = 0 }
+				set_variable = { coins_debt_total = 0 }
+
+				#These are just testing variables. Later on they're used to check how many civilian and military factories did the AI buy with the economy system.
+				set_variable = { coins_bought_civilian_factories = 0 }
+				set_variable = { coins_bought_military_factories = 0 }
+			}
+
+			#Custom Starting Money (if you want a certain country to have a better economical start)
+			EQC = { set_variable = { coins_total = 0 } }
+			EQS = { set_variable = { coins_total = 0 } }
+
+			#Custom Starting Donations (This should be replaced by a custom modifier inside of an idea, because it's painful to remove this effect otherwise)
+			EQS = { set_variable = { coins_to_countries = 0.5 } }
+			EQC = { set_variable = { coins_from_countries = 0.5 } }
+
+			#Starting Depression (Once again, bad early coding on my part :P Should be replaced by a custom modifier inside of an idea)
+			EQC = { set_variable = { coins_depression = 1 } }
+
+			every_country = {
+
+				### THIS PART SHOULD ALWAYS BE EXACLY THE SAME AS THE "on_monthly" in "100_TOG_continuous_economy_on_actions", WITH MINOR EXCEPTIONS OR/AND ADDITIONS ###
+				# Don't forget to put it under "every_country"
+
+				#Every month the Cooldowns are being ACTIVATED so that the player CAN choose a new policy which then DEACTIVATES the cooldown which makes the player UNABLE to choose a new policy, until the beginning of the new month.
+				set_country_flag = cooldown_tradelaw_flag
+				set_country_flag = cooldown_economylaw_flag
+				set_country_flag = cooldown_taxescountry_flag
+				set_country_flag = cooldown_taxespuppet_flag
+				set_country_flag = cooldown_militaryspending_flag
+
+				#If you don't clear or set those variables to 0, then they will get progressively bigger with each month, which is bad.
+				clear_variable = coins_this_month
+				clear_variable = coins_from_puppets
+
+				#This is a nerf to the overall economy
+				set_variable = { coins_divide_economy = 2 }
+
+				#You will get the most money from Civilian Factories if you have the civilian_economy law (the default sucky one) and you will get no money from them once you change to full_mobilisation.
+				set_variable = { coins_civilian_factories = num_of_civilian_factories }
+				divide_variable = { var = coins_civilian_factories value = 10 }
+				#100% money from civilian factories if the current law is "Civilian Economy"
+				IF = {
+					limit = { has_idea = civilian_economy }
+					multiply_variable = { var = coins_civilian_factories value = 1.00 }
+					set_variable = { coins_civilian_factories_value = 100 }
+				}
+				#75% money from civilian factories if the current law is "Low Mobilisation"
+				ELSE_IF = {
+					limit = { has_idea = low_economic_mobilisation }
+					multiply_variable = { var = coins_civilian_factories value = 0.75 }
+					set_variable = { coins_civilian_factories_value = 75 }
+				}
+				#50% money from civilian factories if the current law is "Partial Mobilisation"
+				ELSE_IF = {
+					limit = { has_idea = partial_economic_mobilisation }
+					multiply_variable = { var = coins_civilian_factories value = 0.50 }
+					set_variable = { coins_civilian_factories_value = 50 }
+				}
+				#25% money from civilian factories if the current law is "War Economy"
+				ELSE_IF = {
+					limit = { has_idea = war_economy }
+					multiply_variable = { var = coins_civilian_factories value = 0.25 }
+					set_variable = { coins_civilian_factories_value = 25 }
+				}
+				#0% money from civilian factories if the current law is "Full Mobilisation"
+				ELSE = {
+					multiply_variable = { var = coins_civilian_factories value = 0 }
+					set_variable = { coins_civilian_factories_value = 0 }
+				}
+				divide_variable = { var = coins_civilian_factories value = coins_divide_economy }
+
+				###DEPRESSION###
+				#depression is calcualted on a single modifier that can be present in ideas.
+				set_variable = { coins_depression = modifier@modifier_expenses_depression }
+
+				###TAXES###
+				#Taxes are caltulated this way [number_of_people_in_the_country * tax_rate (which can be 0.1, 0.15, 0.2 or 0.3)]
+				set_variable = { coins_country_tax = max_manpower_k }
+				divide_variable = { var = coins_country_tax value = 1000 }
+				#Values below are set on "ELSE_IF's" in an order from highest usage to the lowest usage so that the code runs more smoothly.
+				#DEFAULT 15% tax (0.15)
+				IF = {
+					limit = { has_idea = normal_country_taxes }
+					multiply_variable = { var = coins_country_tax value = 0.15 }
+					set_variable = { coins_current_country_tax = 15 }
+				}
+				#20% TAX (0.2)
+				ELSE_IF = {
+					limit = { has_idea = high_country_taxes }
+					multiply_variable = { var = coins_country_tax value = 0.2 }
+					set_variable = { coins_current_country_tax = 20 }
+				}
+				#10% TAX (0.1)
+				ELSE_IF = {
+					limit = { has_idea = low_country_taxes }
+					multiply_variable = { var = coins_country_tax value = 0.1 }
+					set_variable = { coins_current_country_tax = 10 }
+				}
+				#30% TAX (0.3)
+				ELSE_IF = {
+					limit = { has_idea = all_country_taxes }
+					multiply_variable = { var = coins_country_tax value = 0.3 }
+					set_variable = { coins_current_country_tax = 30 }
+				}
+				#0% TAX!? (0)
+				ELSE = {
+					multiply_variable = { var = coins_country_tax value = 0 }
+					set_variable = { coins_current_country_tax = 0 }
+				}
+				#The economy nerf is being applied to this section
+				divide_variable = { var = coins_country_tax value = coins_divide_economy }
+
+				###ALL INFRASTRUCTURE COST###
+				#Resets the cost of the infrastructure befor calcutalting it.
+				set_variable = { coins_infrastructure = 0 }
+				#for every owned state by you, you pay the cost of the level of it's infrastructure...
+				every_owned_state = {
+					add_to_variable = { var = prev.coins_infrastructure value = infrastructure_level }
+				}
+				#...but actually you pay 100 times less, since level 1 would cost 1, and the value 1 means 1 MILLION. So after this calculation you only pay 10K for each level of infrastructure.
+				divide_variable = { var = coins_infrastructure value = 100 }
+				#The economy nerf is being applied to this section
+				divide_variable = { var = coins_infrastructure value = coins_divide_economy }
+				
+				###IMPORT###
+				#You pay 1M for each imported chromium...
+				#resource_imported@EXAMPLE_RESOURCE is a HOI4 variable, where EXAMPLE_RESOURCE is the type of resource you want to address.
+				set_variable = { chromium_import = resource_imported@chromium }
+				#...but it's actually 10K per chromium. (1M / 100 = 0.01M => 10K)
+				divide_variable = { var = chromium_import value = 100 }
+				set_variable = { tungsten_import = resource_imported@tungsten }
+				divide_variable = { var = tungsten_import value = 100 }
+				set_variable = { rubber_import = resource_imported@rubber}
+				divide_variable = { var = rubber_import value = 100 }
+				set_variable = { aluminium_import = resource_imported@aluminium }
+				divide_variable = { var = aluminium_import value = 100 }
+				set_variable = { oil_import = resource_imported@oil }
+				divide_variable = { var = oil_import value = 100 }
+				set_variable = { steel_import = resource_imported@steel }
+				divide_variable = { var = steel_import value = 100 }
+				set_variable = { crystals_import = resource_imported@crystals }
+				divide_variable = { var = crystals_import value = 100 }
+
+				#Reset the total expenses of imported resources...
+				set_variable = { coins_resources_imported = 0 }
+				#...then one by one, add them to the calculation (it's basically coins_resources_imported = rubber_import + chromium_import + ... + crystals_import)
+				add_to_variable = { var = coins_resources_imported value = rubber_import }
+				add_to_variable = { var = coins_resources_imported value = chromium_import }
+				add_to_variable = { var = coins_resources_imported value = tungsten_import }
+				add_to_variable = { var = coins_resources_imported value = steel_import }
+				add_to_variable = { var = coins_resources_imported value = oil_import }
+				add_to_variable = { var = coins_resources_imported value = aluminium_import }
+				add_to_variable = { var = coins_resources_imported value = crystals_import }
+				#The economy nerf is being applied to this section
+				divide_variable = { var = coins_resources_imported value = coins_divide_economy }
+
+				###EXPORT###
+				#You will get 1M for each imported chromium...
+				#resource_exported@EXAMPLE_RESOURCE is a HOI4 variable, where EXAMPLE_RESOURCE is the type of resource you want to address.
+				set_variable = { chromium_export = resource_exported@chromium }
+				#...but it's actually 10K per chromium. (1M / 100 = 0.01M => 10K)
+				divide_variable = { var = chromium_export value = 100 }
+				set_variable = { tungsten_export = resource_exported@tungsten }
+				divide_variable = { var = tungsten_export value = 100 }
+				set_variable = { rubber_export = resource_exported@rubber }
+				divide_variable = { var = rubber_export value = 100 }
+				set_variable = { aluminium_export = resource_exported@aluminium }
+				divide_variable = { var = aluminium_export value = 100 }
+				set_variable = { oil_export = resource_exported@oil }
+				divide_variable = { var = oil_export value = 100 }
+				set_variable = { steel_export = resource_exported@steel }
+				divide_variable = { var = steel_export value = 100 }
+				set_variable = { crystals_export = resource_exported@crystals }
+				divide_variable = { var = crystals_export value = 100 }
+
+				#Reset the total income of exported resources...
+				set_variable = { coins_resources_exported = 0 }
+				#...then one by one, add them to the calculation (it's basically coins_resources_exported = rubber_export + chromium_export + ... + crystals_export)
+				add_to_variable = { var = coins_resources_exported value = rubber_export }
+				add_to_variable = { var = coins_resources_exported value = chromium_export }
+				add_to_variable = { var = coins_resources_exported value = tungsten_export }
+				add_to_variable = { var = coins_resources_exported value = steel_export }
+				add_to_variable = { var = coins_resources_exported value = oil_export }
+				add_to_variable = { var = coins_resources_exported value = aluminium_export }
+				add_to_variable = { var = coins_resources_exported value = crystals_export }
+				#The economy nerf is being applied to this section
+				divide_variable = { var = coins_resources_exported value = coins_divide_economy }
+
+				#OCCUPATION <3
+				#Reset the occupation cost befor calculation
+				set_variable = { coins_occupation = 0 }
+				#For every owned state that's NOT your core you pay a certain amount that depends on the compliance of this state. The lower the compliance, the bigger the cost.
+				every_owned_state = {
+					limit = { NOT = { is_core_of = PREV } }
+					#You pay 1 mil per infrastructure level...
+					set_variable = { coins_temporary = infrastructure_level }
+					#...except it's 10K (1M / 100 = 0.01M => 10K)
+					divide_variable = { var = coins_temporary value = 100 }
+					#...except it's multiplied by the compliance checker
+					#You pay 100K for each infrastructure level if compliance is less than 10%
+					IF = {
+						limit = { compliance < 10 }
+						multiply_variable = { var = coins_temporary value = 10 }
+					}
+					#You pay 80K for each infrastructure level if compliance is less than 20%
+					ELSE_IF = {
+						limit = { compliance < 20 }
+						multiply_variable = { var = coins_temporary value = 8 }
+					}
+					#You pay 60K for each infrastructure level if compliance is less than 40%
+					ELSE_IF = {
+						limit = { compliance < 40 }
+						multiply_variable = { var = coins_temporary value = 6 }
+					}
+					#You pay 40K for each infrastructure level if compliance is less than 60%
+					ELSE_IF = {
+						limit = { compliance < 60 }
+						multiply_variable = { var = coins_temporary value = 4 }
+					}
+					#You pay 20K for each infrastructure level if compliance is above 60%
+					ELSE = {
+						multiply_variable = { var = coins_temporary value = 2 }
+					}
+					#Add to calculation
+					add_to_variable = { var = prev.coins_occupation value = coins_temporary }
+				}
+				#The economy nerf is being applied to this section
+				divide_variable = { var = coins_occupation value = coins_divide_economy }
+
+				### MILITARY FACTORIES ###
+				#You pay 1M for each Military factory owned...
+				set_variable = { coins_military_factories = num_of_military_factories }
+				#...except it's 50K (1M / 20 = 0.05M => 50K)
+				divide_variable = { var = coins_military_factories value = 20 }
+				#The economy nerf is being applied to this section
+				divide_variable = { var = coins_military_factories value = coins_divide_economy }
+				
+				### NAVAL FACTORIES ###
+				#You pay 1M for each Naval Factory owned...
+				set_variable = { coins_naval_factories = num_of_naval_factories }
+				#...except it's 50K (1M / 20 = 0.05M => 50K)
+				divide_variable = { var = coins_naval_factories value = 20 }
+				#The economy nerf is being applied to this section
+				divide_variable = { var = coins_naval_factories value = coins_divide_economy }
+
+				### NUMBER OF BATALLIONS ###
+				#You pay 1M for each batallion (NOT division) you have in your army...
+				set_variable = { coins_army = num_battalions }
+				#...except it's 5K (1M / 200 = 0.005M => 5K)
+				divide_variable = { var = coins_army value = 200 }
+				#The economy nerf is being applied to this section
+				divide_variable = { var = coins_army value = coins_divide_economy }
+
+				#INCOME WITHOUT PUPPETS
+				#Calculates total income without counting the income from puppets
+				set_variable = { coins_income_1 = 0 }
+				add_to_variable = { var = coins_income_1 value = coins_country_tax }
+				add_to_variable = { var = coins_income_1 value = coins_civilian_factories }
+				add_to_variable = { var = coins_income_1 value = coins_resources_exported }
+				add_to_variable = { var = coins_income_1 value = coins_from_countries }
+
+				#EXPENSES WITHOUT OVERLORD
+				#Calculates total expenses without counting the expenses from paying to overlord
+				set_variable = { coins_expenses_1 = 0 }
+				add_to_variable = { var = coins_expenses_1 value = coins_occupation }
+				add_to_variable = { var = coins_expenses_1 value = coins_depression }
+				add_to_variable = { var = coins_expenses_1 value = coins_infrastructure }
+				add_to_variable = { var = coins_expenses_1 value = coins_resources_imported }
+				add_to_variable = { var = coins_expenses_1 value = coins_army }
+				add_to_variable = { var = coins_expenses_1 value = coins_military_factories }
+				add_to_variable = { var = coins_expenses_1 value = coins_naval_factories }
+				add_to_variable = { var = coins_expenses_1 value = coins_to_countries }
+
+				#OVERALL MONEY BEFORE OVERLORD AND PUPPETS
+				#Calculate total with a very simple substraction (coins_this_month = coins_income_1 - coins_expenses_1)
+				add_to_variable = { var = coins_this_month value = coins_income_1 }
+				subtract_from_variable = { var = coins_this_month value = coins_expenses_1 }
+
+				#Puppets Pay, Masters Receive
+				#Afterwards if your country is a puppet, then you must pay to your master based on their puppet tax law on you
+				set_variable = { coins_current_puppet_tax = 0 }
+				set_variable = { coins_current_overlord_tax = 0 }
+				IF = {
+					limit = {
+						is_subject = yes
+						check_variable = { coins_this_month > 0 }
+					}
+					set_variable = { coins_to_overlord = coins_this_month }
+
+					#15% puppet TAX (0.15)
+					IF = {
+						limit = { OVERLORD = { has_idea = normal_puppet_taxes } }
+						multiply_variable = { var = coins_to_overlord value = 0.15 }
+						set_variable = { coins_current_overlord_tax = 15 }
+						OVERLORD = { set_variable = { coins_current_puppet_tax = 15 } }
+					}
+					#20% puppet TAX (0.20)
+					ELSE_IF = {
+						limit = { OVERLORD = { has_idea = high_puppet_taxes } }
+						multiply_variable = { var = coins_to_overlord value = 0.20 }
+						set_variable = { coins_current_overlord_tax = 20 }
+						OVERLORD = { set_variable = { coins_current_puppet_tax = 20 } }
+					}
+					#10% puppet TAX (0.10)
+					ELSE_IF = {
+						limit = { OVERLORD = { has_idea = low_puppet_taxes } }
+						multiply_variable = { var = coins_to_overlord value = 0.10 }
+						set_variable = { coins_current_overlord_tax = 10 }
+						OVERLORD = { set_variable = { coins_current_puppet_tax = 10 } }
+					}
+					#30% puppet TAX (0.30)
+					ELSE_IF = {
+						limit = { OVERLORD = { has_idea = all_puppet_taxes } }
+						multiply_variable = { var = coins_to_overlord value = 0.30 }
+						set_variable = { coins_current_overlord_tax = 30 }
+						OVERLORD = { set_variable = { coins_current_puppet_tax = 30 } }
+					}
+					#0% puppet TAX (0)
+					ELSE = {
+						limit = { OVERLORD = { has_idea = no_puppet_taxes } }
+						multiply_variable = { var = coins_to_overlord value = 0 }
+						set_variable = { coins_current_overlord_tax = 0 }
+						OVERLORD = { set_variable = { coins_current_puppet_tax = 0 } }
+					}
+				}
+
+				every_country = {
+					limit = { is_puppet_of = PREV }
+					add_to_variable = { var = prev.coins_from_puppets value = coins_to_overlord }
+				}
+
+				#OVERALL MONEY AFTER OVERLORD AND PUPPETS
+				#Puppets lose some money and masters receive that money
+				subtract_from_variable = { var = coins_this_month value = coins_to_overlord }
+				add_to_variable = { var = coins_this_month value = coins_from_puppets }
+
+				#ALL INCOME (INFO)
+				set_variable = { coins_total_income = 0 }
+				add_to_variable = { var = coins_total_income value = coins_income_1 }
+				add_to_variable = { var = coins_total_income value = coins_from_puppets }
+
+				#ALL EXPENSES (INFO)
+				set_variable = { coins_total_expenses = 0 }
+				add_to_variable = { var = coins_total_expenses value = coins_expenses_1 }
+				add_to_variable = { var = coins_total_expenses value = coins_to_overlord }
+
+				#THIS IS THE MOST IMPORTANT PART
+				#Coins total is a variable that's used in the economy system, so basically this is the number that you see the most, after all the calculations
+	        	add_to_variable = { var = coins_total value = coins_this_month }
+
+	        	#We then multiply the value by 10, just before rounding it (and then dividing it), so that we get that nice number with one decimal space (Example 90.5M, instead of 91M {if we were not to multiply and then divide})
+	        	multiply_variable = { var = coins_total value = 10 }
+	        	round_variable = coins_total
+	        	divide_variable = { var = coins_total value = 10 }
+	        }
+        }
+    }
+}

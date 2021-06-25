@@ -1,0 +1,20 @@
+on_actions = {
+
+	on_annex = {
+		effect = {
+			
+        }
+	}
+
+	on_capitulation = {
+		effect = {
+			
+        }
+	}
+
+    on_monthly = {
+		effect = {
+			
+        }
+    }
+}

@@ -3333,10 +3333,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			custom_effect_tooltip = SRS_military_research_tp
-			hidden_effect = {
-		        add_ideas = SRS_research_thingy_idea
-			}
+			add_ideas = SRS_research_thingy_idea
 		}
 	}
 	

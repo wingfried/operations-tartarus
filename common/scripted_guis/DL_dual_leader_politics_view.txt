@@ -9,6 +9,12 @@ scripted_gui = {
 			dual_leader_portrait = {
 				image = "[Root.GetDualLeaderPortrait]"
 			}
+			dual_leader_bg = {
+				image = "[Root.GetDualLeaderBackground]"
+			}
+			political_view_bg = {
+				image = "[Root.GetPoliticalViewBackground]"
+			}
 		}
 		
 		visible = {

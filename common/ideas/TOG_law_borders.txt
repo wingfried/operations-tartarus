@@ -1,0 +1,63 @@
+ideas = {
+
+	borders_laws = {
+		law = yes
+		use_list_view = yes
+
+		open_borders = {
+
+			allowed = {
+			}
+			
+			available = {
+			}
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		restricted_borders = {
+
+			allowed = {
+			}
+			
+			available = {
+			}
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			default = yes
+			
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		closed_borders = {
+
+			allowed = {
+			}
+			
+			available = {
+			}
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			allowed_to_remove = {
+			}
+
+			cancel_if_invalid = no
+		}
+	}
+}

@@ -1,0 +1,178 @@
+guiTypes = {
+	containerWindowType = {
+		name = "dual_leader_politics_view_container"
+		position = { x = 350 y = 10 }
+		
+		iconType ={
+			name ="political_view_bg"
+			spriteType = "GFX_pol_view_bg_add"
+			position = { x= 189 y = 34 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType = {
+			name ="dual_leader_portrait"
+			spriteType = "GFX_portrait_bg_blank"
+			position = { x = 193 y = 84 }
+
+			pdx_tooltip = second_leader_tt
+			pdx_tooltip_delayed = dual_leader_desc_tt
+		}
+		
+		iconType = {
+			name ="dual_leader_bg"
+			spriteType = "GFX_pol_leader_frame"
+			position = { x = 185 y = 44 }
+			alwaystransparent = yes
+		}
+
+		### For Leader #1
+
+		instantTextBoxType = {
+			name ="first_leader_title_text"
+			position = { x = 30 y = 55 }
+			font = "hoi_18mbs"
+			text = "first_leader_title"
+			maxWidth = 155
+			maxHeight = 20
+			format = center
+			vertical_alignment = center
+		}
+
+		### For Leader #2
+
+		instantTextBoxType = {
+			name ="second_leader_title_text"
+			position = { x = 195 y = 55 }
+			font = "hoi_18mbs"
+			text = "second_leader_title"
+			maxWidth = 155
+			maxHeight = 20
+			format = center
+			vertical_alignment = center
+		}
+
+		instantTextBoxType = {
+			name ="dual_leader_name_text"
+			position = { x = 193 y = 298 }
+			font = "hoi_18mbs"
+			text = "dual_leader_name"
+			maxWidth = 155
+			maxHeight = 20
+			format = center
+			vertical_alignment = center
+
+			pdx_tooltip = second_leader_tt
+		}
+		
+		instantTextBoxType = {
+			name ="first_leader_name_dl"
+			position = { x = 196 y = 330 }
+			font = "hoi_16mbs"
+			text = "first_name_dl"
+			maxWidth = 155
+			maxHeight = 20
+			format = left
+			vertical_alignment = center
+		}
+		
+		instantTextBoxType = {
+			name ="first_leader_ideology_dl"
+			position = { x = 196 y = 350 }
+			font = "hoi_16mbs"
+			text = "first_ideology_dl"
+			maxWidth = 155
+			maxHeight = 20
+			format = left
+			vertical_alignment = center
+		}
+		
+		instantTextBoxType = {
+			name ="first_leader_popularity_dl"
+			position = { x = 196 y = 365 }
+			font = "hoi_16mbs"
+			text = "first_popularity_dl"
+			maxWidth = 155
+			maxHeight = 20
+			format = left
+			vertical_alignment = center
+		}
+		
+		instantTextBoxType = {
+			name ="first_leader_opinion_value_dl"
+			position = { x = 196 y = 380 }
+			font = "hoi_16mbs"
+			text = "first_opinion_value_dl"#
+			maxWidth = 155
+			maxHeight = 20
+			format = left
+			vertical_alignment = center
+		}
+		
+		instantTextBoxType = {
+			name ="second_leader_name_dl"
+			position = { x = 196 y = 405 }
+			font = "hoi_16mbs"
+			text = "second_name_dl"
+			maxWidth = 155
+			maxHeight = 20
+			format = left
+			vertical_alignment = center
+		}
+		
+		instantTextBoxType = {
+			name ="second_leader_ideology_dl"
+			position = { x = 196 y = 425 }
+			font = "hoi_16mbs"
+			text = "second_ideology_dl"
+			maxWidth = 155
+			maxHeight = 20
+			format = left
+			vertical_alignment = center
+		}
+		
+		instantTextBoxType = {
+			name ="second_leader_pupularity_dl"
+			position = { x = 196 y = 440 }
+			font = "hoi_16mbs"
+			text = "second_pupularity_dl"
+			maxWidth = 155
+			maxHeight = 20
+			format = left
+			vertical_alignment = center
+		}
+		
+		instantTextBoxType = {
+			name ="second_leader_opinion_value_dl"
+			position = { x = 196 y = 455 }
+			font = "hoi_16mbs"
+			text = "second_opinion_value_dl"
+			maxWidth = 155
+			maxHeight = 20
+			format = left
+			vertical_alignment = center
+		}
+	}
+	
+	containerWindowType = {
+		name = "dual_leader_diplomacy_view_container"
+		position = { x = 130 y = 110 }
+		
+		iconType ={
+			name ="dual_leader_portrait_diplo"
+			spriteType = "GFX_portrait_bg_blank"
+			position = { x = 20 y = 10 }
+			scale = 0.74
+
+			pdx_tooltip = second_leader_diplo_tt
+			pdx_tooltip_delayed = dual_leader_desc_tt
+		}
+		
+		iconType ={
+			name ="dual_leader_diplo_bg"
+			position = { x = 13 y = 0 }
+			spriteType = "GFX_diplo_leader_frame_2"
+			alwaystransparent = yes
+		}
+	}
+}

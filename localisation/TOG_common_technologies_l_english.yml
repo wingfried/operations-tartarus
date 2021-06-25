@@ -1,9 +1,16 @@
 ﻿l_english:
- 
+
  ### ADDED MISSING LOCALISATION (VANILLA TECHNOLOGY) ###
 
  hospital_tech_research:0 "Field Hospital Tech Bonus Research"
  maintenance_company_tech_research:0 "Maintenance Company Tech Bonus Research"
+
+ ### ADDED ADDITIONAL LOCALISATION (TOG TECHNOLOGY) ###
+
+ tog_military_technologies_category:0 "Military Technologies"
+ tog_civilian_technologies_category:0 "Civilian Technologies"
+ tog_military_technologies_category_research:0 "Military Research Speed"
+ tog_civilian_technologies_category_research:0 "Civilian Research Speed"
 
  ### LAND DOCTRINE ###
 

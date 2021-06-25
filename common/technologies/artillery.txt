@@ -25,6 +25,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 		}
 
@@ -75,6 +76,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 		}
 
@@ -110,6 +112,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 		}
 
@@ -197,6 +200,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 		}
 
@@ -263,6 +267,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 		}
 
@@ -324,6 +329,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 		}
 
@@ -379,6 +385,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 		}
 
@@ -442,6 +449,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 		}
 
@@ -563,6 +571,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			rocketry
 		}
 	}
@@ -621,6 +630,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			rocketry
 		}
 	}
@@ -680,6 +690,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			rocketry
 		}
 	}
@@ -745,6 +756,7 @@ technologies = {
 		
 
 		categories = {
+			tog_military_technologies_category
 			rocketry
 		}
 	}
@@ -873,6 +885,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_air
 		}
@@ -990,6 +1003,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_air
 		}
@@ -1102,6 +1116,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_air
 		}
@@ -1218,6 +1233,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_air
 		}
@@ -1334,6 +1350,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_air
 		}
@@ -1447,6 +1464,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_air
 		}
@@ -1498,6 +1516,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			heavy_artillery_tech
 		}
@@ -1545,6 +1564,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			heavy_artillery_tech
 		}
@@ -1590,6 +1610,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			heavy_artillery_tech
 		}
@@ -1637,6 +1658,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			heavy_artillery_tech
 		}
@@ -1684,6 +1706,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			heavy_artillery_tech
 		}
@@ -1729,6 +1752,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			heavy_artillery_tech
 		}
@@ -1776,6 +1800,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			heavy_artillery_tech
 		}
@@ -1823,6 +1848,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			heavy_artillery_tech
 		}
@@ -1868,6 +1894,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			heavy_artillery_tech
 		}
@@ -1915,6 +1942,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			heavy_artillery_tech
 		}
@@ -1957,6 +1985,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			heavy_artillery_tech
 		}
@@ -2068,6 +2097,7 @@ technologies = {
 	}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_tank
 		}
@@ -2173,6 +2203,7 @@ technologies = {
 	}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_tank
 		}
@@ -2276,6 +2307,7 @@ technologies = {
 	}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_tank
 		}
@@ -2381,6 +2413,7 @@ technologies = {
 	}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_tank
 		}
@@ -2485,6 +2518,7 @@ technologies = {
 	}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_tank
 		}
@@ -2588,6 +2622,7 @@ technologies = {
 	}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_tank
 		}
@@ -2693,6 +2728,7 @@ technologies = {
 	}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_tank
 		}
@@ -2796,6 +2832,7 @@ technologies = {
 	}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_tank
 		}
@@ -2890,6 +2927,7 @@ technologies = {
 	}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_tank
 		}
@@ -2993,6 +3031,7 @@ technologies = {
 	}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_tank
 		}
@@ -3089,6 +3128,7 @@ technologies = {
 	}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_tank
 		}
@@ -3125,6 +3165,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 		}
 
@@ -3198,6 +3239,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 		}
 				ai_will_do = {
@@ -3276,6 +3318,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 		}
 
@@ -3355,6 +3398,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 		}
 
@@ -3430,6 +3474,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 		}
 
@@ -3532,6 +3577,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			rocketry
 		}
 	}
@@ -3584,6 +3630,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			rocketry
 
 		}
@@ -3629,6 +3676,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			rocketry
 		}
 	}
@@ -3679,6 +3727,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			rocketry
 		}
 	}
@@ -3724,6 +3773,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			rocketry
 		}
 	}
@@ -3843,6 +3893,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_air
 		}
@@ -3959,6 +4010,7 @@ modifier = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_air
 		}
@@ -4068,6 +4120,7 @@ modifier = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_air
 		}
@@ -4184,6 +4237,7 @@ modifier = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_air
 		}
@@ -4295,6 +4349,7 @@ modifier = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			artillery
 			cat_anti_air
 		}

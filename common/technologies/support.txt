@@ -78,6 +78,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 		}
 
@@ -127,6 +128,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			engineers_tech
 		}
@@ -199,6 +201,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			engineers_tech
 		}
@@ -266,6 +269,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			engineers_tech
 		}
@@ -335,6 +339,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			engineers_tech
 		}
@@ -404,6 +409,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			recon_tech
 		}
@@ -468,6 +474,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			recon_tech
 		}
@@ -528,6 +535,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			recon_tech
 		}
@@ -591,6 +599,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			recon_tech
 		}
@@ -654,6 +663,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			military_police_tech
 		}
@@ -714,6 +724,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			military_police_tech
 		}
@@ -748,6 +759,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			military_police_tech
 		}
@@ -804,6 +816,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			military_police_tech
 		}
@@ -859,6 +872,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			maintenance_company_tech
 		}
@@ -917,6 +931,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			maintenance_company_tech
 		}
@@ -976,6 +991,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			maintenance_company_tech
 		}
@@ -1033,6 +1049,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			maintenance_company_tech
 		}
@@ -1093,6 +1110,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			hospital_tech
 		}
@@ -1141,6 +1159,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			hospital_tech
 		}
@@ -1192,6 +1211,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			hospital_tech
 		}
@@ -1246,6 +1266,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			hospital_tech
 		}
@@ -1304,6 +1325,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			logistics_tech
 		}
@@ -1349,6 +1371,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			logistics_tech
 		}
@@ -1391,6 +1414,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			logistics_tech
 		}
@@ -1439,6 +1463,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			logistics_tech
 		}
@@ -1490,6 +1515,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			signal_company_tech
 			electronics
@@ -1535,6 +1561,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			signal_company_tech
 			electronics
@@ -1583,6 +1610,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			signal_company_tech
 			electronics
@@ -1633,6 +1661,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			signal_company_tech
 			electronics
@@ -1685,6 +1714,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			signal_company_tech
 			electronics
@@ -1750,6 +1780,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			signal_company_tech
 			electronics
@@ -1810,6 +1841,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			electronics
 		}
@@ -1880,6 +1912,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			engineers_tech
 		}
@@ -1945,6 +1978,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			engineers_tech
 		}
@@ -2004,6 +2038,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			engineers_tech
 		}
@@ -2069,6 +2104,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			recon_tech
 		}
@@ -2136,6 +2172,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			recon_tech
 		}
@@ -2191,6 +2228,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			recon_tech
 		}
@@ -2261,6 +2299,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			military_police_tech
 		}
@@ -2289,6 +2328,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			military_police_tech
 		}
@@ -2312,6 +2352,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			military_police_tech
 		}
@@ -2345,6 +2386,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			maintenance_company_tech
 		}
@@ -2425,6 +2467,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			maintenance_company_tech
 		}
@@ -2495,6 +2538,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			maintenance_company_tech
 		}
@@ -2572,6 +2616,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			motorized_equipment
 			hospital_tech
@@ -2604,6 +2649,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			hospital_tech
 			motorized_equipment
@@ -2678,6 +2724,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			motorized_equipment
 		}
@@ -2760,6 +2807,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			motorized_equipment
 			logistics_tech
@@ -2792,6 +2840,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			logistics_tech
 			motorized_equipment
@@ -2817,6 +2866,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			support_tech
 			motorized_equipment
 			logistics_tech

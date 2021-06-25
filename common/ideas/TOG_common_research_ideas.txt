@@ -1,0 +1,188 @@
+ideas = {
+
+	country = {
+
+		TOG_eureka_idea = {
+			modifier = {
+				custom_modifier_tooltip = TOG_eureka_tt
+			}
+		}
+
+		TOG_specialized_eureka_idea = {
+			modifier = {
+				custom_modifier_tooltip = TOG_specialized_eureka_tt
+			}
+		}
+
+		TOG_specialized_education_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.30
+			}
+		}
+
+		TOG_fund_scientists_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.05
+				modifier_expenses_education = 0.25
+			}
+		}
+
+		TOG_national_scientists_idea = {
+			modifier = {
+				research_speed_factor = 0.05
+				civilian_intel_to_others = -10.0
+				army_intel_to_others = -5.0
+			}
+		}
+
+		TOG_foreign_scientists_idea = {
+			modifier = {
+				research_speed_factor = 0.10
+				civilian_intel_to_others = 10.0
+				army_intel_to_others = 5.0
+			}
+		}
+
+		TOG_computing_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				modifier_income_civilian_factories_efficiency = 0.05
+			}
+			research_bonus = {
+				computing_tech = 0.10
+			}
+		}
+
+		TOG_military_research_1_idea = {
+			#picture = jap_duplicate_research
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+	     	research_bonus = {
+				tog_military_technologies_category = 0.05
+			}
+		}
+
+		TOG_military_research_2_idea = {
+			#picture = jap_duplicate_research
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+	     	research_bonus = {
+				tog_military_technologies_category = 0.10
+			}
+		}
+
+		TOG_military_research_3_idea = {
+			#picture = jap_duplicate_research
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+	     	research_bonus = {
+				tog_military_technologies_category = 0.15
+			}
+		}
+
+		TOG_military_specialized_research_idea = {
+			#picture = jap_duplicate_research
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+	     	research_bonus = {
+	     		tog_military_technologies_category = 0.15
+	     		tog_civilian_technologies_category = -0.10
+			}
+		}
+
+		TOG_civilian_research_1_idea = {
+			#picture = jap_duplicate_research
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+	     	research_bonus = {
+	     		tog_civilian_technologies_category = 0.05
+			}
+		}
+
+		TOG_civilian_research_2_idea = {
+			#picture = jap_duplicate_research
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+	     	research_bonus = {
+	     		tog_civilian_technologies_category = 0.10
+			}
+		}
+
+		TOG_civilian_research_3_idea = {
+			#picture = jap_duplicate_research
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+	     	research_bonus = {
+	     		tog_civilian_technologies_category = 0.15
+			}
+		}
+
+		TOG_civilian_specialized_research_idea = {
+			#picture = jap_duplicate_research
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+	     	research_bonus = {
+	     		tog_civilian_technologies_category = 0.15
+	     		tog_military_technologies_category = -0.10
+			}
+		}
+
+		TOG_hybrid_research_idea = {
+			#picture = jap_duplicate_research
+			removal_cost = -1
+			available = {
+				always = yes
+			}
+	     	modifier = {
+	     		research_speed_factor = 0.075
+			}
+		}
+	}
+}

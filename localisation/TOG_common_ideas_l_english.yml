@@ -1,0 +1,37 @@
+﻿l_english:
+
+ ### ECONOMY ###
+ TOG_eco_great_depression_1_idea:0 "Great Depression"
+ TOG_eco_great_depression_2_idea:0 "Great Depression"
+ TOG_eco_great_depression_3_idea:0 "Great Depression"
+ 
+ TOG_high_quality_roads_idea:0 "High Quality Roads"
+ TOG_military_financing_idea:0 "Military Financing"
+
+ ### RESEARCH ###
+ TOG_eureka_idea:0 "Eureka!"
+ TOG_eureka_tt:0 "Get a small §CResearch Bonus§! for a random §CTechnology Category§! at the beginning of each month."
+ TOG_specialized_eureka_idea:0 "Scientific Breakthrough"
+ TOG_specialized_eureka_tt:0 "Get a big §CResearch Bonus§! for a chosen §CTechnology Category§! out of random four at the beggining of each year."
+ 
+ TOG_computing_idea:0 "Computing Power"
+
+ TOG_specialized_education_idea:0 "Specialized Education"
+
+ TOG_fund_scientists_idea:0 "Funded Scientists"
+
+ TOG_military_research_1_idea:0 "Military Research"
+ TOG_military_research_2_idea:0 "Military Research"
+ TOG_military_research_3_idea:0 "Military Research"
+ TOG_military_specialized_research_idea:0 "Specialized Military Research"
+ 
+ TOG_civilian_research_1_idea:0 "Civilian Research"
+ TOG_civilian_research_2_idea:0 "Civilian Research"
+ TOG_civilian_research_3_idea:0 "Civilian Research"
+ TOG_civilian_specialized_research_idea:0 "Specialized Civilian Research"
+ 
+ TOG_national_scientists_idea:0 "National Scientists"
+ TOG_foreign_scientists_idea:0 "Foreign Scientists"
+
+ ### FOOD ###
+ TOG_outdated_agriculture_idea:0 "Outdated Agriculture"

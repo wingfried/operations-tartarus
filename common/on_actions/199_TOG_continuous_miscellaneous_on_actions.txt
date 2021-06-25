@@ -1,0 +1,160 @@
+on_actions = {
+	
+	#EUREKA MECHANIC
+	on_monthly = {
+		effect = {
+			IF = {
+				limit = { has_country_flag = TOG_eureka_mechanic_on }
+				set_variable = { random_tech_var = random }
+				IF = {
+					limit = { check_variable = { random_tech_var < 0.083 } }
+					add_tech_bonus = { bonus = 0.05 uses = 1 category = infantry_weapons }
+				}
+				ELSE_IF = {
+					limit = { check_variable = { random_tech_var < 0.166 } }
+					add_tech_bonus = { bonus = 0.05 uses = 1 category = artillery }
+				}
+				ELSE_IF = {
+					limit = { check_variable = { random_tech_var < 0.25 } }
+					add_tech_bonus = { bonus = 0.05 uses = 1 category = support_tech }
+				}
+				ELSE_IF = {
+					limit = { check_variable = { random_tech_var < 0.333 } }
+					add_tech_bonus = { bonus = 0.05 uses = 1 category = armor }
+				}
+				ELSE_IF = {
+					limit = { check_variable = { random_tech_var < 0.416 } }
+					add_tech_bonus = { bonus = 0.05 uses = 1 category = motorized_equipment }
+				}
+				ELSE_IF = {
+					limit = { check_variable = { random_tech_var < 0.50 } }
+					add_tech_bonus = { bonus = 0.05 uses = 1 category = naval_equipment }
+				}
+				ELSE_IF = {
+					limit = { check_variable = { random_tech_var < 0.583 } }
+					add_tech_bonus = { bonus = 0.05 uses = 1 category = air_equipment }
+				}
+				ELSE_IF = {
+					limit = { check_variable = { random_tech_var < 0.666 } }
+					add_tech_bonus = { bonus = 0.05 uses = 1 category = land_doctrine }
+				}
+				ELSE_IF = {
+					limit = { check_variable = { random_tech_var < 0.75 } }
+					add_tech_bonus = { bonus = 0.05 uses = 1 category = air_doctrine }
+				}
+				ELSE_IF = {
+					limit = { check_variable = { random_tech_var < 0.833 } }
+					add_tech_bonus = { bonus = 0.05 uses = 1 category = naval_doctrine }
+				}
+				ELSE_IF = {
+					limit = { check_variable = { random_tech_var < 0.916 } }
+					add_tech_bonus = { bonus = 0.05 uses = 1 category = industry }
+				}
+				ELSE = {
+					add_tech_bonus = { bonus = 0.05 uses = 1 category = electronics }
+				}
+			}
+		}
+	}
+
+	#SPECIALIZED EUREKA MECHANIC
+	on_monthly = {
+		effect = {
+			IF = {
+				limit = {
+					AND = {
+						has_country_flag = TOG_specialized_eureka_mechanic_on
+						OR = {
+							date = 1008.01.01
+							date = 1009.01.01
+							date = 1010.01.01
+							date = 1011.01.01
+							date = 1012.01.01
+							date = 1013.01.01
+							date = 1014.01.01
+							date = 1015.01.01
+							date = 1016.01.01
+							date = 1017.01.01
+							
+							date = 1018.01.01
+							date = 1019.01.01
+							date = 1020.01.01
+							date = 1021.01.01
+							date = 1022.01.01
+							date = 1023.01.01
+							date = 1024.01.01
+							date = 1025.01.01
+							date = 1026.01.01
+							date = 1027.01.01
+							
+							date = 1028.01.01
+							date = 1029.01.01
+							date = 1030.01.01
+							date = 1031.01.01
+							date = 1032.01.01
+							date = 1033.01.01
+							date = 1034.01.01
+							date = 1035.01.01
+							date = 1036.01.01
+							date = 1037.01.01
+							
+							date = 1038.01.01
+							date = 1039.01.01
+							date = 1040.01.01
+							date = 1041.01.01
+							date = 1042.01.01
+							date = 1043.01.01
+							date = 1044.01.01
+							date = 1045.01.01
+							date = 1046.01.01
+							date = 1047.01.01
+
+							date = 1048.01.01
+							date = 1049.01.01
+							date = 1050.01.01
+							date = 1051.01.01
+							date = 1052.01.01
+							date = 1053.01.01
+							date = 1054.01.01
+							date = 1055.01.01
+							date = 1056.01.01
+							date = 1057.01.01
+						}
+					}
+				}
+				set_variable = { random_tech_1_var = random }
+				set_variable = { random_tech_2_var = random }
+				set_variable = { random_tech_3_var = random }
+				set_variable = { random_tech_4_var = random }
+				country_event = common_tog.1
+			}
+		}
+	}
+
+	on_peaceconference_ended = {
+		effect = {
+			SRS = {
+				IF = {
+					limit = {
+						NOT = { has_idea = SRS_skynavian_redguard }
+						has_war = no
+					}
+					add_ideas = SRS_skynavian_redguard
+				}
+			}
+		}
+
+		effect = {
+			SRS = {
+				if = {
+					limit = {
+						SRS_owns_VED = yes
+						SRS_owns_NTR = yes
+						SRS_owns_FAT = yes
+					}
+					country_event = srs_sickoflavour.27
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+﻿add_namespace = tog_debug_event
+
+country_event = {
+	id = tog_debug_event.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tog_debug_event.0"}
+	immediate = { ROOT = { set_country_flag = tog_custom_ship_event_flag_1 } }
+	hidden = yes
+	#fire_only_once = yes
+	is_triggered_only = yes
+}

@@ -1,7 +1,10 @@
 ﻿l_english:
  
  ##### VEDINA #####
- 
+ VED_changes_depending_on_picked_tt:0 "This focus changes depending on wheter you've completed §YCivilian Research§!, §YMilitary Research§! or both."
+ VED_paratroopers_tt:0 "Get three §YFallskärm Kommando Troppe Divisions§!."
+ VED_marines_tt:0 "Get three §YMarinejeger Kommando Troppe Divisions§!."
+
  ### FOCUS TREE ###
  VED_future_of_the_princess:0 "Future of The Princess"
  VED_future_of_the_princess_desc:0 ""

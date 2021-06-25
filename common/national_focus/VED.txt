@@ -11,7 +11,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 1000 y = 170 }
+	continuous_focus_position = { x = 500 y = 170 }
 
 	focus = {
 		id = VED_Succession
@@ -706,21 +706,6 @@ focus_tree = {
 		}
 	}
 
-	#Focus for A Slave Colony
-	focus = {
-		id = VED_a_slave_colony
-		icon = GFX_goal_unknown
-		x = -3
-		y = 1
-		relative_position_id = VED_ondska_war_GRF
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_ondska_war_GRF }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	#Focus for Conquest of Equus
 	focus = {
 		id = VED_conquest_of_equus
@@ -1238,41 +1223,11 @@ focus_tree = {
 		}
 	}
 
-	#Focus for A Prison-Nation
-	focus = {
-		id = VED_a_prisonnation
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = VED_a_slave_colony
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_a_slave_colony }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	#Focus for An offer that should not be refused
 	focus = {
 		id = VED_an_offer_that_should_not_be_refused
 		icon = GFX_goal_unknown
 		x = 0
-		y = 1
-		relative_position_id = VED_the_dread_league
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_the_dread_league }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Death Knights
-	focus = {
-		id = VED_death_knights
-		icon = GFX_goal_unknown
-		x = 3
 		y = 1
 		relative_position_id = VED_the_dread_league
 		cost = 10
@@ -1294,21 +1249,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = VED_an_offer_that_should_not_be_refused }
 		mutually_exclusive = { focus = VED_the_punishment_for_defiance }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Selecting a Deathlord
-	focus = {
-		id = VED_selecting_a_deathlord
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = VED_death_knights
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_death_knights }
 		ai_will_do = {
 			factor = 1
 		}
@@ -4463,11 +4403,12 @@ focus_tree = {
 	focus = {
 		id = VED_building_our_economy
 		icon = GFX_goal_generic_consumer_goods
-		x = 15
+		x = -17
 		y = 0
 		relative_position_id = VED_skoldsvards_military_reforms
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = VED_skoldsvards_post_reforms }
 		ai_will_do = {
 			factor = 1
 		}
@@ -4505,7 +4446,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = civilian_economy
+			IF = {
+				limit = {
+					NOT = {
+						has_idea = civilian_economy
+					}
+				}
+				add_ideas = civilian_economy
+			}
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -4531,7 +4479,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = war_economy
+			IF = {
+				limit = {
+					NOT = {
+						has_idea = war_economy
+					}
+				}
+				add_ideas = war_economy
+			}
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -4915,13 +4870,245 @@ focus_tree = {
 
 	### SCIENCE ###
 
-	#Focus for The Scientific Method
 	focus = {
-		id = VED_the_scientific_method
-		icon = GFX_goal_tfv_generic_tech_sharing
-		x = 8
+		id = VED_invest_in_computing_power
+		#icon = GFX_goal_tfv_generic_tech_sharing
+		x = 17
 		y = 0
-		relative_position_id = VED_building_our_economy
+		relative_position_id = VED_skoldsvards_military_reforms
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_skoldsvards_post_reforms }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#become_exiled_in = { target = EQS legitimacy = 0 }
+			add_ideas = TOG_computing_idea
+		}
+	}
+
+	focus = {
+		id = VED_general_education
+		#icon = GFX_goal_tfv_generic_tech_sharing
+		x = -2
+		y = 1
+		relative_position_id = VED_invest_in_computing_power
+		prerequisite = { focus = VED_invest_in_computing_power }
+		mutually_exclusive = { focus = VED_specialized_education }
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = VED_invest_in_many_fields
+		#icon = GFX_goal_tfv_generic_tech_sharing
+		x = 0
+		y = 1
+		relative_position_id = VED_general_education
+		prerequisite = { focus = VED_general_education }
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 1.0 uses = 1 category = tog_civilian_technologies_category }
+			add_tech_bonus = { bonus = 1.0 uses = 1 category = tog_military_technologies_category }
+		}
+	}
+
+	focus = {
+		id = VED_thinking_outside_the_box
+		#icon = GFX_goal_tfv_generic_tech_sharing
+		x = -1
+		y = 1
+		relative_position_id = VED_invest_in_many_fields
+		prerequisite = { focus = VED_invest_in_many_fields }
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = TOG_eureka_idea
+			set_country_flag = TOG_eureka_mechanic_on
+		}
+	}
+
+	focus = {
+		id = VED_fund_scientists
+		#icon = GFX_goal_tfv_generic_tech_sharing
+		x = 2
+		y = 1
+		relative_position_id = VED_general_education
+		prerequisite = { focus = VED_general_education focus = VED_specialized_education }
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = TOG_fund_scientists_idea
+		}
+	}
+
+	focus = {
+		id = VED_civilian_research
+		#icon = GFX_goal_tfv_generic_tech_sharing
+		x = -1
+		y = 1
+		relative_position_id = VED_fund_scientists
+		prerequisite = { focus = VED_fund_scientists }
+		cost = 10
+		available_if_capitulated = yes
+		available = { NOT = { has_completed_focus = VED_a_new_hypothesis } }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = TOG_civilian_research_1_idea
+		}
+	}
+
+	focus = {
+		id = VED_foreign_scientists
+		#icon = GFX_goal_tfv_generic_tech_sharing
+		x = -1
+		y = 1
+		relative_position_id = VED_civilian_research
+		prerequisite = { focus = VED_civilian_research }
+		prerequisite = { focus = VED_thinking_outside_the_box }
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = TOG_foreign_scientists_idea
+		}
+	}
+
+	focus = {
+		id = VED_military_research
+		#icon = GFX_goal_tfv_generic_tech_sharing
+		x = 1
+		y = 1
+		relative_position_id = VED_fund_scientists
+		prerequisite = { focus = VED_fund_scientists }
+		cost = 10
+		available_if_capitulated = yes
+		available = { NOT = { has_completed_focus = VED_a_new_hypothesis } }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = TOG_military_research_1_idea
+		}
+	}
+
+	focus = {
+		id = VED_national_scientists
+		#icon = GFX_goal_tfv_generic_tech_sharing
+		x = 1
+		y = 1
+		relative_position_id = VED_military_research
+		prerequisite = { focus = VED_military_research }
+		prerequisite = { focus = VED_vedinan_think_tank }
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = TOG_national_scientists_idea
+		}
+	}
+
+	focus = {
+		id = VED_specialized_education
+		#icon = GFX_goal_tfv_generic_tech_sharing
+		x = 2
+		y = 1
+		relative_position_id = VED_invest_in_computing_power
+		prerequisite = { focus = VED_invest_in_computing_power }
+		mutually_exclusive = { focus = VED_general_education }
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = TOG_specialized_education_idea
+		}
+	}
+
+	focus = {
+		id = VED_invest_in_few_fields
+		#icon = GFX_goal_tfv_generic_tech_sharing
+		x = 0
+		y = 1
+		relative_position_id = VED_specialized_education
+		prerequisite = { focus = VED_specialized_education }
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = SRS_choose_one_tt
+			custom_effect_tooltip = SRS_one_tt
+			add_tech_bonus = { bonus = 1.0 uses = 2 category = tog_civilian_technologies_category }
+			custom_effect_tooltip = SRS_two_tt
+			add_tech_bonus = { bonus = 1.0 uses = 2 category = tog_military_technologies_category }
+		}
+	}
+
+	focus = {
+		id = VED_vedinan_think_tank
+		#icon = GFX_goal_tfv_generic_tech_sharing
+		x = 1
+		y = 1
+		relative_position_id = VED_invest_in_few_fields
+		prerequisite = { focus = VED_invest_in_few_fields }
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = TOG_specialized_eureka_idea
+			set_country_flag = TOG_specialized_eureka_mechanic_on
+		}
+	}
+
+	focus = {
+		id = VED_an_inpenetrable_box
+		#icon = GFX_goal_tfv_generic_tech_sharing
+		x = 1
+		y = 1
+		relative_position_id = VED_vedinan_think_tank
+		prerequisite = { focus = VED_vedinan_think_tank }
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = VED_gathering_information
+		#icon = GFX_goal_tfv_generic_tech_sharing
+		x = 0
+		y = 1
+		relative_position_id = VED_an_inpenetrable_box
+		prerequisite = { focus = VED_an_inpenetrable_box }
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -4935,10 +5122,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 0
 		y = 1
-		relative_position_id = VED_research_contracts
+		relative_position_id = VED_national_scientists
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_research_contracts }
+		prerequisite = { focus = VED_national_scientists }
 		ai_will_do = {
 			factor = 1
 		}
@@ -4948,14 +5135,40 @@ focus_tree = {
 	focus = {
 		id = VED_a_new_hypothesis
 		icon = GFX_goal_continuous_research
-		x = 2
+		x = 1
 		y = 1
-		relative_position_id = VED_the_scientific_method
+		relative_position_id = VED_civilian_research
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_the_scientific_method }
+		prerequisite = { focus = VED_civilian_research focus = VED_military_research }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			IF = {
+				limit = {
+					has_completed_focus = VED_civilian_research
+					has_completed_focus = VED_military_research
+				}
+				remove_ideas = TOG_civilian_research_1_idea
+				remove_ideas = TOG_military_research_1_idea
+				add_ideas = TOG_hybrid_research_idea
+			}
+			ELSE_IF = {
+				limit = {
+					has_completed_focus = VED_civilian_research
+				}
+				swap_ideas = { remove_idea = TOG_civilian_research_1_idea add_idea = TOG_civilian_specialized_research_idea }
+			}
+			ELSE_IF = {
+				limit = {
+					has_completed_focus = VED_military_research
+				}
+				swap_ideas = { remove_idea = TOG_military_research_1_idea add_idea = TOG_military_specialized_research_idea }
+			}
+			ELSE = {
+				custom_effect_tooltip = VED_changes_depending_on_picked_tt
+			}
 		}
 	}
 
@@ -4963,12 +5176,12 @@ focus_tree = {
 	focus = {
 		id = VED_expeditions_into_zebrica
 		icon = GFX_focus_por_luso_tropicalism
-		x = 0
-		y = 1
-		relative_position_id = VED_the_scientific_method
+		x = -2
+		y = 0
+		relative_position_id = VED_foreign_scientists
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_the_scientific_method }
+		prerequisite = { focus = VED_thinking_outside_the_box }
 		ai_will_do = {
 			factor = 1
 		}
@@ -4976,7 +5189,7 @@ focus_tree = {
 
 	#Focus for Multiple Experiments
 	focus = {
-		id = VED_multiple_experiments
+		id = VED_vedinan_laboratories
 		icon = GFX_focus_research2
 		x = 0
 		y = 1
@@ -4987,18 +5200,21 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 
 	#Focus for Research Contracts
 	focus = {
 		id = VED_research_contracts
 		icon = GFX_goal_generic_scientific_exchange
-		x = -2
+		x = 0
 		y = 1
-		relative_position_id = VED_the_scientific_method
+		relative_position_id = VED_foreign_scientists
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_the_scientific_method }
+		prerequisite = { focus = VED_foreign_scientists }
 		ai_will_do = {
 			factor = 1
 		}
@@ -5019,38 +5235,73 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = VED_skoldsvards_post_reforms
+		#icon = GFX_VED_skoldsvards_military_reforms-57664
+		x = 31
+		y = 0
+		relative_position_id = VED_Ondska
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_Royal_Marriage }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
 	### SKOLD ARMY ###
 
 	#Focus for Skoldsvard's Military Reforms
 	focus = {
 		id = VED_skoldsvards_military_reforms
 		icon = GFX_VED_skoldsvards_military_reforms-57664
-		x = 18
-		y = 0
-		relative_position_id = VED_Ondska
+		x = 0
+		y = 1
+		relative_position_id = VED_skoldsvards_post_reforms
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = VED_skoldsvards_post_reforms }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			army_experience = 10
-			air_experience = 10
-			navy_experience = 10
+			army_experience = 30
+			air_experience = 30
+			navy_experience = 30
 			add_ideas = VED_skoldsvards_military_reforms_idea
 		}
 	}
 
-	#Focus for Order of the Iron Crucible
 	focus = {
-		id = VED_order_of_the_iron_crucible
-		icon = GFX_VED_order_of_the_iron_crucible-65750
-		x = 1
+		id = VED_skoldsvards_military_land
+		#icon = GFX_VED_skoldsvards_military_reforms-57664
+		x = 0
+		y = 1
+		relative_position_id = VED_skoldsvards_military_reforms
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_skoldsvards_military_reforms }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	#Focus for Order of the Burning Heart
+	focus = {
+		id = VED_order_of_the_burning_heart
+		icon = GFX_focus_spa_no_compromise_on_carlist_ideals
+		x = -1
 		y = 1
 		relative_position_id = VED_bulletproof_plating
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_bulletproof_plating }
+		prerequisite = { focus = VED_bulletproof_plating focus = VED_smoke_shells_and_flares }
 		ai_will_do = {
 			factor = 1
 		}
@@ -5066,6 +5317,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = VED_personal_heraldry }
+		prerequisite = { focus = VED_bulletproof_plating }
 		ai_will_do = {
 			factor = 1
 		}
@@ -5075,22 +5327,7 @@ focus_tree = {
 	focus = {
 		id = VED_personal_heraldry
 		icon = GFX_VED_personal_heraldry-65747
-		x = -4
-		y = 0
-		relative_position_id = VED_marcher_lords
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_form_knightly_houses }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Marcher Lord's
-	focus = {
-		id = VED_marcher_lords
-		icon = GFX_VED_marcher_lords-57668
-		x = 4
+		x = 1
 		y = 1
 		relative_position_id = VED_form_knightly_houses
 		cost = 10
@@ -5105,57 +5342,14 @@ focus_tree = {
 	focus = {
 		id = VED_end_order_rivalries
 		icon = GFX_focus_eng_imperial_federation
-		x = 1
+		x = 0
 		y = 1
-		relative_position_id = VED_order_of_the_iron_crucible
+		relative_position_id = VED_order_of_the_valiant_leon
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = VED_order_of_the_iron_crucible 
-		}
-		prerequisite = { 
-			focus = VED_order_of_the_valiant_leon 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Bond of Sky and Land
-	focus = {
-		id = VED_bond_of_sky_and_land
-		icon = GFX_goal_molotov_ribbentrop_pact
-		x = 1
-		y = 1
-		relative_position_id = VED_silent_motors
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = VED_silent_motors 
-		}
-		prerequisite = { 
-			focus = VED_infantryflyer_escorts 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for The Patient Serpents
-	focus = {
-		id = VED_the_patient_serpents
-		icon = GFX_VED_the_patient_serpents-55622
-		x = 1
-		y = 1
-		relative_position_id = VED_deny_landing_parties
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = VED_marine_raider_regiment 
-		}
-		prerequisite = { 
-			focus = VED_deny_landing_parties 
-		}
+		prerequisite = { focus = VED_order_of_the_valiant_leon focus = VED_smokesss_temp focus = VED_super_special_cars_temp }
+		prerequisite = { focus = VED_order_of_the_blooming_flower focus = VED_super_special_cars_temp }
+		prerequisite = { focus = VED_order_of_the_burning_heart focus = VED_smokesss_temp }
 		ai_will_do = {
 			factor = 1
 		}
@@ -5167,27 +5361,10 @@ focus_tree = {
 		icon = GFX_focus_ger_revive_kaiserreich
 		x = 0
 		y = 1
-		relative_position_id = VED_lord_commander_gottfried_haaklaw
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_lord_commander_gottfried_haaklaw }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Lord Commander Gottfried Haaklaw
-	focus = {
-		id = VED_lord_commander_gottfried_haaklaw
-		icon = GFX_VED_lord_commander_gottfried_haaklaw-68658
-		x = 0
-		y = 1
 		relative_position_id = VED_the_orders_under_one_banner
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = VED_the_orders_under_one_banner
-		}
+		prerequisite = { focus = VED_the_orders_under_one_banner }
 		ai_will_do = {
 			factor = 1
 		}
@@ -5197,13 +5374,13 @@ focus_tree = {
 	focus = {
 		id = VED_howitzer_dugouts
 		icon = GFX_VED_howitzer_dugouts-55626
-		x = 1
+		x = 0
 		y = 1
-		relative_position_id = VED_recoiless_rifles
+		relative_position_id = VED_artillery_factories
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = VED_recoiless_rifles 
+			focus = VED_artillery_factories
 		}
 		ai_will_do = {
 			factor = 1
@@ -5220,10 +5397,27 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = VED_antiair_gun_camouflage 
+			focus = VED_antiair_gun_camouflage
 		}
 		prerequisite = { 
-			focus = VED_howitzer_dugouts 
+			focus = VED_howitzer_dugouts
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Smoke Shells and Flares
+	focus = {
+		id = VED_smokesss_temp
+		#icon = GFX_VED_smoke_shells_and_flares-53057
+		x = -1
+		y = 1
+		relative_position_id = VED_smoke_shells_and_flares
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_smoke_shells_and_flares
 		}
 		ai_will_do = {
 			factor = 1
@@ -5240,10 +5434,27 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = VED_infantry_fighting_vehicles 
+			focus = VED_infantry_fighting_vehicles
 		}
 		prerequisite = { 
-			focus = VED_barracksonwheels 
+			focus = VED_barracksonwheels
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Command Cars
+	focus = {
+		id = VED_super_special_cars_temp
+		#icon = GFX_VED_command_cars-53054
+		x = 1
+		y = 1
+		relative_position_id = VED_command_cars
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = VED_command_cars
 		}
 		ai_will_do = {
 			factor = 1
@@ -5254,7 +5465,7 @@ focus_tree = {
 	focus = {
 		id = VED_barracksonwheels
 		icon = GFX_VED_barracksonwheels-55624
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = VED_mobile_bunkers
 		cost = 10
@@ -5267,41 +5478,17 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Silent Motors
-	focus = {
-		id = VED_silent_motors
-		icon = GFX_goal_generic_air_fighter2
-		x = -1
-		y = 1
-		relative_position_id = VED_antiflyer_weaponry
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = VED_fallskrm_kommando_troppe 
-		}
-		prerequisite = { 
-			focus = VED_antiflyer_weaponry 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	#Focus for Infantry-Flyer Escorts
 	focus = {
-		id = VED_infantryflyer_escorts
-		icon = GFX_VED_infantryflyer_escorts-55623
-		x = 1
+		id = VED_flyer_academy
+		icon = GFX_VED_flyer_academy-55623
+		x = 2
 		y = 1
 		relative_position_id = VED_antiflyer_weaponry
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = VED_krigsbombare 
-		}
-		prerequisite = { 
-			focus = VED_antiflyer_weaponry 
-		}
+		prerequisite = { focus = VED_fallskrm_kommando_troppe }
+		prerequisite = { focus = VED_krigsbombare focus = VED_antiflyer_weaponry }
 		ai_will_do = {
 			factor = 1
 		}
@@ -5311,13 +5498,13 @@ focus_tree = {
 	focus = {
 		id = VED_infantry_fighting_vehicles
 		icon = GFX_focus_NZL_bob_semple_tank
-		x = -1
+		x = 0
 		y = 1
-		relative_position_id = VED_mobile_bunkers
+		relative_position_id = VED_tank_factories
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = VED_mobile_bunkers 
+			focus = VED_tank_factories
 		}
 		ai_will_do = {
 			factor = 1
@@ -5330,17 +5517,16 @@ focus_tree = {
 		icon = GFX_focus_generic_coastal_fort
 		x = -1
 		y = 1
-		relative_position_id = VED_a_lesson_from_the_haukland_war
+		relative_position_id = VED_submarine_focus
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = VED_uboat_ambushers 
-		}
-		prerequisite = { 
-			focus = VED_a_lesson_from_the_haukland_war 
-		}
+		prerequisite = { focus = VED_destroyer_focus }
+		prerequisite = { focus = VED_submarine_focus }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = VED_deny_landing_parties_idea
 		}
 	}
 
@@ -5348,32 +5534,66 @@ focus_tree = {
 	focus = {
 		id = VED_marine_raider_regiment
 		icon = GFX_focus_usa_tank_destroyer_doctrine
-		x = 1
+		x = -1
 		y = 1
-		relative_position_id = VED_a_lesson_from_the_haukland_war
+		relative_position_id = VED_marinejeger_kommando_troppe
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = VED_marinejeger_kommando_troppe 
-		}
-		prerequisite = { 
-			focus = VED_a_lesson_from_the_haukland_war 
-		}
+		prerequisite = { focus = VED_marinejeger_kommando_troppe }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = VED_marine_raider_regiment_idea
 		}
 	}
 
 	#Focus for A Lesson From the Haukland War
 	focus = {
 		id = VED_a_lesson_from_the_haukland_war
-		icon = GFX_VED_a_lesson_from_the_haukland_war-53049
-		x = 0
+		#icon = GFX_VED_a_lesson_from_the_haukland_war-53049
+		x = 1
 		y = 1
-		relative_position_id = VED_vedina_rules_the_waves
+		relative_position_id = VED_marinejeger_kommando_troppe
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_vedina_rules_the_waves }
+		prerequisite = { focus = VED_marinejeger_kommando_troppe focus = VED_deny_landing_parties }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = VED_a_lesson_from_the_haukland_war_idea
+		}
+	}
+
+	#Focus for The Patient Serpents
+	focus = {
+		id = VED_the_patient_serpents
+		#icon = GFX_VED_the_patient_serpents-55622
+		x = 1
+		y = 1
+		relative_position_id = VED_deny_landing_parties
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_deny_landing_parties }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = VED_the_patient_serpents_idea
+		}
+	}
+
+	focus = {
+		id = VED_marine_academy
+		#icon = GFX_VED_a_lesson_from_the_haukland_war-53049
+		x = 0
+		y = 1
+		relative_position_id = VED_a_lesson_from_the_haukland_war
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_lesson_from_the_haukland_war }
+		prerequisite = { focus = VED_marine_raider_regiment focus = VED_the_patient_serpents }
 		ai_will_do = {
 			factor = 1
 		}
@@ -5383,14 +5603,17 @@ focus_tree = {
 	focus = {
 		id = VED_antiflyer_weaponry
 		icon = GFX_VED_antiflyer_weaponry-53074
-		x = 0
+		x = -1
 		y = 1
-		relative_position_id = VED_tanks_of_the_sky
+		relative_position_id = VED_bond_of_sky_and_land
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_tanks_of_the_sky }
+		prerequisite = { focus = VED_bond_of_sky_and_land }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = VED_antiflyer_weaponry_idea
 		}
 	}
 
@@ -5398,7 +5621,7 @@ focus_tree = {
 	focus = {
 		id = VED_mobile_bunkers
 		icon = GFX_goal_generic_army_tanks
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = VED_machines_of_a_new_age
 		cost = 10
@@ -5416,16 +5639,66 @@ focus_tree = {
 	focus = {
 		id = VED_marinejeger_kommando_troppe
 		icon = GFX_goal_generic_amphibious_assault
-		x = 2
+		x = 1
 		y = 1
-		relative_position_id = VED_vedina_rules_the_waves
+		relative_position_id = VED_battleship_focus
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = VED_vedina_rules_the_waves 
-		}
+		prerequisite = { focus = VED_battleship_focus }
+		prerequisite = { focus = VED_destroyer_focus }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = VED_marines_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_tech = marines }
+					}
+					set_technology = { marines = 1 }
+				}
+				fix_weapon_techs = yes
+				division_template = {
+					name = "Marinejeger Kommando Troppe"
+					priority = 2
+					division_names_group = VED_INF_01
+					regiments = {
+						marine = { x = 0 y = 0 }
+						marine = { x = 0 y = 1 }
+						marine = { x = 0 y = 2 }
+
+						marine = { x = 1 y = 0 }
+						marine = { x = 1 y = 1 }
+						marine = { x = 1 y = 2 }
+
+						marine = { x = 2 y = 0 }
+						marine = { x = 2 y = 1 }
+						marine = { x = 2 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+						recon = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 429 }
+					create_unit = {
+						division = "name = \"1st Marinejeger Kommando Troppe\" division_template = \"Marinejeger Kommando Troppe\" start_experience_factor = 1.0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"2nd Marinejeger Kommando Troppe\" division_template = \"Marinejeger Kommando Troppe\" start_experience_factor = 1.0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"3rd Marinejeger Kommando Troppe\" division_template = \"Marinejeger Kommando Troppe\" start_experience_factor = 1.0"
+						owner = ROOT
+					}
+				}
+			}
 		}
 	}
 
@@ -5453,10 +5726,12 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		x = 0
 		y = 1
-		relative_position_id = VED_skoldsvards_military_reforms
+		relative_position_id = VED_skoldsvards_military_land
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_skoldsvards_military_reforms }
+		prerequisite = { focus = VED_skoldsvards_military_land }
+		mutually_exclusive = { focus = VED_a_different_kind_of_cannon }
+		mutually_exclusive = { focus = VED_machines_of_a_new_age }
 		ai_will_do = {
 			factor = 1
 		}
@@ -5471,10 +5746,12 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery2
 		x = -3
 		y = 1
-		relative_position_id = VED_skoldsvards_military_reforms
+		relative_position_id = VED_skoldsvards_military_land
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_skoldsvards_military_reforms }
+		prerequisite = { focus = VED_skoldsvards_military_land }
+		mutually_exclusive = { focus = VED_rally_the_knights }
+		mutually_exclusive = { focus = VED_machines_of_a_new_age }
 		ai_will_do = {
 			factor = 1
 		}
@@ -5483,11 +5760,36 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Tanks of the Sky
+	#Focus for A Different Kind of Cannon
 	focus = {
-		id = VED_tanks_of_the_sky
-		icon = GFX_focus_usa_escort_fighters
-		x = 7
+		id = VED_artillery_factories
+		#icon = GFX_goal_generic_army_artillery2
+		x = 1
+		y = 1
+		relative_position_id = VED_a_different_kind_of_cannon
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_a_different_kind_of_cannon }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			429 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = TOG_artillery_factories_idea
+		}
+	}
+
+	focus = {
+		id = VED_sky_focus_start
+		#icon = GFX_focus_usa_escort_fighters
+		x = 8
 		y = 1
 		relative_position_id = VED_skoldsvards_military_reforms
 		cost = 10
@@ -5501,16 +5803,211 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = VED_battlefield_support_air_focus
+		#icon = GFX_focus_usa_escort_fighters
+		x = -2
+		y = 1
+		relative_position_id = VED_sky_focus_start
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_sky_focus_start }
+		mutually_exclusive = { focus = VED_operational_integrity_air_focus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.25 uses = 2 category = cat_battlefield_support }
+		}
+	}
+
+	focus = {
+		id = VED_close_air_support_focus
+		#icon = GFX_focus_usa_escort_fighters
+		x = 0
+		y = 1
+		relative_position_id = VED_battlefield_support_air_focus
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_battlefield_support_air_focus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = cas_bomber }
+		}
+	}
+
+	#Focus for Bond of Sky and Land
+	focus = {
+		id = VED_bond_of_sky_and_land
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 1
+		y = 1
+		relative_position_id = VED_close_air_support_focus
+		cost = 10
+		available_if_capitulated = yes
+		#prerequisite = { focus = VED_silent_motors }
+		prerequisite = { focus = VED_close_air_support_focus }
+		prerequisite = { focus = VED_fighter_focus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = VED_bond_of_sky_and_land_idea
+		}
+	}
+
+	#Focus for Fallskärm Kommando Troppe
+	focus = {
+		id = VED_fallskrm_kommando_troppe
+		icon = GFX_focus_generic_paratrooper
+		x = 1
+		y = 1
+		relative_position_id = VED_bond_of_sky_and_land
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_bond_of_sky_and_land focus = VED_silent_motors }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = VED_paratroopers_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_tech = paratroopers }
+					}
+					set_technology = { paratroopers = 1 }
+				}
+				fix_weapon_techs = yes
+				division_template = {
+					name = "Fallskärm Kommando Troppe"
+					priority = 2
+					division_names_group = VED_INF_01
+					regiments = {
+						paratrooper = { x = 0 y = 0 }
+						paratrooper = { x = 0 y = 1 }
+						paratrooper = { x = 0 y = 2 }
+
+						paratrooper = { x = 1 y = 0 }
+						paratrooper = { x = 1 y = 1 }
+						paratrooper = { x = 1 y = 2 }
+
+						paratrooper = { x = 2 y = 0 }
+						paratrooper = { x = 2 y = 1 }
+						paratrooper = { x = 2 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+						recon = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 429 }
+					create_unit = {
+						division = "name = \"1st Fallskärm Kommando Troppe\" division_template = \"Fallskärm Kommando Troppe\" start_experience_factor = 1.0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"2nd Fallskärm Kommando Troppe\" division_template = \"Fallskärm Kommando Troppe\" start_experience_factor = 1.0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"3rd Fallskärm Kommando Troppe\" division_template = \"Fallskärm Kommando Troppe\" start_experience_factor = 1.0"
+						owner = ROOT
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VED_fighter_focus
+		#icon = GFX_focus_usa_escort_fighters
+		x = 2
+		y = 1
+		relative_position_id = VED_battlefield_support_air_focus
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_battlefield_support_air_focus focus = VED_operational_integrity_air_focus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = light_fighter }
+		}
+	}
+
+	#Focus for Tanks of the Sky
+	focus = {
+		id = VED_operational_integrity_air_focus
+		icon = GFX_focus_usa_escort_fighters
+		x = 2
+		y = 1
+		relative_position_id = VED_sky_focus_start
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_sky_focus_start }
+		mutually_exclusive = { focus = VED_battlefield_support_air_focus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.25 uses = 2 category = cat_operational_integrity }
+		}
+	}
+
+	focus = {
+		id = VED_tactical_bomber_focus
+		#icon = GFX_focus_usa_escort_fighters
+		x = 0
+		y = 1
+		relative_position_id = VED_operational_integrity_air_focus
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_operational_integrity_air_focus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = tactical_bomber }
+		}
+	}
+
+	#Focus for Silent Motors
+	focus = {
+		id = VED_silent_motors
+		icon = GFX_goal_generic_air_fighter2
+		x = -1
+		y = 1
+		relative_position_id = VED_tactical_bomber_focus
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_tactical_bomber_focus }
+		prerequisite = { focus = VED_fighter_focus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = VED_silent_motors_idea
+		}
+	}
+
 	#Focus for Machines of a New Age
 	focus = {
 		id = VED_machines_of_a_new_age
 		icon = GFX_focus_generic_tank_production
 		x = 3
 		y = 1
-		relative_position_id = VED_skoldsvards_military_reforms
+		relative_position_id = VED_skoldsvards_military_land
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_skoldsvards_military_reforms }
+		prerequisite = { focus = VED_skoldsvards_military_land }
+		mutually_exclusive = { focus = VED_a_different_kind_of_cannon }
+		mutually_exclusive = { focus = VED_rally_the_knights }
 		ai_will_do = {
 			factor = 1
 		}
@@ -5519,11 +6016,36 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Vedina Rules the Waves!
+	#Focus for Machines of a New Age
 	focus = {
-		id = VED_vedina_rules_the_waves
-		icon = GFX_goal_generic_navy_battleship
-		x = -7
+		id = VED_tank_factories
+		#icon = GFX_focus_generic_tank_production
+		x = -1
+		y = 1
+		relative_position_id = VED_machines_of_a_new_age
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_machines_of_a_new_age }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			429 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = TOG_tank_factories_idea
+		}
+	}
+
+	focus = {
+		id = VED_navy_focus_start
+		#icon = GFX_goal_generic_navy_battleship
+		x = -8
 		y = 1
 		relative_position_id = VED_skoldsvards_military_reforms
 		cost = 10
@@ -5537,20 +6059,92 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Fallskärm Kommando Troppe
+	#Focus for Vedina Rules the Waves!
 	focus = {
-		id = VED_fallskrm_kommando_troppe
-		icon = GFX_focus_generic_paratrooper
+		id = VED_vedina_rules_the_waves
+		icon = GFX_goal_generic_navy_battleship
 		x = -2
 		y = 1
-		relative_position_id = VED_tanks_of_the_sky
+		relative_position_id = VED_navy_focus_start
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = VED_tanks_of_the_sky 
-		}
+		prerequisite = { focus = VED_navy_focus_start }
+		mutually_exclusive = { focus = VED_uboat_ambushers }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.25 uses = 2 category = cat_fleet_in_being }
+		}
+	}
+
+	#Focus for U-Boat Ambushers
+	focus = {
+		id = VED_uboat_ambushers
+		icon = GFX_goal_generic_navy_submarine
+		x = 2
+		y = 1
+		relative_position_id = VED_navy_focus_start
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_navy_focus_start }
+		mutually_exclusive = { focus = VED_vedina_rules_the_waves }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.25 uses = 2 category = cat_trade_interdiction }
+		}
+	}
+
+	focus = {
+		id = VED_battleship_focus
+		#icon = GFX_goal_generic_navy_battleship
+		x = 0
+		y = 1
+		relative_position_id = VED_vedina_rules_the_waves
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_vedina_rules_the_waves }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = bb_tech }
+		}
+	}
+
+	focus = {
+		id = VED_destroyer_focus
+		#icon = GFX_goal_generic_navy_battleship
+		x = 2
+		y = 1
+		relative_position_id = VED_vedina_rules_the_waves
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_vedina_rules_the_waves focus = VED_uboat_ambushers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = dd_tech }
+		}
+	}
+
+	focus = {
+		id = VED_submarine_focus
+		#icon = GFX_goal_generic_navy_battleship
+		x = 0
+		y = 1
+		relative_position_id = VED_uboat_ambushers
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = VED_uboat_ambushers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = ss_tech }
 		}
 	}
 
@@ -5558,16 +6152,17 @@ focus_tree = {
 	focus = {
 		id = VED_krigsbombare
 		icon = GFX_goal_generic_air_bomber
-		x = 2
+		x = 1
 		y = 1
-		relative_position_id = VED_tanks_of_the_sky
+		relative_position_id = VED_silent_motors
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = VED_tanks_of_the_sky 
-		}
+		prerequisite = { focus = VED_silent_motors }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = VED_krigsbombarde_idea
 		}
 	}
 
@@ -5575,7 +6170,7 @@ focus_tree = {
 	focus = {
 		id = VED_recoiless_rifles
 		icon = GFX_goal_generic_army_artillery2
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = VED_a_different_kind_of_cannon
 		cost = 10
@@ -5589,26 +6184,11 @@ focus_tree = {
 		}
 	}
 
-	#Focus for U-Boat Ambushers
-	focus = {
-		id = VED_uboat_ambushers
-		icon = GFX_goal_generic_navy_submarine
-		x = -2
-		y = 1
-		relative_position_id = VED_vedina_rules_the_waves
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_vedina_rules_the_waves }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	#Focus for Anti-Air Gun Camouflage
 	focus = {
 		id = VED_antiair_gun_camouflage
 		icon = GFX_VED_antiair_gun_camouflage-55625
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = VED_recoiless_rifles
 		cost = 10
@@ -5621,46 +6201,16 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Order of the Scarlet Lance
-	focus = {
-		id = VED_order_of_the_scarlet_lance
-		icon = GFX_VED_order_of_the_scarlet_lance-65749
-		x = 1
-		y = 1
-		relative_position_id = VED_marcher_lords
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_marcher_lords }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	#Focus for Bullet-Proof Plating
 	focus = {
 		id = VED_bulletproof_plating
 		icon = GFX_VED_bulletproof_plating-53072
-		x = -4
+		x = -2
 		y = 0
 		relative_position_id = VED_personal_heraldry
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = VED_form_knightly_houses }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Order of the Argent Twilight
-	focus = {
-		id = VED_order_of_the_argent_twilight
-		icon = GFX_VED_order_of_the_argent_twilight-65748
-		x = -1
-		y = 1
-		relative_position_id = VED_marcher_lords
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_marcher_lords }
 		ai_will_do = {
 			factor = 1
 		}
@@ -5675,62 +6225,7 @@ focus_tree = {
 		relative_position_id = VED_personal_heraldry
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = VED_personal_heraldry }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Order of the Burning Heart
-	focus = {
-		id = VED_order_of_the_burning_heart
-		icon = GFX_focus_spa_no_compromise_on_carlist_ideals
-		x = -1
-		y = 1
-		relative_position_id = VED_bulletproof_plating
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = VED_bulletproof_plating }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for A Chapter in Every City
-	focus = {
-		id = VED_a_chapter_in_every_city
-		icon = GFX_VED_a_chapter_in_every_city-68664
-		x = 1
-		y = 1
-		relative_position_id = VED_order_of_the_blooming_flower
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = VED_order_of_the_blooming_flower 
-		}
-		prerequisite = { 
-			focus = VED_order_of_the_argent_twilight 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Rebuild the Winter Keep
-	focus = {
-		id = VED_rebuild_the_winter_keep
-		icon = GFX_VED_rebuild_the_winter_keep-65752
-		x = 2
-		y = 1
-		relative_position_id = VED_end_order_rivalries
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = VED_end_order_rivalries 
-		}
-		prerequisite = { 
-			focus = VED_a_chapter_in_every_city 
-		}
+		prerequisite = { focus = VED_personal_heraldry focus = VED_command_cars }
 		ai_will_do = {
 			factor = 1
 		}

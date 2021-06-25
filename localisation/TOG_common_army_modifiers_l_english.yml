@@ -1,6 +1,18 @@
 ﻿l_english:
 
  ### ARMY MODIFIERS ###
+ modifier_army_sub_unit_mountaineers_attack_factor:0 "Mountaineers Attack"
+ modifier_army_sub_unit_mountaineers_defence_factor:0 "Mountaineers Defense"
+ modifier_army_sub_unit_mountaineers_speed_factor:0 "Mountaineers Speed"
+
+ modifier_army_sub_unit_paratroopers_attack_factor:0 "Paratroopers Attack"
+ modifier_army_sub_unit_paratroopers_defence_factor:0 "Paratroopers Defense"
+ modifier_army_sub_unit_paratroopers_speed_factor:0 "Paratroopers Speed"
+
+ modifier_army_sub_unit_marines_attack_factor:0 "Marines Attack"
+ modifier_army_sub_unit_marines_defence_factor:0 "Marines Defense"
+ modifier_army_sub_unit_marines_speed_factor:0 "Marines Speed"
+
  modifier_army_sub_unit_witchers_attack_factor:0 "Griffers Attack"
  modifier_army_sub_unit_witchers_defence_factor:0 "Griffers Defense"
  modifier_army_sub_unit_witchers_speed_factor:0 "Griffers Speed"

@@ -1,6 +1,7 @@
 on_actions = {
     on_startup = {
     	effect = {
+    		
 			CHN = {
 				create_field_marshal = {
 					name = "Queen Chrysalis"
@@ -65,31 +66,6 @@ on_actions = {
 					female = yes
 				}
     		}
-		}
-	}
-	on_peaceconference_ended = {
-		effect = {
-			SRS = {
-				IF = {
-					limit = {
-						NOT = { has_idea = SRS_skynavian_redguard }
-						has_war = no
-					}
-					add_ideas = SRS_skynavian_redguard
-				}
-			}
-		}
-		effect = {
-			SRS = {
-				if = {
-					limit = {
-						SRS_owns_VED = yes
-						SRS_owns_NTR = yes
-						SRS_owns_FAT = yes
-					}
-					country_event = srs_sickoflavour.27
-				}
-			}
 		}
 	}
 }

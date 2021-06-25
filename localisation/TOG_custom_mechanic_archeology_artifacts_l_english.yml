@@ -1,6 +1,10 @@
 ﻿l_english:
-
- ### Artifacts ###
+ 
+ ### ARCHEOLOGY ###
+ ARCHEOLOGYVIEW_TITLE:0 "Archeology"
+ archeology_tooltip:0 "§YArcheology§!\nPlaceholder.\n--------------"
+ 
+ ### ARTIFACTS ###
  TOG_element_of_honesty_idea:0 "§gArtifact:§! Element of Honesty"
  TOG_element_of_kindness_idea:0 "§gArtifact:§! Element of Kindness"
  TOG_element_of_laughter_idea:0 "§gArtifact:§! Element of Laughter"
@@ -8,4 +12,3 @@
  TOG_element_of_loyalty_idea:0 "§gArtifact:§! Element of Loyalty"
  TOG_element_of_magic_idea:0 "§gArtifact:§! Element of Magic"
  TOG_elements_of_harmony_idea:0 "§gArtifact:§! Elements of Harmony"
- 

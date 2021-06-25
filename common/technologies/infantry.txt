@@ -52,6 +52,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -80,6 +81,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -126,6 +128,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -159,6 +162,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -213,6 +217,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -272,6 +277,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -368,6 +374,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -464,6 +471,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 			magical_tech
 		}
@@ -527,6 +535,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 			magical_tech
 		}
@@ -614,6 +623,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 			magical_tech
 		}
@@ -687,6 +697,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 			magical_tech
 		}
@@ -756,6 +767,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -800,6 +812,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -862,6 +875,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -927,6 +941,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -997,6 +1012,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			para_tech
 			special_forces_tech
 		}
@@ -1036,6 +1052,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			para_tech
 			special_forces_tech
 		}
@@ -1076,6 +1093,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			para_tech
 			special_forces_tech
 		}
@@ -1130,6 +1148,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			marine_tech
 			special_forces_tech
 		}
@@ -1180,6 +1199,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			marine_tech
 			special_forces_tech
 		}
@@ -1216,6 +1236,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			marine_tech
 			special_forces_tech
 		}
@@ -1267,6 +1288,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_tech
 			mountaineers_tech
 			special_forces_tech
@@ -1326,6 +1348,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_tech
 			mountaineers_tech
 			special_forces_tech
@@ -1369,6 +1392,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_tech
 			mountaineers_tech
 			special_forces_tech
@@ -1415,6 +1439,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			mountaineers_tech
 			marine_tech
 			para_tech
@@ -1461,6 +1486,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			mountaineers_tech
 			marine_tech
 			para_tech
@@ -1504,6 +1530,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			mountaineers_tech
 			marine_tech
 			para_tech
@@ -1551,6 +1578,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			mountaineers_tech
 			marine_tech
 			para_tech
@@ -1596,6 +1624,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			mountaineers_tech
 			marine_tech
 			para_tech
@@ -1642,6 +1671,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			mountaineers_tech
 			marine_tech
 			para_tech
@@ -1676,6 +1706,7 @@ technologies = {
 		}
 		
 		categories = {
+			tog_military_technologies_category
 			mountaineers_tech
 			marine_tech
 			para_tech
@@ -1705,6 +1736,7 @@ technologies = {
 		}
 		
 		categories = {
+			tog_military_technologies_category
 			mountaineers_tech
 			marine_tech
 			para_tech
@@ -1783,6 +1815,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			night_vision
 		}
 
@@ -1814,6 +1847,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			night_vision
 		}
 
@@ -1867,6 +1901,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -1946,6 +1981,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -2009,6 +2045,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -2074,6 +2111,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -2170,6 +2208,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			infantry_tech
 		}
@@ -2221,6 +2260,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			mot_rockets
 		}
 	}
@@ -2248,6 +2288,7 @@ technologies = {
 		}
 		
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			armor
 		}
@@ -2295,6 +2336,7 @@ technologies = {
 		}
 		
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			armor
 		}
@@ -2340,6 +2382,7 @@ technologies = {
 		}
 		
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			armor
 		}
@@ -2386,6 +2429,7 @@ technologies = {
 		sub_tech_index = 1
 		
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			armor
 		}
@@ -2455,6 +2499,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -2512,6 +2557,7 @@ technologies = {
 		}
 		
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -2558,6 +2604,7 @@ technologies = {
 		}
 		
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -2605,6 +2652,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -2661,6 +2709,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -2737,6 +2786,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -2807,6 +2857,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -2863,6 +2914,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -2914,6 +2966,7 @@ technologies = {
 		}
 		
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -2960,6 +3013,7 @@ technologies = {
 		}
 		
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -3023,6 +3077,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -3077,6 +3132,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -3138,6 +3194,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -3200,6 +3257,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -3250,6 +3308,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -3315,6 +3374,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -3343,6 +3403,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -3366,6 +3427,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -3403,6 +3465,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			para_tech
 			special_forces_tech
 		}
@@ -3441,6 +3504,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			para_tech
 			special_forces_tech
 		}
@@ -3474,6 +3538,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			para_tech
 			special_forces_tech
 		}
@@ -3516,6 +3581,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			marine_tech
 			special_forces_tech
 		}
@@ -3550,6 +3616,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			marine_tech
 			special_forces_tech
 		}
@@ -3579,6 +3646,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			marine_tech
 			special_forces_tech
 		}
@@ -3618,6 +3686,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_tech
 			mountaineers_tech
 			special_forces_tech
@@ -3653,6 +3722,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_tech
 			mountaineers_tech
 			special_forces_tech
@@ -3683,6 +3753,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_tech
 			mountaineers_tech
 			special_forces_tech
@@ -3733,6 +3804,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -3806,6 +3878,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -3858,6 +3931,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			night_vision
 		}
 
@@ -3904,6 +3978,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			infantry_weapons
 		}
 
@@ -3967,6 +4042,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			armor
 		}
@@ -3995,6 +4071,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			armor
 		}
@@ -4019,6 +4096,7 @@ technologies = {
 		sub_tech_index = 1
 		
 		categories = {
+			tog_military_technologies_category
 			motorized_equipment
 			armor
 		}

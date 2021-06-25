@@ -41,6 +41,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			ai_basic_start
 		}
@@ -98,6 +99,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 		}
 	}
@@ -128,6 +130,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			radar_tech
 		}
@@ -161,6 +164,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			radar_tech
 		}
@@ -202,6 +206,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			radar_tech
 		}
@@ -237,6 +242,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			radar_tech
 		}
@@ -270,6 +276,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			radar_tech
 		}
@@ -309,6 +316,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			radar_tech
 		}
@@ -358,6 +366,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			computing_tech
 			ai_continued_start
@@ -420,6 +429,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 			decryption_tech
@@ -484,6 +494,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 			decryption_tech
@@ -547,6 +558,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 			decryption_tech
@@ -605,6 +617,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 		}
@@ -659,6 +672,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 		}
@@ -713,6 +727,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 		}
@@ -763,6 +778,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			decryption_tech
 		}
@@ -813,6 +829,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			decryption_tech
 		}
@@ -863,6 +880,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			decryption_tech
 		}
@@ -905,6 +923,7 @@ technologies = {
 		}
 		
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			computing_tech
 			naval_equipment
@@ -943,6 +962,7 @@ technologies = {
 		}
 		
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			computing_tech
 			naval_equipment
@@ -976,6 +996,7 @@ technologies = {
 		}
 		
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			computing_tech
 			naval_equipment
@@ -1025,6 +1046,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			rocketry
 		}
 	}
@@ -1095,6 +1117,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			rocketry
 		}
 	}
@@ -1147,6 +1170,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			rocketry
 		}
 	}
@@ -1200,6 +1224,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			rocketry
 		}
 	}
@@ -1250,6 +1275,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			rocketry
 			jet_technology
 		}
@@ -1305,6 +1331,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			nuclear
 		}
 
@@ -1341,6 +1368,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			nuclear
 		}
 
@@ -1378,6 +1406,7 @@ technologies = {
 		nuclear_production = 1
 
 		categories = {
+			tog_civilian_technologies_category
 			nuclear
 		}
 	}
@@ -1407,6 +1436,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			nuclear
 		}
 	}
@@ -1429,6 +1459,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			nuclear
 		}
 	}
@@ -1461,6 +1492,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			radar_tech
 		}
@@ -1490,6 +1522,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			radar_tech
 		}
@@ -1514,6 +1547,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			radar_tech
 		}
@@ -1568,6 +1602,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 			decryption_tech
@@ -1623,6 +1658,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 			decryption_tech
@@ -1681,6 +1717,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 			decryption_tech
@@ -1715,6 +1752,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 			decryption_tech
@@ -1751,6 +1789,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 		}
@@ -1780,6 +1819,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			decryption_tech
 		}
@@ -1809,6 +1849,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 		}
@@ -1838,6 +1879,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			decryption_tech
 		}
@@ -1863,6 +1905,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 		}
@@ -1892,6 +1935,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			decryption_tech
 		}
@@ -1940,6 +1984,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			rocketry
 		}
 	}
@@ -1985,6 +2030,7 @@ technologies = {
 		}
 
 		categories = {
+			tog_civilian_technologies_category
 			rocketry
 		}
 	}
@@ -2038,6 +2084,7 @@ technologies = {
 		}
 	
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 		}
@@ -2071,6 +2118,7 @@ technologies = {
 		}
 	
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 		}
@@ -2104,6 +2152,7 @@ technologies = {
 		}
 	
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 		}
@@ -2141,6 +2190,7 @@ technologies = {
 		}
 	
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			decryption_tech
 		}
@@ -2178,6 +2228,7 @@ technologies = {
 		}
 	
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			decryption_tech
 		}
@@ -2215,6 +2266,7 @@ technologies = {
 		}
 	
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			decryption_tech
 		}
@@ -2240,6 +2292,7 @@ technologies = {
 		}
 	
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 		}
@@ -2269,6 +2322,7 @@ technologies = {
 		}
 	
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			decryption_tech
 		}
@@ -2294,6 +2348,7 @@ technologies = {
 		}
 	
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 		}
@@ -2323,6 +2378,7 @@ technologies = {
 		}
 	
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			decryption_tech
 		}
@@ -2348,6 +2404,7 @@ technologies = {
 		}
 	
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			encryption_tech
 		}
@@ -2377,6 +2434,7 @@ technologies = {
 		}
 	
 		categories = {
+			tog_civilian_technologies_category
 			electronics
 			decryption_tech
 		}

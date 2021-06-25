@@ -41,6 +41,20 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_large/unit_aerial_mages_icon.dds"
 		noOfFrames = 2
 	}
+	
+	### HEROES ###
+	spriteType = {
+		name = "GFX_div_templ_100_large"
+		textureFile = "gfx/interface/counters/division_templates_large/custom_template_100.dds"
+	}
+	spriteType = {
+		name = "GFX_div_templ_101_large"
+		textureFile = "gfx/interface/counters/division_templates_large/custom_template_101.dds"
+	}
+	spriteType = {
+		name = "GFX_div_templ_102_large"
+		textureFile = "gfx/interface/counters/division_templates_large/custom_template_102.dds"
+	}
 
 	####################################################
 	
@@ -125,6 +139,20 @@ spriteTypes = {
 		texturefile = "gfx/texticons/unit_witchers_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
+	}
+	
+	### HEROES ###
+	spriteType = {
+		name = "GFX_div_templ_100_small"
+		textureFile = "gfx/interface/counters/division_templates_small/custom_template_100.dds"
+	}
+	spriteType = {
+		name = "GFX_div_templ_101_small"
+		textureFile = "gfx/interface/counters/division_templates_small/custom_template_101.dds"
+	}
+	spriteType = {
+		name = "GFX_div_templ_102_small"
+		textureFile = "gfx/interface/counters/division_templates_small/custom_template_102.dds"
 	}
 
 }

@@ -40,7 +40,7 @@ modifier_income_taxes = {
 
 modifier_income_taxes_efficiency = {
 	value_type = percentage
-	precision = 2
+	precision = 0
 	postfix = none
 	color_type = good
 }
@@ -54,7 +54,7 @@ modifier_income_subject_taxes = {
 
 modifier_income_subject_taxes_efficiency = {
 	value_type = percentage
-	precision = 2
+	precision = 0
 	postfix = none
 	color_type = good
 }
@@ -75,7 +75,7 @@ modifier_income_civilian_factories = {
 
 modifier_income_civilian_factories_efficiency = {
 	value_type = percentage
-	precision = 2
+	precision = 0
 	postfix = none
 	color_type = good
 }
@@ -89,7 +89,7 @@ modifier_income_exported_resources = {
 
 modifier_income_exported_resources_efficiency = {
 	value_type = percentage
-	precision = 2
+	precision = 0
 	postfix = none
 	color_type = good
 }
@@ -102,7 +102,7 @@ modifier_expenses_overlord = {
 
 modifier_expenses_overlord_efficiency = {
 	value_type = percentage
-	precision = 2
+	precision = 0
 	postfix = none
 }
 
@@ -120,7 +120,7 @@ modifier_expenses_education = {
 
 modifier_expenses_education_efficiency = {
 	value_type = percentage
-	precision = 2
+	precision = 0
 	postfix = none
 }
 
@@ -132,7 +132,7 @@ modifier_expenses_farms = {
 
 modifier_expenses_farms_efficiency = {
 	value_type = percentage
-	precision = 2
+	precision = 0
 	postfix = none
 }
 
@@ -144,7 +144,7 @@ modifier_expenses_army_spending = {
 
 modifier_expenses_army_spending_efficiency = {
 	value_type = percentage
-	precision = 2
+	precision = 0
 	postfix = none
 }
 
@@ -156,7 +156,7 @@ modifier_expenses_military_factories = {
 
 modifier_expenses_military_factories_efficiency = {
 	value_type = percentage
-	precision = 2
+	precision = 0
 	postfix = none
 }
 
@@ -168,7 +168,7 @@ modifier_expenses_naval_factories = {
 
 modifier_expenses_naval_factories_efficiency = {
 	value_type = percentage
-	precision = 2
+	precision = 0
 	postfix = none
 }
 
@@ -180,7 +180,7 @@ modifier_expenses_imported_resources = {
 
 modifier_expenses_imported_resources_efficiency = {
 	value_type = percentage
-	precision = 2
+	precision = 0
 	postfix = none
 }
 
@@ -198,7 +198,7 @@ modifier_expenses_infrastructure_upkeep = {
 
 modifier_expenses_infrastructure_upkeep_efficiency = {
 	value_type = percentage
-	precision = 2
+	precision = 0
 	postfix = none
 }
 
@@ -210,7 +210,7 @@ modifier_expenses_occupation_cost = {
 
 modifier_expenses_occupation_cost_efficiency = {
 	value_type = percentage
-	precision = 2
+	precision = 0
 	postfix = none
 }
 

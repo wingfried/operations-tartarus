@@ -3,48 +3,35 @@ on_actions = {
 	on_startup = {
 		effect = {
 
-			# ELEMENTS OF HARMONY
-
+			#Elements of Harmony
 			random_country = {
-				limit = {
-					has_government = democratic
-				}
-				add_ideas = TOG_element_of_honesty_idea
+				limit = { has_idea = TOG_element_of_honesty_idea }
+				set_variable = { global.element_of_honesty_owner = ROOT }
 			}
 
 			random_country = {
-				limit = {
-					has_government = democratic
-				}
-				add_ideas = TOG_element_of_kindness_idea
+				limit = { has_idea = TOG_element_of_kindness_idea }
+				set_variable = { global.element_of_kindness_owner = ROOT }
 			}
 
 			random_country = {
-				limit = {
-					has_government = democratic
-				}
-				add_ideas = TOG_element_of_laughter_idea
+				limit = { has_idea = TOG_element_of_laughter_idea }
+				set_variable = { global.element_of_laughter_owner = ROOT }
 			}
 
 			random_country = {
-				limit = {
-					has_government = democratic
-				}
-				add_ideas = TOG_element_of_generosity_idea
+				limit = { has_idea = TOG_element_of_generosity_idea }
+				set_variable = { global.element_of_generosity_owner = ROOT }
 			}
 
 			random_country = {
-				limit = {
-					has_government = democratic
-				}
-				add_ideas = TOG_element_of_loyalty_idea
+				limit = { has_idea = TOG_element_of_loyalty_idea }
+				set_variable = { global.element_of_loyalty_owner = ROOT }
 			}
 
 			random_country = {
-				limit = {
-					has_government = democratic
-				}
-				add_ideas = TOG_element_of_magic_idea
+				limit = { has_idea = TOG_element_of_magic_idea }
+				set_variable = { global.element_of_magic_owner = ROOT }
 			}
 		}
 	}

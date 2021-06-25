@@ -2,6 +2,9 @@
 # If adding new technology, make sure they are uniquely named.
 
 technology_categories = {
+	tog_military_technologies_category
+	tog_civilian_technologies_category
+
 	witcher_tech
 	custom_magical_tech
 
@@ -15,7 +18,7 @@ technology_categories = {
 technology_folders = {
 	witcher_folder = {
 		available = {
-			has_completed_focus = VED_Order_of_Witchers
+			#has_completed_focus = VED_Order_of_Witchers
 			#tag = VED
 		}
 		ledger = civilian

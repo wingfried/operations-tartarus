@@ -14,6 +14,11 @@ spriteTypes = {
 		name = "GFX_portrait_bg_blank"
 		texturefile = "gfx/interface/portrait_bg_blank.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_pol_leader_frameless"
+		texturefile = "gfx/interface/GFX_pol_leader_frameless.dds"
+	}
 
 	spriteType = {
 		name = "GFX_diplo_leader_frame_2"
@@ -28,6 +33,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_diplo_tab_extender"
 		texturefile = "gfx/interface/diplo_tab_extender.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pol_view_bg_add"
+		texturefile = "gfx/interface/pol_view_bg_add.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pol_view_bg_not"
+		texturefile = "gfx/interface/pol_view_bg_not.dds"
 	}
 
 	textSpriteType = {
