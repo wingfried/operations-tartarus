@@ -1,6 +1,18 @@
 on_actions = {
     on_startup = {
     	effect = {
+
+    		every_country = {
+    			limit = {
+    				NOT = { has_tech = farming0 }
+    			}
+    			hidden_effect = {
+					set_technology = {
+						farming0 = 1
+						popup = no
+					}
+				}
+    		}
     		
 			CHN = {
 				create_field_marshal = {

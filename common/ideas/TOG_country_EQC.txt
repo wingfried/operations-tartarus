@@ -520,7 +520,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				modifier_expenses_education = 0.25
+				modifier_expenses_education = 0.1
 				production_speed_buildings_factor = 0.06
 			}
 		}
@@ -538,7 +538,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				modifier_expenses_education = 0.5
+				modifier_expenses_education = 0.2
 				production_speed_buildings_factor = 0.20
 			}
 		}
@@ -556,7 +556,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				modifier_expenses_education = 0.25
+				modifier_expenses_education = 0.1
 				research_speed_factor = 0.06
 			}
 		}
@@ -574,7 +574,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				modifier_expenses_education = 0.5
+				modifier_expenses_education = 0.2
 				research_speed_factor = 0.20
 			}
 		}
@@ -1006,25 +1006,7 @@ ideas = {
 	}
 	
 	air_chief = {
-		EQC_genius_ace_generation_griff = {
-
-
-			allowed = {
-				original_tag = EQC
-
-			}
-
-			available = {
-				AND = {
-					has_completed_focus = EQC_reorganize_the_military_staff
-				}
-			}
-
-			traits = { air_air_combat_training_3_abusive }
-
-			do_effect = {
-			}
-		}
+		
 	}
 	
 	navy_chief = {
@@ -1077,26 +1059,6 @@ ideas = {
 			}
 
 			traits = { army_artillery_2 }
-
-			do_effect = {
-			}
-		}
-
-		EQC_genius_special_forces_pony = {
-
-
-			allowed = {
-				original_tag = EQC
-
-			}
-
-			available = {
-				AND = {
-					has_completed_focus = EQC_reorganize_the_military_staff
-				}
-			}
-
-			traits = { army_commando_3_abusive }
 
 			do_effect = {
 			}

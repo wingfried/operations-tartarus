@@ -19,7 +19,7 @@ technology_folders = {
 	witcher_folder = {
 		available = {
 			#has_completed_focus = VED_Order_of_Witchers
-			#tag = VED
+			tag = VED
 		}
 		ledger = civilian
 	}

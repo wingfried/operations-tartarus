@@ -139,6 +139,30 @@ defined_text = {
 		}
 		localization_key = GFG_ROSEFEATHER
 	}
+	#text = {
+	#	trigger = {
+	#		has_government = communism
+	#	}
+	#	localization_key = DL_communism
+	#}
+	#text = {
+	#	trigger = {
+	#		has_government = fascism
+	#	}
+	#	localization_key = DL_fascism
+	#}
+	#text = {
+	#	trigger = {
+	#		has_government = democratic
+	#	}
+	#	localization_key = DL_democratic
+	#}
+	#text = {
+	#	trigger = {
+	#		has_government = neutrality
+	#	}
+	#	localization_key = DL_neutrality
+	#}
 	text = {
 		localization_key = DEFAULT_TITLE
 	}
@@ -250,8 +274,31 @@ defined_text = {
 		localization_key = "GFX_pol_view_bg_add"
 	}
 	text = {
+		trigger = {
+			has_government = communism
+		}
+		localization_key = "GFX_pol_view_bg_communism"
+	}
+	text = {
+		trigger = {
+			has_government = fascism
+		}
+		localization_key = "GFX_pol_view_bg_supremacy"
+	}
+	text = {
+		trigger = {
+			has_government = democratic
+		}
+		localization_key = "GFX_pol_view_bg_harmony"
+	}
+	text = {
+		trigger = {
+			has_government = neutrality
+		}
+		localization_key = "GFX_pol_view_bg_nonaligned"
+	}
+	text = {
 		localization_key = "GFX_portrait_bg_transparent"
-		#localization_key = "GFX_pol_view_bg_not"
 	}
 }
 

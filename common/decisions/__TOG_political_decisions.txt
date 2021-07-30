@@ -1,0 +1,694 @@
+political_actions = {
+	anti_anarchism_raids = {
+		icon = anti_anarchism
+		visible = {
+			NOT = { has_government = tog_anarchism }
+		}
+		available = {
+			tog_anarchism > 0.1
+		}
+		modifier = {
+			tog_anarchism_drift = -0.05
+			stability_weekly = 0.007
+		}
+		days_remove = 120
+		cost = 50
+		complete_effect = {
+			add_stability = -0.1
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	anti_technocracy_raids = {
+		icon = anti_technocracy
+		visible = {
+			NOT = { has_government = tog_technocracy }
+		}
+		available = {
+			tog_technocracy > 0.1
+		}
+		modifier = {
+			tog_technocracy_drift = -0.05
+			stability_weekly = 0.007
+		}
+		days_remove = 120
+		cost = 50
+		complete_effect = {
+			add_stability = -0.1
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	anti_kleptocracy_raids = {
+		icon = anti_kleptocracy
+		visible = {
+			NOT = { has_government = tog_kleptocracy }
+		}
+		available = {
+			tog_kleptocracy > 0.1
+		}
+		modifier = {
+			tog_kleptocracy_drift = -0.05
+			stability_weekly = 0.007
+		}
+		days_remove = 120
+		cost = 50
+		complete_effect = {
+			add_stability = -0.1
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	anti_theocracy_raids = {
+		icon = anti_theocracy
+		visible = {
+			NOT = { has_government = tog_theocracy }
+		}
+		available = {
+			tog_theocracy > 0.1
+		}
+		modifier = {
+			tog_theocracy_drift = -0.05
+			stability_weekly = 0.007
+		}
+		days_remove = 120
+		cost = 50
+		complete_effect = {
+			add_stability = -0.1
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	anti_magocracy_raids = {
+		icon = anti_magocracy
+		visible = {
+			NOT = { has_government = tog_magocracy }
+		}
+		available = {
+			tog_magocracy > 0.1
+		}
+		modifier = {
+			tog_magocracy_drift = -0.05
+			stability_weekly = 0.007
+		}
+		days_remove = 120
+		cost = 50
+		complete_effect = {
+			add_stability = -0.1
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	ban_anarchism_party = {
+		icon = anti_anarchist
+		available = {
+			tog_anarchism < 0.2
+		}
+		visible = {
+			NOT = {
+				has_government = tog_anarchism
+			}
+			tog_anarchism > 0
+		}
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = tog_anarchism
+			}
+		}
+		modifier = {
+			tog_anarchism_drift = -0.02
+		}
+		days_remove = -1
+		cost = 100
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@tog_anarchism
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = tog_anarchism
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+			}
+			custom_effect_tooltip = ban_anarchism_party_tt
+			add_stability = ban_ideology_var
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ban_technocracy_party = {
+		icon = anti_technocracy
+		available = {
+			tog_technocracy < 0.2
+		}
+		visible = {
+			NOT = {
+				has_government = tog_technocracy
+			}
+			tog_technocracy > 0
+		}
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = tog_technocracy
+			}
+		}
+		modifier = {
+			tog_technocracy_drift = -0.02
+		}
+		days_remove = -1
+		cost = 100
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@tog_technocracy
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = tog_technocracy
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+			}
+			custom_effect_tooltip = ban_technocracy_party_tt
+			add_stability = ban_ideology_var
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ban_kleptocracy_party = {
+		icon = anti_kleptocracy
+		available = {
+			tog_kleptocracy < 0.2
+		}
+		visible = {
+			NOT = {
+				has_government = tog_kleptocracy
+			}
+			tog_kleptocracy > 0
+		}
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = tog_kleptocracy
+			}
+		}
+		modifier = {
+			tog_kleptocracy_drift = -0.02
+		}
+		days_remove = -1
+		cost = 100
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@tog_kleptocracy
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = tog_kleptocracy
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+			}
+			custom_effect_tooltip = ban_kleptocracy_party_tt
+			add_stability = ban_ideology_var
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ban_theocracy_party = {
+		icon = anti_theocracy
+		available = {
+			tog_theocracy < 0.2
+		}
+		visible = {
+			NOT = {
+				has_government = tog_theocracy
+			}
+			tog_theocracy > 0
+		}
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = tog_theocracy
+			}
+		}
+		modifier = {
+			tog_theocracy_drift = -0.02
+		}
+		days_remove = -1
+		cost = 100
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@tog_theocracy
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = tog_theocracy
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+			}
+			custom_effect_tooltip = ban_theocracy_party_tt
+			add_stability = ban_ideology_var
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ban_magocracy_party = {
+		icon = anti_magocracy
+		available = {
+			tog_magocracy < 0.2
+		}
+		visible = {
+			NOT = {
+				has_government = tog_magocracy
+			}
+			tog_magocracy > 0
+		}
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = tog_magocracy
+			}
+		}
+		modifier = {
+			tog_magocracy_drift = -0.02
+		}
+		days_remove = -1
+		cost = 100
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@tog_magocracy
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = tog_magocracy
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+			}
+			custom_effect_tooltip = ban_magocracy_party_tt
+			add_stability = ban_ideology_var
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	institute_press_censorship_anarchism_state = {
+		icon = press_censorship
+		visible = {
+			has_government = tog_anarchism
+			if = {
+				limit = {
+					tag = NIM
+				}
+				has_completed_focus = NIM_polity
+			}
+			if = {
+				limit = {
+					original_tag = PYT
+				}
+				has_country_flag = PYT_established_dictatorship
+			}
+			if = {
+				limit = {
+					original_tag = FEA
+				}
+				OR = {
+					has_completed_focus = FEA_martial_law
+					has_completed_focus = FEA_party_convention
+					has_completed_focus = FEA_the_fate_of_feathisia
+				}
+			}
+			if = {
+				limit = {
+					tag = NMS
+				}
+				NOT = {
+					has_completed_focus = NMS_the_third_position
+				}
+			}
+			if = {
+				limit = {
+					tag = GRF
+				}
+				NOT = {
+					has_completed_focus = GRF_free_elections
+				}
+			}
+			if = {
+				limit = {
+					tag = EQC
+				}
+				NOT = {
+					has_country_flag = EQC_cant_censor_press
+				}
+			}
+		}
+		modifier = {
+			communism_drift = -0.01
+			fascism_drift = -0.01
+			democratic_drift = -0.01
+			neutrality_drift = -0.01
+			tog_technocracy_drift = -0.01
+			tog_kleptocracy_drift = -0.01
+			tog_theocracy_drift = -0.01
+			tog_magocracy_drift = -0.01
+			tog_anarchism_drift = 0.08
+		}
+		days_remove = 360
+		cost = 150
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	institute_press_censorship_technocracy_state = {
+		icon = press_censorship
+		visible = {
+			has_government = tog_technocracy
+			if = {
+				limit = {
+					tag = NIM
+				}
+				has_completed_focus = NIM_polity
+			}
+			if = {
+				limit = {
+					original_tag = PYT
+				}
+				has_country_flag = PYT_established_dictatorship
+			}
+			if = {
+				limit = {
+					original_tag = FEA
+				}
+				OR = {
+					has_completed_focus = FEA_martial_law
+					has_completed_focus = FEA_party_convention
+					has_completed_focus = FEA_the_fate_of_feathisia
+				}
+			}
+			if = {
+				limit = {
+					tag = NMS
+				}
+				NOT = {
+					has_completed_focus = NMS_the_third_position
+				}
+			}
+			if = {
+				limit = {
+					tag = GRF
+				}
+				NOT = {
+					has_completed_focus = GRF_free_elections
+				}
+			}
+			if = {
+				limit = {
+					tag = EQC
+				}
+				NOT = {
+					has_country_flag = EQC_cant_censor_press
+				}
+			}
+		}
+		modifier = {
+			communism_drift = -0.01
+			fascism_drift = -0.01
+			democratic_drift = -0.01
+			neutrality_drift = -0.01
+			tog_anarchism_drift = -0.01
+			tog_kleptocracy_drift = -0.01
+			tog_theocracy_drift = -0.01
+			tog_magocracy_drift = -0.01
+			tog_technocracy_drift = 0.08
+		}
+		days_remove = 360
+		cost = 150
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	institute_press_censorship_kleptocracy_state = {
+		icon = press_censorship
+		visible = {
+			has_government = tog_kleptocracy
+			if = {
+				limit = {
+					tag = NIM
+				}
+				has_completed_focus = NIM_polity
+			}
+			if = {
+				limit = {
+					original_tag = PYT
+				}
+				has_country_flag = PYT_established_dictatorship
+			}
+			if = {
+				limit = {
+					original_tag = FEA
+				}
+				OR = {
+					has_completed_focus = FEA_martial_law
+					has_completed_focus = FEA_party_convention
+					has_completed_focus = FEA_the_fate_of_feathisia
+				}
+			}
+			if = {
+				limit = {
+					tag = NMS
+				}
+				NOT = {
+					has_completed_focus = NMS_the_third_position
+				}
+			}
+			if = {
+				limit = {
+					tag = GRF
+				}
+				NOT = {
+					has_completed_focus = GRF_free_elections
+				}
+			}
+			if = {
+				limit = {
+					tag = EQC
+				}
+				NOT = {
+					has_country_flag = EQC_cant_censor_press
+				}
+			}
+		}
+		modifier = {
+			communism_drift = -0.01
+			fascism_drift = -0.01
+			democratic_drift = -0.01
+			neutrality_drift = -0.01
+			tog_anarchism_drift = -0.01
+			tog_kleptocracy_drift = 0.08
+			tog_theocracy_drift = -0.01
+			tog_magocracy_drift = -0.01
+			tog_technocracy_drift = -0.01
+		}
+		days_remove = 360
+		cost = 150
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	institute_press_censorship_theocracy_state = {
+		icon = press_censorship
+		visible = {
+			has_government = tog_theocracy
+			if = {
+				limit = {
+					tag = NIM
+				}
+				has_completed_focus = NIM_polity
+			}
+			if = {
+				limit = {
+					original_tag = PYT
+				}
+				has_country_flag = PYT_established_dictatorship
+			}
+			if = {
+				limit = {
+					original_tag = FEA
+				}
+				OR = {
+					has_completed_focus = FEA_martial_law
+					has_completed_focus = FEA_party_convention
+					has_completed_focus = FEA_the_fate_of_feathisia
+				}
+			}
+			if = {
+				limit = {
+					tag = NMS
+				}
+				NOT = {
+					has_completed_focus = NMS_the_third_position
+				}
+			}
+			if = {
+				limit = {
+					tag = GRF
+				}
+				NOT = {
+					has_completed_focus = GRF_free_elections
+				}
+			}
+			if = {
+				limit = {
+					tag = EQC
+				}
+				NOT = {
+					has_country_flag = EQC_cant_censor_press
+				}
+			}
+		}
+		modifier = {
+			communism_drift = -0.01
+			fascism_drift = -0.01
+			democratic_drift = -0.01
+			neutrality_drift = -0.01
+			tog_anarchism_drift = -0.01
+			tog_kleptocracy_drift = -0.01
+			tog_theocracy_drift = 0.08
+			tog_magocracy_drift = -0.01
+			tog_technocracy_drift = -0.01
+		}
+		days_remove = 360
+		cost = 150
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	institute_press_censorship_theocracy_state = {
+		icon = press_censorship
+		visible = {
+			has_government = tog_magocracy
+			if = {
+				limit = {
+					tag = NIM
+				}
+				has_completed_focus = NIM_polity
+			}
+			if = {
+				limit = {
+					original_tag = PYT
+				}
+				has_country_flag = PYT_established_dictatorship
+			}
+			if = {
+				limit = {
+					original_tag = FEA
+				}
+				OR = {
+					has_completed_focus = FEA_martial_law
+					has_completed_focus = FEA_party_convention
+					has_completed_focus = FEA_the_fate_of_feathisia
+				}
+			}
+			if = {
+				limit = {
+					tag = NMS
+				}
+				NOT = {
+					has_completed_focus = NMS_the_third_position
+				}
+			}
+			if = {
+				limit = {
+					tag = GRF
+				}
+				NOT = {
+					has_completed_focus = GRF_free_elections
+				}
+			}
+			if = {
+				limit = {
+					tag = EQC
+				}
+				NOT = {
+					has_country_flag = EQC_cant_censor_press
+				}
+			}
+		}
+		modifier = {
+			communism_drift = -0.01
+			fascism_drift = -0.01
+			democratic_drift = -0.01
+			neutrality_drift = -0.01
+			tog_anarchism_drift = -0.01
+			tog_kleptocracy_drift = -0.01
+			tog_theocracy_drift = -0.01
+			tog_magocracy_drift = 0.08
+			tog_technocracy_drift = -0.01
+		}
+		days_remove = 360
+		cost = 150
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

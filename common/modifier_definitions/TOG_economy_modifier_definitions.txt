@@ -31,6 +31,41 @@
 #	category = country
 #}
 
+modifier_quality_of_life = {
+	value_type = percentage
+	precision = 0
+	postfix = none
+	color_type = good
+}
+
+modifier_employment = {
+	value_type = percentage
+	precision = 0
+	postfix = none
+	color_type = good
+}
+
+modifier_housing = {
+	value_type = percentage
+	precision = 0
+	postfix = none
+	color_type = good
+}
+
+modifier_wealth = {
+	value_type = percentage
+	precision = 0
+	postfix = none
+	color_type = good
+}
+
+modifier_education = {
+	value_type = percentage
+	precision = 0
+	postfix = none
+	color_type = good
+}
+
 modifier_income_taxes = {
 	value_type = number
 	precision = 2

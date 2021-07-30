@@ -1,0 +1,307 @@
+on_actions = {
+
+    on_startup = {
+		effect = {
+			every_country = {
+				# Cost of Resources
+				set_variable = { global.cost_of_aluminium = 0.00 }
+				set_variable = { global.cost_of_rubber = 0.00 }
+				set_variable = { global.cost_of_tungsten = 0.00 }
+				set_variable = { global.cost_of_steel = 0.00 }
+				set_variable = { global.cost_of_chromium = 0.00 }
+				set_variable = { global.cost_of_crystals = 0.00 }
+
+				#Infantry Weapons
+				set_variable = { global.cost_infantry_weapons_1025 = 0.90 }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 6 }
+				add_to_variable = { var = global.cost_infantry_weapons_1025 value = global.this_cost_of_steel }
+
+				set_variable = { global.cost_infantry_weapons_1019 = 0.80 }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 5 }
+				add_to_variable = { var = global.cost_infantry_weapons_1019 value = global.this_cost_of_steel }
+
+				set_variable = { global.cost_infantry_weapons_1013 = 0.69 }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 4 }
+				add_to_variable = { var = global.cost_infantry_weapons_1013 value = global.this_cost_of_steel }
+
+				set_variable = { global.cost_infantry_weapons_1010 = 0.58 }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 3 }
+				add_to_variable = { var = global.cost_infantry_weapons_1010 value = global.this_cost_of_steel }
+
+				set_variable = { global.cost_infantry_weapons_1007 = 0.50 }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 2 }
+				add_to_variable = { var = global.cost_infantry_weapons_1007 value = global.this_cost_of_steel }
+
+				set_variable = { global.cost_infantry_weapons_1005 = 0.43 }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 2 }
+				add_to_variable = { var = global.cost_infantry_weapons_1005 value = global.this_cost_of_steel }
+
+				set_variable = { global.cost_infantry_weapons_shit = 0.40 }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 1 }
+				add_to_variable = { var = global.cost_infantry_weapons_shit value = global.this_cost_of_steel }
+
+				#Infantry Weapons Crystal
+				set_variable = { global.cost_infantry_weapons_crystal_1025 = 1.20 }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 4 }
+				add_to_variable = { var = global.cost_infantry_weapons_crystal_1025 value = global.this_cost_of_steel }
+				set_variable = { global.this_cost_of_crystals = global.cost_of_crystals }
+				multiply_variable = { var = global.this_cost_of_crystals value = 4 }
+				add_to_variable = { var = global.cost_infantry_weapons_crystal_1025 value = global.this_cost_of_crystals }
+
+				set_variable = { global.cost_infantry_weapons_crystal_1019 = 1.09 }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 4 }
+				add_to_variable = { var = global.cost_infantry_weapons_crystal_1019 value = global.this_cost_of_steel }
+				set_variable = { global.this_cost_of_crystals = global.cost_of_crystals }
+				multiply_variable = { var = global.this_cost_of_crystals value = 3 }
+				add_to_variable = { var = global.cost_infantry_weapons_crystal_1019 value = global.this_cost_of_crystals }
+
+				set_variable = { global.cost_infantry_weapons_crystal_1013 = 1.00 }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 3 }
+				add_to_variable = { var = global.cost_infantry_weapons_crystal_1013 value = global.this_cost_of_steel }
+				set_variable = { global.this_cost_of_crystals = global.cost_of_crystals }
+				multiply_variable = { var = global.this_cost_of_crystals value = 3 }
+				add_to_variable = { var = global.cost_infantry_weapons_crystal_1013 value = global.this_cost_of_crystals }
+
+				set_variable = { global.cost_infantry_weapons_crystal_1010 = 0.91 }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 2 }
+				add_to_variable = { var = global.cost_infantry_weapons_crystal_1010 value = global.this_cost_of_steel }
+				set_variable = { global.this_cost_of_crystals = global.cost_of_crystals }
+				multiply_variable = { var = global.this_cost_of_crystals value = 2 }
+				add_to_variable = { var = global.cost_infantry_weapons_crystal_1010 value = global.this_cost_of_crystals }
+
+				#Support
+				set_variable = { global.cost_support_989 = 3.60 }
+				set_variable = { global.this_cost_of_aluminium = global.cost_of_aluminium }
+				multiply_variable = { var = global.this_cost_of_aluminium value = 1 }
+				add_to_variable = { var = global.cost_support_989 value = global.this_cost_of_aluminium }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 2 }
+				add_to_variable = { var = global.cost_support_989 value = global.this_cost_of_steel }
+
+				#Artillery
+				set_variable = { global.cost_artillery_1016 = 5.00 }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 4 }
+				add_to_variable = { var = global.cost_artillery_1016 value = global.this_cost_of_steel }
+				set_variable = { global.this_cost_of_tungsten = global.cost_of_tungsten }
+				multiply_variable = { var = global.this_cost_of_tungsten value = 2 }
+				add_to_variable = { var = global.cost_artillery_1016 value = global.this_cost_of_tungsten }
+
+				set_variable = { global.cost_artillery_1013 = 4.50 }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 3 }
+				add_to_variable = { var = global.cost_artillery_1013 value = global.this_cost_of_steel }
+				set_variable = { global.this_cost_of_tungsten = global.cost_of_tungsten }
+				multiply_variable = { var = global.this_cost_of_tungsten value = 1 }
+				add_to_variable = { var = global.cost_artillery_1013 value = global.this_cost_of_tungsten }
+
+				set_variable = { global.cost_artillery_1010 = 4.00 }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 2 }
+				add_to_variable = { var = global.cost_artillery_1010 value = global.this_cost_of_steel }
+				set_variable = { global.this_cost_of_tungsten = global.cost_of_tungsten }
+				multiply_variable = { var = global.this_cost_of_tungsten value = 1 }
+				add_to_variable = { var = global.cost_artillery_1010 value = global.this_cost_of_tungsten }
+
+				set_variable = { global.cost_artillery_1005 = 3.50 }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 2 }
+				add_to_variable = { var = global.cost_artillery_1005 value = global.this_cost_of_steel }
+				set_variable = { global.this_cost_of_tungsten = global.cost_of_tungsten }
+				multiply_variable = { var = global.this_cost_of_tungsten value = 1 }
+				add_to_variable = { var = global.cost_artillery_1005 value = global.this_cost_of_tungsten }
+
+				set_variable = { global.cost_artillery_shit = 1.50 }
+				set_variable = { global.this_cost_of_steel = global.cost_of_steel }
+				multiply_variable = { var = global.this_cost_of_steel value = 2 }
+				add_to_variable = { var = global.cost_artillery_shit value = global.this_cost_of_steel }
+
+				#Civilian/Military Factories
+				set_variable = { global.const_to_coins = 0.667 }
+				set_variable = { global.cost_military_factory = 7.2 }
+				multiply_variable = { var = global.cost_military_factory value = global.const_to_coins }
+				set_variable = { global.cost_civilian_factory = 10.8 }
+				multiply_variable = { var = global.cost_civilian_factory value = global.const_to_coins }
+				
+				set_variable = { global.prod_to_coins = 5.93 }
+				set_variable = { global.new_cost_mult = 1.25 } # +25%
+				set_variable = { global.normal_cost_mult = 1.00 } # 0%
+				set_variable = { global.old_cost_mult = 0.75 } # -25%
+				set_variable = { global.import_cost_mult = 1.50 } # +50%
+
+				#Infantry
+				IF = {
+					limit = { date > 1025.06.01 }
+					set_variable = { global.cost_infantry_weapons_new = global.cost_infantry_weapons_1025 }
+					set_variable = { global.cost_infantry_weapons_normal = global.cost_infantry_weapons_1025 }
+					set_variable = { global.cost_infantry_weapons_old = global.cost_infantry_weapons_1019 }
+
+					set_variable = { global.cost_infantry_weapons_crystal_new = global.cost_infantry_weapons_crystal_1025 }
+					set_variable = { global.cost_infantry_weapons_crystal_normal = global.cost_infantry_weapons_crystal_1025 }
+					set_variable = { global.cost_infantry_weapons_crystal_old = global.cost_infantry_weapons_crystal_1019 }
+				}
+				ELSE_IF = {
+					limit = { date > 1019.06.01 }
+					set_variable = { global.cost_infantry_weapons_new = global.cost_infantry_weapons_1025 }
+					set_variable = { global.cost_infantry_weapons_normal = global.cost_infantry_weapons_1019 }
+					set_variable = { global.cost_infantry_weapons_old = global.cost_infantry_weapons_1013 }
+
+					set_variable = { global.cost_infantry_weapons_crystal_new = global.cost_infantry_weapons_crystal_1025 }
+					set_variable = { global.cost_infantry_weapons_crystal_normal = global.cost_infantry_weapons_crystal_1019 }
+					set_variable = { global.cost_infantry_weapons_crystal_old = global.cost_infantry_weapons_crystal_1013 }
+				}
+				ELSE_IF = {
+					limit = { date > 1013.06.01 }
+					set_variable = { global.cost_infantry_weapons_new = global.cost_infantry_weapons_1019 }
+					set_variable = { global.cost_infantry_weapons_normal = global.cost_infantry_weapons_1013 }
+					set_variable = { global.cost_infantry_weapons_old = global.cost_infantry_weapons_1010 }
+
+					set_variable = { global.cost_infantry_weapons_crystal_new = global.cost_infantry_weapons_crystal_1019 }
+					set_variable = { global.cost_infantry_weapons_crystal_normal = global.cost_infantry_weapons_crystal_1013 }
+					set_variable = { global.cost_infantry_weapons_crystal_old = global.cost_infantry_weapons_crystal_1010 }
+				}	
+				ELSE_IF = {
+					limit = { date > 1010.06.01 }
+					set_variable = { global.cost_infantry_weapons_new = global.cost_infantry_weapons_1013 }
+					set_variable = { global.cost_infantry_weapons_normal = global.cost_infantry_weapons_1010 }
+					set_variable = { global.cost_infantry_weapons_old = global.cost_infantry_weapons_1007 }
+
+					set_variable = { global.cost_infantry_weapons_crystal_new = global.cost_infantry_weapons_crystal_1013 }
+					set_variable = { global.cost_infantry_weapons_crystal_normal = global.cost_infantry_weapons_crystal_1010 }
+					set_variable = { global.cost_infantry_weapons_crystal_old = global.cost_infantry_weapons_crystal_1010 }
+				}	
+				ELSE_IF = {
+					limit = { date > 1007.06.01 }
+					set_variable = { global.cost_infantry_weapons_new = global.cost_infantry_weapons_1010 }
+					set_variable = { global.cost_infantry_weapons_normal = global.cost_infantry_weapons_1007 }
+					set_variable = { global.cost_infantry_weapons_old = global.cost_infantry_weapons_1005 }
+
+					set_variable = { global.cost_infantry_weapons_crystal_new = global.cost_infantry_weapons_crystal_1010 }
+					set_variable = { global.cost_infantry_weapons_crystal_normal = global.cost_infantry_weapons_crystal_1010 }
+					set_variable = { global.cost_infantry_weapons_crystal_old = global.cost_infantry_weapons_crystal_1010 }
+				}	
+				ELSE = {
+					set_variable = { global.cost_infantry_weapons_new = global.cost_infantry_weapons_1007 }
+					set_variable = { global.cost_infantry_weapons_normal = global.cost_infantry_weapons_1005 }
+					set_variable = { global.cost_infantry_weapons_old = global.cost_infantry_weapons_shit }
+
+					set_variable = { global.cost_infantry_weapons_crystal_new = global.cost_infantry_weapons_crystal_1010 }
+					set_variable = { global.cost_infantry_weapons_crystal_normal = global.cost_infantry_weapons_crystal_1010 }
+					set_variable = { global.cost_infantry_weapons_crystal_old = global.cost_infantry_weapons_crystal_1010 }
+				}
+				#Production to Coins
+				multiply_variable = { var = global.cost_infantry_weapons_new value = global.prod_to_coins }
+				multiply_variable = { var = global.cost_infantry_weapons_normal value = global.prod_to_coins }
+				multiply_variable = { var = global.cost_infantry_weapons_old value = global.prod_to_coins }
+				#Export Cost
+				set_variable = { global.end_cost_infantry_weapons_export_new = global.cost_infantry_weapons_new }
+				multiply_variable = { var = global.end_cost_infantry_weapons_export_new value = global.new_cost_mult }
+				set_variable = { global.end_cost_infantry_weapons_export_normal = global.cost_infantry_weapons_normal }
+				multiply_variable = { var = global.end_cost_infantry_weapons_export_normal value = global.normal_cost_mult }
+				set_variable = { global.end_cost_infantry_weapons_export_old = global.cost_infantry_weapons_old }
+				multiply_variable = { var = global.end_cost_infantry_weapons_export_old value = global.old_cost_mult }
+				#Import Cost
+				set_variable = { global.end_cost_infantry_weapons_import_new = global.end_cost_infantry_weapons_export_new }
+				multiply_variable = { var = global.end_cost_infantry_weapons_import_new value = global.import_cost_mult }
+				set_variable = { global.end_cost_infantry_weapons_import_normal = global.end_cost_infantry_weapons_export_normal }
+				multiply_variable = { var = global.end_cost_infantry_weapons_import_normal value = global.import_cost_mult }
+				set_variable = { global.end_cost_infantry_weapons_import_old = global.end_cost_infantry_weapons_export_old }
+				multiply_variable = { var = global.end_cost_infantry_weapons_import_old value = global.import_cost_mult }
+
+				#Production to Coins
+				multiply_variable = { var = global.cost_infantry_weapons_crystal_new value = global.prod_to_coins }
+				multiply_variable = { var = global.cost_infantry_weapons_crystal_normal value = global.prod_to_coins }
+				multiply_variable = { var = global.cost_infantry_weapons_crystal_old value = global.prod_to_coins }
+				#Export Cost
+				set_variable = { global.end_cost_infantry_weapons_crystal_export_new = global.cost_infantry_weapons_crystal_new }
+				multiply_variable = { var = global.end_cost_infantry_weapons_crystal_export_new value = global.new_cost_mult }
+				set_variable = { global.end_cost_infantry_weapons_crystal_export_normal = global.cost_infantry_weapons_crystal_normal }
+				multiply_variable = { var = global.end_cost_infantry_weapons_crystal_export_normal value = global.normal_cost_mult }
+				set_variable = { global.end_cost_infantry_weapons_crystal_export_old = global.cost_infantry_weapons_crystal_old }
+				multiply_variable = { var = global.end_cost_infantry_weapons_crystal_export_old value = global.old_cost_mult }
+				#Import Cost
+				set_variable = { global.end_cost_infantry_weapons_crystal_import_new = global.end_cost_infantry_weapons_crystal_export_new }
+				multiply_variable = { var = global.end_cost_infantry_weapons_crystal_import_new value = global.import_cost_mult }
+				set_variable = { global.end_cost_infantry_weapons_crystal_import_normal = global.end_cost_infantry_weapons_crystal_export_normal }
+				multiply_variable = { var = global.end_cost_infantry_weapons_crystal_import_normal value = global.import_cost_mult }
+				set_variable = { global.end_cost_infantry_weapons_crystal_import_old = global.end_cost_infantry_weapons_crystal_export_old }
+				multiply_variable = { var = global.end_cost_infantry_weapons_crystal_import_old value = global.import_cost_mult }
+
+				#Support
+				set_variable = { global.cost_support_normal = global.cost_support_989 }
+				#Production to Coins
+				multiply_variable = { var = global.cost_support_normal value = global.prod_to_coins }
+				divide_variable = { var = global.cost_support_normal value = 2 }
+				#Export Cost
+				set_variable = { global.end_cost_support_export_normal = global.cost_support_normal }
+				multiply_variable = { var = global.end_cost_support_export_normal value = global.normal_cost_mult }
+				#Import Cost
+				set_variable = { global.end_cost_support_import_normal = global.cost_support_export_normal }
+				multiply_variable = { var = global.end_cost_support_import_normal value = global.import_cost_mult }
+
+				#Normal Artillery
+				IF = {
+					limit = { date > 1016.06.01 }
+					set_variable = { global.cost_artillery_new = global.cost_artillery_1016 }
+					set_variable = { global.cost_artillery_normal = global.cost_artillery_1016 }
+					set_variable = { global.cost_artillery_old = global.cost_artillery_1013 }
+				}
+				ELSE_IF = {
+					limit = { date > 1013.06.01 }
+					set_variable = { global.cost_artillery_new = global.cost_artillery_1016 }
+					set_variable = { global.cost_artillery_normal = global.cost_artillery_1013 }
+					set_variable = { global.cost_artillery_old = global.cost_artillery_1010 }
+				}	
+				ELSE_IF = {
+					limit = { date > 1010.06.01 }
+					set_variable = { global.cost_artillery_new = global.cost_artillery_1013 }
+					set_variable = { global.cost_artillery_normal = global.cost_artillery_1010 }
+					set_variable = { global.cost_artillery_old = global.cost_artillery_1005 }
+				}	
+				ELSE_IF = {
+					limit = { date > 1005.06.01 }
+					set_variable = { global.cost_artillery_new = global.cost_artillery_1010 }
+					set_variable = { global.cost_artillery_normal = global.cost_artillery_1005 }
+					set_variable = { global.cost_artillery_old = global.cost_artillery_shit }
+				}	
+				ELSE = {
+					set_variable = { global.cost_artillery_new = global.cost_artillery_1005 }
+					set_variable = { global.cost_artillery_normal = global.cost_artillery_shit }
+					set_variable = { global.cost_artillery_old = global.cost_artillery_shit }
+				}
+				#Production to Coins
+				multiply_variable = { var = global.cost_artillery_new value = global.prod_to_coins }
+				divide_variable = { var = global.cost_artillery_new value = 2 }
+				multiply_variable = { var = global.cost_artillery_normal value = global.prod_to_coins }
+				divide_variable = { var = global.cost_artillery_normal value = 2 }
+				multiply_variable = { var = global.cost_artillery_old value = global.prod_to_coins }
+				divide_variable = { var = global.cost_artillery_old value = 2 }
+				#Export Cost
+				set_variable = { global.end_cost_artillery_export_new = global.cost_artillery_new }
+				multiply_variable = { var = global.end_cost_artillery_export_new value = global.new_cost_mult }
+				set_variable = { global.end_cost_artillery_export_normal = global.cost_artillery_normal }
+				multiply_variable = { var = global.end_cost_artillery_export_normal value = global.normal_cost_mult }
+				set_variable = { global.end_cost_artillery_export_old = global.cost_artillery_old }
+				multiply_variable = { var = global.end_cost_artillery_export_old value = global.old_cost_mult }
+				#Import Cost
+				set_variable = { global.end_cost_artillery_import_new = global.end_cost_artillery_export_new }
+				multiply_variable = { var = global.end_cost_artillery_import_new value = global.import_cost_mult }
+				set_variable = { global.end_cost_artillery_import_normal = global.end_cost_artillery_export_normal }
+				multiply_variable = { var = global.end_cost_artillery_import_normal value = global.import_cost_mult }
+				set_variable = { global.end_cost_artillery_import_old = global.end_cost_artillery_export_old }
+				multiply_variable = { var = global.end_cost_artillery_import_old value = global.import_cost_mult }
+			}
+        }
+    }
+}

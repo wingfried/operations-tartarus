@@ -4,44 +4,92 @@ ideas = {
 		### Equestria ###
 
 		# Elements of Harmony #
+		TOG_tree_of_harmony_idea = {
+			picture = TOG_treetoo
+			cancel = {
+				OR = {
+					NOT = { controls_state = 1 }
+					AND = {
+						NOT = { has_global_flag = tree_of_harmony_restored_global_flag }
+						NOT = { original_tag = EQS }
+					}
+				}
+			}
+			modifier = {
+				
+			}
+		}
+		TOG_tree_of_harmony_elementless_idea = {
+			picture = TOG_tree
+			cancel = {
+				OR = {
+					NOT = { controls_state = 1 }
+					has_idea = TOG_tree_of_harmony_idea
+				}
+			}
+			modifier = {
+				
+			}
+		}
 		TOG_element_of_honesty_idea = {
 			picture = TOG_element_of_honesty
+			cancel = {
+				has_global_flag = tree_of_harmony_restored_global_flag
+			}
 			modifier = {
 				
 			}
 		}
 		TOG_element_of_kindness_idea = {
 			picture = TOG_element_of_kindness
+			cancel = {
+				has_global_flag = tree_of_harmony_restored_global_flag
+			}
 			modifier = {
 				
 			}
 		}
 		TOG_element_of_laughter_idea = {
 			picture = TOG_element_of_laughter
+			cancel = {
+				has_global_flag = tree_of_harmony_restored_global_flag
+			}
 			modifier = {
 				
 			}
 		}
 		TOG_element_of_generosity_idea = {
 			picture = TOG_element_of_generosity
+			cancel = {
+				has_global_flag = tree_of_harmony_restored_global_flag
+			}
 			modifier = {
 				
 			}
 		}
 		TOG_element_of_loyalty_idea = {
 			picture = TOG_element_of_loyalty
+			cancel = {
+				has_global_flag = tree_of_harmony_restored_global_flag
+			}
 			modifier = {
 				
 			}
 		}
 		TOG_element_of_magic_idea = {
 			picture = TOG_element_of_magic
+			cancel = {
+				has_global_flag = tree_of_harmony_restored_global_flag
+			}
 			modifier = {
 				
 			}
 		}
 		TOG_elements_of_harmony_idea = {
 			picture = TOG_elements_of_harmony
+			cancel = {
+				has_global_flag = tree_of_harmony_restored_global_flag
+			}
 			modifier = {
 				
 			}

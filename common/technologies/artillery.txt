@@ -2652,7 +2652,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1015
+		start_year = 1016
 
 		folder = {
 			name = artillery_folder
@@ -2756,7 +2756,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1016
+		start_year = 1018
 
 		folder = {
 			name = artillery_folder
@@ -2851,7 +2851,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1019
+		start_year = 1020
 
 		folder = {
 			name = artillery_folder
@@ -3054,7 +3054,12 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1025
+		start_year = 1024
+
+		path = {
+			leads_to_tech = antitank_f
+			research_cost_coeff = 1
+		}
 
 		folder = {
 			name = artillery_folder
@@ -3062,7 +3067,6 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 3
-
 			modifier = {
 				add = 10
 				AND = {
@@ -3070,7 +3074,6 @@ technologies = {
 				check_variable = { resource_produced@rubber < 2 }
 				}
 			}
-			
 			modifier = {
 				add = 10
 				NOT = {
@@ -3082,50 +3085,87 @@ technologies = {
 				is_researching_technology = improved_light_tank
 				}
 			}
-		modifier = {
-		factor = 0
-			NOT = {
-			any_enemy_country = {
-				ROOT = {
-					estimated_intel_max_armor = {
-					tag = PREV
-					value > 10
+			modifier = {
+			factor = 0
+				NOT = {
+					any_enemy_country = {
+						ROOT = {
+							estimated_intel_max_armor = {
+								tag = PREV
+								value > 10
+							}
+						}
 					}
-					}
-				}
-			any_neighbor_country = {
-				ROOT = {
-					estimated_intel_max_armor = {
-					tag = PREV
-					value > 10
-					}
-					}
-				}
-			}		
-		}	
-			
-		modifier = {
-		factor = 3
-			OR = {
-			any_enemy_country = {
-				ROOT = {
-					estimated_intel_max_armor = {
-					tag = PREV
-					value > 90
-					}
+					any_neighbor_country = {
+						ROOT = {
+							estimated_intel_max_armor = {
+							tag = PREV
+							value > 10
+							}
+						}
 					}
 				}
-			any_neighbor_country = {
-				ROOT = {
-					estimated_intel_max_armor = {
-					tag = PREV
-					value > 90
+			}
+			modifier = {
+			factor = 3
+				OR = {
+					any_enemy_country = {
+						ROOT = {
+							estimated_intel_max_armor = {
+							tag = PREV
+							value > 90
+							}
+						}
 					}
+					any_neighbor_country = {
+						ROOT = {
+							estimated_intel_max_armor = {
+							tag = PREV
+							value > 90
+							}
+						}
 					}
-				}
-			}		
-		}				
+				}		
+			}				
+		}
+
+		categories = {
+			tog_military_technologies_category
+			artillery
+			cat_anti_tank
+		}
 	}
+
+	antitank_f = {
+
+		enable_equipments = {
+			anti_tank_equipment_x_2
+		}
+
+
+		research_cost = 1
+
+		start_year = 1026
+
+		folder = {
+			name = artillery_folder
+			position = { x = 7 y = 24 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 35
+						}
+					}
+				}
+			}
+		}
 
 		categories = {
 			tog_military_technologies_category
@@ -3157,7 +3197,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1015
+		start_year = 1016
 
 		folder = {
 			name = artillery_folder
@@ -3231,7 +3271,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1016
+		start_year = 1018
 
 		folder = {
 			name = artillery_folder
@@ -3310,7 +3350,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1019
+		start_year = 1020
 
 		folder = {
 			name = artillery_folder
@@ -3451,8 +3491,34 @@ technologies = {
 		}		
 		}
 	
-
 	artillery_e = {
+
+		enable_equipments = {
+			artillery_equipment_x_2
+		}
+		research_cost = 1
+
+		start_year = 1024
+
+		path = {
+			leads_to_tech = artillery_f
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 22 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	artillery_f = {
 
 		artillery = {
 			soft_attack = 0.1
@@ -3466,11 +3532,11 @@ technologies = {
 		}
 		research_cost = 1
 
-		start_year = 1025
+		start_year = 1024
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 22 }
+			position = { x = 0 y = 24 }
 		}
 
 		categories = {
@@ -3480,50 +3546,42 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-		
-		modifier = {
+			modifier = {
 				factor = 0
 				check_variable = { resource_produced@tungsten < 2 }
 			}
-			
-		modifier = {
+			modifier = {
 				add = 15
 				check_variable = { resource_produced@rubber < 2 }
 			}
-			
-		modifier = {
+			modifier = {
 				factor = 2
 				check_variable = { resource_produced@tungsten > 10 }
 			}
-			
-		modifier = {
+			modifier = {
 				add = 15
 				check_variable = { resource_produced@chromium < 2 }
-			}			
-			
+			}
 			modifier = {
 				factor = 2
 				arms_factory > 60
 			}
-
 			modifier = {
 				factor = 2
 				arms_factory > 100
 			}
-			
 			modifier = {
 				factor = 2
 				arms_factory > 120
 			}
-
 			modifier = {
 				factor = 2
 				arms_factory > 150
 			}
-		modifier = {
-			factor = 2
-		has_template = "Infantry_default_EQS"
-		}
+			modifier = {
+				factor = 2
+				has_template = "Infantry_default_EQS"
+			}
 		}
 	}
 
@@ -3536,7 +3594,6 @@ technologies = {
 		rocket_artillery = {
 			soft_attack = 0.15
 		}
-
 		rocket_artillery_brigade = {
 			soft_attack = 0.15
 		}
@@ -3553,7 +3610,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1015
+		start_year = 1016
 
 		folder = {
 			name = artillery_folder
@@ -3562,18 +3619,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-		
-		
 			modifier = {
 				factor = 4
 				arms_factory > 100
 			}
-
 			modifier = {
 				factor = 4
 				arms_factory > 120
-			}	
-		
+			}
 		}
 
 		categories = {
@@ -3587,15 +3640,12 @@ technologies = {
 		rocket_artillery = {
 			soft_attack = 0.15
 		}
-		
 		mot_rocket_artillery_brigade = {
 			soft_attack = 0.15
 		}
-		
 		rocket_artillery_brigade = {
 			soft_attack = 0.15
 		}
-		
 		motorized_rocket_brigade = {
 			soft_attack = 0.15
 		}
@@ -3607,7 +3657,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1016
+		start_year = 1018
 
 		folder = {
 			name = artillery_folder
@@ -3616,12 +3666,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-				
 			modifier = {
 				factor = 4
 				arms_factory > 100
 			}
-
 			modifier = {
 				factor = 4
 				arms_factory > 120
@@ -3632,7 +3680,6 @@ technologies = {
 		categories = {
 			tog_military_technologies_category
 			rocketry
-
 		}
 	}
 
@@ -3643,7 +3690,7 @@ technologies = {
 		}
 		
 		motorized_rocket_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.3
 		}
 
 		path = {
@@ -3653,7 +3700,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1019
+		start_year = 1020
 
 		folder = {
 			name = artillery_folder
@@ -3662,17 +3709,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-		
 			modifier = {
 				factor = 4
 				arms_factory > 100
 			}
-
 			modifier = {
 				factor = 4
 				arms_factory > 120
 			}
-		
 		}
 
 		categories = {
@@ -3688,12 +3732,10 @@ technologies = {
 		}
 		mot_rocket_artillery_brigade = {
 			soft_attack = 0.15
-		}		
-
+		}
 		rocket_artillery_brigade = {
 			soft_attack = 0.15
 		}
-		
 		motorized_rocket_brigade = {
 			soft_attack = 0.15
 		}
@@ -3713,17 +3755,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-		
 			modifier = {
 				factor = 4
 				arms_factory > 100
 			}
-
 			modifier = {
 				factor = 4
 				arms_factory > 120
 			}
-		
 		}
 
 		categories = {
@@ -3743,14 +3782,18 @@ technologies = {
 		rocket_artillery_brigade = {
 			soft_attack = 0.15
 		}
-
 		motorized_rocket_brigade = {
 			soft_attack = 0.15
 		}
 
 		research_cost = 1
 
-		start_year = 1025
+		start_year = 1024
+
+		path = {
+			leads_to_tech = rocket_artillery_f
+			research_cost_coeff = 1
+		}
 
 		folder = {
 			name = artillery_folder
@@ -3764,12 +3807,38 @@ technologies = {
 				factor = 4
 				arms_factory > 100
 			}
-
 			modifier = {
 				factor = 4
 				arms_factory > 120
 			}
-		
+		}
+
+		categories = {
+			tog_military_technologies_category
+			rocketry
+		}
+	}
+
+	rocket_artillery_f = {
+
+		enable_equipments = {
+			rocket_artillery_equipment_x_2
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.3
+		}
+
+		research_cost = 1
+
+		start_year = 1026
+
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 24 }
+		}
+
+		ai_will_do = {
+			factor = 1
 		}
 
 		categories = {
@@ -3788,11 +3857,9 @@ technologies = {
 			leads_to_tech = antiair_b
 			research_cost_coeff = 1
 		}
-
 		anti_air = {
 			air_attack = 0.1
 		}
-
 		anti_air_brigade = {
 			air_attack = 0.1
 		}
@@ -3806,7 +3873,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1015
+		start_year = 1016
 
 		folder = {
 			name = artillery_folder
@@ -3815,81 +3882,75 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-	
-	modifier = {
-	factor = 0	
-		NOT = {
-			any_enemy_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = cas
-				}
-				}
-			any_neighbor_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = cas
-				}
-				}
-			any_enemy_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = fighter
-				}
-				}
-			any_neighbor_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = fighter
-				}
-				}
-				
-			any_enemy_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = tactical_bomber
-				}
-				}
-			any_neighbor_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = tactical_bomber
-				}
-				}
-			any_enemy_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = strategic_bomber
-				}
-				}
-			any_neighbor_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = strategic_bomber
-				}
+			modifier = {
+				factor = 0	
+				NOT = {
+					any_enemy_country = {
+						has_deployed_air_force_size = {
+						size > 50
+						type = cas
+						}
+					}
+					any_neighbor_country = {
+						has_deployed_air_force_size = {
+						size > 50
+						type = cas
+						}
+					}
+					any_enemy_country = {
+						has_deployed_air_force_size = {
+						size > 50
+						type = fighter
+						}
+					}
+					any_neighbor_country = {
+						has_deployed_air_force_size = {
+						size > 50
+						type = fighter
+						}
+					}
+					any_enemy_country = {
+						has_deployed_air_force_size = {
+						size > 50
+						type = tactical_bomber
+						}
+					}
+					any_neighbor_country = {
+						has_deployed_air_force_size = {
+						size > 50
+						type = tactical_bomber
+						}
+					}
+					any_enemy_country = {
+						has_deployed_air_force_size = {
+						size > 50
+						type = strategic_bomber
+						}
+					}
+					any_neighbor_country = {
+						has_deployed_air_force_size = {
+						size > 50
+						type = strategic_bomber
+						}
+					}
 				}
 			}
-		}
-		
-		modifier = {
+			modifier = {
 				ADD = 5
 				check_variable = { resource_produced@rubber < 2 }
-		}
-
-		modifier = {
+			}
+			modifier = {
 				ADD = 5
 				check_variable = { resource_produced@aluminium < 15 }
-		}
-		
-		modifier = {
+			}
+			modifier = {
 				factor = 2
 				check_variable = { resource_produced@chromium < 15 }
-		}
-		
-		modifier = {
+			}
+			modifier = {
 				ADD = 5
 				check_variable = { resource_produced@aluminium < 10 }
-		}
+			}
 		}
 
 		categories = {
@@ -3904,7 +3965,6 @@ technologies = {
 		anti_air = {
 			air_attack = 0.1
 		}
-
 		anti_air_brigade = {
 			air_attack = 0.1
 		}
@@ -3923,7 +3983,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1016
+		start_year = 1018
 
 		folder = {
 			name = artillery_folder
@@ -3932,81 +3992,75 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-
-modifier = {
-	factor = 0	
-		NOT = {
-			any_enemy_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = cas
-				}
-				}
-			any_neighbor_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = cas
-				}
-				}
-			any_enemy_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = fighter
-				}
-				}
-			any_neighbor_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = fighter
-				}
-				}
-				
-			any_enemy_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = tactical_bomber
-				}
-				}
-			any_neighbor_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = tactical_bomber
-				}
-				}
-			any_enemy_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = strategic_bomber
-				}
-				}
-			any_neighbor_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = strategic_bomber
-				}
+			modifier = {
+				factor = 0	
+				NOT = {
+					any_enemy_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = cas
+						}
+					}
+					any_neighbor_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = cas
+						}
+					}
+					any_enemy_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = fighter
+						}
+					}
+					any_neighbor_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = fighter
+						}
+					}
+					any_enemy_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = tactical_bomber
+						}
+					}
+					any_neighbor_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = tactical_bomber
+						}
+					}
+					any_enemy_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = strategic_bomber
+						}
+					}
+					any_neighbor_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = strategic_bomber
+						}
+					}
 				}
 			}
-		}
-		
-		modifier = {
+			modifier = {
 				ADD = 5
 				check_variable = { resource_produced@rubber < 2 }
-		}
-
-		modifier = {
+			}
+			modifier = {
 				ADD = 5
 				check_variable = { resource_produced@aluminium < 15 }
-		}
-		
-		modifier = {
+			}
+			modifier = {
 				factor = 2
 				check_variable = { resource_produced@chromium < 15 }
-		}
-		
-		modifier = {
+			}
+			modifier = {
 				ADD = 5
 				check_variable = { resource_produced@aluminium < 10 }
-		}
+			}
 		}
 
 		categories = {
@@ -4021,6 +4075,9 @@ modifier = {
 		enable_equipments = {
 			anti_air_equipment_x
 		}
+		enable_equipment_modules = {
+			ship_anti_air_5
+		}
 
 		#navy_anti_air_attack_factor = 0.05
 
@@ -4033,7 +4090,7 @@ modifier = {
 
 		research_cost = 1
 
-		start_year = 1019
+		start_year = 1020
 
 		folder = {
 			name = artillery_folder
@@ -4042,81 +4099,75 @@ modifier = {
 
 		ai_will_do = {
 			factor = 5
-			
-	modifier = {
-	factor = 0	
-		NOT = {
-			any_enemy_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = cas
-				}
-				}
-			any_neighbor_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = cas
-				}
-				}
-			any_enemy_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = fighter
-				}
-				}
-			any_neighbor_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = fighter
-				}
-				}
-				
-			any_enemy_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = tactical_bomber
-				}
-				}
-			any_neighbor_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = tactical_bomber
-				}
-				}
-			any_enemy_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = strategic_bomber
-				}
-				}
-			any_neighbor_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = strategic_bomber
-				}
+			modifier = {
+			factor = 0	
+				NOT = {
+					any_enemy_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = cas
+						}
+					}
+					any_neighbor_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = cas
+						}
+					}
+					any_enemy_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = fighter
+						}
+					}
+					any_neighbor_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = fighter
+						}
+					}
+					any_enemy_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = tactical_bomber
+						}
+					}
+					any_neighbor_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = tactical_bomber
+						}
+					}
+					any_enemy_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = strategic_bomber
+						}
+					}
+					any_neighbor_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = strategic_bomber
+						}
+					}
 				}
 			}
-		}
-		
-		modifier = {
+			modifier = {
 				ADD = 5
 				check_variable = { resource_produced@rubber < 2 }
-		}
-
-		modifier = {
+			}
+			modifier = {
 				ADD = 5
 				check_variable = { resource_produced@aluminium < 15 }
-		}
-		
-		modifier = {
+			}
+			modifier = {
 				factor = 2
 				check_variable = { resource_produced@chromium < 15 }
-		}
-		
-		modifier = {
+			}
+			modifier = {
 				ADD = 5
 				check_variable = { resource_produced@aluminium < 10 }
-		}
+			}
 		}
 
 		categories = {
@@ -4131,7 +4182,6 @@ modifier = {
 		anti_air = {
 			air_attack = 0.1
 		}
-
 		anti_air_brigade = {
 			air_attack = 0.1
 		}
@@ -4258,11 +4308,14 @@ modifier = {
 
 		#navy_anti_air_attack_factor = 0.025
 
-		tech_air_damage_factor = -0.02
-
 		research_cost = 1
 
-		start_year = 1025
+		start_year = 1024
+
+		path = {
+			leads_to_tech = antiair_f
+			research_cost_coeff = 1
+		}
 
 		folder = {
 			name = artillery_folder
@@ -4271,81 +4324,112 @@ modifier = {
 
 		ai_will_do = {
 			factor = 5
-
-	modifier = {
-	factor = 0	
-		NOT = {
-			any_enemy_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = cas
-				}
-				}
-			any_neighbor_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = cas
-				}
-				}
-			any_enemy_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = fighter
-				}
-				}
-			any_neighbor_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = fighter
-				}
-				}
-				
-			any_enemy_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = tactical_bomber
-				}
-				}
-			any_neighbor_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = tactical_bomber
-				}
-				}
-			any_enemy_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = strategic_bomber
-				}
-				}
-			any_neighbor_country = {
-				has_deployed_air_force_size = {
-				size > 50
-				type = strategic_bomber
-				}
+			modifier = {
+				factor = 0	
+				NOT = {
+					any_enemy_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = cas
+						}
+					}
+					any_neighbor_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = cas
+						}
+					}
+					any_enemy_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = fighter
+						}
+					}
+					any_neighbor_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = fighter
+						}
+					}
+					any_enemy_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = tactical_bomber
+						}
+					}
+					any_neighbor_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = tactical_bomber
+						}
+					}
+					any_enemy_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = strategic_bomber
+						}
+					}
+					any_neighbor_country = {
+						has_deployed_air_force_size = {
+							size > 50
+							type = strategic_bomber
+						}
+					}
 				}
 			}
-		}
-		
-		modifier = {
+			modifier = {
 				ADD = 5
 				check_variable = { resource_produced@rubber < 2 }
-		}
+			}
 
-		modifier = {
+			modifier = {
 				ADD = 5
 				check_variable = { resource_produced@aluminium < 15 }
-		}
-		
-		modifier = {
+			}
+			
+			modifier = {
 				factor = 2
 				check_variable = { resource_produced@chromium < 15 }
-		}
-		
-		modifier = {
+			}
+			
+			modifier = {
 				ADD = 5
 				check_variable = { resource_produced@aluminium < 10 }
+			}
 		}
+
+		categories = {
+			tog_military_technologies_category
+			artillery
+			cat_anti_air
+		}
+	}
+
+	antiair_f = {
+
+		enable_equipments = {
+			anti_air_equipment_x_2
+		}
+		enable_equipment_modules = {
+			ship_anti_air_6
+		}
+
+		#navy_anti_air_attack_factor = 0.05
+
+		static_anti_air_damage_factor = 0.1
+
+
+		research_cost = 1
+
+		start_year = 1026
+
+		folder = {
+			name = artillery_folder
+			position = { x = -7 y = 24 }
+		}
+
+		ai_will_do = {
+			factor = 1
 		}
 
 		categories = {

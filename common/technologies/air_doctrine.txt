@@ -45,113 +45,106 @@ technologies = {
 		
 			
 		ai_will_do = {
-			factor = 10
-						
+			factor = 10			
 			modifier = {
 				add = 25
 				has_air_experience > 300
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_strategic_destruction }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = heavy_fighter1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = strategic_bomber1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = heavy_fighter1
 			}
-			
 			modifier = {
 				add = 10
 				has_tech = strategic_bomber1
 			}
-
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 100 }
-			}
-						
+			}		
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 250 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
-			}
-						
+			}		
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}	
-			
+			}
+			modifier = {
+				factor = 1.5
+				is_major = yes
+			}
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 			modifier = {
 				factor = 0
-		OR {
-			NOT = {
-				has_tech = construction1
-				}
-			NOT = {
-				has_tech = electronic_mechanical_engineering
-				}
-			NOT = {
-				has_tech = basic_machine_tools
+				OR = {
+					NOT = {
+						has_tech = construction1
+					}
+					NOT = {
+						has_tech = electronic_mechanical_engineering
+					}
+					NOT = {
+						has_tech = basic_machine_tools
+					}
 				}
 			}
-			}
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 3
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = mechanical_computing
-				has_tech = construction2
-				has_tech = dispersed_industry
+				NOT = {
+					has_tech = mechanical_computing
+					has_tech = construction2
+					has_tech = dispersed_industry
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -2.0
@@ -190,97 +183,89 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-			
 			modifier = {
 				add = 25
 				has_air_experience > 300
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_strategic_destruction }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = heavy_fighter1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = strategic_bomber1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = heavy_fighter1
 			}
-			
 			modifier = {
 				add = 10
 				has_tech = strategic_bomber1
 			}
-
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 100 }
-			}
-						
+			}		
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 250 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 500 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}	
-			
+			modifier = {
+				ai_land_doctrine_tier_1_trigger = yes
+				factor = 2
+			}
+			modifier = {
+				ai_land_doctrine_tier_2_trigger = yes
+				factor = 2
+			}
 			modifier = {
 				factor = 0
-			OR {
-			NOT = {
-				has_tech = construction1
-				}
-			NOT = {
-				has_tech = electronic_mechanical_engineering
-				}
-			NOT = {
-				has_tech = basic_machine_tools
+				OR = {
+					NOT = {
+						has_tech = construction1
+					}
+					NOT = {
+						has_tech = electronic_mechanical_engineering
+					}
+					NOT = {
+						has_tech = basic_machine_tools
+					}
 				}
 			}
-			}
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 3
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = mechanical_computing
-				has_tech = construction2
-				has_tech = dispersed_industry
+				NOT = {
+					has_tech = mechanical_computing
+					has_tech = construction2
+					has_tech = dispersed_industry
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			medium_air = -0.5
@@ -319,92 +304,77 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-			
 			modifier = {
 				add = 25
 				has_air_experience > 300
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_strategic_destruction }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = heavy_fighter1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = strategic_bomber1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = heavy_fighter1
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
-			}
-						
+			}		
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}	
-			
 			modifier = {
 				factor = 0
-		OR {
-			NOT = {
-				has_tech = construction1
-				}
-			NOT = {
-				has_tech = electronic_mechanical_engineering
-				}
-			NOT = {
-				has_tech = basic_machine_tools
-				}
+				OR = {
+					NOT = {
+						has_tech = construction1
+						}
+					NOT = {
+						has_tech = electronic_mechanical_engineering
+						}
+					NOT = {
+						has_tech = basic_machine_tools
+						}
+					}
 			}
-			}
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 3
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = mechanical_computing
-				has_tech = construction2
-				has_tech = dispersed_industry
+				NOT = {
+					has_tech = mechanical_computing
+					has_tech = construction2
+					has_tech = dispersed_industry
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -2.0
@@ -447,97 +417,79 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-			
 			modifier = {
 				add = 25
 				has_air_experience > 300
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_strategic_destruction }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = heavy_fighter1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = strategic_bomber1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = heavy_fighter1
 			}
-			
 			modifier = {
 				add = 10
 				has_tech = strategic_bomber1
 			}
-
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 100 }
-			}
-						
+			}		
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 250 }
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
-			}
-						
+			}	
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@fighter > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}				
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction2
-				has_tech = dispersed_industry2
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction2
+					has_tech = dispersed_industry2
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -2.0
@@ -580,95 +532,77 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-			
 			modifier = {
 				add = 25
 				has_air_experience > 300
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_strategic_destruction }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = heavy_fighter1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = strategic_bomber1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = heavy_fighter1
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
-			}
-						
+			}	
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@fighter > 1000 }
 			}
-			
 			modifier = {
 				ADD = 10
-			OR = {
-			any_enemy_country = {
-				check_variable = { num_deployed_planes_with_type@cas > 500 }
-				}
-			any_enemy_country = {
-				check_variable = { num_deployed_planes_with_type@strategic_bomber > 500 }
-				}
-			any_enemy_country = {
-				check_variable = { num_deployed_planes_with_type@tactical_bomber > 500 }
-				}
+				OR = {
+					any_enemy_country = {
+						check_variable = { num_deployed_planes_with_type@cas > 500 }
+					}
+					any_enemy_country = {
+						check_variable = { num_deployed_planes_with_type@strategic_bomber > 500 }
+					}
+					any_enemy_country = {
+						check_variable = { num_deployed_planes_with_type@tactical_bomber > 500 }
+					}
 				}	
 			}
-
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}				
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-			
-			
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction2
-				has_tech = dispersed_industry2
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction2
+					has_tech = dispersed_industry2
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -2.0
@@ -711,88 +645,73 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-			
 			modifier = {
 				add = 25
 				has_air_experience > 300
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_strategic_destruction }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = heavy_fighter1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = strategic_bomber1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = heavy_fighter1
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
 			}
-						
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@fighter > 1000 }
 			}
-			
 			modifier = {
 				ADD = 10
-			NOT = {	
-				set_temp_variable = { planes = num_deployed_planes_with_type@fighter}
-			any_enemy_country = {	
-				divide_temp_variable = { planes = num_deployed_planes_with_type@fighter}				
-				check_variable = { planes < 1 }
+				NOT = {
+					set_temp_variable = { planes = num_deployed_planes_with_type@fighter}
+					any_enemy_country = {	
+						divide_temp_variable = { planes = num_deployed_planes_with_type@fighter}				
+						check_variable = { planes < 1 }
+					}
 				}
 			}
-		}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}				
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
-			}
-									
+			}					
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction2
-				has_tech = dispersed_industry2
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction2
+					has_tech = dispersed_industry2
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -2.0
@@ -837,77 +756,63 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-						
 			modifier = {
 				add = 25
 				has_air_experience > 300
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_strategic_destruction }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = heavy_fighter1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = strategic_bomber1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = heavy_fighter2
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
 			}
-						
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@fighter > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}				
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-									
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction3
-				has_tech = dispersed_industry3
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction3
+					has_tech = dispersed_industry3
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -2.0
@@ -951,93 +856,75 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-						
 			modifier = {
 				add = 25
 				has_air_experience > 300
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_strategic_destruction }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = heavy_fighter1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = strategic_bomber1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = heavy_fighter2
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 1000 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}				
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-									
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction3
-				has_tech = dispersed_industry3
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction3
+					has_tech = dispersed_industry3
 				}
-			}				
+			}		
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			medium_air = -0.5
@@ -1080,101 +967,83 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-						
 			modifier = {
 				add = 25
 				has_air_experience > 300
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_strategic_destruction }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = heavy_fighter1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = strategic_bomber1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = heavy_fighter2
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 1000 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				ADD = 10
 				set_temp_variable = { planes = num_deployed_planes_with_type@fighter}
-			any_enemy_country = {	
-				divide_temp_variable = { planes = num_deployed_planes_with_type@fighter}				
-				check_variable = { planes < 0.5 }
+				any_enemy_country = {
+					divide_temp_variable = { planes = num_deployed_planes_with_type@fighter}				
+					check_variable = { planes < 0.5 }
 				}	
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}				
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
-			}
-									
+			}			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction3
-				has_tech = dispersed_industry3
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction3
+					has_tech = dispersed_industry3
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			medium_air = -0.5
@@ -1217,101 +1086,83 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-						
 			modifier = {
 				add = 25
 				has_air_experience > 300
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_strategic_destruction }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = heavy_fighter1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = strategic_bomber1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = heavy_fighter2
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 1000 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				ADD = 10
 				set_temp_variable = { planes = num_deployed_planes_with_type@fighter}
-			any_enemy_country = {	
-				divide_temp_variable = { planes = num_deployed_planes_with_type@fighter}				
-				check_variable = { planes > 1.5 }
+				any_enemy_country = {
+					divide_temp_variable = { planes = num_deployed_planes_with_type@fighter}				
+					check_variable = { planes > 1.5 }
 				}	
-		}
-			
+			}
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}				
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-									
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction3
-				has_tech = dispersed_industry3
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction3
+					has_tech = dispersed_industry3
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			medium_air = -0.5
@@ -1351,92 +1202,75 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-						
 			modifier = {
 				add = 25
 				has_air_experience > 300
-			}				
-			
+			}
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_strategic_destruction }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = heavy_fighter1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = strategic_bomber1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = heavy_fighter2
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 250 }
 			}
-						
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 1000 }
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 250 }
 			}
-						
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}				
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-									
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction3
-				has_tech = dispersed_industry3
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction3
+					has_tech = dispersed_industry3
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			medium_air = -0.5
@@ -1447,7 +1281,12 @@ technologies = {
 	air_offense = {
 
 		# EFFECT ########
-		air_escort_efficiency = 0.25
+		category_fighter = {
+			air_range = 0.1
+		}
+		category_heavy_fighter = {
+			air_range = 0.1
+		}
 		###########
 
 		path = {
@@ -1475,78 +1314,63 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-						
 			modifier = {
 				add = 25
 				has_air_experience > 300
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_strategic_destruction }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = heavy_fighter1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = strategic_bomber1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = heavy_fighter2
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
 			}
-						
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@fighter > 1000 }
 			}
-			
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}				
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-									
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction3
-				has_tech = dispersed_industry3
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction3
+					has_tech = dispersed_industry3
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -1.5
@@ -1590,78 +1414,63 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-						
 			modifier = {
 				add = 25
 				has_air_experience > 300
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_strategic_destruction }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = heavy_fighter1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = strategic_bomber1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = heavy_fighter2
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 250 }
 			}
-						
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 1000 }
 			}
-			
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}				
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-									
-		modifier = {
+			modifier = {
 				factor = 0
-			Not = {
-				has_tech = improved_computing_machine
-				has_tech = construction4
-				has_tech = dispersed_industry4
+				NOT = {
+					has_tech = improved_computing_machine
+					has_tech = construction4
+					has_tech = dispersed_industry4
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			medium_air = -0.5
@@ -1693,77 +1502,71 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = -2 y = 18 }
 		}
+		on_research_complete = {
+			hidden_effect = {
+				set_technology = {
+					finished_air_doctrine = 1
+					popup = no
+				}
+			}
+		}
 
 		ai_will_do = {
 			factor = 10
-						
 			modifier = {
 				add = 25
 				has_air_experience > 300
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_strategic_destruction }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = heavy_fighter1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = strategic_bomber1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = heavy_fighter2
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
 			}
-						
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@fighter > 1000 }
 			}
-			
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}				
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-									
-				modifier = {
+			modifier = {
 				factor = 0
-			Not = {
-				has_tech = improved_computing_machine
-				has_tech = construction4
-				has_tech = dispersed_industry4
+				NOT = {
+					has_tech = improved_computing_machine
+					has_tech = construction4
+					has_tech = dispersed_industry4
 				}
 			}				
 		}
@@ -1796,81 +1599,74 @@ technologies = {
 			name = air_doctrine_folder
 			position = { x = 2 y = 18 }
 		}
+		on_research_complete = {
+			hidden_effect = {
+				set_technology = {
+					finished_air_doctrine = 1
+					popup = no
+				}
+			}
+		}
 
 		ai_will_do = {
 			factor = 10
-						
 			modifier = {
 				add = 25
 				has_air_experience > 300
-			}				
-			
+			}
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_strategic_destruction }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = heavy_fighter1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = strategic_bomber1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = heavy_fighter2
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 250 }
 			}
-						
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@strategic_bomber > 1000 }
 			}
-			
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}				
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-									
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = improved_computing_machine
-				has_tech = construction4
-				has_tech = dispersed_industry4
+				NOT = {
+					has_tech = improved_computing_machine
+					has_tech = construction4
+					has_tech = dispersed_industry4
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			medium_air = -0.5
@@ -1921,118 +1717,97 @@ technologies = {
 			
 		ai_will_do = {
 			factor = 10
-						
 			modifier = {
 				add = 25
 				has_air_experience > 300
-			}				
-			
+			}
 			modifier = {
 				add = 10
 				has_tech_bonus = { category = cat_battlefield_support }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = cas1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = fighter1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = fighter1
 			}
-			
 			modifier = {
 				add = 10
 				has_tech = cas1
 			}
-
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 100 }
 			}
-						
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 250 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}	
-			
+			}
 			modifier = {
 				factor = 0
-		OR {
-			NOT = {
-				has_tech = construction1
-				}
-			NOT = {
-				has_tech = electronic_mechanical_engineering
-				}
-			NOT = {
-				has_tech = basic_machine_tools
+				OR = {
+					NOT = {
+						has_tech = construction1
+					}
+					NOT = {
+						has_tech = electronic_mechanical_engineering
+					}
+					NOT = {
+						has_tech = basic_machine_tools
+					}
 				}
 			}
-			}
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 3
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = mechanical_computing
-				has_tech = construction2
-				has_tech = dispersed_industry
+				NOT = {
+					has_tech = mechanical_computing
+					has_tech = construction2
+					has_tech = dispersed_industry
 				}
 			}
-						
 			modifier = {
 				factor = 0
 				tag = event_target:solar_empire
-			}				
-		}			
-	
-
+			}
+		}
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -2.0
@@ -2071,98 +1846,81 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-						
 			modifier = {
 				add = 25
 				has_air_experience > 300
-			}				
-			
+			}
 			modifier = {
 				add = 10
 				has_tech_bonus = { category = cat_battlefield_support }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = cas1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = fighter1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = fighter1
 			}
-			
 			modifier = {
 				add = 10
 				has_tech = cas1
 			}
-
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 100 }
 			}
-						
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 250 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 500 }
 			}
-
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}	
-			
 			modifier = {
 				factor = 0
-		OR {
-			NOT = {
-				has_tech = construction1
-				}
-			NOT = {
-				has_tech = electronic_mechanical_engineering
-				}
-			NOT = {
-				has_tech = basic_machine_tools
+				OR = {
+					NOT = {
+						has_tech = construction1
+					}
+					NOT = {
+						has_tech = electronic_mechanical_engineering
+					}
+					NOT = {
+						has_tech = basic_machine_tools
+					}
 				}
 			}
-			}
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = mechanical_computing
-				has_tech = construction2
-				has_tech = dispersed_industry
+				NOT = {
+					has_tech = mechanical_computing
+					has_tech = construction2
+					has_tech = dispersed_industry
 				}
 			}
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -1.0
@@ -2206,83 +1964,67 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-						
 			modifier = {
 				add = 25
 				has_air_experience > 300
 			}				
-			
 			modifier = {
 				add = 10
 				has_tech_bonus = { category = cat_battlefield_support }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = cas1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = fighter1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = fighter1
 			}
-			
 			modifier = {
 				add = 10
 				has_tech = cas1
 			}
-
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 100 }
 			}
-						
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 250 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 500 }
 			}
-
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}	
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = mechanical_computing
-				has_tech = construction2
-				has_tech = dispersed_industry
+				NOT = {
+					has_tech = mechanical_computing
+					has_tech = construction2
+					has_tech = dispersed_industry
 				}
 			}
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -1.0
@@ -2326,92 +2068,75 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-						
 			modifier = {
 				add = 25
 				has_air_experience > 300
-			}				
-			
+			}
 			modifier = {
 				add = 10
 				has_tech_bonus = { category = cat_battlefield_support }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = cas1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = fighter1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = fighter2
 			}
-			
 			modifier = {
 				add = 10
 				has_tech = cas2
 			}
-
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@fighter > 100 }
 			}
-						
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}	
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-			
 			modifier = {
 				ADD = 10
 				set_temp_variable = { planes = num_deployed_planes_with_type@fighter}
-			any_enemy_country = {	
-				divide_temp_variable = { planes = num_deployed_planes_with_type@fighter}				
-				check_variable = { planes < 1.5 }
-				}	
-			}
-			
-			modifier = {
-				factor = 0
-			Not = {
-				has_tech = mechanical_computing
-				has_tech = construction2
-				has_tech = dispersed_industry2
+				any_enemy_country = {	
+					divide_temp_variable = { planes = num_deployed_planes_with_type@fighter}				
+					check_variable = { planes < 1.5 }
 				}
 			}
-	}
-
+			modifier = {
+				factor = 0
+				NOT = {
+					has_tech = mechanical_computing
+					has_tech = construction2
+					has_tech = dispersed_industry2
+				}
+			}
+		}
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -2.0
@@ -2454,92 +2179,75 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-						
 			modifier = {
 				add = 25
 				has_air_experience > 300
-			}				
-			
+			}
 			modifier = {
 				add = 10
 				has_tech_bonus = { category = cat_battlefield_support }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = cas1 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = fighter1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = fighter2
 			}
-			
 			modifier = {
 				add = 10
 				has_tech = cas2
 			}
-
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@fighter > 100 }
 			}
-						
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}	
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-			
 			modifier = {
 				ADD = 10
 				set_temp_variable = { planes = num_deployed_planes_with_type@fighter}
-			any_enemy_country = {	
-				divide_temp_variable = { planes = num_deployed_planes_with_type@fighter}				
-				check_variable = { planes > 2 }
+				any_enemy_country = {	
+					divide_temp_variable = { planes = num_deployed_planes_with_type@fighter}				
+					check_variable = { planes > 2 }
 				}	
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = mechanical_computing
-				has_tech = construction2
-				has_tech = dispersed_industry2
+				NOT = {
+					has_tech = mechanical_computing
+					has_tech = construction2
+					has_tech = dispersed_industry2
 				}
 			}
-	}
-
+		}
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -2.0
@@ -2577,83 +2285,67 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-						
 			modifier = {
 				add = 25
 				has_air_experience > 300
 			}				
-			
 			modifier = {
 				add = 10
 				has_tech_bonus = { category = cat_battlefield_support }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = cas2 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = fighter2 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = fighter2
 			}
-			
 			modifier = {
 				add = 10
 				has_tech = cas2
 			}
-
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 100 }
 			}
-						
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 250 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 500 }
 			}
-
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}	
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-						
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction3
-				has_tech = dispersed_industry3
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction3
+					has_tech = dispersed_industry3
 				}
 			}
-	}
-
+		}
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -1.0
@@ -2705,83 +2397,67 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-						
 			modifier = {
 				add = 25
 				has_air_experience > 200
 			}				
-			
 			modifier = {
 				add = 10
 				has_tech_bonus = { category = cat_battlefield_support }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = cas2 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = fighter2 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = fighter2
 			}
-			
 			modifier = {
 				add = 10
 				has_tech = cas2
 			}
-
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 100 }
 			}
-						
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 250 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 500 }
 			}
-
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}	
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-						
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction3
-				has_tech = dispersed_industry3
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction3
+					has_tech = dispersed_industry3
 				}
 			}
-	}
-
+		}
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -1.0
@@ -2820,99 +2496,80 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 10
-									
+			factor = 10		
 			modifier = {
 				add = 25
 				has_air_experience > 200
-			}				
-			
+			}
 			modifier = {
 				add = 10
 				has_tech_bonus = { category = cat_battlefield_support }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = cas2 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = fighter2 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = fighter3
 			}
-			
 			modifier = {
 				add = 10
 				has_tech = cas3
 			}
-
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@cas > 100 }
 			}
-						
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@cas > 250 }
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@cas > 500 }
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@fighter > 100 }
 			}
-						
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}	
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-						
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction3
-				has_tech = dispersed_industry3
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction3
+					has_tech = dispersed_industry3
 				}
 			}
-	}
-
+		}
 		ai_research_weights = {
 			air_doctrine = -1.0
 			medium_air = -0.5
@@ -2947,7 +2604,6 @@ technologies = {
 			cat_battlefield_support
 		}
 
-
 		folder = {
 			name = air_doctrine_folder
 			position = { x = 0 y = 12 }
@@ -2955,94 +2611,75 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-									
 			modifier = {
 				add = 25
 				has_air_experience > 200
 			}				
-			
 			modifier = {
 				add = 10
 				has_tech_bonus = { category = cat_battlefield_support }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = tactical_bomber2 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = tactical_bomber1 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = tactical_bomber2
 			}
-
-
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@cas > 100 }
 			}
-						
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@cas > 250 }
 			}
-			
 			modifier = {
 				add = 5
 				check_variable = { num_deployed_planes_with_type@cas > 500 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 100 }
 			}
-						
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 250 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 500 }
 			}
-
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}	
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-						
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction3
-				has_tech = dispersed_industry3
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction3
+					has_tech = dispersed_industry3
 				}
 			}
-	}
-
+		}
 		ai_research_weights = {
 			air_doctrine = -1.0
 			medium_air = -0.5
@@ -3081,83 +2718,67 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-									
 			modifier = {
 				add = 25
 				has_air_experience > 200
-			}				
-			
+			}
 			modifier = {
 				add = 10
 				has_tech_bonus = { category = cat_battlefield_support }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = cas2 }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = fighter2 }
 			}
-		
 			modifier = {
 				add = 10
 				has_tech = fighter3
 			}
-			
 			modifier = {
 				add = 10
 				has_tech = cas3
 			}
-
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 100 }
 			}
-						
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 250 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@cas > 500 }
 			}
-
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}	
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-						
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction3
-				has_tech = dispersed_industry3
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction3
+					has_tech = dispersed_industry3
 				}
 			}
-	}
-
+		}
 		ai_research_weights = {
 			air_doctrine = -1.0
 			medium_air = -0.5
@@ -3272,6 +2893,14 @@ technologies = {
 			battlefield_support_tree
 			cat_battlefield_support
 		}
+		on_research_complete = {
+			hidden_effect = {
+				set_technology = {
+					finished_air_doctrine = 1
+					popup = no
+				}
+			}
+		}
 
 		folder = {
 			name = air_doctrine_folder
@@ -3329,114 +2958,95 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 10
-									
+			factor = 10	
 			modifier = {
 				add = 25
 				has_air_experience > 200
-			}				
-			
+			}
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_operational_integrity }
 			}
-
 			modifier = {
 				factor = 0.5
 				not =  { has_tech = tactical_bomber1 }
 			}
-		
 			modifier = {
 				add = 5
 				has_tech = heavy_fighter1
 			}
-			
 			modifier = {
 				add = 5
 				has_tech = fighter1
 			}
-			
 			modifier = {
 				add = 10
 				has_tech = tactical_bomber1
 			}
-
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 100 }
 			}
-						
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 250 }
 			}
-			
 			modifier = {
 				add = 10
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}	
-			
 			modifier = {
 				factor = 0
-		OR {
-			NOT = {
-				has_tech = construction1
-				}
-			NOT = {
-				has_tech = electronic_mechanical_engineering
-				}
-			NOT = {
-				has_tech = basic_machine_tools
+				OR = {
+					NOT = {
+						has_tech = construction1
+					}
+					NOT = {
+						has_tech = electronic_mechanical_engineering
+					}
+					NOT = {
+						has_tech = basic_machine_tools
+					}
 				}
 			}
-			}
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 3
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = mechanical_computing
-				has_tech = construction2
-				has_tech = dispersed_industry
+				NOT = {
+					has_tech = mechanical_computing
+					has_tech = construction2
+					has_tech = dispersed_industry
 				}
 			}				
 		}
-		
-			ai_research_weights = {
+		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -2.0
 		}
@@ -3474,103 +3084,87 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-									
 			modifier = {
 				add = 25
 				has_air_experience > 200
-			}				
-			
+			}
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_operational_integrity }
 			}
-			
 			modifier = {
 				add = 5
 				has_tech = heavy_fighter1
 			}
-			
 			modifier = {
 				add = 5
 				has_tech = fighter1
 			}
-
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}	
-			
 			modifier = {
 				factor = 0
-		OR {
-			NOT = {
-				has_tech = construction1
-				}
-			NOT = {
-				has_tech = electronic_mechanical_engineering
-				}
-			NOT = {
-				has_tech = basic_machine_tools
+				OR = {
+					NOT = {
+						has_tech = construction1
+					}
+					NOT = {
+						has_tech = electronic_mechanical_engineering
+					}
+					NOT = {
+						has_tech = basic_machine_tools
+					}
 				}
 			}
-			}
-			
 			modifier = {
 				ADD = 10
-			OR = {
-			any_enemy_country = {
-				check_variable = { num_deployed_planes_with_type@cas > 500 }
-				}
-			any_enemy_country = {
-				check_variable = { num_deployed_planes_with_type@strategic_bomber > 500 }
-				}
-			any_enemy_country = {
-				check_variable = { num_deployed_planes_with_type@tactical_bomber > 500 }
-				}
+				OR = {
+					any_enemy_country = {
+						check_variable = { num_deployed_planes_with_type@cas > 500 }
+					}
+					any_enemy_country = {
+						check_variable = { num_deployed_planes_with_type@strategic_bomber > 500 }
+					}
+					any_enemy_country = {
+						check_variable = { num_deployed_planes_with_type@tactical_bomber > 500 }
+					}
 				}	
 			}
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 3
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = mechanical_computing
-				has_tech = construction2
-				has_tech = dispersed_industry
+				NOT = {
+					has_tech = mechanical_computing
+					has_tech = construction2
+					has_tech = dispersed_industry
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -2.0
@@ -3609,75 +3203,61 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-									
 			modifier = {
 				add = 25
 				has_air_experience > 200
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_operational_integrity }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not = {
 				has_tech = tactical_bomber1
 				}
 			}
-			
 			modifier = {
 				add = 5
 				has_tech = tactical_bomber1
 			}
-
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}	
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 3
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = mechanical_computing
-				has_tech = construction2
-				has_tech = dispersed_industry
+				NOT = {
+					has_tech = mechanical_computing
+					has_tech = construction2
+					has_tech = dispersed_industry
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -1.0
@@ -3716,73 +3296,59 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-									
 			modifier = {
 				add = 25
 				has_air_experience > 200
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_operational_integrity }
 			}
-			
 			modifier = {
 				add = 5
 				has_tech = heavy_fighter2			
 			}
-			
 			modifier = {
 				add = 5
 				has_tech = fighter2
 			}
-
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}	
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = mechanical_computing
-				has_tech = construction2
-				has_tech = dispersed_industry2
+				NOT = {
+					has_tech = mechanical_computing
+					has_tech = construction2
+					has_tech = dispersed_industry2
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -2.0
@@ -3825,75 +3391,61 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-									
 			modifier = {
 				add = 25
 				has_air_experience > 200
-			}				
-			
+			}
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_operational_integrity }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not = {
 				has_tech = tactical_bomber2
 				}
 			}
-			
 			modifier = {
 				add = 5
 				has_tech = tactical_bomber2
 			}
-
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}	
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = mechanical_computing
-				has_tech = construction2
-				has_tech = dispersed_industry2
+				NOT = {
+					has_tech = mechanical_computing
+					has_tech = construction2
+					has_tech = dispersed_industry2
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -1.0
@@ -3938,73 +3490,59 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-									
 			modifier = {
 				add = 25
 				has_air_experience > 200
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_operational_integrity }
 			}
-			
 			modifier = {
 				add = 5
 				has_tech = heavy_fighter2			
 			}
-			
 			modifier = {
 				add = 5
 				has_tech = fighter2
 			}
-
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}	
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction3
-				has_tech = dispersed_industry3
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction3
+					has_tech = dispersed_industry3
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -2.0
@@ -4091,77 +3629,63 @@ technologies = {
 			position = { x = 2 y = 10 }
 		}
 
-			ai_will_do = {
-			factor = 10
-									
+		ai_will_do = {
+			factor = 10	
 			modifier = {
 				add = 25
 				has_air_experience > 200
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_operational_integrity }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not = {
 				has_tech = tactical_bomber2
 				}
 			}
-			
 			modifier = {
 				add = 5
 				has_tech = tactical_bomber2
 			}
-
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}	
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction3
-				has_tech = dispersed_industry3
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction3
+					has_tech = dispersed_industry3
 				}
-			}				
+			}
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -1.0
@@ -4200,77 +3724,63 @@ technologies = {
 			position = { x = 2 y = 12 }
 		}
 
-			ai_will_do = {
+		ai_will_do = {
 			factor = 10
-									
 			modifier = {
 				add = 25
 				has_air_experience > 200
-			}				
-			
+			}
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_operational_integrity }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not = {
 				has_tech = tactical_bomber2
 				}
 			}
-			
 			modifier = {
 				add = 5
 				has_tech = tactical_bomber2
 			}
-
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}	
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = computing_machine
-				has_tech = construction3
-				has_tech = dispersed_industry3
+				NOT = {
+					has_tech = computing_machine
+					has_tech = construction3
+					has_tech = dispersed_industry3
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			medium_air = -0.5
@@ -4309,75 +3819,61 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-									
 			modifier = {
 				add = 25
 				has_air_experience > 200
-			}				
-			
+			}
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_operational_integrity }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not = {
 				has_tech = tactical_bomber2
 				}
 			}
-			
 			modifier = {
 				add = 5
 				has_tech = tactical_bomber3
 			}
-
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
 			}	
-			
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = improved_computing_machine
-				has_tech = construction4
-				has_tech = dispersed_industry4
+				NOT = {
+					has_tech = improved_computing_machine
+					has_tech = construction4
+					has_tech = dispersed_industry4
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			medium_air = -0.5
@@ -4417,73 +3913,59 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-									
 			modifier = {
 				add = 25
 				has_air_experience > 200
-			}				
-			
+			}
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_operational_integrity }
 			}
-			
 			modifier = {
 				add = 5
 				has_tech = heavy_fighter2			
 			}
-			
 			modifier = {
 				add = 5
 				has_tech = fighter2
 			}
-
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@fighter > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}	
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = improved_computing_machine
-				has_tech = construction4
-				has_tech = dispersed_industry4
+				NOT = {
+					has_tech = improved_computing_machine
+					has_tech = construction4
+					has_tech = dispersed_industry4
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			light_air = -2.0
@@ -4509,6 +3991,14 @@ technologies = {
 			operational_integrity_tree
 			cat_operational_integrity
 		}
+		on_research_complete = {
+			hidden_effect = {
+				set_technology = {
+					finished_air_doctrine = 1
+					popup = no
+				}
+			}
+		}
 
 		folder = {
 			name = air_doctrine_folder
@@ -4517,75 +4007,61 @@ technologies = {
 
 		ai_will_do = {
 			factor = 10
-									
 			modifier = {
 				add = 25
 				has_air_experience > 200
 			}				
-			
 			modifier = {
 				ADD = 10
 				has_tech_bonus = { category = cat_operational_integrity }
 			}
-			
 			modifier = {
 				factor = 0.5
 				not = {
 				has_tech = tactical_bomber2
 				}
 			}
-			
 			modifier = {
 				add = 5
 				has_tech = tactical_bomber3
 			}
-
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 250 }
 			}
-						
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 500 }
 			}
-			
 			modifier = {
 				add = 3
 				check_variable = { num_deployed_planes_with_type@tactical_bomber > 1000 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@aluminium < 6 }
 			}
-
 			modifier = {
 				factor = 0
 				check_variable = { resource_produced@rubber < 5 }
 			}
-			
 			modifier = {
 				factor = 0
 				arms_factory < 30
-			}	
-			
+			}
 			modifier = {
 				factor = 0.5
 				amount_research_slots < 4
 			}
-			
 			modifier = {
 				factor = 0
-			Not = {
-				has_tech = improved_computing_machine
-				has_tech = construction4
-				has_tech = dispersed_industry4
+				NOT = {
+					has_tech = improved_computing_machine
+					has_tech = construction4
+					has_tech = dispersed_industry4
 				}
 			}				
 		}
-
 		ai_research_weights = {
 			air_doctrine = -1.0
 			medium_air = -0.5
@@ -4861,4 +4337,1111 @@ technologies = {
 			#		}
 		#	}
 	#
+	
+	tactical_focus = {
+
+		# EFFECT ########
+		air_cas_efficiency = 0.2
+		###########
+		
+		path = {
+			leads_to_tech = tactical_tac_primacy
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = cas_primacy
+			research_cost_coeff = 1
+		}
+		
+		dependencies = {
+			jet_engines = 1
+			finished_air_doctrine = 1
+		}
+		
+		xor = { strategic_focus }
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine					
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	tactical_tac_primacy = {
+
+		# EFFECT ########
+		category_tac_bomber = {
+			air_ground_attack = 0.2
+		}		
+		###########
+		
+		path = {
+			leads_to_tech = forward_air_controller
+			research_cost_coeff = 1
+		}
+		
+		xor = { cas_primacy }	
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine					
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	cas_primacy = {
+
+		# EFFECT ########
+		category_cas = {
+			air_ground_attack = 0.2
+		}
+		###########
+		
+		
+		path = {
+			leads_to_tech = forward_air_controller
+			research_cost_coeff = 1
+		}
+		
+		xor = { tactical_tac_primacy }
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine					
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = -2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	forward_air_controller = {
+
+		# EFFECT ########
+		air_cas_present_factor = 0.2
+		###########
+				
+		path = {
+			leads_to_tech = aerial_wave
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine				
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	aerial_wave = {
+
+		# EFFECT ########
+		air_cas_efficiency = 0.1		
+		air_mission_xp_gain_factor = 0.1
+		###########
+				
+		path = {
+			leads_to_tech = combined_support
+			research_cost_coeff = 1
+		}
+				
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine				
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	combined_support = {
+
+		# EFFECT ########
+		category_tac_bomber = {
+				air_ground_attack = 0.1
+		}	
+		category_cas = {
+				air_ground_attack = 0.1
+		}	
+		###########
+				
+		path = {
+			leads_to_tech = ample_spectrum_ops
+			research_cost_coeff = 1
+		}
+						
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine				
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	ample_spectrum_ops = {
+
+		# EFFECT ########
+		air_cas_efficiency = 0.1		
+		air_nav_efficiency = 0.1
+		###########
+				
+		path = {
+			leads_to_tech = round_the_clock_support
+			research_cost_coeff = 1
+		}				
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	round_the_clock_support	= {
+
+		# EFFECT ########
+		army_bonus_air_superiority_factor = 0.15
+		###########
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	strategic_focus = {
+
+		# EFFECT ########
+		air_strategic_bomber_bombing_factor = 0.2
+		###########
+		
+		dependencies = {
+			jet_engines = 1
+			finished_air_doctrine = 1
+		}
+		
+		path = {
+			leads_to_tech = tactical_str_primacy
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = str_primacy
+			research_cost_coeff = 1
+		}
+				
+		xor = { tactical_focus }
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 5 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	tactical_str_primacy = {
+
+		# EFFECT ########
+		category_tac_bomber = {
+			air_bombing = 0.2
+		}		
+		###########
+		
+		xor = { str_primacy }
+		
+		path = {
+			leads_to_tech = retaliatory_strikes
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 3 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	str_primacy = {
+
+		# EFFECT ########
+		category_strat_bomber = {
+			air_bombing = 0.2
+		}		
+		###########
+		
+		xor = { tactical_str_primacy }
+		
+		path = {
+			leads_to_tech = retaliatory_strikes
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 7 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	retaliatory_strikes = {
+
+		# EFFECT ########
+
+		air_nav_efficiency = 0.1
+
+		###########
+		
+		path = {
+			leads_to_tech = vl_range_escorts
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_ECM
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 5 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	basic_ECM = {
+
+		# EFFECT ########
+		strategic_bomb_visibility = -0.25
+		air_strategic_bomber_defence_factor = 0.2
+		###########
+		
+		path = {
+			leads_to_tech = aerial_refueling
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 3 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	vl_range_escorts = {
+
+		# EFFECT ########
+		category_fighter = {
+			air_range = 0.3
+		}	
+		category_heavy_fighter = {
+			air_range = 0.3
+		}		
+		###########
+		
+		path = {
+			leads_to_tech = aerial_refueling
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 7 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	aerial_refueling = {
+
+		# EFFECT ########
+		category_heavy_fighter = {
+			air_range = 0.5
+		}		
+		category_strat_bomber = {
+			air_range = 0.5
+		}
+		category_tac_bomber = {
+			air_range = 0.5
+		}
+		category_cas = {
+			air_range = 0.5
+		}
+		category_fighter = {
+			air_range = 0.5
+		}
+		category_scout_plane = {
+			air_range = 0.5
+		}
+		###########
+				
+		path = {
+			leads_to_tech = global_reach
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 5 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	global_reach = {
+
+		# EFFECT ########
+		air_strategic_bomber_bombing_factor = 0.2
+		air_strategic_bomber_night_penalty = -0.25
+		###########
+		
+		path = {
+			leads_to_tech = round_the_clock_allert
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 5 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	round_the_clock_allert = {
+
+		# EFFECT ########
+		category_strat_bomber = {
+			air_bombing = 0.1
+		}
+		category_tac_bomber = {
+			air_bombing = 0.1
+		}
+		###########
+						
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 5 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	basic_jet_operations = {
+
+		# EFFECT ########
+		air_ace_generation_chance_factor = 0.25
+		air_mission_xp_gain_factor = 0.1
+		###########
+		
+		path = {
+			leads_to_tech = high_speed_engagements
+			research_cost_coeff = 1
+		}
+		
+		
+		dependencies = {
+			jet_engines = 1
+			finished_air_doctrine = 1
+		}
+								
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 11 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	high_speed_engagements = {
+
+		# EFFECT ########
+		category_heavy_fighter = {
+			air_agility = 0.2
+		}
+		category_fighter = {
+			air_agility = 0.2
+		}
+		###########
+		
+		path = {
+			leads_to_tech = offense_in_depth
+			research_cost_coeff = 1
+		}
+								
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 11 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	offense_in_depth = {
+
+		# EFFECT ########
+		air_superiority_efficiency = 0.2
+		###########
+		
+		path = {
+			leads_to_tech = ground_directed
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = onboard_guidance
+			research_cost_coeff = 1
+		}
+								
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 11 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	ground_directed = {
+
+		# EFFECT ########
+		air_intercept_efficiency = 0.2
+		air_interception_detect_factor = 0.15
+		###########
+		
+		xor = { onboard_guidance }
+		
+		path = {
+			leads_to_tech = advanced_jet_tactics
+			research_cost_coeff = 1
+		}
+								
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 9 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	onboard_guidance = {
+
+		# EFFECT ########
+		air_superiority_efficiency = 0.2	
+		air_superiority_detect_factor = 0.15	
+		###########
+		
+		xor = { ground_directed }
+		
+		path = {
+			leads_to_tech = advanced_jet_tactics
+			research_cost_coeff = 1
+		}
+			
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 13 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	advanced_jet_tactics = {
+
+		# EFFECT ########
+		category_heavy_fighter = {
+			air_attack = 0.2
+		}
+		category_fighter = {
+			air_attack = 0.2
+		}
+		###########
+		
+		path = {
+			leads_to_tech = intercept_patrols
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = sam_integration
+			research_cost_coeff = 1
+		}
+								
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 11 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	sam_integration = {
+
+		# EFFECT ########
+		static_anti_air_hit_chance_factor = 0.1
+		static_anti_air_damage_factor = 0.2
+		category_army = {
+			air_attack = 0.2
+		}
+		###########
+		
+		xor = { intercept_patrols }
+		
+		path = {
+			leads_to_tech = missile_tactics
+			research_cost_coeff = 1
+		}
+								
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 9 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	intercept_patrols = {
+
+		# EFFECT ########
+		air_intercept_efficiency = 0.2
+		###########
+		
+		xor = { sam_integration }
+		
+		path = {
+			leads_to_tech = missile_tactics
+			research_cost_coeff = 1
+		}
+								
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 13 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
+	
+	missile_tactics = {
+
+		# EFFECT ########
+		category_heavy_fighter = {
+			air_agility = 0.1
+			air_defence = 0.2
+		}
+		category_fighter = {
+			air_agility = 0.1
+			air_defence = 0.2
+		}
+		
+		###########
+				
+		path = {
+			leads_to_tech = missile_tactics
+			research_cost_coeff = 1
+		}
+								
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			tog_military_technologies_category
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 11 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
+	}
 }

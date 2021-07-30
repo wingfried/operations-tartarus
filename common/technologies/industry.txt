@@ -1,5 +1,3 @@
-#####---------------------------------------------------------------------> Mod by Sig "GreatExperiment" Altre
-
 technologies = {
 
 	basic_machine_tools = {
@@ -68,7 +66,6 @@ technologies = {
 		}
 	}
 
-	#Machine tools branch
 	improved_machine_tools = {
 		dependencies = {
 			infantry_weapons = 1
@@ -130,8 +127,6 @@ technologies = {
 		}
 	}
 
-
-
 	advanced_machine_tools = {
 
 		production_factory_max_efficiency_factor = 0.1
@@ -155,50 +150,50 @@ technologies = {
 		modifier = {
 			factor = 2
 			num_of_military_factories > 10
-			}	
+		}	
 			
 		modifier = {
 			factor = 2
 			num_of_military_factories > 20
-			}
+		}
 			
 			
 		modifier = {
 			factor = 2
 			num_of_military_factories > 30
-			}
+		}
 			
 		modifier = {
 			factor = 2
 			num_of_military_factories > 40
-			}
+		}
 		
 		modifier = {
 			factor = 2
 			num_of_military_factories > 50
-			}
+		}
 			
 		modifier = {
 			factor = 2
 			num_of_military_factories > 70
-			}
+		}
 			
 		modifier = {
 			factor = 2
 			num_of_military_factories > 80
-			}
+		}
 		
 		modifier = {
 			factor = 2
 			num_of_military_factories > 100
 			}
-			}
+		}
 
 		categories = {
 			tog_civilian_technologies_category
 			industry
 		}
-		}
+	}
 
 	assembly_line_production = {
 
@@ -269,8 +264,6 @@ technologies = {
 			industry
 		}
 	}
-
-	###------> Old Manufacturing <><> <><> <><> <><> <><>
 
 	flexible_line = {
 
@@ -390,7 +383,6 @@ technologies = {
 		}
 	}
 
-	#Conversion branch - Enabled in DoD
 	improved_equipment_conversion = {
 
 		equipment_conversion_speed = 0.40
@@ -458,10 +450,6 @@ technologies = {
 			industry
 		}
 	}
-
-	###############
-
-	###------> X <><> <><> <><> <><> <><>
 
 	concentrated_industry = {
 
@@ -636,8 +624,6 @@ technologies = {
 		}
 	}
 
-	###------> Old Concentrated Industry <><> <><> <><> <><> <><>
-
 	concentrated_industry5 = {
 
 		industrial_capacity_factory = 0.15
@@ -681,8 +667,6 @@ technologies = {
 			offensive = -1.0
 		}
 	}
-
-	###------> X <><> <><> <><> <><> <><>
 
 	dispersed_industry = {
 
@@ -992,9 +976,6 @@ technologies = {
 		}
 	}
 
-
-	###------> Old Dispersed Industry <><> <><> <><> <><> <><>
-
 	dispersed_industry5 = {
 
 		industrial_capacity_factory = 0.1
@@ -1069,9 +1050,6 @@ technologies = {
 			defensive = -1.0
 		}
 	}
-
-
-	###------> X <><> <><> <><> <><> <><>
 
 	fuel_silos = {
 
@@ -1195,7 +1173,6 @@ technologies = {
 		}
 	}
 
-
 	fuel_refining = {
 
 		fuel_gain_factor = 0.2
@@ -1253,10 +1230,7 @@ technologies = {
 				num_of_naval_factories > 50
 			}
 		}
-		}
-		
-	
-
+	}
 
 	fuel_refining2 = {
 		
@@ -1306,9 +1280,7 @@ technologies = {
 				num_of_naval_factories > 30
 			}			
 		}
-		
 	}
-
 
 	fuel_refining3 = {
 		
@@ -1392,7 +1364,6 @@ technologies = {
 		}		
 	}
 
-
 	fuel_refining5 = {
 		
 		fuel_gain_factor = 0.20
@@ -1430,6 +1401,271 @@ technologies = {
 		}		
 	}
 
+	steel_mill = {
+
+		enable_building = {
+			building = TOG_steel_mill
+			level = 3
+		}
+		
+		dependencies = {
+			infantry_weapons = 1
+		}
+
+		path = {
+			leads_to_tech = steel_mill2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1008
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 4 }
+		}
+		
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	steel_mill2 = {
+
+		on_research_complete = {	
+			modify_building_resources = {
+				building = TOG_steel_mill
+				resource = steel
+				amount = 2
+			}
+		}
+					
+		path = {
+			leads_to_tech = steel_mill3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1010
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 6 }
+		}
+		
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	steel_mill3 = {
+
+		on_research_complete = {	
+			modify_building_resources = {
+				building = TOG_steel_mill
+				resource = steel
+				amount = 2
+			}
+		}
+					
+		path = {
+			leads_to_tech = steel_mill4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1012
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 8 }
+		}
+		
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	steel_mill4 = {
+
+		on_research_complete = {	
+			modify_building_resources = {
+				building = TOG_steel_mill
+				resource = steel
+				amount = 2
+			}
+		}
+
+		path = {
+			leads_to_tech = steel_mill5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1014
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 10 }
+		}
+		
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	aluminium_plant = {
+
+		enable_building = {
+			building = TOG_aluminium_plant
+			level = 3
+		}
+		
+		dependencies = {
+			infantry_weapons = 1
+		}
+		
+		path = {
+			leads_to_tech = aluminium_plant2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1008
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 4 }
+		}
+		
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	aluminium_plant2 = {
+
+		on_research_complete = {	
+			modify_building_resources = {
+				building = TOG_aluminium_plant
+				resource = aluminium
+				amount = 2
+			}
+		}
+					
+		path = {
+			leads_to_tech = aluminium_plant3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1010
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 6 }
+		}
+		
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	aluminium_plant3 = {
+
+		on_research_complete = {	
+			modify_building_resources = {
+				building = TOG_aluminium_plant
+				resource = aluminium
+				amount = 2
+			}
+		}
+					
+		path = {
+			leads_to_tech = aluminium_plant4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1012
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 8 }
+		}
+		
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	aluminium_plant4 = {
+
+		on_research_complete = {	
+			modify_building_resources = {
+				building = TOG_aluminium_plant
+				resource = aluminium
+				amount = 2
+			}
+		}
+
+		path = {
+			leads_to_tech = aluminium_plant5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1014
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 10 }
+		}
+		
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
 
 	synth_oil_experiments = {
 
@@ -1464,7 +1700,7 @@ technologies = {
 			synth_resources
 		}
 		
-	ai_will_do = {
+		ai_will_do = {
 			factor = 5
 			
 			modifier = {
@@ -1472,7 +1708,7 @@ technologies = {
 				NOT = {
 				has_tech = motorised_infantry
 				}
-				}
+			}
 
 			
 			modifier = {
@@ -1563,7 +1799,6 @@ technologies = {
 		}
 	}
 
-
 	oil_processing = {
 
 		fuel_gain_factor_from_states = 0.5
@@ -1635,7 +1870,6 @@ technologies = {
 
 		show_effect_as_desc = yes
 	}
-
 
 	improved_oil_processing = {
 
@@ -1714,7 +1948,6 @@ technologies = {
 		show_effect_as_desc = yes
 	}
 
-
 	advanced_oil_processing = {
 
 		fuel_gain_factor_from_states = 0.5
@@ -1769,7 +2002,6 @@ technologies = {
 		show_effect_as_desc = yes
 	}
 
-
 	modern_oil_processing = {
 
 		fuel_gain_factor_from_states = 0.5
@@ -1819,7 +2051,6 @@ technologies = {
 		show_effect_as_desc = yes
 	}
 
-	#####################################
 	rubber_processing = {
 
 		on_research_complete = {
@@ -2085,21 +2316,21 @@ technologies = {
 
 		show_effect_as_desc = yes
 	}
-	#####################################
 
-	###------> Old Manufacturing <><> <><> <><> <><> <><>
-
-	construction1 = {
+	construction0 = {
 
 		production_speed_buildings_factor = 0.10
 		industry_repair_factor = 0.10
+
 		dependencies = {
 			infantry_weapons = 1
 		}
+
 		path = {
-			leads_to_tech = construction2
+			leads_to_tech = construction1
 			research_cost_coeff = 1
 		}
+
 		path = {
 			leads_to_tech = excavation1
 			research_cost_coeff = 1
@@ -2132,13 +2363,24 @@ technologies = {
 		}
 	}
 
-	###------> X <><> <><> <><> <><> <><>
+	farming0 = {
 
-	excavation1 = {
+		enable_building = {
+			building = TOG_farm
+			level = 20
+		}
 
-		local_resources_factor = 0.10
+		dependencies = {
+			infantry_weapons = 1
+		}
 
 		path = {
+			leads_to_tech = farming1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = farming1_yield
 			research_cost_coeff = 1
 		}
 
@@ -2153,78 +2395,143 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 0 }
+			position = { x = 5 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 3								
+		}
+	}
+
+	construction1 = {
+
+		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
+		
+		path = {
+			leads_to_tech = construction2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = construction2_cheap
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1007
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 25
+
+			modifier = {
+				factor = 0.5
+				num_of_civilian_factories_available_for_projects < 5						
+			}
+			modifier = {
+				factor = 0
+				num_of_civilian_factories_available_for_projects < 1						
+			}
+		}
+	}
+
+	excavation1 = {
+
+		local_resources_factor = 0.10
+
+		path = {
+			leads_to_tech = excavation2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 2 }
 		}
 
 		ai_will_do = {
 			factor = 3
 			
-	modifier = {
-		add = 5
-	AND = {
-		has_idea = free_trade
-		check_variable = { resource_exported@rubber > 7 }
-		check_variable = { resource_exported@aluminium > 7 }
-		check_variable = { resource_exported@tungsten > 7 }
-		check_variable = { resource_exported@steel > 7 }
-		check_variable = { resource_exported@chromium > 7 }
-		}
-}	
-			
-
-	modifier = {
-		factor = 3
-			AND = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_produced@rubber > 10 }
+			modifier = {
+				add = 5
+				AND = {
+					has_idea = free_trade
+					check_variable = { resource_exported@rubber > 7 }
+					check_variable = { resource_exported@aluminium > 7 }
+					check_variable = { resource_exported@tungsten > 7 }
+					check_variable = { resource_exported@steel > 7 }
+					check_variable = { resource_exported@chromium > 7 }
+				}
+			}	
+			modifier = {
+				factor = 3
+				AND = {			
+					check_variable = { resource_imported@rubber > 1 }
+					check_variable = { resource_produced@rubber > 10 }
+				}
 			}
-}
-
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_produced@aluminium > 10 }
+			modifier = {
+				factor = 3	
+				AND = {			
+					check_variable = { resource_imported@aluminium > 1 }
+					check_variable = { resource_produced@aluminium > 10 }
+				}
 			}
-}
 
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@chromium > 1 }
-			check_variable = { resource_produced@chromium > 10 }
+			modifier = {
+				factor = 3	
+				AND = {			
+					check_variable = { resource_imported@chromium > 1 }
+					check_variable = { resource_produced@chromium > 10 }
+				}
 			}
-}
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_produced@steel > 10 }
+			modifier = {
+				factor = 3	
+				AND = {			
+					check_variable = { resource_imported@steel > 1 }
+					check_variable = { resource_produced@steel > 10 }
+				}
 			}
-}
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_produced@tungsten > 10 }
+			modifier = {
+				factor = 3	
+				AND = {			
+					check_variable = { resource_imported@tungsten > 1 }
+					check_variable = { resource_produced@tungsten > 10 }
+				}
 			}
-}
-
-	modifier = {
-		factor = 0
-			NOT = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_imported@chromium > 1 }
-			has_idea = free_trade
-}
-}
+			modifier = {
+				factor = 0
+				NOT = {			
+					check_variable = { resource_imported@rubber > 1 }
+					check_variable = { resource_imported@aluminium > 1 }
+					check_variable = { resource_imported@tungsten > 1 }
+					check_variable = { resource_imported@steel > 1 }
+					check_variable = { resource_imported@chromium > 1 }
+					has_idea = free_trade
+				}
+			}
 			modifier = {
 				factor = 2				
 				set_temp_variable = {resource_pro = resource_produced@steel}
@@ -2234,8 +2541,7 @@ technologies = {
 				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
 				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
 				check_variable = { resource_pro > 50 }
-				}
-				
+			}
 			modifier = {
 				factor = 3
 				set_temp_variable = {resource_pro = resource_produced@steel}
@@ -2245,22 +2551,93 @@ technologies = {
 				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
 				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
 				check_variable = { resource_pro > 100 }
-				}									
+			}									
 		}
-}
+	}
+
+	farming1 = {
+
+		modifier_yield_farms_efficiency = 0.05
+
+		path = {
+			leads_to_tech = farming2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = farming2_cheap
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 5 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 3								
+		}
+	}
+
+	farming1_yield = {
+
+		on_research_complete = {	
+			modify_building_resources = {
+				building = TOG_farm
+				resource = TOG_food
+				amount = 1
+			}
+		}
+
+		path = {
+			leads_to_tech = farming2_yield
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 3								
+		}
+	}
 
 	construction2 = {
 
-		production_speed_buildings_factor = 0.10
-		industry_repair_factor = 0.10
+		production_speed_buildings_factor = -0.05
+		industry_repair_factor = -0.05
+		modifier_income_civilian_factories_efficiency = 0.10
+		modifier_expenses_military_factories_efficiency = -0.10
+		modifier_expenses_naval_factories_efficiency = -0.10
+		modifier_expenses_infrastructure_upkeep_efficiency = -0.10
 
 		path = {
 			leads_to_tech = construction3
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = excavation2
-			research_cost_coeff = 1
+
+		XOR = {
+			construction2_cheap
 		}
 
 		research_cost = 2
@@ -2274,7 +2651,49 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 2 }
+			position = { x = -1 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 25
+			
+		modifier = {
+				factor = 0.5
+				num_of_civilian_factories_available_for_projects < 5						
+			}
+		modifier = {
+				factor = 0
+				num_of_civilian_factories_available_for_projects < 1						
+			}		
+		}		
+	}
+
+	construction2_cheap = {
+
+		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
+
+		path = {
+			leads_to_tech = construction3_cheap
+			research_cost_coeff = 1
+		}
+
+		XOR = {
+			construction2
+		}
+
+		research_cost = 2
+		start_year = 1008
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 4 }
 		}
 
 		ai_will_do = {
@@ -2296,6 +2715,7 @@ technologies = {
 		local_resources_factor = 0.10
 
 		path = {
+			leads_to_tech = excavation3
 			research_cost_coeff = 1
 		}
 
@@ -2311,114 +2731,181 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 2 }
+			position = { x = 3 y = 4 }
 		}
 
-	ai_will_do = {
-			factor = 3
-			
-	modifier = {
-		add = 5
-	AND = {
-		has_idea = free_trade
-		check_variable = { resource_exported@rubber > 7 }
-		check_variable = { resource_exported@aluminium > 7 }
-		check_variable = { resource_exported@tungsten > 7 }
-		check_variable = { resource_exported@steel > 7 }
-		check_variable = { resource_exported@chromium > 7 }
-		}
-}
-	
-	modifier = {
-		factor = 3
-			AND = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_produced@rubber > 10 }
-			}
-}
-
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_produced@aluminium > 10 }
-			}
-}
-
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@chromium > 1 }
-			check_variable = { resource_produced@chromium > 10 }
-			}
-}
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_produced@steel > 10 }
-			}
-}
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_produced@tungsten > 10 }
-			}
-}
-
-	modifier = {
-		factor = 0
-			NOT = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_imported@chromium > 1 }
-			has_idea = free_trade
-}
-}
-			modifier = {
-				factor = 2				
-				set_temp_variable = {resource_pro = resource_produced@steel}
-				add_to_temp_variable = { resource_pro = resource_produced@chromium}
-				add_to_temp_variable = { resource_pro = resource_produced@crystals}
-				add_to_temp_variable = { resource_pro = resource_produced@rubber}
-				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
-				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
-				check_variable = { resource_pro > 60 }
-				}
-				
-			modifier = {
+		ai_will_do = {
 				factor = 3
-				set_temp_variable = {resource_pro = resource_produced@steel}
-				add_to_temp_variable = { resource_pro = resource_produced@chromium}
-				add_to_temp_variable = { resource_pro = resource_produced@crystals}
-				add_to_temp_variable = { resource_pro = resource_produced@rubber}
-				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
-				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
-				check_variable = { resource_pro > 110 }
-				}									
+				
+		modifier = {
+			add = 5
+		AND = {
+			has_idea = free_trade
+			check_variable = { resource_exported@rubber > 7 }
+			check_variable = { resource_exported@aluminium > 7 }
+			check_variable = { resource_exported@tungsten > 7 }
+			check_variable = { resource_exported@steel > 7 }
+			check_variable = { resource_exported@chromium > 7 }
+			}
+		}
+		
+		modifier = {
+			factor = 3
+				AND = {			
+				check_variable = { resource_imported@rubber > 1 }
+				check_variable = { resource_produced@rubber > 10 }
+				}
+		}
+
+
+		modifier = {
+			factor = 3	
+				AND = {			
+				check_variable = { resource_imported@aluminium > 1 }
+				check_variable = { resource_produced@aluminium > 10 }
+				}
+		}
+
+
+		modifier = {
+			factor = 3	
+				AND = {			
+				check_variable = { resource_imported@chromium > 1 }
+				check_variable = { resource_produced@chromium > 10 }
+				}
+		}
+
+		modifier = {
+			factor = 3	
+				AND = {			
+				check_variable = { resource_imported@steel > 1 }
+				check_variable = { resource_produced@steel > 10 }
+				}
+		}
+
+		modifier = {
+			factor = 3	
+				AND = {			
+				check_variable = { resource_imported@tungsten > 1 }
+				check_variable = { resource_produced@tungsten > 10 }
+				}
+		}
+
+		modifier = {
+			factor = 0
+				NOT = {			
+				check_variable = { resource_imported@rubber > 1 }
+				check_variable = { resource_imported@aluminium > 1 }
+				check_variable = { resource_imported@tungsten > 1 }
+				check_variable = { resource_imported@steel > 1 }
+				check_variable = { resource_imported@chromium > 1 }
+				has_idea = free_trade
 		}
 		}
-	
+				modifier = {
+					factor = 2				
+					set_temp_variable = {resource_pro = resource_produced@steel}
+					add_to_temp_variable = { resource_pro = resource_produced@chromium}
+					add_to_temp_variable = { resource_pro = resource_produced@crystals}
+					add_to_temp_variable = { resource_pro = resource_produced@rubber}
+					add_to_temp_variable = { resource_pro = resource_produced@aluminium}
+					add_to_temp_variable = { resource_pro = resource_produced@tungsten}
+					check_variable = { resource_pro > 60 }
+					}
+					
+				modifier = {
+					factor = 3
+					set_temp_variable = {resource_pro = resource_produced@steel}
+					add_to_temp_variable = { resource_pro = resource_produced@chromium}
+					add_to_temp_variable = { resource_pro = resource_produced@crystals}
+					add_to_temp_variable = { resource_pro = resource_produced@rubber}
+					add_to_temp_variable = { resource_pro = resource_produced@aluminium}
+					add_to_temp_variable = { resource_pro = resource_produced@tungsten}
+					check_variable = { resource_pro > 110 }
+					}									
+			}
+	}
 
-	construction3 = {
+	farming2 = {
 
-		production_speed_buildings_factor = 0.10
-		industry_repair_factor = 0.10
+		modifier_food_quality = 0.05
+		modifier_yield_farms_efficiency = -0.025
+
 
 		path = {
-			leads_to_tech = construction4
+			leads_to_tech = farming3
 			research_cost_coeff = 1
 		}
 
+		XOR = {
+			farming2_cheap
+		}
+
+		research_cost = 2
+		start_year = 1008
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	farming2_cheap = {
+
+		modifier_yield_farms_efficiency = 0.05
+		modifier_food_quality = -0.025
+
 		path = {
-			leads_to_tech = excavation3
+			leads_to_tech = farming3_cheap
+			research_cost_coeff = 1
+		}
+
+		XOR = {
+			farming2
+		}
+
+		research_cost = 2
+		start_year = 1008
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	
+	construction3 = {
+
+		production_speed_buildings_factor = -0.05
+		industry_repair_factor = -0.05
+		modifier_income_civilian_factories_efficiency = 0.10
+		modifier_expenses_military_factories_efficiency = -0.10
+		modifier_expenses_naval_factories_efficiency = -0.10
+		modifier_expenses_infrastructure_upkeep_efficiency = -0.10
+
+		path = {
+			leads_to_tech = construction4
 			research_cost_coeff = 1
 		}
 
@@ -2433,29 +2920,175 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 4 }
+			position = { x = -1 y = 6 }
 		}
 
 		ai_will_do = {
 			factor = 25
 			
-		modifier = {
+			modifier = {
 				factor = 0.5
 				num_of_civilian_factories_available_for_projects < 5						
 			}
-		modifier = {
+			modifier = {
 				factor = 0
 				num_of_civilian_factories_available_for_projects < 1						
 			}		
 		}
 	}
 
+	construction3_cheap = {
+
+		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
+
+		path = {
+			leads_to_tech = construction4_cheap
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1010
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 25
+			
+			modifier = {
+				factor = 0.5
+				num_of_civilian_factories_available_for_projects < 5						
+			}
+			modifier = {
+				factor = 0
+				num_of_civilian_factories_available_for_projects < 1						
+			}		
+		}
+	}
 
 	excavation3 = {
 
 		local_resources_factor = 0.10
 
+		research_cost = 2
+		start_year = 1010
+
 		path = {
+			leads_to_tech = excavation4
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 3	
+			modifier = {
+				add = 5
+				AND = {
+					has_idea = free_trade
+					check_variable = { resource_exported@rubber > 7 }
+					check_variable = { resource_exported@aluminium > 7 }
+					check_variable = { resource_exported@tungsten > 7 }
+					check_variable = { resource_exported@steel > 7 }
+					check_variable = { resource_exported@chromium > 7 }
+				}
+			}
+			modifier = {
+				factor = 3
+				AND = {			
+					check_variable = { resource_imported@rubber > 1 }
+					check_variable = { resource_produced@rubber > 10 }
+				}
+			}
+			modifier = {
+				factor = 3	
+				AND = {			
+					check_variable = { resource_imported@aluminium > 1 }
+					check_variable = { resource_produced@aluminium > 10 }
+				}
+			}
+			modifier = {
+				factor = 3	
+				AND = {			
+					check_variable = { resource_imported@chromium > 1 }
+					check_variable = { resource_produced@chromium > 10 }
+				}
+			}
+			modifier = {
+				factor = 3	
+				AND = {			
+					check_variable = { resource_imported@steel > 1 }
+					check_variable = { resource_produced@steel > 10 }
+				}
+			}
+			modifier = {
+				factor = 3	
+				AND = {			
+					check_variable = { resource_imported@tungsten > 1 }
+					check_variable = { resource_produced@tungsten > 10 }
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					check_variable = { resource_imported@rubber > 1 }
+					check_variable = { resource_imported@aluminium > 1 }
+					check_variable = { resource_imported@tungsten > 1 }
+					check_variable = { resource_imported@steel > 1 }
+					check_variable = { resource_imported@chromium > 1 }
+					has_idea = free_trade
+				}
+			}
+			modifier = {
+				factor = 2				
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				add_to_temp_variable = { resource_pro = resource_produced@chromium}
+				add_to_temp_variable = { resource_pro = resource_produced@crystals}
+				add_to_temp_variable = { resource_pro = resource_produced@rubber}
+				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
+				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
+				check_variable = { resource_pro > 70 }
+			}
+				
+			modifier = {
+				factor = 3
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				add_to_temp_variable = { resource_pro = resource_produced@chromium}
+				add_to_temp_variable = { resource_pro = resource_produced@crystals}
+				add_to_temp_variable = { resource_pro = resource_produced@rubber}
+				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
+				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
+				check_variable = { resource_pro > 120 }
+			}
+		}
+	}
+
+	farming3 = {
+
+		modifier_food_quality = 0.05
+		modifier_yield_farms_efficiency = -0.025
+
+		path = {
+			leads_to_tech = farming4
 			research_cost_coeff = 1
 		}
 
@@ -2471,112 +3104,90 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 4 }
+			position = { x = 4 y = 6 }
 		}
 
-	ai_will_do = {
+		ai_will_do = {
 			factor = 3
-			
-	modifier = {
-		add = 5
-	AND = {
-		has_idea = free_trade
-		check_variable = { resource_exported@rubber > 7 }
-		check_variable = { resource_exported@aluminium > 7 }
-		check_variable = { resource_exported@tungsten > 7 }
-		check_variable = { resource_exported@steel > 7 }
-		check_variable = { resource_exported@chromium > 7 }
 		}
-}
-	
-	modifier = {
-		factor = 3
-			AND = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_produced@rubber > 10 }
+	}
+
+	farming3_cheap = {
+
+		modifier_yield_farms_efficiency = 0.05
+		modifier_food_quality = -0.025
+
+		path = {
+			leads_to_tech = farming4_cheap
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1010
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	farming2_yield = {
+
+		on_research_complete = {	
+			modify_building_resources = {
+				building = TOG_farm
+				resource = TOG_food
+				amount = 1
 			}
-}
+		}
 
+		path = {
+			leads_to_tech = farming3_yield
+			research_cost_coeff = 1
+		}
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_produced@aluminium > 10 }
-			}
-}
+		research_cost = 2
+		start_year = 1010
 
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@chromium > 1 }
-			check_variable = { resource_produced@chromium > 10 }
-			}
-}
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 6 }
+		}
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_produced@steel > 10 }
-			}
-}
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_produced@tungsten > 10 }
-			}
-}
-
-	modifier = {
-		factor = 0
-			NOT = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_imported@chromium > 1 }
-			has_idea = free_trade
-}
-}
-			modifier = {
-				factor = 2				
-				set_temp_variable = {resource_pro = resource_produced@steel}
-				add_to_temp_variable = { resource_pro = resource_produced@chromium}
-				add_to_temp_variable = { resource_pro = resource_produced@crystals}
-				add_to_temp_variable = { resource_pro = resource_produced@rubber}
-				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
-				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
-				check_variable = { resource_pro > 70 }
-				}
-				
-			modifier = {
-				factor = 3
-				set_temp_variable = {resource_pro = resource_produced@steel}
-				add_to_temp_variable = { resource_pro = resource_produced@chromium}
-				add_to_temp_variable = { resource_pro = resource_produced@crystals}
-				add_to_temp_variable = { resource_pro = resource_produced@rubber}
-				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
-				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
-				check_variable = { resource_pro > 120 }
-				}
+		ai_will_do = {
+			factor = 3
 		}
 	}
 
 	construction4 = {
 
-		production_speed_buildings_factor = 0.10
-		industry_repair_factor = 0.10
+		production_speed_buildings_factor = -0.05
+		industry_repair_factor = -0.05
+		modifier_income_civilian_factories_efficiency = 0.10
+		modifier_expenses_military_factories_efficiency = -0.10
+		modifier_expenses_naval_factories_efficiency = -0.10
+		modifier_expenses_infrastructure_upkeep_efficiency = -0.10
 
 		path = {
 			leads_to_tech = construction5
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = excavation4
 			research_cost_coeff = 1
 		}
 
@@ -2591,17 +3202,55 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 6 }
+			position = { x = -1 y = 8 }
 		}
 
 		ai_will_do = {
 			factor = 25
 			
-		modifier = {
+			modifier = {
 				factor = 0.5
 				num_of_civilian_factories_available_for_projects < 5						
 			}
-		modifier = {
+			modifier = {
+				factor = 0
+				num_of_civilian_factories_available_for_projects < 1						
+			}		
+		}
+	}
+
+	construction4_cheap = {
+
+		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
+
+		path = {
+			leads_to_tech = construction5_cheap
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1012
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 25
+			
+			modifier = {
+				factor = 0.5
+				num_of_civilian_factories_available_for_projects < 5						
+			}
+			modifier = {
 				factor = 0
 				num_of_civilian_factories_available_for_projects < 1						
 			}		
@@ -2613,6 +3262,7 @@ technologies = {
 		local_resources_factor = 0.10
 
 		path = {
+			leads_to_tech = excavation5
 			research_cost_coeff = 1
 		}
 
@@ -2628,77 +3278,77 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 6 }
+			position = { x = 3 y = 8 }
 		}
 
-	ai_will_do = {
+		ai_will_do = {
 			factor = 3
+				
+			modifier = {
+				add = 5
+			AND = {
+				has_idea = free_trade
+				check_variable = { resource_exported@rubber > 7 }
+				check_variable = { resource_exported@aluminium > 7 }
+				check_variable = { resource_exported@tungsten > 7 }
+				check_variable = { resource_exported@steel > 7 }
+				check_variable = { resource_exported@chromium > 7 }
+				}
+			}	
 			
-	modifier = {
-		add = 5
-	AND = {
-		has_idea = free_trade
-		check_variable = { resource_exported@rubber > 7 }
-		check_variable = { resource_exported@aluminium > 7 }
-		check_variable = { resource_exported@tungsten > 7 }
-		check_variable = { resource_exported@steel > 7 }
-		check_variable = { resource_exported@chromium > 7 }
-		}
-}	
-	
-	modifier = {
-		factor = 3
-			AND = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_produced@rubber > 10 }
+			modifier = {
+				factor = 3
+					AND = {			
+					check_variable = { resource_imported@rubber > 1 }
+					check_variable = { resource_produced@rubber > 10 }
+					}
 			}
-}
 
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_produced@aluminium > 10 }
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@aluminium > 1 }
+					check_variable = { resource_produced@aluminium > 10 }
+					}
 			}
-}
 
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@chromium > 1 }
-			check_variable = { resource_produced@chromium > 10 }
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@chromium > 1 }
+					check_variable = { resource_produced@chromium > 10 }
+					}
 			}
-}
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_produced@steel > 10 }
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@steel > 1 }
+					check_variable = { resource_produced@steel > 10 }
+					}
 			}
-}
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_produced@tungsten > 10 }
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@tungsten > 1 }
+					check_variable = { resource_produced@tungsten > 10 }
+					}
 			}
-}
 
-	modifier = {
-		factor = 0
-			NOT = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_imported@chromium > 1 }
-			has_idea = free_trade
-}
-}
+			modifier = {
+				factor = 0
+					NOT = {			
+					check_variable = { resource_imported@rubber > 1 }
+					check_variable = { resource_imported@aluminium > 1 }
+					check_variable = { resource_imported@tungsten > 1 }
+					check_variable = { resource_imported@steel > 1 }
+					check_variable = { resource_imported@chromium > 1 }
+					has_idea = free_trade
+				}
+			}
 			modifier = {
 				factor = 2				
 				set_temp_variable = {resource_pro = resource_produced@steel}
@@ -2719,25 +3369,78 @@ technologies = {
 				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
 				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
 				check_variable = { resource_pro > 130 }
-				}
-													
+			}										
 		}
 	}
-		
-	
 
-	###------> Old Construction <><> <><> <><> <><> <><>
+	farming4 = {
 
-	construction5 = {
-
-		production_speed_buildings_factor = 0.10
-		industry_repair_factor = 0.10
+		modifier_food_quality = 0.05
+		modifier_yield_farms_efficiency = -0.025
 
 		path = {
-			leads_to_tech = excavation5
+			leads_to_tech = farming5
 			research_cost_coeff = 1
 		}
 
+		research_cost = 2
+		start_year = 1012
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	farming4_cheap = {
+
+		modifier_yield_farms_efficiency = 0.05
+		modifier_food_quality = -0.025
+
+		path = {
+			leads_to_tech = farming5_cheap
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1012
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	construction5 = {
+
+		production_speed_buildings_factor = -0.05
+		industry_repair_factor = -0.05
+		modifier_income_civilian_factories_efficiency = 0.10
+		modifier_expenses_military_factories_efficiency = -0.10
+		modifier_expenses_naval_factories_efficiency = -0.10
+		modifier_expenses_infrastructure_upkeep_efficiency = -0.10
 
 		path = {
 			leads_to_tech = construction_a
@@ -2754,30 +3457,66 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 8 }
+			position = { x = -1 y = 10 }
 		}
 
 		ai_will_do = {
 			factor = 25
 			
-		modifier = {
+			modifier = {
 				factor = 0.5
 				num_of_civilian_factories_available_for_projects < 5						
 			}
-		modifier = {
+			modifier = {
 				factor = 0
 				num_of_civilian_factories_available_for_projects < 1						
 			}		
 		}
 	}
 
-	###------> X <><> <><> <><> <><> <><>
+	construction5_cheap = {
+
+		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
+
+		path = {
+			leads_to_tech = construction_a_cheap
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1014
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 25
+			
+			modifier = {
+				factor = 0.5
+				num_of_civilian_factories_available_for_projects < 5						
+			}
+			modifier = {
+				factor = 0
+				num_of_civilian_factories_available_for_projects < 1						
+			}		
+		}
+	}
 
 	excavation5 = {
 
 		local_resources_factor = 0.10
 
 		path = {
+			leads_to_tech = excavation_a
 			research_cost_coeff = 1
 		}
 
@@ -2793,78 +3532,78 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 8 }
+			position = { x = 3 y = 10 }
 		}
 
 		ai_will_do = {
 			factor = 3
 			
 			
-	modifier = {
-		add = 5
-	AND = {
-		has_idea = free_trade
-		check_variable = { resource_exported@rubber > 7 }
-		check_variable = { resource_exported@aluminium > 7 }
-		check_variable = { resource_exported@tungsten > 7 }
-		check_variable = { resource_exported@steel > 7 }
-		check_variable = { resource_exported@chromium > 7 }
-		}
-}
-
-	modifier = {
-		factor = 3
-			AND = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_produced@rubber > 10 }
+			modifier = {
+				add = 5
+			AND = {
+				has_idea = free_trade
+				check_variable = { resource_exported@rubber > 7 }
+				check_variable = { resource_exported@aluminium > 7 }
+				check_variable = { resource_exported@tungsten > 7 }
+				check_variable = { resource_exported@steel > 7 }
+				check_variable = { resource_exported@chromium > 7 }
+				}
 			}
-}
 
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_produced@aluminium > 10 }
+			modifier = {
+				factor = 3
+					AND = {			
+					check_variable = { resource_imported@rubber > 1 }
+					check_variable = { resource_produced@rubber > 10 }
+					}
 			}
-}
 
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@chromium > 1 }
-			check_variable = { resource_produced@chromium > 10 }
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@aluminium > 1 }
+					check_variable = { resource_produced@aluminium > 10 }
+					}
 			}
-}
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_produced@steel > 10 }
+
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@chromium > 1 }
+					check_variable = { resource_produced@chromium > 10 }
+					}
 			}
-}
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_produced@tungsten > 10 }
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@steel > 1 }
+					check_variable = { resource_produced@steel > 10 }
+					}
 			}
-}
 
-	modifier = {
-		factor = 0
-			NOT = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_imported@chromium > 1 }
-			has_idea = free_trade
-}
-}
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@tungsten > 1 }
+					check_variable = { resource_produced@tungsten > 10 }
+					}
+			}
+
+			modifier = {
+				factor = 0
+					NOT = {			
+					check_variable = { resource_imported@rubber > 1 }
+					check_variable = { resource_imported@aluminium > 1 }
+					check_variable = { resource_imported@tungsten > 1 }
+					check_variable = { resource_imported@steel > 1 }
+					check_variable = { resource_imported@chromium > 1 }
+					has_idea = free_trade
+			}
+			}
 			modifier = {
 				factor = 2				
 				set_temp_variable = {resource_pro = resource_produced@steel}
@@ -2885,22 +3624,113 @@ technologies = {
 				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
 				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
 				check_variable = { resource_pro > 140 }
-				}									
+			}									
 		}
 	}
-	
 
-	###------> New Construction <><> <><> <><> <><> <><>
+	farming5 = {
+
+		modifier_food_quality = 0.05
+		modifier_yield_farms_efficiency = -0.025
+
+		path = {
+			leads_to_tech = farming_a
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1014
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	farming5_cheap = {
+
+		modifier_yield_farms_efficiency = 0.05
+		modifier_food_quality = -0.025
+
+		path = {
+			leads_to_tech = farming_a_cheap
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1014
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	farming3_yield = {
+
+		on_research_complete = {	
+			modify_building_resources = {
+				building = TOG_farm
+				resource = TOG_food
+				amount = 1
+			}
+		}
+
+		path = {
+			leads_to_tech = farming4_yield
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1014
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
 
 	construction_a = {
 
-		production_speed_buildings_factor = 0.05
-		industry_repair_factor = 0.05
-
-		path = {
-			leads_to_tech = excavation_a
-			research_cost_coeff = 1
-		}
+		production_speed_buildings_factor = -0.025
+		industry_repair_factor = -0.025
+		modifier_income_civilian_factories_efficiency = 0.05
+		modifier_expenses_military_factories_efficiency = -0.05
+		modifier_expenses_naval_factories_efficiency = -0.05
+		modifier_expenses_infrastructure_upkeep_efficiency = -0.05
 
 		path = {
 			leads_to_tech = construction_b
@@ -2918,7 +3748,7 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 10 }
+			position = { x = -1 y = 12 }
 		}
 
 		ai_will_do = {
@@ -2935,6 +3765,43 @@ technologies = {
 		}
 	}
 
+	construction_a_cheap = {
+
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
+
+		path = {
+			leads_to_tech = construction_b_cheap
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1016
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 20
+			
+		modifier = {
+				factor = 0.5
+				num_of_civilian_factories_available_for_projects < 5						
+			}
+		modifier = {
+				factor = 0
+				num_of_civilian_factories_available_for_projects < 1						
+			}		
+		}
+	}
 
 	excavation_a = {
 
@@ -2942,6 +3809,11 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1016
+
+		path = {
+			leads_to_tech = excavation_b
+			research_cost_coeff = 1
+		}
 
 		categories = {
 			tog_civilian_technologies_category
@@ -2952,78 +3824,78 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 10 }
+			position = { x = 3 y = 12 }
 		}
 
 		ai_will_do = {
 			factor = 1
 			
 			
-	modifier = {
-		add = 5
-	AND = {
-		has_idea = free_trade
-		check_variable = { resource_exported@rubber > 7 }
-		check_variable = { resource_exported@aluminium > 7 }
-		check_variable = { resource_exported@tungsten > 7 }
-		check_variable = { resource_exported@steel > 7 }
-		check_variable = { resource_exported@chromium > 7 }
-		}
-}
-
-	modifier = {
-		factor = 3
-			AND = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_produced@rubber > 10 }
+			modifier = {
+				add = 5
+			AND = {
+				has_idea = free_trade
+				check_variable = { resource_exported@rubber > 7 }
+				check_variable = { resource_exported@aluminium > 7 }
+				check_variable = { resource_exported@tungsten > 7 }
+				check_variable = { resource_exported@steel > 7 }
+				check_variable = { resource_exported@chromium > 7 }
+				}
 			}
-}
 
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_produced@aluminium > 10 }
+			modifier = {
+				factor = 3
+					AND = {			
+					check_variable = { resource_imported@rubber > 1 }
+					check_variable = { resource_produced@rubber > 10 }
+					}
 			}
-}
 
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@chromium > 1 }
-			check_variable = { resource_produced@chromium > 10 }
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@aluminium > 1 }
+					check_variable = { resource_produced@aluminium > 10 }
+					}
 			}
-}
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_produced@steel > 10 }
+
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@chromium > 1 }
+					check_variable = { resource_produced@chromium > 10 }
+					}
 			}
-}
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_produced@tungsten > 10 }
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@steel > 1 }
+					check_variable = { resource_produced@steel > 10 }
+					}
 			}
-}
 
-	modifier = {
-		factor = 0
-			NOT = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_imported@chromium > 1 }
-			has_idea = free_trade
-}
-}
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@tungsten > 1 }
+					check_variable = { resource_produced@tungsten > 10 }
+					}
+			}
+
+			modifier = {
+				factor = 0
+					NOT = {			
+					check_variable = { resource_imported@rubber > 1 }
+					check_variable = { resource_imported@aluminium > 1 }
+					check_variable = { resource_imported@tungsten > 1 }
+					check_variable = { resource_imported@steel > 1 }
+					check_variable = { resource_imported@chromium > 1 }
+					has_idea = free_trade
+				}
+			}
 			modifier = {
 				factor = 2				
 				set_temp_variable = {resource_pro = resource_produced@steel}
@@ -3048,17 +3920,75 @@ technologies = {
 				
 		}
 	}
-	
 
-	construction_b = {
+	farming_a = {
 
-		production_speed_buildings_factor = 0.05
-		industry_repair_factor = 0.05
+		modifier_food_quality = 0.05
+		modifier_yield_farms_efficiency = -0.025
 
 		path = {
-			leads_to_tech = excavation_b
+			leads_to_tech = farming_b
 			research_cost_coeff = 1
 		}
+
+		research_cost = 2
+		start_year = 1016
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	farming_a_cheap = {
+
+		modifier_yield_farms_efficiency = 0.05
+		modifier_food_quality = -0.025
+
+		path = {
+			leads_to_tech = farming_b_cheap
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1016
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	
+	construction_b = {
+
+		production_speed_buildings_factor = -0.025
+		industry_repair_factor = -0.025
+		modifier_income_civilian_factories_efficiency = 0.05
+		modifier_expenses_military_factories_efficiency = -0.05
+		modifier_expenses_naval_factories_efficiency = -0.05
+		modifier_expenses_infrastructure_upkeep_efficiency = -0.05
 
 		path = {
 			leads_to_tech = construction_c
@@ -3076,17 +4006,55 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 12 }
+			position = { x = -1 y = 14 }
 		}
 
-	ai_will_do = {
-			factor = 18
-			
-		modifier = {
+		ai_will_do = {
+				factor = 18
+				
+			modifier = {
 				factor = 0.5
 				num_of_civilian_factories_available_for_projects < 5						
 			}
-		modifier = {
+			modifier = {
+				factor = 0
+				num_of_civilian_factories_available_for_projects < 1						
+			}		
+		}
+	}
+
+	construction_b_cheap = {
+
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
+
+		path = {
+			leads_to_tech = construction_c_cheap
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1019
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 14 }
+		}
+
+		ai_will_do = {
+				factor = 18
+				
+			modifier = {
+				factor = 0.5
+				num_of_civilian_factories_available_for_projects < 5						
+			}
+			modifier = {
 				factor = 0
 				num_of_civilian_factories_available_for_projects < 1						
 			}		
@@ -3100,6 +4068,11 @@ technologies = {
 		research_cost = 2
 		start_year = 1019
 
+		path = {
+			leads_to_tech = excavation_c
+			research_cost_coeff = 1
+		}
+
 		categories = {
 			tog_civilian_technologies_category
 			industry
@@ -3109,77 +4082,77 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 12 }
+			position = { x = 3 y = 14 }
 		}
-	ai_will_do = {
-			factor = 1
-			
-			
-	modifier = {
-		add = 5
-	AND = {
-		has_idea = free_trade
-		check_variable = { resource_exported@rubber > 7 }
-		check_variable = { resource_exported@aluminium > 7 }
-		check_variable = { resource_exported@tungsten > 7 }
-		check_variable = { resource_exported@steel > 7 }
-		check_variable = { resource_exported@chromium > 7 }
-		}
-}
-
-	modifier = {
-		factor = 3
-			AND = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_produced@rubber > 10 }
+		ai_will_do = {
+				factor = 1
+					
+					
+			modifier = {
+				add = 5
+				AND = {
+					has_idea = free_trade
+					check_variable = { resource_exported@rubber > 7 }
+					check_variable = { resource_exported@aluminium > 7 }
+					check_variable = { resource_exported@tungsten > 7 }
+					check_variable = { resource_exported@steel > 7 }
+					check_variable = { resource_exported@chromium > 7 }
+				}
 			}
-}
 
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_produced@aluminium > 10 }
+			modifier = {
+				factor = 3
+					AND = {			
+					check_variable = { resource_imported@rubber > 1 }
+					check_variable = { resource_produced@rubber > 10 }
+					}
 			}
-}
 
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@chromium > 1 }
-			check_variable = { resource_produced@chromium > 10 }
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@aluminium > 1 }
+					check_variable = { resource_produced@aluminium > 10 }
+					}
 			}
-}
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_produced@steel > 10 }
+
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@chromium > 1 }
+					check_variable = { resource_produced@chromium > 10 }
+					}
 			}
-}
 
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_produced@tungsten > 10 }
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@steel > 1 }
+					check_variable = { resource_produced@steel > 10 }
+					}
 			}
-}
 
-	modifier = {
-		factor = 0
-			NOT = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_imported@chromium > 1 }
-			has_idea = free_trade
-}
-}
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@tungsten > 1 }
+					check_variable = { resource_produced@tungsten > 10 }
+					}
+			}
+
+			modifier = {
+				factor = 0
+					NOT = {			
+					check_variable = { resource_imported@rubber > 1 }
+					check_variable = { resource_imported@aluminium > 1 }
+					check_variable = { resource_imported@tungsten > 1 }
+					check_variable = { resource_imported@steel > 1 }
+					check_variable = { resource_imported@chromium > 1 }
+					has_idea = free_trade
+				}
+			}
 			modifier = {
 				factor = 2				
 				set_temp_variable = {resource_pro = resource_produced@steel}
@@ -3200,20 +4173,113 @@ technologies = {
 				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
 				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
 				check_variable = { resource_pro > 200 }
-				}								
+			}								
 		}						
 	}
-	
+
+	farming_b = {
+
+		modifier_food_quality = 0.05
+		modifier_yield_farms_efficiency = -0.025
+
+		path = {
+			leads_to_tech = farming_c
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1019
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 14 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	farming_b_cheap = {
+
+		modifier_yield_farms_efficiency = 0.05
+		modifier_food_quality = -0.025
+
+		path = {
+			leads_to_tech = farming_c_cheap
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1019
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 14 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	farming4_yield = {
+
+		on_research_complete = {	
+			modify_building_resources = {
+				building = TOG_farm
+				resource = TOG_food
+				amount = 1
+			}
+		}
+
+		path = {
+			leads_to_tech = farming5_yield
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1019
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 14 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
 
 	construction_c = {
 
-		production_speed_buildings_factor = 0.03
-		industry_repair_factor = 0.03
-
-		path = {
-			leads_to_tech = excavation_c
-			research_cost_coeff = 1
-		}
+		production_speed_buildings_factor = -0.025
+		industry_repair_factor = -0.025
+		modifier_income_civilian_factories_efficiency = 0.05
+		modifier_expenses_military_factories_efficiency = -0.05
+		modifier_expenses_naval_factories_efficiency = -0.05
+		modifier_expenses_infrastructure_upkeep_efficiency = -0.05
 
 		path = {
 			leads_to_tech = construction_d
@@ -3231,17 +4297,55 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 14 }
+			position = { x = -1 y = 16 }
 		}
 
 		ai_will_do = {
 			factor = 15
 			
-		modifier = {
+			modifier = {
 				factor = 0.5
 				num_of_civilian_factories_available_for_projects < 5						
 			}
-		modifier = {
+			modifier = {
+				factor = 0
+				num_of_civilian_factories_available_for_projects < 1						
+			}		
+		}
+	}
+
+	construction_c_cheap = {
+
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
+
+		path = {
+			leads_to_tech = construction_d_cheap
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1022
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 16 }
+		}
+
+		ai_will_do = {
+			factor = 15
+			
+			modifier = {
+				factor = 0.5
+				num_of_civilian_factories_available_for_projects < 5						
+			}
+			modifier = {
 				factor = 0
 				num_of_civilian_factories_available_for_projects < 1						
 			}		
@@ -3250,7 +4354,131 @@ technologies = {
 
 	excavation_c = {
 
-		local_resources_factor = 0.03
+		local_resources_factor = 0.05
+
+		research_cost = 2
+		start_year = 1022
+
+		path = {
+			leads_to_tech = excavation_d
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 16 }
+		}
+
+		ai_will_do = {
+		factor = 3
+			
+			
+			modifier = {
+				add = 5
+			AND = {
+				has_idea = free_trade
+				check_variable = { resource_exported@rubber > 7 }
+				check_variable = { resource_exported@aluminium > 7 }
+				check_variable = { resource_exported@tungsten > 7 }
+				check_variable = { resource_exported@steel > 7 }
+				check_variable = { resource_exported@chromium > 7 }
+				}
+			}
+
+			modifier = {
+				factor = 3
+					AND = {			
+					check_variable = { resource_imported@rubber > 1 }
+					check_variable = { resource_produced@rubber > 10 }
+					}
+			}
+
+
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@aluminium > 1 }
+					check_variable = { resource_produced@aluminium > 10 }
+					}
+			}
+
+
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@chromium > 1 }
+					check_variable = { resource_produced@chromium > 10 }
+					}
+			}
+
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@steel > 1 }
+					check_variable = { resource_produced@steel > 10 }
+					}
+			}
+
+			modifier = {
+				factor = 3	
+					AND = {			
+					check_variable = { resource_imported@tungsten > 1 }
+					check_variable = { resource_produced@tungsten > 10 }
+					}
+			}
+
+			modifier = {
+				factor = 0
+					NOT = {			
+					check_variable = { resource_imported@rubber > 1 }
+					check_variable = { resource_imported@aluminium > 1 }
+					check_variable = { resource_imported@tungsten > 1 }
+					check_variable = { resource_imported@steel > 1 }
+					check_variable = { resource_imported@chromium > 1 }
+					has_idea = free_trade
+				}
+			}
+			modifier = {
+				factor = 2				
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				add_to_temp_variable = { resource_pro = resource_produced@chromium}
+				add_to_temp_variable = { resource_pro = resource_produced@crystals}
+				add_to_temp_variable = { resource_pro = resource_produced@rubber}
+				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
+				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
+				check_variable = { resource_pro > 170 }
+			}
+				
+			modifier = {
+				factor = 3
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				add_to_temp_variable = { resource_pro = resource_produced@chromium}
+				add_to_temp_variable = { resource_pro = resource_produced@crystals}
+				add_to_temp_variable = { resource_pro = resource_produced@rubber}
+				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
+				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
+				check_variable = { resource_pro > 250 }
+			}
+								
+		}
+	}
+
+	farming_c = {
+
+		modifier_food_quality = 0.05
+		modifier_yield_farms_efficiency = -0.025
+
+		path = {
+			leads_to_tech = farming_d
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2
 		start_year = 1022
@@ -3264,113 +4492,52 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 14 }
+			position = { x = 4 y = 16 }
 		}
 
-			ai_will_do = {
+		ai_will_do = {
 			factor = 3
-			
-			
-	modifier = {
-		add = 5
-	AND = {
-		has_idea = free_trade
-		check_variable = { resource_exported@rubber > 7 }
-		check_variable = { resource_exported@aluminium > 7 }
-		check_variable = { resource_exported@tungsten > 7 }
-		check_variable = { resource_exported@steel > 7 }
-		check_variable = { resource_exported@chromium > 7 }
-		}
-}
-
-	modifier = {
-		factor = 3
-			AND = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_produced@rubber > 10 }
-			}
-}
-
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_produced@aluminium > 10 }
-			}
-}
-
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@chromium > 1 }
-			check_variable = { resource_produced@chromium > 10 }
-			}
-}
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_produced@steel > 10 }
-			}
-}
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_produced@tungsten > 10 }
-			}
-}
-
-	modifier = {
-		factor = 0
-			NOT = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_imported@chromium > 1 }
-			has_idea = free_trade
-}
-}
-			modifier = {
-				factor = 2				
-				set_temp_variable = {resource_pro = resource_produced@steel}
-				add_to_temp_variable = { resource_pro = resource_produced@chromium}
-				add_to_temp_variable = { resource_pro = resource_produced@crystals}
-				add_to_temp_variable = { resource_pro = resource_produced@rubber}
-				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
-				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
-				check_variable = { resource_pro > 170 }
-				}
-				
-			modifier = {
-				factor = 3
-				set_temp_variable = {resource_pro = resource_produced@steel}
-				add_to_temp_variable = { resource_pro = resource_produced@chromium}
-				add_to_temp_variable = { resource_pro = resource_produced@crystals}
-				add_to_temp_variable = { resource_pro = resource_produced@rubber}
-				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
-				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
-				check_variable = { resource_pro > 250 }
-				}
-								
 		}
 	}
-	
+
+	farming_c_cheap = {
+
+		modifier_yield_farms_efficiency = 0.05
+		modifier_food_quality = -0.025
+
+		path = {
+			leads_to_tech = farming_d_cheap
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1022
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 16 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
 
 	construction_d = {
 
-		production_speed_buildings_factor = 0.02
-		industry_repair_factor = 0.02
-
-		path = {
-			leads_to_tech = excavation_d
-			research_cost_coeff = 1
-		}
+		production_speed_buildings_factor = -0.025
+		industry_repair_factor = -0.025
+		modifier_income_civilian_factories_efficiency = 0.05
+		modifier_expenses_military_factories_efficiency = -0.05
+		modifier_expenses_naval_factories_efficiency = -0.05
+		modifier_expenses_infrastructure_upkeep_efficiency = -0.05
 
 		research_cost = 2
 		start_year = 1025
@@ -3383,26 +4550,59 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 16 }
+			position = { x = -1 y = 18 }
 		}
 
-	ai_will_do = {
-			factor = 10
-			
-		modifier = {
-				factor = 0.5
-				num_of_civilian_factories_available_for_projects < 5						
-			}
-		modifier = {
-				factor = 0
-				num_of_civilian_factories_available_for_projects < 1					
-			}		
+		ai_will_do = {
+				factor = 10
+				
+			modifier = {
+					factor = 0.5
+					num_of_civilian_factories_available_for_projects < 5						
+				}
+			modifier = {
+					factor = 0
+					num_of_civilian_factories_available_for_projects < 1					
+				}		
+		}
+	}
+
+	construction_d_cheap = {
+
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
+
+		research_cost = 2
+		start_year = 1025
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 18 }
+		}
+
+		ai_will_do = {
+				factor = 10
+				
+			modifier = {
+					factor = 0.5
+					num_of_civilian_factories_available_for_projects < 5						
+				}
+			modifier = {
+					factor = 0
+					num_of_civilian_factories_available_for_projects < 1					
+				}		
 		}
 	}
 
 	excavation_d = {
 
-		local_resources_factor = 0.02
+		local_resources_factor = 0.05
 
 		research_cost = 2
 		start_year = 1025
@@ -3416,78 +4616,69 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 16 }
+			position = { x = 3 y = 18 }
 		}
 
-	ai_will_do = {
+		ai_will_do = {
 			factor = 1
-			
-			
-	modifier = {
-		add = 5
-	AND = {
-		has_idea = free_trade
-		check_variable = { resource_exported@rubber > 7 }
-		check_variable = { resource_exported@aluminium > 7 }
-		check_variable = { resource_exported@tungsten > 7 }
-		check_variable = { resource_exported@steel > 7 }
-		check_variable = { resource_exported@chromium > 7 }
-		}
-}
-
-	modifier = {
-		factor = 3
-			AND = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_produced@rubber > 10 }
+					
+			modifier = {
+				add = 5
+				AND = {
+					has_idea = free_trade
+					check_variable = { resource_exported@rubber > 7 }
+					check_variable = { resource_exported@aluminium > 7 }
+					check_variable = { resource_exported@tungsten > 7 }
+					check_variable = { resource_exported@steel > 7 }
+					check_variable = { resource_exported@chromium > 7 }
+				}
 			}
-}
-
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_produced@aluminium > 10 }
+			modifier = {
+				factor = 3
+				AND = {			
+					check_variable = { resource_imported@rubber > 1 }
+					check_variable = { resource_produced@rubber > 10 }
+				}
 			}
-}
-
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@chromium > 1 }
-			check_variable = { resource_produced@chromium > 10 }
+			modifier = {
+				factor = 3	
+				AND = {			
+					check_variable = { resource_imported@aluminium > 1 }
+					check_variable = { resource_produced@aluminium > 10 }
+				}
 			}
-}
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_produced@steel > 10 }
+			modifier = {
+				factor = 3	
+				AND = {			
+					check_variable = { resource_imported@chromium > 1 }
+					check_variable = { resource_produced@chromium > 10 }
+				}
 			}
-}
-
-	modifier = {
-		factor = 3	
-			AND = {			
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_produced@tungsten > 10 }
+			modifier = {
+				factor = 3	
+				AND = {			
+					check_variable = { resource_imported@steel > 1 }
+					check_variable = { resource_produced@steel > 10 }
+				}
 			}
-}
-
-	modifier = {
-		factor = 0
-			NOT = {			
-			check_variable = { resource_imported@rubber > 1 }
-			check_variable = { resource_imported@aluminium > 1 }
-			check_variable = { resource_imported@tungsten > 1 }
-			check_variable = { resource_imported@steel > 1 }
-			check_variable = { resource_imported@chromium > 1 }
-			has_idea = free_trade
-}
-}
+			modifier = {
+				factor = 3	
+				AND = {			
+					check_variable = { resource_imported@tungsten > 1 }
+					check_variable = { resource_produced@tungsten > 10 }
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {			
+					check_variable = { resource_imported@rubber > 1 }
+					check_variable = { resource_imported@aluminium > 1 }
+					check_variable = { resource_imported@tungsten > 1 }
+					check_variable = { resource_imported@steel > 1 }
+					check_variable = { resource_imported@chromium > 1 }
+					has_idea = free_trade
+				}
+			}
 			modifier = {
 				factor = 2				
 				set_temp_variable = {resource_pro = resource_produced@steel}
@@ -3497,7 +4688,7 @@ technologies = {
 				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
 				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
 				check_variable = { resource_pro > 200 }
-				}
+			}
 				
 			modifier = {
 				factor = 3
@@ -3508,14 +4699,89 @@ technologies = {
 				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
 				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
 				check_variable = { resource_pro > 300 }
-				}
-								
+			}					
 		}
 	}
 
-	###------> X <><> <><> <><> <><> <><>
+	farming_d = {
 
-	###------> New Manufacturing <><> <><> <><> <><> <><>
+		modifier_food_quality = 0.05
+		modifier_yield_farms_efficiency = -0.025
+
+		research_cost = 2
+		start_year = 1025
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 18 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	farming_d_cheap = {
+
+		modifier_yield_farms_efficiency = 0.05
+		modifier_food_quality = -0.025
+
+		research_cost = 2
+		start_year = 1025
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 18 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	farming5_yield = {
+
+		on_research_complete = {	
+			modify_building_resources = {
+				building = TOG_farm
+				resource = TOG_food
+				amount = 1
+			}
+		}
+
+		research_cost = 2
+		start_year = 1025
+
+		categories = {
+			tog_civilian_technologies_category
+			industry
+			construction_tech
+			excavation_tech
+		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 18 }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
 
 	flexible_line_a = {
 
@@ -3780,8 +5046,6 @@ technologies = {
 		}
 	}
 
-	###------> New Industry <><> <><> <><> <><> <><>
-
 	concentrated_industry_a = {
 
 		industrial_capacity_factory = 0.1
@@ -3931,8 +5195,8 @@ technologies = {
 
 	concentrated_industry_b = {
 
-		industrial_capacity_factory = 0.05
-		industrial_capacity_dockyard = 0.04
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.05
 		global_building_slots_factor = 0.1
 
 		path = {
@@ -4006,7 +5270,7 @@ technologies = {
 		industrial_capacity_factory = 0.05
 		industrial_capacity_dockyard = 0.05
 		line_change_production_efficiency_factor = 0.05
-		production_factory_start_efficiency_factor = 0.02
+		production_factory_start_efficiency_factor = 0.03
 		industry_air_damage_factor = -0.05
 		global_building_slots_factor = 0.1
 
@@ -4078,9 +5342,9 @@ technologies = {
 
 	concentrated_industry_c = {
 
-		industrial_capacity_factory = 0.04
-		industrial_capacity_dockyard = 0.03
-		global_building_slots_factor = 0.05
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.05
+		global_building_slots_factor = 0.1
 
 		path = {
 			leads_to_tech = concentrated_industry_d
@@ -4150,12 +5414,12 @@ technologies = {
 
 	dispersed_industry_c = {
 
-		industrial_capacity_factory = 0.03
-		industrial_capacity_dockyard = 0.03
-		line_change_production_efficiency_factor = 0.03
-		production_factory_start_efficiency_factor = 0.02
-		industry_air_damage_factor = -0.03
-		global_building_slots_factor = 0.05
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		line_change_production_efficiency_factor = 0.05
+		production_factory_start_efficiency_factor = 0.03
+		industry_air_damage_factor = -0.05
+		global_building_slots_factor = 0.1
 
 		path = {
 			leads_to_tech = dispersed_industry_d
@@ -4225,9 +5489,9 @@ technologies = {
 
 	concentrated_industry_d = {
 
-		industrial_capacity_factory = 0.03
-		industrial_capacity_dockyard = 0.03
-		global_building_slots_factor = 0.05
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.05
+		global_building_slots_factor = 0.1
 
 		research_cost = 2
 		start_year = 1025
@@ -4292,12 +5556,12 @@ technologies = {
 
 	dispersed_industry_d = {
 
-		industrial_capacity_factory = 0.02
-		industrial_capacity_dockyard = 0.02
-		line_change_production_efficiency_factor = 0.02
-		production_factory_start_efficiency_factor = 0.01
-		industry_air_damage_factor = -0.02
-		global_building_slots_factor = 0.05
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		line_change_production_efficiency_factor = 0.05
+		production_factory_start_efficiency_factor = 0.03
+		industry_air_damage_factor = -0.05
+		global_building_slots_factor = 0.1
 
 		research_cost = 2
 		start_year = 1025
@@ -4360,8 +5624,4 @@ technologies = {
 		}
 	}
 
-	###------> X <><> <><> <><> <><> <><>
-
 }
-
-#####---------------------------------------------------------------------> End

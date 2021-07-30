@@ -16,6 +16,33 @@ technologies = {
 		}
 	}
 
+	VED_bulletproof_plating_tech = {
+
+		research_cost = 1
+
+		allow = {
+			always = no
+		}
+
+		knights = {
+			armor_value = 5000
+		}
+	}
+
+	VED_personal_heraldry_tech = {
+
+		research_cost = 1
+
+		allow = {
+			always = no
+		}
+
+		category_all_infantry = {
+			default_morale = 0.15
+			max_organisation = 0.10
+		}
+	}
+
 	EQC_series_90_tech = {
 
 		research_cost = 1

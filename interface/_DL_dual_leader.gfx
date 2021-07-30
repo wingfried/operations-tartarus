@@ -44,6 +44,22 @@ spriteTypes = {
 		name = "GFX_pol_view_bg_not"
 		texturefile = "gfx/interface/pol_view_bg_not.dds"
 	}
+	spriteType = {
+		name = "GFX_pol_view_bg_nonaligned"
+		texturefile = "gfx/interface/pol_view_bg_nonaligned.dds"
+	}
+	spriteType = {
+		name = "GFX_pol_view_bg_supremacy"
+		texturefile = "gfx/interface/pol_view_bg_supremacy.dds"
+	}
+	spriteType = {
+		name = "GFX_pol_view_bg_harmony"
+		texturefile = "gfx/interface/pol_view_bg_harmony.dds"
+	}
+	spriteType = {
+		name = "GFX_pol_view_bg_communism"
+		texturefile = "gfx/interface/pol_view_bg_communism.dds"
+	}
 
 	textSpriteType = {
 		name = "GFX_button_148x31"

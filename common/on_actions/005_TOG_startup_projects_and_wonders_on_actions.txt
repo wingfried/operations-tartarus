@@ -6,6 +6,21 @@ on_actions = {
 			set_variable = { global.turhamn_pact_project_1_country_2 = NOU }
 			set_variable = { global.turhamn_pact_project_1_country_3 = NOU }
 			set_variable = { global.turhamn_pact_project_1_biggest_num = 0 }
+
+			add_to_array = {
+				array = selected_idea_groups_tab
+				value = 1
+			}
+
+			add_to_array = {
+				array = selected_idea_groups_tab
+				value = 2
+			}
+
+			add_to_array = {
+				array = selected_idea_groups_tab
+				value = 3
+			}
 		}
 	}
 }

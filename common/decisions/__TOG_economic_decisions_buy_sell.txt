@@ -1,10 +1,150 @@
 tog_economy_military_export_actions = {
 
-	export_infantry_weapons_old = {
+	export_infantry_weapons_new = {
 		
-		visible = {
-			has_tech = melee_weapons1
+		available = {
+			IF = {
+				limit = { date > 1019.06.01 }
+				has_tech = advanced_infantry_weapons_e
+				has_equipment = { infantry_equipment_x_2 > 9999 }
+				check_variable = { num_equipment@infantry_equipment_x_2 > 9999 }
+			}
+			ELSE_IF = {
+				limit = { date > 1013.06.01 }
+				has_tech = advanced_infantry_weapons_b
+				has_equipment = { infantry_equipment_2 > 9999 }
+				check_variable = { num_equipment@infantry_equipment_x > 9999 }
+			}	
+			ELSE_IF = {
+				limit = { date > 1010.06.01 }
+				has_tech = advanced_infantry_weapons
+				has_equipment = { infantry_equipment_3 > 9999 }
+				check_variable = { num_equipment@infantry_equipment_3 > 9999 }
+			}	
+			ELSE_IF = {
+				limit = { date > 1007.06.01 }
+				has_tech = improved_infantry_weapons
+				has_equipment = { infantry_equipment_2 > 9999 }
+				check_variable = { num_equipment@infantry_equipment_2 > 9999 }
+			}	
+			ELSE = {
+				has_tech = infantry_weapons1
+				has_equipment = { infantry_equipment_1 > 9999 }
+				check_variable = { num_equipment@infantry_equipment_1 > 9999 }
+			}						
 		}
+		
+		#icon = 
+		
+		cost = 0
+		
+		complete_effect = {
+			IF = {
+				limit = { date > 1019.06.01 }
+				add_equipment_to_stockpile = { type = infantry_equipment_x_2 amount = -10000 }
+			}
+			ELSE_IF = {
+				limit = { date > 1013.06.01 }
+				add_equipment_to_stockpile = { type = infantry_equipment_x amount = -10000 }
+			}
+			ELSE_IF = {
+				limit = { date > 1010.06.01 }
+				add_equipment_to_stockpile = { type = infantry_equipment_3 amount = -10000 }
+			}
+			ELSE_IF = {
+				limit = { date > 1007.06.01 }
+				add_equipment_to_stockpile = { type = infantry_equipment_2 amount = -10000 }
+			}
+			ELSE = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -10000 }
+			}
+			add_to_variable = { var = root.coins_total value = global.end_cost_infantry_weapons_export_new }
+			custom_effect_tooltip = export_infantry3_tp
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	export_infantry_weapons_normal = {
+		
+		available = {
+			IF = {
+				limit = { date > 1025.06.01 }
+				has_tech = advanced_infantry_weapons_e
+				has_equipment = { infantry_equipment_x_2 > 9999 }
+				check_variable = { num_equipment@infantry_equipment_x_2 > 9999 }
+			}
+			ELSE_IF = {
+				limit = { date > 1019.06.01 }
+				has_tech = advanced_infantry_weapons_b
+				has_equipment = { infantry_equipment_x > 9999 }
+				check_variable = { num_equipment@infantry_equipment_x > 9999 }
+			}
+			ELSE_IF = {
+				limit = { date > 1013.06.01 }
+				has_tech = advanced_infantry_weapons
+				has_equipment = { infantry_equipment_3 > 9999 }
+				check_variable = { num_equipment@infantry_equipment_3 > 9999 }
+			}	
+			ELSE_IF = {
+				limit = { date > 1010.06.01 }
+				has_tech = improved_infantry_weapons
+				has_equipment = { infantry_equipment_2 > 9999 }
+				check_variable = { num_equipment@infantry_equipment_2 > 9999 }
+			}	
+			ELSE_IF = {
+				limit = { date > 1007.06.01 }
+				has_tech = infantry_weapons1 #1007
+				has_equipment = { infantry_equipment_1 > 9999 }
+				check_variable = { num_equipment@infantry_equipment_1 > 9999 }
+			}	
+			ELSE = {
+				has_tech = infantry_weapons
+				has_equipment = { infantry_equipment_0 > 9999 }
+				check_variable = { num_equipment@infantry_equipment_0 > 9999 }
+			}						
+		}
+		
+		#icon = 
+		
+		cost = 0
+		
+		complete_effect = {
+			IF = {
+				limit = { date > 1025.06.01 }
+				add_equipment_to_stockpile = { type = infantry_equipment_x_2 amount = -10000 }
+			}
+			ELSE_IF = {
+				limit = { date > 1019.06.01 }
+				add_equipment_to_stockpile = { type = infantry_equipment_x amount = -10000 }
+			}
+			ELSE_IF = {
+				limit = { date > 1013.06.01 }
+				add_equipment_to_stockpile = { type = infantry_equipment_3 amount = -10000 }
+			}
+			ELSE_IF = {
+				limit = { date > 1010.06.01 }
+				add_equipment_to_stockpile = { type = infantry_equipment_2 amount = -10000 }
+			}
+			ELSE_IF = {
+				limit = { date > 1007.06.01 }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -10000 }
+			}
+			ELSE = {
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -10000 }
+			}
+			add_to_variable = { var = root.coins_total value = global.end_cost_infantry_weapons_export_normal }
+			custom_effect_tooltip = export_infantry2_tp
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	export_infantry_weapons_old = {
 		
 		available = {
 			IF = {
@@ -72,8 +212,8 @@ tog_economy_military_export_actions = {
 			ELSE = {
 				add_equipment_to_stockpile = { type = melee_equipment_1 amount = -10000 }
 			}
-			add_to_variable = { var = root.coins_total value = 2.1 }
-			custom_effect_tooltip = export_iw1_tp
+			add_to_variable = { var = root.coins_total value = global.end_cost_infantry_weapons_export_old }
+			custom_effect_tooltip = export_infantry1_tp
 		}
 		
 		ai_will_do = {
@@ -81,48 +221,55 @@ tog_economy_military_export_actions = {
 		}
 	}
 
-	export_infantry_weapons_normal = {
+	export_support_normal = {
 		
-		visible = {
-			has_tech = infantry_weapons
+		available = {
+			has_tech = tech_support
+			has_equipment = { support_equipment_1 > 4999 }
+			check_variable = { num_equipment@support_equipment_1 > 4999 }
 		}
+		
+		#icon = 
+		
+		cost = 0
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = -5000 }
+			add_to_variable = { var = root.coins_total value = global.end_cost_support_export_normal }
+			custom_effect_tooltip = export_support_tp
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	export_artillery_new = {
 		
 		available = {
 			IF = {
-				limit = { date > 1025.06.01 }
-				has_tech = advanced_infantry_weapons_e
-				has_equipment = { infantry_equipment_x_2 > 9999 }
-				check_variable = { num_equipment@infantry_equipment_x_2 > 9999 }
-			}
-			ELSE_IF = {
-				limit = { date > 1019.06.01 }
-				has_tech = advanced_infantry_weapons_b
-				has_equipment = { infantry_equipment_x > 9999 }
-				check_variable = { num_equipment@infantry_equipment_x > 9999 }
-			}
-			ELSE_IF = {
 				limit = { date > 1013.06.01 }
-				has_tech = advanced_infantry_weapons
-				has_equipment = { infantry_equipment_3 > 9999 }
-				check_variable = { num_equipment@infantry_equipment_3 > 9999 }
-			}	
+				has_tech = artillery4
+				has_equipment = { artillery_equipment_x > 4999 }
+				check_variable = { num_equipment@artillery_equipment_x > 4999 }
+			}
 			ELSE_IF = {
 				limit = { date > 1010.06.01 }
-				has_tech = improved_infantry_weapons
-				has_equipment = { infantry_equipment_2 > 9999 }
-				check_variable = { num_equipment@infantry_equipment_2 > 9999 }
-			}	
+				has_tech = artillery4
+				has_equipment = { artillery_equipment_3 > 4999 }
+				check_variable = { num_equipment@artillery_equipment_3 > 4999 }
+			}
 			ELSE_IF = {
-				limit = { date > 1007.06.01 }
-				has_tech = infantry_weapons1
-				has_equipment = { infantry_equipment_1 > 9999 }
-				check_variable = { num_equipment@infantry_equipment_1 > 9999 }
-			}	
+				limit = { date > 1005.06.01 }
+				has_tech = artillery1
+				has_equipment = { artillery_equipment_2 > 4999 }
+				check_variable = { num_equipment@artillery_equipment_2 > 4999 }
+			}
 			ELSE = {
-				has_tech = infantry_weapons
-				has_equipment = { infantry_equipment_0 > 9999 }
-				check_variable = { num_equipment@infantry_equipment_0 > 9999 }
-			}						
+				has_tech = gw_artillery
+				has_equipment = { artillery_equipment_1 > 4999 }
+				check_variable = { num_equipment@artillery_equipment_1 > 4999 }
+			}
 		}
 		
 		#icon = 
@@ -131,73 +278,62 @@ tog_economy_military_export_actions = {
 		
 		complete_effect = {
 			IF = {
-				limit = { date > 1025.06.01 }
-				add_equipment_to_stockpile = { type = infantry_equipment_x_2 amount = -10000 }
-			}
-			ELSE_IF = {
-				limit = { date > 1019.06.01 }
-				add_equipment_to_stockpile = { type = infantry_equipment_x amount = -10000 }
-			}
-			ELSE_IF = {
 				limit = { date > 1013.06.01 }
-				add_equipment_to_stockpile = { type = infantry_equipment_3 amount = -10000 }
+				add_equipment_to_stockpile = { type = artillery_equipment_x amount = -5000 }
 			}
 			ELSE_IF = {
 				limit = { date > 1010.06.01 }
-				add_equipment_to_stockpile = { type = infantry_equipment_2 amount = -10000 }
+				add_equipment_to_stockpile = { type = artillery_equipment_3 amount = -5000 }
 			}
 			ELSE_IF = {
-				limit = { date > 1007.06.01 }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -10000 }
+				limit = { date > 1005.06.01 }
+				add_equipment_to_stockpile = { type = artillery_equipment_2 amount = -5000 }
 			}
 			ELSE = {
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -10000 }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = -5000 }
 			}
-			add_to_variable = { var = root.coins_total value = 2.8 }
-			custom_effect_tooltip = export_iw2_tp
+			add_to_variable = { var = root.coins_total value = global.end_cost_artillery_export_new }
+			custom_effect_tooltip = export_artillery3_tp
 		}
 		
 		ai_will_do = {
 			factor = 0
 		}
+		
 	}
 
-	export_infantry_weapons_new = {
-		
-		visible = {
-			has_tech = infantry_weapons1
-		}
+	export_artillery_normal = {
 		
 		available = {
 			IF = {
-				limit = { date > 1019.06.01 }
-				has_tech = advanced_infantry_weapons_e
-				has_equipment = { infantry_equipment_x_2 > 9999 }
-				check_variable = { num_equipment@infantry_equipment_x_2 > 9999 }
+				limit = { date > 1016.06.01 }
+				has_tech = artillery4
+				has_equipment = { artillery_equipment_x > 4999 }
+				check_variable = { num_equipment@artillery_equipment_x > 4999 }
 			}
 			ELSE_IF = {
 				limit = { date > 1013.06.01 }
-				has_tech = advanced_infantry_weapons_b
-				has_equipment = { infantry_equipment_2 > 9999 }
-				check_variable = { num_equipment@infantry_equipment_x > 9999 }
+				has_tech = artillery4
+				has_equipment = { artillery_equipment_3 > 4999 }
+				check_variable = { num_equipment@artillery_equipment_3 > 4999 }
 			}	
 			ELSE_IF = {
 				limit = { date > 1010.06.01 }
-				has_tech = advanced_infantry_weapons
-				has_equipment = { infantry_equipment_3 > 9999 }
-				check_variable = { num_equipment@infantry_equipment_3 > 9999 }
+				has_tech = artillery1
+				has_equipment = { artillery_equipment_2 > 4999 }
+				check_variable = { num_equipment@artillery_equipment_2 > 4999 }
 			}	
 			ELSE_IF = {
-				limit = { date > 1007.06.01 }
-				has_tech = improved_infantry_weapons
-				has_equipment = { infantry_equipment_2 > 9999 }
-				check_variable = { num_equipment@infantry_equipment_2 > 9999 }
+				limit = { date > 1005.06.01 }
+				has_tech = gw_artillery
+				has_equipment = { artillery_equipment_1 > 4999 }
+				check_variable = { num_equipment@artillery_equipment_1 > 4999 }
 			}	
 			ELSE = {
-				has_tech = infantry_weapons1
-				has_equipment = { infantry_equipment_1 > 9999 }
-				check_variable = { num_equipment@infantry_equipment_1 > 9999 }
-			}						
+				has_tech = pre_gw_artillery
+				has_equipment = { artillery_equipment_0 > 4999 }
+				check_variable = { num_equipment@artillery_equipment_0 > 4999 }
+			}
 		}
 		
 		#icon = 
@@ -206,49 +342,86 @@ tog_economy_military_export_actions = {
 		
 		complete_effect = {
 			IF = {
-				limit = { date > 1019.06.01 }
-				add_equipment_to_stockpile = { type = infantry_equipment_x_2 amount = -10000 }
+				limit = { date > 1016.06.01 }
+				add_equipment_to_stockpile = { type = artillery_equipment_x amount = -5000 }
 			}
 			ELSE_IF = {
 				limit = { date > 1013.06.01 }
-				add_equipment_to_stockpile = { type = infantry_equipment_x amount = -10000 }
+				add_equipment_to_stockpile = { type = artillery_equipment_3 amount = -5000 }
 			}
 			ELSE_IF = {
 				limit = { date > 1010.06.01 }
-				add_equipment_to_stockpile = { type = infantry_equipment_3 amount = -10000 }
+				add_equipment_to_stockpile = { type = artillery_equipment_2 amount = -5000 }
 			}
 			ELSE_IF = {
-				limit = { date > 1007.06.01 }
-				add_equipment_to_stockpile = { type = infantry_equipment_2 amount = -10000 }
+				limit = { date > 1005.06.01 }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = -5000 }
 			}
 			ELSE = {
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -10000 }
+				add_equipment_to_stockpile = { type = artillery_equipment_0 amount = -5000 }
 			}
-			add_to_variable = { var = root.coins_total value = 3.5 }
-			custom_effect_tooltip = export_iw3_tp
+			add_to_variable = { var = root.coins_total value = global.end_cost_artillery_export_normal }
+			custom_effect_tooltip = export_artillery2_tp
 		}
 		
 		ai_will_do = {
 			factor = 0
 		}
+		
 	}
 
-	export_artillery = {
-		
-		visible = {
-			always = yes
-		}
+	export_artillery_old = {
 		
 		available = {
-			
+			IF = {
+				limit = { date > 1016.06.01 }
+				has_tech = artillery4
+				has_equipment = { artillery_equipment_3 > 4999 }
+				check_variable = { num_equipment@artillery_equipment_3 > 4999 }
+			}	
+			ELSE_IF = {
+				limit = { date > 1013.06.01 }
+				has_tech = artillery1
+				has_equipment = { artillery_equipment_2 > 4999 }
+				check_variable = { num_equipment@artillery_equipment_2 > 4999 }
+			}	
+			ELSE_IF = {
+				limit = { date > 1010.06.01 }
+				has_tech = gw_artillery
+				has_equipment = { artillery_equipment_1 > 4999 }
+				check_variable = { num_equipment@artillery_equipment_1 > 4999 }
+			}	
+			ELSE_IF = {
+				limit = { date > 1005.06.01 }
+				has_tech = pre_gw_artillery
+				has_equipment = { artillery_equipment_0 > 4999 }
+				check_variable = { num_equipment@artillery_equipment_0 > 4999 }
+			}
 		}
 		
-		#icon =
+		#icon = 
 		
 		cost = 0
 		
 		complete_effect = {
-			
+			IF = {
+				limit = { date > 1016.06.01 }
+				add_equipment_to_stockpile = { type = artillery_equipment_3 amount = -5000 }
+			}
+			ELSE_IF = {
+				limit = { date > 1013.06.01 }
+				add_equipment_to_stockpile = { type = artillery_equipment_2 amount = -5000 }
+			}
+			ELSE_IF = {
+				limit = { date > 1010.06.01 }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = -5000 }
+			}
+			ELSE_IF = {
+				limit = { date > 1005.06.01 }
+				add_equipment_to_stockpile = { type = artillery_equipment_0 amount = -5000 }
+			}
+			add_to_variable = { var = root.coins_total value = global.end_cost_artillery_export_old }
+			custom_effect_tooltip = export_artillery1_tp
 		}
 		
 		ai_will_do = {
@@ -260,7 +433,7 @@ tog_economy_military_export_actions = {
 	export_support = {
 		
 		visible = {
-			always = yes
+			always = no
 		}
 		
 		available = {
@@ -284,7 +457,7 @@ tog_economy_military_export_actions = {
 	export_motorized = {
 		
 		visible = {
-			always = yes
+			always = no
 		}
 		
 		available = {
@@ -308,7 +481,7 @@ tog_economy_military_export_actions = {
 	export_tanks = {
 		
 		visible = {
-			always = yes
+			always = no
 		}
 		
 		available = {
@@ -332,7 +505,7 @@ tog_economy_military_export_actions = {
 	export_light_tanks = {
 		
 		visible = {
-			always = yes
+			always = no
 		}
 		
 		available = {
@@ -356,7 +529,7 @@ tog_economy_military_export_actions = {
 	export_heavy_tanks = {
 		
 		visible = {
-			always = yes
+			always = no
 		}
 		
 		available = {
@@ -380,7 +553,7 @@ tog_economy_military_export_actions = {
 	export_fighters = {
 		
 		visible = {
-			always = yes
+			always = no
 		}
 		
 		available = {
@@ -404,7 +577,7 @@ tog_economy_military_export_actions = {
 	export_cas = {
 		
 		visible = {
-			always = yes
+			always = no
 		}
 		
 		available = {
@@ -428,37 +601,33 @@ tog_economy_military_export_actions = {
 
 tog_economy_military_import_actions = {
 
-	import_infantry_weapons_old = {
+	import_infantry_weapons_new = {
 		
 		visible = {
-			has_tech = melee_weapons1
+			has_tech = infantry_weapons1
 		}
 		
 		available = {
 			IF = {
-				limit = { date > 1025.06.01 }
-				has_tech = advanced_infantry_weapons_b
-			}
-			ELSE_IF = {
 				limit = { date > 1019.06.01 }
-				has_tech = advanced_infantry_weapons
+				has_tech = advanced_infantry_weapons_e
 			}
 			ELSE_IF = {
 				limit = { date > 1013.06.01 }
-				has_tech = improved_infantry_weapons
+				has_tech = advanced_infantry_weapons_b
 			}	
 			ELSE_IF = {
 				limit = { date > 1010.06.01 }
-				has_tech = infantry_weapons1
+				has_tech = advanced_infantry_weapons
 			}	
 			ELSE_IF = {
 				limit = { date > 1007.06.01 }
-				has_tech = infantry_weapons
+				has_tech = improved_infantry_weapons
 			}	
 			ELSE = {
-				has_tech = melee_weapons1
+				has_tech = infantry_weapons1
 			}
-			check_variable = { coins_total > 3.5 }				
+			check_variable = { coins_total > global.end_cost_infantry_weapons_import_new }
 		}
 		
 		#icon =
@@ -467,30 +636,26 @@ tog_economy_military_import_actions = {
 		
 		complete_effect = {
 			IF = {
-				limit = { date > 1025.06.01 }
-				add_equipment_to_stockpile = { type = infantry_equipment_x amount = 10000 }
-			}
-			ELSE_IF = {
 				limit = { date > 1019.06.01 }
-				add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 10000 }
+				add_equipment_to_stockpile = { type = infantry_equipment_x_2 amount = 10000 }
 			}
 			ELSE_IF = {
 				limit = { date > 1013.06.01 }
-				add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 10000 }
+				add_equipment_to_stockpile = { type = infantry_equipment_x amount = 10000 }
 			}
 			ELSE_IF = {
 				limit = { date > 1010.06.01 }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 }
+				add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 10000 }
 			}
 			ELSE_IF = {
 				limit = { date > 1007.06.01 }
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 10000 }
+				add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 10000 }
 			}
 			ELSE = {
-				add_equipment_to_stockpile = { type = melee_equipment_1 amount = 10000 }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 }
 			}
-			subtract_from_variable = { var = root.coins_total value = 3.5 }
-			custom_effect_tooltip = import_iw1_tp
+			subtract_from_variable = { var = root.coins_total value = global.end_cost_infantry_weapons_import_new }
+			custom_effect_tooltip = import_infantry3_tp
 		}
 		
 		ai_will_do = {
@@ -528,7 +693,7 @@ tog_economy_military_import_actions = {
 			ELSE = {
 				has_tech = infantry_weapons
 			}
-			check_variable = { coins_total > 4.6 }			
+			check_variable = { coins_total > global.end_cost_infantry_weapons_import_normal }			
 		}
 		
 		#icon =
@@ -559,8 +724,8 @@ tog_economy_military_import_actions = {
 			ELSE = {
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 10000 }
 			}
-			subtract_from_variable = { var = root.coins_total value = 4.6 }
-			custom_effect_tooltip = import_iw2_tp
+			subtract_from_variable = { var = root.coins_total value = global.end_cost_infantry_weapons_import_normal }
+			custom_effect_tooltip = import_infantry2_tp
 		}
 		
 		ai_will_do = {
@@ -568,33 +733,37 @@ tog_economy_military_import_actions = {
 		}
 	}
 
-	import_infantry_weapons_new = {
+	import_infantry_weapons_old = {
 		
 		visible = {
-			has_tech = infantry_weapons1
+			has_tech = melee_weapons1
 		}
 		
 		available = {
 			IF = {
+				limit = { date > 1025.06.01 }
+				has_tech = advanced_infantry_weapons_b
+			}
+			ELSE_IF = {
 				limit = { date > 1019.06.01 }
-				has_tech = advanced_infantry_weapons_e
+				has_tech = advanced_infantry_weapons
 			}
 			ELSE_IF = {
 				limit = { date > 1013.06.01 }
-				has_tech = advanced_infantry_weapons_b
+				has_tech = improved_infantry_weapons
 			}	
 			ELSE_IF = {
 				limit = { date > 1010.06.01 }
-				has_tech = advanced_infantry_weapons
+				has_tech = infantry_weapons1
 			}	
 			ELSE_IF = {
 				limit = { date > 1007.06.01 }
-				has_tech = improved_infantry_weapons
+				has_tech = infantry_weapons
 			}	
 			ELSE = {
-				has_tech = infantry_weapons1
+				has_tech = melee_weapons1
 			}
-			check_variable = { coins_total > 5.8 }
+			check_variable = { coins_total > global.end_cost_infantry_weapons_import_old }		
 		}
 		
 		#icon =
@@ -603,26 +772,30 @@ tog_economy_military_import_actions = {
 		
 		complete_effect = {
 			IF = {
-				limit = { date > 1019.06.01 }
-				add_equipment_to_stockpile = { type = infantry_equipment_x_2 amount = 10000 }
-			}
-			ELSE_IF = {
-				limit = { date > 1013.06.01 }
+				limit = { date > 1025.06.01 }
 				add_equipment_to_stockpile = { type = infantry_equipment_x amount = 10000 }
 			}
 			ELSE_IF = {
-				limit = { date > 1010.06.01 }
+				limit = { date > 1019.06.01 }
 				add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 10000 }
 			}
 			ELSE_IF = {
-				limit = { date > 1007.06.01 }
+				limit = { date > 1013.06.01 }
 				add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 10000 }
 			}
-			ELSE = {
+			ELSE_IF = {
+				limit = { date > 1010.06.01 }
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 }
 			}
-			subtract_from_variable = { var = root.coins_total value = 5.8 }
-			custom_effect_tooltip = import_iw3_tp
+			ELSE_IF = {
+				limit = { date > 1007.06.01 }
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 10000 }
+			}
+			ELSE = {
+				add_equipment_to_stockpile = { type = melee_equipment_1 amount = 10000 }
+			}
+			subtract_from_variable = { var = root.coins_total value = global.end_cost_infantry_weapons_import_old }
+			custom_effect_tooltip = import_infantry1_tp
 		}
 		
 		ai_will_do = {

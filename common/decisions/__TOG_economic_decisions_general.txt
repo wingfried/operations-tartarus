@@ -1,10 +1,10 @@
 economy_decisions = {
-    tog_buy_factory = {
+    tog_buy_civilian_factory = {
 		icon = generic_construction
 		allowed = {
 		}
 		available = {
-			hidden_trigger = { check_variable = { coins_total > 5 } }
+			check_variable = { coins_total > global.cost_civilian_factory }
 		}
 		visible = {
 			any_owned_state = {
@@ -17,13 +17,8 @@ economy_decisions = {
 		    }
 		}
 
-		custom_cost_trigger = {
-			check_variable = { coins_total > 5 }
-		}
-		custom_cost_text = "5M"
-
-		days_re_enable = 90
-		days_remove = 30
+		#days_re_enable = 120
+		days_remove = 120
 		
 		ai_will_do = {
 			base = 0
@@ -58,9 +53,10 @@ economy_decisions = {
 			hidden_effect = {
                 subtract_from_variable = {
 					var = coins_total
-					value = 5
+					value = global.cost_civilian_factory
 				}		
 			}
+			custom_effect_tooltip = buy_civilian_factory_tp
 		}
 		remove_effect = {
 			#log = "[GetDateText]: [Root.GetName]: Decision remove TRD_buy_factory"
@@ -98,12 +94,12 @@ economy_decisions = {
 		}
 	}
 	
-	tog_buy_arms_factory = {
+	tog_buy_military_factory = {
 		icon = ger_military_buildup
 		allowed = {
 		}
 		available = {
-			hidden_trigger = { check_variable = { coins_total > 5 } }
+			check_variable = { coins_total > global.cost_military_factory }
 		}
 		visible = {
 			any_owned_state = {
@@ -116,13 +112,8 @@ economy_decisions = {
 		    }
 		}
 
-		custom_cost_trigger = {
-			check_variable = { coins_total > 5 }
-		}
-		custom_cost_text = "5M"
-
-		days_re_enable = 90
-		days_remove = 30
+		#days_re_enable = 120
+		days_remove = 120
 		
 		ai_will_do = {
 			base = 0
@@ -157,9 +148,10 @@ economy_decisions = {
 			hidden_effect = { 
                 subtract_from_variable = {
 					var = coins_total
-					value = 5
+					value = global.cost_military_factory
 				}				
 			}
+			custom_effect_tooltip = buy_military_factory_tp
 		}
 		remove_effect = {
 			#log = "[GetDateText]: [Root.GetName]: Decision remove TRD_buy_arms_factory"
@@ -194,77 +186,6 @@ economy_decisions = {
 			    }
 		    }
 		    add_to_variable = { var = boughtmilfactories value = 1 }
-		}
-	}
-	
-	tog_foreign_technicians = {
-		icon = generic_decision
-		allowed = {
-		}
-		available = {
-			hidden_trigger = { check_variable = { coins_total > 5 } }
-			has_war = no
-
-		}
-		visible = {
-		}
-
-		custom_cost_trigger = {
-			has_political_power > 49
-			check_variable = { coins_total > 4 }
-		}
-		custom_cost_text = decision_cost_bank_5_pp_50
-
-		days_remove = 20
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				threat > 0.50
-				add = 2
-			}
-			modifier = {
-				has_political_power > 500
-				add = 2
-			}
-			modifier = {
-				check_variable = { coins_total > 300 }
-				add = 3
-			}
-			modifier = {
-				check_variable = { coins_total > 250 }
-				add = 2
-			}
-			modifier = {
-				check_variable = { coins_total > 200 }
-				add = 1.5
-			}
-			modifier = {
-				check_variable = { coins_total > 150 }
-				add = 1
-			}
-			modifier = {
-				check_variable = { coins_total < 150 }
-				add = -4
-			}
-			modifier = {
-				check_variable = { coins_total < 100 }
-				add = -8
-			}
-		}
-		complete_effect = {
-			#log = "[GetDateText]: [Root.GetName]: Decision TRD_foreign_technicians"
-			hidden_effect = { 
-			    add_political_power = -50
-                subtract_from_variable = {
-					var = bank
-					value = 5
-				}				
-			}
-		}
-		remove_effect = {
-			#log = "[GetDateText]: [Root.GetName]: Decision remove TRD_foreign_technicians"
-			add_timed_idea = { idea = TRD_industrial_experts_idea days = 240 }
 		}
 	}
 }

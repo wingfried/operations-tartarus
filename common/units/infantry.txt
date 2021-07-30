@@ -364,6 +364,7 @@ sub_units = {
 			category_all_infantry
 			category_army
 			category_mechanical
+			category_motmech
 			category_regular_infantry_all
 		}
 

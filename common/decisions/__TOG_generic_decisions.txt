@@ -1,0 +1,63 @@
+elements_of_harmony_decisions = {
+	gather_the_elements_of_harmony = {
+
+		#icon = generic_prepare_civil_war
+		visible = {
+            AND = {
+            	has_government = democratic
+            	has_idea = TOG_element_of_honesty_idea
+            	has_idea = TOG_element_of_kindness_idea
+            	has_idea = TOG_element_of_laughter_idea
+            	has_idea = TOG_element_of_generosity_idea
+            	has_idea = TOG_element_of_loyalty_idea
+            	has_idea = TOG_element_of_magic_idea
+            }
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			remove_ideas = TOG_element_of_honesty_idea
+        	remove_ideas = TOG_element_of_kindness_idea
+        	remove_ideas = TOG_element_of_laughter_idea
+        	remove_ideas = TOG_element_of_generosity_idea
+        	remove_ideas = TOG_element_of_loyalty_idea
+        	remove_ideas = TOG_element_of_magic_idea
+        	add_ideas = TOG_elements_of_harmony_idea
+		}
+
+		ai_will_do = {
+			base = 4000
+		}
+	}
+	restore_the_tree_of_harmony = {
+
+		#icon = generic_prepare_civil_war
+		visible = {
+            AND = {
+            	has_war = no
+            	controls_state = 1
+            	has_government = democratic
+            	has_idea = TOG_elements_of_harmony_idea
+            	has_idea = TOG_tree_of_harmony_elementless_idea
+            }
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			remove_ideas = TOG_elements_of_harmony_idea
+			remove_ideas = TOG_tree_of_harmony_elementless_idea
+			add_ideas = TOG_tree_of_harmony_idea
+			set_global_flag = tree_of_harmony_restored_global_flag
+		}
+
+		ai_will_do = {
+			base = 4000
+		}
+	}
+}

@@ -5970,6 +5970,7 @@ focus_tree = {
 		}
 
 		available = {
+			NOT = { has_completed_focus = EQC_modernize_new_manehattan }
 		}
 
 		cancel_if_invalid = yes
@@ -6186,6 +6187,7 @@ focus_tree = {
 		}
 
 		available = {
+			NOT = { has_completed_focus = EQC_invite_foreign_scientists }
 		}
 
 		cancel_if_invalid = yes

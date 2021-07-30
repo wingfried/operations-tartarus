@@ -1,6 +1,6 @@
 ﻿l_english:
 
- FOOD_TOOLTIP:0 "§YFood§!\n§GMonthly Yield§!\nFarms (§Y100%§!): §G0.4§! Megatonnes\nDonations: §G[?coins_from_countries]§! Megatonnes\nImported Food: §G[?coins_resources_exported]§! Megatonnes\nTotal Yield: §G[?coins_total_income]§! Megatonnes\n\n§RMonthly Consumption§!\nPopulation (§Y[?coins_current_overlord_tax]%§!): §R-[?coins_to_overlord]§! Megatonnes\nDonations: §R-[?coins_to_countries]§! Megatonnes\nExported Food: §R-[?coins_resources_imported]§! Megatonnes\nTotal Consumption: §R-[?coins_total_expenses]§! Megatonnes\n\nWe Make: §Y[?coins_this_month]§! Megatonnes"
+ FOOD_TOOLTIP:0 "§YFood§!\n§YMonthly Situation§!\nFood Quality (§Y60%§!): Average\nFood Price (§Y60%§!): Average\nPopulation Increase: §G2§! Thousands\n\n§GMonthly Yield§!\nFarms (§Y100%§!): §G0.4§! Megatonnes\nDonations: §G[?coins_from_countries]§! Megatonnes\nImported Food: §G[?coins_resources_exported]§! Megatonnes\nTotal Yield: §G[?coins_total_income]§! Megatonnes\n\n§RMonthly Consumption§!\nPopulation (§Y[?coins_current_overlord_tax]%§!): §R-[?coins_to_overlord]§! Megatonnes\nDonations: §R-[?coins_to_countries]§! Megatonnes\nExported Food: §R-[?coins_resources_imported]§! Megatonnes\nTotal Consumption: §R-[?coins_total_expenses]§! Megatonnes\n\nWe Make: §Y[?coins_this_month]§! Megatonnes"
 
  FOOD_MAIN:0 "2 Mt"
 
@@ -16,10 +16,20 @@
  modifier_consumption_donations_efficiency:0 "§RMonthly Consumption:§! Donations Efficiency"
  modifier_consumption_exported_food:0 "§RMonthly Consumption:§! Exported Food"
  modifier_consumption_exported_food_efficiency:0 "§RMonthly Consumption:§! Exported Food Efficiency"
+ modifier_food_quality:0 "Food Quality"
+ modifier_food_price:0 "Food Price"
  
  PRODUCTION_MATERIALS_TOG_FOOD:0 "Food"
  TOG_food_desc:0 "Food is a type of resource that makes your population not die from starvation."
  TOG_farm:0 "Farm"
  TOG_farm_plural:0 "Farms"
- TOG_farm_desc:0 "\nThis building provides the state with +8 £resources_strip|8"
+ TOG_farm_desc:0 "This building provides the state with §Y+8§! £resources_strip|8"
  modifier_production_speed_TOG_farm_factor:0 "§YFarm§! construction speed"
+
+ TOG_steel_mill:0 "Steel Mill"
+ TOG_steel_mill_plural:0 "Steel Mills"
+ TOG_steel_mill_desc:0 "This building provides the state with §Y+8§! £resources_strip|5"
+
+ TOG_aluminium_plant:0 "Aluminium Plant"
+ TOG_aluminium_plant_plural:0 "Aluminium Plant"
+ TOG_aluminium_plant_desc:0 "This building provides the state with §Y+8§! £resources_strip|2"

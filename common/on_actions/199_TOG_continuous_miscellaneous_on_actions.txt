@@ -131,6 +131,18 @@ on_actions = {
 		}
 	}
 
+	on_puppet = {
+		effect = {
+			IF = {
+				limit = {
+					FROM = VED
+					VED = { has_completed_focus = VED_compassion_for_the_surrendered }
+				}
+				ROOT = { add_timed_idea = { idea = VED_puppet_idea days = 365 } }
+			}
+		}
+	}
+
 	on_peaceconference_ended = {
 		effect = {
 			SRS = {

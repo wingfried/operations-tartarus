@@ -36,12 +36,91 @@ on_actions = {
 		}
 	}
 
+	on_monthly = {
+		effect = {
+			IF = {
+				limit = {
+					controls_state = 1
+				}
+				IF = {
+					limit = {
+						NOT = { has_idea = TOG_tree_of_harmony_idea }
+						NOT = { has_idea = TOG_tree_of_harmony_elementless_idea }
+					}
+					IF = {
+						limit = {
+							has_global_flag = tree_of_harmony_restored_global_flag
+						}
+						add_ideas = TOG_tree_of_harmony_idea
+					}
+					ELSE = {
+						add_ideas = TOG_tree_of_harmony_elementless_idea
+					}
+					set_variable = { global.tree_of_harmony_owner = ROOT }
+				}
+				IF = {
+					limit = {
+						NOT = { EQS = { controls_state = 1 } }
+						NOT = { has_global_flag = tree_of_harmony_restored_global_flag }
+						all_country = {
+							AND = {
+								NOT = { has_idea = TOG_element_of_honesty_idea }
+								NOT = { has_idea = TOG_element_of_kindness_idea }
+								NOT = { has_idea = TOG_element_of_laughter_idea }
+								NOT = { has_idea = TOG_element_of_generosity_idea }
+								NOT = { has_idea = TOG_element_of_loyalty_idea }
+								NOT = { has_idea = TOG_element_of_magic_idea }
+								NOT = { has_idea = TOG_elements_of_harmony_idea }
+							}
+						}
+					}
+					# Scatter Elements of Harmony betweeen all Harmonist countries if Equestria lost Tree of Harmony
+					random_country = {
+						limit = {
+							has_government = democratic
+						}
+						add_ideas = TOG_element_of_honesty_idea
+					}
+					random_country = {
+						limit = {
+							has_government = democratic
+						}
+						add_ideas = TOG_element_of_kindness_idea
+					}
+					random_country = {
+						limit = {
+							has_government = democratic
+						}
+						add_ideas = TOG_element_of_laughter_idea
+					}
+					random_country = {
+						limit = {
+							has_government = democratic
+						}
+						add_ideas = TOG_element_of_generosity_idea
+					}
+					random_country = {
+						limit = {
+							has_government = democratic
+						}
+						add_ideas = TOG_element_of_loyalty_idea
+					}
+					random_country = {
+						limit = {
+							has_government = democratic
+						}
+						add_ideas = TOG_element_of_magic_idea
+					}
+				}
+			}
+		}
+	}
+
 	on_annex = {
 		effect = {
 			FROM = {
 
 				# ELEMENTS OF HARMONY
-
 				IF = {
 					limit = { has_idea = TOG_element_of_honesty_idea }
 					ROOT = { add_ideas = TOG_element_of_honesty_idea }

@@ -1,0 +1,23 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			
+			# ELEMENTS OF HARMONY
+			random_country = {
+				limit = {
+					controls_state = 1
+				}
+				IF = {
+					limit = {
+						original_tag = EQS
+					}
+					add_ideas = TOG_tree_of_harmony_idea
+				}
+				ELSE = {
+					add_ideas = TOG_tree_of_harmony_elementless_idea
+				}
+			}
+		}
+	}
+}

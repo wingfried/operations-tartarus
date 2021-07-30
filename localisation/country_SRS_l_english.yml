@@ -623,7 +623,7 @@ SRS_griffonia_compliance_tp:0 "Increase compliance by §Y10%§! in all cores of 
 SRS_FAT_compliance_tp:0 "Increase compliance by §Y5%§! in all cores of §YGriffonian Republic§!."
 SRS_MNC_compliance_tp:0 "Increase compliance by §Y5%§! in all cores of §YSunstriker Clan§!."
 SRS_edu_reform_compliance_tp:0 "Increase compliance by §Y20%§! in all cores of §YGriffonian Republic§!, §YVedina§! and §YSunstriker Clan§!."
-SRS_not_the_children:0 "Children opinion factor: §Y-10.00%§!"
+SRS_not_the_children:0 "Children opinion factor: §Y-25.00%§!"
 SRS_military_academy_tp:0 "\nUnlocks £decision_icon_small §YDecisions§! that will allow us to train our Officers at the §YMilitary Academy§!."
 SRS_war_college_tp:0 "Unlocks £decision_icon_small §YDecisions§! that will allow us to train our §YMilitary Academy§! graduates at the §YWar College§!."
 SRS_communalist_industrialization_tt:0 "\nUnlocks £decision_icon_small §YDecisions§! that will allow us to further the industralization of our country in the image of the §CCommunalist Plan§!."

@@ -2,7 +2,7 @@
 
 technologies = {
 
-	@1918 = 0
+	@989 = 0
 	@1007 = 2
 	@1009 = 4
 	@1010 = 6
@@ -70,11 +70,21 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = transport_helicopter1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = scout_helicopter1
+			research_cost_coeff = 1
+		}
+
 		research_cost = 1.0
-		start_year = 999
+		start_year = 989
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1918 }
+			position = { x = 0 y = @989 }
 		}
 
 		categories = {
@@ -113,6 +123,7 @@ technologies = {
 
 		enable_subunits = {
 			engineer
+			engineer_armored
 		}
 
 		path = {
@@ -179,14 +190,21 @@ technologies = {
 	tech_engineers2 = {
 
 		engineer = {
-			entrenchment  = 2
+			entrenchment = 2
 
 			fort = {
 				defence = 0.10
 				attack = 0.10
 			}
 		}
+		engineer_armored = {
+			entrenchment = 2
 
+			fort = {
+				defence = 0.10
+				attack = 0.10
+			}
+		}
 
 		path = {
 			leads_to_tech = tech_engineers3
@@ -250,7 +268,14 @@ technologies = {
 	tech_engineers3 = {
 
 		engineer = {
-			entrenchment  = 2
+			entrenchment = 2
+			river = {
+				attack = 0.1
+				defence = 0.10
+			}
+		}
+		engineer_armored = {
+			entrenchment = 2
 			river = {
 				attack = 0.1
 				defence = 0.10
@@ -326,6 +351,13 @@ technologies = {
 				defence = 0.1
 			}
 		}
+		engineer_armored = {
+			entrenchment = 2
+			urban = {
+				attack = 0.1
+				defence = 0.1
+			}
+		}
 		path = {
 			leads_to_tech = tech_engineers_a
 			research_cost_coeff = 1
@@ -394,6 +426,7 @@ technologies = {
 			mot_recon
 			armored_car_recon
 			light_tank_recon
+			scout_helicopter_recon
 		}
 
 		path = {
@@ -457,7 +490,7 @@ technologies = {
 
 	tech_recon2 = {
 
-		recon = {
+		category_recon = {
 			recon = 2
 		}
 
@@ -519,7 +552,7 @@ technologies = {
 
 	tech_recon3 = {
 
-		recon = {
+		category_recon = {
 			recon = 2
 		}
 		path = {
@@ -582,7 +615,7 @@ technologies = {
 
 	tech_recon4 = {
 
-		recon = {
+		category_recon = {
 			recon = 2
 		}
 
@@ -1101,7 +1134,11 @@ technologies = {
 		dependencies = {
 			motorised_infantry = 1
 		}
-
+		allow_branch = { 
+			NOT = { 
+				has_tech = undead_race
+			}
+		}
 		research_cost = 2
 		start_year = 1007
 		folder = {
@@ -1843,6 +1880,7 @@ technologies = {
 		categories = {
 			tog_military_technologies_category
 			support_tech
+			signal_company_tech
 			electronics
 		}
 
@@ -1892,8 +1930,15 @@ technologies = {
 	tech_engineers_a = {
 
 		engineer = {
-			entrenchment  = 2
-			urban = {
+			entrenchment = 2
+			mountain = {
+				attack = 0.1
+				defence = 0.1
+			}
+		}
+		engineer_armored = {
+			entrenchment = 2
+			mountain = {
 				attack = 0.1
 				defence = 0.1
 			}
@@ -1957,8 +2002,15 @@ technologies = {
 	tech_engineers_b = {
 
 		engineer = {
-			entrenchment  = 2
-			urban = {
+			entrenchment = 2
+			marsh = {
+				attack = 0.1
+				defence = 0.1
+			}
+		}
+		engineer_armored = {
+			entrenchment = 2
+			marsh = {
 				attack = 0.1
 				defence = 0.1
 			}
@@ -2023,8 +2075,15 @@ technologies = {
 	tech_engineers_c = {
 
 		engineer = {
-			entrenchment  = 2
-			urban = {
+			entrenchment = 2
+			jungle = {
+				attack = 0.1
+				defence = 0.1
+			}
+		}
+		engineer_armored = {
+			entrenchment = 2
+			jungle = {
 				attack = 0.1
 				defence = 0.1
 			}
@@ -2087,7 +2146,7 @@ technologies = {
 
 	tech_recon_a = {
 
-		recon = {
+		category_recon = {
 			recon = 2
 		}
 
@@ -2154,7 +2213,7 @@ technologies = {
 	tech_recon_b = {
 
 
-		recon = {
+		category_recon = {
 			recon = 2
 		}
 
@@ -2216,7 +2275,7 @@ technologies = {
 
 	tech_recon_c = {
 
-		recon = {
+		category_recon = {
 			recon = 2
 		}
 
@@ -2631,8 +2690,8 @@ technologies = {
 
 
 		field_hospital = {
-			casualty_trickleback = 0.08
-			experience_loss_factor = -0.08
+			casualty_trickleback = 0.06
+			experience_loss_factor = -0.06
 		}
 
 		path = {
@@ -2712,8 +2771,8 @@ technologies = {
 	tech_field_hospital_c = {
 
 		field_hospital = {
-			casualty_trickleback = 0.08
-			experience_loss_factor = -0.08
+			casualty_trickleback = 0.06
+			experience_loss_factor = -0.06
 		}
 
 		research_cost = 1.5
@@ -2791,7 +2850,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.08
-			fuel_consumption_factor = -0.03
+			fuel_consumption_factor = -0.04
 		}
 
 		path = {
@@ -2877,7 +2936,169 @@ technologies = {
 		}
 	}
 
-	###------> X <><> <><> <><> <><> <><>
+	###------> Helicopters! <><> <><> <><> <><> <><>	
+	scout_helicopter1 = {
+
+		enable_equipments = {
+			scout_helicopter_equipment_1
+		}
+
+		path = {
+			leads_to_tech = scout_helicopter2
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			experimental_helicopter = 1
+		}
+
+		research_cost = 2
+		start_year = 1019
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @1019 }
+		}
+
+		categories = {
+			support_tech
+			helicopter_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	scout_helicopter2 = {
+
+		enable_equipments = {
+			scout_helicopter_equipment_2
+		}
+
+		research_cost = 2
+		start_year = 1025
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @1025 }
+		}
+
+		categories = {
+			support_tech
+			helicopter_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	transport_helicopter1 = {
+
+		enable_equipments = {
+			transport_helicopter_equipment_1
+		}
+		field_hospital = {
+			casualty_trickleback = 0.025
+			experience_loss_factor = -0.025
+			need = {
+				transport_helicopter_equipment = 20
+			}
+		}
+		logistics_company = {
+			supply_consumption_factor = -0.025
+			fuel_consumption_factor = -0.025
+			need = {
+				transport_helicopter_equipment = 10
+			}
+		}
+		dependencies = {
+			tech_logistics_company = 1
+			tech_field_hospital = 1
+			experimental_helicopter = 1
+		}
+		on_research_complete = {
+			custom_effect_tooltip = HELICOPTER_HOSPITAL_LOGISTICS_TOOLTIP
+		}
+
+		path = {
+			leads_to_tech = transport_helicopter2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = attack_helicopter1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1019
+		folder = {
+			name = support_folder
+			position = { x = 16 y = @1019 }
+		}
+
+		categories = {
+			support_tech
+			helicopter_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	transport_helicopter2 = {
+
+		enable_equipments = {
+			transport_helicopter_equipment_2
+		}
+		field_hospital = {
+			casualty_trickleback = 0.025
+			experience_loss_factor = -0.025
+		}
+		logistics_company = {
+			supply_consumption_factor = -0.025
+			fuel_consumption_factor = -0.025
+		}
+
+		research_cost = 2
+		start_year = 1025
+		folder = {
+			name = support_folder
+			position = { x = 16 y = @1025 }
+		}
+
+		categories = {
+			support_tech
+			helicopter_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	attack_helicopter1 = {
+		enable_equipments = {
+			attack_helicopter_equipment_1
+		}
+		enable_subunits = {
+			attack_helicopter_company
+		}
+
+		research_cost = 2
+		start_year = 1025
+		folder = {
+			name = support_folder
+			position = { x = 18 y = @1025 }
+		}
+
+		categories = {
+			support_tech
+			helicopter_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 }
 

@@ -96,13 +96,16 @@ set_politics = {
 	election_frequency = 36
 	elections_allowed = no
 }
-add_ideas = { 
+add_ideas = {
 	VED_Chivalry_Knights_idea
 	TOG_eco_great_depression_2_idea
 	TOG_outdated_agriculture_idea
 	pre_industrial_society 
 	lack_of_scientists1
-	poverty3 
+	poverty3
+	VED_useless_noble_advisor_1
+	VED_useless_noble_advisor_2
+	VED_useless_noble_advisor_3
 }
 
 set_stability = 0.45

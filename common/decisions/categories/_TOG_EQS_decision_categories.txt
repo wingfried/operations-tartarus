@@ -1,0 +1,9 @@
+EQS_leader_unit_category = {
+	allowed = {
+		original_tag = EQS
+	}
+	icon = celestia_cat
+	priority = {
+		base = 111
+	}
+}

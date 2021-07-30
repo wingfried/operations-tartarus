@@ -1,7 +1,7 @@
 ﻿l_english:
  
  ######EQC######
- 
+
  RULE_OPTION_TECHNOCRATIC:0 "Technocratic"
  RULE_TECHNOCRATIC_EQC_AI_DESC:0 "Placeholder"
  
@@ -43,11 +43,11 @@
  EQC_equestrian_training_idea:0 "Eqeustrian Training"
  EQC_equestrian_training_idea_desc:0 "Placeholder"
 
- EQC_salamander_1:0 "Get two §YElite Aerial Mage Divisions§!."
+ EQC_salamander_1:0 "Get two §YElite Aerial Unicorn Divisions§!."
  EQC_salamander_2:0 "Get two §YElite Panzer Divisions§!."
  EQC_salamander_3:0 "Get two §YElite Infantry Divisions§!."
- EQC_series_90_tech:0 "Has completed focus §YElenium Series 90' Testing§!."
- EQC_series_90_tech_effect:0 "Enables §YElenium Type 95§! technology to be researched."
+ EQC_series_90_tech:0 "Has completed focus §YCrystalium Series 90' Testing§!."
+ EQC_series_90_tech_effect:0 "Enables §YCrystalium Type 95§! technology to be researched."
  mil_aca_sun_tp:0 "Unlocks §YMilitary Academy Training§! decisions."
  mil_aca_tech_tp:0 "Unlocks §YWar College Training§! decisions."
  EQC_NEW_WORLD_ORDER:0 "New World Order"
@@ -90,7 +90,7 @@
 
  EQC_tanya_college_finished:0 "Tanya has graduated from §YWar College§!"
  EQC_reorg_mil_staff_tp:0 "Unlocks new canditates for the §YMilitary High Command§!."
- EQC_flying_unicorns_tp:0 "Unlocks §CAerial Mage Technologies§!."
+ EQC_flying_unicorns_tp:0 "Unlocks §CAerial Unicorn Technologies§!."
  EQC_new_superpower_tp:0 "This country will be known as the §YNew Mareland Empire§!."
  EQC_new_equestria_tp:0 "This country will be known as the §YNew Equestria§!."
  EQC_new_mareland_kingdom_tp:0 "This country will be known as the §YNew Mareland Kingdom§!."
@@ -196,7 +196,7 @@
  EQC_perfect_soldiers_idea:0 "Harsh Training"
  EQC_perfect_soldiers_idea_desc:0 "Placeholder"
 
- EQC_rapid_response_1:0 "Get four §YAerial Mage Divisions§!."
+ EQC_rapid_response_1:0 "Get four §YAerial Unicorn Divisions§!."
 
  EQC_combined_forces_idea:0 "Combined Forces"
  EQC_combined_forces_idea_desc:0 "Placeholder"
@@ -272,17 +272,15 @@
  strike_cyo_tt:0 "§RAll conquered Cyanolisian land will be tranfered to Asterion after the peace conference.§!"
  strike_nfg_tt:0 "§RAll conquered Griffingaardian land will be tranfered to Vedina after the peace conference.§!"
 
- aerial_mage_tech_research:0 "Aerial Mages Research Speed"
+ aerial_mage_tech_research:0 "Aerial Unicorn Research Speed"
 
  EQC_artillery_specialist_pony:0 "Lucky Thunder"
  EQC_infantry_specialist_pony:0 "Pearly Swirl"
  EQC_technocratic_pony:0 "Artificer Rare"
  EQC_anarchist_pony:0 "Silver Surprise"
  EQC_adelheid_von_schugel:0 "Adelheid von Schugelbeak"
- EQC_genius_ace_generation_griff:0 "Athena Lightningfeather"
- EQC_genius_special_forces_pony:0 "Midnight Crystal"
- EQC_genius_army_offense_pony:0 "Oliviero Ala Dell'alba"
- EQC_army_instructor:0 "Ares Riverclaw"
+ EQC_genius_army_offense_pony:0 "Midnight Crystal"
+ EQC_army_instructor:0 "Athena Strikefeather"
 
  EQC_mad_genius:0 "Mad Genius"
 
@@ -420,7 +418,7 @@
  EQC_flying_unicorns:0 "Angels of Death"
  EQC_flying_unicorns_desc:0 "Placeholder"
 
- EQC_elenium_series_90_testing:0 "Elenium Series 90' Testing"
+ EQC_elenium_series_90_testing:0 "Crystalium Series 90' Testing"
  EQC_elenium_series_90_testing_desc:0 "Placeholder"
 
  EQC_in_defense_of_motherland_idea:0 "Defenders of The Motherland"
@@ -432,7 +430,7 @@
  EQC_next_gen_artillery_idea:0 "Next Gen Artillery"
  EQC_next_gen_artillery_idea:0 "Placeholder"
 
- EQC_aerial_mages_idea:0 "Aerial Mages"
+ EQC_aerial_mages_idea:0 "Aerial Unicorn"
  EQC_aerial_mages_idea_desc:0 "Placeholder"
 
  EQC_strike_the_pact:0 "Strike The Pact"

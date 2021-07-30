@@ -1,0 +1,1061 @@
+on_actions = {
+
+    on_startup = {
+    	effect = {
+
+    		# HOUSING
+    		every_state = {
+				limit = {
+					state_population_k > 99
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 199
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 299
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 399
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 499
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 599
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 699
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 799
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 899
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 999
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 1099
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 1199
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 1299
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 1399
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 1499
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 1599
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 1699
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 1799
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 1899
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 1999
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 2099
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 2199
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 2299
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 2399
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 2499
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 2599
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 2699
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 2799
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 2899
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 2999
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 3099
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 3199
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 3299
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 3399
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 3499
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 3599
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 3699
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 3799
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 3899
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 3999
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 4099
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 4199
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 4299
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 4399
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 4499
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 4599
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 4699
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 4799
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 4899
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 4999
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 5099
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 5199
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 5299
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 5399
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 5499
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 5599
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 5699
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 5799
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 5899
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 5999
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 6099
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 6199
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 6299
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 6399
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 6499
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 6599
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 6699
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 6799
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 6899
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 6999
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 7099
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 7199
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 7299
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 7399
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 7499
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 7599
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 7699
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 7799
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 7899
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 7999
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 8099
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 8199
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 8299
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 8399
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 8499
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 8599
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 8699
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 8799
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 8899
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 8999
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 9099
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 9199
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 9299
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 9399
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 9499
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 9599
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 9699
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 9799
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 9899
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					state_population_k > 9999
+				}
+				add_building_construction = {
+					type = TOG_housing
+					level = 1
+					instant_build = yes
+				}
+			}
+
+    		# FARM
+    		
+    		every_state = {
+				limit = {
+					state_population_k > 600
+					OR = {
+						has_state_category = rural
+						has_state_category = pastoral
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = TOG_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			every_state = {
+				limit = {
+					is_coastal = yes
+					state_population_k > 400
+					OR = {
+						has_state_category = rural
+						has_state_category = pastoral
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = TOG_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			every_state = {
+				limit = {
+					state_population_k > 200
+					OR = {
+						has_state_category = rural
+						has_state_category = pastoral
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = TOG_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+}

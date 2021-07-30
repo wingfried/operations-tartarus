@@ -28,4 +28,12 @@ spriteTypes = {
 		name = "GFX_idea_TOG_elements_of_harmony"
 		texturefile = "gfx/artifacts/elements_of_harmony/Harmony.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_TOG_tree"
+		texturefile = "gfx/artifacts/elements_of_harmony/Tree.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TOG_treetoo"
+		texturefile = "gfx/artifacts/elements_of_harmony/TreeToo.dds"
+	}
 }

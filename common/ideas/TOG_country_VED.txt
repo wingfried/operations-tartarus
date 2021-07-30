@@ -1,6 +1,329 @@
 ideas = {
 
 	country = {
+		VED_a_united_harmonist_front_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				mobilization_speed = 0.15
+				planning_speed = 0.10
+			}
+		}
+		VED_puppet_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industry_free_repair_factor = 0.50
+				industrial_capacity_factory = 0.25
+			}
+		}
+		VED_vad_r_ditt_vapen_3_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				tog_theocracy_drift = 0.15
+				resistance_growth = -0.20
+				conscription_factor = 0.10
+			}
+		}
+		VED_vad_r_ditt_vapen_2_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				democratic_drift = 0.05
+				tog_theocracy_drift = 0.10
+				resistance_growth = -0.20
+			}
+		}
+		VED_vad_r_ditt_vapen_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				democratic_drift = 0.05
+				tog_theocracy_drift = 0.05
+			}
+		}
+		VED_peacekeeping_operations_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				send_volunteer_size = 3
+				air_volunteer_cap = 100
+				send_volunteers_tension = -0.4
+			}
+		}
+		VED_til_ungdommen_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.1
+				army_org = 5
+			}
+		}
+		VED_peace_through_the_sword_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				fascism_drift = -0.05
+				communism_drift = -0.05
+				justify_war_goal_time = -0.15
+			}
+		}
+		VED_peace_through_the_pen_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				compliance_growth = 0.1
+			}
+		}
+		VED_the_vanguard_of_harmony_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				offence = 0.05
+			}
+		}
+		VED_the_bulward_of_harmony_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_core_defence_factor = 0.1
+			}
+		}
+		VED_solidarity_forever_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		VED_legalize_unions_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				democratic_drift = 0.01
+				communism_drift = 0.01
+			}
+		}
+		VED_the_railway_project_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		VED_equestria_of_the_east_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				fascism_drift = -0.05
+				democratic_drift = 0.05
+				drift_defence_factor = 0.10
+				opinion_gain_monthly_same_ideology_factor = 0.10
+			}
+		}
+		VED_personal_heraldry_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = VED_personal_heraldry_tt
+			}
+		}
+		VED_bulletproof_plating_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = TOG_bulletproof_plating_tt
+			}
+		}
+		VED_barracksonwheels_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				armor = {
+					default_morale = 0.15
+					supply_consumption = -0.10
+				}
+			}
+		}
+		VED_smoke_shells_and_flares_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				org_loss_when_moving = -0.1
+			}
+			equipment_bonus = {
+				artillery = {
+					default_morale = 0.15
+				}
+			}
+		}
+		VED_howitzer_dugouts_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				dig_in_speed_factor = 0.15
+			}
+		}
+		VED_antiair_gun_camouflage_idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				cas_damage_reduction = 0.1
+				recon_factor = 0.05
+			}
+		}
 		VED_a_lesson_from_the_haukland_war_idea = {
 			allowed = {
 				always = yes
@@ -347,23 +670,6 @@ ideas = {
 			}
 		}
 
-		VED_the_second_succesion_crisis_2_idea = {
-			allowed = {
-				always = yes
-			}
-			available = {
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			modifier = {
-				political_power_factor = -0.2
-				war_support_factor = -0.2
-				recruitable_population_factor = -0.1
-			}
-		}
-
 		VED_constitutional_rights_idea = {
 			allowed = {
 				always = yes
@@ -470,22 +776,6 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_weekly = 0.005
-			}
-		}
-
-		VED_new_noble_customs_2_idea = {
-			allowed = {
-				always = yes
-			}
-			available = {
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			modifier = {
-				stability_weekly = 0.005
 				army_leader_cost_factor = -0.10
 			}
 		}
@@ -1351,6 +1641,147 @@ ideas = {
 	}
 	
 	political_advisor = {
+
+		VED_useless_noble_advisor_1 = {
+			allowed = {
+				original_tag = VED
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				has_idea = VED_useless_noble_advisor_1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		VED_usefull_noble_advisor_1 = {
+			allowed = {
+				original_tag = VED
+			}
+			visible = {
+				has_idea = VED_usefull_noble_advisor_1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		VED_loyal_knight_advisor_1 = {
+			allowed = {
+				original_tag = VED
+			}
+			visible = {
+				has_idea = VED_useless_noble_advisor_1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		VED_useless_noble_advisor_2 = {
+			allowed = {
+				original_tag = VED
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				has_idea = VED_useless_noble_advisor_2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		VED_usefull_noble_advisor_2 = {
+			allowed = {
+				original_tag = VED
+			}
+			visible = {
+				has_idea = VED_usefull_noble_advisor_2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		VED_loyal_knight_advisor_2 = {
+			allowed = {
+				original_tag = VED
+			}
+			visible = {
+				has_idea = VED_useless_noble_advisor_1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		VED_useless_noble_advisor_3 = {
+			allowed = {
+				original_tag = VED
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				has_idea = VED_useless_noble_advisor_3
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		VED_usefull_noble_advisor_3 = {
+			allowed = {
+				original_tag = VED
+			}
+			visible = {
+				has_idea = VED_usefull_noble_advisor_3
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		VED_loyal_knight_advisor_3 = {
+			allowed = {
+				original_tag = VED
+			}
+			visible = {
+				has_idea = VED_useless_noble_advisor_1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		VED_advisor_farm_owner_griff = {
+			allowed = {
+				original_tag = VED
+			}
+			visible = {
+				has_completed_focus = VED_grant_titles_to_influential_peasants
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		VED_advisor_business_owner_griff = {
+			allowed = {
+				original_tag = VED
+			}
+			visible = {
+				has_completed_focus = VED_grant_titles_to_influential_peasants
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
 
 		VED_advisor_great_doctor = { #Great_Doctor
 			allowed = {

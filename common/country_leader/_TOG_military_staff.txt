@@ -1,31 +1,4 @@
 leader_traits = {
-	army_instructor_3 = {
-		random = no
-		
-		experience_gain_army_factor = 0.15
-		experience_loss_factor = -0.06
-		army_org_factor = 0.06
-		dig_in_speed_factor = 0.06
-		training_time_army_factor = 0.20
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	army_instructor_2 = {
-		random = no
-		
-		experience_gain_army_factor = 0.10
-		experience_loss_factor = -0.04
-		army_org_factor = 0.04
-		dig_in_speed_factor = 0.04
-		training_time_army_factor = 0.15
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
 
 	army_instructor_1 = {
 		random = no
@@ -40,32 +13,41 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	army_medic_3 = {
+	army_instructor_2 = {
 		random = no
 		
-		experience_loss_factor = -0.12
-		equipment_bonus = {
-			field_hospital = {
-				instant = yes
-				casualty_trickleback = 0.06
-			}
-		}
+		experience_gain_army_factor = 0.10
+		experience_loss_factor = -0.04
+		army_org_factor = 0.04
+		dig_in_speed_factor = 0.04
+		training_time_army_factor = 0.15
 		
 		ai_will_do = {
 			factor = 0
 		}
 	}
-
-	army_medic_2 = {
+	army_instructor_3 = {
 		random = no
 		
-		experience_loss_factor = -0.08
-		equipment_bonus = {
-			field_hospital = {
-				instant = yes
-				casualty_trickleback = 0.04
-			}
+		experience_gain_army_factor = 0.15
+		experience_loss_factor = -0.06
+		army_org_factor = 0.06
+		dig_in_speed_factor = 0.06
+		training_time_army_factor = 0.20
+		
+		ai_will_do = {
+			factor = 0
 		}
+	}
+	army_instructor_3_abusive = {
+		random = no
+		
+		experience_gain_army_factor = 0.15
+		experience_loss_factor = -0.06
+		army_org_factor = 0.06
+		dig_in_speed_factor = 0.06
+		training_time_army_factor = 0.20
+		stability_factor = -0.05
 		
 		ai_will_do = {
 			factor = 0
@@ -79,10 +61,79 @@ leader_traits = {
 		equipment_bonus = {
 			field_hospital = {
 				instant = yes
-				casualty_trickleback = 0.02
+				casualty_trickleback = 0.03
 			}
 		}
 		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	army_medic_2 = {
+		random = no
+		
+		experience_loss_factor = -0.08
+		equipment_bonus = {
+			field_hospital = {
+				instant = yes
+				casualty_trickleback = 0.06
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	army_medic_3 = {
+		random = no
+		
+		experience_loss_factor = -0.12
+		equipment_bonus = {
+			field_hospital = {
+				instant = yes
+				casualty_trickleback = 0.09
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	army_medic_3_abusive = {
+		random = no
+		
+		experience_loss_factor = -0.12
+		stability_factor = -0.05
+		equipment_bonus = {
+			field_hospital = {
+				instant = yes
+				casualty_trickleback = 0.09
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	air_air_combat_training_3_abusive = {
+		random = no
+
+		air_ace_generation_chance_factor = 0.15
+		stability_factor = -0.05
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	army_commando_3_abusive = {
+		random = no
+
+		special_forces_attack_factor = 0.2
+		special_forces_defence_factor = 0.2
+		stability_factor = -0.05
+
 		ai_will_do = {
 			factor = 0
 		}

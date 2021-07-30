@@ -1,6 +1,6 @@
 ﻿l_english:
 
- ECONOMY_TOOLTIP:0 "§YEconomy§!\n§GMonthly Income§!\nTaxes (§Y[?coins_current_country_tax]%§!): §G[?coins_country_tax]§! Million [Root.GetEconomyTooltip]\nSubject Taxes (§Y[?coins_current_puppet_tax]%§!): §G[?coins_from_puppets]§! Million [Root.GetEconomyTooltip]\nDonations: §G[?coins_from_countries]§! Million [Root.GetEconomyTooltip]\nCivilian Factories (§Y[?coins_civilian_factories_value]%§!): §G[?coins_civilian_factories]§! Million [Root.GetEconomyTooltip]\nExported Resources: §G[?coins_resources_exported]§! Million [Root.GetEconomyTooltip]\nTotal Income: §G[?coins_total_income]§! Million [Root.GetEconomyTooltip]\n\n§RMonthly Expenses§!\nOverlord (§Y[?coins_current_overlord_tax]%§!): §R-[?coins_to_overlord]§! Million [Root.GetEconomyTooltip]\nDonations: §R-[?coins_to_countries]§! Million [Root.GetEconomyTooltip]\nEducation: §R-[?coins_education]§! Million [Root.GetEconomyTooltip]\nArmy Spending: §R-[?coins_army]§! Million [Root.GetEconomyTooltip]\nMilitary Factories: §R-[?coins_military_factories]§! Million [Root.GetEconomyTooltip]\nNaval Factories: §R-[?coins_naval_factories]§! Million [Root.GetEconomyTooltip]\nImported Resources: §R-[?coins_resources_imported]§! Million [Root.GetEconomyTooltip]\nPoverty: §R-[?coins_depression]§! Million [Root.GetEconomyTooltip]\nInfrastructure Upkeep: §R-[?coins_infrastructure]§! Million [Root.GetEconomyTooltip]\nOccupation Cost: §R-[?coins_occupation]§! Million [Root.GetEconomyTooltip]\nDebt Payment: §R-[?debtexp]§! Million [Root.GetEconomyTooltip]\nTotal Expenses: §R-[?coins_total_expenses]§! Million [Root.GetEconomyTooltip]\n\nWe Make: §Y[?coins_this_month]§! Million [Root.GetEconomyTooltip]\nTotal Debt: §R[?coins_debt_total]§! Million [Root.GetEconomyTooltip]\n\nBought Civ: [?coins_bought_civilian_factories]\nBought Mil: [?coins_bought_military_factories]"
+ ECONOMY_TOOLTIP:0 "§YEconomy§!\n§YMonthly Situation§!\nQuality of Life (§Y60%§!): Average\n- Employment: (§Y60%§!): Average\n- Housing: (§Y60%§!): Average\n- Wealth: (§Y60%§!): Average\n- Education: (§Y60%§!): Average\n\n§GMonthly Income§!\nTaxes (§Y[?coins_current_country_tax]%§!): §G[?coins_country_tax]§! Million [Root.GetEconomyTooltip]\nSubject Taxes (§Y[?coins_current_puppet_tax]%§!): §G[?coins_from_puppets]§! Million [Root.GetEconomyTooltip]\nDonations: §G[?coins_from_countries]§! Million [Root.GetEconomyTooltip]\nCivilian Factories (§Y[?coins_civilian_factories_value]%§!): §G[?coins_civilian_factories]§! Million [Root.GetEconomyTooltip]\nExported Resources: §G[?coins_resources_exported]§! Million [Root.GetEconomyTooltip]\nTotal Income: §G[?coins_total_income]§! Million [Root.GetEconomyTooltip]\n\n§RMonthly Expenses§!\nOverlord (§Y[?coins_current_overlord_tax]%§!): §R-[?coins_to_overlord]§! Million [Root.GetEconomyTooltip]\nDonations: §R-[?coins_to_countries]§! Million [Root.GetEconomyTooltip]\nEducation: §R-[?coins_education]§! Million [Root.GetEconomyTooltip]\nArmy Spending: §R-[?coins_army]§! Million [Root.GetEconomyTooltip]\nMilitary Factories: §R-[?coins_military_factories]§! Million [Root.GetEconomyTooltip]\nNaval Factories: §R-[?coins_naval_factories]§! Million [Root.GetEconomyTooltip]\nImported Resources: §R-[?coins_resources_imported]§! Million [Root.GetEconomyTooltip]\nPoverty: §R-[?coins_depression]§! Million [Root.GetEconomyTooltip]\nInfrastructure Upkeep: §R-[?coins_infrastructure]§! Million [Root.GetEconomyTooltip]\nOccupation Cost: §R-[?coins_occupation]§! Million [Root.GetEconomyTooltip]\nDebt Payment: §R-[?debtexp]§! Million [Root.GetEconomyTooltip]\nTotal Expenses: §R-[?coins_total_expenses]§! Million [Root.GetEconomyTooltip]\n\nWe Make: §Y[?coins_this_month]§! Million [Root.GetEconomyTooltip]\nTotal Debt: §R[?coins_debt_total]§! Million [Root.GetEconomyTooltip]\n\nBought Civ: [?coins_bought_civilian_factories]\nBought Mil: [?coins_bought_military_factories]"
  BIT_TOOLTIP:0 "Bits"
  IDOL_TOOLTIP:0 "Idols"
  COIN_TOOLTIP:0 "Coins"
@@ -16,13 +16,30 @@
  build_civ_factory_tp:0 "§Y5.00M§! is removed from the national funds."
  build_mil_factory_tp:0 "§Y5.00M§! is removed from the national funds."
 
- export_iw3_tp:0 "§Y3.50M§! is added to the national funds."
- export_iw2_tp:0 "§Y2.80M§! is added to the national funds."
- export_iw1_tp:0 "§Y2.10M§! is added to the national funds."
+ TOG_housing:0 "Housing"
+ TOG_housing_desc:0 "Provides homes for §Y+100K§! creatures."
 
- import_iw3_tp:0 "§Y5.80M§! is removed from the national funds."
- import_iw2_tp:0 "§Y4.60M§! is removed from the national funds."
- import_iw1_tp:0 "§Y3.50M§! is removed from the national funds."
+ buy_civilian_factory_tp:0 "§Y[?global.cost_civilian_factory]M§! is removed from the national funds."
+ buy_military_factory_tp:0 "§Y[?global.cost_military_factory]M§! is removed from the national funds."
+
+ export_infantry3_tp:0 "§Y[?global.end_cost_infantry_weapons_export_new]M§! is added to the national funds."
+ export_infantry2_tp:0 "§Y[?global.end_cost_infantry_weapons_export_normal]M§! is added to the national funds."
+ export_infantry1_tp:0 "§Y[?global.end_cost_infantry_weapons_export_old]M§! is added to the national funds."
+
+ import_infantry3_tp:0 "§Y[?global.end_cost_infantry_weapons_import_new]M§! is removed from the national funds."
+ import_infantry2_tp:0 "§Y[?global.end_cost_infantry_weapons_import_normal]M§! is removed from the national funds."
+ import_infantry1_tp:0 "§Y[?global.end_cost_infantry_weapons_import_old]M§! is removed from the national funds."
+
+ export_support_tp:0 "§Y[?global.end_cost_support_export_normal]M§! is added to the national funds."
+ import_support_tp:0 "§Y[?global.end_cost_support_import_normal]M§! is removed from the national funds."
+
+ export_artillery3_tp:0 "§Y[?global.end_cost_artillery_export_new]M§! is added to the national funds."
+ export_artillery2_tp:0 "§Y[?global.end_cost_artillery_export_normal]M§! is added to the national funds."
+ export_artillery1_tp:0 "§Y[?global.end_cost_artillery_export_old]M§! is added to the national funds."
+
+ import_artillery3_tp:0 "§Y[?global.end_cost_artillery_import_new]M§! is removed from the national funds."
+ import_artillery2_tp:0 "§Y[?global.end_cost_artillery_import_normal]M§! is removed from the national funds."
+ import_artillery1_tp:0 "§Y[?global.end_cost_artillery_import_old]M§! is removed from the national funds."
 
  cooldown_taxescountry_flag:0 "§YA month has passed since we've changed this law.§!"
  cooldown_taxespuppet_flag:0 "§YA month has passed since we've changed this law.§!"
